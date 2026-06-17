@@ -1,37 +1,82 @@
 [
   {
-    "id": "regenwald",
-    "name": "Regenwald",
+    "id": "tropischer_laubwald",
+    "name": "Tropischer Laubwald",
     "icon": "🌴"
   },
   {
-    "id": "bergwaldgebiet",
-    "name": "Bergwaldgebiet",
-    "icon": "⛰️"
-  },
-  {
-    "id": "buschwald",
-    "name": "Buschwald",
+    "id": "regenwald",
+    "name": "Regenwald",
     "icon": "🌳"
   },
   {
-    "id": "trockenwald",
-    "name": "Trockenwald",
-    "icon": "🌵"
+    "id": "buschland_trockenwald",
+    "name": "Buschland, Trockenwald",
+    "icon": "🌿"
   },
   {
-    "id": "grasland",
-    "name": "Grasland",
+    "id": "grasland_steppe_landwirtschaft",
+    "name": "Grasland, Steppe, Landwirtschaft",
     "icon": "🌾"
   },
   {
-    "id": "steppe",
-    "name": "Steppe",
-    "icon": "🌾"
+    "id": "feuchtgebiet_sumpf_moor",
+    "name": "Feuchtgebiete, Sümpfe, Moore",
+    "icon": "💧"
   },
   {
-    "id": "landwirtschaft",
-    "name": "Landwirtschaft",
-    "icon": "🚜"
+    "id": "fluesse_baechte_seen",
+    "name": "Flüsse, Bäche, Seen",
+    "icon": "🏞️"
+  },
+  {
+    "id": "kuesteninseln",
+    "name": "Küsten, Inseln",
+    "icon": "🏝️"
+  },
+  {
+    "id": "korallenriffe",
+    "name": "Korallenriffe",
+    "icon": "🪸"
+  },
+  {
+    "id": "offener_ozean",
+    "name": "Offener Ozean",
+    "icon": "🌊"
+  },
+  {
+    "id": "polarregionen_packeis",
+    "name": "Polarregionen, Packeis",
+    "icon": "🧊"
+  },
+  {
+    "id": "tundra_kaeltesteppe",
+    "name": "Tundra, Kältesteppe",
+    "icon": "❄️"
+  },
+  {
+    "id": "taiga_nadelwald",
+    "name": "Taiga, borealer Nadelwald",
+    "icon": "🌲"
+  },
+  {
+    "id": "gebirge_hochland",
+    "name": "Gebirge, Hochland",
+    "icon": "⛰️"
+  },
+  {
+    "id": "wuesten_halbwuesten",
+    "name": "Wüsten, Halbwüsten",
+    "icon": "🏜️"
+  },
+  {
+    "id": "unterirdisch",
+    "name": "Unterirdisch",
+    "icon": "🕳️"
+  },
+  {
+    "id": "menschliche_siedlungen",
+    "name": "Menschliche Siedlungen",
+    "icon": "🏘️"
   }
 ]

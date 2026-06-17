@@ -1,0 +1,42 @@
+[
+  {
+    "id": "palaearktis",
+    "name": "Paläarktis",
+    "icon": "🌍"
+  },
+  {
+    "id": "nearktis",
+    "name": "Nearktis",
+    "icon": "🌍"
+  },
+  {
+    "id": "neotropis",
+    "name": "Neotropis",
+    "icon": "🌎"
+  },
+  {
+    "id": "afrotropis",
+    "name": "Afrotropis",
+    "icon": "🌍"
+  },
+  {
+    "id": "indomalaya",
+    "name": "Indomalaya",
+    "icon": "🌏"
+  },
+  {
+    "id": "australasis",
+    "name": "Australasis",
+    "icon": "🌏"
+  },
+  {
+    "id": "ozeanien",
+    "name": "Ozeanien",
+    "icon": "🏝️"
+  },
+  {
+    "id": "antarktis",
+    "name": "Antarktis",
+    "icon": "🧊"
+  }
+]

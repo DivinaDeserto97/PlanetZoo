@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--body-bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tafel {
+  position: relative;
+  width: min(96vw, 1500px);
+  aspect-ratio: 16 / 9;
+
+  background: var(--papier);
+
+  border-radius: var(--radius-gross);
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1.45fr 2.55fr;
+
+  box-shadow: var(--shadow-gross);
+}
+
+.bildbereich {
+  position: relative;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf3df 0%,
+      var(--papier-links) 100%
+    );
+
+  border-right: 7px solid var(--orange);
+
+  display: grid;
+  grid-template-rows: 58% 42%;
+
+  padding: 52px 14px 10px;
+
+  min-width: 0;
+}
+
+.textbereich {
+  position: relative;
+
+  padding:
+    clamp(24px, 2.4vw, 40px)
+    clamp(30px, 3.2vw, 56px);
+
+  display: grid;
+  grid-template-rows:
+    auto
+    auto
+    auto
+    auto
+    auto;
+
+  gap: clamp(10px, 1vw, 16px);
+
+  min-width: 0;
+}
+
+.status {
+  position: absolute;
+
+  top: 24px;
+  right: 24px;
+
+  z-index: 20;
+
+  background: var(--gruen);
+
+  color: var(--text-hell);
+
+  font-weight: 800;
+
+  font-size:
+    clamp(13px, 1.3vw, 18px);
+
+  padding: .55em 1.1em;
+
+  border-radius: var(--radius-rund);
+
+  box-shadow: var(--shadow-status);
+}
+
+.zurueck {
+  position: absolute;
+
+  top: 24px;
+  left: 24px;
+
+  z-index: 20;
+
+  color: var(--muted);
+
+  text-decoration: none;
+
+  font-size:
+    clamp(16px, 1.4vw, 21px);
+}
+
+.tierzone {
+  position: relative;
+  min-height: 0;
+}
+
+.tierkreis {
+  position: absolute;
+
+  left: 35%;
+  top: 52%;
+
+  width: 58%;
+
+  aspect-ratio: 1 / 1;
+
+  transform: translate(-50%, -50%);
+
+  border:
+    clamp(9px, 1.1vw, 17px)
+    solid
+    var(--orange);
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+}
+
+.tierkreis::before,
+.tierkreis::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.tierkreis::before {
+  inset: -18%;
+  border: 4px solid var(--kreis-ring);
+}
+
+.tierkreis::after {
+  inset: 10%;
+  border: 3px solid var(--kreis-ring-innen);
+}
+
+.tierkreis img {
+  width: 88%;
+  height: 88%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  z-index: 2;
+
+  box-shadow: var(--shadow-mittel);
+}
+
+.fakten-rund {
+  position: absolute;
+  inset: 0;
+}
+
+.fakt-rund {
+  position: absolute;
+
+  min-height: 42px;
+
+  display: grid;
+
+  grid-template-columns:
+    32px
+    1fr;
+
+  gap: 6px;
+
+  align-items: center;
+
+  color: var(--text);
+}
+
+.fakt-icon {
+  width: 29px;
+  height: 29px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: var(--fakt-bg);
+
+  border:
+    3px solid
+    var(--fakt-border);
+
+  box-shadow: var(--shadow-klein);
+
+  z-index: 3;
+}
+
+.fakt-text {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--orange);
+}
+
+.fakt-text strong {
+  display: block;
+
+  color: var(--orange-dunkel);
+
+  font-size:
+    clamp(10px, .85vw, 13px);
+
+  font-weight: 800;
+}
+
+.fakt-text em {
+  display: block;
+
+  color: var(--text);
+
+  font-style: normal;
+
+  font-size:
+    clamp(10px, 1vw, 15px);
+}
+
+.pos-sozial {
+  left: 33%;
+  top: 9%;
+  width: 52%;
+}
+
+.pos-aktiv {
+  left: -2%;
+  top: 45%;
+  width: 42%;
+}
+
+.pos-region {
+  left: 5%;
+  top: 18%;
+  width: 28%;
+}
+
+.pos-lebensraum {
+  right: 1%;
+  top: 16%;
+  width: 42%;
+}
+
+.pos-fluegel {
+  right: 0%;
+  top: 22%;
+  width: 48%;
+}
+
+.pos-groesse {
+  right: -4%;
+  top: 30%;
+  width: 48%;
+}
+
+.pos-gewicht {
+  right: 0%;
+  top: 45%;
+  width: 48%;
+}
+
+.pos-alter {
+  right: 0%;
+  top: 60%;
+  width: 48%;
+}
+
+.pos-speed {
+  right: 0%;
+  top: 75%;
+  width: 48%;
+}
+
+.pos-ruf {
+  left: 33%;
+  top: 84%;
+  width: 42%;
+}
+
+.kartenbox {
+  margin: -8px 0 0;
+
+  min-height: 0;
+
+  display: grid;
+
+  grid-template-rows:
+    1fr
+    auto;
+}
+
+.karte {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: var(--radius-klein);
+
+  background: var(--karte-bg);
+
+  padding: 4px;
+}
+
+.kartenbox figcaption {
+  text-align: center;
+
+  color: var(--muted);
+
+  font-weight: 700;
+}
+
+.kopf {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+h1 {
+  margin: 0;
+
+  color: var(--text);
+
+  line-height: .9;
+
+  letter-spacing: -2px;
+
+  font-size:
+    clamp(46px, 5.3vw, 86px);
+}
+
+#nameLatein {
+  margin-top: 10px;
+
+  color: var(--muted);
+
+  font-style: italic;
+
+  font-size:
+    clamp(20px, 2vw, 32px);
+}
+
+.nice {
+  background: var(--nice-bg);
+
+  border-left:
+    8px solid
+    var(--gruen);
+
+  border-radius: var(--radius-mittel);
+
+  padding: 12px 18px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: var(--orange);
+
+  color: var(--text-hell);
+
+  border-radius: var(--radius-rund);
+
+  padding: .5em .8em;
+
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .tafel {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .bildbereich {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .fakt-rund {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .fakt-icon {
+    width: 23px;
+    height: 23px;
+  }
+}
