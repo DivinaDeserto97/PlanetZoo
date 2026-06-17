@@ -1,0 +1,11 @@
+[
+  { "code": "NE", "nameDeutsch": "Nicht bewertet", "nameEnglisch": "Not Evaluated", "icon": "❔" },
+  { "code": "DD", "nameDeutsch": "Ungenügende Datengrundlage", "nameEnglisch": "Data Deficient", "icon": "📊" },
+  { "code": "LC", "nameDeutsch": "Nicht gefährdet", "nameEnglisch": "Least Concern", "icon": "✅" },
+  { "code": "NT", "nameDeutsch": "Potenziell gefährdet", "nameEnglisch": "Near Threatened", "icon": "⚠️" },
+  { "code": "VU", "nameDeutsch": "Gefährdet", "nameEnglisch": "Vulnerable", "icon": "🟡" },
+  { "code": "EN", "nameDeutsch": "Stark gefährdet", "nameEnglisch": "Endangered", "icon": "🟠" },
+  { "code": "CR", "nameDeutsch": "Vom Aussterben bedroht", "nameEnglisch": "Critically Endangered", "icon": "🔴" },
+  { "code": "EW", "nameDeutsch": "In der Wildnis ausgestorben", "nameEnglisch": "Extinct in the Wild", "icon": "🏞️" },
+  { "code": "EX", "nameDeutsch": "Ausgestorben", "nameEnglisch": "Extinct", "icon": "💀" }
+]

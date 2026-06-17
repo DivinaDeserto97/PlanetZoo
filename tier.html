@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infotafel Tier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="tafel" id="tafel">
+    <a href="index.html" class="zurueck">Zurück</a>
+    <div class="status" id="iucnBadge"></div>
+
+    <section class="bildbereich">
+      <div class="tierzone">
+        <div class="tierkreis">
+          <img id="tierBild" src="" alt="" />
+        </div>
+
+        <div class="fakten-rund" id="faktenRund"></div>
+      </div>
+
+      <figure class="kartenbox">
+        <img class="karte" id="kartenBild" src="" alt="" />
+        <figcaption>Verbreitung</figcaption>
+      </figure>
+    </section>
+
+    <section class="textbereich">
+      <header class="kopf">
+        <div>
+          <h1 id="nameDeutsch"></h1>
+          <p id="nameLatein"></p>
+        </div>
+      </header>
+
+      <section class="block intro">
+        <h2>Was ist das?</h2>
+        <p id="kurztext"></p>
+      </section>
+
+      <section class="block beschreibung">
+        <h2>Beschreibung</h2>
+        <p id="beschreibung"></p>
+      </section>
+
+      <section class="nice">
+        <h2>Nice to know</h2>
+        <p id="niceToKnow"></p>
+      </section>
+
+      <section class="leisten">
+        <div>
+          <h3 id="nahrungTitel">Nahrung</h3>
+          <div class="chips" id="nahrung"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

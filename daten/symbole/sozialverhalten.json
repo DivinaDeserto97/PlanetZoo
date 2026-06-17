@@ -1,0 +1,46 @@
+[
+  {
+    "id": "einzelgaenger",
+    "name": "Einzelgänger",
+    "icon": "👥",
+    "unterformen": [],
+    "hierarchien": []
+  },
+  {
+    "id": "paare",
+    "name": "Paare",
+    "icon": "👥",
+    "unterformen": [],
+    "hierarchien": [
+      "Paarbindung",
+      "Brutpaar"
+    ]
+  },
+  {
+    "id": "gruppen",
+    "name": "Gruppen",
+    "icon": "👥",
+    "unterformen": [
+      "Trupps",
+      "Kolonie",
+      "Rudel",
+      "Herde",
+      "Schwarm",
+      "Schule",
+      "Rotte",
+      "Clan",
+      "Harem",
+      "Familienverband"
+    ],
+    "hierarchien": [
+      "Alphapaar",
+      "Matriarchat",
+      "Patriarchat",
+      "Dominanzhierarchie",
+      "Rangordnung",
+      "Leittier",
+      "Leitkuh",
+      "Leithengst"
+    ]
+  }
+]

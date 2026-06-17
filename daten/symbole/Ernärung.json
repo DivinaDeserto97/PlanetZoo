@@ -1,0 +1,50 @@
+{
+  "ernaehrungsarten": [
+    {
+      "id": "pflanzenfresser",
+      "name": "Pflanzenfresser",
+      "icon": "🌿"
+    },
+    {
+      "id": "fleischfresser",
+      "name": "Fleischfresser",
+      "icon": "🥩"
+    },
+    {
+      "id": "allesfresser",
+      "name": "Allesfresser",
+      "icon": "🍎🥩"
+    },
+    {
+      "id": "aasfresser",
+      "name": "Aasfresser",
+      "icon": "🦴"
+    }
+  ],
+  "trophieebenen": [
+    {
+      "id": "produzent",
+      "name": "Produzent"
+    },
+    {
+      "id": "primaerkonsument",
+      "name": "Primärkonsument"
+    },
+    {
+      "id": "sekundaerkonsument",
+      "name": "Sekundärkonsument"
+    },
+    {
+      "id": "tertiaerkonsument",
+      "name": "Tertiärkonsument"
+    },
+    {
+      "id": "quartaerkonsument",
+      "name": "Quartärkonsument"
+    },
+    {
+      "id": "endkonsument",
+      "name": "Endkonsument"
+    }
+  ]
+}

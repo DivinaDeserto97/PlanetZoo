@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Menschenartige",
+    "wissenschaftlich": "Hominoidea",
+    "parentDatei": "15_unterordnungen.json",
+    "parentId": 3
+  },
+  {
+    "id": 2,
+    "deutsch": "Kapuzinerartige",
+    "wissenschaftlich": "Ceboidea",
+    "parentDatei": "15_unterordnungen.json",
+    "parentId": 3
+  }
+]

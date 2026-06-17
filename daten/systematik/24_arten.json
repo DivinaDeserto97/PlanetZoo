@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Sekretär",
+    "wissenschaftlich": "Sagittarius serpentarius",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Steinadler",
+    "wissenschaftlich": "Aquila chrysaetos",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 2
+  },
+  {
+    "id": 3,
+    "deutsch": "Goldenes Löwenäffchen",
+    "wissenschaftlich": "Leontopithecus rosalia",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 3
+  },
+  {
+    "id": 4,
+    "deutsch": "Blau-Goldener Füsilier",
+    "wissenschaftlich": "Caesio caerulaurea",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 4
+  },
+  {
+    "id": 5,
+    "deutsch": "Großer Hammerhai",
+    "wissenschaftlich": "Sphyrna mokarran",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 5
+  },
+  {
+    "id": 6,
+    "deutsch": "Langflossen-Fledermausfisch",
+    "wissenschaftlich": "Platax teira",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 6
+  },
+  {
+    "id": 7,
+    "deutsch": "Axolotl",
+    "wissenschaftlich": "Ambystoma mexicanum",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 7
+  },
+  {
+    "id": 8,
+    "deutsch": "Gemeiner Schimpanse",
+    "wissenschaftlich": "Pan troglodytes",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 8
+  },
+  {
+    "id": 9,
+    "deutsch": "Echte Karettschildkröte",
+    "wissenschaftlich": "Eretmochelys imbricata",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 9
+  },
+  {
+    "id": 10,
+    "deutsch": "Afrikanischer Elefant",
+    "wissenschaftlich": "Loxodonta africana",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 10
+  },
+  {
+    "id": 11,
+    "deutsch": "Schwarzspitzen-Riffhai",
+    "wissenschaftlich": "Carcharhinus melanopterus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 11
+  },
+  {
+    "id": 12,
+    "deutsch": "Riesentukan / Toco-Tukan",
+    "wissenschaftlich": "Ramphastos toco",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 12
+  },
+  {
+    "id": 13,
+    "deutsch": "Leistenkrokodil",
+    "wissenschaftlich": "Crocodylus porosus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 13
+  },
+  {
+    "id": 14,
+    "deutsch": "Mondfisch",
+    "wissenschaftlich": "Mola mola",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 14
+  },
+  {
+    "id": 15,
+    "deutsch": "Streifengnu / Blaues Gnu",
+    "wissenschaftlich": "Connochaetes taurinus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 15
+  },
+  {
+    "id": 16,
+    "deutsch": "Tiger",
+    "wissenschaftlich": "Panthera tigris",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 16
+  },
+  {
+    "id": 17,
+    "deutsch": "Gefleckter Adlerrochen",
+    "wissenschaftlich": "Aetobatus narinari",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 17
+  },
+  {
+    "id": 18,
+    "deutsch": "Steppenzebra",
+    "wissenschaftlich": "Equus quagga",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 18
+  },
+  {
+    "id": 19,
+    "deutsch": "Löwe",
+    "wissenschaftlich": "Panthera leo",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 16
+  },
+  {
+    "id": 20,
+    "deutsch": "Gelber Segelflossendoktorfisch",
+    "wissenschaftlich": "Zebrasoma flavescens",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 19
+  },
+  {
+    "id": 21,
+    "deutsch": "Seeadler",
+    "wissenschaftlich": "Haliaeetus albicilla",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 20
+  },
+  {
+    "id": 22,
+    "deutsch": "Goodfellow-Baumkänguru",
+    "wissenschaftlich": "Dendrolagus goodfellowi",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 21
+  },
+  {
+    "id": 23,
+    "deutsch": "Wimpel-Falterfisch",
+    "wissenschaftlich": "Heniochus acuminatus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 22
+  },
+  {
+    "id": 24,
+    "deutsch": "Wolf / Grauwolf",
+    "wissenschaftlich": "Canis lupus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 23
+  },
+  {
+    "id": 25,
+    "deutsch": "Massai-Giraffe",
+    "wissenschaftlich": "Giraffa tippelskirchi",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 24
+  },
+  {
+    "id": 26,
+    "deutsch": "Rothirsch",
+    "wissenschaftlich": "Cervus elaphus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 25
+  },
+  {
+    "id": 27,
+    "deutsch": "Europäischer Biber",
+    "wissenschaftlich": "Castor fiber",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 26
+  },
+  {
+    "id": 28,
+    "deutsch": "Schwarztupfen-Kugelfisch",
+    "wissenschaftlich": "Arothron nigropunctatus",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 27
+  },
+  {
+    "id": 29,
+    "deutsch": "Doppelhornvogel",
+    "wissenschaftlich": "Buceros bicornis",
+    "parentDatei": "22_gattungen.json",
+    "parentId": 28
+  }
+]

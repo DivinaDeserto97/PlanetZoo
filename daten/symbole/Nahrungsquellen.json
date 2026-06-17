@@ -1,0 +1,58 @@
+[
+  { "id": "algen", "name": "Algen", "icon": "🟢" },
+  { "id": "sprossen", "name": "Sprossen, Triebe, Knospen", "icon": "🌱" },
+  { "id": "wasserpflanzen", "name": "Wasserpflanzen", "icon": "🌿" },
+  { "id": "flechten", "name": "Flechten, Moos", "icon": "🍀" },
+  { "id": "blaetter", "name": "Blätter, Knospen, Zweige", "icon": "🌳" },
+  { "id": "pflanzenmaterial", "name": "Verrottendes Pflanzenmaterial", "icon": "🍂" },
+  { "id": "eukalyptus", "name": "Eukalyptusblätter", "icon": "🌿" },
+
+  { "id": "graeser", "name": "Gräser", "icon": "🌾" },
+  { "id": "kakteen", "name": "Kakteen, Sukkulenten", "icon": "🌵" },
+  { "id": "bambus", "name": "Bambus", "icon": "🎋" },
+  { "id": "rinde", "name": "Rinde", "icon": "🪵" },
+  { "id": "holz", "name": "Holz", "icon": "🪵" },
+  { "id": "pflanzensaft", "name": "Pflanzensaft", "icon": "💧" },
+  { "id": "zapfen", "name": "Koniferen, Wurzeln, Zapfen", "icon": "🌲" },
+
+  { "id": "pilze", "name": "Pilze", "icon": "🍄" },
+  { "id": "zapfenfruechte", "name": "Zapfen", "icon": "🌰" },
+  { "id": "samen", "name": "Kerne, Samen", "icon": "🌱" },
+  { "id": "nuesse", "name": "Nüsse", "icon": "🥥" },
+  { "id": "fruechte", "name": "Früchte, Beeren", "icon": "🍎" },
+  { "id": "blueten", "name": "Blüten, Pollen, Nektar", "icon": "🌸" },
+  { "id": "honig", "name": "Honig", "icon": "🍯" },
+
+  { "id": "korallen", "name": "Korallen", "icon": "🪸" },
+  { "id": "stachelhaeuter", "name": "Stachelhäuter", "icon": "🦔" },
+  { "id": "quallen", "name": "Quallen", "icon": "🪼" },
+  { "id": "ameisen", "name": "Ameisen, Termiten", "icon": "🐜" },
+  { "id": "insekten", "name": "Insekten, Spinnen", "icon": "🕷️" },
+  { "id": "zooplankton", "name": "Zooplankton", "icon": "🦐" },
+  { "id": "krustentiere", "name": "Krustentiere", "icon": "🦀" },
+
+  { "id": "muscheln", "name": "Muscheln", "icon": "🐚" },
+  { "id": "wuermer", "name": "Schnecken, Würmer", "icon": "🪱" },
+  { "id": "kopffuesser", "name": "Kopffüßer", "icon": "🐙" },
+  { "id": "fische", "name": "Fische", "icon": "🐟" },
+  { "id": "rochen", "name": "Rochen", "icon": "🐡" },
+  { "id": "amphibien", "name": "Amphibien", "icon": "🐸" },
+
+  { "id": "schlangen", "name": "Echsen, Schlangen", "icon": "🦎" },
+  { "id": "meeresschildkroeten", "name": "Meeresschildkröten", "icon": "🐢" },
+  { "id": "eier", "name": "Eier, Nestlinge", "icon": "🥚" },
+  { "id": "voegel", "name": "Vögel", "icon": "🐦" },
+  { "id": "pinguine", "name": "Pinguine", "icon": "🐧" },
+  { "id": "kleinsaeuger", "name": "Kleinsäuger", "icon": "🐭" },
+  { "id": "faultiere", "name": "Faultiere", "icon": "🦥" },
+
+  { "id": "affen", "name": "Affen, Primaten", "icon": "🐒" },
+  { "id": "grosssaeuger", "name": "Großsäuger", "icon": "🦌" },
+  { "id": "robben", "name": "Seehunde, Robben", "icon": "🦭" },
+  { "id": "meeressaeuger", "name": "Meeressäuger", "icon": "🐬" },
+  { "id": "aas", "name": "Aas", "icon": "🦴" },
+  { "id": "knochen", "name": "Knochen", "icon": "☠️" },
+  { "id": "parasiten", "name": "Parasiten", "icon": "🕷️" },
+
+  { "id": "blut", "name": "Körpersäfte, Blut, Hautgewebe", "icon": "🩸" }
+]

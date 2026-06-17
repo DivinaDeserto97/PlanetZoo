@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "datei": "01_domaenen.json",
+    "deutsch": "Domäne"
+  },
+  {
+    "id": 2,
+    "datei": "02_unterdomaenen.json",
+    "deutsch": "Unterdomäne"
+  },
+  {
+    "id": 3,
+    "datei": "03_reiche.json",
+    "deutsch": "Reich"
+  },
+  {
+    "id": 4,
+    "datei": "04_unterreiche.json",
+    "deutsch": "Unterreich"
+  },
+  {
+    "id": 5,
+    "datei": "05_ueberstaemme.json",
+    "deutsch": "Überstamm"
+  },
+  {
+    "id": 6,
+    "datei": "06_staemme.json",
+    "deutsch": "Stamm"
+  },
+  {
+    "id": 7,
+    "datei": "07_unterstaemme.json",
+    "deutsch": "Unterstamm"
+  },
+  {
+    "id": 8,
+    "datei": "08_infrastaemme.json",
+    "deutsch": "Infrastamm"
+  },
+  {
+    "id": 9,
+    "datei": "09_ueberklassen.json",
+    "deutsch": "Überklasse"
+  },
+  {
+    "id": 10,
+    "datei": "10_klassen.json",
+    "deutsch": "Klasse"
+  },
+  {
+    "id": 11,
+    "datei": "11_unterklassen.json",
+    "deutsch": "Unterklasse"
+  },
+  {
+    "id": 12,
+    "datei": "12_infraklassen.json",
+    "deutsch": "Infraklasse"
+  },
+  {
+    "id": 13,
+    "datei": "13_ueberordnungen.json",
+    "deutsch": "Überordnung"
+  },
+  {
+    "id": 14,
+    "datei": "14_ordnungen.json",
+    "deutsch": "Ordnung"
+  },
+  {
+    "id": 15,
+    "datei": "15_unterordnungen.json",
+    "deutsch": "Unterordnung"
+  },
+  {
+    "id": 16,
+    "datei": "16_infraordnungen.json",
+    "deutsch": "Infraordnung"
+  },
+  {
+    "id": 17,
+    "datei": "17_ueberfamilien.json",
+    "deutsch": "Überfamilie"
+  },
+  {
+    "id": 18,
+    "datei": "18_familien.json",
+    "deutsch": "Familie"
+  },
+  {
+    "id": 19,
+    "datei": "19_unterfamilien.json",
+    "deutsch": "Unterfamilie"
+  },
+  {
+    "id": 20,
+    "datei": "20_triben.json",
+    "deutsch": "Tribus"
+  },
+  {
+    "id": 21,
+    "datei": "21_untertriben.json",
+    "deutsch": "Untertribus"
+  },
+  {
+    "id": 22,
+    "datei": "22_gattungen.json",
+    "deutsch": "Gattung"
+  },
+  {
+    "id": 23,
+    "datei": "23_untergattungen.json",
+    "deutsch": "Untergattung"
+  },
+  {
+    "id": 24,
+    "datei": "24_arten.json",
+    "deutsch": "Art"
+  },
+  {
+    "id": 25,
+    "datei": "25_unterarten.json",
+    "deutsch": "Unterart"
+  },
+  {
+    "id": 26,
+    "datei": "26_varietaeten.json",
+    "deutsch": "Varietät"
+  },
+  {
+    "id": 27,
+    "datei": "27_formen.json",
+    "deutsch": "Form"
+  }
+]

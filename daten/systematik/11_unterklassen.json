@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Lebendgebärende Säugetiere",
+    "wissenschaftlich": "Theria",
+    "parentDatei": "10_klassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Plattenkiemer",
+    "wissenschaftlich": "Elasmobranchii",
+    "parentDatei": "10_klassen.json",
+    "parentId": 5
+  },
+  {
+    "id": 3,
+    "deutsch": "Neuflosser",
+    "wissenschaftlich": "Neopterygii",
+    "parentDatei": "10_klassen.json",
+    "parentId": 6
+  }
+]

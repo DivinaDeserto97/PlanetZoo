@@ -1,0 +1,52 @@
+[
+  {
+    "id": "sozialverhalten",
+    "label": "Sozialverhalten",
+    "icon": "👥"
+  },
+  {
+    "id": "aktivitaet",
+    "label": "Aktivität",
+    "icon": "☀️"
+  },
+  {
+    "id": "biome",
+    "label": "Biome",
+    "icon": "🌲"
+  },
+  {
+    "id": "lebensraum",
+    "label": "Lebensraum",
+    "icon": "🌲"
+  },
+  {
+    "id": "groesse",
+    "label": "Größe",
+    "icon": "📏"
+  },
+  {
+    "id": "laenge",
+    "label": "Länge",
+    "icon": "📏"
+  },
+  {
+    "id": "fluegelspannweite",
+    "label": "Flügelspannweite",
+    "icon": "🪽"
+  },
+  {
+    "id": "gewicht",
+    "label": "Gewicht",
+    "icon": "⚖️"
+  },
+  {
+    "id": "alter",
+    "label": "Alter",
+    "icon": "⏳"
+  },
+  {
+    "id": "geschwindigkeit",
+    "label": "Geschwindigkeit",
+    "icon": "💨"
+  }
+]

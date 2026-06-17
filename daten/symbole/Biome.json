@@ -1,0 +1,37 @@
+[
+  {
+    "id": "regenwald",
+    "name": "Regenwald",
+    "icon": "🌴"
+  },
+  {
+    "id": "bergwaldgebiet",
+    "name": "Bergwaldgebiet",
+    "icon": "⛰️"
+  },
+  {
+    "id": "buschwald",
+    "name": "Buschwald",
+    "icon": "🌳"
+  },
+  {
+    "id": "trockenwald",
+    "name": "Trockenwald",
+    "icon": "🌵"
+  },
+  {
+    "id": "grasland",
+    "name": "Grasland",
+    "icon": "🌾"
+  },
+  {
+    "id": "steppe",
+    "name": "Steppe",
+    "icon": "🌾"
+  },
+  {
+    "id": "landwirtschaft",
+    "name": "Landwirtschaft",
+    "icon": "🚜"
+  }
+]

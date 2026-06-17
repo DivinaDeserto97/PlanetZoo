@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tagaktiv",
+    "name": "Tagaktiv",
+    "icon": "☀️"
+  },
+  {
+    "id": "nachtaktiv",
+    "name": "Nachtaktiv",
+    "icon": "🌙"
+  },
+  {
+    "id": "daemmerungsaktiv",
+    "name": "Dämmerungsaktiv",
+    "icon": "🌗"
+  }
+]

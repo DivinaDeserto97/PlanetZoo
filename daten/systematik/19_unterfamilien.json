@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Großkatzen",
+    "wissenschaftlich": "Pantherinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 16
+  },
+  {
+    "id": 2,
+    "deutsch": "Eigentliche Hunde",
+    "wissenschaftlich": "Caninae",
+    "parentDatei": "18_familien.json",
+    "parentId": 23
+  },
+  {
+    "id": 3,
+    "deutsch": "Homininae",
+    "wissenschaftlich": "Homininae",
+    "parentDatei": "18_familien.json",
+    "parentId": 8
+  },
+  {
+    "id": 4,
+    "deutsch": "Kuhantilopen",
+    "wissenschaftlich": "Alcelaphinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 15
+  },
+  {
+    "id": 5,
+    "deutsch": "Giraffen",
+    "wissenschaftlich": "Giraffinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 24
+  },
+  {
+    "id": 6,
+    "deutsch": "Echte Hirsche",
+    "wissenschaftlich": "Cervinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 25
+  },
+  {
+    "id": 7,
+    "deutsch": "Kängurus",
+    "wissenschaftlich": "Macropodinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 21
+  },
+  {
+    "id": 8,
+    "deutsch": "Echte Adler",
+    "wissenschaftlich": "Aquilinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 2
+  },
+  {
+    "id": 9,
+    "deutsch": "Seeadler",
+    "wissenschaftlich": "Haliaeetinae",
+    "parentDatei": "18_familien.json",
+    "parentId": 2
+  }
+]

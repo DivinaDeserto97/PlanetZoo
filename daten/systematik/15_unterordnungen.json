@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Katzenartige",
+    "wissenschaftlich": "Feliformia",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Hundeartige",
+    "wissenschaftlich": "Caniformia",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 1
+  },
+  {
+    "id": 3,
+    "deutsch": "Trockennasenprimaten",
+    "wissenschaftlich": "Haplorhini",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 2
+  },
+  {
+    "id": 4,
+    "deutsch": "Wiederkäuer",
+    "wissenschaftlich": "Ruminantia",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 4
+  },
+  {
+    "id": 5,
+    "deutsch": "Pferdeverwandte",
+    "wissenschaftlich": "Hippomorpha",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 5
+  },
+  {
+    "id": 6,
+    "deutsch": "Biberverwandte",
+    "wissenschaftlich": "Castorimorpha",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 6
+  },
+  {
+    "id": 7,
+    "deutsch": "Känguruverwandte",
+    "wissenschaftlich": "Macropodiformes",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 7
+  },
+  {
+    "id": 8,
+    "deutsch": "Halsberger-Schildkröten",
+    "wissenschaftlich": "Cryptodira",
+    "parentDatei": "14_ordnungen.json",
+    "parentId": 12
+  }
+]

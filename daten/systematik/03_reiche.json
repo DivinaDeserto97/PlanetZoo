@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Tiere",
+    "wissenschaftlich": "Animalia",
+    "parentDatei": "01_domaenen.json",
+    "parentId": 1
+  }
+]

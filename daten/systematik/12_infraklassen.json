@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Plazentatiere",
+    "wissenschaftlich": "Eutheria",
+    "parentDatei": "11_unterklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Beuteltiere",
+    "wissenschaftlich": "Marsupialia",
+    "parentDatei": "11_unterklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 3,
+    "deutsch": "Echte Knochenfische",
+    "wissenschaftlich": "Teleostei",
+    "parentDatei": "11_unterklassen.json",
+    "parentId": 3
+  }
+]

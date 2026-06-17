@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Säugetiere",
+    "wissenschaftlich": "Mammalia",
+    "parentDatei": "09_ueberklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Vögel",
+    "wissenschaftlich": "Aves",
+    "parentDatei": "09_ueberklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 3,
+    "deutsch": "Reptilien",
+    "wissenschaftlich": "Reptilia",
+    "parentDatei": "09_ueberklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 4,
+    "deutsch": "Amphibien",
+    "wissenschaftlich": "Amphibia",
+    "parentDatei": "09_ueberklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 5,
+    "deutsch": "Knorpelfische",
+    "wissenschaftlich": "Chondrichthyes",
+    "parentDatei": "08_infrastaemme.json",
+    "parentId": 1
+  },
+  {
+    "id": 6,
+    "deutsch": "Strahlenflosser",
+    "wissenschaftlich": "Actinopterygii",
+    "parentDatei": "08_infrastaemme.json",
+    "parentId": 1,
+    "bemerkung": "Knochenfische im engeren Sinne der aktuellen Tierliste"
+  }
+]

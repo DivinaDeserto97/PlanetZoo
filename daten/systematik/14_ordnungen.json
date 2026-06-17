@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "deutsch": "Raubtiere",
+    "wissenschaftlich": "Carnivora",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 2,
+    "deutsch": "Primaten",
+    "wissenschaftlich": "Primates",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 3,
+    "deutsch": "Rüsseltiere",
+    "wissenschaftlich": "Proboscidea",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 4,
+    "deutsch": "Paarhufer",
+    "wissenschaftlich": "Artiodactyla",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 5,
+    "deutsch": "Unpaarhufer",
+    "wissenschaftlich": "Perissodactyla",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 6,
+    "deutsch": "Nagetiere",
+    "wissenschaftlich": "Rodentia",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 1
+  },
+  {
+    "id": 7,
+    "deutsch": "Diprotodontia",
+    "wissenschaftlich": "Diprotodontia",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 8,
+    "deutsch": "Greifvögel",
+    "wissenschaftlich": "Accipitriformes",
+    "parentDatei": "10_klassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 9,
+    "deutsch": "Hornvögel und Hopfe",
+    "wissenschaftlich": "Bucerotiformes",
+    "parentDatei": "10_klassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 10,
+    "deutsch": "Spechtvögel",
+    "wissenschaftlich": "Piciformes",
+    "parentDatei": "10_klassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 11,
+    "deutsch": "Krokodile",
+    "wissenschaftlich": "Crocodylia",
+    "parentDatei": "10_klassen.json",
+    "parentId": 3
+  },
+  {
+    "id": 12,
+    "deutsch": "Schildkröten",
+    "wissenschaftlich": "Testudines",
+    "parentDatei": "10_klassen.json",
+    "parentId": 3
+  },
+  {
+    "id": 13,
+    "deutsch": "Schwanzlurche",
+    "wissenschaftlich": "Urodela",
+    "parentDatei": "10_klassen.json",
+    "parentId": 4
+  },
+  {
+    "id": 14,
+    "deutsch": "Grundhaie",
+    "wissenschaftlich": "Carcharhiniformes",
+    "parentDatei": "11_unterklassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 15,
+    "deutsch": "Stechrochenartige",
+    "wissenschaftlich": "Myliobatiformes",
+    "parentDatei": "11_unterklassen.json",
+    "parentId": 2
+  },
+  {
+    "id": 16,
+    "deutsch": "Barschartige",
+    "wissenschaftlich": "Perciformes",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 3,
+    "bemerkung": "breite/traditionelle Einordnung für mehrere Rifffische"
+  },
+  {
+    "id": 17,
+    "deutsch": "Doktorfischartige",
+    "wissenschaftlich": "Acanthuriformes",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 3
+  },
+  {
+    "id": 18,
+    "deutsch": "Kugelfischverwandte",
+    "wissenschaftlich": "Tetraodontiformes",
+    "parentDatei": "12_infraklassen.json",
+    "parentId": 3
+  }
+]
