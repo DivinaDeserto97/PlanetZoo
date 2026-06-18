@@ -30,6 +30,13 @@ const labelKeyMap = {
   "Geräusche": "ruf"
 };
 
+const nurHoverKeys = [
+  "sozialverhalten",
+  "aktivitaet",
+  "regionen",
+  "ruf"
+];
+
 export function renderFaktenRund(tier, symbole) {
   const box = document.getElementById("faktenRund");
   if (!box) return;
@@ -42,33 +49,39 @@ export function renderFaktenRund(tier, symbole) {
     const div = document.createElement("div");
     div.className = `fakt-rund ${positionsMap[fakt.key] || ""}`;
 
+    const icons = document.createElement("span");
+    icons.className = "fakt-icons";
+
     if (fakt.typ === "audio") {
-      div.innerHTML = `
-        <button class="fakt-icon fakt-button" type="button" title="${fakt.tooltip || fakt.label}">
-          ${fakt.icon || "🔊"}
-        </button>
-        <span class="fakt-text">
-          <strong>${fakt.label}</strong>
-          <em>${fakt.wert}</em>
-        </span>
-      `;
-
-      const button = div.querySelector("button");
+      const button = document.createElement("button");
+      button.className = "fakt-icon fakt-button";
+      button.type = "button";
+      button.title = `${fakt.label}: ${fakt.wert}`;
+      button.textContent = fakt.icon || "🔊";
       button.addEventListener("click", () => spieleAudio(fakt.audio));
-
-      box.appendChild(div);
-      return;
+      icons.appendChild(button);
+    } else {
+      fakt.icons.forEach(iconData => {
+        const icon = document.createElement("span");
+        icon.className = "fakt-icon";
+        icon.title = iconData.title;
+        icon.textContent = iconData.icon;
+        icons.appendChild(icon);
+      });
     }
 
-    div.innerHTML = `
-      <span class="fakt-icon" title="${fakt.tooltip || fakt.label}">
-        ${fakt.icon || "•"}
-      </span>
-      <span class="fakt-text">
-        <strong>${fakt.label}</strong>
-        <em>${fakt.wert}</em>
-      </span>
-    `;
+    div.appendChild(icons);
+
+    if (!nurHoverKeys.includes(fakt.key) && fakt.key !== "biome") {
+      const text = document.createElement("span");
+      text.className = "fakt-text";
+
+      const wert = document.createElement("em");
+      wert.textContent = fakt.wert;
+
+      text.appendChild(wert);
+      div.appendChild(text);
+    }
 
     box.appendChild(div);
   });
@@ -115,9 +128,9 @@ function baueFaktAusSteckbrief(fakt, symbole) {
       label: fakt.label || "Ruf",
       wert: fakt.wert || "Abspielen",
       icon: "🔊",
-      tooltip: fakt.wert || "Tierlaut abspielen",
       typ: "audio",
-      audio: fakt.audio
+      audio: fakt.audio,
+      icons: []
     };
   }
 
@@ -126,32 +139,38 @@ function baueFaktAusSteckbrief(fakt, symbole) {
       key,
       label: fakt.label,
       wert: fakt.wert,
-      icon: "👥",
-      tooltip: tooltipAusRefs(symbole.sozialverhalten, ref) || fakt.wert
+      icons: [
+        {
+          icon: "👥",
+          title: `${fakt.label}: ${fakt.wert}`
+        }
+      ]
     };
   }
 
   if (key === "aktivitaet") {
-    const icons = iconsAusRefs(symbole.aktivitaet, ref);
     return {
       key,
       label: fakt.label,
       wert: fakt.wert,
-      icon: icons || "☀️",
-      tooltip: tooltipAusRefs(symbole.aktivitaet, ref) || fakt.wert
+      icons: iconsAusRefs(symbole.aktivitaet, ref, fakt.label, fakt.wert, "☀️")
     };
   }
 
   if (key === "biome") {
-    const icons = iconsAusRefs(symbole.biome, ref);
-    return {
-      key,
-      label: fakt.label,
-      wert: fakt.wert,
-      icon: icons || "🌲",
-      tooltip: tooltipAusRefs(symbole.biome, ref) || fakt.wert
-    };
-  }
+  return {
+    key,
+    label: fakt.label,
+    wert: fakt.wert,
+    icons: [
+      {
+        icon: "🌲",
+        title: "Biome"
+      },
+      ...iconsAusRefs(symbole.biome, ref, fakt.label, fakt.wert, "🌲")
+    ]
+  };
+}
 
   const eigenschaft = findeNachId(symbole.eigenschaften, ref)
     || findeSymbol(symbole.eigenschaften, fakt.label);
@@ -160,38 +179,44 @@ function baueFaktAusSteckbrief(fakt, symbole) {
     key: eigenschaft?.id || key,
     label: fakt.label,
     wert: fakt.wert,
-    icon: eigenschaft?.icon || "•",
-    tooltip: eigenschaft?.label || fakt.label
+    icons: [
+      {
+        icon: eigenschaft?.icon || "•",
+        title: eigenschaft?.label || fakt.label
+      }
+    ]
   };
 }
 
 function baueListenFakt(key, label, ids, liste, fallbackIcon) {
-  const namen = ids.map(id => findeNachId(liste, id)?.name || id);
-  const icons = ids.map(id => findeNachId(liste, id)?.icon).filter(Boolean);
-
   return {
     key,
     label,
-    wert: namen.join(", "),
-    icon: icons[0] || fallbackIcon,
-    tooltip: namen.join(", ")
+    wert: ids.join(", "),
+    icons: iconsAusRefs(liste, ids, label, ids.join(", "), fallbackIcon)
   };
 }
 
-function iconsAusRefs(liste, refs) {
+function iconsAusRefs(liste, refs, label, fallbackText, fallbackIcon) {
   if (!Array.isArray(refs)) refs = refs ? [refs] : [];
 
-  return refs
-    .map(ref => findeNachId(liste, ref)?.icon)
-    .filter(Boolean)
-    .join("");
-}
+  const icons = refs.map(ref => {
+    const eintrag = findeNachId(liste, ref);
 
-function tooltipAusRefs(liste, refs) {
-  if (!Array.isArray(refs)) refs = refs ? [refs] : [];
+    return {
+      icon: eintrag?.icon || fallbackIcon,
+      title: eintrag
+        ? `${label}: ${eintrag.name}`
+        : `${label}: ${fallbackText}`
+    };
+  });
 
-  return refs
-    .map(ref => findeNachId(liste, ref)?.name)
-    .filter(Boolean)
-    .join(", ");
+  if (icons.length === 0) {
+    icons.push({
+      icon: fallbackIcon,
+      title: `${label}: ${fallbackText}`
+    });
+  }
+
+  return icons;
 }

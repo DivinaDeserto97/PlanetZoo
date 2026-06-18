@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planet Zoo Tiere</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+  <main class="index-seite">
+    <header class="index-kopf">
+      <h1>Planet Zoo Tiere</h1>
+      <p>Tierliste aus lebewesen.json, Tierdaten, Systematik, Biomen und Regionen.</p>
+    </header>
+
+    <section class="filter-box">
+      <input id="filterText" type="search" placeholder="Suche: Name, Latein, Familie, Ordnung..." />
+
+      <select id="filterKlasse">
+        <option value="">Alle Klassen</option>
+      </select>
+
+      <select id="filterOrdnung">
+        <option value="">Alle Ordnungen</option>
+      </select>
+
+      <select id="filterFamilie">
+        <option value="">Alle Familien</option>
+      </select>
+
+      <select id="filterBiome">
+        <option value="">Alle Biome</option>
+      </select>
+
+      <select id="filterRegion">
+        <option value="">Alle Regionen</option>
+      </select>
+    </section>
+
+    <section class="tabelle-box">
+      <table class="tier-tabelle">
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Wissenschaftlich</th>
+            <th>Gefährdung</th>
+            <th>Klasse</th>
+            <th>Ordnung</th>
+            <th>Familie</th>
+            <th>Biome</th>
+            <th>Region</th>
+          </tr>
+        </thead>
+        <tbody id="tierTabelle"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>
