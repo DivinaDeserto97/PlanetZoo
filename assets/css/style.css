@@ -442,3 +442,35 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.nice-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:12px;
+}
+
+.nice-pfeil{
+    border:none;
+    background:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.punkte{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:14px;
+}
+
+.punkt{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#bbb;
+}
+
+.punkt.aktiv{
+    background:var(--orange);
+}

@@ -3,8 +3,8 @@
   "nameDeutsch": "Afrikanischer Pinguin",
   "nameLatein": "Spheniscus demersus",
   "bedrohung": {
-    "code": "EN",
-    "text": "stark gefährdet"
+    "code": "CR",
+    "text": "vom Aussterben bedroht"
   },
   "bilder": {
     "tier": "assets/tiere/Spheniscus-demersus/Spheniscus-demersus.webp",
@@ -13,8 +13,8 @@
   "fakten": [
     {
       "label": "Sozialverhalten",
-      "wert": "Gruppen (Familienverband, dominantes Paar)",
-      "ref": ["gruppen"]
+      "wert": "Gruppen (Kolonie, Paare)",
+      "ref": ["gruppen", "paare"]
     },
     {
       "label": "Aktivität",
@@ -23,27 +23,27 @@
     },
     {
       "label": "Biome",
-      "wert": "Regenwald",
-      "ref": ["regenwald"]
+      "wert": "Küste/Inseln, Ozean, Wüste/Trockengebiet",
+      "ref": ["kuesteninseln", "ozean", "wueste_trockengebiet"]
     },
     {
       "label": "Länge",
-      "wert": "50–60 cm Körperlänge",
+      "wert": "60–68 cm Körperhöhe",
       "ref": "laenge"
     },
     {
       "label": "Gewicht",
-      "wert": "400–800 g",
+      "wert": "2,2–3,5 kg",
       "ref": "gewicht"
     },
     {
       "label": "Alter",
-      "wert": "bis 14 Jahre",
+      "wert": "bis ca. 27 Jahre",
       "ref": "alter"
     },
     {
       "label": "Geschwindigkeit",
-      "wert": "40 km/h",
+      "wert": "bis ca. 24 km/h schwimmend",
       "ref": "geschwindigkeit"
     },
     {
@@ -51,18 +51,19 @@
       "wert": "Ruf abspielen",
       "ref": "ruf",
       "typ": "audio",
-      "audio": "assets/tiere/Leontopithecus-rosalia/mp3/Leontopithecus_rosalia_V1962_03.mp3"
+      "audio": "assets/tiere/Spheniscus-demersus/mp3/Spheniscus-demersus.mp3"
     }
   ],
-  "zoogeografischeRegionen": ["neotropis"],
-  "nahrungart": "Allesfresser",
-  "nahrung": [
-    "Früchte, Beeren",
-    "Blüten, Pollen, Nektar",
-    "Pflanzensaft",
-    "Insekten, Spinnen"
-  ],
-  "nahrungRefs": ["fruechte", "blueten", "pflanzensaft", "insekten"],
-  "beschreibung": "Goldene Löwenäffchen leben in kleinen Familiengruppen mit zwei bis acht Tieren. Innerhalb der Gruppe bildet meist ein dominantes Paar den Kern. Die Tiere sind sehr sozial und teilen Nahrung mit anderen Gruppenmitgliedern.",
-  "niceToKnow": "Goldene Löwenäffchen gehören zu den wenigen Tierarten, bei denen erfolgreiche Nachzucht- und Wiederansiedlungsprogramme den Bestand deutlich verbessert haben."
+  "zoogeografischeRegionen": ["afrotropis"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Fische", "Tintenfische", "Krebstiere"],
+  "nahrungRefs": ["fische", "kopffuesser", "krebstiere"],
+  "beschreibung": "Der Afrikanische Pinguin ist ein flugunfähiger Seevogel der Küsten und Inseln Südafrikas und Namibias. Er besitzt einen schwarzen Rücken, eine weiße Bauchseite, eine schwarze Brustzeichnung und rosafarbene Hautpartien um die Augen, die bei der Thermoregulation helfen. Die Tiere leben in großen Kolonien und gehen zum Jagen ins Meer.",
+  "gutZuWissen": [
+    "Afrikanische Pinguine werden im Meer von Haien und Pelzrobben gejagt. An Land gehören Kelpmöwen, Mangusten, Ginsterkatzen sowie Hauskatzen und Hunde zu ihren Feinden.",
+    "Der Afrikanische Pinguin wird auch 'Jackass Penguin' genannt, weil sein Ruf an das Schreien eines Esels erinnert.",
+    "Pinguinkot, auch Guano genannt, ist ein äußerst wirksamer Dünger. Der Abbau von Guano zerstört jedoch Brutplätze und entzieht den Pinguinen wichtiges Nistmaterial.",
+    "Während der Mauser können Afrikanische Pinguine nicht jagen, da ihre neuen Federn noch nicht wasserdicht sind. Die Mauser dauert etwa drei Wochen, in denen sie fasten und bis zu 50 % ihres Körpergewichts verlieren.",
+    "Bis in die 1970er Jahre galten Eier des Afrikanischen Pinguins als Delikatesse. Das massenhafte Sammeln trug erheblich zum Rückgang der Art bei."
+  ]
 }

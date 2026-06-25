@@ -1,58 +1,67 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Infotafel Tier</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-</head>
-<body>
-  <main class="tafel" id="tafel">
-    <a href="index.html" class="zurueck">Zurück</a>
-    <div class="status" id="iucnBadge"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infotafel Tier</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <main class="tafel" id="tafel">
+      <a href="index.html" class="zurueck">Zurück</a>
+      <div class="status" id="iucnBadge"></div>
 
-    <section class="bildbereich">
-      <div class="tierzone">
-        <div class="tierkreis">
-          <img id="tierBild" src="" alt="" />
+      <section class="bildbereich">
+        <div class="tierzone">
+          <div class="tierkreis">
+            <img id="tierBild" src="" alt="" />
+          </div>
+
+          <div class="fakten-rund" id="faktenRund"></div>
         </div>
 
-        <div class="fakten-rund" id="faktenRund"></div>
-      </div>
-
-      <figure class="kartenbox">
-        <img class="karte" id="kartenBild" src="" alt="" />
-        <figcaption>Verbreitung</figcaption>
-      </figure>
-    </section>
-
-    <section class="textbereich">
-      <header class="kopf">
-        <div>
-          <h1 id="nameDeutsch"></h1>
-          <p id="nameLatein"></p>
-        </div>
-      </header>
-
-      <section class="block beschreibung">
-        <h2>Beschreibung</h2>
-        <p id="beschreibung"></p>
+        <figure class="kartenbox">
+          <img class="karte" id="kartenBild" src="" alt="" />
+          <figcaption>Verbreitung</figcaption>
+        </figure>
       </section>
 
-      <section class="nice">
-        <h2>Gut zu wissen</h2>
-        <p id="niceToKnow"></p>
-      </section>
+      <section class="textbereich">
+        <header class="kopf">
+          <div>
+            <h1 id="nameDeutsch"></h1>
+            <p id="nameLatein"></p>
+          </div>
+        </header>
 
-      <section class="leisten">
-        <div>
-          <h3 id="nahrungTitel">Nahrung</h3>
-          <div class="chips" id="nahrung"></div>
-        </div>
-      </section>
-    </section>
-  </main>
+        <section class="block beschreibung">
+          <h2>Beschreibung</h2>
+          <p id="beschreibung"></p>
+        </section>
 
-  <script type="module" src="./assets/js/app.js"></script>
-</body>
+        <section class="nice">
+          <div class="nice-header">
+            <button id="gutZurueck" class="nice-pfeil">◀</button>
+
+            <h2>Gut zu wissen</h2>
+
+            <button id="gutWeiter" class="nice-pfeil">▶</button>
+          </div>
+
+          <p id="gutZuWissenText"></p>
+
+          <div id="gutZuWissenPunkte" class="punkte"></div>
+        </section>
+
+        <section class="leisten">
+          <div>
+            <h3 id="nahrungTitel">Nahrung</h3>
+            <div class="chips" id="nahrung"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
 </html>

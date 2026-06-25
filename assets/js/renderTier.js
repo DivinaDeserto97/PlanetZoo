@@ -2,6 +2,8 @@ import { setBild, setText, setTitle } from "./dom.js";
 import { findeNachCode, findeNachId, findeSymbol } from "./lookup.js";
 import { renderFaktenRund } from "./renderFakten.js";
 
+let gutIndex = 0;
+
 export function renderTier(tier, symbole) {
   document.title = tier.nameDeutsch || "Tier";
 
@@ -20,7 +22,13 @@ function renderGefaehrdung(tier, symbole) {
   const eintrag = findeNachCode(symbole.gefaehrdung, code);
 
   setText("iucnBadge", code);
-  setTitle("iucnBadge", eintrag ? `${eintrag.nameDeutsch} (${eintrag.nameEnglisch})` : tier.bedrohung?.text);
+
+  setTitle(
+    "iucnBadge",
+    eintrag
+      ? `${eintrag.nameDeutsch} (${eintrag.nameEnglisch})`
+      : tier.bedrohung?.text
+  );
 }
 
 function renderBilder(tier) {
@@ -29,15 +37,79 @@ function renderBilder(tier) {
 }
 
 function renderTexte(tier) {
-  setText("kurztext", tier.kurztext);
   setText("beschreibung", tier.beschreibung);
-  setText("niceToKnow", tier.niceToKnow);
+
+  renderGutZuWissen(
+    Array.isArray(tier.gutZuWissen)
+      ? tier.gutZuWissen
+      : tier.gutZuWissen
+        ? [tier.gutZuWissen]
+        : []
+  );
+}
+
+function renderGutZuWissen(fakten) {
+  const text = document.getElementById("gutZuWissenText");
+  const punkte = document.getElementById("gutZuWissenPunkte");
+  const links = document.getElementById("gutZurueck");
+  const rechts = document.getElementById("gutWeiter");
+
+  if (!text || !punkte) return;
+
+  if (fakten.length === 0) {
+    text.textContent = "";
+    punkte.innerHTML = "";
+    return;
+  }
+
+  gutIndex = 0;
+
+  function anzeigen() {
+    text.textContent = fakten[gutIndex];
+
+    punkte.innerHTML = "";
+
+    fakten.forEach((_, i) => {
+      const punkt = document.createElement("span");
+      punkt.className = "punkt";
+
+      if (i === gutIndex) {
+        punkt.classList.add("aktiv");
+      }
+
+      punkte.appendChild(punkt);
+    });
+  }
+
+  links.onclick = () => {
+    gutIndex--;
+
+    if (gutIndex < 0) {
+      gutIndex = fakten.length - 1;
+    }
+
+    anzeigen();
+  };
+
+  rechts.onclick = () => {
+    gutIndex++;
+
+    if (gutIndex >= fakten.length) {
+      gutIndex = 0;
+    }
+
+    anzeigen();
+  };
+
+  anzeigen();
 }
 
 function renderNahrung(tier, symbole) {
   const ernaehrungsId = tier.ernaehrungsart || tier.nahrungart;
-  const ernaehrung = findeNachId(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId)
-    || findeSymbol(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId);
+
+  const ernaehrung =
+    findeNachId(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId) ||
+    findeSymbol(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId);
 
   const titel = ernaehrung
     ? `Nahrung – ${ernaehrung.icon || ""} ${ernaehrung.name}`
@@ -55,17 +127,18 @@ function renderNahrung(tier, symbole) {
   const nahrung = Array.isArray(tier.nahrung) ? tier.nahrung : [];
 
   nahrung.forEach(wert => {
-    const eintrag = findeNachId(symbole.nahrungsquellen, wert)
-      || findeSymbol(symbole.nahrungsquellen, wert);
+    const eintrag =
+      findeNachId(symbole.nahrungsquellen, wert) ||
+      findeSymbol(symbole.nahrungsquellen, wert);
 
-    const span = document.createElement("span");
-    span.className = "chip";
-    span.title = eintrag?.name || wert;
+    const chip = document.createElement("span");
+    chip.className = "chip";
+    chip.title = eintrag?.name || wert;
 
-    span.textContent = eintrag
+    chip.textContent = eintrag
       ? `${eintrag.icon} ${eintrag.name}`
       : wert;
 
-    box.appendChild(span);
+    box.appendChild(chip);
   });
 }
