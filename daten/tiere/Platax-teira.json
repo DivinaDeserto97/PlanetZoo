@@ -1,0 +1,55 @@
+{
+  "id": "Platax-teira",
+  "nameDeutsch": "Langflossen-Fledermausfisch",
+  "nameLatein": "Platax teira",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Platax-teira/Platax-teira.jpeg",
+    "karte": "assets/tiere/Platax-teira/Platax-teira_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Korallenriff, Küstengewässer",
+      "ref": ["korallenriff", "kuesteninseln"]
+    },
+    {
+      "label": "Länge",
+      "wert": "bis 70 cm",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "bis ca. 6 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis 15 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "langsamer Schwimmer",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["indopazifik"],
+  "nahrungart": "Allesfresser",
+  "nahrung": ["Algen", "Wirbellose", "Plankton"],
+  "beschreibung": "Der Langflossen-Fledermausfisch fällt durch seine hohen Rücken- und Afterflossen auf.",
+  "niceToKnow": "Jungtiere sehen völlig anders aus als ausgewachsene Tiere."
+}

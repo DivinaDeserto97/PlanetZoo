@@ -1,0 +1,55 @@
+{
+  "id": "Carcharhinus-melanopterus",
+  "nameDeutsch": "Schwarzspitzen-Riffhai",
+  "nameLatein": "Carcharhinus melanopterus",
+  "bedrohung": {
+    "code": "VU",
+    "text": "gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Carcharhinus-melanopterus/Carcharhinus-melanopterus.jpeg",
+    "karte": "assets/tiere/Carcharhinus-melanopterus/Carcharhinus-melanopterus_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Einzelgänger, kleine Gruppen",
+      "ref": ["einzelgaenger", "gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tag- und nachtaktiv",
+      "ref": ["tagaktiv", "nachtaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Korallenriff, Küstengewässer",
+      "ref": ["korallenriff", "kuesteninseln"]
+    },
+    {
+      "label": "Länge",
+      "wert": "130–180 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "20–30 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis 15 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis 25 km/h",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["indopazifik"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Fische", "Krebstiere", "Kopffüßer"],
+  "beschreibung": "Der Schwarzspitzen-Riffhai lebt in flachen tropischen Küstengewässern und Korallenriffen.",
+  "niceToKnow": "Er gehört zu den häufigsten Haiarten an tropischen Korallenriffen."
+}

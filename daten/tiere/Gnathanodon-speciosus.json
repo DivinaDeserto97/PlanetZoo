@@ -1,0 +1,45 @@
+{
+  "id": "Gnathanodon-speciosus",
+  "nameDeutsch": "Goldmakrele",
+  "nameLatein": "Gnathanodon speciosus",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Gnathanodon-speciosus/Gnathanodon-speciosus.jpeg",
+    "karte": "assets/tiere/Gnathanodon-speciosus/Gnathanodon-speciosus_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Einzelgänger, Gruppen",
+      "ref": ["einzelgaenger", "gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Korallenriff, Küstengewässer",
+      "ref": ["korallenriff", "kuesteninseln"]
+    },
+    {
+      "label": "Länge",
+      "wert": "bis 120 cm",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "bis 15 kg",
+      "ref": "gewicht"
+    }
+  ],
+  "zoogeografischeRegionen": ["indopazifik"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Fische", "Krebse", "Wirbellose"],
+  "beschreibung": "Ein goldgelber Raubfisch tropischer Küstengewässer.",
+  "niceToKnow": "Jungtiere schwimmen häufig zwischen Quallen."
+}

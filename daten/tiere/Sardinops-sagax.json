@@ -1,0 +1,45 @@
+{
+  "id": "Sardinops-sagax",
+  "nameDeutsch": "Pazifische Sardine",
+  "nameLatein": "Sardinops sagax",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Sardinops-sagax/Sardinops-sagax.jpeg",
+    "karte": "assets/tiere/Sardinops-sagax/Sardinops-sagax_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Schwärme",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tag- und nachtaktiv",
+      "ref": ["tagaktiv", "nachtaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Ozean",
+      "ref": ["ozean"]
+    },
+    {
+      "label": "Länge",
+      "wert": "20–30 cm",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "50–150 g",
+      "ref": "gewicht"
+    }
+  ],
+  "zoogeografischeRegionen": ["nearktis", "neotropis"],
+  "nahrungart": "Planktonfresser",
+  "nahrung": ["Phytoplankton", "Zooplankton"],
+  "beschreibung": "Die Pazifische Sardine bildet riesige Fischschwärme.",
+  "niceToKnow": "Sie gehört zu den wichtigsten Speisefischen der Welt."
+}

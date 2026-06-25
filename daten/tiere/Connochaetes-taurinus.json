@@ -1,0 +1,55 @@
+{
+  "id": "Connochaetes-taurinus",
+  "nameDeutsch": "Blaues Gnu",
+  "nameLatein": "Connochaetes taurinus",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Connochaetes-taurinus/Connochaetes-taurinus.jpeg",
+    "karte": "assets/tiere/Connochaetes-taurinus/Connochaetes-taurinus_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen (Herde)",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Savanne, Grasland/Steppe",
+      "ref": ["savanne", "grasland_steppe_landwirtschaft"]
+    },
+    {
+      "label": "Länge",
+      "wert": "170–240 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "120–290 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "20 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis 80 km/h",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["afrotropis"],
+  "nahrungart": "Pflanzenfresser",
+  "nahrung": ["Gräser"],
+  "beschreibung": "Das Blaue Gnu ist bekannt für seine gewaltigen Wanderungen durch Ostafrika.",
+  "niceToKnow": "Die große Gnuwanderung gehört zu den größten Tierwanderungen der Erde."
+}

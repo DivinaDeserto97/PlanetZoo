@@ -51,7 +51,7 @@
       "wert": "Ruf abspielen",
       "ref": "ruf",
       "typ": "audio",
-      "audio": "assets/tiere/Leontopithecus-rosalia/Leontopithecus-rosalia_ruf.mp3"
+      "audio": "assets/tiere/Leontopithecus-rosalia/mp3/Leontopithecus_rosalia_V1962_03.mp3"
     }
   ],
   "zoogeografischeRegionen": ["neotropis"],

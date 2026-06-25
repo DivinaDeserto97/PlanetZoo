@@ -1,0 +1,55 @@
+{
+  "id": "Eretmochelys-imbricata",
+  "nameDeutsch": "Echte Karettschildkröte",
+  "nameLatein": "Eretmochelys imbricata",
+  "bedrohung": {
+    "code": "CR",
+    "text": "vom Aussterben bedroht"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Eretmochelys-imbricata/Eretmochelys-imbricata.jpeg",
+    "karte": "assets/tiere/Eretmochelys-imbricata/Eretmochelys-imbricata_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Einzelgänger",
+      "ref": ["einzelgaenger"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Korallenriff, Küstengewässer",
+      "ref": ["korallenriff", "kuesteninseln"]
+    },
+    {
+      "label": "Länge",
+      "wert": "70–90 cm Panzerlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "40–80 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "über 50 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis 24 km/h",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["indopazifik", "atlantik"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Schwämme", "Quallen", "Wirbellose"],
+  "beschreibung": "Die Echte Karettschildkröte lebt an tropischen Korallenriffen und zählt zu den am stärksten bedrohten Meeresschildkröten.",
+  "niceToKnow": "Ihr Panzer wurde früher für Schmuck und Kunsthandwerk verwendet."
+}

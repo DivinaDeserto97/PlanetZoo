@@ -1,0 +1,68 @@
+{
+  "id": "Aquila-chrysaetos",
+  "nameDeutsch": "Steinadler",
+  "nameLatein": "Aquila chrysaetos",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Aquila-chrysaetos/Aquila-chrysaetos.jpeg",
+    "karte": "assets/tiere/Aquila-chrysaetos/Aquila-chrysaetos_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Paare",
+      "ref": ["paare"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Gebirge/Hochland, Grasland/Steppe, Taiga/Nadelwald",
+      "ref": ["gebirge_hochland", "grasland_steppe_landwirtschaft", "taiga_nadelwald"]
+    },
+    {
+      "label": "Länge",
+      "wert": "66–102 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Flügelspannweite",
+      "wert": "190–227 cm Flügelspannweite",
+      "ref": "fluegelspannweite"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "2,8–6,7 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis über 30 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis ca. 320 km/h im Sturzflug",
+      "ref": "geschwindigkeit"
+    },
+    {
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": "assets/tiere/Aquila-chrysaetos/mp3/Aquila_chrysaetos_Lue0060_06.mp3"
+    }
+  ],
+  "zoogeografischeRegionen": ["palaearktis", "nearktis"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Kleinsäuger", "Vögel", "Reptilien", "Aas"],
+  "nahrungRefs": ["kleinsaeuger", "voegel", "schlangen", "aas"],
+  "beschreibung": "Der Steinadler ist ein großer Greifvogel der nördlichen Erdhalbkugel. Er lebt vor allem in Gebirgen, offenen Landschaften und abgelegenen Wald- und Felsregionen. Mit seinen kräftigen Krallen jagt er vor allem Säugetiere und Vögel.",
+  "niceToKnow": "Steinadler können im Sturzflug extrem hohe Geschwindigkeiten erreichen und gehören zu den eindrucksvollsten Greifvögeln Europas."
+}

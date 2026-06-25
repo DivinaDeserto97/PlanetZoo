@@ -1,0 +1,50 @@
+{
+  "id": "Buceros-bicornis",
+  "nameDeutsch": "Nashornvogel",
+  "nameLatein": "Buceros bicornis",
+  "bedrohung": {
+    "code": "VU",
+    "text": "gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Buceros-bicornis/Buceros-bicornis.jpeg",
+    "karte": "assets/tiere/Buceros-bicornis/Buceros-bicornis_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Paare, kleine Gruppen",
+      "ref": ["paare", "gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Regenwald",
+      "ref": ["regenwald"]
+    },
+    {
+      "label": "Länge",
+      "wert": "95–120 cm",
+      "ref": "laenge"
+    },
+    {
+      "label": "Flügelspannweite",
+      "wert": "150–180 cm",
+      "ref": "fluegelspannweite"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "2–4 kg",
+      "ref": "gewicht"
+    }
+  ],
+  "zoogeografischeRegionen": ["orientalis"],
+  "nahrungart": "Allesfresser",
+  "nahrung": ["Früchte", "Insekten", "Kleintiere"],
+  "beschreibung": "Großer asiatischer Hornvogel mit markantem Schnabelaufsatz.",
+  "niceToKnow": "Das Weibchen mauert sich während der Brutzeit in einer Baumhöhle ein."
+}

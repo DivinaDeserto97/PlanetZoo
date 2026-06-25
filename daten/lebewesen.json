@@ -4,7 +4,7 @@
     "datei": "daten/tiere/Ramphastos-toco.json",
     "systematik": {
       "datei": "24_arten.json",
-      "id": 1
+      "id": 12
     }
   },
   {
@@ -12,7 +12,215 @@
     "datei": "daten/tiere/Leontopithecus-rosalia.json",
     "systematik": {
       "datei": "24_arten.json",
+      "id": 3
+    }
+  },
+  {
+    "id": "Aquila-chrysaetos",
+    "datei": "daten/tiere/Aquila-chrysaetos.json",
+    "systematik": {
+      "datei": "24_arten.json",
       "id": 2
+    }
+  },
+  {
+    "id": "Canis-lupus",
+    "datei": "daten/tiere/Canis-lupus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 24
+    }
+  },
+  {
+    "id": "Castor-fiber",
+    "datei": "daten/tiere/Castor-fiber.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 27
+    }
+  },
+  {
+    "id": "Cervus-elaphus",
+    "datei": "daten/tiere/Cervus-elaphus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 26
+    }
+  },
+  {
+    "id": "Haliaeetus-albicilla",
+    "datei": "daten/tiere/Haliaeetus-albicilla.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 21
+    }
+  },
+  {
+    "id": "Loxodonta-africana",
+    "datei": "daten/tiere/Loxodonta-africana.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 28
+    }
+  },
+  {
+    "id": "Pan-troglodytes-verus",
+    "datei": "daten/tiere/Pan-troglodytes-verus.json",
+    "systematik": {
+      "datei": "25_unterarten.json",
+      "id": 1
+    }
+  },
+  {
+    "id": "Panthera-tigris-sumatrae",
+    "datei": "daten/tiere/Panthera-tigris-sumatrae.json",
+    "systematik": {
+      "datei": "25_unterarten.json",
+      "id": 2
+    }
+  },
+  {
+    "id": "Panthera-leo-senegalensis",
+    "datei": "daten/tiere/Panthera-leo-senegalensis.json",
+    "systematik": {
+      "datei": "25_unterarten.json",
+      "id": 3
+    }
+  },
+  {
+    "id": "Crocodylus-porosus",
+    "datei": "daten/tiere/Crocodylus-porosus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 29
+    }
+  },
+  {
+    "id": "Hippopotamus-amphibius",
+    "datei": "daten/tiere/Hippopotamus-amphibius.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 30
+    }
+  },
+  {
+    "id": "Giraffa-camelopardalis-tippelskirchi",
+    "datei": "daten/tiere/Giraffa-camelopardalis-tippelskirchi.json",
+    "systematik": {
+      "datei": "25_unterarten.json",
+      "id": 4
+    }
+  },
+  {
+    "id": "Sagittarius-serpentarius",
+    "datei": "daten/tiere/Sagittarius-serpentarius.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 31
+    }
+  },
+  {
+    "id": "Caesio-caerulaurea",
+    "datei": "daten/tiere/Caesio-caerulaurea.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 36
+    }
+  },
+  {
+    "id": "Platax-teira",
+    "datei": "daten/tiere/Platax-teira.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 37
+    }
+  },
+  {
+    "id": "Zebrasoma-flavescens",
+    "datei": "daten/tiere/Zebrasoma-flavescens.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 38
+    }
+  },
+  {
+    "id": "Paracanthurus-hepatus",
+    "datei": "daten/tiere/Paracanthurus-hepatus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 39
+    }
+  },
+  {
+    "id": "Eretmochelys-imbricata",
+    "datei": "daten/tiere/Eretmochelys-imbricata.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 40
+    }
+  },
+  {
+    "id": "Aetobatus-narinari",
+    "datei": "daten/tiere/Aetobatus-narinari.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 41
+    }
+  },
+  {
+    "id": "Mola-mola",
+    "datei": "daten/tiere/Mola-mola.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 42
+    }
+  },
+  {
+    "id": "Cheilinus-undulatus",
+    "datei": "daten/tiere/Cheilinus-undulatus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 43
+    }
+  },
+  {
+    "id": "Heniochus-acuminatus",
+    "datei": "daten/tiere/Heniochus-acuminatus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 44
+    }
+  },
+  {
+    "id": "Sardinops-sagax",
+    "datei": "daten/tiere/Sardinops-sagax.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 45
+    }
+  },
+  {
+    "id": "Gnathanodon-speciosus",
+    "datei": "daten/tiere/Gnathanodon-speciosus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 46
+    }
+  },
+  {
+    "id": "Arothron-nigropunctatus",
+    "datei": "daten/tiere/Arothron-nigropunctatus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 47
+    }
+  },
+  {
+    "id": "Buceros-bicornis",
+    "datei": "daten/tiere/Buceros-bicornis.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 48
     }
   }
 ]

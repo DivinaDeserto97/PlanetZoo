@@ -1,0 +1,59 @@
+{
+  "id": "Panthera-tigris-sumatrae",
+  "nameDeutsch": "Sumatra-Tiger",
+  "nameLatein": "Panthera tigris sumatrae",
+  "bedrohung": {
+    "code": "CR",
+    "text": "vom Aussterben bedroht"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Panthera-tigris-sumatrae/Panthera-tigris-sumatrae.jpeg",
+    "karte": "assets/tiere/Panthera-tigris-sumatrae/Panthera-tigris-sumatrae_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Einzelgänger",
+      "ref": ["einzelgaenger"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "dämmerungs- und nachtaktiv",
+      "ref": ["daemmerungsaktiv", "nachtaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Regenwald",
+      "ref": ["regenwald"]
+    },
+    {
+      "label": "Länge",
+      "wert": "220–255 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "75–140 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis 20 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis 65 km/h",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["orientalis"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": [
+    "Hirsche",
+    "Wildschweine",
+    "Kleinsäuger"
+  ],
+  "beschreibung": "Der Sumatra-Tiger ist die kleinste heute lebende Tigerunterart und kommt ausschließlich auf Sumatra vor.",
+  "niceToKnow": "Durch seine schmalen Streifen ist er gut an den dichten Regenwald angepasst."
+}

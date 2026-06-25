@@ -1,0 +1,55 @@
+{
+  "id": "Aetobatus-narinari",
+  "nameDeutsch": "Gefleckter Adlerrochen",
+  "nameLatein": "Aetobatus narinari",
+  "bedrohung": {
+    "code": "EN",
+    "text": "gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Aetobatus-narinari/Aetobatus-narinari.jpeg",
+    "karte": "assets/tiere/Aetobatus-narinari/Aetobatus-narinari_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Einzelgänger, kleine Gruppen",
+      "ref": ["einzelgaenger", "gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Korallenriff, Küstengewässer",
+      "ref": ["korallenriff", "kuesteninseln"]
+    },
+    {
+      "label": "Länge",
+      "wert": "bis 500 cm Spannweite",
+      "ref": "fluegelspannweite"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "bis 230 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "20–25 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "schneller Schwimmer",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["indopazifik", "atlantik"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Muscheln", "Krebse", "Schnecken"],
+  "beschreibung": "Der Gefleckte Adlerrochen ist an seinen weißen Punkten und den langen Flügeln erkennbar.",
+  "niceToKnow": "Er springt regelmäßig vollständig aus dem Wasser."
+}

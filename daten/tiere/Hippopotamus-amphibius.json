@@ -1,0 +1,55 @@
+{
+  "id": "Hippopotamus-amphibius",
+  "nameDeutsch": "Flusspferd",
+  "nameLatein": "Hippopotamus amphibius",
+  "bedrohung": {
+    "code": "VU",
+    "text": "gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Hippopotamus-amphibius/Hippopotamus-amphibius.jpeg",
+    "karte": "assets/tiere/Hippopotamus-amphibius/Hippopotamus-amphibius_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen (Herde)",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "nachtaktiv",
+      "ref": ["nachtaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Flüsse/Bäche/Seen, Feuchtgebiete/Sümpfe/Moore",
+      "ref": ["fluesse_baechte_seen", "feuchtgebiet_sumpf_moor"]
+    },
+    {
+      "label": "Länge",
+      "wert": "290–500 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "1.300–3.200 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "40–50 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis 30 km/h",
+      "ref": "geschwindigkeit"
+    }
+  ],
+  "zoogeografischeRegionen": ["afrotropis"],
+  "nahrungart": "Pflanzenfresser",
+  "nahrung": ["Gräser"],
+  "beschreibung": "Das Flusspferd verbringt den Tag meist im Wasser und verlässt es nachts zum Grasen.",
+  "niceToKnow": "Trotz ihres Namens sind Flusspferde näher mit Walen verwandt als mit Schweinen."
+}

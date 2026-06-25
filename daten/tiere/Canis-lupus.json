@@ -1,0 +1,63 @@
+{
+  "id": "Canis-lupus",
+  "nameDeutsch": "Grauwolf",
+  "nameLatein": "Canis lupus",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Canis-lupus/Canis-lupus.jpeg",
+    "karte": "assets/tiere/Canis-lupus/Canis-lupus_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen (Rudel, Familienverband)",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "dämmerungs- und nachtaktiv",
+      "ref": ["daemmerungsaktiv", "nachtaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Taiga/Nadelwald, Tundra/Kältesteppe, Grasland/Steppe, Gebirge/Hochland",
+      "ref": ["taiga_nadelwald", "tundra_kaeltesteppe", "grasland_steppe_landwirtschaft", "gebirge_hochland"]
+    },
+    {
+      "label": "Länge",
+      "wert": "100–160 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "18–80 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis ca. 13 Jahre in freier Wildbahn",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis ca. 60 km/h",
+      "ref": "geschwindigkeit"
+    },
+    {
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": "assets/tiere/Canis-lupus/mp3/Canis-lupus_ruf.mp3"
+    }
+  ],
+  "zoogeografischeRegionen": ["palaearktis", "nearktis"],
+  "nahrungart": "Fleischfresser",
+  "nahrung": ["Großsäuger", "Kleinsäuger", "Vögel", "Aas"],
+  "nahrungRefs": ["grosssaeuger", "kleinsaeuger", "voegel", "aas"],
+  "beschreibung": "Der Grauwolf ist der größte wildlebende Vertreter der Hunde. Er lebt in Rudeln, die meist aus einer Familiengruppe bestehen. Wölfe sind sehr anpassungsfähig und kommen in Wäldern, Tundren, Gebirgen, Grasländern und Halbwüsten vor.",
+  "niceToKnow": "Das Heulen dient nicht nur der Reviermarkierung, sondern auch der Kommunikation zwischen Rudelmitgliedern über größere Entfernungen."
+}

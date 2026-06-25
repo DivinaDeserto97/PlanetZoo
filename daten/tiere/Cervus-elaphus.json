@@ -1,0 +1,63 @@
+{
+  "id": "Cervus-elaphus",
+  "nameDeutsch": "Rothirsch",
+  "nameLatein": "Cervus elaphus",
+  "bedrohung": {
+    "code": "LC",
+    "text": "nicht gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Cervus-elaphus/Cervus-elaphus.jpeg",
+    "karte": "assets/tiere/Cervus-elaphus/Cervus-elaphus_map.jpeg"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen (Rudel)",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "dämmerungsaktiv",
+      "ref": ["daemmerungsaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Wald, Grasland/Steppe, Gebirge/Hochland",
+      "ref": ["taiga_nadelwald", "grasland_steppe_landwirtschaft", "gebirge_hochland"]
+    },
+    {
+      "label": "Länge",
+      "wert": "160–250 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "90–240 kg",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis ca. 20 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "bis ca. 70 km/h",
+      "ref": "geschwindigkeit"
+    },
+    {
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": "assets/tiere/Cervus-elaphus/mp3/Cervus-elaphus_ruf.mp3"
+    }
+  ],
+  "zoogeografischeRegionen": ["palaearktis"],
+  "nahrungart": "Pflanzenfresser",
+  "nahrung": ["Gräser", "Blätter, Knospen, Zweige", "Rinde", "Früchte, Beeren"],
+  "nahrungRefs": ["graeser", "blaetter", "rinde", "fruechte"],
+  "beschreibung": "Der Rothirsch ist eine der größten Hirscharten Europas. Er lebt in Wäldern, offenen Landschaften und Gebirgsregionen. Männchen tragen ein großes Geweih und röhren während der Brunftzeit lautstark.",
+  "niceToKnow": "Das Geweih des Rothirsches wird jedes Jahr abgeworfen und neu gebildet."
+}
