@@ -1,0 +1,68 @@
+{
+  "id": "Spheniscus-demersus",
+  "nameDeutsch": "Afrikanischer Pinguin",
+  "nameLatein": "Spheniscus demersus",
+  "bedrohung": {
+    "code": "EN",
+    "text": "stark gefährdet"
+  },
+  "bilder": {
+    "tier": "assets/tiere/Spheniscus-demersus/Spheniscus-demersus.webp",
+    "karte": "assets/tiere/Spheniscus-demersus/Spheniscus-demersus_map.png"
+  },
+  "fakten": [
+    {
+      "label": "Sozialverhalten",
+      "wert": "Gruppen (Familienverband, dominantes Paar)",
+      "ref": ["gruppen"]
+    },
+    {
+      "label": "Aktivität",
+      "wert": "tagaktiv",
+      "ref": ["tagaktiv"]
+    },
+    {
+      "label": "Biome",
+      "wert": "Regenwald",
+      "ref": ["regenwald"]
+    },
+    {
+      "label": "Länge",
+      "wert": "50–60 cm Körperlänge",
+      "ref": "laenge"
+    },
+    {
+      "label": "Gewicht",
+      "wert": "400–800 g",
+      "ref": "gewicht"
+    },
+    {
+      "label": "Alter",
+      "wert": "bis 14 Jahre",
+      "ref": "alter"
+    },
+    {
+      "label": "Geschwindigkeit",
+      "wert": "40 km/h",
+      "ref": "geschwindigkeit"
+    },
+    {
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": "assets/tiere/Leontopithecus-rosalia/mp3/Leontopithecus_rosalia_V1962_03.mp3"
+    }
+  ],
+  "zoogeografischeRegionen": ["neotropis"],
+  "nahrungart": "Allesfresser",
+  "nahrung": [
+    "Früchte, Beeren",
+    "Blüten, Pollen, Nektar",
+    "Pflanzensaft",
+    "Insekten, Spinnen"
+  ],
+  "nahrungRefs": ["fruechte", "blueten", "pflanzensaft", "insekten"],
+  "beschreibung": "Goldene Löwenäffchen leben in kleinen Familiengruppen mit zwei bis acht Tieren. Innerhalb der Gruppe bildet meist ein dominantes Paar den Kern. Die Tiere sind sehr sozial und teilen Nahrung mit anderen Gruppenmitgliedern.",
+  "niceToKnow": "Goldene Löwenäffchen gehören zu den wenigen Tierarten, bei denen erfolgreiche Nachzucht- und Wiederansiedlungsprogramme den Bestand deutlich verbessert haben."
+}
