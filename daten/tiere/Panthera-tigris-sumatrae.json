@@ -1,0 +1,124 @@
+{
+  "id": "Panthera-tigris-sumatrae",
+  "nameDeutsch": "Sumatra-Tiger",
+  "nameLatein": "Panthera tigris sumatrae",
+  "alternativeNamen": [
+    "Sunda-Tiger",
+    "Panthera tigris sondaica"
+  ],
+  "bedrohung": {
+    "code": "EN",
+    "text": "stark gefährdet"
+  },
+  "wildbestand": "400–600 geschätzt",
+  "bilder": {
+    "tier": [
+      "assets/tiere/Panthera-tigris-sumatrae/img/tier/Panthera-tigris-sumatrae.webp"
+    ],
+    "karte": [
+      "assets/tiere/Panthera-tigris-sumatrae/img/map/Panthera-tigris-sumatrae_map.png"
+    ]
+  },
+  "fakten": [
+    {
+      "pos_id": 0,
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": [
+        "assets/tiere/Panthera-tigris-sumatrae/audio/mp3/Panthera-tigris-sumatrae.mp3"
+      ]
+    },
+    {
+      "pos_id": 1,
+      "label": "Sozialverhalten",
+      "typ": "sozialverhalten",
+      "wert": "Einzelgänger",
+      "ref": ["einzelgaenger"]
+    },
+    {
+      "pos_id": 2,
+      "label": "Aktivität",
+      "typ": "aktivität",
+      "wert": "dämmerungs- und nachtaktiv",
+      "ref": ["daemmerungsaktiv", "nachtaktiv"]
+    },
+    {
+      "pos_id": 3,
+      "label": "Biome",
+      "typ": "Biome",
+      "wert": "Tropischer Regenwald, Bergregenwald, Torfsumpfwald",
+      "ref": ["regenwald", "bergregenwald", "sumpfwald"]
+    },
+    {
+      "pos_id": 4,
+      "label": "Steckbrief",
+      "typ": "steckbrief",
+      "eintraege": [
+        {
+          "label": "Länge",
+          "wert": "Männchen 2,2–2,5 m, Weibchen 2,0–2,3 m Gesamtlänge",
+          "ref": "laenge"
+        },
+        {
+          "label": "Schwanzlänge",
+          "wert": "ca. 85–100 cm",
+          "ref": "schwanzlaenge"
+        },
+        {
+          "label": "Gewicht",
+          "wert": "Männchen 100–140 kg, Weibchen 75–110 kg",
+          "ref": "gewicht"
+        },
+        {
+          "label": "Tragzeit",
+          "wert": "100–110 Tage",
+          "ref": "tragzeit"
+        },
+        {
+          "label": "Wurfgröße",
+          "wert": "meist 2–3 Jungtiere, selten bis 5",
+          "ref": "wurfgoesse"
+        },
+        {
+          "label": "Selbstständigkeit",
+          "wert": "nach ca. 1,5–2 Jahren",
+          "ref": "selbststaendigkeit"
+        },
+        {
+          "label": "Geschlechtsreife",
+          "wert": "ab ca. 2 Jahren",
+          "ref": "geschlechtsreife"
+        }
+      ]
+    }
+  ],
+  "zoogeografischeRegionen": ["orientalis"],
+  "vorkommen": ["Südostasien", "Sumatra"],
+  "systematikKurz": {
+    "klasse": "Mammalia",
+    "ordnung": "Carnivora",
+    "familie": "Felidae",
+    "gattung": "Panthera"
+  },
+  "nahrungart": "Fleischfresser",
+  "nahrung": [
+    "Säugetiere",
+    "Wildschweine",
+    "Hirsche",
+    "andere Beutetiere"
+  ],
+  "nahrungRefs": ["saeugetiere", "wildschweine", "hirsche", "beutetiere"],
+  "beschreibung": "Der Sumatra-Tiger ist eine Tiger-Unterart, die ausschließlich auf der indonesischen Insel Sumatra vorkommt. Er lebt vor allem in dichten tropischen Wäldern, darunter Tieflandregenwälder, Bergregenwälder und Torfsumpfwälder. Sumatra-Tiger besitzen ein orangefarbenes Fell mit schmalen schwarzen Streifen. Im Vergleich zu anderen Tiger-Unterarten wirken sie oft kleiner und haben häufig eine stärker ausgeprägte Mähne beziehungsweise längeres Fell im Gesichtsbereich.",
+  "schutzstatusBeschreibung": "Sumatra-Tiger sind stark gefährdet. Große Teile der Regenwälder Sumatras werden für Palmölplantagen, Holzeinschlag und Landwirtschaft gerodet. Dadurch wird ihr Lebensraum zerschnitten, was die Suche nach Nahrung und Partnern erschwert. Außerdem kommt es häufiger zu Konflikten mit Menschen. Weitere Bedrohungen sind Wilderei sowie der illegale Handel mit Fellen und Körperteilen.",
+  "schutzmassnahmen": "Schutzorganisationen und die indonesische Regierung arbeiten daran, den Rückgang der Sumatra-Tiger zu stoppen. Wichtige Maßnahmen sind der Schutz von Lebensräumen, Anti-Wilderei-Patrouillen, das Entfernen von Schlingenfallen, Bildung der lokalen Bevölkerung und Strategien zur Verringerung von Mensch-Tiger-Konflikten. Nationalparks dienen als wichtige Rückzugsräume. In Zoos helfen koordinierte Zuchtprogramme dabei, eine genetisch gesunde Reservepopulation zu erhalten.",
+  "sozialUndFortpflanzung": "Sumatra-Tiger sind Einzelgänger. Männchen und Weibchen treffen normalerweise nur zur Paarung aufeinander. Paarungen können ganzjährig stattfinden, mit Höhepunkten während der Regenzeit. Weibchen markieren ihr Revier mit Duftstoffen und Lauten, um Männchen anzulocken. Nach der Paarung verlässt das Männchen das Weibchen wieder. Die Mutter zieht die Jungtiere allein auf. Nach einer Tragzeit von 100 bis 110 Tagen werden meist 2 bis 3 Jungtiere geboren, gelegentlich bis zu 5. Die Jungtiere bleiben etwa 1,5 bis 2 Jahre bei der Mutter, bevor sie selbstständig werden.",
+  "gutZuWissen": [
+    "Tiger besitzen die größten Zähne aller Katzenarten. Ihre Eckzähne können bis zu 90 mm lang werden.",
+    "Sumatra-Tiger haben, wie alle Tiger, nicht nur gestreiftes Fell, sondern auch gestreifte Haut.",
+    "Sumatra-Tiger schwimmen gerne und sehr gut. Sie überqueren Flüsse und Seen auf der Suche nach Beute oder neuen Revieren.",
+    "Einige Arbeiter in Mangrovenwäldern tragen Masken am Hinterkopf, um Tigerangriffe von hinten zu verhindern.",
+    "Tigerurin riecht nach Butterpopcorn, weil darin ein ähnlicher Aromastoff vorkommt."
+  ]
+}

@@ -1,40 +1,15 @@
 import { findeNachId, findeSymbol } from "./lookup.js";
 
 const positionsMap = {
-  sozialverhalten: "pos-sozial",
-  aktivitaet: "pos-aktiv",
-  biome: "pos-lebensraum",
-  regionen: "pos-region",
-  laenge: "pos-groesse",
-  groesse: "pos-groesse",
-  fluegelspannweite: "pos-fluegel",
-  gewicht: "pos-gewicht",
-  alter: "pos-alter",
-  geschwindigkeit: "pos-speed",
-  ruf: "pos-ruf"
+  regionen: "pos-region"
 };
 
-const labelKeyMap = {
-  "Sozialverhalten": "sozialverhalten",
-  "Aktivität": "aktivitaet",
-  "Biome": "biome",
-  "Lebensraum": "lebensraum",
-  "Größe": "groesse",
-  "Länge": "laenge",
-  "Flügelspannweite": "fluegelspannweite",
-  "Gewicht": "gewicht",
-  "Alter": "alter",
-  "Geschwindigkeit": "geschwindigkeit",
-  "Ruf": "ruf",
-  "Geräusch": "ruf",
-  "Geräusche": "ruf"
-};
-
-const nurHoverKeys = [
+const nurHoverTypen = [
+  "audio",
+  "ruf",
   "sozialverhalten",
   "aktivitaet",
-  "regionen",
-  "ruf"
+  "regionen"
 ];
 
 export function renderFaktenRund(tier, symbole) {
@@ -46,53 +21,12 @@ export function renderFaktenRund(tier, symbole) {
   const fakten = baueFakten(tier, symbole);
 
   fakten.forEach(fakt => {
-    const div = document.createElement("div");
-    div.className = `fakt-rund ${positionsMap[fakt.key] || ""}`;
-
-    const icons = document.createElement("span");
-    icons.className = "fakt-icons";
-
-    if (fakt.typ === "audio") {
-      const button = document.createElement("button");
-      button.className = "fakt-icon fakt-button";
-      button.type = "button";
-      button.title = `${fakt.label}: ${fakt.wert}`;
-      button.textContent = fakt.icon || "🔊";
-      button.addEventListener("click", () => spieleAudio(fakt.audio));
-      icons.appendChild(button);
-    } else {
-      fakt.icons.forEach(iconData => {
-        const icon = document.createElement("span");
-        icon.className = "fakt-icon";
-        icon.title = iconData.title;
-        icon.textContent = iconData.icon;
-        icons.appendChild(icon);
-      });
+    if (normalisiereTyp(fakt.typ) === "steckbrief") {
+      box.appendChild(renderSteckbrief(fakt, symbole));
+      return;
     }
 
-    div.appendChild(icons);
-
-    if (!nurHoverKeys.includes(fakt.key) && fakt.key !== "biome") {
-      const text = document.createElement("span");
-      text.className = "fakt-text";
-
-      const wert = document.createElement("em");
-      wert.textContent = fakt.wert;
-
-      text.appendChild(wert);
-      div.appendChild(text);
-    }
-
-    box.appendChild(div);
-  });
-}
-
-function spieleAudio(pfad) {
-  if (!pfad) return;
-
-  const audio = new Audio(pfad);
-  audio.play().catch(fehler => {
-    console.error("Audio konnte nicht abgespielt werden:", fehler);
+    box.appendChild(renderStandardFakt(fakt, symbole));
   });
 }
 
@@ -101,106 +35,164 @@ function baueFakten(tier, symbole) {
 
   if (Array.isArray(tier.fakten)) {
     tier.fakten.forEach(fakt => {
-      fakten.push(baueFaktAusSteckbrief(fakt, symbole));
+      fakten.push(fakt);
     });
   }
 
   if (Array.isArray(tier.zoogeografischeRegionen)) {
-    fakten.push(baueListenFakt(
-      "regionen",
-      "Region",
-      tier.zoogeografischeRegionen,
-      symbole.regionen,
-      "🌍"
-    ));
+    fakten.push({
+      typ: "regionen",
+      label: "Region",
+      wert: tier.zoogeografischeRegionen.join(", "),
+      ref: tier.zoogeografischeRegionen
+    });
   }
 
   return fakten;
 }
 
-function baueFaktAusSteckbrief(fakt, symbole) {
-  const key = labelKeyMap[fakt.label] || "";
-  const ref = fakt.ref;
+function renderStandardFakt(fakt, symbole) {
+  const typ = normalisiereTyp(fakt.typ || fakt.ref || fakt.label);
+  const div = document.createElement("div");
 
-  if (fakt.typ === "audio") {
-    return {
-      key: key || "ruf",
-      label: fakt.label || "Ruf",
-      wert: fakt.wert || "Abspielen",
-      icon: "🔊",
-      typ: "audio",
-      audio: fakt.audio,
-      icons: []
-    };
+  div.className = [
+    "fakt-rund",
+    klassePosition(fakt, typ),
+    `fakt-${typ}`
+  ].filter(Boolean).join(" ");
+
+  const icons = document.createElement("span");
+  icons.className = "fakt-icons";
+
+  if (typ === "audio" || fakt.typ === "audio") {
+    const button = document.createElement("button");
+    button.className = "fakt-icon fakt-button";
+    button.type = "button";
+    button.title = `${fakt.label}: ${fakt.wert}`;
+    button.textContent = "🔊";
+    button.addEventListener("click", () => spieleAudio(ersterWert(fakt.audio)));
+    icons.appendChild(button);
+  } else {
+    const iconDaten = baueIcons(fakt, symbole, typ);
+
+    iconDaten.forEach(iconData => {
+      const icon = document.createElement("span");
+      icon.className = "fakt-icon";
+      icon.title = iconData.title;
+      icon.textContent = iconData.icon;
+      icons.appendChild(icon);
+    });
   }
 
-  if (key === "sozialverhalten") {
-    return {
-      key,
-      label: fakt.label,
-      wert: fakt.wert,
-      icons: [
-        {
-          icon: "👥",
-          title: `${fakt.label}: ${fakt.wert}`
-        }
-      ]
-    };
+  div.appendChild(icons);
+
+  if (!nurHoverTypen.includes(typ) && typ !== "biome") {
+    const text = document.createElement("span");
+    text.className = "fakt-text";
+
+    const wert = document.createElement("em");
+    wert.textContent = fakt.wert || "";
+
+    text.appendChild(wert);
+    div.appendChild(text);
   }
 
-  if (key === "aktivitaet") {
-    return {
-      key,
-      label: fakt.label,
-      wert: fakt.wert,
-      icons: iconsAusRefs(symbole.aktivitaet, ref, fakt.label, fakt.wert, "☀️")
-    };
+  return div;
+}
+
+function renderSteckbrief(fakt, symbole) {
+  const div = document.createElement("div");
+
+  div.className = [
+    "fakt-rund",
+    "fakt-steckbrief",
+    klassePosition(fakt, "steckbrief")
+  ].filter(Boolean).join(" ");
+
+  const liste = document.createElement("div");
+  liste.className = "steckbrief-liste";
+
+  const eintraege = Array.isArray(fakt.eintraege) ? fakt.eintraege : [];
+
+  eintraege.forEach(eintrag => {
+    const ref = normalisiereTyp(eintrag.ref || eintrag.label);
+
+    const zeile = document.createElement("div");
+    zeile.className = `steckbrief-eintrag fakt-${ref}`;
+
+    const eigenschaft =
+      findeNachId(symbole.eigenschaften, eintrag.ref) ||
+      findeSymbol(symbole.eigenschaften, eintrag.label);
+
+    const icon = document.createElement("span");
+    icon.className = "fakt-icon steckbrief-icon";
+    icon.title = eigenschaft?.label || eintrag.label;
+    icon.textContent = eigenschaft?.icon || "•";
+
+    const text = document.createElement("span");
+    text.className = "steckbrief-text";
+
+    const label = document.createElement("strong");
+    label.className = "steckbrief-label";
+    label.textContent = eintrag.label;
+
+    const wert = document.createElement("em");
+    wert.className = "steckbrief-wert";
+    wert.textContent = eintrag.wert;
+
+    text.appendChild(label);
+    text.appendChild(wert);
+
+    zeile.appendChild(icon);
+    zeile.appendChild(text);
+
+    liste.appendChild(zeile);
+  });
+
+  div.appendChild(liste);
+  return div;
+}
+
+function baueIcons(fakt, symbole, typ) {
+  if (typ === "sozialverhalten") {
+    return [{
+      icon: "👥",
+      title: `${fakt.label}: ${fakt.wert}`
+    }];
   }
 
-  if (key === "biome") {
-  return {
-    key,
-    label: fakt.label,
-    wert: fakt.wert,
-    icons: [
+  if (typ === "aktivitaet") {
+    return iconsAusRefs(symbole.aktivitaet, fakt.ref, fakt.label, fakt.wert, "☀️");
+  }
+
+  if (typ === "biome") {
+    return [
       {
         icon: "🌲",
         title: "Biome"
       },
-      ...iconsAusRefs(symbole.biome, ref, fakt.label, fakt.wert, "🌲")
-    ]
-  };
-}
+      ...iconsAusRefs(symbole.biome, fakt.ref, fakt.label, fakt.wert, "🌲")
+    ];
+  }
 
-  const eigenschaft = findeNachId(symbole.eigenschaften, ref)
-    || findeSymbol(symbole.eigenschaften, fakt.label);
+  if (typ === "regionen") {
+    return iconsAusRefs(symbole.regionen, fakt.ref, fakt.label, fakt.wert, "🌍");
+  }
 
-  return {
-    key: eigenschaft?.id || key,
-    label: fakt.label,
-    wert: fakt.wert,
-    icons: [
-      {
-        icon: eigenschaft?.icon || "•",
-        title: eigenschaft?.label || fakt.label
-      }
-    ]
-  };
-}
+  const eigenschaft =
+    findeNachId(symbole.eigenschaften, fakt.ref) ||
+    findeSymbol(symbole.eigenschaften, fakt.label);
 
-function baueListenFakt(key, label, ids, liste, fallbackIcon) {
-  return {
-    key,
-    label,
-    wert: ids.join(", "),
-    icons: iconsAusRefs(liste, ids, label, ids.join(", "), fallbackIcon)
-  };
+  return [{
+    icon: eigenschaft?.icon || "•",
+    title: eigenschaft?.label || fakt.label || typ
+  }];
 }
 
 function iconsAusRefs(liste, refs, label, fallbackText, fallbackIcon) {
-  if (!Array.isArray(refs)) refs = refs ? [refs] : [];
+  const refListe = Array.isArray(refs) ? refs : refs ? [refs] : [];
 
-  const icons = refs.map(ref => {
+  const icons = refListe.map(ref => {
     const eintrag = findeNachId(liste, ref);
 
     return {
@@ -219,4 +211,37 @@ function iconsAusRefs(liste, refs, label, fallbackText, fallbackIcon) {
   }
 
   return icons;
+}
+
+function spieleAudio(pfad) {
+  if (!pfad) return;
+
+  const audio = new Audio(pfad);
+
+  audio.play().catch(fehler => {
+    console.error("Audio konnte nicht abgespielt werden:", fehler);
+  });
+}
+
+function klassePosition(fakt, typ) {
+  if (fakt.pos_id !== undefined && fakt.pos_id !== null) {
+    return `pos-id-${fakt.pos_id}`;
+  }
+
+  return positionsMap[typ] || "";
+}
+
+function ersterWert(wert) {
+  if (Array.isArray(wert)) return wert[0] || "";
+  return wert || "";
+}
+
+function normalisiereTyp(wert) {
+  return String(wert || "")
+    .trim()
+    .toLowerCase()
+    .replaceAll("ä", "ae")
+    .replaceAll("ö", "oe")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss");
 }

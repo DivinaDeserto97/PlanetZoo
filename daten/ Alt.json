@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Ramphastos-toco",
+    "datei": "daten/tiere/Ramphastos-toco.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 1
+    }
+  },
+  {
+    "id": "Leontopithecus-rosalia",
+    "datei": "daten/tiere/Leontopithecus-rosalia.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 2
+    }
+  },
+  {
+    "id": "Spheniscus-demersus",
+    "datei": "daten/tiere/Spheniscus-demersus.json",
+    "systematik": {
+      "datei": "24_arten.json",
+      "id": 3
+    }
+  }
+]

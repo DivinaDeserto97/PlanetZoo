@@ -11,6 +11,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========================
+   TIER-TAFEL
+========================= */
+
 .tafel {
   position: relative;
   width: min(96vw, 1500px);
@@ -65,6 +69,10 @@ body {
   text-decoration: none;
   font-size: clamp(16px, 1.4vw, 21px);
 }
+
+/* =========================
+   TIERBILD + FAKTENKREIS
+========================= */
 
 .tierzone {
   position: relative;
@@ -160,10 +168,6 @@ body {
   border-bottom: 2px solid var(--orange);
 }
 
-.fakt-text strong {
-  display: none;
-}
-
 .fakt-text em {
   display: block;
   color: var(--text);
@@ -172,89 +176,114 @@ body {
   line-height: 1.08;
 }
 
-.pos-sozial {
-  left: 33%;
-  top: 7%;
-  width: 52%;
-}
+/* =========================
+   NEUE FIXPOSITIONEN ÜBER pos_id
+========================= */
 
-.pos-region {
-  left: 8%;
-  top: 18%;
-  width: 28%;
-}
-
-.pos-aktiv {
-  left: -3%;
-  top: 44%;
-  width: 42%;
-}
-
-.pos-groesse {
-  right: 0%;
-  top: 13%;
-  width: 49%;
-}
-
-.pos-fluegel {
-  right: 0%;
-  top: 22%;
-  width: 40%;
-}
-
-.pos-gewicht {
-  right: 0%;
-  top: 32%;
-  width: 35%;
-}
-
-.pos-alter {
-  right: 0%;
-  top: 40%;
-  width: 33%;
-}
-
-.pos-speed {
-  right: 0%;
-  top: 48%;
-  width: 33%;
-}
-
-.pos-lebensraum {
-  right: 0%;
-  top: 57%;
-  width: 35%;
-
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  border-bottom: 2px solid var(--orange);
-  padding-bottom: 4px;
-}
-
-.pos-ruf {
+.pos-id-0 {
   left: 33%;
   top: 81%;
   width: 42%;
 }
 
+.pos-id-1 {
+  left: 33%;
+  top: 7%;
+  width: 52%;
+}
+
+.pos-id-2 {
+  left: -3%;
+  top: 44%;
+  width: 42%;
+}
+
+.pos-id-4 {
+  right: 0%;
+  top: 57%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+}
+
+.pos-id-3 {
+  right: 0%;
+  top: 13%;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 4px;
+}
+
+/* =========================
+   STECKBRIEF-BLOCK
+========================= */
+
+.fakt-steckbrief {
+  display: block;
+  min-height: auto;
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 6px;
+}
+
+.steckbrief-liste {
+  display: grid;
+  gap: 5px;
+}
+
+.steckbrief-eintrag {
+  display: grid;
+  grid-template-columns: 29px 1fr;
+  gap: 6px;
+  align-items: center;
+}
+
+.steckbrief-icon {
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  border-width: 2px;
+}
+
+.steckbrief-text {
+  display: grid;
+  gap: 1px;
+  line-height: 1.05;
+}
+
+.steckbrief-label {
+  display: none;
+}
+
+.steckbrief-wert {
+  color: var(--text);
+  font-style: normal;
+  font-size: clamp(10px, 1vw, 15px);
+}
+
+/* =========================
+   KARTE
+========================= */
+
 .kartenbox {
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .karte {
   max-width: 95%;
   max-height: 100%;
-
   width: auto;
   height: auto;
-
   object-fit: contain;
 }
 
@@ -264,6 +293,10 @@ body {
   font-weight: 700;
   font-size: clamp(10px, 0.9vw, 13px);
 }
+
+/* =========================
+   TEXTBEREICH
+========================= */
 
 .kopf {
   display: flex;
@@ -310,11 +343,22 @@ h1 {
   max-width: 96%;
 }
 
+/* =========================
+   GUT-ZU-WISSEN-SLIDER
+========================= */
+
 .nice {
   background: var(--nice-bg);
   border-left: 8px solid var(--gruen);
   border-radius: var(--radius-mittel);
   padding: 12px 18px;
+}
+
+.nice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .nice h2 {
@@ -324,6 +368,42 @@ h1 {
 .nice p {
   font-size: clamp(15px, 1.25vw, 20px);
 }
+
+.nice-pfeil {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+.nice-pfeil:hover {
+  color: var(--orange-dunkel);
+}
+
+.punkte {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.punkt {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+}
+
+.punkt.aktiv {
+  background: var(--orange);
+}
+
+/* =========================
+   NAHRUNG
+========================= */
 
 .leisten h3 {
   font-size: clamp(16px, 1.3vw, 21px);
@@ -344,27 +424,9 @@ h1 {
   font-size: clamp(12px, 1vw, 15px);
 }
 
-@media (max-width: 900px) {
-  .tafel {
-    width: 100vw;
-    border-radius: 0;
-  }
-
-  .bildbereich {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .fakt-rund {
-    grid-template-columns: 25px 1fr;
-  }
-
-  .fakt-icon {
-    width: 23px;
-    height: 23px;
-    font-size: 11px;
-  }
-}
+/* =========================
+   INDEX-SEITE
+========================= */
 
 .index-seite {
   width: min(96vw, 1500px);
@@ -437,40 +499,44 @@ h1 {
   background: #fff3d7;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1000px) {
   .filter-box {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.nice-header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    margin-bottom:12px;
-}
+@media (max-width: 900px) {
+  .tafel {
+    width: 100vw;
+    border-radius: 0;
+  }
 
-.nice-pfeil{
-    border:none;
-    background:none;
-    font-size:24px;
-    cursor:pointer;
-}
+  .bildbereich {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-.punkte{
-    display:flex;
-    justify-content:center;
-    gap:8px;
-    margin-top:14px;
-}
+  .fakt-rund {
+    grid-template-columns: 25px 1fr;
+  }
 
-.punkt{
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:#bbb;
-}
+  .fakt-icon {
+    width: 23px;
+    height: 23px;
+    font-size: 11px;
+  }
 
-.punkt.aktiv{
-    background:var(--orange);
+  .steckbrief-eintrag {
+    grid-template-columns: 23px 1fr;
+  }
+
+  .steckbrief-icon {
+    width: 21px;
+    height: 21px;
+    font-size: 10px;
+  }
 }

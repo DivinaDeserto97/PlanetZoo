@@ -32,69 +32,78 @@ function renderGefaehrdung(tier, symbole) {
 }
 
 function renderBilder(tier) {
-  setBild("tierBild", tier.bilder?.tier, tier.nameDeutsch || "Tierbild");
-  setBild("kartenBild", tier.bilder?.karte, "Verbreitungskarte");
+  setBild("tierBild", ersterWert(tier.bilder?.tier), tier.nameDeutsch || "Tierbild");
+  setBild("kartenBild", ersterWert(tier.bilder?.karte), "Verbreitungskarte");
 }
 
 function renderTexte(tier) {
   setText("beschreibung", tier.beschreibung);
 
-  renderGutZuWissen(
-    Array.isArray(tier.gutZuWissen)
-      ? tier.gutZuWissen
-      : tier.gutZuWissen
-        ? [tier.gutZuWissen]
-        : []
-  );
+  const gutZuWissen = Array.isArray(tier.gutZuWissen)
+    ? tier.gutZuWissen
+    : tier.gutZuWissen
+      ? [tier.gutZuWissen]
+      : [];
+
+  renderGutZuWissen(gutZuWissen);
 }
 
-function renderGutZuWissen(fakten) {
+function renderGutZuWissen(eintraege) {
   const text = document.getElementById("gutZuWissenText");
   const punkte = document.getElementById("gutZuWissenPunkte");
   const links = document.getElementById("gutZurueck");
   const rechts = document.getElementById("gutWeiter");
 
-  if (!text || !punkte) return;
+  if (!text || !punkte || !links || !rechts) return;
 
-  if (fakten.length === 0) {
+  if (eintraege.length === 0) {
     text.textContent = "";
     punkte.innerHTML = "";
+    links.style.display = "none";
+    rechts.style.display = "none";
     return;
   }
 
   gutIndex = 0;
 
-  function anzeigen() {
-    text.textContent = fakten[gutIndex];
+  links.style.display = eintraege.length > 1 ? "" : "none";
+  rechts.style.display = eintraege.length > 1 ? "" : "none";
 
+  function anzeigen() {
+    text.textContent = eintraege[gutIndex];
     punkte.innerHTML = "";
 
-    fakten.forEach((_, i) => {
+    eintraege.forEach((_, index) => {
       const punkt = document.createElement("span");
       punkt.className = "punkt";
 
-      if (i === gutIndex) {
+      if (index === gutIndex) {
         punkt.classList.add("aktiv");
       }
+
+      punkt.addEventListener("click", () => {
+        gutIndex = index;
+        anzeigen();
+      });
 
       punkte.appendChild(punkt);
     });
   }
 
   links.onclick = () => {
-    gutIndex--;
+    gutIndex = gutIndex - 1;
 
     if (gutIndex < 0) {
-      gutIndex = fakten.length - 1;
+      gutIndex = eintraege.length - 1;
     }
 
     anzeigen();
   };
 
   rechts.onclick = () => {
-    gutIndex++;
+    gutIndex = gutIndex + 1;
 
-    if (gutIndex >= fakten.length) {
+    if (gutIndex >= eintraege.length) {
       gutIndex = 0;
     }
 
@@ -107,9 +116,11 @@ function renderGutZuWissen(fakten) {
 function renderNahrung(tier, symbole) {
   const ernaehrungsId = tier.ernaehrungsart || tier.nahrungart;
 
+  const ernaehrungsarten = symbole.ernaehrung?.ernaehrungsarten || [];
+
   const ernaehrung =
-    findeNachId(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId) ||
-    findeSymbol(symbole.ernaehrung.ernaehrungsarten, ernaehrungsId);
+    findeNachId(ernaehrungsarten, ernaehrungsId) ||
+    findeSymbol(ernaehrungsarten, ernaehrungsId);
 
   const titel = ernaehrung
     ? `Nahrung – ${ernaehrung.icon || ""} ${ernaehrung.name}`
@@ -125,10 +136,13 @@ function renderNahrung(tier, symbole) {
   box.innerHTML = "";
 
   const nahrung = Array.isArray(tier.nahrung) ? tier.nahrung : [];
+  const nahrungRefs = Array.isArray(tier.nahrungRefs) ? tier.nahrungRefs : [];
 
-  nahrung.forEach(wert => {
+  nahrung.forEach((wert, index) => {
+    const ref = nahrungRefs[index] || wert;
+
     const eintrag =
-      findeNachId(symbole.nahrungsquellen, wert) ||
+      findeNachId(symbole.nahrungsquellen, ref) ||
       findeSymbol(symbole.nahrungsquellen, wert);
 
     const chip = document.createElement("span");
@@ -141,4 +155,9 @@ function renderNahrung(tier, symbole) {
 
     box.appendChild(chip);
   });
+}
+
+function ersterWert(wert) {
+  if (Array.isArray(wert)) return wert[0] || "";
+  return wert || "";
 }

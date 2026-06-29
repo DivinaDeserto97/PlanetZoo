@@ -1,24 +1,10 @@
 [
   {
-    "id": 1,
-    "deutsch": "Westlicher Schimpanse",
-    "wissenschaftlich": "Pan troglodytes verus",
-    "parentDatei": "24_arten.json",
-    "parentId": 8
-  },
-  {
     "id": 2,
     "deutsch": "Sunda-Tiger / Sumatra-Tiger",
     "wissenschaftlich": "Panthera tigris sondaica",
     "parentDatei": "24_arten.json",
     "parentId": 16,
     "bemerkung": "Wikipedia führt den Sumatra-Tiger als Population von Panthera tigris sondaica."
-  },
-  {
-    "id": 3,
-    "deutsch": "Westafrikanischer Löwe",
-    "wissenschaftlich": "Panthera leo leo",
-    "parentDatei": "24_arten.json",
-    "parentId": 19
   }
 ]
