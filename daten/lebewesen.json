@@ -1,112 +1,14 @@
-{
-  "id": "Eukaryota",
-  "deutsch": "Eukaryoten",
-  "wissenschaftlich": "Eukaryota",
-  "reiche": [
-    {
-      "id": "Animalia",
-      "deutsch": "Tiere",
-      "wissenschaftlich": "Animalia",
-      "staemme": [
-        {
-          "id": "Chordata",
-          "deutsch": "Chordatiere",
-          "wissenschaftlich": "Chordata",
-          "unterstaemme": [
-            {
-              "id": "Vertebrata",
-              "deutsch": "Wirbeltiere",
-              "wissenschaftlich": "Vertebrata",
-              "klassen": [
-                {
-                  "id": "Mammalia",
-                  "deutsch": "Säugetiere",
-                  "wissenschaftlich": "Mammalia",
-                  "unterklassen": [
-                    {
-                      "id": "Theria",
-                      "deutsch": "Lebendgebärende Säugetiere",
-                      "wissenschaftlich": "Theria",
-                      "infraklassen": [
-                        {
-                          "id": "Eutheria",
-                          "deutsch": "Höhere Säugetiere / Plazentatiere",
-                          "wissenschaftlich": "Eutheria",
-                          "ueberordnungen": [
-                            {
-                              "id": "Laurasiatheria",
-                              "deutsch": "Laurasiatheria",
-                              "wissenschaftlich": "Laurasiatheria",
-                              "ohneRang": [
-                                {
-                                  "id": "Ferae",
-                                  "deutsch": "Ferae",
-                                  "wissenschaftlich": "Ferae",
-                                  "ordnungen": [
-                                    {
-                                      "id": "Carnivora",
-                                      "deutsch": "Raubtiere",
-                                      "wissenschaftlich": "Carnivora",
-                                      "unterordnungen": [
-                                        {
-                                          "id": "Feliformia",
-                                          "deutsch": "Katzenartige",
-                                          "wissenschaftlich": "Feliformia",
-                                          "familien": [
-                                            {
-                                              "id": "Felidae",
-                                              "deutsch": "Katzen",
-                                              "wissenschaftlich": "Felidae",
-                                              "unterfamilien": [
-                                                {
-                                                  "id": "Pantherinae",
-                                                  "deutsch": "Großkatzen",
-                                                  "wissenschaftlich": "Pantherinae",
-                                                  "gattungen": [
-                                                    {
-                                                      "id": "Panthera",
-                                                      "deutsch": "Eigentliche Großkatzen",
-                                                      "wissenschaftlich": "Panthera",
-                                                      "arten": [
-                                                        {
-                                                          "id": "Panthera-tigris",
-                                                          "deutsch": "Tiger",
-                                                          "wissenschaftlich": "Panthera tigris",
-                                                          "unterarten": [
-                                                            {
-                                                              "id": "Panthera-tigris-sumatrae",
-                                                              "deutsch": "Sunda-Tiger / Sumatra-Tiger",
-                                                              "wissenschaftlich": "Panthera tigris sumatrae",
-                                                              "tierDatei": "daten/tiere/Panthera-tigris-sumatrae.json"
-                                                            }
-                                                          ]
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "Panthera-tigris-sumatrae",
+    "datei": "daten/lebewesen/Panthera-tigris-sumatrae.json"
+  },
+  {
+    "id": "Leontopithecus-rosalia",
+    "datei": "daten/lebewesen/Leontopithecus-rosalia.json"
+  },
+  {
+    "id": "Spheniscus-demersus",
+    "datei": "daten/lebewesen/Spheniscus-demersus.json"
+  }
+]

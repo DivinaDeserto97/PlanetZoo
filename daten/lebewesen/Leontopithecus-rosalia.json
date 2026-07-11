@@ -1,0 +1,147 @@
+{
+  "id": "Leontopithecus-rosalia",
+  "nameDeutsch": "Goldenes Löwenäffchen",
+  "nameLatein": "Leontopithecus rosalia",
+  "alternativeNamen": [
+    "Goldgelbes Löwenäffchen",
+    "Golden Lion Tamarin"
+  ],
+  "bedrohung": {
+    "code": "EN",
+    "text": "stark gefährdet"
+  },
+  "wildbestand": "4.800 geschätzt",
+  "bilder": {
+    "tier": [
+      "assets/lebewesen/planetZoo2/Leontopithecus-rosalia/img/tier/Leontopithecus-rosalia.webp"
+    ],
+    "karte": [
+      "assets/lebewesen/planetZoo2/Leontopithecus-rosalia/img/map/Leontopithecus-rosalia_map.png"
+    ]
+  },
+  "fakten": [
+    {
+      "pos_id": 0,
+      "label": "Ruf",
+      "wert": "Ruf abspielen",
+      "ref": "ruf",
+      "typ": "audio",
+      "audio": []
+    },
+    {
+      "pos_id": 1,
+      "label": "Sozialverhalten",
+      "typ": "sozialverhalten",
+      "wert": "Familiengruppen von 2–8 Tieren",
+      "ref": [
+        "gruppen"
+      ]
+    },
+    {
+      "pos_id": 2,
+      "label": "Aktivität",
+      "typ": "aktivität",
+      "wert": "tagaktiv",
+      "ref": [
+        "tagaktiv"
+      ]
+    },
+    {
+      "pos_id": 3,
+      "label": "Biome",
+      "typ": "Biome",
+      "wert": "Atlantischer Regenwald, tropischer Wald",
+      "ref": [
+        "regenwald",
+        "tropischer_laubwald"
+      ]
+    },
+    {
+      "pos_id": 4,
+      "label": "Steckbrief",
+      "typ": "steckbrief",
+      "eintraege": [
+        {
+          "label": "Kopf-Rumpf-Länge",
+          "wert": "26–33 cm",
+          "ref": "laenge"
+        },
+        {
+          "label": "Schwanzlänge",
+          "wert": "32–40 cm",
+          "ref": "schwanzlaenge"
+        },
+        {
+          "label": "Gewicht",
+          "wert": "570–620 g",
+          "ref": "gewicht"
+        },
+        {
+          "label": "Tragzeit",
+          "wert": "ca. 125 Tage",
+          "ref": "tragzeit"
+        },
+        {
+          "label": "Wurfgröße",
+          "wert": "meist Zwillinge, auch 1 oder 3 möglich",
+          "ref": "wurfgroesse"
+        },
+        {
+          "label": "Entwöhnung",
+          "wert": "nach ca. 2–3 Monaten",
+          "ref": "entwoehnung"
+        },
+        {
+          "label": "Geschlechtsreife",
+          "wert": "ca. 2–3 Jahre",
+          "ref": "geschlechtsreife"
+        },
+        {
+          "label": "Gruppengröße",
+          "wert": "2–8 Tiere",
+          "ref": "gruppengroesse"
+        }
+      ]
+    }
+  ],
+  "zoogeografischeRegionen": [
+    "neotropis"
+  ],
+  "vorkommen": [
+    "Südamerika",
+    "Brasilien",
+    "Atlantischer Küstenregenwald im Südosten Brasiliens"
+  ],
+  "systematikKurz": {
+    "klasse": "Mammalia",
+    "ordnung": "Primates",
+    "familie": "Callitrichidae",
+    "gattung": "Leontopithecus"
+  },
+  "ernaehrungsart": "allesfresser",
+  "nahrung": [
+    "Früchte",
+    "Insekten",
+    "Blüten und Nektar",
+    "Vogeleier",
+    "kleine Wirbeltiere"
+  ],
+  "nahrungRefs": [
+    "fruechte",
+    "insekten",
+    "blueten",
+    "eier",
+    "schlangen"
+  ],
+  "beschreibung": "Das Goldene Löwenäffchen ist ein kleiner südamerikanischer Primat aus der Familie der Krallenaffen. Es lebt vor allem in den atlantischen Küstenregenwäldern im Südosten Brasiliens. Auffällig sind das goldorange Fell und die mähnenartige Behaarung um das dunkle Gesicht. Die Tiere bewegen sich überwiegend in Bäumen und nutzen Baumhöhlen, hohle Äste oder dichte Vegetation als Schlafplätze.",
+  "schutzstatusBeschreibung": "Das Goldene Löwenäffchen gilt als stark gefährdet. Hauptprobleme sind der Verlust und die Zerschneidung des Atlantischen Regenwaldes, ein kleiner Genpool, Krankheiten sowie menschliche Einflüsse wie Landwirtschaft, Siedlungsdruck und illegaler Tierhandel.",
+  "schutzmassnahmen": "Wichtige Schutzmaßnahmen sind der Schutz und die Wiederherstellung von Lebensräumen, Korridore zwischen Waldfragmenten, Auswilderungs- und Umsiedlungsprogramme, Schutzgebiete, Umweltbildung und Maßnahmen gegen Krankheitsausbrüche. Solche Programme haben dazu beigetragen, dass sich die Bestände gegenüber historischen Tiefständen deutlich erholt haben.",
+  "sozialUndFortpflanzung": "Goldene Löwenäffchen leben in sozialen Familiengruppen. Meist besteht eine Gruppe aus einem Zuchtpaar und Nachkommen aus einem oder mehreren Würfen. Die Fortpflanzung ist kooperativ: Neben der Mutter helfen auch andere Gruppenmitglieder beim Tragen, Pflegen und Beschützen der Jungtiere. Häufig werden Zwillinge geboren. Jungtiere werden nach einigen Monaten entwöhnt und bleiben oft noch länger in der Familiengruppe.",
+  "gutZuWissen": [
+    "Goldene Löwenäffchen sind sehr ruffreudig und nutzen Pfeif-, Triller-, Kontakt- und Alarmrufe.",
+    "Früher gab es zeitweise weniger als 200 Tiere in freier Wildbahn; Schutzprogramme haben den Bestand wieder auf mehrere Tausend Tiere erhöht.",
+    "Gruppen verteidigen Reviere mit Duftmarken und Rufen.",
+    "Zum Schlafen nutzen sie Baumhöhlen, hohle Äste oder dichte Lianenbereiche.",
+    "Die Aufzucht funktioniert besser, wenn mehrere Gruppenmitglieder bei der Betreuung der Jungtiere helfen."
+  ]
+}

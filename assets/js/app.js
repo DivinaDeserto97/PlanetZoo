@@ -2,7 +2,7 @@ import { ladeTier, ladeSymbolDaten } from "./api.js";
 import { renderTier } from "./renderTier.js";
 
 const params = new URLSearchParams(window.location.search);
-const tierId = params.get("id") || "Ramphastos-toco";
+const tierId = params.get("id");
 
 main();
 

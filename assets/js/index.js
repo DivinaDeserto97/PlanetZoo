@@ -1,41 +1,10 @@
-const systematikDateien = [
-  "01_domaenen.json",
-  "02_unterdomaenen.json",
-  "03_reiche.json",
-  "04_unterreiche.json",
-  "05_ueberstaemme.json",
-  "06_staemme.json",
-  "07_unterstaemme.json",
-  "08_infrastaemme.json",
-  "09_ueberklassen.json",
-  "10_klassen.json",
-  "11_unterklassen.json",
-  "12_infraklassen.json",
-  "13_ueberordnungen.json",
-  "14_ordnungen.json",
-  "15_unterordnungen.json",
-  "16_infraordnungen.json",
-  "17_ueberfamilien.json",
-  "18_familien.json",
-  "19_unterfamilien.json",
-  "20_triben.json",
-  "21_untertriben.json",
-  "22_gattungen.json",
-  "23_untergattungen.json",
-  "24_arten.json",
-  "25_unterarten.json",
-  "26_varietaeten.json",
-  "27_formen.json"
-];
-
 let alleZeilen = [];
 
 main();
 
 async function main() {
-  const [lebewesen, systematik, biome, regionen] = await Promise.all([
+  const [lebewesen, biome, regionen] = await Promise.all([
     ladeJson("daten/lebewesen.json", []),
-    ladeSystematik(),
     ladeJson("daten/symbole/Biome.json", []),
     ladeJson("daten/symbole/ZoogeografischeRegionen.json", [])
   ]);
@@ -44,17 +13,21 @@ async function main() {
 
   for (const eintrag of lebewesen) {
     const tier = await ladeJson(eintrag.datei, null);
-    if (!tier) continue;
 
-    const pfad = baueSystematikPfad(systematik, eintrag.systematik);
+    if (!tier) {
+      console.warn(`Tier konnte nicht geladen werden: ${eintrag.datei}`);
+      continue;
+    }
+
+    const systematik = leseSystematik(tier);
 
     zeilen.push({
-      id: eintrag.id,
+      id: eintrag.id || tier.id,
       tier,
-      pfad,
-      klasse: findeRang(pfad, "10_klassen.json"),
-      ordnung: findeRang(pfad, "14_ordnungen.json"),
-      familie: findeRang(pfad, "18_familien.json"),
+      klasse: systematik.klasse,
+      ordnung: systematik.ordnung,
+      familie: systematik.familie,
+      gattung: systematik.gattung,
       biomeText: baueBiomeText(tier, biome),
       regionText: baueRegionText(tier, regionen),
       suchtext: ""
@@ -63,16 +36,17 @@ async function main() {
 
   alleZeilen = zeilen.map(zeile => ({
     ...zeile,
-    suchtext: [
+    suchtext: normalisiereText([
       zeile.tier.nameDeutsch,
       zeile.tier.nameLatein,
       zeile.tier.bedrohung?.code,
       zeile.klasse,
       zeile.ordnung,
       zeile.familie,
+      zeile.gattung,
       zeile.biomeText,
       zeile.regionText
-    ].join(" ").toLowerCase()
+    ].join(" "))
   }));
 
   fuelleFilter();
@@ -83,59 +57,71 @@ async function main() {
 async function ladeJson(pfad, fallback) {
   try {
     const antwort = await fetch(pfad);
-    if (!antwort.ok) return fallback;
+
+    if (!antwort.ok) {
+      console.warn(`JSON nicht gefunden: ${pfad}`);
+      return fallback;
+    }
+
     return await antwort.json();
-  } catch {
+  } catch (fehler) {
+    console.error(`Fehler beim Laden von ${pfad}`, fehler);
     return fallback;
   }
 }
 
-async function ladeSystematik() {
-  const daten = {};
+function leseSystematik(tier) {
+  const pfad = tier.systematik?.pfad;
+  const kurz = tier.systematikKurz || {};
 
-  await Promise.all(systematikDateien.map(async datei => {
-    daten[datei] = await ladeJson(`daten/systematik/${datei}`, []);
-  }));
-
-  return daten;
-}
-
-function baueSystematikPfad(systematik, ref) {
-  const pfad = [];
-
-  let aktuelleDatei = ref?.datei;
-  let aktuelleId = ref?.id;
-
-  while (aktuelleDatei && aktuelleId != null) {
-    const liste = systematik[aktuelleDatei] || [];
-    const eintrag = liste.find(x => String(x.id) === String(aktuelleId));
-
-    if (!eintrag) break;
-
-    pfad.push({
-      datei: aktuelleDatei,
-      ...eintrag
-    });
-
-    aktuelleDatei = eintrag.parentDatei;
-    aktuelleId = eintrag.parentId;
+  if (Array.isArray(pfad)) {
+    return {
+      klasse: findeRang(pfad, "klasse"),
+      ordnung: findeRang(pfad, "ordnung"),
+      familie: findeRang(pfad, "familie"),
+      gattung: findeRang(pfad, "gattung")
+    };
   }
 
-  return pfad;
+  return {
+    klasse: kurz.klasse || "",
+    ordnung: kurz.ordnung || "",
+    familie: kurz.familie || "",
+    gattung: kurz.gattung || ""
+  };
 }
 
-function findeRang(pfad, datei) {
-  return pfad.find(e => e.datei === datei)?.deutsch || "";
+function findeRang(pfad, rang) {
+  const gesucht = normalisiereText(rang);
+
+  const eintrag = pfad.find(e => {
+    return normalisiereText(e.rang) === gesucht;
+  });
+
+  if (!eintrag) return "";
+
+  return eintrag.deutsch || eintrag.wissenschaftlich || "";
 }
 
 function baueBiomeText(tier, biomeListe) {
-  const fakt = tier.fakten?.find(f => f.label === "Biome");
+  const fakt = Array.isArray(tier.fakten)
+    ? tier.fakten.find(f => {
+        return normalisiereText(f.label) === "biome" ||
+               normalisiereText(f.typ) === "biome";
+      })
+    : null;
+
   const refs = Array.isArray(fakt?.ref) ? fakt.ref : [];
 
-  if (refs.length === 0) return fakt?.wert || "";
+  if (refs.length === 0) {
+    return fakt?.wert || "";
+  }
 
   return refs
-    .map(id => biomeListe.find(b => b.id === id)?.name || id)
+    .map(id => {
+      const eintrag = biomeListe.find(b => b.id === id);
+      return eintrag?.name || id;
+    })
     .join(", ");
 }
 
@@ -145,7 +131,10 @@ function baueRegionText(tier, regionenListe) {
     : [];
 
   return refs
-    .map(id => regionenListe.find(r => r.id === id)?.name || id)
+    .map(id => {
+      const eintrag = regionenListe.find(r => r.id === id);
+      return eintrag?.name || id;
+    })
     .join(", ");
 }
 
@@ -153,15 +142,24 @@ function fuelleFilter() {
   fuelleSelect("filterKlasse", alleZeilen.map(z => z.klasse));
   fuelleSelect("filterOrdnung", alleZeilen.map(z => z.ordnung));
   fuelleSelect("filterFamilie", alleZeilen.map(z => z.familie));
-  fuelleSelect("filterBiome", alleZeilen.flatMap(z => z.biomeText.split(",").map(x => x.trim())));
-  fuelleSelect("filterRegion", alleZeilen.flatMap(z => z.regionText.split(",").map(x => x.trim())));
+  fuelleSelect("filterBiome", alleZeilen.flatMap(z => teileText(z.biomeText)));
+  fuelleSelect("filterRegion", alleZeilen.flatMap(z => teileText(z.regionText)));
 }
 
 function fuelleSelect(id, werte) {
   const select = document.getElementById(id);
   if (!select) return;
 
-  const sauber = [...new Set(werte.filter(Boolean))].sort();
+  const vorhandenerStart = select.querySelector("option[value='']");
+  select.innerHTML = "";
+
+  if (vorhandenerStart) {
+    select.appendChild(vorhandenerStart);
+  }
+
+  const sauber = [...new Set(werte.filter(Boolean))].sort((a, b) => {
+    return a.localeCompare(b, "de");
+  });
 
   sauber.forEach(wert => {
     const option = document.createElement("option");
@@ -188,7 +186,7 @@ function renderTabelle() {
   const tbody = document.getElementById("tierTabelle");
   if (!tbody) return;
 
-  const text = document.getElementById("filterText")?.value.toLowerCase().trim() || "";
+  const text = normalisiereText(document.getElementById("filterText")?.value || "");
   const klasse = document.getElementById("filterKlasse")?.value || "";
   const ordnung = document.getElementById("filterOrdnung")?.value || "";
   const familie = document.getElementById("filterFamilie")?.value || "";
@@ -208,16 +206,14 @@ function renderTabelle() {
       const tr = document.createElement("tr");
       tr.tabIndex = 0;
 
-      tr.innerHTML = `
-        <td>${z.tier.nameDeutsch || ""}</td>
-        <td><em>${z.tier.nameLatein || ""}</em></td>
-        <td>${z.tier.bedrohung?.code || ""}</td>
-        <td>${z.klasse}</td>
-        <td>${z.ordnung}</td>
-        <td>${z.familie}</td>
-        <td>${z.biomeText}</td>
-        <td>${z.regionText}</td>
-      `;
+      fuegeZelleEin(tr, z.tier.nameDeutsch || "");
+      fuegeZelleEin(tr, z.tier.nameLatein || "", true);
+      fuegeZelleEin(tr, z.tier.bedrohung?.code || "");
+      fuegeZelleEin(tr, z.klasse);
+      fuegeZelleEin(tr, z.ordnung);
+      fuegeZelleEin(tr, z.familie);
+      fuegeZelleEin(tr, z.biomeText);
+      fuegeZelleEin(tr, z.regionText);
 
       tr.addEventListener("click", () => {
         window.location.href = `tier.html?id=${encodeURIComponent(z.id)}`;
@@ -231,4 +227,35 @@ function renderTabelle() {
 
       tbody.appendChild(tr);
     });
+}
+
+function fuegeZelleEin(tr, text, kursiv = false) {
+  const td = document.createElement("td");
+
+  if (kursiv) {
+    const em = document.createElement("em");
+    em.textContent = text;
+    td.appendChild(em);
+  } else {
+    td.textContent = text;
+  }
+
+  tr.appendChild(td);
+}
+
+function teileText(text) {
+  return String(text || "")
+    .split(",")
+    .map(wert => wert.trim())
+    .filter(Boolean);
+}
+
+function normalisiereText(wert) {
+  return String(wert || "")
+    .trim()
+    .toLowerCase()
+    .replaceAll("ä", "ae")
+    .replaceAll("ö", "oe")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss");
 }

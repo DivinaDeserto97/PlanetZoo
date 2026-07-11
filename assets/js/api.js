@@ -14,8 +14,22 @@ export async function ladeJson(pfad, fallback = null) {
   }
 }
 
+export async function ladeLebewesenListe() {
+  return ladeJson("daten/lebewesen.json", []);
+}
+
 export async function ladeTier(id) {
-  return ladeJson(`daten/tiere/${id}.json`, null);
+  const lebewesen = await ladeLebewesenListe();
+
+  const zielId = id || lebewesen[0]?.id;
+  const eintrag = lebewesen.find(tier => tier.id === zielId);
+
+  if (!eintrag) {
+    console.error(`Tier nicht in lebewesen.json gefunden: ${zielId}`);
+    return null;
+  }
+
+  return ladeJson(eintrag.datei, null);
 }
 
 export async function ladeSymbolDaten() {

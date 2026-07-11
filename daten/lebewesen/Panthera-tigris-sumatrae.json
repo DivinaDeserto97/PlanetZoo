@@ -13,10 +13,10 @@
   "wildbestand": "400–600 geschätzt",
   "bilder": {
     "tier": [
-      "assets/tiere/Panthera-tigris-sumatrae/img/tier/Panthera-tigris-sumatrae.webp"
+      "assets/lebewesen/planetZoo2/Panthera-tigris-sumatrae/img/tier/Panthera-tigris-sumatrae.webp"
     ],
     "karte": [
-      "assets/tiere/Panthera-tigris-sumatrae/img/map/Panthera-tigris-sumatrae_map.png"
+      "assets/lebewesen/planetZoo2/Panthera-tigris-sumatrae/img/map/Panthera-tigris-sumatrae_map.png"
     ]
   },
   "fakten": [
@@ -27,7 +27,7 @@
       "ref": "ruf",
       "typ": "audio",
       "audio": [
-        "assets/tiere/Panthera-tigris-sumatrae/audio/mp3/Panthera-tigris-sumatrae.mp3"
+        "assets/lebewesen/tierstimmenarchiv/Panthera-tigris/mp3/Panthera_tigris_V2047_22.mp3"
       ]
     },
     {
@@ -78,7 +78,7 @@
         },
         {
           "label": "Wurfgröße",
-          "wert": "meist 2–3 Jungtiere, selten bis 5",
+          "wert": "meist 2–3 Junglebewesen, selten bis 5",
           "ref": "wurfgoesse"
         },
         {
@@ -104,16 +104,16 @@
   },
   "nahrungart": "Fleischfresser",
   "nahrung": [
-    "Säugetiere",
+    "Säugelebewesen",
     "Wildschweine",
     "Hirsche",
-    "andere Beutetiere"
+    "andere Beutelebewesen"
   ],
-  "nahrungRefs": ["saeugetiere", "wildschweine", "hirsche", "beutetiere"],
+  "nahrungRefs": ["saeugelebewesen", "wildschweine", "hirsche", "beutelebewesen"],
   "beschreibung": "Der Sumatra-Tiger ist eine Tiger-Unterart, die ausschließlich auf der indonesischen Insel Sumatra vorkommt. Er lebt vor allem in dichten tropischen Wäldern, darunter Tieflandregenwälder, Bergregenwälder und Torfsumpfwälder. Sumatra-Tiger besitzen ein orangefarbenes Fell mit schmalen schwarzen Streifen. Im Vergleich zu anderen Tiger-Unterarten wirken sie oft kleiner und haben häufig eine stärker ausgeprägte Mähne beziehungsweise längeres Fell im Gesichtsbereich.",
   "schutzstatusBeschreibung": "Sumatra-Tiger sind stark gefährdet. Große Teile der Regenwälder Sumatras werden für Palmölplantagen, Holzeinschlag und Landwirtschaft gerodet. Dadurch wird ihr Lebensraum zerschnitten, was die Suche nach Nahrung und Partnern erschwert. Außerdem kommt es häufiger zu Konflikten mit Menschen. Weitere Bedrohungen sind Wilderei sowie der illegale Handel mit Fellen und Körperteilen.",
   "schutzmassnahmen": "Schutzorganisationen und die indonesische Regierung arbeiten daran, den Rückgang der Sumatra-Tiger zu stoppen. Wichtige Maßnahmen sind der Schutz von Lebensräumen, Anti-Wilderei-Patrouillen, das Entfernen von Schlingenfallen, Bildung der lokalen Bevölkerung und Strategien zur Verringerung von Mensch-Tiger-Konflikten. Nationalparks dienen als wichtige Rückzugsräume. In Zoos helfen koordinierte Zuchtprogramme dabei, eine genetisch gesunde Reservepopulation zu erhalten.",
-  "sozialUndFortpflanzung": "Sumatra-Tiger sind Einzelgänger. Männchen und Weibchen treffen normalerweise nur zur Paarung aufeinander. Paarungen können ganzjährig stattfinden, mit Höhepunkten während der Regenzeit. Weibchen markieren ihr Revier mit Duftstoffen und Lauten, um Männchen anzulocken. Nach der Paarung verlässt das Männchen das Weibchen wieder. Die Mutter zieht die Jungtiere allein auf. Nach einer Tragzeit von 100 bis 110 Tagen werden meist 2 bis 3 Jungtiere geboren, gelegentlich bis zu 5. Die Jungtiere bleiben etwa 1,5 bis 2 Jahre bei der Mutter, bevor sie selbstständig werden.",
+  "sozialUndFortpflanzung": "Sumatra-Tiger sind Einzelgänger. Männchen und Weibchen treffen normalerweise nur zur Paarung aufeinander. Paarungen können ganzjährig stattfinden, mit Höhepunkten während der Regenzeit. Weibchen markieren ihr Revier mit Duftstoffen und Lauten, um Männchen anzulocken. Nach der Paarung verlässt das Männchen das Weibchen wieder. Die Mutter zieht die Junglebewesen allein auf. Nach einer Tragzeit von 100 bis 110 Tagen werden meist 2 bis 3 Junglebewesen geboren, gelegentlich bis zu 5. Die Junglebewesen bleiben etwa 1,5 bis 2 Jahre bei der Mutter, bevor sie selbstständig werden.",
   "gutZuWissen": [
     "Tiger besitzen die größten Zähne aller Katzenarten. Ihre Eckzähne können bis zu 90 mm lang werden.",
     "Sumatra-Tiger haben, wie alle Tiger, nicht nur gestreiftes Fell, sondern auch gestreifte Haut.",
