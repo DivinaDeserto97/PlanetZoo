@@ -5,11 +5,16 @@
 
   <div class="header-pc__top">
     <!-- Titel -->
-    <div class="header-pc__title">PlanetZoo2</div>
+
+    <a class="header-pc__title" href="#home" data-page="home" data-header-title>
+      Home
+    </a>
 
     <!-- Rechte Seite -->
+
     <div class="header-pc__actions">
       <!-- Sprache -->
+
       <select
         class="header-pc__language"
         data-language-select
@@ -19,8 +24,8 @@
           value="de"
           data-i18n
           data-de="Deutsch (Deutsch)"
-          data-en="Deutsch (German)"
-          data-fr="Deutsch (Allemand)"
+          data-en="German (Deutsch)"
+          data-fr="Allemand (Deutsch)"
         >
           Deutsch (Deutsch)
         </option>
@@ -28,33 +33,38 @@
         <option
           value="en"
           data-i18n
-          data-de="English (Englisch)"
+          data-de="Englisch (English)"
           data-en="English (English)"
-          data-fr="English (Anglais)"
+          data-fr="Anglais (English)"
         >
-          English (Englisch)
+          Englisch (English)
         </option>
 
         <option
           value="fr"
           data-i18n
-          data-de="French (Französisch)"
-          data-en="French (French)"
-          data-fr="French (Français)"
+          data-de="Französisch (Français)"
+          data-en="French (Français)"
+          data-fr="Français (Français)"
         >
-          French (Französisch)
+          Französisch (Français)
         </option>
       </select>
 
       <!-- Dark / Light -->
+
       <button class="header-pc__theme" type="button" data-theme-toggle>
-        Dark / Light
+        <span class="header-pc__theme-icon" data-theme-icon aria-hidden="true">
+          ☾
+        </span>
+
+        <span data-theme-label> Dunkel </span>
       </button>
     </div>
   </div>
 
   <!-- ================================= -->
-  <!-- UNTERE ZEILE / NAVIGATION         -->
+  <!-- NAVIGATION                        -->
   <!-- ================================= -->
 
   <nav class="header-pc__nav" data-main-navigation></nav>

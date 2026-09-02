@@ -1,56 +1,181 @@
-const pages = {
+/* ======================================== */
+/* SEITEN                                   */
+/* ======================================== */
+
+export const pages = {
+
+    /* ==================================== */
+    /* HOME                                 */
+    /* ==================================== */
 
     home: {
-        html: "./pages/home.html",
 
-        css: "./assets/css/home/home.css",
+        html:
+            "./pages/home.html",
 
-        js: "./home/home.js"
+        css:
+            "./assets/css/home/home.css",
+
+        js:
+            "./home/home.js",
+
+
+        /*
+            Home wird NICHT unten
+            in der Navigation angezeigt.
+        */
+        navigation:
+            null,
+
+
+        /*
+            Titel oben links im Header.
+        */
+        headerTitle: {
+            de: "Home",
+            en: "Home",
+            fr: "Accueil"
+        }
+
     },
+
+
+    /* ==================================== */
+    /* KARTE                                */
+    /* ==================================== */
+
     map: {
-        html: "./pages/map.html",
 
-        css: "./assets/css/map/map.css",
+        html:
+            "./pages/map.html",
 
-        js: "./map/map.js"
+
+        /*
+            Noch keine eigene map.css.
+        */
+        css:
+            null,
+
+
+        /*
+            Noch keine eigene map.js.
+        */
+        js:
+            null,
+
+
+        /*
+            Eintrag in der Navigation.
+        */
+        navigation: {
+            de: "Karte",
+            en: "Map",
+            fr: "Carte"
+        },
+
+
+        /*
+            Titel oben links im Header.
+        */
+        headerTitle: {
+            de: "Karte",
+            en: "Map",
+            fr: "Carte"
+        }
+
     }
 
 };
 
 
-export async function loadPage(pageName) {
+/* ======================================== */
+/* AKTUELLE SEITE                           */
+/* ======================================== */
 
-    const page = pages[pageName];
-
-
-    if (!page) {
-        console.error(
-            `Seite "${pageName}" wurde in pages.js nicht gefunden.`
-        );
-
-        return;
-    }
+let currentPage =
+    "home";
 
 
-    await loadPageHTML(page);
+/* ======================================== */
+/* AKTUELLE SEITE ABFRAGEN                  */
+/* ======================================== */
 
-    loadPageCSS(page);
+export function getCurrentPage() {
 
-    await loadPageJS(page);
+    return currentPage;
+
+}
+
+
+/* ======================================== */
+/* SEITE LADEN                              */
+/* ======================================== */
+
+export async function loadPage(
+    pageName
+) {
+
+    const page =
+        pages[pageName];
 
 
     /*
-        Damit globale Features wissen:
+        Prüfen, ob Seite existiert.
+    */
+    if (!page) {
 
-        Der neue HTML-Inhalt
-        ist jetzt im DOM.
+        console.error(
+            `Seite "${pageName}" existiert nicht.`
+        );
+
+        return;
+
+    }
+
+
+    /*
+        Aktuelle Seite speichern.
+    */
+    currentPage =
+        pageName;
+
+
+    /*
+        HTML laden.
+    */
+    await loadHTML(
+        page
+    );
+
+
+    /*
+        CSS laden.
+    */
+    loadCSS(
+        page
+    );
+
+
+    /*
+        JavaScript laden.
+    */
+    await loadJS(
+        page
+    );
+
+
+    /*
+        Allen Features mitteilen,
+        dass die neue Seite fertig
+        geladen wurde.
     */
     document.dispatchEvent(
         new CustomEvent(
             "pageLoaded",
             {
                 detail: {
-                    page: pageName
+                    page:
+                        pageName
                 }
             }
         )
@@ -59,25 +184,44 @@ export async function loadPage(pageName) {
 }
 
 
-/* =============================== */
-/* HTML                            */
-/* =============================== */
+/* ======================================== */
+/* HTML LADEN                               */
+/* ======================================== */
 
-async function loadPageHTML(page) {
+async function loadHTML(
+    page
+) {
 
     const container =
-        document.querySelector("#page");
+        document.querySelector(
+            "#page"
+        );
+
+
+    if (!container) {
+
+        console.error(
+            'Element "#page" wurde nicht gefunden.'
+        );
+
+        return;
+
+    }
 
 
     const response =
-        await fetch(page.html);
+        await fetch(
+            page.html
+        );
 
 
     if (!response.ok) {
 
-        throw new Error(
+        console.error(
             `HTML konnte nicht geladen werden: ${page.html}`
         );
+
+        return;
 
     }
 
@@ -88,12 +232,17 @@ async function loadPageHTML(page) {
 }
 
 
-/* =============================== */
-/* CSS                             */
-/* =============================== */
+/* ======================================== */
+/* CSS LADEN                                */
+/* ======================================== */
 
-function loadPageCSS(page) {
+function loadCSS(
+    page
+) {
 
+    /*
+        CSS der vorherigen Seite entfernen.
+    */
     const oldCSS =
         document.querySelector(
             "#page-css"
@@ -101,46 +250,92 @@ function loadPageCSS(page) {
 
 
     if (oldCSS) {
+
         oldCSS.remove();
+
     }
 
 
-    const link =
-        document.createElement("link");
+    /*
+        Seite besitzt kein eigenes CSS.
+    */
+    if (!page.css) {
+
+        return;
+
+    }
 
 
-    link.id =
+    const css =
+        document.createElement(
+            "link"
+        );
+
+
+    css.id =
         "page-css";
 
-    link.rel =
+
+    css.rel =
         "stylesheet";
 
-    link.href =
+
+    css.href =
         page.css;
 
 
-    document.head.appendChild(link);
+    document.head.appendChild(
+        css
+    );
 
 }
 
 
-/* =============================== */
-/* JAVASCRIPT                      */
-/* =============================== */
+/* ======================================== */
+/* JAVASCRIPT LADEN                         */
+/* ======================================== */
 
-async function loadPageJS(page) {
+async function loadJS(
+    page
+) {
 
-    const module =
-        await import(page.js);
+    /*
+        Seite besitzt kein eigenes JS.
+    */
+    if (!page.js) {
+
+        return;
+
+    }
 
 
-    if (
-        typeof module.init
-        ===
-        "function"
-    ) {
+    try {
 
-        module.init();
+        const module =
+            await import(
+                page.js
+            );
+
+
+        /*
+            Falls die Seitendatei
+            init() exportiert.
+        */
+        if (
+            typeof module.init ===
+            "function"
+        ) {
+
+            module.init();
+
+        }
+
+    } catch (error) {
+
+        console.error(
+            `JavaScript konnte nicht geladen werden: ${page.js}`,
+            error
+        );
 
     }
 

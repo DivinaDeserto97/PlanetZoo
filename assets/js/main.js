@@ -9,18 +9,37 @@ import {
 
 
 import {
+    initTheme
+} from "./features/theme.js";
+
+
+import {
     initDevice,
     getDevice
 } from "./features/device.js";
 
 
+import {
+    initNavigation
+} from "./features/navigation.js";
 
-/* =============================== */
-/* HEADER                          */
-/* =============================== */
 
-let loadedHeader = null;
+import {
+    initPageTitle
+} from "./features/pageTitle.js";
 
+
+/* ======================================== */
+/* HEADER                                   */
+/* ======================================== */
+
+let loadedHeader =
+    null;
+
+
+/* ======================================== */
+/* HEADER LADEN                             */
+/* ======================================== */
 
 async function loadHeader() {
 
@@ -29,10 +48,16 @@ async function loadHeader() {
 
 
     /*
-        Richtiger Header ist bereits da.
+        Richtiger Header ist
+        bereits geladen.
     */
-    if (loadedHeader === device) {
+    if (
+        loadedHeader ===
+        device
+    ) {
+
         return;
+
     }
 
 
@@ -46,11 +71,24 @@ async function loadHeader() {
         );
 
 
+    if (!header) {
+
+        console.error(
+            'Element "#header" wurde nicht gefunden.'
+        );
+
+        return;
+
+    }
+
+
     const base =
         `./assets/components/header/${device}`;
 
 
-    /* HTML */
+    /* ==================================== */
+    /* HTML                                 */
+    /* ==================================== */
 
     const response =
         await fetch(
@@ -73,7 +111,9 @@ async function loadHeader() {
         await response.text();
 
 
-    /* CSS */
+    /* ==================================== */
+    /* CSS                                  */
+    /* ==================================== */
 
     const oldCSS =
         document.querySelector(
@@ -82,7 +122,9 @@ async function loadHeader() {
 
 
     if (oldCSS) {
+
         oldCSS.remove();
+
     }
 
 
@@ -95,70 +137,97 @@ async function loadHeader() {
     css.id =
         "header-css";
 
+
     css.rel =
         "stylesheet";
+
 
     css.href =
         `${base}/header.css`;
 
 
-    document.head.appendChild(css);
+    document.head.appendChild(
+        css
+    );
 
 
-    /* JS */
+    /* ==================================== */
+    /* JAVASCRIPT                           */
+    /* ==================================== */
 
-    const module =
-        await import(
-            `../components/header/${device}/header.js`
+    try {
+
+        const module =
+            await import(
+                `../components/header/${device}/header.js`
+            );
+
+
+        if (
+            typeof module.init ===
+            "function"
+        ) {
+
+            module.init();
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            `Header-JavaScript für "${device}" konnte nicht geladen werden.`,
+            error
         );
-
-
-    if (
-        typeof module.init
-        ===
-        "function"
-    ) {
-
-        module.init();
 
     }
 
 
     document.dispatchEvent(
         new CustomEvent(
-            "componentLoaded"
+            "componentLoaded",
+            {
+                detail: {
+                    component:
+                        "header",
+
+                    device
+                }
+            }
         )
     );
 
 }
 
 
-/* =============================== */
-/* PROGRAMMSTART                   */
-/* =============================== */
+/* ======================================== */
+/* PROGRAMMSTART                            */
+/* ======================================== */
 
 async function main() {
 
     /*
         Allgemeine Features
     */
-
     initLanguage();
 
+    initTheme();
+
     initDevice();
+
+    initNavigation();
+
+    initPageTitle();
 
 
     /*
         Header
     */
-
     await loadHeader();
 
 
     /*
-        Erster Body
+        Startseite
     */
-
     await loadPage(
         "home"
     );
@@ -166,9 +235,10 @@ async function main() {
 }
 
 
-/*
-    Gerät / Ausrichtung geändert
-*/
+/* ======================================== */
+/* GERÄTEWECHSEL                            */
+/* ======================================== */
+
 document.addEventListener(
     "deviceChanged",
     async () => {
@@ -178,5 +248,9 @@ document.addEventListener(
     }
 );
 
+
+/* ======================================== */
+/* START                                    */
+/* ======================================== */
 
 main();

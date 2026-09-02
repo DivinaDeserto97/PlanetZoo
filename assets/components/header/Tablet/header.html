@@ -2,11 +2,12 @@
   <div class="seiten-header__innen">
     <div class="kopfzeile">
       <a
-        class="projekttitel"
-        data-ziel="home.html"
-        href="#"
+        class="header-pc__title"
+        href="#home"
+        data-page="home"
+        data-header-title
       >
-        Planet Zoo 2
+        Home
       </a>
 
       <div class="kopfaktionen">
@@ -16,13 +17,9 @@
           type="button"
           aria-label="Darstellung wechseln"
         >
-          <span id="darstellungSymbol" aria-hidden="true">
-            ☀
-          </span>
+          <span id="darstellungSymbol" aria-hidden="true"> ☀ </span>
 
-          <span id="darstellungText">
-            Hell
-          </span>
+          <span id="darstellungText"> Hell </span>
         </button>
 
         <button
@@ -33,21 +30,13 @@
         >
           <span aria-hidden="true">🌐</span>
 
-          <span id="spracheText">
-            DE
-          </span>
+          <span id="spracheText"> DE </span>
         </button>
       </div>
     </div>
 
     <nav class="hauptnavigation" aria-label="Hauptnavigation">
-      <a
-        data-seite="home"
-        data-ziel="home.html"
-        href="#"
-      >
-        Zoopedia
-      </a>
+      <a data-seite="home" data-ziel="home.html" href="#"> Zoopedia </a>
 
       <a
         data-seite="tier-verbreitung"
@@ -57,11 +46,7 @@
         Verbreitungskarten
       </a>
 
-      <a
-        data-seite="rechner"
-        data-ziel="pages/rechner.html"
-        href="#"
-      >
+      <a data-seite="rechner" data-ziel="pages/rechner.html" href="#">
         Gehegerechner
       </a>
     </nav>

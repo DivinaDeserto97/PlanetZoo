@@ -1,4 +1,6 @@
-const DEFAULT_LANGUAGE = "de";
+const DEFAULT_LANGUAGE =
+    "de";
+
 
 const LANGUAGES = [
     "de",
@@ -7,9 +9,9 @@ const LANGUAGES = [
 ];
 
 
-/* =============================== */
-/* SPRACHE LADEN                   */
-/* =============================== */
+/* ======================================== */
+/* SPRACHE LADEN                            */
+/* ======================================== */
 
 export function getLanguage() {
 
@@ -21,9 +23,13 @@ export function getLanguage() {
 
     if (
         language &&
-        LANGUAGES.includes(language)
+        LANGUAGES.includes(
+            language
+        )
     ) {
+
         return language;
+
     }
 
 
@@ -32,13 +38,19 @@ export function getLanguage() {
 }
 
 
-/* =============================== */
-/* SPRACHE SETZEN                  */
-/* =============================== */
+/* ======================================== */
+/* SPRACHE SETZEN                           */
+/* ======================================== */
 
-export function setLanguage(language) {
+export function setLanguage(
+    language
+) {
 
-    if (!LANGUAGES.includes(language)) {
+    if (
+        !LANGUAGES.includes(
+            language
+        )
+    ) {
 
         console.error(
             `Sprache "${language}" existiert nicht.`
@@ -49,26 +61,55 @@ export function setLanguage(language) {
     }
 
 
+    /*
+        Sprache speichern.
+    */
     localStorage.setItem(
         "language",
         language
     );
 
 
+    /*
+        Sprache ins HTML schreiben.
+    */
     document.documentElement.lang =
         language;
 
 
+    /*
+        Seite übersetzen.
+    */
     translate();
 
+
+    /*
+        Select aktualisieren.
+    */
     updateLanguageSelect();
+
+
+    /*
+        Andere Features informieren:
+        Sprache wurde geändert.
+    */
+    document.dispatchEvent(
+        new CustomEvent(
+            "languageChanged",
+            {
+                detail: {
+                    language
+                }
+            }
+        )
+    );
 
 }
 
 
-/* =============================== */
-/* HTML ÜBERSETZEN                 */
-/* =============================== */
+/* ======================================== */
+/* HTML ÜBERSETZEN                          */
+/* ======================================== */
 
 export function translate() {
 
@@ -80,27 +121,33 @@ export function translate() {
         .querySelectorAll(
             "[data-i18n]"
         )
-        .forEach(element => {
+        .forEach(
+            element => {
 
-            const text =
-                element.dataset[language];
+                const text =
+                    element.dataset[
+                        language
+                    ];
 
 
-            if (text !== undefined) {
+                if (
+                    text !== undefined
+                ) {
 
-                element.textContent =
-                    text;
+                    element.textContent =
+                        text;
+
+                }
 
             }
-
-        });
+        );
 
 }
 
 
-/* =============================== */
-/* SELECT AKTUALISIEREN            */
-/* =============================== */
+/* ======================================== */
+/* SPRACH-SELECT AKTUALISIEREN              */
+/* ======================================== */
 
 function updateLanguageSelect() {
 
@@ -112,28 +159,34 @@ function updateLanguageSelect() {
         .querySelectorAll(
             "[data-language-select]"
         )
-        .forEach(select => {
+        .forEach(
+            select => {
 
-            select.value =
-                language;
+                select.value =
+                    language;
 
-        });
+            }
+        );
 
 }
 
 
-/* =============================== */
-/* INITIALISIEREN                  */
-/* =============================== */
+/* ======================================== */
+/* INITIALISIEREN                           */
+/* ======================================== */
 
 export function initLanguage() {
 
+    /*
+        Gespeicherte Sprache
+        direkt setzen.
+    */
     document.documentElement.lang =
         getLanguage();
 
 
     /*
-        Sprache über Select-Feld ändern
+        Sprache über Select ändern.
     */
     document.addEventListener(
         "change",
@@ -146,7 +199,9 @@ export function initLanguage() {
 
 
             if (!select) {
+
                 return;
+
             }
 
 
@@ -159,8 +214,7 @@ export function initLanguage() {
 
 
     /*
-        Wenn pages.js einen neuen
-        Body geladen hat
+        Neue Seite wurde geladen.
     */
     document.addEventListener(
         "pageLoaded",
@@ -175,8 +229,8 @@ export function initLanguage() {
 
 
     /*
-        Wenn z.B. ein neuer Header
-        geladen wurde
+        Neue Komponente,
+        z.B. Header, wurde geladen.
     */
     document.addEventListener(
         "componentLoaded",
@@ -190,6 +244,9 @@ export function initLanguage() {
     );
 
 
+    /*
+        Direkt beim Start.
+    */
     translate();
 
     updateLanguageSelect();

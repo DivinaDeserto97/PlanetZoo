@@ -3,13 +3,21 @@
 /* ======================================== */
 
 .header-pc {
-    width: 100%;
+    width:
+        100%;
 
-    background-color: #1f1f1f;
+    background-color:
+        var(--farbe-header);
 
-    color: #ffffff;
+    color:
+        var(--farbe-header-text);
 
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom:
+        1px solid var(--farbe-linie);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 
@@ -18,17 +26,24 @@
 /* ======================================== */
 
 .header-pc__top {
-    width: 100%;
+    width:
+        100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:
+        flex;
 
-    gap: 30px;
+    align-items:
+        center;
 
-    padding: 14px 30px;
+    justify-content:
+        space-between;
 
-    box-sizing: border-box;
+    gap:
+        var(--abstand-6);
+
+    padding:
+        var(--abstand-3)
+        var(--abstand-6);
 }
 
 
@@ -37,138 +52,228 @@
 /* ======================================== */
 
 .header-pc__title {
-    font-size: 24px;
-    font-weight: 700;
+    display:
+        flex;
 
-    white-space: nowrap;
+    align-items:
+        center;
+
+    color:
+        var(--farbe-header-text);
+
+    font-size:
+        var(--schrift-titel);
+
+    font-weight:
+        700;
+
+    text-decoration:
+        none;
+
+    white-space:
+        nowrap;
+
+    cursor:
+        pointer;
+}
+
+
+.header-pc__title:visited {
+    color:
+        var(--farbe-header-text);
+}
+
+
+.header-pc__title:hover {
+    color:
+        var(--farbe-akzent);
 }
 
 
 /* ======================================== */
-/* SPRACHE + DARK/LIGHT                     */
+/* AKTIONEN                                 */
 /* ======================================== */
 
 .header-pc__actions {
-    display: flex;
-    align-items: center;
+    display:
+        flex;
 
-    gap: 12px;
+    align-items:
+        center;
+
+    gap:
+        var(--abstand-3);
 }
 
 
 /* ======================================== */
-/* SPRACHAUSWAHL                            */
+/* SPRACHE                                  */
 /* ======================================== */
 
 .header-pc__language {
-    min-width: 200px;
+    min-width:
+        var(--header-sprache-breite);
 
-    height: 40px;
+    height:
+        var(--header-hoehe-element);
 
-    padding: 0 12px;
+    padding:
+        0 var(--abstand-3);
 
-    border: 1px solid #555555;
-    border-radius: 6px;
+    border:
+        1px solid var(--farbe-linie-hell);
 
-    background-color: #2c2c2c;
+    border-radius:
+        var(--radius-klein);
 
-    color: #ffffff;
+    background-color:
+        var(--farbe-element);
 
-    font-size: 14px;
+    color:
+        var(--farbe-text);
 
-    cursor: pointer;
+    font-size:
+        var(--schrift-klein);
+
+    cursor:
+        pointer;
 }
 
 
 .header-pc__language:hover {
-    background-color: #353535;
-
-    border-color: #777777;
-}
-
-
-.header-pc__language:focus {
-    outline: 2px solid #777777;
-    outline-offset: 2px;
+    background-color:
+        var(--farbe-hover);
 }
 
 
 .header-pc__language option {
-    background-color: #2c2c2c;
+    background-color:
+        var(--farbe-element);
 
-    color: #ffffff;
+    color:
+        var(--farbe-text);
 }
 
 
 /* ======================================== */
-/* DARK / LIGHT BUTTON                      */
+/* DARK / LIGHT                             */
 /* ======================================== */
 
 .header-pc__theme {
-    height: 40px;
+    height:
+        var(--header-hoehe-element);
 
-    padding: 0 16px;
+    display:
+        flex;
 
-    border: 1px solid #555555;
-    border-radius: 6px;
+    align-items:
+        center;
 
-    background-color: #2c2c2c;
+    gap:
+        var(--abstand-2);
 
-    color: #ffffff;
+    padding:
+        0 var(--abstand-4);
 
-    font-size: 14px;
+    border:
+        1px solid var(--farbe-linie-hell);
 
-    cursor: pointer;
+    border-radius:
+        var(--radius-klein);
+
+    background-color:
+        var(--farbe-element);
+
+    color:
+        var(--farbe-text);
+
+    font-size:
+        var(--schrift-klein);
 }
 
 
 .header-pc__theme:hover {
-    background-color: #353535;
+    background-color:
+        var(--farbe-hover);
+}
 
-    border-color: #777777;
+
+.header-pc__theme-icon {
+    font-size:
+        18px;
 }
 
 
 /* ======================================== */
-/* UNTERE ZEILE / NAVIGATION                */
+/* NAVIGATION                               */
 /* ======================================== */
 
 .header-pc__nav {
-    width: 100%;
+    width:
+        100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display:
+        flex;
 
-    gap: 6px;
+    align-items:
+        center;
 
-    padding: 0 30px 14px 30px;
+    justify-content:
+        flex-start;
 
-    box-sizing: border-box;
+    gap:
+        var(--abstand-1);
+
+    padding:
+        0
+        var(--abstand-6)
+        var(--abstand-3);
 }
 
 
 /* ======================================== */
-/* NAVIGATION LINKS                         */
+/* NAVIGATION LINK                          */
 /* ======================================== */
 
 .header-pc__nav a {
-    display: block;
+    display:
+        block;
 
-    padding: 9px 14px;
+    padding:
+        var(--abstand-2)
+        var(--abstand-3);
 
-    border-radius: 6px;
+    border-radius:
+        var(--radius-klein);
 
-    color: #cccccc;
+    color:
+        var(--farbe-header-text-zusatz);
 
-    text-decoration: none;
+    text-decoration:
+        none;
 
-    font-size: 15px;
+    font-size:
+        var(--schrift-klein);
 }
 
 
 .header-pc__nav a:hover {
-    background-color: #333333;
+    background-color:
+        var(--farbe-hover);
 
-    color: #ffffff;
+    color:
+        var(--farbe-header-text);
+}
+
+
+/* ======================================== */
+/* AKTIVE SEITE                             */
+/* ======================================== */
+
+.header-pc__nav a.active {
+    background-color:
+        var(--farbe-akzent);
+
+    color:
+        var(--farbe-akzent-text);
 }

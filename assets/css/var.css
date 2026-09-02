@@ -1,9 +1,210 @@
+/* ======================================== */
+/* ALLGEMEINE VARIABLEN                     */
+/* ======================================== */
+
 :root {
 
-    --background-color: #ffffff;
+    /* ==================================== */
+    /* GRÖSSEN                              */
+    /* ==================================== */
 
-    --text-color: #000000;
+    --breite-inhalt: 1400px;
 
-    --content-width: 1400px;
+
+    /* ==================================== */
+    /* ABSTÄNDE                             */
+    /* ==================================== */
+
+    --abstand-1: 4px;
+    --abstand-2: 8px;
+    --abstand-3: 12px;
+    --abstand-4: 16px;
+    --abstand-5: 24px;
+    --abstand-6: 32px;
+
+
+    /* ==================================== */
+    /* RADien                               */
+    /* ==================================== */
+
+    --radius-klein: 6px;
+    --radius-mittel: 10px;
+    --radius-gross: 16px;
+
+
+    /* ==================================== */
+    /* SCHRIFT                              */
+    /* ==================================== */
+
+    --schrift-normal: 16px;
+
+    --schrift-klein: 14px;
+
+    --schrift-titel: 24px;
+
+
+    /* ==================================== */
+    /* HEADER                               */
+    /* ==================================== */
+
+    --header-hoehe-element: 40px;
+
+    --header-sprache-breite: 200px;
+
+}
+
+
+/* ======================================== */
+/* LIGHT THEME                              */
+/* ======================================== */
+
+html[data-theme="light"] {
+
+    color-scheme:
+        light;
+
+
+    /* Seite */
+
+    --farbe-hintergrund:
+        #ffffff;
+
+    --farbe-text:
+        #161616;
+
+    --farbe-text-zusatz:
+        #555555;
+
+
+    /* Flächen */
+
+    --farbe-bereich:
+        #f4f4f4;
+
+    --farbe-element:
+        #ffffff;
+
+    --farbe-element-2:
+        #eeeeee;
+
+
+    /* Hover */
+
+    --farbe-hover:
+        #e4e4e4;
+
+
+    /* Linien */
+
+    --farbe-linie:
+        #d5d5d5;
+
+    --farbe-linie-hell:
+        #b8b8b8;
+
+
+    /* Header */
+
+    --farbe-header:
+        #f1f1f1;
+
+    --farbe-header-text:
+        #161616;
+
+    --farbe-header-text-zusatz:
+        #505050;
+
+
+    /* Akzent */
+
+    --farbe-akzent:
+        #2d6cdf;
+
+    --farbe-akzent-text:
+        #ffffff;
+
+
+    /* Fokus */
+
+    --farbe-fokus:
+        #2d6cdf;
+
+}
+
+
+/* ======================================== */
+/* DARK THEME                               */
+/* ======================================== */
+
+html[data-theme="dark"] {
+
+    color-scheme:
+        dark;
+
+
+    /* Seite */
+
+    --farbe-hintergrund:
+        #121212;
+
+    --farbe-text:
+        #f1f1f1;
+
+    --farbe-text-zusatz:
+        #b8b8b8;
+
+
+    /* Flächen */
+
+    --farbe-bereich:
+        #1f1f1f;
+
+    --farbe-element:
+        #2c2c2c;
+
+    --farbe-element-2:
+        #353535;
+
+
+    /* Hover */
+
+    --farbe-hover:
+        #3b3b3b;
+
+
+    /* Linien */
+
+    --farbe-linie:
+        #3a3a3a;
+
+    --farbe-linie-hell:
+        #555555;
+
+
+    /* Header */
+
+    --farbe-header:
+        #1f1f1f;
+
+    --farbe-header-text:
+        #ffffff;
+
+    --farbe-header-text-zusatz:
+        #cccccc;
+
+
+    /* Akzent */
+
+    --farbe-akzent:
+        #6c9cff;
+
+    --farbe-akzent-text:
+        #101010;
+
+
+    /* Fokus */
+
+    --farbe-fokus:
+        #8cb1ff;
 
 }
