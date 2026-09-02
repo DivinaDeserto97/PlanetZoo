@@ -3,56 +3,41 @@
 /* ======================================== */
 
 .home-page {
-    width:
-        100%;
+  width: 100%;
 
-    max-width:
-        var(--home-max-width);
+  max-width: var(--home-max-width);
 
-    margin:
-        0 auto;
+  margin: 0 auto;
 
-    padding:
-        var(--home-padding-vertical)
-        var(--home-padding-horizontal);
+  padding: var(--home-padding-vertical) var(--home-padding-horizontal);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 }
-
 
 /* ======================================== */
 /* TITEL                                    */
 /* ======================================== */
 
 .home-page h1 {
-    margin:
-        0 0 var(--home-abstand);
+  margin: 0 0 var(--home-abstand);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 }
-
 
 /* ======================================== */
 /* TEXT                                     */
 /* ======================================== */
 
 .home-page p {
-    margin:
-        0 0 var(--home-abstand);
+  margin: 0 0 var(--home-abstand);
 
-    color:
-        var(--farbe-text-zusatz);
+  color: var(--farbe-text-zusatz);
 }
-
 
 /* ======================================== */
 /* BUTTON                                   */
 /* ======================================== */
 
 .home-page button {
-    padding:
-        var(--abstand-2)
-        var(--abstand-3);
+  padding: var(--abstand-2) var(--abstand-3);
 }

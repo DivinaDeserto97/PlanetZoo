@@ -3,7 +3,6 @@
     welche die home-Seite braucht.
 */
 
-
 // Beispiel später:
 //
 // import {
@@ -15,20 +14,13 @@
 //     initMap
 // } from "./features/map.js";
 
-
-
 export function init() {
+  console.log("home wurde initialisiert.");
 
-    console.log(
-        "home wurde initialisiert."
-    );
-
-
-    /*
+  /*
         Später:
 
         initAnimalCards();
         initMap();
     */
-
 }

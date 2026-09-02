@@ -3,71 +3,53 @@
 /* ======================================== */
 
 * {
-    box-sizing:
-        border-box;
+  box-sizing: border-box;
 }
-
 
 html,
 body {
-    margin:
-        0;
+  margin: 0;
 
-    padding:
-        0;
+  padding: 0;
 }
-
 
 /* ======================================== */
 /* HTML                                     */
 /* ======================================== */
 
 html {
-    min-height:
-        100%;
+  min-height: 100%;
 }
-
 
 /* ======================================== */
 /* BODY                                     */
 /* ======================================== */
 
 body {
-    min-height:
-        100vh;
+  min-height: 100vh;
 
-    margin:
-        0;
+  margin: 0;
 
-    background-color:
-        var(--farbe-hintergrund);
+  background-color: var(--farbe-hintergrund);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size:
-        var(--schrift-normal);
+  font-size: var(--schrift-normal);
 
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
-
 
 /* ======================================== */
 /* LINKS                                    */
 /* ======================================== */
 
 a {
-    color:
-        inherit;
+  color: inherit;
 }
-
 
 /* ======================================== */
 /* FORMULARE                                */
@@ -77,57 +59,42 @@ button,
 select,
 input,
 textarea {
-    font:
-        inherit;
+  font: inherit;
 }
-
 
 /* ======================================== */
 /* BUTTON                                   */
 /* ======================================== */
 
 button {
-    border:
-        1px solid var(--farbe-linie);
+  border: 1px solid var(--farbe-linie);
 
-    border-radius:
-        var(--radius-klein);
+  border-radius: var(--radius-klein);
 
-    background-color:
-        var(--farbe-element);
+  background-color: var(--farbe-element);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 
-    cursor:
-        pointer;
+  cursor: pointer;
 }
-
 
 button:hover {
-    background-color:
-        var(--farbe-hover);
+  background-color: var(--farbe-hover);
 }
-
 
 /* ======================================== */
 /* SELECT                                   */
 /* ======================================== */
 
 select {
-    border:
-        1px solid var(--farbe-linie);
+  border: 1px solid var(--farbe-linie);
 
-    border-radius:
-        var(--radius-klein);
+  border-radius: var(--radius-klein);
 
-    background-color:
-        var(--farbe-element);
+  background-color: var(--farbe-element);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 }
-
 
 /* ======================================== */
 /* FOKUS                                    */
@@ -138,19 +105,15 @@ select:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-    outline:
-        2px solid var(--farbe-fokus);
+  outline: 2px solid var(--farbe-fokus);
 
-    outline-offset:
-        2px;
+  outline-offset: 2px;
 }
-
 
 /* ======================================== */
 /* SEITEN-CONTAINER                         */
 /* ======================================== */
 
 #page {
-    width:
-        100%;
+  width: 100%;
 }

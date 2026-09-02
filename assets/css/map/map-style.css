@@ -1,0 +1,421 @@
+/* ======================================== */
+/* GESAMTE MAP-SEITE                        */
+/* ======================================== */
+
+.map-page {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    var(--map-sidebar-breite)
+    minmax(0, 1fr);
+
+  gap: var(--map-gap);
+
+  padding: var(--map-padding);
+
+  color: var(--farbe-text);
+}
+
+/* ======================================== */
+/* GEMEINSAME KARTEN                        */
+/* ======================================== */
+
+.map-sidebar,
+.map-main {
+  min-width: 0;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-mittel);
+
+  background-color: var(--farbe-bereich);
+}
+
+/* ======================================== */
+/* SIDEBAR                                  */
+/* ======================================== */
+
+.map-sidebar {
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 720px;
+
+  padding: var(--abstand-4);
+}
+
+/* ======================================== */
+/* SIDEBAR HEADER                           */
+/* ======================================== */
+
+.map-sidebar__header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: var(--abstand-3);
+}
+
+.map-sidebar__header h2 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+.map-sidebar__count {
+  color: var(--farbe-text-zusatz);
+
+  font-size: var(--schrift-klein);
+}
+
+/* ======================================== */
+/* FILTER                                   */
+/* ======================================== */
+
+.map-filter {
+  margin-top: var(--abstand-4);
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-klein);
+
+  background: var(--farbe-element);
+}
+
+.map-filter summary {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: var(--abstand-3);
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.map-filter summary::-webkit-details-marker {
+  display: none;
+}
+
+.map-filter__arrow {
+  transition: transform 0.2s ease;
+}
+
+.map-filter[open] .map-filter__arrow {
+  transform: rotate(180deg);
+}
+
+/* ======================================== */
+/* FILTER INHALT                            */
+/* ======================================== */
+
+.map-filter__content {
+  display: grid;
+
+  gap: var(--abstand-3);
+
+  padding: 0 var(--abstand-3) var(--abstand-3);
+}
+
+.map-filter__field {
+  display: grid;
+
+  gap: var(--abstand-2);
+}
+
+.map-filter__field input {
+  width: 100%;
+
+  padding: var(--abstand-3);
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-klein);
+
+  background: var(--farbe-hintergrund);
+
+  color: var(--farbe-text);
+}
+
+.map-filter__checkbox {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--abstand-2);
+}
+
+/* ======================================== */
+/* TIERLISTE                                */
+/* ======================================== */
+
+.map-animal-list {
+  min-height: 100px;
+
+  max-height: var(--map-tierliste-max-height);
+
+  overflow-y: auto;
+
+  margin-top: var(--abstand-4);
+
+  padding-right: var(--abstand-1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--abstand-2);
+}
+
+/* ======================================== */
+/* EIN TIER                                 */
+/* ======================================== */
+
+.map-animal {
+  min-height: var(--map-tier-zeile-hoehe);
+
+  display: grid;
+
+  grid-template-columns:
+    auto
+    auto
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: var(--abstand-3);
+
+  padding: var(--abstand-2) var(--abstand-3);
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-klein);
+
+  background: var(--farbe-element);
+}
+
+.map-animal:hover {
+  background: var(--farbe-hover);
+}
+
+/* Checkbox */
+
+.map-animal__checkbox {
+  width: 22px;
+
+  height: 22px;
+
+  margin: 0;
+}
+
+/* Farbpunkt */
+
+.map-animal__color {
+  width: 18px;
+
+  height: 18px;
+
+  border-radius: 50%;
+
+  flex: 0 0 auto;
+}
+
+/* Text */
+
+.map-animal__name {
+  min-width: 0;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  font-weight: 600;
+}
+
+.map-animal__scientific {
+  display: block;
+
+  margin-top: 2px;
+
+  overflow: hidden;
+
+  color: var(--farbe-text-zusatz);
+
+  font-size: 12px;
+
+  font-style: italic;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+/* ======================================== */
+/* ALLE EIN / ALLE AUS                      */
+/* ======================================== */
+
+.map-animal-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: var(--abstand-2);
+
+  margin-top: var(--abstand-3);
+}
+
+.map-animal-actions button {
+  min-height: 46px;
+}
+
+/* ======================================== */
+/* LEGENDE                                  */
+/* ======================================== */
+
+.map-legend {
+  margin-top: auto;
+
+  padding-top: var(--abstand-5);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--abstand-1);
+
+  border-top: 1px solid var(--farbe-linie);
+
+  color: var(--farbe-text-zusatz);
+
+  font-size: var(--schrift-klein);
+}
+
+.map-legend strong {
+  color: var(--farbe-text);
+}
+
+/* ======================================== */
+/* RECHTER KARTENBLOCK                      */
+/* ======================================== */
+
+.map-main {
+  padding: var(--abstand-4);
+}
+
+/* ======================================== */
+/* KARTEN HEADER                            */
+/* ======================================== */
+
+.map-main__header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: var(--abstand-4);
+
+  margin-bottom: var(--abstand-3);
+}
+
+.map-main__header h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+.map-main__status {
+  color: var(--farbe-text-zusatz);
+
+  font-size: var(--schrift-klein);
+}
+
+/* ======================================== */
+/* KARTENFLÄCHE                             */
+/* ======================================== */
+
+.map-stage {
+  width: 100%;
+
+  min-height: var(--map-stage-min-height);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-mittel);
+
+  background: var(--map-wasser);
+}
+
+/* ======================================== */
+/* CANVAS                                   */
+/* ======================================== */
+
+.map-canvas {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  max-height: 70vh;
+
+  object-fit: contain;
+}
+
+/* ======================================== */
+/* HOVER INFO                               */
+/* ======================================== */
+
+.map-hover-info {
+  min-height: 30px;
+
+  padding-top: var(--abstand-3);
+
+  color: var(--farbe-text-zusatz);
+}
+
+/* ======================================== */
+/* TABLET                                   */
+/* ======================================== */
+
+@media (max-width: 1100px) {
+  .map-page {
+    grid-template-columns:
+      320px
+      minmax(0, 1fr);
+  }
+}
+
+/* ======================================== */
+/* KLEINE BILDSCHIRME                       */
+/* ======================================== */
+
+@media (max-width: 800px) {
+  .map-page {
+    grid-template-columns: 1fr;
+  }
+
+  .map-sidebar {
+    min-height: 600px;
+  }
+}

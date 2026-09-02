@@ -3,17 +3,11 @@
 /* ======================================== */
 
 .home-page {
+  --home-max-width: var(--breite-inhalt);
 
-    --home-max-width:
-        var(--breite-inhalt);
+  --home-padding-horizontal: var(--abstand-5);
 
-    --home-padding-horizontal:
-        var(--abstand-5);
+  --home-padding-vertical: var(--abstand-6);
 
-    --home-padding-vertical:
-        var(--abstand-6);
-
-    --home-abstand:
-        var(--abstand-4);
-
+  --home-abstand: var(--abstand-4);
 }

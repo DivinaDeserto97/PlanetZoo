@@ -3,277 +3,195 @@
 /* ======================================== */
 
 .header-pc {
-    width:
-        100%;
+  width: 100%;
 
-    background-color:
-        var(--farbe-header);
+  background-color: var(--farbe-header);
 
-    color:
-        var(--farbe-header-text);
+  color: var(--farbe-header-text);
 
-    border-bottom:
-        1px solid var(--farbe-linie);
+  border-bottom: 1px solid var(--farbe-linie);
 
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
-
 
 /* ======================================== */
 /* OBERE ZEILE                              */
 /* ======================================== */
 
 .header-pc__top {
-    width:
-        100%;
+  width: 100%;
 
-    display:
-        flex;
+  display: flex;
 
-    align-items:
-        center;
+  align-items: center;
 
-    justify-content:
-        space-between;
+  justify-content: space-between;
 
-    gap:
-        var(--abstand-6);
+  gap: var(--abstand-6);
 
-    padding:
-        var(--abstand-3)
-        var(--abstand-6);
+  padding: var(--abstand-3) var(--abstand-6);
 }
-
 
 /* ======================================== */
 /* TITEL                                    */
 /* ======================================== */
 
 .header-pc__title {
-    display:
-        flex;
+  display: flex;
 
-    align-items:
-        center;
+  align-items: center;
 
-    color:
-        var(--farbe-header-text);
+  color: var(--farbe-header-text);
 
-    font-size:
-        var(--schrift-titel);
+  font-size: var(--schrift-titel);
 
-    font-weight:
-        700;
+  font-weight: 700;
 
-    text-decoration:
-        none;
+  text-decoration: none;
 
-    white-space:
-        nowrap;
+  white-space: nowrap;
 
-    cursor:
-        pointer;
+  cursor: pointer;
 }
-
 
 .header-pc__title:visited {
-    color:
-        var(--farbe-header-text);
+  color: var(--farbe-header-text);
 }
-
 
 .header-pc__title:hover {
-    color:
-        var(--farbe-akzent);
+  color: var(--farbe-akzent);
 }
-
 
 /* ======================================== */
 /* AKTIONEN                                 */
 /* ======================================== */
 
 .header-pc__actions {
-    display:
-        flex;
+  display: flex;
 
-    align-items:
-        center;
+  align-items: center;
 
-    gap:
-        var(--abstand-3);
+  gap: var(--abstand-3);
 }
-
 
 /* ======================================== */
 /* SPRACHE                                  */
 /* ======================================== */
 
 .header-pc__language {
-    min-width:
-        var(--header-sprache-breite);
+  min-width: var(--header-sprache-breite);
 
-    height:
-        var(--header-hoehe-element);
+  height: var(--header-hoehe-element);
 
-    padding:
-        0 var(--abstand-3);
+  padding: 0 var(--abstand-3);
 
-    border:
-        1px solid var(--farbe-linie-hell);
+  border: 1px solid var(--farbe-linie-hell);
 
-    border-radius:
-        var(--radius-klein);
+  border-radius: var(--radius-klein);
 
-    background-color:
-        var(--farbe-element);
+  background-color: var(--farbe-element);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 
-    font-size:
-        var(--schrift-klein);
+  font-size: var(--schrift-klein);
 
-    cursor:
-        pointer;
+  cursor: pointer;
 }
-
 
 .header-pc__language:hover {
-    background-color:
-        var(--farbe-hover);
+  background-color: var(--farbe-hover);
 }
-
 
 .header-pc__language option {
-    background-color:
-        var(--farbe-element);
+  background-color: var(--farbe-element);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 }
-
 
 /* ======================================== */
 /* DARK / LIGHT                             */
 /* ======================================== */
 
 .header-pc__theme {
-    height:
-        var(--header-hoehe-element);
+  height: var(--header-hoehe-element);
 
-    display:
-        flex;
+  display: flex;
 
-    align-items:
-        center;
+  align-items: center;
 
-    gap:
-        var(--abstand-2);
+  gap: var(--abstand-2);
 
-    padding:
-        0 var(--abstand-4);
+  padding: 0 var(--abstand-4);
 
-    border:
-        1px solid var(--farbe-linie-hell);
+  border: 1px solid var(--farbe-linie-hell);
 
-    border-radius:
-        var(--radius-klein);
+  border-radius: var(--radius-klein);
 
-    background-color:
-        var(--farbe-element);
+  background-color: var(--farbe-element);
 
-    color:
-        var(--farbe-text);
+  color: var(--farbe-text);
 
-    font-size:
-        var(--schrift-klein);
+  font-size: var(--schrift-klein);
 }
-
 
 .header-pc__theme:hover {
-    background-color:
-        var(--farbe-hover);
+  background-color: var(--farbe-hover);
 }
-
 
 .header-pc__theme-icon {
-    font-size:
-        18px;
+  font-size: 18px;
 }
-
 
 /* ======================================== */
 /* NAVIGATION                               */
 /* ======================================== */
 
 .header-pc__nav {
-    width:
-        100%;
+  width: 100%;
 
-    display:
-        flex;
+  display: flex;
 
-    align-items:
-        center;
+  align-items: center;
 
-    justify-content:
-        flex-start;
+  justify-content: flex-start;
 
-    gap:
-        var(--abstand-1);
+  gap: var(--abstand-1);
 
-    padding:
-        0
-        var(--abstand-6)
-        var(--abstand-3);
+  padding: 0 var(--abstand-6) var(--abstand-3);
 }
-
 
 /* ======================================== */
 /* NAVIGATION LINK                          */
 /* ======================================== */
 
 .header-pc__nav a {
-    display:
-        block;
+  display: block;
 
-    padding:
-        var(--abstand-2)
-        var(--abstand-3);
+  padding: var(--abstand-2) var(--abstand-3);
 
-    border-radius:
-        var(--radius-klein);
+  border-radius: var(--radius-klein);
 
-    color:
-        var(--farbe-header-text-zusatz);
+  color: var(--farbe-header-text-zusatz);
 
-    text-decoration:
-        none;
+  text-decoration: none;
 
-    font-size:
-        var(--schrift-klein);
+  font-size: var(--schrift-klein);
 }
-
 
 .header-pc__nav a:hover {
-    background-color:
-        var(--farbe-hover);
+  background-color: var(--farbe-hover);
 
-    color:
-        var(--farbe-header-text);
+  color: var(--farbe-header-text);
 }
-
 
 /* ======================================== */
 /* AKTIVE SEITE                             */
 /* ======================================== */
 
 .header-pc__nav a.active {
-    background-color:
-        var(--farbe-akzent);
+  background-color: var(--farbe-akzent);
 
-    color:
-        var(--farbe-akzent-text);
+  color: var(--farbe-akzent-text);
 }

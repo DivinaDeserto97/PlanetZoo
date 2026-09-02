@@ -3,208 +3,150 @@
 /* ======================================== */
 
 :root {
+  /* ==================================== */
+  /* GRÖSSEN                              */
+  /* ==================================== */
 
-    /* ==================================== */
-    /* GRÖSSEN                              */
-    /* ==================================== */
+  --breite-inhalt: 1400px;
 
-    --breite-inhalt: 1400px;
+  /* ==================================== */
+  /* ABSTÄNDE                             */
+  /* ==================================== */
 
+  --abstand-1: 4px;
+  --abstand-2: 8px;
+  --abstand-3: 12px;
+  --abstand-4: 16px;
+  --abstand-5: 24px;
+  --abstand-6: 32px;
 
-    /* ==================================== */
-    /* ABSTÄNDE                             */
-    /* ==================================== */
+  /* ==================================== */
+  /* RADien                               */
+  /* ==================================== */
 
-    --abstand-1: 4px;
-    --abstand-2: 8px;
-    --abstand-3: 12px;
-    --abstand-4: 16px;
-    --abstand-5: 24px;
-    --abstand-6: 32px;
+  --radius-klein: 6px;
+  --radius-mittel: 10px;
+  --radius-gross: 16px;
 
+  /* ==================================== */
+  /* SCHRIFT                              */
+  /* ==================================== */
 
-    /* ==================================== */
-    /* RADien                               */
-    /* ==================================== */
+  --schrift-normal: 16px;
 
-    --radius-klein: 6px;
-    --radius-mittel: 10px;
-    --radius-gross: 16px;
+  --schrift-klein: 14px;
 
+  --schrift-titel: 24px;
 
-    /* ==================================== */
-    /* SCHRIFT                              */
-    /* ==================================== */
+  /* ==================================== */
+  /* HEADER                               */
+  /* ==================================== */
 
-    --schrift-normal: 16px;
+  --header-hoehe-element: 40px;
 
-    --schrift-klein: 14px;
-
-    --schrift-titel: 24px;
-
-
-    /* ==================================== */
-    /* HEADER                               */
-    /* ==================================== */
-
-    --header-hoehe-element: 40px;
-
-    --header-sprache-breite: 200px;
-
+  --header-sprache-breite: 200px;
 }
-
 
 /* ======================================== */
 /* LIGHT THEME                              */
 /* ======================================== */
 
 html[data-theme="light"] {
+  color-scheme: light;
 
-    color-scheme:
-        light;
+  /* Seite */
 
+  --farbe-hintergrund: #ffffff;
 
-    /* Seite */
+  --farbe-text: #161616;
 
-    --farbe-hintergrund:
-        #ffffff;
+  --farbe-text-zusatz: #555555;
 
-    --farbe-text:
-        #161616;
+  /* Flächen */
 
-    --farbe-text-zusatz:
-        #555555;
+  --farbe-bereich: #f4f4f4;
 
+  --farbe-element: #ffffff;
 
-    /* Flächen */
+  --farbe-element-2: #eeeeee;
 
-    --farbe-bereich:
-        #f4f4f4;
+  /* Hover */
 
-    --farbe-element:
-        #ffffff;
+  --farbe-hover: #e4e4e4;
 
-    --farbe-element-2:
-        #eeeeee;
+  /* Linien */
 
+  --farbe-linie: #d5d5d5;
 
-    /* Hover */
+  --farbe-linie-hell: #b8b8b8;
 
-    --farbe-hover:
-        #e4e4e4;
+  /* Header */
 
+  --farbe-header: #f1f1f1;
 
-    /* Linien */
+  --farbe-header-text: #161616;
 
-    --farbe-linie:
-        #d5d5d5;
+  --farbe-header-text-zusatz: #505050;
 
-    --farbe-linie-hell:
-        #b8b8b8;
+  /* Akzent */
 
+  --farbe-akzent: #2d6cdf;
 
-    /* Header */
+  --farbe-akzent-text: #ffffff;
 
-    --farbe-header:
-        #f1f1f1;
+  /* Fokus */
 
-    --farbe-header-text:
-        #161616;
-
-    --farbe-header-text-zusatz:
-        #505050;
-
-
-    /* Akzent */
-
-    --farbe-akzent:
-        #2d6cdf;
-
-    --farbe-akzent-text:
-        #ffffff;
-
-
-    /* Fokus */
-
-    --farbe-fokus:
-        #2d6cdf;
-
+  --farbe-fokus: #2d6cdf;
 }
-
 
 /* ======================================== */
 /* DARK THEME                               */
 /* ======================================== */
 
 html[data-theme="dark"] {
+  color-scheme: dark;
 
-    color-scheme:
-        dark;
+  /* Seite */
 
+  --farbe-hintergrund: #121212;
 
-    /* Seite */
+  --farbe-text: #f1f1f1;
 
-    --farbe-hintergrund:
-        #121212;
+  --farbe-text-zusatz: #b8b8b8;
 
-    --farbe-text:
-        #f1f1f1;
+  /* Flächen */
 
-    --farbe-text-zusatz:
-        #b8b8b8;
+  --farbe-bereich: #1f1f1f;
 
+  --farbe-element: #2c2c2c;
 
-    /* Flächen */
+  --farbe-element-2: #353535;
 
-    --farbe-bereich:
-        #1f1f1f;
+  /* Hover */
 
-    --farbe-element:
-        #2c2c2c;
+  --farbe-hover: #3b3b3b;
 
-    --farbe-element-2:
-        #353535;
+  /* Linien */
 
+  --farbe-linie: #3a3a3a;
 
-    /* Hover */
+  --farbe-linie-hell: #555555;
 
-    --farbe-hover:
-        #3b3b3b;
+  /* Header */
 
+  --farbe-header: #1f1f1f;
 
-    /* Linien */
+  --farbe-header-text: #ffffff;
 
-    --farbe-linie:
-        #3a3a3a;
+  --farbe-header-text-zusatz: #cccccc;
 
-    --farbe-linie-hell:
-        #555555;
+  /* Akzent */
 
+  --farbe-akzent: #6c9cff;
 
-    /* Header */
+  --farbe-akzent-text: #101010;
 
-    --farbe-header:
-        #1f1f1f;
+  /* Fokus */
 
-    --farbe-header-text:
-        #ffffff;
-
-    --farbe-header-text-zusatz:
-        #cccccc;
-
-
-    /* Akzent */
-
-    --farbe-akzent:
-        #6c9cff;
-
-    --farbe-akzent-text:
-        #101010;
-
-
-    /* Fokus */
-
-    --farbe-fokus:
-        #8cb1ff;
-
+  --farbe-fokus: #8cb1ff;
 }
