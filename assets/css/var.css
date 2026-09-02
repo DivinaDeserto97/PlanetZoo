@@ -1,17 +1,21 @@
 :root {
-  /* Schrift */
-  --schrift-standard: Arial, sans-serif;
-  --schrift-klein: 14px;
+  color-scheme: dark;
 
-  /* Farben */
-  --farbe-seite: #07171d;
+  /* Grundfarben */
+  --farbe-dunkel: #07171d;
+  --farbe-hell: #f4f0e6;
+  --farbe-akzent: #79a34b;
+  --farbe-akzent-hover: #91ba61;
+
+  /* Aktives dunkles Design */
+  --farbe-seite: var(--farbe-dunkel);
   --farbe-bereich: #0d242c;
   --farbe-element: #102b34;
   --farbe-tier: #112f39;
   --farbe-hover: #1a4654;
   --farbe-karte: #0b2129;
 
-  --farbe-text: #edf6f7;
+  --farbe-text: var(--farbe-hell);
   --farbe-text-ruhig: #9bb1b8;
   --farbe-text-zusatz: #bcd0d5;
   --farbe-treffer: #c6dce1;
@@ -20,21 +24,24 @@
   --farbe-linie-hell: #41616d;
   --farbe-kartenlinie: #365966;
 
-  --farbe-akzent: #65d2f2;
-  --farbe-akzent-hover: #8be4fa;
-  --farbe-akzent-text: #062029;
+  --farbe-akzent-text: #ffffff;
   --farbe-meldung: #91dff5;
 
   --farbe-loeschen: #43252b;
   --farbe-loeschen-text: #ffd6da;
 
-  /* Standardabstände */
+  /* Schrift */
+  --schrift-standard: Arial, sans-serif;
+  --schrift-klein: 14px;
+
+  /* Abstände */
   --abstand-1: 4px;
   --abstand-2: 8px;
   --abstand-3: 12px;
   --abstand-4: 16px;
   --abstand-5: 20px;
   --abstand-6: 24px;
+  --abstand-7: 32px;
 
   /* Rundungen */
   --radius-klein: 8px;
@@ -48,4 +55,31 @@
   --hoehe-eingabe: 42px;
   --groesse-checkbox: 22px;
   --groesse-farbpunkt: 15px;
+}
+
+/* Helles Design: Hintergrund und Schrift werden getauscht */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --farbe-seite: var(--farbe-hell);
+  --farbe-bereich: #ffffff;
+  --farbe-element: #e7e1d4;
+  --farbe-tier: #f7f2e8;
+  --farbe-hover: #d8d0c1;
+  --farbe-karte: #dce7eb;
+
+  --farbe-text: var(--farbe-dunkel);
+  --farbe-text-ruhig: #55676e;
+  --farbe-text-zusatz: #40545c;
+  --farbe-treffer: #263d45;
+
+  --farbe-linie: #c8c0ad;
+  --farbe-linie-hell: #aaa18e;
+  --farbe-kartenlinie: #879ba3;
+
+  --farbe-akzent-text: #ffffff;
+  --farbe-meldung: #276078;
+
+  --farbe-loeschen: #f0d5d7;
+  --farbe-loeschen-text: #70252c;
 }

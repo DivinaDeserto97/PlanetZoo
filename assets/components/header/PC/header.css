@@ -1,0 +1,89 @@
+.seiten-header {
+  width: 100%;
+  margin-bottom: var(--abstand-5);
+  border-bottom: 1px solid var(--farbe-linie);
+  background: var(--farbe-bereich);
+}
+
+.seiten-header__innen {
+  width: min(var(--breite-inhalt), 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kopfzeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--abstand-4);
+  padding: var(--abstand-3) var(--abstand-4);
+}
+
+.projekttitel {
+  color: var(--farbe-text);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.kopfaktionen {
+  display: flex;
+  gap: var(--abstand-2);
+}
+
+.kopfbutton {
+  min-height: 38px;
+  padding: var(--abstand-2) var(--abstand-3);
+  border: 1px solid var(--farbe-linie-hell);
+  border-radius: var(--radius-klein);
+  color: var(--farbe-text);
+  background: var(--farbe-element);
+  cursor: pointer;
+}
+
+.kopfbutton:hover {
+  background: var(--farbe-hover);
+}
+
+.hauptnavigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--abstand-1);
+  padding: 0 var(--abstand-4) var(--abstand-3);
+}
+
+.hauptnavigation a {
+  padding: var(--abstand-2) var(--abstand-3);
+  border-radius: var(--radius-klein);
+  color: var(--farbe-text-zusatz);
+  text-decoration: none;
+}
+
+.hauptnavigation a:hover {
+  color: var(--farbe-text);
+  background: var(--farbe-hover);
+}
+
+.hauptnavigation a.aktiv {
+  color: var(--farbe-akzent-text);
+  background: var(--farbe-akzent);
+}
+
+@media (max-width: 600px) {
+  .kopfzeile {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .kopfaktionen {
+    width: 100%;
+  }
+
+  .kopfbutton {
+    flex: 1;
+  }
+
+  .hauptnavigation {
+    flex-direction: column;
+  }
+}

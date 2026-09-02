@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zoopedia</title>
+
+    <!-- Gemeinsame Gestaltung aller Seiten -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Gestaltung nur für die Zoopedia -->
+    <link rel="stylesheet" href="assets/css/index/index.css" />
+
+    <!-- Gemeinsame Tierdaten -->
+    <script src="assets/daten/datenImport.js" defer></script>
+
+    <!-- Gemeinsames JavaScript -->
+    <script src="assets/js/main.js" defer></script>
+
+    <!-- JavaScript nur für die Zoopedia -->
+    <script type="module" src="assets/js/index/index.js"></script>
+  </head>
+
+<body data-seite="index" data-projektpfad=".">
+    <header class="seitenkopf">
+      <a class="logo" href="index.html"> Planet Zoo 2 </a>
+
+      <nav aria-label="Hauptnavigation">
+        <a class="aktiv" href="index.html"> Zoopedia </a>
+
+        <a href="pages/tier-verbreitung.html"> Verbreitungskarten </a>
+
+        <a href="pages/rechner.html"> Gehegerechner </a>
+      </nav>
+    </header>
+
+    <main class="zoopedia">
+      <section class="zoopedia-kopf">
+        <p class="uebertitel">Tierdatenbank</p>
+
+        <h1>Zoopedia</h1>
+
+        <p>
+          Durchsuche alle eingetragenen Tiere und filtere sie nach Lebensraum,
+          Biom, Kontinent und weiteren Angaben.
+        </p>
+      </section>
+
+      <section class="filterbereich" aria-labelledby="filter-ueberschrift">
+        <h2 id="filter-ueberschrift">Tiere suchen</h2>
+
+        <form id="filterFormular">
+          <div class="filter filter-suche">
+            <label for="suche">Suche</label>
+
+            <input
+              id="suche"
+              name="suche"
+              type="search"
+              placeholder="Tiername eingeben"
+            />
+          </div>
+
+          <div class="filter">
+            <label for="sortieren">Sortieren nach</label>
+
+            <select id="sortieren" name="sortieren">
+              <option value="name">Deutscher Name</option>
+              <option value="wissenschaftlicherName">
+                Wissenschaftlicher Name
+              </option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="sortierreihenfolge"> Sortierreihenfolge </label>
+
+            <select id="sortierreihenfolge" name="sortierreihenfolge">
+              <option value="aufsteigend">A–Z</option>
+              <option value="absteigend">Z–A</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="lebensraumtyp"> Lebensraumtyp </label>
+
+            <select id="lebensraumtyp" name="lebensraumtyp">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="biom">Biom</label>
+
+            <select id="biom" name="biom">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="kontinent">Kontinent</label>
+
+            <select id="kontinent" name="kontinent">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="erhaltungsstatus"> Erhaltungsstatus </label>
+
+            <select id="erhaltungsstatus" name="erhaltungsstatus">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="inhaltspaket"> Inhaltspaket </label>
+
+            <select id="inhaltspaket" name="inhaltspaket">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <button id="filterZuruecksetzen" type="reset">
+            Filter zurücksetzen
+          </button>
+        </form>
+      </section>
+
+      <section class="ergebnisbereich" aria-labelledby="ergebnis-ueberschrift">
+        <div class="ergebnis-kopf">
+          <h2 id="ergebnis-ueberschrift">Tiere</h2>
+
+          <p id="tieranzahl" aria-live="polite">Tiere werden geladen …</p>
+
+          <div class="ansicht-auswahl">
+            <button
+              id="netzansicht"
+              type="button"
+              aria-label="Netzansicht"
+              aria-pressed="true"
+            >
+              Netz
+            </button>
+
+            <button
+              id="listenansicht"
+              type="button"
+              aria-label="Listenansicht"
+              aria-pressed="false"
+            >
+              Liste
+            </button>
+          </div>
+        </div>
+
+        <!-- Hier erzeugt index.js automatisch die Tierkarten -->
+        <div
+          id="tierliste"
+          class="tierliste netzansicht"
+          aria-live="polite"
+        ></div>
+
+        <p id="keineTreffer" hidden>
+          Für diese Filter wurden keine Tiere gefunden.
+        </p>
+      </section>
+    </main>
+
+    <script
+    type="module"
+    src="assets/js/main.js"
+  ></script>
+  </body>
+</html>
