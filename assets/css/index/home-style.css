@@ -1,0 +1,14 @@
+.home-page {
+
+    width: 100%;
+
+    max-width:
+        var(--home-max-width);
+
+    margin:
+        0 auto;
+
+    padding:
+        var(--home-padding);
+
+}

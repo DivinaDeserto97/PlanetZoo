@@ -1,89 +1,174 @@
-.seiten-header {
-  width: 100%;
-  margin-bottom: var(--abstand-5);
-  border-bottom: 1px solid var(--farbe-linie);
-  background: var(--farbe-bereich);
-}
+/* ======================================== */
+/* PC HEADER                                */
+/* ======================================== */
 
-.seiten-header__innen {
-  width: min(var(--breite-inhalt), 100%);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.kopfzeile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--abstand-4);
-  padding: var(--abstand-3) var(--abstand-4);
-}
-
-.projekttitel {
-  color: var(--farbe-text);
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.kopfaktionen {
-  display: flex;
-  gap: var(--abstand-2);
-}
-
-.kopfbutton {
-  min-height: 38px;
-  padding: var(--abstand-2) var(--abstand-3);
-  border: 1px solid var(--farbe-linie-hell);
-  border-radius: var(--radius-klein);
-  color: var(--farbe-text);
-  background: var(--farbe-element);
-  cursor: pointer;
-}
-
-.kopfbutton:hover {
-  background: var(--farbe-hover);
-}
-
-.hauptnavigation {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--abstand-1);
-  padding: 0 var(--abstand-4) var(--abstand-3);
-}
-
-.hauptnavigation a {
-  padding: var(--abstand-2) var(--abstand-3);
-  border-radius: var(--radius-klein);
-  color: var(--farbe-text-zusatz);
-  text-decoration: none;
-}
-
-.hauptnavigation a:hover {
-  color: var(--farbe-text);
-  background: var(--farbe-hover);
-}
-
-.hauptnavigation a.aktiv {
-  color: var(--farbe-akzent-text);
-  background: var(--farbe-akzent);
-}
-
-@media (max-width: 600px) {
-  .kopfzeile {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .kopfaktionen {
+.header-pc {
     width: 100%;
-  }
 
-  .kopfbutton {
-    flex: 1;
-  }
+    background-color: #1f1f1f;
 
-  .hauptnavigation {
-    flex-direction: column;
-  }
+    color: #ffffff;
+
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* ======================================== */
+/* OBERE ZEILE                              */
+/* ======================================== */
+
+.header-pc__top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 14px 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* ======================================== */
+/* TITEL                                    */
+/* ======================================== */
+
+.header-pc__title {
+    font-size: 24px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ======================================== */
+/* SPRACHE + DARK/LIGHT                     */
+/* ======================================== */
+
+.header-pc__actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* ======================================== */
+/* SPRACHAUSWAHL                            */
+/* ======================================== */
+
+.header-pc__language {
+    min-width: 200px;
+
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #555555;
+    border-radius: 6px;
+
+    background-color: #2c2c2c;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.header-pc__language:hover {
+    background-color: #353535;
+
+    border-color: #777777;
+}
+
+
+.header-pc__language:focus {
+    outline: 2px solid #777777;
+    outline-offset: 2px;
+}
+
+
+.header-pc__language option {
+    background-color: #2c2c2c;
+
+    color: #ffffff;
+}
+
+
+/* ======================================== */
+/* DARK / LIGHT BUTTON                      */
+/* ======================================== */
+
+.header-pc__theme {
+    height: 40px;
+
+    padding: 0 16px;
+
+    border: 1px solid #555555;
+    border-radius: 6px;
+
+    background-color: #2c2c2c;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.header-pc__theme:hover {
+    background-color: #353535;
+
+    border-color: #777777;
+}
+
+
+/* ======================================== */
+/* UNTERE ZEILE / NAVIGATION                */
+/* ======================================== */
+
+.header-pc__nav {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    padding: 0 30px 14px 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* ======================================== */
+/* NAVIGATION LINKS                         */
+/* ======================================== */
+
+.header-pc__nav a {
+    display: block;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+.header-pc__nav a:hover {
+    background-color: #333333;
+
+    color: #ffffff;
 }

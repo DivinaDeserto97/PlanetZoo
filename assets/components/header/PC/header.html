@@ -1,69 +1,61 @@
-<header class="seiten-header">
-  <div class="seiten-header__innen">
-    <div class="kopfzeile">
-      <a
-        class="projekttitel"
-        data-ziel="index.html"
-        href="#"
+<header class="header-pc">
+  <!-- ================================= -->
+  <!-- OBERE ZEILE                       -->
+  <!-- ================================= -->
+
+  <div class="header-pc__top">
+    <!-- Titel -->
+    <div class="header-pc__title">PlanetZoo2</div>
+
+    <!-- Rechte Seite -->
+    <div class="header-pc__actions">
+      <!-- Sprache -->
+      <select
+        class="header-pc__language"
+        data-language-select
+        aria-label="Sprache auswählen"
       >
-        Planet Zoo 2
-      </a>
-
-      <div class="kopfaktionen">
-        <button
-          id="darstellungButton"
-          class="kopfbutton"
-          type="button"
-          aria-label="Darstellung wechseln"
+        <option
+          value="de"
+          data-i18n
+          data-de="Deutsch (Deutsch)"
+          data-en="Deutsch (German)"
+          data-fr="Deutsch (Allemand)"
         >
-          <span id="darstellungSymbol" aria-hidden="true">
-            ☀
-          </span>
+          Deutsch (Deutsch)
+        </option>
 
-          <span id="darstellungText">
-            Hell
-          </span>
-        </button>
-
-        <button
-          id="spracheButton"
-          class="kopfbutton"
-          type="button"
-          aria-label="Sprache wechseln"
+        <option
+          value="en"
+          data-i18n
+          data-de="English (Englisch)"
+          data-en="English (English)"
+          data-fr="English (Anglais)"
         >
-          <span aria-hidden="true">🌐</span>
+          English (Englisch)
+        </option>
 
-          <span id="spracheText">
-            DE
-          </span>
-        </button>
-      </div>
+        <option
+          value="fr"
+          data-i18n
+          data-de="French (Französisch)"
+          data-en="French (French)"
+          data-fr="French (Français)"
+        >
+          French (Französisch)
+        </option>
+      </select>
+
+      <!-- Dark / Light -->
+      <button class="header-pc__theme" type="button" data-theme-toggle>
+        Dark / Light
+      </button>
     </div>
-
-    <nav class="hauptnavigation" aria-label="Hauptnavigation">
-      <a
-        data-seite="index"
-        data-ziel="index.html"
-        href="#"
-      >
-        Zoopedia
-      </a>
-
-      <a
-        data-seite="tier-verbreitung"
-        data-ziel="pages/tier-verbreitung.html"
-        href="#"
-      >
-        Verbreitungskarten
-      </a>
-
-      <a
-        data-seite="rechner"
-        data-ziel="pages/rechner.html"
-        href="#"
-      >
-        Gehegerechner
-      </a>
-    </nav>
   </div>
+
+  <!-- ================================= -->
+  <!-- UNTERE ZEILE / NAVIGATION         -->
+  <!-- ================================= -->
+
+  <nav class="header-pc__nav" data-main-navigation></nav>
 </header>

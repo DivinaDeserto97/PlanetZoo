@@ -1,176 +1,182 @@
-"use strict";
+import {
+    loadPage
+} from "./pages.js";
 
-const html = document.documentElement;
 
-const THEME_SPEICHERNAME = "planet-zoo-theme";
-const SPRACHE_SPEICHERNAME = "planet-zoo-sprache";
+import {
+    initLanguage
+} from "./features/language.js";
 
-function speichern(name, wert) {
-  try {
-    localStorage.setItem(name, wert);
-  } catch {
-    console.warn(name + " konnte nicht gespeichert werden.");
-  }
+
+import {
+    initDevice,
+    getDevice
+} from "./features/device.js";
+
+
+
+/* =============================== */
+/* HEADER                          */
+/* =============================== */
+
+let loadedHeader = null;
+
+
+async function loadHeader() {
+
+    const device =
+        getDevice();
+
+
+    /*
+        Richtiger Header ist bereits da.
+    */
+    if (loadedHeader === device) {
+        return;
+    }
+
+
+    loadedHeader =
+        device;
+
+
+    const header =
+        document.querySelector(
+            "#header"
+        );
+
+
+    const base =
+        `./assets/components/header/${device}`;
+
+
+    /* HTML */
+
+    const response =
+        await fetch(
+            `${base}/header.html`
+        );
+
+
+    if (!response.ok) {
+
+        console.error(
+            `Header "${device}" konnte nicht geladen werden.`
+        );
+
+        return;
+
+    }
+
+
+    header.innerHTML =
+        await response.text();
+
+
+    /* CSS */
+
+    const oldCSS =
+        document.querySelector(
+            "#header-css"
+        );
+
+
+    if (oldCSS) {
+        oldCSS.remove();
+    }
+
+
+    const css =
+        document.createElement(
+            "link"
+        );
+
+
+    css.id =
+        "header-css";
+
+    css.rel =
+        "stylesheet";
+
+    css.href =
+        `${base}/header.css`;
+
+
+    document.head.appendChild(css);
+
+
+    /* JS */
+
+    const module =
+        await import(
+            `../components/header/${device}/header.js`
+        );
+
+
+    if (
+        typeof module.init
+        ===
+        "function"
+    ) {
+
+        module.init();
+
+    }
+
+
+    document.dispatchEvent(
+        new CustomEvent(
+            "componentLoaded"
+        )
+    );
+
 }
 
-function laden(name, standardwert) {
-  try {
-    return localStorage.getItem(name) || standardwert;
-  } catch {
-    return standardwert;
-  }
+
+/* =============================== */
+/* PROGRAMMSTART                   */
+/* =============================== */
+
+async function main() {
+
+    /*
+        Allgemeine Features
+    */
+
+    initLanguage();
+
+    initDevice();
+
+
+    /*
+        Header
+    */
+
+    await loadHeader();
+
+
+    /*
+        Erster Body
+    */
+
+    await loadPage(
+        "home"
+    );
+
 }
 
-/* Handy, Tablet oder PC erkennen */
 
-function geraetErkennen() {
-  const breite = window.innerWidth;
+/*
+    Gerät / Ausrichtung geändert
+*/
+document.addEventListener(
+    "deviceChanged",
+    async () => {
 
-  let geraet = "pc";
-  let anzeige = "PC";
+        await loadHeader();
 
-  if (breite <= 767) {
-    geraet = "handy";
-    anzeige = "Handy";
-  } else if (breite <= 1100) {
-    geraet = "tablet";
-    anzeige = "Tablet";
-  }
+    }
+);
 
-  html.dataset.geraet = geraet;
 
-  const geraeteAnzeige =
-    document.querySelector("#geraeteAnzeige");
-
-  if (geraeteAnzeige) {
-    geraeteAnzeige.textContent = anzeige;
-  }
-}
-
-/* Dark- und Light-Mode */
-
-function themeAnzeigen() {
-  const theme = html.dataset.theme;
-
-  const symbol =
-    document.querySelector("#themeSymbol");
-
-  const text =
-    document.querySelector("#themeText");
-
-  if (!symbol || !text) {
-    return;
-  }
-
-  if (theme === "dark") {
-    symbol.textContent = "☀";
-    text.textContent =
-      html.lang === "en" ? "Light" : "Hell";
-  } else {
-    symbol.textContent = "☾";
-    text.textContent =
-      html.lang === "en" ? "Dark" : "Dunkel";
-  }
-}
-
-function themeStarten() {
-  html.dataset.theme = laden(
-    THEME_SPEICHERNAME,
-    "dark"
-  );
-
-  themeAnzeigen();
-
-  const button =
-    document.querySelector("#themeButton");
-
-  button?.addEventListener("click", () => {
-    const neuesTheme =
-      html.dataset.theme === "dark"
-        ? "light"
-        : "dark";
-
-    html.dataset.theme = neuesTheme;
-
-    speichern(THEME_SPEICHERNAME, neuesTheme);
-    themeAnzeigen();
-  });
-}
-
-/* Sprache */
-
-function spracheAnzeigen() {
-  const sprache = html.lang;
-
-  document
-    .querySelectorAll("[data-text-de][data-text-en]")
-    .forEach((element) => {
-      element.textContent =
-        sprache === "en"
-          ? element.dataset.textEn
-          : element.dataset.textDe;
-    });
-
-  const sprachText =
-    document.querySelector("#spracheText");
-
-  if (sprachText) {
-    sprachText.textContent = sprache.toUpperCase();
-  }
-
-  themeAnzeigen();
-}
-
-function spracheStarten() {
-  html.lang = laden(
-    SPRACHE_SPEICHERNAME,
-    "de"
-  );
-
-  spracheAnzeigen();
-
-  const button =
-    document.querySelector("#spracheButton");
-
-  button?.addEventListener("click", () => {
-    html.lang = html.lang === "de" ? "en" : "de";
-
-    speichern(SPRACHE_SPEICHERNAME, html.lang);
-    spracheAnzeigen();
-  });
-}
-
-/* Aktuelle Seite in der Navigation markieren */
-
-function navigationMarkieren() {
-  const aktuelleSeite =
-    document.body.dataset.seite;
-
-  document
-    .querySelectorAll(".hauptnavigation [data-seite]")
-    .forEach((link) => {
-      const istAktiv =
-        link.dataset.seite === aktuelleSeite;
-
-      link.classList.toggle("aktiv", istAktiv);
-
-      if (istAktiv) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    });
-}
-
-/* Grundfunktionen starten */
-
-function grundfunktionenStarten() {
-  geraetErkennen();
-  themeStarten();
-  spracheStarten();
-  navigationMarkieren();
-
-  window.addEventListener("resize", geraetErkennen);
-}
-
-grundfunktionenStarten();
+main();

@@ -1,237 +1,30 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html {
-  min-height: 100%;
-  background: var(--farbe-seite);
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
+
 
 body {
-  min-height: 100vh;
-  margin: 0;
-  color: var(--farbe-text);
-  background: var(--farbe-seite);
-  font-family: var(--schrift-standard);
-  line-height: 1.5;
+    min-height: 100vh;
+
+    background:
+        var(--background-color);
+
+    color:
+        var(--text-color);
+
+    font-family:
+        Arial,
+        sans-serif;
 }
 
-button,
-input,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-}
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* Header: Zeile 1 und Zeile 2 */
-
-.seiten-header {
-  border-bottom: 1px solid var(--farbe-linie);
-  background: var(--farbe-bereich);
-}
-
-.kopfzeile,
-.hauptnavigation {
-  width: min(var(--breite-inhalt), 100%);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--abstand-4);
-  padding-left: var(--abstand-4);
-}
-
-.kopfzeile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--abstand-4);
-  min-height: 70px;
-}
-
-.projekttitel {
-  color: var(--farbe-text);
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.kopfaktionen {
-  display: flex;
-  align-items: center;
-  gap: var(--abstand-2);
-}
-
-.geraete-anzeige,
-.kopfbutton {
-  min-height: 40px;
-  padding: var(--abstand-2) var(--abstand-3);
-  border: 1px solid var(--farbe-linie-hell);
-  border-radius: var(--radius-klein);
-  background: var(--farbe-element);
-}
-
-.geraete-anzeige {
-  display: inline-flex;
-  align-items: center;
-  color: var(--farbe-text-ruhig);
-}
-
-.kopfbutton:hover {
-  background: var(--farbe-hover);
-}
-
-.hauptnavigation {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--abstand-1);
-  padding-top: var(--abstand-2);
-  padding-bottom: var(--abstand-2);
-  border-top: 1px solid var(--farbe-linie);
-}
-
-.hauptnavigation a {
-  padding: var(--abstand-2) var(--abstand-3);
-  border-radius: var(--radius-klein);
-  color: var(--farbe-text-zusatz);
-  text-decoration: none;
-}
-
-.hauptnavigation a:hover {
-  color: var(--farbe-text);
-  background: var(--farbe-hover);
-}
-
-.hauptnavigation a.aktiv {
-  color: var(--farbe-akzent-text);
-  background: var(--farbe-akzent);
-}
-
-/* Allgemeines Seitenlayout */
-
-.seitenrahmen {
-  width: min(var(--breite-inhalt), calc(100% - 32px));
-  margin: var(--abstand-6) auto;
-}
-
-.seitenintro,
-.inhaltsbereich,
-.karte {
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-gross);
-  background: var(--farbe-bereich);
-}
-
-.seitenintro {
-  padding: var(--abstand-6);
-  margin-bottom: var(--abstand-4);
-}
-
-.seitenintro h1 {
-  margin: 0 0 var(--abstand-2);
-  font-size: clamp(30px, 5vw, 48px);
-}
-
-.seitenintro p:last-child {
-  margin-bottom: 0;
-  color: var(--farbe-text-ruhig);
-}
-
-.uebertitel {
-  margin: 0 0 var(--abstand-1);
-  color: var(--farbe-akzent);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.inhaltsbereich {
-  padding: var(--abstand-6);
-}
-
-.inhaltsbereich > h2 {
-  margin-top: 0;
-}
-
-.grundraster {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--abstand-4);
-}
-
-.karte {
-  padding: var(--abstand-5);
-}
-
-.karte h3 {
-  margin-top: 0;
-}
-
-.karte p:last-child {
-  margin-bottom: 0;
-  color: var(--farbe-text-ruhig);
-}
-
-.seiten-footer {
-  width: min(var(--breite-inhalt), calc(100% - 32px));
-  padding: var(--abstand-4);
-  margin: 0 auto;
-  color: var(--farbe-text-ruhig);
-  text-align: center;
-}
-
-/* Tablet */
-
-@media (max-width: 1100px) {
-  .grundraster {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Handy */
-
-@media (max-width: 767px) {
-  .kopfzeile {
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: var(--abstand-3);
-    padding-bottom: var(--abstand-3);
-  }
-
-  .kopfaktionen {
+#page {
     width: 100%;
-  }
-
-  .kopfbutton {
-    flex: 1;
-  }
-
-  .geraete-anzeige {
-    display: none;
-  }
-
-  .hauptnavigation {
-    flex-direction: column;
-  }
-
-  .hauptnavigation a {
-    width: 100%;
-  }
-
-  .seitenintro,
-  .inhaltsbereich {
-    padding: var(--abstand-4);
-  }
 }
