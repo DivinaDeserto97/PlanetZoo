@@ -1,0 +1,51 @@
+:root {
+  /* Schrift */
+  --schrift-standard: Arial, sans-serif;
+  --schrift-klein: 14px;
+
+  /* Farben */
+  --farbe-seite: #07171d;
+  --farbe-bereich: #0d242c;
+  --farbe-element: #102b34;
+  --farbe-tier: #112f39;
+  --farbe-hover: #1a4654;
+  --farbe-karte: #0b2129;
+
+  --farbe-text: #edf6f7;
+  --farbe-text-ruhig: #9bb1b8;
+  --farbe-text-zusatz: #bcd0d5;
+  --farbe-treffer: #c6dce1;
+
+  --farbe-linie: #284753;
+  --farbe-linie-hell: #41616d;
+  --farbe-kartenlinie: #365966;
+
+  --farbe-akzent: #65d2f2;
+  --farbe-akzent-hover: #8be4fa;
+  --farbe-akzent-text: #062029;
+  --farbe-meldung: #91dff5;
+
+  --farbe-loeschen: #43252b;
+  --farbe-loeschen-text: #ffd6da;
+
+  /* Standardabstände */
+  --abstand-1: 4px;
+  --abstand-2: 8px;
+  --abstand-3: 12px;
+  --abstand-4: 16px;
+  --abstand-5: 20px;
+  --abstand-6: 24px;
+
+  /* Rundungen */
+  --radius-klein: 8px;
+  --radius-mittel: 10px;
+  --radius-gross: 14px;
+
+  /* Grössen */
+  --breite-inhalt: 1200px;
+  --breite-seitenleiste: 320px;
+  --breite-karte-minimum: 650px;
+  --hoehe-eingabe: 42px;
+  --groesse-checkbox: 22px;
+  --groesse-farbpunkt: 15px;
+}
