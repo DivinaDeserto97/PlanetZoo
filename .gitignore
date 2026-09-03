@@ -1,3 +1,47 @@
-# Archive / Backups
+# ==========================================
+# LOKALE MEDIENDATEIEN
+# Nicht auf GitHub hochladen
+# ==========================================
+
+assets/daten/**/*.png
+assets/daten/**/*.jpg
+assets/daten/**/*.jpeg
+assets/daten/**/*.webp
+assets/daten/**/*.gif
+
+assets/daten/**/*.mp3
+assets/daten/**/*.wav
+assets/daten/**/*.ogg
+assets/daten/**/*.flac
+assets/daten/**/*.m4a
+assets/daten/**/*.aac
+
+
+# ==========================================
+# ARCHIVE
+# ==========================================
+
 *.zip
-*/bilder/*
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+
+# ==========================================
+# NODE / UMGEBUNG
+# ==========================================
+
+node_modules/
+
+.env
+.env.*
+!.env.example
+
+
+# ==========================================
+# SYSTEM
+# ==========================================
+
+.DS_Store
+Thumbs.db
