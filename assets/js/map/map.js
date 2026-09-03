@@ -1,4 +1,4 @@
-import { datenImportieren } from "../../daten/tiere/datenImport.js";
+import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
 import { initTierListe } from "./features/tierListe.js";
 

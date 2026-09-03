@@ -515,7 +515,7 @@
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/48ec061b/Zebra_Plains_map.png",
     "dateityp": "png",
-    "pfad": "assets/daten/tiere/Equus quagga/Equus quagga map.png",
+    "pfad": "assets/daten/lebewesen/tiere/Equus quagga/Equus quagga map.png",
     "quelle": "planetZoo2"
   },
   "bilder": [
@@ -523,7 +523,7 @@
       "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDhlYzA2MWIvWmVicmFfUGxhaW5zLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
       "typ": "hauptbild",
       "dateityp": "webp",
-      "pfad": "assets/daten/tiere/Equus quagga/bilder/Equus quagga 1.webp",
+      "pfad": "assets/daten/lebewesen/tiere/Equus quagga/bilder/Equus quagga 1.webp",
       "quelle": "planetZoo2"
     }
   ],

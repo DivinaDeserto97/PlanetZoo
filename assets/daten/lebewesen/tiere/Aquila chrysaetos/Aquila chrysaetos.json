@@ -638,7 +638,7 @@
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/753a390a/Eagle_Golden_map.png",
     "dateityp": "png",
-    "pfad": "assets/daten/tiere/Aquila chrysaetos/Aquila chrysaetos map.png",
+    "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/Aquila chrysaetos map.png",
     "quelle": "lokalNochNichtVorhanden"
   },
   "bilder": [
@@ -646,14 +646,14 @@
       "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNzUzYTM5MGEvRWFnbGVfR29sZGVuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
       "typ": "hauptbild",
       "dateityp": "webp",
-      "pfad": "assets/daten/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 1.webp",
+      "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 1.webp",
       "quelle": "planetZoo2"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/960px-015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
       "typ": "echtbild",
       "dateityp": "jpg",
-      "pfad": "assets/daten/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 2.jpg",
+      "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 2.jpg",
       "quelle": "Wikipedia"
     }
   ],
@@ -667,19 +667,19 @@
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "flac",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.flac",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.flac",
               "quelle": "Tierstimmenarchiv"
             },
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "mp3",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.mp3",
               "quelle": "Tierstimmenarchiv"
             },
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "wav",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.wav",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.wav",
               "quelle": "Tierstimmenarchiv"
             }
           ]
@@ -695,19 +695,19 @@
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "flac",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.flac",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.flac",
               "quelle": "Tierstimmenarchiv"
             },
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "mp3",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.mp3",
               "quelle": "Tierstimmenarchiv"
             },
             {
               "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
               "dateityp": "wav",
-              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.wav",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.wav",
               "quelle": "Tierstimmenarchiv"
             }
           ]

@@ -1,4 +1,4 @@
-import { datenImportieren } from "../../daten/tiere/datenImport.js";
+import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 import { getLanguage, getLocalizedValue } from "../features/language.js";
 import { getTierAuswahl } from "../features/tierAuswahl.js";
 

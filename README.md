@@ -21,7 +21,7 @@ assets/
 
 Für die Gelbe Anakonda lautet der erwartete Pfad:
 
-assets/daten/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp
+assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp
 
 Der Dateiname muss mit dem Pfad in der jeweiligen Tier-JSON übereinstimmen.
 
@@ -30,7 +30,7 @@ Beispiel:
 "bilder": [
     {
         "typ": "hauptbild",
-        "pfad": "assets/daten/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
+        "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
         "quelle": "planetZoo2"
     }
 ]
@@ -50,12 +50,12 @@ assets/
 
 Für die Gelbe Anakonda lautet der erwartete Pfad:
 
-assets/daten/tiere/Eunectes notaeus/Eunectes notaeus map.png
+assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png
 
 In der JSON-Datei muss derselbe Pfad eingetragen sein:
 
 "karte": {
-    "pfad": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus map.png",
+    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png",
     "quelle": "planetZoo2"
 }
 
@@ -94,7 +94,7 @@ Beispiel für den JSON-Eintrag:
 "audio": [
     {
         "typ": "ruf",
-        "pfad": "assets/daten/tiere/Eunectes notaeus/audio/ruf.mp3",
+        "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
         "quelle": "tierstimmenarchiv"
     }
 ]
@@ -107,7 +107,7 @@ Für jede neue Tierart wird ein eigener Ordner erstellt.
 
 Beispiel:
 
-assets/daten/tiere/Asio otus/
+assets/daten/lebewesen/tiere/Asio otus/
 
 Empfohlene Struktur:
 
@@ -126,8 +126,8 @@ Danach muss die JSON-Datei in datenImport.js eingetragen werden.
 Beispiel:
 
 const TIER_JSON_DATEIEN = [
-    "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.json",
-    "assets/daten/tiere/Asio otus/Asio otus.json"
+    "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json",
+    "assets/daten/lebewesen/tiere/Asio otus/Asio otus.json"
 ];
 
 6. Quellen
@@ -137,14 +137,14 @@ Die Quelle eines Mediums wird nicht über den Ordnernamen festgelegt, sondern di
 Beispiel Bild:
 
 {
-    "pfad": "assets/daten/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
+    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
     "quelle": "planetZoo2"
 }
 
 Beispiel Audio:
 
 {
-    "pfad": "assets/daten/tiere/Eunectes notaeus/audio/ruf.mp3",
+    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
     "quelle": "tierstimmenarchiv"
 }
 
@@ -254,7 +254,7 @@ Für Steppenzebra und Steinadler sind die JSON-Daten angelegt. Lokale Bilder und
 Die Daten kommen ausschließlich über:
 
 ```text
-assets/daten/tiere/datenImport.js
+assets/daten/lebewesen/tiere/datenImport.js
 ```
 
 Aktuell verfügbare Filter:

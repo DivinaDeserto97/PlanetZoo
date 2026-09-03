@@ -3,9 +3,9 @@
 /* ======================================== */
 
 const TIER_JSON_DATEIEN = [
-  "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.json",
-  "assets/daten/tiere/Equus quagga/Equus quagga.json",
-  "assets/daten/tiere/Aquila chrysaetos/Aquila chrysaetos.json",
+  "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json",
+  "assets/daten/lebewesen/tiere/Equus quagga/Equus quagga.json",
+  "assets/daten/lebewesen/tiere/Aquila chrysaetos/Aquila chrysaetos.json",
 ];
 
 /* ======================================== */
