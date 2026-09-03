@@ -190,14 +190,7 @@
         Gemeinsame Weltkarte
       </h1>
 
-      <span
-        class="map-main__status"
-        data-map-status
-        data-i18n
-        data-de="Karte wird geladen …"
-        data-en="Loading map …"
-        data-fr="Chargement de la carte …"
-      >
+      <span class="map-main__status" data-map-status>
         Karte wird geladen …
       </span>
     </div>
@@ -207,7 +200,54 @@
     <!-- ============================= -->
 
     <div class="map-stage">
-      <canvas class="map-canvas" data-map-canvas></canvas>
+      <svg
+        class="map-svg"
+        data-map-svg
+        viewBox="0 0 540 267"
+        role="img"
+        aria-label="Gemeinsame Weltkarte"
+      >
+        <defs>
+          <clipPath id="map-world-clip">
+            <rect x="0" y="0" width="540" height="267"></rect>
+          </clipPath>
+        </defs>
+
+        <!--
+            Alles innerhalb dieses Bereichs
+            wird gemeinsam gezoomt und verschoben.
+        -->
+
+        <g clip-path="url(#map-world-clip)">
+          <g data-map-viewport>
+            <!-- ===================== -->
+            <!-- SAUBERE BASISKARTE    -->
+            <!-- ===================== -->
+
+            <image
+              data-world-base
+              x="0"
+              y="0"
+              width="540"
+              height="267"
+              preserveAspectRatio="none"
+            ></image>
+
+            <!-- ===================== -->
+            <!-- TIERGEBIETE           -->
+            <!-- ===================== -->
+
+            <image
+              data-range-layer
+              x="0"
+              y="0"
+              width="540"
+              height="267"
+              preserveAspectRatio="none"
+            ></image>
+          </g>
+        </g>
+      </svg>
     </div>
 
     <!-- ============================= -->

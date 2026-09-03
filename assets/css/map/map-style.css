@@ -367,19 +367,45 @@
 }
 
 /* ======================================== */
-/* CANVAS                                   */
+/* WELTKARTENBEREICH                        */
 /* ======================================== */
 
-.map-canvas {
+.map-stage {
+  width: 100%;
+
+  aspect-ratio: 540 / 267;
+
+  min-height: 0;
+
+  overflow: hidden;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--radius-mittel);
+
+  background-color: var(--map-wasser);
+}
+
+/* ======================================== */
+/* SVG WELTKARTE                            */
+/* ======================================== */
+
+.map-svg {
   display: block;
 
   width: 100%;
 
-  height: auto;
+  height: 100%;
 
-  max-height: 70vh;
+  user-select: none;
 
-  object-fit: contain;
+  touch-action: none;
+
+  cursor: grab;
+}
+
+.map-svg.is-dragging {
+  cursor: grabbing;
 }
 
 /* ======================================== */

@@ -1,230 +1,459 @@
-import { getLanguage } from "../../features/language.js";
+import {
+    getLanguage
+} from "../../features/language.js";
+
 
 const TIER_FARBEN = [
-  "#38bdf8",
-  "#f59e0b",
-  "#a78bfa",
-  "#34d399",
-  "#fb7185",
-  "#facc15",
+    "#38bdf8",
+    "#f59e0b",
+    "#a78bfa",
+    "#34d399",
+    "#fb7185",
+    "#facc15"
 ];
 
+
 /* ======================================== */
-/* NAMEN AUS TIERDATEN                      */
+/* TIERNAME                                 */
 /* ======================================== */
 
-export function getTierName(tier, language = getLanguage()) {
-  const namen = tier.originalDaten?.namen?.[0] ?? {};
+export function getTierName(
+    tier,
+    language = getLanguage()
+) {
 
-  const LANGUAGE_KEYS = {
-    de: ["de", "deutsch"],
+    const namen =
+        tier.namen
+        ??
+        tier.originalDaten
+            ?.identitaet
+            ?.namen
+        ??
+        {};
 
-    en: ["en", "englisch", "english"],
 
-    fr: ["fr", "französisch", "franzoesisch", "français", "francais"],
-  };
+    /* ==================================== */
+    /* AKTUELLE SPRACHE                     */
+    /* ==================================== */
 
-  const keys = LANGUAGE_KEYS[language] ?? LANGUAGE_KEYS.de;
+    if (
+        namen[language]
+    ) {
 
-  for (const key of keys) {
-    if (namen[key]) {
-      return namen[key];
+        return namen[language];
+
     }
-  }
 
-  /*
-        Fallback:
-        Deutsch
-    */
-  if (namen.deutsch) {
-    return namen.deutsch;
-  }
 
-  /*
-        Letzter Fallback:
-        wissenschaftlicher Name
-    */
-  return tier.wissenschaftlicherName;
+    /* ==================================== */
+    /* DEUTSCH ALS FALLBACK                 */
+    /* ==================================== */
+
+    if (
+        namen.de
+    ) {
+
+        return namen.de;
+
+    }
+
+
+    /* ==================================== */
+    /* WISSENSCHAFTLICHER NAME              */
+    /* ==================================== */
+
+    return (
+        tier.wissenschaftlicherName
+        ??
+        tier.id
+        ??
+        "Unbekannte Tierart"
+    );
+
 }
+
 
 /* ======================================== */
 /* TIERLISTE INITIALISIEREN                 */
 /* ======================================== */
 
-export function initTierListe(tiere, renderer, signal) {
-  const container = document.querySelector("[data-animal-list]");
+export function initTierListe(
+    tiere,
+    renderer,
+    signal
+) {
 
-  const count = document.querySelector("[data-animal-count]");
+    const container =
+        document.querySelector(
+            "[data-animal-list]"
+        );
 
-  if (!container) {
-    return null;
-  }
 
-  /* ==================================== */
-  /* FARBE VERGEBEN                       */
-  /* ==================================== */
+    const count =
+        document.querySelector(
+            "[data-animal-count]"
+        );
 
-  tiere.forEach((tier, index) => {
-    tier.mapColor = TIER_FARBEN[index % TIER_FARBEN.length];
-  });
 
-  /* ==================================== */
-  /* AUSGEWÄHLTE TIERE                    */
-  /* ==================================== */
+    if (!container) {
 
-  const selected = new Set();
+        return null;
 
-  /*
-        Standard:
-        Alle Tiere mit Karte aktiv.
+    }
+
+
+    /* ==================================== */
+    /* FARBE VERGEBEN                       */
+    /* ==================================== */
+
+    tiere.forEach(
+        (
+            tier,
+            index
+        ) => {
+
+            tier.mapColor =
+                TIER_FARBEN[
+                    index
+                    %
+                    TIER_FARBEN.length
+                ];
+
+        }
+    );
+
+
+    /* ==================================== */
+    /* AUSGEWÄHLTE TIERE                    */
+    /* ==================================== */
+
+    const selected =
+        new Set();
+
+
+    /*
+        Alle Tiere mit vorhandener
+        Verbreitungskarte standardmäßig
+        einschalten.
     */
-  tiere.forEach((tier) => {
-    if (tier.kartenPfad) {
-      selected.add(tier.id);
+
+    tiere.forEach(
+        tier => {
+
+            if (
+                tier.kartenPfad
+            ) {
+
+                selected.add(
+                    tier.id
+                );
+
+            }
+
+        }
+    );
+
+
+    /* ==================================== */
+    /* LISTE RENDERN                        */
+    /* ==================================== */
+
+    function render(
+        visibleTiere = tiere
+    ) {
+
+        container.innerHTML =
+            "";
+
+
+        if (count) {
+
+            count.textContent =
+                String(
+                    visibleTiere.length
+                );
+
+        }
+
+
+        visibleTiere.forEach(
+            tier => {
+
+                /* ======================== */
+                /* ZEILE                    */
+                /* ======================== */
+
+                const row =
+                    document.createElement(
+                        "label"
+                    );
+
+
+                row.className =
+                    "map-animal";
+
+
+                row.dataset.animalId =
+                    tier.id;
+
+
+                /* ======================== */
+                /* CHECKBOX                 */
+                /* ======================== */
+
+                const checkbox =
+                    document.createElement(
+                        "input"
+                    );
+
+
+                checkbox.type =
+                    "checkbox";
+
+
+                checkbox.className =
+                    "map-animal__checkbox";
+
+
+                checkbox.checked =
+                    selected.has(
+                        tier.id
+                    );
+
+
+                checkbox.disabled =
+                    !tier.kartenPfad;
+
+
+                checkbox.addEventListener(
+                    "change",
+                    () => {
+
+                        if (
+                            checkbox.checked
+                        ) {
+
+                            selected.add(
+                                tier.id
+                            );
+
+                        }
+
+                        else {
+
+                            selected.delete(
+                                tier.id
+                            );
+
+                        }
+
+
+                        renderer.render(
+                            selected
+                        );
+
+                    },
+                    {
+                        signal
+                    }
+                );
+
+
+                /* ======================== */
+                /* FARBPUNKT                */
+                /* ======================== */
+
+                const color =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                color.className =
+                    "map-animal__color";
+
+
+                color.style.backgroundColor =
+                    tier.mapColor;
+
+
+                /* ======================== */
+                /* TEXT                     */
+                /* ======================== */
+
+                const text =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                const name =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                name.className =
+                    "map-animal__name";
+
+
+                name.textContent =
+                    getTierName(
+                        tier
+                    );
+
+
+                /* ======================== */
+                /* WISSENSCHAFTLICHER NAME  */
+                /* ======================== */
+
+                const scientific =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                scientific.className =
+                    "map-animal__scientific";
+
+
+                scientific.textContent =
+                    tier.wissenschaftlicherName;
+
+
+                text.append(
+                    name,
+                    scientific
+                );
+
+
+                row.append(
+                    checkbox,
+                    color,
+                    text
+                );
+
+
+                container.appendChild(
+                    row
+                );
+
+            }
+        );
+
     }
-  });
 
-  /* ==================================== */
-  /* LISTE RENDERN                        */
-  /* ==================================== */
 
-  function render(visibleTiere = tiere) {
-    container.innerHTML = "";
+    /* ==================================== */
+    /* ALLE EIN                             */
+    /* ==================================== */
 
-    if (count) {
-      count.textContent = String(visibleTiere.length);
-    }
+    document
+        .querySelector(
+            "[data-select-all]"
+        )
+        ?.addEventListener(
+            "click",
+            () => {
 
-    visibleTiere.forEach((tier) => {
-      const row = document.createElement("label");
+                tiere.forEach(
+                    tier => {
 
-      row.className = "map-animal";
+                        if (
+                            tier.kartenPfad
+                        ) {
 
-      row.dataset.animalId = tier.id;
+                            selected.add(
+                                tier.id
+                            );
 
-      /* Checkbox */
+                        }
 
-      const checkbox = document.createElement("input");
+                    }
+                );
 
-      checkbox.type = "checkbox";
 
-      checkbox.className = "map-animal__checkbox";
+                render();
 
-      checkbox.checked = selected.has(tier.id);
 
-      checkbox.disabled = !tier.kartenPfad;
+                renderer.render(
+                    selected
+                );
 
-      checkbox.addEventListener(
-        "change",
+            },
+            {
+                signal
+            }
+        );
+
+
+    /* ==================================== */
+    /* ALLE AUS                             */
+    /* ==================================== */
+
+    document
+        .querySelector(
+            "[data-select-none]"
+        )
+        ?.addEventListener(
+            "click",
+            () => {
+
+                selected.clear();
+
+
+                render();
+
+
+                renderer.render(
+                    selected
+                );
+
+            },
+            {
+                signal
+            }
+        );
+
+
+    /* ==================================== */
+    /* SPRACHE WECHSELN                     */
+    /* ==================================== */
+
+    document.addEventListener(
+        "languageChanged",
         () => {
-          if (checkbox.checked) {
-            selected.add(tier.id);
-          } else {
-            selected.delete(tier.id);
-          }
 
-          renderer.render(selected);
+            render();
+
+
+            renderer.updateLanguage();
+
         },
         {
-          signal,
-        },
-      );
-
-      /* Farbe */
-
-      const color = document.createElement("span");
-
-      color.className = "map-animal__color";
-
-      color.style.backgroundColor = tier.mapColor;
-
-      /* Text */
-
-      const text = document.createElement("span");
-
-      const name = document.createElement("span");
-
-      name.className = "map-animal__name";
-
-      name.textContent = getTierName(tier);
-
-      const scientific = document.createElement("span");
-
-      scientific.className = "map-animal__scientific";
-
-      scientific.textContent = tier.wissenschaftlicherName;
-
-      text.append(name, scientific);
-
-      row.append(checkbox, color, text);
-
-      container.appendChild(row);
-    });
-  }
-
-  /* ==================================== */
-  /* ALLE EIN                             */
-  /* ==================================== */
-
-  document.querySelector("[data-select-all]")?.addEventListener(
-    "click",
-    () => {
-      tiere.forEach((tier) => {
-        if (tier.kartenPfad) {
-          selected.add(tier.id);
+            signal
         }
-      });
+    );
 
-      render();
 
-      renderer.render(selected);
-    },
-    {
-      signal,
-    },
-  );
+    /* ==================================== */
+    /* ERSTER AUFBAU                        */
+    /* ==================================== */
 
-  /* ==================================== */
-  /* ALLE AUS                             */
-  /* ==================================== */
+    render();
 
-  document.querySelector("[data-select-none]")?.addEventListener(
-    "click",
-    () => {
-      selected.clear();
 
-      render();
+    renderer.render(
+        selected
+    );
 
-      renderer.render(selected);
-    },
-    {
-      signal,
-    },
-  );
 
-  /* ==================================== */
-  /* SPRACHE                              */
-  /* ==================================== */
+    return {
 
-  document.addEventListener(
-    "languageChanged",
-    () => {
-      render();
+        render,
 
-      renderer.updateLanguage();
-    },
-    {
-      signal,
-    },
-  );
+        selected
 
-  render();
+    };
 
-  renderer.render(selected);
-
-  return {
-    render,
-
-    selected,
-  };
 }

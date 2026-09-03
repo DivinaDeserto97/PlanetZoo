@@ -1,4 +1,4 @@
-import { datenImportieren } from "../../daten/tiere/daten/tiereImport.js";
+import { datenImportieren } from "../../daten/tiere/datenImport.js";
 
 import { initTierListe } from "./features/tierListe.js";
 
@@ -14,8 +14,8 @@ let controller = null;
 
 export async function init() {
   /*
-        Falls Map bereits einmal
-        initialisiert wurde.
+        Alte Events entfernen,
+        falls die Map erneut geöffnet wird.
     */
   if (controller) {
     controller.abort();
