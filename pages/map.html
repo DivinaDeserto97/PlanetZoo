@@ -1,268 +1,122 @@
 <section class="map-page">
-  <!-- ================================= -->
-  <!-- LINKE SEITE                       -->
-  <!-- ================================= -->
-
   <aside class="map-sidebar">
-    <!-- ============================= -->
-    <!-- TITEL                         -->
-    <!-- ============================= -->
-
     <div class="map-sidebar__header">
       <h2
         data-i18n
         data-de="Tierkarten"
         data-en="Animal maps"
+        data-en-US="Animal maps"
+        data-es="Mapas de animales"
         data-fr="Cartes des animaux"
-      >
-        Tierkarten
-      </h2>
+        data-it="Mappe degli animali"
+        data-pt-BR="Mapas dos animais"
+        data-ja="動物マップ"
+        data-zh-Hans="动物地图"
+      >Tierkarten</h2>
 
       <span class="map-sidebar__count">
-        <span data-animal-count> 0 </span>
-
-        <span data-i18n data-de=" Tiere" data-en=" animals" data-fr=" animaux">
-          Tiere
-        </span>
+        <span data-animal-count>0</span>
+        <span
+          data-i18n
+          data-de=" Tiere"
+          data-en=" animals"
+          data-en-US=" animals"
+          data-es=" animales"
+          data-fr=" animaux"
+          data-it=" animali"
+          data-pt-BR=" animais"
+          data-ja=" 頭"
+          data-zh-Hans=" 只动物"
+        > Tiere</span>
       </span>
     </div>
 
-    <!-- ============================= -->
-    <!-- FILTER MEGAMENÜ                -->
-    <!-- ============================= -->
-
     <details class="map-filter" data-map-filter>
       <summary>
-        <span data-i18n data-de="Filter" data-en="Filter" data-fr="Filtres">
-          Filter
-        </span>
-
-        <span class="map-filter__arrow"> ▼ </span>
+        <span data-i18n data-de="Filter" data-en="Filter" data-en-US="Filter" data-es="Filtros" data-fr="Filtres" data-it="Filtri" data-pt-BR="Filtros" data-ja="フィルター" data-zh-Hans="筛选">Filter</span>
+        <span class="map-filter__arrow" aria-hidden="true">▼</span>
       </summary>
 
       <div class="map-filter__content">
-        <!-- Suche -->
-
         <label class="map-filter__field">
-          <span
-            data-i18n
-            data-de="Tier suchen"
-            data-en="Search animal"
-            data-fr="Rechercher un animal"
-          >
-            Tier suchen
-          </span>
-
+          <span data-i18n data-de="Tier suchen" data-en="Search animal" data-en-US="Search animal" data-es="Buscar animal" data-fr="Rechercher un animal" data-it="Cerca animale" data-pt-BR="Buscar animal" data-ja="動物を検索" data-zh-Hans="搜索动物">Tier suchen</span>
           <input
             type="search"
             data-animal-search
+            data-i18n-placeholder
             data-placeholder-de="Name oder wissenschaftlicher Name"
             data-placeholder-en="Name or scientific name"
+            data-placeholder-en-US="Name or scientific name"
+            data-placeholder-es="Nombre o nombre científico"
             data-placeholder-fr="Nom ou nom scientifique"
+            data-placeholder-it="Nome o nome scientifico"
+            data-placeholder-pt-BR="Nome ou nome científico"
+            data-placeholder-ja="名前または学名"
+            data-placeholder-zh-Hans="名称或学名"
             placeholder="Name oder wissenschaftlicher Name"
           />
         </label>
 
-        <!-- Nur ausgewählte -->
-
         <label class="map-filter__checkbox">
           <input type="checkbox" data-filter-selected />
-
-          <span
-            data-i18n
-            data-de="Nur ausgewählte Tiere"
-            data-en="Selected animals only"
-            data-fr="Uniquement les animaux sélectionnés"
-          >
-            Nur ausgewählte Tiere
-          </span>
+          <span data-i18n data-de="Nur ausgewählte Tiere" data-en="Selected animals only" data-en-US="Selected animals only" data-es="Solo animales seleccionados" data-fr="Animaux sélectionnés uniquement" data-it="Solo animali selezionati" data-pt-BR="Somente animais selecionados" data-ja="選択した動物のみ" data-zh-Hans="仅显示已选择动物">Nur ausgewählte Tiere</span>
         </label>
 
-        <!-- Filter zurücksetzen -->
-
-        <button
-          type="button"
-          data-filter-reset
-          data-i18n
-          data-de="Filter zurücksetzen"
-          data-en="Reset filter"
-          data-fr="Réinitialiser les filtres"
-        >
-          Filter zurücksetzen
+        <button type="button" data-filter-reset>
+          <span data-i18n data-de="Filter zurücksetzen" data-en="Reset filter" data-en-US="Reset filter" data-es="Restablecer filtros" data-fr="Réinitialiser les filtres" data-it="Reimposta filtri" data-pt-BR="Redefinir filtros" data-ja="フィルターをリセット" data-zh-Hans="重置筛选">Filter zurücksetzen</span>
         </button>
       </div>
     </details>
 
-    <!-- ============================= -->
-    <!-- TIERLISTE                     -->
-    <!-- ============================= -->
-
     <div class="map-animal-list" data-animal-list></div>
 
-    <!-- ============================= -->
-    <!-- ALLE EIN / ALLE AUS            -->
-    <!-- ============================= -->
-
     <div class="map-animal-actions">
-      <button
-        type="button"
-        data-select-all
-        data-i18n
-        data-de="Alle ein"
-        data-en="Select all"
-        data-fr="Tout activer"
-      >
-        Alle ein
+      <button type="button" data-select-all>
+        <span data-i18n data-de="Alle auswählen" data-en="Select all" data-en-US="Select all" data-es="Seleccionar todos" data-fr="Tout sélectionner" data-it="Seleziona tutti" data-pt-BR="Selecionar todos" data-ja="すべて選択" data-zh-Hans="全选">Alle auswählen</span>
       </button>
 
-      <button
-        type="button"
-        data-select-none
-        data-i18n
-        data-de="Alle aus"
-        data-en="Select none"
-        data-fr="Tout désactiver"
-      >
-        Alle aus
+      <button type="button" data-select-none>
+        <span data-i18n data-de="Alle abwählen" data-en="Select none" data-en-US="Select none" data-es="Deseleccionar todos" data-fr="Tout désélectionner" data-it="Deseleziona tutti" data-pt-BR="Desmarcar todos" data-ja="すべて解除" data-zh-Hans="全部取消">Alle abwählen</span>
       </button>
     </div>
 
-    <!-- ============================= -->
-    <!-- LEGENDE                       -->
-    <!-- immer unten                   -->
-    <!-- ============================= -->
-
-    <footer class="map-legend">
-      <strong
-        data-i18n
-        data-de="Darstellung:"
-        data-en="Display:"
-        data-fr="Affichage :"
-      >
-        Darstellung:
-      </strong>
-
-      <span
-        data-i18n
-        data-de="Eine Tierart = farbige Fläche"
-        data-en="One species = coloured area"
-        data-fr="Une espèce = zone colorée"
-      >
-        Eine Tierart = farbige Fläche
-      </span>
-
-      <span
-        data-i18n
-        data-de="Zwei Tierarten = diagonale Schraffur"
-        data-en="Two species = diagonal hatching"
-        data-fr="Deux espèces = hachures diagonales"
-      >
-        Zwei Tierarten = diagonale Schraffur
-      </span>
-
-      <span
-        data-i18n
-        data-de="Drei oder mehr = Kreuzschraffur"
-        data-en="Three or more = cross-hatching"
-        data-fr="Trois ou plus = hachures croisées"
-      >
-        Drei oder mehr = Kreuzschraffur
-      </span>
-    </footer>
+    <div class="map-legend">
+      <strong data-i18n data-de="Gemeinsame Auswahl" data-en="Shared selection" data-en-US="Shared selection" data-es="Selección compartida" data-fr="Sélection partagée" data-it="Selezione condivisa" data-pt-BR="Seleção compartilhada" data-ja="共通の選択" data-zh-Hans="共享选择">Gemeinsame Auswahl</strong>
+      <span data-i18n data-de="Änderungen hier gelten auch für Home, Infotafel und Rechner." data-en="Changes here also apply to Home, the info board and calculator." data-en-US="Changes here also apply to Home, the info board and calculator." data-es="Los cambios aquí también se aplican a Inicio, el panel informativo y la calculadora." data-fr="Les changements ici s’appliquent aussi à l’accueil, au panneau d’information et au calculateur." data-it="Le modifiche qui valgono anche per Home, pannello informativo e calcolatore." data-pt-BR="As alterações aqui também valem para Início, painel informativo e calculadora." data-ja="ここでの変更はホーム、情報パネル、計算機にも反映されます。" data-zh-Hans="这里的更改也会同步到主页、信息板和计算器。">Änderungen hier gelten auch für Home, Infotafel und Rechner.</span>
+    </div>
   </aside>
 
-  <!-- ================================= -->
-  <!-- RECHTE SEITE / WELTKARTE          -->
-  <!-- ================================= -->
-
   <section class="map-main">
-    <!-- ============================= -->
-    <!-- KARTENKOPF                    -->
-    <!-- ============================= -->
+    <header class="map-main__header">
+      <div>
+        <h1 data-i18n data-de="Verbreitungskarte" data-en="Distribution map" data-en-US="Distribution map" data-es="Mapa de distribución" data-fr="Carte de répartition" data-it="Mappa di distribuzione" data-pt-BR="Mapa de distribuição" data-ja="分布マップ" data-zh-Hans="分布地图">Verbreitungskarte</h1>
+        <span class="map-main__status" data-map-status></span>
+      </div>
 
-    <div class="map-main__header">
-      <h1
-        data-i18n
-        data-de="Gemeinsame Weltkarte"
-        data-en="Combined world map"
-        data-fr="Carte du monde commune"
-      >
-        Gemeinsame Weltkarte
-      </h1>
-
-      <span class="map-main__status" data-map-status>
-        Karte wird geladen …
-      </span>
-    </div>
-
-    <!-- ============================= -->
-    <!-- WELTKARTE                     -->
-    <!-- ============================= -->
+      <button type="button" data-map-reset-view>
+        <span data-i18n data-de="Ansicht zurücksetzen" data-en="Reset view" data-en-US="Reset view" data-es="Restablecer vista" data-fr="Réinitialiser la vue" data-it="Reimposta vista" data-pt-BR="Redefinir vista" data-ja="表示をリセット" data-zh-Hans="重置视图">Ansicht zurücksetzen</span>
+      </button>
+    </header>
 
     <div class="map-stage">
-      <svg
-        class="map-svg"
-        data-map-svg
-        viewBox="0 0 540 267"
-        role="img"
-        aria-label="Gemeinsame Weltkarte"
-      >
+      <svg class="map-svg" data-map-svg viewBox="0 0 540 267" role="img" aria-label="Weltkarte">
         <defs>
           <clipPath id="map-world-clip">
             <rect x="0" y="0" width="540" height="267"></rect>
           </clipPath>
         </defs>
 
-        <!--
-            Alles innerhalb dieses Bereichs
-            wird gemeinsam gezoomt und verschoben.
-        -->
-
         <g clip-path="url(#map-world-clip)">
           <g data-map-viewport>
-            <!-- ===================== -->
-            <!-- SAUBERE BASISKARTE    -->
-            <!-- ===================== -->
-
-            <image
-              data-world-base
-              x="0"
-              y="0"
-              width="540"
-              height="267"
-              preserveAspectRatio="none"
-            ></image>
-
-            <!-- ===================== -->
-            <!-- TIERGEBIETE           -->
-            <!-- ===================== -->
-
-            <image
-              data-range-layer
-              x="0"
-              y="0"
-              width="540"
-              height="267"
-              preserveAspectRatio="none"
-            ></image>
+            <image data-world-base x="0" y="0" width="540" height="267" preserveAspectRatio="none"></image>
+            <image data-range-layer x="0" y="0" width="540" height="267" preserveAspectRatio="none"></image>
           </g>
         </g>
       </svg>
     </div>
 
-    <!-- ============================= -->
-    <!-- HOVER INFORMATION             -->
-    <!-- ============================= -->
-
     <div class="map-hover-info" data-map-hover-info>
-      <span
-        data-i18n
-        data-de="Fahre mit der Maus über die Karte."
-        data-en="Move the mouse over the map."
-        data-fr="Passez la souris sur la carte."
-      >
-        Fahre mit der Maus über die Karte.
-      </span>
+      <span data-i18n data-de="Fahre mit der Maus über die Karte." data-en="Move the mouse over the map." data-en-US="Move the mouse over the map." data-es="Mueve el ratón sobre el mapa." data-fr="Passez la souris sur la carte." data-it="Sposta il mouse sulla mappa." data-pt-BR="Mova o mouse sobre o mapa." data-ja="マップ上にマウスを移動してください。" data-zh-Hans="将鼠标移到地图上。">Fahre mit der Maus über die Karte.</span>
     </div>
   </section>
 </section>

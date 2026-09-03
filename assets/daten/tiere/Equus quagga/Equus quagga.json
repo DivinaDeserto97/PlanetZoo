@@ -1,0 +1,545 @@
+{
+  "id": "Equus quagga",
+  "identitaet": {
+    "namen": {
+      "de": "Steppenzebra",
+      "en": "Plains Zebra",
+      "en-US": "Plains Zebra",
+      "es": "Cebra de llanura",
+      "fr": "Zèbre des plaines",
+      "it": "Zebra di pianura",
+      "pt-BR": "Zebra-das-planícies",
+      "ja": "サバンナシマウマ",
+      "zh-Hans": "平原斑马"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": ["habitatTerrestrial"],
+    "kontinente": ["africa"],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "klasse": "Mammalia",
+          "ordnung": "Perissodactyla",
+          "familie": "Equidae",
+          "gattung": "Equus",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnittAusgewachsen",
+          "min": 2.2,
+          "max": 2.5,
+          "einheit": "m",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "durchschnittAusgewachsen",
+          "min": 175,
+          "max": 385,
+          "einheit": "kg",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 150000,
+          "max": 250000,
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "traechtigkeit": {
+      "werte": [
+        {
+          "wert": 13,
+          "einheit": "monat",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": 4,
+          "einheit": "jahr",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Östliches und südliches Afrika.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Eastern and southern Africa.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Eastern and southern Africa.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "África oriental y austral.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Afrique orientale et australe.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Africa orientale e meridionale.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "África Oriental e Austral.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカ東部および南部。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "非洲东部和南部。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Steppenzebra (Equus quagga) ist ein mittelgroßes Zebra aus dem östlichen und südlichen Afrika. Es lebt vor allem in offenen Graslandschaften und Savannen und hält sich häufig in der Nähe von Wasserstellen auf.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The plains zebra (Equus quagga) is a medium-sized zebra from eastern and southern Africa. It mainly inhabits open grasslands and savannas and is often found close to water.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The plains zebra (Equus quagga) is a medium-sized zebra from eastern and southern Africa. It mainly inhabits open grasslands and savannas and is often found close to water.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La cebra de llanura (Equus quagga) es una cebra de tamaño mediano del este y sur de África. Vive principalmente en praderas abiertas y sabanas, a menudo cerca del agua.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le zèbre des plaines (Equus quagga) est un zèbre de taille moyenne d’Afrique orientale et australe. Il vit surtout dans les prairies ouvertes et les savanes, souvent près de l’eau.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La zebra di pianura (Equus quagga) è una zebra di medie dimensioni dell’Africa orientale e meridionale. Vive soprattutto in praterie aperte e savane, spesso vicino all’acqua.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A zebra-das-planícies (Equus quagga) é uma zebra de porte médio da África Oriental e Austral. Vive principalmente em campos abertos e savanas, muitas vezes perto de fontes de água.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナシマウマ（Equus quagga）は、アフリカ東部から南部に分布する中型のシマウマです。主に開けた草原やサバンナに生息し、水場の近くでよく見られます。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "平原斑马（Equus quagga）是一种分布于非洲东部和南部的中型斑马，主要生活在开阔草原和稀树草原，并常在水源附近活动。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Steppenzebra wird als potenziell gefährdet geführt. Zu den Belastungen gehören Lebensraumverlust, Jagd und unterbrochene Wanderwege.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The plains zebra is listed as Near Threatened. Pressures include habitat loss, hunting and disrupted migration routes.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The plains zebra is listed as Near Threatened. Pressures include habitat loss, hunting and disrupted migration routes.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La cebra de llanura está clasificada como casi amenazada. Entre las presiones se encuentran la pérdida de hábitat, la caza y la interrupción de rutas migratorias.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le zèbre des plaines est classé quasi menacé. Les principales pressions sont la perte d’habitat, la chasse et la rupture des routes migratoires.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La zebra di pianura è classificata come prossima alla minaccia. Tra le pressioni figurano perdita di habitat, caccia e interruzione delle rotte migratorie.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A zebra-das-planícies é classificada como quase ameaçada. As pressões incluem perda de habitat, caça e interrupção de rotas migratórias.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナシマウマは準絶滅危惧に分類されています。生息地の減少、狩猟、移動経路の分断などが脅威です。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "平原斑马被列为近危物种，面临栖息地丧失、捕猎以及迁徙通道受阻等压力。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Steppenzebras leben in stabilen Gruppen. Typisch sind Harems aus einem Hengst, mehreren Stuten und Jungtieren; junge Männchen können Junggesellengruppen bilden.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Plains zebras live in stable social groups. Typical harems contain one stallion, several mares and their young; young males may form bachelor groups.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Plains zebras live in stable social groups. Typical harems contain one stallion, several mares and their young; young males may form bachelor groups.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las cebras de llanura viven en grupos sociales estables. Los harenes suelen incluir un semental, varias hembras y sus crías; los machos jóvenes pueden formar grupos de solteros.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les zèbres des plaines vivent en groupes sociaux stables. Un harem comprend généralement un étalon, plusieurs femelles et leurs jeunes; les jeunes mâles peuvent former des groupes de célibataires.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le zebre di pianura vivono in gruppi sociali stabili. Un harem tipico comprende uno stallone, diverse femmine e i piccoli; i giovani maschi possono formare gruppi di scapoli.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As zebras-das-planícies vivem em grupos sociais estáveis. Um harém típico inclui um garanhão, várias fêmeas e seus filhotes; machos jovens podem formar grupos de solteiros.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナシマウマは安定した群れで暮らします。通常は1頭の雄と複数の雌、その子どもで群れを作り、若い雄は雄だけの群れを作ることがあります。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "平原斑马生活在稳定的社会群体中。典型群体由一匹雄马、数匹雌马及幼崽组成，年轻雄性也会组成单身群。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Jedes Zebra besitzt ein individuelles Streifenmuster.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Steppenzebras können auf der Suche nach Wasser und Nahrung weite Wanderungen zurücklegen.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Every zebra has an individual stripe pattern.",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "inhalt": "Plains zebras can migrate long distances in search of water and food.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Every zebra has an individual stripe pattern.",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "inhalt": "Plains zebras can migrate long distances in search of water and food.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Cada cebra tiene un patrón de rayas individual.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las cebras de llanura pueden recorrer grandes distancias en busca de agua y alimento.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Chaque zèbre possède un motif de rayures unique.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les zèbres des plaines peuvent parcourir de longues distances à la recherche d’eau et de nourriture.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Ogni zebra possiede un disegno di strisce individuale.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le zebre di pianura possono migrare per grandi distanze alla ricerca di acqua e cibo.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Cada zebra possui um padrão de listras individual.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As zebras-das-planícies podem migrar por longas distâncias em busca de água e alimento.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "シマウマの縞模様は1頭ごとに異なります。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "サバンナシマウマは水や餌を求めて長距離を移動することがあります。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "每匹斑马的条纹图案都不相同。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "平原斑马会为了寻找水和食物进行长距离迁徙。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich vor der Veröffentlichung. Spielwerte und Zoopedia-Angaben können sich noch ändern.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is still pre-release. Gameplay values and Zoopedia information may still change.",
+          "quelle": "projekt"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is still pre-release. Gameplay values and Zoopedia information may still change.",
+          "quelle": "projekt"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 aún no se ha publicado. Los valores de juego y los datos de la Zoopedia pueden cambiar.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est encore en pré-lancement. Les valeurs de jeu et les informations de la Zoopédie peuvent encore changer.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è ancora in fase pre-lancio. I valori di gioco e le informazioni della Zoopedia possono ancora cambiare.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 ainda está em pré-lançamento. Valores de jogo e informações da Zoopedia ainda podem mudar.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は発売前のため、ゲーム内数値やZoopediaの情報は変更される可能性があります。",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2尚未正式发售，游戏数值和Zoopedia资料仍可能发生变化。",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/48ec061b/Zebra_Plains_map.png",
+    "dateityp": "png",
+    "pfad": "assets/daten/tiere/Equus quagga/Equus quagga map.png",
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDhlYzA2MWIvWmVicmFfUGxhaW5zLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
+      "typ": "hauptbild",
+      "dateityp": "webp",
+      "pfad": "assets/daten/tiere/Equus quagga/bilder/Equus quagga 1.webp",
+      "quelle": "planetZoo2"
+    }
+  ],
+  "audio": [],
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia"
+      }
+    },
+    "planetZooWiki": {
+      "name": "Planet Zoo Wiki – Plains Zebra",
+      "seiten": {
+        "en": "https://planetzoo.fandom.com/wiki/Plains_Zebra"
+      }
+    }
+  }
+}

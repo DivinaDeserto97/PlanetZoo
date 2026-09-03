@@ -81,4 +81,8 @@ export function initFilter(tiere, tierListe, signal) {
   document.addEventListener("languageChanged", applyFilter, {
     signal,
   });
+
+  document.addEventListener("tierAuswahlChanged", applyFilter, {
+    signal,
+  });
 }

@@ -1,13 +1,7 @@
-/* ======================================== */
-/* HOME VARIABLEN                           */
-/* ======================================== */
-
 .home-page {
   --home-max-width: var(--breite-inhalt);
-
   --home-padding-horizontal: var(--abstand-5);
-
   --home-padding-vertical: var(--abstand-6);
-
-  --home-abstand: var(--abstand-4);
+  --home-grid-min: 270px;
+  --home-card-image-height: 190px;
 }

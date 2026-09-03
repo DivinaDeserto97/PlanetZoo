@@ -1,0 +1,726 @@
+{
+  "id": "Aquila chrysaetos",
+  "identitaet": {
+    "namen": {
+      "de": "Steinadler",
+      "en": "Golden Eagle",
+      "en-US": "Golden Eagle",
+      "es": "Águila real",
+      "fr": "Aigle royal",
+      "it": "Aquila reale",
+      "pt-BR": "Águia-real",
+      "ja": "イヌワシ",
+      "zh-Hans": "金雕"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": ["habitatFlying"],
+    "kontinente": ["northAmerica", "europe", "asia", "africa"],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "klasse": "Aves",
+          "ordnung": "Accipitriformes",
+          "familie": "Accipitridae",
+          "gattung": "Aquila",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnittAusgewachsen",
+          "min": 0.7,
+          "max": 1.0,
+          "einheit": "m",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "min": 1.8,
+          "max": 2.3,
+          "einheit": "m",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3.0,
+          "max": 6.5,
+          "einheit": "kg",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 85000,
+          "max": 160000,
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 4,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "wert": "solitaryOrPair",
+          "quelle": "darwinsTierlexikon"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperateGrassland",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "wert": "tundra",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "wert": "desert",
+          "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "diurnal",
+          "quelle": "lfuBayern"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "quelle": "darwinsTierlexikon"
+          }
+        ]
+      },
+
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "lagomorpha",
+                "beispiele": ["hare", "rabbit"],
+                "quelle": "darwinsTierlexikon"
+              },
+              {
+                "wert": "smallAndMediumMammals",
+                "beispiele": ["marmot"],
+                "quelle": "darwinsTierlexikon"
+              },
+              {
+                "wert": "reptiles",
+                "quelle": "darwinsTierlexikon"
+              },
+              {
+                "wert": "birds",
+                "quelle": "darwinsTierlexikon"
+              },
+              {
+                "wert": "largerMammals",
+                "beispiele": ["chamois"],
+                "bedingung": "foodShortage",
+                "quelle": "darwinsTierlexikon"
+              }
+            ]
+          }
+        },
+
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+
+          "erwachsen": {
+            "werte": [],
+            "keineNatuerlichenFressfeinde": true,
+            "quelle": "schweizerNationalpark"
+          }
+        }
+      }
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Nordamerika, Europa, Asien und Teile Nordafrikas.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "North America, Europe, Asia and parts of North Africa.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "North America, Europe, Asia and parts of North Africa.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Norteamérica, Europa, Asia y partes del norte de África.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Amérique du Nord, Europe, Asie et certaines régions d’Afrique du Nord.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Nord America, Europa, Asia e parti del Nord Africa.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "América do Norte, Europa, Ásia e partes do norte da África.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "北アメリカ、ヨーロッパ、アジア、北アフリカの一部。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "北美洲、欧洲、亚洲以及北非部分地区。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Steinadler (Aquila chrysaetos) ist ein großer Greifvogel der Nordhalbkugel. Er bewohnt offene und halboffene Landschaften wie Gebirge, Grasland, Tundra und trockene Regionen und nutzt Felsen oder hohe Bäume als Nistplätze.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The golden eagle (Aquila chrysaetos) is a large bird of prey of the Northern Hemisphere. It inhabits open and semi-open landscapes such as mountains, grasslands, tundra and dry regions, nesting on cliffs or tall trees.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The golden eagle (Aquila chrysaetos) is a large bird of prey of the Northern Hemisphere. It inhabits open and semi-open landscapes such as mountains, grasslands, tundra and dry regions, nesting on cliffs or tall trees.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El águila real (Aquila chrysaetos) es una gran rapaz del hemisferio norte. Habita paisajes abiertos y semiabiertos como montañas, praderas, tundra y regiones secas, y anida en acantilados o árboles altos.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’aigle royal (Aquila chrysaetos) est un grand rapace de l’hémisphère Nord. Il fréquente les milieux ouverts et semi-ouverts comme les montagnes, prairies, toundras et régions sèches, et niche sur des falaises ou de grands arbres.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’aquila reale (Aquila chrysaetos) è un grande rapace dell’emisfero settentrionale. Vive in ambienti aperti e semiaperti come montagne, praterie, tundra e zone aride, nidificando su pareti rocciose o alberi alti.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A águia-real (Aquila chrysaetos) é uma grande ave de rapina do Hemisfério Norte. Habita paisagens abertas e semiabertas, como montanhas, campos, tundra e regiões secas, nidificando em penhascos ou árvores altas.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシ（Aquila chrysaetos）は北半球に広く分布する大型の猛禽類です。山岳地帯、草原、ツンドラ、乾燥地などの開けた環境に生息し、崖や高い木に巣を作ります。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕（Aquila chrysaetos）是分布于北半球的大型猛禽，生活在山地、草原、苔原和干旱地区等开阔或半开阔环境，并常在悬崖或高大树木上筑巢。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Steinadler gilt weltweit als nicht gefährdet. Lokal können Lebensraumverlust, Verfolgung, Vergiftungen sowie Kollisionen und Stromschläge an Infrastruktur Probleme verursachen.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The golden eagle is globally listed as Least Concern. Locally, habitat loss, persecution, poisoning, collisions and electrocution from infrastructure can cause problems.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The golden eagle is globally listed as Least Concern. Locally, habitat loss, persecution, poisoning, collisions and electrocution from infrastructure can cause problems.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El águila real está clasificada globalmente como de preocupación menor. A nivel local puede verse afectada por pérdida de hábitat, persecución, envenenamiento, colisiones y electrocución.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’aigle royal est classé mondialement en préoccupation mineure. Localement, il peut être touché par la perte d’habitat, la persécution, les empoisonnements, les collisions et l’électrocution.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’aquila reale è classificata globalmente come a minor preoccupazione. A livello locale può risentire di perdita di habitat, persecuzione, avvelenamento, collisioni ed elettrocuzione.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A águia-real é classificada globalmente como pouco preocupante. Localmente, pode sofrer com perda de habitat, perseguição, envenenamento, colisões e eletrocussão.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシは世界的には低危険種とされていますが、地域によっては生息地の減少、迫害、毒物、人工物への衝突や感電が問題になります。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕在全球范围内被列为无危，但局部地区仍会受到栖息地丧失、人为捕杀、中毒、碰撞和触电等威胁。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Steinadler leben meist paarweise in großen Revieren. Sie bauen große Nester, die über viele Jahre erneut genutzt und erweitert werden können. Jungvögel werden nach dem Ausfliegen noch einige Zeit von den Eltern versorgt.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden eagles usually live as pairs in large territories. They build large nests that may be reused and enlarged for many years. Young birds remain dependent on their parents for some time after fledging.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden eagles usually live as pairs in large territories. They build large nests that may be reused and enlarged for many years. Young birds remain dependent on their parents for some time after fledging.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las águilas reales suelen vivir en parejas dentro de grandes territorios. Construyen grandes nidos que pueden reutilizar y ampliar durante muchos años. Los jóvenes siguen dependiendo de sus padres durante un tiempo después de volar.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les aigles royaux vivent généralement en couple sur de vastes territoires. Ils construisent de grands nids réutilisés et agrandis pendant de nombreuses années. Les jeunes restent dépendants de leurs parents quelque temps après l’envol.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le aquile reali vivono generalmente in coppia in territori molto estesi. Costruiscono grandi nidi che possono essere riutilizzati e ampliati per molti anni. I giovani restano dipendenti dai genitori per un periodo dopo l’involo.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As águias-reais geralmente vivem em pares em grandes territórios. Constroem ninhos grandes que podem ser reutilizados e ampliados por muitos anos. Os jovens continuam dependentes dos pais por algum tempo após começarem a voar.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシは広い縄張りでつがいを作って暮らすことが多く、大きな巣を何年も繰り返し利用して拡張します。若鳥は巣立ち後もしばらく親に依存します。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕通常成对生活在广阔领地中，会建造大型巢穴并多年重复使用和扩建。幼鸟离巢后仍会在一段时间内依赖亲鸟。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Steinadler können im Sturzflug sehr hohe Geschwindigkeiten erreichen.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ihre Sehkraft ist deutlich stärker als die des Menschen und hilft ihnen, Beute aus großer Entfernung zu erkennen.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden eagles can reach very high speeds when diving after prey.",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "inhalt": "Their eyesight is far stronger than a human’s and helps them spot prey from great distances.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden eagles can reach very high speeds when diving after prey.",
+          "quelle": "planetZooWiki"
+        },
+        {
+          "inhalt": "Their eyesight is far stronger than a human’s and helps them spot prey from great distances.",
+          "quelle": "planetZooWiki"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las águilas reales pueden alcanzar velocidades muy altas al lanzarse en picado tras una presa.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su vista es mucho más potente que la humana y les permite detectar presas a gran distancia.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les aigles royaux peuvent atteindre des vitesses très élevées lorsqu’ils plongent sur une proie.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leur vue est bien plus puissante que celle de l’être humain et leur permet de repérer des proies à grande distance.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le aquile reali possono raggiungere velocità molto elevate durante le picchiate sulla preda.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La loro vista è molto più potente di quella umana e consente di individuare prede da grande distanza.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As águias-reais podem atingir velocidades muito altas ao mergulhar sobre uma presa.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sua visão é muito mais forte que a humana e ajuda a localizar presas a grandes distâncias.",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシは獲物を狙う急降下で非常に高い速度に達します。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "視力は人間よりはるかに優れ、遠くの獲物を見つけるのに役立ちます。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕俯冲捕猎时可以达到很高的速度。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们的视力远强于人类，能够从很远的地方发现猎物。",
+          "quelle": "planetZooWiki",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich vor der Veröffentlichung. Spielwerte und Zoopedia-Angaben können sich noch ändern.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is still pre-release. Gameplay values and Zoopedia information may still change.",
+          "quelle": "projekt"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is still pre-release. Gameplay values and Zoopedia information may still change.",
+          "quelle": "projekt"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 aún no se ha publicado. Los valores de juego y los datos de la Zoopedia pueden cambiar.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est encore en pré-lancement. Les valeurs de jeu et les informations de la Zoopédie peuvent encore changer.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è ancora in fase pre-lancio. I valori di gioco e le informazioni della Zoopedia possono ancora cambiare.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 ainda está em pré-lançamento. Valores de jogo e informações da Zoopedia ainda podem mudar.",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は発売前のため、ゲーム内数値やZoopediaの情報は変更される可能性があります。",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2尚未正式发售，游戏数值和Zoopedia资料仍可能发生变化。",
+          "quelle": "projekt",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/753a390a/Eagle_Golden_map.png",
+    "dateityp": "png",
+    "pfad": "assets/daten/tiere/Aquila chrysaetos/Aquila chrysaetos map.png",
+    "quelle": "lokalNochNichtVorhanden"
+  },
+  "bilder": [
+    {
+      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNzUzYTM5MGEvRWFnbGVfR29sZGVuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
+      "typ": "hauptbild",
+      "dateityp": "webp",
+      "pfad": "assets/daten/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 1.webp",
+      "quelle": "planetZoo2"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/960px-015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "typ": "echtbild",
+      "dateityp": "jpg",
+      "pfad": "assets/daten/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 2.jpg",
+      "quelle": "Wikipedia"
+    }
+  ],
+  "audio": [
+    {
+      "typ": "Ruf",
+      "varianten": [
+        {
+          "variante": 1,
+          "dateien": [
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "flac",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "mp3",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "wav",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/2/Aquila_chrysaetos_Lue0060_07.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "Paarungsruf",
+      "varianten": [
+        {
+          "variante": 1,
+          "dateien": [
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "flac",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "mp3",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "url": "https://suche.tierstimmenarchiv.de/search/basket.html?basket=TSA:Aquila_chrysaetos_Lue_60_6_1,TSA:Aquila_chrysaetos_Lue_60_7_1&requested=species,locality,duration,recording_date,description,sound_type,collection,usage_permission",
+              "dateityp": "wav",
+              "pfad": "assets/daten/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/Aquila_chrysaetos_Lue0060_06.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia"
+      }
+    },
+    "planetZooWiki": {
+      "name": "Planet Zoo Wiki – Golden Eagle",
+      "seiten": {
+        "en": "https://planetzoo.fandom.com/wiki/Golden_Eagle"
+      }
+    },
+    "darwinsTierlexikon": {
+      "name": "Darwins Tierlexikon",
+      "typ": "buch"
+    },
+
+    "lfuBayern": {
+      "name": "Bayerisches Landesamt für Umwelt – Steinadler",
+      "seiten": {
+        "de": "https://www.lfu.bayern.de/natur/sap/arteninformationen/steckbrief/zeige?stbname=Aquila+chrysaetos"
+      }
+    },
+
+    "schweizerNationalpark": {
+      "name": "Schweizerischer Nationalpark – Steinadler",
+      "seiten": {
+        "de": "https://nationalpark.ch/flora-und-fauna/steinadler/"
+      }
+    },
+    "Tierstimmenarchiv": {
+      "name": "Tierstimmenarchiv",
+      "seiten": {
+        "de": "https://www.museumfuernaturkunde.berlin/"
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.info-page {
+  width: min(100%, var(--breite-inhalt));
+  margin: 0 auto;
+  padding: var(--abstand-6) var(--abstand-5);
+}
+
+.info-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--abstand-5);
+  margin-bottom: var(--abstand-5);
+}
+
+.info-hero__eyebrow {
+  margin: 0 0 var(--abstand-1);
+  color: var(--farbe-akzent);
+  font-size: var(--schrift-klein);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.info-hero h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.info-hero p:not(.info-hero__eyebrow) {
+  max-width: 850px;
+  margin: var(--abstand-2) 0 0;
+  color: var(--farbe-text-zusatz);
+  line-height: 1.55;
+}
+
+.info-hero__counter {
+  min-width: 135px;
+  padding: var(--abstand-3) var(--abstand-4);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-mittel);
+  background: var(--farbe-bereich);
+  text-align: right;
+}
+
+.info-hero__counter strong {
+  display: block;
+  font-size: 28px;
+}
+
+.info-hero__counter span {
+  color: var(--farbe-text-zusatz);
+  font-size: var(--schrift-klein);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  gap: var(--abstand-5);
+  align-items: start;
+}
+
+.info-card {
+  overflow: hidden;
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-gross);
+  background: var(--farbe-bereich);
+}
+
+.info-card__hero {
+  position: relative;
+  min-height: 250px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--farbe-element-2);
+}
+
+.info-card__hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.info-card__no-image {
+  color: var(--farbe-text-zusatz);
+  text-align: center;
+}
+
+.info-card__remove {
+  position: absolute;
+  top: var(--abstand-3);
+  right: var(--abstand-3);
+  min-height: 38px;
+  padding: 0 var(--abstand-3);
+  border-color: var(--farbe-linie-hell);
+  background: color-mix(in srgb, var(--farbe-element) 90%, transparent);
+}
+
+.info-card__title {
+  padding: var(--abstand-5);
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.info-card__title h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.info-card__scientific {
+  margin: var(--abstand-1) 0 0;
+  color: var(--farbe-text-zusatz);
+  font-style: italic;
+}
+
+.info-card__quick {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--farbe-linie);
+}
+
+.info-stat {
+  min-width: 0;
+  padding: var(--abstand-3) var(--abstand-4);
+  background: var(--farbe-element);
+}
+
+.info-stat__label {
+  display: block;
+  margin-bottom: var(--abstand-1);
+  color: var(--farbe-text-zusatz);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.info-stat__value {
+  overflow-wrap: anywhere;
+  font-weight: 650;
+}
+
+.info-card__sections {
+  padding: var(--abstand-5);
+  display: grid;
+  gap: var(--abstand-5);
+}
+
+.info-section {
+  min-width: 0;
+}
+
+.info-section h3 {
+  margin: 0 0 var(--abstand-2);
+  font-size: 20px;
+}
+
+.info-section p,
+.info-section li {
+  color: var(--farbe-text-zusatz);
+  line-height: 1.6;
+}
+
+.info-section p {
+  margin: 0 0 var(--abstand-3);
+}
+
+.info-section p:last-child {
+  margin-bottom: 0;
+}
+
+.info-section ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.info-empty {
+  padding: var(--abstand-6);
+  border: 1px dashed var(--farbe-linie);
+  border-radius: var(--radius-gross);
+  background: var(--farbe-bereich);
+  text-align: center;
+}
+
+.info-empty p {
+  color: var(--farbe-text-zusatz);
+}
+
+.info-empty__button {
+  min-height: 44px;
+  padding: 0 var(--abstand-4);
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-klein);
+  background: var(--farbe-akzent);
+  color: var(--farbe-akzent-text);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .info-page {
+    padding: var(--abstand-4) var(--abstand-3);
+  }
+
+  .info-hero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .info-hero__counter {
+    text-align: left;
+  }
+
+  .info-card__quick {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,50 @@
+.calculator-page {
+  width: min(100%, var(--breite-inhalt));
+  margin: 0 auto;
+  padding: var(--abstand-6) var(--abstand-5);
+}
+
+.calculator-page__eyebrow {
+  margin: 0 0 var(--abstand-1);
+  color: var(--farbe-akzent);
+  font-size: var(--schrift-klein);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.calculator-page h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.calculator-page > header > p:last-child {
+  max-width: 760px;
+  color: var(--farbe-text-zusatz);
+  line-height: 1.55;
+}
+
+.calculator-page__selection {
+  margin-top: var(--abstand-5);
+  padding: var(--abstand-5);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-gross);
+  background: var(--farbe-bereich);
+}
+
+.calculator-page__selection h2 {
+  margin-top: 0;
+}
+
+.calculator-page__selection [data-calculator-animal-list] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--abstand-2);
+}
+
+.calculator-animal-chip {
+  padding: var(--abstand-2) var(--abstand-3);
+  border: 1px solid var(--farbe-linie);
+  border-radius: 999px;
+  background: var(--farbe-element);
+}

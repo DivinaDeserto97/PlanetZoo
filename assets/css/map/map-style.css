@@ -445,3 +445,15 @@
     min-height: 600px;
   }
 }
+
+/* Tiere bleiben auswählbar, auch wenn ihre lokale Verbreitungskarte noch fehlt. */
+.map-animal.has-no-map .map-animal__color {
+  opacity: 0.35;
+}
+
+.map-animal__no-map {
+  display: block;
+  margin-top: 3px;
+  color: var(--farbe-text-zusatz);
+  font-size: 11px;
+}

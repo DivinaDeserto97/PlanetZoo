@@ -1,6 +1,16 @@
-const DEFAULT_LANGUAGE = "de";
+export const DEFAULT_LANGUAGE = "de";
 
-const LANGUAGES = ["de", "en", "fr"];
+export const LANGUAGES = [
+  "de",
+  "en",
+  "en-US",
+  "es",
+  "fr",
+  "it",
+  "pt-BR",
+  "ja",
+  "zh-Hans",
+];
 
 /* ======================================== */
 /* SPRACHE LADEN                            */
@@ -17,40 +27,59 @@ export function getLanguage() {
 }
 
 /* ======================================== */
+/* FALLBACK-REIHENFOLGE                     */
+/* ======================================== */
+
+export function getLanguageFallbacks(language = getLanguage()) {
+  const fallbacks = [language];
+
+  if (language === "en-US") {
+    fallbacks.push("en");
+  }
+
+  if (language === "zh-Hans") {
+    fallbacks.push("zh-CN");
+  }
+
+  fallbacks.push("de", "en");
+
+  return [...new Set(fallbacks)];
+}
+
+/* ======================================== */
+/* OBJEKT ÜBERSETZEN                        */
+/* ======================================== */
+
+export function getLocalizedValue(values, language = getLanguage()) {
+  if (!values || typeof values !== "object") {
+    return null;
+  }
+
+  for (const fallback of getLanguageFallbacks(language)) {
+    if (values[fallback] !== undefined && values[fallback] !== null) {
+      return values[fallback];
+    }
+  }
+
+  return null;
+}
+
+/* ======================================== */
 /* SPRACHE SETZEN                           */
 /* ======================================== */
 
 export function setLanguage(language) {
   if (!LANGUAGES.includes(language)) {
     console.error(`Sprache "${language}" existiert nicht.`);
-
     return;
   }
 
-  /*
-        Sprache speichern.
-    */
   localStorage.setItem("language", language);
-
-  /*
-        Sprache ins HTML schreiben.
-    */
   document.documentElement.lang = language;
 
-  /*
-        Seite übersetzen.
-    */
   translate();
-
-  /*
-        Select aktualisieren.
-    */
   updateLanguageSelect();
 
-  /*
-        Andere Features informieren:
-        Sprache wurde geändert.
-    */
   document.dispatchEvent(
     new CustomEvent("languageChanged", {
       detail: {
@@ -61,6 +90,22 @@ export function setLanguage(language) {
 }
 
 /* ======================================== */
+/* DATA-ATTRIBUT AUSLESEN                   */
+/* ======================================== */
+
+function getTranslatedAttribute(element, prefix, language) {
+  for (const fallback of getLanguageFallbacks(language)) {
+    const value = element.getAttribute(`data-${prefix}${fallback}`);
+
+    if (value !== null) {
+      return value;
+    }
+  }
+
+  return null;
+}
+
+/* ======================================== */
 /* HTML ÜBERSETZEN                          */
 /* ======================================== */
 
@@ -68,10 +113,34 @@ export function translate() {
   const language = getLanguage();
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const text = element.dataset[language];
+    const text = getTranslatedAttribute(element, "", language);
 
-    if (text !== undefined) {
+    if (text !== null) {
       element.textContent = text;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const text = getTranslatedAttribute(element, "placeholder-", language);
+
+    if (text !== null) {
+      element.setAttribute("placeholder", text);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+    const text = getTranslatedAttribute(element, "title-", language);
+
+    if (text !== null) {
+      element.setAttribute("title", text);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const text = getTranslatedAttribute(element, "aria-label-", language);
+
+    if (text !== null) {
+      element.setAttribute("aria-label", text);
     }
   });
 }
@@ -93,15 +162,8 @@ function updateLanguageSelect() {
 /* ======================================== */
 
 export function initLanguage() {
-  /*
-        Gespeicherte Sprache
-        direkt setzen.
-    */
   document.documentElement.lang = getLanguage();
 
-  /*
-        Sprache über Select ändern.
-    */
   document.addEventListener("change", (event) => {
     const select = event.target.closest("[data-language-select]");
 
@@ -112,29 +174,16 @@ export function initLanguage() {
     setLanguage(select.value);
   });
 
-  /*
-        Neue Seite wurde geladen.
-    */
   document.addEventListener("pageLoaded", () => {
     translate();
-
     updateLanguageSelect();
   });
 
-  /*
-        Neue Komponente,
-        z.B. Header, wurde geladen.
-    */
   document.addEventListener("componentLoaded", () => {
     translate();
-
     updateLanguageSelect();
   });
 
-  /*
-        Direkt beim Start.
-    */
   translate();
-
   updateLanguageSelect();
 }

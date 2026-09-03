@@ -1,29 +1,244 @@
 <section class="home-page">
-  <h1
-    data-i18n
-    data-de="Tierverbreitung"
-    data-en="Animal distribution"
-    data-fr="Répartition des animaux"
-  >
-    Tierverbreitung
-  </h1>
+  <header class="home-hero">
+    <div>
+      <p
+        class="home-hero__eyebrow"
+        data-i18n
+        data-de="Planet Zoo 2"
+        data-en="Planet Zoo 2"
+        data-en-US="Planet Zoo 2"
+        data-es="Planet Zoo 2"
+        data-fr="Planet Zoo 2"
+        data-it="Planet Zoo 2"
+        data-pt-BR="Planet Zoo 2"
+        data-ja="Planet Zoo 2"
+        data-zh-Hans="Planet Zoo 2"
+      >
+        Planet Zoo 2
+      </p>
 
-  <p
-    data-i18n
-    data-de="Wähle ein Tier aus."
-    data-en="Select an animal."
-    data-fr="Choisissez un animal."
-  >
-    Wähle ein Tier aus.
-  </p>
+      <h1
+        data-i18n
+        data-de="Zoopedia"
+        data-en="Zoopedia"
+        data-en-US="Zoopedia"
+        data-es="Zoopedia"
+        data-fr="Zoopédie"
+        data-it="Zoopedia"
+        data-pt-BR="Zoopédia"
+        data-ja="Zoopedia"
+        data-zh-Hans="动物园百科"
+      >
+        Zoopedia
+      </h1>
 
-  <button
-    type="button"
-    data-i18n
-    data-de="Filter"
-    data-en="Filter"
-    data-fr="Filtre"
-  >
-    Filter
-  </button>
+      <p
+        class="home-hero__text"
+        data-i18n
+        data-de="Filtere die Tiere und wähle mehrere Arten aus. Deine Auswahl bleibt für Karte, Infotafel und Rechner gespeichert."
+        data-en="Filter the animals and select multiple species. Your selection stays available for the map, information board and calculator."
+        data-en-US="Filter the animals and select multiple species. Your selection stays available for the map, information board and calculator."
+        data-es="Filtra los animales y selecciona varias especies. La selección se conserva para el mapa, el panel informativo y la calculadora."
+        data-fr="Filtrez les animaux et sélectionnez plusieurs espèces. Votre sélection reste disponible pour la carte, le panneau d’information et le calculateur."
+        data-it="Filtra gli animali e seleziona più specie. La selezione rimane disponibile per la mappa, il pannello informativo e il calcolatore."
+        data-pt-BR="Filtre os animais e selecione várias espécies. A seleção permanece disponível para o mapa, o painel informativo e a calculadora."
+        data-ja="動物を絞り込み、複数の種を選択できます。選択内容はマップ、情報パネル、計算機でも引き継がれます。"
+        data-zh-Hans="筛选动物并选择多个物种。你的选择会保留，并可在地图、信息板和计算器中继续使用。"
+      >
+        Filtere die Tiere und wähle mehrere Arten aus. Deine Auswahl bleibt für Karte,
+        Infotafel und Rechner gespeichert.
+      </p>
+    </div>
+
+    <div class="home-hero__counter" aria-live="polite">
+      <strong data-home-result-count>0</strong>
+      <span
+        data-i18n
+        data-de="Tiere sichtbar"
+        data-en="animals visible"
+        data-en-US="animals visible"
+        data-es="animales visibles"
+        data-fr="animaux visibles"
+        data-it="animali visibili"
+        data-pt-BR="animais visíveis"
+        data-ja="表示中の動物"
+        data-zh-Hans="只动物可见"
+      >
+        Tiere sichtbar
+      </span>
+    </div>
+  </header>
+
+  <section class="home-filter" aria-label="Zoopedia Filter">
+    <label class="home-filter__field home-filter__field--search">
+      <span
+        data-i18n
+        data-de="Tier suchen"
+        data-en="Search animal"
+        data-en-US="Search animal"
+        data-es="Buscar animal"
+        data-fr="Rechercher un animal"
+        data-it="Cerca animale"
+        data-pt-BR="Buscar animal"
+        data-ja="動物を検索"
+        data-zh-Hans="搜索动物"
+      >
+        Tier suchen
+      </span>
+
+      <input
+        type="search"
+        data-home-search
+        data-i18n-placeholder
+        data-placeholder-de="Name oder wissenschaftlicher Name"
+        data-placeholder-en="Name or scientific name"
+        data-placeholder-en-US="Name or scientific name"
+        data-placeholder-es="Nombre o nombre científico"
+        data-placeholder-fr="Nom ou nom scientifique"
+        data-placeholder-it="Nome o nome scientifico"
+        data-placeholder-pt-BR="Nome ou nome científico"
+        data-placeholder-ja="名前または学名"
+        data-placeholder-zh-Hans="名称或学名"
+        placeholder="Name oder wissenschaftlicher Name"
+      />
+    </label>
+
+    <label class="home-filter__field">
+      <span
+        data-i18n
+        data-de="Gehegetyp"
+        data-en="Enclosure type"
+        data-en-US="Enclosure type"
+        data-es="Tipo de recinto"
+        data-fr="Type d’enclos"
+        data-it="Tipo di recinto"
+        data-pt-BR="Tipo de recinto"
+        data-ja="飼育施設"
+        data-zh-Hans="围栏类型"
+      >
+        Gehegetyp
+      </span>
+
+      <select data-home-enclosure>
+        <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+        <option value="habitatTerrestrial" data-i18n data-de="Landgehege" data-en="Terrestrial habitat" data-en-US="Terrestrial habitat" data-es="Hábitat terrestre" data-fr="Habitat terrestre" data-it="Habitat terrestre" data-pt-BR="Habitat terrestre" data-ja="陸上生息地" data-zh-Hans="陆地栖息地">Landgehege</option>
+        <option value="habitatAquarium" data-i18n data-de="Aquarium" data-en="Aquarium" data-en-US="Aquarium" data-es="Acuario" data-fr="Aquarium" data-it="Acquario" data-pt-BR="Aquário" data-ja="水族館" data-zh-Hans="水族馆">Aquarium</option>
+        <option value="habitatFlying" data-i18n data-de="Voliere" data-en="Aviary" data-en-US="Aviary" data-es="Aviario" data-fr="Volière" data-it="Voliera" data-pt-BR="Aviário" data-ja="鳥類飼育舎" data-zh-Hans="鸟舍">Voliere</option>
+        <option value="exhibit" data-i18n data-de="Ausstellung" data-en="Exhibit" data-en-US="Exhibit" data-es="Exhibición" data-fr="Vivarium" data-it="Espositore" data-pt-BR="Exposição" data-ja="展示施設" data-zh-Hans="展示箱">Ausstellung</option>
+      </select>
+    </label>
+
+    <label class="home-filter__field">
+      <span
+        data-i18n
+        data-de="Region"
+        data-en="Region"
+        data-en-US="Region"
+        data-es="Región"
+        data-fr="Région"
+        data-it="Regione"
+        data-pt-BR="Região"
+        data-ja="地域"
+        data-zh-Hans="地区"
+      >
+        Region
+      </span>
+
+      <select data-home-continent>
+        <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todas" data-fr="Toutes" data-it="Tutte" data-pt-BR="Todas" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+        <option value="africa" data-i18n data-de="Afrika" data-en="Africa" data-en-US="Africa" data-es="África" data-fr="Afrique" data-it="Africa" data-pt-BR="África" data-ja="アフリカ" data-zh-Hans="非洲">Afrika</option>
+        <option value="asia" data-i18n data-de="Asien" data-en="Asia" data-en-US="Asia" data-es="Asia" data-fr="Asie" data-it="Asia" data-pt-BR="Ásia" data-ja="アジア" data-zh-Hans="亚洲">Asien</option>
+        <option value="europe" data-i18n data-de="Europa" data-en="Europe" data-en-US="Europe" data-es="Europa" data-fr="Europe" data-it="Europa" data-pt-BR="Europa" data-ja="ヨーロッパ" data-zh-Hans="欧洲">Europa</option>
+        <option value="northAmerica" data-i18n data-de="Nordamerika" data-en="North America" data-en-US="North America" data-es="Norteamérica" data-fr="Amérique du Nord" data-it="Nord America" data-pt-BR="América do Norte" data-ja="北アメリカ" data-zh-Hans="北美洲">Nordamerika</option>
+        <option value="southAmerica" data-i18n data-de="Südamerika" data-en="South America" data-en-US="South America" data-es="Sudamérica" data-fr="Amérique du Sud" data-it="Sud America" data-pt-BR="América do Sul" data-ja="南アメリカ" data-zh-Hans="南美洲">Südamerika</option>
+        <option value="oceania" data-i18n data-de="Ozeanien" data-en="Oceania" data-en-US="Oceania" data-es="Oceanía" data-fr="Océanie" data-it="Oceania" data-pt-BR="Oceania" data-ja="オセアニア" data-zh-Hans="大洋洲">Ozeanien</option>
+      </select>
+    </label>
+
+    <label class="home-filter__field">
+      <span
+        data-i18n
+        data-de="Arterhaltungsstatus"
+        data-en="Conservation status"
+        data-en-US="Conservation status"
+        data-es="Estado de conservación"
+        data-fr="Statut de conservation"
+        data-it="Stato di conservazione"
+        data-pt-BR="Estado de conservação"
+        data-ja="保全状況"
+        data-zh-Hans="保护状况"
+      >
+        Arterhaltungsstatus
+      </span>
+
+      <select data-home-status>
+        <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+        <option value="leastConcern" data-i18n data-de="Nicht gefährdet" data-en="Least Concern" data-en-US="Least Concern" data-es="Preocupación menor" data-fr="Préoccupation mineure" data-it="Minor preoccupazione" data-pt-BR="Pouco preocupante" data-ja="低危険種" data-zh-Hans="无危">Nicht gefährdet</option>
+        <option value="nearThreatened" data-i18n data-de="Potenziell gefährdet" data-en="Near Threatened" data-en-US="Near Threatened" data-es="Casi amenazada" data-fr="Quasi menacée" data-it="Prossima alla minaccia" data-pt-BR="Quase ameaçada" data-ja="準絶滅危惧" data-zh-Hans="近危">Potenziell gefährdet</option>
+        <option value="vulnerable" data-i18n data-de="Gefährdet" data-en="Vulnerable" data-en-US="Vulnerable" data-es="Vulnerable" data-fr="Vulnérable" data-it="Vulnerabile" data-pt-BR="Vulnerável" data-ja="危急" data-zh-Hans="易危">Gefährdet</option>
+        <option value="endangered" data-i18n data-de="Stark gefährdet" data-en="Endangered" data-en-US="Endangered" data-es="En peligro" data-fr="En danger" data-it="In pericolo" data-pt-BR="Em perigo" data-ja="絶滅危惧" data-zh-Hans="濒危">Stark gefährdet</option>
+        <option value="criticallyEndangered" data-i18n data-de="Vom Aussterben bedroht" data-en="Critically Endangered" data-en-US="Critically Endangered" data-es="En peligro crítico" data-fr="En danger critique" data-it="In pericolo critico" data-pt-BR="Criticamente em perigo" data-ja="深刻な絶滅危惧" data-zh-Hans="极危">Vom Aussterben bedroht</option>
+      </select>
+    </label>
+
+    <label class="home-filter__field">
+      <span
+        data-i18n
+        data-de="Inhalt"
+        data-en="Content"
+        data-en-US="Content"
+        data-es="Contenido"
+        data-fr="Contenu"
+        data-it="Contenuto"
+        data-pt-BR="Conteúdo"
+        data-ja="コンテンツ"
+        data-zh-Hans="内容"
+      >
+        Inhalt
+      </span>
+
+      <select data-home-edition>
+        <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+        <option value="standard" data-i18n data-de="Basisspiel" data-en="Base game" data-en-US="Base game" data-es="Juego base" data-fr="Jeu de base" data-it="Gioco base" data-pt-BR="Jogo base" data-ja="基本ゲーム" data-zh-Hans="基础游戏">Basisspiel</option>
+        <option value="deluxe" data-i18n data-de="Deluxe" data-en="Deluxe" data-en-US="Deluxe" data-es="Deluxe" data-fr="Deluxe" data-it="Deluxe" data-pt-BR="Deluxe" data-ja="デラックス" data-zh-Hans="豪华版">Deluxe</option>
+      </select>
+    </label>
+
+    <button
+      class="home-filter__reset"
+      type="button"
+      data-home-reset
+      data-i18n
+      data-de="Filter zurücksetzen"
+      data-en="Reset filters"
+      data-en-US="Reset filters"
+      data-es="Restablecer filtros"
+      data-fr="Réinitialiser les filtres"
+      data-it="Reimposta filtri"
+      data-pt-BR="Redefinir filtros"
+      data-ja="フィルターをリセット"
+      data-zh-Hans="重置筛选"
+    >
+      Filter zurücksetzen
+    </button>
+  </section>
+
+  <section class="home-animal-grid" data-home-animal-list aria-live="polite"></section>
+
+  <div class="home-empty" data-home-empty hidden>
+    <strong
+      data-i18n
+      data-de="Keine Tiere gefunden."
+      data-en="No animals found."
+      data-en-US="No animals found."
+      data-es="No se encontraron animales."
+      data-fr="Aucun animal trouvé."
+      data-it="Nessun animale trovato."
+      data-pt-BR="Nenhum animal encontrado."
+      data-ja="動物が見つかりません。"
+      data-zh-Hans="未找到动物。"
+    >
+      Keine Tiere gefunden.
+    </strong>
+  </div>
 </section>

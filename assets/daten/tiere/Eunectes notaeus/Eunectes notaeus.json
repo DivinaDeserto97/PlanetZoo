@@ -667,14 +667,16 @@
   },
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/518ac83f/Constrictor_YellowAnaconda_map.png",
+    "dateityp": "png",
     "pfad": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus map.png",
     "quelle": "planetZoo2"
   },
   "bilder": [
     {
+      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNTE4YWM4M2YvQ29uc3RyaWN0b3JfWWVsbG93QW5hY29uZGEuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMzc1YTM3MDItYTk3My00MWYyLThkN2MtMzZmODg1NjI0NzJiIn19",
       "typ": "hauptbild",
-      "url": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.png",
-      "pfad": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.png",
+      "dateityp": "webp",
+      "pfad": "assets/daten/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
       "quelle": "planetZoo2"
     }
   ],
@@ -694,5 +696,11 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E6%B0%B4%E8%9A%BA"
       }
     }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": ["exhibit"],
+    "kontinente": ["southAmerica"],
+    "schutzstatus": "leastConcern"
   }
 }

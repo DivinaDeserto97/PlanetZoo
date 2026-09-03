@@ -105,6 +105,53 @@ async function loadHeader() {
   );
 }
 
+
+/* ======================================== */
+/* FOOTER                                   */
+/* ======================================== */
+
+async function loadFooter() {
+  const footer = document.querySelector("#footer");
+
+  if (!footer) {
+    console.error('Element "#footer" wurde nicht gefunden.');
+    return;
+  }
+
+  const response = await fetch("./assets/components/footer/footer.html");
+
+  if (!response.ok) {
+    console.error("Footer konnte nicht geladen werden.");
+    return;
+  }
+
+  footer.innerHTML = await response.text();
+
+  if (!document.querySelector("#footer-css")) {
+    const css = document.createElement("link");
+    css.id = "footer-css";
+    css.rel = "stylesheet";
+    css.href = "./assets/components/footer/footer.css";
+    document.head.appendChild(css);
+  }
+
+  try {
+    const module = await import("../components/footer/footer.js");
+
+    if (typeof module.init === "function") {
+      module.init();
+    }
+  } catch (error) {
+    console.warn("Footer-JavaScript konnte nicht geladen werden.", error);
+  }
+
+  document.dispatchEvent(
+    new CustomEvent("componentLoaded", {
+      detail: { component: "footer" },
+    }),
+  );
+}
+
 /* ======================================== */
 /* PROGRAMMSTART                            */
 /* ======================================== */
@@ -124,9 +171,10 @@ async function main() {
   initPageTitle();
 
   /*
-        Header
+        Gemeinsame Komponenten
     */
   await loadHeader();
+  await loadFooter();
 
   /*
         Startseite

@@ -315,6 +315,12 @@ export async function initMapRenderer(tiere, signal) {
     signal,
   });
 
+  document.querySelector("[data-map-reset-view]")?.addEventListener(
+    "click",
+    resetView,
+    { signal },
+  );
+
   /* ==================================== */
   /* RENDERN                              */
   /* ==================================== */
@@ -392,10 +398,14 @@ export async function initMapRenderer(tiere, signal) {
     if (!hits.length) {
       const text = {
         de: "Fahre mit der Maus über die Karte.",
-
         en: "Move the mouse over the map.",
-
+        "en-US": "Move the mouse over the map.",
+        es: "Mueve el ratón sobre el mapa.",
         fr: "Passez la souris sur la carte.",
+        it: "Sposta il mouse sulla mappa.",
+        "pt-BR": "Mova o mouse sobre o mapa.",
+        ja: "マップ上にマウスを移動してください。",
+        "zh-Hans": "将鼠标移到地图上。",
       };
 
       hoverInfo.textContent = text[language] ?? text.de;
@@ -704,34 +714,47 @@ function setStatusText(status, type, count = 0) {
   const text = {
     referenceError: {
       de: "Referenz-Weltkarte konnte nicht geladen werden",
-
       en: "Reference world map could not be loaded",
-
+      "en-US": "Reference world map could not be loaded",
+      es: "No se pudo cargar el mapa mundial de referencia",
       fr: "La carte du monde de référence n’a pas pu être chargée",
+      it: "Impossibile caricare la mappa mondiale di riferimento",
+      "pt-BR": "Não foi possível carregar o mapa-múndi de referência",
+      ja: "参照世界地図を読み込めませんでした",
+      "zh-Hans": "无法加载参考世界地图",
     },
-
     none: {
       de: "Keine Tierkarten gefunden",
-
       en: "No animal maps found",
-
+      "en-US": "No animal maps found",
+      es: "No se encontraron mapas de animales",
       fr: "Aucune carte animale trouvée",
+      it: "Nessuna mappa animale trovata",
+      "pt-BR": "Nenhum mapa de animal encontrado",
+      ja: "動物マップが見つかりません",
+      "zh-Hans": "未找到动物地图",
     },
-
     empty: {
       de: "Keine Tierkarte ausgewählt",
-
       en: "No animal map selected",
-
+      "en-US": "No animal map selected",
+      es: "No hay ningún mapa de animal seleccionado",
       fr: "Aucune carte animale sélectionnée",
+      it: "Nessuna mappa animale selezionata",
+      "pt-BR": "Nenhum mapa de animal selecionado",
+      ja: "動物マップが選択されていません",
+      "zh-Hans": "未选择动物地图",
     },
-
     ready: {
       de: `${count} Tierkarten aktiv`,
-
       en: `${count} animal maps active`,
-
+      "en-US": `${count} animal maps active`,
+      es: `${count} mapas de animales activos`,
       fr: `${count} cartes animales actives`,
+      it: `${count} mappe animali attive`,
+      "pt-BR": `${count} mapas de animais ativos`,
+      ja: `${count} 件の動物マップを表示中`,
+      "zh-Hans": `${count} 张动物地图已启用`,
     },
   };
 

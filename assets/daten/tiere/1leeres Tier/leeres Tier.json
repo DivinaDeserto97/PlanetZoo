@@ -1,16 +1,52 @@
 {
-  "WissenschaftlicherName": "",
-  "namen": [{ "de": "" }],
-  "tierbilder": [
-    {
-      "name": "1",
-      "Pfad": "/assets/daten/tiere/tierbilder/",
-      "dateityp": "webp"
+  "id": "",
+  "identitaet": {
+    "namen": {
+      "de": "",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
     }
-  ],
-  "Karte": {
-    "Name": "",
-    "Pfad": "assets/daten/tiere/",
-    "dateityp": "png"
-  }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [],
+    "kontinente": [],
+    "schutzstatus": ""
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": []
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": []
+    }
+  },
+  "texte": {
+    "vorkommen": {},
+    "uebersicht": {},
+    "arterhaltung": {},
+    "sozialverhaltenUndFortpflanzung": {},
+    "tierfakten": {},
+    "entwicklungshinweis": {}
+  },
+  "karte": {
+    "dateityp":"",
+"pfad": null,
+    "quelle": ""
+  },
+  "bilder": [],
+  "audio": [],
+  "quellen": {}
 }
