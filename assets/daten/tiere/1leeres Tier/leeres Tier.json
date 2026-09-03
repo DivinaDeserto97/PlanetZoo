@@ -1,0 +1,16 @@
+{
+  "WissenschaftlicherName": "",
+  "namen": [{ "de": "" }],
+  "tierbilder": [
+    {
+      "name": "1",
+      "Pfad": "/assets/daten/tiere/tierbilder/",
+      "dateityp": "webp"
+    }
+  ],
+  "Karte": {
+    "Name": "",
+    "Pfad": "assets/daten/tiere/",
+    "dateityp": "png"
+  }
+}

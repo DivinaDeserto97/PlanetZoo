@@ -1,0 +1,698 @@
+{
+  "id": "Eunectes notaeus",
+  "identitaet": {
+    "namen": {
+      "de": "Gelbe Anakonda",
+      "en": "Yellow Anaconda",
+      "en-US": "Yellow Anaconda",
+      "es": "Anaconda amarilla",
+      "fr": "Anaconda jaune",
+      "it": "Anaconda gialla",
+      "pt-BR": "Sucuri-amarela",
+      "ja": "キイロアナコンダ",
+      "zh-Hans": "黄水蚺"
+    }
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Boidae",
+          "gattung": "Eunectes",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnittAusgewachsen",
+          "min": 3.3,
+          "max": 4.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "groesstesDokumentiertesExemplar",
+          "wert": 4.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "durchschnittAusgewachsen",
+          "min": 25,
+          "max": 35,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "groesstesDokumentiertesExemplar",
+          "wert": 55,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unbekannt",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "fortpflanzungszeit": {
+      "werte": [
+        {
+          "vonMonat": 4,
+          "bisMonat": 5,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "traechtigkeit": {
+      "werte": [
+        {
+          "wert": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "jungtiere": {
+      "werte": [
+        {
+          "min": 4,
+          "max": 82,
+          "typ": "lebend",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "selbststaendigkeit": {
+      "werte": [
+        {
+          "abGeburt": true,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Südamerika",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "South America",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Amérique du Sud",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "South America",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "América del Sur",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sud America",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "América do Sul",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "南アメリカ",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "南美洲",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda (auch Eunectes notaeus) ist eine große Würgeschlangenart, die in den Nebenflüssen, Sümpfen und Mooren des Paraguay-Flussbeckens lebt und vor allem in Paraguay, Bolivien, Argentinien und Brasilien vorkommt.\n\nSie besitzt gelbe Schuppen mit braun-schwarzen Flecken auf dem Rücken.\n\nDie Spezies ist für ihre Größe bekannt: Ausgewachsene Tiere erreichen eine durchschnittliche Länge von 3,3 m bis 4,4 m sowie ein durchschnittliches Gewicht von 25 kg bis 35 kg. Das größte jemals dokumentierte Exemplar war 4,6 m lang und wog 55 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The yellow anaconda (or Eunectes notaeus) is a large species of constrictor snake that lives in the tributaries, swamps and marshes of the Paraguay river basin, found mainly in Paraguay, Bolivia, Argentina and Brazil.\n\nThey have yellow scales with brown-black saddles across their back.\n\nThe species is known for reaching large sizes: adults can reach an average length of 3.3m to 4.4m, as well as an average weight of 25kg to 35kg. The largest specimen ever recorded was 4.6m long and weighed 55kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’anaconda jaune (Eunectes notaeus) est un grand serpent constricteur vivant dans les affluents, les marais et les marécages du Río Paraguay, mais on le rencontre aussi en Bolivie, en Argentine et au Brésil.\n\nSes écailles jaunes sont ornées de taches brun-noir sur le dos.\n\nL’espèce est réputée pour sa grande taille, les adultes pouvant atteindre 3,30 à 4,40 m en moyenne, avec un poids moyen de 25 à 35 kg. Le plus grand spécimen jamais rencontré mesurait 4,60 m de long et pesait 55 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The yellow anaconda (or Eunectes notaeus) is a large species of constrictor snake that lives in the tributaries, swamps and marshes of the Paraguay river basin, found mainly in Paraguay, Bolivia, Argentina and Brazil.\n\nThey have yellow scales with brown-black saddles across their back.\n\nThe species is known for reaching large sizes: adults can reach an average length of 3.3m to 4.4m, as well as an average weight of 25kg to 35kg. The largest specimen ever recorded was 4.6m long and weighed 55kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La anaconda amarilla (Eunectes notaeus) es una gran especie de serpiente constrictora que vive en los afluentes, pantanos y marismas de la cuenca del río Paraguay, principalmente en Paraguay, Bolivia, Argentina y Brasil.\n\nTiene escamas amarillas con manchas marrón-negras en el lomo.\n\nLa especie es conocida por alcanzar un gran tamaño: los adultos alcanzan una longitud media de 3,3 m a 4,4 m y un peso medio de 25 kg a 35 kg. El ejemplar más grande jamás documentado medía 4,6 m de largo y pesaba 55 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'anaconda gialla (Eunectes notaeus) è una grande specie di serpente costrittore che vive negli affluenti, nelle paludi e negli acquitrini del bacino del fiume Paraguay, soprattutto in Paraguay, Bolivia, Argentina e Brasile.\n\nHa squame gialle con macchie marrone-nere sul dorso.\n\nLa specie è nota per le sue grandi dimensioni: gli adulti raggiungono in media una lunghezza compresa tra 3,3 m e 4,4 m e un peso medio tra 25 kg e 35 kg. Il più grande esemplare mai documentato misurava 4,6 m di lunghezza e pesava 55 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A sucuri-amarela (Eunectes notaeus) é uma grande espécie de serpente constritora que vive nos afluentes, pântanos e áreas alagadas da bacia do rio Paraguai, sendo encontrada principalmente no Paraguai, Bolívia, Argentina e Brasil.\n\nEla possui escamas amarelas com manchas marrom-escuras no dorso.\n\nA espécie é conhecida por atingir grandes dimensões: os adultos alcançam em média de 3,3 m a 4,4 m de comprimento e pesam em média de 25 kg a 35 kg. O maior exemplar já documentado tinha 4,6 m de comprimento e pesava 55 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キイロアナコンダ（Eunectes notaeus）は大型の締め付け型のヘビで、パラグアイ川流域の支流、湿地、沼地に生息し、主にパラグアイ、ボリビア、アルゼンチン、ブラジルで見られます。\n\n黄色い鱗を持ち、背中には茶褐色から黒色の斑紋があります。\n\n大型になることで知られ、成体の平均全長は3.3～4.4 m、平均体重は25～35 kgです。これまでに記録された最大の個体は全長4.6 m、体重55 kgでした。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄水蚺（Eunectes notaeus）是一种大型缠绕型蛇类，生活在巴拉圭河流域的支流、沼泽和湿地中，主要分布于巴拉圭、玻利维亚、阿根廷和巴西。\n\n它的鳞片呈黄色，背部带有棕黑色斑纹。\n\n这种蛇以体型较大而闻名：成体平均体长为3.3至4.4米，平均体重为25至35千克。迄今记录到的最大个体长4.6米，重55千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Gelbe Anakondas gelten als nicht gefährdet. In der Vergangenheit wurde diese Art vor allem wegen ihrer Haut sowie als Nahrungs- und Heilmittel von traditionellen Gemeinschaften gejagt. Der Handel mit wildlebenden Exemplaren für den Heimtierhandel gilt als unerheblich.\n\nNach einem vollständigen Handelsverbot in den 1990er-Jahren wird der internationale Handel mit Häuten der Gelben Anakonda heute reguliert und überwacht und scheint in einem nachhaltigen Umfang zu erfolgen.\n\nDie langfristigen Aussichten für diese Art deuten auf eine stabile Population in ihrem natürlichen Verbreitungsgebiet hin, doch stellen die Auswirkungen künftiger Wasserkraftwerke auf Feuchtgebiete und Hochwasserzyklen eine potenzielle Bedrohung dar.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Yellow anacondas are considered a species of Least Concern. Historically, this species has been hunted primarily for its skin, and for food and medicine by traditional communities. Trade in wild, live specimens for the pet trade is considered negligible.\n\nAfter a period of totally banned trading in the 1990s, trade in yellow anaconda skins is now internationally regulated and tracked, and appears to occur at sustainable levels.\n\nThe long-term outlook for this species appears to be a stable population in its native range, but the impact on wetland habitats and flooding cycles of future hydroelectric power plants is a potential threat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’anaconda jaune est une espèce en préoccupation mineure. Par le passé, ce serpent a été chassé principalement pour sa peau, ainsi que pour sa viande et ses propriétés médicinales par les communautés traditionnelles. Quant à l’impact du commerce de spécimens sauvages, on le considère comme marginal.\n\nAprès une interdiction totale dans les années 90, la vente de peau d’anaconda jaune est désormais réglementée et contrôlée au niveau mondial. La situation actuelle semble viable.\n\nLes prédictions à long terme estiment que la population de l’espèce restera stable dans son aire de répartition, mais l’impact des futures centrales hydroélectriques sur les zones humides et les cycles d’inondations représente une potentielle menace.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Yellow anacondas are considered a species of Least Concern. Historically, this species has been hunted primarily for its skin, and for food and medicine by traditional communities. Trade in wild, live specimens for the pet trade is considered negligible.\n\nAfter a period of totally banned trading in the 1990s, trade in yellow anaconda skins is now internationally regulated and tracked, and appears to occur at sustainable levels.\n\nThe long-term outlook for this species appears to be a stable population in its native range, but the impact on wetland habitats and flooding cycles of future hydroelectric power plants is a potential threat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La anaconda amarilla está considerada una especie de preocupación menor. Históricamente, esta especie fue cazada principalmente por su piel y también como alimento y medicina por comunidades tradicionales. El comercio de ejemplares silvestres vivos para el mercado de mascotas se considera insignificante.\n\nTras una prohibición total del comercio en la década de 1990, el comercio internacional de pieles de anaconda amarilla está actualmente regulado y controlado, y parece mantenerse en niveles sostenibles.\n\nLas perspectivas a largo plazo apuntan a una población estable dentro de su área de distribución natural, aunque el impacto de futuras centrales hidroeléctricas sobre los humedales y los ciclos de inundación representa una posible amenaza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'anaconda gialla è considerata una specie a rischio minimo. In passato veniva cacciata soprattutto per la pelle e, presso alcune comunità tradizionali, anche a scopo alimentare e medicinale. Il commercio di esemplari selvatici vivi destinati al mercato degli animali da compagnia è considerato trascurabile.\n\nDopo un divieto totale del commercio negli anni Novanta, il commercio internazionale delle pelli di anaconda gialla è oggi regolamentato e monitorato e sembra avvenire a livelli sostenibili.\n\nLe prospettive a lungo termine indicano una popolazione stabile nel suo areale naturale, ma l'impatto di future centrali idroelettriche sugli habitat umidi e sui cicli delle inondazioni costituisce una potenziale minaccia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A sucuri-amarela é considerada uma espécie pouco preocupante. Historicamente, essa espécie foi caçada principalmente por sua pele e também como alimento e para fins medicinais por comunidades tradicionais. O comércio de exemplares silvestres vivos para o mercado de animais de estimação é considerado insignificante.\n\nApós um período de proibição total do comércio na década de 1990, o comércio internacional de peles de sucuri-amarela passou a ser regulamentado e monitorado e parece ocorrer em níveis sustentáveis.\n\nAs perspectivas de longo prazo indicam uma população estável em sua área de distribuição natural, mas o impacto de futuras usinas hidrelétricas sobre áreas úmidas e ciclos de inundação representa uma ameaça potencial.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キイロアナコンダは低懸念の種とされています。かつては主に皮を目的として狩猟され、伝統的な地域社会では食料や薬としても利用されてきました。ペット取引用の野生生体の取引による影響は小さいと考えられています。\n\n1990年代に取引が全面禁止された時期を経て、現在ではキイロアナコンダの皮の国際取引は規制・監視されており、持続可能な範囲で行われているとみられています。\n\n長期的には自然分布域の個体群は安定すると考えられていますが、将来の水力発電所が湿地環境や洪水サイクルに与える影響は潜在的な脅威です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄水蚺被认为是无危物种。过去，人们主要为了蛇皮捕猎这种动物，一些传统社区也会将其作为食物和药用资源。野生活体进入宠物贸易所造成的影响被认为很小。\n\n在20世纪90年代经历全面贸易禁令后，如今黄水蚺皮的国际贸易受到监管和追踪，目前看来维持在可持续水平。\n\n从长期来看，该物种在其自然分布区内的种群预计将保持稳定，不过未来水力发电设施对湿地栖息地和洪水周期造成的影响仍是一项潜在威胁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gelbe Anakondas sind Einzelgänger und interagieren in der Wildnis nicht mit anderen. Sie begegnen sich äußerst selten, außer wenn Männchen nach Weibchen suchen, um sich zu paaren.\n\nDie Paarungszeit dauert von April bis Mai. Eine empfangsbereite weibliche Gelbe Anakonda setzt Pheromone frei, die Männchen anlocken. Dabei kann es vorkommen, dass mehrere Männchen dasselbe Weibchen aufspüren. Ist das der Fall, bilden Anakondas ein Paarungsknäuel, wobei viele Männchen gleichzeitig ein Weibchen umschlingen. Diese Knäuel können wochenlang bestehen bleiben. Normalerweise gewinnt das größte Männchen und darf sich mit dem Weibchen, gewöhnlich im Wasser, paaren.\n\nNach 6 Monaten bringt das Weibchen zwischen 4 und 82 lebende Jungtiere zur Welt, die von Geburt an selbstständig sind und im Alter von 3 bis 4 Jahren geschlechtsreif werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Yellow anacondas are solitary animals and do not interact in the wild. It is rare that they will encounter each other except when males search for females to mate with.\n\nBreeding season occurs between April and May. To mate, a female yellow anaconda will release pheromones attracting tracking males to her chemical signals. Throughout this process, it is possible that multiple males can find the same female. In this situation, anacondas may form a 'mating ball' in which many male snakes become entwined around one female. These balls can remain entangled for weeks. Usually, it is the largest male that wins access to the female in order to mate, which normally takes place in water.\n\nAfter 6 months, the female will give birth to between 4 and 82 live young, which are independent from birth and reach sexual maturity at 3 to 4 years old.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’anaconda jaune est un animal solitaire qui n’interagit pas avec ses congénères dans la nature. Il est rare qu’ils se croisent, sauf quand les mâles se mettent en quête de femelles pour s’accoupler.\n\nLa saison de reproduction se déroule entre avril et mai. Pour se reproduire, l’anaconda jaune femelle émet des phéromones, signaux chimiques qui attirent les mâles. Plusieurs mâles peuvent ainsi être attirés par une même femelle. Ils forment alors parfois une « boule d’accouplement », en s’enroulant tous autour d’elle. Cet enchevêtrement peut durer plusieurs semaines. En général, c’est le mâle le plus gros qui parvient à atteindre la femelle et à s’accoupler avec elle, habituellement dans l’eau.\n\nSix mois plus tard, la femelle donne naissance à 4 à 82 petits viables et autonomes, qui atteignent la maturité sexuelle à l’âge de 3 ou 4 ans.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Yellow anacondas are solitary animals and do not interact in the wild. It is rare that they will encounter each other except when males search for females to mate with.\n\nBreeding season occurs between April and May. To mate, a female yellow anaconda will release pheromones attracting tracking males to her chemical signals. Throughout this process, it is possible that multiple males can find the same female. In this situation, anacondas may form a 'mating ball' in which many male snakes become entwined around one female. These balls can remain entangled for weeks. Usually, it is the largest male that wins access to the female in order to mate, which normally takes place in water.\n\nAfter 6 months, the female will give birth to between 4 and 82 live young, which are independent from birth and reach sexual maturity at 3 to 4 years old.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las anacondas amarillas son animales solitarios y no suelen interactuar entre sí en la naturaleza. Es raro que se encuentren, salvo cuando los machos buscan hembras para aparearse.\n\nLa época de reproducción tiene lugar entre abril y mayo. Una hembra receptiva libera feromonas que atraen a los machos. Durante este proceso, varios machos pueden localizar a la misma hembra y formar una “bola de apareamiento”, en la que muchos machos se enroscan alrededor de ella al mismo tiempo. Estas agrupaciones pueden durar semanas. Normalmente, el macho más grande consigue aparearse con la hembra, generalmente en el agua.\n\nTras 6 meses, la hembra da a luz entre 4 y 82 crías vivas, independientes desde el nacimiento, que alcanzan la madurez sexual entre los 3 y 4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le anaconde gialle sono animali solitari e in natura non interagiscono abitualmente tra loro. È raro che si incontrino, tranne quando i maschi cercano le femmine per accoppiarsi.\n\nLa stagione riproduttiva va da aprile a maggio. Una femmina ricettiva rilascia feromoni che attirano i maschi. Può accadere che più maschi trovino la stessa femmina e formino una 'palla di accoppiamento', avvolgendosi contemporaneamente intorno a lei. Questi grovigli possono durare per settimane. Di solito è il maschio più grande a ottenere l'accesso alla femmina e ad accoppiarsi con lei, generalmente in acqua.\n\nDopo 6 mesi, la femmina partorisce da 4 a 82 piccoli vivi, indipendenti fin dalla nascita, che raggiungono la maturità sessuale tra i 3 e i 4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As sucuris-amarelas são animais solitários e normalmente não interagem entre si na natureza. É raro que se encontrem, exceto quando os machos procuram fêmeas para acasalar.\n\nA época de reprodução ocorre entre abril e maio. Uma fêmea receptiva libera feromônios que atraem os machos. Durante esse processo, vários machos podem localizar a mesma fêmea e formar uma “bola de acasalamento”, na qual muitos machos se enrolam ao redor dela ao mesmo tempo. Essas formações podem permanecer por semanas. Normalmente, o maior macho consegue acesso à fêmea e acasala com ela, geralmente na água.\n\nApós 6 meses, a fêmea dá à luz de 4 a 82 filhotes vivos, independentes desde o nascimento, que atingem a maturidade sexual entre 3 e 4 anos de idade.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キイロアナコンダは単独性の動物で、野生下では通常ほかの個体と関わりません。オスが交尾相手のメスを探す時期を除けば、個体同士が出会うことはまれです。\n\n繁殖期は4月から5月です。交尾可能なメスはフェロモンを放出してオスを引き寄せます。同じメスを複数のオスが見つけることもあり、その場合は多くのオスが同時にメスへ巻き付く「交尾球」を形成することがあります。この状態が数週間続くこともあります。通常は最も大きなオスがメスとの交尾権を得て、交尾は主に水中で行われます。\n\n約6か月後、メスは4～82匹の子を生みます。子は出生時から自立しており、3～4歳で性成熟に達します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄水蚺是独居动物，在野外通常不会与同类互动。除了雄性寻找雌性交配时，它们很少彼此相遇。\n\n繁殖季在4月至5月之间。处于受孕期的雌性会释放信息素吸引雄性。有时多只雄性会同时找到同一只雌性，并形成“交配球”，许多雄性会同时缠绕在雌性周围。这种状态可能持续数周。通常体型最大的雄性最终获得与雌性交配的机会，交配通常发生在水中。\n\n约6个月后，雌性会产下4至82只活体幼蛇。幼蛇出生后即可独立生活，并在3至4岁时达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda gehört zu den größten Schlangenarten der Welt. Nur die Große Anakonda wird noch länger.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas hören bis an ihr Lebensende nicht auf zu wachsen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas ernähren sich hauptsächlich von watenden Vögeln, denen sie unter Wasser auflauern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nach einer großen Mahlzeit muss eine Gelbe Anakonda monatelang nichts mehr fressen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas setzen eine Chemikalie frei, die sie vor Zeckenbissen schützt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The yellow anaconda is one of the largest species of snake in the world, second only to the green anaconda.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Yellow anacondas do not stop growing throughout their lives.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Yellow anacondas feed mostly on wading birds that they ambush from underwater.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "After a big meal, a yellow anaconda will not need to eat for several months.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Yellow anacondas release a chemical that deters ticks from biting them.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’anaconda jaune est l’une des plus grandes espèces de serpent du monde, après l’anaconda géant.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "L’anaconda jaune continue de grandir tout au long de sa vie.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "L’anaconda jaune se nourrit principalement de petits échassiers, qu’il piège en se cachant sous l’eau.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Après un gros repas, l’anaconda jaune peut se passer de manger pendant plusieurs mois.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "L’anaconda jaune émet un composé chimique qui dissuade les tiques de le piquer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The yellow anaconda is one of the largest species of snake in the world, second only to the green anaconda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        },
+        {
+          "inhalt": "Yellow anacondas do not stop growing throughout their lives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        },
+        {
+          "inhalt": "Yellow anacondas feed mostly on wading birds that they ambush from underwater.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        },
+        {
+          "inhalt": "After a big meal, a yellow anaconda will not need to eat for several months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        },
+        {
+          "inhalt": "Yellow anacondas release a chemical that deters ticks from biting them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La anaconda amarilla es una de las especies de serpiente más grandes del mundo; solo la anaconda verde alcanza una mayor longitud.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las anacondas amarillas continúan creciendo durante toda su vida.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las anacondas amarillas se alimentan principalmente de aves zancudas, a las que emboscan desde debajo del agua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Después de una comida abundante, una anaconda amarilla puede pasar varios meses sin volver a comer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las anacondas amarillas liberan una sustancia química que disuade a las garrapatas de morderlas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'anaconda gialla è una delle specie di serpenti più grandi al mondo; solo l'anaconda verde raggiunge lunghezze maggiori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le anaconde gialle continuano a crescere per tutta la vita.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le anaconde gialle si nutrono soprattutto di uccelli trampolieri, ai quali tendono agguati da sott’acqua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dopo un pasto abbondante, un'anaconda gialla può restare per diversi mesi senza mangiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le anaconde gialle rilasciano una sostanza chimica che scoraggia le zecche dal morderle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A sucuri-amarela é uma das maiores espécies de serpente do mundo, ficando atrás apenas da sucuri-verde em comprimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As sucuris-amarelas continuam crescendo durante toda a vida.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As sucuris-amarelas se alimentam principalmente de aves pernaltas, que emboscam a partir da água.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Depois de uma grande refeição, uma sucuri-amarela pode passar vários meses sem precisar comer novamente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As sucuris-amarelas liberam uma substância química que desencoraja os carrapatos de mordê-las.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キイロアナコンダは世界最大級のヘビの一種で、体長で上回るのはオオアナコンダだけです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "キイロアナコンダは生涯にわたって成長し続けます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "キイロアナコンダは主に水辺の鳥を食べ、水中から待ち伏せして捕らえます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "大量の餌を食べた後は、数か月間食べなくても平気なことがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "キイロアナコンダは、ダニに刺されにくくする化学物質を放出します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄水蚺是世界上最大的蛇类之一，体长仅次于绿水蚺。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黄水蚺一生都会持续生长。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黄水蚺主要以涉禽为食，会从水下伏击猎物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "饱餐一顿后，黄水蚺可以数月不再进食。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黄水蚺会释放一种化学物质，使蜱虫不愿叮咬它们。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en phase de développement et la Zoopédie reflète cet état d’avancement. Les textes, images, statistiques, etc. ne sont pas nécessairement définitifs et sont susceptibles d’être modifiés ou complétés.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "en-Fallback"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este trabajo en curso. Los textos, imágenes, estadísticas y otros contenidos no son necesariamente definitivos y pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo lavoro in corso. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono essere modificati o ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse trabalho em andamento. Textos, imagens, estatísticas e outros conteúdos não são necessariamente finais e podem ser alterados ou ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在開発中であり、Zoopediaの内容も開発途中のものです。文章、画像、統計などは最終版とは限らず、今後変更または追加される場合があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发进度。文本、图片、统计数据等内容不一定是最终版本，今后可能会发生更改或得到扩充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/518ac83f/Constrictor_YellowAnaconda_map.png",
+    "pfad": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus map.png",
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "url": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.png",
+      "pfad": "assets/daten/tiere/Eunectes notaeus/Eunectes notaeus.png",
+      "quelle": "planetZoo2"
+    }
+  ],
+  "audio": [],
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gelbe-anakonda",
+        "en": "https://www.planetzoogame.com/2/zoopedia/yellow-anaconda",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/yellow-anaconda",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/anaconda-amarilla",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/anaconda-jaune",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/anaconda-giallo",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/sucuri-amarela",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AD%E3%82%A4%E3%83%AD%E3%82%A2%E3%83%8A%E3%82%B3%E3%83%B3%E3%83%80",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E6%B0%B4%E8%9A%BA"
+      }
+    }
+  }
+}
