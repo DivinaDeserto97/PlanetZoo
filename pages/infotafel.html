@@ -1,22 +1,220 @@
-<section class="info-page">
-  <header class="info-hero">
-    <div>
-      <p class="info-hero__eyebrow" data-i18n data-de="Gemeinsame Tierauswahl" data-en="Shared animal selection" data-en-US="Shared animal selection" data-es="Selección compartida de animales" data-fr="Sélection d’animaux partagée" data-it="Selezione animali condivisa" data-pt-BR="Seleção compartilhada de animais" data-ja="共通の動物選択" data-zh-Hans="共享动物选择">Gemeinsame Tierauswahl</p>
-      <h1 data-i18n data-de="Infotafel" data-en="Info board" data-en-US="Info board" data-es="Panel informativo" data-fr="Panneau d’information" data-it="Pannello informativo" data-pt-BR="Painel informativo" data-ja="情報パネル" data-zh-Hans="信息板">Infotafel</h1>
-      <p data-i18n data-de="Jedes ausgewählte Tier erhält eine eigene Infotafel. Bei mehreren Tieren werden die Tafeln als Vergleich nebeneinander dargestellt." data-en="Each selected animal gets its own information board. With several animals, the boards are shown side by side for comparison." data-en-US="Each selected animal gets its own information board. With several animals, the boards are shown side by side for comparison." data-es="Cada animal seleccionado recibe su propio panel. Con varios animales, los paneles se muestran uno junto al otro para compararlos." data-fr="Chaque animal sélectionné reçoit son propre panneau. Avec plusieurs animaux, les panneaux sont affichés côte à côte pour les comparer." data-it="Ogni animale selezionato ha il proprio pannello. Con più animali, i pannelli vengono mostrati affiancati per il confronto." data-pt-BR="Cada animal selecionado recebe seu próprio painel. Com vários animais, os painéis são exibidos lado a lado para comparação." data-ja="選択した各動物に個別の情報パネルを表示します。複数選択時は比較しやすいように並べて表示します。" data-zh-Hans="每个已选择的动物都会显示一张独立信息板。选择多个动物时，信息板会并排显示以便比较。">Jedes ausgewählte Tier erhält eine eigene Infotafel. Bei mehreren Tieren werden die Tafeln als Vergleich nebeneinander dargestellt.</p>
+<section class="infotafel" data-infotafel>
+  <div class="infotafel__frame">
+    <nav class="tier-nav" aria-label="Ausgewählte Tiere">
+      <button class="tier-nav__arrow tier-nav__arrow--prev" type="button" data-tier-nav-prev aria-label="Vorherige Tiere">‹</button>
+
+      <div class="tier-nav__viewport" data-tier-nav-viewport>
+        <div class="tier-nav__track" data-tier-nav-track></div>
+      </div>
+
+      <button class="tier-nav__arrow tier-nav__arrow--next" type="button" data-tier-nav-next aria-label="Nächste Tiere">›</button>
+
+      <label class="tier-nav__language" title="Sprache">
+        <span aria-hidden="true">🌐</span>
+        <select data-language-select aria-label="Sprache">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
+          <option value="en-US">English US</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="pt-BR">Português BR</option>
+          <option value="ja">日本語</option>
+          <option value="zh-Hans">简体中文</option>
+        </select>
+      </label>
+
+      <a class="tier-nav__home" href="#home" data-page="home" aria-label="Home" title="Home">🏠</a>
+    </nav>
+
+    <div class="infotafel__empty" data-info-empty hidden>
+      <strong data-i18n data-de="Noch kein Tier ausgewählt." data-en="No animal selected yet.">Noch kein Tier ausgewählt.</strong>
+      <p data-i18n data-de="Wähle auf Home zuerst ein oder mehrere Tiere aus." data-en="Select one or more animals on Home first.">Wähle auf Home zuerst ein oder mehrere Tiere aus.</p>
+      <a href="#home" data-page="home">🏠 Home</a>
     </div>
 
-    <div class="info-hero__counter">
-      <strong data-info-count>0</strong>
-      <span data-i18n data-de="Infotafeln" data-en="info boards" data-en-US="info boards" data-es="paneles" data-fr="panneaux" data-it="pannelli" data-pt-BR="painéis" data-ja="枚の情報パネル" data-zh-Hans="张信息板">Infotafeln</span>
-    </div>
-  </header>
+    <article class="infotafel__content" data-info-content hidden>
+      <section class="infotafel__left">
+        <section class="tier-orbit" data-tier-orbit>
+          <div class="tier-orbit__ring" aria-hidden="true"></div>
 
-  <div class="info-empty" data-info-empty hidden>
-    <strong data-i18n data-de="Noch kein Tier ausgewählt." data-en="No animal selected yet." data-en-US="No animal selected yet." data-es="Aún no se ha seleccionado ningún animal." data-fr="Aucun animal n’est encore sélectionné." data-it="Nessun animale selezionato." data-pt-BR="Nenhum animal selecionado ainda." data-ja="まだ動物が選択されていません。" data-zh-Hans="尚未选择动物。">Noch kein Tier ausgewählt.</strong>
-    <p data-i18n data-de="Wähle auf Home ein oder mehrere Tiere aus. Die Auswahl wird automatisch hierher übernommen." data-en="Select one or more animals on Home. The selection is transferred here automatically." data-en-US="Select one or more animals on Home. The selection is transferred here automatically." data-es="Selecciona uno o varios animales en Inicio. La selección se transferirá aquí automáticamente." data-fr="Sélectionnez un ou plusieurs animaux sur l’accueil. La sélection sera reprise ici automatiquement." data-it="Seleziona uno o più animali nella Home. La selezione verrà riportata qui automaticamente." data-pt-BR="Selecione um ou mais animais no Início. A seleção será trazida para cá automaticamente." data-ja="ホームで1頭以上の動物を選択してください。選択内容は自動的にここへ引き継がれます。" data-zh-Hans="请在主页选择一个或多个动物。选择结果会自动同步到这里。">Wähle auf Home ein oder mehrere Tiere aus. Die Auswahl wird automatisch hierher übernommen.</p>
-    <a class="info-empty__button" href="#home" data-page="home" data-i18n data-de="Zur Tierauswahl" data-en="Go to animal selection" data-en-US="Go to animal selection" data-es="Ir a la selección" data-fr="Choisir des animaux" data-it="Vai alla selezione" data-pt-BR="Ir para a seleção" data-ja="動物を選ぶ" data-zh-Hans="前往选择动物">Zur Tierauswahl</a>
+          <button class="tier-image" type="button" data-main-image-button aria-label="Tierbild vergrößern">
+            <img data-main-image alt="" />
+            <span class="tier-image__fallback" data-main-image-fallback hidden>Kein Bild</span>
+            <span class="tier-image__hint" data-image-count></span>
+          </button>
+
+          <!-- Punkt 3: nur Icon; Text erscheint per Hover/Focus. -->
+          <button class="orbit-point orbit-point--social orbit-point--icon-only" type="button" data-stat-icon-only="social" aria-label="Soziale Struktur">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">👥</span>
+          </button>
+
+          <!-- Punkt 4: Biome = erster sichtbarer Steckbriefwert. -->
+          <div class="orbit-point orbit-point--biome orbit-point--steckbrief" data-stat-biome>
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🌍</span>
+            <span class="orbit-point__data-line">
+              <strong data-orbit-value></strong>
+            </span>
+          </div>
+
+          <!-- Punkte 5–9: werden je Tier aus den vorhandenen Steckbriefdaten befüllt. -->
+          <div class="orbit-point orbit-point--stat-1 orbit-point--steckbrief" data-stat-slot="0">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">↔</span>
+            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          </div>
+
+          <div class="orbit-point orbit-point--stat-2 orbit-point--steckbrief" data-stat-slot="1">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🪽</span>
+            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          </div>
+
+          <div class="orbit-point orbit-point--stat-3 orbit-point--steckbrief" data-stat-slot="2">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">⚖</span>
+            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          </div>
+
+          <div class="orbit-point orbit-point--stat-4 orbit-point--steckbrief" data-stat-slot="3">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">⌛</span>
+            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          </div>
+
+          <div class="orbit-point orbit-point--stat-5 orbit-point--steckbrief" data-stat-slot="4">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">➤</span>
+            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          </div>
+
+          <!-- Punkt 10 / 11 / 12: Audio direkt auf dem Kreis. -->
+          <button class="orbit-point orbit-point--audio-next orbit-point--audio" type="button" data-audio-right aria-label="Nächster Ruf / vorspulen">
+            <span class="orbit-point__icon" aria-hidden="true">›</span>
+          </button>
+
+          <button class="orbit-point orbit-point--audio-play orbit-point--audio" type="button" data-audio-play aria-label="Audio abspielen">
+            <span class="orbit-point__icon" data-audio-play-icon aria-hidden="true">▶</span>
+          </button>
+
+          <button class="orbit-point orbit-point--audio-prev orbit-point--audio" type="button" data-audio-left aria-label="Vorheriger Ruf / zurückspulen">
+            <span class="orbit-point__icon" aria-hidden="true">‹</span>
+          </button>
+
+          <!-- Punkte 13, 14, 16, 18: gemeinsame Platzhalterklasse; später einfach display:none. -->
+          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-13" data-placeholder="13" data-tooltip="Platzhalter">
+            <span class="orbit-point__icon" aria-hidden="true">?</span>
+          </div>
+
+          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-14" data-placeholder="14" data-tooltip="Platzhalter">
+            <span class="orbit-point__icon" aria-hidden="true">?</span>
+          </div>
+
+          <button class="orbit-point orbit-point--activity orbit-point--icon-only" type="button" data-stat-icon-only="activity" aria-label="Aktivität">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">☀</span>
+          </button>
+
+          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-16" data-placeholder="16" data-tooltip="Platzhalter">
+            <span class="orbit-point__icon" aria-hidden="true">?</span>
+          </div>
+
+          <button class="orbit-point orbit-point--diet orbit-point--icon-only" type="button" data-stat-icon-only="dietType" aria-label="Fressverhalten">
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🥩</span>
+          </button>
+
+          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-18" data-placeholder="18" data-tooltip="Platzhalter">
+            <span class="orbit-point__icon" aria-hidden="true">?</span>
+          </div>
+
+          <div class="orbit-audio-description" data-audio-panel>
+            <strong data-audio-title>Audio</strong>
+            <span data-audio-description>Keine Audiodaten</span>
+          </div>
+
+          <audio data-audio-element preload="metadata"></audio>
+        </section>
+
+        <section class="info-panel map-card">
+          <div class="info-panel__heading">
+            <h2 data-ui="map">Karte</h2>
+          </div>
+          <button class="map-preview" type="button" data-map-open aria-label="Karte öffnen">
+            <img data-map-image alt="" />
+            <span class="map-preview__fallback" data-map-fallback hidden>Keine Karte</span>
+            <span class="map-preview__hint" data-ui="openMap">Zum Vergrößern anklicken</span>
+          </button>
+        </section>
+      </section>
+
+      <section class="infotafel__right">
+        <section class="animal-heading info-panel">
+          <h1 data-animal-name></h1>
+          <p class="animal-heading__scientific" data-scientific-name></p>
+          <p class="animal-heading__status" data-conservation-status></p>
+        </section>
+
+        <section class="info-panel zoopedia-card">
+          <div class="info-panel__heading">
+            <h2 data-ui="zoopedia">Zoopedia</h2>
+          </div>
+          <div class="zoopedia-card__text" data-zoopedia-text></div>
+        </section>
+
+        <div class="infotafel__right-bottom">
+          <section class="info-panel facts-card">
+            <div class="info-panel__heading">
+              <h2 data-ui="facts">Tierfakten</h2>
+            </div>
+            <div class="facts-card__body">
+              <button class="facts-card__arrow" type="button" data-fact-prev aria-label="Vorheriger Tierfakt">‹</button>
+              <p data-fact-text></p>
+              <button class="facts-card__arrow" type="button" data-fact-next aria-label="Nächster Tierfakt">›</button>
+            </div>
+            <span class="facts-card__counter" data-fact-counter></span>
+          </section>
+
+          <section class="info-panel foodweb-card">
+            <div class="info-panel__heading">
+              <h2 data-ui="foodWeb">Nahrungsnetz</h2>
+            </div>
+
+            <div class="foodweb-card__nav foodweb-card__nav--relation">
+              <button type="button" data-food-relation="frisst" data-ui="eats">Frisst</button>
+              <button type="button" data-food-relation="wirdGefressenVon" data-ui="eatenBy">Wird gefressen von</button>
+            </div>
+
+            <div class="foodweb-card__nav foodweb-card__nav--age">
+              <button type="button" data-food-age="jungtier" data-ui="young">Jungtier</button>
+              <button type="button" data-food-age="erwachsen" data-ui="adult">Erwachsen</button>
+            </div>
+
+            <div class="foodweb-card__content" data-food-content></div>
+          </section>
+        </div>
+      </section>
+    </article>
   </div>
 
-  <section class="info-grid" data-info-list aria-live="polite"></section>
+  <dialog class="media-dialog image-dialog" data-image-dialog>
+    <div class="media-dialog__topbar">
+      <strong data-image-dialog-title>Bild</strong>
+      <span data-image-dialog-counter></span>
+      <button type="button" data-image-dialog-close aria-label="Schließen">×</button>
+    </div>
+    <div class="image-dialog__stage">
+      <button class="media-dialog__arrow media-dialog__arrow--left" type="button" data-image-prev aria-label="Vorheriges Bild">‹</button>
+      <img data-dialog-image alt="" />
+      <button class="media-dialog__arrow media-dialog__arrow--right" type="button" data-image-next aria-label="Nächstes Bild">›</button>
+    </div>
+  </dialog>
+
+  <dialog class="media-dialog map-dialog" data-map-dialog>
+    <div class="media-dialog__topbar">
+      <strong data-map-dialog-title>Karte</strong>
+      <div class="map-dialog__controls">
+        <button type="button" data-map-zoom-out aria-label="Karte verkleinern">−</button>
+        <button type="button" data-map-reset>100%</button>
+        <button type="button" data-map-zoom-in aria-label="Karte vergrößern">+</button>
+        <button type="button" data-map-close aria-label="Schließen">×</button>
+      </div>
+    </div>
+    <div class="map-dialog__viewport" data-map-viewport>
+      <img data-map-dialog-image alt="" draggable="false" />
+    </div>
+  </dialog>
 </section>

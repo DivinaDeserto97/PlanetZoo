@@ -15,8 +15,15 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": ["habitatFlying"],
-    "kontinente": ["northAmerica", "europe", "asia", "africa"],
+    "gehegetyp": [
+      "habitatFlying"
+    ],
+    "kontinente": [
+      "northAmerica",
+      "europe",
+      "asia",
+      "africa"
+    ],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -60,6 +67,26 @@
           "max": 6.5,
           "einheit": "kg",
           "quelle": "planetZooWiki"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "bisZu",
+          "max": 30,
+          "einheit": "jahr",
+          "quelle": "darwinsTierlexikon"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 320,
+          "einheit": "km/h",
+          "quelle": "darwinsTierlexikon"
         }
       ]
     },
@@ -131,23 +158,26 @@
           }
         ]
       },
-
       "nahrungsnetz": {
         "frisst": {
           "jungtier": {
             "werte": []
           },
-
           "erwachsen": {
             "werte": [
               {
                 "wert": "lagomorpha",
-                "beispiele": ["hare", "rabbit"],
+                "beispiele": [
+                  "hare",
+                  "rabbit"
+                ],
                 "quelle": "darwinsTierlexikon"
               },
               {
                 "wert": "smallAndMediumMammals",
-                "beispiele": ["marmot"],
+                "beispiele": [
+                  "marmot"
+                ],
                 "quelle": "darwinsTierlexikon"
               },
               {
@@ -160,19 +190,19 @@
               },
               {
                 "wert": "largerMammals",
-                "beispiele": ["chamois"],
+                "beispiele": [
+                  "chamois"
+                ],
                 "bedingung": "foodShortage",
                 "quelle": "darwinsTierlexikon"
               }
             ]
           }
         },
-
         "wirdGefressenVon": {
           "jungtier": {
             "werte": []
           },
-
           "erwachsen": {
             "werte": [],
             "keineNatuerlichenFressfeinde": true,
@@ -702,14 +732,12 @@
       "name": "Darwins Tierlexikon",
       "typ": "buch"
     },
-
     "lfuBayern": {
       "name": "Bayerisches Landesamt für Umwelt – Steinadler",
       "seiten": {
         "de": "https://www.lfu.bayern.de/natur/sap/arteninformationen/steckbrief/zeige?stbname=Aquila+chrysaetos"
       }
     },
-
     "schweizerNationalpark": {
       "name": "Schweizerischer Nationalpark – Steinadler",
       "seiten": {

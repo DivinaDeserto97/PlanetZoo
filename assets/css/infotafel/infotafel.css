@@ -1,217 +1,848 @@
-.info-page {
-  width: min(100%, var(--breite-inhalt));
-  margin: 0 auto;
-  padding: var(--abstand-6) var(--abstand-5);
+/* Infotafel: 9 hoch : 16 breit. Diese CSS-Datei wird nur auf der Infotafel geladen. */
+
+#header,
+#footer {
+  display: none !important;
 }
 
-.info-hero {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: var(--abstand-5);
-  margin-bottom: var(--abstand-5);
-}
-
-.info-hero__eyebrow {
-  margin: 0 0 var(--abstand-1);
-  color: var(--farbe-akzent);
-  font-size: var(--schrift-klein);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.info-hero h1 {
-  margin: 0;
-  font-size: clamp(32px, 5vw, 52px);
-}
-
-.info-hero p:not(.info-hero__eyebrow) {
-  max-width: 850px;
-  margin: var(--abstand-2) 0 0;
-  color: var(--farbe-text-zusatz);
-  line-height: 1.55;
-}
-
-.info-hero__counter {
-  min-width: 135px;
-  padding: var(--abstand-3) var(--abstand-4);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-mittel);
-  background: var(--farbe-bereich);
-  text-align: right;
-}
-
-.info-hero__counter strong {
-  display: block;
-  font-size: 28px;
-}
-
-.info-hero__counter span {
-  color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
-  gap: var(--abstand-5);
-  align-items: start;
-}
-
-.info-card {
+body {
+  min-height: 100vh;
+  padding-bottom: 0 !important;
   overflow: hidden;
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-gross);
-  background: var(--farbe-bereich);
 }
 
-.info-card__hero {
-  position: relative;
-  min-height: 250px;
+#page {
+  min-height: 100vh;
+}
+
+.infotafel {
+  --infotafel-gold: #d3a21d;
+  --infotafel-gold-soft: color-mix(in srgb, var(--infotafel-gold) 35%, transparent);
+  width: 100%;
+  min-height: 100vh;
   display: grid;
   place-items: center;
+  overflow: auto;
+  background: var(--farbe-hintergrund);
+}
+
+.infotafel__frame {
+  width: min(1600px, 100vw, calc(100vh * 16 / 9));
+  aspect-ratio: 16 / 9;
+  max-height: 100vh;
+  padding: clamp(8px, 0.8vw, 14px);
+  display: grid;
+  grid-template-rows: clamp(56px, 5vw, 72px) minmax(0, 1fr);
+  gap: clamp(8px, 0.65vw, 12px);
   overflow: hidden;
+  background: var(--farbe-hintergrund);
+}
+
+.infotafel button,
+.infotafel a,
+.infotafel select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ======================================== */
+/* NAVIGATION                               */
+/* ======================================== */
+
+.tier-nav {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px auto 48px;
+  align-items: stretch;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--farbe-bereich);
+}
+
+.tier-nav__arrow,
+.tier-nav__home {
+  width: 48px;
+  min-width: 48px;
+  border: 0;
+  border-radius: 0;
+  display: grid;
+  place-items: center;
+  background: var(--farbe-element);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.tier-nav__arrow--prev {
+  border-right: 1px solid var(--farbe-linie);
+}
+
+.tier-nav__arrow--next,
+.tier-nav__home {
+  border-left: 1px solid var(--farbe-linie);
+}
+
+.tier-nav__home {
+  font-size: 21px;
+}
+
+.tier-nav__arrow[hidden] {
+  display: grid !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.tier-nav__viewport {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.tier-nav__track {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.tier-nav__track::-webkit-scrollbar {
+  display: none;
+}
+
+.tier-nav__item {
+  flex: 0 0 clamp(160px, 12vw, 215px);
+  min-width: 0;
+  padding: 5px 14px 5px 8px;
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  border: 0;
+  border-right: 1px solid var(--farbe-linie);
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.tier-nav__item:hover {
+  background: var(--farbe-hover);
+}
+
+.tier-nav__item.active {
+  background: color-mix(in srgb, var(--farbe-akzent) 18%, var(--farbe-element));
+  box-shadow: inset 0 -4px 0 var(--farbe-akzent);
+}
+
+.tier-nav__item img,
+.tier-nav__fallback {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--farbe-linie);
+  border-radius: 50%;
+  object-fit: cover;
   background: var(--farbe-element-2);
 }
 
-.info-card__hero img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.info-card__no-image {
-  color: var(--farbe-text-zusatz);
-  text-align: center;
-}
-
-.info-card__remove {
-  position: absolute;
-  top: var(--abstand-3);
-  right: var(--abstand-3);
-  min-height: 38px;
-  padding: 0 var(--abstand-3);
-  border-color: var(--farbe-linie-hell);
-  background: color-mix(in srgb, var(--farbe-element) 90%, transparent);
-}
-
-.info-card__title {
-  padding: var(--abstand-5);
-  border-bottom: 1px solid var(--farbe-linie);
-}
-
-.info-card__title h2 {
-  margin: 0;
-  font-size: 30px;
-}
-
-.info-card__scientific {
-  margin: var(--abstand-1) 0 0;
-  color: var(--farbe-text-zusatz);
-  font-style: italic;
-}
-
-.info-card__quick {
+.tier-nav__fallback {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--farbe-linie);
+  place-items: center;
 }
 
-.info-stat {
+.tier-nav__name {
   min-width: 0;
-  padding: var(--abstand-3) var(--abstand-4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: clamp(12px, 0.85vw, 15px);
+  font-weight: 700;
+}
+
+.tier-nav__language {
+  min-width: 165px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-left: 1px solid var(--farbe-linie);
   background: var(--farbe-element);
 }
 
-.info-stat__label {
-  display: block;
-  margin-bottom: var(--abstand-1);
-  color: var(--farbe-text-zusatz);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.info-stat__value {
-  overflow-wrap: anywhere;
-  font-weight: 650;
-}
-
-.info-card__sections {
-  padding: var(--abstand-5);
-  display: grid;
-  gap: var(--abstand-5);
-}
-
-.info-section {
+.tier-nav__language select {
+  width: 130px;
   min-width: 0;
+  height: 36px;
+  border: 0;
+  background: transparent;
 }
 
-.info-section h3 {
-  margin: 0 0 var(--abstand-2);
-  font-size: 20px;
-}
+/* ======================================== */
+/* LEER                                     */
+/* ======================================== */
 
-.info-section p,
-.info-section li {
-  color: var(--farbe-text-zusatz);
-  line-height: 1.6;
-}
-
-.info-section p {
-  margin: 0 0 var(--abstand-3);
-}
-
-.info-section p:last-child {
-  margin-bottom: 0;
-}
-
-.info-section ul {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.info-empty {
-  padding: var(--abstand-6);
+.infotafel__empty {
+  align-self: center;
+  justify-self: center;
+  width: min(520px, 90%);
+  padding: 28px;
   border: 1px dashed var(--farbe-linie);
-  border-radius: var(--radius-gross);
+  border-radius: 16px;
   background: var(--farbe-bereich);
   text-align: center;
 }
 
-.info-empty p {
+.infotafel__empty p {
   color: var(--farbe-text-zusatz);
 }
 
-.info-empty__button {
-  min-height: 44px;
-  padding: 0 var(--abstand-4);
+.infotafel__empty a {
   display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-klein);
+  padding: 10px 16px;
+  border-radius: 8px;
   background: var(--farbe-akzent);
   color: var(--farbe-akzent-text);
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
-  .info-page {
-    padding: var(--abstand-4) var(--abstand-3);
+/* ======================================== */
+/* 9:16-INHALTSFLÄCHE                       */
+/* ======================================== */
+
+.infotafel__content {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 52% 48%;
+  gap: clamp(8px, 0.7vw, 12px);
+}
+
+.infotafel__left,
+.infotafel__right {
+  min-width: 0;
+  min-height: 0;
+}
+
+.infotafel__left {
+  display: grid;
+  grid-template-rows: minmax(0, 72%) minmax(0, 28%);
+  gap: clamp(8px, 0.7vw, 12px);
+}
+
+.infotafel__right {
+  display: grid;
+  grid-template-rows: 18% minmax(0, 39%) minmax(0, 43%);
+  gap: clamp(8px, 0.7vw, 12px);
+}
+
+.info-panel {
+  min-width: 0;
+  min-height: 0;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--farbe-bereich);
+}
+
+.info-panel__heading {
+  min-height: 38px;
+  padding: 8px 13px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.info-panel__heading h2 {
+  margin: 0;
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+/* ======================================== */
+/* TIERKREIS - PUNKTE DIREKT AUF DEM KREIS */
+/* ======================================== */
+
+.tier-orbit {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 14px;
+  background: var(--farbe-bereich);
+}
+
+/* Der Kreis ist bewusst EIN klarer Ring. Die Punkte sitzen direkt darauf. */
+.tier-orbit__ring {
+  position: absolute;
+  z-index: 2;
+  left: 39%;
+  top: 47%;
+  height: 72%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border: clamp(2px, 0.18vw, 3px) solid var(--infotafel-gold);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px var(--infotafel-gold-soft),
+    inset 0 0 0 1px var(--infotafel-gold-soft);
+  pointer-events: none;
+}
+
+.tier-image {
+  position: absolute;
+
+  /* Bild liegt hinter Kreis + Icons */
+  z-index: 1;
+
+  left: 39%;
+  top: 47%;
+
+  /* Gleich groß wie der äußere Kreis */
+  height: 72%;
+  aspect-ratio: 1;
+
+  padding: 0;
+  overflow: hidden;
+
+  translate: -50% -50%;
+
+  border: 0;
+  border-radius: 50%;
+
+  box-shadow:
+    0 10px 26px rgb(0 0 0 / 0.18);
+
+  background: var(--farbe-element-2);
+}
+
+.tier-image:hover {
+  transform: scale(1.025);
+}
+
+.tier-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tier-image__fallback {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--farbe-text-zusatz);
+}
+
+.tier-image__hint {
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+  min-width: 28px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.68);
+  color: #fff;
+  font-size: 9px;
+}
+
+/* Gemeinsame Basisklasse für ALLE Punkte rund um das Tier. */
+.orbit-point {
+  position: absolute;
+  z-index: 5;
+  width: clamp(28px, 2.25vw, 38px);
+  height: clamp(28px, 2.25vw, 38px);
+  padding: 0;
+  translate: -50% -50%;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+button.orbit-point:hover,
+button.orbit-point:focus-visible {
+  background: transparent;
+}
+
+.orbit-point__icon {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--infotafel-gold);
+  border-radius: 50%;
+  background: var(--farbe-element);
+  box-shadow: 0 0 0 2px var(--farbe-bereich);
+  color: var(--farbe-text);
+  font-size: clamp(12px, 1vw, 17px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+button.orbit-point:hover .orbit-point__icon,
+button.orbit-point:focus-visible .orbit-point__icon {
+  transform: scale(1.09);
+  background: var(--farbe-hover);
+}
+
+/*
+ * Steckbrief-Punkte 4-9:
+ * Icon im Kreis + eine Linie nach rechts.
+ * Der eigentliche Wert steht DIREKT über dieser Linie.
+ */
+.orbit-point--steckbrief {
+  --data-line-width: clamp(125px, 15vw, 240px);
+}
+
+.orbit-point__data-line {
+  position: absolute;
+  z-index: 2;
+  left: calc(100% - 3px);
+  top: 50%;
+  width: var(--data-line-width);
+  height: clamp(22px, 2.15vw, 34px);
+  border-bottom: 2px solid var(--infotafel-gold);
+  pointer-events: none;
+}
+
+.orbit-point__data-line strong {
+  position: absolute;
+  left: 8px;
+  right: 2px;
+  bottom: 4px;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--farbe-text);
+  font-size: clamp(9px, 0.72vw, 12px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Hovertext für reine Icon-Punkte und gleichzeitig Erklärung der Steckbrieficons. */
+.orbit-point[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  bottom: calc(100% + 9px);
+  max-width: 220px;
+  padding: 6px 8px;
+  translate: -50% 0;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 7px;
+  background: var(--farbe-element);
+  box-shadow: 0 5px 16px rgb(0 0 0 / 0.24);
+  color: var(--farbe-text);
+  font-size: clamp(9px, 0.7vw, 11px);
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+
+.orbit-point[data-tooltip]:hover::after,
+.orbit-point[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Die Nummern aus dem Wireframe werden NICHT angezeigt. */
+/* Punkt 3 */
+.orbit-point--social         { left: 39%; top: 11%; }
+
+/* Punkte 4-9 */
+.orbit-point--biome          { left: 55%; top: 18%; --data-line-width: clamp(155px, 18vw, 280px); }
+.orbit-point--stat-1         { left: 60%; top: 28%; --data-line-width: clamp(140px, 16vw, 250px); }
+.orbit-point--stat-2         { left: 63%; top: 40%; --data-line-width: clamp(125px, 14vw, 220px); }
+.orbit-point--stat-3         { left: 63%; top: 52%; --data-line-width: clamp(125px, 14vw, 220px); }
+.orbit-point--stat-4         { left: 60%; top: 64%; --data-line-width: clamp(140px, 16vw, 250px); }
+.orbit-point--stat-5         { left: 55%; top: 75%; --data-line-width: clamp(155px, 18vw, 280px); }
+
+/* Punkte 10-12: Audio auf dem unteren Kreisbogen. */
+.orbit-point--audio-next     { left: 50%; top: 81%; }
+.orbit-point--audio-play     { left: 39%; top: 83%; }
+.orbit-point--audio-prev     { left: 28%; top: 81%; }
+
+.orbit-point--audio .orbit-point__icon {
+  font-size: clamp(15px, 1.25vw, 21px);
+}
+
+/* Punkte 13-18 auf der linken Seite. */
+.orbit-point--placeholder-13 { left: 22%; top: 75%; }
+.orbit-point--placeholder-14 { left: 18%; top: 64%; }
+.orbit-point--activity       { left: 15%; top: 52%; }
+.orbit-point--placeholder-16 { left: 15%; top: 40%; }
+.orbit-point--diet           { left: 18%; top: 28%; }
+.orbit-point--placeholder-18 { left: 23%; top: 18%; }
+
+/*
+ * Alle noch unbekannten Punkte haben dieselbe Überklasse.
+ * Später genügt zum Ausblenden genau diese eine Regel:
+ * .orbit-point--placeholder { display: none; }
+ */
+.orbit-point--placeholder {
+  opacity: 0.46;
+}
+
+/* Rufbeschreibung direkt unter dem Tierbild, nicht mehr in einer langen Bedienleiste. */
+.orbit-audio-description {
+  position: absolute;
+  z-index: 4;
+
+  left: 39%;
+
+  /* äußerer Kreis endet ungefähr bei 83 % */
+  /* Beschreibung beginnt darunter */
+  top: 90%;
+
+  width: 48%;
+
+  translate: -50% 0;
+
+  text-align: center;
+  pointer-events: none;
+}
+
+.orbit-audio-description strong,
+.orbit-audio-description span {
+  display: block;
+}
+
+.orbit-audio-description strong {
+  margin-bottom: 2px;
+  font-size: clamp(9px, 0.72vw, 12px);
+}
+
+.orbit-audio-description span {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--farbe-text-zusatz);
+  font-size: clamp(8px, 0.62vw, 10px);
+  line-height: 1.2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* ======================================== */
+/* KARTE                                    */
+/* ======================================== */
+
+.map-card {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.map-preview {
+  position: relative;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: var(--farbe-element-2);
+}
+
+.map-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.map-preview__fallback {
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  color: var(--farbe-text-zusatz);
+}
+
+.map-preview__hint {
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.66);
+  color: #fff;
+  font-size: 9px;
+}
+
+/* ======================================== */
+/* NAME / TEXT                              */
+/* ======================================== */
+
+.animal-heading {
+  padding: clamp(10px, 1vw, 16px) clamp(14px, 1.3vw, 22px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.animal-heading h1 {
+  margin: 0;
+  font-size: clamp(26px, 2.4vw, 44px);
+  line-height: 1;
+}
+
+.animal-heading__scientific {
+  margin: 5px 0 0;
+  color: var(--farbe-text-zusatz);
+  font-size: clamp(12px, 0.9vw, 16px);
+  font-style: italic;
+}
+
+.animal-heading__status {
+  align-self: flex-start;
+  margin: 7px 0 0;
+  padding: 4px 9px;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 999px;
+  background: var(--farbe-element);
+  font-size: clamp(10px, 0.75vw, 13px);
+  font-weight: 700;
+}
+
+.zoopedia-card {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.zoopedia-card__text {
+  min-height: 0;
+  padding: 12px 15px;
+  overflow: auto;
+  color: var(--farbe-text-zusatz);
+  font-size: clamp(10px, 0.78vw, 13px);
+  line-height: 1.55;
+}
+
+.zoopedia-card__text p {
+  margin: 0 0 10px;
+}
+
+/* ======================================== */
+/* TIERFAKTEN + NAHRUNGSNETZ                */
+/* ======================================== */
+
+.infotafel__right-bottom {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: clamp(8px, 0.7vw, 12px);
+}
+
+.facts-card,
+.foodweb-card {
+  min-height: 0;
+  display: grid;
+}
+
+.facts-card {
+  grid-template-rows: auto minmax(0, 1fr) 20px;
+}
+
+.facts-card__body {
+  min-height: 0;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 6px;
+}
+
+.facts-card__body p {
+  max-height: 100%;
+  margin: 0;
+  overflow: auto;
+  text-align: center;
+  font-size: clamp(10px, 0.75vw, 13px);
+  line-height: 1.5;
+}
+
+.facts-card__arrow {
+  width: 32px;
+  height: 42px;
+  padding: 0;
+}
+
+.facts-card__arrow[hidden] {
+  visibility: hidden;
+}
+
+.facts-card__counter {
+  align-self: center;
+  justify-self: center;
+  color: var(--farbe-text-zusatz);
+  font-size: 9px;
+}
+
+.foodweb-card {
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+}
+
+.foodweb-card__nav {
+  display: grid;
+  gap: 5px;
+  padding: 5px 7px 0;
+}
+
+.foodweb-card__nav--relation {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.foodweb-card__nav--age {
+  grid-template-columns: 1fr 1fr;
+}
+
+.foodweb-card__nav button {
+  min-height: 30px;
+  padding: 4px 6px;
+  font-size: clamp(9px, 0.65vw, 11px);
+}
+
+.foodweb-card__nav button.active {
+  border-color: var(--farbe-akzent);
+  background: var(--farbe-akzent);
+  color: var(--farbe-akzent-text);
+}
+
+.foodweb-card__content {
+  min-height: 0;
+  margin: 7px;
+  padding: 8px;
+  overflow: auto;
+  border-radius: 9px;
+  background: var(--farbe-element);
+  font-size: clamp(9px, 0.7vw, 12px);
+}
+
+.foodweb-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.foodweb-list li + li {
+  margin-top: 5px;
+}
+
+.foodweb-empty {
+  margin: 0;
+  color: var(--farbe-text-zusatz);
+}
+
+/* ======================================== */
+/* DIALOGE                                  */
+/* ======================================== */
+
+.media-dialog {
+  width: min(94vw, 1400px);
+  height: min(92vh, 900px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--farbe-linie);
+  border-radius: 16px;
+  background: var(--farbe-bereich);
+  color: var(--farbe-text);
+}
+
+.media-dialog::backdrop {
+  background: rgb(0 0 0 / 0.82);
+}
+
+.media-dialog__topbar {
+  height: 54px;
+  padding: 7px 10px 7px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.media-dialog__topbar > strong {
+  margin-right: auto;
+}
+
+.media-dialog__topbar button {
+  min-width: 38px;
+  height: 38px;
+}
+
+.image-dialog__stage,
+.map-dialog__viewport {
+  position: relative;
+  height: calc(100% - 54px);
+  overflow: hidden;
+  background: #090909;
+}
+
+.image-dialog__stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.media-dialog__arrow {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  width: 48px;
+  height: 70px;
+  translate: 0 -50%;
+  background: rgb(0 0 0 / 0.62);
+  color: #fff;
+  font-size: 32px;
+}
+
+.media-dialog__arrow--left { left: 12px; }
+.media-dialog__arrow--right { right: 12px; }
+
+.map-dialog__controls {
+  display: flex;
+  gap: 6px;
+}
+
+.map-dialog__viewport {
+  touch-action: none;
+  cursor: grab;
+}
+
+.map-dialog__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.map-dialog__viewport img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: none;
+  transform-origin: center;
+  user-select: none;
+  will-change: transform;
+}
+
+/* Wenn der Bildschirm kleiner als die Tafel ist, bleibt das Seitenverhältnis erhalten
+   und die Seite kann gescrollt werden, statt die Tafel zu verzerren. */
+@media (max-width: 900px), (max-height: 560px) {
+  body {
+    overflow: auto;
   }
 
-  .info-hero {
-    align-items: stretch;
-    flex-direction: column;
+  .infotafel {
+    place-items: start center;
   }
 
-  .info-hero__counter {
-    text-align: left;
-  }
-
-  .info-card__quick {
-    grid-template-columns: 1fr;
+  .infotafel__frame {
+    width: 1100px;
+    max-height: none;
   }
 }
