@@ -1,0 +1,1007 @@
+{
+  "id": "Loxodonta africana",
+  "identitaet": {
+    "namen": {
+      "de": "Afrikanischer Savannenelefant",
+      "en": "African Savanna Elephant",
+      "en-US": "African Savanna Elephant",
+      "es": "Elefante africano de sabana",
+      "fr": "Éléphant de savane d’Afrique",
+      "it": "Elefante africano di savana",
+      "pt-BR": "Elefante-da-savana-africana",
+      "ja": "サバンナゾウ",
+      "zh-Hans": "非洲草原象"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": ["habitatTerrestrial"],
+    "kontinente": ["africa"],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Mammalia",
+          "ordnung": "Proboscidea",
+          "familie": "Elephantidae",
+          "gattung": "Loxodonta",
+          "art": "Loxodonta africana",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 5.8,
+          "max": 7.3,
+          "einheit": "m",
+          "quelle": "wwf"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 2.2,
+          "max": 2.6,
+          "einheit": "m",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennlich",
+          "min": 3.2,
+          "max": 4.0,
+          "einheit": "m",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 2000,
+          "max": 3500,
+          "einheit": "kg",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennlich",
+          "min": 4500,
+          "max": 6100,
+          "einheit": "kg",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "min": 60,
+          "max": 70,
+          "einheit": "jahr",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 24,
+          "einheit": "km/h",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "quelle": "iucn"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 415000,
+          "einheit": "individuum",
+          "giltFuer": ["Loxodonta africana", "Loxodonta cyclotis"],
+          "jahrDerGrundlage": 2016,
+          "hinweis": {
+            "de": "Die häufig zitierte Zahl von rund 415.000 gilt für afrikanische Savannen- und Waldelefanten zusammen. Sie darf nicht als aktuelle Populationszahl nur von Loxodonta africana interpretiert werden.",
+            "en": "The often-cited figure of about 415,000 covers African savanna and forest elephants combined and must not be interpreted as a current population estimate for Loxodonta africana alone."
+          },
+          "quelle": "iucn"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 11,
+          "einheit": "jahr",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 20,
+          "einheit": "jahr",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 22,
+          "einheit": "monat",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": 1,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "matriarchalFamilyHerd",
+          "minGruppengroesse": 6,
+          "maxGruppengroesse": 70,
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitaryOrBachelorGroup",
+          "quelle": "sanDiegoZoo"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "wwf"
+        },
+        {
+          "wert": "woodland",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "wert": "forest",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "wert": "floodplain",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "wert": "desert",
+          "quelle": "africanWildlifeFoundation"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "cathemeral",
+          "beschreibung": {
+            "de": "Über Tag und Nacht aktiv; nur wenige Stunden Schlaf pro Tag.",
+            "en": "Active during both day and night, with only a few hours of sleep per day."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "quelle": "animalDiversityWeb"
+          },
+          {
+            "wert": "grazerAndBrowser",
+            "quelle": "sanDiegoZoo"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "muttermilch",
+                "bedingung": "calf",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "plantFood",
+                "bedingung": "increasingWithAge",
+                "quelle": "sanDiegoZoo"
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "grass",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "leaves",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "fruit",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "roots",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "twigs",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "bark",
+                "quelle": "animalDiversityWeb"
+              },
+              {
+                "wert": "shrubs",
+                "quelle": "sanDiegoZoo"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "lion",
+                "quelle": "sanDiegoZoo"
+              },
+              {
+                "wert": "hyena",
+                "quelle": "sanDiegoZoo"
+              },
+              {
+                "wert": "leopard",
+                "quelle": "sanDiegoZoo"
+              },
+              {
+                "wert": "crocodile",
+                "quelle": "sanDiegoZoo"
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": true,
+            "hinweis": {
+              "de": "Gesunde adulte Savannenelefanten haben kaum natürliche Fressfeinde; der Mensch ist die wichtigste Bedrohung.",
+              "en": "Healthy adult savanna elephants have few natural predators; humans are their major threat."
+            },
+            "quelle": "sanDiegoZoo"
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [
+      {
+        "id": "Loxodonta cyclotis",
+        "beziehung": "schwesterart",
+        "deutscherName": "Afrikanischer Waldelefant",
+        "quelle": "reich2010"
+      },
+      {
+        "id": "Elephas maximus",
+        "beziehung": "naheLebendeVerwandtschaft",
+        "deutscherName": "Asiatischer Elefant",
+        "quelle": "rohland2007"
+      },
+      {
+        "id": "Mammuthus primigenius",
+        "beziehung": "ausgestorbenerElephantide",
+        "deutscherName": "Wollhaarmammut",
+        "quelle": "reich2010"
+      }
+    ],
+    "evolution": {
+      "hinweis": {
+        "de": "Diese Einträge beschreiben Abstammungslinien und Aufspaltungen, nicht die vereinfachte Aussage, dass eine heutige Art direkt aus einer anderen heutigen Art entstanden ist.",
+        "en": "These entries describe evolutionary lineages and divergences, not the simplified claim that one living species directly evolved from another living species."
+      },
+      "knoten": [
+        {
+          "id": "proboscidea",
+          "rang": "ordnung",
+          "name": "Proboscidea",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "elephantidae",
+          "rang": "familie",
+          "name": "Elephantidae",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "loxodonta",
+          "rang": "gattung",
+          "name": "Loxodonta",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "loxodonta-africana",
+          "rang": "art",
+          "name": "Loxodonta africana",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "aufspaltungen": [
+        {
+          "linieA": "Loxodonta",
+          "linieB": "Elephas + Mammuthus",
+          "zeitVorHeuteMioJahre": 7.6,
+          "typ": "ungefaehreDivergenz",
+          "quelle": "rohland2007"
+        },
+        {
+          "linieA": "Loxodonta africana",
+          "linieB": "Loxodonta cyclotis",
+          "zeitVorHeuteMioJahre": 4.0,
+          "typ": "ungefaehreDivergenz",
+          "quelle": "rohland2007"
+        }
+      ]
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Savannenelefant lebt in zahlreichen voneinander getrennten Populationen in Afrika südlich der Sahara. Er kommt vor allem in Ost-, Zentral- und Südafrika vor und nutzt je nach Region Savannen, Grasländer, Wälder, Überschwemmungsgebiete und trockenere Landschaften.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African savanna elephant occurs in numerous fragmented populations across sub-Saharan Africa. It is found mainly in eastern, central and southern Africa and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African savanna elephant occurs in numerous fragmented populations across sub-Saharan Africa. It is found mainly in eastern, central and southern Africa and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El elefante africano de sabana vive en numerosas poblaciones fragmentadas del África subsahariana. Se encuentra sobre todo en África oriental, central y meridional y utiliza sabanas, pastizales, bosques, llanuras de inundación y zonas más secas.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’éléphant de savane d’Afrique vit dans de nombreuses populations fragmentées d’Afrique subsaharienne. Il se rencontre surtout en Afrique orientale, centrale et australe et fréquente les savanes, prairies, zones boisées, plaines inondables et milieux plus secs.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’elefante africano di savana vive in numerose popolazioni frammentate dell’Africa subsahariana. È presente soprattutto nell’Africa orientale, centrale e meridionale e utilizza savane, praterie, boschi, pianure alluvionali e ambienti più aridi.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O elefante-da-savana-africana vive em numerosas populações fragmentadas na África Subsaariana. Ocorre principalmente na África Oriental, Central e Austral e utiliza savanas, campos, bosques, planícies de inundação e ambientes mais secos.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナゾウはサハラ以南のアフリカに分断された多数の個体群として分布し、主に東部・中部・南部アフリカで、サバンナ、草原、疎林、氾濫原、乾燥地などを利用します。",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "非洲草原象以多个彼此分散的种群生活在撒哈拉以南非洲，主要分布于东非、中非和南部非洲，并利用稀树草原、草地、林地、洪泛平原和较干旱的环境。",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Savannenelefant (Loxodonta africana) ist das größte heute lebende Landtier. Charakteristisch sind der muskulöse Rüssel, die großen Ohren und die bei beiden Geschlechtern möglichen Stoßzähne. Elefanten verändern ihre Umgebung stark und gelten deshalb als wichtige Ökosystem-Ingenieure.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El elefante africano de sabana (Loxodonta africana) es el animal terrestre vivo más grande. Se caracteriza por una trompa musculosa, grandes orejas y colmillos que pueden aparecer en ambos sexos. Los elefantes modifican intensamente su entorno y son importantes ingenieros del ecosistema.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’éléphant de savane d’Afrique (Loxodonta africana) est le plus grand animal terrestre vivant. Il se distingue par une trompe musclée, de grandes oreilles et des défenses possibles chez les deux sexes. Les éléphants modifient fortement leur environnement et jouent un rôle d’ingénieurs de l’écosystème.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’elefante africano di savana (Loxodonta africana) è il più grande animale terrestre vivente. È caratterizzato da una proboscide muscolosa, grandi orecchie e zanne che possono essere presenti in entrambi i sessi. Gli elefanti modificano fortemente l’ambiente e sono importanti ingegneri dell’ecosistema.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O elefante-da-savana-africana (Loxodonta africana) é o maior animal terrestre vivo. Possui tromba musculosa, grandes orelhas e presas que podem ocorrer em ambos os sexos. Os elefantes alteram fortemente o ambiente e são importantes engenheiros do ecossistema.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナゾウ（Loxodonta africana）は現生最大の陸上動物です。筋肉質な鼻、大きな耳、雌雄ともに生えることのある牙が特徴で、環境を大きく変える重要な生態系エンジニアでもあります。",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "非洲草原象（Loxodonta africana）是现存最大的陆生动物。其特征包括肌肉发达的象鼻、巨大的耳朵以及雌雄均可能具有的象牙。它们会显著改变环境，因此是重要的生态系统工程师。",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die IUCN führt den Afrikanischen Savannenelefanten als stark gefährdet (Endangered). Zu den wichtigsten Gefahren gehören Wilderei für Elfenbein, Lebensraumverlust und die zunehmende Zerschneidung geeigneter Lebensräume sowie Konflikte zwischen Menschen und Elefanten.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The IUCN lists the African savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
+          "quelle": "iucn"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The IUCN lists the African savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
+          "quelle": "iucn"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La UICN clasifica al elefante africano de sabana como En Peligro. Entre sus principales amenazas se encuentran la caza furtiva por el marfil, la pérdida y fragmentación del hábitat y los crecientes conflictos entre personas y elefantes.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’UICN classe l’éléphant de savane d’Afrique comme En danger. Les principales menaces sont le braconnage pour l’ivoire, la perte et la fragmentation de l’habitat ainsi que l’augmentation des conflits entre humains et éléphants.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La IUCN classifica l’elefante africano di savana come In pericolo. Le principali minacce comprendono il bracconaggio per l’avorio, la perdita e frammentazione dell’habitat e i crescenti conflitti tra persone ed elefanti.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A IUCN classifica o elefante-da-savana-africana como Em Perigo. As principais ameaças incluem caça ilegal por marfim, perda e fragmentação de habitat e conflitos crescentes entre pessoas e elefantes.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "IUCNはサバンナゾウを絶滅危惧種（Endangered）に分類しています。主な脅威は象牙目的の密猟、生息地の喪失と分断、人とゾウの対立です。",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "IUCN将非洲草原象列为濒危（Endangered）。主要威胁包括象牙盗猎、栖息地丧失与破碎化，以及不断增加的人象冲突。",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Weibchen und Jungtiere leben in matriarchal geführten Familienverbänden. Erwachsene Bullen verlassen diese Familiengruppen und leben häufig allein oder zeitweise in Junggesellengruppen. Die Tragzeit beträgt ungefähr 22 Monate; gewöhnlich wird ein Kalb geboren. Jungtiere werden nicht nur von ihrer Mutter, sondern auch von anderen Weibchen der Gruppe betreut und lernen über Jahre hinweg innerhalb des Sozialverbands.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Females and young live in matriarchal family groups. Adult bulls leave these family units and often live alone or temporarily in bachelor groups. Gestation lasts about 22 months and usually one calf is born. Young are cared for not only by their mother but also by other females in the group and learn within the social unit for many years.",
+          "quelle": "sanDiegoZoo"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Females and young live in matriarchal family groups. Adult bulls leave these family units and often live alone or temporarily in bachelor groups. Gestation lasts about 22 months and usually one calf is born. Young are cared for not only by their mother but also by other females in the group and learn within the social unit for many years.",
+          "quelle": "sanDiegoZoo"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las hembras y las crías viven en grupos familiares matriarcales. Los machos adultos abandonan estas unidades y suelen vivir solos o temporalmente en grupos de solteros. La gestación dura unos 22 meses y normalmente nace una cría. Las crías reciben cuidados de su madre y de otras hembras del grupo y aprenden durante años dentro de la unidad social.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les femelles et les jeunes vivent dans des groupes familiaux matriarcaux. Les mâles adultes quittent ces unités et vivent souvent seuls ou temporairement en groupes de célibataires. La gestation dure environ 22 mois et donne généralement naissance à un seul petit. Les jeunes sont pris en charge par leur mère et par d’autres femelles du groupe et apprennent pendant de nombreuses années au sein du groupe social.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le femmine e i giovani vivono in gruppi familiari matriarcali. I maschi adulti lasciano queste unità e spesso vivono soli o temporaneamente in gruppi di scapoli. La gestazione dura circa 22 mesi e di solito nasce un solo piccolo. I giovani vengono accuditi dalla madre e da altre femmine del gruppo e imparano per anni all’interno dell’unità sociale.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Fêmeas e filhotes vivem em grupos familiares matriarcais. Machos adultos deixam essas unidades e frequentemente vivem sozinhos ou temporariamente em grupos de solteiros. A gestação dura cerca de 22 meses e geralmente nasce um filhote. Os jovens são cuidados pela mãe e por outras fêmeas do grupo e aprendem durante anos dentro da unidade social.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "雌と子どもは母系の家族群で暮らします。成獣の雄は家族群を離れ、単独または一時的な雄の群れで生活します。妊娠期間は約22か月で、通常1頭の子が生まれます。子どもは母親だけでなく群れの他の雌にも世話され、長い年月をかけて社会の中で学びます。",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "雌象和幼象生活在母系家族群中。成年雄象会离开家庭群，通常独居或暂时组成雄性群体。妊娠期约22个月，通常每胎产一只幼象。幼象不仅由母亲照料，也会得到群体中其他雌象的照顾，并在多年社会生活中学习。",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Elefanten können über sehr tieffrequente Rufe kommunizieren; ein Teil dieser Laute liegt im Infraschallbereich.",
+          "quelle": "elephantCommunicationResearch",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Savannenelefanten fressen als Gras- und Blattfresser sehr viele unterschiedliche Pflanzenbestandteile und verbringen einen großen Teil des Tages mit Nahrungssuche.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "African elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
+          "quelle": "elephantCommunicationResearch"
+        },
+        {
+          "inhalt": "Savanna elephants are both grazers and browsers and spend a large part of the day foraging on many different plant materials.",
+          "quelle": "sanDiegoZoo"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "African elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
+          "quelle": "elephantCommunicationResearch"
+        },
+        {
+          "inhalt": "Savanna elephants are both grazers and browsers and spend a large part of the day foraging on many different plant materials.",
+          "quelle": "sanDiegoZoo"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Die realen biologischen Daten in diesem Datensatz sind unabhängig von späteren Planet-Zoo-2-Spielwerten. Gehege- und Rechnerwerte müssen nach Veröffentlichung des Spiels separat ergänzt und validiert werden.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The real-world biological data in this record are independent of future Planet Zoo 2 gameplay values. Habitat and calculator values must be added and validated separately after release.",
+          "quelle": "projekt"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The real-world biological data in this record are independent of future Planet Zoo 2 gameplay values. Habitat and calculator values must be added and validated separately after release.",
+          "quelle": "projekt"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c7efe7fa/Elephant_AfricanSavannah_map.png",
+    "dateityp": "png",
+    "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana map.png",
+    "quelle": "lokalNochNichtVorhanden"
+  },
+  "bilder": [
+    {
+      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzdlZmU3ZmEvRWxlcGhhbnRfQWZyaWNhblNhdmFubmFoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
+      "typ": "hauptbild",
+      "dateityp": "webp",
+      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 1.webp",
+      "alt": {
+        "de": "Afrikanischer Savannenelefant",
+        "en": "African savanna elephant"
+      },
+      "quelle": "Planet Zoo 2 Zoopedia"
+    },
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Elephant_near_ndutu.jpg/960px-Elephant_near_ndutu.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "typ": "echtbild",
+      "dateityp": "jpg",
+      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 2.jpg",
+      "alt": {
+        "de": "Afrikanischer Savannenelefant",
+        "en": "African savanna elephant"
+      },
+      "quelle": "wikimediaCommons"
+    }
+  ],
+  "audio": [
+    {
+      "typ": "Grollen",
+      "varianten": [
+        {
+          "variante": 1,
+          "aufnahme": {
+            "inventarnummer": "TSA:Loxodonta_africana_S_1221_2_1",
+            "dauer": "00:00:16",
+            "alter": "ausgewachsen",
+            "geschlecht": "weiblich",
+            "aufnahmeort": "Zoopark Erfurt, Thüringen, Deutschland",
+            "aufnahmedatum": "1968-10-10",
+            "beschreibung": "Weibchen: Grollen.",
+            "qualitaet": "c",
+            "lizenz": "CC BY-SA"
+          },
+          "dateien": [
+            {
+              "dateityp": "flac",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "wav",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        },
+
+        {
+          "variante": 2,
+          "aufnahme": {
+            "inventarnummer": "TSA:Loxodonta_africana_S_367_1_1",
+            "dauer": "00:02:06",
+            "alter": "halbwuechsig",
+            "geschlecht": null,
+            "aufnahmeort": "Zoo Hannover, Niedersachsen, Deutschland",
+            "aufnahmedatum": "1960-05-17",
+            "beschreibung": "Halbwüchsiges Tier: Grollen, im Haus. Abstand: 6 m.",
+            "qualitaet": "b",
+            "lizenz": "CC BY-SA"
+          },
+          "dateien": [
+            {
+              "dateityp": "flac",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "wav",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        },
+
+        {
+          "variante": 3,
+          "aufnahme": {
+            "inventarnummer": "TSA:Loxodonta_africana_S_369_2_1",
+            "dauer": "00:00:14",
+            "alter": "halbwuechsig",
+            "geschlecht": null,
+            "aufnahmeort": "Zoo Hannover, Niedersachsen, Deutschland",
+            "aufnahmedatum": "1960-05-19",
+            "beschreibung": "Halbwüchsiges Tier: Grollen. Abstand ca. 10 m.",
+            "qualitaet": "b",
+            "lizenz": "CC BY-SA"
+          },
+          "dateien": [
+            {
+              "dateityp": "flac",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "wav",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "Trompetenruf",
+      "varianten": [
+        {
+          "variante": 1,
+          "rufart": "Trompetenruf",
+
+          "aufnahme": {
+            "inventarnummer": "TSA:Loxodonta_africana_S_496_1_1",
+            "dauer": "00:02:50",
+            "alter": "ausgewachsen",
+            "geschlecht": "weiblich",
+            "aufnahmeort": "Zoo Berlin, Berlin, Deutschland",
+            "aufnahmedatum": "1960-12-26",
+            "beschreibung": "Kuh \"Mondula\": Erregungstrompeten.",
+            "qualitaet": "b",
+            "lizenz": "CC BY-SA"
+          },
+
+          "dateien": [
+            {
+              "dateityp": "flac",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.flac",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "mp3",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.mp3",
+              "quelle": "Tierstimmenarchiv"
+            },
+            {
+              "dateityp": "wav",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.wav",
+              "quelle": "Tierstimmenarchiv"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "video": [
+    {
+      "typ": "verhaltensarchiv",
+      "titel": {
+        "de": "Elephant Ethogram",
+        "en": "Elephant Ethogram"
+      },
+      "url": "https://www.elephantvoices.org/the-elephant-ethogram-user-guide",
+      "pfad": "",
+      "dateityp": "",
+      "dauerSekunden": null,
+      "beschreibung": {
+        "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
+        "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
+      },
+      "quelle": "elephantVoices"
+    },
+    {
+      "typ": "dokumentation",
+      "reihe": "Go Wild",
+      "titel": {
+        "de": "Go Wild – Afrikanischer Savannenelefant",
+        "en": "Go Wild – African Savanna Elephant"
+      },
+
+      "original": {
+        "dateityp": "mkv",
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/video/Go Wild/Go Wild - Elefant.mkv"
+      },
+
+      "wiedergabe": {
+        "dateityp": "mp4",
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/video/Go Wild/Go Wild - Elefant.mp4"
+      },
+
+      "dauerSekunden": null,
+
+      "beschreibung": {
+        "de": "Go-Wild-Dokumentation über den Afrikanischen Savannenelefanten.",
+        "en": "Go Wild documentary about the African savanna elephant."
+      },
+
+      "quelle": "goWild"
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia"
+      },
+      "status": "Spielwerte in dieser Datei noch nicht eingetragen"
+    },
+    "darwinsTierlexikon": {
+      "name": "Darwins Tierlexikon",
+      "typ": "buch",
+      "status": "Keine Inhalte übernommen, weil der Buchinhalt in diesem Chat nicht vorliegt"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Loxodonta africana",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Loxodonta_africana/"
+      }
+    },
+    "iucn": {
+      "name": "IUCN – African Savanna Elephant",
+      "seiten": {
+        "en": "https://iucn.org/news/species/202103/african-elephant-species-now-endangered-and-critically-endangered-iucn-red-list"
+      }
+    },
+    "sanDiegoZoo": {
+      "name": "San Diego Zoo – Elephant",
+      "seiten": {
+        "en": "https://animals.sandiegozoo.org/animals/elephant"
+      }
+    },
+    "wwf": {
+      "name": "WWF – African Elephant",
+      "seiten": {
+        "en": "https://www.worldwildlife.org/species/elephant/african-elephant/"
+      }
+    },
+    "africanWildlifeFoundation": {
+      "name": "African Wildlife Foundation – Elephant",
+      "seiten": {
+        "en": "https://www.awf.org/wildlife-conservation/elephant"
+      }
+    },
+    "Tierstimmenarchiv": {
+      "name": "Tierstimmenarchiv – Museum für Naturkunde Berlin",
+      "seiten": {
+        "de": "https://www.deutsche-digitale-bibliothek.de/item/ZOOFZ7FGRP6EYZFH7TSQM4ZIA362R3UI"
+      }
+    },
+    "elephantVoices": {
+      "name": "ElephantVoices – Elephant Ethogram",
+      "seiten": {
+        "en": "https://www.elephantvoices.org/the-elephant-ethogram-user-guide"
+      }
+    },
+    "elephantCommunicationResearch": {
+      "name": "Poole et al. – Low-frequency calls of African elephants",
+      "typ": "wissenschaftlichePublikation",
+      "seiten": {
+        "en": "https://www.jstor.org/stable/4600167"
+      }
+    },
+    "rohland2007": {
+      "name": "Rohland et al. 2007 – Proboscidean Mitogenomics",
+      "typ": "wissenschaftlichePublikation",
+      "seiten": {
+        "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1925134/"
+      }
+    },
+    "reich2010": {
+      "name": "Rohland et al. / Reich Lab 2010 – Deep speciation of forest and savanna elephants",
+      "typ": "wissenschaftlichePublikation",
+      "seiten": {
+        "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3006346/"
+      }
+    },
+    "wikimediaCommons": {
+      "name": "Wikimedia Commons – Loxodonta africana",
+      "seiten": {
+        "en": "https://commons.wikimedia.org/wiki/File:Elephant_(Loxodonta_Africana)_04.jpg"
+      }
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    },
+    "goWild": {
+      "name": "Go Wild",
+      "typ": "dokumentation",
+      "status": "Lokale Videodatei – nicht im öffentlichen Repository gespeichert"
+    }
+  }
+}

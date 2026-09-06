@@ -16,6 +16,11 @@ assets/daten/**/*.flac
 assets/daten/**/*.m4a
 assets/daten/**/*.aac
 
+assets/daten/**/*.mkv
+assets/daten/**/*.mp4
+assets/daten/**/*.webm
+assets/daten/**/*.m4v
+
 
 # ==========================================
 # ARCHIVE
@@ -28,16 +33,11 @@ assets/daten/**/*.aac
 *.tar.gz
 
 
-# ==========================================
-# NODE / UMGEBUNG
-# ==========================================
+# ============================================================
+# AUTOMATISCH ERZEUGTE SHARE-DATEIEN
+# ============================================================
 
-node_modules/
-
-.env
-.env.*
-!.env.example
-
+/share/
 
 # ==========================================
 # SYSTEM

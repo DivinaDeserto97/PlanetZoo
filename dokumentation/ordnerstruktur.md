@@ -1,0 +1,187 @@
+# Ordnerstruktur
+
+> Diese Datei wird automatisch durch `tools/ordnerstruktur.sh` erzeugt.
+
+> Bilder, Videos und Audiodateien werden hier aufgeführt,
+> auch wenn sie in der Share-ZIP nicht enthalten sind.
+
+- `PlanetZoo2/`
+  - [.gitignore](<../.gitignore>)
+  - [README.md](<../README.md>)
+  - `assets/`
+    - `components/`
+      - `button/`
+      - `footer/`
+        - [footer.css](<../assets/components/footer/footer.css>)
+        - [footer.html](<../assets/components/footer/footer.html>)
+        - [footer.js](<../assets/components/footer/footer.js>)
+      - `header/`
+        - `Handy/`
+          - [header.css](<../assets/components/header/Handy/header.css>)
+          - [header.html](<../assets/components/header/Handy/header.html>)
+          - [header.js](<../assets/components/header/Handy/header.js>)
+        - `PC/`
+          - [header.css](<../assets/components/header/PC/header.css>)
+          - [header.html](<../assets/components/header/PC/header.html>)
+          - [header.js](<../assets/components/header/PC/header.js>)
+        - `Tablet/`
+          - [header.css](<../assets/components/header/Tablet/header.css>)
+          - [header.html](<../assets/components/header/Tablet/header.html>)
+          - [header.js](<../assets/components/header/Tablet/header.js>)
+    - `css/`
+      - `home/`
+        - [home-style.css](<../assets/css/home/home-style.css>)
+        - [home-var.css](<../assets/css/home/home-var.css>)
+        - [home.css](<../assets/css/home/home.css>)
+      - `infotafel/`
+        - [infotafel.css](<../assets/css/infotafel/infotafel.css>)
+      - [main.css](<../assets/css/main.css>)
+      - `map/`
+        - [map-style.css](<../assets/css/map/map-style.css>)
+        - [map-var.css](<../assets/css/map/map-var.css>)
+        - [map.css](<../assets/css/map/map.css>)
+      - `rechner/`
+        - [rechner.css](<../assets/css/rechner/rechner.css>)
+      - [style.css](<../assets/css/style.css>)
+      - [var.css](<../assets/css/var.css>)
+    - `daten/`
+      - `Weltkarte/`
+        - [.gitkeep](<../assets/daten/Weltkarte/.gitkeep>)
+        - `Weltkartenreferenz_map.png` *(Medium – nicht in Share-ZIP)*
+      - `lebewesen/`
+        - [.gitkeep](<../assets/daten/lebewesen/.gitkeep>)
+        - `pflanzen/`
+        - `tiere/`
+          - `1leeres Tier/`
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/bilder/.gitkeep>)
+            - [leeres Tier.json](<../assets/daten/lebewesen/tiere/1leeres Tier/leeres Tier.json>)
+          - `Aquila chrysaetos/`
+            - `Aquila chrysaetos map.png` *(Medium – nicht in Share-ZIP)*
+            - [Aquila chrysaetos.json](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/Aquila chrysaetos.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/.gitkeep>)
+              - `Paarungsruf/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/.gitkeep>)
+                - `Tierstimmenarchiv/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/.gitkeep>)
+                  - `1/`
+                    - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/.gitkeep>)
+                    - `Aquila_chrysaetos_Lue0060_06.flac` *(Medium – nicht in Share-ZIP)*
+                    - `Aquila_chrysaetos_Lue0060_06.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `Aquila_chrysaetos_Lue0060_06.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Paarungsruf/Tierstimmenarchiv/1/animal_sound_archive.json>)
+              - `Ruf/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/.gitkeep>)
+                - `Tierstimmenarchiv/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/.gitkeep>)
+                  - `1/`
+                    - `Aquila_chrysaetos_Lue0060_07.flac` *(Medium – nicht in Share-ZIP)*
+                    - `Aquila_chrysaetos_Lue0060_07.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `Aquila_chrysaetos_Lue0060_07.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/audio/Ruf/Tierstimmenarchiv/1/animal_sound_archive.json>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/bilder/.gitkeep>)
+              - `Aquila chrysaetos 1.webp` *(Medium – nicht in Share-ZIP)*
+              - `Aquila chrysaetos 2.jpg` *(Medium – nicht in Share-ZIP)*
+          - `Equus quagga/`
+            - `Equus quagga map.png` *(Medium – nicht in Share-ZIP)*
+            - [Equus quagga.json](<../assets/daten/lebewesen/tiere/Equus quagga/Equus quagga.json>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Equus quagga/bilder/.gitkeep>)
+              - `Equus quagga 1.webp` *(Medium – nicht in Share-ZIP)*
+          - `Eunectes notaeus/`
+            - `Eunectes notaeus map.png` *(Medium – nicht in Share-ZIP)*
+            - [Eunectes notaeus.json](<../assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/.gitkeep>)
+              - `Eunectes notaeus 1.webp` *(Medium – nicht in Share-ZIP)*
+              - `Eunectes notaeus.webp` *(Medium – nicht in Share-ZIP)*
+          - `Loxodonta africana/`
+            - `Loxodonta africana map.png` *(Medium – nicht in Share-ZIP)*
+            - [Loxodonta africana.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/.gitkeep>)
+              - `Grollen/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/.gitkeep>)
+                - `Tierstimmenarchiv/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/.gitkeep>)
+                  - `1/`
+                    - `LOXAFR17.flac` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR17.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR17.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/animal_sound_archive.json>)
+                  - `2/`
+                    - `Loxodonta_africana_S0367_01.flac` *(Medium – nicht in Share-ZIP)*
+                    - `Loxodonta_africana_S0367_01.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `Loxodonta_africana_S0367_01.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/animal_sound_archive.json>)
+                  - `3/`
+                    - `LOXAFR14.flac` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR14.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR14.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/animal_sound_archive.json>)
+              - `Trompetenruf/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/.gitkeep>)
+                - `Tierstimmenarchiv/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/.gitkeep>)
+                  - `1/`
+                    - `LOXAFR15.flac` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR15.mp3` *(Medium – nicht in Share-ZIP)*
+                    - `LOXAFR15.wav` *(Medium – nicht in Share-ZIP)*
+                    - [animal_sound_archive.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/animal_sound_archive.json>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/bilder/.gitkeep>)
+              - `Loxodonta africana 1.webp` *(Medium – nicht in Share-ZIP)*
+              - `Loxodonta africana 2.jpg` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/.gitkeep>)
+              - `dokumentation/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/.gitkeep>)
+                - `Go Wild/`
+                  - `1.mkv` *(Medium – nicht in Share-ZIP)*
+                  - `1.mp4` *(Medium – nicht in Share-ZIP)*
+              - `verhaltensarchiv/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/.gitkeep>)
+                - `elephantVoices/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/.gitkeep>)
+                  - `1.mp4` *(Medium – nicht in Share-ZIP)*
+          - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
+    - `js/`
+      - `features/`
+        - [animalLabels.js](<../assets/js/features/animalLabels.js>)
+        - [device.js](<../assets/js/features/device.js>)
+        - [language.js](<../assets/js/features/language.js>)
+        - [navigation.js](<../assets/js/features/navigation.js>)
+        - [pageTitle.js](<../assets/js/features/pageTitle.js>)
+        - [theme.js](<../assets/js/features/theme.js>)
+        - [tierAuswahl.js](<../assets/js/features/tierAuswahl.js>)
+      - `home/`
+        - `features/`
+        - [home.js](<../assets/js/home/home.js>)
+      - `infotafel/`
+        - [infotafel.js](<../assets/js/infotafel/infotafel.js>)
+      - [main.js](<../assets/js/main.js>)
+      - `map/`
+        - `features/`
+          - [filter.js](<../assets/js/map/features/filter.js>)
+          - [mapRenderer.js](<../assets/js/map/features/mapRenderer.js>)
+          - [tierListe.js](<../assets/js/map/features/tierListe.js>)
+        - [map.js](<../assets/js/map/map.js>)
+      - [pages.js](<../assets/js/pages.js>)
+      - `rechner/`
+        - [rechner.js](<../assets/js/rechner/rechner.js>)
+  - `dokumentation/`
+    - [ordnerstruktur.md](<../dokumentation/ordnerstruktur.md>)
+  - [index.html](<../index.html>)
+  - `pages/`
+    - [home.html](<../pages/home.html>)
+    - [infotafel.html](<../pages/infotafel.html>)
+    - [map.html](<../pages/map.html>)
+    - [rechner.html](<../pages/rechner.html>)
+  - `tools/`
+    - [commit.sh](<../tools/commit.sh>)
+    - [ordnerstruktur.sh](<../tools/ordnerstruktur.sh>)
+    - [share-zip.sh](<../tools/share-zip.sh>)
