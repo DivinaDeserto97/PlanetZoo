@@ -148,6 +148,16 @@
                 - `elephantVoices/`
                   - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/.gitkeep>)
                   - `1.mp4` *(Medium – nicht in Share-ZIP)*
+          - `Orycteropus afer/`
+            - `Orycteropus afer map.png` *(Medium – nicht in Share-ZIP)*
+            - [Orycteropus afer.json](<../assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/bilder/.gitkeep>)
+              - `Orycteropus afer 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/.gitkeep>)
           - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
     - `js/`
       - `features/`

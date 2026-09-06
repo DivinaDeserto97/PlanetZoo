@@ -871,10 +871,10 @@
         "de": "Elephant Ethogram",
         "en": "Elephant Ethogram"
       },
-      "url": "https://www.elephantvoices.org/the-elephant-ethogram-user-guide",
-      "pfad": "",
-      "dateityp": "",
-      "dauerSekunden": null,
+      "url": "https://cdn.sanity.io/files/1367lwmq/production/36f0bae01b9b21f41df2b29234225dd8c62f98b3.mp4",
+      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4",
+      "dateityp": "mp4",
+      "dauerSekunden": 39,
       "beschreibung": {
         "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
         "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
@@ -891,12 +891,12 @@
 
       "original": {
         "dateityp": "mkv",
-        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/video/Go Wild/Go Wild - Elefant.mkv"
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mkv"
       },
 
       "wiedergabe": {
         "dateityp": "mp4",
-        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/video/Go Wild/Go Wild - Elefant.mp4"
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4"
       },
 
       "dauerSekunden": null,
