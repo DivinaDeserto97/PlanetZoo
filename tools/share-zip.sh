@@ -42,9 +42,19 @@ echo
 # DATEINAME
 # ============================================================
 
-ZEITSTEMPEL="$(date '+%Y%m%d-%H%M%S')"
+ZIP_PATH="$SHARE_DIR/${PROJECT_NAME}-share.zip"
 
-ZIP_PATH="$SHARE_DIR/${PROJECT_NAME}-share-${ZEITSTEMPEL}.zip"
+
+# ============================================================
+# ALTE SHARE-ZIP LÖSCHEN
+# ============================================================
+
+if [[ -f "$ZIP_PATH" ]]
+then
+
+    rm "$ZIP_PATH"
+
+fi
 
 
 # ============================================================
