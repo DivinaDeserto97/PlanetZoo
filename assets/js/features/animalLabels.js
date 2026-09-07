@@ -211,6 +211,155 @@ const LABELS = {
     },
   },
 
+  biome: {
+    estuarine: {
+      de: "Ästuar",
+      en: "Estuarine",
+      "en-US": "Estuarine",
+      es: "Estuario",
+      fr: "Estuarien",
+      it: "Estuarino",
+      "pt-BR": "Estuarino",
+      ja: "河口",
+      "zh-Hans": "河口",
+    },
+
+
+    desert: {
+      de: "Wüste",
+      en: "Desert",
+      "en-US": "Desert",
+      es: "Desierto",
+      fr: "Désert",
+      it: "Deserto",
+      "pt-BR": "Deserto",
+      ja: "砂漠",
+      "zh-Hans": "沙漠",
+    },
+
+    
+
+    grassland: {
+      de: "Grasland",
+      en: "Grassland",
+      "en-US": "Grassland",
+      es: "Pradera",
+      fr: "Prairie",
+      it: "Prateria",
+      "pt-BR": "Pradaria",
+      ja: "草原",
+      "zh-Hans": "草原",
+    },
+
+    lakesAndRivers: {
+      de: "Seen und Flüsse",
+      en: "Lakes and Rivers",
+      "en-US": "Lakes and Rivers",
+      es: "Lagos y ríos",
+      fr: "Lacs et rivières",
+      it: "Laghi e fiumi",
+      "pt-BR": "Lagos e rios",
+      ja: "湖と川",
+      "zh-Hans": "湖泊与河流",
+    },
+
+    mangrove: {
+      de: "Mangrove",
+      en: "Mangrove",
+      "en-US": "Mangrove",
+      es: "Manglar",
+      fr: "Mangrove",
+      it: "Mangrovia",
+      "pt-BR": "Manguezal",
+      ja: "マングローブ",
+      "zh-Hans": "红树林",
+    },
+
+    openSea: {
+      de: "Offenes Meer",
+      en: "Open Sea",
+      "en-US": "Open Sea",
+      es: "Mar abierto",
+      fr: "Mer ouverte",
+      it: "Mare aperto",
+      "pt-BR": "Mar aberto",
+      ja: "外洋",
+      "zh-Hans": "开放海域",
+    },
+
+    reef: {
+      de: "Riff",
+      en: "Reef",
+      "en-US": "Reef",
+      es: "Arrecife",
+      fr: "Récif",
+      it: "Barriera corallina",
+      "pt-BR": "Recife",
+      ja: "サンゴ礁",
+      "zh-Hans": "珊瑚礁",
+    },
+
+    taiga: {
+      de: "Taiga",
+      en: "Taiga",
+      "en-US": "Taiga",
+      es: "Taiga",
+      fr: "Taïga",
+      it: "Taiga",
+      "pt-BR": "Taiga",
+      ja: "タイガ",
+      "zh-Hans": "泰加林",
+    },
+
+    temperate: {
+      de: "Gemäßigt",
+      en: "Temperate",
+      "en-US": "Temperate",
+      es: "Templado",
+      fr: "Tempéré",
+      it: "Temperato",
+      "pt-BR": "Temperado",
+      ja: "温帯",
+      "zh-Hans": "温带",
+    },
+
+    tropical: {
+      de: "Tropisch",
+      en: "Tropical",
+      "en-US": "Tropical",
+      es: "Tropical",
+      fr: "Tropical",
+      it: "Tropicale",
+      "pt-BR": "Tropical",
+      ja: "熱帯",
+      "zh-Hans": "热带",
+    },
+
+    tundra: {
+      de: "Tundra",
+      en: "Tundra",
+      "en-US": "Tundra",
+      es: "Tundra",
+      fr: "Toundra",
+      it: "Tundra",
+      "pt-BR": "Tundra",
+      ja: "ツンドラ",
+      "zh-Hans": "苔原",
+    },
+
+    wetlands: {
+      de: "Feuchtgebiete",
+      en: "Wetlands",
+      "en-US": "Wetlands",
+      es: "Humedales",
+      fr: "Zones humides",
+      it: "Zone umide",
+      "pt-BR": "Zonas úmidas",
+      ja: "湿地",
+      "zh-Hans": "湿地",
+    },
+  },
+
   ui: {
     noImage: {
       de: "Kein lokales Bild vorhanden",
@@ -360,6 +509,10 @@ const LABELS = {
 
 function getLabel(group, key) {
   return getLocalizedValue(LABELS[group]?.[key]) ?? key;
+}
+
+export function getBiomeLabel(key) {
+  return getLabel("biome", key);
 }
 
 export function getEnclosureLabel(key) {

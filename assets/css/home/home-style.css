@@ -14,6 +14,10 @@
   margin-bottom: var(--abstand-5);
 }
 
+.home-filter__field--search {
+  grid-column: span 2;
+}
+
 .home-hero__eyebrow {
   margin: 0 0 var(--abstand-1);
   color: var(--farbe-akzent);
@@ -56,7 +60,7 @@
 
 .home-filter {
   display: grid;
-  grid-template-columns: minmax(240px, 2fr) repeat(4, minmax(150px, 1fr)) auto;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: end;
   gap: var(--abstand-3);
   padding: var(--abstand-4);
@@ -106,7 +110,10 @@
   border: 1px solid var(--farbe-linie);
   border-radius: var(--radius-gross);
   background: var(--farbe-bereich);
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .home-animal-card:hover {

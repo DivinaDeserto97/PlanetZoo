@@ -107,7 +107,7 @@ const VALUE_LABELS = {
     en: "Temperate grassland",
   },
   wetland: { de: "Feuchtgebiete", en: "Wetlands" },
-  mangrove: { de: "Mangroven", en: "Mangroves" },
+
   openOcean: { de: "Offenes Meer", en: "Open ocean" },
   reef: { de: "Riff", en: "Reef" },
   lakesAndRivers: { de: "Seen und Flüsse", en: "Lakes and rivers" },
