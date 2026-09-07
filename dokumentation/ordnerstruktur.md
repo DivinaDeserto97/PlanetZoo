@@ -139,6 +139,18 @@
                     - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/.gitkeep>)
                     - `1.mkv` *(Medium – nicht in Share-ZIP)*
                     - `1.mp4` *(Medium – nicht in Share-ZIP)*
+          - `Panthera leo/`
+            - [Panthera leo.json](<../assets/daten/lebewesen/tiere/Panthera leo/Panthera leo.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera leo/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera leo/bilder/.gitkeep>)
+              - `Panthera leo 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera leo/map/.gitkeep>)
+              - `Panthera leo map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera leo/videos/.gitkeep>)
           - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
     - `js/`
       - `features/`

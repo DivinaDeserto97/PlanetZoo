@@ -5,6 +5,7 @@
 const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json",
   "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json",
+  "assets/daten/lebewesen/tiere/Panthera leo/Panthera leo.json",
 ];
 
 

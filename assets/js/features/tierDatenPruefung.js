@@ -497,6 +497,166 @@ function hatArrayInhalt(wert) {
 }
 
 
+
+/* ======================================== */
+/* STRUKTUR-PRÜFUNG                         */
+/* ======================================== */
+
+function istObjekt(
+  wert,
+) {
+  return (
+    wert !== null &&
+    typeof wert === "object" &&
+    !Array.isArray(
+      wert,
+    )
+  );
+}
+
+
+function hatZahl(
+  wert,
+) {
+  return (
+    typeof wert === "number" &&
+    Number.isFinite(
+      wert,
+    )
+  );
+}
+
+
+function pruefePflichtText(
+  fehlt,
+  wert,
+  meldung,
+) {
+  if (
+    !hatText(
+      wert,
+    )
+  ) {
+    fehlt.push(
+      meldung,
+    );
+  }
+}
+
+
+function pruefeOptionalenText(
+  fehlt,
+  objekt,
+  key,
+  meldung,
+) {
+  if (
+    Object.prototype.hasOwnProperty.call(
+      objekt ?? {},
+      key,
+    ) &&
+    !hatText(
+      objekt?.[
+        key
+      ],
+    )
+  ) {
+    fehlt.push(
+      meldung,
+    );
+  }
+}
+
+
+function pruefeOptionalenLokalisiertenText(
+  fehlt,
+  objekt,
+  key,
+  meldung,
+) {
+  if (
+    Object.prototype.hasOwnProperty.call(
+      objekt ?? {},
+      key,
+    ) &&
+    !hatLokalisierterText(
+      objekt?.[
+        key
+      ],
+    )
+  ) {
+    fehlt.push(
+      meldung,
+    );
+  }
+}
+
+
+function pruefeNahrungsWert(
+  wert,
+  {
+    bedingungPflicht =
+      false,
+  } = {},
+) {
+  const fehlt =
+    [];
+
+
+  pruefePflichtText(
+    fehlt,
+    wert?.wert,
+    "Wert fehlt.",
+  );
+
+
+  pruefePflichtText(
+    fehlt,
+    wert?.quelle,
+    "Quelle fehlt.",
+  );
+
+
+  if (
+    bedingungPflicht
+  ) {
+    pruefePflichtText(
+      fehlt,
+      wert?.bedingung,
+      "Bedingung fehlt.",
+    );
+  }
+
+  else {
+    pruefeOptionalenText(
+      fehlt,
+      wert,
+      "bedingung",
+      "Bedingung ist angelegt, aber leer.",
+    );
+  }
+
+
+  pruefeOptionalenText(
+    fehlt,
+    wert,
+    "typ",
+    "Typ ist angelegt, aber leer.",
+  );
+
+
+  pruefeOptionalenLokalisiertenText(
+    fehlt,
+    wert,
+    "hinweis",
+    "Hinweis ist angelegt, aber leer.",
+  );
+
+
+  return fehlt;
+}
+
+
 function item(
   label,
   pfad,
@@ -1180,7 +1340,9 @@ function pruefeVideo(tier) {
 
 function pruefeSystematik(tier) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const systematik =
@@ -1189,33 +1351,357 @@ function pruefeSystematik(tier) {
     tier?.systematik;
 
 
-  const ok =
-    hatInhalt(
+  if (
+    !istObjekt(
       systematik,
+    )
+  ) {
+    checks.push(
+      item(
+        "Systematik",
+        "systematik",
+        false,
+        [
+          "Systematik-Struktur fehlt.",
+        ],
+      ),
     );
+
+
+    return checks;
+  }
+
+
+  /* ==================================== */
+  /* OPTIONALER GESAMT-HINWEIS            */
+  /* ==================================== */
+
+  if (
+    Object.prototype.hasOwnProperty.call(
+      systematik,
+      "hinweis",
+    )
+  ) {
+    checks.push(
+      item(
+        "Systematik – Hinweis",
+        "systematik.hinweis",
+        hatLokalisierterText(
+          systematik.hinweis,
+        ),
+        [
+          !hatLokalisierterText(
+            systematik.hinweis,
+          )
+            ? "Hinweis ist angelegt, aber leer."
+            : null,
+        ],
+      ),
+    );
+  }
+
+
+  /* ==================================== */
+  /* NAHE VERWANDTE                       */
+  /* ==================================== */
+
+  const naheVerwandte =
+    Array.isArray(
+      systematik.naheVerwandte,
+    )
+      ? systematik.naheVerwandte
+      : [];
+
+
+  if (
+    !naheVerwandte.length
+  ) {
+    checks.push(
+      item(
+        "Nahe Verwandte",
+        "systematik.naheVerwandte",
+        false,
+        [
+          "Mindestens ein Eintrag für nahe Verwandte fehlt.",
+        ],
+      ),
+    );
+  }
+
+
+  naheVerwandte.forEach(
+    (
+      verwandter,
+      index,
+    ) => {
+      const fehlt =
+        [];
+
+
+      pruefePflichtText(
+        fehlt,
+        verwandter?.id,
+        "Wissenschaftliche ID / Art fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        verwandter?.beziehung,
+        "Beziehung fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        verwandter?.deutscherName,
+        "Deutscher Name fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        verwandter?.quelle,
+        "Quelle fehlt.",
+      );
+
+
+      checks.push(
+        item(
+          `Nahe Verwandte – Eintrag ${index + 1}`,
+          `systematik.naheVerwandte[${index}]`,
+          fehlt.length ===
+            0,
+          fehlt,
+        ),
+      );
+    },
+  );
+
+
+  /* ==================================== */
+  /* EVOLUTION                            */
+  /* ==================================== */
+
+  const evolution =
+    systematik.evolution;
+
+
+  if (
+    !istObjekt(
+      evolution,
+    )
+  ) {
+    checks.push(
+      item(
+        "Evolution",
+        "systematik.evolution",
+        false,
+        [
+          "Evolution-Struktur fehlt.",
+        ],
+      ),
+    );
+
+
+    return checks;
+  }
 
 
   checks.push(
     item(
-      "Systematikdaten",
-      "systematik",
-      ok,
+      "Evolution – Hinweis",
+      "systematik.evolution.hinweis",
+      hatLokalisierterText(
+        evolution.hinweis,
+      ),
       [
-        !ok
-          ? "Systematikdaten fehlen."
+        !hatLokalisierterText(
+          evolution.hinweis,
+        )
+          ? "Evolution-Hinweis fehlt."
           : null,
       ],
     ),
   );
 
 
+  /* ==================================== */
+  /* EVOLUTIONS-KNOTEN                    */
+  /* ==================================== */
+
+  const knoten =
+    Array.isArray(
+      evolution.knoten,
+    )
+      ? evolution.knoten
+      : [];
+
+
+  if (
+    !knoten.length
+  ) {
+    checks.push(
+      item(
+        "Evolution – Knoten",
+        "systematik.evolution.knoten",
+        false,
+        [
+          "Mindestens ein Evolutions-Knoten fehlt.",
+        ],
+      ),
+    );
+  }
+
+
+  knoten.forEach(
+    (
+      knotenEintrag,
+      index,
+    ) => {
+      const fehlt =
+        [];
+
+
+      pruefePflichtText(
+        fehlt,
+        knotenEintrag?.id,
+        "ID fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        knotenEintrag?.rang,
+        "Rang fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        knotenEintrag?.name,
+        "Name fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        knotenEintrag?.quelle,
+        "Quelle fehlt.",
+      );
+
+
+      checks.push(
+        item(
+          `Evolution – Knoten ${index + 1}`,
+          `systematik.evolution.knoten[${index}]`,
+          fehlt.length ===
+            0,
+          fehlt,
+        ),
+      );
+    },
+  );
+
+
+  /* ==================================== */
+  /* AUFSPALTUNGEN                        */
+  /* ==================================== */
+
+  const aufspaltungen =
+    Array.isArray(
+      evolution.aufspaltungen,
+    )
+      ? evolution.aufspaltungen
+      : [];
+
+
+  if (
+    !aufspaltungen.length
+  ) {
+    checks.push(
+      item(
+        "Evolution – Aufspaltungen",
+        "systematik.evolution.aufspaltungen",
+        false,
+        [
+          "Mindestens eine Aufspaltung fehlt.",
+        ],
+      ),
+    );
+  }
+
+
+  aufspaltungen.forEach(
+    (
+      aufspaltung,
+      index,
+    ) => {
+      const fehlt =
+        [];
+
+
+      pruefePflichtText(
+        fehlt,
+        aufspaltung?.linieA,
+        "Linie A fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        aufspaltung?.linieB,
+        "Linie B fehlt.",
+      );
+
+
+      if (
+        !hatZahl(
+          aufspaltung
+            ?.zeitVorHeuteMioJahre,
+        )
+      ) {
+        fehlt.push(
+          "Zeit vor heute in Mio. Jahren fehlt oder ist keine Zahl.",
+        );
+      }
+
+
+      pruefePflichtText(
+        fehlt,
+        aufspaltung?.typ,
+        "Typ der Aufspaltung fehlt.",
+      );
+
+
+      pruefePflichtText(
+        fehlt,
+        aufspaltung?.quelle,
+        "Quelle fehlt.",
+      );
+
+
+      checks.push(
+        item(
+          `Evolution – Aufspaltung ${index + 1}`,
+          `systematik.evolution.aufspaltungen[${index}]`,
+          fehlt.length ===
+            0,
+          fehlt,
+        ),
+      );
+    },
+  );
+
+
   return checks;
 }
 
-
 function pruefeNahrungsnetz(tier) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const nahrungsnetz =
@@ -1226,29 +1712,454 @@ function pruefeNahrungsnetz(tier) {
     tier?.nahrungsnetz;
 
 
-  const ok =
-    hatInhalt(
+  if (
+    !istObjekt(
       nahrungsnetz,
+    )
+  ) {
+    checks.push(
+      item(
+        "Nahrungsnetz",
+        "daten.ernaehrung.nahrungsnetz",
+        false,
+        [
+          "Nahrungsnetz-Struktur fehlt.",
+        ],
+      ),
     );
 
 
-  checks.push(
-    item(
-      "Nahrungsnetzdaten",
-      "daten.ernaehrung.nahrungsnetz",
-      ok,
-      [
-        !ok
-          ? "Nahrungsnetzdaten fehlen."
-          : null,
-      ],
-    ),
+    return checks;
+  }
+
+
+  /* ==================================== */
+  /* FRISST                               */
+  /* ==================================== */
+
+  const frisst =
+    nahrungsnetz.frisst;
+
+
+  if (
+    !istObjekt(
+      frisst,
+    )
+  ) {
+    checks.push(
+      item(
+        "Frisst",
+        "daten.ernaehrung.nahrungsnetz.frisst",
+        false,
+        [
+          "Bereich „frisst“ fehlt.",
+        ],
+      ),
+    );
+  }
+
+  else {
+    pruefeFutterAltersklasse(
+      checks,
+      frisst.jungtier,
+      {
+        label:
+          "Frisst – Jungtier",
+
+        pfad:
+          "daten.ernaehrung.nahrungsnetz.frisst.jungtier",
+
+        bedingungPflicht:
+          true,
+
+        hinweisAlsAlternative:
+          false,
+      },
+    );
+
+
+    pruefeFutterAltersklasse(
+      checks,
+      frisst.erwachsen,
+      {
+        label:
+          "Frisst – Erwachsen",
+
+        pfad:
+          "daten.ernaehrung.nahrungsnetz.frisst.erwachsen",
+
+        bedingungPflicht:
+          false,
+
+        hinweisAlsAlternative:
+          false,
+      },
+    );
+  }
+
+
+  /* ==================================== */
+  /* WIRD GEFRESSEN VON                   */
+  /* ==================================== */
+
+  const gefressen =
+    nahrungsnetz
+      .wirdGefressenVon;
+
+
+  if (
+    !istObjekt(
+      gefressen,
+    )
+  ) {
+    checks.push(
+      item(
+        "Wird gefressen von",
+        "daten.ernaehrung.nahrungsnetz.wirdGefressenVon",
+        false,
+        [
+          "Bereich „wirdGefressenVon“ fehlt.",
+        ],
+      ),
+    );
+
+
+    return checks;
+  }
+
+
+  pruefeFressfeindAltersklasse(
+    checks,
+    gefressen.jungtier,
+    {
+      label:
+        "Wird gefressen von – Jungtier",
+
+      pfad:
+        "daten.ernaehrung.nahrungsnetz.wirdGefressenVon.jungtier",
+
+      erlaubtHinweisOhneWerte:
+        true,
+
+      erlaubtKeineFressfeinde:
+        false,
+    },
+  );
+
+
+  pruefeFressfeindAltersklasse(
+    checks,
+    gefressen.erwachsen,
+    {
+      label:
+        "Wird gefressen von – Erwachsen",
+
+      pfad:
+        "daten.ernaehrung.nahrungsnetz.wirdGefressenVon.erwachsen",
+
+      erlaubtHinweisOhneWerte:
+        false,
+
+      erlaubtKeineFressfeinde:
+        true,
+    },
   );
 
 
   return checks;
 }
 
+
+/* ======================================== */
+/* NAHRUNGSNETZ – FUTTER                    */
+/* ======================================== */
+
+function pruefeFutterAltersklasse(
+  checks,
+  bereich,
+  {
+    label,
+    pfad,
+    bedingungPflicht,
+    hinweisAlsAlternative,
+  },
+) {
+  if (
+    !istObjekt(
+      bereich,
+    )
+  ) {
+    checks.push(
+      item(
+        label,
+        pfad,
+        false,
+        [
+          "Altersklasse fehlt.",
+        ],
+      ),
+    );
+
+    return;
+  }
+
+
+  const werte =
+    Array.isArray(
+      bereich.werte,
+    )
+      ? bereich.werte
+      : [];
+
+
+  if (
+    !werte.length
+  ) {
+    const hinweisOk =
+      hinweisAlsAlternative &&
+      hatLokalisierterText(
+        bereich.hinweis,
+      );
+
+
+    checks.push(
+      item(
+        label,
+        `${pfad}.werte`,
+        hinweisOk,
+        [
+          !hinweisOk
+            ? "Mindestens ein Nahrungswert fehlt."
+            : null,
+        ],
+      ),
+    );
+
+
+    return;
+  }
+
+
+  werte.forEach(
+    (
+      wert,
+      index,
+    ) => {
+      const fehlt =
+        pruefeNahrungsWert(
+          wert,
+          {
+            bedingungPflicht,
+          },
+        );
+
+
+      checks.push(
+        item(
+          `${label} – Eintrag ${index + 1}`,
+          `${pfad}.werte[${index}]`,
+          fehlt.length ===
+            0,
+          fehlt,
+        ),
+      );
+    },
+  );
+}
+
+
+/* ======================================== */
+/* NAHRUNGSNETZ – FRESSFEINDE               */
+/* ======================================== */
+
+function pruefeFressfeindAltersklasse(
+  checks,
+  bereich,
+  {
+    label,
+    pfad,
+    erlaubtHinweisOhneWerte,
+    erlaubtKeineFressfeinde,
+  },
+) {
+  if (
+    !istObjekt(
+      bereich,
+    )
+  ) {
+    checks.push(
+      item(
+        label,
+        pfad,
+        false,
+        [
+          "Altersklasse fehlt.",
+        ],
+      ),
+    );
+
+    return;
+  }
+
+
+  const werte =
+    Array.isArray(
+      bereich.werte,
+    )
+      ? bereich.werte
+      : [];
+
+
+  if (
+    werte.length
+  ) {
+    werte.forEach(
+      (
+        wert,
+        index,
+      ) => {
+        const fehlt =
+          pruefeNahrungsWert(
+            wert,
+          );
+
+
+        checks.push(
+          item(
+            `${label} – Eintrag ${index + 1}`,
+            `${pfad}.werte[${index}]`,
+            fehlt.length ===
+              0,
+            fehlt,
+          ),
+        );
+      },
+    );
+
+
+    /*
+        Wenn zusätzlich ein Hinweis
+        angelegt wurde, muss er auch
+        ausgefüllt sein.
+    */
+
+    if (
+      Object.prototype.hasOwnProperty.call(
+        bereich,
+        "hinweis",
+      )
+    ) {
+      checks.push(
+        item(
+          `${label} – Hinweis`,
+          `${pfad}.hinweis`,
+          hatLokalisierterText(
+            bereich.hinweis,
+          ),
+          [
+            !hatLokalisierterText(
+              bereich.hinweis,
+            )
+              ? "Hinweis ist angelegt, aber leer."
+              : null,
+          ],
+        ),
+      );
+    }
+
+
+    return;
+  }
+
+
+  /* ==================================== */
+  /* KEINE REGELMÄSSIGEN FRESSFEINDE      */
+  /* ==================================== */
+
+  if (
+    erlaubtKeineFressfeinde &&
+    bereich
+      .keineRegelmaessigenNatuerlichenFressfeinde ===
+      true
+  ) {
+    const fehlt =
+      [];
+
+
+    if (
+      !hatLokalisierterText(
+        bereich.hinweis,
+      )
+    ) {
+      fehlt.push(
+        "Hinweis zu den fehlenden regelmäßigen Fressfeinden fehlt.",
+      );
+    }
+
+
+    if (
+      !hatText(
+        bereich.quelle,
+      )
+    ) {
+      fehlt.push(
+        "Quelle fehlt.",
+      );
+    }
+
+
+    checks.push(
+      item(
+        `${label} – keine regelmäßigen Fressfeinde`,
+        pfad,
+        fehlt.length ===
+          0,
+        fehlt,
+      ),
+    );
+
+
+    return;
+  }
+
+
+  /* ==================================== */
+  /* KEINE GETRENNTE LISTE / HINWEIS      */
+  /* ==================================== */
+
+  if (
+    erlaubtHinweisOhneWerte &&
+    hatLokalisierterText(
+      bereich.hinweis,
+    )
+  ) {
+    checks.push(
+      item(
+        `${label} – Hinweis`,
+        `${pfad}.hinweis`,
+        true,
+        [],
+      ),
+    );
+
+
+    return;
+  }
+
+
+  checks.push(
+    item(
+      label,
+      `${pfad}.werte`,
+      false,
+      [
+        erlaubtKeineFressfeinde
+          ? "Fressfeinde fehlen. Alternativ muss „keineRegelmaessigenNatuerlichenFressfeinde“ auf true stehen und Hinweis + Quelle ausgefüllt sein."
+          : "Fressfeinde oder ein erklärender Hinweis fehlen.",
+      ],
+    ),
+  );
+}
 
 function pruefeRechner(tier) {
   const checks =

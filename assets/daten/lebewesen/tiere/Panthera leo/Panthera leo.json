@@ -1,0 +1,718 @@
+{
+  "id": "Panthera leo",
+  "identitaet": {
+    "namen": {
+      "de": "Löwe",
+      "en": "Lion",
+      "en-US": "Lion",
+      "es": "León",
+      "fr": "Lion",
+      "it": "Leone",
+      "pt-BR": "Leão",
+      "ja": "ライオン",
+      "zh-Hans": "狮子"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland",
+      "Wüste"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Felidae",
+          "gattung": "Panthera",
+          "art": "Panthera leo",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 1.4,
+          "max": 1.7,
+          "einheit": "m",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "typ": "maennlich",
+          "min": 1.7,
+          "max": 2.5,
+          "einheit": "m",
+          "quelle": "sanDiegoZoo"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.0,
+          "max": 1.2,
+          "einheit": "m",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 122,
+          "max": 180,
+          "einheit": "kg",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "typ": "maennlich",
+          "min": 150,
+          "max": 260,
+          "einheit": "kg",
+          "quelle": "sanDiegoZoo"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "min": 10,
+          "max": 18,
+          "einheit": "jahr",
+          "quelle": "africanWildlifeFoundation"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 60,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Diese Höchstgeschwindigkeit kann nur über kurze Distanzen gehalten werden.",
+            "en": "This maximum speed can only be maintained over short distances."
+          },
+          "quelle": "wwfSchweiz"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "quelle": "iucn"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 23000,
+          "max": 39000,
+          "einheit": "adultesIndividuum",
+          "populationstrend": "decreasing",
+          "jahrDerGrundlage": 2025,
+          "hinweis": {
+            "de": "Die IUCN nennt für die globale Bewertung eine breite Schätzung von etwa 23.000 bis 39.000 geschlechtsreifen Individuen. Die Bestände sind stark fragmentiert und regional sehr unterschiedlich.",
+            "en": "The IUCN gives a broad global estimate of about 23,000 to 39,000 mature individuals. Populations are highly fragmented and vary strongly by region."
+          },
+          "quelle": "iucn"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 4,
+          "einheit": "jahr",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 5,
+          "einheit": "jahr",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 3.5,
+          "einheit": "monat",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": 109,
+          "einheit": "tag",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 6,
+          "durchschnitt": 3,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "rudel",
+          "wert": "pride",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 40,
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennchen",
+          "wert": "maleCoalition",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 5,
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "wert": "openWoodland",
+          "quelle": "africanWildlifeFoundation"
+        },
+        {
+          "wert": "dryThornForest",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Löwen jagen häufig nachts und in den frühen Morgenstunden.",
+            "en": "Lions frequently hunt at night and into the early morning."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Auch in der Dämmerung sind Löwen regelmäßig aktiv.",
+            "en": "Lions are also regularly active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "quelle": "smithsonianLion"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "muttermilch",
+                "bedingung": "bisEtwa6Monate",
+                "quelle": "smithsonianLion"
+              },
+              {
+                "wert": "tierischeNahrung",
+                "bedingung": "abEtwa3Monaten",
+                "quelle": "smithsonianLion"
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "Equus quagga",
+                "typ": "tier",
+                "quelle": "smithsonianLion"
+              },
+              {
+                "wert": "Connochaetes taurinus",
+                "typ": "tier",
+                "quelle": "smithsonianLion"
+              },
+              {
+                "wert": "aas",
+                "typ": "aas",
+                "hinweis": {
+                  "de": "Löwen nutzen auch Aas und übernehmen Beute anderer Raubtiere.",
+                  "en": "Lions also scavenge and take kills from other predators."
+                },
+                "quelle": "smithsonianLion"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "Crocuta crocuta",
+                "typ": "tier",
+                "bedingung": "jungtier",
+                "hinweis": {
+                  "de": "Junge Löwen sind verwundbar; Hyänen werden als häufige Angreifer von Jungtieren genannt.",
+                  "en": "Young lions are vulnerable; hyenas are noted as frequent attackers of cubs."
+                },
+                "quelle": "animalDiversityWeb"
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": true,
+            "hinweis": {
+              "de": "Ausgewachsene Löwen haben keine regelmäßigen natürlichen Fressfeinde. Menschen sind jedoch ein bedeutender Mortalitäts- und Gefährdungsfaktor.",
+              "en": "Adult lions have no regular natural predators. Humans are, however, a major source of mortality and threat."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Der Löwe gehört zur Gattung Panthera. Genomische und molekulare Studien zeigen eine enge, komplexe Verwandtschaft von Löwe, Leopard und Jaguar; historische Introgression erschwert einfache Stammbäume.",
+      "en": "The lion belongs to the genus Panthera. Genomic and molecular studies show a close and complex relationship among lions, leopards and jaguars; historical introgression complicates simple phylogenetic trees."
+    },
+    "naheVerwandte": [
+      {
+        "id": "Panthera pardus",
+        "beziehung": "engePantheraVerwandtschaft",
+        "deutscherName": "Leopard",
+        "quelle": "pantheraPhylogeny2010"
+      },
+      {
+        "id": "Panthera onca",
+        "beziehung": "pantheraVerwandtschaft",
+        "deutscherName": "Jaguar",
+        "quelle": "pantheraPhylogeny2010"
+      },
+      {
+        "id": "Panthera tigris",
+        "beziehung": "pantheraVerwandtschaft",
+        "deutscherName": "Tiger",
+        "quelle": "pantheraPhylogeny2010"
+      }
+    ],
+    "evolution": {
+      "hinweis": {
+        "de": "Die Aufspaltungszeiten innerhalb von Panthera hängen von Datensatz und Modell ab. Der hier eingetragene Wert für Löwe und Leopard stammt aus einer Mitogenom-Analyse und ist deshalb als ungefähre Divergenz zu verstehen.",
+        "en": "Divergence estimates within Panthera depend on the dataset and model. The value entered here for lion and leopard comes from a mitogenome analysis and should be treated as an approximate divergence."
+      },
+      "knoten": [
+        {
+          "id": "felidae",
+          "rang": "familie",
+          "name": "Felidae",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "id": "pantherinae",
+          "rang": "unterfamilie",
+          "name": "Pantherinae",
+          "quelle": "pantheraPhylogeny2010"
+        },
+        {
+          "id": "panthera",
+          "rang": "gattung",
+          "name": "Panthera",
+          "quelle": "pantheraPhylogeny2010"
+        },
+        {
+          "id": "panthera-leo",
+          "rang": "art",
+          "name": "Panthera leo",
+          "quelle": "smithsonianLion"
+        }
+      ],
+      "aufspaltungen": [
+        {
+          "linieA": "Panthera leo",
+          "linieB": "Panthera pardus",
+          "zeitVorHeuteMioJahre": 2.96,
+          "typ": "ungefaehreDivergenz",
+          "quelle": "pantheraMitogenome2013"
+        }
+      ]
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Löwen leben heute vor allem in Afrika südlich der Sahara. Eine kleine asiatische Population lebt im Gir-Wald und seiner Umgebung im indischen Bundesstaat Gujarat. Sie besiedeln unter anderem Savannen, Grasländer, offene Waldlandschaften, Buschland und trockene Dornwälder.",
+          "quelle": "smithsonianLion",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Lions now live mainly in sub-Saharan Africa. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
+          "quelle": "smithsonianLion"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Lions now live mainly in sub-Saharan Africa. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Löwe (Panthera leo) ist eine große Katze der Gattung Panthera und die sozialste der heute lebenden Großkatzen. Typisch sind der kräftige Körper, die goldgelbe Fellfarbe und bei vielen erwachsenen Männchen eine ausgeprägte Mähne. Löwen leben häufig in Rudeln, jagen kooperativ und ernähren sich überwiegend von größeren Säugetieren.",
+          "quelle": "smithsonianLion",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The lion (Panthera leo) is a large cat of the genus Panthera and the most social of the living big cats. It has a powerful body, a yellow-gold coat and, in many adult males, a prominent mane. Lions often live in prides, hunt cooperatively and feed mainly on larger mammals.",
+          "quelle": "smithsonianLion"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The lion (Panthera leo) is a large cat of the genus Panthera and the most social of the living big cats. It has a powerful body, a yellow-gold coat and, in many adult males, a prominent mane. Lions often live in prides, hunt cooperatively and feed mainly on larger mammals.",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Löwe wird global von der IUCN als gefährdet (Vulnerable) eingestuft. Zu den wichtigsten Bedrohungen gehören Lebensraumverlust und -umwandlung, Rückgang natürlicher Beutetiere, Konflikte mit Menschen sowie direkte Tötung und illegaler Handel. Viele Bestände sind voneinander isoliert.",
+          "quelle": "iucn",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The lion is globally listed as Vulnerable by the IUCN. Major threats include habitat loss and conversion, depletion of natural prey, conflict with people, direct killing and illegal trade. Many populations are isolated from one another.",
+          "quelle": "iucn"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The lion is globally listed as Vulnerable by the IUCN. Major threats include habitat loss and conversion, depletion of natural prey, conflict with people, direct killing and illegal trade. Many populations are isolated from one another.",
+          "quelle": "iucn"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Löwen leben in sozialen Verbänden, den Rudeln. Weibchen eines Rudels sind häufig miteinander verwandt und bleiben oft langfristig zusammen, während junge Männchen das Geburtsrudel verlassen und Koalitionen bilden können. Nach rund dreieinhalb Monaten Tragzeit werden meist mehrere Junge geboren. Jungtiere werden mehrere Monate gesäugt und beginnen bereits früher zusätzlich Fleisch zu fressen.",
+          "quelle": "animalDiversityWeb",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Lions live in social groups called prides. Females in a pride are often related and may remain together for life, while young males leave their natal pride and can form coalitions. After about three and a half months of gestation, females usually give birth to several cubs. Cubs nurse for several months and begin eating meat earlier.",
+          "quelle": "animalDiversityWeb"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Lions live in social groups called prides. Females in a pride are often related and may remain together for life, while young males leave their natal pride and can form coalitions. After about three and a half months of gestation, females usually give birth to several cubs. Cubs nurse for several months and begin eating meat earlier.",
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Löwen sind die sozialsten heute lebenden Katzen und bilden Rudel aus verwandten Weibchen, Jungtieren und zeitweise einem oder mehreren Männchen.",
+          "quelle": "smithsonianLion",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eine Löwin kann auf kurzen Strecken etwa 53 bis 60 km/h erreichen.",
+          "quelle": "sanDiegoZoo",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Löwen nutzen nicht nur selbst erlegte Beute, sondern fressen auch Aas und übernehmen gelegentlich Beute anderer Raubtiere.",
+          "quelle": "smithsonianLion",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Lions are the most social living cats and form prides of related females, cubs and, at times, one or more resident males.",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "inhalt": "A lioness can reach roughly 53 to 60 km/h over short distances.",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "inhalt": "Lions do not only eat prey they kill themselves; they also scavenge and sometimes take kills from other predators.",
+          "quelle": "smithsonianLion"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Lions are the most social living cats and form prides of related females, cubs and, at times, one or more resident males.",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "inhalt": "A lioness can reach roughly 53 to 60 km/h over short distances.",
+          "quelle": "sanDiegoZoo"
+        },
+        {
+          "inhalt": "Lions do not only eat prey they kill themselves; they also scavenge and sometimes take kills from other predators.",
+          "quelle": "smithsonianLion"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Der Datensatz enthält reale biologische Informationen für die Infotafel, Systematik und das Nahrungsnetz. Planet-Zoo-2-Rechnerwerte sowie lokale Audio- und Videomedien sind noch nicht ergänzt. Das offizielle Planet-Zoo-2-Hauptbild und die Verbreitungskarte sind als lokale Zielpfade vorbereitet und müssen nur noch heruntergeladen und unter den vorgesehenen Dateinamen gespeichert werden.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "This record contains real-world biological information for the info board, taxonomy and food-web tools. Planet Zoo 2 calculator values and local audio/video media have not yet been added. The official Planet Zoo 2 main image and distribution map are prepared with local target paths and only need to be downloaded and saved under the specified filenames.",
+          "quelle": "projekt"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "This record contains real-world biological information for the info board, taxonomy and food-web tools. Planet Zoo 2 calculator values and local audio/video media have not yet been added. The official Planet Zoo 2 main image and distribution map are prepared with local target paths and only need to be downloaded and saved under the specified filenames.",
+          "quelle": "projekt"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://www.planetzoogame.com/2/zoopedia",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Panthera leo/map/Panthera leo map.png"
+      },
+      {
+        "typ": "wiedergabe",
+        "dateityp": "svg",
+        "pfad": "assets/daten/lebewesen/tiere/Panthera leo/map/Panthera leo map.svg"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://www.planetzoogame.com/2/zoopedia",
+          "alt": {
+            "de": "Löwe – Planet Zoo 2",
+            "en": "Lion – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Löwen aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the lion."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Panthera leo/bilder/Panthera leo 1.webp"
+            }
+          ],
+          "status": "lokalNochNichtVorhanden"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "",
+          "metadaten": [
+            {
+              "typ": "quelle",
+              "format": "",
+              "pfad": ""
+            }
+          ],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "video": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "",
+          "titel": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": "",
+          "url": "",
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ],
+          "dauerSekunden": null,
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Für Panthera leo wurden noch keine verifizierten Planet-Zoo-2-Rechnerwerte eingetragen.",
+      "en": "No verified Planet Zoo 2 calculator values have yet been entered for Panthera leo."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia / offizielle Ankündigungen",
+      "typ": "spielreferenz",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia",
+        "steam": "https://steamcommunity.com/ogg/3219030/announcements/detail/680754149992699262"
+      },
+      "status": "Planet Zoo 2 führt den Löwen als bestätigtes Tier; Hauptbild und Karte müssen lokal gespeichert werden."
+    },
+    "smithsonianLion": {
+      "name": "Smithsonian's National Zoo – Lion",
+      "seiten": {
+        "en": "https://nationalzoo.si.edu/animals/lion"
+      }
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Panthera leo",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Panthera_leo/"
+      }
+    },
+    "iucn": {
+      "name": "IUCN Red List – Panthera leo",
+      "seiten": {
+        "en": "https://www.iucnredlist.org/species/15951/"
+      },
+      "status": "Vulnerable; population trend decreasing"
+    },
+    "catSpecialistGroup": {
+      "name": "IUCN SSC Cat Specialist Group – Lion",
+      "seiten": {
+        "en": "https://www.catsg.org/living-species-lions"
+      }
+    },
+    "sanDiegoZoo": {
+      "name": "San Diego Zoo Wildlife Alliance – Lion",
+      "seiten": {
+        "en": "https://animals.sandiegozoo.org/animals/lion"
+      }
+    },
+    "africanWildlifeFoundation": {
+      "name": "African Wildlife Foundation – Lion",
+      "seiten": {
+        "en": "https://www.awf.org/wildlife-conservation/lion"
+      }
+    },
+    "wwfSchweiz": {
+      "name": "WWF Schweiz – Löwe",
+      "seiten": {
+        "de": "https://www.wwf.ch/de/tierarten/loewe-der-gejagte-koenig-der-tiere"
+      }
+    },
+    "pantheraPhylogeny2010": {
+      "name": "Davis, Li & Murphy 2010 – Phylogenetic relationships within Panthera",
+      "typ": "wissenschaftlichePublikation",
+      "seiten": {
+        "en": "https://pubmed.ncbi.nlm.nih.gov/20138224/"
+      }
+    },
+    "pantheraMitogenome2013": {
+      "name": "Complete mitogenome of Asiatic lion resolves phylogenetic status within Panthera",
+      "typ": "wissenschaftlichePublikation",
+      "seiten": {
+        "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3765570/"
+      }
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

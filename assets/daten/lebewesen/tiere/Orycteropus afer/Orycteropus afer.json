@@ -802,6 +802,10 @@
             "de": "Erdferkel",
             "en": "Aardvark"
           },
+          "beschreibung": {
+            "de": "Ein Erdferkel tritt aus dem Eingang eines selbst gegrabenen Baus in einer trockenen, felsigen Landschaft. Deutlich erkennbar sind die lange Schnauze, die großen aufgerichteten Ohren und der kräftige Körper.",
+            "en": "An aardvark emerges from the entrance of a self-dug burrow in a dry, rocky landscape. Its long snout, large upright ears and sturdy body are clearly visible."
+          },
 
           "metadaten": [],
 
@@ -884,8 +888,8 @@
           "dauerSekunden": null,
 
           "beschreibung": {
-            "de": "",
-            "en": ""
+            "de": "In dieser Folge von Go Wild! – Mission Wildnis stehen Erdferkel und ihre außergewöhnlichen Grabfähigkeiten im Mittelpunkt. Die Episode zeigt, wie sie mit ihren kräftigen Krallen Baue anlegen und warum diese unterirdischen Verstecke für das Leben in der Savanne so wichtig sind.",
+            "en": "In this episode of Go Wild! – Mission Wildnis, aardvarks and their remarkable digging abilities take center stage. The episode shows how they use their powerful claws to create burrows and why these underground shelters are so important for life in the savanna."
           }
         }
       ]
