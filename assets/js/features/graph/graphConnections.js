@@ -11,6 +11,7 @@ export function renderGraphConnections({
   stage,
   edges,
   nodeElements,
+  routes,
 }) {
   if (
     !svg ||
@@ -80,12 +81,16 @@ export function renderGraphConnections({
       }
 
 
-      const points =
-        getConnectionPoints(
+      const geometry =
+        getEdgeGeometry(
           from,
           to,
           stageRect,
-      );
+          routes?.[
+            edge.id
+          ] ??
+          null,
+        );
 
 
       const path =
@@ -103,7 +108,7 @@ export function renderGraphConnections({
 
       path.setAttribute(
         "d",
-        `M ${points.start.x} ${points.start.y} L ${points.end.x} ${points.end.y}`,
+        geometry.path,
       );
 
       path.setAttribute(
@@ -135,22 +140,14 @@ export function renderGraphConnections({
         label.setAttribute(
           "x",
           String(
-            (
-              points.start.x +
-              points.end.x
-            ) /
-            2,
+            geometry.label.x,
           ),
         );
 
         label.setAttribute(
           "y",
           String(
-            (
-              points.start.y +
-              points.end.y
-            ) /
-              2 -
+            geometry.label.y -
               7,
           ),
         );
@@ -166,6 +163,351 @@ export function renderGraphConnections({
       }
     },
   );
+}
+
+
+/* ======================================== */
+/* STANDARD-ROUTE                           */
+/* ======================================== */
+
+export function createDefaultRoute({
+  from,
+  to,
+  stage,
+  snap = 20,
+}) {
+  const stageRect =
+    stage.getBoundingClientRect();
+
+
+  const a =
+    getLocalRect(
+      from,
+      stageRect,
+    );
+
+  const b =
+    getLocalRect(
+      to,
+      stageRect,
+    );
+
+
+  const centerA =
+    getCenter(
+      a,
+    );
+
+  const centerB =
+    getCenter(
+      b,
+    );
+
+
+  const dx =
+    centerB.x -
+    centerA.x;
+
+  const dy =
+    centerB.y -
+    centerA.y;
+
+
+  /*
+      Drei editierbare Snap-Punkte.
+
+      Bei eher waagerechter Verbindung:
+      Punkt 1 / 2 / 3 liegen zwischen
+      Start und Ziel und erzeugen einen
+      rechtwinkligen Kabelweg.
+
+      Bei eher senkrechter Verbindung
+      wird das System gedreht.
+  */
+
+  if (
+    Math.abs(
+      dx,
+    ) >=
+    Math.abs(
+      dy,
+    )
+  ) {
+    return [
+      {
+        x:
+          snapValue(
+            centerA.x +
+              dx *
+              0.28,
+            snap,
+          ),
+
+        y:
+          snapValue(
+            centerA.y,
+            snap,
+          ),
+      },
+
+      {
+        x:
+          snapValue(
+            centerA.x +
+              dx *
+              0.5,
+            snap,
+          ),
+
+        y:
+          snapValue(
+            centerA.y +
+              dy *
+              0.5,
+            snap,
+          ),
+      },
+
+      {
+        x:
+          snapValue(
+            centerA.x +
+              dx *
+              0.72,
+            snap,
+          ),
+
+        y:
+          snapValue(
+            centerB.y,
+            snap,
+          ),
+      },
+    ];
+  }
+
+
+  return [
+    {
+      x:
+        snapValue(
+          centerA.x,
+          snap,
+        ),
+
+      y:
+        snapValue(
+          centerA.y +
+            dy *
+            0.28,
+          snap,
+        ),
+    },
+
+    {
+      x:
+        snapValue(
+          centerA.x +
+            dx *
+            0.5,
+          snap,
+        ),
+
+      y:
+        snapValue(
+          centerA.y +
+            dy *
+            0.5,
+          snap,
+        ),
+    },
+
+    {
+      x:
+        snapValue(
+          centerB.x,
+          snap,
+        ),
+
+      y:
+        snapValue(
+          centerA.y +
+            dy *
+            0.72,
+          snap,
+        ),
+    },
+  ];
+}
+
+
+/* ======================================== */
+/* GEOMETRIE                                */
+/* ======================================== */
+
+function getEdgeGeometry(
+  from,
+  to,
+  stageRect,
+  route,
+) {
+  const a =
+    getLocalRect(
+      from,
+      stageRect,
+    );
+
+  const b =
+    getLocalRect(
+      to,
+      stageRect,
+    );
+
+
+  const centerA =
+    getCenter(
+      a,
+    );
+
+  const centerB =
+    getCenter(
+      b,
+    );
+
+
+  const first =
+    route?.[0] ??
+    centerB;
+
+  const last =
+    route?.[
+      route.length -
+      1
+    ] ??
+    centerA;
+
+
+  const start =
+    projectToRectEdge(
+      centerA,
+      a,
+      first.x -
+        centerA.x,
+      first.y -
+        centerA.y,
+    );
+
+  const end =
+    projectToRectEdge(
+      centerB,
+      b,
+      last.x -
+        centerB.x,
+      last.y -
+        centerB.y,
+    );
+
+
+  const points =
+    [
+      start,
+      ...(route ?? []),
+      end,
+    ];
+
+
+  const path =
+    buildOrthogonalPath(
+      points,
+    );
+
+
+  const labelPoint =
+    route?.[
+      Math.floor(
+        route.length /
+        2,
+      )
+    ] ??
+    {
+      x:
+        (
+          start.x +
+          end.x
+        ) /
+        2,
+
+      y:
+        (
+          start.y +
+          end.y
+        ) /
+        2,
+    };
+
+
+  return {
+    path,
+
+    label:
+      labelPoint,
+  };
+}
+
+
+/* ======================================== */
+/* RECHTWINKLIGER PFAD                      */
+/* ======================================== */
+
+function buildOrthogonalPath(
+  points,
+) {
+  if (
+    points.length <
+    2
+  ) {
+    return "";
+  }
+
+
+  let current =
+    points[0];
+
+  let d =
+    `M ${current.x} ${current.y}`;
+
+
+  for (
+    let index = 1;
+    index <
+    points.length;
+    index++
+  ) {
+    const target =
+      points[
+        index
+      ];
+
+
+    /*
+        Abwechselnd erst waagerecht,
+        dann senkrecht zum nächsten
+        festen Snap-Punkt.
+    */
+
+    d +=
+      ` L ${target.x} ${current.y}`;
+
+    d +=
+      ` L ${target.x} ${target.y}`;
+
+
+    current =
+      target;
+  }
+
+
+  return d;
 }
 
 
@@ -256,98 +598,8 @@ function createDefs() {
 
 
 /* ======================================== */
-/* ANSCHLUSSPUNKTE                          */
+/* RECHTECK-HELFER                          */
 /* ======================================== */
-
-function getConnectionPoints(
-  from,
-  to,
-  stageRect,
-) {
-  const a =
-    getLocalRect(
-      from,
-      stageRect,
-    );
-
-  const b =
-    getLocalRect(
-      to,
-      stageRect,
-    );
-
-
-  const centerA = {
-    x:
-      a.x +
-      a.width /
-        2,
-
-    y:
-      a.y +
-      a.height /
-        2,
-  };
-
-
-  const centerB = {
-    x:
-      b.x +
-      b.width /
-        2,
-
-    y:
-      b.y +
-      b.height /
-        2,
-  };
-
-
-  const dx =
-    centerB.x -
-    centerA.x;
-
-  const dy =
-    centerB.y -
-    centerA.y;
-
-
-  const length =
-    Math.hypot(
-      dx,
-      dy,
-    ) ||
-    1;
-
-
-  const ux =
-    dx /
-    length;
-
-  const uy =
-    dy /
-    length;
-
-
-  return {
-    start:
-      projectToRectEdge(
-        centerA,
-        a,
-        ux,
-        uy,
-      ),
-
-    end:
-      projectToRectEdge(
-        centerB,
-        b,
-        -ux,
-        -uy,
-      ),
-  };
-}
-
 
 function getLocalRect(
   element,
@@ -375,12 +627,46 @@ function getLocalRect(
 }
 
 
+function getCenter(
+  rect,
+) {
+  return {
+    x:
+      rect.x +
+      rect.width /
+        2,
+
+    y:
+      rect.y +
+      rect.height /
+        2,
+  };
+}
+
+
 function projectToRectEdge(
   center,
   rect,
-  ux,
-  uy,
+  dx,
+  dy,
 ) {
+  const length =
+    Math.hypot(
+      dx,
+      dy,
+    ) ||
+    1;
+
+
+  const ux =
+    dx /
+    length;
+
+  const uy =
+    dy /
+    length;
+
+
   const halfW =
     rect.width /
     2;
@@ -431,4 +717,18 @@ function projectToRectEdge(
       uy *
       t,
   };
+}
+
+
+function snapValue(
+  value,
+  snap,
+) {
+  return (
+    Math.round(
+      value /
+      snap,
+    ) *
+    snap
+  );
 }

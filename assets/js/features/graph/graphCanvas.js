@@ -1,10 +1,17 @@
 import {
   initGraphDrag,
+  initGraphPointDrag,
+  snapValue,
 } from "./graphDrag.js";
 
 import {
+  createDefaultRoute,
   renderGraphConnections,
 } from "./graphConnections.js";
+
+
+const SNAP =
+  20;
 
 
 /* ======================================== */
@@ -15,9 +22,11 @@ export function createGraphCanvas({
   stage,
   scroll,
   nodesContainer,
+  routePointsContainer,
   connectionsSvg,
   storageKey,
   signal,
+  onDirtyChange,
 }) {
   let currentGraph = {
     nodes:
@@ -32,9 +41,28 @@ export function createGraphCanvas({
     new Map();
 
 
+  let workspace = {
+    nodes:
+      {},
+
+    edges:
+      {},
+  };
+
+
+  let dirty =
+    false;
+
+  let routeEdit =
+    false;
+
   let resizeObserver =
     null;
 
+
+  /* ==================================== */
+  /* RENDERN                              */
+  /* ==================================== */
 
   function render(
     graph,
@@ -47,9 +75,24 @@ export function createGraphCanvas({
 
     nodesContainer.replaceChildren();
 
+    routePointsContainer?.replaceChildren();
 
-    const positions =
-      loadPositions();
+
+    const saved =
+      loadSavedLayout();
+
+
+    workspace = {
+      nodes: {
+        ...(saved.nodes ??
+          {}),
+      },
+
+      edges: {
+        ...(saved.edges ??
+          {}),
+      },
+    };
 
 
     const defaults =
@@ -79,20 +122,49 @@ export function createGraphCanvas({
           );
 
 
+        const jsonPosition =
+          normalizePosition(
+            nodeData.position,
+          );
+
+
         const position =
-          positions[
-            nodeData.id
-          ] ??
+          normalizePosition(
+            workspace
+              .nodes[
+                nodeData.id
+              ],
+          ) ??
+          jsonPosition ??
           defaults[
             nodeData.id
           ];
 
 
-        element.style.left =
-          `${position.x}px`;
+        workspace.nodes[
+          nodeData.id
+        ] = {
+          x:
+            snapValue(
+              position.x,
+              SNAP,
+            ),
 
-        element.style.top =
-          `${position.y}px`;
+          y:
+            snapValue(
+              position.y,
+              SNAP,
+            ),
+        };
+
+
+        setNodePosition(
+          element,
+          workspace
+            .nodes[
+              nodeData.id
+            ],
+        );
 
 
         nodesContainer.appendChild(
@@ -114,20 +186,93 @@ export function createGraphCanvas({
 
           signal,
 
+          snap:
+            SNAP,
+
           onMove:
-            draw,
+            (newPosition) => {
+              workspace.nodes[
+                nodeData.id
+              ] =
+                newPosition;
+
+
+              updateNodeCoordinate(
+                element,
+                newPosition,
+              );
+
+
+              /*
+                  Automatische Linien bleiben
+                  am Knoten hängen.
+
+                  Benutzerdefinierte Routen
+                  behalten ihre festen Punkte.
+              */
+
+              draw();
+            },
 
           onEnd:
             (newPosition) => {
-              savePosition(
-                nodeData.id,
+              workspace.nodes[
+                nodeData.id
+              ] =
+                newPosition;
+
+
+              updateNodeCoordinate(
+                element,
                 newPosition,
               );
+
+
+              markDirty();
 
               draw();
             },
         });
       },
+    );
+
+
+    /*
+        JSON-Routen werden erst übernommen,
+        wenn noch keine lokal gespeicherte
+        Route existiert.
+    */
+
+    graph.edges.forEach(
+      (edge) => {
+        if (
+          !workspace.edges[
+            edge.id
+          ] &&
+          Array.isArray(
+            edge.route,
+          ) &&
+          edge.route.length
+        ) {
+          workspace.edges[
+            edge.id
+          ] = {
+            points:
+              edge.route
+                .map(
+                  normalizePosition,
+                )
+                .filter(
+                  Boolean,
+                ),
+          };
+        }
+      },
+    );
+
+
+    setDirty(
+      false,
     );
 
 
@@ -137,20 +282,21 @@ export function createGraphCanvas({
     requestAnimationFrame(
       () => {
         draw();
-
-        if (
-          !Object.keys(
-            positions,
-          ).length
-        ) {
-          centerOnFocus();
-        }
+        centerOnFocus();
       },
     );
   }
 
 
+  /* ==================================== */
+  /* ZEICHNEN                             */
+  /* ==================================== */
+
   function draw() {
+    const routes =
+      getRenderRoutes();
+
+
     renderGraphConnections({
       svg:
         connectionsSvg,
@@ -161,7 +307,322 @@ export function createGraphCanvas({
         currentGraph.edges,
 
       nodeElements,
+
+      routes,
     });
+
+
+    renderRouteHandles(
+      routes,
+    );
+  }
+
+
+  function getRenderRoutes() {
+    const routes =
+      {};
+
+
+    currentGraph.edges.forEach(
+      (edge) => {
+        const custom =
+          workspace.edges[
+            edge.id
+          ]?.points;
+
+
+        if (
+          Array.isArray(
+            custom,
+          ) &&
+          custom.length
+        ) {
+          routes[
+            edge.id
+          ] =
+            custom;
+
+          return;
+        }
+
+
+        const from =
+          nodeElements.get(
+            edge.from,
+          );
+
+        const to =
+          nodeElements.get(
+            edge.to,
+          );
+
+
+        if (
+          !from ||
+          !to
+        ) {
+          routes[
+            edge.id
+          ] =
+            [];
+
+          return;
+        }
+
+
+        routes[
+          edge.id
+        ] =
+          createDefaultRoute({
+            from,
+            to,
+            stage,
+            snap:
+              SNAP,
+          });
+      },
+    );
+
+
+    return routes;
+  }
+
+
+  /* ==================================== */
+  /* ROUTEN-PUNKTE                        */
+  /* ==================================== */
+
+  function renderRouteHandles(
+    routes,
+  ) {
+    if (
+      !routePointsContainer
+    ) {
+      return;
+    }
+
+
+    routePointsContainer.replaceChildren();
+
+
+    if (!routeEdit) {
+      return;
+    }
+
+
+    currentGraph.edges.forEach(
+      (edge) => {
+        const points =
+          routes[
+            edge.id
+          ] ??
+          [];
+
+
+        points.forEach(
+          (
+            pointData,
+            pointIndex,
+          ) => {
+            const point =
+              document.createElement(
+                "button",
+              );
+
+
+            point.type =
+              "button";
+
+            point.className =
+              "graph-route-point";
+
+            point.dataset.edgeId =
+              edge.id;
+
+            point.dataset.pointIndex =
+              String(
+                pointIndex,
+              );
+
+
+            point.textContent =
+              String(
+                pointIndex +
+                  1,
+              );
+
+
+            setRoutePointPosition(
+              point,
+              pointData,
+            );
+
+
+            point.title =
+              `P${pointIndex + 1} · X ${pointData.x} · Y ${pointData.y}`;
+
+
+            routePointsContainer.appendChild(
+              point,
+            );
+
+
+            initGraphPointDrag({
+              point,
+              stage,
+              signal,
+
+              snap:
+                SNAP,
+
+              onMove:
+                (position) => {
+                  ensureCustomRoute(
+                    edge,
+                    routes[
+                      edge.id
+                    ],
+                  );
+
+
+                  workspace
+                    .edges[
+                      edge.id
+                    ]
+                    .points[
+                      pointIndex
+                    ] =
+                      position;
+
+
+                  point.title =
+                    `P${pointIndex + 1} · X ${position.x} · Y ${position.y}`;
+
+
+                  drawConnectionsOnly();
+                },
+
+              onEnd:
+                (position) => {
+                  ensureCustomRoute(
+                    edge,
+                    routes[
+                      edge.id
+                    ],
+                  );
+
+
+                  workspace
+                    .edges[
+                      edge.id
+                    ]
+                    .points[
+                      pointIndex
+                    ] =
+                      position;
+
+
+                  markDirty();
+
+                  draw();
+                },
+            });
+          },
+        );
+      },
+    );
+  }
+
+
+  function ensureCustomRoute(
+    edge,
+    defaultPoints,
+  ) {
+    if (
+      workspace.edges[
+        edge.id
+      ]?.points
+    ) {
+      return;
+    }
+
+
+    workspace.edges[
+      edge.id
+    ] = {
+      points:
+        defaultPoints.map(
+          (point) => ({
+            x:
+              point.x,
+
+            y:
+              point.y,
+          }),
+        ),
+    };
+  }
+
+
+  function drawConnectionsOnly() {
+    renderGraphConnections({
+      svg:
+        connectionsSvg,
+
+      stage,
+
+      edges:
+        currentGraph.edges,
+
+      nodeElements,
+
+      routes:
+        getRenderRoutes(),
+    });
+  }
+
+
+  function setRouteEdit(
+    enabled,
+  ) {
+    routeEdit =
+      Boolean(
+        enabled,
+      );
+
+
+    draw();
+  }
+
+
+  /* ==================================== */
+  /* SPEICHERN                            */
+  /* ==================================== */
+
+  function saveLayout() {
+    localStorage.setItem(
+      storageKey,
+      JSON.stringify(
+        {
+          version:
+            2,
+
+          snap:
+            SNAP,
+
+          nodes:
+            workspace.nodes,
+
+          edges:
+            workspace.edges,
+        },
+      ),
+    );
+
+
+    setDirty(
+      false,
+    );
   }
 
 
@@ -176,6 +637,30 @@ export function createGraphCanvas({
     );
   }
 
+
+  function markDirty() {
+    setDirty(
+      true,
+    );
+  }
+
+
+  function setDirty(
+    value,
+  ) {
+    dirty =
+      value;
+
+
+    onDirtyChange?.(
+      dirty,
+    );
+  }
+
+
+  /* ==================================== */
+  /* ZENTRIEREN                           */
+  /* ==================================== */
 
   function centerOnFocus() {
     const focus =
@@ -298,6 +783,10 @@ export function createGraphCanvas({
   }
 
 
+  /* ==================================== */
+  /* OBSERVER                             */
+  /* ==================================== */
+
   function observeNodes() {
     resizeObserver?.disconnect();
 
@@ -345,16 +834,26 @@ export function createGraphCanvas({
   return {
     render,
     draw,
+    saveLayout,
     resetPositions,
     centerOnFocus,
+    setRouteEdit,
+
+    isDirty() {
+      return dirty;
+    },
+
+    getSnap() {
+      return SNAP;
+    },
   };
 
 
   /* ==================================== */
-  /* POSITIONEN                           */
+  /* LAYOUT LADEN                         */
   /* ==================================== */
 
-  function loadPositions() {
+  function loadSavedLayout() {
     try {
       const saved =
         JSON.parse(
@@ -365,48 +864,49 @@ export function createGraphCanvas({
         );
 
 
-      return (
+      /*
+          Alte Version nur mit
+          Knotenpositionen weiterhin
+          akzeptieren.
+      */
+
+      if (
         saved &&
         typeof saved ===
-          "object"
-          ? saved
-          : {}
-      );
+          "object" &&
+        !saved.nodes &&
+        !saved.edges
+      ) {
+        return {
+          nodes:
+            saved,
+
+          edges:
+            {},
+        };
+      }
+
+
+      return {
+        nodes:
+          saved?.nodes ??
+          {},
+
+        edges:
+          saved?.edges ??
+          {},
+      };
     }
 
     catch {
-      return {};
+      return {
+        nodes:
+          {},
+
+        edges:
+          {},
+      };
     }
-  }
-
-
-  function savePosition(
-    id,
-    position,
-  ) {
-    const all =
-      loadPositions();
-
-
-    all[id] = {
-      x:
-        Math.round(
-          position.x,
-        ),
-
-      y:
-        Math.round(
-          position.y,
-        ),
-    };
-
-
-    localStorage.setItem(
-      storageKey,
-      JSON.stringify(
-        all,
-      ),
-    );
   }
 }
 
@@ -482,6 +982,15 @@ function createNodeElement(
   }
 
 
+  const footer =
+    document.createElement(
+      "div",
+    );
+
+  footer.className =
+    "graph-node__footer";
+
+
   const kind =
     document.createElement(
       "span",
@@ -496,8 +1005,26 @@ function createNodeElement(
     "";
 
 
-  element.appendChild(
+  const coordinate =
+    document.createElement(
+      "span",
+    );
+
+  coordinate.className =
+    "graph-node__coordinate";
+
+  coordinate.dataset.graphCoordinate =
+    "";
+
+
+  footer.append(
     kind,
+    coordinate,
+  );
+
+
+  element.appendChild(
+    footer,
   );
 
 
@@ -544,6 +1071,57 @@ function createNodeElement(
 
 
 /* ======================================== */
+/* POSITION ANZEIGEN                        */
+/* ======================================== */
+
+function setNodePosition(
+  element,
+  position,
+) {
+  element.style.left =
+    `${position.x}px`;
+
+  element.style.top =
+    `${position.y}px`;
+
+
+  updateNodeCoordinate(
+    element,
+    position,
+  );
+}
+
+
+function updateNodeCoordinate(
+  element,
+  position,
+) {
+  const coordinate =
+    element.querySelector(
+      "[data-graph-coordinate]",
+    );
+
+
+  if (coordinate) {
+    coordinate.textContent =
+      `X ${Math.round(position.x)} · Y ${Math.round(position.y)}`;
+  }
+}
+
+
+function setRoutePointPosition(
+  element,
+  position,
+) {
+  element.style.left =
+    `${position.x}px`;
+
+  element.style.top =
+    `${position.y}px`;
+}
+
+
+/* ======================================== */
 /* STANDARD-LAYOUT                          */
 /* ======================================== */
 
@@ -551,16 +1129,16 @@ function createDefaultPositions(
   graph,
 ) {
   const buckets = {
-    left:
+    input:
       [],
 
     focus:
       [],
 
-    right:
+    mixed:
       [],
 
-    other:
+    predator:
       [],
   };
 
@@ -585,25 +1163,6 @@ function createDefaultPositions(
         node.focus
       ) {
         buckets.focus.push(
-          node,
-        );
-
-        return;
-      }
-
-
-      if (
-        [
-          "plant",
-          "resource",
-          "carrion",
-          "water",
-          "mineral",
-        ].includes(
-          node.kind,
-        )
-      ) {
-        buckets.left.push(
           node,
         );
 
@@ -637,7 +1196,7 @@ function createDefaultPositions(
         feedsFocus &&
         !consumesFocus
       ) {
-        buckets.left.push(
+        buckets.input.push(
           node,
         );
       }
@@ -646,13 +1205,13 @@ function createDefaultPositions(
         consumesFocus &&
         !feedsFocus
       ) {
-        buckets.right.push(
+        buckets.predator.push(
           node,
         );
       }
 
       else {
-        buckets.other.push(
+        buckets.mixed.push(
           node,
         );
       }
@@ -664,32 +1223,36 @@ function createDefaultPositions(
     {};
 
 
-  placeBucket(
+  placeGrid(
     result,
-    buckets.left,
-    90,
-    80,
+    buckets.input,
+    100,
+    100,
+    2,
   );
 
-  placeBucket(
+  placeGrid(
     result,
     buckets.focus,
-    690,
-    150,
+    760,
+    180,
+    1,
   );
 
-  placeBucket(
+  placeGrid(
     result,
-    buckets.other,
-    1010,
+    buckets.mixed,
+    1110,
     100,
+    1,
   );
 
-  placeBucket(
+  placeGrid(
     result,
-    buckets.right,
-    1340,
-    80,
+    buckets.predator,
+    1450,
+    100,
+    1,
   );
 
 
@@ -697,20 +1260,18 @@ function createDefaultPositions(
 }
 
 
-function placeBucket(
+function placeGrid(
   result,
   nodes,
   startX,
   startY,
+  columns,
 ) {
-  const rowsPerColumn =
-    7;
+  const columnGap =
+    260;
 
   const rowGap =
-    120;
-
-  const columnGap =
-    245;
+    130;
 
 
   nodes.forEach(
@@ -719,28 +1280,34 @@ function placeBucket(
       index,
     ) => {
       const column =
-        Math.floor(
-          index /
-          rowsPerColumn,
-        );
+        index %
+        columns;
 
       const row =
-        index %
-        rowsPerColumn;
+        Math.floor(
+          index /
+          columns,
+        );
 
 
       result[
         node.id
       ] = {
         x:
-          startX +
-          column *
-            columnGap,
+          snapValue(
+            startX +
+              column *
+                columnGap,
+            SNAP,
+          ),
 
         y:
-          startY +
-          row *
-            rowGap,
+          snapValue(
+            startY +
+              row *
+                rowGap,
+            SNAP,
+          ),
       };
     },
   );
@@ -753,24 +1320,75 @@ function calculateStageSize(
   return {
     width:
       Math.max(
-        1800,
-        1500 +
+        1900,
+        1600 +
           Math.ceil(
             nodeCount /
             20,
           ) *
-            260,
+            300,
       ),
 
     height:
       Math.max(
-        950,
+        1000,
         850 +
           Math.ceil(
             nodeCount /
-            28,
+            24,
           ) *
-            160,
+            200,
+      ),
+  };
+}
+
+
+function normalizePosition(
+  value,
+) {
+  if (
+    !value ||
+    typeof value !==
+      "object"
+  ) {
+    return null;
+  }
+
+
+  const x =
+    Number(
+      value.x,
+    );
+
+  const y =
+    Number(
+      value.y,
+    );
+
+
+  if (
+    !Number.isFinite(
+      x,
+    ) ||
+    !Number.isFinite(
+      y,
+    )
+  ) {
+    return null;
+  }
+
+
+  return {
+    x:
+      snapValue(
+        x,
+        SNAP,
+      ),
+
+    y:
+      snapValue(
+        y,
+        SNAP,
       ),
   };
 }

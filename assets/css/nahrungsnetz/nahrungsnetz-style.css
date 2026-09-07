@@ -2,9 +2,9 @@
   width: 100%;
   max-width: var(--nahrungsnetz-max-width);
   margin: 0 auto;
-  padding: var(--abstand-5);
+  padding: var(--abstand-4) var(--abstand-5);
   display: grid;
-  gap: var(--abstand-4);
+  gap: var(--abstand-3);
   color: var(--farbe-text);
 }
 
@@ -16,38 +16,40 @@
 }
 
 .nahrungsnetz-header__eyebrow {
-  margin: 0 0 var(--abstand-1);
+  margin: 0 0 3px;
   color: var(--farbe-akzent);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
 }
 
 .nahrungsnetz-header h1 {
   margin: 0;
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: clamp(27px, 2.7vw, 40px);
 }
 
 .nahrungsnetz-header__description {
-  max-width: 850px;
-  margin: var(--abstand-2) 0 0;
+  max-width: 880px;
+  margin: 5px 0 0;
   color: var(--farbe-text-zusatz);
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .nahrungsnetz-header__stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: var(--abstand-2);
+  gap: 7px;
 }
 
 .nahrungsnetz-header__stats > span {
-  padding: var(--abstand-2) var(--abstand-3);
+  padding: 6px 10px;
   border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-klein);
+  border-radius: 8px;
   background: var(--farbe-bereich);
   color: var(--farbe-text-zusatz);
+  font-size: 11px;
   white-space: nowrap;
 }
 
@@ -56,13 +58,14 @@
 }
 
 .nahrungsnetz-toolbar {
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--abstand-4);
-  padding: var(--abstand-3);
+  gap: var(--abstand-3);
+  padding: 7px 9px;
   border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-mittel);
+  border-radius: 10px;
   background: var(--farbe-bereich);
 }
 
@@ -71,21 +74,21 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--abstand-3);
+  gap: 11px;
+  font-size: 11px;
 }
 
 .nahrungsnetz-legend__item {
   display: inline-flex;
   align-items: center;
-  gap: var(--abstand-2);
+  gap: 6px;
   color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
 }
 
 .nahrungsnetz-legend__line {
-  width: 44px;
+  width: 37px;
   height: 0;
-  border-top: 3px solid var(--farbe-text-zusatz);
+  border-top: 2px solid var(--farbe-text-zusatz);
 }
 
 .nahrungsnetz-legend__line--conditional {
@@ -96,23 +99,70 @@
   border-top-style: dotted;
 }
 
+.nahrungsnetz-save-status {
+  padding-left: 9px;
+  border-left: 1px solid var(--farbe-linie);
+  color: var(--farbe-text-zusatz);
+  font-size: 10px;
+}
+
 .nahrungsnetz-toolbar__actions {
   flex: 0 0 auto;
   display: flex;
-  gap: var(--abstand-2);
+  gap: 6px;
 }
 
 .nahrungsnetz-toolbar__actions button {
-  min-height: 38px;
-  padding: 0 var(--abstand-3);
+  min-height: 34px;
+  padding: 0 10px;
+  font-size: 11px;
+}
+
+.nahrungsnetz-toolbar__actions button.is-active,
+.nahrungsnetz-toolbar__actions button.has-changes {
+  border-color: var(--farbe-akzent);
+  box-shadow:
+    0 0 0 1px
+    color-mix(
+      in srgb,
+      var(--farbe-akzent) 38%,
+      transparent
+    );
 }
 
 .nahrungsnetz-graph {
+  position: relative;
   min-height: 0;
 }
 
 .nahrungsnetz-graph .graph-scroll {
   height: var(--nahrungsnetz-graph-height);
+}
+
+.nahrungsnetz-axis {
+  position: absolute;
+  z-index: 8;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: color-mix(
+    in srgb,
+    var(--farbe-bereich) 92%,
+    transparent
+  );
+  color: var(--farbe-text-zusatz);
+  font-family: monospace;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.nahrungsnetz-axis--x {
+  top: 8px;
+  right: 20px;
+}
+
+.nahrungsnetz-axis--y {
+  top: 35px;
+  left: 8px;
 }
 
 .nahrungsnetz-empty {
@@ -125,16 +175,6 @@
 
 .nahrungsnetz-empty p {
   color: var(--farbe-text-zusatz);
-}
-
-.nahrungsnetz-empty a {
-  display: inline-block;
-  margin-top: var(--abstand-2);
-  padding: var(--abstand-2) var(--abstand-3);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-klein);
-  background: var(--farbe-element);
-  text-decoration: none;
 }
 
 @media (max-width: 900px) {

@@ -28,6 +28,9 @@ let tiere =
 let graphCanvas =
   null;
 
+let routeEdit =
+  false;
+
 
 /* ======================================== */
 /* INITIALISIEREN                           */
@@ -63,6 +66,11 @@ export async function init() {
       "[data-graph-nodes]",
     );
 
+  const routePoints =
+    document.querySelector(
+      "[data-graph-route-points]",
+    );
+
   const connections =
     document.querySelector(
       "[data-graph-connections]",
@@ -73,6 +81,7 @@ export async function init() {
     !stage ||
     !scroll ||
     !nodes ||
+    !routePoints ||
     !connections
   ) {
     console.error(
@@ -91,13 +100,19 @@ export async function init() {
       nodesContainer:
         nodes,
 
+      routePointsContainer:
+        routePoints,
+
       connectionsSvg:
         connections,
 
       storageKey:
-        "planetZoo2-nahrungsnetz-positionen",
+        "planetZoo2-nahrungsnetz-layout-v2",
 
       signal,
+
+      onDirtyChange:
+        updateSaveStatus,
     });
 
 
@@ -125,6 +140,68 @@ export async function init() {
       () =>
         graphCanvas
           .centerOnFocus(),
+      {
+        signal,
+      },
+    );
+
+
+  document
+    .querySelector(
+      "[data-graph-save]",
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        graphCanvas
+          .saveLayout();
+
+        showSavedMessage();
+      },
+      {
+        signal,
+      },
+    );
+
+
+  document
+    .querySelector(
+      "[data-graph-edit-lines]",
+    )
+    ?.addEventListener(
+      "click",
+      (event) => {
+        routeEdit =
+          !routeEdit;
+
+
+        graphCanvas
+          .setRouteEdit(
+            routeEdit,
+          );
+
+
+        event.currentTarget
+          .classList.toggle(
+            "is-active",
+            routeEdit,
+          );
+
+
+        const text =
+          event.currentTarget
+            .querySelector(
+              "[data-graph-edit-lines-text]",
+            );
+
+
+        if (text) {
+          text.textContent =
+            routeEdit
+              ? "Linienpunkte ausblenden"
+              : "Linien bearbeiten";
+        }
+      },
       {
         signal,
       },
@@ -278,4 +355,58 @@ function render() {
   graphCanvas.render(
     graph,
   );
+
+
+  graphCanvas.setRouteEdit(
+    routeEdit,
+  );
+}
+
+
+/* ======================================== */
+/* SPEICHERSTATUS                           */
+/* ======================================== */
+
+function updateSaveStatus(
+  dirty,
+) {
+  const status =
+    document.querySelector(
+      "[data-graph-save-status]",
+    );
+
+  const button =
+    document.querySelector(
+      "[data-graph-save]",
+    );
+
+
+  if (status) {
+    status.textContent =
+      dirty
+        ? "Ungespeicherte Änderungen"
+        : "Layout gespeichert";
+  }
+
+
+  if (button) {
+    button.classList.toggle(
+      "has-changes",
+      dirty,
+    );
+  }
+}
+
+
+function showSavedMessage() {
+  const status =
+    document.querySelector(
+      "[data-graph-save-status]",
+    );
+
+
+  if (status) {
+    status.textContent =
+      "Layout gespeichert";
+  }
 }

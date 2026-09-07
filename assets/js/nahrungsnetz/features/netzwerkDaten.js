@@ -4,6 +4,36 @@ import {
 } from "../../features/language.js";
 
 
+/*
+    Alte Begriffe aus bestehenden
+    Tier-JSONs werden auf echte Arten
+    abgebildet, sobald diese als
+    Datensatz geladen sind.
+
+    Dadurch wird z. B. "lion" nicht
+    als eigener Ressourcenknoten
+    angezeigt, wenn Panthera leo
+    vorhanden ist.
+*/
+
+const TIER_ALIASES = {
+  lion:
+    "Panthera leo",
+
+  hyena:
+    "Crocuta crocuta",
+
+  leopard:
+    "Panthera pardus",
+
+  crocodile:
+    "Crocodylus niloticus",
+
+  human:
+    "Homo sapiens",
+};
+
+
 const ENTITY_LABELS = {
   aas: {
     de: "Aas",
@@ -93,14 +123,29 @@ const CONDITION_LABELS = {
     en: "Young",
   },
 
-  bisEtwa6Monate: {
-    de: "bis etwa 6 Monate",
-    en: "until about 6 months",
+  calf: {
+    de: "Jungtier",
+    en: "Calf",
+  },
+
+  bisEtwa3Monate: {
+    de: "bis etwa 3 Monate",
+    en: "until about 3 months",
   },
 
   abEtwa3Monaten: {
     de: "ab etwa 3 Monaten",
     en: "from about 3 months",
+  },
+
+  bisEtwa6Monate: {
+    de: "bis etwa 6 Monate",
+    en: "until about 6 months",
+  },
+
+  increasingWithAge: {
+    de: "zunehmend mit dem Alter",
+    en: "increasing with age",
   },
 };
 
@@ -219,6 +264,7 @@ function addClassicFoodWeb(
         ?.frisst
         ?.jungtier
         ?.werte,
+      "frisst.jungtier",
     ],
 
     [
@@ -227,12 +273,14 @@ function addClassicFoodWeb(
         ?.frisst
         ?.erwachsen
         ?.werte,
+      "frisst.erwachsen",
     ],
   ].forEach(
     (
       [
         alter,
         werte,
+        relationKey,
       ],
     ) => {
       if (
@@ -245,7 +293,10 @@ function addClassicFoodWeb(
 
 
       werte.forEach(
-        (entry) => {
+        (
+          entry,
+          index,
+        ) => {
           if (
             !hasText(
               entry?.wert,
@@ -271,6 +322,13 @@ function addClassicFoodWeb(
           addEdge(
             edges,
             {
+              id:
+                createEdgeId(
+                  foodNode.id,
+                  tierNodeId,
+                  `${tier.id}:${relationKey}:${index}`,
+                ),
+
               from:
                 foodNode.id,
 
@@ -288,6 +346,11 @@ function addClassicFoodWeb(
                   entry,
                   alter,
                 ),
+
+              route:
+                getEntryRoute(
+                  entry,
+                ),
             },
           );
         },
@@ -303,6 +366,7 @@ function addClassicFoodWeb(
         ?.wirdGefressenVon
         ?.jungtier
         ?.werte,
+      "wirdGefressenVon.jungtier",
     ],
 
     [
@@ -311,12 +375,14 @@ function addClassicFoodWeb(
         ?.wirdGefressenVon
         ?.erwachsen
         ?.werte,
+      "wirdGefressenVon.erwachsen",
     ],
   ].forEach(
     (
       [
         alter,
         werte,
+        relationKey,
       ],
     ) => {
       if (
@@ -329,7 +395,10 @@ function addClassicFoodWeb(
 
 
       werte.forEach(
-        (entry) => {
+        (
+          entry,
+          index,
+        ) => {
           if (
             !hasText(
               entry?.wert,
@@ -355,6 +424,13 @@ function addClassicFoodWeb(
           addEdge(
             edges,
             {
+              id:
+                createEdgeId(
+                  tierNodeId,
+                  predatorNode.id,
+                  `${tier.id}:${relationKey}:${index}`,
+                ),
+
               from:
                 tierNodeId,
 
@@ -371,6 +447,11 @@ function addClassicFoodWeb(
                 getConditionLabel(
                   entry,
                   alter,
+                ),
+
+              route:
+                getEntryRoute(
+                  entry,
                 ),
             },
           );
@@ -477,6 +558,13 @@ function addGenericEcosystemNetwork(
 
           focus:
             false,
+
+          position:
+            normalizePosition(
+              entry.position ??
+              entry.darstellung
+                ?.position,
+            ),
         },
       );
     },
@@ -492,7 +580,10 @@ function addGenericEcosystemNetwork(
 
 
   verbindungen.forEach(
-    (entry) => {
+    (
+      entry,
+      index,
+    ) => {
       if (
         !hasText(
           entry?.von,
@@ -523,6 +614,13 @@ function addGenericEcosystemNetwork(
       addEdge(
         edges,
         {
+          id:
+            createEdgeId(
+              from,
+              to,
+              `eco:${tier.id}:${index}`,
+            ),
+
           from,
           to,
 
@@ -534,6 +632,11 @@ function addGenericEcosystemNetwork(
           label:
             localizedCondition(
               entry.bedingung,
+            ),
+
+          route:
+            getEntryRoute(
+              entry,
             ),
         },
       );
@@ -581,6 +684,11 @@ function addTierNode(
         tier.id,
 
       focus,
+
+      position:
+        getTierPosition(
+          tier,
+        ),
     },
   );
 }
@@ -640,6 +748,11 @@ function resolveEntityNode(
 
       focus:
         false,
+
+      position:
+        getTierPosition(
+          loadedTier,
+        ),
     };
   }
 
@@ -676,6 +789,13 @@ function resolveEntityNode(
 
     focus:
       false,
+
+    position:
+      normalizePosition(
+        entry?.darstellung
+          ?.position ??
+        entry?.position,
+      ),
   };
 }
 
@@ -776,7 +896,7 @@ function resolveGenericNodeId(
 
 
 /* ======================================== */
-/* MAP-HELFER                               */
+/* KNOTEN / VERBINDUNGEN                    */
 /* ======================================== */
 
 function addNode(
@@ -796,6 +916,16 @@ function addNode(
       existing.focus =
         true;
     }
+
+
+    if (
+      !existing.position &&
+      node.position
+    ) {
+      existing.position =
+        node.position;
+    }
+
 
     return;
   }
@@ -820,35 +950,43 @@ function addEdge(
   }
 
 
-  const key =
-    [
-      edge.from,
-      edge.to,
-      edge.type,
-      edge.label ??
-        "",
-    ].join(
-      "|",
+  /*
+      Gleicher Stofffluss wird nicht
+      doppelt gezeichnet, nur weil die
+      Beziehung in beiden Tier-JSONs
+      beschrieben ist.
+  */
+
+  const duplicate =
+    [...edges.values()].find(
+      (existing) =>
+        existing.from ===
+          edge.from &&
+        existing.to ===
+          edge.to &&
+        existing.type ===
+          edge.type &&
+        existing.label ===
+          edge.label,
     );
 
 
-  if (
-    edges.has(
-      key,
-    )
-  ) {
+  if (duplicate) {
+    if (
+      !duplicate.route &&
+      edge.route
+    ) {
+      duplicate.route =
+        edge.route;
+    }
+
     return;
   }
 
 
   edges.set(
-    key,
-    {
-      id:
-        key,
-
-      ...edge,
-    },
+    edge.id,
+    edge,
   );
 }
 
@@ -892,6 +1030,9 @@ function getGenericEdgeType(
   if (
     entry?.darstellung ===
       "gepunktet" ||
+    entry?.darstellung
+      ?.linie ===
+      "gepunktet" ||
     entry?.typ ===
       "aas"
   ) {
@@ -901,6 +1042,9 @@ function getGenericEdgeType(
 
   if (
     entry?.darstellung ===
+      "gestrichelt" ||
+    entry?.darstellung
+      ?.linie ===
       "gestrichelt" ||
     hasText(
       entry?.bedingung,
@@ -919,6 +1063,100 @@ function getGenericEdgeType(
 
 
   return "direct";
+}
+
+
+/* ======================================== */
+/* JSON-DARSTELLUNG                         */
+/* ======================================== */
+
+function getTierPosition(
+  tier,
+) {
+  return normalizePosition(
+    tier.originalDaten
+      ?.darstellung
+      ?.nahrungsnetz
+      ?.position,
+  );
+}
+
+
+function getEntryRoute(
+  entry,
+) {
+  const points =
+    entry?.darstellung
+      ?.punkte ??
+    entry?.layout
+      ?.punkte ??
+    null;
+
+
+  if (
+    !Array.isArray(
+      points,
+    )
+  ) {
+    return null;
+  }
+
+
+  const normalized =
+    points
+      .map(
+        normalizePosition,
+      )
+      .filter(
+        Boolean,
+      );
+
+
+  return normalized.length
+    ? normalized
+    : null;
+}
+
+
+function normalizePosition(
+  value,
+) {
+  if (
+    !value ||
+    typeof value !==
+      "object"
+  ) {
+    return null;
+  }
+
+
+  const x =
+    Number(
+      value.x,
+    );
+
+  const y =
+    Number(
+      value.y,
+    );
+
+
+  if (
+    !Number.isFinite(
+      x,
+    ) ||
+    !Number.isFinite(
+      y,
+    )
+  ) {
+    return null;
+  }
+
+
+  return {
+    x,
+    y,
+  };
 }
 
 
@@ -942,7 +1180,9 @@ function inferKind(
 
   if (
     typ ===
-      "pflanze"
+      "pflanze" ||
+    typ ===
+      "frucht"
   ) {
     return "plant";
   }
@@ -1160,7 +1400,9 @@ function getConditionLabel(
       entry?.bedingung,
     ) &&
     entry.bedingung !==
-      "jungtier"
+      "jungtier" &&
+    entry.bedingung !==
+      "calf"
   ) {
     parts.push(
       localizedCondition(
@@ -1170,13 +1412,15 @@ function getConditionLabel(
   }
 
 
-  return parts
-    .filter(
-      Boolean,
-    )
-    .join(
-      " · ",
-    );
+  return [
+    ...new Set(
+      parts.filter(
+        Boolean,
+      ),
+    ),
+  ].join(
+    " · ",
+  );
 }
 
 
@@ -1212,24 +1456,43 @@ function localizedCondition(
 
 
 /* ======================================== */
-/* TIER FINDEN / NAME                       */
+/* TIER FINDEN / ALIASE                     */
 /* ======================================== */
 
 function findTier(
   tiere,
   value,
 ) {
+  const alias =
+    TIER_ALIASES[
+      value
+    ];
+
+
+  const candidates =
+    [
+      value,
+      alias,
+    ].filter(
+      Boolean,
+    );
+
+
   return (
     tiere.find(
       (tier) =>
-        tier.id ===
-          value ||
-        tier.datenId ===
-          value ||
-        tier.wissenschaftlicherName ===
-          value ||
-        tier.originalDaten?.id ===
-          value,
+        candidates.includes(
+          tier.id,
+        ) ||
+        candidates.includes(
+          tier.datenId,
+        ) ||
+        candidates.includes(
+          tier.wissenschaftlicherName,
+        ) ||
+        candidates.includes(
+          tier.originalDaten?.id,
+        ),
     ) ??
     null
   );
@@ -1253,6 +1516,21 @@ function getTierName(
 /* ======================================== */
 /* HELFER                                   */
 /* ======================================== */
+
+function createEdgeId(
+  from,
+  to,
+  source,
+) {
+  return [
+    from,
+    to,
+    source,
+  ].join(
+    "|",
+  );
+}
+
 
 function hasText(
   value,

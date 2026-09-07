@@ -10,12 +10,6 @@
         data-de="ÖKOSYSTEM"
         data-en="ECOSYSTEM"
         data-en-US="ECOSYSTEM"
-        data-es="ECOSISTEMA"
-        data-fr="ÉCOSYSTÈME"
-        data-it="ECOSISTEMA"
-        data-pt-BR="ECOSSISTEMA"
-        data-ja="生態系"
-        data-zh-Hans="生态系统"
       >
         ÖKOSYSTEM
       </p>
@@ -25,12 +19,6 @@
         data-de="Nahrungsnetz"
         data-en="Food web"
         data-en-US="Food web"
-        data-es="Red trófica"
-        data-fr="Réseau trophique"
-        data-it="Rete alimentare"
-        data-pt-BR="Teia alimentar"
-        data-ja="食物網"
-        data-zh-Hans="食物网"
       >
         Nahrungsnetz
       </h1>
@@ -38,183 +26,78 @@
       <p
         class="nahrungsnetz-header__description"
         data-i18n
-        data-de="Die Pfeile zeigen den Stoff- und Nahrungsfluss zur nutzenden Art. Kästchen können frei verschoben werden; ihre Position wird lokal gespeichert."
-        data-en="Arrows show the flow of food and resources toward the consuming species. Boxes can be freely moved and their positions are stored locally."
-        data-en-US="Arrows show the flow of food and resources toward the consuming species. Boxes can be freely moved and their positions are stored locally."
-        data-es="Las flechas muestran el flujo de alimento y recursos hacia la especie consumidora. Las cajas se pueden mover libremente y su posición se guarda localmente."
-        data-fr="Les flèches montrent le flux de nourriture et de ressources vers l’espèce consommatrice. Les cases peuvent être déplacées librement et leur position est enregistrée localement."
-        data-it="Le frecce mostrano il flusso di cibo e risorse verso la specie che li utilizza. I riquadri possono essere spostati liberamente e la loro posizione viene salvata localmente."
-        data-pt-BR="As setas mostram o fluxo de alimento e recursos para a espécie consumidora. As caixas podem ser movidas livremente e suas posições são salvas localmente."
-        data-ja="矢印は、食物や資源が利用する種へ流れる方向を示します。ボックスは自由に移動でき、位置はローカルに保存されます。"
-        data-zh-Hans="箭头表示食物和资源流向使用它们的物种。方框可自由拖动，其位置会保存在本地。"
+        data-de="Alle Kästchen liegen auf einem X/Y-Raster. Verschieben rastet automatisch auf 20 Pixel ein. Linien werden rechtwinklig über drei feste, verschiebbare Snap-Punkte geführt."
+        data-en="All boxes are placed on an X/Y grid. Dragging automatically snaps to 20 pixels. Connections are routed at right angles through three movable snap points."
+        data-en-US="All boxes are placed on an X/Y grid. Dragging automatically snaps to 20 pixels. Connections are routed at right angles through three movable snap points."
       >
-        Die Pfeile zeigen den Stoff- und Nahrungsfluss zur nutzenden Art.
-        Kästchen können frei verschoben werden; ihre Position wird lokal gespeichert.
+        Alle Kästchen liegen auf einem X/Y-Raster.
       </p>
     </div>
 
     <div class="nahrungsnetz-header__stats">
       <span>
         <strong data-nahrungsnetz-animal-count>0</strong>
-        <span
-          data-i18n
-          data-de=" ausgewählte Tiere"
-          data-en=" selected animals"
-          data-en-US=" selected animals"
-          data-es=" animales seleccionados"
-          data-fr=" animaux sélectionnés"
-          data-it=" animali selezionati"
-          data-pt-BR=" animais selecionados"
-          data-ja=" 選択中の動物"
-          data-zh-Hans=" 个已选动物"
-        >
-          ausgewählte Tiere
-        </span>
+        <span> Tiere</span>
       </span>
 
       <span>
         <strong data-nahrungsnetz-node-count>0</strong>
-        <span
-          data-i18n
-          data-de=" Knoten"
-          data-en=" nodes"
-          data-en-US=" nodes"
-          data-es=" nodos"
-          data-fr=" nœuds"
-          data-it=" nodi"
-          data-pt-BR=" nós"
-          data-ja=" ノード"
-          data-zh-Hans=" 个节点"
-        >
-          Knoten
-        </span>
+        <span> Knoten</span>
       </span>
 
       <span>
         <strong data-nahrungsnetz-edge-count>0</strong>
-        <span
-          data-i18n
-          data-de=" Verbindungen"
-          data-en=" connections"
-          data-en-US=" connections"
-          data-es=" conexiones"
-          data-fr=" connexions"
-          data-it=" collegamenti"
-          data-pt-BR=" conexões"
-          data-ja=" 接続"
-          data-zh-Hans=" 条连接"
-        >
-          Verbindungen
-        </span>
+        <span> Verbindungen</span>
+      </span>
+
+      <span>
+        <strong>20 px</strong>
+        <span> Raster</span>
       </span>
     </div>
   </header>
 
   <section class="nahrungsnetz-toolbar">
     <div class="nahrungsnetz-legend">
-      <strong
-        data-i18n
-        data-de="Linien"
-        data-en="Lines"
-        data-en-US="Lines"
-        data-es="Líneas"
-        data-fr="Lignes"
-        data-it="Linee"
-        data-pt-BR="Linhas"
-        data-ja="線"
-        data-zh-Hans="线条"
-      >
-        Linien
-      </strong>
+      <strong>Linien:</strong>
 
       <span class="nahrungsnetz-legend__item">
         <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--direct"></i>
-        <span
-          data-i18n
-          data-de="Direkte / reguläre Beziehung"
-          data-en="Direct / regular relationship"
-          data-en-US="Direct / regular relationship"
-          data-es="Relación directa / regular"
-          data-fr="Relation directe / régulière"
-          data-it="Relazione diretta / regolare"
-          data-pt-BR="Relação direta / regular"
-          data-ja="直接・通常の関係"
-          data-zh-Hans="直接 / 常规关系"
-        >
-          Direkte / reguläre Beziehung
-        </span>
+        Direkt
       </span>
 
       <span class="nahrungsnetz-legend__item">
         <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--conditional"></i>
-        <span
-          data-i18n
-          data-de="Nur unter Bedingungen, z. B. Jungtier"
-          data-en="Only under conditions, e.g. young animals"
-          data-en-US="Only under conditions, e.g. young animals"
-          data-es="Solo bajo condiciones, p. ej. crías"
-          data-fr="Seulement sous conditions, par ex. jeunes"
-          data-it="Solo in determinate condizioni, ad es. giovani"
-          data-pt-BR="Somente sob condições, por ex. filhotes"
-          data-ja="幼獣など特定条件のみ"
-          data-zh-Hans="仅在特定条件下，例如幼体"
-        >
-          Nur unter Bedingungen, z. B. Jungtier
-        </span>
+        Bedingung / Jungtier
       </span>
 
       <span class="nahrungsnetz-legend__item">
         <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--carrion"></i>
-        <span
-          data-i18n
-          data-de="Aas / totes organisches Material"
-          data-en="Carrion / dead organic material"
-          data-en-US="Carrion / dead organic material"
-          data-es="Carroña / materia orgánica muerta"
-          data-fr="Charogne / matière organique morte"
-          data-it="Carogne / materiale organico morto"
-          data-pt-BR="Carniça / matéria orgânica morta"
-          data-ja="死肉・死んだ有機物"
-          data-zh-Hans="腐肉 / 死亡有机物"
-        >
-          Aas / totes organisches Material
-        </span>
+        Aas
+      </span>
+
+      <span class="nahrungsnetz-save-status" data-graph-save-status>
+        Layout gespeichert
       </span>
     </div>
 
     <div class="nahrungsnetz-toolbar__actions">
       <button type="button" data-graph-center>
-        <span
-          data-i18n
-          data-de="Auswahl zentrieren"
-          data-en="Center selection"
-          data-en-US="Center selection"
-          data-es="Centrar selección"
-          data-fr="Centrer la sélection"
-          data-it="Centra selezione"
-          data-pt-BR="Centralizar seleção"
-          data-ja="選択を中央に"
-          data-zh-Hans="居中所选内容"
-        >
-          Auswahl zentrieren
+        Auswahl zentrieren
+      </button>
+
+      <button type="button" data-graph-edit-lines>
+        <span data-graph-edit-lines-text>
+          Linien bearbeiten
         </span>
       </button>
 
+      <button type="button" data-graph-save>
+        Speichern
+      </button>
+
       <button type="button" data-graph-reset>
-        <span
-          data-i18n
-          data-de="Positionen zurücksetzen"
-          data-en="Reset positions"
-          data-en-US="Reset positions"
-          data-es="Restablecer posiciones"
-          data-fr="Réinitialiser les positions"
-          data-it="Reimposta posizioni"
-          data-pt-BR="Redefinir posições"
-          data-ja="位置をリセット"
-          data-zh-Hans="重置位置"
-        >
-          Positionen zurücksetzen
-        </span>
+        Zurücksetzen
       </button>
     </div>
   </section>
@@ -224,33 +107,8 @@
     data-nahrungsnetz-empty
     hidden
   >
-    <strong
-      data-i18n
-      data-de="Keine Tiere ausgewählt."
-      data-en="No animals selected."
-      data-en-US="No animals selected."
-      data-es="No hay animales seleccionados."
-      data-fr="Aucun animal sélectionné."
-      data-it="Nessun animale selezionato."
-      data-pt-BR="Nenhum animal selecionado."
-      data-ja="動物が選択されていません。"
-      data-zh-Hans="未选择动物。"
-    >
-      Keine Tiere ausgewählt.
-    </strong>
-
-    <p
-      data-i18n
-      data-de="Wähle auf Home mindestens ein Tier aus. Das Nahrungsnetz ergänzt dazu automatisch Beute, Fressfeinde, Pflanzen, Aas und weitere Ressourcen aus den JSON-Daten."
-      data-en="Select at least one animal on Home. The food web automatically adds prey, predators, plants, carrion and other resources from the JSON data."
-      data-en-US="Select at least one animal on Home. The food web automatically adds prey, predators, plants, carrion and other resources from the JSON data."
-      data-es="Selecciona al menos un animal en Inicio. La red trófica añade automáticamente presas, depredadores, plantas, carroña y otros recursos de los datos JSON."
-      data-fr="Sélectionnez au moins un animal sur l’accueil. Le réseau trophique ajoute automatiquement les proies, prédateurs, plantes, charognes et autres ressources à partir des données JSON."
-      data-it="Seleziona almeno un animale nella Home. La rete alimentare aggiunge automaticamente prede, predatori, piante, carogne e altre risorse dai dati JSON."
-      data-pt-BR="Selecione pelo menos um animal na página inicial. A teia alimentar adiciona automaticamente presas, predadores, plantas, carniça e outros recursos dos dados JSON."
-      data-ja="Homeで少なくとも1種を選択してください。食物網はJSONデータから獲物、捕食者、植物、死肉、その他の資源を自動追加します。"
-      data-zh-Hans="请在主页至少选择一种动物。食物网会根据 JSON 数据自动添加猎物、捕食者、植物、腐肉和其他资源。"
-    >
+    <strong>Keine Tiere ausgewählt.</strong>
+    <p>
       Wähle auf Home mindestens ein Tier aus.
     </p>
 
@@ -263,6 +121,14 @@
     class="nahrungsnetz-graph"
     data-nahrungsnetz-graph
   >
+    <div class="nahrungsnetz-axis nahrungsnetz-axis--x">
+      X →
+    </div>
+
+    <div class="nahrungsnetz-axis nahrungsnetz-axis--y">
+      Y ↓
+    </div>
+
     <div
       class="graph-scroll"
       data-graph-scroll
@@ -276,6 +142,11 @@
           data-graph-connections
           aria-hidden="true"
         ></svg>
+
+        <div
+          class="graph-route-points"
+          data-graph-route-points
+        ></div>
 
         <div
           class="graph-nodes"

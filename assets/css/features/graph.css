@@ -8,28 +8,49 @@
   overflow: auto;
   border: 1px solid var(--farbe-linie);
   border-radius: var(--radius-mittel);
-  background:
-    linear-gradient(
-      color-mix(in srgb, var(--farbe-linie) 18%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--farbe-linie) 18%, transparent) 1px,
-      transparent 1px
-    ),
-    var(--farbe-bereich);
-  background-size: 28px 28px;
+  background: var(--farbe-bereich);
   overscroll-behavior: contain;
 }
 
 .graph-stage {
   position: relative;
-  min-width: 1600px;
-  min-height: 900px;
+  min-width: 1900px;
+  min-height: 1000px;
+
+  /*
+      20px Snap-Raster,
+      alle 100px stärker.
+  */
+
+  background:
+    linear-gradient(
+      color-mix(in srgb, var(--farbe-linie) 30%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--farbe-linie) 30%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      color-mix(in srgb, var(--farbe-linie) 65%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--farbe-linie) 65%, transparent) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    20px 20px,
+    20px 20px,
+    100px 100px,
+    100px 100px;
 }
 
 .graph-connections,
+.graph-route-points,
 .graph-nodes {
   position: absolute;
   inset: 0;
@@ -41,14 +62,28 @@
   pointer-events: none;
 }
 
+.graph-route-points {
+  z-index: 3;
+  pointer-events: none;
+}
+
 .graph-nodes {
   z-index: 2;
 }
 
+/* ======================================== */
+/* LINIEN                                   */
+/* ======================================== */
+
 .graph-edge {
   fill: none;
-  stroke: var(--farbe-text-zusatz);
-  stroke-width: 2.5;
+  stroke: color-mix(
+    in srgb,
+    var(--farbe-text) 72%,
+    transparent
+  );
+  stroke-width: 2.2;
+  stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
@@ -57,12 +92,12 @@
 }
 
 .graph-edge--conditional {
-  stroke-dasharray: 12 8;
+  stroke-dasharray: 11 7;
 }
 
 .graph-edge--carrion {
   stroke-linecap: round;
-  stroke-dasharray: 2 9;
+  stroke-dasharray: 2 8;
 }
 
 .graph-edge--dependency {
@@ -72,112 +107,194 @@
 .graph-edge-label {
   fill: var(--farbe-text);
   stroke: var(--farbe-bereich);
-  stroke-width: 5px;
+  stroke-width: 6px;
   paint-order: stroke;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-anchor: middle;
   pointer-events: none;
 }
 
+/* ======================================== */
+/* SNAP-PUNKTE DER LINIEN                   */
+/* ======================================== */
+
+.graph-route-point {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0 -12px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--farbe-akzent);
+  border-radius: 5px;
+  background: var(--farbe-bereich);
+  color: var(--farbe-text);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: grab;
+  pointer-events: auto;
+  transform: rotate(45deg);
+}
+
+.graph-route-point::first-letter {
+  transform: rotate(-45deg);
+}
+
+.graph-route-point:hover,
+.graph-route-point.is-dragging {
+  background: var(--farbe-akzent);
+  color: #fff;
+}
+
+.graph-route-point.is-dragging {
+  cursor: grabbing;
+}
+
+/* ======================================== */
+/* KNOTEN                                   */
+/* ======================================== */
+
 .graph-node {
   position: absolute;
-  width: 220px;
-  min-height: 88px;
-  padding: 12px 44px 12px 14px;
-  border: 2px solid var(--farbe-linie);
-  border-radius: var(--radius-mittel);
-  background: var(--farbe-element);
+  width: 230px;
+  min-height: 94px;
+  padding: 13px 44px 11px 14px;
+  border: 1px solid var(--farbe-linie);
+  border-left-width: 6px;
+  border-radius: 10px;
+  background:
+    color-mix(
+      in srgb,
+      var(--farbe-element) 96%,
+      transparent
+    );
   color: var(--farbe-text);
-  box-shadow: 0 8px 22px rgb(0 0 0 / 0.2);
+  box-shadow: 0 5px 16px rgb(0 0 0 / 0.22);
   cursor: grab;
   touch-action: none;
   user-select: none;
 }
 
+.graph-node:hover {
+  border-color:
+    color-mix(
+      in srgb,
+      var(--farbe-akzent) 55%,
+      var(--farbe-linie)
+    );
+}
+
 .graph-node.is-dragging {
   z-index: 20;
   cursor: grabbing;
-  box-shadow: 0 14px 34px rgb(0 0 0 / 0.34);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 0.38);
 }
 
 .graph-node--focus {
   border-color: var(--farbe-akzent);
   box-shadow:
-    0 0 0 2px color-mix(in srgb, var(--farbe-akzent) 24%, transparent),
-    0 8px 22px rgb(0 0 0 / 0.2);
+    0 0 0 2px
+      color-mix(
+        in srgb,
+        var(--farbe-akzent) 18%,
+        transparent
+      ),
+    0 8px 24px rgb(0 0 0 / 0.26);
 }
 
 .graph-node--animal {
-  border-left: 7px solid #d5a021;
+  border-left-color: #d5a021;
 }
 
 .graph-node--plant {
-  border-left: 7px solid #5da85a;
+  border-left-color: #5da85a;
 }
 
 .graph-node--carrion {
-  border-left: 7px dotted #aa7d56;
+  border-left-color: #aa7d56;
+  border-left-style: dotted;
 }
 
 .graph-node--water {
-  border-left: 7px solid #42a5d8;
+  border-left-color: #42a5d8;
 }
 
 .graph-node--mineral {
-  border-left: 7px solid #a0a0a0;
+  border-left-color: #a0a0a0;
 }
 
 .graph-node--resource {
-  border-left: 7px solid #8d78c7;
+  border-left-color: #8d78c7;
 }
 
 .graph-node__title {
   display: block;
   margin-bottom: 4px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.15;
 }
 
 .graph-node__subtitle {
   display: block;
+  min-height: 15px;
+  overflow: hidden;
   color: var(--farbe-text-zusatz);
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
   line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.graph-node__footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .graph-node__kind {
   display: inline-block;
-  margin-top: 9px;
   padding: 2px 7px;
   border-radius: 999px;
   background: var(--farbe-element-2);
   color: var(--farbe-text-zusatz);
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 9px;
+  font-weight: 800;
   text-transform: uppercase;
+}
+
+.graph-node__coordinate {
+  color: var(--farbe-text-zusatz);
+  font-family: monospace;
+  font-size: 9px;
+  white-space: nowrap;
 }
 
 .graph-node__info {
   position: absolute;
   top: 9px;
   right: 9px;
-  min-width: 30px;
-  min-height: 30px;
+  min-width: 29px;
+  min-height: 29px;
   padding: 0 8px;
   display: grid;
   place-items: center;
+  border-radius: 7px;
   font-weight: 800;
 }
 
 @media (max-width: 760px) {
   .graph-stage {
-    min-width: 1200px;
+    min-width: 1500px;
   }
 
   .graph-node {
-    width: 190px;
+    width: 205px;
   }
 }
