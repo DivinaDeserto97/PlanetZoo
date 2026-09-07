@@ -700,124 +700,153 @@
   },
   "bilder": [
     {
-      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzdlZmU3ZmEvRWxlcGhhbnRfQWZyaWNhblNhdmFubmFoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
       "typ": "hauptbild",
-      "dateityp": "webp",
-      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 1.webp",
-      "alt": {
-        "de": "Afrikanischer Savannenelefant",
-        "en": "African savanna elephant"
-      },
-      "quelle": "Planet Zoo 2 Zoopedia"
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "Planet Zoo 2 Zoopedia",
+
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzdlZmU3ZmEvRWxlcGhhbnRfQWZyaWNhblNhdmFubmFoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
+
+          "alt": {
+            "de": "Afrikanischer Savannenelefant",
+            "en": "African savanna elephant"
+          },
+
+          "metadaten": [],
+
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 1.webp"
+            }
+          ]
+        }
+      ]
     },
+
     {
-      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Elephant_near_ndutu.jpg/960px-Elephant_near_ndutu.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
       "typ": "echtbild",
-      "dateityp": "jpg",
-      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 2.jpg",
-      "alt": {
-        "de": "Afrikanischer Savannenelefant",
-        "en": "African savanna elephant"
-      },
-      "quelle": "wikimediaCommons"
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "wikimediaCommons",
+
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Elephant_near_ndutu.jpg/960px-Elephant_near_ndutu.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+
+          "alt": {
+            "de": "Afrikanischer Savannenelefant",
+            "en": "African savanna elephant"
+          },
+
+          "metadaten": [],
+
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 2.jpg"
+            }
+          ]
+        }
+      ]
     }
   ],
   "audio": [
     {
       "typ": "Grollen",
+
       "varianten": [
         {
           "variante": 1,
-          "aufnahme": {
-            "inventarnummer": "TSA:Loxodonta_africana_S_1221_2_1",
-            "dauer": "00:00:16",
-            "alter": "ausgewachsen",
-            "geschlecht": "weiblich",
-            "aufnahmeort": "Zoopark Erfurt, Thüringen, Deutschland",
-            "aufnahmedatum": "1968-10-10",
-            "beschreibung": "Weibchen: Grollen.",
-            "qualitaet": "c",
-            "lizenz": "CC BY-SA"
-          },
+          "quelle": "Tierstimmenarchiv",
+
+          "metadaten": [
+            {
+              "typ": "quelle",
+              "format": "animalSoundArchive",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/animal_sound_archive.json"
+            }
+          ],
+
           "dateien": [
             {
+              "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.flac",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.flac"
             },
             {
+              "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.mp3",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.mp3"
             },
             {
+              "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.wav",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.wav"
             }
           ]
         },
 
         {
           "variante": 2,
-          "aufnahme": {
-            "inventarnummer": "TSA:Loxodonta_africana_S_367_1_1",
-            "dauer": "00:02:06",
-            "alter": "halbwuechsig",
-            "geschlecht": null,
-            "aufnahmeort": "Zoo Hannover, Niedersachsen, Deutschland",
-            "aufnahmedatum": "1960-05-17",
-            "beschreibung": "Halbwüchsiges Tier: Grollen, im Haus. Abstand: 6 m.",
-            "qualitaet": "b",
-            "lizenz": "CC BY-SA"
-          },
+          "quelle": "Tierstimmenarchiv",
+
+          "metadaten": [
+            {
+              "typ": "quelle",
+              "format": "animalSoundArchive",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/animal_sound_archive.json"
+            }
+          ],
+
           "dateien": [
             {
+              "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.flac",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.flac"
             },
             {
+              "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.mp3",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.mp3"
             },
             {
+              "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.wav",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.wav"
             }
           ]
         },
 
         {
           "variante": 3,
-          "aufnahme": {
-            "inventarnummer": "TSA:Loxodonta_africana_S_369_2_1",
-            "dauer": "00:00:14",
-            "alter": "halbwuechsig",
-            "geschlecht": null,
-            "aufnahmeort": "Zoo Hannover, Niedersachsen, Deutschland",
-            "aufnahmedatum": "1960-05-19",
-            "beschreibung": "Halbwüchsiges Tier: Grollen. Abstand ca. 10 m.",
-            "qualitaet": "b",
-            "lizenz": "CC BY-SA"
-          },
+          "quelle": "Tierstimmenarchiv",
+
+          "metadaten": [
+            {
+              "typ": "quelle",
+              "format": "animalSoundArchive",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/animal_sound_archive.json"
+            }
+          ],
+
           "dateien": [
             {
+              "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.flac",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.flac"
             },
             {
+              "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.mp3",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.mp3"
             },
             {
+              "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.wav",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.wav"
             }
           ]
         }
@@ -826,38 +855,35 @@
 
     {
       "typ": "Trompetenruf",
+
       "varianten": [
         {
           "variante": 1,
-          "rufart": "Trompetenruf",
+          "quelle": "Tierstimmenarchiv",
 
-          "aufnahme": {
-            "inventarnummer": "TSA:Loxodonta_africana_S_496_1_1",
-            "dauer": "00:02:50",
-            "alter": "ausgewachsen",
-            "geschlecht": "weiblich",
-            "aufnahmeort": "Zoo Berlin, Berlin, Deutschland",
-            "aufnahmedatum": "1960-12-26",
-            "beschreibung": "Kuh \"Mondula\": Erregungstrompeten.",
-            "qualitaet": "b",
-            "lizenz": "CC BY-SA"
-          },
+          "metadaten": [
+            {
+              "typ": "quelle",
+              "format": "animalSoundArchive",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/animal_sound_archive.json"
+            }
+          ],
 
           "dateien": [
             {
+              "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.flac",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.flac"
             },
             {
+              "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.mp3",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.mp3"
             },
             {
+              "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.wav",
-              "quelle": "Tierstimmenarchiv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.wav"
             }
           ]
         }
@@ -867,46 +893,80 @@
   "video": [
     {
       "typ": "verhaltensarchiv",
-      "titel": {
-        "de": "Elephant Ethogram",
-        "en": "Elephant Ethogram"
-      },
-      "url": "https://cdn.sanity.io/files/1367lwmq/production/36f0bae01b9b21f41df2b29234225dd8c62f98b3.mp4",
-      "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4",
-      "dateityp": "mp4",
-      "dauerSekunden": 39,
-      "beschreibung": {
-        "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
-        "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
-      },
-      "quelle": "elephantVoices"
+
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "Elephant Ethogram",
+
+          "titel": {
+            "de": "Elephant Ethogram",
+            "en": "Elephant Ethogram"
+          },
+
+          "quelle": "elephantVoices",
+
+          "url": "https://cdn.sanity.io/files/1367lwmq/production/36f0bae01b9b21f41df2b29234225dd8c62f98b3.mp4",
+
+          "metadaten": [],
+
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "mp4",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4"
+            }
+          ],
+
+          "dauerSekunden": 39,
+
+          "beschreibung": {
+            "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
+            "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
+          }
+        }
+      ]
     },
+
     {
       "typ": "dokumentation",
-      "reihe": "Go Wild",
-      "titel": {
-        "de": "Go Wild – Afrikanischer Savannenelefant",
-        "en": "Go Wild – African Savanna Elephant"
-      },
 
-      "original": {
-        "dateityp": "mkv",
-        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mkv"
-      },
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "Go Wild",
 
-      "wiedergabe": {
-        "dateityp": "mp4",
-        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4"
-      },
+          "titel": {
+            "de": "Go Wild – Afrikanischer Savannenelefant",
+            "en": "Go Wild – African Savanna Elephant"
+          },
 
-      "dauerSekunden": null,
+          "quelle": "goWild",
+          "url": "",
 
-      "beschreibung": {
-        "de": "Go-Wild-Dokumentation über den Afrikanischen Savannenelefanten.",
-        "en": "Go Wild documentary about the African savanna elephant."
-      },
+          "metadaten": [],
 
-      "quelle": "goWild"
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "mkv",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mkv"
+            },
+            {
+              "typ": "wiedergabe",
+              "dateityp": "mp4",
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4"
+            }
+          ],
+
+          "dauerSekunden": null,
+
+          "beschreibung": {
+            "de": "Go-Wild-Dokumentation über den Afrikanischen Savannenelefanten.",
+            "en": "Go Wild documentary about the African savanna elephant."
+          }
+        }
+      ]
     }
   ],
   "planetZoo2": {

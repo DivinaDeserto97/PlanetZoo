@@ -17,12 +17,8 @@
 
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "habitatTerrestrial"
-    ],
-    "kontinente": [
-      "africa"
-    ],
+    "gehegetyp": ["habitatTerrestrial"],
+    "kontinente": ["africa"],
     "schutzstatus": "leastConcern"
   },
 
@@ -783,83 +779,58 @@
 
   "bilder": [
     {
-      "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzEwNjZhMTkvQWFyZHZhcmsuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiY2UyZDk0N2QtMTAzMS00NTI1LTliOTgtM2UwY2ZhOWNjMDk1In19",
       "typ": "hauptbild",
-      "dateityp": "webp",
-      "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/bilder/Orycteropus afer 1.webp",
-      "alt": {
-        "de": "Erdferkel",
-        "en": "Aardvark"
-      },
-      "quelle": "wikimediaCommons",
-      "status": "lokalNochNichtVorhanden"
+
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "wikimediaCommons",
+
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzEwNjZhMTkvQWFyZHZhcmsuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiY2UyZDk0N2QtMTAzMS00NTI1LTliOTgtM2UwY2ZhOWNjMDk1In19",
+
+          "alt": {
+            "de": "Erdferkel",
+            "en": "Aardvark"
+          },
+
+          "metadaten": [],
+
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/bilder/Orycteropus afer 1.webp"
+            }
+          ],
+
+          "status": "lokalNochNichtVorhanden"
+        }
+      ]
     }
   ],
 
   "audio": [
     {
-      "typ": "Grunzen",
-      "status": "keineLokaleAufnahmeVorhanden",
-      "lautbeschreibungQuelle": "animalDiversityWeb",
+      "typ": "",
 
       "varianten": [
         {
           "variante": 1,
+          "quelle": "",
 
-          "aufnahme": {
-            "inventarnummer": "",
-            "dauer": "",
-            "alter": "",
-            "geschlecht": null,
-            "aufnahmeort": "",
-            "aufnahmedatum": "",
-            "beschreibung": "",
-            "qualitaet": "",
-            "lizenz": ""
-          },
-
-          "dateien": [
+          "metadaten": [
             {
-              "dateityp": "",
-              "pfad": "",
-              "quelle": ""
+              "typ": "quelle",
+              "format": "",
+              "pfad": ""
             }
-          ]
-        }
-      ]
-    },
-
-    {
-      "typ": "Blöken",
-      "status": "keineLokaleAufnahmeVorhanden",
-      "lautbeschreibungQuelle": "animalDiversityWeb",
-
-      "hinweis": {
-        "de": "Dieser Laut wird für Situationen extremer Angst beschrieben.",
-        "en": "This vocalization is described for situations of extreme fear."
-      },
-
-      "varianten": [
-        {
-          "variante": 1,
-
-          "aufnahme": {
-            "inventarnummer": "",
-            "dauer": "",
-            "alter": "",
-            "geschlecht": null,
-            "aufnahmeort": "",
-            "aufnahmedatum": "",
-            "beschreibung": "",
-            "qualitaet": "",
-            "lizenz": ""
-          },
+          ],
 
           "dateien": [
             {
+              "typ": "original",
               "dateityp": "",
-              "pfad": "",
-              "quelle": ""
+              "pfad": ""
             }
           ]
         }
@@ -869,33 +840,45 @@
 
   "video": [
     {
-      "typ": "",
-      "reihe": "",
+      "typ": "dokumentation",
 
-      "titel": {
-        "de": "",
-        "en": ""
-      },
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "Go Wild",
 
-      "original": {
-        "dateityp": "",
-        "pfad": ""
-      },
+          "titel": {
+            "de": "Go Wild! – Mission Wildnis S01E03: Die Buddelmeister der Savanne",
+            "en": "Go Wild! – Mission Wildnis S01E03: Aardvark Town"
+          },
 
-      "wiedergabe": {
-        "dateityp": "",
-        "pfad": ""
-      },
+          "quelle": "Go Wild",
 
-      "dauerSekunden": null,
+          "url": "https://serienstream.to/serie/go-wild-mission-wildnis/staffel-1/episode-3",
 
-      "beschreibung": {
-        "de": "",
-        "en": ""
-      },
+          "metadaten": [],
 
-      "quelle": "",
-      "status": "keinLokalesVideoEingetragen"
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "mkv",
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mkv"
+            },
+            {
+              "typ": "wiedergabe",
+              "dateityp": "mp4",
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mp4"
+            }
+          ],
+
+          "dauerSekunden": null,
+
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
+        }
+      ]
     }
   ],
 
@@ -1012,6 +995,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+
+    "goWild": {
+      "name": "Go Wild",
+      "typ": "dokumentation",
+      "status": "Lokale Videodatei – nicht im öffentlichen Repository gespeichert"
     }
   }
 }

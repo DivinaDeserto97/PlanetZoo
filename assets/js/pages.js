@@ -36,6 +36,17 @@ const TEXT = {
     ja: "情報パネル",
     "zh-Hans": "信息板",
   },
+  kino: {
+    de: "Kino",
+    en: "Cinema",
+    "en-US": "Movie theater",
+    es: "Cine",
+    fr: "Cinéma",
+    it: "Cinema",
+    "pt-BR": "Cinema",
+    ja: "映画館",
+    "zh-Hans": "电影院",
+  },
   rechner: {
     de: "Rechner",
     en: "Calculator",
@@ -76,6 +87,14 @@ export const pages = {
     js: "./infotafel/infotafel.js",
     navigation: TEXT.infotafel,
     headerTitle: TEXT.infotafel,
+  },
+
+  kino: {
+    html: "./pages/kino.html",
+    css: "./assets/css/kino/kino.css",
+    js: "./kino/kino.js",
+    navigation: TEXT.kino,
+    headerTitle: TEXT.kino,
   },
 
   rechner: {

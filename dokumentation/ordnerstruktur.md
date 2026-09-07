@@ -35,6 +35,8 @@
         - [home.css](<../assets/css/home/home.css>)
       - `infotafel/`
         - [infotafel.css](<../assets/css/infotafel/infotafel.css>)
+      - `kino/`
+        - [kino.css](<../assets/css/kino/kino.css>)
       - [main.css](<../assets/css/main.css>)
       - `map/`
         - [map-style.css](<../assets/css/map/map-style.css>)
@@ -158,6 +160,14 @@
               - `Orycteropus afer 1.webp` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/.gitkeep>)
+              - `dokumentation/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/.gitkeep>)
+                - `Go Wild/`
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/.gitkeep>)
+                  - `1/`
+                    - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/.gitkeep>)
+                    - `1.mkv` *(Medium – nicht in Share-ZIP)*
+                    - `1.mp4` *(Medium – nicht in Share-ZIP)*
           - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
     - `js/`
       - `features/`
@@ -168,11 +178,16 @@
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
         - [theme.js](<../assets/js/features/theme.js>)
         - [tierAuswahl.js](<../assets/js/features/tierAuswahl.js>)
+        - [tierFilter.js](<../assets/js/features/tierFilter.js>)
       - `home/`
         - `features/`
         - [home.js](<../assets/js/home/home.js>)
       - `infotafel/`
+        - `features/`
         - [infotafel.js](<../assets/js/infotafel/infotafel.js>)
+      - `kino/`
+        - `features/`
+        - [kino.js](<../assets/js/kino/kino.js>)
       - [main.js](<../assets/js/main.js>)
       - `map/`
         - `features/`
@@ -182,6 +197,7 @@
         - [map.js](<../assets/js/map/map.js>)
       - [pages.js](<../assets/js/pages.js>)
       - `rechner/`
+        - `features/`
         - [rechner.js](<../assets/js/rechner/rechner.js>)
   - `dokumentation/`
     - [ordnerstruktur.md](<../dokumentation/ordnerstruktur.md>)
@@ -189,6 +205,7 @@
   - `pages/`
     - [home.html](<../pages/home.html>)
     - [infotafel.html](<../pages/infotafel.html>)
+    - [kino.html](<../pages/kino.html>)
     - [map.html](<../pages/map.html>)
     - [rechner.html](<../pages/rechner.html>)
   - `tools/`
