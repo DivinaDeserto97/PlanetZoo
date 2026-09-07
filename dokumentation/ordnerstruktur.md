@@ -45,6 +45,10 @@
       - `rechner/`
         - [rechner.css](<../assets/css/rechner/rechner.css>)
       - [style.css](<../assets/css/style.css>)
+      - `tier/`
+        - [tier-style.css](<../assets/css/tier/tier-style.css>)
+        - [tier-var.css](<../assets/css/tier/tier-var.css>)
+        - [tier.css](<../assets/css/tier/tier.css>)
       - [var.css](<../assets/css/var.css>)
     - `daten/`
       - `Weltkarte/`
@@ -102,7 +106,7 @@
               - `Loxodonta africana 2.jpg` *(Medium – nicht in Share-ZIP)*
             - `map/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/map/.gitkeep>)
-              - `Loxodonta africana map.png` *(Medium – nicht in Share-ZIP)*
+              - `1.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/.gitkeep>)
               - `dokumentation/`
@@ -144,8 +148,13 @@
         - [navigation.js](<../assets/js/features/navigation.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
         - [theme.js](<../assets/js/features/theme.js>)
+        - [tierAktiv.js](<../assets/js/features/tierAktiv.js>)
         - [tierAuswahl.js](<../assets/js/features/tierAuswahl.js>)
+        - [tierDatenPruefung.js](<../assets/js/features/tierDatenPruefung.js>)
         - [tierFilter.js](<../assets/js/features/tierFilter.js>)
+        - [tierMedien.js](<../assets/js/features/tierMedien.js>)
+        - [toolEinstellungen.js](<../assets/js/features/toolEinstellungen.js>)
+        - [toolRegistry.js](<../assets/js/features/toolRegistry.js>)
       - `home/`
         - `features/`
           - [filter.js](<../assets/js/home/features/filter.js>)
@@ -169,6 +178,8 @@
       - `rechner/`
         - `features/`
         - [rechner.js](<../assets/js/rechner/rechner.js>)
+      - `tier/`
+        - [tier.js](<../assets/js/tier/tier.js>)
   - `dokumentation/`
     - [ordnerstruktur.md](<../dokumentation/ordnerstruktur.md>)
   - [index.html](<../index.html>)
@@ -178,6 +189,7 @@
     - [kino.html](<../pages/kino.html>)
     - [map.html](<../pages/map.html>)
     - [rechner.html](<../pages/rechner.html>)
+    - [tier.html](<../pages/tier.html>)
   - `tools/`
     - [commit.sh](<../tools/commit.sh>)
     - [ordnerstruktur.sh](<../tools/ordnerstruktur.sh>)

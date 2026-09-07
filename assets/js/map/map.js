@@ -128,6 +128,14 @@ export async function init() {
     },
   );
 
+  document.addEventListener(
+    "toolEinstellungenChanged",
+    renderListe,
+    {
+      signal,
+    },
+  );
+
 
   initMapLayout(
     signal,

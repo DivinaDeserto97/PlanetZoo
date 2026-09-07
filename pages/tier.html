@@ -1,0 +1,64 @@
+<section class="tier-page" data-tier-page>
+  <header class="tier-page__header">
+    <div>
+      <p
+        class="tier-page__eyebrow"
+        data-i18n
+        data-de="Datenprüfung"
+        data-en="Data check"
+        data-en-US="Data check"
+        data-es="Comprobación de datos"
+        data-fr="Vérification des données"
+        data-it="Controllo dati"
+        data-pt-BR="Verificação de dados"
+        data-ja="データ確認"
+        data-zh-Hans="数据检查"
+      >
+        Datenprüfung
+      </p>
+
+      <h1 data-tier-name>Tier</h1>
+      <p class="tier-page__scientific" data-tier-scientific></p>
+    </div>
+
+    <a
+      class="tier-page__back"
+      href="#home"
+      data-page="home"
+    >
+      ← Home
+    </a>
+  </header>
+
+  <div class="tier-page__empty" data-tier-empty hidden>
+    <strong>Kein Tier geöffnet.</strong>
+    <p>Öffne auf Home oder über den Info-Button ein Tier.</p>
+  </div>
+
+  <div class="tier-page__content" data-tier-content hidden>
+    <section class="tier-page__overview">
+      <div class="tier-page__image">
+        <img data-tier-image alt="" />
+        <span data-tier-image-fallback hidden>Kein Bild</span>
+      </div>
+
+      <div class="tier-page__summary">
+        <h2>Datenstatus</h2>
+        <p>
+          Hier siehst du pro Tool genau, welche Daten vollständig sind und
+          welche Felder fehlen. Die Einstellung aus dem Footer bestimmt nur,
+          ob ein Fehler auf Home, Karte und Infotafel rot, gelb oder gar nicht
+          hervorgehoben wird.
+        </p>
+
+        <div class="tier-page__legend">
+          <span class="tier-page__legend-item is-error">Wichtig</span>
+          <span class="tier-page__legend-item is-warning">Nicht wichtig</span>
+          <span class="tier-page__legend-item is-hidden">Unsichtbar</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="tier-tool-list" data-tier-tool-list></div>
+  </div>
+</section>

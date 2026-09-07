@@ -15,9 +15,9 @@
   min-height: 68px;
   margin: 0 auto;
   padding: var(--abstand-2) var(--abstand-4);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   gap: var(--abstand-4);
 }
 
@@ -34,58 +34,74 @@
   font-size: 22px;
 }
 
-.app-footer__nav {
+.app-footer__tools {
+  min-width: 0;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-end;
   gap: var(--abstand-2);
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
-.app-footer__nav a {
-  min-height: 46px;
-  padding: var(--abstand-2) var(--abstand-3);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--abstand-2);
-  border: 1px solid transparent;
-  border-radius: var(--radius-mittel);
-  text-decoration: none;
+.app-footer__tool {
+  flex: 0 0 128px;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 3px;
+}
+
+.app-footer__tool-name {
+  min-width: 0;
+  overflow: hidden;
   color: var(--farbe-header-text-zusatz);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.app-footer__nav a:hover {
-  border-color: var(--farbe-linie);
-  background: var(--farbe-hover);
+.app-footer__tool-name:hover,
+.app-footer__tool-name.active {
   color: var(--farbe-header-text);
 }
 
-.app-footer__nav a.active {
-  border-color: var(--farbe-akzent);
-  background: var(--farbe-akzent);
-  color: var(--farbe-akzent-text);
+.app-footer__tool-name.active {
+  text-decoration: underline;
+  text-decoration-color: var(--farbe-akzent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.app-footer__tool-select {
+  width: 100%;
+  min-height: 32px;
+  padding: 0 7px;
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-klein);
+  background: var(--farbe-element);
+  color: var(--farbe-header-text);
+  font-size: 11px;
 }
 
 @media (max-width: 760px) {
   .app-footer__inner {
     min-height: 76px;
     padding: var(--abstand-2);
+    grid-template-columns: 1fr;
   }
 
   .app-footer__selection {
     display: none;
   }
 
-  .app-footer__nav {
-    width: 100%;
-    justify-content: space-around;
-    gap: var(--abstand-1);
+  .app-footer__tools {
+    justify-content: flex-start;
   }
 
-  .app-footer__nav a {
-    min-width: 64px;
-    padding: var(--abstand-2);
-    flex-direction: column;
-    gap: 2px;
-    font-size: 12px;
+  .app-footer__tool {
+    flex-basis: 118px;
   }
 }

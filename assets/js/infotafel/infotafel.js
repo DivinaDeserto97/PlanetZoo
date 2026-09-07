@@ -1,6 +1,11 @@
 import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 import { getLanguage, getLocalizedValue } from "../features/language.js";
 import { getTierAuswahl } from "../features/tierAuswahl.js";
+import { getTierMarkierungsStatus } from "../features/tierDatenPruefung.js";
+import {
+  getInfotafelAudioItems,
+  getInfotafelBilder,
+} from "../features/tierMedien.js";
 import {
   getConservationLabel,
   getAnimalUiText,
@@ -150,6 +155,7 @@ export async function init() {
   bindStaticEvents(signal);
 
   document.addEventListener("languageChanged", render, { signal });
+  document.addEventListener("toolEinstellungenChanged", render, { signal });
   document.addEventListener(
     "tierAuswahlChanged",
     () => {
@@ -251,6 +257,14 @@ function renderTierNavigation() {
     button.dataset.tierId = tier.id;
     button.classList.toggle("active", tier.id === activeTierId);
 
+    const datenStatus = getTierMarkierungsStatus(tier);
+
+    if (datenStatus === "error") {
+      button.classList.add("has-data-error");
+    } else if (datenStatus === "warning") {
+      button.classList.add("has-data-warning");
+    }
+
     if (tier.hauptbildPfad) {
       const img = document.createElement("img");
       img.src = tier.hauptbildPfad;
@@ -330,9 +344,7 @@ function renderHeading(tier) {
 /* ======================================== */
 
 function getTierImages(tier) {
-  return (tier.bilder ?? []).filter(
-    (bild) => typeof bild?.pfad === "string" && bild.pfad.trim(),
-  );
+  return getInfotafelBilder(tier);
 }
 
 function renderMainImage(tier) {
@@ -681,6 +693,8 @@ async function renderAudio(tier) {
 
   if (!audio || !play || !left || !right) return;
 
+  setAudioUiVisible(audioItems.length > 0);
+
   audio.pause();
   setAudioPlayIcon("▶");
 
@@ -720,38 +734,24 @@ async function renderAudio(tier) {
   setText("[data-audio-description]", description);
 }
 
-function buildAudioItems(tier) {
-  const groups = Array.isArray(tier.originalDaten?.audio)
-    ? tier.originalDaten.audio
-    : [];
-  const items = [];
+function setAudioUiVisible(visible) {
+  [
+    "[data-audio-left]",
+    "[data-audio-right]",
+    "[data-audio-play]",
+    "[data-audio-panel]",
+  ].forEach((selector) => {
+    const element = document.querySelector(selector);
 
-  groups.forEach((group) => {
-    const variants = Array.isArray(group?.varianten) ? group.varianten : [];
-
-    variants.forEach((variant, variantArrayIndex) => {
-      const files = Array.isArray(variant?.dateien) ? variant.dateien : [];
-      const best = chooseAudioFile(files);
-      if (!best?.pfad) return;
-
-      const variantNumber = Number(variant?.variante) || variantArrayIndex + 1;
-      const src = best.pfad;
-      const directory = src.slice(
-        0,
-        src.lastIndexOf("/") + 1,
-      );
-
-      items.push({
-        key: `${group.typ ?? "Audio"}-${variantNumber}-${src}`,
-        typ: group.typ ?? "Audio",
-        variante: variantNumber,
-        src,
-        metaPath: `${directory}animal_sound_archive.json`,
-      });
-    });
+    if (element) {
+      element.hidden = !visible;
+    }
   });
+}
 
-  return items;
+
+function buildAudioItems(tier) {
+  return getInfotafelAudioItems(tier);
 }
 
 function chooseAudioFile(files) {
@@ -960,22 +960,97 @@ function renderZoopedia(tier) {
   const container = document.querySelector("[data-zoopedia-text]");
   if (!container) return;
 
-  const entries = getTextEntries(tier, "uebersicht");
+  const language = getLanguage();
+
+  const sections = [
+    {
+      key: "uebersicht",
+      label: {
+        de: "Übersicht",
+        en: "Overview",
+        "en-US": "Overview",
+      },
+    },
+    {
+      key: "vorkommen",
+      label: {
+        de: "Vorkommen",
+        en: "Distribution",
+        "en-US": "Distribution",
+      },
+    },
+    {
+      key: "arterhaltung",
+      label: {
+        de: "Arterhaltung",
+        en: "Conservation",
+        "en-US": "Conservation",
+      },
+    },
+    {
+      key: "sozialverhaltenUndFortpflanzung",
+      label: {
+        de: "Sozialverhalten & Fortpflanzung",
+        en: "Social behaviour & reproduction",
+        "en-US": "Social behavior & reproduction",
+      },
+    },
+    {
+      key: "tierfakten",
+      label: {
+        de: "Tierfakten",
+        en: "Animal facts",
+        "en-US": "Animal facts",
+      },
+    },
+    {
+      key: "entwicklungshinweis",
+      label: {
+        de: "Hinweis",
+        en: "Note",
+        "en-US": "Note",
+      },
+    },
+  ];
+
   container.replaceChildren();
 
-  if (!entries.length) {
+  let rendered = 0;
+
+  sections.forEach((sectionData) => {
+    const entries = getTextEntries(tier, sectionData.key);
+
+    if (!entries.length) return;
+
+    rendered++;
+
+    const section = document.createElement("section");
+    section.className = "zoopedia-section";
+
+    const heading = document.createElement("h3");
+    heading.textContent =
+      sectionData.label[language] ??
+      sectionData.label.de ??
+      sectionData.key;
+
+    section.appendChild(heading);
+
+    entries.forEach((entry) => {
+      const p = document.createElement("p");
+      p.textContent = entry.inhalt;
+      section.appendChild(p);
+    });
+
+    container.appendChild(section);
+  });
+
+  if (!rendered) {
     const p = document.createElement("p");
     p.textContent = ui("noData");
     container.appendChild(p);
-    return;
   }
-
-  entries.forEach((entry) => {
-    const p = document.createElement("p");
-    p.textContent = entry.inhalt;
-    container.appendChild(p);
-  });
 }
+
 
 /* ======================================== */
 /* 24 - 26: TIERFAKTEN                      */

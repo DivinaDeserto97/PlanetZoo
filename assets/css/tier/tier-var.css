@@ -1,0 +1,6 @@
+.tier-page {
+  --tier-error: #ef4444;
+  --tier-warning: #eab308;
+  --tier-ok: #22c55e;
+  --tier-hidden: #64748b;
+}

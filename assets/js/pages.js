@@ -14,6 +14,17 @@ const TEXT = {
     ja: "ホーム",
     "zh-Hans": "主页",
   },
+  tier: {
+    de: "Tierprüfung",
+    en: "Animal check",
+    "en-US": "Animal check",
+    es: "Comprobación del animal",
+    fr: "Vérification de l’animal",
+    it: "Controllo animale",
+    "pt-BR": "Verificação do animal",
+    ja: "動物データ確認",
+    "zh-Hans": "动物数据检查",
+  },
   map: {
     de: "Karte",
     en: "Map",
@@ -71,6 +82,14 @@ export const pages = {
     js: "./home/home.js",
     navigation: null,
     headerTitle: TEXT.home,
+  },
+
+  tier: {
+    html: "./pages/tier.html",
+    css: "./assets/css/tier/tier.css",
+    js: "./tier/tier.js",
+    navigation: null,
+    headerTitle: TEXT.tier,
   },
 
   map: {

@@ -171,6 +171,14 @@ export async function init() {
     },
   );
 
+  document.addEventListener(
+    "toolEinstellungenChanged",
+    render,
+    {
+      signal,
+    },
+  );
+
 
   /* ==================================== */
   /* ERSTER AUFBAU                        */

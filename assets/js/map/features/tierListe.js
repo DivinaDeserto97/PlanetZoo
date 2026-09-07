@@ -9,6 +9,23 @@ import {
   setTierAusgewaehlt,
 } from "../../features/tierAuswahl.js";
 
+import {
+  setAktivesTierId,
+} from "../../features/tierAktiv.js";
+
+import {
+  getTierMarkierungsStatus,
+} from "../../features/tierDatenPruefung.js";
+
+import {
+  getToolEinstellung,
+  TOOL_STUFEN,
+} from "../../features/toolEinstellungen.js";
+
+import {
+  TOOL_IDS,
+} from "../../features/toolRegistry.js";
+
 
 /* ======================================== */
 /* TIERNAME                                 */
@@ -106,9 +123,14 @@ export function initTierListe(
             tier.id,
           );
 
+        const istAusgewaehlt =
+          selected.has(
+            tier.id,
+          );
+
         const row =
           document.createElement(
-            "label",
+            "div",
           );
 
         row.className =
@@ -125,6 +147,81 @@ export function initTierListe(
         }
 
 
+        if (istAusgewaehlt) {
+          row.classList.add(
+            "is-selected",
+          );
+
+          let status =
+            getTierMarkierungsStatus(
+              tier,
+            );
+
+
+          /*
+              Die Map kennt zusätzlich den
+              echten Laufzeit-Zustand. Wenn
+              das Bild trotz JSON-Pfad nicht
+              geladen werden konnte, zählt
+              das hier ebenfalls als Map-Fehler.
+          */
+
+          if (!hatKarte) {
+            const mapStufe =
+              getToolEinstellung(
+                TOOL_IDS.MAP,
+              );
+
+
+            if (
+              mapStufe ===
+              TOOL_STUFEN.WICHTIG
+            ) {
+              status =
+                "error";
+            }
+
+            else if (
+              mapStufe ===
+                TOOL_STUFEN.NICHT_WICHTIG &&
+              status !==
+                "error"
+            ) {
+              status =
+                "warning";
+            }
+          }
+
+
+          if (
+            status ===
+            "error"
+          ) {
+            row.classList.add(
+              "has-data-error",
+            );
+          }
+
+          else if (
+            status ===
+            "warning"
+          ) {
+            row.classList.add(
+              "has-data-warning",
+            );
+          }
+        }
+
+
+        const selectArea =
+          document.createElement(
+            "label",
+          );
+
+        selectArea.className =
+          "map-animal__select-area";
+
+
         const checkbox =
           document.createElement(
             "input",
@@ -137,9 +234,7 @@ export function initTierListe(
           "map-animal__checkbox";
 
         checkbox.checked =
-          selected.has(
-            tier.id,
-          );
+          istAusgewaehlt;
 
 
         checkbox.addEventListener(
@@ -150,9 +245,7 @@ export function initTierListe(
               checkbox.checked,
             );
           },
-          {
-            signal,
-          },
+          { signal },
         );
 
 
@@ -190,6 +283,9 @@ export function initTierListe(
           document.createElement(
             "span",
           );
+
+        text.className =
+          "map-animal__text";
 
 
         const name =
@@ -236,19 +332,57 @@ export function initTierListe(
           noMap.textContent =
             getNoMapText();
 
-
           text.appendChild(
             noMap,
           );
         }
 
 
-        row.append(
+        selectArea.append(
           checkbox,
           color,
           text,
         );
 
+
+        const info =
+          document.createElement(
+            "button",
+          );
+
+        info.type =
+          "button";
+
+        info.className =
+          "map-animal__info";
+
+        info.dataset.page =
+          "tier";
+
+        info.textContent =
+          "Info";
+
+        info.setAttribute(
+          "aria-label",
+          `${getTierName(tier)} – Info`,
+        );
+
+
+        info.addEventListener(
+          "click",
+          () => {
+            setAktivesTierId(
+              tier.id,
+            );
+          },
+          { signal },
+        );
+
+
+        row.append(
+          selectArea,
+          info,
+        );
 
         container.appendChild(
           row,
@@ -279,26 +413,9 @@ export function initTierListe(
       );
 
 
-    container
-      .querySelectorAll(
-        "[data-animal-id]",
-      )
-      .forEach(
-        (row) => {
-          const checkbox =
-            row.querySelector(
-              ".map-animal__checkbox",
-            );
-
-          if (checkbox) {
-            checkbox.checked =
-              selected.has(
-                row.dataset
-                  .animalId,
-              );
-          }
-        },
-      );
+    render(
+      currentVisible,
+    );
 
 
     renderer.render(
@@ -314,10 +431,6 @@ export function initTierListe(
     ?.addEventListener(
       "click",
       () => {
-        /*
-            Absichtlich alle Tiere,
-            nicht nur die gefilterten.
-        */
         setTierAuswahl(
           tiere.map(
             (tier) =>
@@ -325,9 +438,7 @@ export function initTierListe(
           ),
         );
       },
-      {
-        signal,
-      },
+      { signal },
     );
 
 
@@ -342,9 +453,7 @@ export function initTierListe(
           [],
         );
       },
-      {
-        signal,
-      },
+      { signal },
     );
 
 
@@ -356,9 +465,7 @@ export function initTierListe(
         getTierAuswahl(),
       );
     },
-    {
-      signal,
-    },
+    { signal },
   );
 
 

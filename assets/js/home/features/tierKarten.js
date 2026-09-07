@@ -6,6 +6,14 @@ import {
 } from "../../features/tierAuswahl.js";
 
 import {
+  setAktivesTierId,
+} from "../../features/tierAktiv.js";
+
+import {
+  getTierMarkierungsStatus,
+} from "../../features/tierDatenPruefung.js";
+
+import {
   getEnclosureLabel,
   getConservationLabel,
   getEditionLabel,
@@ -63,10 +71,43 @@ function createAnimalCard(tier, selected, signal) {
   card.className = "home-animal-card";
 
   card.dataset.animalId = tier.id;
+  card.dataset.page = "tier";
+  card.tabIndex = 0;
+  card.setAttribute("role", "link");
+
+  const datenStatus = getTierMarkierungsStatus(tier);
+
+  if (datenStatus === "error") {
+    card.classList.add("has-data-error");
+  } else if (datenStatus === "warning") {
+    card.classList.add("has-data-warning");
+  }
 
   if (selected.has(tier.id)) {
     card.classList.add("is-selected");
   }
+
+  card.addEventListener(
+    "click",
+    () => {
+      setAktivesTierId(tier.id);
+    },
+    { signal },
+  );
+
+  card.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      setAktivesTierId(tier.id);
+      card.click();
+    },
+    { signal },
+  );
 
   /* ==================================== */
   /* BILD                                 */
@@ -114,6 +155,14 @@ function createAnimalCard(tier, selected, signal) {
   checkbox.checked = selected.has(tier.id);
 
   checkbox.setAttribute("aria-label", `${getTierName(tier)} auswählen`);
+
+  checkbox.addEventListener(
+    "click",
+    (event) => {
+      event.stopPropagation();
+    },
+    { signal },
+  );
 
   checkbox.addEventListener(
     "change",
