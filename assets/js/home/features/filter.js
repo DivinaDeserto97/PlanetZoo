@@ -5,6 +5,8 @@
 export function initHomeFilter({
   signal,
   onChange,
+  onSelectAll,
+  onSelectNone,
 }) {
   const elemente = {
     suche:
@@ -45,6 +47,16 @@ export function initHomeFilter({
     richtung:
       document.querySelector(
         "[data-home-sort-direction]",
+      ),
+
+    alleAuswaehlen:
+      document.querySelector(
+        "[data-home-select-all]",
+      ),
+
+    alleAbwaehlen:
+      document.querySelector(
+        "[data-home-select-none]",
       ),
 
     reset:
@@ -100,7 +112,7 @@ export function initHomeFilter({
 
 
   /* ==================================== */
-  /* EVENTS                               */
+  /* FILTER / SORTIERUNG                  */
   /* ==================================== */
 
   const elementListe = [
@@ -138,6 +150,38 @@ export function initHomeFilter({
       );
     },
   );
+
+
+  /* ==================================== */
+  /* ALLE AUSWÄHLEN                       */
+  /* ==================================== */
+
+  elemente.alleAuswaehlen
+    ?.addEventListener(
+      "click",
+      () => {
+        onSelectAll?.();
+      },
+      {
+        signal,
+      },
+    );
+
+
+  /* ==================================== */
+  /* ALLE ABWÄHLEN                        */
+  /* ==================================== */
+
+  elemente.alleAbwaehlen
+    ?.addEventListener(
+      "click",
+      () => {
+        onSelectNone?.();
+      },
+      {
+        signal,
+      },
+    );
 
 
   /* ==================================== */
@@ -181,7 +225,7 @@ export function initHomeFilter({
           "desc";
       }
 
-      onChange();
+      onChange?.();
     },
     {
       signal,

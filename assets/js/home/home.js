@@ -4,6 +4,8 @@ import {
 
 import {
   bereinigeTierAuswahl,
+  getTierAuswahl,
+  setTierAuswahl,
 } from "../features/tierAuswahl.js";
 
 import {
@@ -22,6 +24,8 @@ import {
 let controller = null;
 
 let tiere = [];
+
+let sichtbareTiere = [];
 
 
 /* ======================================== */
@@ -51,10 +55,6 @@ export async function init() {
   );
 
 
-  /* ==================================== */
-  /* FILTER-STEUERUNG                     */
-  /* ==================================== */
-
   let filterSteuerung =
     null;
 
@@ -68,18 +68,66 @@ export async function init() {
       return;
     }
 
-    const state =
-      filterSteuerung.getState();
-
-    const sichtbareTiere =
+    sichtbareTiere =
       filterUndSortiereTiere(
         tiere,
-        state,
+        filterSteuerung.getState(),
       );
 
     renderHomeTierKarten(
       sichtbareTiere,
       signal,
+    );
+  }
+
+
+  /* ==================================== */
+  /* ALLE SICHTBAREN AUSWÄHLEN            */
+  /* ==================================== */
+
+  function selectAllVisible() {
+    const selected =
+      new Set(
+        getTierAuswahl(),
+      );
+
+    sichtbareTiere.forEach(
+      (tier) => {
+        selected.add(
+          tier.id,
+        );
+      },
+    );
+
+    setTierAuswahl(
+      [...selected],
+    );
+  }
+
+
+  /* ==================================== */
+  /* ALLE SICHTBAREN ABWÄHLEN             */
+  /* ==================================== */
+
+  function selectNoneVisible() {
+    const visibleIds =
+      new Set(
+        sichtbareTiere.map(
+          (tier) => tier.id,
+        ),
+      );
+
+    const selected =
+      getTierAuswahl()
+        .filter(
+          (tierId) =>
+            !visibleIds.has(
+              tierId,
+            ),
+        );
+
+    setTierAuswahl(
+      selected,
     );
   }
 
@@ -91,7 +139,15 @@ export async function init() {
   filterSteuerung =
     initHomeFilter({
       signal,
-      onChange: render,
+
+      onChange:
+        render,
+
+      onSelectAll:
+        selectAllVisible,
+
+      onSelectNone:
+        selectNoneVisible,
     });
 
 

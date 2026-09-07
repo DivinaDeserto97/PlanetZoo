@@ -1,242 +1,629 @@
+/* ======================================== */
+/* HOME-SEITE                               */
+/* ======================================== */
+
 .home-page {
   width: 100%;
   max-width: var(--home-max-width);
+
   margin: 0 auto;
-  padding: var(--home-padding-vertical) var(--home-padding-horizontal);
+
+  padding:
+    var(--home-padding-vertical)
+    var(--home-padding-horizontal);
+
   color: var(--farbe-text);
 }
+
+
+/* ======================================== */
+/* HERO                                     */
+/* ======================================== */
 
 .home-hero {
   display: flex;
+
   align-items: flex-end;
   justify-content: space-between;
+
   gap: var(--abstand-5);
+
   margin-bottom: var(--abstand-5);
 }
 
-.home-filter__field--search {
-  grid-column: span 2;
-}
 
 .home-hero__eyebrow {
-  margin: 0 0 var(--abstand-1);
+  margin:
+    0
+    0
+    var(--abstand-1);
+
   color: var(--farbe-akzent);
+
   font-size: var(--schrift-klein);
   font-weight: 700;
+
   text-transform: uppercase;
+
   letter-spacing: 0.08em;
 }
 
+
 .home-hero h1 {
   margin: 0;
-  font-size: clamp(32px, 5vw, 52px);
+
+  font-size:
+    clamp(
+      32px,
+      5vw,
+      52px
+    );
 }
+
 
 .home-hero__text {
   max-width: 760px;
-  margin: var(--abstand-2) 0 0;
-  color: var(--farbe-text-zusatz);
+
+  margin:
+    var(--abstand-2)
+    0
+    0;
+
+  color:
+    var(--farbe-text-zusatz);
+
   line-height: 1.55;
 }
 
+
+/* ======================================== */
+/* ZÄHLER                                   */
+/* ======================================== */
+
 .home-hero__counter {
   min-width: 150px;
-  padding: var(--abstand-3) var(--abstand-4);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-mittel);
-  background: var(--farbe-bereich);
+
+  padding:
+    var(--abstand-3)
+    var(--abstand-4);
+
+  border:
+    1px solid
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-mittel);
+
+  background:
+    var(--farbe-bereich);
+
   text-align: right;
 }
 
+
 .home-hero__counter strong {
   display: block;
+
   font-size: 28px;
 }
 
+
 .home-hero__counter span {
-  color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
+  color:
+    var(--farbe-text-zusatz);
+
+  font-size:
+    var(--schrift-klein);
 }
+
+
+/* ======================================== */
+/* FILTER                                   */
+/* ======================================== */
 
 .home-filter {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(0, 1fr)
+    );
+
   align-items: end;
+
   gap: var(--abstand-3);
+
   padding: var(--abstand-4);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-gross);
-  background: var(--farbe-bereich);
+
+  border:
+    1px solid
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-gross);
+
+  background:
+    var(--farbe-bereich);
 }
+
+
+/* ======================================== */
+/* SUCHFELD                                 */
+/* ======================================== */
+
+.home-filter__field--search {
+  grid-column:
+    span 2;
+}
+
+
+/* ======================================== */
+/* FILTER-FELD                              */
+/* ======================================== */
 
 .home-filter__field {
   display: grid;
+
   gap: var(--abstand-2);
+
   min-width: 0;
 }
 
+
 .home-filter__field > span {
-  color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
+  color:
+    var(--farbe-text-zusatz);
+
+  font-size:
+    var(--schrift-klein);
+
   font-weight: 700;
 }
 
+
+/* ======================================== */
+/* INPUT / SELECT                           */
+/* ======================================== */
+
 .home-filter input,
-.home-filter select,
-.home-filter__reset {
+.home-filter select {
   width: 100%;
+
+  min-width: 0;
   min-height: 44px;
-  padding: 0 var(--abstand-3);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-klein);
-  background: var(--farbe-element);
-  color: var(--farbe-text);
+
+  padding:
+    0
+    var(--abstand-3);
+
+  border:
+    1px solid
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-klein);
+
+  background:
+    var(--farbe-element);
+
+  color:
+    var(--farbe-text);
 }
 
-.home-filter__reset {
-  white-space: nowrap;
+
+/* ======================================== */
+/* AKTIONS-BEREICH                          */
+/* ======================================== */
+
+.home-filter__actions {
+  grid-column:
+    span 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: var(--abstand-3);
 }
+
+
+/* ======================================== */
+/* BUTTONS                                  */
+/* ======================================== */
+
+.home-filter__action,
+.home-filter__reset {
+  width: 100%;
+
+  min-height: 44px;
+
+  padding:
+    0
+    var(--abstand-3);
+
+  border:
+    1px solid
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-klein);
+
+  background:
+    var(--farbe-element);
+
+  color:
+    var(--farbe-text);
+
+  cursor: pointer;
+}
+
+
+.home-filter__action:hover,
+.home-filter__reset:hover {
+  border-color:
+    var(--farbe-linie-hell);
+}
+
+
+.home-filter__action:focus-visible,
+.home-filter__reset:focus-visible,
+.home-filter input:focus-visible,
+.home-filter select:focus-visible {
+  outline:
+    2px solid
+    var(--farbe-akzent);
+
+  outline-offset: 2px;
+}
+
+
+/* ======================================== */
+/* TIER-GRID                                */
+/* ======================================== */
 
 .home-animal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--home-grid-min), 1fr));
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(
+        var(--home-grid-min),
+        1fr
+      )
+    );
+
   gap: var(--abstand-4);
-  margin-top: var(--abstand-5);
+
+  margin-top:
+    var(--abstand-5);
 }
+
+
+/* ======================================== */
+/* TIERKARTE                                */
+/* ======================================== */
 
 .home-animal-card {
   position: relative;
+
   overflow: hidden;
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius-gross);
-  background: var(--farbe-bereich);
+
+  border:
+    1px solid
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-gross);
+
+  background:
+    var(--farbe-bereich);
+
   transition:
     transform 0.15s ease,
     border-color 0.15s ease,
     box-shadow 0.15s ease;
 }
 
+
 .home-animal-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--farbe-linie-hell);
+  transform:
+    translateY(-2px);
+
+  border-color:
+    var(--farbe-linie-hell);
 }
 
+
 .home-animal-card.is-selected {
-  border-color: var(--farbe-akzent);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--farbe-akzent) 30%, transparent);
+  border-color:
+    var(--farbe-akzent);
+
+  box-shadow:
+    0
+    0
+    0
+    2px
+    color-mix(
+      in srgb,
+      var(--farbe-akzent) 30%,
+      transparent
+    );
 }
+
+
+/* ======================================== */
+/* KARTEN-BILD                              */
+/* ======================================== */
 
 .home-animal-card__media {
   position: relative;
-  height: var(--home-card-image-height);
+
+  height:
+    var(--home-card-image-height);
+
   display: grid;
+
   place-items: center;
+
   overflow: hidden;
-  background: var(--farbe-element-2);
+
+  background:
+    var(--farbe-element-2);
 }
+
 
 .home-animal-card__media img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
 
+
+/* ======================================== */
+/* BILD-PLATZHALTER                         */
+/* ======================================== */
+
 .home-animal-card__placeholder {
-  padding: var(--abstand-4);
-  color: var(--farbe-text-zusatz);
+  padding:
+    var(--abstand-4);
+
+  color:
+    var(--farbe-text-zusatz);
+
   text-align: center;
-  font-size: var(--schrift-klein);
+
+  font-size:
+    var(--schrift-klein);
 }
+
+
+/* ======================================== */
+/* TIER AUSWÄHLEN                           */
+/* ======================================== */
 
 .home-animal-card__select {
   position: absolute;
+
   top: var(--abstand-3);
   right: var(--abstand-3);
+
   z-index: 2;
+
   width: 30px;
   height: 30px;
+
   margin: 0;
-  accent-color: var(--farbe-akzent);
+
+  accent-color:
+    var(--farbe-akzent);
+
   cursor: pointer;
 }
 
+
+/* ======================================== */
+/* KARTEN-INHALT                            */
+/* ======================================== */
+
 .home-animal-card__body {
-  padding: var(--abstand-4);
+  padding:
+    var(--abstand-4);
 }
+
+
+/* ======================================== */
+/* BADGES                                   */
+/* ======================================== */
 
 .home-animal-card__badges {
   display: flex;
+
   flex-wrap: wrap;
-  gap: var(--abstand-2);
-  margin-bottom: var(--abstand-3);
+
+  gap:
+    var(--abstand-2);
+
+  margin-bottom:
+    var(--abstand-3);
 }
 
+
 .home-animal-card__badge {
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: var(--farbe-element-2);
-  color: var(--farbe-text-zusatz);
-  font-size: 12px;
+  padding:
+    4px
+    8px;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--farbe-element-2);
+
+  color:
+    var(--farbe-text-zusatz);
+
+  font-size:
+    12px;
 }
+
+
+/* ======================================== */
+/* TIERNAME                                 */
+/* ======================================== */
 
 .home-animal-card__name {
   margin: 0;
-  font-size: 22px;
+
+  font-size:
+    22px;
 }
 
+
+/* ======================================== */
+/* WISSENSCHAFTLICHER NAME                  */
+/* ======================================== */
+
 .home-animal-card__scientific {
-  margin: var(--abstand-1) 0 0;
-  color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
+  margin:
+    var(--abstand-1)
+    0
+    0;
+
+  color:
+    var(--farbe-text-zusatz);
+
+  font-size:
+    var(--schrift-klein);
+
   font-style: italic;
 }
 
+
+/* ======================================== */
+/* REGIONEN                                 */
+/* ======================================== */
+
 .home-animal-card__regions {
-  margin: var(--abstand-3) 0 0;
-  color: var(--farbe-text-zusatz);
-  font-size: var(--schrift-klein);
+  margin:
+    var(--abstand-3)
+    0
+    0;
+
+  color:
+    var(--farbe-text-zusatz);
+
+  font-size:
+    var(--schrift-klein);
+
   line-height: 1.4;
 }
 
+
+/* ======================================== */
+/* KEINE TIERE                              */
+/* ======================================== */
+
 .home-empty {
-  margin-top: var(--abstand-5);
-  padding: var(--abstand-6);
-  border: 1px dashed var(--farbe-linie);
-  border-radius: var(--radius-mittel);
-  color: var(--farbe-text-zusatz);
+  margin-top:
+    var(--abstand-5);
+
+  padding:
+    var(--abstand-6);
+
+  border:
+    1px dashed
+    var(--farbe-linie);
+
+  border-radius:
+    var(--radius-mittel);
+
+  color:
+    var(--farbe-text-zusatz);
+
   text-align: center;
 }
 
+
+/* ======================================== */
+/* TABLET                                   */
+/* ======================================== */
+
 @media (max-width: 1200px) {
   .home-filter {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
   }
 
+
   .home-filter__field--search {
-    grid-column: 1 / -1;
+    grid-column:
+      1 / -1;
+  }
+
+
+  .home-filter__actions {
+    grid-column:
+      1 / -1;
   }
 }
 
+
+/* ======================================== */
+/* HANDY                                    */
+/* ======================================== */
+
 @media (max-width: 700px) {
   .home-page {
-    --home-padding-horizontal: var(--abstand-3);
-    --home-padding-vertical: var(--abstand-4);
+    --home-padding-horizontal:
+      var(--abstand-3);
+
+    --home-padding-vertical:
+      var(--abstand-4);
   }
+
 
   .home-hero {
-    align-items: stretch;
-    flex-direction: column;
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
   }
+
 
   .home-hero__counter {
-    text-align: left;
+    text-align:
+      left;
   }
+
 
   .home-filter {
-    grid-template-columns: 1fr;
+    grid-template-columns:
+      1fr;
   }
 
+
   .home-filter__field--search {
-    grid-column: auto;
+    grid-column:
+      auto;
+  }
+
+
+  .home-filter__actions {
+    grid-column:
+      auto;
+
+    grid-template-columns:
+      1fr;
   }
 }
