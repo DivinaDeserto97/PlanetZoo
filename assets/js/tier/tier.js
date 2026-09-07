@@ -17,6 +17,7 @@ import {
 } from "../features/tierAktiv.js";
 
 import {
+  pruefeLokaleTierDateien,
   pruefeTierDaten,
 } from "../features/tierDatenPruefung.js";
 
@@ -40,6 +41,11 @@ export async function init() {
 
   tiere =
     await datenImportieren();
+
+
+  await pruefeLokaleTierDateien(
+    tiere,
+  );
 
 
   stelleAktivesTierSicher();

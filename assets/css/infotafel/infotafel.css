@@ -846,4 +846,71 @@ button.orbit-point:focus-visible .orbit-point__icon {
     max-height: none;
   }
 }
-\n\n/* ======================================== */\n/* DATENPRÜFUNG IN DER TIER-NAVIGATION      */\n/* ======================================== */\n\n.tier-nav__item.has-data-error {\n  background: color-mix(\n    in srgb,\n    #ef4444 22%,\n    var(--farbe-bereich)\n  );\n}\n\n.tier-nav__item.has-data-warning {\n  background: color-mix(\n    in srgb,\n    #eab308 22%,\n    var(--farbe-bereich)\n  );\n}\n\n.tier-nav__item.active.has-data-error {\n  background: color-mix(\n    in srgb,\n    #ef4444 28%,\n    var(--farbe-element)\n  );\n}\n\n.tier-nav__item.active.has-data-warning {\n  background: color-mix(\n    in srgb,\n    #eab308 28%,\n    var(--farbe-element)\n  );\n}\n\n/* ======================================== */\n/* ZOOPEDIA: ALLE TEXTE + EIGENER SCROLL    */\n/* ======================================== */\n\n.zoopedia-card__text {\n  overflow-x: hidden;\n  overflow-y: auto;\n  scrollbar-gutter: stable;\n  overscroll-behavior: contain;\n}\n\n.zoopedia-section + .zoopedia-section {\n  margin-top: 14px;\n  padding-top: 12px;\n  border-top: 1px solid var(--farbe-linie);\n}\n\n.zoopedia-section h3 {\n  margin: 0 0 7px;\n  color: var(--farbe-text);\n  font-size: clamp(11px, 0.82vw, 14px);\n}\n\n.zoopedia-section p {\n  margin: 0 0 10px;\n}\n\n.zoopedia-section p:last-child {\n  margin-bottom: 0;\n}\n
+
+
+/* ======================================== */
+/* DATENPRÜFUNG IN DER TIER-NAVIGATION      */
+/* ======================================== */
+
+.tier-nav__item.has-data-error {
+  background: color-mix(
+    in srgb,
+    #ef4444 22%,
+    var(--farbe-bereich)
+  );
+}
+
+.tier-nav__item.has-data-warning {
+  background: color-mix(
+    in srgb,
+    #eab308 22%,
+    var(--farbe-bereich)
+  );
+}
+
+.tier-nav__item.active.has-data-error {
+  background: color-mix(
+    in srgb,
+    #ef4444 28%,
+    var(--farbe-element)
+  );
+}
+
+.tier-nav__item.active.has-data-warning {
+  background: color-mix(
+    in srgb,
+    #eab308 28%,
+    var(--farbe-element)
+  );
+}
+
+/* ======================================== */
+/* ZOOPEDIA: ALLE TEXTE + EIGENER SCROLL    */
+/* ======================================== */
+
+.zoopedia-card__text {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+}
+
+.zoopedia-section + .zoopedia-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--farbe-linie);
+}
+
+.zoopedia-section h3 {
+  margin: 0 0 7px;
+  color: var(--farbe-text);
+  font-size: clamp(11px, 0.82vw, 14px);
+}
+
+.zoopedia-section p {
+  margin: 0 0 10px;
+}
+
+.zoopedia-section p:last-child {
+  margin-bottom: 0;
+}

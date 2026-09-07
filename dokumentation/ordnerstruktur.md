@@ -106,7 +106,7 @@
               - `Loxodonta africana 2.jpg` *(Medium – nicht in Share-ZIP)*
             - `map/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/map/.gitkeep>)
-              - `1.png` *(Medium – nicht in Share-ZIP)*
+              - `Loxodonta africana map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/.gitkeep>)
               - `dokumentation/`

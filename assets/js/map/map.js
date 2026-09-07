@@ -26,6 +26,12 @@ import {
   initTierListe,
 } from "./features/tierListe.js";
 
+import {
+  pruefeLokaleTierDateien,
+} from "../features/tierDatenPruefung.js";
+
+
+
 
 let controller = null;
 
@@ -47,6 +53,11 @@ export async function init() {
 
   const tiere =
     await datenImportieren();
+
+
+  await pruefeLokaleTierDateien(
+    tiere,
+  );
 
 
   const renderer =

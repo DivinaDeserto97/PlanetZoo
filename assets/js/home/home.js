@@ -20,6 +20,12 @@ import {
   renderHomeTierKarten,
 } from "./features/tierKarten.js";
 
+import {
+  pruefeLokaleTierDateien,
+} from "../features/tierDatenPruefung.js";
+
+
+
 
 let controller = null;
 
@@ -49,6 +55,11 @@ export async function init() {
 
   tiere =
     await datenImportieren();
+
+
+  await pruefeLokaleTierDateien(
+    tiere,
+  );
 
   bereinigeTierAuswahl(
     tiere,

@@ -1,7 +1,10 @@
 import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 import { getLanguage, getLocalizedValue } from "../features/language.js";
 import { getTierAuswahl } from "../features/tierAuswahl.js";
-import { getTierMarkierungsStatus } from "../features/tierDatenPruefung.js";
+import {
+  getTierMarkierungsStatus,
+  pruefeLokaleTierDateien,
+} from "../features/tierDatenPruefung.js";
 import {
   getInfotafelAudioItems,
   getInfotafelBilder,
@@ -151,6 +154,10 @@ export async function init() {
   const { signal } = controller;
 
   tiere = await datenImportieren();
+
+  await pruefeLokaleTierDateien(
+    tiere,
+  );
 
   bindStaticEvents(signal);
 

@@ -453,4 +453,40 @@
     grid-template-columns: 1fr;
   }
 }
-\n\n/* ======================================== */\n/* DATENPRÜFUNG DER AUSGEWÄHLTEN TIERE      */\n/* ======================================== */\n\n.map-animal.is-selected.has-data-error {\n  background: color-mix(\n    in srgb,\n    #ef4444 20%,\n    var(--farbe-element)\n  );\n}\n\n.map-animal.is-selected.has-data-warning {\n  background: color-mix(\n    in srgb,\n    #eab308 20%,\n    var(--farbe-element)\n  );\n}\n\n.map-animal.is-selected.has-data-error:hover {\n  background: color-mix(\n    in srgb,\n    #ef4444 27%,\n    var(--farbe-element)\n  );\n}\n\n.map-animal.is-selected.has-data-warning:hover {\n  background: color-mix(\n    in srgb,\n    #eab308 27%,\n    var(--farbe-element)\n  );\n}\n
+
+
+/* ======================================== */
+/* DATENPRÜFUNG DER AUSGEWÄHLTEN TIERE      */
+/* ======================================== */
+
+.map-animal.is-selected.has-data-error {
+  background: color-mix(
+    in srgb,
+    #ef4444 20%,
+    var(--farbe-element)
+  );
+}
+
+.map-animal.is-selected.has-data-warning {
+  background: color-mix(
+    in srgb,
+    #eab308 20%,
+    var(--farbe-element)
+  );
+}
+
+.map-animal.is-selected.has-data-error:hover {
+  background: color-mix(
+    in srgb,
+    #ef4444 27%,
+    var(--farbe-element)
+  );
+}
+
+.map-animal.is-selected.has-data-warning:hover {
+  background: color-mix(
+    in srgb,
+    #eab308 27%,
+    var(--farbe-element)
+  );
+}

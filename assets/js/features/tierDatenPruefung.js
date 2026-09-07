@@ -19,6 +19,389 @@ import {
 } from "./tierMedien.js";
 
 
+
+/* ======================================== */
+/* ECHTE LOKALE DATEIEN PRÜFEN              */
+/* ======================================== */
+
+/*
+    Die bisherige Prüfung hat nur geschaut,
+    ob im JSON ein Pfad steht.
+
+    Jetzt wird zusätzlich geprüft, ob die
+    Datei über den lokalen Webserver
+    tatsächlich erreichbar ist.
+
+    Ergebnis wird gecacht, damit beim
+    Seitenwechsel nicht alles erneut
+    geladen werden muss.
+*/
+
+const DATEI_STATUS =
+  new Map();
+
+
+export async function pruefeLokaleTierDateien(
+  tiere,
+) {
+  const pfade =
+    new Set();
+
+
+  tiere.forEach(
+    (tier) => {
+      sammleDateiPfade(
+        tier,
+      ).forEach(
+        (pfad) =>
+          pfade.add(
+            pfad,
+          ),
+      );
+    },
+  );
+
+
+  const offen =
+    [...pfade].filter(
+      (pfad) =>
+        !DATEI_STATUS.has(
+          pfad,
+        ),
+    );
+
+
+  if (!offen.length) {
+    return;
+  }
+
+
+  /*
+      Maximal 8 Prüfungen gleichzeitig.
+      Das bleibt auch bei vielen Tieren
+      übersichtlich für den lokalen Server.
+  */
+
+  let index =
+    0;
+
+
+  async function worker() {
+    while (
+      index <
+      offen.length
+    ) {
+      const pfad =
+        offen[
+          index++
+        ];
+
+
+      const vorhanden =
+        await existiertLokaleDatei(
+          pfad,
+        );
+
+
+      DATEI_STATUS.set(
+        pfad,
+        vorhanden,
+      );
+    }
+  }
+
+
+  const workerAnzahl =
+    Math.min(
+      8,
+      offen.length,
+    );
+
+
+  await Promise.all(
+    Array.from(
+      {
+        length:
+          workerAnzahl,
+      },
+      () =>
+        worker(),
+    ),
+  );
+}
+
+
+function sammleDateiPfade(
+  tier,
+) {
+  const pfade =
+    new Set();
+
+
+  const karte =
+    tier?.originalDaten
+      ?.karte ??
+    tier?.karte ??
+    {};
+
+
+  const kartenDateien =
+    Array.isArray(
+      karte?.dateien,
+    )
+      ? karte.dateien
+      : [];
+
+
+  kartenDateien.forEach(
+    (datei) => {
+      if (
+        String(
+          datei?.dateityp ??
+          "",
+        ).toLowerCase() ===
+          "png" &&
+        hatText(
+          datei?.pfad,
+        )
+      ) {
+        pfade.add(
+          datei.pfad,
+        );
+      }
+    },
+  );
+
+
+  if (
+    hatText(
+      karte?.pfad,
+    )
+  ) {
+    pfade.add(
+      karte.pfad,
+    );
+  }
+
+
+  getBildVarianten(
+    tier,
+  ).forEach(
+    (entry) => {
+      const datei =
+        getBesteBildDatei(
+          entry.dateien,
+        );
+
+
+      if (
+        hatText(
+          datei?.pfad,
+        )
+      ) {
+        pfade.add(
+          datei.pfad,
+        );
+      }
+    },
+  );
+
+
+  getAudioVarianten(
+    tier,
+  ).forEach(
+    (entry) => {
+      const datei =
+        getBesteAudioDatei(
+          entry.dateien,
+        );
+
+
+      if (
+        hatText(
+          datei?.pfad,
+        )
+      ) {
+        pfade.add(
+          datei.pfad,
+        );
+      }
+
+
+      entry.metadaten.forEach(
+        (meta) => {
+          if (
+            hatText(
+              meta?.pfad,
+            )
+          ) {
+            pfade.add(
+              meta.pfad,
+            );
+          }
+        },
+      );
+    },
+  );
+
+
+  getVideoVarianten(
+    tier,
+  ).forEach(
+    (entry) => {
+      const datei =
+        getBesteVideoDatei(
+          entry.dateien,
+        );
+
+
+      if (
+        hatText(
+          datei?.pfad,
+        )
+      ) {
+        pfade.add(
+          datei.pfad,
+        );
+      }
+    },
+  );
+
+
+  return [
+    ...pfade,
+  ];
+}
+
+
+function istDateiVerfuegbar(
+  pfad,
+) {
+  if (
+    !hatText(
+      pfad,
+    )
+  ) {
+    return false;
+  }
+
+
+  /*
+      Falls die Vorprüfung noch nicht
+      gelaufen ist, wird ein vorhandener
+      Pfad vorläufig akzeptiert.
+
+      Home / Map / Infotafel / tier.html
+      warten aber vor dem ersten Rendern
+      auf pruefeLokaleTierDateien().
+  */
+
+  if (
+    !DATEI_STATUS.has(
+      pfad,
+    )
+  ) {
+    return true;
+  }
+
+
+  return (
+    DATEI_STATUS.get(
+      pfad,
+    ) ===
+    true
+  );
+}
+
+
+async function existiertLokaleDatei(
+  pfad,
+) {
+  try {
+    const url =
+      new URL(
+        String(
+          pfad,
+        ).replace(
+          /^\/+/,
+          "",
+        ),
+        document.baseURI,
+      );
+
+
+    /*
+        HEAD lädt nicht die komplette
+        Bild-/Audio-/Videodatei.
+    */
+
+    const response =
+      await fetch(
+        url,
+        {
+          method:
+            "HEAD",
+
+          cache:
+            "no-store",
+        },
+      );
+
+
+    if (
+      response.ok
+    ) {
+      return true;
+    }
+
+
+    /*
+        Falls ein einfacher lokaler
+        Webserver HEAD nicht unterstützt,
+        wird nur ein Byte angefordert.
+    */
+
+    if (
+      response.status ===
+        405 ||
+      response.status ===
+        501
+    ) {
+      const fallback =
+        await fetch(
+          url,
+          {
+            method:
+              "GET",
+
+            headers: {
+              Range:
+                "bytes=0-0",
+            },
+
+            cache:
+              "no-store",
+          },
+        );
+
+
+      return (
+        fallback.ok ||
+        fallback.status ===
+          206
+      );
+    }
+
+
+    return false;
+  }
+
+  catch {
+    return false;
+  }
+}
+
+
 function hatText(wert) {
   return (
     typeof wert === "string" &&
@@ -144,16 +527,41 @@ function pruefeMap(tier) {
     );
 
 
+  const kartenPfad =
+    png?.pfad ??
+    (
+      legacyPfad
+        ? karte.pfad
+        : null
+    );
+
+
+  const kartenDateiVorhanden =
+    istDateiVerfuegbar(
+      kartenPfad,
+    );
+
+
   checks.push(
     item(
       "Kartenbild",
       "karte.dateien[].pfad",
-      Boolean(png) ||
-        legacyPfad,
+      hatText(
+        kartenPfad,
+      ) &&
+        kartenDateiVorhanden,
       [
-        !png &&
-        !legacyPfad
+        !hatText(
+          kartenPfad,
+        )
           ? "PNG-Kartenpfad fehlt."
+          : null,
+
+        hatText(
+          kartenPfad,
+        ) &&
+        !kartenDateiVorhanden
+          ? `PNG-Kartendatei nicht gefunden: ${kartenPfad}`
           : null,
       ],
     ),
@@ -257,13 +665,25 @@ function pruefeInfotafel(tier) {
       }
 
 
-      if (
-        !getBesteBildDatei(
+      const bildDatei =
+        getBesteBildDatei(
           entry.dateien,
+        );
+
+
+      if (!bildDatei) {
+        fehlt.push(
+          "Bilddatei / Dateipfad fehlt.",
+        );
+      }
+
+      else if (
+        !istDateiVerfuegbar(
+          bildDatei.pfad,
         )
       ) {
         fehlt.push(
-          "Bilddatei / Dateipfad fehlt.",
+          `Bilddatei nicht gefunden: ${bildDatei.pfad}`,
         );
       }
 
@@ -484,13 +904,25 @@ function pruefeAudio(tier) {
       }
 
 
-      if (
-        !getBesteAudioDatei(
+      const audioDatei =
+        getBesteAudioDatei(
           entry.dateien,
+        );
+
+
+      if (!audioDatei) {
+        fehlt.push(
+          "Abspielbare Audiodatei / Dateipfad fehlt.",
+        );
+      }
+
+      else if (
+        !istDateiVerfuegbar(
+          audioDatei.pfad,
         )
       ) {
         fehlt.push(
-          "Abspielbare Audiodatei / Dateipfad fehlt.",
+          `Audiodatei nicht gefunden: ${audioDatei.pfad}`,
         );
       }
 
@@ -507,6 +939,16 @@ function pruefeAudio(tier) {
       if (!metadata) {
         fehlt.push(
           "Metadaten-Pfad / Beschreibung fehlt.",
+        );
+      }
+
+      else if (
+        !istDateiVerfuegbar(
+          metadata.pfad,
+        )
+      ) {
+        fehlt.push(
+          `Audio-Metadatendatei nicht gefunden: ${metadata.pfad}`,
         );
       }
 
@@ -617,13 +1059,25 @@ function pruefeVideo(tier) {
       }
 
 
-      if (
-        !getBesteVideoDatei(
+      const videoDatei =
+        getBesteVideoDatei(
           entry.dateien,
+        );
+
+
+      if (!videoDatei) {
+        fehlt.push(
+          "Videodatei / Dateipfad fehlt.",
+        );
+      }
+
+      else if (
+        !istDateiVerfuegbar(
+          videoDatei.pfad,
         )
       ) {
         fehlt.push(
-          "Videodatei / Dateipfad fehlt.",
+          `Videodatei nicht gefunden: ${videoDatei.pfad}`,
         );
       }
 

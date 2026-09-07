@@ -626,4 +626,44 @@
     grid-template-columns:
       1fr;
   }
-}\n\n/* ======================================== */\n/* DATENPRÜFUNG                             */\n/* ======================================== */\n\n.home-animal-card[data-page="tier"] {\n  cursor: pointer;\n}\n\n.home-animal-card.has-data-error {\n  background: color-mix(\n    in srgb,\n    #ef4444 18%,\n    var(--farbe-bereich)\n  );\n}\n\n.home-animal-card.has-data-warning {\n  background: color-mix(\n    in srgb,\n    #eab308 18%,\n    var(--farbe-bereich)\n  );\n}\n\n.home-animal-card.has-data-error:hover {\n  background: color-mix(\n    in srgb,\n    #ef4444 24%,\n    var(--farbe-bereich)\n  );\n}\n\n.home-animal-card.has-data-warning:hover {\n  background: color-mix(\n    in srgb,\n    #eab308 24%,\n    var(--farbe-bereich)\n  );\n}\n
+}
+
+/* ======================================== */
+/* DATENPRÜFUNG                             */
+/* ======================================== */
+
+.home-animal-card[data-page="tier"] {
+  cursor: pointer;
+}
+
+.home-animal-card.has-data-error {
+  background: color-mix(
+    in srgb,
+    #ef4444 18%,
+    var(--farbe-bereich)
+  );
+}
+
+.home-animal-card.has-data-warning {
+  background: color-mix(
+    in srgb,
+    #eab308 18%,
+    var(--farbe-bereich)
+  );
+}
+
+.home-animal-card.has-data-error:hover {
+  background: color-mix(
+    in srgb,
+    #ef4444 24%,
+    var(--farbe-bereich)
+  );
+}
+
+.home-animal-card.has-data-warning:hover {
+  background: color-mix(
+    in srgb,
+    #eab308 24%,
+    var(--farbe-bereich)
+  );
+}
