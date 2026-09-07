@@ -1,0 +1,7 @@
+.nahrungsnetz-page {
+  --nahrungsnetz-max-width:
+    var(--breite-inhalt);
+
+  --nahrungsnetz-graph-height:
+    min(68vh, 780px);
+}

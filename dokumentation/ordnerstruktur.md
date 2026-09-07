@@ -29,6 +29,8 @@
           - [header.html](<../assets/components/header/Tablet/header.html>)
           - [header.js](<../assets/components/header/Tablet/header.js>)
     - `css/`
+      - `features/`
+        - [graph.css](<../assets/css/features/graph.css>)
       - `home/`
         - [home-style.css](<../assets/css/home/home-style.css>)
         - [home-var.css](<../assets/css/home/home-var.css>)
@@ -42,6 +44,10 @@
         - [map-style.css](<../assets/css/map/map-style.css>)
         - [map-var.css](<../assets/css/map/map-var.css>)
         - [map.css](<../assets/css/map/map.css>)
+      - `nahrungsnetz/`
+        - [nahrungsnetz-style.css](<../assets/css/nahrungsnetz/nahrungsnetz-style.css>)
+        - [nahrungsnetz-var.css](<../assets/css/nahrungsnetz/nahrungsnetz-var.css>)
+        - [nahrungsnetz.css](<../assets/css/nahrungsnetz/nahrungsnetz.css>)
       - `rechner/`
         - [rechner.css](<../assets/css/rechner/rechner.css>)
       - [style.css](<../assets/css/style.css>)
@@ -156,6 +162,10 @@
       - `features/`
         - [animalLabels.js](<../assets/js/features/animalLabels.js>)
         - [device.js](<../assets/js/features/device.js>)
+        - `graph/`
+          - [graphCanvas.js](<../assets/js/features/graph/graphCanvas.js>)
+          - [graphConnections.js](<../assets/js/features/graph/graphConnections.js>)
+          - [graphDrag.js](<../assets/js/features/graph/graphDrag.js>)
         - [language.js](<../assets/js/features/language.js>)
         - [navigation.js](<../assets/js/features/navigation.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
@@ -186,6 +196,10 @@
           - [mapRenderer.js](<../assets/js/map/features/mapRenderer.js>)
           - [tierListe.js](<../assets/js/map/features/tierListe.js>)
         - [map.js](<../assets/js/map/map.js>)
+      - `nahrungsnetz/`
+        - `features/`
+          - [netzwerkDaten.js](<../assets/js/nahrungsnetz/features/netzwerkDaten.js>)
+        - [nahrungsnetz.js](<../assets/js/nahrungsnetz/nahrungsnetz.js>)
       - [pages.js](<../assets/js/pages.js>)
       - `rechner/`
         - `features/`
@@ -200,6 +214,7 @@
     - [infotafel.html](<../pages/infotafel.html>)
     - [kino.html](<../pages/kino.html>)
     - [map.html](<../pages/map.html>)
+    - [nahrungsnetz.html](<../pages/nahrungsnetz.html>)
     - [rechner.html](<../pages/rechner.html>)
     - [tier.html](<../pages/tier.html>)
   - `tools/`

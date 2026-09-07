@@ -58,6 +58,17 @@ const TEXT = {
     ja: "映画館",
     "zh-Hans": "电影院",
   },
+  nahrungsnetz: {
+    de: "Nahrungsnetz",
+    en: "Food web",
+    "en-US": "Food web",
+    es: "Red trófica",
+    fr: "Réseau trophique",
+    it: "Rete alimentare",
+    "pt-BR": "Teia alimentar",
+    ja: "食物網",
+    "zh-Hans": "食物网",
+  },
   rechner: {
     de: "Rechner",
     en: "Calculator",
@@ -114,6 +125,14 @@ export const pages = {
     js: "./kino/kino.js",
     navigation: TEXT.kino,
     headerTitle: TEXT.kino,
+  },
+
+  nahrungsnetz: {
+    html: "./pages/nahrungsnetz.html",
+    css: "./assets/css/nahrungsnetz/nahrungsnetz.css",
+    js: "./nahrungsnetz/nahrungsnetz.js",
+    navigation: TEXT.nahrungsnetz,
+    headerTitle: TEXT.nahrungsnetz,
   },
 
   rechner: {

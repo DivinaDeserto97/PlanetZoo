@@ -1,0 +1,183 @@
+/* ======================================== */
+/* GEMEINSAMER GRAPH                        */
+/* ======================================== */
+
+.graph-scroll {
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-mittel);
+  background:
+    linear-gradient(
+      color-mix(in srgb, var(--farbe-linie) 18%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--farbe-linie) 18%, transparent) 1px,
+      transparent 1px
+    ),
+    var(--farbe-bereich);
+  background-size: 28px 28px;
+  overscroll-behavior: contain;
+}
+
+.graph-stage {
+  position: relative;
+  min-width: 1600px;
+  min-height: 900px;
+}
+
+.graph-connections,
+.graph-nodes {
+  position: absolute;
+  inset: 0;
+}
+
+.graph-connections {
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.graph-nodes {
+  z-index: 2;
+}
+
+.graph-edge {
+  fill: none;
+  stroke: var(--farbe-text-zusatz);
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.graph-edge--direct {
+  stroke-dasharray: none;
+}
+
+.graph-edge--conditional {
+  stroke-dasharray: 12 8;
+}
+
+.graph-edge--carrion {
+  stroke-linecap: round;
+  stroke-dasharray: 2 9;
+}
+
+.graph-edge--dependency {
+  stroke-dasharray: 14 5 3 5;
+}
+
+.graph-edge-label {
+  fill: var(--farbe-text);
+  stroke: var(--farbe-bereich);
+  stroke-width: 5px;
+  paint-order: stroke;
+  font-size: 12px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.graph-node {
+  position: absolute;
+  width: 220px;
+  min-height: 88px;
+  padding: 12px 44px 12px 14px;
+  border: 2px solid var(--farbe-linie);
+  border-radius: var(--radius-mittel);
+  background: var(--farbe-element);
+  color: var(--farbe-text);
+  box-shadow: 0 8px 22px rgb(0 0 0 / 0.2);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.graph-node.is-dragging {
+  z-index: 20;
+  cursor: grabbing;
+  box-shadow: 0 14px 34px rgb(0 0 0 / 0.34);
+}
+
+.graph-node--focus {
+  border-color: var(--farbe-akzent);
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--farbe-akzent) 24%, transparent),
+    0 8px 22px rgb(0 0 0 / 0.2);
+}
+
+.graph-node--animal {
+  border-left: 7px solid #d5a021;
+}
+
+.graph-node--plant {
+  border-left: 7px solid #5da85a;
+}
+
+.graph-node--carrion {
+  border-left: 7px dotted #aa7d56;
+}
+
+.graph-node--water {
+  border-left: 7px solid #42a5d8;
+}
+
+.graph-node--mineral {
+  border-left: 7px solid #a0a0a0;
+}
+
+.graph-node--resource {
+  border-left: 7px solid #8d78c7;
+}
+
+.graph-node__title {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.graph-node__subtitle {
+  display: block;
+  color: var(--farbe-text-zusatz);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.graph-node__kind {
+  display: inline-block;
+  margin-top: 9px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--farbe-element-2);
+  color: var(--farbe-text-zusatz);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.graph-node__info {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 0 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .graph-stage {
+    min-width: 1200px;
+  }
+
+  .graph-node {
+    width: 190px;
+  }
+}

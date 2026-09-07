@@ -1,0 +1,167 @@
+.nahrungsnetz-page {
+  width: 100%;
+  max-width: var(--nahrungsnetz-max-width);
+  margin: 0 auto;
+  padding: var(--abstand-5);
+  display: grid;
+  gap: var(--abstand-4);
+  color: var(--farbe-text);
+}
+
+.nahrungsnetz-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--abstand-5);
+}
+
+.nahrungsnetz-header__eyebrow {
+  margin: 0 0 var(--abstand-1);
+  color: var(--farbe-akzent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.nahrungsnetz-header h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 42px);
+}
+
+.nahrungsnetz-header__description {
+  max-width: 850px;
+  margin: var(--abstand-2) 0 0;
+  color: var(--farbe-text-zusatz);
+  line-height: 1.5;
+}
+
+.nahrungsnetz-header__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--abstand-2);
+}
+
+.nahrungsnetz-header__stats > span {
+  padding: var(--abstand-2) var(--abstand-3);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-klein);
+  background: var(--farbe-bereich);
+  color: var(--farbe-text-zusatz);
+  white-space: nowrap;
+}
+
+.nahrungsnetz-header__stats strong {
+  color: var(--farbe-text);
+}
+
+.nahrungsnetz-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--abstand-4);
+  padding: var(--abstand-3);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-mittel);
+  background: var(--farbe-bereich);
+}
+
+.nahrungsnetz-legend {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--abstand-3);
+}
+
+.nahrungsnetz-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--abstand-2);
+  color: var(--farbe-text-zusatz);
+  font-size: var(--schrift-klein);
+}
+
+.nahrungsnetz-legend__line {
+  width: 44px;
+  height: 0;
+  border-top: 3px solid var(--farbe-text-zusatz);
+}
+
+.nahrungsnetz-legend__line--conditional {
+  border-top-style: dashed;
+}
+
+.nahrungsnetz-legend__line--carrion {
+  border-top-style: dotted;
+}
+
+.nahrungsnetz-toolbar__actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: var(--abstand-2);
+}
+
+.nahrungsnetz-toolbar__actions button {
+  min-height: 38px;
+  padding: 0 var(--abstand-3);
+}
+
+.nahrungsnetz-graph {
+  min-height: 0;
+}
+
+.nahrungsnetz-graph .graph-scroll {
+  height: var(--nahrungsnetz-graph-height);
+}
+
+.nahrungsnetz-empty {
+  padding: var(--abstand-6);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-mittel);
+  background: var(--farbe-bereich);
+  text-align: center;
+}
+
+.nahrungsnetz-empty p {
+  color: var(--farbe-text-zusatz);
+}
+
+.nahrungsnetz-empty a {
+  display: inline-block;
+  margin-top: var(--abstand-2);
+  padding: var(--abstand-2) var(--abstand-3);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius-klein);
+  background: var(--farbe-element);
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .nahrungsnetz-header {
+    grid-template-columns: 1fr;
+  }
+
+  .nahrungsnetz-header__stats {
+    justify-content: flex-start;
+  }
+
+  .nahrungsnetz-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .nahrungsnetz-toolbar__actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  .nahrungsnetz-page {
+    padding: var(--abstand-3);
+  }
+
+  .nahrungsnetz-graph .graph-scroll {
+    height: 62vh;
+  }
+}

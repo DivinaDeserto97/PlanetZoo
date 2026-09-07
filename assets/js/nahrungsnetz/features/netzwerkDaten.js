@@ -1,0 +1,1303 @@
+import {
+  getLanguage,
+  getLocalizedValue,
+} from "../../features/language.js";
+
+
+const ENTITY_LABELS = {
+  aas: {
+    de: "Aas",
+    en: "Carrion",
+  },
+
+  muttermilch: {
+    de: "Muttermilch",
+    en: "Mother's milk",
+  },
+
+  tierischeNahrung: {
+    de: "Tierische Nahrung",
+    en: "Animal food",
+  },
+
+  plantFood: {
+    de: "Pflanzliche Nahrung",
+    en: "Plant food",
+  },
+
+  grass: {
+    de: "Gras",
+    en: "Grass",
+  },
+
+  leaves: {
+    de: "Blätter",
+    en: "Leaves",
+  },
+
+  fruit: {
+    de: "Früchte",
+    en: "Fruit",
+  },
+
+  roots: {
+    de: "Wurzeln",
+    en: "Roots",
+  },
+
+  twigs: {
+    de: "Zweige",
+    en: "Twigs",
+  },
+
+  bark: {
+    de: "Rinde",
+    en: "Bark",
+  },
+
+  shrubs: {
+    de: "Sträucher",
+    en: "Shrubs",
+  },
+
+  ants: {
+    de: "Ameisen",
+    en: "Ants",
+  },
+
+  termites: {
+    de: "Termiten",
+    en: "Termites",
+  },
+
+  insects: {
+    de: "Insekten",
+    en: "Insects",
+  },
+
+  water: {
+    de: "Wasser",
+    en: "Water",
+  },
+
+  mineralien: {
+    de: "Mineralien",
+    en: "Minerals",
+  },
+};
+
+
+const CONDITION_LABELS = {
+  jungtier: {
+    de: "Jungtier",
+    en: "Young",
+  },
+
+  bisEtwa6Monate: {
+    de: "bis etwa 6 Monate",
+    en: "until about 6 months",
+  },
+
+  abEtwa3Monaten: {
+    de: "ab etwa 3 Monaten",
+    en: "from about 3 months",
+  },
+};
+
+
+/* ======================================== */
+/* GRAPH AUS TIERDATEN BAUEN                */
+/* ======================================== */
+
+export function buildNahrungsnetzGraph(
+  tiere,
+  selectedIds,
+) {
+  const selected =
+    new Set(
+      selectedIds,
+    );
+
+
+  const focusTiere =
+    tiere.filter(
+      (tier) =>
+        selected.has(
+          tier.id,
+        ),
+    );
+
+
+  const nodes =
+    new Map();
+
+  const edges =
+    new Map();
+
+
+  focusTiere.forEach(
+    (tier) => {
+      addTierNode(
+        nodes,
+        tier,
+        true,
+      );
+    },
+  );
+
+
+  focusTiere.forEach(
+    (tier) => {
+      addClassicFoodWeb(
+        tier,
+        tiere,
+        nodes,
+        edges,
+      );
+
+
+      addGenericEcosystemNetwork(
+        tier,
+        tiere,
+        nodes,
+        edges,
+      );
+    },
+  );
+
+
+  return {
+    nodes:
+      [...nodes.values()],
+
+    edges:
+      [...edges.values()],
+
+    focusCount:
+      focusTiere.length,
+  };
+}
+
+
+/* ======================================== */
+/* BESTEHENDES NAHRUNGSNETZ                 */
+/* ======================================== */
+
+function addClassicFoodWeb(
+  tier,
+  tiere,
+  nodes,
+  edges,
+) {
+  const netz =
+    tier.originalDaten
+      ?.daten
+      ?.ernaehrung
+      ?.nahrungsnetz ??
+    tier.nahrungsnetz;
+
+
+  if (
+    !netz ||
+    typeof netz !==
+      "object"
+  ) {
+    return;
+  }
+
+
+  const tierNodeId =
+    getTierNodeId(
+      tier,
+    );
+
+
+  [
+    [
+      "jungtier",
+      netz
+        ?.frisst
+        ?.jungtier
+        ?.werte,
+    ],
+
+    [
+      "erwachsen",
+      netz
+        ?.frisst
+        ?.erwachsen
+        ?.werte,
+    ],
+  ].forEach(
+    (
+      [
+        alter,
+        werte,
+      ],
+    ) => {
+      if (
+        !Array.isArray(
+          werte,
+        )
+      ) {
+        return;
+      }
+
+
+      werte.forEach(
+        (entry) => {
+          if (
+            !hasText(
+              entry?.wert,
+            )
+          ) {
+            return;
+          }
+
+
+          const foodNode =
+            resolveEntityNode(
+              entry,
+              tiere,
+            );
+
+
+          addNode(
+            nodes,
+            foodNode,
+          );
+
+
+          addEdge(
+            edges,
+            {
+              from:
+                foodNode.id,
+
+              to:
+                tierNodeId,
+
+              type:
+                getEdgeType(
+                  entry,
+                  alter,
+                ),
+
+              label:
+                getConditionLabel(
+                  entry,
+                  alter,
+                ),
+            },
+          );
+        },
+      );
+    },
+  );
+
+
+  [
+    [
+      "jungtier",
+      netz
+        ?.wirdGefressenVon
+        ?.jungtier
+        ?.werte,
+    ],
+
+    [
+      "erwachsen",
+      netz
+        ?.wirdGefressenVon
+        ?.erwachsen
+        ?.werte,
+    ],
+  ].forEach(
+    (
+      [
+        alter,
+        werte,
+      ],
+    ) => {
+      if (
+        !Array.isArray(
+          werte,
+        )
+      ) {
+        return;
+      }
+
+
+      werte.forEach(
+        (entry) => {
+          if (
+            !hasText(
+              entry?.wert,
+            )
+          ) {
+            return;
+          }
+
+
+          const predatorNode =
+            resolveEntityNode(
+              entry,
+              tiere,
+            );
+
+
+          addNode(
+            nodes,
+            predatorNode,
+          );
+
+
+          addEdge(
+            edges,
+            {
+              from:
+                tierNodeId,
+
+              to:
+                predatorNode.id,
+
+              type:
+                getEdgeType(
+                  entry,
+                  alter,
+                ),
+
+              label:
+                getConditionLabel(
+                  entry,
+                  alter,
+                ),
+            },
+          );
+        },
+      );
+    },
+  );
+}
+
+
+/* ======================================== */
+/* SPÄTERES ALLGEMEINES ÖKOSYSTEMNETZ       */
+/* ======================================== */
+
+function addGenericEcosystemNetwork(
+  tier,
+  tiere,
+  nodes,
+  edges,
+) {
+  const netz =
+    tier.originalDaten
+      ?.oekosystemNetz ??
+    tier.originalDaten
+      ?.daten
+      ?.oekosystemNetz ??
+    null;
+
+
+  if (
+    !netz ||
+    typeof netz !==
+      "object"
+  ) {
+    return;
+  }
+
+
+  const extraNodes =
+    Array.isArray(
+      netz.knoten,
+    )
+      ? netz.knoten
+      : [];
+
+
+  extraNodes.forEach(
+    (entry) => {
+      if (
+        !hasText(
+          entry?.id,
+        )
+      ) {
+        return;
+      }
+
+
+      const loadedTier =
+        findTier(
+          tiere,
+          entry.id,
+        );
+
+
+      if (loadedTier) {
+        addTierNode(
+          nodes,
+          loadedTier,
+          false,
+        );
+
+        return;
+      }
+
+
+      addNode(
+        nodes,
+        {
+          id:
+            `eco:${slug(entry.id)}`,
+
+          label:
+            getLocalizedValue(
+              entry.name,
+              getLanguage(),
+            ) ??
+            entry.id,
+
+          subtitle:
+            entry.wissenschaftlicherName ??
+            "",
+
+          kind:
+            normalizeKind(
+              entry.typ,
+            ),
+
+          kindLabel:
+            getKindLabel(
+              normalizeKind(
+                entry.typ,
+              ),
+            ),
+
+          focus:
+            false,
+        },
+      );
+    },
+  );
+
+
+  const verbindungen =
+    Array.isArray(
+      netz.verbindungen,
+    )
+      ? netz.verbindungen
+      : [];
+
+
+  verbindungen.forEach(
+    (entry) => {
+      if (
+        !hasText(
+          entry?.von,
+        ) ||
+        !hasText(
+          entry?.zu,
+        )
+      ) {
+        return;
+      }
+
+
+      const from =
+        resolveGenericNodeId(
+          entry.von,
+          tiere,
+          nodes,
+        );
+
+      const to =
+        resolveGenericNodeId(
+          entry.zu,
+          tiere,
+          nodes,
+        );
+
+
+      addEdge(
+        edges,
+        {
+          from,
+          to,
+
+          type:
+            getGenericEdgeType(
+              entry,
+            ),
+
+          label:
+            localizedCondition(
+              entry.bedingung,
+            ),
+        },
+      );
+    },
+  );
+}
+
+
+/* ======================================== */
+/* TIER-KNOTEN                              */
+/* ======================================== */
+
+function addTierNode(
+  nodes,
+  tier,
+  focus,
+) {
+  addNode(
+    nodes,
+    {
+      id:
+        getTierNodeId(
+          tier,
+        ),
+
+      label:
+        getTierName(
+          tier,
+        ),
+
+      subtitle:
+        tier.wissenschaftlicherName ??
+        tier.datenId ??
+        "",
+
+      kind:
+        "animal",
+
+      kindLabel:
+        getKindLabel(
+          "animal",
+        ),
+
+      tierId:
+        tier.id,
+
+      focus,
+    },
+  );
+}
+
+
+function getTierNodeId(
+  tier,
+) {
+  return `tier:${tier.id}`;
+}
+
+
+/* ======================================== */
+/* EINTRAG ZU KNOTEN                        */
+/* ======================================== */
+
+function resolveEntityNode(
+  entry,
+  tiere,
+) {
+  const value =
+    entry.wert;
+
+
+  const loadedTier =
+    findTier(
+      tiere,
+      value,
+    );
+
+
+  if (loadedTier) {
+    return {
+      id:
+        getTierNodeId(
+          loadedTier,
+        ),
+
+      label:
+        getTierName(
+          loadedTier,
+        ),
+
+      subtitle:
+        loadedTier.wissenschaftlicherName,
+
+      kind:
+        "animal",
+
+      kindLabel:
+        getKindLabel(
+          "animal",
+        ),
+
+      tierId:
+        loadedTier.id,
+
+      focus:
+        false,
+    };
+  }
+
+
+  const kind =
+    inferKind(
+      value,
+      entry?.typ,
+    );
+
+
+  return {
+    id:
+      `entity:${slug(value)}`,
+
+    label:
+      getEntityLabel(
+        value,
+      ),
+
+    subtitle:
+      looksScientificName(
+        value,
+      )
+        ? value
+        : "",
+
+    kind,
+
+    kindLabel:
+      getKindLabel(
+        kind,
+      ),
+
+    focus:
+      false,
+  };
+}
+
+
+/* ======================================== */
+/* GENERISCHEN KNOTEN FINDEN                */
+/* ======================================== */
+
+function resolveGenericNodeId(
+  value,
+  tiere,
+  nodes,
+) {
+  const loadedTier =
+    findTier(
+      tiere,
+      value,
+    );
+
+
+  if (loadedTier) {
+    addTierNode(
+      nodes,
+      loadedTier,
+      false,
+    );
+
+    return getTierNodeId(
+      loadedTier,
+    );
+  }
+
+
+  const existing =
+    [...nodes.values()].find(
+      (node) =>
+        node.id ===
+          value ||
+        node.label ===
+          value ||
+        node.subtitle ===
+          value ||
+        node.id ===
+          `eco:${slug(value)}` ||
+        node.id ===
+          `entity:${slug(value)}`,
+    );
+
+
+  if (existing) {
+    return existing.id;
+  }
+
+
+  const kind =
+    inferKind(
+      value,
+      "",
+    );
+
+
+  const node = {
+    id:
+      `entity:${slug(value)}`,
+
+    label:
+      getEntityLabel(
+        value,
+      ),
+
+    subtitle:
+      looksScientificName(
+        value,
+      )
+        ? value
+        : "",
+
+    kind,
+
+    kindLabel:
+      getKindLabel(
+        kind,
+      ),
+
+    focus:
+      false,
+  };
+
+
+  addNode(
+    nodes,
+    node,
+  );
+
+
+  return node.id;
+}
+
+
+/* ======================================== */
+/* MAP-HELFER                               */
+/* ======================================== */
+
+function addNode(
+  nodes,
+  node,
+) {
+  const existing =
+    nodes.get(
+      node.id,
+    );
+
+
+  if (existing) {
+    if (
+      node.focus
+    ) {
+      existing.focus =
+        true;
+    }
+
+    return;
+  }
+
+
+  nodes.set(
+    node.id,
+    node,
+  );
+}
+
+
+function addEdge(
+  edges,
+  edge,
+) {
+  if (
+    edge.from ===
+    edge.to
+  ) {
+    return;
+  }
+
+
+  const key =
+    [
+      edge.from,
+      edge.to,
+      edge.type,
+      edge.label ??
+        "",
+    ].join(
+      "|",
+    );
+
+
+  if (
+    edges.has(
+      key,
+    )
+  ) {
+    return;
+  }
+
+
+  edges.set(
+    key,
+    {
+      id:
+        key,
+
+      ...edge,
+    },
+  );
+}
+
+
+/* ======================================== */
+/* VERBINDUNGS-TYP                          */
+/* ======================================== */
+
+function getEdgeType(
+  entry,
+  alter,
+) {
+  if (
+    entry?.typ ===
+      "aas" ||
+    entry?.wert ===
+      "aas"
+  ) {
+    return "carrion";
+  }
+
+
+  if (
+    alter ===
+      "jungtier" ||
+    hasText(
+      entry?.bedingung,
+    )
+  ) {
+    return "conditional";
+  }
+
+
+  return "direct";
+}
+
+
+function getGenericEdgeType(
+  entry,
+) {
+  if (
+    entry?.darstellung ===
+      "gepunktet" ||
+    entry?.typ ===
+      "aas"
+  ) {
+    return "carrion";
+  }
+
+
+  if (
+    entry?.darstellung ===
+      "gestrichelt" ||
+    hasText(
+      entry?.bedingung,
+    )
+  ) {
+    return "conditional";
+  }
+
+
+  if (
+    entry?.typ ===
+      "abhaengigkeit"
+  ) {
+    return "dependency";
+  }
+
+
+  return "direct";
+}
+
+
+/* ======================================== */
+/* ART / LABELS                             */
+/* ======================================== */
+
+function inferKind(
+  value,
+  typ,
+) {
+  if (
+    typ ===
+      "aas" ||
+    value ===
+      "aas"
+  ) {
+    return "carrion";
+  }
+
+
+  if (
+    typ ===
+      "pflanze"
+  ) {
+    return "plant";
+  }
+
+
+  if (
+    typ ===
+      "wasser" ||
+    value ===
+      "water"
+  ) {
+    return "water";
+  }
+
+
+  if (
+    typ ===
+      "mineral" ||
+    value ===
+      "mineralien"
+  ) {
+    return "mineral";
+  }
+
+
+  if (
+    typ ===
+      "tier" ||
+    looksScientificName(
+      value,
+    ) ||
+    [
+      "ants",
+      "termites",
+      "insects",
+    ].includes(
+      value,
+    )
+  ) {
+    return "animal";
+  }
+
+
+  if (
+    [
+      "plantFood",
+      "grass",
+      "leaves",
+      "fruit",
+      "roots",
+      "twigs",
+      "bark",
+      "shrubs",
+    ].includes(
+      value,
+    )
+  ) {
+    return "plant";
+  }
+
+
+  return "resource";
+}
+
+
+function normalizeKind(
+  kind,
+) {
+  const map = {
+    tier:
+      "animal",
+
+    animal:
+      "animal",
+
+    pflanze:
+      "plant",
+
+    plant:
+      "plant",
+
+    aas:
+      "carrion",
+
+    carrion:
+      "carrion",
+
+    wasser:
+      "water",
+
+    water:
+      "water",
+
+    mineral:
+      "mineral",
+
+    mineralien:
+      "mineral",
+
+    resource:
+      "resource",
+
+    ressource:
+      "resource",
+  };
+
+
+  return (
+    map[
+      kind
+    ] ??
+    "resource"
+  );
+}
+
+
+function getKindLabel(
+  kind,
+) {
+  const language =
+    getLanguage();
+
+
+  const labels = {
+    animal: {
+      de: "Tier",
+      en: "Animal",
+    },
+
+    plant: {
+      de: "Pflanze",
+      en: "Plant",
+    },
+
+    carrion: {
+      de: "Aas",
+      en: "Carrion",
+    },
+
+    water: {
+      de: "Wasser",
+      en: "Water",
+    },
+
+    mineral: {
+      de: "Mineral",
+      en: "Mineral",
+    },
+
+    resource: {
+      de: "Ressource",
+      en: "Resource",
+    },
+  };
+
+
+  return (
+    labels[
+      kind
+    ]?.[
+      language
+    ] ??
+    labels[
+      kind
+    ]?.de ??
+    kind
+  );
+}
+
+
+function getEntityLabel(
+  value,
+) {
+  const language =
+    getLanguage();
+
+  const labels =
+    ENTITY_LABELS[
+      value
+    ];
+
+
+  return (
+    labels?.[
+      language
+    ] ??
+    labels?.de ??
+    value
+  );
+}
+
+
+function getConditionLabel(
+  entry,
+  alter,
+) {
+  const parts =
+    [];
+
+
+  if (
+    alter ===
+    "jungtier"
+  ) {
+    parts.push(
+      localizedCondition(
+        "jungtier",
+      ),
+    );
+  }
+
+
+  if (
+    hasText(
+      entry?.bedingung,
+    ) &&
+    entry.bedingung !==
+      "jungtier"
+  ) {
+    parts.push(
+      localizedCondition(
+        entry.bedingung,
+      ),
+    );
+  }
+
+
+  return parts
+    .filter(
+      Boolean,
+    )
+    .join(
+      " · ",
+    );
+}
+
+
+function localizedCondition(
+  value,
+) {
+  if (
+    !hasText(
+      value,
+    )
+  ) {
+    return "";
+  }
+
+
+  const language =
+    getLanguage();
+
+  const labels =
+    CONDITION_LABELS[
+      value
+    ];
+
+
+  return (
+    labels?.[
+      language
+    ] ??
+    labels?.de ??
+    value
+  );
+}
+
+
+/* ======================================== */
+/* TIER FINDEN / NAME                       */
+/* ======================================== */
+
+function findTier(
+  tiere,
+  value,
+) {
+  return (
+    tiere.find(
+      (tier) =>
+        tier.id ===
+          value ||
+        tier.datenId ===
+          value ||
+        tier.wissenschaftlicherName ===
+          value ||
+        tier.originalDaten?.id ===
+          value,
+    ) ??
+    null
+  );
+}
+
+
+function getTierName(
+  tier,
+) {
+  return (
+    getLocalizedValue(
+      tier.namen,
+      getLanguage(),
+    ) ??
+    tier.wissenschaftlicherName ??
+    tier.id
+  );
+}
+
+
+/* ======================================== */
+/* HELFER                                   */
+/* ======================================== */
+
+function hasText(
+  value,
+) {
+  return (
+    typeof value ===
+      "string" &&
+    value.trim()
+  );
+}
+
+
+function looksScientificName(
+  value,
+) {
+  return (
+    typeof value ===
+      "string" &&
+    /^[A-Z][a-z-]+\s+[a-z][a-z-]+/.test(
+      value,
+    )
+  );
+}
+
+
+function slug(
+  value,
+) {
+  return String(
+    value,
+  )
+    .toLowerCase()
+    .normalize(
+      "NFD",
+    )
+    .replace(
+      /[\u0300-\u036f]/g,
+      "",
+    )
+    .replace(
+      /[^a-z0-9]+/g,
+      "-",
+    )
+    .replace(
+      /^-+|-+$/g,
+      "",
+    );
+}
