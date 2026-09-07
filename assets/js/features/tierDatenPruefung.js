@@ -410,10 +410,89 @@ function hatText(wert) {
 }
 
 
+function hatInhalt(wert) {
+  if (
+    wert === null ||
+    wert === undefined
+  ) {
+    return false;
+  }
+
+
+  if (
+    typeof wert === "string"
+  ) {
+    return (
+      wert.trim().length >
+      0
+    );
+  }
+
+
+  if (
+    typeof wert === "number"
+  ) {
+    return Number.isFinite(
+      wert,
+    );
+  }
+
+
+  if (
+    typeof wert === "boolean"
+  ) {
+    /*
+        false ist ein gültiger
+        ausgefüllter Boolean-Wert.
+    */
+    return true;
+  }
+
+
+  if (
+    Array.isArray(
+      wert,
+    )
+  ) {
+    return wert.some(
+      (eintrag) =>
+        hatInhalt(
+          eintrag,
+        ),
+    );
+  }
+
+
+  if (
+    typeof wert ===
+    "object"
+  ) {
+    return Object.values(
+      wert,
+    ).some(
+      (eintrag) =>
+        hatInhalt(
+          eintrag,
+        ),
+    );
+  }
+
+
+  return false;
+}
+
+
 function hatArrayInhalt(wert) {
   return (
-    Array.isArray(wert) &&
-    wert.length > 0
+    Array.isArray(
+      wert,
+    ) &&
+    wert.some(
+      (eintrag) =>
+        hatInhalt(
+          eintrag,
+        ),
+    )
   );
 }
 
@@ -1111,12 +1190,9 @@ function pruefeSystematik(tier) {
 
 
   const ok =
-    systematik &&
-    typeof systematik ===
-      "object" &&
-    Object.keys(
+    hatInhalt(
       systematik,
-    ).length > 0;
+    );
 
 
   checks.push(
@@ -1151,12 +1227,9 @@ function pruefeNahrungsnetz(tier) {
 
 
   const ok =
-    nahrungsnetz &&
-    typeof nahrungsnetz ===
-      "object" &&
-    Object.keys(
+    hatInhalt(
       nahrungsnetz,
-    ).length > 0;
+    );
 
 
   checks.push(
@@ -1189,12 +1262,9 @@ function pruefeRechner(tier) {
 
 
   const ok =
-    rechner &&
-    typeof rechner ===
-      "object" &&
-    Object.keys(
+    hatInhalt(
       rechner,
-    ).length > 0;
+    );
 
 
   checks.push(

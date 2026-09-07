@@ -45,8 +45,8 @@
       "werte": [
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         }
@@ -56,15 +56,15 @@
       "werte": [
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         },
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         }
@@ -74,15 +74,15 @@
       "werte": [
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         },
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         }
@@ -92,8 +92,8 @@
       "werte": [
         {
           "typ": "",
-          "min": "",
-          "max": "",
+          "min": null,
+          "max": null,
           "einheit": "",
           "quelle": ""
         }
@@ -103,7 +103,7 @@
       "werte": [
         {
           "typ": "",
-          "wert": "",
+          "wert": null,
           "einheit": "",
           "quelle": ""
         }
@@ -121,12 +121,12 @@
     "wildpopulation": {
       "werte": [
         {
-          "wert": "",
+          "wert": null,
           "einheit": "",
           "giltFuer": [
             ""
           ],
-          "jahrDerGrundlage": "",
+          "jahrDerGrundlage": null,
           "hinweis": {
             "de": "",
             "en": ""
@@ -139,13 +139,13 @@
       "werte": [
         {
           "typ": "",
-          "wert": "",
+          "wert": null,
           "einheit": "",
           "quelle": ""
         },
         {
           "typ": "",
-          "wert": "",
+          "wert": null,
           "einheit": "",
           "quelle": ""
         }
@@ -154,7 +154,7 @@
     "tragzeit": {
       "werte": [
         {
-          "wert": "",
+          "wert": null,
           "einheit": "",
           "quelle": ""
         }
@@ -164,9 +164,9 @@
       "werte": [
         {
           "typ": "",
-          "min": "",
-          "max": "",
-          "durchschnitt": "",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
           "quelle": ""
         }
       ]
@@ -176,8 +176,8 @@
         {
           "typ": "",
           "wert": "",
-          "minGruppengroesse": "",
-          "maxGruppengroesse": "",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
           "quelle": ""
         },
         {
@@ -247,7 +247,7 @@
           },
           "erwachsen": {
             "werte": [],
-            "keineRegelmaessigenNatuerlichenFressfeinde": "",
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
               "en": ""
@@ -284,7 +284,7 @@
         {
           "linieA": "",
           "linieB": "",
-          "zeitVorHeuteMioJahre": "",
+          "zeitVorHeuteMioJahre": null,
           "typ": "",
           "quelle": ""
         }
@@ -615,7 +615,7 @@
       "typ": "",
       "varianten": [
         {
-          "variante": "",
+          "variante": null,
           "quelle": "",
           "url": "",
           "alt": {
@@ -629,7 +629,11 @@
               "dateityp": "",
               "pfad": ""
             }
-          ]
+          ],
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
         }
       ]
     }
@@ -639,7 +643,7 @@
       "typ": "",
       "varianten": [
         {
-          "variante": "",
+          "variante": null,
           "quelle": "",
           "metadaten": [
             {
@@ -664,7 +668,7 @@
       "typ": "",
       "varianten": [
         {
-          "variante": "",
+          "variante": null,
           "reihe": "",
           "titel": {
             "de": "",
@@ -680,7 +684,7 @@
               "pfad": ""
             }
           ],
-          "dauerSekunden": "",
+          "dauerSekunden": null,
           "beschreibung": {
             "de": "",
             "en": ""
@@ -690,7 +694,7 @@
     }
   ],
   "planetZoo2": {
-    "rechner": ""
+    "rechner": null
   },
   "quellen": {
     "": {
