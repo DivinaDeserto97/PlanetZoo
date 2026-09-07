@@ -9,23 +9,22 @@ import {
   setTierAusgewaehlt,
 } from "../../features/tierAuswahl.js";
 
-const TIER_FARBEN = [
-  "#38bdf8",
-  "#f59e0b",
-  "#a78bfa",
-  "#34d399",
-  "#fb7185",
-  "#facc15",
-];
 
 /* ======================================== */
 /* TIERNAME                                 */
 /* ======================================== */
 
-export function getTierName(tier, language = getLanguage()) {
+export function getTierName(
+  tier,
+  language = getLanguage(),
+) {
   return (
     getLocalizedValue(
-      tier.namen ?? tier.originalDaten?.identitaet?.namen ?? {},
+      tier.namen ??
+      tier.originalDaten
+        ?.identitaet
+        ?.namen ??
+      {},
       language,
     ) ??
     tier.wissenschaftlicherName ??
@@ -34,141 +33,343 @@ export function getTierName(tier, language = getLanguage()) {
   );
 }
 
+
 /* ======================================== */
 /* TIERLISTE INITIALISIEREN                 */
 /* ======================================== */
 
-export function initTierListe(tiere, renderer, signal) {
-  const container = document.querySelector("[data-animal-list]");
-  const count = document.querySelector("[data-animal-count]");
+export function initTierListe(
+  tiere,
+  renderer,
+  signal,
+) {
+  const container =
+    document.querySelector(
+      "[data-animal-list]",
+    );
+
+  const count =
+    document.querySelector(
+      "[data-animal-count]",
+    );
+
 
   if (!container) {
     return null;
   }
 
-  tiere.forEach((tier, index) => {
-    tier.mapColor = TIER_FARBEN[index % TIER_FARBEN.length];
-  });
 
-  const knownIds = new Set(tiere.map((tier) => tier.id));
-  const selected = new Set(
-    getTierAuswahl().filter((tierId) => knownIds.has(tierId)),
-  );
+  const knownIds =
+    new Set(
+      tiere.map(
+        (tier) => tier.id,
+      ),
+    );
 
-  let currentVisible = tiere;
 
-  function render(visibleTiere = currentVisible) {
-    currentVisible = visibleTiere;
+  const selected =
+    new Set(
+      getTierAuswahl().filter(
+        (tierId) =>
+          knownIds.has(
+            tierId,
+          ),
+      ),
+    );
+
+
+  let currentVisible =
+    tiere;
+
+
+  function render(
+    visibleTiere = currentVisible,
+  ) {
+    currentVisible =
+      visibleTiere;
+
     container.replaceChildren();
 
+
     if (count) {
-      count.textContent = String(visibleTiere.length);
+      count.textContent =
+        String(
+          visibleTiere.length,
+        );
     }
 
-    visibleTiere.forEach((tier) => {
-      const row = document.createElement("label");
-      row.className = "map-animal";
-      row.dataset.animalId = tier.id;
 
-      if (!tier.kartenPfad) {
-        row.classList.add("has-no-map");
-      }
+    visibleTiere.forEach(
+      (tier) => {
+        const hatKarte =
+          renderer.hasMap(
+            tier.id,
+          );
 
-      const checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.className = "map-animal__checkbox";
-      checkbox.checked = selected.has(tier.id);
+        const row =
+          document.createElement(
+            "label",
+          );
 
-      checkbox.addEventListener(
-        "change",
-        () => {
-          setTierAusgewaehlt(tier.id, checkbox.checked);
-        },
-        { signal },
-      );
+        row.className =
+          "map-animal";
 
-      const color = document.createElement("span");
-      color.className = "map-animal__color";
-      color.style.backgroundColor = tier.mapColor;
+        row.dataset.animalId =
+          tier.id;
 
-      const text = document.createElement("span");
 
-      const name = document.createElement("span");
-      name.className = "map-animal__name";
-      name.textContent = getTierName(tier);
+        if (!hatKarte) {
+          row.classList.add(
+            "has-no-map",
+          );
+        }
 
-      const scientific = document.createElement("span");
-      scientific.className = "map-animal__scientific";
-      scientific.textContent = tier.wissenschaftlicherName;
 
-      text.append(name, scientific);
+        const checkbox =
+          document.createElement(
+            "input",
+          );
 
-      if (!tier.kartenPfad) {
-        const noMap = document.createElement("span");
-        noMap.className = "map-animal__no-map";
-        noMap.dataset.mapNoMap = "";
-        noMap.textContent = getNoMapText();
-        text.appendChild(noMap);
-      }
+        checkbox.type =
+          "checkbox";
 
-      row.append(checkbox, color, text);
-      container.appendChild(row);
-    });
+        checkbox.className =
+          "map-animal__checkbox";
+
+        checkbox.checked =
+          selected.has(
+            tier.id,
+          );
+
+
+        checkbox.addEventListener(
+          "change",
+          () => {
+            setTierAusgewaehlt(
+              tier.id,
+              checkbox.checked,
+            );
+          },
+          {
+            signal,
+          },
+        );
+
+
+        const color =
+          document.createElement(
+            "span",
+          );
+
+        color.className =
+          "map-animal__color";
+
+
+        const mapColor =
+          renderer.getMapColor(
+            tier.id,
+          );
+
+
+        if (
+          hatKarte &&
+          mapColor
+        ) {
+          color.style.backgroundColor =
+            mapColor;
+        }
+
+        else {
+          color.classList.add(
+            "is-empty",
+          );
+        }
+
+
+        const text =
+          document.createElement(
+            "span",
+          );
+
+
+        const name =
+          document.createElement(
+            "span",
+          );
+
+        name.className =
+          "map-animal__name";
+
+        name.textContent =
+          getTierName(
+            tier,
+          );
+
+
+        const scientific =
+          document.createElement(
+            "span",
+          );
+
+        scientific.className =
+          "map-animal__scientific";
+
+        scientific.textContent =
+          tier.wissenschaftlicherName;
+
+
+        text.append(
+          name,
+          scientific,
+        );
+
+
+        if (!hatKarte) {
+          const noMap =
+            document.createElement(
+              "span",
+            );
+
+          noMap.className =
+            "map-animal__no-map";
+
+          noMap.textContent =
+            getNoMapText();
+
+
+          text.appendChild(
+            noMap,
+          );
+        }
+
+
+        row.append(
+          checkbox,
+          color,
+          text,
+        );
+
+
+        container.appendChild(
+          row,
+        );
+      },
+    );
   }
 
-  function syncSelection(tierIds) {
+
+  function syncSelection(
+    tierIds,
+  ) {
     selected.clear();
 
+
     tierIds
-      .filter((tierId) => knownIds.has(tierId))
-      .forEach((tierId) => selected.add(tierId));
+      .filter(
+        (tierId) =>
+          knownIds.has(
+            tierId,
+          ),
+      )
+      .forEach(
+        (tierId) =>
+          selected.add(
+            tierId,
+          ),
+      );
 
-    container.querySelectorAll("[data-animal-id]").forEach((row) => {
-      const checkbox = row.querySelector(".map-animal__checkbox");
 
-      if (checkbox) {
-        checkbox.checked = selected.has(row.dataset.animalId);
-      }
-    });
+    container
+      .querySelectorAll(
+        "[data-animal-id]",
+      )
+      .forEach(
+        (row) => {
+          const checkbox =
+            row.querySelector(
+              ".map-animal__checkbox",
+            );
 
-    renderer.render(selected);
+          if (checkbox) {
+            checkbox.checked =
+              selected.has(
+                row.dataset
+                  .animalId,
+              );
+          }
+        },
+      );
+
+
+    renderer.render(
+      selected,
+    );
   }
 
-  document.querySelector("[data-select-all]")?.addEventListener(
-    "click",
-    () => {
-      setTierAuswahl(tiere.map((tier) => tier.id));
-    },
-    { signal },
-  );
 
-  document.querySelector("[data-select-none]")?.addEventListener(
-    "click",
-    () => {
-      setTierAuswahl([]);
-    },
-    { signal },
-  );
+  document
+    .querySelector(
+      "[data-select-all]",
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        /*
+            Absichtlich alle Tiere,
+            nicht nur die gefilterten.
+        */
+        setTierAuswahl(
+          tiere.map(
+            (tier) =>
+              tier.id,
+          ),
+        );
+      },
+      {
+        signal,
+      },
+    );
+
+
+  document
+    .querySelector(
+      "[data-select-none]",
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        setTierAuswahl(
+          [],
+        );
+      },
+      {
+        signal,
+      },
+    );
+
 
   document.addEventListener(
     "tierAuswahlChanged",
     (event) => {
-      syncSelection(event.detail?.tierIds ?? getTierAuswahl());
+      syncSelection(
+        event.detail?.tierIds ??
+        getTierAuswahl(),
+      );
     },
-    { signal },
+    {
+      signal,
+    },
   );
 
-  document.addEventListener(
-    "languageChanged",
-    () => {
-      render(currentVisible);
-      renderer.updateLanguage();
-    },
-    { signal },
+
+  render(
+    tiere,
   );
 
-  render(tiere);
-  renderer.render(selected);
+  renderer.render(
+    selected,
+  );
+
 
   return {
     render,
@@ -176,20 +377,31 @@ export function initTierListe(tiere, renderer, signal) {
   };
 }
 
+
+/* ======================================== */
+/* KEINE KARTE                              */
+/* ======================================== */
+
 function getNoMapText() {
-  const language = getLanguage();
+  const language =
+    getLanguage();
+
 
   const text = {
-    de: "Noch keine lokale Karte",
-    en: "No local map yet",
-    "en-US": "No local map yet",
-    es: "Aún no hay mapa local",
-    fr: "Pas encore de carte locale",
-    it: "Nessuna mappa locale",
-    "pt-BR": "Ainda sem mapa local",
-    ja: "ローカルマップ未登録",
-    "zh-Hans": "尚无本地地图",
+    de: "Noch keine lokale PNG-Karte",
+    en: "No local PNG map yet",
+    "en-US": "No local PNG map yet",
+    es: "Aún no hay mapa PNG local",
+    fr: "Pas encore de carte PNG locale",
+    it: "Nessuna mappa PNG locale",
+    "pt-BR": "Ainda sem mapa PNG local",
+    ja: "ローカルPNGマップ未登録",
+    "zh-Hans": "尚无本地PNG地图",
   };
 
-  return text[language] ?? text.de;
+
+  return (
+    text[language] ??
+    text.de
+  );
 }

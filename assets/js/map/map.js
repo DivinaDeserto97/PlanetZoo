@@ -1,53 +1,138 @@
-import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
+import {
+  datenImportieren,
+} from "../../daten/lebewesen/tiere/datenImport.js";
 
-import { initTierListe } from "./features/tierListe.js";
+import {
+  getTierAuswahl,
+} from "../features/tierAuswahl.js";
 
-import { initFilter } from "./features/filter.js";
+import {
+  filterUndSortiereTiere,
+} from "../features/tierFilter.js";
 
-import { initMapRenderer } from "./features/mapRenderer.js";
+import {
+  initMapFilter,
+} from "./features/filter.js";
+
+import {
+  initMapLayout,
+} from "./features/layout.js";
+
+import {
+  initMapRenderer,
+} from "./features/mapRenderer.js";
+
+import {
+  initTierListe,
+} from "./features/tierListe.js";
+
 
 let controller = null;
+
 
 /* ======================================== */
 /* MAP INITIALISIEREN                       */
 /* ======================================== */
 
 export async function init() {
-  /*
-        Alte Events entfernen,
-        falls die Map erneut geöffnet wird.
-    */
-  if (controller) {
-    controller.abort();
+  controller?.abort();
+
+  controller =
+    new AbortController();
+
+  const {
+    signal,
+  } = controller;
+
+
+  const tiere =
+    await datenImportieren();
+
+
+  const renderer =
+    await initMapRenderer(
+      tiere,
+      signal,
+    );
+
+
+  const tierListe =
+    initTierListe(
+      tiere,
+      renderer,
+      signal,
+    );
+
+
+  if (!tierListe) {
+    return;
   }
 
-  controller = new AbortController();
 
-  const signal = controller.signal;
+  let filterSteuerung =
+    null;
 
-  /* ==================================== */
-  /* TIERDATEN LADEN                      */
-  /* ==================================== */
 
-  const tiere = await datenImportieren();
+  function renderListe() {
+    if (!filterSteuerung) {
+      return;
+    }
 
-  console.log("Geladene Tiere:", tiere);
 
-  /* ==================================== */
-  /* KARTEN-RENDERER                      */
-  /* ==================================== */
+    const state =
+      filterSteuerung.getState();
 
-  const renderer = await initMapRenderer(tiere, signal);
 
-  /* ==================================== */
-  /* TIERLISTE                            */
-  /* ==================================== */
+    state.filter.ausgewaehlteIds =
+      getTierAuswahl();
 
-  const tierListe = initTierListe(tiere, renderer, signal);
 
-  /* ==================================== */
-  /* FILTER                               */
-  /* ==================================== */
+    const sichtbareTiere =
+      filterUndSortiereTiere(
+        tiere,
+        state,
+      );
 
-  initFilter(tiere, tierListe, signal);
+
+    tierListe.render(
+      sichtbareTiere,
+    );
+  }
+
+
+  filterSteuerung =
+    initMapFilter({
+      signal,
+      onChange:
+        renderListe,
+    });
+
+
+  document.addEventListener(
+    "languageChanged",
+    () => {
+      renderListe();
+      renderer.updateLanguage();
+    },
+    {
+      signal,
+    },
+  );
+
+
+  document.addEventListener(
+    "tierAuswahlChanged",
+    renderListe,
+    {
+      signal,
+    },
+  );
+
+
+  initMapLayout(
+    signal,
+  );
+
+
+  renderListe();
 }

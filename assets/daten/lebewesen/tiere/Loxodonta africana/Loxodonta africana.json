@@ -695,8 +695,18 @@
   },
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c7efe7fa/Elephant_AfricanSavannah_map.png",
-    "dateityp": "png",
-    "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/map/Loxodonta africana map.png"
+      },
+      {
+        "typ": "wiedergabe",
+        "dateityp": "svg",
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/map/Loxodonta africana map.svg"
+      }
+    ],
     "quelle": "lokalNochNichtVorhanden"
   },
   "bilder": [

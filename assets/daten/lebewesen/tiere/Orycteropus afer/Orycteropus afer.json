@@ -772,10 +772,19 @@
 
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c1066a19/Aardvark_map.png",
-    "dateityp": "png",
-    "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer map.png",
-    "quelle": "wikimediaCommonsMap",
-    "status": "lokalNochNichtVorhanden"
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/map/Orycteropus afer map.png"
+      },
+      {
+        "typ": "wiedergabe",
+        "dateityp": "svg",
+        "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/map/Orycteropus afer map.svg"
+      }
+    ],
+    "quelle": "wikimediaCommonsMap"
   },
 
   "bilder": [

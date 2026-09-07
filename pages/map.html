@@ -1,4 +1,4 @@
-<section class="map-page">
+<section class="map-page" data-map-page>
   <aside class="map-sidebar">
     <div class="map-sidebar__header">
       <h2
@@ -30,8 +30,8 @@
           data-ja=" 頭"
           data-zh-Hans=" 只动物"
         >
-          Tiere</span
-        >
+          Tiere
+        </span>
       </span>
     </div>
 
@@ -48,81 +48,268 @@
           data-pt-BR="Filtros"
           data-ja="フィルター"
           data-zh-Hans="筛选"
-          >Filter</span
         >
+          Filter
+        </span>
+
         <span class="map-filter__arrow" aria-hidden="true">▼</span>
       </summary>
 
-      <div class="map-filter__content">
-        <label class="map-filter__field">
-          <span
-            data-i18n
-            data-de="Tier suchen"
-            data-en="Search animal"
-            data-en-US="Search animal"
-            data-es="Buscar animal"
-            data-fr="Rechercher un animal"
-            data-it="Cerca animale"
-            data-pt-BR="Buscar animal"
-            data-ja="動物を検索"
-            data-zh-Hans="搜索动物"
-            >Tier suchen</span
-          >
-          <input
-            type="search"
-            data-animal-search
-            data-i18n-placeholder
-            data-placeholder-de="Name oder wissenschaftlicher Name"
-            data-placeholder-en="Name or scientific name"
-            data-placeholder-en-US="Name or scientific name"
-            data-placeholder-es="Nombre o nombre científico"
-            data-placeholder-fr="Nom ou nom scientifique"
-            data-placeholder-it="Nome o nome scientifico"
-            data-placeholder-pt-BR="Nome ou nome científico"
-            data-placeholder-ja="名前または学名"
-            data-placeholder-zh-Hans="名称或学名"
-            placeholder="Name oder wissenschaftlicher Name"
-          />
-        </label>
+      <div class="map-filter__menu">
+        <div class="map-filter__grid">
+          <label class="map-filter__field map-filter__field--search">
+            <span
+              data-i18n
+              data-de="Tier suchen"
+              data-en="Search animal"
+              data-en-US="Search animal"
+              data-es="Buscar animal"
+              data-fr="Rechercher un animal"
+              data-it="Cerca animale"
+              data-pt-BR="Buscar animal"
+              data-ja="動物を検索"
+              data-zh-Hans="搜索动物"
+            >
+              Tier suchen
+            </span>
 
-        <label class="map-filter__checkbox">
-          <input type="checkbox" data-filter-selected />
-          <span
-            data-i18n
-            data-de="Nur ausgewählte Tiere"
-            data-en="Selected animals only"
-            data-en-US="Selected animals only"
-            data-es="Solo animales seleccionados"
-            data-fr="Animaux sélectionnés uniquement"
-            data-it="Solo animali selezionati"
-            data-pt-BR="Somente animais selecionados"
-            data-ja="選択した動物のみ"
-            data-zh-Hans="仅显示已选择动物"
-            >Nur ausgewählte Tiere</span
-          >
-        </label>
+            <input
+              type="search"
+              data-map-search
+              data-i18n-placeholder
+              data-placeholder-de="Name oder wissenschaftlicher Name"
+              data-placeholder-en="Name or scientific name"
+              data-placeholder-en-US="Name or scientific name"
+              data-placeholder-es="Nombre o nombre científico"
+              data-placeholder-fr="Nom ou nom scientifique"
+              data-placeholder-it="Nome o nome scientifico"
+              data-placeholder-pt-BR="Nome ou nome científico"
+              data-placeholder-ja="名前または学名"
+              data-placeholder-zh-Hans="名称或学名"
+              placeholder="Name oder wissenschaftlicher Name"
+            />
+          </label>
 
-        <button type="button" data-filter-reset>
-          <span
-            data-i18n
-            data-de="Filter zurücksetzen"
-            data-en="Reset filter"
-            data-en-US="Reset filter"
-            data-es="Restablecer filtros"
-            data-fr="Réinitialiser les filtres"
-            data-it="Reimposta filtri"
-            data-pt-BR="Redefinir filtros"
-            data-ja="フィルターをリセット"
-            data-zh-Hans="重置筛选"
-            >Filter zurücksetzen</span
-          >
-        </button>
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Gehegetyp"
+              data-en="Enclosure type"
+              data-en-US="Enclosure type"
+              data-es="Tipo de recinto"
+              data-fr="Type d’enclos"
+              data-it="Tipo di recinto"
+              data-pt-BR="Tipo de recinto"
+              data-ja="飼育施設"
+              data-zh-Hans="围栏类型"
+            >
+              Gehegetyp
+            </span>
+
+            <select data-map-enclosure>
+              <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+              <option value="habitatTerrestrial" data-i18n data-de="Landgehege" data-en="Terrestrial habitat" data-en-US="Terrestrial habitat" data-es="Hábitat terrestre" data-fr="Habitat terrestre" data-it="Habitat terrestre" data-pt-BR="Habitat terrestre" data-ja="陸上生息地" data-zh-Hans="陆地栖息地">Landgehege</option>
+              <option value="habitatAquarium" data-i18n data-de="Aquarium" data-en="Aquarium" data-en-US="Aquarium" data-es="Acuario" data-fr="Aquarium" data-it="Acquario" data-pt-BR="Aquário" data-ja="水族館" data-zh-Hans="水族馆">Aquarium</option>
+              <option value="habitatFlying" data-i18n data-de="Voliere" data-en="Aviary" data-en-US="Aviary" data-es="Aviario" data-fr="Volière" data-it="Voliera" data-pt-BR="Aviário" data-ja="鳥類飼育舎" data-zh-Hans="鸟舍">Voliere</option>
+              <option value="exhibit" data-i18n data-de="Ausstellung" data-en="Exhibit" data-en-US="Exhibit" data-es="Exhibición" data-fr="Vivarium" data-it="Espositore" data-pt-BR="Exposição" data-ja="展示施設" data-zh-Hans="展示箱">Ausstellung</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Region"
+              data-en="Region"
+              data-en-US="Region"
+              data-es="Región"
+              data-fr="Région"
+              data-it="Regione"
+              data-pt-BR="Região"
+              data-ja="地域"
+              data-zh-Hans="地区"
+            >
+              Region
+            </span>
+
+            <select data-map-continent>
+              <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todas" data-fr="Toutes" data-it="Tutte" data-pt-BR="Todas" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+              <option value="africa" data-i18n data-de="Afrika" data-en="Africa" data-en-US="Africa" data-es="África" data-fr="Afrique" data-it="Africa" data-pt-BR="África" data-ja="アフリカ" data-zh-Hans="非洲">Afrika</option>
+              <option value="asia" data-i18n data-de="Asien" data-en="Asia" data-en-US="Asia" data-es="Asia" data-fr="Asie" data-it="Asia" data-pt-BR="Ásia" data-ja="アジア" data-zh-Hans="亚洲">Asien</option>
+              <option value="europe" data-i18n data-de="Europa" data-en="Europe" data-en-US="Europe" data-es="Europa" data-fr="Europe" data-it="Europa" data-pt-BR="Europa" data-ja="ヨーロッパ" data-zh-Hans="欧洲">Europa</option>
+              <option value="northAmerica" data-i18n data-de="Nordamerika" data-en="North America" data-en-US="North America" data-es="Norteamérica" data-fr="Amérique du Nord" data-it="Nord America" data-pt-BR="América do Norte" data-ja="北アメリカ" data-zh-Hans="北美洲">Nordamerika</option>
+              <option value="southAmerica" data-i18n data-de="Südamerika" data-en="South America" data-en-US="South America" data-es="Sudamérica" data-fr="Amérique du Sud" data-it="Sud America" data-pt-BR="América do Sul" data-ja="南アメリカ" data-zh-Hans="南美洲">Südamerika</option>
+              <option value="oceania" data-i18n data-de="Ozeanien" data-en="Oceania" data-en-US="Oceania" data-es="Oceanía" data-fr="Océanie" data-it="Oceania" data-pt-BR="Oceania" data-ja="オセアニア" data-zh-Hans="大洋洲">Ozeanien</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Biom"
+              data-en="Biome"
+              data-en-US="Biome"
+              data-es="Bioma"
+              data-fr="Biome"
+              data-it="Bioma"
+              data-pt-BR="Bioma"
+              data-ja="バイオーム"
+              data-zh-Hans="生物群系"
+            >
+              Biom
+            </span>
+
+            <select data-map-biome>
+              <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+              <option value="Ästuar" data-i18n data-de="Ästuar" data-en="Estuarine" data-en-US="Estuarine" data-es="Estuario" data-fr="Estuarien" data-it="Estuarino" data-pt-BR="Estuarino" data-ja="河口" data-zh-Hans="河口">Ästuar</option>
+              <option value="Feuchtgebiete" data-i18n data-de="Feuchtgebiete" data-en="Wetlands" data-en-US="Wetlands" data-es="Humedales" data-fr="Zones humides" data-it="Zone umide" data-pt-BR="Zonas úmidas" data-ja="湿地" data-zh-Hans="湿地">Feuchtgebiete</option>
+              <option value="Gemäßigt" data-i18n data-de="Gemäßigt" data-en="Temperate" data-en-US="Temperate" data-es="Templado" data-fr="Tempéré" data-it="Temperato" data-pt-BR="Temperado" data-ja="温帯" data-zh-Hans="温带">Gemäßigt</option>
+              <option value="Grasland" data-i18n data-de="Grasland" data-en="Grassland" data-en-US="Grassland" data-es="Pradera" data-fr="Prairie" data-it="Prateria" data-pt-BR="Pradaria" data-ja="草原" data-zh-Hans="草原">Grasland</option>
+              <option value="Mangrove" data-i18n data-de="Mangrove" data-en="Mangrove" data-en-US="Mangrove" data-es="Manglar" data-fr="Mangrove" data-it="Mangrovia" data-pt-BR="Manguezal" data-ja="マングローブ" data-zh-Hans="红树林">Mangrove</option>
+              <option value="Offenes Meer" data-i18n data-de="Offenes Meer" data-en="Open Sea" data-en-US="Open Sea" data-es="Mar abierto" data-fr="Mer ouverte" data-it="Mare aperto" data-pt-BR="Mar aberto" data-ja="外洋" data-zh-Hans="开放海域">Offenes Meer</option>
+              <option value="Riff" data-i18n data-de="Riff" data-en="Reef" data-en-US="Reef" data-es="Arrecife" data-fr="Récif" data-it="Barriera corallina" data-pt-BR="Recife" data-ja="サンゴ礁" data-zh-Hans="珊瑚礁">Riff</option>
+              <option value="Seen und Flüsse" data-i18n data-de="Seen und Flüsse" data-en="Lakes and Rivers" data-en-US="Lakes and Rivers" data-es="Lagos y ríos" data-fr="Lacs et rivières" data-it="Laghi e fiumi" data-pt-BR="Lagos e rios" data-ja="湖と川" data-zh-Hans="湖泊与河流">Seen und Flüsse</option>
+              <option value="Taiga" data-i18n data-de="Taiga" data-en="Taiga" data-en-US="Taiga" data-es="Taiga" data-fr="Taïga" data-it="Taiga" data-pt-BR="Taiga" data-ja="タイガ" data-zh-Hans="泰加林">Taiga</option>
+              <option value="Tropisch" data-i18n data-de="Tropisch" data-en="Tropical" data-en-US="Tropical" data-es="Tropical" data-fr="Tropical" data-it="Tropicale" data-pt-BR="Tropical" data-ja="熱帯" data-zh-Hans="热带">Tropisch</option>
+              <option value="Tundra" data-i18n data-de="Tundra" data-en="Tundra" data-en-US="Tundra" data-es="Tundra" data-fr="Toundra" data-it="Tundra" data-pt-BR="Tundra" data-ja="ツンドラ" data-zh-Hans="苔原">Tundra</option>
+              <option value="Wüste" data-i18n data-de="Wüste" data-en="Desert" data-en-US="Desert" data-es="Desierto" data-fr="Désert" data-it="Deserto" data-pt-BR="Deserto" data-ja="砂漠" data-zh-Hans="沙漠">Wüste</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Arterhaltungsstatus"
+              data-en="Conservation status"
+              data-en-US="Conservation status"
+              data-es="Estado de conservación"
+              data-fr="Statut de conservation"
+              data-it="Stato di conservazione"
+              data-pt-BR="Estado de conservação"
+              data-ja="保全状況"
+              data-zh-Hans="保护状况"
+            >
+              Arterhaltungsstatus
+            </span>
+
+            <select data-map-conservation>
+              <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+              <option value="leastConcern" data-i18n data-de="Nicht gefährdet" data-en="Least Concern" data-en-US="Least Concern" data-es="Preocupación menor" data-fr="Préoccupation mineure" data-it="Minor preoccupazione" data-pt-BR="Pouco preocupante" data-ja="低危険種" data-zh-Hans="无危">Nicht gefährdet</option>
+              <option value="nearThreatened" data-i18n data-de="Potenziell gefährdet" data-en="Near Threatened" data-en-US="Near Threatened" data-es="Casi amenazada" data-fr="Quasi menacée" data-it="Prossima alla minaccia" data-pt-BR="Quase ameaçada" data-ja="準絶滅危惧" data-zh-Hans="近危">Potenziell gefährdet</option>
+              <option value="vulnerable" data-i18n data-de="Gefährdet" data-en="Vulnerable" data-en-US="Vulnerable" data-es="Vulnerable" data-fr="Vulnérable" data-it="Vulnerabile" data-pt-BR="Vulnerável" data-ja="危急" data-zh-Hans="易危">Gefährdet</option>
+              <option value="endangered" data-i18n data-de="Stark gefährdet" data-en="Endangered" data-en-US="Endangered" data-es="En peligro" data-fr="En danger" data-it="In pericolo" data-pt-BR="Em perigo" data-ja="絶滅危惧" data-zh-Hans="濒危">Stark gefährdet</option>
+              <option value="criticallyEndangered" data-i18n data-de="Vom Aussterben bedroht" data-en="Critically Endangered" data-en-US="Critically Endangered" data-es="En peligro crítico" data-fr="En danger critique" data-it="In pericolo critico" data-pt-BR="Criticamente em perigo" data-ja="深刻な絶滅危惧" data-zh-Hans="极危">Vom Aussterben bedroht</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Inhalt"
+              data-en="Content"
+              data-en-US="Content"
+              data-es="Contenido"
+              data-fr="Contenu"
+              data-it="Contenuto"
+              data-pt-BR="Conteúdo"
+              data-ja="コンテンツ"
+              data-zh-Hans="内容"
+            >
+              Inhalt
+            </span>
+
+            <select data-map-edition>
+              <option value="" data-i18n data-de="Alle" data-en="All" data-en-US="All" data-es="Todos" data-fr="Tous" data-it="Tutti" data-pt-BR="Todos" data-ja="すべて" data-zh-Hans="全部">Alle</option>
+              <option value="standard" data-i18n data-de="Basisspiel" data-en="Base game" data-en-US="Base game" data-es="Juego base" data-fr="Jeu de base" data-it="Gioco base" data-pt-BR="Jogo base" data-ja="基本ゲーム" data-zh-Hans="基础游戏">Basisspiel</option>
+              <option value="deluxe" data-i18n data-de="Deluxe" data-en="Deluxe" data-en-US="Deluxe" data-es="Deluxe" data-fr="Deluxe" data-it="Deluxe" data-pt-BR="Deluxe" data-ja="デラックス" data-zh-Hans="豪华版">Deluxe</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Sortieren nach"
+              data-en="Sort by"
+              data-en-US="Sort by"
+              data-es="Ordenar por"
+              data-fr="Trier par"
+              data-it="Ordina per"
+              data-pt-BR="Ordenar por"
+              data-ja="並べ替え"
+              data-zh-Hans="排序方式"
+            >
+              Sortieren nach
+            </span>
+
+            <select data-map-sort-by>
+              <option value="newest" data-i18n data-de="Neueste" data-en="Newest" data-en-US="Newest" data-es="Más recientes" data-fr="Plus récents" data-it="Più recenti" data-pt-BR="Mais recentes" data-ja="新しい順" data-zh-Hans="最新">Neueste</option>
+              <option value="name" data-i18n data-de="Tiername" data-en="Animal name" data-en-US="Animal name" data-es="Nombre del animal" data-fr="Nom de l’animal" data-it="Nome animale" data-pt-BR="Nome do animal" data-ja="動物名" data-zh-Hans="动物名称">Tiername</option>
+              <option value="scientificName" data-i18n data-de="Wissenschaftlicher Name" data-en="Scientific name" data-en-US="Scientific name" data-es="Nombre científico" data-fr="Nom scientifique" data-it="Nome scientifico" data-pt-BR="Nome científico" data-ja="学名" data-zh-Hans="学名">Wissenschaftlicher Name</option>
+            </select>
+          </label>
+
+          <label class="map-filter__field">
+            <span
+              data-i18n
+              data-de="Reihenfolge"
+              data-en="Direction"
+              data-en-US="Direction"
+              data-es="Orden"
+              data-fr="Ordre"
+              data-it="Ordine"
+              data-pt-BR="Ordem"
+              data-ja="順序"
+              data-zh-Hans="顺序"
+            >
+              Reihenfolge
+            </span>
+
+            <select data-map-sort-direction>
+              <option value="desc" data-i18n data-de="Absteigend" data-en="Descending" data-en-US="Descending" data-es="Descendente" data-fr="Décroissant" data-it="Decrescente" data-pt-BR="Decrescente" data-ja="降順" data-zh-Hans="降序">Absteigend</option>
+              <option value="asc" data-i18n data-de="Aufsteigend" data-en="Ascending" data-en-US="Ascending" data-es="Ascendente" data-fr="Croissant" data-it="Crescente" data-pt-BR="Crescente" data-ja="昇順" data-zh-Hans="升序">Aufsteigend</option>
+            </select>
+          </label>
+
+          <label class="map-filter__checkbox">
+            <input type="checkbox" data-map-selected-only />
+            <span
+              data-i18n
+              data-de="Nur ausgewählte Tiere"
+              data-en="Selected animals only"
+              data-en-US="Selected animals only"
+              data-es="Solo animales seleccionados"
+              data-fr="Animaux sélectionnés uniquement"
+              data-it="Solo animali selezionati"
+              data-pt-BR="Somente animais selecionados"
+              data-ja="選択した動物のみ"
+              data-zh-Hans="仅显示已选择动物"
+            >
+              Nur ausgewählte Tiere
+            </span>
+          </label>
+
+          <button class="map-filter__reset" type="button" data-map-filter-reset>
+            <span
+              data-i18n
+              data-de="Filter zurücksetzen"
+              data-en="Reset filters"
+              data-en-US="Reset filters"
+              data-es="Restablecer filtros"
+              data-fr="Réinitialiser les filtres"
+              data-it="Reimposta filtri"
+              data-pt-BR="Redefinir filtros"
+              data-ja="フィルターをリセット"
+              data-zh-Hans="重置筛选"
+            >
+              Filter zurücksetzen
+            </span>
+          </button>
+        </div>
       </div>
     </details>
 
     <div class="map-animal-list" data-animal-list></div>
 
-    <div class="map-legend">
+    <div class="map-sidebar__bottom">
       <div class="map-animal-actions">
         <button type="button" data-select-all>
           <span
@@ -136,8 +323,9 @@
             data-pt-BR="Selecionar todos"
             data-ja="すべて選択"
             data-zh-Hans="全选"
-            >Alle auswählen</span
           >
+            Alle auswählen
+          </span>
         </button>
 
         <button type="button" data-select-none>
@@ -152,53 +340,42 @@
             data-pt-BR="Desmarcar todos"
             data-ja="すべて解除"
             data-zh-Hans="全部取消"
-            >Alle abwählen</span
           >
+            Alle abwählen
+          </span>
         </button>
       </div>
-      <strong
-        data-i18n
-        data-de="Legende"
-        data-en="Legend"
-        data-en-US="Legend"
-        data-es="Leyenda"
-        data-fr="Légende"
-        data-it="Legenda"
-        data-pt-BR="Legenda"
-        data-ja="凡例"
-        data-zh-Hans="图例"
-      >
-        Legende
-      </strong>
-      <div>
-        <div
+
+      <div class="map-legend">
+        <strong
           data-i18n
-          data-de="Tier = Farbe"
-          data-en="Animal = color"
-          data-en-US="Animal = color"
-          data-es="Animal = color"
-          data-fr="Animal = couleur"
-          data-it="Animale = colore"
-          data-pt-BR="Animal = cor"
-          data-ja="動物＝色。"
-          data-zh-Hans="动物 = 颜色"
+          data-de="Legende"
+          data-en="Legend"
+          data-en-US="Legend"
+          data-es="Leyenda"
+          data-fr="Légende"
+          data-it="Legenda"
+          data-pt-BR="Legenda"
+          data-ja="凡例"
+          data-zh-Hans="图例"
         >
-          Tier = Farbe
-        </div>
-        <div
+          Legende
+        </strong>
+
+        <span
           data-i18n
-          data-de="bei 2 Tieren oder mehr wird die Fläche schraffiert."
-          data-en="with 2 or more animals, the area is hatched."
-          data-en-US="with 2 or more animals, the area is hatched."
-          data-es="con 2 o más animales, el área aparece rayada."
-          data-fr="avec 2 animaux ou plus, la zone est hachurée."
-          data-it="con 2 o più animali, l’area viene tratteggiata."
-          data-pt-BR="com 2 ou mais animais, a área fica hachurada."
-          data-ja="2種類以上の動物がいる場合、その範囲は斜線で表示されます。"
-          data-zh-Hans="有2种或更多动物时，该区域会以斜线显示。"
+          data-de="Jedes Tier hat eine eigene Farbe. Überschneidungen werden mit allen beteiligten Farben schraffiert."
+          data-en="Each animal has its own color. Overlaps are hatched with all involved colors."
+          data-en-US="Each animal has its own color. Overlaps are hatched with all involved colors."
+          data-es="Cada animal tiene su propio color. Las superposiciones se rayan con todos los colores implicados."
+          data-fr="Chaque animal possède sa propre couleur. Les chevauchements sont hachurés avec toutes les couleurs concernées."
+          data-it="Ogni animale ha un colore proprio. Le sovrapposizioni vengono tratteggiate con tutti i colori coinvolti."
+          data-pt-BR="Cada animal tem sua própria cor. As sobreposições são hachuradas com todas as cores envolvidas."
+          data-ja="各動物には固有の色があります。重なる範囲は関係するすべての色で斜線表示されます。"
+          data-zh-Hans="每种动物都有自己的颜色。重叠区域会使用所有相关颜色以斜线显示。"
         >
-          bei 2 Tieren oder mehr wird die Fläche schraffiert.
-        </div>
+          Jedes Tier hat eine eigene Farbe. Überschneidungen werden mit allen beteiligten Farben schraffiert.
+        </span>
       </div>
     </div>
   </aside>
@@ -220,6 +397,7 @@
         >
           Verbreitungskarte
         </h1>
+
         <span class="map-main__status" data-map-status></span>
       </div>
 
@@ -235,8 +413,9 @@
           data-pt-BR="Redefinir vista"
           data-ja="表示をリセット"
           data-zh-Hans="重置视图"
-          >Ansicht zurücksetzen</span
         >
+          Ansicht zurücksetzen
+        </span>
       </button>
     </header>
 
@@ -256,41 +435,100 @@
 
         <g clip-path="url(#map-world-clip)">
           <g data-map-viewport>
-            <image
-              data-world-base
-              x="0"
-              y="0"
-              width="540"
-              height="267"
-              preserveAspectRatio="none"
-            ></image>
-            <image
-              data-range-layer
-              x="0"
-              y="0"
-              width="540"
-              height="267"
-              preserveAspectRatio="none"
-            ></image>
+            <g data-map-world-tiles></g>
+            <g data-map-range-tiles></g>
+            <g data-map-hover-markers></g>
+            <g data-map-selected-markers></g>
           </g>
         </g>
       </svg>
     </div>
 
-    <div class="map-hover-info" data-map-hover-info>
+    <div class="map-point-info">
+      <section class="map-point-info__column">
+        <strong
+          data-i18n
+          data-de="Ausgewählter Punkt"
+          data-en="Selected point"
+          data-en-US="Selected point"
+          data-es="Punto seleccionado"
+          data-fr="Point sélectionné"
+          data-it="Punto selezionato"
+          data-pt-BR="Ponto selecionado"
+          data-ja="選択した地点"
+          data-zh-Hans="已选择位置"
+        >
+          Ausgewählter Punkt
+        </strong>
+
+        <div data-map-selected-info>
+          <span
+            data-i18n
+            data-de="Rechtsklick auf die Karte, um einen Punkt festzuhalten."
+            data-en="Right-click the map to pin a point."
+            data-en-US="Right-click the map to pin a point."
+            data-es="Haz clic derecho en el mapa para fijar un punto."
+            data-fr="Faites un clic droit sur la carte pour fixer un point."
+            data-it="Fai clic destro sulla mappa per fissare un punto."
+            data-pt-BR="Clique com o botão direito no mapa para fixar um ponto."
+            data-ja="地図を右クリックして地点を固定します。"
+            data-zh-Hans="右键单击地图以固定一个位置。"
+          >
+            Rechtsklick auf die Karte, um einen Punkt festzuhalten.
+          </span>
+        </div>
+      </section>
+
+      <section class="map-point-info__column">
+        <strong
+          data-i18n
+          data-de="Mausposition"
+          data-en="Mouse position"
+          data-en-US="Mouse position"
+          data-es="Posición del ratón"
+          data-fr="Position de la souris"
+          data-it="Posizione del mouse"
+          data-pt-BR="Posição do mouse"
+          data-ja="マウス位置"
+          data-zh-Hans="鼠标位置"
+        >
+          Mausposition
+        </strong>
+
+        <div data-map-hover-info>
+          <span
+            data-i18n
+            data-de="Fahre mit der Maus über die Karte."
+            data-en="Move the mouse over the map."
+            data-en-US="Move the mouse over the map."
+            data-es="Mueve el ratón sobre el mapa."
+            data-fr="Passez la souris sur la carte."
+            data-it="Sposta il mouse sulla mappa."
+            data-pt-BR="Mova o mouse sobre o mapa."
+            data-ja="マップ上にマウスを移動してください。"
+            data-zh-Hans="将鼠标移到地图上。"
+          >
+            Fahre mit der Maus über die Karte.
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <div class="map-controls-help">
       <span
         data-i18n
-        data-de="Fahre mit der Maus über die Karte."
-        data-en="Move the mouse over the map."
-        data-en-US="Move the mouse over the map."
-        data-es="Mueve el ratón sobre el mapa."
-        data-fr="Passez la souris sur la carte."
-        data-it="Sposta il mouse sulla mappa."
-        data-pt-BR="Mova o mouse sobre o mapa."
-        data-ja="マップ上にマウスを移動してください。"
-        data-zh-Hans="将鼠标移到地图上。"
-        >Fahre mit der Maus über die Karte.</span
+        data-de="Mausrad: Zoom · Mittlere Maustaste: verschieben · Rechtsklick: Punkt auswählen"
+        data-en="Mouse wheel: zoom · Middle mouse button: pan · Right-click: select point"
+        data-en-US="Mouse wheel: zoom · Middle mouse button: pan · Right-click: select point"
+        data-es="Rueda: zoom · Botón central: mover · Clic derecho: seleccionar punto"
+        data-fr="Molette : zoom · Bouton central : déplacer · Clic droit : sélectionner un point"
+        data-it="Rotellina: zoom · Tasto centrale: sposta · Clic destro: seleziona punto"
+        data-pt-BR="Roda: zoom · Botão do meio: mover · Clique direito: selecionar ponto"
+        data-ja="ホイール：ズーム · 中ボタン：移動 · 右クリック：地点選択"
+        data-zh-Hans="滚轮：缩放 · 中键：移动 · 右键：选择位置"
       >
+        Mausrad: Zoom · Mittlere Maustaste: verschieben · Rechtsklick: Punkt auswählen
+      </span>
     </div>
   </section>
 </section>

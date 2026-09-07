@@ -1,88 +1,238 @@
-import { getTierName } from "./tierListe.js";
-
 /* ======================================== */
-/* FILTER INITIALISIEREN                    */
+/* MAP-FILTER                               */
 /* ======================================== */
 
-export function initFilter(tiere, tierListe, signal) {
-  if (!tierListe) {
-    return;
+export function initMapFilter({
+  signal,
+  onChange,
+}) {
+  const elemente = {
+    details:
+      document.querySelector(
+        "[data-map-filter]",
+      ),
+
+    suche:
+      document.querySelector(
+        "[data-map-search]",
+      ),
+
+    gehegetyp:
+      document.querySelector(
+        "[data-map-enclosure]",
+      ),
+
+    kontinent:
+      document.querySelector(
+        "[data-map-continent]",
+      ),
+
+    biome:
+      document.querySelector(
+        "[data-map-biome]",
+      ),
+
+    schutzstatus:
+      document.querySelector(
+        "[data-map-conservation]",
+      ),
+
+    edition:
+      document.querySelector(
+        "[data-map-edition]",
+      ),
+
+    nurAusgewaehlt:
+      document.querySelector(
+        "[data-map-selected-only]",
+      ),
+
+    sortierenNach:
+      document.querySelector(
+        "[data-map-sort-by]",
+      ),
+
+    richtung:
+      document.querySelector(
+        "[data-map-sort-direction]",
+      ),
+
+    reset:
+      document.querySelector(
+        "[data-map-filter-reset]",
+      ),
+  };
+
+
+  function getState() {
+    return {
+      filter: {
+        suche:
+          elemente.suche?.value ??
+          "",
+
+        gehegetyp:
+          elemente.gehegetyp?.value ??
+          "",
+
+        kontinent:
+          elemente.kontinent?.value ??
+          "",
+
+        biome:
+          elemente.biome?.value ??
+          "",
+
+        schutzstatus:
+          elemente.schutzstatus?.value ??
+          "",
+
+        edition:
+          elemente.edition?.value ??
+          "",
+
+        nurAusgewaehlt:
+          elemente.nurAusgewaehlt?.checked ??
+          false,
+      },
+
+      sortierung: {
+        sortierenNach:
+          elemente.sortierenNach?.value ??
+          "newest",
+
+        richtung:
+          elemente.richtung?.value ??
+          "desc",
+      },
+    };
   }
 
-  const search = document.querySelector("[data-animal-search]");
 
-  const selectedOnly = document.querySelector("[data-filter-selected]");
+  const controls = [
+    elemente.suche,
+    elemente.gehegetyp,
+    elemente.kontinent,
+    elemente.biome,
+    elemente.schutzstatus,
+    elemente.edition,
+    elemente.nurAusgewaehlt,
+    elemente.sortierenNach,
+    elemente.richtung,
+  ];
 
-  const reset = document.querySelector("[data-filter-reset]");
 
-  /* ==================================== */
-  /* FILTER ANWENDEN                      */
-  /* ==================================== */
+  controls.forEach(
+    (element) => {
+      if (!element) {
+        return;
+      }
 
-  function applyFilter() {
-    const query = search?.value.trim().toLowerCase() ?? "";
+      element.addEventListener(
+        "input",
+        onChange,
+        {
+          signal,
+        },
+      );
 
-    const onlySelected = selectedOnly?.checked ?? false;
+      element.addEventListener(
+        "change",
+        onChange,
+        {
+          signal,
+        },
+      );
+    },
+  );
 
-    const filtered = tiere.filter((tier) => {
-      /* ==================== */
-      /* NAME                 */
-      /* ==================== */
 
-      const name = getTierName(tier).toLowerCase();
-
-      const scientific = tier.wissenschaftlicherName.toLowerCase();
-
-      const matchesSearch =
-        !query || name.includes(query) || scientific.includes(query);
-
-      /* ==================== */
-      /* AUSGEWÄHLT           */
-      /* ==================== */
-
-      const matchesSelected = !onlySelected || tierListe.selected.has(tier.id);
-
-      return matchesSearch && matchesSelected;
-    });
-
-    tierListe.render(filtered);
-  }
-
-  /* ==================================== */
-  /* EVENTS                               */
-  /* ==================================== */
-
-  search?.addEventListener("input", applyFilter, {
-    signal,
-  });
-
-  selectedOnly?.addEventListener("change", applyFilter, {
-    signal,
-  });
-
-  reset?.addEventListener(
+  elemente.reset?.addEventListener(
     "click",
     () => {
-      if (search) {
-        search.value = "";
+      if (elemente.suche) {
+        elemente.suche.value = "";
       }
 
-      if (selectedOnly) {
-        selectedOnly.checked = false;
+      if (elemente.gehegetyp) {
+        elemente.gehegetyp.value = "";
       }
 
-      applyFilter();
+      if (elemente.kontinent) {
+        elemente.kontinent.value = "";
+      }
+
+      if (elemente.biome) {
+        elemente.biome.value = "";
+      }
+
+      if (elemente.schutzstatus) {
+        elemente.schutzstatus.value = "";
+      }
+
+      if (elemente.edition) {
+        elemente.edition.value = "";
+      }
+
+      if (elemente.nurAusgewaehlt) {
+        elemente.nurAusgewaehlt.checked = false;
+      }
+
+      if (elemente.sortierenNach) {
+        elemente.sortierenNach.value =
+          "newest";
+      }
+
+      if (elemente.richtung) {
+        elemente.richtung.value =
+          "desc";
+      }
+
+      onChange();
     },
     {
       signal,
     },
   );
 
-  document.addEventListener("languageChanged", applyFilter, {
-    signal,
-  });
 
-  document.addEventListener("tierAuswahlChanged", applyFilter, {
-    signal,
-  });
+  document.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (
+        !elemente.details?.open ||
+        elemente.details.contains(
+          event.target,
+        )
+      ) {
+        return;
+      }
+
+      elemente.details.open = false;
+    },
+    {
+      signal,
+    },
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (
+        event.key === "Escape" &&
+        elemente.details?.open
+      ) {
+        elemente.details.open = false;
+      }
+    },
+    {
+      signal,
+    },
+  );
+
+
+  return {
+    getState,
+  };
 }

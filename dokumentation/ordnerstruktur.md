@@ -60,8 +60,11 @@
             - `bilder/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/bilder/.gitkeep>)
             - [leeres Tier.json](<../assets/daten/lebewesen/tiere/1leeres Tier/leeres Tier.json>)
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/map/.gitkeep>)
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/videos/.gitkeep>)
           - `Loxodonta africana/`
-            - `Loxodonta africana map.png` *(Medium – nicht in Share-ZIP)*
             - [Loxodonta africana.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json>)
             - `audio/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/audio/.gitkeep>)
@@ -97,6 +100,9 @@
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/bilder/.gitkeep>)
               - `Loxodonta africana 1.webp` *(Medium – nicht in Share-ZIP)*
               - `Loxodonta africana 2.jpg` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/map/.gitkeep>)
+              - `Loxodonta africana map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/.gitkeep>)
               - `dokumentation/`
@@ -110,13 +116,15 @@
                   - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/.gitkeep>)
                   - `1.mp4` *(Medium – nicht in Share-ZIP)*
           - `Orycteropus afer/`
-            - `Orycteropus afer map.png` *(Medium – nicht in Share-ZIP)*
             - [Orycteropus afer.json](<../assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json>)
             - `audio/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/audio/.gitkeep>)
             - `bilder/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/bilder/.gitkeep>)
               - `Orycteropus afer 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/map/.gitkeep>)
+              - `Orycteropus afer map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/.gitkeep>)
               - `dokumentation/`
@@ -153,6 +161,7 @@
       - `map/`
         - `features/`
           - [filter.js](<../assets/js/map/features/filter.js>)
+          - [layout.js](<../assets/js/map/features/layout.js>)
           - [mapRenderer.js](<../assets/js/map/features/mapRenderer.js>)
           - [tierListe.js](<../assets/js/map/features/tierListe.js>)
         - [map.js](<../assets/js/map/map.js>)

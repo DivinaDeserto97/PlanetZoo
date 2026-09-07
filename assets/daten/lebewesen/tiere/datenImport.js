@@ -4,7 +4,6 @@
 
 const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json",
-  
   "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json",
 ];
 
@@ -13,20 +12,33 @@ const TIER_JSON_DATEIEN = [
 /* HILFSFUNKTIONEN                          */
 /* ======================================== */
 
-function alsArray(wert) {
-  if (Array.isArray(wert)) {
+function alsArray(
+  wert,
+) {
+  if (
+    Array.isArray(
+      wert,
+    )
+  ) {
     return wert;
   }
 
+
   if (
-    wert === undefined ||
-    wert === null ||
-    wert === ""
+    wert ===
+      undefined ||
+    wert ===
+      null ||
+    wert ===
+      ""
   ) {
     return [];
   }
 
-  return [wert];
+
+  return [
+    wert,
+  ];
 }
 
 
@@ -34,13 +46,28 @@ function alsArray(wert) {
 /* ID ERSTELLEN                             */
 /* ======================================== */
 
-function erstelleTierId(name) {
-  return String(name)
+function erstelleTierId(
+  name,
+) {
+  return String(
+    name,
+  )
     .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "_")
-    .replace(/^_+|_+$/g, "");
+    .normalize(
+      "NFD",
+    )
+    .replace(
+      /[\u0300-\u036f]/g,
+      "",
+    )
+    .replace(
+      /[^a-z0-9]+/g,
+      "_",
+    )
+    .replace(
+      /^_+|_+$/g,
+      "",
+    );
 }
 
 
@@ -48,68 +75,64 @@ function erstelleTierId(name) {
 /* MEDIEN-PFAD FINDEN                       */
 /* ======================================== */
 
-function findeMedienPfad(medium) {
+function findeMedienPfad(
+  medium,
+) {
   if (!medium) {
     return null;
   }
 
-  /*
-      Altes Schema weiterhin unterstützen.
-  */
 
   const direkterPfad =
     medium.pfad ??
     medium.Pfad ??
     null;
 
+
   if (direkterPfad) {
     return direkterPfad;
   }
 
 
-  /*
-      Neues Schema:
-
-      bilder[]
-      └── varianten[]
-          └── dateien[]
-              └── pfad
-  */
-
   const varianten =
-    alsArray(medium.varianten);
+    alsArray(
+      medium.varianten,
+    );
 
 
-  for (const variante of varianten) {
+  for (
+    const variante of
+    varianten
+  ) {
     const dateien =
-      alsArray(variante?.dateien);
+      alsArray(
+        variante
+          ?.dateien,
+      );
 
-
-    /*
-        Falls mehrere Dateien vorhanden sind:
-
-        1. Wiedergabe
-        2. Original
-        3. erste Datei
-    */
 
     const datei =
       dateien.find(
         (eintrag) =>
-          eintrag?.typ === "wiedergabe" &&
+          eintrag?.typ ===
+            "wiedergabe" &&
           eintrag?.pfad,
       ) ??
       dateien.find(
         (eintrag) =>
-          eintrag?.typ === "original" &&
+          eintrag?.typ ===
+            "original" &&
           eintrag?.pfad,
       ) ??
       dateien.find(
-        (eintrag) => eintrag?.pfad,
+        (eintrag) =>
+          eintrag?.pfad,
       );
 
 
-    if (datei?.pfad) {
+    if (
+      datei?.pfad
+    ) {
       return datei.pfad;
     }
   }
@@ -123,16 +146,121 @@ function findeMedienPfad(medium) {
 /* HAUPTBILD FINDEN                         */
 /* ======================================== */
 
-function findeHauptbild(bilder) {
+function findeHauptbild(
+  bilder,
+) {
   const bildListe =
-    alsArray(bilder);
+    alsArray(
+      bilder,
+    );
+
 
   return (
     bildListe.find(
       (bild) =>
-        bild?.typ === "hauptbild",
+        bild?.typ ===
+        "hauptbild",
     ) ??
     bildListe[0] ??
+    null
+  );
+}
+
+
+/* ======================================== */
+/* KARTEN-DATEIEN                           */
+/* ======================================== */
+
+function findeKartenPngPfad(
+  karte,
+) {
+  if (!karte) {
+    return null;
+  }
+
+
+  const dateien =
+    alsArray(
+      karte.dateien,
+    );
+
+
+  /*
+      Neue Struktur:
+
+      PNG ist Quelle und Standard.
+
+      Ein Laie muss also nur die PNG
+      eintragen / lokal speichern.
+  */
+
+  return (
+    dateien.find(
+      (datei) =>
+        datei?.typ ===
+          "original" &&
+        String(
+          datei?.dateityp ??
+          "",
+        ).toLowerCase() ===
+          "png" &&
+        datei?.pfad,
+    )?.pfad ??
+
+    dateien.find(
+      (datei) =>
+        String(
+          datei?.dateityp ??
+          "",
+        ).toLowerCase() ===
+          "png" &&
+        datei?.pfad,
+    )?.pfad ??
+
+    /*
+        Altes Schema weiterhin
+        unterstützen.
+    */
+
+    karte.pfad ??
+    karte.Pfad ??
+    null
+  );
+}
+
+
+function findeKartenSvgPfad(
+  karte,
+) {
+  const dateien =
+    alsArray(
+      karte?.dateien,
+    );
+
+
+  return (
+    dateien.find(
+      (datei) =>
+        datei?.typ ===
+          "wiedergabe" &&
+        String(
+          datei?.dateityp ??
+          "",
+        ).toLowerCase() ===
+          "svg" &&
+        datei?.pfad,
+    )?.pfad ??
+
+    dateien.find(
+      (datei) =>
+        String(
+          datei?.dateityp ??
+          "",
+        ).toLowerCase() ===
+          "svg" &&
+        datei?.pfad,
+    )?.pfad ??
+
     null
   );
 }
@@ -143,21 +271,27 @@ function findeHauptbild(bilder) {
 /* ======================================== */
 
 export async function datenImportieren() {
-  const importierteTiere = [];
+  const importierteTiere =
+    [];
 
 
   for (
     let importIndex = 0;
-    importIndex < TIER_JSON_DATEIEN.length;
+    importIndex <
+    TIER_JSON_DATEIEN.length;
     importIndex++
   ) {
     const jsonPfad =
-      TIER_JSON_DATEIEN[importIndex];
+      TIER_JSON_DATEIEN[
+        importIndex
+      ];
 
 
     try {
       const antwort =
-        await fetch(jsonPfad);
+        await fetch(
+          jsonPfad,
+        );
 
 
       if (!antwort.ok) {
@@ -183,7 +317,9 @@ export async function datenImportieren() {
 
 
       const namen =
-        tierdaten.identitaet?.namen ??
+        tierdaten
+          .identitaet
+          ?.namen ??
         tierdaten.namen ??
         {};
 
@@ -209,10 +345,26 @@ export async function datenImportieren() {
         null;
 
 
+      /*
+          Wichtig:
+
+          kartenPfad = PNG
+          kartenSvgPfad = optional
+
+          Damit funktioniert die Map
+          immer mit der Quelldatei PNG.
+      */
+
       const kartenPfad =
-        karte?.pfad ??
-        karte?.Pfad ??
-        null;
+        findeKartenPngPfad(
+          karte,
+        );
+
+
+      const kartenSvgPfad =
+        findeKartenSvgPfad(
+          karte,
+        );
 
 
       /* ================================== */
@@ -227,7 +379,9 @@ export async function datenImportieren() {
 
 
       const hauptbild =
-        findeHauptbild(bilder);
+        findeHauptbild(
+          bilder,
+        );
 
 
       const hauptbildPfad =
@@ -250,38 +404,19 @@ export async function datenImportieren() {
       /* ================================== */
 
       importierteTiere.push({
-        /*
-            Interne UI-ID.
-        */
-
         id,
-
-
-        /*
-            Original-ID aus JSON.
-
-            Wichtig später für:
-            Systematik / Nahrungsnetz.
-        */
 
         datenId:
           tierdaten.id ??
           wissenschaftlicherName,
 
-
         name:
           deutscherName,
 
-
         namen,
-
 
         wissenschaftlicherName,
 
-
-        /* ============================== */
-        /* FILTER                         */
-        /* ============================== */
 
         filter: {
           edition:
@@ -315,10 +450,24 @@ export async function datenImportieren() {
 
 
         /* ============================== */
-        /* MEDIEN                         */
+        /* KARTE                          */
         /* ============================== */
 
+        karte,
+
         kartenPfad,
+
+        kartenSvgPfad,
+
+        kartenDateien:
+          alsArray(
+            karte?.dateien,
+          ),
+
+
+        /* ============================== */
+        /* MEDIEN                         */
+        /* ============================== */
 
         bilder,
 
@@ -357,7 +506,8 @@ export async function datenImportieren() {
         importIndex,
 
         veroeffentlichtAm:
-          tierdaten.planetZoo2
+          tierdaten
+            .planetZoo2
             ?.veroeffentlichtAm ??
           tierdaten.veroeffentlichtAm ??
           null,
@@ -372,7 +522,9 @@ export async function datenImportieren() {
 
         jsonPfad,
       });
-    } catch (fehler) {
+    }
+
+    catch (fehler) {
       console.error(
         `Fehler beim Import von ${jsonPfad}`,
         fehler,
