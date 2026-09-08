@@ -1,3 +1,11 @@
+import {
+  getCorridorRect,
+  getLaneCoordinate,
+  getSlotRect,
+  parseCorridor,
+} from "./graphGrid.js";
+
+
 const SVG_NS =
   "http://www.w3.org/2000/svg";
 
@@ -8,14 +16,14 @@ const SVG_NS =
 
 export function renderGraphConnections({
   svg,
-  stage,
+  layout,
   edges,
-  nodeElements,
   routes,
+  nodeSlots,
 }) {
   if (
     !svg ||
-    !stage
+    !layout
   ) {
     return;
   }
@@ -24,30 +32,23 @@ export function renderGraphConnections({
   svg.replaceChildren();
 
 
-  const width =
-    stage.clientWidth;
-
-  const height =
-    stage.clientHeight;
-
-
   svg.setAttribute(
     "width",
     String(
-      width,
+      layout.width,
     ),
   );
 
   svg.setAttribute(
     "height",
     String(
-      height,
+      layout.height,
     ),
   );
 
   svg.setAttribute(
     "viewBox",
-    `0 0 ${width} ${height}`,
+    `0 0 ${layout.width} ${layout.height}`,
   );
 
 
@@ -56,41 +57,49 @@ export function renderGraphConnections({
   );
 
 
-  const stageRect =
-    stage.getBoundingClientRect();
-
-
   edges.forEach(
     (edge) => {
-      const from =
-        nodeElements.get(
-          edge.from,
-        );
+      const route =
+        routes.get(
+          edge.id,
+        ) ??
+        [];
 
-      const to =
-        nodeElements.get(
-          edge.to,
-        );
+
+      const fromSlot =
+        nodeSlots[
+          edge.from
+        ];
+
+      const toSlot =
+        nodeSlots[
+          edge.to
+        ];
 
 
       if (
-        !from ||
-        !to
+        !route.length ||
+        !fromSlot ||
+        !toSlot
       ) {
         return;
       }
 
 
       const geometry =
-        getEdgeGeometry(
-          from,
-          to,
-          stageRect,
-          routes?.[
-            edge.id
-          ] ??
-          null,
-        );
+        buildGeometry({
+          layout,
+          route,
+          fromSlot,
+          toSlot,
+        });
+
+
+      if (
+        !geometry.path
+      ) {
+        return;
+      }
 
 
       const path =
@@ -106,10 +115,15 @@ export function renderGraphConnections({
       );
 
 
+      path.dataset.edgeId =
+        edge.id;
+
+
       path.setAttribute(
         "d",
         geometry.path,
       );
+
 
       path.setAttribute(
         "marker-end",
@@ -148,7 +162,7 @@ export function renderGraphConnections({
           "y",
           String(
             geometry.label.y -
-              7,
+              6,
           ),
         );
 
@@ -167,352 +181,458 @@ export function renderGraphConnections({
 
 
 /* ======================================== */
-/* STANDARD-ROUTE                           */
+/* PFAD-GEOMETRIE                           */
 /* ======================================== */
 
-export function createDefaultRoute({
-  from,
-  to,
-  stage,
-  snap = 20,
+function buildGeometry({
+  layout,
+  route,
+  fromSlot,
+  toSlot,
 }) {
-  const stageRect =
-    stage.getBoundingClientRect();
-
-
-  const a =
-    getLocalRect(
-      from,
-      stageRect,
+  const fromRect =
+    getSlotRect(
+      layout,
+      fromSlot,
     );
 
-  const b =
-    getLocalRect(
-      to,
-      stageRect,
+  const toRect =
+    getSlotRect(
+      layout,
+      toSlot,
     );
 
-
-  const centerA =
-    getCenter(
-      a,
-    );
-
-  const centerB =
-    getCenter(
-      b,
-    );
-
-
-  const dx =
-    centerB.x -
-    centerA.x;
-
-  const dy =
-    centerB.y -
-    centerA.y;
-
-
-  /*
-      Drei editierbare Snap-Punkte.
-
-      Bei eher waagerechter Verbindung:
-      Punkt 1 / 2 / 3 liegen zwischen
-      Start und Ziel und erzeugen einen
-      rechtwinkligen Kabelweg.
-
-      Bei eher senkrechter Verbindung
-      wird das System gedreht.
-  */
 
   if (
-    Math.abs(
-      dx,
-    ) >=
-    Math.abs(
-      dy,
-    )
+    !fromRect ||
+    !toRect
   ) {
-    return [
-      {
+    return {
+      path:
+        "",
+
+      label: {
         x:
-          snapValue(
-            centerA.x +
-              dx *
-              0.28,
-            snap,
-          ),
+          0,
 
         y:
-          snapValue(
-            centerA.y,
-            snap,
-          ),
+          0,
       },
-
-      {
-        x:
-          snapValue(
-            centerA.x +
-              dx *
-              0.5,
-            snap,
-          ),
-
-        y:
-          snapValue(
-            centerA.y +
-              dy *
-              0.5,
-            snap,
-          ),
-      },
-
-      {
-        x:
-          snapValue(
-            centerA.x +
-              dx *
-              0.72,
-            snap,
-          ),
-
-        y:
-          snapValue(
-            centerB.y,
-            snap,
-          ),
-      },
-    ];
+    };
   }
 
 
-  return [
-    {
-      x:
-        snapValue(
-          centerA.x,
-          snap,
-        ),
-
-      y:
-        snapValue(
-          centerA.y +
-            dy *
-            0.28,
-          snap,
-        ),
-    },
-
-    {
-      x:
-        snapValue(
-          centerA.x +
-            dx *
-            0.5,
-          snap,
-        ),
-
-      y:
-        snapValue(
-          centerA.y +
-            dy *
-            0.5,
-          snap,
-        ),
-    },
-
-    {
-      x:
-        snapValue(
-          centerB.x,
-          snap,
-        ),
-
-      y:
-        snapValue(
-          centerA.y +
-            dy *
-            0.72,
-          snap,
-        ),
-    },
-  ];
-}
-
-
-/* ======================================== */
-/* GEOMETRIE                                */
-/* ======================================== */
-
-function getEdgeGeometry(
-  from,
-  to,
-  stageRect,
-  route,
-) {
-  const a =
-    getLocalRect(
-      from,
-      stageRect,
-    );
-
-  const b =
-    getLocalRect(
-      to,
-      stageRect,
-    );
-
-
-  const centerA =
-    getCenter(
-      a,
-    );
-
-  const centerB =
-    getCenter(
-      b,
-    );
-
-
   const first =
-    route?.[0] ??
-    centerB;
+    getRoutePoint(
+      layout,
+      route[0],
+    );
 
   const last =
-    route?.[
-      route.length -
-      1
-    ] ??
-    centerA;
-
-
-  const start =
-    projectToRectEdge(
-      centerA,
-      a,
-      first.x -
-        centerA.x,
-      first.y -
-        centerA.y,
+    getRoutePoint(
+      layout,
+      route[
+        route.length -
+        1
+      ],
     );
 
-  const end =
-    projectToRectEdge(
-      centerB,
-      b,
-      last.x -
-        centerB.x,
-      last.y -
-        centerB.y,
-    );
+
+  if (
+    !first ||
+    !last
+  ) {
+    return {
+      path:
+        "",
+
+      label: {
+        x:
+          0,
+
+        y:
+          0,
+      },
+    };
+  }
 
 
   const points =
-    [
-      start,
-      ...(route ?? []),
-      end,
-    ];
+    [];
 
 
-  const path =
-    buildOrthogonalPath(
+  const startPort =
+    getNodePort(
+      fromRect,
+      first.corridor,
+      "start",
+    );
+
+
+  const startEntry =
+    getNodeCorridorEntry(
+      fromRect,
+      first,
+    );
+
+
+  points.push(
+    startPort,
+    startEntry,
+  );
+
+
+  for (
+    let index = 0;
+    index <
+    route.length -
+      1;
+    index++
+  ) {
+    const a =
+      getRoutePoint(
+        layout,
+        route[
+          index
+        ],
+      );
+
+    const b =
+      getRoutePoint(
+        layout,
+        route[
+          index +
+          1
+        ],
+      );
+
+
+    const junction =
+      getJunctionPoint(
+        a,
+        b,
+      );
+
+
+    if (junction) {
+      points.push(
+        junction,
+      );
+    }
+  }
+
+
+  const endEntry =
+    getNodeCorridorEntry(
+      toRect,
+      last,
+    );
+
+  const endPort =
+    getNodePort(
+      toRect,
+      last.corridor,
+      "end",
+    );
+
+
+  points.push(
+    endEntry,
+    endPort,
+  );
+
+
+  const cleaned =
+    removeDuplicatePoints(
       points,
     );
 
 
-  const labelPoint =
-    route?.[
+  const path =
+    cleaned
+      .map(
+        (
+          point,
+          index,
+        ) =>
+          `${index === 0 ? "M" : "L"} ${round(point.x)} ${round(point.y)}`,
+      )
+      .join(
+        " ",
+      );
+
+
+  const label =
+    cleaned[
       Math.floor(
-        route.length /
-        2,
+        cleaned.length /
+          2,
       )
     ] ??
-    {
-      x:
-        (
-          start.x +
-          end.x
-        ) /
-        2,
-
-      y:
-        (
-          start.y +
-          end.y
-        ) /
-        2,
-    };
+    endPort;
 
 
   return {
     path,
-
-    label:
-      labelPoint,
+    label,
   };
 }
 
 
 /* ======================================== */
-/* RECHTWINKLIGER PFAD                      */
+/* ROUTEN-PUNKT                             */
 /* ======================================== */
 
-function buildOrthogonalPath(
-  points,
+function getRoutePoint(
+  layout,
+  step,
 ) {
+  const corridor =
+    parseCorridor(
+      step.bereich,
+    );
+
+  const rect =
+    getCorridorRect(
+      layout,
+      step.bereich,
+    );
+
+  const lane =
+    getLaneCoordinate(
+      layout,
+      step.bereich,
+      step.spur,
+    );
+
+
   if (
-    points.length <
-    2
+    !corridor ||
+    !rect ||
+    !lane
   ) {
-    return "";
+    return null;
   }
 
 
-  let current =
-    points[0];
-
-  let d =
-    `M ${current.x} ${current.y}`;
-
-
-  for (
-    let index = 1;
-    index <
-    points.length;
-    index++
-  ) {
-    const target =
-      points[
-        index
-      ];
-
-
-    /*
-        Abwechselnd erst waagerecht,
-        dann senkrecht zum nächsten
-        festen Snap-Punkt.
-    */
-
-    d +=
-      ` L ${target.x} ${current.y}`;
-
-    d +=
-      ` L ${target.x} ${target.y}`;
-
-
-    current =
-      target;
-  }
-
-
-  return d;
+  return {
+    corridor,
+    rect,
+    lane,
+  };
 }
 
 
 /* ======================================== */
-/* PFEIL                                    */
+/* KNOTEN -> KORRIDOR                       */
+/* ======================================== */
+
+function getNodePort(
+  nodeRect,
+  corridor,
+) {
+  if (
+    corridor.orientation ===
+    "vertical"
+  ) {
+    const corridorIsLeft =
+      corridor.gapColumn <
+      nodeRect.column;
+
+
+    return {
+      x:
+        corridorIsLeft
+          ? nodeRect.x
+          : nodeRect.x +
+            nodeRect.width,
+
+      y:
+        nodeRect.y +
+        nodeRect.height /
+          2,
+    };
+  }
+
+
+  const corridorIsAbove =
+    corridor.gapRow <
+    nodeRect.row;
+
+
+  return {
+    x:
+      nodeRect.x +
+      nodeRect.width /
+        2,
+
+    y:
+      corridorIsAbove
+        ? nodeRect.y
+        : nodeRect.y +
+          nodeRect.height,
+  };
+}
+
+
+function getNodeCorridorEntry(
+  nodeRect,
+  routePoint,
+) {
+  const corridor =
+    routePoint.corridor;
+
+
+  if (
+    corridor.orientation ===
+    "vertical"
+  ) {
+    return {
+      x:
+        routePoint.lane.x,
+
+      y:
+        nodeRect.y +
+        nodeRect.height /
+          2,
+    };
+  }
+
+
+  return {
+    x:
+      nodeRect.x +
+      nodeRect.width /
+        2,
+
+    y:
+      routePoint.lane.y,
+  };
+}
+
+
+/* ======================================== */
+/* KREUZUNG ZWEIER LINIENBEREICHE           */
+/* ======================================== */
+
+function getJunctionPoint(
+  a,
+  b,
+) {
+  if (
+    !a ||
+    !b
+  ) {
+    return null;
+  }
+
+
+  if (
+    a.corridor.orientation ===
+      "vertical" &&
+    b.corridor.orientation ===
+      "horizontal"
+  ) {
+    return {
+      x:
+        a.lane.x,
+
+      y:
+        b.lane.y,
+    };
+  }
+
+
+  if (
+    a.corridor.orientation ===
+      "horizontal" &&
+    b.corridor.orientation ===
+      "vertical"
+  ) {
+    return {
+      x:
+        b.lane.x,
+
+      y:
+        a.lane.y,
+    };
+  }
+
+
+  return null;
+}
+
+
+/* ======================================== */
+/* EDITIER-HANDLE-POSITION                  */
+/* ======================================== */
+
+export function getLaneHandlePosition(
+  layout,
+  step,
+) {
+  const rect =
+    getCorridorRect(
+      layout,
+      step.bereich,
+    );
+
+  const lane =
+    getLaneCoordinate(
+      layout,
+      step.bereich,
+      step.spur,
+    );
+
+
+  if (
+    !rect ||
+    !lane
+  ) {
+    return null;
+  }
+
+
+  if (
+    rect.orientation ===
+    "vertical"
+  ) {
+    return {
+      x:
+        lane.x,
+
+      y:
+        rect.y +
+        rect.height /
+          2,
+
+      orientation:
+        "vertical",
+
+      rect,
+    };
+  }
+
+
+  return {
+    x:
+      rect.x +
+      rect.width /
+        2,
+
+    y:
+      lane.y,
+
+    orientation:
+      "horizontal",
+
+    rect,
+  };
+}
+
+
+/* ======================================== */
+/* SVG-PFEIL                                */
 /* ======================================== */
 
 function createDefs() {
@@ -598,137 +718,59 @@ function createDefs() {
 
 
 /* ======================================== */
-/* RECHTECK-HELFER                          */
+/* HELFER                                   */
 /* ======================================== */
 
-function getLocalRect(
-  element,
-  stageRect,
+function removeDuplicatePoints(
+  points,
 ) {
-  const rect =
-    element.getBoundingClientRect();
+  const result =
+    [];
 
 
-  return {
-    x:
-      rect.left -
-      stageRect.left,
-
-    y:
-      rect.top -
-      stageRect.top,
-
-    width:
-      rect.width,
-
-    height:
-      rect.height,
-  };
-}
+  points.forEach(
+    (point) => {
+      const previous =
+        result[
+          result.length -
+          1
+        ];
 
 
-function getCenter(
-  rect,
-) {
-  return {
-    x:
-      rect.x +
-      rect.width /
-        2,
-
-    y:
-      rect.y +
-      rect.height /
-        2,
-  };
-}
-
-
-function projectToRectEdge(
-  center,
-  rect,
-  dx,
-  dy,
-) {
-  const length =
-    Math.hypot(
-      dx,
-      dy,
-    ) ||
-    1;
-
-
-  const ux =
-    dx /
-    length;
-
-  const uy =
-    dy /
-    length;
-
-
-  const halfW =
-    rect.width /
-    2;
-
-  const halfH =
-    rect.height /
-    2;
-
-
-  const tx =
-    Math.abs(
-      ux,
-    ) >
-    0.0001
-      ? halfW /
+      if (
+        previous &&
         Math.abs(
-          ux,
-        )
-      : Infinity;
-
-  const ty =
-    Math.abs(
-      uy,
-    ) >
-    0.0001
-      ? halfH /
+          previous.x -
+            point.x,
+        ) <
+          0.1 &&
         Math.abs(
-          uy,
-        )
-      : Infinity;
+          previous.y -
+            point.y,
+        ) <
+          0.1
+      ) {
+        return;
+      }
 
 
-  const t =
-    Math.min(
-      tx,
-      ty,
-    );
-
-
-  return {
-    x:
-      center.x +
-      ux *
-      t,
-
-    y:
-      center.y +
-      uy *
-      t,
-  };
-}
-
-
-function snapValue(
-  value,
-  snap,
-) {
-  return (
-    Math.round(
-      value /
-      snap,
-    ) *
-    snap
+      result.push(
+        point,
+      );
+    },
   );
+
+
+  return result;
+}
+
+
+function round(
+  value,
+) {
+  return Math.round(
+    value *
+      10,
+  ) /
+    10;
 }

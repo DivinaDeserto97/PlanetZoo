@@ -107,7 +107,7 @@ export async function init() {
         connections,
 
       storageKey:
-        "planetZoo2-nahrungsnetz-layout-v2",
+        "planetZoo2-nahrungsnetz-layout-v3",
 
       signal,
 

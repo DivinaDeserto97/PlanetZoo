@@ -1,17 +1,24 @@
 import {
-  initGraphDrag,
-  initGraphPointDrag,
-  snapValue,
-} from "./graphDrag.js";
+  buildPixelLayout,
+  buildRoutes,
+  createDefaultSlotMap,
+  createSlotId,
+  getCorridorRect,
+  getGridSize,
+  getSlotRect,
+  parseCorridor,
+  parseSlot,
+} from "./graphGrid.js";
 
 import {
-  createDefaultRoute,
+  getLaneHandlePosition,
   renderGraphConnections,
 } from "./graphConnections.js";
 
-
-const SNAP =
-  20;
+import {
+  initGraphSlotDrag,
+  initLaneHandleDrag,
+} from "./graphDrag.js";
 
 
 /* ======================================== */
@@ -37,10 +44,6 @@ export function createGraphCanvas({
   };
 
 
-  const nodeElements =
-    new Map();
-
-
   let workspace = {
     nodes:
       {},
@@ -50,18 +53,21 @@ export function createGraphCanvas({
   };
 
 
-  let dirty =
-    false;
-
   let routeEdit =
     false;
 
-  let resizeObserver =
+  let dirty =
+    false;
+
+  let currentModel =
+    null;
+
+  let previewSlot =
     null;
 
 
   /* ==================================== */
-  /* RENDERN                              */
+  /* ÖFFENTLICH RENDERN                   */
   /* ==================================== */
 
   function render(
@@ -71,22 +77,19 @@ export function createGraphCanvas({
       graph;
 
 
-    nodeElements.clear();
-
-    nodesContainer.replaceChildren();
-
-    routePointsContainer?.replaceChildren();
-
-
     const saved =
       loadSavedLayout();
 
 
+    const defaults =
+      createDefaultSlotMap(
+        graph,
+      );
+
+
     workspace = {
-      nodes: {
-        ...(saved.nodes ??
-          {}),
-      },
+      nodes:
+        {},
 
       edges: {
         ...(saved.edges ??
@@ -95,178 +98,35 @@ export function createGraphCanvas({
     };
 
 
-    const defaults =
-      createDefaultPositions(
-        graph,
-      );
-
-
-    const size =
-      calculateStageSize(
-        graph.nodes.length,
-      );
-
-
-    stage.style.width =
-      `${size.width}px`;
-
-    stage.style.height =
-      `${size.height}px`;
-
-
     graph.nodes.forEach(
-      (nodeData) => {
-        const element =
-          createNodeElement(
-            nodeData,
-          );
+      (node) => {
+        const savedSlot =
+          parseSlot(
+            saved.nodes?.[
+              node.id
+            ],
+          )?.id;
 
+        const jsonSlot =
+          parseSlot(
+            node.position,
+          )?.id;
 
-        const jsonPosition =
-          normalizePosition(
-            nodeData.position,
-          );
-
-
-        const position =
-          normalizePosition(
-            workspace
-              .nodes[
-                nodeData.id
-              ],
-          ) ??
-          jsonPosition ??
-          defaults[
-            nodeData.id
-          ];
+        const defaultSlot =
+          parseSlot(
+            defaults[
+              node.id
+            ],
+          )?.id;
 
 
         workspace.nodes[
-          nodeData.id
-        ] = {
-          x:
-            snapValue(
-              position.x,
-              SNAP,
-            ),
-
-          y:
-            snapValue(
-              position.y,
-              SNAP,
-            ),
-        };
-
-
-        setNodePosition(
-          element,
-          workspace
-            .nodes[
-              nodeData.id
-            ],
-        );
-
-
-        nodesContainer.appendChild(
-          element,
-        );
-
-
-        nodeElements.set(
-          nodeData.id,
-          element,
-        );
-
-
-        initGraphDrag({
-          node:
-            element,
-
-          stage,
-
-          signal,
-
-          snap:
-            SNAP,
-
-          onMove:
-            (newPosition) => {
-              workspace.nodes[
-                nodeData.id
-              ] =
-                newPosition;
-
-
-              updateNodeCoordinate(
-                element,
-                newPosition,
-              );
-
-
-              /*
-                  Automatische Linien bleiben
-                  am Knoten hängen.
-
-                  Benutzerdefinierte Routen
-                  behalten ihre festen Punkte.
-              */
-
-              draw();
-            },
-
-          onEnd:
-            (newPosition) => {
-              workspace.nodes[
-                nodeData.id
-              ] =
-                newPosition;
-
-
-              updateNodeCoordinate(
-                element,
-                newPosition,
-              );
-
-
-              markDirty();
-
-              draw();
-            },
-        });
-      },
-    );
-
-
-    /*
-        JSON-Routen werden erst übernommen,
-        wenn noch keine lokal gespeicherte
-        Route existiert.
-    */
-
-    graph.edges.forEach(
-      (edge) => {
-        if (
-          !workspace.edges[
-            edge.id
-          ] &&
-          Array.isArray(
-            edge.route,
-          ) &&
-          edge.route.length
-        ) {
-          workspace.edges[
-            edge.id
-          ] = {
-            points:
-              edge.route
-                .map(
-                  normalizePosition,
-                )
-                .filter(
-                  Boolean,
-                ),
-          };
-        }
+          node.id
+        ] =
+          savedSlot ??
+          jsonSlot ??
+          defaultSlot ??
+          "1.1";
       },
     );
 
@@ -276,125 +136,270 @@ export function createGraphCanvas({
     );
 
 
-    observeNodes();
+    rebuild();
+  }
 
 
-    requestAnimationFrame(
-      () => {
-        draw();
-        centerOnFocus();
+  /* ==================================== */
+  /* MODELL NEU BERECHNEN                 */
+  /* ==================================== */
+
+  function rebuild() {
+    clearPreview();
+
+
+    const gridSize =
+      getGridSize({
+        graph:
+          currentGraph,
+
+        nodeSlots:
+          workspace.nodes,
+      });
+
+
+    const localEdgeLanes =
+      getLocalEdgeLanes();
+
+
+    const routeModel =
+      buildRoutes({
+        graph:
+          currentGraph,
+
+        nodeSlots:
+          workspace.nodes,
+
+        rows:
+          gridSize.rows,
+
+        columns:
+          gridSize.columns,
+
+        localEdgeLanes,
+      });
+
+
+    const layout =
+      buildPixelLayout({
+        rows:
+          gridSize.rows,
+
+        columns:
+          gridSize.columns,
+
+        laneCounts:
+          routeModel.laneCounts,
+      });
+
+
+    currentModel = {
+      ...gridSize,
+
+      ...routeModel,
+
+      layout,
+    };
+
+
+    stage.style.width =
+      `${layout.width}px`;
+
+    stage.style.height =
+      `${layout.height}px`;
+
+
+    connectionsSvg.style.width =
+      `${layout.width}px`;
+
+    connectionsSvg.style.height =
+      `${layout.height}px`;
+
+
+    renderGridOverlay();
+
+    renderNodes();
+
+    drawConnections();
+
+    renderLaneHandles();
+  }
+
+
+  /* ==================================== */
+  /* KÄSTCHEN                             */
+  /* ==================================== */
+
+  function renderNodes() {
+    nodesContainer.replaceChildren();
+
+
+    currentGraph.nodes.forEach(
+      (nodeData) => {
+        const slotId =
+          workspace.nodes[
+            nodeData.id
+          ];
+
+
+        const rect =
+          getSlotRect(
+            currentModel.layout,
+            slotId,
+          );
+
+
+        if (!rect) {
+          return;
+        }
+
+
+        const element =
+          createNodeElement(
+            nodeData,
+            slotId,
+          );
+
+
+        setNodeRect(
+          element,
+          rect,
+        );
+
+
+        nodesContainer.appendChild(
+          element,
+        );
+
+
+        initGraphSlotDrag({
+          node:
+            element,
+
+          stage,
+
+          layout:
+            currentModel.layout,
+
+          signal,
+
+          onPreview:
+            (newSlot) => {
+              showPreviewSlot(
+                newSlot,
+              );
+            },
+
+          onDrop:
+            (newSlot) => {
+              moveNodeToSlot(
+                nodeData.id,
+                newSlot,
+              );
+            },
+        });
       },
     );
   }
 
 
+  function moveNodeToSlot(
+    nodeId,
+    newSlot,
+  ) {
+    if (
+      !parseSlot(
+        newSlot,
+      )
+    ) {
+      rebuild();
+
+      return;
+    }
+
+
+    const oldSlot =
+      workspace.nodes[
+        nodeId
+      ];
+
+
+    if (
+      oldSlot ===
+      newSlot
+    ) {
+      rebuild();
+
+      return;
+    }
+
+
+    const other =
+      Object.entries(
+        workspace.nodes,
+      ).find(
+        (
+          [
+            id,
+            slot,
+          ],
+        ) =>
+          id !==
+            nodeId &&
+          slot ===
+            newSlot,
+      );
+
+
+    if (other) {
+      workspace.nodes[
+        other[0]
+      ] =
+        oldSlot;
+    }
+
+
+    workspace.nodes[
+      nodeId
+    ] =
+      newSlot;
+
+
+    markDirty();
+
+    rebuild();
+  }
+
+
   /* ==================================== */
-  /* ZEICHNEN                             */
+  /* LINIEN                               */
   /* ==================================== */
 
-  function draw() {
-    const routes =
-      getRenderRoutes();
-
-
+  function drawConnections() {
     renderGraphConnections({
       svg:
         connectionsSvg,
 
-      stage,
+      layout:
+        currentModel.layout,
 
       edges:
         currentGraph.edges,
 
-      nodeElements,
+      routes:
+        currentModel.routes,
 
-      routes,
+      nodeSlots:
+        workspace.nodes,
     });
-
-
-    renderRouteHandles(
-      routes,
-    );
-  }
-
-
-  function getRenderRoutes() {
-    const routes =
-      {};
-
-
-    currentGraph.edges.forEach(
-      (edge) => {
-        const custom =
-          workspace.edges[
-            edge.id
-          ]?.points;
-
-
-        if (
-          Array.isArray(
-            custom,
-          ) &&
-          custom.length
-        ) {
-          routes[
-            edge.id
-          ] =
-            custom;
-
-          return;
-        }
-
-
-        const from =
-          nodeElements.get(
-            edge.from,
-          );
-
-        const to =
-          nodeElements.get(
-            edge.to,
-          );
-
-
-        if (
-          !from ||
-          !to
-        ) {
-          routes[
-            edge.id
-          ] =
-            [];
-
-          return;
-        }
-
-
-        routes[
-          edge.id
-        ] =
-          createDefaultRoute({
-            from,
-            to,
-            stage,
-            snap:
-              SNAP,
-          });
-      },
-    );
-
-
-    return routes;
   }
 
 
   /* ==================================== */
-  /* ROUTEN-PUNKTE                        */
+  /* LINIEN-SPUREN BEARBEITEN             */
   /* ==================================== */
 
-  function renderRouteHandles(
-    routes,
-  ) {
+  function renderLaneHandles() {
     if (
       !routePointsContainer
     ) {
@@ -412,119 +417,98 @@ export function createGraphCanvas({
 
     currentGraph.edges.forEach(
       (edge) => {
-        const points =
-          routes[
-            edge.id
-          ] ??
+        const route =
+          currentModel.routes.get(
+            edge.id,
+          ) ??
           [];
 
 
-        points.forEach(
+        route.forEach(
           (
-            pointData,
-            pointIndex,
+            step,
+            index,
           ) => {
-            const point =
+            const position =
+              getLaneHandlePosition(
+                currentModel.layout,
+                step,
+              );
+
+
+            if (!position) {
+              return;
+            }
+
+
+            const handle =
               document.createElement(
                 "button",
               );
 
 
-            point.type =
+            handle.type =
               "button";
 
-            point.className =
+            handle.className =
               "graph-route-point";
 
-            point.dataset.edgeId =
-              edge.id;
 
-            point.dataset.pointIndex =
+            handle.style.left =
+              `${position.x}px`;
+
+            handle.style.top =
+              `${position.y}px`;
+
+
+            handle.textContent =
               String(
-                pointIndex,
+                step.spur,
               );
 
 
-            point.textContent =
-              String(
-                pointIndex +
-                  1,
-              );
-
-
-            setRoutePointPosition(
-              point,
-              pointData,
-            );
-
-
-            point.title =
-              `P${pointIndex + 1} · X ${pointData.x} · Y ${pointData.y}`;
+            handle.title =
+              `${step.bereich} · Spur ${step.spur}`;
 
 
             routePointsContainer.appendChild(
-              point,
+              handle,
             );
 
 
-            initGraphPointDrag({
-              point,
+            const laneCount =
+              currentModel
+                .laneCounts[
+                  step.bereich
+                ] ??
+              1;
+
+
+            initLaneHandleDrag({
+              handle,
               stage,
+
+              layout:
+                currentModel.layout,
+
+              corridorRect:
+                position.rect,
+
+              orientation:
+                position.orientation,
+
+              laneCount,
+
               signal,
 
-              snap:
-                SNAP,
-
-              onMove:
-                (position) => {
-                  ensureCustomRoute(
-                    edge,
-                    routes[
-                      edge.id
-                    ],
+              onDrop:
+                (lane) => {
+                  setEdgeLane(
+                    edge.id,
+                    step.bereich,
+                    step.spur,
+                    lane,
                   );
-
-
-                  workspace
-                    .edges[
-                      edge.id
-                    ]
-                    .points[
-                      pointIndex
-                    ] =
-                      position;
-
-
-                  point.title =
-                    `P${pointIndex + 1} · X ${position.x} · Y ${position.y}`;
-
-
-                  drawConnectionsOnly();
-                },
-
-              onEnd:
-                (position) => {
-                  ensureCustomRoute(
-                    edge,
-                    routes[
-                      edge.id
-                    ],
-                  );
-
-
-                  workspace
-                    .edges[
-                      edge.id
-                    ]
-                    .points[
-                      pointIndex
-                    ] =
-                      position;
-
-
-                  markDirty();
-
-                  draw();
                 },
             });
           },
@@ -534,51 +518,145 @@ export function createGraphCanvas({
   }
 
 
-  function ensureCustomRoute(
-    edge,
-    defaultPoints,
+  function setEdgeLane(
+    edgeId,
+    corridor,
+    oldLane,
+    newLane,
   ) {
     if (
-      workspace.edges[
-        edge.id
-      ]?.points
+      oldLane ===
+      newLane
     ) {
       return;
     }
 
 
-    workspace.edges[
-      edge.id
-    ] = {
-      points:
-        defaultPoints.map(
-          (point) => ({
-            x:
-              point.x,
+    /*
+        Falls die Zielspur bereits von
+        einer anderen Linie belegt ist,
+        werden die beiden Spuren getauscht.
+    */
 
-            y:
-              point.y,
-          }),
-        ),
-    };
+    currentGraph.edges.forEach(
+      (otherEdge) => {
+        if (
+          otherEdge.id ===
+          edgeId
+        ) {
+          return;
+        }
+
+
+        const otherRoute =
+          currentModel.routes.get(
+            otherEdge.id,
+          ) ??
+          [];
+
+
+        const matching =
+          otherRoute.find(
+            (step) =>
+              step.bereich ===
+                corridor &&
+              step.spur ===
+                newLane,
+          );
+
+
+        if (!matching) {
+          return;
+        }
+
+
+        setLocalLane(
+          otherEdge.id,
+          corridor,
+          oldLane,
+        );
+      },
+    );
+
+
+    setLocalLane(
+      edgeId,
+      corridor,
+      newLane,
+    );
+
+
+    markDirty();
+
+    rebuild();
   }
 
 
-  function drawConnectionsOnly() {
-    renderGraphConnections({
-      svg:
-        connectionsSvg,
+  function setLocalLane(
+    edgeId,
+    corridor,
+    lane,
+  ) {
+    if (
+      !workspace.edges[
+        edgeId
+      ]
+    ) {
+      workspace.edges[
+        edgeId
+      ] = {
+        lanes:
+          {},
+      };
+    }
 
-      stage,
 
-      edges:
-        currentGraph.edges,
+    if (
+      !workspace.edges[
+        edgeId
+      ].lanes
+    ) {
+      workspace.edges[
+        edgeId
+      ].lanes =
+        {};
+    }
 
-      nodeElements,
 
-      routes:
-        getRenderRoutes(),
-    });
+    workspace.edges[
+      edgeId
+    ].lanes[
+      corridor
+    ] =
+      lane;
+  }
+
+
+  function getLocalEdgeLanes() {
+    const result =
+      {};
+
+
+    Object.entries(
+      workspace.edges,
+    ).forEach(
+      (
+        [
+          edgeId,
+          data,
+        ],
+      ) => {
+        result[
+          edgeId
+        ] = {
+          ...(data?.lanes ??
+            {}),
+        };
+      },
+    );
+
+
+    return result;
   }
 
 
@@ -591,7 +669,243 @@ export function createGraphCanvas({
       );
 
 
-    draw();
+    renderLaneHandles();
+
+    stage.classList.toggle(
+      "is-line-editing",
+      routeEdit,
+    );
+  }
+
+
+  /* ==================================== */
+  /* GRID-OVERLAY                         */
+  /* ==================================== */
+
+  function renderGridOverlay() {
+    let overlay =
+      stage.querySelector(
+        "[data-graph-grid-overlay]",
+      );
+
+
+    if (!overlay) {
+      overlay =
+        document.createElement(
+          "div",
+        );
+
+      overlay.className =
+        "graph-grid-overlay";
+
+      overlay.dataset.graphGridOverlay =
+        "";
+
+      stage.prepend(
+        overlay,
+      );
+    }
+
+
+    overlay.replaceChildren();
+
+
+    const {
+      rows,
+      columns,
+      layout,
+    } =
+      currentModel;
+
+
+    for (
+      let row = 1;
+      row <=
+      rows;
+      row++
+    ) {
+      for (
+        let column = 1;
+        column <=
+        columns;
+        column++
+      ) {
+        const slotId =
+          createSlotId(
+            row,
+            column,
+          );
+
+        const rect =
+          getSlotRect(
+            layout,
+            slotId,
+          );
+
+
+        const slot =
+          document.createElement(
+            "div",
+          );
+
+
+        slot.className =
+          "graph-grid-slot";
+
+        slot.dataset.gridSlot =
+          slotId;
+
+        slot.textContent =
+          slotId;
+
+
+        setRect(
+          slot,
+          rect,
+        );
+
+
+        overlay.appendChild(
+          slot,
+        );
+      }
+    }
+
+
+    /*
+        Linienbereich-Beschriftungen.
+    */
+
+    for (
+      let row = 1;
+      row <=
+      rows;
+      row++
+    ) {
+      for (
+        let gapColumn = 1;
+        gapColumn <
+        columns;
+        gapColumn++
+      ) {
+        addCorridorLabel(
+          overlay,
+          `L${2 * row - 1}.${gapColumn}`,
+          layout,
+        );
+      }
+    }
+
+
+    for (
+      let gapRow = 1;
+      gapRow <
+      rows;
+      gapRow++
+    ) {
+      for (
+        let column = 1;
+        column <=
+        columns;
+        column++
+      ) {
+        addCorridorLabel(
+          overlay,
+          `L${2 * gapRow}.${column}`,
+          layout,
+        );
+      }
+    }
+  }
+
+
+  function addCorridorLabel(
+    overlay,
+    corridorId,
+    layout,
+  ) {
+    const rect =
+      getCorridorRect(
+        layout,
+        corridorId,
+      );
+
+
+    if (!rect) {
+      return;
+    }
+
+
+    const label =
+      document.createElement(
+        "span",
+      );
+
+
+    label.className =
+      "graph-corridor-label";
+
+    label.textContent =
+      corridorId;
+
+
+    label.style.left =
+      `${rect.x + rect.width / 2}px`;
+
+    label.style.top =
+      `${rect.y + rect.height / 2}px`;
+
+
+    overlay.appendChild(
+      label,
+    );
+  }
+
+
+  /* ==================================== */
+  /* PREVIEW-SLOT                         */
+  /* ==================================== */
+
+  function showPreviewSlot(
+    slotId,
+  ) {
+    if (
+      previewSlot ===
+      slotId
+    ) {
+      return;
+    }
+
+
+    clearPreview();
+
+
+    previewSlot =
+      slotId;
+
+
+    stage
+      .querySelector(
+        `[data-grid-slot="${slotId}"]`,
+      )
+      ?.classList.add(
+        "is-drop-target",
+      );
+  }
+
+
+  function clearPreview() {
+    stage
+      .querySelector(
+        ".graph-grid-slot.is-drop-target",
+      )
+      ?.classList.remove(
+        "is-drop-target",
+      );
+
+
+    previewSlot =
+      null;
   }
 
 
@@ -605,10 +919,7 @@ export function createGraphCanvas({
       JSON.stringify(
         {
           version:
-            2,
-
-          snap:
-            SNAP,
+            3,
 
           nodes:
             workspace.nodes,
@@ -638,6 +949,54 @@ export function createGraphCanvas({
   }
 
 
+  function loadSavedLayout() {
+    try {
+      const saved =
+        JSON.parse(
+          localStorage.getItem(
+            storageKey,
+          ) ??
+          "{}",
+        );
+
+
+      if (
+        saved?.version !==
+        3
+      ) {
+        return {
+          nodes:
+            {},
+
+          edges:
+            {},
+        };
+      }
+
+
+      return {
+        nodes:
+          saved.nodes ??
+          {},
+
+        edges:
+          saved.edges ??
+          {},
+      };
+    }
+
+    catch {
+      return {
+        nodes:
+          {},
+
+        edges:
+          {},
+      };
+    }
+  }
+
+
   function markDirty() {
     setDirty(
       true,
@@ -663,6 +1022,11 @@ export function createGraphCanvas({
   /* ==================================== */
 
   function centerOnFocus() {
+    if (!currentModel) {
+      return;
+    }
+
+
     const focus =
       currentGraph.nodes.filter(
         (node) =>
@@ -670,101 +1034,44 @@ export function createGraphCanvas({
       );
 
 
-    const targetNodes =
-      focus.length
-        ? focus
-        : currentGraph.nodes;
+    const target =
+      focus[
+        0
+      ] ??
+      currentGraph.nodes[
+        0
+      ];
 
 
-    if (
-      !targetNodes.length
-    ) {
+    if (!target) {
       return;
     }
 
 
-    const centers =
-      targetNodes
-        .map(
-          (node) => {
-            const element =
-              nodeElements.get(
-                node.id,
-              );
+    const slotId =
+      workspace.nodes[
+        target.id
+      ];
+
+    const rect =
+      getSlotRect(
+        currentModel.layout,
+        slotId,
+      );
 
 
-            if (!element) {
-              return null;
-            }
-
-
-            return {
-              x:
-                (
-                  Number.parseFloat(
-                    element.style.left,
-                  ) ||
-                  0
-                ) +
-                element.offsetWidth /
-                  2,
-
-              y:
-                (
-                  Number.parseFloat(
-                    element.style.top,
-                  ) ||
-                  0
-                ) +
-                element.offsetHeight /
-                  2,
-            };
-          },
-        )
-        .filter(
-          Boolean,
-        );
-
-
-    if (
-      !centers.length
-    ) {
+    if (!rect) {
       return;
     }
-
-
-    const center = {
-      x:
-        centers.reduce(
-          (
-            sum,
-            point,
-          ) =>
-            sum +
-            point.x,
-          0,
-        ) /
-        centers.length,
-
-      y:
-        centers.reduce(
-          (
-            sum,
-            point,
-          ) =>
-            sum +
-            point.y,
-          0,
-        ) /
-        centers.length,
-    };
 
 
     scroll.scrollTo({
       left:
         Math.max(
           0,
-          center.x -
+          rect.x +
+            rect.width /
+              2 -
             scroll.clientWidth /
               2,
         ),
@@ -772,7 +1079,9 @@ export function createGraphCanvas({
       top:
         Math.max(
           0,
-          center.y -
+          rect.y +
+            rect.height /
+              2 -
             scroll.clientHeight /
               2,
         ),
@@ -783,57 +1092,8 @@ export function createGraphCanvas({
   }
 
 
-  /* ==================================== */
-  /* OBSERVER                             */
-  /* ==================================== */
-
-  function observeNodes() {
-    resizeObserver?.disconnect();
-
-
-    if (
-      typeof ResizeObserver !==
-      "function"
-    ) {
-      return;
-    }
-
-
-    resizeObserver =
-      new ResizeObserver(
-        draw,
-      );
-
-
-    nodeElements.forEach(
-      (element) =>
-        resizeObserver.observe(
-          element,
-        ),
-    );
-
-
-    resizeObserver.observe(
-      stage,
-    );
-  }
-
-
-  signal.addEventListener(
-    "abort",
-    () => {
-      resizeObserver?.disconnect();
-    },
-    {
-      once:
-        true,
-    },
-  );
-
-
   return {
     render,
-    draw,
     saveLayout,
     resetPositions,
     centerOnFocus,
@@ -842,72 +1102,7 @@ export function createGraphCanvas({
     isDirty() {
       return dirty;
     },
-
-    getSnap() {
-      return SNAP;
-    },
   };
-
-
-  /* ==================================== */
-  /* LAYOUT LADEN                         */
-  /* ==================================== */
-
-  function loadSavedLayout() {
-    try {
-      const saved =
-        JSON.parse(
-          localStorage.getItem(
-            storageKey,
-          ) ??
-          "{}",
-        );
-
-
-      /*
-          Alte Version nur mit
-          Knotenpositionen weiterhin
-          akzeptieren.
-      */
-
-      if (
-        saved &&
-        typeof saved ===
-          "object" &&
-        !saved.nodes &&
-        !saved.edges
-      ) {
-        return {
-          nodes:
-            saved,
-
-          edges:
-            {},
-        };
-      }
-
-
-      return {
-        nodes:
-          saved?.nodes ??
-          {},
-
-        edges:
-          saved?.edges ??
-          {},
-      };
-    }
-
-    catch {
-      return {
-        nodes:
-          {},
-
-        edges:
-          {},
-      };
-    }
-  }
 }
 
 
@@ -917,6 +1112,7 @@ export function createGraphCanvas({
 
 function createNodeElement(
   node,
+  slotId,
 ) {
   const element =
     document.createElement(
@@ -1013,8 +1209,8 @@ function createNodeElement(
   coordinate.className =
     "graph-node__coordinate";
 
-  coordinate.dataset.graphCoordinate =
-    "";
+  coordinate.textContent =
+    `Pos ${slotId}`;
 
 
   footer.append(
@@ -1071,324 +1267,40 @@ function createNodeElement(
 
 
 /* ======================================== */
-/* POSITION ANZEIGEN                        */
+/* CSS-RECT                                 */
 /* ======================================== */
 
-function setNodePosition(
+function setNodeRect(
   element,
-  position,
+  rect,
 ) {
   element.style.left =
-    `${position.x}px`;
+    `${rect.x}px`;
 
   element.style.top =
-    `${position.y}px`;
+    `${rect.y}px`;
 
+  element.style.width =
+    `${rect.width}px`;
 
-  updateNodeCoordinate(
-    element,
-    position,
-  );
+  element.style.height =
+    `${rect.height}px`;
 }
 
 
-function updateNodeCoordinate(
+function setRect(
   element,
-  position,
-) {
-  const coordinate =
-    element.querySelector(
-      "[data-graph-coordinate]",
-    );
-
-
-  if (coordinate) {
-    coordinate.textContent =
-      `X ${Math.round(position.x)} · Y ${Math.round(position.y)}`;
-  }
-}
-
-
-function setRoutePointPosition(
-  element,
-  position,
+  rect,
 ) {
   element.style.left =
-    `${position.x}px`;
+    `${rect.x}px`;
 
   element.style.top =
-    `${position.y}px`;
-}
+    `${rect.y}px`;
 
+  element.style.width =
+    `${rect.width}px`;
 
-/* ======================================== */
-/* STANDARD-LAYOUT                          */
-/* ======================================== */
-
-function createDefaultPositions(
-  graph,
-) {
-  const buckets = {
-    input:
-      [],
-
-    focus:
-      [],
-
-    mixed:
-      [],
-
-    predator:
-      [],
-  };
-
-
-  const focusIds =
-    new Set(
-      graph.nodes
-        .filter(
-          (node) =>
-            node.focus,
-        )
-        .map(
-          (node) =>
-            node.id,
-        ),
-    );
-
-
-  graph.nodes.forEach(
-    (node) => {
-      if (
-        node.focus
-      ) {
-        buckets.focus.push(
-          node,
-        );
-
-        return;
-      }
-
-
-      const feedsFocus =
-        graph.edges.some(
-          (edge) =>
-            edge.from ===
-              node.id &&
-            focusIds.has(
-              edge.to,
-            ),
-        );
-
-
-      const consumesFocus =
-        graph.edges.some(
-          (edge) =>
-            focusIds.has(
-              edge.from,
-            ) &&
-            edge.to ===
-              node.id,
-        );
-
-
-      if (
-        feedsFocus &&
-        !consumesFocus
-      ) {
-        buckets.input.push(
-          node,
-        );
-      }
-
-      else if (
-        consumesFocus &&
-        !feedsFocus
-      ) {
-        buckets.predator.push(
-          node,
-        );
-      }
-
-      else {
-        buckets.mixed.push(
-          node,
-        );
-      }
-    },
-  );
-
-
-  const result =
-    {};
-
-
-  placeGrid(
-    result,
-    buckets.input,
-    100,
-    100,
-    2,
-  );
-
-  placeGrid(
-    result,
-    buckets.focus,
-    760,
-    180,
-    1,
-  );
-
-  placeGrid(
-    result,
-    buckets.mixed,
-    1110,
-    100,
-    1,
-  );
-
-  placeGrid(
-    result,
-    buckets.predator,
-    1450,
-    100,
-    1,
-  );
-
-
-  return result;
-}
-
-
-function placeGrid(
-  result,
-  nodes,
-  startX,
-  startY,
-  columns,
-) {
-  const columnGap =
-    260;
-
-  const rowGap =
-    130;
-
-
-  nodes.forEach(
-    (
-      node,
-      index,
-    ) => {
-      const column =
-        index %
-        columns;
-
-      const row =
-        Math.floor(
-          index /
-          columns,
-        );
-
-
-      result[
-        node.id
-      ] = {
-        x:
-          snapValue(
-            startX +
-              column *
-                columnGap,
-            SNAP,
-          ),
-
-        y:
-          snapValue(
-            startY +
-              row *
-                rowGap,
-            SNAP,
-          ),
-      };
-    },
-  );
-}
-
-
-function calculateStageSize(
-  nodeCount,
-) {
-  return {
-    width:
-      Math.max(
-        1900,
-        1600 +
-          Math.ceil(
-            nodeCount /
-            20,
-          ) *
-            300,
-      ),
-
-    height:
-      Math.max(
-        1000,
-        850 +
-          Math.ceil(
-            nodeCount /
-            24,
-          ) *
-            200,
-      ),
-  };
-}
-
-
-function normalizePosition(
-  value,
-) {
-  if (
-    !value ||
-    typeof value !==
-      "object"
-  ) {
-    return null;
-  }
-
-
-  const x =
-    Number(
-      value.x,
-    );
-
-  const y =
-    Number(
-      value.y,
-    );
-
-
-  if (
-    !Number.isFinite(
-      x,
-    ) ||
-    !Number.isFinite(
-      y,
-    )
-  ) {
-    return null;
-  }
-
-
-  return {
-    x:
-      snapValue(
-        x,
-        SNAP,
-      ),
-
-    y:
-      snapValue(
-        y,
-        SNAP,
-      ),
-  };
+  element.style.height =
+    `${rect.height}px`;
 }

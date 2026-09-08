@@ -1,42 +1,19 @@
-/* ======================================== */
-/* GEMEINSAMES SNAP                         */
-/* ======================================== */
-
-export function snapValue(
-  value,
-  snap = 20,
-) {
-  if (
-    !Number.isFinite(
-      value,
-    ) ||
-    snap <= 0
-  ) {
-    return value;
-  }
-
-
-  return (
-    Math.round(
-      value /
-      snap,
-    ) *
-    snap
-  );
-}
+import {
+  findNearestSlot,
+} from "./graphGrid.js";
 
 
 /* ======================================== */
-/* KNOTEN VERSCHIEBEN                       */
+/* KÄSTCHEN AUF LOGISCHEN SLOT ZIEHEN       */
 /* ======================================== */
 
-export function initGraphDrag({
+export function initGraphSlotDrag({
   node,
   stage,
+  layout,
   signal,
-  snap = 20,
-  onMove,
-  onEnd,
+  onPreview,
+  onDrop,
 }) {
   let drag =
     null;
@@ -46,7 +23,8 @@ export function initGraphDrag({
     "pointerdown",
     (event) => {
       if (
-        event.button !== 0 ||
+        event.button !==
+          0 ||
         event.target.closest(
           "button, a, input, select, textarea",
         )
@@ -58,32 +36,30 @@ export function initGraphDrag({
       event.preventDefault();
 
 
-      const startLeft =
-        Number.parseFloat(
-          node.style.left,
-        ) ||
-        0;
+      const stageRect =
+        stage.getBoundingClientRect();
 
-      const startTop =
-        Number.parseFloat(
-          node.style.top,
-        ) ||
-        0;
+      const nodeRect =
+        node.getBoundingClientRect();
 
 
       drag = {
         pointerId:
           event.pointerId,
 
-        startX:
-          event.clientX,
+        offsetX:
+          event.clientX -
+          nodeRect.left,
 
-        startY:
-          event.clientY,
+        offsetY:
+          event.clientY -
+          nodeRect.top,
 
-        startLeft,
+        stageLeft:
+          stageRect.left,
 
-        startTop,
+        stageTop:
+          stageRect.top,
       };
 
 
@@ -114,57 +90,46 @@ export function initGraphDrag({
       }
 
 
-      const maxX =
-        Math.max(
-          0,
-          stage.clientWidth -
-            node.offsetWidth,
-        );
+      const left =
+        event.clientX -
+        drag.stageLeft -
+        drag.offsetX;
 
-      const maxY =
-        Math.max(
-          0,
-          stage.clientHeight -
-            node.offsetHeight,
-        );
-
-
-      const x =
-        clamp(
-          snapValue(
-            drag.startLeft +
-              event.clientX -
-              drag.startX,
-            snap,
-          ),
-          0,
-          maxX,
-        );
-
-      const y =
-        clamp(
-          snapValue(
-            drag.startTop +
-              event.clientY -
-              drag.startY,
-            snap,
-          ),
-          0,
-          maxY,
-        );
+      const top =
+        event.clientY -
+        drag.stageTop -
+        drag.offsetY;
 
 
       node.style.left =
-        `${x}px`;
+        `${left}px`;
 
       node.style.top =
-        `${y}px`;
+        `${top}px`;
 
 
-      onMove?.({
-        x,
-        y,
-      });
+      const centerX =
+        left +
+        node.offsetWidth /
+          2;
+
+      const centerY =
+        top +
+        node.offsetHeight /
+          2;
+
+
+      const slotId =
+        findNearestSlot(
+          layout,
+          centerX,
+          centerY,
+        );
+
+
+      onPreview?.(
+        slotId,
+      );
     },
     {
       signal,
@@ -184,32 +149,29 @@ export function initGraphDrag({
     }
 
 
-    const position = {
-      x:
-        snapValue(
-          Number.parseFloat(
-            node.style.left,
-          ) ||
-          0,
-          snap,
-        ),
+    const left =
+      Number.parseFloat(
+        node.style.left,
+      ) ||
+      0;
 
-      y:
-        snapValue(
-          Number.parseFloat(
-            node.style.top,
-          ) ||
-          0,
-          snap,
-        ),
-    };
+    const top =
+      Number.parseFloat(
+        node.style.top,
+      ) ||
+      0;
 
 
-    node.style.left =
-      `${position.x}px`;
-
-    node.style.top =
-      `${position.y}px`;
+    const slotId =
+      findNearestSlot(
+        layout,
+        left +
+          node.offsetWidth /
+            2,
+        top +
+          node.offsetHeight /
+            2,
+      );
 
 
     node.classList.remove(
@@ -232,8 +194,8 @@ export function initGraphDrag({
       null;
 
 
-    onEnd?.(
-      position,
+    onDrop?.(
+      slotId,
     );
   }
 
@@ -258,22 +220,24 @@ export function initGraphDrag({
 
 
 /* ======================================== */
-/* FREIER SNAP-PUNKT                        */
+/* SPUR-HANDLE ZIEHEN                       */
 /* ======================================== */
 
-export function initGraphPointDrag({
-  point,
+export function initLaneHandleDrag({
+  handle,
   stage,
+  layout,
+  corridorRect,
+  orientation,
+  laneCount,
   signal,
-  snap = 20,
-  onMove,
-  onEnd,
+  onDrop,
 }) {
   let drag =
     null;
 
 
-  point.addEventListener(
+  handle.addEventListener(
     "pointerdown",
     (event) => {
       if (
@@ -288,24 +252,29 @@ export function initGraphPointDrag({
       event.stopPropagation();
 
 
+      const stageRect =
+        stage.getBoundingClientRect();
+
+
       drag = {
         pointerId:
           event.pointerId,
+
+        stageLeft:
+          stageRect.left,
+
+        stageTop:
+          stageRect.top,
       };
 
 
-      point.classList.add(
+      handle.classList.add(
         "is-dragging",
       );
 
 
-      point.setPointerCapture(
+      handle.setPointerCapture(
         event.pointerId,
-      );
-
-
-      movePoint(
-        event,
       );
     },
     {
@@ -314,7 +283,7 @@ export function initGraphPointDrag({
   );
 
 
-  point.addEventListener(
+  handle.addEventListener(
     "pointermove",
     (event) => {
       if (
@@ -326,58 +295,30 @@ export function initGraphPointDrag({
       }
 
 
-      movePoint(
-        event,
-      );
+      const lane =
+        getLaneFromPointer(
+          event,
+          drag,
+          layout,
+          corridorRect,
+          orientation,
+          laneCount,
+        );
+
+
+      handle.dataset.previewLane =
+        String(
+          lane,
+        );
+
+
+      handle.title =
+        `Spur ${lane}`;
     },
     {
       signal,
     },
   );
-
-
-  function movePoint(
-    event,
-  ) {
-    const rect =
-      stage.getBoundingClientRect();
-
-
-    const x =
-      clamp(
-        snapValue(
-          event.clientX -
-            rect.left,
-          snap,
-        ),
-        0,
-        stage.clientWidth,
-      );
-
-    const y =
-      clamp(
-        snapValue(
-          event.clientY -
-            rect.top,
-          snap,
-        ),
-        0,
-        stage.clientHeight,
-      );
-
-
-    point.style.left =
-      `${x}px`;
-
-    point.style.top =
-      `${y}px`;
-
-
-    onMove?.({
-      x,
-      y,
-    });
-  }
 
 
   function finish(
@@ -392,38 +333,28 @@ export function initGraphPointDrag({
     }
 
 
-    const position = {
-      x:
-        snapValue(
-          Number.parseFloat(
-            point.style.left,
-          ) ||
-          0,
-          snap,
-        ),
-
-      y:
-        snapValue(
-          Number.parseFloat(
-            point.style.top,
-          ) ||
-          0,
-          snap,
-        ),
-    };
+    const lane =
+      getLaneFromPointer(
+        event,
+        drag,
+        layout,
+        corridorRect,
+        orientation,
+        laneCount,
+      );
 
 
-    point.classList.remove(
+    handle.classList.remove(
       "is-dragging",
     );
 
 
     if (
-      point.hasPointerCapture(
+      handle.hasPointerCapture(
         event.pointerId,
       )
     ) {
-      point.releasePointerCapture(
+      handle.releasePointerCapture(
         event.pointerId,
       );
     }
@@ -433,13 +364,13 @@ export function initGraphPointDrag({
       null;
 
 
-    onEnd?.(
-      position,
+    onDrop?.(
+      lane,
     );
   }
 
 
-  point.addEventListener(
+  handle.addEventListener(
     "pointerup",
     finish,
     {
@@ -448,7 +379,7 @@ export function initGraphPointDrag({
   );
 
 
-  point.addEventListener(
+  handle.addEventListener(
     "pointercancel",
     finish,
     {
@@ -458,16 +389,57 @@ export function initGraphPointDrag({
 }
 
 
-function clamp(
-  value,
-  min,
-  max,
+function getLaneFromPointer(
+  event,
+  drag,
+  layout,
+  rect,
+  orientation,
+  laneCount,
 ) {
-  return Math.min(
-    max,
-    Math.max(
-      min,
-      value,
+  const config =
+    layout.config;
+
+
+  let offset;
+
+
+  if (
+    orientation ===
+    "vertical"
+  ) {
+    offset =
+      event.clientX -
+      drag.stageLeft -
+      rect.x -
+      config.edgeMargin;
+  }
+
+  else {
+    offset =
+      event.clientY -
+      drag.stageTop -
+      rect.y -
+      config.edgeMargin;
+  }
+
+
+  const lane =
+    Math.round(
+      offset /
+      config.lineGap,
+    ) +
+    1;
+
+
+  return Math.max(
+    1,
+    Math.min(
+      Math.max(
+        1,
+        laneCount,
+      ),
+      lane,
     ),
   );
 }

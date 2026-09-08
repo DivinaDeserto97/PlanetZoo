@@ -166,6 +166,7 @@
           - [graphCanvas.js](<../assets/js/features/graph/graphCanvas.js>)
           - [graphConnections.js](<../assets/js/features/graph/graphConnections.js>)
           - [graphDrag.js](<../assets/js/features/graph/graphDrag.js>)
+          - [graphGrid.js](<../assets/js/features/graph/graphGrid.js>)
         - [language.js](<../assets/js/features/language.js>)
         - [navigation.js](<../assets/js/features/navigation.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)

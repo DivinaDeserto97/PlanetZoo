@@ -560,7 +560,7 @@ function addGenericEcosystemNetwork(
             false,
 
           position:
-            normalizePosition(
+            normalizeSlot(
               entry.position ??
               entry.darstellung
                 ?.position,
@@ -1073,7 +1073,7 @@ function getGenericEdgeType(
 function getTierPosition(
   tier,
 ) {
-  return normalizePosition(
+  return normalizeSlot(
     tier.originalDaten
       ?.darstellung
       ?.nahrungsnetz
@@ -1082,30 +1082,110 @@ function getTierPosition(
 }
 
 
+/*
+    Optional im JSON:
+
+    "darstellung": {
+      "route": [
+        {
+          "bereich": "L4.2",
+          "spur": 1
+        },
+        {
+          "bereich": "L4.1",
+          "spur": 2
+        }
+      ]
+    }
+
+    Alternativ wird die Route automatisch
+    aus den Kästchenpositionen berechnet.
+*/
+
 function getEntryRoute(
   entry,
 ) {
-  const points =
+  const route =
     entry?.darstellung
-      ?.punkte ??
+      ?.route ??
+    entry?.darstellung
+      ?.linienRoute ??
     entry?.layout
-      ?.punkte ??
+      ?.route ??
     null;
 
 
   if (
     !Array.isArray(
-      points,
-    )
+      route,
+    ) ||
+    !route.length
   ) {
     return null;
   }
 
 
   const normalized =
-    points
+    route
       .map(
-        normalizePosition,
+        (step) => {
+          if (
+            typeof step ===
+            "string"
+          ) {
+            return {
+              bereich:
+                step,
+
+              spur:
+                null,
+            };
+          }
+
+
+          if (
+            !step ||
+            typeof step !==
+              "object"
+          ) {
+            return null;
+          }
+
+
+          const bereich =
+            step.bereich ??
+            step.korridor ??
+            "";
+
+
+          if (
+            !/^L\d+\.\d+$/i.test(
+              bereich,
+            )
+          ) {
+            return null;
+          }
+
+
+          const spur =
+            Number(
+              step.spur,
+            );
+
+
+          return {
+            bereich,
+
+            spur:
+              Number.isInteger(
+                spur,
+              ) &&
+              spur >
+                0
+                ? spur
+                : null,
+          };
+        },
       )
       .filter(
         Boolean,
@@ -1118,47 +1198,67 @@ function getEntryRoute(
 }
 
 
-function normalizePosition(
+function normalizeSlot(
   value,
 ) {
   if (
-    !value ||
-    typeof value !==
-      "object"
-  ) {
-    return null;
-  }
-
-
-  const x =
-    Number(
-      value.x,
-    );
-
-  const y =
-    Number(
-      value.y,
-    );
-
-
-  if (
-    !Number.isFinite(
-      x,
-    ) ||
-    !Number.isFinite(
-      y,
+    typeof value ===
+    "string" &&
+    /^\d+\.\d+$/.test(
+      value.trim(),
     )
   ) {
-    return null;
+    return value.trim();
   }
 
 
-  return {
-    x,
-    y,
-  };
-}
+  /*
+      Auch laienfreundliche Objektform
+      zulassen:
 
+      "position": {
+        "zeile": 2,
+        "spalte": 3
+      }
+  */
+
+  if (
+    value &&
+    typeof value ===
+      "object"
+  ) {
+    const row =
+      Number(
+        value.zeile ??
+        value.row,
+      );
+
+    const column =
+      Number(
+        value.spalte ??
+        value.column,
+      );
+
+
+    if (
+      Number.isInteger(
+        row,
+      ) &&
+      row >
+        0 &&
+      Number.isInteger(
+        column,
+      ) &&
+      column >
+        0
+    ) {
+      return `${row}.${column}`;
+    }
+  }
+
+
+  return null;
+}
 
 /* ======================================== */
 /* ART / LABELS                             */
