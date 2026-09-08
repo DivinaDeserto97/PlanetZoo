@@ -18,24 +18,16 @@ import {
   hatLokalisierterText,
 } from "./tierMedien.js";
 
+import {
+  getNahrungsnetz,
+  NAHRUNGSNETZ_LEBENSPHASEN,
+  NAHRUNGSNETZ_TYPEN,
+} from "./nahrungsBeziehungen.js";
 
 
 /* ======================================== */
 /* ECHTE LOKALE DATEIEN PRÜFEN              */
 /* ======================================== */
-
-/*
-    Die bisherige Prüfung hat nur geschaut,
-    ob im JSON ein Pfad steht.
-
-    Jetzt wird zusätzlich geprüft, ob die
-    Datei über den lokalen Webserver
-    tatsächlich erreichbar ist.
-
-    Ergebnis wird gecacht, damit beim
-    Seitenwechsel nicht alles erneut
-    geladen werden muss.
-*/
 
 const DATEI_STATUS =
   new Map();
@@ -75,12 +67,6 @@ export async function pruefeLokaleTierDateien(
     return;
   }
 
-
-  /*
-      Maximal 8 Prüfungen gleichzeitig.
-      Das bleibt auch bei vielen Tieren
-      übersichtlich für den lokalen Server.
-  */
 
   let index =
     0;
@@ -286,16 +272,6 @@ function istDateiVerfuegbar(
   }
 
 
-  /*
-      Falls die Vorprüfung noch nicht
-      gelaufen ist, wird ein vorhandener
-      Pfad vorläufig akzeptiert.
-
-      Home / Map / Infotafel / tier.html
-      warten aber vor dem ersten Rendern
-      auf pruefeLokaleTierDateien().
-  */
-
   if (
     !DATEI_STATUS.has(
       pfad,
@@ -330,11 +306,6 @@ async function existiertLokaleDatei(
       );
 
 
-    /*
-        HEAD lädt nicht die komplette
-        Bild-/Audio-/Videodatei.
-    */
-
     const response =
       await fetch(
         url,
@@ -354,12 +325,6 @@ async function existiertLokaleDatei(
       return true;
     }
 
-
-    /*
-        Falls ein einfacher lokaler
-        Webserver HEAD nicht unterstützt,
-        wird nur ein Byte angefordert.
-    */
 
     if (
       response.status ===
@@ -402,25 +367,38 @@ async function existiertLokaleDatei(
 }
 
 
-function hatText(wert) {
+/* ======================================== */
+/* ALLGEMEINE HELFER                        */
+/* ======================================== */
+
+function hatText(
+  wert,
+) {
   return (
-    typeof wert === "string" &&
-    wert.trim().length > 0
+    typeof wert ===
+      "string" &&
+    wert.trim().length >
+      0
   );
 }
 
 
-function hatInhalt(wert) {
+function hatInhalt(
+  wert,
+) {
   if (
-    wert === null ||
-    wert === undefined
+    wert ===
+      null ||
+    wert ===
+      undefined
   ) {
     return false;
   }
 
 
   if (
-    typeof wert === "string"
+    typeof wert ===
+      "string"
   ) {
     return (
       wert.trim().length >
@@ -430,7 +408,8 @@ function hatInhalt(wert) {
 
 
   if (
-    typeof wert === "number"
+    typeof wert ===
+      "number"
   ) {
     return Number.isFinite(
       wert,
@@ -439,12 +418,9 @@ function hatInhalt(wert) {
 
 
   if (
-    typeof wert === "boolean"
+    typeof wert ===
+      "boolean"
   ) {
-    /*
-        false ist ein gültiger
-        ausgefüllter Boolean-Wert.
-    */
     return true;
   }
 
@@ -465,7 +441,7 @@ function hatInhalt(wert) {
 
   if (
     typeof wert ===
-    "object"
+      "object"
   ) {
     return Object.values(
       wert,
@@ -482,7 +458,9 @@ function hatInhalt(wert) {
 }
 
 
-function hatArrayInhalt(wert) {
+function hatArrayInhalt(
+  wert,
+) {
   return (
     Array.isArray(
       wert,
@@ -497,17 +475,14 @@ function hatArrayInhalt(wert) {
 }
 
 
-
-/* ======================================== */
-/* STRUKTUR-PRÜFUNG                         */
-/* ======================================== */
-
 function istObjekt(
   wert,
 ) {
   return (
-    wert !== null &&
-    typeof wert === "object" &&
+    wert !==
+      null &&
+    typeof wert ===
+      "object" &&
     !Array.isArray(
       wert,
     )
@@ -519,7 +494,8 @@ function hatZahl(
   wert,
 ) {
   return (
-    typeof wert === "number" &&
+    typeof wert ===
+      "number" &&
     Number.isFinite(
       wert,
     )
@@ -552,7 +528,8 @@ function pruefeOptionalenText(
 ) {
   if (
     Object.prototype.hasOwnProperty.call(
-      objekt ?? {},
+      objekt ??
+        {},
       key,
     ) &&
     !hatText(
@@ -576,7 +553,8 @@ function pruefeOptionalenLokalisiertenText(
 ) {
   if (
     Object.prototype.hasOwnProperty.call(
-      objekt ?? {},
+      objekt ??
+        {},
       key,
     ) &&
     !hatLokalisierterText(
@@ -592,16 +570,31 @@ function pruefeOptionalenLokalisiertenText(
 }
 
 
-function pruefeNahrungsWert(
+/* ======================================== */
+/* NAHRUNGSBEZIEHUNG PRÜFEN                 */
+/* ======================================== */
+
+function pruefeNahrungsBeziehung(
   wert,
-  {
-    bedingungPflicht =
-      false,
-  } = {},
 ) {
   const fehlt =
     [];
 
+
+  if (
+    !istObjekt(
+      wert,
+    )
+  ) {
+    return [
+      "Eintrag ist kein Objekt.",
+    ];
+  }
+
+
+  /* ==================================== */
+  /* PFLICHTFELDER                        */
+  /* ==================================== */
 
   pruefePflichtText(
     fehlt,
@@ -612,38 +605,99 @@ function pruefeNahrungsWert(
 
   pruefePflichtText(
     fehlt,
+    wert?.typ,
+    "Typ fehlt.",
+  );
+
+
+  if (
+    hatText(
+      wert?.typ,
+    ) &&
+    !NAHRUNGSNETZ_TYPEN.includes(
+      wert.typ,
+    )
+  ) {
+    fehlt.push(
+      `Unbekannter Typ „${wert.typ}“. Erlaubt: ${NAHRUNGSNETZ_TYPEN.join(", ")}.`,
+    );
+  }
+
+
+  pruefePflichtText(
+    fehlt,
     wert?.quelle,
     "Quelle fehlt.",
   );
 
 
+  /* ==================================== */
+  /* BEDINGUNG                            */
+  /* ==================================== */
+
   if (
-    bedingungPflicht
-  ) {
-    pruefePflichtText(
-      fehlt,
+    !istObjekt(
       wert?.bedingung,
-      "Bedingung fehlt.",
+    )
+  ) {
+    fehlt.push(
+      "Bedingung fehlt oder ist kein Objekt.",
     );
   }
 
   else {
-    pruefeOptionalenText(
-      fehlt,
-      wert,
-      "bedingung",
-      "Bedingung ist angelegt, aber leer.",
-    );
+    if (
+      !Array.isArray(
+        wert.bedingung.selbst,
+      )
+    ) {
+      fehlt.push(
+        "bedingung.selbst muss ein Array sein.",
+      );
+    }
+
+    else if (
+      wert.bedingung.selbst.some(
+        (eintrag) =>
+          !hatText(
+            eintrag,
+          ),
+      )
+    ) {
+      fehlt.push(
+        "bedingung.selbst enthält einen leeren oder ungültigen Wert.",
+      );
+    }
+
+
+    if (
+      !Array.isArray(
+        wert.bedingung.ziel,
+      )
+    ) {
+      fehlt.push(
+        "bedingung.ziel muss ein Array sein.",
+      );
+    }
+
+    else if (
+      wert.bedingung.ziel.some(
+        (eintrag) =>
+          !hatText(
+            eintrag,
+          ),
+      )
+    ) {
+      fehlt.push(
+        "bedingung.ziel enthält einen leeren oder ungültigen Wert.",
+      );
+    }
   }
 
 
-  pruefeOptionalenText(
-    fehlt,
-    wert,
-    "typ",
-    "Typ ist angelegt, aber leer.",
-  );
-
+  /* ==================================== */
+  /* ALLGEMEINER HINWEIS                  */
+  /* ==================================== */
 
   pruefeOptionalenLokalisiertenText(
     fehlt,
@@ -653,9 +707,294 @@ function pruefeNahrungsWert(
   );
 
 
+  /* ==================================== */
+  /* NUTZUNG                              */
+  /* ==================================== */
+
+  if (
+    wert?.typ ===
+      "nutzung"
+  ) {
+    if (
+      !istObjekt(
+        wert?.nutzung,
+      )
+    ) {
+      fehlt.push(
+        "Bei typ „nutzung“ fehlt das Objekt nutzung.",
+      );
+    }
+
+    else {
+      pruefePflichtText(
+        fehlt,
+        wert.nutzung.art,
+        "Bei typ „nutzung“ fehlt nutzung.art.",
+      );
+
+
+      pruefeOptionalenText(
+        fehlt,
+        wert.nutzung,
+        "haeufigkeit",
+        "nutzung.haeufigkeit ist angelegt, aber leer.",
+      );
+
+
+      pruefeOptionalenLokalisiertenText(
+        fehlt,
+        wert.nutzung,
+        "hinweis",
+        "nutzung.hinweis ist angelegt, aber leer.",
+      );
+    }
+  }
+
+  else if (
+    Object.prototype.hasOwnProperty.call(
+      wert,
+      "nutzung",
+    ) &&
+    !istObjekt(
+      wert.nutzung,
+    )
+  ) {
+    fehlt.push(
+      "nutzung ist angelegt, aber kein Objekt.",
+    );
+  }
+
+
+  /* ==================================== */
+  /* AAS                                  */
+  /* ==================================== */
+
+  if (
+    wert?.typ ===
+      "aas"
+  ) {
+    if (
+      !istObjekt(
+        wert?.aas,
+      )
+    ) {
+      fehlt.push(
+        "Bei typ „aas“ fehlt das Objekt aas.",
+      );
+    }
+
+    else {
+      pruefeOptionalenText(
+        fehlt,
+        wert.aas,
+        "zustand",
+        "aas.zustand ist angelegt, aber leer.",
+      );
+
+
+      pruefeOptionalenLokalisiertenText(
+        fehlt,
+        wert.aas,
+        "hinweis",
+        "aas.hinweis ist angelegt, aber leer.",
+      );
+    }
+  }
+
+  else if (
+    Object.prototype.hasOwnProperty.call(
+      wert,
+      "aas",
+    ) &&
+    !istObjekt(
+      wert.aas,
+    )
+  ) {
+    fehlt.push(
+      "aas ist angelegt, aber kein Objekt.",
+    );
+  }
+
+
+  /* ==================================== */
+  /* GIFTIG                               */
+  /* ==================================== */
+
+  if (
+    wert?.typ ===
+      "giftig"
+  ) {
+    if (
+      !istObjekt(
+        wert?.gift,
+      )
+    ) {
+      fehlt.push(
+        "Bei typ „giftig“ fehlt das Objekt gift.",
+      );
+    }
+
+    else {
+      if (
+        wert.gift.relevant !==
+          true
+      ) {
+        fehlt.push(
+          "Bei typ „giftig“ muss gift.relevant true sein.",
+        );
+      }
+
+
+      if (
+        !Array.isArray(
+          wert.gift.giftweg,
+        ) ||
+        !wert.gift.giftweg.some(
+          (eintrag) =>
+            hatText(
+              eintrag,
+            ),
+        )
+      ) {
+        fehlt.push(
+          "Bei typ „giftig“ muss mindestens ein gift.giftweg eingetragen sein.",
+        );
+      }
+    }
+  }
+
+
+  /* ==================================== */
+  /* GIFT-ZUSATZDATEN                     */
+  /* ==================================== */
+
+  if (
+    Object.prototype.hasOwnProperty.call(
+      wert,
+      "gift",
+    )
+  ) {
+    if (
+      !istObjekt(
+        wert.gift,
+      )
+    ) {
+      fehlt.push(
+        "gift ist angelegt, aber kein Objekt.",
+      );
+    }
+
+    else {
+      if (
+        typeof wert.gift.relevant !==
+          "boolean"
+      ) {
+        fehlt.push(
+          "gift.relevant muss true oder false sein.",
+        );
+      }
+
+
+      if (
+        !Array.isArray(
+          wert.gift.giftweg,
+        )
+      ) {
+        fehlt.push(
+          "gift.giftweg muss ein Array sein.",
+        );
+      }
+
+      else if (
+        wert.gift.giftweg.some(
+          (eintrag) =>
+            !hatText(
+              eintrag,
+            ),
+        )
+      ) {
+        fehlt.push(
+          "gift.giftweg enthält einen leeren oder ungültigen Wert.",
+        );
+      }
+
+
+      pruefeOptionalenText(
+        fehlt,
+        wert.gift,
+        "toleranz",
+        "gift.toleranz ist angelegt, aber leer.",
+      );
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          wert.gift,
+          "umgang",
+        )
+      ) {
+        if (
+          !istObjekt(
+            wert.gift.umgang,
+          )
+        ) {
+          fehlt.push(
+            "gift.umgang ist angelegt, aber kein Objekt.",
+          );
+        }
+
+        else {
+          pruefeOptionalenText(
+            fehlt,
+            wert.gift.umgang,
+            "aktion",
+            "gift.umgang.aktion ist angelegt, aber leer.",
+          );
+
+
+          pruefeOptionalenText(
+            fehlt,
+            wert.gift.umgang,
+            "zeitpunkt",
+            "gift.umgang.zeitpunkt ist angelegt, aber leer.",
+          );
+        }
+      }
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          wert.gift,
+          "nachUmgangNutzbar",
+        ) &&
+        wert.gift.nachUmgangNutzbar !==
+          null &&
+        typeof wert.gift.nachUmgangNutzbar !==
+          "boolean"
+      ) {
+        fehlt.push(
+          "gift.nachUmgangNutzbar muss true, false oder null sein.",
+        );
+      }
+
+
+      pruefeOptionalenLokalisiertenText(
+        fehlt,
+        wert.gift,
+        "hinweis",
+        "gift.hinweis ist angelegt, aber leer.",
+      );
+    }
+  }
+
+
   return fehlt;
 }
 
+
+/* ======================================== */
+/* CHECK-OBJEKT                             */
+/* ======================================== */
 
 function item(
   label,
@@ -665,16 +1004,29 @@ function item(
 ) {
   return {
     label,
+
     pfad,
+
     ok:
-      Boolean(ok),
+      Boolean(
+        ok,
+      ),
+
     fehlt:
-      fehlt.filter(Boolean),
+      fehlt.filter(
+        Boolean,
+      ),
   };
 }
 
 
-function basisChecks(tier) {
+/* ======================================== */
+/* BASIS                                    */
+/* ======================================== */
+
+function basisChecks(
+  tier,
+) {
   const namen =
     tier?.originalDaten
       ?.identitaet
@@ -686,9 +1038,11 @@ function basisChecks(tier) {
     item(
       "Name",
       "identitaet.namen",
+
       hatLokalisierterText(
         namen,
       ),
+
       [
         !hatLokalisierterText(
           namen,
@@ -701,6 +1055,7 @@ function basisChecks(tier) {
     item(
       "Wissenschaftlicher Name",
       "id",
+
       hatText(
         tier?.originalDaten
           ?.id,
@@ -708,6 +1063,7 @@ function basisChecks(tier) {
         hatText(
           tier?.wissenschaftlicherName,
         ),
+
       [
         !(
           hatText(
@@ -726,9 +1082,17 @@ function basisChecks(tier) {
 }
 
 
-function pruefeMap(tier) {
+/* ======================================== */
+/* MAP                                      */
+/* ======================================== */
+
+function pruefeMap(
+  tier,
+) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const karte =
@@ -785,10 +1149,12 @@ function pruefeMap(tier) {
     item(
       "Kartenbild",
       "karte.dateien[].pfad",
+
       hatText(
         kartenPfad,
       ) &&
         kartenDateiVorhanden,
+
       [
         !hatText(
           kartenPfad,
@@ -811,9 +1177,17 @@ function pruefeMap(tier) {
 }
 
 
-function pruefeInfotafel(tier) {
+/* ======================================== */
+/* INFOTAFEL                                */
+/* ======================================== */
+
+function pruefeInfotafel(
+  tier,
+) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const bilder =
@@ -822,7 +1196,9 @@ function pruefeInfotafel(tier) {
     );
 
 
-  if (!bilder.length) {
+  if (
+    !bilder.length
+  ) {
     checks.push(
       item(
         "Bilder",
@@ -844,11 +1220,14 @@ function pruefeInfotafel(tier) {
         entry.variantenIndex +
           1;
 
+
       const gruppe =
         entry.gruppe?.typ ||
         "Bild";
 
-      const fehlt = [];
+
+      const fehlt =
+        [];
 
 
       if (
@@ -910,7 +1289,9 @@ function pruefeInfotafel(tier) {
         );
 
 
-      if (!bildDatei) {
+      if (
+        !bildDatei
+      ) {
         fehlt.push(
           "Bilddatei / Dateipfad fehlt.",
         );
@@ -930,9 +1311,12 @@ function pruefeInfotafel(tier) {
       checks.push(
         item(
           `${gruppe} – Variante ${nummer}`,
+
           `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -951,18 +1335,22 @@ function pruefeInfotafel(tier) {
       "uebersicht",
       "Übersicht",
     ],
+
     [
       "vorkommen",
       "Vorkommen",
     ],
+
     [
       "arterhaltung",
       "Arterhaltung",
     ],
+
     [
       "sozialverhaltenUndFortpflanzung",
       "Sozialverhalten & Fortpflanzung",
     ],
+
     [
       "tierfakten",
       "Tierfakten",
@@ -971,9 +1359,16 @@ function pruefeInfotafel(tier) {
 
 
   textBereiche.forEach(
-    ([key, label]) => {
+    (
+      [
+        key,
+        label,
+      ],
+    ) => {
       const sprachObjekt =
-        texte?.[key];
+        texte?.[
+          key
+        ];
 
 
       const vorhanden =
@@ -999,8 +1394,11 @@ function pruefeInfotafel(tier) {
       checks.push(
         item(
           label,
+
           `texte.${key}`,
+
           vorhanden,
+
           [
             !vorhanden
               ? `${label}-Text fehlt.`
@@ -1024,24 +1422,28 @@ function pruefeInfotafel(tier) {
       "daten.biome.werte",
       daten?.biome?.werte,
     ],
+
     [
       "Schutzstatus",
       "daten.schutzstatus.werte",
       daten?.schutzstatus
         ?.werte,
     ],
+
     [
       "Soziale Struktur",
       "daten.sozialeStruktur.werte",
       daten?.sozialeStruktur
         ?.werte,
     ],
+
     [
       "Aktivität",
       "daten.aktivitaet.werte",
       daten?.aktivitaet
         ?.werte,
     ],
+
     [
       "Fressverhalten",
       "daten.ernaehrung.fressverhalten.werte",
@@ -1053,14 +1455,23 @@ function pruefeInfotafel(tier) {
 
 
   steckbrief.forEach(
-    ([label, pfad, wert]) => {
+    (
+      [
+        label,
+        pfad,
+        wert,
+      ],
+    ) => {
       checks.push(
         item(
           label,
+
           pfad,
+
           hatArrayInhalt(
             wert,
           ),
+
           [
             !hatArrayInhalt(
               wert,
@@ -1078,9 +1489,17 @@ function pruefeInfotafel(tier) {
 }
 
 
-function pruefeAudio(tier) {
+/* ======================================== */
+/* AUDIO                                    */
+/* ======================================== */
+
+function pruefeAudio(
+  tier,
+) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const audio =
@@ -1089,7 +1508,9 @@ function pruefeAudio(tier) {
     );
 
 
-  if (!audio.length) {
+  if (
+    !audio.length
+  ) {
     checks.push(
       item(
         "Audio",
@@ -1100,6 +1521,7 @@ function pruefeAudio(tier) {
         ],
       ),
     );
+
 
     return checks;
   }
@@ -1113,11 +1535,14 @@ function pruefeAudio(tier) {
         entry.variantenIndex +
           1;
 
+
       const typ =
         entry.gruppe?.typ ||
         "Audio";
 
-      const fehlt = [];
+
+      const fehlt =
+        [];
 
 
       if (
@@ -1126,7 +1551,7 @@ function pruefeAudio(tier) {
         )
       ) {
         fehlt.push(
-          "Audio-Typ fehlt."
+          "Audio-Typ fehlt.",
         );
       }
 
@@ -1149,7 +1574,9 @@ function pruefeAudio(tier) {
         );
 
 
-      if (!audioDatei) {
+      if (
+        !audioDatei
+      ) {
         fehlt.push(
           "Abspielbare Audiodatei / Dateipfad fehlt.",
         );
@@ -1175,7 +1602,9 @@ function pruefeAudio(tier) {
         );
 
 
-      if (!metadata) {
+      if (
+        !metadata
+      ) {
         fehlt.push(
           "Metadaten-Pfad / Beschreibung fehlt.",
         );
@@ -1195,9 +1624,12 @@ function pruefeAudio(tier) {
       checks.push(
         item(
           `${typ} – Variante ${nummer}`,
+
           `audio[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -1209,9 +1641,17 @@ function pruefeAudio(tier) {
 }
 
 
-function pruefeVideo(tier) {
+/* ======================================== */
+/* VIDEO / KINO                             */
+/* ======================================== */
+
+function pruefeVideo(
+  tier,
+) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const videos =
@@ -1220,7 +1660,9 @@ function pruefeVideo(tier) {
     );
 
 
-  if (!videos.length) {
+  if (
+    !videos.length
+  ) {
     checks.push(
       item(
         "Video",
@@ -1231,6 +1673,7 @@ function pruefeVideo(tier) {
         ],
       ),
     );
+
 
     return checks;
   }
@@ -1244,11 +1687,14 @@ function pruefeVideo(tier) {
         entry.variantenIndex +
           1;
 
+
       const typ =
         entry.gruppe?.typ ||
         "Video";
 
-      const fehlt = [];
+
+      const fehlt =
+        [];
 
 
       if (
@@ -1304,7 +1750,9 @@ function pruefeVideo(tier) {
         );
 
 
-      if (!videoDatei) {
+      if (
+        !videoDatei
+      ) {
         fehlt.push(
           "Videodatei / Dateipfad fehlt.",
         );
@@ -1324,9 +1772,12 @@ function pruefeVideo(tier) {
       checks.push(
         item(
           `${typ} – Variante ${nummer}`,
+
           `video[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -1338,7 +1789,13 @@ function pruefeVideo(tier) {
 }
 
 
-function pruefeSystematik(tier) {
+/* ======================================== */
+/* SYSTEMATIK                               */
+/* ======================================== */
+
+function pruefeSystematik(
+  tier,
+) {
   const checks =
     basisChecks(
       tier,
@@ -1385,10 +1842,13 @@ function pruefeSystematik(tier) {
     checks.push(
       item(
         "Systematik – Hinweis",
+
         "systematik.hinweis",
+
         hatLokalisierterText(
           systematik.hinweis,
         ),
+
         [
           !hatLokalisierterText(
             systematik.hinweis,
@@ -1419,8 +1879,11 @@ function pruefeSystematik(tier) {
     checks.push(
       item(
         "Nahe Verwandte",
+
         "systematik.naheVerwandte",
+
         false,
+
         [
           "Mindestens ein Eintrag für nahe Verwandte fehlt.",
         ],
@@ -1469,9 +1932,12 @@ function pruefeSystematik(tier) {
       checks.push(
         item(
           `Nahe Verwandte – Eintrag ${index + 1}`,
+
           `systematik.naheVerwandte[${index}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -1495,8 +1961,11 @@ function pruefeSystematik(tier) {
     checks.push(
       item(
         "Evolution",
+
         "systematik.evolution",
+
         false,
+
         [
           "Evolution-Struktur fehlt.",
         ],
@@ -1511,10 +1980,13 @@ function pruefeSystematik(tier) {
   checks.push(
     item(
       "Evolution – Hinweis",
+
       "systematik.evolution.hinweis",
+
       hatLokalisierterText(
         evolution.hinweis,
       ),
+
       [
         !hatLokalisierterText(
           evolution.hinweis,
@@ -1544,8 +2016,11 @@ function pruefeSystematik(tier) {
     checks.push(
       item(
         "Evolution – Knoten",
+
         "systematik.evolution.knoten",
+
         false,
+
         [
           "Mindestens ein Evolutions-Knoten fehlt.",
         ],
@@ -1594,9 +2069,12 @@ function pruefeSystematik(tier) {
       checks.push(
         item(
           `Evolution – Knoten ${index + 1}`,
+
           `systematik.evolution.knoten[${index}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -1622,8 +2100,11 @@ function pruefeSystematik(tier) {
     checks.push(
       item(
         "Evolution – Aufspaltungen",
+
         "systematik.evolution.aufspaltungen",
+
         false,
+
         [
           "Mindestens eine Aufspaltung fehlt.",
         ],
@@ -1684,9 +2165,12 @@ function pruefeSystematik(tier) {
       checks.push(
         item(
           `Evolution – Aufspaltung ${index + 1}`,
+
           `systematik.evolution.aufspaltungen[${index}]`,
+
           fehlt.length ===
             0,
+
           fehlt,
         ),
       );
@@ -1697,7 +2181,14 @@ function pruefeSystematik(tier) {
   return checks;
 }
 
-function pruefeNahrungsnetz(tier) {
+
+/* ======================================== */
+/* NAHRUNGSNETZ                             */
+/* ======================================== */
+
+function pruefeNahrungsnetz(
+  tier,
+) {
   const checks =
     basisChecks(
       tier,
@@ -1705,11 +2196,9 @@ function pruefeNahrungsnetz(tier) {
 
 
   const nahrungsnetz =
-    tier?.originalDaten
-      ?.daten
-      ?.ernaehrung
-      ?.nahrungsnetz ??
-    tier?.nahrungsnetz;
+    getNahrungsnetz(
+      tier,
+    );
 
 
   if (
@@ -1720,8 +2209,11 @@ function pruefeNahrungsnetz(tier) {
     checks.push(
       item(
         "Nahrungsnetz",
+
         "daten.ernaehrung.nahrungsnetz",
+
         false,
+
         [
           "Nahrungsnetz-Struktur fehlt.",
         ],
@@ -1734,134 +2226,179 @@ function pruefeNahrungsnetz(tier) {
 
 
   /* ==================================== */
-  /* FRISST                               */
+  /* ALTE STRUKTUR NICHT MEHR ERLAUBT     */
   /* ==================================== */
 
-  const frisst =
-    nahrungsnetz.frisst;
-
-
   if (
-    !istObjekt(
-      frisst,
+    Object.prototype.hasOwnProperty.call(
+      nahrungsnetz,
+      "frisst",
     )
   ) {
     checks.push(
       item(
-        "Frisst",
+        "Nahrungsnetz – alte Struktur „frisst“",
+
         "daten.ernaehrung.nahrungsnetz.frisst",
+
         false,
+
         [
-          "Bereich „frisst“ fehlt.",
+          "Der Bereich „frisst“ gehört zur alten Struktur und muss entfernt werden. Jungtier und Erwachsen liegen jetzt direkt unter nahrungsnetz.",
         ],
       ),
     );
   }
 
-  else {
-    pruefeFutterAltersklasse(
-      checks,
-      frisst.jungtier,
-      {
-        label:
-          "Frisst – Jungtier",
-
-        pfad:
-          "daten.ernaehrung.nahrungsnetz.frisst.jungtier",
-
-        bedingungPflicht:
-          true,
-
-        hinweisAlsAlternative:
-          false,
-      },
-    );
-
-
-    pruefeFutterAltersklasse(
-      checks,
-      frisst.erwachsen,
-      {
-        label:
-          "Frisst – Erwachsen",
-
-        pfad:
-          "daten.ernaehrung.nahrungsnetz.frisst.erwachsen",
-
-        bedingungPflicht:
-          false,
-
-        hinweisAlsAlternative:
-          false,
-      },
-    );
-  }
-
-
-  /* ==================================== */
-  /* WIRD GEFRESSEN VON                   */
-  /* ==================================== */
-
-  const gefressen =
-    nahrungsnetz
-      .wirdGefressenVon;
-
 
   if (
-    !istObjekt(
-      gefressen,
+    Object.prototype.hasOwnProperty.call(
+      nahrungsnetz,
+      "wirdGefressenVon",
     )
   ) {
     checks.push(
       item(
-        "Wird gefressen von",
+        "Nahrungsnetz – doppelte Pflege „wirdGefressenVon“",
+
         "daten.ernaehrung.nahrungsnetz.wirdGefressenVon",
+
         false,
+
         [
-          "Bereich „wirdGefressenVon“ fehlt.",
+          "„wirdGefressenVon“ darf nicht mehr im Tier-JSON gepflegt werden. Fressfeinde werden aus den Nahrungsbeziehungen der anderen Tiere berechnet.",
         ],
       ),
     );
-
-
-    return checks;
   }
 
 
-  pruefeFressfeindAltersklasse(
-    checks,
-    gefressen.jungtier,
-    {
-      label:
-        "Wird gefressen von – Jungtier",
+  /* ==================================== */
+  /* JUNGTIER + ERWACHSEN                 */
+  /* ==================================== */
 
-      pfad:
-        "daten.ernaehrung.nahrungsnetz.wirdGefressenVon.jungtier",
-
-      erlaubtHinweisOhneWerte:
-        true,
-
-      erlaubtKeineFressfeinde:
-        false,
-    },
-  );
+  NAHRUNGSNETZ_LEBENSPHASEN.forEach(
+    (lebensphase) => {
+      const bereich =
+        nahrungsnetz[
+          lebensphase
+        ];
 
 
-  pruefeFressfeindAltersklasse(
-    checks,
-    gefressen.erwachsen,
-    {
-      label:
-        "Wird gefressen von – Erwachsen",
+      const label =
+        lebensphase ===
+          "jungtier"
+          ? "Nahrungsnetz – Jungtier"
+          : "Nahrungsnetz – Erwachsen";
 
-      pfad:
-        "daten.ernaehrung.nahrungsnetz.wirdGefressenVon.erwachsen",
 
-      erlaubtHinweisOhneWerte:
-        false,
+      const pfad =
+        `daten.ernaehrung.nahrungsnetz.${lebensphase}`;
 
-      erlaubtKeineFressfeinde:
-        true,
+
+      if (
+        !istObjekt(
+          bereich,
+        )
+      ) {
+        checks.push(
+          item(
+            label,
+
+            pfad,
+
+            false,
+
+            [
+              "Lebensphase fehlt oder ist kein Objekt.",
+            ],
+          ),
+        );
+
+
+        return;
+      }
+
+
+      if (
+        !Array.isArray(
+          bereich.werte,
+        )
+      ) {
+        checks.push(
+          item(
+            label,
+
+            `${pfad}.werte`,
+
+            false,
+
+            [
+              "werte muss ein Array sein.",
+            ],
+          ),
+        );
+
+
+        return;
+      }
+
+
+      /*
+          Eine leere Liste ist erlaubt.
+
+          Ein Tier muss nicht zwingend
+          in jeder Lebensphase eine
+          eingetragene Nahrungsbeziehung
+          besitzen.
+      */
+
+      if (
+        bereich.werte.length ===
+          0
+      ) {
+        checks.push(
+          item(
+            label,
+
+            `${pfad}.werte`,
+
+            true,
+
+            [],
+          ),
+        );
+
+
+        return;
+      }
+
+
+      bereich.werte.forEach(
+        (
+          wert,
+          index,
+        ) => {
+          const fehlt =
+            pruefeNahrungsBeziehung(
+              wert,
+            );
+
+
+          checks.push(
+            item(
+              `${label} – Eintrag ${index + 1}`,
+
+              `${pfad}.werte[${index}]`,
+
+              fehlt.length ===
+                0,
+
+              fehlt,
+            ),
+          );
+        },
+      );
     },
   );
 
@@ -1871,299 +2408,16 @@ function pruefeNahrungsnetz(tier) {
 
 
 /* ======================================== */
-/* NAHRUNGSNETZ – FUTTER                    */
+/* RECHNER                                  */
 /* ======================================== */
 
-function pruefeFutterAltersklasse(
-  checks,
-  bereich,
-  {
-    label,
-    pfad,
-    bedingungPflicht,
-    hinweisAlsAlternative,
-  },
+function pruefeRechner(
+  tier,
 ) {
-  if (
-    !istObjekt(
-      bereich,
-    )
-  ) {
-    checks.push(
-      item(
-        label,
-        pfad,
-        false,
-        [
-          "Altersklasse fehlt.",
-        ],
-      ),
-    );
-
-    return;
-  }
-
-
-  const werte =
-    Array.isArray(
-      bereich.werte,
-    )
-      ? bereich.werte
-      : [];
-
-
-  if (
-    !werte.length
-  ) {
-    const hinweisOk =
-      hinweisAlsAlternative &&
-      hatLokalisierterText(
-        bereich.hinweis,
-      );
-
-
-    checks.push(
-      item(
-        label,
-        `${pfad}.werte`,
-        hinweisOk,
-        [
-          !hinweisOk
-            ? "Mindestens ein Nahrungswert fehlt."
-            : null,
-        ],
-      ),
-    );
-
-
-    return;
-  }
-
-
-  werte.forEach(
-    (
-      wert,
-      index,
-    ) => {
-      const fehlt =
-        pruefeNahrungsWert(
-          wert,
-          {
-            bedingungPflicht,
-          },
-        );
-
-
-      checks.push(
-        item(
-          `${label} – Eintrag ${index + 1}`,
-          `${pfad}.werte[${index}]`,
-          fehlt.length ===
-            0,
-          fehlt,
-        ),
-      );
-    },
-  );
-}
-
-
-/* ======================================== */
-/* NAHRUNGSNETZ – FRESSFEINDE               */
-/* ======================================== */
-
-function pruefeFressfeindAltersklasse(
-  checks,
-  bereich,
-  {
-    label,
-    pfad,
-    erlaubtHinweisOhneWerte,
-    erlaubtKeineFressfeinde,
-  },
-) {
-  if (
-    !istObjekt(
-      bereich,
-    )
-  ) {
-    checks.push(
-      item(
-        label,
-        pfad,
-        false,
-        [
-          "Altersklasse fehlt.",
-        ],
-      ),
-    );
-
-    return;
-  }
-
-
-  const werte =
-    Array.isArray(
-      bereich.werte,
-    )
-      ? bereich.werte
-      : [];
-
-
-  if (
-    werte.length
-  ) {
-    werte.forEach(
-      (
-        wert,
-        index,
-      ) => {
-        const fehlt =
-          pruefeNahrungsWert(
-            wert,
-          );
-
-
-        checks.push(
-          item(
-            `${label} – Eintrag ${index + 1}`,
-            `${pfad}.werte[${index}]`,
-            fehlt.length ===
-              0,
-            fehlt,
-          ),
-        );
-      },
-    );
-
-
-    /*
-        Wenn zusätzlich ein Hinweis
-        angelegt wurde, muss er auch
-        ausgefüllt sein.
-    */
-
-    if (
-      Object.prototype.hasOwnProperty.call(
-        bereich,
-        "hinweis",
-      )
-    ) {
-      checks.push(
-        item(
-          `${label} – Hinweis`,
-          `${pfad}.hinweis`,
-          hatLokalisierterText(
-            bereich.hinweis,
-          ),
-          [
-            !hatLokalisierterText(
-              bereich.hinweis,
-            )
-              ? "Hinweis ist angelegt, aber leer."
-              : null,
-          ],
-        ),
-      );
-    }
-
-
-    return;
-  }
-
-
-  /* ==================================== */
-  /* KEINE REGELMÄSSIGEN FRESSFEINDE      */
-  /* ==================================== */
-
-  if (
-    erlaubtKeineFressfeinde &&
-    bereich
-      .keineRegelmaessigenNatuerlichenFressfeinde ===
-      true
-  ) {
-    const fehlt =
-      [];
-
-
-    if (
-      !hatLokalisierterText(
-        bereich.hinweis,
-      )
-    ) {
-      fehlt.push(
-        "Hinweis zu den fehlenden regelmäßigen Fressfeinden fehlt.",
-      );
-    }
-
-
-    if (
-      !hatText(
-        bereich.quelle,
-      )
-    ) {
-      fehlt.push(
-        "Quelle fehlt.",
-      );
-    }
-
-
-    checks.push(
-      item(
-        `${label} – keine regelmäßigen Fressfeinde`,
-        pfad,
-        fehlt.length ===
-          0,
-        fehlt,
-      ),
-    );
-
-
-    return;
-  }
-
-
-  /* ==================================== */
-  /* KEINE GETRENNTE LISTE / HINWEIS      */
-  /* ==================================== */
-
-  if (
-    erlaubtHinweisOhneWerte &&
-    hatLokalisierterText(
-      bereich.hinweis,
-    )
-  ) {
-    checks.push(
-      item(
-        `${label} – Hinweis`,
-        `${pfad}.hinweis`,
-        true,
-        [],
-      ),
-    );
-
-
-    return;
-  }
-
-
-  checks.push(
-    item(
-      label,
-      `${pfad}.werte`,
-      false,
-      [
-        erlaubtKeineFressfeinde
-          ? "Fressfeinde fehlen. Alternativ muss „keineRegelmaessigenNatuerlichenFressfeinde“ auf true stehen und Hinweis + Quelle ausgefüllt sein."
-          : "Fressfeinde oder ein erklärender Hinweis fehlen.",
-      ],
-    ),
-  );
-}
-
-function pruefeRechner(tier) {
   const checks =
-    basisChecks(tier);
+    basisChecks(
+      tier,
+    );
 
 
   const rechner =
@@ -2181,8 +2435,11 @@ function pruefeRechner(tier) {
   checks.push(
     item(
       "Rechnerwerte",
+
       "planetZoo2.rechner",
+
       ok,
+
       [
         !ok
           ? "Rechnerwerte fehlen."
@@ -2196,37 +2453,68 @@ function pruefeRechner(tier) {
 }
 
 
+/* ======================================== */
+/* TOOL AUSWÄHLEN                           */
+/* ======================================== */
+
 function pruefeTool(
   tier,
   toolId,
 ) {
-  switch (toolId) {
+  switch (
+    toolId
+  ) {
     case TOOL_IDS.MAP:
-      return pruefeMap(tier);
+      return pruefeMap(
+        tier,
+      );
+
 
     case TOOL_IDS.INFOTAFEL:
-      return pruefeInfotafel(tier);
+      return pruefeInfotafel(
+        tier,
+      );
+
 
     case TOOL_IDS.AUDIO:
-      return pruefeAudio(tier);
+      return pruefeAudio(
+        tier,
+      );
+
 
     case TOOL_IDS.KINO:
-      return pruefeVideo(tier);
+      return pruefeVideo(
+        tier,
+      );
+
 
     case TOOL_IDS.SYSTEMATIK:
-      return pruefeSystematik(tier);
+      return pruefeSystematik(
+        tier,
+      );
+
 
     case TOOL_IDS.NAHRUNGSNETZ:
-      return pruefeNahrungsnetz(tier);
+      return pruefeNahrungsnetz(
+        tier,
+      );
+
 
     case TOOL_IDS.RECHNER:
-      return pruefeRechner(tier);
+      return pruefeRechner(
+        tier,
+      );
+
 
     default:
       return [];
   }
 }
 
+
+/* ======================================== */
+/* ÖFFENTLICHE FUNKTIONEN                   */
+/* ======================================== */
 
 export function pruefeTierDaten(
   tier,
@@ -2243,11 +2531,14 @@ export function pruefeTierDaten(
       return {
         toolId:
           tool.id,
+
         tool,
+
         stufe:
           getToolEinstellung(
             tool.id,
           ),
+
         vollstaendig:
           checks.length >
             0 &&
@@ -2255,6 +2546,7 @@ export function pruefeTierDaten(
             (check) =>
               check.ok,
           ),
+
         checks,
       };
     },
