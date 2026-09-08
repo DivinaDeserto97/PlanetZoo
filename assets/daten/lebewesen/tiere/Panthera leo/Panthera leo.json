@@ -249,69 +249,97 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "muttermilch",
-                "bedingung": "bisEtwa6Monate",
-                "quelle": "smithsonianLion"
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "muttermilch",
+              "typ": "nutzung",
+              "bedingung": {
+                "selbst": [
+                  "bisEtwa6Monate"
+                ],
+                "ziel": []
               },
-              {
-                "wert": "tierischeNahrung",
-                "bedingung": "abEtwa3Monaten",
-                "quelle": "smithsonianLion"
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "Equus quagga",
-                "typ": "tier",
-                "quelle": "smithsonianLion"
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": ""
               },
-              {
-                "wert": "Connochaetes taurinus",
-                "typ": "tier",
-                "quelle": "smithsonianLion"
-              },
-              {
-                "wert": "aas",
-                "typ": "aas",
-                "hinweis": {
-                  "de": "Löwen nutzen auch Aas und übernehmen Beute anderer Raubtiere.",
-                  "en": "Lions also scavenge and take kills from other predators."
-                },
-                "quelle": "smithsonianLion"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "Crocuta crocuta",
-                "typ": "tier",
-                "bedingung": "jungtier",
-                "hinweis": {
-                  "de": "Junge Löwen sind verwundbar; Hyänen werden als häufige Angreifer von Jungtieren genannt.",
-                  "en": "Young lions are vulnerable; hyenas are noted as frequent attackers of cubs."
-                },
-                "quelle": "animalDiversityWeb"
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [],
-            "keineRegelmaessigenNatuerlichenFressfeinde": true,
-            "hinweis": {
-              "de": "Ausgewachsene Löwen haben keine regelmäßigen natürlichen Fressfeinde. Menschen sind jedoch ein bedeutender Mortalitäts- und Gefährdungsfaktor.",
-              "en": "Adult lions have no regular natural predators. Humans are, however, a major source of mortality and threat."
+              "quelle": "smithsonianLion"
             },
-            "quelle": "animalDiversityWeb"
-          }
+            {
+              "wert": "tierischeNahrung",
+              "typ": "nutzung",
+              "bedingung": {
+                "selbst": [
+                  "abEtwa3Monaten"
+                ],
+                "ziel": []
+              },
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": ""
+              },
+              "quelle": "smithsonianLion"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Equus quagga",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "smithsonianLion"
+            },
+            {
+              "wert": "Connochaetes taurinus",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "smithsonianLion"
+            },
+            {
+              "wert": "Orycteropus afer",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Loxodonta africana",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": [
+                  "jungtier"
+                ]
+              },
+              "quelle": "sanDiegoZoo"
+            },
+            {
+              "wert": "aas",
+              "typ": "aas",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "aas": {
+                "zustand": ""
+              },
+              "hinweis": {
+                "de": "Löwen nutzen auch Aas und übernehmen Beute anderer Raubtiere.",
+                "en": "Lions also scavenge and take kills from other predators."
+              },
+              "quelle": "smithsonianLion"
+            }
+          ]
         }
       }
     }

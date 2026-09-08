@@ -15,9 +15,17 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["habitatTerrestrial"],
-    "kontinente": ["africa"],
-    "biome": ["Feuchtgebiete", "Grasland", "Wüste"],
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Feuchtgebiete",
+      "Grasland",
+      "Wüste"
+    ],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -117,7 +125,10 @@
         {
           "wert": 415000,
           "einheit": "individuum",
-          "giltFuer": ["Loxodonta africana", "Loxodonta cyclotis"],
+          "giltFuer": [
+            "Loxodonta africana",
+            "Loxodonta cyclotis"
+          ],
           "jahrDerGrundlage": 2016,
           "hinweis": {
             "de": "Die häufig zitierte Zahl von rund 415.000 gilt für afrikanische Savannen- und Waldelefanten zusammen. Sie darf nicht als aktuelle Populationszahl nur von Loxodonta africana interpretiert werden.",
@@ -233,85 +244,102 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "muttermilch",
-                "typ": "bedingung",
-                "bedingung": "calf",
-                "quelle": "animalDiversityWeb"
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "muttermilch",
+              "typ": "nutzung",
+              "bedingung": {
+                "selbst": [
+                  "calf"
+                ],
+                "ziel": []
               },
-              {
-                "wert": "plantFood",
-                "bedingung": "increasingWithAge",
-                "quelle": "sanDiegoZoo"
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "grass",
-                "quelle": "animalDiversityWeb"
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": ""
               },
-              {
-                "wert": "leaves",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "fruit",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "roots",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "twigs",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "bark",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "shrubs",
-                "quelle": "sanDiegoZoo"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "Panthera leo",
-                "quelle": "sanDiegoZoo"
-              },
-              {
-                "wert": "hyena",
-                "quelle": "sanDiegoZoo"
-              },
-              {
-                "wert": "leopard",
-                "quelle": "sanDiegoZoo"
-              },
-              {
-                "wert": "crocodile",
-                "quelle": "sanDiegoZoo"
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [],
-            "keineRegelmaessigenNatuerlichenFressfeinde": true,
-            "hinweis": {
-              "de": "Gesunde adulte Savannenelefanten haben kaum natürliche Fressfeinde; der Mensch ist die wichtigste Bedrohung.",
-              "en": "Healthy adult savanna elephants have few natural predators; humans are their major threat."
+              "quelle": "animalDiversityWeb"
             },
-            "quelle": "sanDiegoZoo"
-          }
+            {
+              "wert": "plantFood",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [
+                  "increasingWithAge"
+                ],
+                "ziel": []
+              },
+              "quelle": "sanDiegoZoo"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "grass",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "leaves",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "fruit",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "roots",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "twigs",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "bark",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "shrubs",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "sanDiegoZoo"
+            }
+          ]
         }
       }
     }
@@ -717,9 +745,7 @@
         {
           "variante": 1,
           "quelle": "Planet Zoo 2 Zoopedia",
-
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzdlZmU3ZmEvRWxlcGhhbnRfQWZyaWNhblNhdmFubmFoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
-
           "alt": {
             "de": "Afrikanischer Savannenelefant",
             "en": "African savanna elephant"
@@ -728,9 +754,7 @@
             "de": "Ein Afrikanischer Savannenelefant steht in einer trockenen Savannenlandschaft zwischen hohem gelblichem Gras. Im Hintergrund sind einzelne Bäume, Sträucher und felsige Hügel unter blauem Himmel zu sehen.",
             "en": "An African savanna elephant stands in a dry savanna landscape among tall yellowish grass. Scattered trees, shrubs and rocky hills can be seen in the background under a blue sky."
           },
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -741,16 +765,13 @@
         }
       ]
     },
-
     {
       "typ": "echtbild",
       "varianten": [
         {
           "variante": 1,
           "quelle": "wikimediaCommons",
-
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Elephant_near_ndutu.jpg/960px-Elephant_near_ndutu.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-
           "alt": {
             "de": "Afrikanischer Savannenelefant",
             "en": "African savanna elephant"
@@ -759,9 +780,7 @@
             "de": "Ein Afrikanischer Savannenelefant steht frontal auf einer grünen Grasfläche. Seine großen ausgebreiteten Ohren, der lange Rüssel und die Stoßzähne sind deutlich zu erkennen; im Hintergrund befindet sich dichter grüner Bewuchs mit Bäumen und Sträuchern.",
             "en": "An African savanna elephant stands facing the camera on a green grassy area. Its large spread ears, long trunk and tusks are clearly visible, with dense green vegetation, trees and shrubs in the background."
           },
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -776,12 +795,10 @@
   "audio": [
     {
       "typ": "Grollen",
-
       "varianten": [
         {
           "variante": 1,
           "quelle": "Tierstimmenarchiv",
-
           "metadaten": [
             {
               "typ": "quelle",
@@ -789,7 +806,6 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/animal_sound_archive.json"
             }
           ],
-
           "dateien": [
             {
               "typ": "original",
@@ -808,11 +824,9 @@
             }
           ]
         },
-
         {
           "variante": 2,
           "quelle": "Tierstimmenarchiv",
-
           "metadaten": [
             {
               "typ": "quelle",
@@ -820,7 +834,6 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/animal_sound_archive.json"
             }
           ],
-
           "dateien": [
             {
               "typ": "original",
@@ -839,11 +852,9 @@
             }
           ]
         },
-
         {
           "variante": 3,
           "quelle": "Tierstimmenarchiv",
-
           "metadaten": [
             {
               "typ": "quelle",
@@ -851,7 +862,6 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/animal_sound_archive.json"
             }
           ],
-
           "dateien": [
             {
               "typ": "original",
@@ -872,15 +882,12 @@
         }
       ]
     },
-
     {
       "typ": "Trompetenruf",
-
       "varianten": [
         {
           "variante": 1,
           "quelle": "Tierstimmenarchiv",
-
           "metadaten": [
             {
               "typ": "quelle",
@@ -888,7 +895,6 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/animal_sound_archive.json"
             }
           ],
-
           "dateien": [
             {
               "typ": "original",
@@ -913,23 +919,17 @@
   "video": [
     {
       "typ": "verhaltensarchiv",
-
       "varianten": [
         {
           "variante": 1,
           "reihe": "Elephant Ethogram",
-
           "titel": {
             "de": "Elephant Ethogram",
             "en": "Elephant Ethogram"
           },
-
           "quelle": "elephantVoices",
-
           "url": "https://cdn.sanity.io/files/1367lwmq/production/36f0bae01b9b21f41df2b29234225dd8c62f98b3.mp4",
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -937,9 +937,7 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4"
             }
           ],
-
           "dauerSekunden": 39,
-
           "beschreibung": {
             "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
             "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
@@ -947,25 +945,19 @@
         }
       ]
     },
-
     {
       "typ": "dokumentation",
-
       "varianten": [
         {
           "variante": 1,
           "reihe": "Go Wild",
-
           "titel": {
             "de": "Go Wild – Afrikanischer Savannenelefant",
             "en": "Go Wild – African Savanna Elephant"
           },
-
           "quelle": "goWild",
           "url": "",
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -978,9 +970,7 @@
               "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4"
             }
           ],
-
           "dauerSekunden": null,
-
           "beschreibung": {
             "de": "Go-Wild-Dokumentation über den Afrikanischen Savannenelefanten.",
             "en": "Go Wild documentary about the African savanna elephant."

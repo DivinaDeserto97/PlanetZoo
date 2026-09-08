@@ -1,6 +1,5 @@
 {
   "id": "Orycteropus afer",
-
   "identitaet": {
     "namen": {
       "de": "Erdferkel",
@@ -14,15 +13,19 @@
       "zh-Hans": "土豚"
     }
   },
-
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["habitatTerrestrial"],
-    "kontinente": ["africa"],
-    "biome": ["Grasland"],
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
     "schutzstatus": "leastConcern"
   },
-
   "daten": {
     "taxonomie": {
       "werte": [
@@ -38,7 +41,6 @@
         }
       ]
     },
-
     "koerperlaenge": {
       "werte": [
         {
@@ -50,7 +52,6 @@
         }
       ]
     },
-
     "schulterhoehe": {
       "werte": [
         {
@@ -62,7 +63,6 @@
         }
       ]
     },
-
     "gewicht": {
       "werte": [
         {
@@ -74,7 +74,6 @@
         }
       ]
     },
-
     "lebensspanne": {
       "werte": [
         {
@@ -91,7 +90,6 @@
         }
       ]
     },
-
     "geschwindigkeit": {
       "werte": [
         {
@@ -106,7 +104,6 @@
         }
       ]
     },
-
     "schutzstatus": {
       "werte": [
         {
@@ -116,7 +113,6 @@
         }
       ]
     },
-
     "wildpopulation": {
       "werte": [
         {
@@ -132,7 +128,6 @@
         }
       ]
     },
-
     "geschlechtsreife": {
       "werte": [
         {
@@ -149,7 +144,6 @@
         }
       ]
     },
-
     "tragzeit": {
       "werte": [
         {
@@ -164,7 +158,6 @@
         }
       ]
     },
-
     "nachwuchs": {
       "werte": [
         {
@@ -176,7 +169,6 @@
         }
       ]
     },
-
     "sozialeStruktur": {
       "werte": [
         {
@@ -195,7 +187,6 @@
         }
       ]
     },
-
     "biome": {
       "werte": [
         {
@@ -216,7 +207,6 @@
         }
       ]
     },
-
     "aktivitaet": {
       "werte": [
         {
@@ -229,7 +219,6 @@
         }
       ]
     },
-
     "ernaehrung": {
       "fressverhalten": {
         "werte": [
@@ -243,92 +232,80 @@
           }
         ]
       },
-
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "muttermilch",
-                "bedingung": "bisEtwa3Monate",
-                "quelle": "animalDiversityWeb"
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "muttermilch",
+              "typ": "nutzung",
+              "bedingung": {
+                "selbst": [
+                  "bisEtwa3Monate"
+                ],
+                "ziel": []
               },
-              {
-                "wert": "insects",
-                "bedingung": "abEtwa3Monaten",
-                "quelle": "animalDiversityWeb"
-              }
-            ]
-          },
-
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "ants",
-                "quelle": "animalDiversityWeb"
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": ""
               },
-              {
-                "wert": "termites",
-                "quelle": "animalDiversityWeb"
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "insects",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [
+                  "abEtwa3Monaten"
+                ],
+                "ziel": []
               },
-              {
-                "wert": "Cucumis humifructus",
-                "typ": "frucht",
-                "hinweis": {
-                  "de": "Diese unterirdisch reifende Frucht wird besonders aus Südafrika als pflanzliche Nahrung beschrieben.",
-                  "en": "This underground-ripening fruit is described particularly from South Africa as plant food."
-                },
-                "quelle": "sanDiegoZoo"
-              }
-            ]
-          }
+              "quelle": "animalDiversityWeb"
+            }
+          ]
         },
-
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [],
-            "hinweis": {
-              "de": "Die verwendeten Quellen nennen keine verlässliche getrennte Liste ausschließlich für Jungtiere.",
-              "en": "The sources used do not provide a reliable predator list specifically for juveniles."
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "ants",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "termites",
+              "typ": "tier",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Cucumis humifructus",
+              "typ": "pflanze",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Diese unterirdisch reifende Frucht wird besonders aus Südafrika als pflanzliche Nahrung beschrieben.",
+                "en": "This underground-ripening fruit is described particularly from South Africa as plant food."
+              },
+              "quelle": "sanDiegoZoo"
             }
-          },
-
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "human",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "Panthera leo",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "hyena",
-                "quelle": "animalDiversityWeb"
-              },
-              {
-                "wert": "leopard",
-                "quelle": "animalDiversityWeb"
-              }
-            ],
-
-            "hinweis": {
-              "de": "Animal Diversity Web nennt diese als bekannte Fressfeinde oder Bejager allgemein und unterscheidet dabei nicht nach Altersklasse.",
-              "en": "Animal Diversity Web lists these as known predators or hunters in general without separating age classes."
-            }
-          }
+          ]
         }
       }
     }
   },
-
   "systematik": {
     "hinweis": {
       "de": "Orycteropus afer ist die einzige heute lebende Art der Ordnung Tubulidentata. Die hier aufgeführten Arten vertreten verwandte afrotherische Linien und sind keine direkten Schwesterarten des Erdferkels.",
       "en": "Orycteropus afer is the only living species of Tubulidentata. The species listed here represent related afrotherian lineages and are not direct sister species of the aardvark."
     },
-
     "naheVerwandte": [
       {
         "id": "Macroscelides proboscideus",
@@ -349,13 +326,11 @@
         "quelle": "afrotheriaPhylogeny2024"
       }
     ],
-
     "evolution": {
       "hinweis": {
         "de": "Die genaue Reihenfolge früher Aufspaltungen innerhalb der Afrotheria war lange umstritten. Neuere phylogenomische Arbeiten stützen Afroinsectiphilia und ordnen Tubulidentata als eigenständige Linie innerhalb dieser Gruppe ein.",
         "en": "The exact order of early divergences within Afrotheria has long been debated. Recent phylogenomic work supports Afroinsectiphilia and places Tubulidentata as a distinct lineage within that group."
       },
-
       "knoten": [
         {
           "id": "afrotheria",
@@ -394,7 +369,6 @@
           "quelle": "mammalDiversityDatabase"
         }
       ],
-
       "aufspaltungen": [
         {
           "linieA": "Tubulidentata",
@@ -406,7 +380,6 @@
       ]
     }
   },
-
   "texte": {
     "vorkommen": {
       "de": [
@@ -416,21 +389,18 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "en": [
         {
           "inhalt": "The aardvark occurs across much of sub-Saharan Africa. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "The aardvark occurs across much of sub-Saharan Africa. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "es": [
         {
           "inhalt": "El cerdo hormiguero se distribuye por gran parte del África subsahariana. Vive sobre todo en sabanas, pastizales, zonas semiáridas y bosques abiertos donde abundan las hormigas y termitas y el suelo permite excavar. Evita en gran medida los suelos duros, rocosos o frecuentemente inundados.",
@@ -438,7 +408,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "fr": [
         {
           "inhalt": "L’oryctérope vit dans une grande partie de l’Afrique subsaharienne. Il fréquente surtout les savanes, prairies, zones semi-arides et boisements ouverts où les fourmis et termites sont abondants et où le sol se prête au creusement.",
@@ -446,7 +415,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "it": [
         {
           "inhalt": "L’oritteropo è diffuso in gran parte dell’Africa subsahariana. Vive soprattutto in savane, praterie, zone semiaride e boschi aperti dove formiche e termiti sono abbondanti e il terreno è adatto allo scavo.",
@@ -454,7 +422,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "pt-BR": [
         {
           "inhalt": "O porco-formigueiro ocorre em grande parte da África Subsaariana. Vive principalmente em savanas, campos, áreas semiáridas e bosques abertos onde há abundância de formigas e cupins e o solo permite escavação.",
@@ -462,7 +429,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "ja": [
         {
           "inhalt": "ツチブタはサハラ以南アフリカの広い範囲に分布します。アリやシロアリが豊富で掘りやすい土壌のあるサバンナ、草原、半乾燥地、疎林を主に利用します。",
@@ -470,7 +436,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "zh-Hans": [
         {
           "inhalt": "土豚广泛分布于撒哈拉以南非洲。它主要生活在蚂蚁和白蚁丰富、土壤适合挖掘的稀树草原、草地、半干旱地区和疏林中。",
@@ -479,7 +444,6 @@
         }
       ]
     },
-
     "uebersicht": {
       "de": [
         {
@@ -488,21 +452,18 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "en": [
         {
           "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly nocturnal mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly nocturnal mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "es": [
         {
           "inhalt": "El cerdo hormiguero (Orycteropus afer) es un mamífero mediano y principalmente nocturno, y la única especie viva del orden Tubulidentata. Se caracteriza por su hocico largo, grandes orejas, fuertes garras excavadoras y molares de estructura tubular.",
@@ -510,7 +471,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "fr": [
         {
           "inhalt": "L’oryctérope (Orycteropus afer) est un mammifère de taille moyenne, principalement nocturne, et la seule espèce vivante de l’ordre des Tubulidentata. Il se distingue par son long museau, ses grandes oreilles, ses puissantes griffes fouisseuses et ses molaires à structure tubulaire.",
@@ -518,7 +478,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "it": [
         {
           "inhalt": "L’oritteropo (Orycteropus afer) è un mammifero di medie dimensioni, prevalentemente notturno, ed è l’unica specie vivente dell’ordine Tubulidentata. È caratterizzato da muso allungato, grandi orecchie, potenti artigli da scavo e insoliti denti posteriori a struttura tubulare.",
@@ -526,7 +485,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "pt-BR": [
         {
           "inhalt": "O porco-formigueiro (Orycteropus afer) é um mamífero de porte médio, principalmente noturno, e a única espécie viva da ordem Tubulidentata. Possui focinho alongado, orelhas grandes, garras fortes para escavação e dentes posteriores de estrutura tubular.",
@@ -534,7 +492,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "ja": [
         {
           "inhalt": "ツチブタ（Orycteropus afer）は中型の主に夜行性の哺乳類で、管歯目に現生する唯一の種です。長い吻、大きな耳、強力な掘削用の爪、管状構造をもつ特殊な奥歯が特徴です。",
@@ -542,7 +499,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "zh-Hans": [
         {
           "inhalt": "土豚（Orycteropus afer）是一种中型、主要夜行的哺乳动物，也是管齿目现存的唯一物种。其特征包括细长的吻部、大耳朵、强壮的挖掘爪以及结构特殊的管状臼齿。",
@@ -551,7 +507,6 @@
         }
       ]
     },
-
     "arterhaltung": {
       "de": [
         {
@@ -560,21 +515,18 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "en": [
         {
           "inhalt": "The IUCN lists the aardvark globally as Least Concern. However, no reliable global population estimate is available and trends remain poorly known in many areas. Locally, agriculture, habitat change, hunting and pesticide use can be problematic.",
           "quelle": "iucn"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "The IUCN lists the aardvark globally as Least Concern. However, no reliable global population estimate is available and trends remain poorly known in many areas. Locally, agriculture, habitat change, hunting and pesticide use can be problematic.",
           "quelle": "iucn"
         }
       ],
-
       "es": [
         {
           "inhalt": "La UICN clasifica globalmente al cerdo hormiguero como de Preocupación Menor. Sin embargo, no existe una estimación global fiable de su población y las tendencias son poco conocidas en muchas zonas.",
@@ -582,7 +534,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "fr": [
         {
           "inhalt": "L’UICN classe l’oryctérope dans la catégorie Préoccupation mineure. Il n’existe toutefois pas d’estimation mondiale fiable de ses effectifs et les tendances restent mal connues dans de nombreuses régions.",
@@ -590,7 +541,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "it": [
         {
           "inhalt": "La IUCN classifica globalmente l’oritteropo come specie a Rischio Minimo. Tuttavia non esiste una stima globale affidabile della popolazione e in molte aree le tendenze restano poco conosciute.",
@@ -598,7 +548,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "pt-BR": [
         {
           "inhalt": "A IUCN classifica globalmente o porco-formigueiro como Pouco Preocupante. Entretanto, não há uma estimativa global confiável da população e as tendências permanecem pouco conhecidas em muitas áreas.",
@@ -606,7 +555,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "ja": [
         {
           "inhalt": "IUCNはツチブタを世界的には低危険種（Least Concern）に分類しています。しかし信頼できる世界全体の個体数推定はなく、多くの地域で個体数傾向も十分に分かっていません。",
@@ -614,7 +562,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "zh-Hans": [
         {
           "inhalt": "IUCN在全球范围内将土豚列为无危（Least Concern）。但目前没有可靠的全球种群数量估计，许多地区的种群趋势也仍不清楚。",
@@ -623,7 +570,6 @@
         }
       ]
     },
-
     "sozialverhaltenUndFortpflanzung": {
       "de": [
         {
@@ -632,21 +578,18 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "en": [
         {
           "inhalt": "Aardvarks are predominantly solitary and mainly come together to breed. After a gestation of about seven months, usually one young is born. It begins adding insects to its diet at about three months, becomes independent at around six months and reaches sexual maturity at roughly two years.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "Aardvarks are predominantly solitary and mainly come together to breed. After a gestation of about seven months, usually one young is born. It begins adding insects to its diet at about three months, becomes independent at around six months and reaches sexual maturity at roughly two years.",
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "es": [
         {
           "inhalt": "Los cerdos hormigueros son principalmente solitarios y se juntan sobre todo para reproducirse. Tras una gestación de unos siete meses suele nacer una sola cría. Se independiza alrededor de los seis meses y alcanza la madurez sexual aproximadamente a los dos años.",
@@ -654,7 +597,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "fr": [
         {
           "inhalt": "Les oryctéropes vivent principalement seuls et se réunissent surtout pour se reproduire. Après environ sept mois de gestation, un seul petit naît généralement. Il devient indépendant vers six mois et atteint la maturité sexuelle autour de deux ans.",
@@ -662,7 +604,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "it": [
         {
           "inhalt": "Gli oritteropi vivono prevalentemente soli e si incontrano soprattutto per riprodursi. Dopo circa sette mesi di gestazione nasce di solito un solo piccolo. Diventa indipendente verso i sei mesi e raggiunge la maturità sessuale intorno ai due anni.",
@@ -670,7 +611,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "pt-BR": [
         {
           "inhalt": "Os porcos-formigueiros vivem predominantemente sozinhos e se encontram principalmente para reprodução. Após cerca de sete meses de gestação geralmente nasce um filhote. Torna-se independente perto dos seis meses e atinge a maturidade sexual por volta dos dois anos.",
@@ -678,7 +618,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "ja": [
         {
           "inhalt": "ツチブタは主に単独で生活し、繁殖時に主に接触します。妊娠期間は約7か月で、通常1頭の子が生まれます。約6か月で独立し、およそ2歳で性成熟に達します。",
@@ -686,7 +625,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "zh-Hans": [
         {
           "inhalt": "土豚主要独居，通常只在繁殖时相聚。妊娠期约7个月，通常每胎产1只幼崽。幼崽约6个月时独立，并在大约2岁时达到性成熟。",
@@ -695,7 +633,6 @@
         }
       ]
     },
-
     "tierfakten": {
       "de": [
         {
@@ -714,7 +651,6 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-
       "en": [
         {
           "inhalt": "The aardvark is the only living species in the entire order Tubulidentata.",
@@ -729,7 +665,6 @@
           "quelle": "animalDiversityWeb"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "The aardvark is the only living species in the entire order Tubulidentata.",
@@ -745,7 +680,6 @@
         }
       ]
     },
-
     "entwicklungshinweis": {
       "de": [
         {
@@ -753,14 +687,12 @@
           "quelle": "projekt"
         }
       ],
-
       "en": [
         {
           "inhalt": "The real-world biological data in this record are independent of Planet Zoo 2 gameplay values. Unverified Planet Zoo 2 values, media and calculator data remain as structured placeholders and must be completed later.",
           "quelle": "projekt"
         }
       ],
-
       "en-US": [
         {
           "inhalt": "The real-world biological data in this record are independent of Planet Zoo 2 gameplay values. Unverified Planet Zoo 2 values, media and calculator data remain as structured placeholders and must be completed later.",
@@ -769,7 +701,6 @@
       ]
     }
   },
-
   "karte": {
     "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c1066a19/Aardvark_map.png",
     "dateien": [
@@ -786,18 +717,14 @@
     ],
     "quelle": "wikimediaCommonsMap"
   },
-
   "bilder": [
     {
       "typ": "hauptbild",
-
       "varianten": [
         {
           "variante": 1,
           "quelle": "wikimediaCommons",
-
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzEwNjZhMTkvQWFyZHZhcmsuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiY2UyZDk0N2QtMTAzMS00NTI1LTliOTgtM2UwY2ZhOWNjMDk1In19",
-
           "alt": {
             "de": "Erdferkel",
             "en": "Aardvark"
@@ -806,9 +733,7 @@
             "de": "Ein Erdferkel tritt aus dem Eingang eines selbst gegrabenen Baus in einer trockenen, felsigen Landschaft. Deutlich erkennbar sind die lange Schnauze, die großen aufgerichteten Ohren und der kräftige Körper.",
             "en": "An aardvark emerges from the entrance of a self-dug burrow in a dry, rocky landscape. Its long snout, large upright ears and sturdy body are clearly visible."
           },
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -816,22 +741,18 @@
               "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/bilder/Orycteropus afer 1.webp"
             }
           ],
-
           "status": "lokalNochNichtVorhanden"
         }
       ]
     }
   ],
-
   "audio": [
     {
       "typ": "",
-
       "varianten": [
         {
           "variante": 1,
           "quelle": "",
-
           "metadaten": [
             {
               "typ": "quelle",
@@ -839,7 +760,6 @@
               "pfad": ""
             }
           ],
-
           "dateien": [
             {
               "typ": "original",
@@ -851,27 +771,20 @@
       ]
     }
   ],
-
   "video": [
     {
       "typ": "dokumentation",
-
       "varianten": [
         {
           "variante": 1,
           "reihe": "Go Wild",
-
           "titel": {
             "de": "Go Wild! – Mission Wildnis S01E03: Die Buddelmeister der Savanne",
             "en": "Go Wild! – Mission Wildnis S01E03: Aardvark Town"
           },
-
           "quelle": "Go Wild",
-
           "url": "https://serienstream.to/serie/go-wild-mission-wildnis/staffel-1/episode-3",
-
           "metadaten": [],
-
           "dateien": [
             {
               "typ": "original",
@@ -884,9 +797,7 @@
               "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mp4"
             }
           ],
-
           "dauerSekunden": null,
-
           "beschreibung": {
             "de": "In dieser Folge von Go Wild! – Mission Wildnis stehen Erdferkel und ihre außergewöhnlichen Grabfähigkeiten im Mittelpunkt. Die Episode zeigt, wie sie mit ihren kräftigen Krallen Baue anlegen und warum diese unterirdischen Verstecke für das Leben in der Savanne so wichtig sind.",
             "en": "In this episode of Go Wild! – Mission Wildnis, aardvarks and their remarkable digging abilities take center stage. The episode shows how they use their powerful claws to create burrows and why these underground shelters are so important for life in the savanna."
@@ -895,16 +806,13 @@
       ]
     }
   ],
-
   "planetZoo2": {
     "rechner": null,
-
     "hinweis": {
       "de": "Für Orycteropus afer wurden noch keine verifizierten Planet-Zoo-2-Rechnerwerte eingetragen.",
       "en": "No verified Planet Zoo 2 calculator values have yet been entered for Orycteropus afer."
     }
   },
-
   "quellen": {
     "planetZoo2": {
       "name": "Planet Zoo 2 Zoopedia",
@@ -913,7 +821,6 @@
       },
       "status": "Keine verifizierten Planet-Zoo-2-Spielwerte in diesen Datensatz übernommen"
     },
-
     "planetZooOriginal": {
       "name": "Planet Zoo Zoopedia – Aardvark",
       "typ": "spielreferenz",
@@ -922,21 +829,18 @@
       },
       "status": "Nur Referenz zum ursprünglichen Planet Zoo; keine Werte in planetZoo2.rechner übernommen"
     },
-
     "animalDiversityWeb": {
       "name": "Animal Diversity Web – Orycteropus afer",
       "seiten": {
         "en": "https://animaldiversity.org/accounts/Orycteropus_afer/"
       }
     },
-
     "mammalDiversityDatabase": {
       "name": "Mammal Diversity Database – Orycteropus afer",
       "seiten": {
         "en": "https://www.mammaldiversity.org/taxon/1000520/"
       }
     },
-
     "iucn": {
       "name": "IUCN Red List – Orycteropus afer",
       "seiten": {
@@ -944,7 +848,6 @@
       },
       "status": "Least Concern; globale Bestandsgröße und viele Populationstrends sind schlecht bekannt"
     },
-
     "afrotherianConservation2023": {
       "name": "Afrotherian Conservation – Aardvark population trends and local threats",
       "typ": "fachpublikation",
@@ -952,14 +855,12 @@
         "en": "https://portals.iucn.org/library/sites/library/files/documents/ASGNL_no18.pdf"
       }
     },
-
     "sanDiegoZoo": {
       "name": "San Diego Zoo Wildlife Alliance – A Is for Aardvark",
       "seiten": {
         "en": "https://adminzoonooz.sandiegozoo.org/zoonooz/a-is-for-aardvark/"
       }
     },
-
     "uenoZoo": {
       "name": "Ueno Zoo – Aardvark",
       "seiten": {
@@ -967,7 +868,6 @@
         "en": "https://www.tokyo-zoo.net/en/ueno/encyclopedia/aardvark/index.html"
       }
     },
-
     "afrotheriaPhylogeny2024": {
       "name": "Phylogenomics of Afrotherian mammals and improved resolution of extant Paenungulata",
       "typ": "wissenschaftlichePublikation",
@@ -975,7 +875,6 @@
         "en": "https://www.sciencedirect.com/science/article/pii/S1055790324000393"
       }
     },
-
     "afrotheriaTimetree2025": {
       "name": "Completing a molecular timetree of Afrotheria",
       "typ": "wissenschaftlichePublikation",
@@ -983,21 +882,18 @@
         "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672906/"
       }
     },
-
     "wikimediaCommons": {
       "name": "Wikimedia Commons – Orycteropus afer",
       "seiten": {
         "en": "https://commons.wikimedia.org/wiki/File:Aardvark_(Orycteropus_afer).jpg"
       }
     },
-
     "wikimediaCommonsMap": {
       "name": "Wikimedia Commons – Verbreitungskarte Orycteropus afer",
       "seiten": {
         "en": "https://commons.wikimedia.org/wiki/File:Mapa_distribuci%C3%B3n_oricteropo_(Orycteropus_afer).png"
       }
     },
-
     "Tierstimmenarchiv": {
       "name": "Tierstimmenarchiv – Museum für Naturkunde Berlin",
       "seiten": {
@@ -1005,12 +901,10 @@
       },
       "status": "Kein passender Eintrag für Orycteropus afer gefunden. Die Audio-Struktur bleibt als ausfüllbare Vorlage erhalten."
     },
-
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
     },
-
     "goWild": {
       "name": "Go Wild",
       "typ": "dokumentation",
