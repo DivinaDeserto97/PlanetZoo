@@ -1,12 +1,6 @@
-import {
-  TOOL_IDS,
-  TOOLS,
-} from "./toolRegistry.js";
+import { TOOL_IDS, TOOLS } from "./toolRegistry.js";
 
-import {
-  getToolEinstellung,
-  TOOL_STUFEN,
-} from "./toolEinstellungen.js";
+import { getToolEinstellung, TOOL_STUFEN } from "./toolEinstellungen.js";
 
 import {
   getAudioVarianten,
@@ -24,676 +18,327 @@ import {
   NAHRUNGSNETZ_TYPEN,
 } from "./nahrungsBeziehungen.js";
 
-
 /* ======================================== */
 /* ECHTE LOKALE DATEIEN PRÜFEN              */
 /* ======================================== */
 
-const DATEI_STATUS =
-  new Map();
+const DATEI_STATUS = new Map();
 
+export async function pruefeLokaleTierDateien(tiere) {
+  const pfade = new Set();
 
-export async function pruefeLokaleTierDateien(
-  tiere,
-) {
-  const pfade =
-    new Set();
+  tiere.forEach((tier) => {
+    sammleDateiPfade(tier).forEach((pfad) => pfade.add(pfad));
+  });
 
-
-  tiere.forEach(
-    (tier) => {
-      sammleDateiPfade(
-        tier,
-      ).forEach(
-        (pfad) =>
-          pfade.add(
-            pfad,
-          ),
-      );
-    },
-  );
-
-
-  const offen =
-    [...pfade].filter(
-      (pfad) =>
-        !DATEI_STATUS.has(
-          pfad,
-        ),
-    );
-
+  const offen = [...pfade].filter((pfad) => !DATEI_STATUS.has(pfad));
 
   if (!offen.length) {
     return;
   }
 
-
-  let index =
-    0;
-
+  let index = 0;
 
   async function worker() {
-    while (
-      index <
-      offen.length
-    ) {
-      const pfad =
-        offen[
-          index++
-        ];
+    while (index < offen.length) {
+      const pfad = offen[index++];
 
+      const vorhanden = await existiertLokaleDatei(pfad);
 
-      const vorhanden =
-        await existiertLokaleDatei(
-          pfad,
-        );
-
-
-      DATEI_STATUS.set(
-        pfad,
-        vorhanden,
-      );
+      DATEI_STATUS.set(pfad, vorhanden);
     }
   }
 
-
-  const workerAnzahl =
-    Math.min(
-      8,
-      offen.length,
-    );
-
+  const workerAnzahl = Math.min(8, offen.length);
 
   await Promise.all(
     Array.from(
       {
-        length:
-          workerAnzahl,
+        length: workerAnzahl,
       },
-      () =>
-        worker(),
+      () => worker(),
     ),
   );
 }
 
+function sammleDateiPfade(tier) {
+  const pfade = new Set();
 
-function sammleDateiPfade(
-  tier,
-) {
-  const pfade =
-    new Set();
+  const karte = tier?.originalDaten?.karte ?? tier?.karte ?? {};
 
+  const kartenDateien = Array.isArray(karte?.dateien) ? karte.dateien : [];
 
-  const karte =
-    tier?.originalDaten
-      ?.karte ??
-    tier?.karte ??
-    {};
+  kartenDateien.forEach((datei) => {
+    if (
+      String(datei?.dateityp ?? "").toLowerCase() === "png" &&
+      hatText(datei?.pfad)
+    ) {
+      pfade.add(datei.pfad);
+    }
+  });
 
-
-  const kartenDateien =
-    Array.isArray(
-      karte?.dateien,
-    )
-      ? karte.dateien
-      : [];
-
-
-  kartenDateien.forEach(
-    (datei) => {
-      if (
-        String(
-          datei?.dateityp ??
-          "",
-        ).toLowerCase() ===
-          "png" &&
-        hatText(
-          datei?.pfad,
-        )
-      ) {
-        pfade.add(
-          datei.pfad,
-        );
-      }
-    },
-  );
-
-
-  if (
-    hatText(
-      karte?.pfad,
-    )
-  ) {
-    pfade.add(
-      karte.pfad,
-    );
+  if (hatText(karte?.pfad)) {
+    pfade.add(karte.pfad);
   }
 
+  getBildVarianten(tier).forEach((entry) => {
+    const datei = getBesteBildDatei(entry.dateien);
 
-  getBildVarianten(
-    tier,
-  ).forEach(
-    (entry) => {
-      const datei =
-        getBesteBildDatei(
-          entry.dateien,
-        );
+    if (hatText(datei?.pfad)) {
+      pfade.add(datei.pfad);
+    }
+  });
 
+  getAudioVarianten(tier).forEach((entry) => {
+    const datei = getBesteAudioDatei(entry.dateien);
 
-      if (
-        hatText(
-          datei?.pfad,
-        )
-      ) {
-        pfade.add(
-          datei.pfad,
-        );
+    if (hatText(datei?.pfad)) {
+      pfade.add(datei.pfad);
+    }
+
+    entry.metadaten.forEach((meta) => {
+      if (hatText(meta?.pfad)) {
+        pfade.add(meta.pfad);
       }
-    },
-  );
+    });
+  });
 
+  getVideoVarianten(tier).forEach((entry) => {
+    const datei = getBesteVideoDatei(entry.dateien);
 
-  getAudioVarianten(
-    tier,
-  ).forEach(
-    (entry) => {
-      const datei =
-        getBesteAudioDatei(
-          entry.dateien,
-        );
+    if (hatText(datei?.pfad)) {
+      pfade.add(datei.pfad);
+    }
+  });
 
-
-      if (
-        hatText(
-          datei?.pfad,
-        )
-      ) {
-        pfade.add(
-          datei.pfad,
-        );
-      }
-
-
-      entry.metadaten.forEach(
-        (meta) => {
-          if (
-            hatText(
-              meta?.pfad,
-            )
-          ) {
-            pfade.add(
-              meta.pfad,
-            );
-          }
-        },
-      );
-    },
-  );
-
-
-  getVideoVarianten(
-    tier,
-  ).forEach(
-    (entry) => {
-      const datei =
-        getBesteVideoDatei(
-          entry.dateien,
-        );
-
-
-      if (
-        hatText(
-          datei?.pfad,
-        )
-      ) {
-        pfade.add(
-          datei.pfad,
-        );
-      }
-    },
-  );
-
-
-  return [
-    ...pfade,
-  ];
+  return [...pfade];
 }
 
-
-function istDateiVerfuegbar(
-  pfad,
-) {
-  if (
-    !hatText(
-      pfad,
-    )
-  ) {
+function istDateiVerfuegbar(pfad) {
+  if (!hatText(pfad)) {
     return false;
   }
 
-
-  if (
-    !DATEI_STATUS.has(
-      pfad,
-    )
-  ) {
+  if (!DATEI_STATUS.has(pfad)) {
     return true;
   }
 
-
-  return (
-    DATEI_STATUS.get(
-      pfad,
-    ) ===
-    true
-  );
+  return DATEI_STATUS.get(pfad) === true;
 }
 
-
-async function existiertLokaleDatei(
-  pfad,
-) {
+async function existiertLokaleDatei(pfad) {
   try {
-    const url =
-      new URL(
-        String(
-          pfad,
-        ).replace(
-          /^\/+/,
-          "",
-        ),
-        document.baseURI,
-      );
+    const url = new URL(String(pfad).replace(/^\/+/, ""), document.baseURI);
 
+    const response = await fetch(url, {
+      method: "HEAD",
 
-    const response =
-      await fetch(
-        url,
-        {
-          method:
-            "HEAD",
+      cache: "no-store",
+    });
 
-          cache:
-            "no-store",
-        },
-      );
-
-
-    if (
-      response.ok
-    ) {
+    if (response.ok) {
       return true;
     }
 
+    if (response.status === 405 || response.status === 501) {
+      const fallback = await fetch(url, {
+        method: "GET",
 
-    if (
-      response.status ===
-        405 ||
-      response.status ===
-        501
-    ) {
-      const fallback =
-        await fetch(
-          url,
-          {
-            method:
-              "GET",
+        headers: {
+          Range: "bytes=0-0",
+        },
 
-            headers: {
-              Range:
-                "bytes=0-0",
-            },
+        cache: "no-store",
+      });
 
-            cache:
-              "no-store",
-          },
-        );
-
-
-      return (
-        fallback.ok ||
-        fallback.status ===
-          206
-      );
+      return fallback.ok || fallback.status === 206;
     }
 
-
     return false;
-  }
-
-  catch {
+  } catch {
     return false;
   }
 }
-
 
 /* ======================================== */
 /* ALLGEMEINE HELFER                        */
 /* ======================================== */
 
-function hatText(
-  wert,
-) {
-  return (
-    typeof wert ===
-      "string" &&
-    wert.trim().length >
-      0
-  );
+function pruefeNutzungsHaeufigkeit(wert) {
+  const fehler = [];
+
+  if (!hatText(wert)) {
+    fehler.push("nutzung.haeufigkeit fehlt.");
+
+    return fehler;
+  }
+
+  /*
+      Festes Format:
+
+      Menge: ...
+      |
+      Häufigkeit: ...
+      |
+      Zeitraum: ...
+
+      Beispiel:
+
+      Menge: 2-4 l/Fütterung |
+      Häufigkeit: 8-12x/Tag |
+      Zeitraum: bis etwa 6 Monate
+  */
+
+  const teile = wert
+    .split("|")
+    .map((teil) => teil.trim())
+    .filter(Boolean);
+
+  if (teile.length !== 3) {
+    fehler.push(
+      "nutzung.haeufigkeit muss aus genau 3 Teilen bestehen: Menge | Häufigkeit | Zeitraum.",
+    );
+
+    return fehler;
+  }
+
+  const [menge, haeufigkeit, zeitraum] = teile;
+
+  if (!menge.startsWith("Menge:") || !hatText(menge.slice("Menge:".length))) {
+    fehler.push("Der erste Teil muss „Menge: ...“ enthalten.");
+  }
+
+  if (
+    !haeufigkeit.startsWith("Häufigkeit:") ||
+    !hatText(haeufigkeit.slice("Häufigkeit:".length))
+  ) {
+    fehler.push("Der zweite Teil muss „Häufigkeit: ...“ enthalten.");
+  }
+
+  if (
+    !zeitraum.startsWith("Zeitraum:") ||
+    !hatText(zeitraum.slice("Zeitraum:".length))
+  ) {
+    fehler.push("Der dritte Teil muss „Zeitraum: ...“ enthalten.");
+  }
+
+  return fehler;
 }
 
+function hatText(wert) {
+  return typeof wert === "string" && wert.trim().length > 0;
+}
 
-function hatInhalt(
-  wert,
-) {
-  if (
-    wert ===
-      null ||
-    wert ===
-      undefined
-  ) {
+function hatInhalt(wert) {
+  if (wert === null || wert === undefined) {
     return false;
   }
 
-
-  if (
-    typeof wert ===
-      "string"
-  ) {
-    return (
-      wert.trim().length >
-      0
-    );
+  if (typeof wert === "string") {
+    return wert.trim().length > 0;
   }
 
-
-  if (
-    typeof wert ===
-      "number"
-  ) {
-    return Number.isFinite(
-      wert,
-    );
+  if (typeof wert === "number") {
+    return Number.isFinite(wert);
   }
 
-
-  if (
-    typeof wert ===
-      "boolean"
-  ) {
+  if (typeof wert === "boolean") {
     return true;
   }
 
-
-  if (
-    Array.isArray(
-      wert,
-    )
-  ) {
-    return wert.some(
-      (eintrag) =>
-        hatInhalt(
-          eintrag,
-        ),
-    );
+  if (Array.isArray(wert)) {
+    return wert.some((eintrag) => hatInhalt(eintrag));
   }
 
-
-  if (
-    typeof wert ===
-      "object"
-  ) {
-    return Object.values(
-      wert,
-    ).some(
-      (eintrag) =>
-        hatInhalt(
-          eintrag,
-        ),
-    );
+  if (typeof wert === "object") {
+    return Object.values(wert).some((eintrag) => hatInhalt(eintrag));
   }
-
 
   return false;
 }
 
-
-function hatArrayInhalt(
-  wert,
-) {
-  return (
-    Array.isArray(
-      wert,
-    ) &&
-    wert.some(
-      (eintrag) =>
-        hatInhalt(
-          eintrag,
-        ),
-    )
-  );
+function hatArrayInhalt(wert) {
+  return Array.isArray(wert) && wert.some((eintrag) => hatInhalt(eintrag));
 }
 
-
-function istObjekt(
-  wert,
-) {
-  return (
-    wert !==
-      null &&
-    typeof wert ===
-      "object" &&
-    !Array.isArray(
-      wert,
-    )
-  );
+function istObjekt(wert) {
+  return wert !== null && typeof wert === "object" && !Array.isArray(wert);
 }
 
-
-function hatZahl(
-  wert,
-) {
-  return (
-    typeof wert ===
-      "number" &&
-    Number.isFinite(
-      wert,
-    )
-  );
+function hatZahl(wert) {
+  return typeof wert === "number" && Number.isFinite(wert);
 }
 
-
-function pruefePflichtText(
-  fehlt,
-  wert,
-  meldung,
-) {
-  if (
-    !hatText(
-      wert,
-    )
-  ) {
-    fehlt.push(
-      meldung,
-    );
+function pruefePflichtText(fehlt, wert, meldung) {
+  if (!hatText(wert)) {
+    fehlt.push(meldung);
   }
 }
 
-
-function pruefeOptionalenText(
-  fehlt,
-  objekt,
-  key,
-  meldung,
-) {
+function pruefeOptionalenText(fehlt, objekt, key, meldung) {
   if (
-    Object.prototype.hasOwnProperty.call(
-      objekt ??
-        {},
-      key,
-    ) &&
-    !hatText(
-      objekt?.[
-        key
-      ],
-    )
+    Object.prototype.hasOwnProperty.call(objekt ?? {}, key) &&
+    !hatText(objekt?.[key])
   ) {
-    fehlt.push(
-      meldung,
-    );
+    fehlt.push(meldung);
   }
 }
 
-
-function pruefeOptionalenLokalisiertenText(
-  fehlt,
-  objekt,
-  key,
-  meldung,
-) {
+function pruefeOptionalenLokalisiertenText(fehlt, objekt, key, meldung) {
   if (
-    Object.prototype.hasOwnProperty.call(
-      objekt ??
-        {},
-      key,
-    ) &&
-    !hatLokalisierterText(
-      objekt?.[
-        key
-      ],
-    )
+    Object.prototype.hasOwnProperty.call(objekt ?? {}, key) &&
+    !hatLokalisierterText(objekt?.[key])
   ) {
-    fehlt.push(
-      meldung,
-    );
+    fehlt.push(meldung);
   }
 }
-
 
 /* ======================================== */
 /* NAHRUNGSBEZIEHUNG PRÜFEN                 */
 /* ======================================== */
 
-function pruefeNahrungsBeziehung(
-  wert,
-) {
-  const fehlt =
-    [];
+function pruefeNahrungsBeziehung(wert) {
+  const fehlt = [];
 
-
-  if (
-    !istObjekt(
-      wert,
-    )
-  ) {
-    return [
-      "Eintrag ist kein Objekt.",
-    ];
+  if (!istObjekt(wert)) {
+    return ["Eintrag ist kein Objekt."];
   }
-
 
   /* ==================================== */
   /* PFLICHTFELDER                        */
   /* ==================================== */
 
-  pruefePflichtText(
-    fehlt,
-    wert?.wert,
-    "Wert fehlt.",
-  );
+  pruefePflichtText(fehlt, wert?.wert, "Wert fehlt.");
 
+  pruefePflichtText(fehlt, wert?.typ, "Typ fehlt.");
 
-  pruefePflichtText(
-    fehlt,
-    wert?.typ,
-    "Typ fehlt.",
-  );
-
-
-  if (
-    hatText(
-      wert?.typ,
-    ) &&
-    !NAHRUNGSNETZ_TYPEN.includes(
-      wert.typ,
-    )
-  ) {
+  if (hatText(wert?.typ) && !NAHRUNGSNETZ_TYPEN.includes(wert.typ)) {
     fehlt.push(
       `Unbekannter Typ „${wert.typ}“. Erlaubt: ${NAHRUNGSNETZ_TYPEN.join(", ")}.`,
     );
   }
 
-
-  pruefePflichtText(
-    fehlt,
-    wert?.quelle,
-    "Quelle fehlt.",
-  );
-
+  pruefePflichtText(fehlt, wert?.quelle, "Quelle fehlt.");
 
   /* ==================================== */
   /* BEDINGUNG                            */
   /* ==================================== */
 
-  if (
-    !istObjekt(
-      wert?.bedingung,
-    )
-  ) {
-    fehlt.push(
-      "Bedingung fehlt oder ist kein Objekt.",
-    );
-  }
-
-  else {
-    if (
-      !Array.isArray(
-        wert.bedingung.selbst,
-      )
-    ) {
-      fehlt.push(
-        "bedingung.selbst muss ein Array sein.",
-      );
+  if (!istObjekt(wert?.bedingung)) {
+    fehlt.push("Bedingung fehlt oder ist kein Objekt.");
+  } else {
+    if (!Array.isArray(wert.bedingung.selbst)) {
+      fehlt.push("bedingung.selbst muss ein Array sein.");
+    } else if (wert.bedingung.selbst.some((eintrag) => !hatText(eintrag))) {
+      fehlt.push("bedingung.selbst enthält einen leeren oder ungültigen Wert.");
     }
 
-    else if (
-      wert.bedingung.selbst.some(
-        (eintrag) =>
-          !hatText(
-            eintrag,
-          ),
-      )
-    ) {
-      fehlt.push(
-        "bedingung.selbst enthält einen leeren oder ungültigen Wert.",
-      );
-    }
-
-
-    if (
-      !Array.isArray(
-        wert.bedingung.ziel,
-      )
-    ) {
-      fehlt.push(
-        "bedingung.ziel muss ein Array sein.",
-      );
-    }
-
-    else if (
-      wert.bedingung.ziel.some(
-        (eintrag) =>
-          !hatText(
-            eintrag,
-          ),
-      )
-    ) {
-      fehlt.push(
-        "bedingung.ziel enthält einen leeren oder ungültigen Wert.",
-      );
+    if (!Array.isArray(wert.bedingung.ziel)) {
+      fehlt.push("bedingung.ziel muss ein Array sein.");
+    } else if (wert.bedingung.ziel.some((eintrag) => !hatText(eintrag))) {
+      fehlt.push("bedingung.ziel enthält einen leeren oder ungültigen Wert.");
     }
   }
-
 
   /* ==================================== */
   /* ALLGEMEINER HINWEIS                  */
@@ -706,40 +351,21 @@ function pruefeNahrungsBeziehung(
     "Hinweis ist angelegt, aber leer.",
   );
 
-
   /* ==================================== */
   /* NUTZUNG                              */
   /* ==================================== */
 
-  if (
-    wert?.typ ===
-      "nutzung"
-  ) {
-    if (
-      !istObjekt(
-        wert?.nutzung,
-      )
-    ) {
-      fehlt.push(
-        "Bei typ „nutzung“ fehlt das Objekt nutzung.",
-      );
-    }
-
-    else {
+  if (wert?.typ === "nutzung") {
+    if (!istObjekt(wert?.nutzung)) {
+      fehlt.push("Bei typ „nutzung“ fehlt das Objekt nutzung.");
+    } else {
       pruefePflichtText(
         fehlt,
         wert.nutzung.art,
         "Bei typ „nutzung“ fehlt nutzung.art.",
       );
 
-
-      pruefeOptionalenText(
-        fehlt,
-        wert.nutzung,
-        "haeufigkeit",
-        "nutzung.haeufigkeit ist angelegt, aber leer.",
-      );
-
+      fehlt.push(...pruefeNutzungsHaeufigkeit(wert.nutzung.haeufigkeit));
 
       pruefeOptionalenLokalisiertenText(
         fehlt,
@@ -748,49 +374,26 @@ function pruefeNahrungsBeziehung(
         "nutzung.hinweis ist angelegt, aber leer.",
       );
     }
-  }
-
-  else if (
-    Object.prototype.hasOwnProperty.call(
-      wert,
-      "nutzung",
-    ) &&
-    !istObjekt(
-      wert.nutzung,
-    )
+  } else if (
+    Object.prototype.hasOwnProperty.call(wert, "nutzung") &&
+    !istObjekt(wert.nutzung)
   ) {
-    fehlt.push(
-      "nutzung ist angelegt, aber kein Objekt.",
-    );
+    fehlt.push("nutzung ist angelegt, aber kein Objekt.");
   }
-
 
   /* ==================================== */
   /* AAS                                  */
   /* ==================================== */
 
-  if (
-    wert?.typ ===
-      "aas"
-  ) {
-    if (
-      !istObjekt(
-        wert?.aas,
-      )
-    ) {
-      fehlt.push(
-        "Bei typ „aas“ fehlt das Objekt aas.",
-      );
-    }
-
-    else {
-      pruefeOptionalenText(
+  if (wert?.typ === "aas") {
+    if (!istObjekt(wert?.aas)) {
+      fehlt.push("Bei typ „aas“ fehlt das Objekt aas.");
+    } else {
+      pruefePflichtText(
         fehlt,
-        wert.aas,
-        "zustand",
-        "aas.zustand ist angelegt, aber leer.",
+        wert.aas.zustand,
+        "Bei typ „aas“ fehlt aas.zustand.",
       );
-
 
       pruefeOptionalenLokalisiertenText(
         fehlt,
@@ -799,62 +402,28 @@ function pruefeNahrungsBeziehung(
         "aas.hinweis ist angelegt, aber leer.",
       );
     }
-  }
-
-  else if (
-    Object.prototype.hasOwnProperty.call(
-      wert,
-      "aas",
-    ) &&
-    !istObjekt(
-      wert.aas,
-    )
+  } else if (
+    Object.prototype.hasOwnProperty.call(wert, "aas") &&
+    !istObjekt(wert.aas)
   ) {
-    fehlt.push(
-      "aas ist angelegt, aber kein Objekt.",
-    );
+    fehlt.push("aas ist angelegt, aber kein Objekt.");
   }
-
 
   /* ==================================== */
   /* GIFTIG                               */
   /* ==================================== */
 
-  if (
-    wert?.typ ===
-      "giftig"
-  ) {
-    if (
-      !istObjekt(
-        wert?.gift,
-      )
-    ) {
-      fehlt.push(
-        "Bei typ „giftig“ fehlt das Objekt gift.",
-      );
-    }
-
-    else {
-      if (
-        wert.gift.relevant !==
-          true
-      ) {
-        fehlt.push(
-          "Bei typ „giftig“ muss gift.relevant true sein.",
-        );
+  if (wert?.typ === "giftig") {
+    if (!istObjekt(wert?.gift)) {
+      fehlt.push("Bei typ „giftig“ fehlt das Objekt gift.");
+    } else {
+      if (wert.gift.relevant !== true) {
+        fehlt.push("Bei typ „giftig“ muss gift.relevant true sein.");
       }
 
-
       if (
-        !Array.isArray(
-          wert.gift.giftweg,
-        ) ||
-        !wert.gift.giftweg.some(
-          (eintrag) =>
-            hatText(
-              eintrag,
-            ),
-        )
+        !Array.isArray(wert.gift.giftweg) ||
+        !wert.gift.giftweg.some((eintrag) => hatText(eintrag))
       ) {
         fehlt.push(
           "Bei typ „giftig“ muss mindestens ein gift.giftweg eingetragen sein.",
@@ -863,61 +432,23 @@ function pruefeNahrungsBeziehung(
     }
   }
 
-
   /* ==================================== */
   /* GIFT-ZUSATZDATEN                     */
   /* ==================================== */
 
-  if (
-    Object.prototype.hasOwnProperty.call(
-      wert,
-      "gift",
-    )
-  ) {
-    if (
-      !istObjekt(
-        wert.gift,
-      )
-    ) {
-      fehlt.push(
-        "gift ist angelegt, aber kein Objekt.",
-      );
-    }
-
-    else {
-      if (
-        typeof wert.gift.relevant !==
-          "boolean"
-      ) {
-        fehlt.push(
-          "gift.relevant muss true oder false sein.",
-        );
+  if (Object.prototype.hasOwnProperty.call(wert, "gift")) {
+    if (!istObjekt(wert.gift)) {
+      fehlt.push("gift ist angelegt, aber kein Objekt.");
+    } else {
+      if (typeof wert.gift.relevant !== "boolean") {
+        fehlt.push("gift.relevant muss true oder false sein.");
       }
 
-
-      if (
-        !Array.isArray(
-          wert.gift.giftweg,
-        )
-      ) {
-        fehlt.push(
-          "gift.giftweg muss ein Array sein.",
-        );
+      if (!Array.isArray(wert.gift.giftweg)) {
+        fehlt.push("gift.giftweg muss ein Array sein.");
+      } else if (wert.gift.giftweg.some((eintrag) => !hatText(eintrag))) {
+        fehlt.push("gift.giftweg enthält einen leeren oder ungültigen Wert.");
       }
-
-      else if (
-        wert.gift.giftweg.some(
-          (eintrag) =>
-            !hatText(
-              eintrag,
-            ),
-        )
-      ) {
-        fehlt.push(
-          "gift.giftweg enthält einen leeren oder ungültigen Wert.",
-        );
-      }
-
 
       pruefeOptionalenText(
         fehlt,
@@ -926,31 +457,16 @@ function pruefeNahrungsBeziehung(
         "gift.toleranz ist angelegt, aber leer.",
       );
 
-
-      if (
-        Object.prototype.hasOwnProperty.call(
-          wert.gift,
-          "umgang",
-        )
-      ) {
-        if (
-          !istObjekt(
-            wert.gift.umgang,
-          )
-        ) {
-          fehlt.push(
-            "gift.umgang ist angelegt, aber kein Objekt.",
-          );
-        }
-
-        else {
+      if (Object.prototype.hasOwnProperty.call(wert.gift, "umgang")) {
+        if (!istObjekt(wert.gift.umgang)) {
+          fehlt.push("gift.umgang ist angelegt, aber kein Objekt.");
+        } else {
           pruefeOptionalenText(
             fehlt,
             wert.gift.umgang,
             "aktion",
             "gift.umgang.aktion ist angelegt, aber leer.",
           );
-
 
           pruefeOptionalenText(
             fehlt,
@@ -961,22 +477,13 @@ function pruefeNahrungsBeziehung(
         }
       }
 
-
       if (
-        Object.prototype.hasOwnProperty.call(
-          wert.gift,
-          "nachUmgangNutzbar",
-        ) &&
-        wert.gift.nachUmgangNutzbar !==
-          null &&
-        typeof wert.gift.nachUmgangNutzbar !==
-          "boolean"
+        Object.prototype.hasOwnProperty.call(wert.gift, "nachUmgangNutzbar") &&
+        wert.gift.nachUmgangNutzbar !== null &&
+        typeof wert.gift.nachUmgangNutzbar !== "boolean"
       ) {
-        fehlt.push(
-          "gift.nachUmgangNutzbar muss true, false oder null sein.",
-        );
+        fehlt.push("gift.nachUmgangNutzbar muss true, false oder null sein.");
       }
-
 
       pruefeOptionalenLokalisiertenText(
         fehlt,
@@ -987,92 +494,52 @@ function pruefeNahrungsBeziehung(
     }
   }
 
-
   return fehlt;
 }
-
 
 /* ======================================== */
 /* CHECK-OBJEKT                             */
 /* ======================================== */
 
-function item(
-  label,
-  pfad,
-  ok,
-  fehlt = [],
-) {
+function item(label, pfad, ok, fehlt = []) {
   return {
     label,
 
     pfad,
 
-    ok:
-      Boolean(
-        ok,
-      ),
+    ok: Boolean(ok),
 
-    fehlt:
-      fehlt.filter(
-        Boolean,
-      ),
+    fehlt: fehlt.filter(Boolean),
   };
 }
-
 
 /* ======================================== */
 /* BASIS                                    */
 /* ======================================== */
 
-function basisChecks(
-  tier,
-) {
-  const namen =
-    tier?.originalDaten
-      ?.identitaet
-      ?.namen ??
-    tier?.namen;
-
+function basisChecks(tier) {
+  const namen = tier?.originalDaten?.identitaet?.namen ?? tier?.namen;
 
   return [
     item(
       "Name",
       "identitaet.namen",
 
-      hatLokalisierterText(
-        namen,
-      ),
+      hatLokalisierterText(namen),
 
-      [
-        !hatLokalisierterText(
-          namen,
-        )
-          ? "Mindestens ein Tiername fehlt."
-          : null,
-      ],
+      [!hatLokalisierterText(namen) ? "Mindestens ein Tiername fehlt." : null],
     ),
 
     item(
       "Wissenschaftlicher Name",
       "id",
 
-      hatText(
-        tier?.originalDaten
-          ?.id,
-      ) ||
-        hatText(
-          tier?.wissenschaftlicherName,
-        ),
+      hatText(tier?.originalDaten?.id) || hatText(tier?.wissenschaftlicherName),
 
       [
         !(
-          hatText(
-            tier?.originalDaten
-              ?.id,
-          ) ||
-          hatText(
-            tier?.wissenschaftlicherName,
-          )
+          hatText(tier?.originalDaten?.id) ||
+          hatText(tier?.wissenschaftlicherName)
         )
           ? "Wissenschaftlicher Name fehlt."
           : null,
@@ -1081,778 +548,383 @@ function basisChecks(
   ];
 }
 
-
 /* ======================================== */
 /* MAP                                      */
 /* ======================================== */
 
-function pruefeMap(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeMap(tier) {
+  const checks = basisChecks(tier);
 
+  const karte = tier?.originalDaten?.karte ?? tier?.karte ?? {};
 
-  const karte =
-    tier?.originalDaten
-      ?.karte ??
-    tier?.karte ??
-    {};
+  const dateien = Array.isArray(karte?.dateien) ? karte.dateien : [];
 
+  const png = dateien.find(
+    (datei) =>
+      String(datei?.dateityp ?? "").toLowerCase() === "png" &&
+      hatText(datei?.pfad),
+  );
 
-  const dateien =
-    Array.isArray(
-      karte?.dateien,
-    )
-      ? karte.dateien
-      : [];
+  const legacyPfad = hatText(karte?.pfad);
 
+  const kartenPfad = png?.pfad ?? (legacyPfad ? karte.pfad : null);
 
-  const png =
-    dateien.find(
-      (datei) =>
-        String(
-          datei?.dateityp ??
-            "",
-        ).toLowerCase() ===
-          "png" &&
-        hatText(
-          datei?.pfad,
-        ),
-    );
-
-
-  const legacyPfad =
-    hatText(
-      karte?.pfad,
-    );
-
-
-  const kartenPfad =
-    png?.pfad ??
-    (
-      legacyPfad
-        ? karte.pfad
-        : null
-    );
-
-
-  const kartenDateiVorhanden =
-    istDateiVerfuegbar(
-      kartenPfad,
-    );
-
+  const kartenDateiVorhanden = istDateiVerfuegbar(kartenPfad);
 
   checks.push(
     item(
       "Kartenbild",
       "karte.dateien[].pfad",
 
-      hatText(
-        kartenPfad,
-      ) &&
-        kartenDateiVorhanden,
+      hatText(kartenPfad) && kartenDateiVorhanden,
 
       [
-        !hatText(
-          kartenPfad,
-        )
-          ? "PNG-Kartenpfad fehlt."
-          : null,
+        !hatText(kartenPfad) ? "PNG-Kartenpfad fehlt." : null,
 
-        hatText(
-          kartenPfad,
-        ) &&
-        !kartenDateiVorhanden
+        hatText(kartenPfad) && !kartenDateiVorhanden
           ? `PNG-Kartendatei nicht gefunden: ${kartenPfad}`
           : null,
       ],
     ),
   );
 
-
   return checks;
 }
-
 
 /* ======================================== */
 /* INFOTAFEL                                */
 /* ======================================== */
 
-function pruefeInfotafel(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeInfotafel(tier) {
+  const checks = basisChecks(tier);
 
+  const bilder = getBildVarianten(tier);
 
-  const bilder =
-    getBildVarianten(
-      tier,
-    );
-
-
-  if (
-    !bilder.length
-  ) {
+  if (!bilder.length) {
     checks.push(
-      item(
-        "Bilder",
-        "bilder",
-        false,
-        [
-          "Keine Bildvariante vorhanden.",
-        ],
-      ),
+      item("Bilder", "bilder", false, ["Keine Bildvariante vorhanden."]),
     );
   }
 
+  bilder.forEach((entry) => {
+    const nummer = entry.variante?.variante ?? entry.variantenIndex + 1;
 
-  bilder.forEach(
-    (entry) => {
-      const nummer =
-        entry.variante
-          ?.variante ??
-        entry.variantenIndex +
-          1;
+    const gruppe = entry.gruppe?.typ || "Bild";
 
+    const fehlt = [];
 
-      const gruppe =
-        entry.gruppe?.typ ||
-        "Bild";
+    if (!hatText(entry.gruppe?.typ)) {
+      fehlt.push("Bildtyp fehlt.");
+    }
 
+    if (!hatText(entry.variante?.quelle)) {
+      fehlt.push("Quelle fehlt.");
+    }
 
-      const fehlt =
-        [];
+    if (!hatLokalisierterText(entry.variante?.alt)) {
+      fehlt.push("Alt-Text fehlt.");
+    }
 
+    const beschreibung =
+      entry.variante?.beschreibung ?? entry.gruppe?.beschreibung;
 
-      if (
-        !hatText(
-          entry.gruppe?.typ,
-        )
-      ) {
-        fehlt.push(
-          "Bildtyp fehlt.",
-        );
-      }
+    if (!hatLokalisierterText(beschreibung)) {
+      fehlt.push("Beschreibung fehlt.");
+    }
 
+    const bildDatei = getBesteBildDatei(entry.dateien);
 
-      if (
-        !hatText(
-          entry.variante
-            ?.quelle,
-        )
-      ) {
-        fehlt.push(
-          "Quelle fehlt.",
-        );
-      }
+    if (!bildDatei) {
+      fehlt.push("Bilddatei / Dateipfad fehlt.");
+    } else if (!istDateiVerfuegbar(bildDatei.pfad)) {
+      fehlt.push(`Bilddatei nicht gefunden: ${bildDatei.pfad}`);
+    }
 
+    checks.push(
+      item(
+        `${gruppe} – Variante ${nummer}`,
 
-      if (
-        !hatLokalisierterText(
-          entry.variante
-            ?.alt,
-        )
-      ) {
-        fehlt.push(
-          "Alt-Text fehlt.",
-        );
-      }
+        `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
 
+        fehlt.length === 0,
 
-      const beschreibung =
-        entry.variante
-          ?.beschreibung ??
-        entry.gruppe
-          ?.beschreibung;
+        fehlt,
+      ),
+    );
+  });
 
-
-      if (
-        !hatLokalisierterText(
-          beschreibung,
-        )
-      ) {
-        fehlt.push(
-          "Beschreibung fehlt.",
-        );
-      }
-
-
-      const bildDatei =
-        getBesteBildDatei(
-          entry.dateien,
-        );
-
-
-      if (
-        !bildDatei
-      ) {
-        fehlt.push(
-          "Bilddatei / Dateipfad fehlt.",
-        );
-      }
-
-      else if (
-        !istDateiVerfuegbar(
-          bildDatei.pfad,
-        )
-      ) {
-        fehlt.push(
-          `Bilddatei nicht gefunden: ${bildDatei.pfad}`,
-        );
-      }
-
-
-      checks.push(
-        item(
-          `${gruppe} – Variante ${nummer}`,
-
-          `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
-
-  const texte =
-    tier?.originalDaten
-      ?.texte ??
-    {};
-
+  const texte = tier?.originalDaten?.texte ?? {};
 
   const textBereiche = [
-    [
-      "uebersicht",
-      "Übersicht",
-    ],
+    ["uebersicht", "Übersicht"],
 
-    [
-      "vorkommen",
-      "Vorkommen",
-    ],
+    ["vorkommen", "Vorkommen"],
 
-    [
-      "arterhaltung",
-      "Arterhaltung",
-    ],
+    ["arterhaltung", "Arterhaltung"],
 
-    [
-      "sozialverhaltenUndFortpflanzung",
-      "Sozialverhalten & Fortpflanzung",
-    ],
+    ["sozialverhaltenUndFortpflanzung", "Sozialverhalten & Fortpflanzung"],
 
-    [
-      "tierfakten",
-      "Tierfakten",
-    ],
+    ["tierfakten", "Tierfakten"],
   ];
 
+  textBereiche.forEach(([key, label]) => {
+    const sprachObjekt = texte?.[key];
 
-  textBereiche.forEach(
-    (
-      [
-        key,
-        label,
-      ],
-    ) => {
-      const sprachObjekt =
-        texte?.[
-          key
-        ];
-
-
-      const vorhanden =
-        sprachObjekt &&
-        typeof sprachObjekt ===
-          "object" &&
-        Object.values(
-          sprachObjekt,
-        ).some(
-          (eintraege) =>
-            Array.isArray(
-              eintraege,
-            ) &&
-            eintraege.some(
-              (eintrag) =>
-                hatText(
-                  eintrag?.inhalt,
-                ),
-            ),
-        );
-
-
-      checks.push(
-        item(
-          label,
-
-          `texte.${key}`,
-
-          vorhanden,
-
-          [
-            !vorhanden
-              ? `${label}-Text fehlt.`
-              : null,
-          ],
-        ),
+    const vorhanden =
+      sprachObjekt &&
+      typeof sprachObjekt === "object" &&
+      Object.values(sprachObjekt).some(
+        (eintraege) =>
+          Array.isArray(eintraege) &&
+          eintraege.some((eintrag) => hatText(eintrag?.inhalt)),
       );
-    },
-  );
 
+    checks.push(
+      item(
+        label,
 
-  const daten =
-    tier?.originalDaten
-      ?.daten ??
-    {};
+        `texte.${key}`,
 
+        vorhanden,
+
+        [!vorhanden ? `${label}-Text fehlt.` : null],
+      ),
+    );
+  });
+
+  const daten = tier?.originalDaten?.daten ?? {};
 
   const steckbrief = [
-    [
-      "Biome",
-      "daten.biome.werte",
-      daten?.biome?.werte,
-    ],
+    ["Biome", "daten.biome.werte", daten?.biome?.werte],
 
-    [
-      "Schutzstatus",
-      "daten.schutzstatus.werte",
-      daten?.schutzstatus
-        ?.werte,
-    ],
+    ["Schutzstatus", "daten.schutzstatus.werte", daten?.schutzstatus?.werte],
 
     [
       "Soziale Struktur",
       "daten.sozialeStruktur.werte",
-      daten?.sozialeStruktur
-        ?.werte,
+      daten?.sozialeStruktur?.werte,
     ],
 
-    [
-      "Aktivität",
-      "daten.aktivitaet.werte",
-      daten?.aktivitaet
-        ?.werte,
-    ],
+    ["Aktivität", "daten.aktivitaet.werte", daten?.aktivitaet?.werte],
 
     [
       "Fressverhalten",
       "daten.ernaehrung.fressverhalten.werte",
-      daten?.ernaehrung
-        ?.fressverhalten
-        ?.werte,
+      daten?.ernaehrung?.fressverhalten?.werte,
     ],
   ];
 
-
-  steckbrief.forEach(
-    (
-      [
+  steckbrief.forEach(([label, pfad, wert]) => {
+    checks.push(
+      item(
         label,
+
         pfad,
-        wert,
-      ],
-    ) => {
+
+        hatArrayInhalt(wert),
+
+        [!hatArrayInhalt(wert) ? `${label} fehlt.` : null],
+      ),
+    );
+  });
+
+  /* ======================================== */
+  /* FRESSVERHALTEN – EINTRÄGE PRÜFEN         */
+  /* ======================================== */
+
+  const fressverhaltenWerte = daten?.ernaehrung?.fressverhalten?.werte;
+
+  if (Array.isArray(fressverhaltenWerte)) {
+    fressverhaltenWerte.forEach((eintrag, index) => {
+      const fehlt = [];
+
+      if (!istObjekt(eintrag)) {
+        fehlt.push("Eintrag ist kein Objekt.");
+      } else {
+        pruefePflichtText(fehlt, eintrag.wert, "Wert fehlt.");
+        pruefePflichtText(fehlt, eintrag.quelle, "Quelle fehlt.");
+      }
+
       checks.push(
         item(
-          label,
-
-          pfad,
-
-          hatArrayInhalt(
-            wert,
-          ),
-
-          [
-            !hatArrayInhalt(
-              wert,
-            )
-              ? `${label} fehlt.`
-              : null,
-          ],
+          `Fressverhalten – Eintrag ${index + 1}`,
+          `daten.ernaehrung.fressverhalten.werte[${index}]`,
+          fehlt.length === 0,
+          fehlt,
         ),
       );
-    },
+    });
+  }
+
+  /* ======================================== */
+  /* NAHRUNGSNETZ AUCH FÜR INFOTAFEL          */
+  /* ======================================== */
+
+  const nahrungsnetzChecks = pruefeNahrungsnetz(tier).filter(
+    (check) => check.pfad !== "identitaet.namen" && check.pfad !== "id",
   );
 
+  checks.push(...nahrungsnetzChecks);
 
   return checks;
 }
-
 
 /* ======================================== */
 /* AUDIO                                    */
 /* ======================================== */
 
-function pruefeAudio(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeAudio(tier) {
+  const checks = basisChecks(tier);
 
+  const audio = getAudioVarianten(tier);
 
-  const audio =
-    getAudioVarianten(
-      tier,
-    );
-
-
-  if (
-    !audio.length
-  ) {
+  if (!audio.length) {
     checks.push(
-      item(
-        "Audio",
-        "audio",
-        false,
-        [
-          "Keine Audio-Variante vorhanden.",
-        ],
-      ),
+      item("Audio", "audio", false, ["Keine Audio-Variante vorhanden."]),
     );
-
 
     return checks;
   }
 
+  audio.forEach((entry) => {
+    const nummer = entry.variante?.variante ?? entry.variantenIndex + 1;
 
-  audio.forEach(
-    (entry) => {
-      const nummer =
-        entry.variante
-          ?.variante ??
-        entry.variantenIndex +
-          1;
+    const typ = entry.gruppe?.typ || "Audio";
 
+    const fehlt = [];
 
-      const typ =
-        entry.gruppe?.typ ||
-        "Audio";
+    if (!hatText(entry.gruppe?.typ)) {
+      fehlt.push("Audio-Typ fehlt.");
+    }
 
+    if (!hatText(entry.variante?.quelle)) {
+      fehlt.push("Quelle fehlt.");
+    }
 
-      const fehlt =
-        [];
+    const audioDatei = getBesteAudioDatei(entry.dateien);
 
+    if (!audioDatei) {
+      fehlt.push("Abspielbare Audiodatei / Dateipfad fehlt.");
+    } else if (!istDateiVerfuegbar(audioDatei.pfad)) {
+      fehlt.push(`Audiodatei nicht gefunden: ${audioDatei.pfad}`);
+    }
 
-      if (
-        !hatText(
-          entry.gruppe?.typ,
-        )
-      ) {
-        fehlt.push(
-          "Audio-Typ fehlt.",
-        );
-      }
+    const metadata = entry.metadaten.find((meta) => hatText(meta?.pfad));
 
+    if (!metadata) {
+      fehlt.push("Metadaten-Pfad / Beschreibung fehlt.");
+    } else if (!istDateiVerfuegbar(metadata.pfad)) {
+      fehlt.push(`Audio-Metadatendatei nicht gefunden: ${metadata.pfad}`);
+    }
 
-      if (
-        !hatText(
-          entry.variante
-            ?.quelle,
-        )
-      ) {
-        fehlt.push(
-          "Quelle fehlt.",
-        );
-      }
+    checks.push(
+      item(
+        `${typ} – Variante ${nummer}`,
 
+        `audio[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
 
-      const audioDatei =
-        getBesteAudioDatei(
-          entry.dateien,
-        );
+        fehlt.length === 0,
 
-
-      if (
-        !audioDatei
-      ) {
-        fehlt.push(
-          "Abspielbare Audiodatei / Dateipfad fehlt.",
-        );
-      }
-
-      else if (
-        !istDateiVerfuegbar(
-          audioDatei.pfad,
-        )
-      ) {
-        fehlt.push(
-          `Audiodatei nicht gefunden: ${audioDatei.pfad}`,
-        );
-      }
-
-
-      const metadata =
-        entry.metadaten.find(
-          (meta) =>
-            hatText(
-              meta?.pfad,
-            ),
-        );
-
-
-      if (
-        !metadata
-      ) {
-        fehlt.push(
-          "Metadaten-Pfad / Beschreibung fehlt.",
-        );
-      }
-
-      else if (
-        !istDateiVerfuegbar(
-          metadata.pfad,
-        )
-      ) {
-        fehlt.push(
-          `Audio-Metadatendatei nicht gefunden: ${metadata.pfad}`,
-        );
-      }
-
-
-      checks.push(
-        item(
-          `${typ} – Variante ${nummer}`,
-
-          `audio[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
+        fehlt,
+      ),
+    );
+  });
 
   return checks;
 }
-
 
 /* ======================================== */
 /* VIDEO / KINO                             */
 /* ======================================== */
 
-function pruefeVideo(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeVideo(tier) {
+  const checks = basisChecks(tier);
 
+  const videos = getVideoVarianten(tier);
 
-  const videos =
-    getVideoVarianten(
-      tier,
-    );
-
-
-  if (
-    !videos.length
-  ) {
+  if (!videos.length) {
     checks.push(
-      item(
-        "Video",
-        "video",
-        false,
-        [
-          "Keine Video-Variante vorhanden.",
-        ],
-      ),
+      item("Video", "video", false, ["Keine Video-Variante vorhanden."]),
     );
-
 
     return checks;
   }
 
+  videos.forEach((entry) => {
+    const nummer = entry.variante?.variante ?? entry.variantenIndex + 1;
 
-  videos.forEach(
-    (entry) => {
-      const nummer =
-        entry.variante
-          ?.variante ??
-        entry.variantenIndex +
-          1;
+    const typ = entry.gruppe?.typ || "Video";
 
+    const fehlt = [];
 
-      const typ =
-        entry.gruppe?.typ ||
-        "Video";
+    if (!hatText(entry.gruppe?.typ)) {
+      fehlt.push("Video-Typ fehlt.");
+    }
 
+    if (!hatLokalisierterText(entry.variante?.titel)) {
+      fehlt.push("Titel fehlt.");
+    }
 
-      const fehlt =
-        [];
+    if (!hatText(entry.variante?.quelle)) {
+      fehlt.push("Quelle fehlt.");
+    }
 
+    if (!hatLokalisierterText(entry.variante?.beschreibung)) {
+      fehlt.push("Beschreibung fehlt.");
+    }
 
-      if (
-        !hatText(
-          entry.gruppe?.typ,
-        )
-      ) {
-        fehlt.push(
-          "Video-Typ fehlt.",
-        );
-      }
+    const videoDatei = getBesteVideoDatei(entry.dateien);
 
+    if (!videoDatei) {
+      fehlt.push("Videodatei / Dateipfad fehlt.");
+    } else if (!istDateiVerfuegbar(videoDatei.pfad)) {
+      fehlt.push(`Videodatei nicht gefunden: ${videoDatei.pfad}`);
+    }
 
-      if (
-        !hatLokalisierterText(
-          entry.variante
-            ?.titel,
-        )
-      ) {
-        fehlt.push(
-          "Titel fehlt.",
-        );
-      }
+    checks.push(
+      item(
+        `${typ} – Variante ${nummer}`,
 
+        `video[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
 
-      if (
-        !hatText(
-          entry.variante
-            ?.quelle,
-        )
-      ) {
-        fehlt.push(
-          "Quelle fehlt.",
-        );
-      }
+        fehlt.length === 0,
 
-
-      if (
-        !hatLokalisierterText(
-          entry.variante
-            ?.beschreibung,
-        )
-      ) {
-        fehlt.push(
-          "Beschreibung fehlt.",
-        );
-      }
-
-
-      const videoDatei =
-        getBesteVideoDatei(
-          entry.dateien,
-        );
-
-
-      if (
-        !videoDatei
-      ) {
-        fehlt.push(
-          "Videodatei / Dateipfad fehlt.",
-        );
-      }
-
-      else if (
-        !istDateiVerfuegbar(
-          videoDatei.pfad,
-        )
-      ) {
-        fehlt.push(
-          `Videodatei nicht gefunden: ${videoDatei.pfad}`,
-        );
-      }
-
-
-      checks.push(
-        item(
-          `${typ} – Variante ${nummer}`,
-
-          `video[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
+        fehlt,
+      ),
+    );
+  });
 
   return checks;
 }
-
 
 /* ======================================== */
 /* SYSTEMATIK                               */
 /* ======================================== */
 
-function pruefeSystematik(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeSystematik(tier) {
+  const checks = basisChecks(tier);
 
+  const systematik = tier?.originalDaten?.systematik ?? tier?.systematik;
 
-  const systematik =
-    tier?.originalDaten
-      ?.systematik ??
-    tier?.systematik;
-
-
-  if (
-    !istObjekt(
-      systematik,
-    )
-  ) {
+  if (!istObjekt(systematik)) {
     checks.push(
-      item(
-        "Systematik",
-        "systematik",
-        false,
-        [
-          "Systematik-Struktur fehlt.",
-        ],
-      ),
+      item("Systematik", "systematik", false, ["Systematik-Struktur fehlt."]),
     );
-
 
     return checks;
   }
 
-
-  /* ==================================== */
-  /* OPTIONALER GESAMT-HINWEIS            */
-  /* ==================================== */
-
-  if (
-    Object.prototype.hasOwnProperty.call(
-      systematik,
-      "hinweis",
-    )
-  ) {
+  if (Object.prototype.hasOwnProperty.call(systematik, "hinweis")) {
     checks.push(
       item(
         "Systematik – Hinweis",
 
         "systematik.hinweis",
 
-        hatLokalisierterText(
-          systematik.hinweis,
-        ),
+        hatLokalisierterText(systematik.hinweis),
 
         [
-          !hatLokalisierterText(
-            systematik.hinweis,
-          )
+          !hatLokalisierterText(systematik.hinweis)
             ? "Hinweis ist angelegt, aber leer."
             : null,
         ],
@@ -1860,389 +932,166 @@ function pruefeSystematik(
     );
   }
 
+  const naheVerwandte = Array.isArray(systematik.naheVerwandte)
+    ? systematik.naheVerwandte
+    : [];
 
-  /* ==================================== */
-  /* NAHE VERWANDTE                       */
-  /* ==================================== */
-
-  const naheVerwandte =
-    Array.isArray(
-      systematik.naheVerwandte,
-    )
-      ? systematik.naheVerwandte
-      : [];
-
-
-  if (
-    !naheVerwandte.length
-  ) {
+  if (!naheVerwandte.length) {
     checks.push(
-      item(
-        "Nahe Verwandte",
-
-        "systematik.naheVerwandte",
-
-        false,
-
-        [
-          "Mindestens ein Eintrag für nahe Verwandte fehlt.",
-        ],
-      ),
+      item("Nahe Verwandte", "systematik.naheVerwandte", false, [
+        "Mindestens ein Eintrag für nahe Verwandte fehlt.",
+      ]),
     );
   }
 
+  naheVerwandte.forEach((verwandter, index) => {
+    const fehlt = [];
 
-  naheVerwandte.forEach(
-    (
-      verwandter,
-      index,
-    ) => {
-      const fehlt =
-        [];
-
-
-      pruefePflichtText(
-        fehlt,
-        verwandter?.id,
-        "Wissenschaftliche ID / Art fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        verwandter?.beziehung,
-        "Beziehung fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        verwandter?.deutscherName,
-        "Deutscher Name fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        verwandter?.quelle,
-        "Quelle fehlt.",
-      );
-
-
-      checks.push(
-        item(
-          `Nahe Verwandte – Eintrag ${index + 1}`,
-
-          `systematik.naheVerwandte[${index}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
-
-  /* ==================================== */
-  /* EVOLUTION                            */
-  /* ==================================== */
-
-  const evolution =
-    systematik.evolution;
-
-
-  if (
-    !istObjekt(
-      evolution,
-    )
-  ) {
-    checks.push(
-      item(
-        "Evolution",
-
-        "systematik.evolution",
-
-        false,
-
-        [
-          "Evolution-Struktur fehlt.",
-        ],
-      ),
+    pruefePflichtText(
+      fehlt,
+      verwandter?.id,
+      "Wissenschaftliche ID / Art fehlt.",
     );
 
+    pruefePflichtText(fehlt, verwandter?.beziehung, "Beziehung fehlt.");
+
+    pruefePflichtText(
+      fehlt,
+      verwandter?.deutscherName,
+      "Deutscher Name fehlt.",
+    );
+
+    pruefePflichtText(fehlt, verwandter?.quelle, "Quelle fehlt.");
+
+    checks.push(
+      item(
+        `Nahe Verwandte – Eintrag ${index + 1}`,
+        `systematik.naheVerwandte[${index}]`,
+        fehlt.length === 0,
+        fehlt,
+      ),
+    );
+  });
+
+  const evolution = systematik.evolution;
+
+  if (!istObjekt(evolution)) {
+    checks.push(
+      item("Evolution", "systematik.evolution", false, [
+        "Evolution-Struktur fehlt.",
+      ]),
+    );
 
     return checks;
   }
 
-
   checks.push(
     item(
       "Evolution – Hinweis",
-
       "systematik.evolution.hinweis",
-
-      hatLokalisierterText(
-        evolution.hinweis,
-      ),
-
+      hatLokalisierterText(evolution.hinweis),
       [
-        !hatLokalisierterText(
-          evolution.hinweis,
-        )
+        !hatLokalisierterText(evolution.hinweis)
           ? "Evolution-Hinweis fehlt."
           : null,
       ],
     ),
   );
 
+  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [];
 
-  /* ==================================== */
-  /* EVOLUTIONS-KNOTEN                    */
-  /* ==================================== */
-
-  const knoten =
-    Array.isArray(
-      evolution.knoten,
-    )
-      ? evolution.knoten
-      : [];
-
-
-  if (
-    !knoten.length
-  ) {
+  if (!knoten.length) {
     checks.push(
-      item(
-        "Evolution – Knoten",
-
-        "systematik.evolution.knoten",
-
-        false,
-
-        [
-          "Mindestens ein Evolutions-Knoten fehlt.",
-        ],
-      ),
+      item("Evolution – Knoten", "systematik.evolution.knoten", false, [
+        "Mindestens ein Evolutions-Knoten fehlt.",
+      ]),
     );
   }
 
+  knoten.forEach((knotenEintrag, index) => {
+    const fehlt = [];
 
-  knoten.forEach(
-    (
-      knotenEintrag,
-      index,
-    ) => {
-      const fehlt =
-        [];
+    pruefePflichtText(fehlt, knotenEintrag?.id, "ID fehlt.");
+    pruefePflichtText(fehlt, knotenEintrag?.rang, "Rang fehlt.");
+    pruefePflichtText(fehlt, knotenEintrag?.name, "Name fehlt.");
+    pruefePflichtText(fehlt, knotenEintrag?.quelle, "Quelle fehlt.");
 
-
-      pruefePflichtText(
+    checks.push(
+      item(
+        `Evolution – Knoten ${index + 1}`,
+        `systematik.evolution.knoten[${index}]`,
+        fehlt.length === 0,
         fehlt,
-        knotenEintrag?.id,
-        "ID fehlt.",
-      );
+      ),
+    );
+  });
 
+  const aufspaltungen = Array.isArray(evolution.aufspaltungen)
+    ? evolution.aufspaltungen
+    : [];
 
-      pruefePflichtText(
-        fehlt,
-        knotenEintrag?.rang,
-        "Rang fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        knotenEintrag?.name,
-        "Name fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        knotenEintrag?.quelle,
-        "Quelle fehlt.",
-      );
-
-
-      checks.push(
-        item(
-          `Evolution – Knoten ${index + 1}`,
-
-          `systematik.evolution.knoten[${index}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
-
-  /* ==================================== */
-  /* AUFSPALTUNGEN                        */
-  /* ==================================== */
-
-  const aufspaltungen =
-    Array.isArray(
-      evolution.aufspaltungen,
-    )
-      ? evolution.aufspaltungen
-      : [];
-
-
-  if (
-    !aufspaltungen.length
-  ) {
+  if (!aufspaltungen.length) {
     checks.push(
       item(
         "Evolution – Aufspaltungen",
-
         "systematik.evolution.aufspaltungen",
-
         false,
-
-        [
-          "Mindestens eine Aufspaltung fehlt.",
-        ],
+        ["Mindestens eine Aufspaltung fehlt."],
       ),
     );
   }
 
+  aufspaltungen.forEach((aufspaltung, index) => {
+    const fehlt = [];
 
-  aufspaltungen.forEach(
-    (
-      aufspaltung,
-      index,
-    ) => {
-      const fehlt =
-        [];
+    pruefePflichtText(fehlt, aufspaltung?.linieA, "Linie A fehlt.");
+    pruefePflichtText(fehlt, aufspaltung?.linieB, "Linie B fehlt.");
 
+    if (!hatZahl(aufspaltung?.zeitVorHeuteMioJahre)) {
+      fehlt.push("Zeit vor heute in Mio. Jahren fehlt oder ist keine Zahl.");
+    }
 
-      pruefePflichtText(
+    pruefePflichtText(fehlt, aufspaltung?.typ, "Typ der Aufspaltung fehlt.");
+    pruefePflichtText(fehlt, aufspaltung?.quelle, "Quelle fehlt.");
+
+    checks.push(
+      item(
+        `Evolution – Aufspaltung ${index + 1}`,
+        `systematik.evolution.aufspaltungen[${index}]`,
+        fehlt.length === 0,
         fehlt,
-        aufspaltung?.linieA,
-        "Linie A fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        aufspaltung?.linieB,
-        "Linie B fehlt.",
-      );
-
-
-      if (
-        !hatZahl(
-          aufspaltung
-            ?.zeitVorHeuteMioJahre,
-        )
-      ) {
-        fehlt.push(
-          "Zeit vor heute in Mio. Jahren fehlt oder ist keine Zahl.",
-        );
-      }
-
-
-      pruefePflichtText(
-        fehlt,
-        aufspaltung?.typ,
-        "Typ der Aufspaltung fehlt.",
-      );
-
-
-      pruefePflichtText(
-        fehlt,
-        aufspaltung?.quelle,
-        "Quelle fehlt.",
-      );
-
-
-      checks.push(
-        item(
-          `Evolution – Aufspaltung ${index + 1}`,
-
-          `systematik.evolution.aufspaltungen[${index}]`,
-
-          fehlt.length ===
-            0,
-
-          fehlt,
-        ),
-      );
-    },
-  );
-
+      ),
+    );
+  });
 
   return checks;
 }
-
 
 /* ======================================== */
 /* NAHRUNGSNETZ                             */
 /* ======================================== */
 
-function pruefeNahrungsnetz(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeNahrungsnetz(tier) {
+  const checks = basisChecks(tier);
 
+  const nahrungsnetz = getNahrungsnetz(tier);
 
-  const nahrungsnetz =
-    getNahrungsnetz(
-      tier,
-    );
-
-
-  if (
-    !istObjekt(
-      nahrungsnetz,
-    )
-  ) {
+  if (!istObjekt(nahrungsnetz)) {
     checks.push(
-      item(
-        "Nahrungsnetz",
-
-        "daten.ernaehrung.nahrungsnetz",
-
-        false,
-
-        [
-          "Nahrungsnetz-Struktur fehlt.",
-        ],
-      ),
+      item("Nahrungsnetz", "daten.ernaehrung.nahrungsnetz", false, [
+        "Nahrungsnetz-Struktur fehlt.",
+      ]),
     );
-
 
     return checks;
   }
 
-
-  /* ==================================== */
-  /* ALTE STRUKTUR NICHT MEHR ERLAUBT     */
-  /* ==================================== */
-
-  if (
-    Object.prototype.hasOwnProperty.call(
-      nahrungsnetz,
-      "frisst",
-    )
-  ) {
+  if (Object.prototype.hasOwnProperty.call(nahrungsnetz, "frisst")) {
     checks.push(
       item(
         "Nahrungsnetz – alte Struktur „frisst“",
-
         "daten.ernaehrung.nahrungsnetz.frisst",
-
         false,
-
         [
           "Der Bereich „frisst“ gehört zur alten Struktur und muss entfernt werden. Jungtier und Erwachsen liegen jetzt direkt unter nahrungsnetz.",
         ],
@@ -2250,21 +1099,12 @@ function pruefeNahrungsnetz(
     );
   }
 
-
-  if (
-    Object.prototype.hasOwnProperty.call(
-      nahrungsnetz,
-      "wirdGefressenVon",
-    )
-  ) {
+  if (Object.prototype.hasOwnProperty.call(nahrungsnetz, "wirdGefressenVon")) {
     checks.push(
       item(
         "Nahrungsnetz – doppelte Pflege „wirdGefressenVon“",
-
         "daten.ernaehrung.nahrungsnetz.wirdGefressenVon",
-
         false,
-
         [
           "„wirdGefressenVon“ darf nicht mehr im Tier-JSON gepflegt werden. Fressfeinde werden aus den Nahrungsbeziehungen der anderen Tiere berechnet.",
         ],
@@ -2272,338 +1112,145 @@ function pruefeNahrungsnetz(
     );
   }
 
+  NAHRUNGSNETZ_LEBENSPHASEN.forEach((lebensphase) => {
+    const bereich = nahrungsnetz[lebensphase];
 
-  /* ==================================== */
-  /* JUNGTIER + ERWACHSEN                 */
-  /* ==================================== */
+    const label =
+      lebensphase === "jungtier"
+        ? "Nahrungsnetz – Jungtier"
+        : "Nahrungsnetz – Erwachsen";
 
-  NAHRUNGSNETZ_LEBENSPHASEN.forEach(
-    (lebensphase) => {
-      const bereich =
-        nahrungsnetz[
-          lebensphase
-        ];
+    const pfad = `daten.ernaehrung.nahrungsnetz.${lebensphase}`;
 
-
-      const label =
-        lebensphase ===
-          "jungtier"
-          ? "Nahrungsnetz – Jungtier"
-          : "Nahrungsnetz – Erwachsen";
-
-
-      const pfad =
-        `daten.ernaehrung.nahrungsnetz.${lebensphase}`;
-
-
-      if (
-        !istObjekt(
-          bereich,
-        )
-      ) {
-        checks.push(
-          item(
-            label,
-
-            pfad,
-
-            false,
-
-            [
-              "Lebensphase fehlt oder ist kein Objekt.",
-            ],
-          ),
-        );
-
-
-        return;
-      }
-
-
-      if (
-        !Array.isArray(
-          bereich.werte,
-        )
-      ) {
-        checks.push(
-          item(
-            label,
-
-            `${pfad}.werte`,
-
-            false,
-
-            [
-              "werte muss ein Array sein.",
-            ],
-          ),
-        );
-
-
-        return;
-      }
-
-
-      /*
-          Eine leere Liste ist erlaubt.
-
-          Ein Tier muss nicht zwingend
-          in jeder Lebensphase eine
-          eingetragene Nahrungsbeziehung
-          besitzen.
-      */
-
-      if (
-        bereich.werte.length ===
-          0
-      ) {
-        checks.push(
-          item(
-            label,
-
-            `${pfad}.werte`,
-
-            true,
-
-            [],
-          ),
-        );
-
-
-        return;
-      }
-
-
-      bereich.werte.forEach(
-        (
-          wert,
-          index,
-        ) => {
-          const fehlt =
-            pruefeNahrungsBeziehung(
-              wert,
-            );
-
-
-          checks.push(
-            item(
-              `${label} – Eintrag ${index + 1}`,
-
-              `${pfad}.werte[${index}]`,
-
-              fehlt.length ===
-                0,
-
-              fehlt,
-            ),
-          );
-        },
+    if (!istObjekt(bereich)) {
+      checks.push(
+        item(label, pfad, false, ["Lebensphase fehlt oder ist kein Objekt."]),
       );
-    },
-  );
 
+      return;
+    }
+
+    if (!Array.isArray(bereich.werte)) {
+      checks.push(
+        item(label, `${pfad}.werte`, false, ["werte muss ein Array sein."]),
+      );
+
+      return;
+    }
+
+    if (bereich.werte.length === 0) {
+      checks.push(item(label, `${pfad}.werte`, true, []));
+
+      return;
+    }
+
+    bereich.werte.forEach((wert, index) => {
+      const fehlt = pruefeNahrungsBeziehung(wert);
+
+      checks.push(
+        item(
+          `${label} – Eintrag ${index + 1}`,
+          `${pfad}.werte[${index}]`,
+          fehlt.length === 0,
+          fehlt,
+        ),
+      );
+    });
+  });
 
   return checks;
 }
-
 
 /* ======================================== */
 /* RECHNER                                  */
 /* ======================================== */
 
-function pruefeRechner(
-  tier,
-) {
-  const checks =
-    basisChecks(
-      tier,
-    );
+function pruefeRechner(tier) {
+  const checks = basisChecks(tier);
 
+  const rechner = tier?.originalDaten?.planetZoo2?.rechner;
 
-  const rechner =
-    tier?.originalDaten
-      ?.planetZoo2
-      ?.rechner;
-
-
-  const ok =
-    hatInhalt(
-      rechner,
-    );
-
+  const ok = hatInhalt(rechner);
 
   checks.push(
-    item(
-      "Rechnerwerte",
-
-      "planetZoo2.rechner",
-
-      ok,
-
-      [
-        !ok
-          ? "Rechnerwerte fehlen."
-          : null,
-      ],
-    ),
+    item("Rechnerwerte", "planetZoo2.rechner", ok, [
+      !ok ? "Rechnerwerte fehlen." : null,
+    ]),
   );
-
 
   return checks;
 }
-
 
 /* ======================================== */
 /* TOOL AUSWÄHLEN                           */
 /* ======================================== */
 
-function pruefeTool(
-  tier,
-  toolId,
-) {
-  switch (
-    toolId
-  ) {
+function pruefeTool(tier, toolId) {
+  switch (toolId) {
     case TOOL_IDS.MAP:
-      return pruefeMap(
-        tier,
-      );
-
+      return pruefeMap(tier);
 
     case TOOL_IDS.INFOTAFEL:
-      return pruefeInfotafel(
-        tier,
-      );
-
+      return pruefeInfotafel(tier);
 
     case TOOL_IDS.AUDIO:
-      return pruefeAudio(
-        tier,
-      );
-
+      return pruefeAudio(tier);
 
     case TOOL_IDS.KINO:
-      return pruefeVideo(
-        tier,
-      );
-
+      return pruefeVideo(tier);
 
     case TOOL_IDS.SYSTEMATIK:
-      return pruefeSystematik(
-        tier,
-      );
-
+      return pruefeSystematik(tier);
 
     case TOOL_IDS.NAHRUNGSNETZ:
-      return pruefeNahrungsnetz(
-        tier,
-      );
-
+      return pruefeNahrungsnetz(tier);
 
     case TOOL_IDS.RECHNER:
-      return pruefeRechner(
-        tier,
-      );
-
+      return pruefeRechner(tier);
 
     default:
       return [];
   }
 }
 
-
 /* ======================================== */
 /* ÖFFENTLICHE FUNKTIONEN                   */
 /* ======================================== */
 
-export function pruefeTierDaten(
-  tier,
-) {
-  return TOOLS.map(
-    (tool) => {
-      const checks =
-        pruefeTool(
-          tier,
-          tool.id,
-        );
+export function pruefeTierDaten(tier) {
+  return TOOLS.map((tool) => {
+    const checks = pruefeTool(tier, tool.id);
 
+    return {
+      toolId: tool.id,
+      tool,
+      stufe: getToolEinstellung(tool.id),
 
-      return {
-        toolId:
-          tool.id,
+      vollstaendig: checks.length > 0 && checks.every((check) => check.ok),
 
-        tool,
-
-        stufe:
-          getToolEinstellung(
-            tool.id,
-          ),
-
-        vollstaendig:
-          checks.length >
-            0 &&
-          checks.every(
-            (check) =>
-              check.ok,
-          ),
-
-        checks,
-      };
-    },
-  );
+      checks,
+    };
+  });
 }
 
-
-export function getToolPruefung(
-  tier,
-  toolId,
-) {
+export function getToolPruefung(tier, toolId) {
   return (
-    pruefeTierDaten(
-      tier,
-    ).find(
-      (pruefung) =>
-        pruefung.toolId ===
-        toolId,
-    ) ??
-    null
+    pruefeTierDaten(tier).find((pruefung) => pruefung.toolId === toolId) ?? null
   );
 }
 
+export function getTierMarkierungsStatus(tier) {
+  const fehler = pruefeTierDaten(tier).filter(
+    (pruefung) => !pruefung.vollstaendig,
+  );
 
-export function getTierMarkierungsStatus(
-  tier,
-) {
-  const fehler =
-    pruefeTierDaten(
-      tier,
-    ).filter(
-      (pruefung) =>
-        !pruefung.vollstaendig,
-    );
-
-
-  if (
-    fehler.some(
-      (pruefung) =>
-        pruefung.stufe ===
-        TOOL_STUFEN.WICHTIG,
-    )
-  ) {
+  if (fehler.some((pruefung) => pruefung.stufe === TOOL_STUFEN.WICHTIG)) {
     return "error";
   }
 
-
-  if (
-    fehler.some(
-      (pruefung) =>
-        pruefung.stufe ===
-        TOOL_STUFEN.NICHT_WICHTIG,
-    )
-  ) {
+  if (fehler.some((pruefung) => pruefung.stufe === TOOL_STUFEN.NICHT_WICHTIG)) {
     return "warning";
   }
-
 
   return "ok";
 }
