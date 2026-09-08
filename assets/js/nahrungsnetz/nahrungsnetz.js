@@ -19,6 +19,12 @@ import {
   buildNahrungsnetzGraph,
 } from "./features/netzwerkDaten.js";
 
+import {
+  applyNahrungsnetzFarben,
+  getTierDarstellungsFarbe,
+  NAHRUNGSNETZ_GRAU,
+} from "./features/tierFarben.js";
+
 
 let controller =
   null;
@@ -366,6 +372,24 @@ function render() {
     );
 
 
+  /*
+      ==================================
+      SCHRITT 7: AUSWAHL + FARBEN
+      ==================================
+
+      - alle Tiere bleiben sichtbar
+      - ausgewählte Tiere bekommen ihre
+        stabile Tierfarbe
+      - nicht ausgewählte Tiere = grau
+      - Linien folgen ownerTierId
+  */
+
+  applyNahrungsnetzFarben(
+    graph,
+    selectedSet,
+  );
+
+
   const empty =
     document.querySelector(
       "[data-nahrungsnetz-empty]",
@@ -416,24 +440,32 @@ function render() {
   }
 
 
-  const hasFocus =
-    graph.focusCount >
+  const hasGraph =
+    graph.nodes.length >
     0;
 
 
+  /*
+      Auch wenn KEIN Tier ausgewählt ist,
+      bleibt das komplette Netz sichtbar.
+
+      Dann sind alle Tierknoten und alle
+      Beziehungen grau.
+  */
+
   if (empty) {
     empty.hidden =
-      hasFocus;
+      hasGraph;
   }
 
 
   if (graphArea) {
     graphArea.hidden =
-      !hasFocus;
+      !hasGraph;
   }
 
 
-  if (!hasFocus) {
+  if (!hasGraph) {
     return;
   }
 
@@ -453,6 +485,19 @@ function render() {
 
   renderTierCheckboxes(
     graph,
+    selectedSet,
+  );
+
+
+  renderTierNodeColors(
+    graph,
+    selectedSet,
+  );
+
+
+  renderColorLegend(
+    graph,
+    selectedIds,
     selectedSet,
   );
 
@@ -584,6 +629,233 @@ function renderTierCheckboxes(
       }
     },
   );
+}
+
+
+/* ======================================== */
+/* TIERKNOTEN FÄRBEN                        */
+/* ======================================== */
+
+function renderTierNodeColors(
+  graph,
+  selectedSet,
+) {
+  const nodeElements =
+    new Map();
+
+
+  document
+    .querySelectorAll(
+      "[data-graph-node-id]",
+    )
+    .forEach(
+      (element) => {
+        nodeElements.set(
+          element.dataset
+            .graphNodeId,
+          element,
+        );
+      },
+    );
+
+
+  graph.nodes.forEach(
+    (node) => {
+      if (!node.tierId) {
+        return;
+      }
+
+
+      const element =
+        nodeElements.get(
+          node.id,
+        );
+
+
+      if (!element) {
+        return;
+      }
+
+
+      const selected =
+        selectedSet.has(
+          node.tierId,
+        );
+
+
+      const color =
+        getTierDarstellungsFarbe(
+          node.tierId,
+          selectedSet,
+        );
+
+
+      element.style.setProperty(
+        "--nahrungsnetz-node-color",
+        color,
+      );
+
+
+      element.classList.toggle(
+        "is-nahrungsnetz-selected",
+        selected,
+      );
+
+
+      element.classList.toggle(
+        "is-nahrungsnetz-unselected",
+        !selected,
+      );
+    },
+  );
+}
+
+
+/* ======================================== */
+/* FARB-LEGENDE                             */
+/* ======================================== */
+
+function renderColorLegend(
+  graph,
+  selectedIds,
+  selectedSet,
+) {
+  const container =
+    document.querySelector(
+      "[data-nahrungsnetz-color-legend]",
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  container.replaceChildren();
+
+
+  const title =
+    document.createElement(
+      "strong",
+    );
+
+  title.textContent =
+    "Farben:";
+
+  container.appendChild(
+    title,
+  );
+
+
+  const tierNodesById =
+    new Map(
+      graph.nodes
+        .filter(
+          (node) =>
+            node.tierId,
+        )
+        .map(
+          (node) => [
+            node.tierId,
+            node,
+          ],
+        ),
+    );
+
+
+  selectedIds.forEach(
+    (tierId) => {
+      const node =
+        tierNodesById.get(
+          tierId,
+        );
+
+
+      if (!node) {
+        return;
+      }
+
+
+      container.appendChild(
+        createColorLegendItem({
+          label:
+            node.label,
+
+          color:
+            getTierDarstellungsFarbe(
+              tierId,
+              selectedSet,
+            ),
+        }),
+      );
+    },
+  );
+
+
+  container.appendChild(
+    createColorLegendItem({
+      label:
+        "Nicht ausgewählt",
+
+      color:
+        NAHRUNGSNETZ_GRAU,
+
+      muted:
+        true,
+    }),
+  );
+}
+
+
+function createColorLegendItem({
+  label,
+  color,
+  muted = false,
+}) {
+  const item =
+    document.createElement(
+      "span",
+    );
+
+  item.className =
+    "nahrungsnetz-color-item";
+
+
+  if (muted) {
+    item.classList.add(
+      "nahrungsnetz-color-item--muted",
+    );
+  }
+
+
+  const swatch =
+    document.createElement(
+      "i",
+    );
+
+  swatch.className =
+    "nahrungsnetz-color-item__swatch";
+
+  swatch.style.background =
+    color;
+
+
+  const text =
+    document.createElement(
+      "span",
+    );
+
+  text.textContent =
+    label;
+
+
+  item.append(
+    swatch,
+    text,
+  );
+
+
+  return item;
 }
 
 

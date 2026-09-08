@@ -3,18 +3,65 @@ import {
   getLocalizedValue,
 } from "../../features/language.js";
 
+import {
+  getAlleNahrungsBeziehungen,
+  getLinienTyp,
+  getSelbstBedingungen,
+  getZielBedingungen,
+} from "../../features/nahrungsBeziehungen.js";
+
+import {
+  getBeziehungsLabel,
+  getWirkungDarstellung,
+} from "../../features/oekologischeBeziehungen.js";
+
 
 /*
-    Alte Begriffe aus bestehenden
-    Tier-JSONs werden auf echte Arten
-    abgebildet, sobald diese als
-    Datensatz geladen sind.
+    ============================================================
+    NAHRUNGSNETZ -> GRAPHDATEN
+    ------------------------------------------------------------
 
-    Dadurch wird z. B. "lion" nicht
-    als eigener Ressourcenknoten
-    angezeigt, wenn Panthera leo
-    vorhanden ist.
+    Diese Datei macht nur Schritt 6:
+
+    - alle geladenen Tiere als Knoten anlegen
+    - neue Nahrungsnetz-Struktur lesen
+    - Ressourcen / Pflanzen / Aas ergänzen
+    - Beziehungen als Graph-Kanten erzeugen
+    - beziehung, wirkung und Linientyp getrennt weitergeben
+
+    Noch NICHT Aufgabe dieser Datei:
+
+    - Tierfarben                         -> Schritt 7
+    - Maus-/Pfeilsteuerung               -> Schritt 8
+    - dynamisches Raster                 -> Schritt 9
+    - SVG-Marker / endgültiges Routing   -> Schritt 10
+
+    Richtung im JSON:
+
+    selbst = Tier, dessen JSON gelesen wird
+    ziel   = Eintrag unter "wert"
+
+    Beispiel Löwe:
+
+    {
+      "wert": "Equus quagga",
+      "beziehung": "praedation",
+      "wirkung": "+/-"
+    }
+
+    selbst = Löwe  (+)
+    ziel   = Zebra (-)
+
+    Für die AKTUELLE alte Pfeildarstellung wird from/to bereits so
+    gewählt, dass ein einzelner positiver Profiteur den Pfeil erhält.
+    Schritt 10 ersetzt das später durch die endgültigen Marker.
+    ============================================================
 */
+
+
+/* ======================================== */
+/* ALIASE                                   */
+/* ======================================== */
 
 const TIER_ALIASES = {
   lion:
@@ -33,6 +80,10 @@ const TIER_ALIASES = {
     "Homo sapiens",
 };
 
+
+/* ======================================== */
+/* LABELS FÜR NICHT GELADENE RESSOURCEN     */
+/* ======================================== */
 
 const ENTITY_LABELS = {
   aas: {
@@ -123,6 +174,11 @@ const CONDITION_LABELS = {
     en: "Young",
   },
 
+  erwachsen: {
+    de: "Erwachsen",
+    en: "Adult",
+  },
+
   calf: {
     de: "Jungtier",
     en: "Calf",
@@ -144,32 +200,55 @@ const CONDITION_LABELS = {
   },
 
   increasingWithAge: {
-    de: "zunehmend mit dem Alter",
+    de: "mit zunehmendem Alter",
     en: "increasing with age",
+  },
+
+  geschwaecht: {
+    de: "geschwächt",
+    en: "weakened",
+  },
+
+  krank: {
+    de: "krank",
+    en: "sick",
+  },
+
+  verletzt: {
+    de: "verletzt",
+    en: "injured",
+  },
+
+  geeigneterZustand: {
+    de: "geeigneter Zustand",
+    en: "suitable condition",
   },
 };
 
 
 /* ======================================== */
-/* GRAPH AUS TIERDATEN BAUEN                */
+/* ÖFFENTLICHER GRAPH-BUILDER               */
 /* ======================================== */
 
 export function buildNahrungsnetzGraph(
   tiere,
-  selectedIds,
+  selectedIds = [],
 ) {
+  const alleTiere =
+    Array.isArray(
+      tiere,
+    )
+      ? tiere
+      : [];
+
+
   const selected =
     new Set(
-      selectedIds,
-    );
-
-
-  const focusTiere =
-    tiere.filter(
-      (tier) =>
-        selected.has(
-          tier.id,
-        ),
+      Array.isArray(
+        selectedIds,
+      )
+        ? selectedIds
+        : [],
     );
 
 
@@ -180,35 +259,62 @@ export function buildNahrungsnetzGraph(
     new Map();
 
 
-  focusTiere.forEach(
+  /*
+      ====================================
+      ALLE GELADENEN TIERE
+      ====================================
+
+      Nicht mehr nur die Home-Auswahl.
+
+      Die Auswahl bestimmt hier lediglich
+      node.focus. Farbe folgt erst in
+      Schritt 7.
+  */
+
+  alleTiere.forEach(
     (tier) => {
       addTierNode(
         nodes,
         tier,
-        true,
+        selected.has(
+          tier.id,
+        ),
       );
     },
   );
 
 
-  focusTiere.forEach(
+  /*
+      ====================================
+      ALLE GESPEICHERTEN BEZIEHUNGEN
+      ====================================
+
+      Jede Beziehung wird nur beim Tier
+      gelesen, in dessen JSON sie steht.
+
+      "wirdGefressenVon" wird hier nicht
+      mehr gelesen und nicht mehr benötigt.
+  */
+
+  alleTiere.forEach(
     (tier) => {
-      addClassicFoodWeb(
+      addTierRelations(
         tier,
-        tiere,
-        nodes,
-        edges,
-      );
-
-
-      addGenericEcosystemNetwork(
-        tier,
-        tiere,
+        alleTiere,
         nodes,
         edges,
       );
     },
   );
+
+
+  const focusCount =
+    alleTiere.filter(
+      (tier) =>
+        selected.has(
+          tier.id,
+        ),
+    ).length;
 
 
   return {
@@ -218,396 +324,122 @@ export function buildNahrungsnetzGraph(
     edges:
       [...edges.values()],
 
-    focusCount:
-      focusTiere.length,
+    focusCount,
+
+    animalCount:
+      alleTiere.length,
   };
 }
 
 
 /* ======================================== */
-/* BESTEHENDES NAHRUNGSNETZ                 */
+/* BEZIEHUNGEN EINES TIERES                 */
 /* ======================================== */
 
-function addClassicFoodWeb(
+function addTierRelations(
   tier,
   tiere,
   nodes,
   edges,
 ) {
-  const netz =
-    tier.originalDaten
-      ?.daten
-      ?.ernaehrung
-      ?.nahrungsnetz ??
-    tier.nahrungsnetz;
-
-
-  if (
-    !netz ||
-    typeof netz !==
-      "object"
-  ) {
-    return;
-  }
-
-
-  const tierNodeId =
+  const selbstNodeId =
     getTierNodeId(
       tier,
     );
 
 
-  [
-    [
-      "jungtier",
-      netz
-        ?.frisst
-        ?.jungtier
-        ?.werte,
-      "frisst.jungtier",
-    ],
+  const relationen =
+    getAlleNahrungsBeziehungen(
+      tier,
+    );
 
-    [
-      "erwachsen",
-      netz
-        ?.frisst
-        ?.erwachsen
-        ?.werte,
-      "frisst.erwachsen",
-    ],
-  ].forEach(
+
+  relationen.forEach(
     (
-      [
-        alter,
-        werte,
-        relationKey,
-      ],
+      relation,
+      index,
     ) => {
+      const lebensphase =
+        relation.lebensphase;
+
+      const beziehung =
+        relation.beziehung;
+
+
       if (
-        !Array.isArray(
-          werte,
-        )
-      ) {
-        return;
-      }
-
-
-      werte.forEach(
-        (
-          entry,
-          index,
-        ) => {
-          if (
-            !hasText(
-              entry?.wert,
-            )
-          ) {
-            return;
-          }
-
-
-          const foodNode =
-            resolveEntityNode(
-              entry,
-              tiere,
-            );
-
-
-          addNode(
-            nodes,
-            foodNode,
-          );
-
-
-          addEdge(
-            edges,
-            {
-              id:
-                createEdgeId(
-                  foodNode.id,
-                  tierNodeId,
-                  `${tier.id}:${relationKey}:${index}`,
-                ),
-
-              from:
-                foodNode.id,
-
-              to:
-                tierNodeId,
-
-              type:
-                getEdgeType(
-                  entry,
-                  alter,
-                ),
-
-              label:
-                getConditionLabel(
-                  entry,
-                  alter,
-                ),
-
-              route:
-                getEntryRoute(
-                  entry,
-                ),
-            },
-          );
-        },
-      );
-    },
-  );
-
-
-  [
-    [
-      "jungtier",
-      netz
-        ?.wirdGefressenVon
-        ?.jungtier
-        ?.werte,
-      "wirdGefressenVon.jungtier",
-    ],
-
-    [
-      "erwachsen",
-      netz
-        ?.wirdGefressenVon
-        ?.erwachsen
-        ?.werte,
-      "wirdGefressenVon.erwachsen",
-    ],
-  ].forEach(
-    (
-      [
-        alter,
-        werte,
-        relationKey,
-      ],
-    ) => {
-      if (
-        !Array.isArray(
-          werte,
-        )
-      ) {
-        return;
-      }
-
-
-      werte.forEach(
-        (
-          entry,
-          index,
-        ) => {
-          if (
-            !hasText(
-              entry?.wert,
-            )
-          ) {
-            return;
-          }
-
-
-          const predatorNode =
-            resolveEntityNode(
-              entry,
-              tiere,
-            );
-
-
-          addNode(
-            nodes,
-            predatorNode,
-          );
-
-
-          addEdge(
-            edges,
-            {
-              id:
-                createEdgeId(
-                  tierNodeId,
-                  predatorNode.id,
-                  `${tier.id}:${relationKey}:${index}`,
-                ),
-
-              from:
-                tierNodeId,
-
-              to:
-                predatorNode.id,
-
-              type:
-                getEdgeType(
-                  entry,
-                  alter,
-                ),
-
-              label:
-                getConditionLabel(
-                  entry,
-                  alter,
-                ),
-
-              route:
-                getEntryRoute(
-                  entry,
-                ),
-            },
-          );
-        },
-      );
-    },
-  );
-}
-
-
-/* ======================================== */
-/* SPÄTERES ALLGEMEINES ÖKOSYSTEMNETZ       */
-/* ======================================== */
-
-function addGenericEcosystemNetwork(
-  tier,
-  tiere,
-  nodes,
-  edges,
-) {
-  const netz =
-    tier.originalDaten
-      ?.oekosystemNetz ??
-    tier.originalDaten
-      ?.daten
-      ?.oekosystemNetz ??
-    null;
-
-
-  if (
-    !netz ||
-    typeof netz !==
-      "object"
-  ) {
-    return;
-  }
-
-
-  const extraNodes =
-    Array.isArray(
-      netz.knoten,
-    )
-      ? netz.knoten
-      : [];
-
-
-  extraNodes.forEach(
-    (entry) => {
-      if (
+        !beziehung ||
         !hasText(
-          entry?.id,
+          beziehung.wert,
         )
       ) {
         return;
       }
 
 
-      const loadedTier =
-        findTier(
+      const zielNode =
+        resolveEntityNode(
+          beziehung,
           tiere,
-          entry.id,
         );
-
-
-      if (loadedTier) {
-        addTierNode(
-          nodes,
-          loadedTier,
-          false,
-        );
-
-        return;
-      }
 
 
       addNode(
         nodes,
-        {
-          id:
-            `eco:${slug(entry.id)}`,
-
-          label:
-            getLocalizedValue(
-              entry.name,
-              getLanguage(),
-            ) ??
-            entry.id,
-
-          subtitle:
-            entry.wissenschaftlicherName ??
-            "",
-
-          kind:
-            normalizeKind(
-              entry.typ,
-            ),
-
-          kindLabel:
-            getKindLabel(
-              normalizeKind(
-                entry.typ,
-              ),
-            ),
-
-          focus:
-            false,
-
-          position:
-            normalizeSlot(
-              entry.position ??
-              entry.darstellung
-                ?.position,
-            ),
-        },
+        zielNode,
       );
-    },
-  );
 
 
-  const verbindungen =
-    Array.isArray(
-      netz.verbindungen,
-    )
-      ? netz.verbindungen
-      : [];
+      const zielNodeId =
+        zielNode.id;
 
 
-  verbindungen.forEach(
-    (
-      entry,
-      index,
-    ) => {
       if (
-        !hasText(
-          entry?.von,
-        ) ||
-        !hasText(
-          entry?.zu,
-        )
+        selbstNodeId ===
+        zielNodeId
       ) {
         return;
       }
 
 
-      const from =
-        resolveGenericNodeId(
-          entry.von,
-          tiere,
-          nodes,
+      const wirkung =
+        String(
+          beziehung.wirkung ??
+          "",
+        ).trim();
+
+
+      const wirkungDarstellung =
+        getWirkungDarstellung(
+          wirkung,
         );
 
-      const to =
-        resolveGenericNodeId(
-          entry.zu,
-          tiere,
-          nodes,
+
+      const richtung =
+        resolveCurrentEdgeDirection({
+          selbstNodeId,
+          zielNodeId,
+          wirkungDarstellung,
+        });
+
+
+      const beziehungsTyp =
+        String(
+          beziehung.beziehung ??
+          "",
+        ).trim();
+
+
+      const beziehungLabel =
+        getBeziehungsLabel(
+          beziehungsTyp,
+          getLanguage(),
+        );
+
+
+      const conditionLabel =
+        getConditionLabel(
+          beziehung,
+          lebensphase,
         );
 
 
@@ -616,32 +448,284 @@ function addGenericEcosystemNetwork(
         {
           id:
             createEdgeId(
-              from,
-              to,
-              `eco:${tier.id}:${index}`,
+              tier.id,
+              lebensphase,
+              index,
+              beziehung,
             ),
 
-          from,
-          to,
+
+          /*
+              from/to dienen aktuell noch
+              dem bestehenden SVG-Renderer.
+
+              Die semantischen Enden stehen
+              zusätzlich separat auf der Kante:
+
+              selbstNodeId
+              zielNodeId
+          */
+
+          from:
+            richtung.from,
+
+          to:
+            richtung.to,
+
+
+          selbstNodeId,
+          zielNodeId,
+
+
+          /*
+              Tier, in dessen JSON diese
+              Beziehung gepflegt wird.
+
+              Schritt 7 kann genau darüber
+              die Tierfarbe bestimmen.
+          */
+
+          ownerTierId:
+            tier.id,
+
+
+          lebensphase,
+
+
+          /*
+              WAS ist das Ziel?
+
+              tier / pflanze / nutzung /
+              aas / giftig
+          */
+
+          zielTyp:
+            beziehung.typ ??
+            "",
+
+
+          /*
+              WELCHE ökologische Beziehung?
+          */
+
+          beziehung:
+            beziehungsTyp,
+
+          beziehungLabel,
+
+
+          /*
+              WIRKUNG aus Sicht:
+
+              selbst / ziel
+
+              z. B. +/-
+          */
+
+          wirkung,
+
+          wirkungDarstellung,
+
+
+          /*
+              LINIENTYP bleibt unabhängig
+              von Wirkung und Tierfarbe.
+          */
 
           type:
-            getGenericEdgeType(
-              entry,
+            getGraphLineType(
+              beziehung,
+              lebensphase,
             ),
 
+
+          /*
+              Der bestehende Renderer kann
+              nur EIN Label anzeigen.
+
+              Deshalb steht auf der Linie
+              jetzt der Beziehungstyp.
+
+              Die Bedingung wird trotzdem
+              separat mitgegeben und kann in
+              Schritt 10 zusätzlich angezeigt
+              oder als Tooltip genutzt werden.
+          */
+
           label:
-            localizedCondition(
-              entry.bedingung,
+            beziehungLabel,
+
+          conditionLabel,
+
+
+          selbstBedingungen:
+            getSelbstBedingungen(
+              beziehung,
             ),
+
+          zielBedingungen:
+            getZielBedingungen(
+              beziehung,
+            ),
+
+
+          gift:
+            beziehung.gift ??
+            null,
+
+          nutzung:
+            beziehung.nutzung ??
+            null,
+
+          aas:
+            beziehung.aas ??
+            null,
+
+          hinweis:
+            beziehung.hinweis ??
+            null,
+
+          quelle:
+            beziehung.quelle ??
+            "",
+
 
           route:
             getEntryRoute(
-              entry,
+              beziehung,
             ),
         },
       );
     },
   );
+}
+
+
+/* ======================================== */
+/* AKTUELLE PFEILRICHTUNG                   */
+/* ======================================== */
+
+function resolveCurrentEdgeDirection({
+  selbstNodeId,
+  zielNodeId,
+  wirkungDarstellung,
+}) {
+  const richtung =
+    wirkungDarstellung
+      ?.richtung ??
+    "selbst";
+
+
+  /*
+      Ein positiver Profiteur ist "selbst".
+
+      Beispiel:
+      Löwe +/- Zebra
+
+      Zebra -> Löwe
+  */
+
+  if (
+    richtung ===
+    "selbst"
+  ) {
+    return {
+      from:
+        zielNodeId,
+
+      to:
+        selbstNodeId,
+    };
+  }
+
+
+  /*
+      Positiver Profiteur ist das Ziel.
+  */
+
+  if (
+    richtung ===
+    "ziel"
+  ) {
+    return {
+      from:
+        selbstNodeId,
+
+      to:
+        zielNodeId,
+    };
+  }
+
+
+  /*
+      +/+ oder Beziehungen ohne eindeutige
+      Richtung bekommen vorläufig eine
+      stabile technische Richtung.
+
+      Schritt 10 zeichnet daraus:
+      - zwei Pfeile
+      - keine Pfeile
+      - Spezialmarker
+  */
+
+  return {
+    from:
+      selbstNodeId,
+
+    to:
+      zielNodeId,
+  };
+}
+
+
+/* ======================================== */
+/* LINIENTYP                                */
+/* ======================================== */
+
+function getGraphLineType(
+  beziehung,
+  lebensphase,
+) {
+  const type =
+    getLinienTyp(
+      beziehung,
+    );
+
+
+  /*
+      Aas und Gift haben Vorrang.
+  */
+
+  if (
+    type ===
+      "carrion" ||
+    type ===
+      "toxic"
+  ) {
+    return type;
+  }
+
+
+  /*
+      Die Legende lautet weiterhin:
+
+      Bedingung / Jungtier
+
+      Darum wird eine Beziehung, die nur
+      im Bereich "jungtier" steht,
+      gestrichelt dargestellt, auch wenn
+      bedingung.selbst/ziel leer ist.
+  */
+
+  if (
+    lebensphase ===
+    "jungtier"
+  ) {
+    return "conditional";
+  }
+
+
+  return type;
 }
 
 
@@ -683,7 +767,10 @@ function addTierNode(
       tierId:
         tier.id,
 
-      focus,
+      focus:
+        Boolean(
+          focus,
+        ),
 
       position:
         getTierPosition(
@@ -702,7 +789,7 @@ function getTierNodeId(
 
 
 /* ======================================== */
-/* EINTRAG ZU KNOTEN                        */
+/* EINTRAG -> KNOTEN                        */
 /* ======================================== */
 
 function resolveEntityNode(
@@ -733,7 +820,9 @@ function resolveEntityNode(
         ),
 
       subtitle:
-        loadedTier.wissenschaftlicherName,
+        loadedTier.wissenschaftlicherName ??
+        loadedTier.datenId ??
+        "",
 
       kind:
         "animal",
@@ -745,6 +834,12 @@ function resolveEntityNode(
 
       tierId:
         loadedTier.id,
+
+      /*
+          Der echte focus-Wert wird beim
+          initialen Anlegen aller Tiere
+          gesetzt und von addNode erhalten.
+      */
 
       focus:
         false,
@@ -801,102 +896,7 @@ function resolveEntityNode(
 
 
 /* ======================================== */
-/* GENERISCHEN KNOTEN FINDEN                */
-/* ======================================== */
-
-function resolveGenericNodeId(
-  value,
-  tiere,
-  nodes,
-) {
-  const loadedTier =
-    findTier(
-      tiere,
-      value,
-    );
-
-
-  if (loadedTier) {
-    addTierNode(
-      nodes,
-      loadedTier,
-      false,
-    );
-
-    return getTierNodeId(
-      loadedTier,
-    );
-  }
-
-
-  const existing =
-    [...nodes.values()].find(
-      (node) =>
-        node.id ===
-          value ||
-        node.label ===
-          value ||
-        node.subtitle ===
-          value ||
-        node.id ===
-          `eco:${slug(value)}` ||
-        node.id ===
-          `entity:${slug(value)}`,
-    );
-
-
-  if (existing) {
-    return existing.id;
-  }
-
-
-  const kind =
-    inferKind(
-      value,
-      "",
-    );
-
-
-  const node = {
-    id:
-      `entity:${slug(value)}`,
-
-    label:
-      getEntityLabel(
-        value,
-      ),
-
-    subtitle:
-      looksScientificName(
-        value,
-      )
-        ? value
-        : "",
-
-    kind,
-
-    kindLabel:
-      getKindLabel(
-        kind,
-      ),
-
-    focus:
-      false,
-  };
-
-
-  addNode(
-    nodes,
-    node,
-  );
-
-
-  return node.id;
-}
-
-
-/* ======================================== */
-/* KNOTEN / VERBINDUNGEN                    */
+/* KNOTEN                                   */
 /* ======================================== */
 
 function addNode(
@@ -910,9 +910,13 @@ function addNode(
 
 
   if (existing) {
-    if (
-      node.focus
-    ) {
+    /*
+        Ausgewählte Tierknoten verlieren
+        ihren focus nicht, wenn sie später
+        nochmals als Ziel auftauchen.
+    */
+
+    if (node.focus) {
       existing.focus =
         true;
     }
@@ -927,7 +931,7 @@ function addNode(
     }
 
 
-    return;
+    return existing;
   }
 
 
@@ -935,8 +939,15 @@ function addNode(
     node.id,
     node,
   );
+
+
+  return node;
 }
 
+
+/* ======================================== */
+/* KANTEN                                   */
+/* ======================================== */
 
 function addEdge(
   edges,
@@ -951,35 +962,23 @@ function addEdge(
 
 
   /*
-      Gleicher Stofffluss wird nicht
-      doppelt gezeichnet, nur weil die
-      Beziehung in beiden Tier-JSONs
-      beschrieben ist.
+      Keine automatische Zusammenfassung
+      verschiedener Lebensphasen.
+
+      Eine Jungtier- und eine Erwachsenen-
+      Beziehung dürfen fachlich verschieden
+      sein und müssen als getrennte Kanten
+      erhalten bleiben.
+
+      Nur exakt dieselbe erzeugte ID wird
+      nicht doppelt eingetragen.
   */
 
-  const duplicate =
-    [...edges.values()].find(
-      (existing) =>
-        existing.from ===
-          edge.from &&
-        existing.to ===
-          edge.to &&
-        existing.type ===
-          edge.type &&
-        existing.label ===
-          edge.label,
-    );
-
-
-  if (duplicate) {
-    if (
-      !duplicate.route &&
-      edge.route
-    ) {
-      duplicate.route =
-        edge.route;
-    }
-
+  if (
+    edges.has(
+      edge.id,
+    )
+  ) {
     return;
   }
 
@@ -992,82 +991,7 @@ function addEdge(
 
 
 /* ======================================== */
-/* VERBINDUNGS-TYP                          */
-/* ======================================== */
-
-function getEdgeType(
-  entry,
-  alter,
-) {
-  if (
-    entry?.typ ===
-      "aas" ||
-    entry?.wert ===
-      "aas"
-  ) {
-    return "carrion";
-  }
-
-
-  if (
-    alter ===
-      "jungtier" ||
-    hasText(
-      entry?.bedingung,
-    )
-  ) {
-    return "conditional";
-  }
-
-
-  return "direct";
-}
-
-
-function getGenericEdgeType(
-  entry,
-) {
-  if (
-    entry?.darstellung ===
-      "gepunktet" ||
-    entry?.darstellung
-      ?.linie ===
-      "gepunktet" ||
-    entry?.typ ===
-      "aas"
-  ) {
-    return "carrion";
-  }
-
-
-  if (
-    entry?.darstellung ===
-      "gestrichelt" ||
-    entry?.darstellung
-      ?.linie ===
-      "gestrichelt" ||
-    hasText(
-      entry?.bedingung,
-    )
-  ) {
-    return "conditional";
-  }
-
-
-  if (
-    entry?.typ ===
-      "abhaengigkeit"
-  ) {
-    return "dependency";
-  }
-
-
-  return "direct";
-}
-
-
-/* ======================================== */
-/* JSON-DARSTELLUNG                         */
+/* POSITION AUS JSON                        */
 /* ======================================== */
 
 function getTierPosition(
@@ -1082,25 +1006,9 @@ function getTierPosition(
 }
 
 
-/*
-    Optional im JSON:
-
-    "darstellung": {
-      "route": [
-        {
-          "bereich": "L4.2",
-          "spur": 1
-        },
-        {
-          "bereich": "L4.1",
-          "spur": 2
-        }
-      ]
-    }
-
-    Alternativ wird die Route automatisch
-    aus den Kästchenpositionen berechnet.
-*/
+/* ======================================== */
+/* OPTIONALE ROUTE AUS JSON                 */
+/* ======================================== */
 
 function getEntryRoute(
   entry,
@@ -1133,6 +1041,15 @@ function getEntryRoute(
             typeof step ===
             "string"
           ) {
+            if (
+              !/^L\d+\.\d+$/i.test(
+                step,
+              )
+            ) {
+              return null;
+            }
+
+
             return {
               bereich:
                 step,
@@ -1198,12 +1115,16 @@ function getEntryRoute(
 }
 
 
+/* ======================================== */
+/* SLOT NORMALISIEREN                       */
+/* ======================================== */
+
 function normalizeSlot(
   value,
 ) {
   if (
     typeof value ===
-    "string" &&
+      "string" &&
     /^\d+\.\d+$/.test(
       value.trim(),
     )
@@ -1211,16 +1132,6 @@ function normalizeSlot(
     return value.trim();
   }
 
-
-  /*
-      Auch laienfreundliche Objektform
-      zulassen:
-
-      "position": {
-        "zeile": 2,
-        "spalte": 3
-      }
-  */
 
   if (
     value &&
@@ -1260,16 +1171,26 @@ function normalizeSlot(
   return null;
 }
 
+
 /* ======================================== */
-/* ART / LABELS                             */
+/* ART DES KNOTENS                          */
 /* ======================================== */
 
 function inferKind(
   value,
   typ,
 ) {
+  const normalizedTyp =
+    String(
+      typ ??
+      "",
+    )
+      .trim()
+      .toLowerCase();
+
+
   if (
-    typ ===
+    normalizedTyp ===
       "aas" ||
     value ===
       "aas"
@@ -1279,41 +1200,39 @@ function inferKind(
 
 
   if (
-    typ ===
-      "pflanze" ||
-    typ ===
-      "frucht"
+    normalizedTyp ===
+    "pflanze"
   ) {
     return "plant";
   }
 
 
   if (
-    typ ===
-      "wasser" ||
-    value ===
-      "water"
+    normalizedTyp ===
+    "tier"
   ) {
-    return "water";
+    return "animal";
   }
 
 
-  if (
-    typ ===
-      "mineral" ||
-    value ===
-      "mineralien"
-  ) {
-    return "mineral";
-  }
+  /*
+      "giftig" beschreibt in unserem
+      Nahrungsnetz die Gefahrenbeziehung.
 
+      Der Knotentyp wird deshalb soweit
+      möglich aus dem Wert abgeleitet.
+  */
 
   if (
-    typ ===
-      "tier" ||
     looksScientificName(
       value,
-    ) ||
+    )
+  ) {
+    return "animal";
+  }
+
+
+  if (
     [
       "ants",
       "termites",
@@ -1344,60 +1263,29 @@ function inferKind(
   }
 
 
+  if (
+    value ===
+    "water"
+  ) {
+    return "water";
+  }
+
+
+  if (
+    value ===
+    "mineralien"
+  ) {
+    return "mineral";
+  }
+
+
   return "resource";
 }
 
 
-function normalizeKind(
-  kind,
-) {
-  const map = {
-    tier:
-      "animal",
-
-    animal:
-      "animal",
-
-    pflanze:
-      "plant",
-
-    plant:
-      "plant",
-
-    aas:
-      "carrion",
-
-    carrion:
-      "carrion",
-
-    wasser:
-      "water",
-
-    water:
-      "water",
-
-    mineral:
-      "mineral",
-
-    mineralien:
-      "mineral",
-
-    resource:
-      "resource",
-
-    ressource:
-      "resource",
-  };
-
-
-  return (
-    map[
-      kind
-    ] ??
-    "resource"
-  );
-}
-
+/* ======================================== */
+/* KNOTENART BESCHRIFTEN                    */
+/* ======================================== */
 
 function getKindLabel(
   kind,
@@ -1453,6 +1341,10 @@ function getKindLabel(
 }
 
 
+/* ======================================== */
+/* RESSOURCEN BESCHRIFTEN                   */
+/* ======================================== */
+
 function getEntityLabel(
   value,
 ) {
@@ -1475,52 +1367,103 @@ function getEntityLabel(
 }
 
 
+/* ======================================== */
+/* BEDINGUNGEN BESCHRIFTEN                  */
+/* ======================================== */
+
 function getConditionLabel(
   entry,
-  alter,
+  lebensphase,
 ) {
-  const parts =
+  const teile =
     [];
 
 
+  /*
+      Der obere JSON-Bereich beschreibt die
+      Lebensphase von "selbst".
+  */
+
   if (
-    alter ===
+    lebensphase ===
     "jungtier"
   ) {
-    parts.push(
-      localizedCondition(
-        "jungtier",
-      ),
+    teile.push(
+      `${getRoleLabel("self")}: ${localizedCondition("jungtier")}`,
     );
   }
 
 
+  const selbst =
+    getSelbstBedingungen(
+      entry,
+    );
+
+
   if (
-    hasText(
-      entry?.bedingung,
-    ) &&
-    entry.bedingung !==
-      "jungtier" &&
-    entry.bedingung !==
-      "calf"
+    selbst.length
   ) {
-    parts.push(
-      localizedCondition(
-        entry.bedingung,
-      ),
+    teile.push(
+      `${getRoleLabel("self")}: ${selbst
+        .map(localizedCondition)
+        .join(", ")}`,
+    );
+  }
+
+
+  const ziel =
+    getZielBedingungen(
+      entry,
+    );
+
+
+  if (
+    ziel.length
+  ) {
+    teile.push(
+      `${getRoleLabel("target")}: ${ziel
+        .map(localizedCondition)
+        .join(", ")}`,
     );
   }
 
 
   return [
     ...new Set(
-      parts.filter(
+      teile.filter(
         Boolean,
       ),
     ),
   ].join(
     " · ",
   );
+}
+
+
+function getRoleLabel(
+  role,
+) {
+  const english =
+    String(
+      getLanguage(),
+    ).startsWith(
+      "en",
+    );
+
+
+  if (
+    role ===
+    "target"
+  ) {
+    return english
+      ? "Target"
+      : "Ziel";
+  }
+
+
+  return english
+    ? "Self"
+    : "Selbst";
 }
 
 
@@ -1573,25 +1516,45 @@ function findTier(
     [
       value,
       alias,
-    ].filter(
-      Boolean,
-    );
+    ]
+      .filter(
+        Boolean,
+      )
+      .map(
+        (item) =>
+          String(
+            item,
+          ).trim(),
+      );
 
 
   return (
     tiere.find(
       (tier) =>
         candidates.includes(
-          tier.id,
+          String(
+            tier.id ??
+            "",
+          ).trim(),
         ) ||
         candidates.includes(
-          tier.datenId,
+          String(
+            tier.datenId ??
+            "",
+          ).trim(),
         ) ||
         candidates.includes(
-          tier.wissenschaftlicherName,
+          String(
+            tier.wissenschaftlicherName ??
+            "",
+          ).trim(),
         ) ||
         candidates.includes(
-          tier.originalDaten?.id,
+          String(
+            tier.originalDaten
+              ?.id ??
+            "",
+          ).trim(),
         ),
     ) ??
     null
@@ -1618,14 +1581,22 @@ function getTierName(
 /* ======================================== */
 
 function createEdgeId(
-  from,
-  to,
-  source,
+  tierId,
+  lebensphase,
+  index,
+  beziehung,
 ) {
   return [
-    from,
-    to,
-    source,
+    "foodweb",
+    tierId,
+    lebensphase,
+    index,
+    beziehung?.beziehung ??
+      "",
+    beziehung?.wirkung ??
+      "",
+    beziehung?.wert ??
+      "",
   ].join(
     "|",
   );
@@ -1638,7 +1609,8 @@ function hasText(
   return (
     typeof value ===
       "string" &&
-    value.trim()
+    value.trim().length >
+      0
   );
 }
 

@@ -239,7 +239,7 @@ Für den Aufbau sind momentan drei Tierarten in `datenImport.js` eingetragen:
 
 ```text
 Eunectes notaeus   = Gelbe Anakonda
-Equus quagga       = Steppenzebra
+Orycteropus afer       = Steppenzebra
 Aquila chrysaetos  = Steinadler
 ```
 

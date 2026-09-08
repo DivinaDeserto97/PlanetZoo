@@ -212,6 +212,7 @@
       - `nahrungsnetz/`
         - `features/`
           - [netzwerkDaten.js](<../assets/js/nahrungsnetz/features/netzwerkDaten.js>)
+          - [tierFarben.js](<../assets/js/nahrungsnetz/features/tierFarben.js>)
         - [nahrungsnetz.js](<../assets/js/nahrungsnetz/nahrungsnetz.js>)
       - [pages.js](<../assets/js/pages.js>)
       - `rechner/`

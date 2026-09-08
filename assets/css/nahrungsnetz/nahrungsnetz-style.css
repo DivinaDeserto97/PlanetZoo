@@ -667,3 +667,119 @@ body:has(.nahrungsnetz-page) #page {
     flex-basis: 30px;
   }
 }
+/* ======================================== */
+/* SCHRITT 7 – AUSWAHL + TIERFARBEN         */
+/* ======================================== */
+
+/*
+    Echte Tierknoten bekommen ihre Farbe
+    aus --nahrungsnetz-node-color.
+
+    Nicht ausgewählt = festes Grau.
+    Ausgewählt = stabile individuelle Farbe.
+*/
+
+.nahrungsnetz-page .graph-node--animal {
+  border-color:
+    var(
+      --nahrungsnetz-node-color,
+      #747b86
+    );
+
+  border-left-color:
+    var(
+      --nahrungsnetz-node-color,
+      #747b86
+    );
+}
+
+
+.nahrungsnetz-page .graph-node--animal.is-nahrungsnetz-selected {
+  box-shadow:
+    0 0 0 2px
+      color-mix(
+        in srgb,
+        var(--nahrungsnetz-node-color) 28%,
+        transparent
+      ),
+    0 8px 24px rgb(0 0 0 / 0.26);
+}
+
+
+.nahrungsnetz-page .graph-node--animal.is-nahrungsnetz-unselected {
+  box-shadow:
+    0 5px 16px rgb(0 0 0 / 0.22);
+}
+
+
+.nahrungsnetz-page .graph-node--animal:hover {
+  border-color:
+    var(
+      --nahrungsnetz-node-color,
+      #747b86
+    );
+}
+
+
+.nahrungsnetz-page .graph-node__select {
+  accent-color:
+    var(
+      --nahrungsnetz-node-color,
+      var(--farbe-akzent)
+    );
+}
+
+
+/*
+    Die alte globale focus-Farbe darf die
+    individuelle Tierfarbe nicht mehr
+    überschreiben.
+*/
+
+.nahrungsnetz-page .graph-node--focus.graph-node--animal {
+  border-color:
+    var(
+      --nahrungsnetz-node-color,
+      #747b86
+    );
+}
+
+
+/* ======================================== */
+/* LINIENFARBEN                             */
+/* ======================================== */
+
+.nahrungsnetz-page .graph-edge--unselected {
+  opacity: 0.72;
+}
+
+
+.nahrungsnetz-page .graph-edge--selected {
+  opacity: 1;
+}
+
+
+.nahrungsnetz-page .graph-edge-label--unselected {
+  opacity: 0.76;
+}
+
+
+.nahrungsnetz-page .graph-edge-label--selected {
+  opacity: 1;
+}
+
+
+/* ======================================== */
+/* FARB-LEGENDE                             */
+/* ======================================== */
+
+.nahrungsnetz-legend__animals strong {
+  color: var(--farbe-text);
+
+  white-space: nowrap;
+}
+
+
+.nahrungsnetz-color-item--muted {
+  opacity: 0.9;
+}

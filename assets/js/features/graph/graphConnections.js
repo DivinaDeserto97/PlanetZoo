@@ -125,6 +125,37 @@ export function renderGraphConnections({
       );
 
 
+      /*
+          Optionaler Farbwert aus dem
+          jeweiligen Graph-Modul.
+
+          Das Nahrungsnetz verwendet ihn
+          für die Farbe des ownerTierId.
+          Andere Graphen können ihn einfach
+          weglassen und behalten das CSS-
+          Standard-Styling.
+      */
+
+      if (edge.color) {
+        path.style.stroke =
+          edge.color;
+      }
+
+
+      path.classList.toggle(
+        "graph-edge--selected",
+        edge.selected ===
+          true,
+      );
+
+
+      path.classList.toggle(
+        "graph-edge--unselected",
+        edge.selected ===
+          false,
+      );
+
+
       path.setAttribute(
         "marker-end",
         "url(#graph-arrow)",
@@ -169,6 +200,26 @@ export function renderGraphConnections({
 
         label.textContent =
           edge.label;
+
+
+        if (edge.color) {
+          label.style.fill =
+            edge.color;
+        }
+
+
+        label.classList.toggle(
+          "graph-edge-label--selected",
+          edge.selected ===
+            true,
+        );
+
+
+        label.classList.toggle(
+          "graph-edge-label--unselected",
+          edge.selected ===
+            false,
+        );
 
 
         svg.appendChild(
