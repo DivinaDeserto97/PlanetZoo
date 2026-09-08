@@ -186,6 +186,16 @@
         - [home.js](<../assets/js/home/home.js>)
       - `infotafel/`
         - `features/`
+          - [audio.js](<../assets/js/infotafel/features/audio.js>)
+          - [bilder.js](<../assets/js/infotafel/features/bilder.js>)
+          - [heading.js](<../assets/js/infotafel/features/heading.js>)
+          - [karte.js](<../assets/js/infotafel/features/karte.js>)
+          - [nahrungsnetz.js](<../assets/js/infotafel/features/nahrungsnetz.js>)
+          - [steckbrief.js](<../assets/js/infotafel/features/steckbrief.js>)
+          - [tierNavigation.js](<../assets/js/infotafel/features/tierNavigation.js>)
+          - [tierfakten.js](<../assets/js/infotafel/features/tierfakten.js>)
+          - [ui.js](<../assets/js/infotafel/features/ui.js>)
+          - [zoopedia.js](<../assets/js/infotafel/features/zoopedia.js>)
         - [infotafel.js](<../assets/js/infotafel/infotafel.js>)
       - `kino/`
         - `features/`
