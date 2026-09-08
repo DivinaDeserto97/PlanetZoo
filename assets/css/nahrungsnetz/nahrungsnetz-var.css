@@ -1,7 +1,20 @@
-.nahrungsnetz-page {
-  --nahrungsnetz-max-width:
-    var(--breite-inhalt);
+:root {
+  /*
+      Platz für den feststehenden Footer.
 
-  --nahrungsnetz-graph-height:
-    min(69vh, 790px);
+      Der Footer selbst ist 68 px hoch.
+      Mit 84 px haben wir etwas Luft
+      und entsprechen auch dem bisherigen
+      body-padding.
+  */
+  --nahrungsnetz-footer-reserve: 84px;
+
+  --nahrungsnetz-overlay-gap: 12px;
+
+  --nahrungsnetz-panel-padding: 9px;
+
+  --nahrungsnetz-panel-radius: 10px;
+
+  --nahrungsnetz-panel-shadow:
+    0 7px 24px rgb(0 0 0 / 0.28);
 }
