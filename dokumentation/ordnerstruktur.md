@@ -168,6 +168,7 @@
           - [graphDrag.js](<../assets/js/features/graph/graphDrag.js>)
           - [graphGrid.js](<../assets/js/features/graph/graphGrid.js>)
         - [language.js](<../assets/js/features/language.js>)
+        - [nahrungsBeziehungen.js](<../assets/js/features/nahrungsBeziehungen.js>)
         - [navigation.js](<../assets/js/features/navigation.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
         - [theme.js](<../assets/js/features/theme.js>)
