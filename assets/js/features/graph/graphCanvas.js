@@ -34,6 +34,7 @@ export function createGraphCanvas({
   storageKey,
   signal,
   onDirtyChange,
+  onZoomChange,
 }) {
   let currentGraph = {
     nodes:
@@ -64,6 +65,38 @@ export function createGraphCanvas({
 
   let previewSlot =
     null;
+
+
+  /* ==================================== */
+  /* VIEWPORT / ZOOM / PANNING            */
+  /* ==================================== */
+
+  const MIN_ZOOM =
+    0.5;
+
+  const MAX_ZOOM =
+    2.5;
+
+  const ZOOM_STEP =
+    0.12;
+
+  let zoom =
+    1;
+
+  let panDrag =
+    null;
+
+
+  const world =
+    ensureGraphWorld({
+      stage,
+      connectionsSvg,
+      routePointsContainer,
+      nodesContainer,
+    });
+
+
+  bindViewportControls();
 
 
   /* ==================================== */
@@ -202,10 +235,10 @@ export function createGraphCanvas({
     };
 
 
-    stage.style.width =
+    world.style.width =
       `${layout.width}px`;
 
-    stage.style.height =
+    world.style.height =
       `${layout.height}px`;
 
 
@@ -214,6 +247,9 @@ export function createGraphCanvas({
 
     connectionsSvg.style.height =
       `${layout.height}px`;
+
+
+    applyZoomSize();
 
 
     renderGridOverlay();
@@ -276,7 +312,8 @@ export function createGraphCanvas({
           node:
             element,
 
-          stage,
+          stage:
+            world,
 
           layout:
             currentModel.layout,
@@ -486,7 +523,8 @@ export function createGraphCanvas({
 
             initLaneHandleDrag({
               handle,
-              stage,
+              stage:
+                world,
 
               layout:
                 currentModel.layout,
@@ -684,7 +722,7 @@ export function createGraphCanvas({
 
   function renderGridOverlay() {
     let overlay =
-      stage.querySelector(
+      world.querySelector(
         "[data-graph-grid-overlay]",
       );
 
@@ -701,7 +739,7 @@ export function createGraphCanvas({
       overlay.dataset.graphGridOverlay =
         "";
 
-      stage.prepend(
+      world.prepend(
         overlay,
       );
     }
@@ -884,7 +922,7 @@ export function createGraphCanvas({
       slotId;
 
 
-    stage
+    world
       .querySelector(
         `[data-grid-slot="${slotId}"]`,
       )
@@ -895,7 +933,7 @@ export function createGraphCanvas({
 
 
   function clearPreview() {
-    stage
+    world
       .querySelector(
         ".graph-grid-slot.is-drop-target",
       )
@@ -1018,7 +1056,333 @@ export function createGraphCanvas({
 
 
   /* ==================================== */
-  /* ZENTRIEREN                           */
+  /* VIEWPORT-STEUERUNG                   */
+  /* ==================================== */
+
+  function bindViewportControls() {
+    scroll.addEventListener(
+      "wheel",
+      (event) => {
+        event.preventDefault();
+
+
+        const rect =
+          scroll.getBoundingClientRect();
+
+        const anchorX =
+          event.clientX -
+          rect.left;
+
+        const anchorY =
+          event.clientY -
+          rect.top;
+
+        const direction =
+          event.deltaY < 0
+            ? 1
+            : -1;
+
+
+        setZoom(
+          zoom +
+            direction *
+              ZOOM_STEP,
+          {
+            anchorX,
+            anchorY,
+          },
+        );
+      },
+      {
+        signal,
+        passive: false,
+      },
+    );
+
+
+    scroll.addEventListener(
+      "pointerdown",
+      (event) => {
+        /*
+            Mittlere Maustaste / Mausrad:
+            komplette Arbeitsfläche verschieben.
+        */
+        if (
+          event.button !==
+          1
+        ) {
+          return;
+        }
+
+
+        event.preventDefault();
+
+
+        panDrag = {
+          pointerId:
+            event.pointerId,
+
+          startX:
+            event.clientX,
+
+          startY:
+            event.clientY,
+
+          startLeft:
+            scroll.scrollLeft,
+
+          startTop:
+            scroll.scrollTop,
+        };
+
+
+        scroll.classList.add(
+          "is-panning",
+        );
+
+
+        scroll.setPointerCapture(
+          event.pointerId,
+        );
+      },
+      { signal },
+    );
+
+
+    scroll.addEventListener(
+      "pointermove",
+      (event) => {
+        if (
+          !panDrag ||
+          panDrag.pointerId !==
+            event.pointerId
+        ) {
+          return;
+        }
+
+
+        event.preventDefault();
+
+
+        scroll.scrollLeft =
+          panDrag.startLeft -
+          (
+            event.clientX -
+            panDrag.startX
+          );
+
+        scroll.scrollTop =
+          panDrag.startTop -
+          (
+            event.clientY -
+            panDrag.startY
+          );
+      },
+      { signal },
+    );
+
+
+    const finishPan =
+      (event) => {
+        if (
+          !panDrag ||
+          panDrag.pointerId !==
+            event.pointerId
+        ) {
+          return;
+        }
+
+
+        if (
+          scroll.hasPointerCapture(
+            event.pointerId,
+          )
+        ) {
+          scroll.releasePointerCapture(
+            event.pointerId,
+          );
+        }
+
+
+        panDrag =
+          null;
+
+        scroll.classList.remove(
+          "is-panning",
+        );
+      };
+
+
+    scroll.addEventListener(
+      "pointerup",
+      finishPan,
+      { signal },
+    );
+
+    scroll.addEventListener(
+      "pointercancel",
+      finishPan,
+      { signal },
+    );
+
+
+    scroll.addEventListener(
+      "auxclick",
+      (event) => {
+        if (
+          event.button ===
+          1
+        ) {
+          event.preventDefault();
+        }
+      },
+      { signal },
+    );
+  }
+
+
+  function applyZoomSize() {
+    world.dataset.graphScale =
+      String(
+        zoom,
+      );
+
+    world.style.transform =
+      `scale(${zoom})`;
+
+    world.style.transformOrigin =
+      "0 0";
+
+
+    if (!currentModel) {
+      return;
+    }
+
+
+    stage.style.width =
+      `${currentModel.layout.width * zoom}px`;
+
+    stage.style.height =
+      `${currentModel.layout.height * zoom}px`;
+  }
+
+
+  function setZoom(
+    value,
+    {
+      anchorX =
+        scroll.clientWidth /
+        2,
+
+      anchorY =
+        scroll.clientHeight /
+        2,
+    } = {},
+  ) {
+    const nextZoom =
+      Math.max(
+        MIN_ZOOM,
+        Math.min(
+          MAX_ZOOM,
+          Number(
+            value,
+          ) ||
+            1,
+        ),
+      );
+
+
+    if (
+      Math.abs(
+        nextZoom -
+        zoom,
+      ) <
+      0.001
+    ) {
+      return;
+    }
+
+
+    const logicalX =
+      (
+        scroll.scrollLeft +
+        anchorX
+      ) /
+      zoom;
+
+    const logicalY =
+      (
+        scroll.scrollTop +
+        anchorY
+      ) /
+      zoom;
+
+
+    zoom =
+      nextZoom;
+
+
+    applyZoomSize();
+
+
+    scroll.scrollTo({
+      left:
+        logicalX *
+          zoom -
+        anchorX,
+
+      top:
+        logicalY *
+          zoom -
+        anchorY,
+
+      behavior:
+        "auto",
+    });
+
+
+    onZoomChange?.(
+      zoom,
+    );
+  }
+
+
+  function resetZoom() {
+    setZoom(
+      1,
+    );
+  }
+
+
+  function panBy(
+    x,
+    y,
+    behavior =
+      "smooth",
+  ) {
+    scroll.scrollBy({
+      left: x,
+      top: y,
+      behavior,
+    });
+  }
+
+
+  function panByViewport(
+    xFactor,
+    yFactor,
+  ) {
+    panBy(
+      scroll.clientWidth *
+        xFactor,
+      scroll.clientHeight *
+        yFactor,
+    );
+  }
+
+
+  /* ==================================== */
+  /* AUSWAHL / NETZ ZENTRIEREN            */
   /* ==================================== */
 
   function centerOnFocus() {
@@ -1034,56 +1398,93 @@ export function createGraphCanvas({
       );
 
 
-    const target =
-      focus[
-        0
-      ] ??
-      currentGraph.nodes[
-        0
-      ];
+    const targets =
+      focus.length
+        ? focus
+        : currentGraph.nodes;
 
 
-    if (!target) {
+    const rects =
+      targets
+        .map(
+          (node) =>
+            getSlotRect(
+              currentModel.layout,
+              workspace.nodes[
+                node.id
+              ],
+            ),
+        )
+        .filter(
+          Boolean,
+        );
+
+
+    if (!rects.length) {
       return;
     }
 
 
-    const slotId =
-      workspace.nodes[
-        target.id
-      ];
-
-    const rect =
-      getSlotRect(
-        currentModel.layout,
-        slotId,
+    const left =
+      Math.min(
+        ...rects.map(
+          (rect) =>
+            rect.x,
+        ),
       );
 
+    const top =
+      Math.min(
+        ...rects.map(
+          (rect) =>
+            rect.y,
+        ),
+      );
 
-    if (!rect) {
-      return;
-    }
+    const right =
+      Math.max(
+        ...rects.map(
+          (rect) =>
+            rect.x +
+            rect.width,
+        ),
+      );
+
+    const bottom =
+      Math.max(
+        ...rects.map(
+          (rect) =>
+            rect.y +
+            rect.height,
+        ),
+      );
 
 
     scroll.scrollTo({
       left:
         Math.max(
           0,
-          rect.x +
-            rect.width /
-              2 -
-            scroll.clientWidth /
-              2,
+          (
+            left +
+            right
+          ) /
+            2 *
+            zoom -
+          scroll.clientWidth /
+            2,
         ),
 
       top:
         Math.max(
           0,
-          rect.y +
-            rect.height /
-              2 -
-            scroll.clientHeight /
-              2,
+          (
+            top +
+            bottom
+          ) /
+            2 *
+            zoom -
+          scroll.clientHeight /
+            2,
         ),
 
       behavior:
@@ -1098,11 +1499,76 @@ export function createGraphCanvas({
     resetPositions,
     centerOnFocus,
     setRouteEdit,
+    setZoom,
+    resetZoom,
+    panBy,
+    panByViewport,
+
+    getZoom() {
+      return zoom;
+    },
 
     isDirty() {
       return dirty;
     },
   };
+}
+
+
+/* ======================================== */
+/* LOGISCHE WELT FÜR ZOOM                   */
+/* ======================================== */
+
+function ensureGraphWorld({
+  stage,
+  connectionsSvg,
+  routePointsContainer,
+  nodesContainer,
+}) {
+  let world =
+    stage.querySelector(
+      ":scope > .graph-world",
+    );
+
+
+  if (!world) {
+    world =
+      document.createElement(
+        "div",
+      );
+
+    world.className =
+      "graph-world";
+
+    world.dataset.graphWorld =
+      "";
+
+    stage.appendChild(
+      world,
+    );
+  }
+
+
+  [
+    connectionsSvg,
+    routePointsContainer,
+    nodesContainer,
+  ].forEach(
+    (layer) => {
+      if (
+        layer &&
+        layer.parentElement !==
+          world
+      ) {
+        world.appendChild(
+          layer,
+        );
+      }
+    },
+  );
+
+
+  return world;
 }
 
 
@@ -1138,6 +1604,79 @@ function createNodeElement(
 
   element.dataset.graphNodeId =
     node.id;
+
+
+  if (node.tierId) {
+    element.dataset.graphTierId =
+      node.tierId;
+  }
+
+
+  if (node.color) {
+    element.style.setProperty(
+      "--nahrungsnetz-node-color",
+      node.color,
+    );
+  }
+
+
+  if (
+    typeof node.selected ===
+    "boolean"
+  ) {
+    element.classList.toggle(
+      "is-nahrungsnetz-selected",
+      node.selected,
+    );
+
+    element.classList.toggle(
+      "is-nahrungsnetz-unselected",
+      !node.selected,
+    );
+  }
+
+
+  /*
+      Auswahlbox direkt im Graph-Knoten.
+
+      Dadurch bleibt sie auch dann bestehen,
+      wenn graphCanvas nach einem Drag intern
+      die Knoten neu aufbaut.
+  */
+  if (
+    node.tierId &&
+    typeof node.selected ===
+      "boolean"
+  ) {
+    const checkbox =
+      document.createElement(
+        "input",
+      );
+
+    checkbox.type =
+      "checkbox";
+
+    checkbox.className =
+      "graph-node__select";
+
+    checkbox.dataset.graphTierCheckbox =
+      "";
+
+    checkbox.dataset.graphTierId =
+      node.tierId;
+
+    checkbox.checked =
+      node.selected;
+
+    checkbox.setAttribute(
+      "aria-label",
+      `${node.label} auswählen`,
+    );
+
+    element.appendChild(
+      checkbox,
+    );
+  }
 
 
   const title =

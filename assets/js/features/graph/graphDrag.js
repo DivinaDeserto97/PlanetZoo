@@ -42,18 +42,31 @@ export function initGraphSlotDrag({
       const nodeRect =
         node.getBoundingClientRect();
 
+      const scale =
+        getStageScale(
+          stage,
+        );
+
 
       drag = {
         pointerId:
           event.pointerId,
 
+        scale,
+
         offsetX:
-          event.clientX -
-          nodeRect.left,
+          (
+            event.clientX -
+            nodeRect.left
+          ) /
+          scale,
 
         offsetY:
-          event.clientY -
-          nodeRect.top,
+          (
+            event.clientY -
+            nodeRect.top
+          ) /
+          scale,
 
         stageLeft:
           stageRect.left,
@@ -91,13 +104,19 @@ export function initGraphSlotDrag({
 
 
       const left =
-        event.clientX -
-        drag.stageLeft -
+        (
+          event.clientX -
+          drag.stageLeft
+        ) /
+          drag.scale -
         drag.offsetX;
 
       const top =
-        event.clientY -
-        drag.stageTop -
+        (
+          event.clientY -
+          drag.stageTop
+        ) /
+          drag.scale -
         drag.offsetY;
 
 
@@ -255,10 +274,17 @@ export function initLaneHandleDrag({
       const stageRect =
         stage.getBoundingClientRect();
 
+      const scale =
+        getStageScale(
+          stage,
+        );
+
 
       drag = {
         pointerId:
           event.pointerId,
+
+        scale,
 
         stageLeft:
           stageRect.left,
@@ -409,16 +435,22 @@ function getLaneFromPointer(
     "vertical"
   ) {
     offset =
-      event.clientX -
-      drag.stageLeft -
+      (
+        event.clientX -
+        drag.stageLeft
+      ) /
+        drag.scale -
       rect.x -
       config.edgeMargin;
   }
 
   else {
     offset =
-      event.clientY -
-      drag.stageTop -
+      (
+        event.clientY -
+        drag.stageTop
+      ) /
+        drag.scale -
       rect.y -
       config.edgeMargin;
   }
@@ -441,5 +473,31 @@ function getLaneFromPointer(
       ),
       lane,
     ),
+  );
+}
+
+
+/* ======================================== */
+/* AKTUELLEN GRAPH-ZOOM LESEN               */
+/* ======================================== */
+
+function getStageScale(
+  stage,
+) {
+  const scale =
+    Number(
+      stage?.dataset
+        ?.graphScale ??
+      1,
+    );
+
+
+  return (
+    Number.isFinite(
+      scale,
+    ) &&
+    scale > 0
+      ? scale
+      : 1
   );
 }

@@ -457,11 +457,11 @@ export function getGridSize({
   graph,
   nodeSlots,
 }) {
-  let rows =
-    GRAPH_GRID.minRows;
+  let highestRow =
+    0;
 
-  let columns =
-    GRAPH_GRID.minColumns;
+  let highestColumn =
+    0;
 
 
   Object.values(
@@ -479,15 +479,15 @@ export function getGridSize({
       }
 
 
-      rows =
+      highestRow =
         Math.max(
-          rows,
+          highestRow,
           slot.row,
         );
 
-      columns =
+      highestColumn =
         Math.max(
-          columns,
+          highestColumn,
           slot.column,
         );
     },
@@ -495,22 +495,30 @@ export function getGridSize({
 
 
   /*
-      Ein freier Rand aus einer zusätzlichen
-      Reihe sorgt dafür, dass Drag & Drop
-      nicht sofort am Ende des Rasters endet.
+      Dynamisches Raster:
+
+      Es gibt IMMER genau mindestens eine
+      freie Reihe und eine freie Spalte hinter
+      dem aktuell am weitesten belegten Slot.
+
+      Beispiel:
+      höchster belegter Slot = 6.7
+      -> Raster mindestens 7 Zeilen / 8 Spalten.
+
+      Die Mindestgröße bleibt für kleine Netze
+      bestehen.
   */
 
-  rows =
+  const rows =
     Math.max(
-      rows + 1,
-      Math.ceil(
-        (
-          graph.nodes?.length ??
-          0
-        ) /
-        columns,
-      ) +
-        1,
+      GRAPH_GRID.minRows,
+      highestRow + 1,
+    );
+
+  const columns =
+    Math.max(
+      GRAPH_GRID.minColumns,
+      highestColumn + 1,
     );
 
 

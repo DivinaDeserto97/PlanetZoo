@@ -431,3 +431,45 @@
 .graph-node:has(.graph-node__select) .graph-node__subtitle {
   padding-left: 28px;
 }
+
+/* ======================================== */
+/* ZOOM-WELT / PANNING                      */
+/* ======================================== */
+
+.graph-stage {
+  position: relative;
+}
+
+.graph-world {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform-origin: 0 0;
+}
+
+.graph-scroll.is-panning {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.graph-scroll.is-panning * {
+  cursor: grabbing !important;
+}
+
+/* Giftig ist der vierte feste Linientyp. */
+.graph-edge--toxic {
+  stroke-dasharray: 14 5 3 5;
+}
+
+/* Wirkung 0/0 bleibt neutral und bewusst zurückhaltend. */
+.graph-edge--effect-neutral {
+  opacity: 0.78;
+}
+
+/* -/- bleibt eine reine Verbindung ohne Pfeil. */
+.graph-edge--effect-negative-negative {
+  marker-start: none;
+  marker-end: none;
+}
+

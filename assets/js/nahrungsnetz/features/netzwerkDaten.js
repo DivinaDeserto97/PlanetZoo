@@ -709,7 +709,7 @@ function getGraphLineType(
   /*
       Die Legende lautet weiterhin:
 
-      Bedingung / Jungtier
+      unter bestimten Bedingungen
 
       Darum wird eine Beziehung, die nur
       im Bereich "jungtier" steht,

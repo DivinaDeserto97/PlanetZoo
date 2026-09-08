@@ -15,7 +15,7 @@
           <i
             class="nahrungsnetz-legend__line nahrungsnetz-legend__line--conditional"
           ></i>
-          Bedingung / Jungtier
+          unter bestimten Bedingungen
         </span>
 
         <span class="nahrungsnetz-legend__item">
@@ -55,6 +55,33 @@
       <button type="button" data-graph-reset>Zurücksetzen</button>
     </div>
   </section>
+
+  <div class="nahrungsnetz-navigation" aria-label="Graph steuern">
+    <button type="button" data-graph-pan-up title="Nach oben">↑</button>
+
+    <div class="nahrungsnetz-navigation__middle">
+      <button type="button" data-graph-pan-left title="Nach links">←</button>
+      <button
+        type="button"
+        data-graph-nav-center
+        title="Auswahl bzw. gesamtes Netz zentrieren"
+      >
+        ◎
+      </button>
+      <button type="button" data-graph-pan-right title="Nach rechts">→</button>
+    </div>
+
+    <button type="button" data-graph-pan-down title="Nach unten">↓</button>
+
+    <button
+      type="button"
+      class="nahrungsnetz-navigation__zoom"
+      data-graph-zoom-reset
+      title="Zoom auf 100 % zurücksetzen"
+    >
+      <span data-graph-zoom-label>100%</span>
+    </button>
+  </div>
 
   <div class="nahrungsnetz-empty" data-nahrungsnetz-empty hidden>
     <strong>Keine Tiere ausgewählt.</strong>

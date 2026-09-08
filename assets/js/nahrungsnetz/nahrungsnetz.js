@@ -38,6 +38,9 @@ let graphCanvas =
 let routeEdit =
   false;
 
+let rightPress =
+  null;
+
 
 /* ======================================== */
 /* INITIALISIEREN                           */
@@ -128,27 +131,105 @@ export async function init() {
 
       onDirtyChange:
         updateSaveStatus,
+
+      onZoomChange:
+        updateZoomLabel,
     });
 
 
   /* ==================================== */
-  /* AUSWAHL ZENTRIEREN                   */
+  /* VIEWPORT-STEUERUNG                   */
   /* ==================================== */
 
   document
+    .querySelectorAll(
+      "[data-graph-center], [data-graph-nav-center]",
+    )
+    .forEach(
+      (button) => {
+        button.addEventListener(
+          "click",
+          () => {
+            graphCanvas
+              .centerOnFocus();
+          },
+          { signal },
+        );
+      },
+    );
+
+
+  const panControls = [
+    [
+      "[data-graph-pan-left]",
+      -0.7,
+      0,
+    ],
+    [
+      "[data-graph-pan-right]",
+      0.7,
+      0,
+    ],
+    [
+      "[data-graph-pan-up]",
+      0,
+      -0.7,
+    ],
+    [
+      "[data-graph-pan-down]",
+      0,
+      0.7,
+    ],
+  ];
+
+
+  panControls.forEach(
+    ([
+      selector,
+      x,
+      y,
+    ]) => {
+      document
+        .querySelector(
+          selector,
+        )
+        ?.addEventListener(
+          "click",
+          () => {
+            graphCanvas
+              .panByViewport(
+                x,
+                y,
+              );
+          },
+          { signal },
+        );
+    },
+  );
+
+
+  document
     .querySelector(
-      "[data-graph-center]",
+      "[data-graph-zoom-reset]",
     )
     ?.addEventListener(
       "click",
       () => {
         graphCanvas
-          .centerOnFocus();
+          .resetZoom();
       },
-      {
-        signal,
-      },
+      { signal },
     );
+
+
+  bindRightMouseControls(
+    page,
+    signal,
+  );
+
+  updateZoomLabel(
+    graphCanvas.getZoom(),
+  );
 
 
   /* ==================================== */
@@ -342,6 +423,236 @@ export async function init() {
 
 
   render();
+}
+
+
+/* ======================================== */
+/* RECHTE MAUSTASTE AUF TIERKÄSTCHEN        */
+/* ======================================== */
+
+function bindRightMouseControls(
+  page,
+  signal,
+) {
+  if (!page) {
+    return;
+  }
+
+
+  page.addEventListener(
+    "contextmenu",
+    (event) => {
+      if (
+        event.target.closest(
+          ".graph-node[data-graph-tier-id]",
+        )
+      ) {
+        event.preventDefault();
+      }
+    },
+    { signal },
+  );
+
+
+  page.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (
+        event.button !==
+        2
+      ) {
+        return;
+      }
+
+
+      const node =
+        event.target.closest(
+          ".graph-node[data-graph-tier-id]",
+        );
+
+
+      if (!node) {
+        return;
+      }
+
+
+      event.preventDefault();
+
+
+      const press = {
+        pointerId:
+          event.pointerId,
+
+        node,
+
+        tierId:
+          node.dataset
+            .graphTierId,
+
+        startX:
+          event.clientX,
+
+        startY:
+          event.clientY,
+
+        moved:
+          false,
+
+        longPress:
+          false,
+
+        timer:
+          null,
+      };
+
+
+      press.timer =
+        window.setTimeout(
+          () => {
+            press.longPress =
+              true;
+
+            node
+              .querySelector(
+                "[data-graph-info]",
+              )
+              ?.click();
+          },
+          600,
+        );
+
+
+      rightPress =
+        press;
+    },
+    { signal },
+  );
+
+
+  page.addEventListener(
+    "pointermove",
+    (event) => {
+      if (
+        !rightPress ||
+        rightPress.pointerId !==
+          event.pointerId
+      ) {
+        return;
+      }
+
+
+      const distance =
+        Math.hypot(
+          event.clientX -
+            rightPress.startX,
+          event.clientY -
+            rightPress.startY,
+        );
+
+
+      if (
+        distance >
+        8
+      ) {
+        rightPress.moved =
+          true;
+
+        window.clearTimeout(
+          rightPress.timer,
+        );
+      }
+    },
+    { signal },
+  );
+
+
+  const finish =
+    (event) => {
+      if (
+        !rightPress ||
+        rightPress.pointerId !==
+          event.pointerId
+      ) {
+        return;
+      }
+
+
+      const press =
+        rightPress;
+
+      rightPress =
+        null;
+
+
+      window.clearTimeout(
+        press.timer,
+      );
+
+
+      if (
+        press.longPress ||
+        press.moved ||
+        !press.tierId
+      ) {
+        return;
+      }
+
+
+      const selected =
+        new Set(
+          getTierAuswahl(),
+        );
+
+
+      setTierAusgewaehlt(
+        press.tierId,
+        !selected.has(
+          press.tierId,
+        ),
+      );
+    };
+
+
+  page.addEventListener(
+    "pointerup",
+    finish,
+    { signal },
+  );
+
+  page.addEventListener(
+    "pointercancel",
+    finish,
+    { signal },
+  );
+}
+
+
+/* ======================================== */
+/* ZOOM-ANZEIGE                             */
+/* ======================================== */
+
+function updateZoomLabel(
+  zoom,
+) {
+  const label =
+    document.querySelector(
+      "[data-graph-zoom-label]",
+    );
+
+
+  if (!label) {
+    return;
+  }
+
+
+  label.textContent =
+    `${Math.round(
+      (
+        Number(zoom) ||
+        1
+      ) *
+        100,
+    )}%`;
 }
 
 

@@ -783,3 +783,78 @@ body:has(.nahrungsnetz-page) #page {
 .nahrungsnetz-color-item--muted {
   opacity: 0.9;
 }
+
+
+/* ======================================== */
+/* SCHRITT 8 – GRAPH-STEUERUNG              */
+/* ======================================== */
+
+.nahrungsnetz-navigation {
+  position: absolute;
+  z-index: 55;
+
+  left: var(--nahrungsnetz-overlay-gap);
+  bottom: var(--nahrungsnetz-overlay-gap);
+
+  display: grid;
+  grid-template-columns: repeat(3, 38px);
+  justify-items: center;
+  gap: 4px;
+
+  padding: 6px;
+
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--nahrungsnetz-panel-radius);
+
+  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
+  box-shadow: var(--nahrungsnetz-panel-shadow);
+  backdrop-filter: blur(10px);
+
+  pointer-events: auto;
+}
+
+.nahrungsnetz-navigation > button[data-graph-pan-up],
+.nahrungsnetz-navigation > button[data-graph-pan-down] {
+  grid-column: 2;
+}
+
+.nahrungsnetz-navigation__middle {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 38px);
+  gap: 4px;
+}
+
+.nahrungsnetz-navigation button {
+  width: 38px;
+  height: 34px;
+  min-width: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1;
+}
+
+.nahrungsnetz-navigation__zoom {
+  grid-column: 1 / -1;
+
+  width: 100% !important;
+
+  font-size: 10px !important;
+}
+
+/*
+    Bedienung:
+    - Mausrad: Zoom
+    - Mausrad/Mitteltaste halten + ziehen: Verschieben
+    - Rechtsklick Tier: an/abwählen
+    - Rechts halten: Tierinfo öffnen
+*/
+.nahrungsnetz-page .graph-scroll {
+  cursor: default;
+}
+
+.nahrungsnetz-page .graph-node[data-graph-tier-id] {
+  cursor: grab;
+}
