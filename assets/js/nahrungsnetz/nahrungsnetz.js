@@ -4,6 +4,7 @@ import {
 
 import {
   getTierAuswahl,
+  setTierAusgewaehlt,
 } from "../features/tierAuswahl.js";
 
 import {
@@ -39,8 +40,10 @@ let routeEdit =
 export async function init() {
   controller?.abort();
 
+
   controller =
     new AbortController();
+
 
   const {
     signal,
@@ -76,6 +79,11 @@ export async function init() {
       "[data-graph-connections]",
     );
 
+  const page =
+    document.querySelector(
+      "[data-nahrungsnetz-page]",
+    );
+
 
   if (
     !stage ||
@@ -95,6 +103,7 @@ export async function init() {
   graphCanvas =
     createGraphCanvas({
       stage,
+
       scroll,
 
       nodesContainer:
@@ -116,20 +125,9 @@ export async function init() {
     });
 
 
-  document
-    .querySelector(
-      "[data-graph-reset]",
-    )
-    ?.addEventListener(
-      "click",
-      () =>
-        graphCanvas
-          .resetPositions(),
-      {
-        signal,
-      },
-    );
-
+  /* ==================================== */
+  /* AUSWAHL ZENTRIEREN                   */
+  /* ==================================== */
 
   document
     .querySelector(
@@ -137,32 +135,19 @@ export async function init() {
     )
     ?.addEventListener(
       "click",
-      () =>
-        graphCanvas
-          .centerOnFocus(),
-      {
-        signal,
-      },
-    );
-
-
-  document
-    .querySelector(
-      "[data-graph-save]",
-    )
-    ?.addEventListener(
-      "click",
       () => {
         graphCanvas
-          .saveLayout();
-
-        showSavedMessage();
+          .centerOnFocus();
       },
       {
         signal,
       },
     );
 
+
+  /* ==================================== */
+  /* SPUREN BEARBEITEN                    */
+  /* ==================================== */
 
   document
     .querySelector(
@@ -198,8 +183,8 @@ export async function init() {
         if (text) {
           text.textContent =
             routeEdit
-              ? "Linienpunkte ausblenden"
-              : "Linien bearbeiten";
+              ? "Spuren ausblenden"
+              : "Spuren bearbeiten";
         }
       },
       {
@@ -207,35 +192,126 @@ export async function init() {
       },
     );
 
+
+  /* ==================================== */
+  /* LAYOUT SPEICHERN                     */
+  /* ==================================== */
 
   document
     .querySelector(
-      "[data-nahrungsnetz-page]",
+      "[data-graph-save]",
     )
     ?.addEventListener(
       "click",
-      (event) => {
-        const info =
-          event.target.closest(
-            "[data-graph-info]",
-          );
+      () => {
+        graphCanvas
+          .saveLayout();
 
 
-        if (!info) {
-          return;
-        }
-
-
-        setAktivesTierId(
-          info.dataset
-            .graphTierId,
-        );
+        showSavedMessage();
       },
       {
         signal,
       },
     );
 
+
+  /* ==================================== */
+  /* LAYOUT ZURÜCKSETZEN                  */
+  /* ==================================== */
+
+  document
+    .querySelector(
+      "[data-graph-reset]",
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        graphCanvas
+          .resetPositions();
+      },
+      {
+        signal,
+      },
+    );
+
+
+  /* ==================================== */
+  /* INFO-BUTTON                          */
+  /* ==================================== */
+
+  page?.addEventListener(
+    "click",
+    (event) => {
+      const info =
+        event.target.closest(
+          "[data-graph-info]",
+        );
+
+
+      if (!info) {
+        return;
+      }
+
+
+      setAktivesTierId(
+        info.dataset
+          .graphTierId,
+      );
+    },
+    {
+      signal,
+    },
+  );
+
+
+  /* ==================================== */
+  /* TIER-CHECKBOX                         */
+  /* ==================================== */
+
+  page?.addEventListener(
+    "change",
+    (event) => {
+      const checkbox =
+        event.target.closest(
+          "[data-graph-tier-checkbox]",
+        );
+
+
+      if (!checkbox) {
+        return;
+      }
+
+
+      const tierId =
+        checkbox.dataset
+          .graphTierId;
+
+
+      if (!tierId) {
+        return;
+      }
+
+
+      /*
+          Das ist absichtlich dieselbe
+          Auswahl wie auf home.html.
+      */
+
+      setTierAusgewaehlt(
+        tierId,
+        checkbox.checked,
+      );
+    },
+    {
+      signal,
+    },
+  );
+
+
+  /* ==================================== */
+  /* GLOBALE AUSWAHL ÄNDERT SICH          */
+  /* ==================================== */
 
   document.addEventListener(
     "tierAuswahlChanged",
@@ -245,6 +321,10 @@ export async function init() {
     },
   );
 
+
+  /* ==================================== */
+  /* SPRACHE ÄNDERT SICH                  */
+  /* ==================================== */
 
   document.addEventListener(
     "languageChanged",
@@ -271,6 +351,12 @@ function render() {
 
   const selectedIds =
     getTierAuswahl();
+
+
+  const selectedSet =
+    new Set(
+      selectedIds,
+    );
 
 
   const graph =
@@ -357,8 +443,146 @@ function render() {
   );
 
 
+  /*
+      graphCanvas erzeugt zuerst die
+      Kästchen.
+
+      Danach setzen wir die Checkboxen
+      hinein.
+  */
+
+  renderTierCheckboxes(
+    graph,
+    selectedSet,
+  );
+
+
   graphCanvas.setRouteEdit(
     routeEdit,
+  );
+}
+
+
+/* ======================================== */
+/* CHECKBOXEN IN DIE TIERKÄSTCHEN           */
+/* ======================================== */
+
+function renderTierCheckboxes(
+  graph,
+  selectedSet,
+) {
+  const nodeElements =
+    new Map();
+
+
+  document
+    .querySelectorAll(
+      "[data-graph-node-id]",
+    )
+    .forEach(
+      (element) => {
+        nodeElements.set(
+          element.dataset
+            .graphNodeId,
+          element,
+        );
+      },
+    );
+
+
+  graph.nodes.forEach(
+    (node) => {
+      /*
+          Nur echte Tiere aus unseren
+          geladenen Tier-JSONs bekommen
+          eine Auswahlbox.
+
+          Pflanzen, Aas, Wasser usw.
+          bekommen keine.
+      */
+
+      if (!node.tierId) {
+        return;
+      }
+
+
+      const element =
+        nodeElements.get(
+          node.id,
+        );
+
+
+      if (!element) {
+        return;
+      }
+
+
+      element
+        .querySelector(
+          "[data-graph-tier-checkbox]",
+        )
+        ?.remove();
+
+
+      const checkbox =
+        document.createElement(
+          "input",
+        );
+
+
+      checkbox.type =
+        "checkbox";
+
+
+      checkbox.className =
+        "graph-node__select";
+
+
+      checkbox.dataset
+        .graphTierCheckbox =
+        "";
+
+
+      checkbox.dataset
+        .graphTierId =
+        node.tierId;
+
+
+      checkbox.checked =
+        selectedSet.has(
+          node.tierId,
+        );
+
+
+      checkbox.setAttribute(
+        "aria-label",
+        `${node.label} auswählen`,
+      );
+
+
+      /*
+          Vor dem Tiernamen einsetzen.
+      */
+
+      const title =
+        element.querySelector(
+          ".graph-node__title",
+        );
+
+
+      if (title) {
+        element.insertBefore(
+          checkbox,
+          title,
+        );
+      }
+
+      else {
+        element.prepend(
+          checkbox,
+        );
+      }
+    },
   );
 }
 

@@ -10,13 +10,10 @@
 
   overflow: auto;
 
-  background:
-    var(--farbe-bereich);
+  background: var(--farbe-bereich);
 
-  overscroll-behavior:
-    contain;
+  overscroll-behavior: contain;
 }
-
 
 .graph-stage {
   position: relative;
@@ -24,10 +21,8 @@
   min-width: 100%;
   min-height: 100%;
 
-  background:
-    var(--farbe-bereich);
+  background: var(--farbe-bereich);
 }
-
 
 /* ======================================== */
 /* EBENEN                                   */
@@ -41,12 +36,10 @@
   inset: 0;
 }
 
-
 .graph-grid-overlay {
   z-index: 0;
   pointer-events: none;
 }
-
 
 .graph-connections {
   z-index: 2;
@@ -56,18 +49,15 @@
   pointer-events: none;
 }
 
-
 .graph-route-points {
   z-index: 5;
 
   pointer-events: none;
 }
 
-
 .graph-nodes {
   z-index: 4;
 }
-
 
 /* ======================================== */
 /* LOGISCHE KÄSTCHENPLÄTZE                  */
@@ -76,50 +66,28 @@
 .graph-grid-slot {
   position: absolute;
 
-  border:
-    1px dashed
-    color-mix(
-      in srgb,
-      var(--farbe-linie) 30%,
-      transparent
-    );
+  border: 1px dashed color-mix(in srgb, var(--farbe-linie) 30%, transparent);
 
   border-radius: 10px;
 
-  color:
-    color-mix(
-      in srgb,
-      var(--farbe-text-zusatz) 34%,
-      transparent
-    );
+  color: color-mix(in srgb, var(--farbe-text-zusatz) 34%, transparent);
 
-  font-family:
-    monospace;
+  font-family: monospace;
 
-  font-size:
-    9px;
+  font-size: 9px;
 
-  padding:
-    5px 6px;
+  padding: 5px 6px;
 
   transition:
     border-color 120ms ease,
     background 120ms ease;
 }
 
-
 .graph-grid-slot.is-drop-target {
-  border-color:
-    var(--farbe-akzent);
+  border-color: var(--farbe-akzent);
 
-  background:
-    color-mix(
-      in srgb,
-      var(--farbe-akzent) 12%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--farbe-akzent) 12%, transparent);
 }
-
 
 /* ======================================== */
 /* LINIENBEREICH-NAMEN                      */
@@ -128,43 +96,24 @@
 .graph-corridor-label {
   position: absolute;
 
-  transform:
-    translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
-  color:
-    color-mix(
-      in srgb,
-      var(--farbe-text-zusatz) 22%,
-      transparent
-    );
+  color: color-mix(in srgb, var(--farbe-text-zusatz) 22%, transparent);
 
-  font-family:
-    monospace;
+  font-family: monospace;
 
-  font-size:
-    8px;
+  font-size: 8px;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 
-  pointer-events:
-    none;
+  pointer-events: none;
 }
 
+.graph-stage.is-line-editing .graph-corridor-label {
+  color: color-mix(in srgb, var(--farbe-akzent) 72%, var(--farbe-text-zusatz));
 
-.graph-stage.is-line-editing
-.graph-corridor-label {
-  color:
-    color-mix(
-      in srgb,
-      var(--farbe-akzent) 72%,
-      var(--farbe-text-zusatz)
-    );
-
-  font-weight:
-    700;
+  font-weight: 700;
 }
-
 
 /* ======================================== */
 /* LINIEN                                   */
@@ -173,77 +122,50 @@
 .graph-edge {
   fill: none;
 
-  stroke:
-    color-mix(
-      in srgb,
-      var(--farbe-text) 70%,
-      transparent
-    );
+  stroke: color-mix(in srgb, var(--farbe-text) 70%, transparent);
 
-  stroke-width:
-    2.1;
+  stroke-width: 2.1;
 
-  stroke-linejoin:
-    round;
+  stroke-linejoin: round;
 
-  vector-effect:
-    non-scaling-stroke;
+  vector-effect: non-scaling-stroke;
 }
-
 
 .graph-edge--direct {
-  stroke-dasharray:
-    none;
+  stroke-dasharray: none;
 }
-
 
 .graph-edge--conditional {
-  stroke-dasharray:
-    10 7;
+  stroke-dasharray: 10 7;
 }
-
 
 .graph-edge--carrion {
-  stroke-linecap:
-    round;
+  stroke-linecap: round;
 
-  stroke-dasharray:
-    2 8;
+  stroke-dasharray: 2 8;
 }
-
 
 .graph-edge--dependency {
-  stroke-dasharray:
-    14 5 3 5;
+  stroke-dasharray: 14 5 3 5;
 }
-
 
 .graph-edge-label {
-  fill:
-    var(--farbe-text);
+  fill: var(--farbe-text);
 
-  stroke:
-    var(--farbe-bereich);
+  stroke: var(--farbe-bereich);
 
-  stroke-width:
-    6px;
+  stroke-width: 6px;
 
-  paint-order:
-    stroke;
+  paint-order: stroke;
 
-  font-size:
-    10px;
+  font-size: 10px;
 
-  font-weight:
-    700;
+  font-weight: 700;
 
-  text-anchor:
-    middle;
+  text-anchor: middle;
 
-  pointer-events:
-    none;
+  pointer-events: none;
 }
-
 
 /* ======================================== */
 /* SPUR-HANDLES                             */
@@ -252,69 +174,47 @@
 .graph-route-point {
   position: absolute;
 
-  width:
-    22px;
+  width: 22px;
 
-  height:
-    22px;
+  height: 22px;
 
-  margin:
-    -11px 0 0 -11px;
+  margin: -11px 0 0 -11px;
 
-  padding:
-    0;
+  padding: 0;
 
-  display:
-    grid;
+  display: grid;
 
-  place-items:
-    center;
+  place-items: center;
 
-  border:
-    2px solid
-    var(--farbe-akzent);
+  border: 2px solid var(--farbe-akzent);
 
-  border-radius:
-    50%;
+  border-radius: 50%;
 
-  background:
-    var(--farbe-bereich);
+  background: var(--farbe-bereich);
 
-  color:
-    var(--farbe-text);
+  color: var(--farbe-text);
 
-  font-size:
-    9px;
+  font-size: 9px;
 
-  font-weight:
-    900;
+  font-weight: 900;
 
-  line-height:
-    1;
+  line-height: 1;
 
-  cursor:
-    grab;
+  cursor: grab;
 
-  pointer-events:
-    auto;
+  pointer-events: auto;
 }
-
 
 .graph-route-point:hover,
 .graph-route-point.is-dragging {
-  background:
-    var(--farbe-akzent);
+  background: var(--farbe-akzent);
 
-  color:
-    #fff;
+  color: #fff;
 }
-
 
 .graph-route-point.is-dragging {
-  cursor:
-    grabbing;
+  cursor: grabbing;
 }
-
 
 /* ======================================== */
 /* KÄSTCHEN                                 */
@@ -323,273 +223,211 @@
 .graph-node {
   position: absolute;
 
-  box-sizing:
-    border-box;
+  box-sizing: border-box;
 
-  padding:
-    13px 44px 10px 14px;
+  padding: 13px 44px 10px 14px;
 
-  border:
-    1px solid
-    var(--farbe-linie);
+  border: 1px solid var(--farbe-linie);
 
-  border-left-width:
-    6px;
+  border-left-width: 6px;
 
-  border-radius:
-    10px;
+  border-radius: 10px;
 
-  background:
-    color-mix(
-      in srgb,
-      var(--farbe-element) 97%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--farbe-element) 97%, transparent);
 
-  color:
-    var(--farbe-text);
+  color: var(--farbe-text);
 
-  box-shadow:
-    0 5px 16px
-    rgb(0 0 0 / 0.22);
+  box-shadow: 0 5px 16px rgb(0 0 0 / 0.22);
 
-  cursor:
-    grab;
+  cursor: grab;
 
-  touch-action:
-    none;
+  touch-action: none;
 
-  user-select:
-    none;
+  user-select: none;
 }
-
 
 .graph-node:hover {
-  border-color:
-    color-mix(
-      in srgb,
-      var(--farbe-akzent) 55%,
-      var(--farbe-linie)
-    );
+  border-color: color-mix(in srgb, var(--farbe-akzent) 55%, var(--farbe-linie));
 }
-
 
 .graph-node.is-dragging {
-  z-index:
-    30;
+  z-index: 30;
 
-  opacity:
-    0.94;
+  opacity: 0.94;
 
-  cursor:
-    grabbing;
+  cursor: grabbing;
 
-  box-shadow:
-    0 14px 34px
-    rgb(0 0 0 / 0.38);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 0.38);
 }
-
 
 .graph-node--focus {
-  border-color:
-    var(--farbe-akzent);
+  border-color: var(--farbe-akzent);
 
   box-shadow:
-    0 0 0 2px
-      color-mix(
-        in srgb,
-        var(--farbe-akzent) 18%,
-        transparent
-      ),
-    0 8px 24px
-      rgb(0 0 0 / 0.26);
+    0 0 0 2px color-mix(in srgb, var(--farbe-akzent) 18%, transparent),
+    0 8px 24px rgb(0 0 0 / 0.26);
 }
-
 
 .graph-node--animal {
-  border-left-color:
-    #d5a021;
+  border-left-color: #d5a021;
 }
-
 
 .graph-node--plant {
-  border-left-color:
-    #5da85a;
+  border-left-color: #5da85a;
 }
-
 
 .graph-node--carrion {
-  border-left-color:
-    #aa7d56;
+  border-left-color: #aa7d56;
 
-  border-left-style:
-    dotted;
+  border-left-style: dotted;
 }
-
 
 .graph-node--water {
-  border-left-color:
-    #42a5d8;
+  border-left-color: #42a5d8;
 }
-
 
 .graph-node--mineral {
-  border-left-color:
-    #a0a0a0;
+  border-left-color: #a0a0a0;
 }
-
 
 .graph-node--resource {
-  border-left-color:
-    #8d78c7;
+  border-left-color: #8d78c7;
 }
-
 
 .graph-node__title {
-  display:
-    block;
+  display: block;
 
-  margin-bottom:
-    4px;
+  margin-bottom: 4px;
 
-  overflow:
-    hidden;
+  overflow: hidden;
 
-  font-size:
-    16px;
+  font-size: 16px;
 
-  font-weight:
-    800;
+  font-weight: 800;
 
-  line-height:
-    1.15;
+  line-height: 1.15;
 
-  text-overflow:
-    ellipsis;
+  text-overflow: ellipsis;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 }
-
 
 .graph-node__subtitle {
-  display:
-    block;
+  display: block;
 
-  min-height:
-    15px;
+  min-height: 15px;
 
-  overflow:
-    hidden;
+  overflow: hidden;
 
-  color:
-    var(--farbe-text-zusatz);
+  color: var(--farbe-text-zusatz);
 
-  font-size:
-    11px;
+  font-size: 11px;
 
-  font-style:
-    italic;
+  font-style: italic;
 
-  line-height:
-    1.2;
+  line-height: 1.2;
 
-  text-overflow:
-    ellipsis;
+  text-overflow: ellipsis;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 }
-
 
 .graph-node__footer {
-  margin-top:
-    9px;
+  margin-top: 9px;
 
-  display:
-    flex;
+  display: flex;
 
-  align-items:
-    center;
+  align-items: center;
 
-  justify-content:
-    space-between;
+  justify-content: space-between;
 
-  gap:
-    8px;
+  gap: 8px;
 }
-
 
 .graph-node__kind {
-  display:
-    inline-block;
+  display: inline-block;
 
-  padding:
-    2px 7px;
+  padding: 2px 7px;
 
-  border-radius:
-    999px;
+  border-radius: 999px;
 
-  background:
-    var(--farbe-element-2);
+  background: var(--farbe-element-2);
 
-  color:
-    var(--farbe-text-zusatz);
+  color: var(--farbe-text-zusatz);
 
-  font-size:
-    9px;
+  font-size: 9px;
 
-  font-weight:
-    800;
+  font-weight: 800;
 
-  text-transform:
-    uppercase;
+  text-transform: uppercase;
 }
-
 
 .graph-node__coordinate {
-  color:
-    var(--farbe-text-zusatz);
+  color: var(--farbe-text-zusatz);
 
-  font-family:
-    monospace;
+  font-family: monospace;
 
-  font-size:
-    9px;
+  font-size: 9px;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 }
 
-
 .graph-node__info {
-  position:
-    absolute;
+  position: absolute;
 
-  top:
-    9px;
+  top: 9px;
 
-  right:
-    9px;
+  right: 9px;
 
-  min-width:
-    29px;
+  min-width: 29px;
 
-  min-height:
-    29px;
+  min-height: 29px;
 
-  padding:
-    0 8px;
+  padding: 0 8px;
 
-  display:
-    grid;
+  display: grid;
 
-  place-items:
-    center;
+  place-items: center;
 
-  border-radius:
-    7px;
+  border-radius: 7px;
 
-  font-weight:
-    800;
+  font-weight: 800;
+}
+
+/* ======================================== */
+/* TIER AUSWÄHLEN                           */
+/* ======================================== */
+
+.graph-node__select {
+  position: absolute;
+
+  top: 18px;
+  left: 14px;
+
+  width: 18px;
+  height: 18px;
+
+  margin: 0;
+
+  accent-color: var(--farbe-akzent);
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+/*
+    Bei echten Tierknoten ist links jetzt
+    die Checkbox.
+
+    Deshalb Name und wissenschaftlichen
+    Namen etwas nach rechts schieben.
+*/
+
+.graph-node:has(.graph-node__select) .graph-node__title {
+  padding-left: 28px;
+}
+
+.graph-node:has(.graph-node__select) .graph-node__subtitle {
+  padding-left: 28px;
 }
