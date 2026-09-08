@@ -13,6 +13,12 @@ import {
   getConservationLabel,
   getAnimalUiText,
 } from "../features/animalLabels.js";
+import {
+  getFressfeinde,
+  getNahrungsBeziehungen,
+  getSelbstBedingungen,
+  getZielBedingungen,
+} from "../features/nahrungsBeziehungen.js";
 
 let controller = null;
 let tiere = [];
@@ -142,6 +148,136 @@ const VALUE_LABELS = {
   marmot: { de: "Murmeltier", en: "Marmot" },
   chamois: { de: "Gämse", en: "Chamois" },
   foodShortage: { de: "bei Nahrungsknappheit", en: "during food shortage" },
+  /* ==================================== */
+  /* NAHRUNGSNETZ                         */
+  /* ==================================== */
+
+  muttermilch: {
+    de: "Muttermilch",
+    en: "Mother's milk",
+  },
+
+  tierischeNahrung: {
+    de: "Tierische Nahrung",
+    en: "Animal food",
+  },
+
+  plantFood: {
+    de: "Pflanzliche Nahrung",
+    en: "Plant food",
+  },
+
+  grass: {
+    de: "Gras",
+    en: "Grass",
+  },
+
+  leaves: {
+    de: "Blätter",
+    en: "Leaves",
+  },
+
+  fruit: {
+    de: "Früchte",
+    en: "Fruit",
+  },
+
+  roots: {
+    de: "Wurzeln",
+    en: "Roots",
+  },
+
+  twigs: {
+    de: "Zweige",
+    en: "Twigs",
+  },
+
+  bark: {
+    de: "Rinde",
+    en: "Bark",
+  },
+
+  shrubs: {
+    de: "Sträucher",
+    en: "Shrubs",
+  },
+
+  ants: {
+    de: "Ameisen",
+    en: "Ants",
+  },
+
+  termites: {
+    de: "Termiten",
+    en: "Termites",
+  },
+
+  insects: {
+    de: "Insekten",
+    en: "Insects",
+  },
+
+  aas: {
+    de: "Aas",
+    en: "Carrion",
+  },
+
+  /* Bedingungen */
+
+  jungtier: {
+    de: "Jungtier",
+    en: "Young",
+  },
+
+  erwachsen: {
+    de: "Erwachsen",
+    en: "Adult",
+  },
+
+  calf: {
+    de: "Jungtier",
+    en: "Calf",
+  },
+
+  bisEtwa3Monate: {
+    de: "bis etwa 3 Monate",
+    en: "until about 3 months",
+  },
+
+  abEtwa3Monaten: {
+    de: "ab etwa 3 Monaten",
+    en: "from about 3 months",
+  },
+
+  bisEtwa6Monate: {
+    de: "bis etwa 6 Monate",
+    en: "until about 6 months",
+  },
+
+  increasingWithAge: {
+    de: "mit zunehmendem Alter",
+    en: "increasing with age",
+  },
+
+  geschwaecht: {
+    de: "geschwächt",
+    en: "weakened",
+  },
+
+  krank: {
+    de: "krank",
+    en: "sick",
+  },
+
+  verletzt: {
+    de: "verletzt",
+    en: "injured",
+  },
+
+  geeigneterZustand: {
+    de: "geeigneter Zustand",
+    en: "suitable condition",
+  },
 };
 
 /* ======================================== */
@@ -155,9 +291,7 @@ export async function init() {
 
   tiere = await datenImportieren();
 
-  await pruefeLokaleTierDateien(
-    tiere,
-  );
+  await pruefeLokaleTierDateien(tiere);
 
   bindStaticEvents(signal);
 
@@ -468,12 +602,7 @@ function renderStats(tier) {
   if (biomeElement) {
     const biomeValue = formatEnumValues(daten.biome?.werte);
 
-    setOrbitSteckbrief(
-      biomeElement,
-      ui("biome"),
-      biomeValue,
-      "🌍",
-    );
+    setOrbitSteckbrief(biomeElement, ui("biome"), biomeValue, "🌍");
   }
 
   /* ======================================== */
@@ -558,9 +687,7 @@ function renderStats(tier) {
   /* ======================================== */
 
   const dietEntry = daten.ernaehrung?.fressverhalten?.werte?.[0];
-  const dietValue = formatEnumValues(
-    daten.ernaehrung?.fressverhalten?.werte,
-  );
+  const dietValue = formatEnumValues(daten.ernaehrung?.fressverhalten?.werte);
 
   setIconOnlyStat(
     '[data-stat-icon-only="dietType"]',
@@ -639,7 +766,6 @@ function getDietIcon(value) {
 
   return icons[value] ?? "🍽";
 }
-
 
 function formatRange(entry) {
   if (!entry || typeof entry !== "object") return ui("noData");
@@ -756,7 +882,6 @@ function setAudioUiVisible(visible) {
   });
 }
 
-
 function buildAudioItems(tier) {
   return getInfotafelAudioItems(tier);
 }
@@ -770,7 +895,6 @@ function chooseAudioFile(files) {
     null
   );
 }
-
 
 async function loadAudioMetadata(path) {
   if (!path) return null;
@@ -1036,9 +1160,7 @@ function renderZoopedia(tier) {
 
     const heading = document.createElement("h3");
     heading.textContent =
-      sectionData.label[language] ??
-      sectionData.label.de ??
-      sectionData.key;
+      sectionData.label[language] ?? sectionData.label.de ?? sectionData.key;
 
     section.appendChild(heading);
 
@@ -1057,7 +1179,6 @@ function renderZoopedia(tier) {
     container.appendChild(p);
   }
 }
-
 
 /* ======================================== */
 /* 24 - 26: TIERFAKTEN                      */
@@ -1096,59 +1217,771 @@ function changeFact(direction) {
 /* 27 - 29: NAHRUNGSNETZ                    */
 /* ======================================== */
 
-function renderFoodWeb(tier) {
-  document.querySelectorAll("[data-food-relation]").forEach((button) => {
-    button.classList.toggle(
-      "active",
-      button.dataset.foodRelation === foodRelation,
+function renderFoodWeb(
+  tier,
+) {
+  document
+    .querySelectorAll(
+      "[data-food-relation]",
+    )
+    .forEach(
+      (button) => {
+        button.classList.toggle(
+          "active",
+
+          button.dataset
+            .foodRelation ===
+            foodRelation,
+        );
+      },
     );
-  });
 
-  document.querySelectorAll("[data-food-age]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.foodAge === foodAge);
-  });
 
-  const content = document.querySelector("[data-food-content]");
-  if (!content) return;
+  document
+    .querySelectorAll(
+      "[data-food-age]",
+    )
+    .forEach(
+      (button) => {
+        button.classList.toggle(
+          "active",
 
-  const selected =
-    tier.originalDaten?.daten?.ernaehrung?.nahrungsnetz?.[foodRelation]?.[
-      foodAge
-    ];
-  const values = Array.isArray(selected?.werte) ? selected.werte : [];
+          button.dataset
+            .foodAge ===
+            foodAge,
+        );
+      },
+    );
 
-  content.replaceChildren();
 
-  if (!values.length) {
-    const p = document.createElement("p");
-    p.className = "foodweb-empty";
-    p.textContent = selected?.keineNatuerlichenFressfeinde
-      ? ui("noNaturalPredators")
-      : ui("noFoodData");
-    content.appendChild(p);
+  const content =
+    document.querySelector(
+      "[data-food-content]",
+    );
+
+
+  if (!content) {
     return;
   }
 
-  const list = document.createElement("ul");
-  list.className = "foodweb-list";
 
-  values.forEach((entry) => {
-    const item = document.createElement("li");
-    const main = enumLabel(entry.wert);
-    const examples = Array.isArray(entry.beispiele)
-      ? entry.beispiele.map(enumLabel).filter(Boolean)
-      : [];
-    const condition = entry.bedingung ? enumLabel(entry.bedingung) : "";
+  content.replaceChildren();
 
-    let text = main || ui("noData");
-    if (examples.length) text += ` – ${examples.join(", ")}`;
-    if (condition) text += ` (${condition})`;
 
-    item.textContent = text;
-    list.appendChild(item);
-  });
+  /*
+      ==================================
+      FRISST
+      ==================================
 
-  content.appendChild(list);
+      Die Daten werden direkt aus:
+
+      nahrungsnetz.jungtier.werte
+
+      bzw.
+
+      nahrungsnetz.erwachsen.werte
+
+      gelesen.
+  */
+
+  if (
+    foodRelation ===
+    "frisst"
+  ) {
+    const beziehungen =
+      getNahrungsBeziehungen(
+        tier,
+        foodAge,
+      );
+
+
+    renderFoodRelations(
+      content,
+      beziehungen,
+    );
+
+
+    return;
+  }
+
+
+  /*
+      ==================================
+      WIRD GEFRESSEN VON
+      ==================================
+
+      Dieser Bereich existiert NICHT
+      mehr im JSON des aktuellen Tieres.
+
+      Stattdessen werden alle anderen
+      Tier-JSONs durchsucht.
+  */
+
+  if (
+    foodRelation ===
+    "wirdGefressenVon"
+  ) {
+    const fressfeinde =
+      getFressfeinde(
+        tiere,
+        tier,
+        foodAge,
+      );
+
+
+    renderPredatorRelations(
+      content,
+      fressfeinde,
+    );
+
+
+    return;
+  }
+
+
+  renderFoodEmpty(
+    content,
+  );
+}
+
+
+/* ======================================== */
+/* FRISST – LISTE                           */
+/* ======================================== */
+
+function renderFoodRelations(
+  content,
+  beziehungen,
+) {
+  if (
+    !Array.isArray(
+      beziehungen,
+    ) ||
+    beziehungen.length ===
+      0
+  ) {
+    renderFoodEmpty(
+      content,
+    );
+
+    return;
+  }
+
+
+  const list =
+    document.createElement(
+      "ul",
+    );
+
+
+  list.className =
+    "foodweb-list";
+
+
+  beziehungen.forEach(
+    (beziehung) => {
+      const item =
+        document.createElement(
+          "li",
+        );
+
+
+      item.textContent =
+        formatFoodRelation(
+          beziehung,
+        );
+
+
+      list.appendChild(
+        item,
+      );
+    },
+  );
+
+
+  content.appendChild(
+    list,
+  );
+}
+
+
+/* ======================================== */
+/* WIRD GEFRESSEN VON – LISTE               */
+/* ======================================== */
+
+function renderPredatorRelations(
+  content,
+  fressfeinde,
+) {
+  if (
+    !Array.isArray(
+      fressfeinde,
+    ) ||
+    fressfeinde.length ===
+      0
+  ) {
+    const p =
+      document.createElement(
+        "p",
+      );
+
+
+    p.className =
+      "foodweb-empty";
+
+
+    p.textContent =
+      ui(
+        "noNaturalPredators",
+      );
+
+
+    content.appendChild(
+      p,
+    );
+
+
+    return;
+  }
+
+
+  const list =
+    document.createElement(
+      "ul",
+    );
+
+
+  list.className =
+    "foodweb-list";
+
+
+  /*
+      Doppelte sichtbare Texte vermeiden.
+
+      Falls dieselbe Beziehung aus
+      mehreren identischen Quellen
+      entstehen sollte, erscheint sie
+      nur einmal.
+  */
+
+  const texte =
+    new Set();
+
+
+  fressfeinde.forEach(
+    (eintrag) => {
+      const text =
+        formatPredatorRelation(
+          eintrag,
+        );
+
+
+      if (
+        !text ||
+        texte.has(
+          text,
+        )
+      ) {
+        return;
+      }
+
+
+      texte.add(
+        text,
+      );
+
+
+      const item =
+        document.createElement(
+          "li",
+        );
+
+
+      item.textContent =
+        text;
+
+
+      list.appendChild(
+        item,
+      );
+    },
+  );
+
+
+  content.appendChild(
+    list,
+  );
+}
+
+
+/* ======================================== */
+/* FRISST – TEXT                            */
+/* ======================================== */
+
+function formatFoodRelation(
+  beziehung,
+) {
+  const teile =
+    [];
+
+
+  /* ==================================== */
+  /* ZIEL / NAHRUNG                       */
+  /* ==================================== */
+
+  teile.push(
+    getFoodValueLabel(
+      beziehung?.wert,
+    ),
+  );
+
+
+  /* ==================================== */
+  /* BESONDERER TYP                       */
+  /* ==================================== */
+
+  const typText =
+    getFoodTypeLabel(
+      beziehung?.typ,
+    );
+
+
+  if (typText) {
+    teile.push(
+      typText,
+    );
+  }
+
+
+  let text =
+    teile
+      .filter(
+        Boolean,
+      )
+      .join(
+        " – ",
+      );
+
+
+  /* ==================================== */
+  /* BEDINGUNGEN                          */
+  /* ==================================== */
+
+  const bedingungen =
+    formatFoodConditions(
+      beziehung,
+    );
+
+
+  if (bedingungen) {
+    text +=
+      ` (${bedingungen})`;
+  }
+
+
+  return (
+    text ||
+    ui(
+      "noData",
+    )
+  );
+}
+
+
+/* ======================================== */
+/* FRESSFEIND – TEXT                        */
+/* ======================================== */
+
+function formatPredatorRelation(
+  eintrag,
+) {
+  const fressfeind =
+    eintrag?.fressfeind;
+
+
+  if (!fressfeind) {
+    return "";
+  }
+
+
+  let text =
+    getTierName(
+      fressfeind,
+    );
+
+
+  /*
+      Die Lebensphase hier gehört
+      zum FRESSFEIND.
+
+      Beispiel:
+
+      Erwachsener Löwe
+      frisst
+      Elefanten-Jungtier.
+  */
+
+  if (
+    eintrag?.lebensphase
+  ) {
+    text +=
+      ` – ${getFoodAgeLabel(
+        eintrag.lebensphase,
+      )}`;
+  }
+
+
+  const bedingungen =
+    formatFoodConditions(
+      eintrag.beziehung,
+    );
+
+
+  if (bedingungen) {
+    text +=
+      ` (${bedingungen})`;
+  }
+
+
+  return text;
+}
+
+
+/* ======================================== */
+/* NAHRUNGSWERT BESCHRIFTEN                 */
+/* ======================================== */
+
+function getFoodValueLabel(
+  wert,
+) {
+  if (
+    wert ===
+      undefined ||
+    wert ===
+      null
+  ) {
+    return ui(
+      "noData",
+    );
+  }
+
+
+  /*
+      Ist der Wert eine geladene Tierart,
+      wird der lokalisierte Tiername
+      angezeigt.
+
+      Beispiel:
+
+      Loxodonta africana
+
+      →
+
+      Afrikanischer Savannenelefant
+  */
+
+  const tier =
+    findTierByFoodValue(
+      wert,
+    );
+
+
+  if (tier) {
+    return getTierName(
+      tier,
+    );
+  }
+
+
+  /*
+      Ressourcen wie:
+
+      grass
+      ants
+      muttermilch
+
+      werden über VALUE_LABELS
+      übersetzt.
+  */
+
+  return enumLabel(
+    wert,
+  );
+}
+
+
+/* ======================================== */
+/* GELADENES TIER FINDEN                    */
+/* ======================================== */
+
+function findTierByFoodValue(
+  wert,
+) {
+  const value =
+    String(
+      wert ??
+      "",
+    ).trim();
+
+
+  if (!value) {
+    return null;
+  }
+
+
+  return (
+    tiere.find(
+      (tier) =>
+        tier?.id ===
+          value ||
+
+        tier?.datenId ===
+          value ||
+
+        tier
+          ?.wissenschaftlicherName ===
+          value ||
+
+        tier
+          ?.originalDaten
+          ?.id ===
+          value ||
+
+        tier
+          ?.originalDaten
+          ?.daten
+          ?.taxonomie
+          ?.werte
+          ?.[0]
+          ?.art ===
+          value,
+    ) ??
+    null
+  );
+}
+
+
+/* ======================================== */
+/* BEDINGUNGEN FORMATIEREN                  */
+/* ======================================== */
+
+function formatFoodConditions(
+  beziehung,
+) {
+  const teile =
+    [];
+
+
+  const selbst =
+    getSelbstBedingungen(
+      beziehung,
+    );
+
+
+  const ziel =
+    getZielBedingungen(
+      beziehung,
+    );
+
+
+  /*
+      "selbst" betrifft das Tier,
+      dessen JSON die Beziehung enthält.
+
+      Beispiel:
+
+      Löwe Jungtier:
+      bis etwa 6 Monate.
+  */
+
+  if (
+    selbst.length
+  ) {
+    teile.push(
+      selbst
+        .map(
+          enumLabel,
+        )
+        .join(
+          ", ",
+        ),
+    );
+  }
+
+
+  /*
+      "ziel" betrifft das andere Tier.
+
+      Beispiel:
+
+      Löwe erwachsen
+      → Elefant
+
+      ziel:
+      ["jungtier"]
+
+      ergibt:
+
+      Ziel: Jungtier
+  */
+
+  if (
+    ziel.length
+  ) {
+    const zielText =
+      ziel
+        .map(
+          enumLabel,
+        )
+        .join(
+          ", ",
+        );
+
+
+    teile.push(
+      `${getTargetLabel()}: ${zielText}`,
+    );
+  }
+
+
+  return teile.join(
+    " · ",
+  );
+}
+
+
+/* ======================================== */
+/* BEZIEHUNGSTYP BESCHRIFTEN                */
+/* ======================================== */
+
+function getFoodTypeLabel(
+  typ,
+) {
+  switch (
+    String(
+      typ ??
+      "",
+    ).toLowerCase()
+  ) {
+    /*
+        Tier und Pflanze brauchen
+        keinen Zusatz.
+
+        "Frisst Zebra – Tier"
+        wäre unnötig.
+    */
+
+    case "tier":
+    case "pflanze":
+      return "";
+
+
+    case "nutzung":
+      return getLanguage()
+        .startsWith(
+          "en",
+        )
+          ? "Use"
+          : "Nutzung";
+
+
+    case "aas":
+      return getLanguage()
+        .startsWith(
+          "en",
+        )
+          ? "Carrion"
+          : "Aas";
+
+
+    case "giftig":
+      return getLanguage()
+        .startsWith(
+          "en",
+        )
+          ? "Toxic"
+          : "Giftig";
+
+
+    default:
+      return "";
+  }
+}
+
+
+/* ======================================== */
+/* ALTER BESCHRIFTEN                        */
+/* ======================================== */
+
+function getFoodAgeLabel(
+  lebensphase,
+) {
+  if (
+    lebensphase ===
+      "jungtier"
+  ) {
+    return ui(
+      "young",
+    );
+  }
+
+
+  if (
+    lebensphase ===
+      "erwachsen"
+  ) {
+    return ui(
+      "adult",
+    );
+  }
+
+
+  return enumLabel(
+    lebensphase,
+  );
+}
+
+
+/* ======================================== */
+/* "ZIEL" BESCHRIFTEN                       */
+/* ======================================== */
+
+function getTargetLabel() {
+  return getLanguage()
+    .startsWith(
+      "en",
+    )
+      ? "Target"
+      : "Ziel";
+}
+
+
+/* ======================================== */
+/* LEERER ZUSTAND                           */
+/* ======================================== */
+
+function renderFoodEmpty(
+  content,
+) {
+  const p =
+    document.createElement(
+      "p",
+    );
+
+
+  p.className =
+    "foodweb-empty";
+
+
+  p.textContent =
+    ui(
+      "noFoodData",
+    );
+
+
+  content.appendChild(
+    p,
+  );
 }
 
 /* ======================================== */
