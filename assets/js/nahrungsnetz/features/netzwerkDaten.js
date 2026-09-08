@@ -791,7 +791,7 @@ function resolveEntityNode(
       false,
 
     position:
-      normalizePosition(
+      normalizeSlot(
         entry?.darstellung
           ?.position ??
         entry?.position,
