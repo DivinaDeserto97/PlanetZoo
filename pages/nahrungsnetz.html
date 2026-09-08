@@ -1,101 +1,80 @@
-<section
-  class="nahrungsnetz-page"
-  data-nahrungsnetz-page
->
+<section class="nahrungsnetz-page" data-nahrungsnetz-page>
   <section class="nahrungsnetz-toolbar">
     <div class="nahrungsnetz-legend">
-      <strong>Linien:</strong>
+      <div class="nahrungsnetz-legend__lines">
+        <strong>Linien:</strong>
 
-      <span class="nahrungsnetz-legend__item">
-        <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--direct"></i>
-        Direkt
-      </span>
+        <span class="nahrungsnetz-legend__item">
+          <i
+            class="nahrungsnetz-legend__line nahrungsnetz-legend__line--direct"
+          ></i>
+          Direkt
+        </span>
 
-      <span class="nahrungsnetz-legend__item">
-        <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--conditional"></i>
-        Bedingung / Jungtier
-      </span>
+        <span class="nahrungsnetz-legend__item">
+          <i
+            class="nahrungsnetz-legend__line nahrungsnetz-legend__line--conditional"
+          ></i>
+          Bedingung / Jungtier
+        </span>
 
-      <span class="nahrungsnetz-legend__item">
-        <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--carrion"></i>
-        Aas
-      </span>
+        <span class="nahrungsnetz-legend__item">
+          <i
+            class="nahrungsnetz-legend__line nahrungsnetz-legend__line--carrion"
+          ></i>
+          Aas
+        </span>
 
-      <span class="nahrungsnetz-legend__item">
-        <i class="nahrungsnetz-legend__line nahrungsnetz-legend__line--carrion"></i>
-        giftig
-      </span>
+        <span class="nahrungsnetz-legend__item">
+          <i
+            class="nahrungsnetz-legend__line nahrungsnetz-legend__line--toxic"
+          ></i>
+          Giftig
+        </span>
+      </div>
 
-      <button type="button" data-graph-center>
+      <div
+        class="nahrungsnetz-legend__animals"
+        data-nahrungsnetz-color-legend
+      ></div>
+
+      <span class="nahrungsnetz-save-status" data-graph-save-status>
         Layout gespeichert
-      </button>
+      </span>
     </div>
 
     <div class="nahrungsnetz-toolbar__actions">
-      <button type="button" data-graph-center>
-        Auswahl zentrieren
-      </button>
+      <button type="button" data-graph-center>Auswahl zentrieren</button>
 
       <button type="button" data-graph-edit-lines>
-        <span data-graph-edit-lines-text>
-          Spuren bearbeiten
-        </span>
+        <span data-graph-edit-lines-text> Spuren bearbeiten </span>
       </button>
 
-      <button type="button" data-graph-save>
-        Speichern
-      </button>
+      <button type="button" data-graph-save>Speichern</button>
 
-      <button type="button" data-graph-reset>
-        Zurücksetzen
-      </button>
+      <button type="button" data-graph-reset>Zurücksetzen</button>
     </div>
   </section>
 
-  <div
-    class="nahrungsnetz-empty"
-    data-nahrungsnetz-empty
-    hidden
-  >
+  <div class="nahrungsnetz-empty" data-nahrungsnetz-empty hidden>
     <strong>Keine Tiere ausgewählt.</strong>
-    <p>
-      Wähle auf Home mindestens ein Tier aus.
-    </p>
+    <p>Wähle auf Home mindestens ein Tier aus.</p>
 
-    <a href="#home" data-page="home">
-      ← Home
-    </a>
+    <a href="#home" data-page="home"> ← Home </a>
   </div>
 
-  <section
-    class="nahrungsnetz-graph"
-    data-nahrungsnetz-graph
-  >
-
-
-    <div
-      class="graph-scroll"
-      data-graph-scroll
-    >
-      <div
-        class="graph-stage"
-        data-graph-stage
-      >
+  <section class="nahrungsnetz-graph" data-nahrungsnetz-graph>
+    <div class="graph-scroll" data-graph-scroll>
+      <div class="graph-stage" data-graph-stage>
         <svg
           class="graph-connections"
           data-graph-connections
           aria-hidden="true"
         ></svg>
 
-        <div
-          class="graph-route-points"
-          data-graph-route-points
-        ></div>
+        <div class="graph-route-points" data-graph-route-points></div>
 
-        <div
-          class="graph-nodes"
-          data-graph-nodes
-        ></div>
+        <div class="graph-nodes" data-graph-nodes></div>
       </div>
     </div>
   </section>
