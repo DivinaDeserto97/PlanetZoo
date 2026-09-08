@@ -18,6 +18,15 @@ import {
   NAHRUNGSNETZ_TYPEN,
 } from "./nahrungsBeziehungen.js";
 
+import {
+  OEKOLOGISCHE_BEZIEHUNGEN,
+  OEKOLOGISCHE_WIRKUNGEN,
+  getErlaubteWirkungen,
+  istGueltigeOekologischeBeziehung,
+  istGueltigeWirkung,
+  istWirkungFuerBeziehungGueltig,
+} from "./oekologischeBeziehungen.js";
+
 /* ======================================== */
 /* ECHTE LOKALE DATEIEN PRÜFEN              */
 /* ======================================== */
@@ -297,8 +306,16 @@ function pruefeOptionalenLokalisiertenText(fehlt, objekt, key, meldung) {
 /* NAHRUNGSBEZIEHUNG PRÜFEN                 */
 /* ======================================== */
 
-function pruefeNahrungsBeziehung(wert) {
+function pruefeNahrungsBeziehung(wert, optionen = {}) {
   const fehlt = [];
+
+  /*
+      Beziehung + Wirkung sind ausschließlich für das
+      Nahrungsnetz-Werkzeug Pflicht. Die Infotafel benutzt
+      dieselben Ernährungsdaten, soll aber durch diese zwei
+      Darstellungsfelder nicht auf unvollständig springen.
+  */
+  const pruefeOekologie = optionen.pruefeOekologie === true;
 
   if (!istObjekt(wert)) {
     return ["Eintrag ist kein Objekt."];
@@ -319,6 +336,55 @@ function pruefeNahrungsBeziehung(wert) {
   }
 
   pruefePflichtText(fehlt, wert?.quelle, "Quelle fehlt.");
+
+  /* ==================================== */
+  /* ÖKOLOGISCHE BEZIEHUNG + WIRKUNG      */
+  /* nur für das Nahrungsnetz-Werkzeug    */
+  /* ==================================== */
+
+  if (pruefeOekologie) {
+    pruefePflichtText(
+      fehlt,
+      wert?.beziehung,
+      "Ökologische Beziehung fehlt.",
+    );
+
+    if (
+      hatText(wert?.beziehung) &&
+      !istGueltigeOekologischeBeziehung(wert.beziehung)
+    ) {
+      fehlt.push(
+        `Unbekannte ökologische Beziehung „${wert.beziehung}“. Erlaubt: ${OEKOLOGISCHE_BEZIEHUNGEN.join(", ")}.`,
+      );
+    }
+
+    pruefePflichtText(
+      fehlt,
+      wert?.wirkung,
+      "Wirkung fehlt. Erwartet wird z. B. +/-, -/-, +/+, +/0 oder 0/0.",
+    );
+
+    if (
+      hatText(wert?.wirkung) &&
+      !istGueltigeWirkung(wert.wirkung)
+    ) {
+      fehlt.push(
+        `Unbekannte Wirkung „${wert.wirkung}“. Erlaubt: ${OEKOLOGISCHE_WIRKUNGEN.join(", ")}.`,
+      );
+    }
+
+    if (
+      istGueltigeOekologischeBeziehung(wert?.beziehung) &&
+      istGueltigeWirkung(wert?.wirkung) &&
+      !istWirkungFuerBeziehungGueltig(wert.beziehung, wert.wirkung)
+    ) {
+      const erlaubt = getErlaubteWirkungen(wert.beziehung);
+
+      fehlt.push(
+        `Wirkung „${wert.wirkung}“ passt nicht zur Beziehung „${wert.beziehung}“. Erlaubt: ${erlaubt.join(", ")}.`,
+      );
+    }
+  }
 
   /* ==================================== */
   /* BEDINGUNG                            */
@@ -760,7 +826,9 @@ function pruefeInfotafel(tier) {
   /* NAHRUNGSNETZ AUCH FÜR INFOTAFEL          */
   /* ======================================== */
 
-  const nahrungsnetzChecks = pruefeNahrungsnetz(tier).filter(
+  const nahrungsnetzChecks = pruefeNahrungsnetz(tier, {
+    pruefeOekologie: false,
+  }).filter(
     (check) => check.pfad !== "identitaet.namen" && check.pfad !== "id",
   );
 
@@ -1071,8 +1139,15 @@ function pruefeSystematik(tier) {
 /* NAHRUNGSNETZ                             */
 /* ======================================== */
 
-function pruefeNahrungsnetz(tier) {
+function pruefeNahrungsnetz(tier, optionen = {}) {
   const checks = basisChecks(tier);
+
+  /*
+      Standard für das Nahrungsnetz-Werkzeug: Beziehung und
+      Wirkung sind Pflicht. Andere Verbraucher (Infotafel)
+      können diese Zusatzprüfung bewusst abschalten.
+  */
+  const pruefeOekologie = optionen.pruefeOekologie !== false;
 
   const nahrungsnetz = getNahrungsnetz(tier);
 
@@ -1145,7 +1220,7 @@ function pruefeNahrungsnetz(tier) {
     }
 
     bereich.werte.forEach((wert, index) => {
-      const fehlt = pruefeNahrungsBeziehung(wert);
+      const fehlt = pruefeNahrungsBeziehung(wert, { pruefeOekologie });
 
       checks.push(
         item(
@@ -1203,7 +1278,7 @@ function pruefeTool(tier, toolId) {
       return pruefeSystematik(tier);
 
     case TOOL_IDS.NAHRUNGSNETZ:
-      return pruefeNahrungsnetz(tier);
+      return pruefeNahrungsnetz(tier, { pruefeOekologie: true });
 
     case TOOL_IDS.RECHNER:
       return pruefeRechner(tier);

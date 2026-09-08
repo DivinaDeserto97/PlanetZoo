@@ -233,15 +233,21 @@ export function getFressfeinde(
               obwohl Gift relevant ist.
           */
 
-          if (
-            String(
-              beziehung?.typ ??
-              "",
-            )
-              .trim()
-              .toLowerCase() !==
-            "tier"
-          ) {
+          /*
+              Seit 5.1 gibt es zusätzlich:
+
+              beziehung: "praedation"
+
+              Nur Prädation darf unter
+              "Wird gefressen von" erscheinen.
+
+              Übergangsweise bleibt ein alter Eintrag
+              ohne Feld "beziehung" kompatibel, sofern
+              typ === "tier" ist. Sobald "beziehung"
+              vorhanden ist, gilt ausschließlich diese.
+          */
+
+          if (!istPraedationsBeziehung(beziehung)) {
             return;
           }
 
@@ -350,6 +356,25 @@ export function getFressfeinde(
 
 
   return result;
+}
+
+
+/* ============================================================
+   PRÄDATION ERKENNEN
+   ============================================================ */
+
+function istPraedationsBeziehung(beziehung) {
+  const beziehungsTyp = String(beziehung?.beziehung ?? "").trim();
+
+  if (beziehungsTyp) {
+    return beziehungsTyp === "praedation";
+  }
+
+  /*
+      Fallback für ältere / noch nicht umgestellte JSONs.
+      Dadurch bricht die Infotafel während der Migration nicht.
+  */
+  return String(beziehung?.typ ?? "").trim().toLowerCase() === "tier";
 }
 
 /* ============================================================

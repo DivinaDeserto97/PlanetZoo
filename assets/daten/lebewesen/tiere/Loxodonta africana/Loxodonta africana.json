@@ -249,6 +249,8 @@
             {
               "wert": "muttermilch",
               "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": [
                   "calf"
@@ -257,13 +259,15 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": ""
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: Jungtierphase"
               },
               "quelle": "animalDiversityWeb"
             },
             {
               "wert": "plantFood",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [
                   "increasingWithAge"
@@ -279,6 +283,8 @@
             {
               "wert": "grass",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -288,6 +294,8 @@
             {
               "wert": "leaves",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -297,6 +305,8 @@
             {
               "wert": "fruit",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -306,6 +316,8 @@
             {
               "wert": "roots",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -315,6 +327,8 @@
             {
               "wert": "twigs",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -324,6 +338,8 @@
             {
               "wert": "bark",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -333,6 +349,8 @@
             {
               "wert": "shrubs",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []

@@ -254,6 +254,8 @@
             {
               "wert": "muttermilch",
               "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": [
                   "bisEtwa6Monate"
@@ -262,13 +264,15 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": "8/tag"
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: 8×/Tag | Zeitraum: bis etwa 6 Monate"
               },
               "quelle": "smithsonianLion"
             },
             {
               "wert": "tierischeNahrung",
               "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": [
                   "abEtwa3Monaten"
@@ -277,7 +281,7 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": "lansames angewönen"
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: zunehmend | Zeitraum: ab etwa 3 Monaten"
               },
               "quelle": "smithsonianLion"
             }
@@ -288,6 +292,8 @@
             {
               "wert": "Equus quagga",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -297,6 +303,8 @@
             {
               "wert": "Connochaetes taurinus",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -306,6 +314,8 @@
             {
               "wert": "Orycteropus afer",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -315,6 +325,8 @@
             {
               "wert": "Loxodonta africana",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": [
@@ -326,6 +338,8 @@
             {
               "wert": "aas",
               "typ": "aas",
+              "beziehung": "nekrophagie",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": [],
                 "ziel": []

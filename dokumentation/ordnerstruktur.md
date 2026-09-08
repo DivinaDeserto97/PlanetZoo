@@ -170,6 +170,7 @@
         - [language.js](<../assets/js/features/language.js>)
         - [nahrungsBeziehungen.js](<../assets/js/features/nahrungsBeziehungen.js>)
         - [navigation.js](<../assets/js/features/navigation.js>)
+        - [oekologischeBeziehungen.js](<../assets/js/features/oekologischeBeziehungen.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
         - [theme.js](<../assets/js/features/theme.js>)
         - [tierAktiv.js](<../assets/js/features/tierAktiv.js>)

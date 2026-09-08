@@ -238,6 +238,8 @@
             {
               "wert": "muttermilch",
               "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": [
                   "bisEtwa3Monate"
@@ -246,13 +248,15 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": ""
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: bis etwa 3 Monate"
               },
               "quelle": "animalDiversityWeb"
             },
             {
               "wert": "insects",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [
                   "abEtwa3Monaten"
@@ -268,6 +272,8 @@
             {
               "wert": "ants",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -277,6 +283,8 @@
             {
               "wert": "termites",
               "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -286,6 +294,8 @@
             {
               "wert": "Cucumis humifructus",
               "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
