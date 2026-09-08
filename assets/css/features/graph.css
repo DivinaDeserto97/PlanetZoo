@@ -217,6 +217,78 @@
 }
 
 /* ======================================== */
+/* LINIEN-FÜHRUNG VERSCHIEBEN               */
+/* ======================================== */
+
+.graph-route-guide {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 30px;
+  height: 30px;
+
+  margin: -15px 0 0 -15px;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid color-mix(in srgb, #f4a340 80%, var(--farbe-linie));
+  border-radius: 7px;
+
+  background: color-mix(in srgb, var(--farbe-bereich) 88%, #f4a340 12%);
+  color: #f4a340;
+
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+
+  pointer-events: auto;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.28);
+}
+
+.graph-route-guide--horizontal {
+  cursor: ns-resize;
+}
+
+.graph-route-guide--vertical {
+  cursor: ew-resize;
+}
+
+.graph-route-guide:hover,
+.graph-route-guide.is-dragging {
+  background: #f4a340;
+  color: #151515;
+}
+
+.graph-route-guide.is-dragging {
+  z-index: 20;
+}
+
+.graph-route-guide[data-preview-guide]::after {
+  content: attr(data-preview-guide);
+
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 5px);
+
+  transform: translateX(-50%);
+
+  padding: 3px 5px;
+
+  border-radius: 4px;
+
+  background: var(--farbe-bereich);
+  color: var(--farbe-text);
+
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+
+/* ======================================== */
 /* KÄSTCHEN                                 */
 /* ======================================== */
 

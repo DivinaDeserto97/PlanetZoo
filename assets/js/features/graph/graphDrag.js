@@ -1,5 +1,7 @@
 import {
+  findNearestHorizontalGapRow,
   findNearestSlot,
+  findNearestVerticalGapColumn,
 } from "./graphGrid.js";
 
 
@@ -411,6 +413,219 @@ export function initLaneHandleDrag({
     {
       signal,
     },
+  );
+}
+
+
+/* ======================================== */
+/* GANZE LINIEN-ZEILE / -SPALTE ZIEHEN      */
+/* ======================================== */
+
+export function initRouteGuideDrag({
+  handle,
+  stage,
+  layout,
+  orientation,
+  signal,
+  onDrop,
+}) {
+  let drag =
+    null;
+
+
+  handle.addEventListener(
+    "pointerdown",
+    (event) => {
+      if (
+        event.button !==
+        0
+      ) {
+        return;
+      }
+
+
+      event.preventDefault();
+      event.stopPropagation();
+
+
+      const stageRect =
+        stage.getBoundingClientRect();
+
+      const scale =
+        getStageScale(
+          stage,
+        );
+
+
+      drag = {
+        pointerId:
+          event.pointerId,
+        scale,
+        stageLeft:
+          stageRect.left,
+        stageTop:
+          stageRect.top,
+      };
+
+
+      handle.classList.add(
+        "is-dragging",
+      );
+
+
+      handle.setPointerCapture(
+        event.pointerId,
+      );
+    },
+    { signal },
+  );
+
+
+  handle.addEventListener(
+    "pointermove",
+    (event) => {
+      if (
+        !drag ||
+        drag.pointerId !==
+          event.pointerId
+      ) {
+        return;
+      }
+
+
+      const logicalX =
+        (
+          event.clientX -
+          drag.stageLeft
+        ) /
+        drag.scale;
+
+      const logicalY =
+        (
+          event.clientY -
+          drag.stageTop
+        ) /
+        drag.scale;
+
+
+      if (
+        orientation ===
+        "horizontal"
+      ) {
+        handle.style.top =
+          `${logicalY}px`;
+
+        const gapRow =
+          findNearestHorizontalGapRow(
+            layout,
+            logicalY,
+          );
+
+        handle.dataset.previewGuide =
+          gapRow
+            ? `Zeile L${gapRow * 2}`
+            : "";
+      }
+
+      else {
+        handle.style.left =
+          `${logicalX}px`;
+
+        const gapColumn =
+          findNearestVerticalGapColumn(
+            layout,
+            logicalX,
+          );
+
+        handle.dataset.previewGuide =
+          gapColumn
+            ? `Spalte ${gapColumn}`
+            : "";
+      }
+    },
+    { signal },
+  );
+
+
+  function finishGuideDrag(
+    event,
+  ) {
+    if (
+      !drag ||
+      drag.pointerId !==
+        event.pointerId
+    ) {
+      return;
+    }
+
+
+    const logicalX =
+      (
+        event.clientX -
+        drag.stageLeft
+      ) /
+      drag.scale;
+
+    const logicalY =
+      (
+        event.clientY -
+        drag.stageTop
+      ) /
+      drag.scale;
+
+
+    const value =
+      orientation ===
+        "horizontal"
+        ? findNearestHorizontalGapRow(
+            layout,
+            logicalY,
+          )
+        : findNearestVerticalGapColumn(
+            layout,
+            logicalX,
+          );
+
+
+    handle.classList.remove(
+      "is-dragging",
+    );
+
+
+    if (
+      handle.hasPointerCapture(
+        event.pointerId,
+      )
+    ) {
+      handle.releasePointerCapture(
+        event.pointerId,
+      );
+    }
+
+
+    drag =
+      null;
+
+
+    if (value) {
+      onDrop?.(
+        value,
+      );
+    }
+  }
+
+
+  handle.addEventListener(
+    "pointerup",
+    finishGuideDrag,
+    { signal },
+  );
+
+
+  handle.addEventListener(
+    "pointercancel",
+    finishGuideDrag,
+    { signal },
   );
 }
 

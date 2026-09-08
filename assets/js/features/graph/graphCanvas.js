@@ -18,6 +18,7 @@ import {
 import {
   initGraphSlotDrag,
   initLaneHandleDrag,
+  initRouteGuideDrag,
 } from "./graphDrag.js";
 
 
@@ -210,6 +211,9 @@ export function createGraphCanvas({
           gridSize.columns,
 
         localEdgeLanes,
+
+        localEdgeGuides:
+          getLocalEdgeGuides(),
       });
 
 
@@ -461,6 +465,28 @@ export function createGraphCanvas({
           [];
 
 
+        /*
+            Erst die großen Führungs-Handles.
+
+            Horizontal: nach oben / unten ziehen.
+            Vertikal:   nach links / rechts ziehen.
+
+            So wird nicht bloß die Spur innerhalb
+            eines Korridors verändert, sondern die
+            komplette Linienführung in eine andere
+            Raster-Zeile bzw. Raster-Spalte gelegt.
+        */
+        renderRouteGuideHandles(
+          edge,
+          route,
+        );
+
+
+        /*
+            Die bisherigen nummerierten Kreise
+            bleiben erhalten und bearbeiten nur
+            die Spur innerhalb des Korridors.
+        */
         route.forEach(
           (
             step,
@@ -508,6 +534,15 @@ export function createGraphCanvas({
               `${step.bereich} · Spur ${step.spur}`;
 
 
+            handle.dataset.edgeId =
+              edge.id;
+
+            handle.dataset.routeStep =
+              String(
+                index,
+              );
+
+
             routePointsContainer.appendChild(
               handle,
             );
@@ -525,20 +560,14 @@ export function createGraphCanvas({
               handle,
               stage:
                 world,
-
               layout:
                 currentModel.layout,
-
               corridorRect:
                 position.rect,
-
               orientation:
                 position.orientation,
-
               laneCount,
-
               signal,
-
               onDrop:
                 (lane) => {
                   setEdgeLane(
@@ -553,6 +582,338 @@ export function createGraphCanvas({
         );
       },
     );
+  }
+
+
+  function renderRouteGuideHandles(
+    edge,
+    route,
+  ) {
+    const runs =
+      buildRouteRuns(
+        route,
+      );
+
+
+    runs.forEach(
+      (run) => {
+        const geometry =
+          getRouteRunGeometry(
+            currentModel.layout,
+            run,
+          );
+
+
+        if (!geometry) {
+          return;
+        }
+
+
+        const handle =
+          document.createElement(
+            "button",
+          );
+
+
+        handle.type =
+          "button";
+
+        handle.className =
+          `graph-route-guide graph-route-guide--${run.orientation}`;
+
+
+        handle.dataset.edgeId =
+          edge.id;
+
+        handle.dataset.routeOrientation =
+          run.orientation;
+
+
+        handle.style.left =
+          `${geometry.x}px`;
+
+        handle.style.top =
+          `${geometry.y}px`;
+
+
+        handle.textContent =
+          run.orientation ===
+            "horizontal"
+            ? "↕"
+            : "↔";
+
+
+        handle.title =
+          run.orientation ===
+            "horizontal"
+            ? "Linie in eine andere Zeile ziehen · Rechtsklick: automatische Zeile"
+            : "Linie in eine andere Spalte ziehen · Rechtsklick: automatische Spalte";
+
+
+        routePointsContainer.appendChild(
+          handle,
+        );
+
+
+        initRouteGuideDrag({
+          handle,
+          stage:
+            world,
+          layout:
+            currentModel.layout,
+          orientation:
+            run.orientation,
+          signal,
+          onDrop:
+            (value) => {
+              setEdgeGuide(
+                edge.id,
+                run.orientation,
+                value,
+              );
+            },
+        });
+
+
+        handle.addEventListener(
+          "contextmenu",
+          (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            clearEdgeGuide(
+              edge.id,
+              run.orientation,
+            );
+          },
+          { signal },
+        );
+      },
+    );
+  }
+
+
+  function buildRouteRuns(
+    route,
+  ) {
+    const runs =
+      [];
+
+
+    route.forEach(
+      (step) => {
+        const corridor =
+          parseCorridor(
+            step.bereich,
+          );
+
+
+        if (!corridor) {
+          return;
+        }
+
+
+        const axis =
+          corridor.orientation ===
+            "horizontal"
+            ? corridor.gapRow
+            : corridor.gapColumn;
+
+
+        const previous =
+          runs[
+            runs.length - 1
+          ];
+
+
+        if (
+          previous &&
+          previous.orientation ===
+            corridor.orientation &&
+          previous.axis ===
+            axis
+        ) {
+          previous.steps.push(
+            step,
+          );
+
+          return;
+        }
+
+
+        runs.push({
+          orientation:
+            corridor.orientation,
+          axis,
+          steps:
+            [
+              step,
+            ],
+        });
+      },
+    );
+
+
+    return runs;
+  }
+
+
+  function getRouteRunGeometry(
+    layout,
+    run,
+  ) {
+    const positions =
+      run.steps
+        .map(
+          (step) =>
+            getLaneHandlePosition(
+              layout,
+              step,
+            ),
+        )
+        .filter(
+          Boolean,
+        );
+
+
+    if (!positions.length) {
+      return null;
+    }
+
+
+    return {
+      x:
+        positions.reduce(
+          (sum, position) =>
+            sum +
+            position.x,
+          0,
+        ) /
+        positions.length,
+
+      y:
+        positions.reduce(
+          (sum, position) =>
+            sum +
+            position.y,
+          0,
+        ) /
+        positions.length,
+    };
+  }
+
+
+  function setEdgeGuide(
+    edgeId,
+    orientation,
+    value,
+  ) {
+    if (
+      !workspace.edges[
+        edgeId
+      ]
+    ) {
+      workspace.edges[
+        edgeId
+      ] =
+        {};
+    }
+
+
+    if (
+      !workspace.edges[
+        edgeId
+      ].guides
+    ) {
+      workspace.edges[
+        edgeId
+      ].guides =
+        {};
+    }
+
+
+    const key =
+      orientation ===
+        "horizontal"
+        ? "horizontalGapRow"
+        : "verticalGapColumn";
+
+
+    if (
+      workspace.edges[
+        edgeId
+      ].guides[
+        key
+      ] ===
+      value
+    ) {
+      return;
+    }
+
+
+    workspace.edges[
+      edgeId
+    ].guides[
+      key
+    ] =
+      value;
+
+
+    markDirty();
+    rebuild();
+  }
+
+
+  function clearEdgeGuide(
+    edgeId,
+    orientation,
+  ) {
+    const guides =
+      workspace.edges?.[
+        edgeId
+      ]?.guides;
+
+
+    if (!guides) {
+      return;
+    }
+
+
+    const key =
+      orientation ===
+        "horizontal"
+        ? "horizontalGapRow"
+        : "verticalGapColumn";
+
+
+    if (
+      !Object.prototype.hasOwnProperty.call(
+        guides,
+        key,
+      )
+    ) {
+      return;
+    }
+
+
+    delete guides[
+      key
+    ];
+
+
+    if (
+      !Object.keys(
+        guides,
+      ).length
+    ) {
+      delete workspace.edges[
+        edgeId
+      ].guides;
+    }
+
+
+    markDirty();
+    rebuild();
   }
 
 
@@ -690,6 +1051,39 @@ export function createGraphCanvas({
           ...(data?.lanes ??
             {}),
         };
+      },
+    );
+
+
+    return result;
+  }
+
+
+  function getLocalEdgeGuides() {
+    const result =
+      {};
+
+
+    Object.entries(
+      workspace.edges,
+    ).forEach(
+      (
+        [
+          edgeId,
+          data,
+        ],
+      ) => {
+        if (
+          data?.guides &&
+          typeof data.guides ===
+            "object"
+        ) {
+          result[
+            edgeId
+          ] = {
+            ...data.guides,
+          };
+        }
       },
     );
 

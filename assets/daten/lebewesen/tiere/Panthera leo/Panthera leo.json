@@ -301,17 +301,6 @@
               "quelle": "smithsonianLion"
             },
             {
-              "wert": "Connochaetes taurinus",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [],
-                "ziel": []
-              },
-              "quelle": "smithsonianLion"
-            },
-            {
               "wert": "Orycteropus afer",
               "typ": "tier",
               "beziehung": "praedation",

@@ -767,16 +767,18 @@ function buildGeometry({
       );
 
 
-    const junction =
-      getJunctionPoint(
+    const junctions =
+      getJunctionPoints(
         a,
         b,
       );
 
 
-    if (junction) {
+    if (
+      junctions.length
+    ) {
       points.push(
-        junction,
+        ...junctions,
       );
     }
   }
@@ -1025,7 +1027,7 @@ function getNodeCorridorEntry(
 /* KREUZUNG ZWEIER LINIENBEREICHE           */
 /* ======================================== */
 
-function getJunctionPoint(
+function getJunctionPoints(
   a,
   b,
 ) {
@@ -1033,7 +1035,7 @@ function getJunctionPoint(
     !a ||
     !b
   ) {
-    return null;
+    return [];
   }
 
 
@@ -1043,13 +1045,14 @@ function getJunctionPoint(
     b.corridor.orientation ===
       "horizontal"
   ) {
-    return {
-      x:
-        a.lane.x,
-
-      y:
-        b.lane.y,
-    };
+    return [
+      {
+        x:
+          a.lane.x,
+        y:
+          b.lane.y,
+      },
+    ];
   }
 
 
@@ -1059,17 +1062,126 @@ function getJunctionPoint(
     b.corridor.orientation ===
       "vertical"
   ) {
-    return {
-      x:
-        b.lane.x,
-
-      y:
-        a.lane.y,
-    };
+    return [
+      {
+        x:
+          b.lane.x,
+        y:
+          a.lane.y,
+      },
+    ];
   }
 
 
-  return null;
+  /*
+      Zwei aufeinanderfolgende horizontale
+      Korridor-Felder bilden eine einzige
+      waagrechte Führung. Falls die Spurzahl
+      zwischen den Feldern wechseln musste,
+      entsteht am Zwischenraum ein kleiner
+      sauberer 90°-Versatz.
+  */
+  if (
+    a.corridor.orientation ===
+      "horizontal" &&
+    b.corridor.orientation ===
+      "horizontal"
+  ) {
+    const aCenter =
+      a.rect.x +
+      a.rect.width /
+        2;
+
+    const bCenter =
+      b.rect.x +
+      b.rect.width /
+        2;
+
+    const boundaryX =
+      aCenter <
+        bCenter
+        ? (
+            a.rect.x +
+            a.rect.width +
+            b.rect.x
+          ) /
+          2
+        : (
+            b.rect.x +
+            b.rect.width +
+            a.rect.x
+          ) /
+          2;
+
+
+    return [
+      {
+        x:
+          boundaryX,
+        y:
+          a.lane.y,
+      },
+      {
+        x:
+          boundaryX,
+        y:
+          b.lane.y,
+      },
+    ];
+  }
+
+
+  if (
+    a.corridor.orientation ===
+      "vertical" &&
+    b.corridor.orientation ===
+      "vertical"
+  ) {
+    const aCenter =
+      a.rect.y +
+      a.rect.height /
+        2;
+
+    const bCenter =
+      b.rect.y +
+      b.rect.height /
+        2;
+
+    const boundaryY =
+      aCenter <
+        bCenter
+        ? (
+            a.rect.y +
+            a.rect.height +
+            b.rect.y
+          ) /
+          2
+        : (
+            b.rect.y +
+            b.rect.height +
+            a.rect.y
+          ) /
+          2;
+
+
+    return [
+      {
+        x:
+          a.lane.x,
+        y:
+          boundaryY,
+      },
+      {
+        x:
+          b.lane.x,
+        y:
+          boundaryY,
+      },
+    ];
+  }
+
+
+  return [];
 }
 
 

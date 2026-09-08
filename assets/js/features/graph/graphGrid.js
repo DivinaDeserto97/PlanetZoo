@@ -539,6 +539,7 @@ export function buildRoutes({
   rows,
   columns,
   localEdgeLanes = {},
+  localEdgeGuides = {},
 }) {
   const corridorUsage =
     new Map();
@@ -548,8 +549,14 @@ export function buildRoutes({
 
 
   /*
-      Erst JSON-Routen übernehmen.
-      Danach automatische Routen.
+      Routen-Priorität:
+
+      1. lokal per Drag gesetzte Führungszeile/-spalte
+      2. feste Route aus dem JSON
+      3. automatische Route
+
+      Die lokalen Führungen verändern NICHT die Tier-JSON.
+      Sie gehören nur zum gespeicherten Layout.
   */
 
   const sortedEdges =
@@ -568,8 +575,109 @@ export function buildRoutes({
     );
 
 
+  /* ==================================== */
+  /* MANUELLE FÜHRUNGSZEILE / -SPALTE    */
+  /* ==================================== */
+
   sortedEdges.forEach(
     (edge) => {
+      const fromSlot =
+        parseSlot(
+          nodeSlots[
+            edge.from
+          ],
+        );
+
+      const toSlot =
+        parseSlot(
+          nodeSlots[
+            edge.to
+          ],
+        );
+
+      if (
+        !fromSlot ||
+        !toSlot
+      ) {
+        return;
+      }
+
+
+      const guides =
+        normalizeLocalGuides(
+          localEdgeGuides?.[
+            edge.id
+          ],
+          rows,
+          columns,
+        );
+
+
+      if (!guides) {
+        return;
+      }
+
+
+      const path =
+        findGuidedCorridorPath({
+          fromSlot,
+          toSlot,
+          rows,
+          columns,
+          usage:
+            corridorUsage,
+          guides,
+        });
+
+
+      if (!path.length) {
+        return;
+      }
+
+
+      const route =
+        path.map(
+          (bereich) => ({
+            bereich,
+            spur:
+              null,
+          }),
+        );
+
+
+      routes.set(
+        edge.id,
+        route,
+      );
+
+
+      path.forEach(
+        (bereich) => {
+          incrementUsage(
+            corridorUsage,
+            bereich,
+          );
+        },
+      );
+    },
+  );
+
+
+  /* ==================================== */
+  /* FESTE JSON-ROUTE                     */
+  /* ==================================== */
+
+  sortedEdges.forEach(
+    (edge) => {
+      if (
+        routes.has(
+          edge.id,
+        )
+      ) {
+        return;
+      }
+
+
       const custom =
         normalizeJsonRoute(
           edge.route,
@@ -600,6 +708,10 @@ export function buildRoutes({
     },
   );
 
+
+  /* ==================================== */
+  /* AUTOMATISCHE ROUTE                   */
+  /* ==================================== */
 
   sortedEdges.forEach(
     (edge) => {
@@ -767,14 +879,115 @@ function findBestCorridorPath({
   columns,
   usage,
 }) {
-  const fromCorridors =
+  return findPathBetweenCorridors({
+    starts:
+      getSlotCorridors(
+        fromSlot,
+        rows,
+        columns,
+      ),
+
+    targets:
+      new Set(
+        getSlotCorridors(
+          toSlot,
+          rows,
+          columns,
+        ),
+      ),
+
+    rows,
+    columns,
+    usage,
+  });
+}
+
+
+/* ======================================== */
+/* MANUELLE FÜHRUNG DURCH ZEILE / SPALTE    */
+/* ======================================== */
+
+function normalizeLocalGuides(
+  value,
+  rows,
+  columns,
+) {
+  if (
+    !value ||
+    typeof value !==
+      "object"
+  ) {
+    return null;
+  }
+
+
+  const horizontalGapRow =
+    Number(
+      value.horizontalGapRow,
+    );
+
+  const verticalGapColumn =
+    Number(
+      value.verticalGapColumn,
+    );
+
+
+  const result =
+    {};
+
+
+  if (
+    Number.isInteger(
+      horizontalGapRow,
+    ) &&
+    horizontalGapRow >=
+      1 &&
+    horizontalGapRow <
+      rows
+  ) {
+    result.horizontalGapRow =
+      horizontalGapRow;
+  }
+
+
+  if (
+    Number.isInteger(
+      verticalGapColumn,
+    ) &&
+    verticalGapColumn >=
+      1 &&
+    verticalGapColumn <
+      columns
+  ) {
+    result.verticalGapColumn =
+      verticalGapColumn;
+  }
+
+
+  return Object.keys(
+    result,
+  ).length
+    ? result
+    : null;
+}
+
+
+function findGuidedCorridorPath({
+  fromSlot,
+  toSlot,
+  rows,
+  columns,
+  usage,
+  guides,
+}) {
+  const startCorridors =
     getSlotCorridors(
       fromSlot,
       rows,
       columns,
     );
 
-  const toCorridors =
+  const targetCorridors =
     new Set(
       getSlotCorridors(
         toSlot,
@@ -784,12 +997,306 @@ function findBestCorridorPath({
     );
 
 
+  const horizontal =
+    guides?.horizontalGapRow
+      ? Array.from(
+          {
+            length:
+              columns,
+          },
+          (_, index) =>
+            createHorizontalCorridorId(
+              guides.horizontalGapRow,
+              index + 1,
+            ),
+        ).filter(
+          (id) =>
+            isValidCorridor(
+              id,
+              rows,
+              columns,
+            ),
+        )
+      : [];
+
+
+  const vertical =
+    guides?.verticalGapColumn
+      ? Array.from(
+          {
+            length:
+              rows,
+          },
+          (_, index) =>
+            createVerticalCorridorId(
+              index + 1,
+              guides.verticalGapColumn,
+            ),
+        ).filter(
+          (id) =>
+            isValidCorridor(
+              id,
+              rows,
+              columns,
+            ),
+        )
+      : [];
+
+
+  if (
+    horizontal.length &&
+    vertical.length
+  ) {
+    let best =
+      [];
+
+
+    horizontal.forEach(
+      (horizontalId) => {
+        const neighbors =
+          new Set(
+            getCorridorNeighbors(
+              horizontalId,
+              rows,
+              columns,
+            ),
+          );
+
+
+        vertical.forEach(
+          (verticalId) => {
+            if (
+              !neighbors.has(
+                verticalId,
+              )
+            ) {
+              return;
+            }
+
+
+            [
+              [
+                horizontalId,
+                verticalId,
+              ],
+              [
+                verticalId,
+                horizontalId,
+              ],
+            ].forEach(
+              (required) => {
+                const candidate =
+                  buildPathThroughRequiredCorridors({
+                    starts:
+                      startCorridors,
+                    targets:
+                      targetCorridors,
+                    required,
+                    rows,
+                    columns,
+                    usage,
+                  });
+
+
+                if (
+                  candidate.length &&
+                  (
+                    !best.length ||
+                    candidate.length <
+                      best.length
+                  )
+                ) {
+                  best =
+                    candidate;
+                }
+              },
+            );
+          },
+        );
+      },
+    );
+
+
+    if (best.length) {
+      return best;
+    }
+  }
+
+
+  const candidates =
+    horizontal.length
+      ? horizontal
+      : vertical;
+
+
+  if (candidates.length) {
+    let best =
+      [];
+
+
+    candidates.forEach(
+      (requiredId) => {
+        const candidate =
+          buildPathThroughRequiredCorridors({
+            starts:
+              startCorridors,
+            targets:
+              targetCorridors,
+            required:
+              [
+                requiredId,
+              ],
+            rows,
+            columns,
+            usage,
+          });
+
+
+        if (
+          candidate.length &&
+          (
+            !best.length ||
+            candidate.length <
+              best.length
+          )
+        ) {
+          best =
+            candidate;
+        }
+      },
+    );
+
+
+    if (best.length) {
+      return best;
+    }
+  }
+
+
+  return findBestCorridorPath({
+    fromSlot,
+    toSlot,
+    rows,
+    columns,
+    usage,
+  });
+}
+
+
+function buildPathThroughRequiredCorridors({
+  starts,
+  targets,
+  required,
+  rows,
+  columns,
+  usage,
+}) {
+  let currentStarts =
+    [
+      ...starts,
+    ];
+
+  const result =
+    [];
+
+
+  for (
+    const requiredId of
+    required
+  ) {
+    const part =
+      findPathBetweenCorridors({
+        starts:
+          currentStarts,
+        targets:
+          new Set(
+            [
+              requiredId,
+            ],
+          ),
+        rows,
+        columns,
+        usage,
+      });
+
+
+    if (!part.length) {
+      return [];
+    }
+
+
+    appendPath(
+      result,
+      part,
+    );
+
+    currentStarts =
+      [
+        requiredId,
+      ];
+  }
+
+
+  const tail =
+    findPathBetweenCorridors({
+      starts:
+        currentStarts,
+      targets,
+      rows,
+      columns,
+      usage,
+    });
+
+
+  if (!tail.length) {
+    return [];
+  }
+
+
+  appendPath(
+    result,
+    tail,
+  );
+
+
+  return result;
+}
+
+
+function appendPath(
+  target,
+  part,
+) {
+  part.forEach(
+    (corridor) => {
+      if (
+        target[
+          target.length - 1
+        ] !==
+        corridor
+      ) {
+        target.push(
+          corridor,
+        );
+      }
+    },
+  );
+}
+
+
+function findPathBetweenCorridors({
+  starts,
+  targets,
+  rows,
+  columns,
+  usage,
+}) {
   for (
     const corridor of
-    fromCorridors
+    starts
   ) {
     if (
-      toCorridors.has(
+      targets.has(
         corridor,
       )
     ) {
@@ -810,7 +1317,7 @@ function findBestCorridorPath({
     new Map();
 
 
-  fromCorridors.forEach(
+  starts.forEach(
     (corridor) => {
       const cost =
         corridorCost(
@@ -864,7 +1371,7 @@ function findBestCorridorPath({
 
 
     if (
-      toCorridors.has(
+      targets.has(
         current.corridor,
       )
     ) {
@@ -921,7 +1428,6 @@ function findBestCorridorPath({
         queue.push({
           corridor:
             neighbor,
-
           cost:
             nextCost,
         });
@@ -1095,6 +1601,39 @@ function getCorridorNeighbors(
 
 
     /*
+        Gerade weiter in derselben vertikalen
+        Führungs-Spalte. Dadurch kann eine Linie
+        über mehrere Zeilen wirklich gerade
+        verlaufen, statt im Zickzack.
+    */
+
+    if (
+      row >
+      1
+    ) {
+      result.add(
+        createVerticalCorridorId(
+          row - 1,
+          gapColumn,
+        ),
+      );
+    }
+
+
+    if (
+      row <
+      rows
+    ) {
+      result.add(
+        createVerticalCorridorId(
+          row + 1,
+          gapColumn,
+        ),
+      );
+    }
+
+
+    /*
         Knotenpunkt oberhalb.
     */
 
@@ -1152,6 +1691,37 @@ function getCorridorNeighbors(
 
     const column =
       corridor.column;
+
+
+    /*
+        Gerade weiter in derselben horizontalen
+        Führungs-Zeile.
+    */
+
+    if (
+      column >
+      1
+    ) {
+      result.add(
+        createHorizontalCorridorId(
+          gapRow,
+          column - 1,
+        ),
+      );
+    }
+
+
+    if (
+      column <
+      columns
+    ) {
+      result.add(
+        createHorizontalCorridorId(
+          gapRow,
+          column + 1,
+        ),
+      );
+    }
 
 
     /*
@@ -1872,6 +2442,130 @@ export function getLaneCoordinate(
         layout.config
           .lineGap,
   };
+}
+
+
+/* ======================================== */
+/* NÄCHSTE LINIEN-ZEILE / -SPALTE           */
+/* ======================================== */
+
+export function findNearestHorizontalGapRow(
+  layout,
+  y,
+) {
+  let best =
+    null;
+
+  let bestDistance =
+    Infinity;
+
+
+  for (
+    let gapRow = 1;
+    gapRow <
+    layout.rows;
+    gapRow++
+  ) {
+    const rect =
+      getCorridorRect(
+        layout,
+        createHorizontalCorridorId(
+          gapRow,
+          1,
+        ),
+      );
+
+
+    if (!rect) {
+      continue;
+    }
+
+
+    const center =
+      rect.y +
+      rect.height /
+        2;
+
+    const distance =
+      Math.abs(
+        y - center,
+      );
+
+
+    if (
+      distance <
+      bestDistance
+    ) {
+      bestDistance =
+        distance;
+
+      best =
+        gapRow;
+    }
+  }
+
+
+  return best;
+}
+
+
+export function findNearestVerticalGapColumn(
+  layout,
+  x,
+) {
+  let best =
+    null;
+
+  let bestDistance =
+    Infinity;
+
+
+  for (
+    let gapColumn = 1;
+    gapColumn <
+    layout.columns;
+    gapColumn++
+  ) {
+    const rect =
+      getCorridorRect(
+        layout,
+        createVerticalCorridorId(
+          1,
+          gapColumn,
+        ),
+      );
+
+
+    if (!rect) {
+      continue;
+    }
+
+
+    const center =
+      rect.x +
+      rect.width /
+        2;
+
+    const distance =
+      Math.abs(
+        x - center,
+      );
+
+
+    if (
+      distance <
+      bestDistance
+    ) {
+      bestDistance =
+        distance;
+
+      best =
+        gapColumn;
+    }
+  }
+
+
+  return best;
 }
 
 

@@ -270,8 +270,8 @@ export async function init() {
         if (text) {
           text.textContent =
             routeEdit
-              ? "Spuren ausblenden"
-              : "Spuren bearbeiten";
+              ? "Linien ausblenden"
+              : "Linien bearbeiten";
         }
       },
       {
