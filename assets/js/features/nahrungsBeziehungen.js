@@ -130,57 +130,224 @@ export function getAlleNahrungsBeziehungen(tier) {
    FRESSFEINDE AUTOMATISCH BERECHNEN
    ============================================================ */
 
-export function getFressfeinde(alleTiere, zielTier, zielLebensphase = null) {
-  if (!Array.isArray(alleTiere) || !zielTier) {
+export function getFressfeinde(
+  alleTiere,
+  zielTier,
+  zielLebensphase = null,
+) {
+  if (
+    !Array.isArray(
+      alleTiere,
+    ) ||
+    !zielTier
+  ) {
     return [];
   }
 
-  const zielIds = getTierIds(zielTier);
 
-  if (zielIds.size === 0) {
+  const zielIds =
+    getTierIds(
+      zielTier,
+    );
+
+
+  if (
+    zielIds.size ===
+    0
+  ) {
     return [];
   }
 
-  const result = [];
 
-  alleTiere.forEach((fressfeind) => {
-    /*
-            Ein Tier wird nicht
-            mit sich selbst verglichen.
-        */
+  const result =
+    [];
 
-    if (istGleichesTier(fressfeind, zielTier)) {
-      return;
-    }
 
-    const beziehungen = getAlleNahrungsBeziehungen(fressfeind);
+  alleTiere.forEach(
+    (
+      fressfeind,
+    ) => {
+      /*
+          Das Ziel-Tier wird nicht
+          mit sich selbst verglichen.
+      */
 
-    beziehungen.forEach((eintrag) => {
-      const { lebensphase, beziehung } = eintrag;
-
-      if (!beziehungTrifftZiel(beziehung, zielIds)) {
+      if (
+        istGleichesTier(
+          fressfeind,
+          zielTier,
+        )
+      ) {
         return;
       }
 
-      if (!beziehungGiltFuerZielLebensphase(beziehung, zielLebensphase)) {
-        return;
-      }
 
-      result.push({
-        fressfeind,
+      const beziehungen =
+        getAlleNahrungsBeziehungen(
+          fressfeind,
+        );
 
-        fressfeindId: getHauptTierId(fressfeind),
 
-        lebensphase,
+      beziehungen.forEach(
+        (
+          eintrag,
+        ) => {
+          const {
+            lebensphase,
+            beziehung,
+          } =
+            eintrag;
 
-        zielLebensphase,
 
-        beziehung,
+          /*
+              =================================
+              WICHTIG:
+              "Wird gefressen von"
+              =================================
 
-        linienTyp: getLinienTyp(beziehung),
-      });
-    });
-  });
+              Nur eine echte tierische
+              Nahrungsbeziehung zählt hier.
+
+              typ: "giftig"
+              → keine Fressbeziehung
+
+              typ: "pflanze"
+              → keine Fressbeziehung
+
+              typ: "nutzung"
+              → keine Fressbeziehung
+
+              typ: "aas"
+              → keine direkte
+                Räuber-Beute-Beziehung
+
+              typ: "tier"
+              → echte tierische Nahrung
+
+
+              gift.relevant: true
+              ist dabei erlaubt.
+
+              Beispiel Erdmännchen:
+              Skorpion bleibt typ "tier",
+              obwohl Gift relevant ist.
+          */
+
+          if (
+            String(
+              beziehung?.typ ??
+              "",
+            )
+              .trim()
+              .toLowerCase() !==
+            "tier"
+          ) {
+            return;
+          }
+
+
+          /*
+              Gehört die Beziehung
+              überhaupt zum gesuchten Tier?
+          */
+
+          if (
+            !beziehungTrifftZiel(
+              beziehung,
+              zielIds,
+            )
+          ) {
+            return;
+          }
+
+
+          /*
+              Prüfen, ob die Beziehung
+              für die ausgewählte
+              Lebensphase des ZIELS gilt.
+
+              Beispiel:
+
+              Löwe erwachsen
+              → Elefant
+              → ziel: ["jungtier"]
+
+              Jungtier-Elefant:
+              ✓
+
+              Erwachsener Elefant:
+              ✗
+          */
+
+          if (
+            !beziehungGiltFuerZielLebensphase(
+              beziehung,
+              zielLebensphase,
+            )
+          ) {
+            return;
+          }
+
+
+          result.push({
+            /*
+                Das Tier, dessen JSON
+                die Beziehung enthält.
+            */
+
+            fressfeind,
+
+
+            fressfeindId:
+              getHauptTierId(
+                fressfeind,
+              ),
+
+
+            /*
+                Lebensphase des
+                FRESSFEINDES.
+
+                Beispiel:
+                erwachsener Löwe.
+            */
+
+            lebensphase,
+
+
+            /*
+                Angefragte Lebensphase
+                des ZIEL-TIERES.
+
+                Beispiel:
+                Elefant Jungtier.
+            */
+
+            zielLebensphase,
+
+
+            /*
+                Originale Beziehung.
+
+                Damit Infotafel und
+                Graph später weiterhin
+                Bedingungen, Gift usw.
+                auswerten können.
+            */
+
+            beziehung,
+
+
+            linienTyp:
+              getLinienTyp(
+                beziehung,
+              ),
+          });
+        },
+      );
+    },
+  );
+
 
   return result;
 }

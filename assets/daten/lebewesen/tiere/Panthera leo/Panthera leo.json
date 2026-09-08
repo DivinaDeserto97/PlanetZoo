@@ -262,7 +262,7 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": ""
+                "haeufigkeit": "8/tag"
               },
               "quelle": "smithsonianLion"
             },
@@ -277,7 +277,7 @@
               },
               "nutzung": {
                 "art": "nahrung",
-                "haeufigkeit": ""
+                "haeufigkeit": "lansames angewönen"
               },
               "quelle": "smithsonianLion"
             }
@@ -331,7 +331,7 @@
                 "ziel": []
               },
               "aas": {
-                "zustand": ""
+                "zustand": "frisch bis etwa 2 Wochen alt"
               },
               "hinweis": {
                 "de": "Löwen nutzen auch Aas und übernehmen Beute anderer Raubtiere.",
