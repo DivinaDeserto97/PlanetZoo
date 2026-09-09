@@ -1,0 +1,19 @@
+:root {
+  --systematik-footer-reserve: 69px;
+
+  --systematik-overlay-gap: 12px;
+
+  --systematik-panel-padding: 10px;
+
+  --systematik-panel-radius: 10px;
+
+  --systematik-panel-shadow:
+    0 7px 24px rgb(0 0 0 / 0.28);
+}
+
+
+@media (max-width: 760px) {
+  :root {
+    --systematik-footer-reserve: 77px;
+  }
+}

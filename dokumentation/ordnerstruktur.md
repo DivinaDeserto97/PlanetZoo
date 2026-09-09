@@ -51,6 +51,10 @@
       - `rechner/`
         - [rechner.css](<../assets/css/rechner/rechner.css>)
       - [style.css](<../assets/css/style.css>)
+      - `systematik/`
+        - [systematik-style.css](<../assets/css/systematik/systematik-style.css>)
+        - [systematik-var.css](<../assets/css/systematik/systematik-var.css>)
+        - [systematik.css](<../assets/css/systematik/systematik.css>)
       - `tier/`
         - [tier-style.css](<../assets/css/tier/tier-style.css>)
         - [tier-var.css](<../assets/css/tier/tier-var.css>)
@@ -172,6 +176,10 @@
         - [navigation.js](<../assets/js/features/navigation.js>)
         - [oekologischeBeziehungen.js](<../assets/js/features/oekologischeBeziehungen.js>)
         - [pageTitle.js](<../assets/js/features/pageTitle.js>)
+        - [systematikDaten.js](<../assets/js/features/systematikDaten.js>)
+        - [systematikLabels.js](<../assets/js/features/systematikLabels.js>)
+        - [systematikPruefung.js](<../assets/js/features/systematikPruefung.js>)
+        - [systematikSchema.js](<../assets/js/features/systematikSchema.js>)
         - [theme.js](<../assets/js/features/theme.js>)
         - [tierAktiv.js](<../assets/js/features/tierAktiv.js>)
         - [tierAuswahl.js](<../assets/js/features/tierAuswahl.js>)
@@ -218,6 +226,8 @@
       - `rechner/`
         - `features/`
         - [rechner.js](<../assets/js/rechner/rechner.js>)
+      - `systematik/`
+        - [systematik.js](<../assets/js/systematik/systematik.js>)
       - `tier/`
         - [tier.js](<../assets/js/tier/tier.js>)
   - `dokumentation/`

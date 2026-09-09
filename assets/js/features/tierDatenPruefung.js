@@ -1,7 +1,7 @@
 import { TOOL_IDS, TOOLS } from "./toolRegistry.js";
 
 import { getToolEinstellung, TOOL_STUFEN } from "./toolEinstellungen.js";
-
+import { pruefeSystematikStruktur } from "./systematikPruefung.js";
 import {
   getAudioVarianten,
   getBesteAudioDatei,
@@ -343,11 +343,7 @@ function pruefeNahrungsBeziehung(wert, optionen = {}) {
   /* ==================================== */
 
   if (pruefeOekologie) {
-    pruefePflichtText(
-      fehlt,
-      wert?.beziehung,
-      "Ökologische Beziehung fehlt.",
-    );
+    pruefePflichtText(fehlt, wert?.beziehung, "Ökologische Beziehung fehlt.");
 
     if (
       hatText(wert?.beziehung) &&
@@ -364,10 +360,7 @@ function pruefeNahrungsBeziehung(wert, optionen = {}) {
       "Wirkung fehlt. Erwartet wird z. B. +/-, -/-, +/+, +/0 oder 0/0.",
     );
 
-    if (
-      hatText(wert?.wirkung) &&
-      !istGueltigeWirkung(wert.wirkung)
-    ) {
+    if (hatText(wert?.wirkung) && !istGueltigeWirkung(wert.wirkung)) {
       fehlt.push(
         `Unbekannte Wirkung „${wert.wirkung}“. Erlaubt: ${OEKOLOGISCHE_WIRKUNGEN.join(", ")}.`,
       );
@@ -974,163 +967,7 @@ function pruefeSystematik(tier) {
 
   const systematik = tier?.originalDaten?.systematik ?? tier?.systematik;
 
-  if (!istObjekt(systematik)) {
-    checks.push(
-      item("Systematik", "systematik", false, ["Systematik-Struktur fehlt."]),
-    );
-
-    return checks;
-  }
-
-  if (Object.prototype.hasOwnProperty.call(systematik, "hinweis")) {
-    checks.push(
-      item(
-        "Systematik – Hinweis",
-
-        "systematik.hinweis",
-
-        hatLokalisierterText(systematik.hinweis),
-
-        [
-          !hatLokalisierterText(systematik.hinweis)
-            ? "Hinweis ist angelegt, aber leer."
-            : null,
-        ],
-      ),
-    );
-  }
-
-  const naheVerwandte = Array.isArray(systematik.naheVerwandte)
-    ? systematik.naheVerwandte
-    : [];
-
-  if (!naheVerwandte.length) {
-    checks.push(
-      item("Nahe Verwandte", "systematik.naheVerwandte", false, [
-        "Mindestens ein Eintrag für nahe Verwandte fehlt.",
-      ]),
-    );
-  }
-
-  naheVerwandte.forEach((verwandter, index) => {
-    const fehlt = [];
-
-    pruefePflichtText(
-      fehlt,
-      verwandter?.id,
-      "Wissenschaftliche ID / Art fehlt.",
-    );
-
-    pruefePflichtText(fehlt, verwandter?.beziehung, "Beziehung fehlt.");
-
-    pruefePflichtText(
-      fehlt,
-      verwandter?.deutscherName,
-      "Deutscher Name fehlt.",
-    );
-
-    pruefePflichtText(fehlt, verwandter?.quelle, "Quelle fehlt.");
-
-    checks.push(
-      item(
-        `Nahe Verwandte – Eintrag ${index + 1}`,
-        `systematik.naheVerwandte[${index}]`,
-        fehlt.length === 0,
-        fehlt,
-      ),
-    );
-  });
-
-  const evolution = systematik.evolution;
-
-  if (!istObjekt(evolution)) {
-    checks.push(
-      item("Evolution", "systematik.evolution", false, [
-        "Evolution-Struktur fehlt.",
-      ]),
-    );
-
-    return checks;
-  }
-
-  checks.push(
-    item(
-      "Evolution – Hinweis",
-      "systematik.evolution.hinweis",
-      hatLokalisierterText(evolution.hinweis),
-      [
-        !hatLokalisierterText(evolution.hinweis)
-          ? "Evolution-Hinweis fehlt."
-          : null,
-      ],
-    ),
-  );
-
-  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [];
-
-  if (!knoten.length) {
-    checks.push(
-      item("Evolution – Knoten", "systematik.evolution.knoten", false, [
-        "Mindestens ein Evolutions-Knoten fehlt.",
-      ]),
-    );
-  }
-
-  knoten.forEach((knotenEintrag, index) => {
-    const fehlt = [];
-
-    pruefePflichtText(fehlt, knotenEintrag?.id, "ID fehlt.");
-    pruefePflichtText(fehlt, knotenEintrag?.rang, "Rang fehlt.");
-    pruefePflichtText(fehlt, knotenEintrag?.name, "Name fehlt.");
-    pruefePflichtText(fehlt, knotenEintrag?.quelle, "Quelle fehlt.");
-
-    checks.push(
-      item(
-        `Evolution – Knoten ${index + 1}`,
-        `systematik.evolution.knoten[${index}]`,
-        fehlt.length === 0,
-        fehlt,
-      ),
-    );
-  });
-
-  const aufspaltungen = Array.isArray(evolution.aufspaltungen)
-    ? evolution.aufspaltungen
-    : [];
-
-  if (!aufspaltungen.length) {
-    checks.push(
-      item(
-        "Evolution – Aufspaltungen",
-        "systematik.evolution.aufspaltungen",
-        false,
-        ["Mindestens eine Aufspaltung fehlt."],
-      ),
-    );
-  }
-
-  aufspaltungen.forEach((aufspaltung, index) => {
-    const fehlt = [];
-
-    pruefePflichtText(fehlt, aufspaltung?.linieA, "Linie A fehlt.");
-    pruefePflichtText(fehlt, aufspaltung?.linieB, "Linie B fehlt.");
-
-    if (!hatZahl(aufspaltung?.zeitVorHeuteMioJahre)) {
-      fehlt.push("Zeit vor heute in Mio. Jahren fehlt oder ist keine Zahl.");
-    }
-
-    pruefePflichtText(fehlt, aufspaltung?.typ, "Typ der Aufspaltung fehlt.");
-    pruefePflichtText(fehlt, aufspaltung?.quelle, "Quelle fehlt.");
-
-    checks.push(
-      item(
-        `Evolution – Aufspaltung ${index + 1}`,
-        `systematik.evolution.aufspaltungen[${index}]`,
-        fehlt.length === 0,
-        fehlt,
-      ),
-    );
-  });
+  checks.push(...pruefeSystematikStruktur(systematik));
 
   return checks;
 }

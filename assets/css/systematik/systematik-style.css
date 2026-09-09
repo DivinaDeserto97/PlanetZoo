@@ -1,0 +1,449 @@
+/* ======================================== */
+/* VOLLBILD-GRAPH                           */
+/* ======================================== */
+
+body:has(.systematik-page) {
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
+
+  padding-bottom: var(--systematik-footer-reserve);
+
+  display: grid;
+
+  grid-template-rows:
+    auto
+    minmax(0, 1fr);
+
+  overflow: hidden;
+}
+
+body:has(.systematik-page) #page {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+.systematik-page {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: var(--farbe-bereich);
+}
+
+/* ======================================== */
+/* GRAPH                                    */
+/* ======================================== */
+
+.systematik-graph {
+  position: absolute;
+
+  z-index: 1;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+.systematik-graph .graph-scroll {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  border: 0;
+  border-radius: 0;
+}
+
+/* ======================================== */
+/* FILTER                                   */
+/* ======================================== */
+
+.systematik-filter {
+  position: absolute;
+
+  z-index: 20;
+
+  top: var(--systematik-overlay-gap);
+
+  left: var(--systematik-overlay-gap);
+
+  width: min(420px, calc(100% - 24px));
+
+  padding: var(--systematik-panel-padding);
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px 14px;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--systematik-panel-radius);
+
+  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
+
+  box-shadow: var(--systematik-panel-shadow);
+
+  backdrop-filter: blur(8px);
+}
+
+.systematik-filter__title {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.systematik-filter__title span {
+  color: var(--farbe-text-zusatz);
+
+  font-size: 11px;
+}
+
+.systematik-filter__group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 110px;
+
+  padding: 5px;
+}
+
+.systematik-filter__group strong {
+  margin-bottom: 2px;
+
+  font-size: 11px;
+}
+
+.systematik-filter__group label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+/* ======================================== */
+/* TOOLBAR                                  */
+/* ======================================== */
+
+.systematik-toolbar {
+  position: absolute;
+
+  z-index: 21;
+
+  top: var(--systematik-overlay-gap);
+
+  right: var(--systematik-overlay-gap);
+
+  padding: 6px;
+
+  display: flex;
+
+  gap: 6px;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--systematik-panel-radius);
+
+  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
+
+  box-shadow: var(--systematik-panel-shadow);
+
+  backdrop-filter: blur(8px);
+}
+
+.systematik-toolbar button.is-active {
+  border-color: var(--farbe-akzent);
+
+  background: color-mix(in srgb, var(--farbe-akzent) 20%, var(--farbe-element));
+}
+
+/* ======================================== */
+/* NAVIGATION                               */
+/* ======================================== */
+
+.systematik-navigation {
+  position: absolute;
+
+  z-index: 22;
+
+  left: var(--systematik-overlay-gap);
+
+  bottom: var(--systematik-overlay-gap);
+
+  padding: 7px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--systematik-panel-radius);
+
+  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
+
+  box-shadow: var(--systematik-panel-shadow);
+
+  backdrop-filter: blur(8px);
+}
+
+.systematik-navigation button {
+  min-width: 50px;
+
+  min-height: 42px;
+
+  font-size: 18px;
+}
+
+.systematik-navigation__middle {
+  display: flex;
+
+  gap: 6px;
+}
+
+.systematik-navigation__zoom {
+  width: 100%;
+
+  font-size: 11px !important;
+}
+
+/* ======================================== */
+/* LEGENDE                                  */
+/* ======================================== */
+
+.systematik-legend {
+  position: absolute;
+
+  z-index: 20;
+
+  right: var(--systematik-overlay-gap);
+
+  bottom: var(--systematik-overlay-gap);
+
+  max-width: min(520px, calc(100% - 24px));
+
+  padding: var(--systematik-panel-padding);
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px 14px;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: var(--systematik-panel-radius);
+
+  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
+
+  box-shadow: var(--systematik-panel-shadow);
+
+  backdrop-filter: blur(8px);
+
+  font-size: 11px;
+}
+
+.systematik-legend__item {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.systematik-legend__line {
+  width: 38px;
+
+  height: 0;
+
+  border-top: 2px solid var(--farbe-text-zusatz);
+}
+
+.systematik-legend__line--uncertain {
+  border-top-style: dashed;
+}
+
+.systematik-legend__line--domestication {
+  border-top: 2px dashed var(--farbe-text-zusatz);
+}
+
+.systematik-legend__status {
+  width: 100%;
+
+  padding-top: 7px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 5px 12px;
+
+  border-top: 1px solid var(--farbe-linie);
+
+  color: var(--farbe-text-zusatz);
+}
+
+.systematik-save-status {
+  margin-left: auto;
+
+  color: var(--farbe-text-zusatz);
+}
+
+.systematik-save-status.is-dirty {
+  color: #f4a340;
+}
+
+/* ======================================== */
+/* EMPTY                                    */
+/* ======================================== */
+
+.systematik-empty {
+  position: absolute;
+
+  z-index: 25;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 24px;
+
+  border: 1px solid var(--farbe-linie);
+
+  border-radius: 12px;
+
+  background: var(--farbe-bereich);
+
+  text-align: center;
+}
+
+/* ======================================== */
+/* SYSTEMATIK-KNOTEN                        */
+/* ======================================== */
+
+.systematik-page .graph-node--taxon {
+  border-left-color: #6f8fc8;
+}
+
+.systematik-page .graph-node--wild {
+  border-left-color: #63aa67;
+}
+
+.systematik-page .graph-node--domesticated {
+  border-left-color: #d89c50;
+}
+
+.systematik-page .graph-node--extinct {
+  border-left-color: #9b7964;
+
+  background: color-mix(in srgb, var(--farbe-element) 90%, #5d493f 10%);
+}
+
+.systematik-page .graph-node--split {
+  border-left-color: #a17cd2;
+
+  background: color-mix(in srgb, var(--farbe-element) 91%, #7f5bab 9%);
+}
+
+.systematik-page .graph-node__kind {
+  max-width: 160px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+/* ======================================== */
+/* SYSTEMATIK-LINIEN                        */
+/* ======================================== */
+
+/*
+    direct
+    = normale Abstammung
+
+    conditional
+    = unsicher / ungefähre Divergenz
+
+    dependency
+    = Domestikation
+*/
+
+.systematik-page .graph-edge--dependency {
+  stroke-dasharray: 14 5 3 5;
+}
+
+.systematik-page .graph-edge--conditional {
+  stroke-dasharray: 10 7;
+}
+
+/* ======================================== */
+/* MOBILE                                   */
+/* ======================================== */
+
+@media (max-width: 900px) {
+  .systematik-filter {
+    max-width: 300px;
+  }
+
+  .systematik-toolbar {
+    flex-wrap: wrap;
+
+    max-width: 280px;
+
+    justify-content: flex-end;
+  }
+
+  .systematik-legend {
+    max-width: 360px;
+  }
+}
