@@ -227,6 +227,9 @@
         - `features/`
         - [rechner.js](<../assets/js/rechner/rechner.js>)
       - `systematik/`
+        - `features/`
+          - [systematikDaten.js](<../assets/js/systematik/features/systematikDaten.js>)
+          - [systematikLabels.js](<../assets/js/systematik/features/systematikLabels.js>)
         - [systematik.js](<../assets/js/systematik/systematik.js>)
       - `tier/`
         - [tier.js](<../assets/js/tier/tier.js>)
@@ -240,6 +243,7 @@
     - [map.html](<../pages/map.html>)
     - [nahrungsnetz.html](<../pages/nahrungsnetz.html>)
     - [rechner.html](<../pages/rechner.html>)
+    - [systematik.html](<../pages/systematik.html>)
     - [tier.html](<../pages/tier.html>)
   - `tools/`
     - [commit.sh](<../tools/commit.sh>)

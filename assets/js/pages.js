@@ -58,6 +58,17 @@ const TEXT = {
     ja: "映画館",
     "zh-Hans": "电影院",
   },
+  systematik: {
+    de: "Systematik",
+    en: "Taxonomy",
+    "en-US": "Taxonomy",
+    es: "Taxonomía",
+    fr: "Taxonomie",
+    it: "Tassonomia",
+    "pt-BR": "Taxonomia",
+    ja: "分類",
+    "zh-Hans": "分类",
+  },
   nahrungsnetz: {
     de: "Nahrungsnetz",
     en: "Food web",
@@ -125,6 +136,14 @@ export const pages = {
     js: "./kino/kino.js",
     navigation: TEXT.kino,
     headerTitle: TEXT.kino,
+  },
+
+  systematik: {
+    html: "./pages/systematik.html",
+    css: "./assets/css/systematik/systematik.css",
+    js: "./systematik/systematik.js",
+    navigation: TEXT.systematik,
+    headerTitle: TEXT.systematik,
   },
 
   nahrungsnetz: {

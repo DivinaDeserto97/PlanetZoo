@@ -1,0 +1,242 @@
+<section class="systematik-page" data-systematik-page>
+  <aside class="systematik-filter">
+    <div class="systematik-filter__title">
+      <strong
+        data-i18n
+        data-de="Systematik"
+        data-en="Taxonomy"
+        data-en-US="Taxonomy"
+        data-es="Taxonomía"
+        data-fr="Taxonomie"
+        data-it="Tassonomia"
+        data-pt-BR="Taxonomia"
+        data-ja="分類"
+        data-zh-Hans="分类"
+      >Systematik</strong>
+
+      <span>
+        <strong data-systematik-count>0</strong>
+        <span
+          data-i18n
+          data-de="Tiere ausgewählt"
+          data-en="animals selected"
+          data-en-US="animals selected"
+          data-es="animales seleccionados"
+          data-fr="animaux sélectionnés"
+          data-it="animali selezionati"
+          data-pt-BR="animais selecionados"
+          data-ja="頭を選択中"
+          data-zh-Hans="只动物已选择"
+        >Tiere ausgewählt</span>
+      </span>
+    </div>
+
+    <div class="systematik-filter__group">
+      <strong
+        data-i18n
+        data-de="Lebensstatus"
+        data-en="Life status"
+        data-en-US="Life status"
+      >Lebensstatus</strong>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="lebend"
+          checked
+        />
+        <span data-i18n data-de="Lebend" data-en="Living" data-en-US="Living">Lebend</span>
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="ausgestorben"
+          checked
+        />
+        <span data-i18n data-de="† Ausgestorben" data-en="† Extinct" data-en-US="† Extinct">† Ausgestorben</span>
+      </label>
+    </div>
+
+    <div class="systematik-filter__group">
+      <strong
+        data-i18n
+        data-de="Form"
+        data-en="Form"
+        data-en-US="Form"
+      >Form</strong>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="wildform"
+          checked
+        />
+        <span data-i18n data-de="Wildform" data-en="Wild form" data-en-US="Wild form">Wildform</span>
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="domestiziert"
+          checked
+        />
+        <span data-i18n data-de="Domestiziert" data-en="Domesticated" data-en-US="Domesticated">Domestiziert</span>
+      </label>
+    </div>
+
+    <div class="systematik-filter__group">
+      <strong
+        data-i18n
+        data-de="Spiel"
+        data-en="Game"
+        data-en-US="Game"
+      >Spiel</strong>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="planetZoo2"
+          checked
+        />
+        Planet Zoo 2
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="jurassicWorldEvolution1"
+          checked
+        />
+        Jurassic World Evolution 1
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="jurassicWorldEvolution2"
+          checked
+        />
+        Jurassic World Evolution 2
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          data-systematik-filter="jurassicWorldEvolution3"
+          checked
+        />
+        Jurassic World Evolution 3
+      </label>
+    </div>
+  </aside>
+
+  <section class="systematik-toolbar">
+    <button type="button" data-graph-center>
+      <span data-i18n data-de="Auswahl zentrieren" data-en="Center selection" data-en-US="Center selection">Auswahl zentrieren</span>
+    </button>
+
+    <button type="button" data-graph-edit-lines>
+      <span data-graph-edit-lines-text>Linien bearbeiten</span>
+    </button>
+
+    <button type="button" data-graph-save>
+      <span data-i18n data-de="Speichern" data-en="Save" data-en-US="Save">Speichern</span>
+    </button>
+
+    <button type="button" data-graph-reset>
+      <span data-i18n data-de="Zurücksetzen" data-en="Reset" data-en-US="Reset">Zurücksetzen</span>
+    </button>
+  </section>
+
+  <aside class="systematik-legend">
+    <div>
+      <strong data-i18n data-de="Linien:" data-en="Lines:" data-en-US="Lines:">Linien:</strong>
+    </div>
+
+    <div class="systematik-legend__item">
+      <i class="systematik-legend__line systematik-legend__line--lineage"></i>
+      <span data-i18n data-de="Abstammung" data-en="Lineage" data-en-US="Lineage">Abstammung</span>
+    </div>
+
+    <div class="systematik-legend__item">
+      <i class="systematik-legend__line systematik-legend__line--uncertain"></i>
+      <span data-i18n data-de="unsicher / ungefähr" data-en="uncertain / approximate" data-en-US="uncertain / approximate">unsicher / ungefähr</span>
+    </div>
+
+    <div class="systematik-legend__item">
+      <i class="systematik-legend__line systematik-legend__line--domestication"></i>
+      <span data-i18n data-de="Domestikation" data-en="Domestication" data-en-US="Domestication">Domestikation</span>
+    </div>
+
+    <div class="systematik-legend__status">
+      <span>† = ausgestorben</span>
+      <span>LC / NT / VU / EN / CR / EW / EX</span>
+      <span>WILDFORM</span>
+      <span>DOMESTIZIERT</span>
+      <span>PZ2 / JWE1 / JWE2 / JWE3</span>
+    </div>
+
+    <span class="systematik-save-status" data-graph-save-status>
+      Layout gespeichert
+    </span>
+  </aside>
+
+  <div class="systematik-navigation" aria-label="Graph steuern">
+    <button type="button" data-graph-pan-up title="Nach oben">↑</button>
+
+    <div class="systematik-navigation__middle">
+      <button type="button" data-graph-pan-left title="Nach links">←</button>
+      <button
+        type="button"
+        data-graph-nav-center
+        title="Auswahl bzw. Graph zentrieren"
+      >◎</button>
+      <button type="button" data-graph-pan-right title="Nach rechts">→</button>
+    </div>
+
+    <button type="button" data-graph-pan-down title="Nach unten">↓</button>
+
+    <button
+      type="button"
+      class="systematik-navigation__zoom"
+      data-graph-zoom-reset
+      title="Zoom auf 100 % zurücksetzen"
+    >
+      <span data-graph-zoom-label>100%</span>
+    </button>
+  </div>
+
+  <div class="systematik-empty" data-systematik-empty hidden>
+    <strong
+      data-i18n
+      data-de="Keine Tiere ausgewählt."
+      data-en="No animals selected."
+      data-en-US="No animals selected."
+    >Keine Tiere ausgewählt.</strong>
+
+    <p
+      data-i18n
+      data-de="Wähle auf Home mindestens ein Tier aus."
+      data-en="Select at least one animal on Home."
+      data-en-US="Select at least one animal on Home."
+    >Wähle auf Home mindestens ein Tier aus.</p>
+
+    <a href="#home" data-page="home">← Home</a>
+  </div>
+
+  <section class="systematik-graph" data-systematik-graph>
+    <div class="graph-scroll" data-graph-scroll>
+      <div class="graph-stage" data-graph-stage>
+        <svg
+          class="graph-connections"
+          data-graph-connections
+          aria-hidden="true"
+        ></svg>
+
+        <div class="graph-route-points" data-graph-route-points></div>
+        <div class="graph-nodes" data-graph-nodes></div>
+      </div>
+    </div>
+  </section>
+</section>

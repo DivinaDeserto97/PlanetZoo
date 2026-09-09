@@ -259,6 +259,10 @@
     }
   },
   "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
     "naheVerwandte": [
       {
         "id": "",
@@ -277,6 +281,16 @@
           "id": "",
           "rang": "",
           "name": "",
+          "deutscherName": "",
+          "lebensstatus": null,
+          "domestikationsstatus": null,
+          "schutzstatus": null,
+          "spiele": [],
+          "position": null,
+          "hinweis": {
+            "de": "",
+            "en": ""
+          },
           "quelle": ""
         }
       ],
@@ -286,6 +300,18 @@
           "linieB": "",
           "zeitVorHeuteMioJahre": null,
           "typ": "",
+          "quelle": ""
+        }
+      ],
+      "verbindungen": [
+        {
+          "von": "",
+          "nach": "",
+          "typ": "",
+          "hinweis": {
+            "de": "",
+            "en": ""
+          },
           "quelle": ""
         }
       ]

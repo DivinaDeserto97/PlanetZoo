@@ -163,6 +163,7 @@ function pruefeKnoten(
       knoten,
       "lebensstatus",
     ) &&
+    knoten.lebensstatus !== null &&
     !SYSTEMATIK_LEBENSSTATUS.includes(
       knoten.lebensstatus,
     )
@@ -178,6 +179,7 @@ function pruefeKnoten(
       knoten,
       "domestikationsstatus",
     ) &&
+    knoten.domestikationsstatus !== null &&
     !SYSTEMATIK_DOMESTIKATIONSSTATUS.includes(
       knoten.domestikationsstatus,
     )
@@ -213,12 +215,10 @@ function pruefeKnoten(
     if (
       !Array.isArray(
         knoten.spiele,
-      ) ||
-      knoten.spiele.length ===
-        0
+      )
     ) {
       fehlt.push(
-        "spiele ist angelegt, enthält aber keinen Eintrag.",
+        "spiele muss ein Array sein.",
       );
     }
 
@@ -245,6 +245,7 @@ function pruefeKnoten(
       knoten,
       "position",
     ) &&
+    knoten.position !== null &&
     !(
       hatText(
         knoten.position,
