@@ -1,136 +1,4 @@
 <section class="systematik-page" data-systematik-page>
-  <aside class="systematik-filter">
-    <div class="systematik-filter__title">
-      <strong
-        data-i18n
-        data-de="Systematik"
-        data-en="Taxonomy"
-        data-en-US="Taxonomy"
-        data-es="Taxonomía"
-        data-fr="Taxonomie"
-        data-it="Tassonomia"
-        data-pt-BR="Taxonomia"
-        data-ja="分類"
-        data-zh-Hans="分类"
-      >Systematik</strong>
-
-      <span>
-        <strong data-systematik-count>0</strong>
-        <span
-          data-i18n
-          data-de="Tiere ausgewählt"
-          data-en="animals selected"
-          data-en-US="animals selected"
-          data-es="animales seleccionados"
-          data-fr="animaux sélectionnés"
-          data-it="animali selezionati"
-          data-pt-BR="animais selecionados"
-          data-ja="頭を選択中"
-          data-zh-Hans="只动物已选择"
-        >Tiere ausgewählt</span>
-      </span>
-    </div>
-
-    <div class="systematik-filter__group">
-      <strong
-        data-i18n
-        data-de="Lebensstatus"
-        data-en="Life status"
-        data-en-US="Life status"
-      >Lebensstatus</strong>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="lebend"
-          checked
-        />
-        <span data-i18n data-de="Lebend" data-en="Living" data-en-US="Living">Lebend</span>
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="ausgestorben"
-          checked
-        />
-        <span data-i18n data-de="† Ausgestorben" data-en="† Extinct" data-en-US="† Extinct">† Ausgestorben</span>
-      </label>
-    </div>
-
-    <div class="systematik-filter__group">
-      <strong
-        data-i18n
-        data-de="Form"
-        data-en="Form"
-        data-en-US="Form"
-      >Form</strong>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="wildform"
-          checked
-        />
-        <span data-i18n data-de="Wildform" data-en="Wild form" data-en-US="Wild form">Wildform</span>
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="domestiziert"
-          checked
-        />
-        <span data-i18n data-de="Domestiziert" data-en="Domesticated" data-en-US="Domesticated">Domestiziert</span>
-      </label>
-    </div>
-
-    <div class="systematik-filter__group">
-      <strong
-        data-i18n
-        data-de="Spiel"
-        data-en="Game"
-        data-en-US="Game"
-      >Spiel</strong>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="planetZoo2"
-          checked
-        />
-        Planet Zoo 2
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="jurassicWorldEvolution1"
-          checked
-        />
-        Jurassic World Evolution 1
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="jurassicWorldEvolution2"
-          checked
-        />
-        Jurassic World Evolution 2
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          data-systematik-filter="jurassicWorldEvolution3"
-          checked
-        />
-        Jurassic World Evolution 3
-      </label>
-    </div>
-  </aside>
-
   <section class="systematik-toolbar">
     <button type="button" data-graph-center>
       <span data-i18n data-de="Auswahl zentrieren" data-en="Center selection" data-en-US="Center selection">Auswahl zentrieren</span>
@@ -149,38 +17,164 @@
     </button>
   </section>
 
-  <aside class="systematik-legend">
-    <div>
-      <strong data-i18n data-de="Linien:" data-en="Lines:" data-en-US="Lines:">Linien:</strong>
-    </div>
+  <details class="systematik-legend">
+    <summary class="systematik-legend__summary">
+      <strong
+        data-i18n
+        data-de="Legende & Auswahl"
+        data-en="Legend & selection"
+        data-en-US="Legend & selection"
+      >Legende & Auswahl</strong>
 
-    <div class="systematik-legend__item">
-      <i class="systematik-legend__line systematik-legend__line--lineage"></i>
-      <span data-i18n data-de="Abstammung" data-en="Lineage" data-en-US="Lineage">Abstammung</span>
-    </div>
+      <span class="systematik-legend__summary-count">
+        <strong data-systematik-count>0</strong>
+        <span
+          data-i18n
+          data-de="Tiere ausgewählt"
+          data-en="animals selected"
+          data-en-US="animals selected"
+        >Tiere ausgewählt</span>
+      </span>
 
-    <div class="systematik-legend__item">
-      <i class="systematik-legend__line systematik-legend__line--uncertain"></i>
-      <span data-i18n data-de="unsicher / ungefähr" data-en="uncertain / approximate" data-en-US="uncertain / approximate">unsicher / ungefähr</span>
-    </div>
+      <span class="systematik-save-status" data-graph-save-status>
+        Layout gespeichert
+      </span>
 
-    <div class="systematik-legend__item">
-      <i class="systematik-legend__line systematik-legend__line--domestication"></i>
-      <span data-i18n data-de="Domestikation" data-en="Domestication" data-en-US="Domestication">Domestikation</span>
-    </div>
+      <span class="systematik-legend__caret" aria-hidden="true"></span>
+    </summary>
 
-    <div class="systematik-legend__status">
-      <span>† = ausgestorben</span>
-      <span>LC / NT / VU / EN / CR / EW / EX</span>
-      <span>WILDFORM</span>
-      <span>DOMESTIZIERT</span>
-      <span>PZ2 / JWE1 / JWE2 / JWE3</span>
-    </div>
+    <div class="systematik-legend__content">
+      <section class="systematik-legend__lines">
+        <div class="systematik-legend__line-title">
+          <strong data-i18n data-de="Linien:" data-en="Lines:" data-en-US="Lines:">Linien:</strong>
+        </div>
 
-    <span class="systematik-save-status" data-graph-save-status>
-      Layout gespeichert
-    </span>
-  </aside>
+        <div class="systematik-legend__item">
+          <i class="systematik-legend__line systematik-legend__line--lineage"></i>
+          <span data-i18n data-de="Abstammung" data-en="Lineage" data-en-US="Lineage">Abstammung</span>
+        </div>
+
+        <div class="systematik-legend__item">
+          <i class="systematik-legend__line systematik-legend__line--uncertain"></i>
+          <span data-i18n data-de="unsicher / ungefähr" data-en="uncertain / approximate" data-en-US="uncertain / approximate">unsicher / ungefähr</span>
+        </div>
+
+        <div class="systematik-legend__item">
+          <i class="systematik-legend__line systematik-legend__line--domestication"></i>
+          <span data-i18n data-de="Domestikation" data-en="Domestication" data-en-US="Domestication">Domestikation</span>
+        </div>
+
+        <div class="systematik-legend__status">
+          <span>† = ausgestorben</span>
+          <span>LC / NT / VU / EN / CR / EW / EX</span>
+          <span>WILDFORM</span>
+          <span>DOMESTIZIERT</span>
+          <span>PZ2 / JWE1 / JWE2 / JWE3</span>
+        </div>
+      </section>
+
+      <section class="systematik-filter">
+        <div class="systematik-filter__group">
+          <strong
+            data-i18n
+            data-de="Lebensstatus"
+            data-en="Life status"
+            data-en-US="Life status"
+          >Lebensstatus</strong>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="lebend"
+              checked
+            />
+            <span data-i18n data-de="Lebend" data-en="Living" data-en-US="Living">Lebend</span>
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="ausgestorben"
+              checked
+            />
+            <span data-i18n data-de="† Ausgestorben" data-en="† Extinct" data-en-US="† Extinct">† Ausgestorben</span>
+          </label>
+        </div>
+
+        <div class="systematik-filter__group">
+          <strong
+            data-i18n
+            data-de="Form"
+            data-en="Form"
+            data-en-US="Form"
+          >Form</strong>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="wildform"
+              checked
+            />
+            <span data-i18n data-de="Wildform" data-en="Wild form" data-en-US="Wild form">Wildform</span>
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="domestiziert"
+              checked
+            />
+            <span data-i18n data-de="Domestiziert" data-en="Domesticated" data-en-US="Domesticated">Domestiziert</span>
+          </label>
+        </div>
+
+        <div class="systematik-filter__group systematik-filter__group--games">
+          <strong
+            data-i18n
+            data-de="Spiel"
+            data-en="Game"
+            data-en-US="Game"
+          >Spiel</strong>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="planetZoo2"
+              checked
+            />
+            Planet Zoo 2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="jurassicWorldEvolution1"
+              checked
+            />
+            Jurassic World Evolution 1
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="jurassicWorldEvolution2"
+              checked
+            />
+            Jurassic World Evolution 2
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              data-systematik-filter="jurassicWorldEvolution3"
+              checked
+            />
+            Jurassic World Evolution 3
+          </label>
+        </div>
+      </section>
+    </div>
+  </details>
 
   <div class="systematik-navigation" aria-label="Graph steuern">
     <button type="button" data-graph-pan-up title="Nach oben">↑</button>

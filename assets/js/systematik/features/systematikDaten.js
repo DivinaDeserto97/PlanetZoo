@@ -28,8 +28,27 @@ export function buildSystematikGraph(tiere, selectedIds, filters = {}) {
     loadedIndex: buildLoadedIndex(tiere),
   };
 
+  /*
+      1. Durchgang:
+      Nur die Systematik-Pfade der wirklich
+      ausgewählten Tiere anlegen.
+
+      Dadurch entstehen keine zusätzlichen
+      Tierkarten nur weil sie bei einem anderen
+      Tier als nahe Verwandte erwähnt werden.
+  */
   selectedTiere.forEach((tier, index) => {
-    addTierSystematik(context, tier, index);
+    addTierGrundgeruest(context, tier, index);
+  });
+
+  /*
+      2. Durchgang:
+      Beziehungen und Aufspaltungen erst dann
+      ergänzen, wenn alle ausgewählten Tiere
+      bereits als eindeutige Knoten existieren.
+  */
+  selectedTiere.forEach((tier, index) => {
+    addTierBeziehungen(context, tier, index);
   });
 
   const nodes = [...context.nodes.values()].filter((node) =>
@@ -54,7 +73,7 @@ export function buildSystematikGraph(tiere, selectedIds, filters = {}) {
 /* EIN TIER                                 */
 /* ======================================== */
 
-function addTierSystematik(context, tier, branchIndex) {
+function addTierGrundgeruest(context, tier, branchIndex) {
   const systematik = tier?.originalDaten?.systematik ?? tier?.systematik ?? {};
 
   const evolution = systematik?.evolution ?? {};
@@ -67,14 +86,12 @@ function addTierSystematik(context, tier, branchIndex) {
 
   let focusId = null;
 
-  const pathIds = [];
-
   knoten.forEach((knotenEintrag, index) => {
     const matchesFocus = taxonMatchesTier(knotenEintrag, tier);
 
-    const loadedTier =
-      findLoadedTier(context, [knotenEintrag.id, knotenEintrag.name]) ??
-      (matchesFocus ? tier : null);
+    const loadedTier = matchesFocus
+      ? tier
+      : findLoadedTier(context, [knotenEintrag.id, knotenEintrag.name]);
 
     const nodeId = ensureTaxonNode(context, {
       ref: knotenEintrag.id ?? knotenEintrag.name,
@@ -85,12 +102,14 @@ function addTierSystematik(context, tier, branchIndex) {
 
       focus: matchesFocus,
 
-      backbone: index < knoten.length - 1,
+      /*
+          Alles ausser dem ausgewählten Tier selbst
+          ist Hintergrund / Stammbaum-Gerüst.
+      */
+      backbone: !matchesFocus,
 
       position: knotenEintrag.position ?? `${baseRow}.${index + 1}`,
     });
-
-    pathIds.push(nodeId);
 
     if (previousId && previousId !== nodeId) {
       addEdge(context, {
@@ -114,30 +133,55 @@ function addTierSystematik(context, tier, branchIndex) {
   });
 
   /*
-      Falls kein Evolutionsknoten exakt
-      den Namen des aktuellen Tieres trägt,
-      wird der letzte Knoten als Fokus benutzt.
+      Falls der Datensatz nur den Hintergrund
+      (z. B. bis zur Gattung) enthält, wird NICHT
+      der letzte Hintergrund-Knoten zum Tier gemacht.
+
+      Stattdessen kommt das ausgewählte Tier einmalig
+      als eigener Art-Knoten dahinter.
   */
-
-  if (!focusId && pathIds.length) {
-    focusId = pathIds[pathIds.length - 1];
-
-    promoteFocusNode(context, focusId, tier);
-  }
-
-  /*
-      Falls evolution.knoten komplett fehlt,
-      bleibt das Tier trotzdem als Knoten sichtbar.
-  */
-
   if (!focusId) {
+    const scientificName = getTierScientificName(tier);
+
+    /*
+        Wenn gar kein Hintergrund vorhanden ist,
+        mindestens die Gattung automatisch ergänzen.
+    */
+    if (!previousId) {
+      const genus = getTierGattung(tier);
+
+      if (genus && normalize(genus) !== normalize(scientificName)) {
+        previousId = ensureTaxonNode(context, {
+          ref: genus,
+
+          data: {
+            id: genus,
+
+            name: genus,
+
+            rang: "gattung",
+
+            quelle: "automatischAusArtname",
+          },
+
+          loadedTier: null,
+
+          focus: false,
+
+          backbone: true,
+
+          position: `${baseRow}.1`,
+        });
+      }
+    }
+
     focusId = ensureTaxonNode(context, {
-      ref: getTierScientificName(tier),
+      ref: scientificName,
 
       data: {
-        id: getTierScientificName(tier),
+        id: scientificName,
 
-        name: getTierScientificName(tier),
+        name: scientificName,
 
         rang: "art",
 
@@ -150,55 +194,92 @@ function addTierSystematik(context, tier, branchIndex) {
 
       backbone: false,
 
-      position: `${baseRow}.1`,
+      position: `${baseRow}.${Math.max(1, knoten.length + 1)}`,
     });
+
+    if (previousId && previousId !== focusId) {
+      addEdge(context, {
+        id: `lineage:${previousId}>${focusId}`,
+
+        from: previousId,
+
+        to: focusId,
+
+        type: "direct",
+
+        label: "",
+      });
+    }
+  }
+}
+
+function addTierBeziehungen(context, tier, branchIndex) {
+  const systematik = tier?.originalDaten?.systematik ?? tier?.systematik ?? {};
+
+  const evolution = systematik?.evolution ?? {};
+
+  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [];
+
+  const baseRow = branchIndex * 4 + 1;
+
+  const focusId = findAlias(context, [tier.id, getTierScientificName(tier)]);
+
+  if (!focusId) {
+    return;
   }
 
-  addNaheVerwandte(context, systematik, focusId, baseRow, knoten.length);
+  addNaheVerwandte(context, systematik, focusId);
 
-  addExplicitConnections(context, evolution, baseRow, knoten.length);
+  addExplicitConnections(context, evolution);
 
-  addAufspaltungen(context, tier, evolution, baseRow, knoten.length);
+  addAufspaltungen(context, evolution, baseRow, knoten.length);
 }
 
 /* ======================================== */
 /* NAHE VERWANDTE                           */
 /* ======================================== */
 
-function addNaheVerwandte(context, systematik, focusId, baseRow, pathLength) {
+function addNaheVerwandte(context, systematik, focusId) {
   const verwandt = Array.isArray(systematik?.naheVerwandte)
     ? systematik.naheVerwandte
     : [];
 
-  verwandt.forEach((eintrag, index) => {
-    const loadedTier = findLoadedTier(context, [eintrag.id]);
+  verwandt.forEach((eintrag) => {
+    /*
+        Wichtig:
+        Hier wird KEIN neuer Tier-Knoten erzeugt.
 
-    const row = baseRow + 1 + Math.floor(index / 2);
+        Eine nahe verwandte Art erscheint erst dann,
+        wenn sie selbst ausgewählt wurde und deshalb
+        bereits aus ihrem eigenen Datensatz im Graph
+        vorhanden ist.
+    */
+    const nodeId = findAlias(context, [eintrag.id]);
 
-    const column = Math.max(2, pathLength + 1 + (index % 2));
+    if (!nodeId) {
+      return;
+    }
 
-    const nodeId = ensureTaxonNode(context, {
-      ref: eintrag.id,
+    const node = context.nodes.get(nodeId);
 
-      data: {
-        ...eintrag,
+    if (
+      !node?.tierId ||
+      !context.selectedSet.has(node.tierId) ||
+      nodeId === focusId
+    ) {
+      return;
+    }
 
-        name: eintrag.id,
-
-        rang: eintrag.rang ?? "art",
-      },
-
-      loadedTier,
-
-      focus: false,
-
-      backbone: false,
-
-      position: eintrag.position ?? `${row}.${column}`,
-    });
+    const pairId = [focusId, nodeId].sort().join("<>");
 
     addEdge(context, {
-      id: `related:${focusId}>${nodeId}:${index}`,
+      /*
+          Nahe Verwandtschaft ist hier ungerichtet.
+          Darum bekommt dasselbe Tierpaar immer dieselbe
+          ID - auch wenn beide JSON-Dateien die Beziehung
+          gegenseitig eintragen.
+      */
+      id: `related:${pairId}`,
 
       from: focusId,
 
@@ -207,12 +288,12 @@ function addNaheVerwandte(context, systematik, focusId, baseRow, pathLength) {
       type: "direct",
 
       /*
-              0/0 wird hier nur benutzt,
-              damit der gemeinsame SVG-Renderer
-              KEINEN Pfeil zeichnet.
+          0/0 wird hier nur benutzt,
+          damit der gemeinsame SVG-Renderer
+          KEINEN Pfeil zeichnet.
 
-              Es ist keine ökologische Wirkung.
-          */
+          Es ist keine ökologische Wirkung.
+      */
       wirkung: "0/0",
 
       label: getBeziehungsLabel(eintrag.beziehung),
@@ -224,23 +305,24 @@ function addNaheVerwandte(context, systematik, focusId, baseRow, pathLength) {
 /* EXPLIZITE VERBINDUNGEN                   */
 /* ======================================== */
 
-function addExplicitConnections(context, evolution, baseRow, pathLength) {
+function addExplicitConnections(context, evolution) {
   const verbindungen = Array.isArray(evolution?.verbindungen)
     ? evolution.verbindungen
     : [];
 
   verbindungen.forEach((verbindung, index) => {
-    const from = ensureReferenceNode(
-      context,
-      verbindung.von,
-      `${baseRow + 2 + index}.${Math.max(1, pathLength)}`,
-    );
+    /*
+        Explizite Verbindungen dürfen nur bereits
+        vorhandene Hintergrund- oder Auswahlknoten
+        verbinden. Sie legen keine weiteren Arten an.
+    */
+    const from = findAlias(context, [verbindung.von]);
 
-    const to = ensureReferenceNode(
-      context,
-      verbindung.nach,
-      `${baseRow + 2 + index}.${Math.max(2, pathLength + 1)}`,
-    );
+    const to = findAlias(context, [verbindung.nach]);
+
+    if (!from || !to || from === to) {
+      return;
+    }
 
     const darstellung = getConnectionStyle(verbindung.typ);
 
@@ -263,25 +345,42 @@ function addExplicitConnections(context, evolution, baseRow, pathLength) {
 /* AUFSPALTUNGEN                            */
 /* ======================================== */
 
-function addAufspaltungen(context, tier, evolution, baseRow, pathLength) {
+function addAufspaltungen(context, evolution, baseRow, pathLength) {
   const aufspaltungen = Array.isArray(evolution?.aufspaltungen)
     ? evolution.aufspaltungen
     : [];
 
   aufspaltungen.forEach((aufspaltung, index) => {
-    const a = ensureReferenceNode(
-      context,
-      aufspaltung.linieA,
-      `${baseRow + 2 + index}.${Math.max(2, pathLength)}`,
-    );
+    /*
+        Auch eine Aufspaltung erzeugt keine fehlende
+        Tierart mehr. Der Split wird erst gezeigt, wenn
+        beide referenzierten Linien bereits im Graph
+        vorhanden sind.
 
-    const b = ensureReferenceNode(
-      context,
-      aufspaltung.linieB,
-      `${baseRow + 3 + index}.${Math.max(3, pathLength + 1)}`,
-    );
+        Beispiel:
+        Löwe ausgewählt, Leopard nicht ausgewählt
+        -> kein zusätzlicher Leopard-Knoten.
 
-    const splitId = `split:${safeId(tier.id)}:${index}`;
+        Löwe UND Leopard ausgewählt
+        -> vorhandene Knoten werden über die
+           Aufspaltung miteinander verknüpft.
+    */
+    const a = findAlias(context, [aufspaltung.linieA]);
+
+    const b = findAlias(context, [aufspaltung.linieB]);
+
+    if (!a || !b || a === b) {
+      return;
+    }
+
+    const splitPairId = [a, b].sort().join("<>");
+
+    /*
+        Auch der Split wird pro Linienpaar nur einmal
+        angelegt. So entstehen beim späteren Ergänzen
+        weiterer Tier-JSONs keine doppelten Aufspaltungen.
+    */
+    const splitId = `split:${safeId(splitPairId)}`;
 
     if (!context.nodes.has(splitId)) {
       const time = Number.isFinite(aufspaltung.zeitVorHeuteMioJahre)
@@ -455,66 +554,6 @@ function ensureTaxonNode(
   registerAliases(context, nodeId, aliases);
 
   return nodeId;
-}
-
-/* ======================================== */
-/* GENERISCHER REFERENZ-KNOTEN              */
-/* ======================================== */
-
-function ensureReferenceNode(context, ref, position) {
-  const existing = findAlias(context, [ref]);
-
-  if (existing) {
-    return existing;
-  }
-
-  const loadedTier = findLoadedTier(context, [ref]);
-
-  return ensureTaxonNode(context, {
-    ref,
-
-    data: {
-      id: ref,
-
-      name: ref,
-
-      rang: "taxon",
-
-      quelle: "",
-    },
-
-    loadedTier,
-
-    focus: false,
-
-    backbone: false,
-
-    position,
-  });
-}
-
-/* ======================================== */
-/* FOKUS NACHRÜSTEN                         */
-/* ======================================== */
-
-function promoteFocusNode(context, nodeId, tier) {
-  const node = context.nodes.get(nodeId);
-
-  if (!node) {
-    return;
-  }
-
-  node.focus = true;
-
-  node.tierId = tier.id;
-
-  node.selected = true;
-
-  node.backbone = false;
-
-  mergeMeta(node.systematikMeta, createMeta({}, tier));
-
-  refreshNodeStyle(node, node.systematikMeta?.rang);
 }
 
 /* ======================================== */
@@ -758,7 +797,12 @@ function findLoadedTier(context, aliases) {
   for (const alias of aliases) {
     const tier = context.loadedIndex.get(normalize(alias));
 
-    if (tier) {
+    /*
+        Ein geladener Datensatz wird im Systematik-Graph
+        nur dann als echtes Tier behandelt, wenn dieses
+        Tier auch ausgewählt ist.
+    */
+    if (tier && context.selectedSet.has(tier.id)) {
       return tier;
     }
   }
@@ -832,6 +876,16 @@ function getTierScientificName(tier) {
   return (
     tier?.wissenschaftlicherName ?? tier?.originalDaten?.id ?? tier?.id ?? ""
   );
+}
+
+function getTierGattung(tier) {
+  const scientificName = getTierScientificName(tier).trim();
+
+  if (!scientificName) {
+    return "";
+  }
+
+  return scientificName.split(/\s+/)[0] ?? "";
 }
 
 function getTierName(tier) {

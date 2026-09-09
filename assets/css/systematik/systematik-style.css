@@ -77,59 +77,18 @@ body:has(.systematik-page) #page {
 }
 
 /* ======================================== */
-/* FILTER                                   */
+/* FILTER IN DER LEGENDE                   */
 /* ======================================== */
 
 .systematik-filter {
-  position: absolute;
+  display: grid;
 
-  z-index: 20;
-
-  top: var(--systematik-overlay-gap);
-
-  left: var(--systematik-overlay-gap);
-
-  width: min(420px, calc(100% - 24px));
-
-  padding: var(--systematik-panel-padding);
-
-  display: flex;
-
-  flex-wrap: wrap;
+  grid-template-columns:
+    repeat(3, minmax(120px, 1fr));
 
   gap: 8px 14px;
 
-  border: 1px solid var(--farbe-linie);
-
-  border-radius: var(--systematik-panel-radius);
-
-  background: color-mix(in srgb, var(--farbe-bereich) 94%, transparent);
-
-  box-shadow: var(--systematik-panel-shadow);
-
-  backdrop-filter: blur(8px);
-}
-
-.systematik-filter__title {
-  width: 100%;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  gap: 10px;
-
-  padding-bottom: 7px;
-
-  border-bottom: 1px solid var(--farbe-linie);
-}
-
-.systematik-filter__title span {
-  color: var(--farbe-text-zusatz);
-
-  font-size: 11px;
+  min-width: 0;
 }
 
 .systematik-filter__group {
@@ -139,7 +98,7 @@ body:has(.systematik-page) #page {
 
   gap: 4px;
 
-  min-width: 110px;
+  min-width: 0;
 
   padding: 5px;
 }
@@ -157,9 +116,15 @@ body:has(.systematik-page) #page {
 
   gap: 6px;
 
+  min-width: 0;
+
   font-size: 11px;
 
   cursor: pointer;
+}
+
+.systematik-filter__group--games {
+  min-width: 205px;
 }
 
 /* ======================================== */
@@ -253,7 +218,7 @@ body:has(.systematik-page) #page {
 }
 
 /* ======================================== */
-/* LEGENDE                                  */
+/* LEGENDE + AUSWAHL                       */
 /* ======================================== */
 
 .systematik-legend {
@@ -265,17 +230,9 @@ body:has(.systematik-page) #page {
 
   bottom: var(--systematik-overlay-gap);
 
-  max-width: min(520px, calc(100% - 24px));
+  width: min(760px, calc(100% - 24px));
 
-  padding: var(--systematik-panel-padding);
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  align-items: center;
-
-  gap: 8px 14px;
+  max-height: min(70vh, 620px);
 
   border: 1px solid var(--farbe-linie);
 
@@ -288,6 +245,86 @@ body:has(.systematik-page) #page {
   backdrop-filter: blur(8px);
 
   font-size: 11px;
+
+  overflow: hidden;
+}
+
+.systematik-legend__summary {
+  min-height: 38px;
+
+  padding: 8px 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  list-style: none;
+}
+
+.systematik-legend__summary::-webkit-details-marker {
+  display: none;
+}
+
+.systematik-legend__summary-count {
+  color: var(--farbe-text-zusatz);
+
+  white-space: nowrap;
+}
+
+.systematik-legend__caret {
+  width: 9px;
+
+  height: 9px;
+
+  margin-left: 2px;
+
+  border-right: 2px solid currentColor;
+
+  border-bottom: 2px solid currentColor;
+
+  transform: rotate(45deg) translateY(-2px);
+
+  transition: transform 140ms ease;
+}
+
+.systematik-legend[open] .systematik-legend__caret {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.systematik-legend__content {
+  max-height: calc(min(70vh, 620px) - 38px);
+
+  padding: 10px;
+
+  display: grid;
+
+  gap: 10px;
+
+  border-top: 1px solid var(--farbe-linie);
+
+  overflow: auto;
+}
+
+.systematik-legend__lines {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px 14px;
+}
+
+.systematik-legend__line-title {
+  display: inline-flex;
+
+  align-items: center;
 }
 
 .systematik-legend__item {
@@ -334,6 +371,8 @@ body:has(.systematik-page) #page {
   margin-left: auto;
 
   color: var(--farbe-text-zusatz);
+
+  white-space: nowrap;
 }
 
 .systematik-save-status.is-dirty {
@@ -431,10 +470,6 @@ body:has(.systematik-page) #page {
 /* ======================================== */
 
 @media (max-width: 900px) {
-  .systematik-filter {
-    max-width: 300px;
-  }
-
   .systematik-toolbar {
     flex-wrap: wrap;
 
@@ -444,6 +479,40 @@ body:has(.systematik-page) #page {
   }
 
   .systematik-legend {
-    max-width: 360px;
+    width: min(520px, calc(100% - 24px));
+  }
+
+  .systematik-filter {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .systematik-filter__group--games {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .systematik-legend__summary {
+    flex-wrap: wrap;
+  }
+
+  .systematik-save-status {
+    order: 4;
+
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .systematik-legend__caret {
+    margin-left: auto;
+  }
+
+  .systematik-filter {
+    grid-template-columns: 1fr;
+  }
+
+  .systematik-filter__group--games {
+    grid-column: auto;
   }
 }
