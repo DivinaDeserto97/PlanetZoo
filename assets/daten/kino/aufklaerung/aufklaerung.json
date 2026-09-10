@@ -1,0 +1,27 @@
+{
+  "id": "aufklaerung",
+  "kategorie": "aufklaerung",
+  "name": {
+    "de": "Aufklärung",
+    "en": "Education"
+  },
+  "beitraege": [
+    {
+      "id": "beispiel-mikroplastik",
+      "aktiv": true,
+      "titel": {
+        "de": "Mikroplastik – Beispielbeitrag",
+        "en": "Microplastics – example entry"
+      },
+      "text": {
+        "de": "Dieser Platzhalter zeigt, wie ein Aufklärungsbeitrag aussehen kann. Ersetze den Text später durch deine geprüften Informationen und Quellen.",
+        "en": "This placeholder shows how an educational intermission can look. Replace it later with your verified information and sources."
+      },
+      "dauerSekunden": 15,
+      "medien": {
+        "video": "",
+        "bild": ""
+      }
+    }
+  ]
+}

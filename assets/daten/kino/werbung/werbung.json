@@ -1,0 +1,27 @@
+{
+  "id": "werbung",
+  "kategorie": "werbung",
+  "name": {
+    "de": "Werbung / Zoo-Hinweise",
+    "en": "Advertising / zoo notices"
+  },
+  "beitraege": [
+    {
+      "id": "beispiel-werbung",
+      "aktiv": true,
+      "titel": {
+        "de": "Beispielwerbung – bitte ersetzen",
+        "en": "Example advertisement – please replace"
+      },
+      "text": {
+        "de": "Hier kannst du später einen Shop, ein Restaurant, eine Führung oder einen anderen Zoo-Hinweis bewerben.",
+        "en": "You can later advertise a shop, restaurant, guided tour or another zoo notice here."
+      },
+      "dauerSekunden": 12,
+      "medien": {
+        "video": "",
+        "bild": ""
+      }
+    }
+  ]
+}

@@ -64,6 +64,32 @@
       - `Weltkarte/`
         - [.gitkeep](<../assets/daten/Weltkarte/.gitkeep>)
         - `Weltkartenreferenz_map.png` *(Medium – nicht in Share-ZIP)*
+      - `kino/`
+        - `allgemeine-tierinfos/`
+          - [allgemeine-tierinfos.json](<../assets/daten/kino/allgemeine-tierinfos/allgemeine-tierinfos.json>)
+          - `bilder/`
+            - [.gitkeep](<../assets/daten/kino/allgemeine-tierinfos/bilder/.gitkeep>)
+          - `videos/`
+            - [.gitkeep](<../assets/daten/kino/allgemeine-tierinfos/videos/.gitkeep>)
+        - `aufklaerung/`
+          - [aufklaerung.json](<../assets/daten/kino/aufklaerung/aufklaerung.json>)
+          - `bilder/`
+            - [.gitkeep](<../assets/daten/kino/aufklaerung/bilder/.gitkeep>)
+          - `videos/`
+            - [.gitkeep](<../assets/daten/kino/aufklaerung/videos/.gitkeep>)
+        - [kinoImport.js](<../assets/daten/kino/kinoImport.js>)
+        - `naturschutz/`
+          - `bilder/`
+            - [.gitkeep](<../assets/daten/kino/naturschutz/bilder/.gitkeep>)
+          - [naturschutz.json](<../assets/daten/kino/naturschutz/naturschutz.json>)
+          - `videos/`
+            - [.gitkeep](<../assets/daten/kino/naturschutz/videos/.gitkeep>)
+        - `werbung/`
+          - `bilder/`
+            - [.gitkeep](<../assets/daten/kino/werbung/bilder/.gitkeep>)
+          - `videos/`
+            - [.gitkeep](<../assets/daten/kino/werbung/videos/.gitkeep>)
+          - [werbung.json](<../assets/daten/kino/werbung/werbung.json>)
       - `lebewesen/`
         - [.gitkeep](<../assets/daten/lebewesen/.gitkeep>)
         - `pflanzen/`

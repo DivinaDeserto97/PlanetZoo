@@ -1,12 +1,183 @@
-<section class="calculator-page">
-  <header>
-    <p class="calculator-page__eyebrow" data-i18n data-de="Gemeinsame Tierauswahl" data-en="Shared animal selection" data-en-US="Shared animal selection" data-es="Selección compartida de animales" data-fr="Sélection d’animaux partagée" data-it="Selezione animali condivisa" data-pt-BR="Seleção compartilhada de animais" data-ja="共通の動物選択" data-zh-Hans="共享动物选择">Gemeinsame Tierauswahl</p>
-    <h1 data-i18n data-de="Rechner" data-en="Calculator" data-en-US="Calculator" data-es="Calculadora" data-fr="Calculateur" data-it="Calcolatore" data-pt-BR="Calculadora" data-ja="計算機" data-zh-Hans="计算器">Rechner</h1>
-    <p data-i18n data-de="Der eigentliche Rechner kommt später. Die Übergabe der ausgewählten Tiere ist bereits vorbereitet." data-en="The actual calculator comes later. The transfer of the selected animals is already prepared." data-en-US="The actual calculator comes later. The transfer of the selected animals is already prepared." data-es="La calculadora llegará más adelante. La transferencia de los animales seleccionados ya está preparada." data-fr="Le calculateur viendra plus tard. Le transfert des animaux sélectionnés est déjà préparé." data-it="Il calcolatore verrà aggiunto in seguito. Il passaggio degli animali selezionati è già pronto." data-pt-BR="A calculadora será adicionada depois. A transferência dos animais selecionados já está pronta." data-ja="計算機本体は後で追加します。選択した動物の引き継ぎはすでに準備済みです。" data-zh-Hans="实际计算器稍后添加。已选择动物的传递功能已经准备好。">Der eigentliche Rechner kommt später. Die Übergabe der ausgewählten Tiere ist bereits vorbereitet.</p>
+<section class="kino-page" data-kino-page>
+  <header class="kino-page__header">
+    <p class="kino-page__eyebrow">Kino-Baukasten</p>
+    <h1>Kino</h1>
+    <p>
+      Tiere und Filmquellen auswählen, Zwischenprogramm festlegen und danach den fertigen Ablauf automatisch abspielen. So kann der Durchlauf direkt mit OBS aufgenommen werden.
+    </p>
   </header>
 
-  <div class="calculator-page__selection">
-    <h2 data-i18n data-de="Aktuell ausgewählt" data-en="Currently selected" data-en-US="Currently selected" data-es="Seleccionados actualmente" data-fr="Actuellement sélectionnés" data-it="Attualmente selezionati" data-pt-BR="Selecionados atualmente" data-ja="現在の選択" data-zh-Hans="当前选择">Aktuell ausgewählt</h2>
-    <div data-calculator-animal-list></div>
+  <div class="kino-builder" data-kino-builder>
+    <section class="kino-panel">
+      <div class="kino-panel__heading">
+        <div>
+          <span class="kino-step">1</span>
+          <h2>Filme auswählen</h2>
+        </div>
+        <span class="kino-count" data-kino-film-count>0 Filme</span>
+      </div>
+
+      <div class="kino-grid kino-grid--selection">
+        <fieldset class="kino-fieldset">
+          <legend>Tiere</legend>
+          <div class="kino-actions-inline">
+            <button type="button" data-kino-select-all-animals>Alle</button>
+            <button type="button" data-kino-select-no-animals>Keine</button>
+          </div>
+          <div class="kino-check-list" data-kino-animal-list></div>
+        </fieldset>
+
+        <fieldset class="kino-fieldset">
+          <legend>Filmquellen</legend>
+          <div class="kino-actions-inline">
+            <button type="button" data-kino-select-all-sources>Alle</button>
+            <button type="button" data-kino-select-no-sources>Keine</button>
+          </div>
+          <div class="kino-check-list" data-kino-source-list></div>
+        </fieldset>
+
+        <fieldset class="kino-fieldset">
+          <legend>Filmarten</legend>
+          <div class="kino-check-list" data-kino-type-list></div>
+        </fieldset>
+      </div>
+
+      <div class="kino-film-preview">
+        <h3>Diese Filme kommen in den Durchlauf</h3>
+        <div data-kino-film-list></div>
+      </div>
+    </section>
+
+    <section class="kino-panel">
+      <div class="kino-panel__heading">
+        <div>
+          <span class="kino-step">2</span>
+          <h2>Zwischenprogramm</h2>
+        </div>
+      </div>
+
+      <div class="kino-grid kino-grid--settings">
+        <fieldset class="kino-fieldset">
+          <legend>Was darf zwischen den Filmen laufen?</legend>
+
+          <label class="kino-check-row kino-check-row--strong">
+            <input type="checkbox" data-kino-intermission="tierinfo" checked />
+            <span>
+              <strong>Tierinformationen</strong>
+              <small>Automatisch aus der Tier-JSON des nächsten Films.</small>
+            </span>
+          </label>
+
+          <div data-kino-category-list></div>
+        </fieldset>
+
+        <fieldset class="kino-fieldset">
+          <legend>Zeiten</legend>
+
+          <label class="kino-input-row">
+            <span>Pause zwischen zwei Filmen</span>
+            <span class="kino-time-inputs">
+              <input type="number" min="0" max="59" step="1" value="1" data-kino-pause-minutes />
+              <span>min</span>
+              <input type="number" min="0" max="59" step="1" value="0" data-kino-pause-seconds />
+              <span>s</span>
+            </span>
+          </label>
+
+          <label class="kino-input-row">
+            <span>Standarddauer pro Text-/Bildbeitrag</span>
+            <span class="kino-time-inputs">
+              <input type="number" min="3" max="300" step="1" value="15" data-kino-card-duration />
+              <span>s</span>
+            </span>
+          </label>
+
+          <label class="kino-check-row">
+            <input type="checkbox" data-kino-avoid-repeats checked />
+            <span>Beiträge möglichst nicht direkt wiederholen</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="kino-fieldset">
+          <legend>Durchlauf</legend>
+
+          <label class="kino-input-row">
+            <span>Filmreihenfolge</span>
+            <select data-kino-film-order>
+              <option value="fixed">Wie in der Datenliste</option>
+              <option value="random">Zufällig</option>
+            </select>
+          </label>
+
+          <label class="kino-input-row">
+            <span>Nach dem letzten Film</span>
+            <select data-kino-loop-mode>
+              <option value="stop">Durchlauf beenden</option>
+              <option value="loop">Von vorne beginnen</option>
+            </select>
+          </label>
+
+          <label class="kino-check-row">
+            <input type="checkbox" data-kino-show-countdown checked />
+            <span>Countdown bis zum nächsten Film anzeigen</span>
+          </label>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="kino-panel kino-panel--start">
+      <div class="kino-panel__heading">
+        <div>
+          <span class="kino-step">3</span>
+          <h2>Kinoloop starten</h2>
+        </div>
+      </div>
+
+      <div class="kino-summary" data-kino-summary></div>
+      <div class="kino-warning" data-kino-warning hidden></div>
+
+      <div class="kino-start-actions">
+        <button type="button" class="kino-primary-button" data-kino-start>
+          Kinoloop starten
+        </button>
+      </div>
+    </section>
   </div>
+
+  <section class="kino-player" data-kino-player hidden>
+    <div class="kino-player__stage" data-kino-stage>
+      <video class="kino-player__video" data-kino-video playsinline></video>
+
+      <div class="kino-player__card" data-kino-card hidden>
+        <div class="kino-player__card-media" data-kino-card-media hidden>
+          <img data-kino-card-image alt="" />
+        </div>
+        <div class="kino-player__card-body">
+          <p class="kino-player__category" data-kino-card-category></p>
+          <h2 data-kino-card-title></h2>
+          <p data-kino-card-text></p>
+          <p class="kino-player__source" data-kino-card-source></p>
+        </div>
+      </div>
+
+      <div class="kino-player__film-info" data-kino-film-info hidden>
+        <strong data-kino-film-title></strong>
+        <span data-kino-film-animal></span>
+      </div>
+
+      <div class="kino-player__countdown" data-kino-countdown hidden>
+        <span>Nächster Film</span>
+        <strong data-kino-countdown-value>00:00</strong>
+      </div>
+
+      <div class="kino-player__message" data-kino-player-message hidden></div>
+    </div>
+
+    <div class="kino-player__controls">
+      <button type="button" data-kino-stop>Beenden</button>
+      <button type="button" data-kino-skip>Weiter</button>
+      <button type="button" data-kino-fullscreen>Vollbild</button>
+      <span data-kino-position></span>
+    </div>
+  </section>
 </section>

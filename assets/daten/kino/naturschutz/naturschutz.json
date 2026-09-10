@@ -1,0 +1,27 @@
+{
+  "id": "naturschutz",
+  "kategorie": "naturschutz",
+  "name": {
+    "de": "Naturschutz",
+    "en": "Conservation"
+  },
+  "beitraege": [
+    {
+      "id": "beispiel-naturschutzprojekt",
+      "aktiv": true,
+      "titel": {
+        "de": "Beispiel-Naturschutzprojekt – bitte ersetzen",
+        "en": "Example conservation project – please replace"
+      },
+      "text": {
+        "de": "Hier kannst du ein konkretes Naturschutzprojekt vorstellen: Ort, Tierart, Ziel des Projekts und wie Besucher helfen können.",
+        "en": "Use this entry for a real conservation project: location, species, project goal and how visitors can help."
+      },
+      "dauerSekunden": 15,
+      "medien": {
+        "video": "",
+        "bild": ""
+      }
+    }
+  ]
+}

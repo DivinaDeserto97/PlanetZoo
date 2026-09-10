@@ -1,0 +1,27 @@
+{
+  "id": "allgemeine-tierinfos",
+  "kategorie": "allgemeine-tierinfos",
+  "name": {
+    "de": "Allgemeine Tierinfos",
+    "en": "General animal information"
+  },
+  "beitraege": [
+    {
+      "id": "beispiel-allgemeine-tierinfo",
+      "aktiv": true,
+      "titel": {
+        "de": "Allgemeine Tierinfo – Beispiel",
+        "en": "General animal fact – example"
+      },
+      "text": {
+        "de": "Hier können Beiträge stehen, die nicht zu genau einer Tierart gehören – zum Beispiel über Raubtiere, Savannen oder bedrohte Arten.",
+        "en": "Use this category for information that is not tied to one specific species, such as predators, savannas or threatened species."
+      },
+      "dauerSekunden": 12,
+      "medien": {
+        "video": "",
+        "bild": ""
+      }
+    }
+  ]
+}
