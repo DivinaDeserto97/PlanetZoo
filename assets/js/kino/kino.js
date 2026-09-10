@@ -51,6 +51,14 @@ export async function init() {
   const video = getElement("[data-kino-video]");
   video?.addEventListener("ended", handleFilmEnded, { signal });
   video?.addEventListener("error", handleVideoError, { signal });
+  video?.addEventListener("loadedmetadata", handleVideoMetadata, { signal });
+
+  const audio = getElement("[data-kino-audio]");
+  audio?.addEventListener("error", () => {
+    if (playback?.aktiv && playback.phase === "pause") {
+      console.warn("Zwischenprogramm-Audio konnte nicht geladen werden.");
+    }
+  }, { signal });
 
   renderBuilder();
 }
@@ -111,66 +119,122 @@ function shuffle(liste) {
   return kopie;
 }
 
-function browserVideoDatei(datei) {
-  const typ = String(datei?.dateityp ?? "").toLowerCase();
-  const pfad = String(datei?.pfad ?? "").toLowerCase();
+const VIDEO_MIME = {
+  mp4: "video/mp4",
+  m4v: "video/mp4",
+  webm: "video/webm",
+  ogg: "video/ogg",
+  ogv: "video/ogg",
+};
 
-  return ["mp4", "webm", "ogg", "ogv", "m4v"].includes(typ) ||
-    /\.(mp4|webm|ogg|ogv|m4v)(\?.*)?$/.test(pfad);
+const AUDIO_MIME = {
+  mp3: "audio/mpeg",
+  wav: "audio/wav",
+  wave: "audio/wav",
+  ogg: "audio/ogg",
+  oga: "audio/ogg",
+  m4a: "audio/mp4",
+  aac: "audio/aac",
+  flac: "audio/flac",
+};
+
+function dateiendung(pfad) {
+  const sauber = String(pfad ?? "").split(/[?#]/, 1)[0];
+  const match = sauber.match(/\.([a-z0-9]+)$/i);
+  return match?.[1]?.toLowerCase() ?? "";
+}
+
+function mediaTyp(datei) {
+  const eingetragen = String(datei?.dateityp ?? "").trim().toLowerCase();
+  return eingetragen || dateiendung(datei?.pfad);
+}
+
+function browserVideoDatei(datei) {
+  return Boolean(datei?.pfad && VIDEO_MIME[mediaTyp(datei)]);
+}
+
+function browserAudioDatei(datei) {
+  return Boolean(datei?.pfad && AUDIO_MIME[mediaTyp(datei)]);
+}
+
+function mimeFuerMedia(medien, art = "video") {
+  const typ = String(medien?.dateityp ?? dateiendung(medien?.pfad)).toLowerCase();
+  return art === "audio" ? (AUDIO_MIME[typ] ?? "") : (VIDEO_MIME[typ] ?? "");
+}
+
+function setzeBrowserQuelle(element, medien, art = "video") {
+  if (!element) {
+    return false;
+  }
+
+  element.pause?.();
+  element.removeAttribute("src");
+  element.replaceChildren();
+
+  if (!medien?.pfad) {
+    element.load?.();
+    return false;
+  }
+
+  const source = document.createElement("source");
+  source.src = medien.pfad;
+
+  const mime = mimeFuerMedia(medien, art);
+  if (mime) {
+    source.type = mime;
+  }
+
+  element.appendChild(source);
+  element.preload = "auto";
+  element.load();
+  return true;
 }
 
 function findeFilmPfad(variante) {
   const dateien = alsArray(variante?.dateien);
 
+  // Für das Kino werden AUSSCHLIESSLICH Browser-Videodateien verwendet.
+  // Originale wie MKV bleiben Archivdateien und werden nie an <video> übergeben.
   const wiedergabe = dateien.find((datei) =>
-    datei?.typ === "wiedergabe" && datei?.pfad && browserVideoDatei(datei),
+    datei?.typ === "wiedergabe" && browserVideoDatei(datei),
   );
 
-  if (wiedergabe?.pfad) {
-    return {
-      pfad: wiedergabe.pfad,
-      dateityp: wiedergabe.dateityp ?? "",
-      browserGeeignet: true,
-      quelle: "lokal",
-    };
-  }
-
-  const browserDatei = dateien.find((datei) => datei?.pfad && browserVideoDatei(datei));
+  const browserDatei = wiedergabe ?? dateien.find((datei) => browserVideoDatei(datei));
 
   if (browserDatei?.pfad) {
     return {
       pfad: browserDatei.pfad,
-      dateityp: browserDatei.dateityp ?? "",
+      dateityp: mediaTyp(browserDatei),
+      mime: mimeFuerMedia(browserDatei, "video"),
       browserGeeignet: true,
       quelle: "lokal",
     };
   }
 
-  const irgendeineDatei = dateien.find((datei) => datei?.pfad);
-
-  if (irgendeineDatei?.pfad) {
-    return {
-      pfad: irgendeineDatei.pfad,
-      dateityp: irgendeineDatei.dateityp ?? "",
-      browserGeeignet: false,
-      quelle: "lokal",
-    };
-  }
-
+  // Externe URLs nur dann direkt verwenden, wenn sie auf eine typische
+  // Browser-Videodatei zeigen. Webseiten-URLs gehören nicht in <video>.
   if (variante?.url) {
-    return {
+    const extern = {
       pfad: variante.url,
-      dateityp: "url",
-      browserGeeignet: true,
-      quelle: "extern",
+      dateityp: dateiendung(variante.url),
     };
+
+    if (browserVideoDatei(extern)) {
+      return {
+        ...extern,
+        mime: mimeFuerMedia(extern, "video"),
+        browserGeeignet: true,
+        quelle: "extern",
+      };
+    }
   }
 
   return {
     pfad: "",
     dateityp: "",
+    mime: "",
     browserGeeignet: false,
-    quelle: "keine",
+    quelle: "keine-browserdatei",
   };
 }
 
@@ -641,14 +705,16 @@ function getIntermissionAuswahl() {
 /* ======================================== */
 
 function startPlayback() {
-  let filme = getAktiveFilme().filter((film) => film.medien.pfad);
+  let filme = getAktiveFilme().filter((film) =>
+    film.medien.pfad && film.medien.browserGeeignet,
+  );
 
   if (!filme.length) {
     const warning = getElement("[data-kino-warning]");
 
     if (warning) {
       warning.hidden = false;
-      warning.textContent = "Es gibt keinen ausgewählten Film mit einem eingetragenen Video-Pfad.";
+      warning.textContent = "Es gibt keinen ausgewählten Film mit einer Browser-Videodatei (MP4, WebM oder OGV). Originaldateien wie MKV werden absichtlich nicht abgespielt.";
     }
 
     return;
@@ -705,10 +771,16 @@ function spieleFilm(index) {
   hideMessage();
   setCountdown(null);
 
+  stoppePauseAudio();
   video.hidden = false;
   video.controls = false;
-  video.src = film.medien.pfad;
-  video.currentTime = 0;
+  video.playsInline = true;
+
+  if (!setzeBrowserQuelle(video, film.medien, "video")) {
+    showMessage("Für diesen Film ist keine Browser-Videodatei vorhanden.");
+    window.setTimeout(handleFilmEnded, 1200);
+    return;
+  }
 
   const filmInfo = getElement("[data-kino-film-info]");
   const filmTitle = getElement("[data-kino-film-title]");
@@ -729,6 +801,26 @@ function spieleFilm(index) {
       console.warn("Film konnte nicht automatisch gestartet werden.", fehler);
       showMessage("Der Film konnte nicht automatisch gestartet werden. Klicke einmal in den Player oder auf Weiter.");
     });
+  }
+}
+
+function handleVideoMetadata() {
+  if (!playback?.aktiv || playback.phase !== "film") {
+    return;
+  }
+
+  const video = getElement("[data-kino-video]");
+  if (!video) {
+    return;
+  }
+
+  // Eine echte Videodatei liefert nach loadedmetadata eine Bildgrösse.
+  // Falls nur eine Audiospur decodiert werden kann, zeigen wir einen klaren
+  // Hinweis statt eines kommentarlosen schwarzen Rechtecks.
+  if (video.videoWidth === 0 || video.videoHeight === 0) {
+    const film = playback.filme[playback.index];
+    console.warn("Keine darstellbare Videospur:", film?.medien?.pfad);
+    showMessage("Die Datei wird geladen, aber der Browser erkennt darin keine darstellbare Videospur.");
   }
 }
 
@@ -788,11 +880,10 @@ function startePause(naechsterFilmIndex) {
   const video = getElement("[data-kino-video]");
 
   if (video) {
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
+    setzeBrowserQuelle(video, null, "video");
     video.hidden = true;
   }
+  stoppePauseAudio();
 
   getElement("[data-kino-film-info]")?.setAttribute("hidden", "");
   hideMessage();
@@ -893,6 +984,7 @@ function baueZwischenprogrammPool() {
           quelleText: formatBeitragQuelle(beitrag.quelle),
           bildPfad: beitrag.medien?.bild ?? "",
           videoPfad: beitrag.medien?.video ?? "",
+          audioPfad: beitrag.medien?.audio ?? "",
         });
       });
   });
@@ -927,6 +1019,7 @@ function baueTierinfos(tier) {
         quelleText: formatTierQuelle(tier, eintrag.quelle),
         bildPfad: tier.hauptbildPfad ?? "",
         videoPfad: "",
+        audioPfad: "",
         dauerSekunden: playback?.cardDauer ?? 15,
       });
     });
@@ -982,35 +1075,54 @@ function formatBeitragQuelle(quelle) {
 
 function zeigeBeitrag(beitrag) {
   const card = getElement("[data-kino-card]");
-  const category = getElement("[data-kino-card-category]");
-  const title = getElement("[data-kino-card-title]");
-  const body = getElement("[data-kino-card-text]");
-  const source = getElement("[data-kino-card-source]");
-  const media = getElement("[data-kino-card-media]");
-  const image = getElement("[data-kino-card-image]");
   const video = getElement("[data-kino-video]");
+  const audio = getElement("[data-kino-audio]");
 
-  if (!card || !category || !title || !body || !source || !media || !image || !video) {
+  if (!card || !video) {
     return;
   }
+
+  stoppePauseAudio();
 
   if (beitrag.videoPfad) {
-    card.hidden = true;
-    video.hidden = false;
-    video.src = beitrag.videoPfad;
-    video.currentTime = 0;
-    video.play().catch(() => {
-      video.hidden = true;
-      zeigeTextKarte(beitrag);
-    });
-    return;
+    const media = {
+      pfad: beitrag.videoPfad,
+      dateityp: dateiendung(beitrag.videoPfad),
+    };
+
+    if (browserVideoDatei(media)) {
+      card.hidden = true;
+      video.hidden = false;
+      video.controls = false;
+      setzeBrowserQuelle(video, media, "video");
+      video.play().catch(() => {
+        video.hidden = true;
+        zeigeTextKarte(beitrag);
+      });
+      return;
+    }
   }
 
-  video.pause();
-  video.removeAttribute("src");
-  video.load();
+  setzeBrowserQuelle(video, null, "video");
   video.hidden = true;
   zeigeTextKarte(beitrag);
+
+  // Audio (MP3/WAV/OGG/M4A/AAC/FLAC) kann als Ton unter einer Text-/Bildkarte
+  // laufen. Das ist getrennt vom Videoelement, damit Audio nie als schwarzes
+  // "Video" dargestellt wird.
+  if (beitrag.audioPfad && audio) {
+    const media = {
+      pfad: beitrag.audioPfad,
+      dateityp: dateiendung(beitrag.audioPfad),
+    };
+
+    if (browserAudioDatei(media)) {
+      setzeBrowserQuelle(audio, media, "audio");
+      audio.play().catch((fehler) => {
+        console.warn("Zwischenprogramm-Audio konnte nicht gestartet werden.", fehler);
+      });
+    }
+  }
 }
 
 function zeigeTextKarte(beitrag) {
@@ -1043,12 +1155,22 @@ function zeigeTextKarte(beitrag) {
   }
 }
 
+function stoppePauseAudio() {
+  const audio = getElement("[data-kino-audio]");
+  if (!audio) {
+    return;
+  }
+
+  setzeBrowserQuelle(audio, null, "audio");
+}
+
 function showBlackPause() {
   hideCard();
+  stoppePauseAudio();
   const video = getElement("[data-kino-video]");
 
   if (video) {
-    video.pause();
+    setzeBrowserQuelle(video, null, "video");
     video.hidden = true;
   }
 }
@@ -1089,6 +1211,7 @@ function finishPlayback() {
     video.hidden = true;
   }
 
+  stoppePauseAudio();
   hideCard();
   setCountdown(null);
   getElement("[data-kino-film-info]")?.setAttribute("hidden", "");
@@ -1108,6 +1231,7 @@ function stopPlayback({ zurueckZumBuilder = true } = {}) {
     video.hidden = false;
   }
 
+  stoppePauseAudio();
   playback = null;
   lastBeitragId = null;
 

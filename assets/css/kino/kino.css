@@ -294,6 +294,7 @@
 }
 
 .kino-player__video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -476,4 +477,10 @@
     width: 100%;
     margin-left: 0;
   }
+}
+
+
+/* Audio-Zwischenprogramm läuft unter der Text-/Bildkarte und bekommt keine eigene schwarze Fläche. */
+[data-kino-audio] {
+  display: none;
 }
