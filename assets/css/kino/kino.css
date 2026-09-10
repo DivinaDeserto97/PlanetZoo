@@ -484,3 +484,18 @@
 [data-kino-audio] {
   display: none;
 }
+
+/* ======================================== */
+/* HIDDEN-ZUSTAENDE                         */
+/* ======================================== */
+/*
+  Wichtig: Mehrere Kino-Elemente besitzen eigene display-Regeln wie
+  display:grid oder display:flex. Diese Author-CSS-Regeln koennen das
+  native HTML-[hidden] ueberschreiben. Dann bleibt z. B. die leere
+  Player-Meldung als dunkle Vollflaeche ueber dem Video liegen.
+
+  Innerhalb der Kino-Seite bedeutet hidden deshalb immer wirklich unsichtbar.
+*/
+.kino-page [hidden] {
+  display: none !important;
+}

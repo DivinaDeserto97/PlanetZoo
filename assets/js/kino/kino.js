@@ -52,6 +52,8 @@ export async function init() {
   video?.addEventListener("ended", handleFilmEnded, { signal });
   video?.addEventListener("error", handleVideoError, { signal });
   video?.addEventListener("loadedmetadata", handleVideoMetadata, { signal });
+  video?.addEventListener("loadeddata", handleVideoBildBereit, { signal });
+  video?.addEventListener("playing", handleVideoBildBereit, { signal });
 
   const audio = getElement("[data-kino-audio]");
   audio?.addEventListener("error", () => {
@@ -162,30 +164,67 @@ function mimeFuerMedia(medien, art = "video") {
   return art === "audio" ? (AUDIO_MIME[typ] ?? "") : (VIDEO_MIME[typ] ?? "");
 }
 
-function setzeBrowserQuelle(element, medien, art = "video") {
+function normalisiereMediaPfad(pfad) {
+  const wert = String(pfad ?? "").trim().replace(/\\/g, "/");
+
+  if (!wert) {
+    return "";
+  }
+
+  if (/^(?:https?:|blob:|data:)/i.test(wert)) {
+    return wert;
+  }
+
+  try {
+    return new URL(wert.replace(/^\.\//, ""), document.baseURI).href;
+  } catch {
+    return wert;
+  }
+}
+
+function leereMediaQuelle(element) {
   if (!element) {
-    return false;
+    return;
   }
 
   element.pause?.();
   element.removeAttribute("src");
   element.replaceChildren();
+  element.load?.();
+}
 
-  if (!medien?.pfad) {
-    element.load?.();
+function setzeBrowserQuelle(element, medien, art = "video") {
+  if (!element) {
     return false;
   }
 
-  const source = document.createElement("source");
-  source.src = medien.pfad;
+  leereMediaQuelle(element);
 
-  const mime = mimeFuerMedia(medien, art);
-  if (mime) {
-    source.type = mime;
+  if (!medien?.pfad) {
+    return false;
   }
 
-  element.appendChild(source);
+  const pfad = normalisiereMediaPfad(medien.pfad);
+  if (!pfad) {
+    return false;
+  }
+
+  /*
+    Absichtlich direkt element.src setzen statt <source>-Elemente zu bauen.
+    Das ist für lokal ausgelieferte MP4/WebM/OGV-Dateien robuster und
+    verhindert, dass Chrome eine vorhandene Datei wegen eines unpassenden
+    MIME-Hinweises überspringt.
+  */
+  element.src = pfad;
   element.preload = "auto";
+
+  if (art === "video") {
+    element.playsInline = true;
+    element.muted = false;
+    element.volume = 1;
+    element.removeAttribute("hidden");
+  }
+
   element.load();
   return true;
 }
@@ -775,6 +814,8 @@ function spieleFilm(index) {
   video.hidden = false;
   video.controls = false;
   video.playsInline = true;
+  video.muted = false;
+  video.volume = 1;
 
   if (!setzeBrowserQuelle(video, film.medien, "video")) {
     showMessage("Für diesen Film ist keine Browser-Videodatei vorhanden.");
@@ -799,7 +840,7 @@ function spieleFilm(index) {
   if (playPromise?.catch) {
     playPromise.catch((fehler) => {
       console.warn("Film konnte nicht automatisch gestartet werden.", fehler);
-      showMessage("Der Film konnte nicht automatisch gestartet werden. Klicke einmal in den Player oder auf Weiter.");
+      showMessage("Der Film konnte nicht automatisch gestartet werden. Klicke einmal auf Weiter und danach wieder auf den Film.");
     });
   }
 }
@@ -814,14 +855,26 @@ function handleVideoMetadata() {
     return;
   }
 
-  // Eine echte Videodatei liefert nach loadedmetadata eine Bildgrösse.
-  // Falls nur eine Audiospur decodiert werden kann, zeigen wir einen klaren
-  // Hinweis statt eines kommentarlosen schwarzen Rechtecks.
-  if (video.videoWidth === 0 || video.videoHeight === 0) {
-    const film = playback.filme[playback.index];
-    console.warn("Keine darstellbare Videospur:", film?.medien?.pfad);
-    showMessage("Die Datei wird geladen, aber der Browser erkennt darin keine darstellbare Videospur.");
+  // Bei MP4 kann loadedmetadata bereits kommen, bevor der erste Bild-Frame
+  // wirklich gezeichnet wurde. Darum hier nicht vorschnell eine schwarze
+  // Fehlerfläche darüberlegen.
+  if (video.videoWidth > 0 && video.videoHeight > 0) {
+    handleVideoBildBereit();
   }
+}
+
+function handleVideoBildBereit() {
+  if (!playback?.aktiv || playback.phase !== "film") {
+    return;
+  }
+
+  const video = getElement("[data-kino-video]");
+  if (!video || video.videoWidth <= 0 || video.videoHeight <= 0) {
+    return;
+  }
+
+  video.hidden = false;
+  hideMessage();
 }
 
 function handleFilmEnded() {
@@ -853,8 +906,16 @@ function handleVideoError() {
 
   const film = playback.filme[playback.index];
   const titel = film ? text(film.titel, film.reihe || "Film") : "Film";
+  const video = getElement("[data-kino-video]");
+  const code = video?.error?.code ?? 0;
 
-  showMessage(`„${titel}“ konnte nicht geladen werden und wird übersprungen.`);
+  console.error("Kino-Video konnte nicht abgespielt werden:", {
+    titel,
+    pfad: film?.medien?.pfad,
+    errorCode: code,
+  });
+
+  showMessage(`„${titel}“ konnte im Browser nicht abgespielt werden.`);
   window.setTimeout(() => {
     if (playback?.aktiv && playback.phase === "film") {
       handleFilmEnded();
@@ -1225,9 +1286,7 @@ function stopPlayback({ zurueckZumBuilder = true } = {}) {
   const video = getElement("[data-kino-video]");
 
   if (video) {
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
+    leereMediaQuelle(video);
     video.hidden = false;
   }
 
