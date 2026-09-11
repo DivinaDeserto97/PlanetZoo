@@ -104,6 +104,18 @@
               - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/map/.gitkeep>)
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/videos/.gitkeep>)
+          - `Ambystoma mexicanum/`
+            - [Ambystoma mexicanum.json](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/Ambystoma mexicanum.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/bilder/.gitkeep>)
+              - `Ambystoma mexicanum 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/map/.gitkeep>)
+              - `Ambystoma mexicanum map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/videos/.gitkeep>)
           - `Loxodonta africana/`
             - [Loxodonta africana.json](<../assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json>)
             - `audio/`
@@ -260,6 +272,8 @@
       - `tier/`
         - [tier.js](<../assets/js/tier/tier.js>)
   - `dokumentation/`
+    - [ANLEITUNG-TIER-JSON.md](<../dokumentation/ANLEITUNG-TIER-JSON.md>)
+    - [PlanetZoo2-Tierdaten-Checkliste.md](<../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md>)
     - [ordnerstruktur.md](<../dokumentation/ordnerstruktur.md>)
   - [index.html](<../index.html>)
   - `pages/`

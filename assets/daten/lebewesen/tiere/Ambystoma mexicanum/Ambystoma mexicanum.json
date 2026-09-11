@@ -1,0 +1,789 @@
+{
+  "id": "Ambystoma mexicanum",
+  "identitaet": {
+    "namen": {
+      "de": "Axolotl",
+      "en": "Axolotl",
+      "en-US": "Axolotl",
+      "es": "Ajolote",
+      "fr": "Axolotl",
+      "it": "Axolotl",
+      "pt-BR": "Axolote",
+      "ja": "メキシコサンショウウオ",
+      "zh-Hans": "墨西哥钝口螈"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      "exhibit"
+    ],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [
+      "Wüste",
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Amphibia",
+          "ordnung": "Urodela",
+          "familie": "Ambystomatidae",
+          "gattung": "Ambystoma",
+          "art": "Ambystoma mexicanum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 0.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 0.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 0.3,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 0.3,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 50,
+          "max": 1000,
+          "einheit": "individuum",
+          "populationstrend": "",
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1,
+          "max": 1.5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Axolotl in der Wildbahn als einzelgängerisch. In Menschenobhut können ähnlich große Tiere bei genügend Platz und Nahrung zusammenleben.",
+            "en": "The Zoopedia describes axolotls as solitary in the wild. In captivity, similarly sized animals may live together when sufficient space and food are available."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "desert",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "wetlands",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "insects",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "molluscs",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "smallFish",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Axolotl kommt natürlicherweise nur in Mexiko vor. Die Zoopedia nennt heute den Xochimilco-See beziehungsweise dessen verbliebenes Kanal- und Süßwassersystem bei Mexiko-Stadt als sein natürliches Verbreitungsgebiet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The axolotl occurs naturally only in Mexico. The Zoopedia describes Lake Xochimilco and its remaining freshwater canal system near Mexico City as its present natural habitat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The axolotl occurs naturally only in Mexico. The Zoopedia describes Lake Xochimilco and its remaining freshwater canal system near Mexico City as its present natural habitat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El ajolote vive de forma natural únicamente en México. La Zoopedia sitúa su hábitat natural actual en el lago Xochimilco y en el sistema de canales de agua dulce que queda cerca de Ciudad de México.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’axolotl n’existe naturellement qu’au Mexique. La Zoopedia indique que son habitat naturel actuel se limite au lac Xochimilco et à son réseau restant de canaux d’eau douce près de Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’axolotl vive naturalmente soltanto in Messico. La Zoopedia indica come habitat naturale attuale il lago Xochimilco e il sistema residuo di canali d’acqua dolce vicino a Città del Messico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O axolote ocorre naturalmente apenas no México. A Zoopedia indica o lago Xochimilco e o sistema remanescente de canais de água doce próximo à Cidade do México como seu habitat natural atual.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アホロートルはメキシコにのみ自然分布します。Zoopediaでは、現在の自然生息地としてメキシコシティ近郊のソチミルコ湖と、そこに残る淡水の運河網が示されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "墨西哥钝口螈仅自然分布于墨西哥。Zoopedia指出，它现今的天然栖息地主要是墨西哥城附近的霍奇米尔科湖及其残存的淡水运河系统。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Axolotl (Ambystoma mexicanum) ist ein vollständig im Wasser lebender Schwanzlurch. Wildfarbene Tiere sind meist grünlich bis braun mit dunklen Flecken. Auffällig sind die äußeren Kiemenäste am Kopf. Die Zoopedia beschreibt eine Körperlänge von etwa 15 bis 45 cm und ein durchschnittliches Gewicht von ungefähr 300 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The axolotl (Ambystoma mexicanum) is a fully aquatic salamander. Wild-type animals are usually greenish to brown with dark speckling and have conspicuous external gills. The Zoopedia describes a length of roughly 15–45 cm and an average weight of about 300 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The axolotl (Ambystoma mexicanum) is a fully aquatic salamander. Wild-type animals are usually greenish to brown with dark speckling and have conspicuous external gills. The Zoopedia describes a length of roughly 15–45 cm and an average weight of about 300 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El ajolote (Ambystoma mexicanum) es una salamandra totalmente acuática. Los ejemplares silvestres suelen ser verdosos o marrones con manchas oscuras y presentan branquias externas muy visibles. La Zoopedia indica unos 15–45 cm de longitud y un peso medio cercano a 300 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’axolotl (Ambystoma mexicanum) est une salamandre entièrement aquatique. Les individus sauvages sont généralement verdâtres à bruns, tachetés de sombre, avec des branchies externes bien visibles. La Zoopedia indique environ 15 à 45 cm de longueur et un poids moyen proche de 300 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’axolotl (Ambystoma mexicanum) è una salamandra completamente acquatica. Gli individui selvatici sono in genere verdastri o marroni con macchie scure e mostrano evidenti branchie esterne. La Zoopedia indica una lunghezza di circa 15–45 cm e un peso medio di circa 300 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O axolote (Ambystoma mexicanum) é uma salamandra totalmente aquática. Os animais selvagens costumam ser esverdeados ou marrons, com manchas escuras e brânquias externas bem visíveis. A Zoopedia indica cerca de 15–45 cm de comprimento e peso médio próximo de 300 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アホロートル（Ambystoma mexicanum）は完全水生の有尾類です。野生型は緑褐色から茶色で暗色の斑点があり、頭部の外鰓が目立ちます。Zoopediaでは全長約15～45cm、平均体重約300gとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "墨西哥钝口螈（Ambystoma mexicanum）是一种完全水生的有尾两栖动物。野生型通常呈绿褐色至棕色并带深色斑点，头部具有明显的外鳃。Zoopedia描述其体长约15–45厘米，平均体重约300克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Zoopedia führt den Axolotl als vom Aussterben bedroht. Als Hauptprobleme werden der Verlust und die Zerschneidung seines Lebensraums, Verschmutzung sowie eingeschleppte Fischarten genannt. Verbesserte Wasserqualität durch Renaturierung und Ökotourismus hilft, eine Wiederansiedlung setzt jedoch einen ausreichend gesunden Lebensraum ohne problematische invasive Arten voraus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Zoopedia lists the axolotl as Critically Endangered. Major problems include habitat loss and fragmentation, pollution, and introduced fish. Habitat restoration and ecotourism have helped improve water quality, but reintroduction requires a sufficiently healthy habitat without problematic invasive species.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Zoopedia lists the axolotl as Critically Endangered. Major problems include habitat loss and fragmentation, pollution, and introduced fish. Habitat restoration and ecotourism have helped improve water quality, but reintroduction requires a sufficiently healthy habitat without problematic invasive species.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La Zoopedia clasifica al ajolote como En Peligro Crítico. Entre los principales problemas figuran la pérdida y fragmentación del hábitat, la contaminación y los peces introducidos. La restauración del hábitat y el ecoturismo han mejorado la calidad del agua, pero una reintroducción exige un hábitat suficientemente sano y sin especies invasoras problemáticas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La Zoopedia classe l’axolotl comme En danger critique. Les principales menaces sont la perte et la fragmentation de l’habitat, la pollution et les poissons introduits. La restauration des milieux et l’écotourisme ont amélioré la qualité de l’eau, mais une réintroduction nécessite un habitat suffisamment sain et débarrassé des espèces invasives problématiques.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La Zoopedia classifica l’axolotl come In pericolo critico. I principali problemi sono perdita e frammentazione dell’habitat, inquinamento e pesci introdotti. Il ripristino dell’habitat e l’ecoturismo hanno migliorato la qualità dell’acqua, ma la reintroduzione richiede un ambiente sufficientemente sano e privo di specie invasive problematiche.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A Zoopedia classifica o axolote como Criticamente em Perigo. Os principais problemas incluem perda e fragmentação do habitat, poluição e peixes introduzidos. A restauração ambiental e o ecoturismo melhoraram a qualidade da água, mas a reintrodução exige um habitat suficientemente saudável e sem espécies invasoras problemáticas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Zoopediaではアホロートルは深刻な絶滅危惧種とされています。主な問題は生息地の消失と分断、水質汚染、外来魚です。環境再生やエコツーリズムによって水質は改善していますが、再導入には外来種の影響が抑えられた健全な生息環境が必要です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Zoopedia将墨西哥钝口螈列为极危物种。主要威胁包括栖息地丧失和破碎化、水体污染以及外来鱼类。生态修复和生态旅游已改善部分水质，但重新引入仍需要足够健康、且不受有害入侵物种影响的栖息环境。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Axolotl leben in der Wildbahn überwiegend einzeln. Während der Paarungszeit von März bis Juni führt das Männchen mit dem Weibchen eine Balz aus und setzt anschließend eine Spermatophore ab. Das Weibchen legt danach über viele Stunden hinweg zahlreiche Eier einzeln an Pflanzen und Steinen ab. Die Larven schlüpfen nach etwa 10 bis 14 Tagen. Axolotl bleiben zeitlebens in ihrer wasserlebenden, larvenähnlichen Form und werden ungefähr mit 1 bis 1,5 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Axolotls are mainly solitary in the wild. During the March-to-June breeding season, the male courts the female and deposits a spermatophore. The female later places many eggs individually on plants and stones. Larvae hatch after about 10–14 days. Axolotls retain their aquatic larval-like form throughout life and reach sexual maturity at roughly 1–1.5 years.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Axolotls are mainly solitary in the wild. During the March-to-June breeding season, the male courts the female and deposits a spermatophore. The female later places many eggs individually on plants and stones. Larvae hatch after about 10–14 days. Axolotls retain their aquatic larval-like form throughout life and reach sexual maturity at roughly 1–1.5 years.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los ajolotes son principalmente solitarios en libertad. Durante la época reproductiva, de marzo a junio, el macho corteja a la hembra y deposita un espermatóforo. Después, la hembra coloca numerosos huevos por separado sobre plantas y piedras. Las larvas eclosionan tras unos 10–14 días. Los ajolotes conservan durante toda la vida su forma acuática semejante a una larva y alcanzan la madurez sexual aproximadamente entre 1 y 1,5 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les axolotls vivent surtout seuls dans la nature. Pendant la période de reproduction, de mars à juin, le mâle parade puis dépose un spermatophore. La femelle fixe ensuite de nombreux œufs séparément sur des plantes et des pierres. Les larves éclosent après environ 10 à 14 jours. Les axolotls conservent toute leur vie leur forme aquatique larvaire et atteignent la maturité sexuelle vers 1 à 1,5 an.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli axolotl sono soprattutto solitari in natura. Durante la stagione riproduttiva, da marzo a giugno, il maschio corteggia la femmina e deposita una spermatofora. La femmina depone poi numerose uova singolarmente su piante e pietre. Le larve si schiudono dopo circa 10–14 giorni. Gli axolotl mantengono per tutta la vita la forma acquatica simile a quella larvale e raggiungono la maturità sessuale a circa 1–1,5 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os axolotes são principalmente solitários na natureza. Na época reprodutiva, de março a junho, o macho corteja a fêmea e deposita um espermatóforo. Depois, a fêmea coloca muitos ovos individualmente em plantas e pedras. As larvas eclodem após cerca de 10–14 dias. Os axolotes mantêm durante toda a vida a forma aquática semelhante à larval e atingem a maturidade sexual por volta de 1–1,5 ano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "野生のアホロートルは主に単独で生活します。3～6月の繁殖期には雄が雌に求愛し、精包を置きます。その後、雌は多数の卵を植物や石に1個ずつ産み付けます。幼生は約10～14日で孵化します。アホロートルは一生、水生の幼生に似た形態を保ち、約1～1.5歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "野生墨西哥钝口螈主要独居。3月至6月的繁殖季中，雄性会向雌性求偶并释放精包。随后雌性会把大量卵逐个附着在植物和石块上。幼体约10–14天后孵化。它们终生保持类似幼体的水生形态，并在约1至1.5岁时达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Das Genom des Axolotls gehört zu den größten vollständig sequenzierten Tiergenomen und ist ungefähr zehnmal größer als das menschliche Genom.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotl sind Fleischfresser und saugen unter anderem Insekten, Weichtiere und kleine Fische in ihr Maul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotl sind pädomorph: Sie behalten Merkmale eines Jungtiers und durchlaufen normalerweise keine vollständige Metamorphose.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Der Name Axolotl wird mit Xolotl, einer Gottheit der aztekischen Mythologie, in Verbindung gebracht.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotl werden intensiv erforscht, weil sie Gliedmaßen und verschiedene Gewebe beziehungsweise Organteile regenerieren können.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The axolotl has one of the largest fully sequenced animal genomes, roughly ten times the size of the human genome.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are carnivores and feed by sucking prey such as insects, molluscs and small fish into the mouth.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are paedomorphic: they retain juvenile traits and normally do not undergo a complete metamorphosis.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The name axolotl is associated with Xolotl, a deity from Aztec mythology.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are widely studied because they can regenerate limbs and several kinds of tissues or organ structures.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The axolotl has one of the largest fully sequenced animal genomes, roughly ten times the size of the human genome.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are carnivores and feed by sucking prey such as insects, mollusks and small fish into the mouth.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are paedomorphic: they retain juvenile traits and normally do not undergo a complete metamorphosis.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The name axolotl is associated with Xolotl, a deity from Aztec mythology.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Axolotls are widely studied because they can regenerate limbs and several kinds of tissues or organ structures.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El ajolote posee uno de los genomas animales completamente secuenciados más grandes, unas diez veces mayor que el humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los ajolotes son carnívoros y succionan presas como insectos, moluscos y peces pequeños.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El ajolote es pedomórfico: conserva rasgos juveniles y normalmente no completa una metamorfosis.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El nombre ajolote está relacionado con Xólotl, una divinidad de la mitología azteca.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los ajolotes se estudian ampliamente por su capacidad de regenerar extremidades y distintos tejidos u órganos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’axolotl possède l’un des plus grands génomes animaux entièrement séquencés, environ dix fois plus grand que celui de l’être humain.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les axolotls sont carnivores et aspirent des proies telles que des insectes, des mollusques et de petits poissons.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L’axolotl est pédomorphe : il conserve des caractères juvéniles et ne réalise normalement pas de métamorphose complète.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le nom axolotl est associé à Xolotl, une divinité de la mythologie aztèque.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les axolotls sont très étudiés pour leur capacité à régénérer des membres et différents tissus ou structures d’organes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’axolotl possiede uno dei più grandi genomi animali completamente sequenziati, circa dieci volte quello umano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli axolotl sono carnivori e aspirano prede come insetti, molluschi e piccoli pesci.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L’axolotl è pedomorfico: mantiene caratteristiche giovanili e normalmente non compie una metamorfosi completa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il nome axolotl è collegato a Xolotl, una divinità della mitologia azteca.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli axolotl sono molto studiati per la capacità di rigenerare arti e diversi tessuti o strutture di organi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O axolote possui um dos maiores genomas animais totalmente sequenciados, cerca de dez vezes maior que o genoma humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotes são carnívoros e sugam presas como insetos, moluscos e peixes pequenos para dentro da boca.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O axolote é pedomórfico: mantém características juvenis e normalmente não passa por metamorfose completa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O nome axolote é associado a Xolotl, uma divindade da mitologia asteca.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotes são muito estudados por sua capacidade de regenerar membros e diferentes tecidos ou estruturas de órgãos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アホロートルのゲノムは完全解読された動物ゲノムの中でも非常に大きく、ヒトのおよそ10倍です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "アホロートルは肉食性で、昆虫、軟体動物、小魚などを吸い込むようにして食べます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "アホロートルは幼形成熟を示し、幼生の特徴を残したまま通常は完全な変態を行いません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "アホロートルという名称は、アステカ神話の神ショロトルに由来するとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "アホロートルは四肢やさまざまな組織・器官構造を再生できるため、広く研究されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "墨西哥钝口螈拥有已完整测序的动物基因组中最大的之一，规模约为人类基因组的十倍。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "墨西哥钝口螈为肉食性，会把昆虫、软体动物和小鱼等猎物吸入口中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "墨西哥钝口螈具有幼态延续特征，终生保留幼体特征，通常不会完成完整变态。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Axolotl这一名称与阿兹特克神话中的神祇Xolotl有关。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "墨西哥钝口螈因能够再生四肢以及多种组织或器官结构而受到广泛研究。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Dieser Bearbeitungsstand enthält zunächst nur Daten aus der Planet-Zoo-2-Zoopedia. Tierstimmenarchiv, Go Wild, Mission Wildnis, weitere wissenschaftliche Quellen sowie Rechnerwerte werden in späteren Durchgängen ergänzt.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "This editing stage initially contains only data from the Planet Zoo 2 Zoopedia. Animal Sound Archive, Go Wild, Mission Wildnis, additional scientific sources and calculator values will be added in later passes.",
+          "quelle": "projekt"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "This editing stage initially contains only data from the Planet Zoo 2 Zoopedia. Animal Sound Archive, Go Wild, Mission Wildnis, additional scientific sources and calculator values will be added in later passes.",
+          "quelle": "projekt"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/d75f80a9/Salamander_Axolotl_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/map/Ambystoma mexicanum map.png"
+      },
+      {
+        "typ": "wiedergabe",
+        "dateityp": "svg",
+        "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/map/Ambystoma mexicanum map.svg"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url":"https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDc1ZjgwYTkvU2FsYW1hbmRlcl9BeG9sb3RsLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Axolotl – Planet Zoo 2",
+            "en": "Axolotl – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Axolotls aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the axolotl."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/bilder/Ambystoma mexicanum 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/axolotl"
+      },
+      "status": "Zoopedia-Pass eingetragen; Rechnerwerte bewusst noch nicht bearbeitet."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}
