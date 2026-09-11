@@ -1,0 +1,902 @@
+{
+  "id": "Crocodylus porosus",
+  "identitaet": {
+    "namen": {
+      "de": "Leistenkrokodil",
+      "en": "Saltwater Crocodile",
+      "en-US": "Saltwater Crocodile",
+      "es": "Cocodrilo marino",
+      "fr": "Crocodile marin",
+      "it": "Coccodrillo marino",
+      "pt-BR": "Crocodilo-de-água-salgada",
+      "ja": "イリエワニ",
+      "zh-Hans": "湾鳄"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Crocodilia",
+          "familie": "Crocodylidae",
+          "gattung": "Crocodylus",
+          "art": "Crocodylus porosus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 3.5,
+          "max": 6.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.7,
+          "max": 3.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia bezeichnet 2,7 bis 3,4 m als durchschnittliche Länge der Weibchen.",
+            "en": "The Zoopedia describes 2.7–3.4 m as the average female length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 200,
+          "max": 1000,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 120,
+          "max": 200,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art insgesamt als nicht gefährdet, weist aber auf instabile lokale Bestände hin.",
+            "en": "The Zoopedia describes the species overall as Least Concern while noting that some local populations are unstable."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 500,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Crocodylus porosus"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Der bereitgestellte Zoopedia-Auszug zeigt beim Wildbestand wörtlich „500“. Ein Tausender-Faktor oder eine andere Einheit ist dort nicht ausgewiesen und wird daher nicht ergänzt.",
+            "en": "The supplied Zoopedia extract literally displays '500' for the wild population. No thousands multiplier or other unit is shown, so none has been added."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 12,
+          "max": 14,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 16,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eierImKoerperBisEiablage",
+          "min": 1,
+          "max": 2,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "inkubationBisSchlupf",
+          "min": 80,
+          "max": 98,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Eiablage und Brutdauer, nennt im bereitgestellten Auszug aber keine Eizahl.",
+            "en": "The Zoopedia describes egg laying and incubation but does not state the number of eggs in the supplied extract."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Leistenkrokodile sind Einzelgänger, äußerst territorial und aggressiv.",
+            "en": "Saltwater Crocodiles are solitary, highly territorial and aggressive."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "mutterMitJungtieren",
+          "wert": "motherWithYoung",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Weibchen beschützen ihre Jungen die ersten 8 Monate.",
+            "en": "Females protect their young for the first eight months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt das Leistenkrokodil als effizientes Raubtier.",
+              "en": "The Zoopedia describes the Saltwater Crocodile as an efficient predator."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "giantToads",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Laut Zoopedia können Leistenkrokodile in Zeiten knapper Nahrung Riesenkröten fressen und sind gegen deren Gift immun.",
+                "en": "According to the Zoopedia, Saltwater Crocodiles can eat giant toads when food is scarce and are immune to their toxin."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Leistenkrokodil (Crocodylus porosus) ist eine sehr große Krokodilart, die in den Küstengebieten Südostasiens, Nordaustraliens und Ostindiens zu Hause ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Saltwater Crocodile (Crocodylus porosus) is a very large crocodilian native to coastal regions of Southeast Asia, northern Australia and eastern India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Saltwater Crocodile (Crocodylus porosus) is a very large crocodilian native to coastal regions of Southeast Asia, northern Australia and eastern India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El cocodrilo marino (Crocodylus porosus) es una especie de gran tamaño propia de las zonas costeras del Sudeste Asiático, el norte de Australia y el este de India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le crocodile marin (Crocodylus porosus) est une très grande espèce présente dans les régions côtières d’Asie du Sud-Est, du nord de l’Australie et de l’est de l’Inde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande delle regioni costiere del Sud-est asiatico, dell’Australia settentrionale e dell’India orientale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O crocodilo-de-água-salgada (Crocodylus porosus) é uma espécie muito grande das regiões costeiras do Sudeste Asiático, norte da Austrália e leste da Índia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イリエワニ（Crocodylus porosus）は、東南アジア、オーストラリア北部、インド東部の沿岸域に生息する非常に大型のワニです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "湾鳄（Crocodylus porosus）是一种体型非常大的鳄类，生活在东南亚、澳大利亚北部和印度东部的沿海地区。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Leistenkrokodil (auch Crocodylus porosus) ist eine sehr große Krokodilart, die in den Küstengebieten Südostasiens, Nordaustraliens und Ostindiens zu Hause ist.\n\nEs ist ein effizientes und gefährliches Raubtier, das im Vergleich zu anderen Krokodilarten eine breitere Schnauze und einen breiteren Körper hat. Die Färbung reicht von hellbraun bis grünlich-grau, wobei es zwischen den verschiedenen Beständen Farbunterschiede gibt.\n\nMännchen können zwischen 3,5 m und 6 m lang werden und zwischen 200 kg und 1.000 kg wiegen. Weibchen sind deutlich kleiner und erreichen durchschnittlich eine Länge von 2,7 m bis 3,4 m und ein Gewicht von 120 kg bis 200 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Saltwater Crocodile (Crocodylus porosus) is a very large crocodile species native to coastal regions of Southeast Asia, northern Australia and eastern India.\n\nIt is an efficient and dangerous predator with a broader snout and body than many other crocodile species. Its colour ranges from light brown to greenish-grey, with variation between populations.\n\nMales can reach 3.5–6 m and weigh 200–1,000 kg. Females are much smaller, averaging 2.7–3.4 m and 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Saltwater Crocodile (Crocodylus porosus) is a very large crocodile species native to coastal regions of Southeast Asia, northern Australia and eastern India.\n\nIt is an efficient and dangerous predator with a broader snout and body than many other crocodile species. Its colour ranges from light brown to greenish-grey, with variation between populations.\n\nMales can reach 3.5–6 m and weigh 200–1,000 kg. Females are much smaller, averaging 2.7–3.4 m and 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El cocodrilo marino (Crocodylus porosus) es una especie de cocodrilo de gran tamaño que vive en las zonas costeras del Sudeste Asiático, el norte de Australia y el este de India.\n\nEs un depredador eficaz y peligroso, con hocico y cuerpo más anchos que los de muchas otras especies. Su color va del marrón claro al gris verdoso y varía entre poblaciones.\n\nLos machos miden 3,5–6 m y pesan 200–1.000 kg. Las hembras son mucho menores, con 2,7–3,4 m y 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le crocodile marin (Crocodylus porosus) est une très grande espèce de crocodile des régions côtières d’Asie du Sud-Est, du nord de l’Australie et de l’est de l’Inde.\n\nC’est un prédateur efficace et dangereux, avec un museau et un corps plus larges que ceux de nombreuses autres espèces. Sa couleur varie du brun clair au gris verdâtre selon les populations.\n\nLes mâles mesurent 3,5–6 m et pèsent 200–1 000 kg. Les femelles sont nettement plus petites, avec 2,7–3,4 m et 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande che vive nelle regioni costiere del Sud-est asiatico, dell’Australia settentrionale e dell’India orientale.\n\nÈ un predatore efficiente e pericoloso, con muso e corpo più larghi rispetto a molte altre specie di coccodrillo. Il colore varia dal marrone chiaro al grigio-verdastro e differisce tra le popolazioni.\n\nI maschi misurano 3,5–6 m e pesano 200–1.000 kg. Le femmine sono molto più piccole, con 2,7–3,4 m e 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O crocodilo-de-água-salgada (Crocodylus porosus) é uma espécie muito grande encontrada nas regiões costeiras do Sudeste Asiático, norte da Austrália e leste da Índia.\n\nÉ um predador eficiente e perigoso, com focinho e corpo mais largos do que muitas outras espécies de crocodilo. A coloração varia do marrom-claro ao cinza-esverdeado e difere entre populações.\n\nMachos medem 3,5–6 m e pesam 200–1.000 kg. Fêmeas são muito menores, com 2,7–3,4 m e 120–200 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イリエワニ（Crocodylus porosus）は、東南アジア、オーストラリア北部、インド東部の沿岸域に生息する非常に大型のワニです。\n\n効率的で危険な捕食者で、他のワニ類より幅広い吻と胴体を持ちます。体色は薄茶色から緑がかった灰色まで変化し、個体群によって違いがあります。\n\n雄は全長3.5～6m、体重200～1,000kg。雌はかなり小さく、平均2.7～3.4m、120～200kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "湾鳄（Crocodylus porosus）是一种体型非常大的鳄类，分布于东南亚、澳大利亚北部和印度东部沿海地区。\n\n它是高效且危险的捕食者，与许多其他鳄类相比具有更宽的吻部和身体。体色从浅褐色到绿灰色不等，不同种群之间存在颜色差异。\n\n雄性体长3.5～6米，体重200～1,000千克；雌性明显较小，平均体长2.7～3.4米，体重120～200千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Leistenkrokodile gelten als „nicht gefährdet“ und sind insgesamt nicht bedroht, doch bestimmte lokale Bestände gelten als instabil. Der Verlust ihres Lebensraums aufgrund der Küstenbebauung sowie die Jagd zur Gewinnung von Krokodilhaut haben dazu geführt, dass sie in einigen Teilen ihres Verbreitungsgebiets nicht mehr vorkommen und mittlerweile in Sri Lanka, Thailand und Vietnam relativ selten sind.\n\nIn vielen Ländern werden Anstrengungen unternommen, um die lokalen Bestände der Leistenkrokodile zu stabilisieren und zu schützen. In Indien gab es erfolgreiche Auswilderungsprogramme für in Gefangenschaft lebende Tiere. In Burma und Australien gibt es Krokodilfarmen, die die Zucht und den Schutz der Leistenkrokodile kontrollieren und deren Bestand überwachen. Papua-Neuguinea schützt Gebiete, in denen Krokodile sich fortpflanzen, und überwacht die Fortpflanzung, indem es Eier und Jungtiere zählt und Krokodile in diesen gemeinsamen Brutgebieten markiert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Saltwater Crocodiles are considered Least Concern and are not threatened overall, although some local populations are unstable. Habitat loss caused by coastal development and hunting for crocodile skin have eliminated them from some parts of their range, and they are now relatively rare in Sri Lanka, Thailand and Vietnam.\n\nMany countries are working to stabilise and protect local populations. India has carried out successful release programmes for captive animals. Myanmar and Australia have crocodile farms that regulate breeding and conservation and monitor populations. Papua New Guinea protects breeding areas and monitors reproduction by counting eggs and young and marking crocodiles in shared breeding sites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Saltwater Crocodiles are considered Least Concern and are not threatened overall, although some local populations are unstable. Habitat loss caused by coastal development and hunting for crocodile skin have eliminated them from some parts of their range, and they are now relatively rare in Sri Lanka, Thailand and Vietnam.\n\nMany countries are working to stabilise and protect local populations. India has carried out successful release programmes for captive animals. Myanmar and Australia have crocodile farms that regulate breeding and conservation and monitor populations. Papua New Guinea protects breeding areas and monitors reproduction by counting eggs and young and marking crocodiles in shared breeding sites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificado como de Preocupación Menor y la especie no está amenazada en conjunto, aunque algunas poblaciones locales son inestables. La pérdida de hábitat por urbanización costera y la caza por su piel han provocado su desaparición en algunas zonas, y actualmente es relativamente raro en Sri Lanka, Tailandia y Vietnam.\n\nMuchos países trabajan para estabilizar y proteger las poblaciones locales. India ha llevado a cabo programas exitosos de liberación de ejemplares criados en cautividad. En Myanmar y Australia existen granjas de cocodrilos que regulan la cría y protección y controlan las poblaciones. Papúa Nueva Guinea protege áreas reproductivas y supervisa la reproducción contando huevos y crías y marcando cocodrilos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le crocodile marin est classé en Préoccupation mineure et n’est pas globalement menacé, même si certaines populations locales sont instables. La perte d’habitat due à l’aménagement côtier et la chasse pour la peau ont entraîné sa disparition dans certaines parties de son aire; il est aujourd’hui relativement rare au Sri Lanka, en Thaïlande et au Vietnam.\n\nDe nombreux pays cherchent à stabiliser et protéger les populations locales. L’Inde a mené avec succès des programmes de remise en liberté d’animaux élevés en captivité. Au Myanmar et en Australie, des élevages contrôlent la reproduction, la protection et le suivi des populations. La Papouasie-Nouvelle-Guinée protège les zones de reproduction et surveille celle-ci en comptant les œufs et les jeunes et en marquant les crocodiles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo e non è globalmente minacciato, anche se alcune popolazioni locali sono instabili. La perdita di habitat dovuta allo sviluppo costiero e la caccia per la pelle hanno causato la scomparsa in alcune parti dell’areale; oggi è relativamente raro in Sri Lanka, Thailandia e Vietnam.\n\nMolti paesi cercano di stabilizzare e proteggere le popolazioni locali. In India sono stati effettuati programmi di rilascio di animali allevati in cattività. In Myanmar e Australia esistono allevamenti di coccodrilli che controllano riproduzione, protezione e monitoraggio. La Papua Nuova Guinea protegge le aree riproduttive e monitora la riproduzione contando uova e giovani e marcando i coccodrilli.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante e não está ameaçado no conjunto da espécie, embora algumas populações locais sejam instáveis. A perda de habitat pelo desenvolvimento costeiro e a caça por couro levaram ao desaparecimento em partes da distribuição, e hoje é relativamente raro no Sri Lanka, Tailândia e Vietnã.\n\nVários países trabalham para estabilizar e proteger populações locais. A Índia realizou programas bem-sucedidos de soltura de animais criados em cativeiro. Em Mianmar e na Austrália, fazendas de crocodilos controlam reprodução, proteção e monitoramento populacional. Papua-Nova Guiné protege áreas reprodutivas e acompanha a reprodução contando ovos e filhotes e marcando crocodilos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種で、種全体としては脅かされていませんが、一部地域個体群は不安定です。沿岸開発による生息地喪失と皮革目的の狩猟によって分布域の一部から姿を消し、現在ではスリランカ、タイ、ベトナムで比較的まれです。\n\n多くの国で地域個体群の安定化と保護が進められています。インドでは飼育個体の再放流が成功しました。ミャンマーやオーストラリアではワニ農場が繁殖・保護を管理し、個体数を監視しています。パプアニューギニアでは繁殖地を保護し、卵や幼体を数え、個体を標識して繁殖を監視しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "湾鳄被列为无危，整体上没有受到威胁，但部分地方种群并不稳定。沿海开发导致的栖息地丧失以及为了鳄鱼皮而进行的捕猎，使其在部分分布区消失，目前在斯里兰卡、泰国和越南相对少见。\n\n许多国家都在努力稳定并保护地方种群。印度成功开展了圈养个体放归计划。缅甸和澳大利亚的鳄鱼养殖场对繁殖和保护进行管理并监测种群。巴布亚新几内亚保护繁殖区域，通过统计卵和幼体数量并标记个体来监测繁殖情况。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Leistenkrokodile sind Einzelgänger und äußerst territorial und aggressiv. Männchen dulden Weibchen in ihrem Territorium und Weibchen kümmern sich die ersten 8 Monate um die Aufzucht der Jungen, aber ansonsten verbringen diese Krokodile ihr Leben allein.\n\nWährend der Paarungszeit von September bis Oktober nähert sich das männliche Leistenkrokodil einem Weibchen in seinem Revier. Wenn sie ihn näherkommen lässt, umwerben sich die beiden, indem sie ihre Köpfe aneinander reiben, ehe sie sich unter Wasser paaren.\n\nDas Weibchen trägt die Eier 1 bis 2 Monate im Körper aus, bevor es am Rand eines Tideflusses oder einer Lagune ein Nest baut und dort die Eier ablegt. Die Mutter bewacht das Nest 80 bis 98 Tage lang, dann schlüpfen die Jungen und werden die ersten 8 Monate ihres Lebens vom Muttertier beschützt.\n\nNach dieser Zeit sind sie groß genug, um sich gegen Feinde zu verteidigen, und können für sich selbst sorgen. Mit etwa 2,5 Jahren beginnen sie, territoriales Verhalten zu zeigen. Weibchen werden mit 12 bis 14 Jahren geschlechtsreif, Männchen mit 16 Jahren. Leistenkrokodile wachsen ihr gesamtes Leben langsam weiter.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Saltwater Crocodiles are solitary, extremely territorial and aggressive. Males tolerate females within their territory, and females care for their young for the first eight months, but otherwise these crocodiles live alone.\n\nDuring the September–October breeding season, a male approaches a female within his territory. If she allows him closer, the pair court by rubbing their heads together before mating underwater.\n\nThe female carries the eggs inside her body for 1–2 months before building a nest beside a tidal river or lagoon and laying the eggs. She guards the nest for 80–98 days until the young hatch, then protects them for the first eight months of their lives.\n\nAfter this period they are large enough to defend themselves and become independent. At about 2.5 years they begin to show territorial behaviour. Females reach sexual maturity at 12–14 years and males at 16 years. Saltwater Crocodiles continue to grow slowly throughout life.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Saltwater Crocodiles are solitary, extremely territorial and aggressive. Males tolerate females within their territory, and females care for their young for the first eight months, but otherwise these crocodiles live alone.\n\nDuring the September–October breeding season, a male approaches a female within his territory. If she allows him closer, the pair court by rubbing their heads together before mating underwater.\n\nThe female carries the eggs inside her body for 1–2 months before building a nest beside a tidal river or lagoon and laying the eggs. She guards the nest for 80–98 days until the young hatch, then protects them for the first eight months of their lives.\n\nAfter this period they are large enough to defend themselves and become independent. At about 2.5 years they begin to show territorial behaviour. Females reach sexual maturity at 12–14 years and males at 16 years. Saltwater Crocodiles continue to grow slowly throughout life.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Son solitarios, extremadamente territoriales y agresivos. Los machos toleran hembras dentro de su territorio y las hembras cuidan a las crías durante sus primeros ocho meses, pero por lo demás viven solos.\n\nDurante la época reproductiva de septiembre a octubre, el macho se acerca a una hembra de su territorio. Si ella permite el acercamiento, se cortejan frotando la cabeza antes de aparearse bajo el agua.\n\nLa hembra mantiene los huevos dentro del cuerpo durante 1–2 meses antes de construir un nido junto a un río de marea o una laguna. Vigila el nido durante 80–98 días hasta la eclosión y protege a las crías durante sus primeros ocho meses.\n\nA los 2,5 años comienzan a mostrar comportamiento territorial. Las hembras maduran sexualmente a los 12–14 años y los machos a los 16. Continúan creciendo lentamente durante toda la vida.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les crocodiles marins sont solitaires, extrêmement territoriaux et agressifs. Les mâles tolèrent les femelles sur leur territoire, et les femelles protègent les jeunes pendant les huit premiers mois, mais ils vivent autrement seuls.\n\nPendant la saison des amours, de septembre à octobre, le mâle s’approche d’une femelle dans son territoire. Si elle accepte son approche, les deux animaux se frottent la tête avant de s’accoupler sous l’eau.\n\nLa femelle garde les œufs dans son corps pendant 1–2 mois avant de construire un nid au bord d’une rivière soumise aux marées ou d’une lagune. Elle surveille le nid pendant 80–98 jours jusqu’à l’éclosion, puis protège les jeunes pendant leurs huit premiers mois.\n\nVers 2,5 ans, ils commencent à montrer un comportement territorial. Les femelles atteignent leur maturité sexuelle à 12–14 ans et les mâles à 16 ans. Ils continuent de grandir lentement toute leur vie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sono solitari, estremamente territoriali e aggressivi. I maschi tollerano le femmine nel proprio territorio e le femmine proteggono i piccoli per i primi otto mesi, ma per il resto vivono da soli.\n\nDurante la stagione riproduttiva da settembre a ottobre, il maschio si avvicina a una femmina del proprio territorio. Se lei permette l’avvicinamento, i due si corteggiano strofinando la testa prima di accoppiarsi sott’acqua.\n\nLa femmina trattiene le uova nel corpo per 1–2 mesi prima di costruire un nido sul margine di un fiume soggetto alle maree o di una laguna. Sorveglia il nido per 80–98 giorni fino alla schiusa e protegge i piccoli per i primi otto mesi.\n\nVerso 2,5 anni iniziano a mostrare comportamento territoriale. Le femmine raggiungono la maturità sessuale a 12–14 anni e i maschi a 16. Continuano a crescere lentamente per tutta la vita.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "São solitários, extremamente territoriais e agressivos. Machos toleram fêmeas em seus territórios e fêmeas protegem os filhotes nos primeiros oito meses, mas fora disso vivem sozinhos.\n\nDurante a estação reprodutiva, de setembro a outubro, o macho se aproxima de uma fêmea em seu território. Se ela permite a aproximação, os dois se cortejam esfregando as cabeças antes de acasalar debaixo d’água.\n\nA fêmea mantém os ovos no corpo por 1–2 meses antes de construir um ninho à margem de um rio de maré ou lagoa. Ela guarda o ninho por 80–98 dias até a eclosão e protege os filhotes durante os primeiros oito meses.\n\nPor volta dos 2,5 anos começam a apresentar comportamento territorial. Fêmeas atingem a maturidade sexual aos 12–14 anos e machos aos 16. Continuam crescendo lentamente durante toda a vida.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性で非常に縄張り意識が強く攻撃的です。雄は縄張り内の雌を許容し、雌は最初の8か月間幼体を保護しますが、それ以外は単独で生活します。\n\n9～10月の繁殖期、雄は縄張り内の雌に近づきます。雌が接近を許すと、頭をこすり合わせて求愛した後、水中で交尾します。\n\n雌は1～2か月間体内に卵を保持した後、潮汐河川やラグーンの縁に巣を作って産卵します。80～98日間巣を守り、孵化後も最初の8か月は幼体を保護します。\n\n約2.5歳で縄張り行動を示し始めます。雌は12～14歳、雄は16歳で性成熟します。生涯にわたりゆっくり成長し続けます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "湾鳄独居、领地意识极强且具有攻击性。雄性会容忍领地内的雌性，雌性会照顾幼体最初8个月，但除此之外通常独自生活。\n\n9月至10月繁殖季，雄性会接近领地内的雌性。如果雌性允许靠近，两者会通过头部相互摩擦进行求偶，然后在水下交配。\n\n雌性会在体内保留卵1～2个月，随后在潮汐河流或泻湖边缘筑巢产卵。母鳄会守巢80～98天直到幼体孵化，并继续保护幼体最初8个月。\n\n约2.5岁开始表现领地行为。雌性12～14岁达到性成熟，雄性16岁。湾鳄一生都会缓慢持续生长。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Das Leistenkrokodil ist statistisch betrachtet zusammen mit dem Nilkrokodil die für Menschen gefährlichste Krokodilart. Leistenkrokodile haben die stärkste bisher im Tierreich gemessene Beißkraft.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bei Leistenkrokodilen gibt es den am stärksten ausgeprägten Geschlechtsdimorphismus aller Krokodilarten. Männchen sind 4- bis 5-mal größer als die Weibchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Leistenkrokodile benötigen kein Süßwasser. Wie andere Krokodile auch besitzen sie spezielle Drüsen in ihrem Maul, die überschüssiges Salz abgeben, sodass sie auch Salzwasser trinken können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Leistenkrokodile wurden dabei beobachtet, wie sie mit ihrem Schwanz gegen Bäume geschlagen haben, um Primaten aus der Baumkrone ins Wasser zu schütteln und sich so die Jagd zu erleichtern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Gegensatz zu anderen Krokodilen sind Leistenkrokodile immun gegen das Gift von Riesenkröten, sodass sie sie in Zeiten knapper Nahrung fressen können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Statistically, together with the Nile Crocodile, the Saltwater Crocodile is among the crocodile species most dangerous to humans, and it has the strongest bite force yet measured in the animal kingdom.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Saltwater Crocodiles show the most pronounced sexual dimorphism of any crocodile species, with males four to five times larger than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They do not require fresh water. Special glands in the mouth remove excess salt, allowing them to drink salt water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have been observed striking trees with their tails to knock primates from the canopy into the water and make hunting easier.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Unlike other crocodiles, Saltwater Crocodiles are immune to giant-toad toxin and can eat them when food is scarce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Statistically, together with the Nile Crocodile, the Saltwater Crocodile is among the crocodile species most dangerous to humans, and it has the strongest bite force yet measured in the animal kingdom.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Saltwater Crocodiles show the most pronounced sexual dimorphism of any crocodile species, with males four to five times larger than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They do not require fresh water. Special glands in the mouth remove excess salt, allowing them to drink salt water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have been observed striking trees with their tails to knock primates from the canopy into the water and make hunting easier.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Unlike other crocodiles, Saltwater Crocodiles are immune to giant-toad toxin and can eat them when food is scarce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Junto con el cocodrilo del Nilo, es estadísticamente una de las especies de cocodrilo más peligrosas para las personas y posee la mayor fuerza de mordida medida hasta ahora en el reino animal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Presenta el dimorfismo sexual más acusado entre los cocodrilos; los machos son cuatro o cinco veces mayores que las hembras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No necesita agua dulce, ya que posee glándulas especiales que eliminan el exceso de sal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se ha observado que golpea árboles con la cola para hacer caer primates al agua y facilitar la caza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es inmune al veneno de sapos gigantes y puede alimentarse de ellos cuando escasea el alimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Avec le crocodile du Nil, il compte statistiquement parmi les crocodiles les plus dangereux pour l’être humain et possède la force de morsure la plus élevée jamais mesurée dans le règne animal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il présente le dimorphisme sexuel le plus marqué des crocodiles, les mâles étant quatre à cinq fois plus grands que les femelles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il n’a pas besoin d’eau douce, car des glandes spéciales éliminent l’excès de sel.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "On l’a observé frapper des arbres avec sa queue afin de faire tomber des primates dans l’eau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il est immunisé contre le venin des crapauds géants et peut les consommer lorsque la nourriture se fait rare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Assieme al coccodrillo del Nilo è statisticamente una delle specie più pericolose per l’uomo e possiede la maggiore forza del morso finora misurata nel regno animale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Presenta il dimorfismo sessuale più marcato tra i coccodrilli: i maschi sono quattro-cinque volte più grandi delle femmine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Non necessita di acqua dolce grazie a ghiandole speciali che eliminano il sale in eccesso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È stato osservato colpire alberi con la coda per far cadere primati in acqua e facilitarne la cattura.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È immune al veleno dei rospi giganti e può mangiarli quando il cibo scarseggia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Junto com o crocodilo-do-nilo, é estatisticamente uma das espécies de crocodilo mais perigosas para humanos e possui a maior força de mordida já medida no reino animal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Apresenta o dimorfismo sexual mais acentuado entre os crocodilos; machos são quatro a cinco vezes maiores que fêmeas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Não precisa de água doce, pois glândulas especiais eliminam o excesso de sal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Já foi observado batendo a cauda em árvores para derrubar primatas na água.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É imune ao veneno de sapos gigantes e pode consumi-los quando há pouco alimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ナイルワニと並び、人間にとって統計的に最も危険なワニの一つで、動物界でこれまで測定された中で最も強い咬合力を持ちます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ワニ類で最も顕著な性的二型を示し、雄は雌の4～5倍の大きさになります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "口内の特殊な塩類腺で余分な塩を排出できるため、淡水を必要とせず海水も飲めます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "尾で木を叩き、樹上の霊長類を水中へ落として捕食しやすくする行動が観察されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "巨大なヒキガエルの毒に免疫があり、餌が乏しい時にはそれらを食べることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "与尼罗鳄并列为统计上对人类最危险的鳄类之一，并拥有目前动物界测得的最强咬合力。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它具有所有鳄类中最明显的性二型，雄性可比雌性大4～5倍。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "口腔内有特殊腺体排出多余盐分，因此不依赖淡水，也能饮用海水。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "曾被观察到用尾巴击打树木，把树冠中的灵长类震落到水中以便捕猎。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它对巨型蟾蜍的毒素具有免疫力，在食物匮乏时可以捕食它们。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes y estadísticas todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images et statistiques peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini e statistiche possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens e estatísticas ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片和统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4d53f7bd/Crocodile_Saltwater_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Crocodylus porosus/map/Crocodylus porosus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNGQ1M2Y3YmQvQ3JvY29kaWxlX1NhbHR3YXRlci5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Leistenkrokodil – Planet Zoo 2",
+            "en": "Saltwater Crocodile – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Leistenkrokodils aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Saltwater Crocodile."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Crocodylus porosus/bilder/Crocodylus porosus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4d53f7bd/Crocodile_Saltwater_illustration.jpg",
+          "alt": {
+            "de": "Leistenkrokodil – Zoopedia-Illustration",
+            "en": "Saltwater Crocodile – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Leistenkrokodils aus der Planet Zoo 2 Zoopedia.",
+            "en": "Saltwater Crocodile illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Crocodylus porosus/bilder/Crocodylus porosus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Leistenkrokodil",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/leistenkrokodil"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Wildbestand wurde exakt wie angezeigt als 500 übernommen; kein nicht ausgewiesener Tausender-Faktor wurde ergänzt."
+    }
+  }
+}

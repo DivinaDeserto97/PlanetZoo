@@ -1,0 +1,851 @@
+{
+  "id": "Panthera tigris sumatrae",
+  "identitaet": {
+    "namen": {
+      "de": "Sumatra-Tiger",
+      "en": "Sumatran Tiger",
+      "en-US": "Sumatran Tiger",
+      "es": "Tigre de Sumatra",
+      "fr": "Tigre de Sumatra",
+      "it": "Tigre di Sumatra",
+      "pt-BR": "Tigre-de-sumatra",
+      "ja": "スマトラトラ",
+      "zh-Hans": "苏门答腊虎"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Felidae",
+          "gattung": "Panthera",
+          "art": "Panthera tigris sumatrae",
+          "hinweis": {
+            "de": "Die Zoopedia nennt als wissenschaftliche Bezeichnungen sowohl Panthera tigris sumatrae als auch Panthera tigris sondaica.",
+            "en": "The Zoopedia lists both Panthera tigris sumatrae and Panthera tigris sondaica as scientific names."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 2.2,
+          "max": 2.5,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Gesamtlänge schließt einen 0,85 bis 1 m langen Schwanz ein.",
+            "en": "The total length includes a tail measuring 0.85–1 m."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.0,
+          "max": 2.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 100,
+          "max": 140,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 75,
+          "max": 110,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia zeigt den aktuellen Arterhaltungszustand als „Stark gefährdet“ an und erwähnt zugleich, dass der Sumatra-Tiger bei der letzten taxonomischen Bewertung noch als „Vom Aussterben bedroht“ eingestuft war.",
+            "en": "The Zoopedia currently displays the status as Endangered while noting that the Sumatran Tiger was still classified as Critically Endangered at the last taxonomic assessment."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 400,
+          "max": 600,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Panthera tigris sumatrae"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia kennzeichnet den Wildbestand als geschätzt.",
+            "en": "The Zoopedia marks the wild population as estimated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 100,
+          "max": 110,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "welpenProWurf",
+          "min": 2,
+          "max": 5,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Meist werden 2 oder 3 Welpen geboren, gelegentlich bis zu 5.",
+            "en": "Usually 2 or 3 cubs are born, occasionally up to 5."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Sumatra-Tiger sind Einzelgänger und treffen sich nur zur Paarung.",
+            "en": "Sumatran Tigers are solitary and meet only to mate."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "mutterMitJungtieren",
+          "wert": "motherWithCubs",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Eine Ausnahme vom Einzelgängertum bilden Muttertiere mit ihren Jungen.",
+            "en": "Mothers with cubs are an exception to the otherwise solitary lifestyle."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt dichte tropische Wälder, darunter Tiefland- und Bergregenwälder sowie Torfsumpfwälder.",
+            "en": "The Zoopedia lists dense tropical forests including lowland and montane rainforests and peat swamp forests."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Sumatra-Tiger (Panthera tigris sumatrae bzw. Panthera tigris sondaica) kommt ausschließlich auf der indonesischen Insel Sumatra vor. Er lebt in dichten tropischen Wäldern, darunter Tiefland- und Bergregenwälder sowie Torfsumpfwälder.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sumatran Tiger (Panthera tigris sumatrae or Panthera tigris sondaica) occurs only on the Indonesian island of Sumatra. It lives in dense tropical forests including lowland and montane rainforests and peat swamp forests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sumatran Tiger (Panthera tigris sumatrae or Panthera tigris sondaica) occurs only on the Indonesian island of Sumatra. It lives in dense tropical forests including lowland and montane rainforests and peat swamp forests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tigre de Sumatra (Panthera tigris sumatrae o Panthera tigris sondaica) vive exclusivamente en la isla indonesia de Sumatra, en densos bosques tropicales de tierras bajas, montaña y turberas pantanosas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le tigre de Sumatra (Panthera tigris sumatrae ou Panthera tigris sondaica) ne vit que sur l'île indonésienne de Sumatra, dans des forêts tropicales denses de plaine, de montagne et de tourbières marécageuses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tigre di Sumatra (Panthera tigris sumatrae o Panthera tigris sondaica) vive esclusivamente sull'isola indonesiana di Sumatra, nelle fitte foreste tropicali di pianura, montane e paludose di torba.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tigre-de-sumatra (Panthera tigris sumatrae ou Panthera tigris sondaica) ocorre exclusivamente na ilha indonésia de Sumatra, em densas florestas tropicais de baixada, montanha e pântanos de turfa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラトラ（Panthera tigris sumatrae または Panthera tigris sondaica）はインドネシアのスマトラ島にのみ生息し、低地・山地の熱帯雨林や泥炭湿地林などの密な熱帯林で暮らします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊虎（Panthera tigris sumatrae 或 Panthera tigris sondaica）仅分布于印度尼西亚苏门答腊岛，生活在低地和山地雨林以及泥炭沼泽林等茂密热带森林中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Sumatra-Tiger (auch Panthera tigris sumatrae oder Panthera tigris sondaica) ist eine Unterart des Tigers, die ausschließlich auf der indonesischen Insel Sumatra vorkommt. Er lebt in dichten tropischen Wäldern, unter anderem in Tiefland- und Bergregenwäldern sowie Torfsumpfwäldern.\n\nSumatra-Tiger haben ein orangefarbenes Fell mit schmalen schwarzen Streifen. Im Vergleich zu anderen Tiger-Unterarten besitzen sie häufig eine stärker ausgeprägte Mähne.\n\nSumatra-Tiger sind die kleinste Tigerart. Männchen erreichen eine Länge von etwa 2,2 bis 2,5 m, einschließlich eines 0,85 bis 1 m langen Schwanzes. Weibchen sind mit 2 bis 2,3 m Gesamtlänge etwas kleiner. Ausgewachsene Männchen wiegen zwischen 100 und 140 kg, Weibchen zwischen 75 und 110 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sumatran Tiger (Panthera tigris sumatrae or Panthera tigris sondaica) is a tiger subspecies found only on the Indonesian island of Sumatra. It inhabits dense tropical forests, including lowland and montane rainforests and peat swamp forests.\n\nSumatran Tigers have orange fur with narrow black stripes. Compared with other tiger subspecies, they often have a more pronounced mane.\n\nThey are the smallest tigers. Males reach about 2.2–2.5 m in total length, including a tail 0.85–1 m long. Females are somewhat smaller at 2–2.3 m. Adult males weigh 100–140 kg and females 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sumatran Tiger (Panthera tigris sumatrae or Panthera tigris sondaica) is a tiger subspecies found only on the Indonesian island of Sumatra. It inhabits dense tropical forests, including lowland and montane rainforests and peat swamp forests.\n\nSumatran Tigers have orange fur with narrow black stripes. Compared with other tiger subspecies, they often have a more pronounced mane.\n\nThey are the smallest tigers. Males reach about 2.2–2.5 m in total length, including a tail 0.85–1 m long. Females are somewhat smaller at 2–2.3 m. Adult males weigh 100–140 kg and females 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tigre de Sumatra (Panthera tigris sumatrae o Panthera tigris sondaica) es una subespecie de tigre exclusiva de la isla indonesia de Sumatra. Vive en densos bosques tropicales, incluidos bosques lluviosos de tierras bajas y montaña y bosques pantanosos de turba.\n\nTiene pelaje naranja con estrechas rayas negras y suele presentar una melena más marcada que otras subespecies de tigre.\n\nEs el tigre de menor tamaño. Los machos miden aproximadamente 2,2–2,5 m de longitud total, incluida una cola de 0,85–1 m. Las hembras miden 2–2,3 m. Los machos adultos pesan 100–140 kg y las hembras 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le tigre de Sumatra (Panthera tigris sumatrae ou Panthera tigris sondaica) est une sous-espèce de tigre présente uniquement sur l'île indonésienne de Sumatra. Il vit dans des forêts tropicales denses, notamment des forêts pluviales de plaine et de montagne ainsi que des forêts marécageuses sur tourbe.\n\nSon pelage est orange avec de fines rayures noires et il présente souvent une crinière plus marquée que les autres sous-espèces.\n\nC'est le plus petit des tigres. Les mâles mesurent environ 2,2–2,5 m au total, dont une queue de 0,85–1 m. Les femelles mesurent 2–2,3 m. Les mâles adultes pèsent 100–140 kg et les femelles 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tigre di Sumatra (Panthera tigris sumatrae o Panthera tigris sondaica) è una sottospecie di tigre presente esclusivamente sull'isola indonesiana di Sumatra. Vive in fitte foreste tropicali, comprese foreste pluviali di pianura e montane e foreste paludose di torba.\n\nHa mantello arancione con strette strisce nere e spesso una criniera più evidente rispetto ad altre sottospecie.\n\nÈ la tigre più piccola. I maschi misurano circa 2,2–2,5 m complessivi, compresa una coda di 0,85–1 m. Le femmine misurano 2–2,3 m. I maschi adulti pesano 100–140 kg e le femmine 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tigre-de-sumatra (Panthera tigris sumatrae ou Panthera tigris sondaica) é uma subespécie de tigre encontrada exclusivamente na ilha indonésia de Sumatra. Vive em densas florestas tropicais, incluindo florestas pluviais de baixada e montanha e florestas pantanosas de turfa.\n\nPossui pelagem laranja com listras pretas estreitas e frequentemente uma juba mais pronunciada do que outras subespécies.\n\nÉ o menor tigre. Machos medem cerca de 2,2–2,5 m no total, incluindo uma cauda de 0,85–1 m. Fêmeas medem 2–2,3 m. Machos adultos pesam 100–140 kg e fêmeas 75–110 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラトラ（Panthera tigris sumatrae または Panthera tigris sondaica）は、インドネシアのスマトラ島だけに分布するトラの亜種です。低地・山地の熱帯雨林や泥炭湿地林などの密な熱帯林に生息します。\n\n体毛はオレンジ色で細い黒縞があり、他のトラ亜種よりもたてがみが目立つことがあります。\n\nトラの中では最も小型です。雄は尾0.85～1mを含め全長約2.2～2.5m、雌は2～2.3mです。成獣の雄は100～140kg、雌は75～110kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊虎（Panthera tigris sumatrae 或 Panthera tigris sondaica）是仅分布于印度尼西亚苏门答腊岛的虎亚种。它生活在茂密的热带森林中，包括低地和山地雨林以及泥炭沼泽林。\n\n毛色橙黄，带有较窄的黑色条纹，与其他虎亚种相比往往具有更明显的鬃毛。\n\n它是体型最小的虎。雄性总长约2.2～2.5米，其中尾长0.85～1米；雌性总长约2～2.3米。成年雄性重100～140千克，雌性重75～110千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Alle Unterarten des Tigers gelten derzeit als stark gefährdet, allerdings wurden Sumatra-Tiger bei der letzten taxonomischen Bewertung noch als vom Aussterben bedroht eingestuft. Große Teile der Regenwälder Sumatras werden für Palmölplantagen, Holzgewinnung und Landwirtschaft abgeholzt. Die dadurch entstehende Fragmentierung des Lebensraums der Tiger erschwert ihnen die Suche nach Nahrung und Partnern. Oft kommt es dabei auch zu Begegnungen mit Menschen, die häufig tödlich enden. Eine weitere Bedrohung ist die Wilderei, da Tigerfelle und Körperteile auf dem Schwarzmarkt sehr begehrt sind.\n\nNGOs und die indonesische Regierung kämpfen mit Maßnahmen wie dem Schutz der Lebensräume, der Bekämpfung der Wilderei und der Aufklärung der Bevölkerung gegen den Schwund der Tigerpopulation. Nationalparks sind wichtige Zufluchtsorte für die Tiere, und Patrouillen entfernen Fallen und verhindern illegale Jagd. Lokale Initiativen tragen durch Strategien zur Koexistenz dazu bei, Begegnungen von Mensch und Tiger zu senken. Außerhalb der Wildnis sorgen Zuchtprojekte in anerkannten Zoos für eine genetisch gesunde Ersatzpopulation, die für eine potenzielle zukünftige Wiederansiedlung vorgesehen ist.\n\nAll diese koordinierten Bemühungen sollen eine nachhaltige Zukunft für eine der am stärksten gefährdeten Großkatzen der Welt sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "All tiger subspecies are currently considered Endangered, although Sumatran Tigers were still assessed as Critically Endangered in the last taxonomic assessment. Large areas of Sumatra's rainforest are cleared for palm-oil plantations, timber extraction and agriculture. The resulting habitat fragmentation makes it harder for tigers to find food and mates and increases encounters with people, which are often fatal. Poaching is another major threat because tiger skins and body parts are highly valued on the black market.\n\nNGOs and the Indonesian government are responding through habitat protection, anti-poaching measures and public education. National parks provide important refuges, while patrols remove snares and deter illegal hunting. Local coexistence initiatives aim to reduce encounters between people and tigers. Outside the wild, breeding programmes in accredited zoos maintain a genetically healthy backup population for possible future reintroduction.\n\nThese coordinated efforts aim to secure a sustainable future for one of the world's most threatened big cats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "All tiger subspecies are currently considered Endangered, although Sumatran Tigers were still assessed as Critically Endangered in the last taxonomic assessment. Large areas of Sumatra's rainforest are cleared for palm-oil plantations, timber extraction and agriculture. The resulting habitat fragmentation makes it harder for tigers to find food and mates and increases encounters with people, which are often fatal. Poaching is another major threat because tiger skins and body parts are highly valued on the black market.\n\nNGOs and the Indonesian government are responding through habitat protection, anti-poaching measures and public education. National parks provide important refuges, while patrols remove snares and deter illegal hunting. Local coexistence initiatives aim to reduce encounters between people and tigers. Outside the wild, breeding programmes in accredited zoos maintain a genetically healthy backup population for possible future reintroduction.\n\nThese coordinated efforts aim to secure a sustainable future for one of the world's most threatened big cats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Todas las subespecies de tigre se consideran actualmente En Peligro, aunque el tigre de Sumatra todavía figuraba como En Peligro Crítico en la última evaluación taxonómica. Grandes extensiones de la selva de Sumatra se talan para plantaciones de aceite de palma, madera y agricultura. La fragmentación resultante dificulta la búsqueda de alimento y pareja y aumenta los encuentros con personas. La caza furtiva constituye otra amenaza debido al valor de pieles y partes del cuerpo en el mercado negro.\n\nONG y el gobierno indonesio responden mediante protección del hábitat, lucha contra la caza furtiva y educación. Los parques nacionales son refugios importantes y las patrullas retiran trampas y evitan la caza ilegal. Iniciativas locales buscan reducir los conflictos entre humanos y tigres. Los programas de cría de zoológicos acreditados mantienen además una población de reserva genéticamente sana para posibles reintroducciones futuras.\n\nEstos esfuerzos coordinados pretenden asegurar un futuro sostenible para uno de los grandes felinos más amenazados del mundo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Toutes les sous-espèces de tigres sont actuellement considérées En danger, même si le tigre de Sumatra était encore classé En danger critique lors de la dernière évaluation taxonomique. De vastes zones de forêt tropicale sont défrichées pour l'huile de palme, l'exploitation du bois et l'agriculture. La fragmentation rend plus difficile la recherche de nourriture et de partenaires et augmente les rencontres avec les humains. Le braconnage reste également une menace importante en raison de la valeur des peaux et parties du corps sur le marché noir.\n\nLes ONG et le gouvernement indonésien agissent par la protection de l'habitat, la lutte contre le braconnage et l'éducation. Les parcs nationaux constituent des refuges importants et les patrouilles retirent les pièges et empêchent la chasse illégale. Des initiatives locales de coexistence visent à réduire les conflits. Des programmes d'élevage dans des zoos reconnus maintiennent également une population de secours génétiquement saine en vue d'éventuelles réintroductions.\n\nCes efforts coordonnés visent à garantir l'avenir de l'un des grands félins les plus menacés au monde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Tutte le sottospecie di tigre sono attualmente considerate In pericolo, anche se la tigre di Sumatra risultava ancora classificata In pericolo critico nell'ultima valutazione tassonomica. Ampie zone delle foreste di Sumatra vengono abbattute per piantagioni di palma da olio, legname e agricoltura. La frammentazione rende più difficile trovare cibo e partner e aumenta gli incontri con le persone. Il bracconaggio è un'altra grave minaccia a causa del valore di pelli e parti del corpo sul mercato nero.\n\nONG e governo indonesiano intervengono con protezione dell'habitat, contrasto al bracconaggio ed educazione. I parchi nazionali sono rifugi importanti e le pattuglie rimuovono trappole e ostacolano la caccia illegale. Iniziative locali di convivenza riducono i conflitti tra persone e tigri. Programmi di riproduzione in zoo riconosciuti mantengono inoltre una popolazione di riserva geneticamente sana per eventuali future reintroduzioni.\n\nQuesti sforzi coordinati mirano a garantire un futuro sostenibile a uno dei grandi felini più minacciati del mondo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Todas as subespécies de tigre são atualmente consideradas Em Perigo, embora o tigre-de-sumatra ainda fosse classificado como Criticamente Ameaçado na última avaliação taxonômica. Grandes áreas de floresta em Sumatra são desmatadas para plantações de palma, extração de madeira e agricultura. A fragmentação dificulta a busca por alimento e parceiros e aumenta os encontros com pessoas. A caça ilegal também é uma grande ameaça devido ao valor de peles e partes do corpo no mercado negro.\n\nONGs e o governo indonésio respondem com proteção do habitat, combate à caça ilegal e educação. Parques nacionais oferecem refúgios importantes, e patrulhas removem armadilhas e impedem a caça. Iniciativas locais de convivência buscam reduzir conflitos. Programas de reprodução em zoológicos reconhecidos mantêm ainda uma população de reserva geneticamente saudável para possíveis reintroduções futuras.\n\nEsses esforços coordenados buscam garantir um futuro sustentável para um dos grandes felinos mais ameaçados do mundo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "現在、すべてのトラ亜種は絶滅危惧とされていますが、スマトラトラは直近の分類学的評価ではまだ深刻な絶滅危惧とされていました。スマトラ島ではアブラヤシ農園、木材、農業のために広大な熱帯雨林が伐採されています。生息地の分断によって餌や繁殖相手を探すことが難しくなり、人との遭遇も増えます。毛皮や体の一部が闇市場で高値になるため密猟も大きな脅威です。\n\nNGOとインドネシア政府は、生息地保護、密猟対策、住民教育を行っています。国立公園は重要な避難場所で、パトロールがわなを撤去し違法狩猟を防いでいます。地域の共存施策は人とトラの遭遇を減らすことを目指します。認定動物園の繁殖計画は、将来の再導入に備えた遺伝的に健全な予備個体群を維持しています。\n\nこれらの連携した取り組みにより、世界で最も脅かされている大型ネコ科動物のひとつの将来を守ることが目指されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "目前所有虎亚种都被视为濒危，但苏门答腊虎在最近一次分类评估中仍被列为极危。苏门答腊大片雨林因油棕种植、木材采伐和农业而遭砍伐。栖息地破碎化使老虎更难寻找食物和配偶，也增加了与人类发生冲突的机会。由于虎皮和身体部位在黑市上价值很高，偷猎也是重要威胁。\n\n非政府组织和印度尼西亚政府通过保护栖息地、打击偷猎和公众教育来应对种群下降。国家公园为其提供重要避难所，巡逻队会清除陷阱并阻止非法狩猎。地方共存项目致力于减少人虎冲突。认可动物园的繁育项目还维持遗传健康的后备种群，为未来可能的重新引入做准备。\n\n这些协调措施旨在为世界上最受威胁的大型猫科动物之一确保可持续的未来。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Sumatra-Tiger sind Einzelgänger und treffen sich nur zur Paarung. Eine Ausnahme bilden Muttertiere mit ihren Jungen.\n\nDie Balz- und Paarungszeit findet das ganze Jahr über statt, insbesondere aber während der Regenzeit. Sumatra-Tiger legen stark territoriales Verhalten an den Tag und leben allein. Ein paarungsbereites Weibchen markiert sein Revier mit entsprechenden Duftmarken und lockt Männchen außerdem mit Rufen an. Folgen mehrere Männchen der Einladung, kämpfen sie um das Recht zur Paarung. Zwischen dem erfolgreichen Männchen und dem Weibchen kommt es zu einer kurzen Balzphase mit gegenseitigem Beschnuppern, Reiben, freundlichen Prustlauten und sanftem Zwicken. Die Paarung erfolgt über mehrere Tage hinweg mehrmals, um eine Befruchtung sicherzustellen. Anschließend zieht das Männchen weiter, während das Weibchen die Aufzucht der Jungen allein übernimmt.\n\nNach einer Tragzeit von etwa 100 bis 110 Tagen bringt das Weibchen meist 2 oder 3 Welpen zur Welt, gelegentlich auch bis zu 5. In den ersten Lebenswochen sind die Welpen auf den Schutz und die Milch ihrer Mutter angewiesen. Diese versteckt die Kleinen in dichtem Gebüsch oder in Höhlen und bringt sie häufig an andere Orte, um sie vor Feinden zu schützen. Mit etwa 2 Monaten beginnen sie, Fleisch zu fressen, und mit etwa 6 Monaten lernen sie durch Beobachtung der Mutter das Jagen.\n\nJunge Tiger bleiben etwa 1,5 bis 2 Jahre bei ihrer Mutter, bevor sie selbstständig werden und eigene Reviere gründen. Die Geschlechtsreife wird mit ungefähr 3 bis 5 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Sumatran Tigers are solitary and meet only to mate. Mothers with cubs are the main exception.\n\nCourtship and mating can occur throughout the year, especially during the rainy season. Sumatran Tigers are strongly territorial and live alone. A receptive female marks her territory with scent and also attracts males with calls. If several males respond, they may fight for mating rights. The successful male and the female go through a short courtship involving sniffing, rubbing, friendly chuffing and gentle nipping. They mate repeatedly over several days to increase the chance of fertilisation. The male then leaves and the female raises the cubs alone.\n\nAfter a gestation of about 100–110 days, the female usually gives birth to 2 or 3 cubs, occasionally as many as 5. During their first weeks the cubs depend on their mother's protection and milk. She hides them in dense vegetation or caves and moves them frequently to protect them from danger. At about two months they begin eating meat, and by about six months they learn to hunt by watching their mother.\n\nYoung tigers remain with their mother for about 1.5–2 years before becoming independent and establishing their own territories. Sexual maturity is reached at around 3–5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Sumatran Tigers are solitary and meet only to mate. Mothers with cubs are the main exception.\n\nCourtship and mating can occur throughout the year, especially during the rainy season. Sumatran Tigers are strongly territorial and live alone. A receptive female marks her territory with scent and also attracts males with calls. If several males respond, they may fight for mating rights. The successful male and the female go through a short courtship involving sniffing, rubbing, friendly chuffing and gentle nipping. They mate repeatedly over several days to increase the chance of fertilisation. The male then leaves and the female raises the cubs alone.\n\nAfter a gestation of about 100–110 days, the female usually gives birth to 2 or 3 cubs, occasionally as many as 5. During their first weeks the cubs depend on their mother's protection and milk. She hides them in dense vegetation or caves and moves them frequently to protect them from danger. At about two months they begin eating meat, and by about six months they learn to hunt by watching their mother.\n\nYoung tigers remain with their mother for about 1.5–2 years before becoming independent and establishing their own territories. Sexual maturity is reached at around 3–5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los tigres de Sumatra son solitarios y solo se encuentran para aparearse, salvo las madres con sus crías.\n\nEl cortejo y el apareamiento pueden producirse todo el año, especialmente durante la estación lluviosa. Son fuertemente territoriales. Una hembra receptiva marca su territorio con olores y atrae a los machos mediante llamadas. Si llegan varios, pueden luchar por el derecho a aparearse. La pareja realiza un breve cortejo con olfateo, roces, resoplidos amistosos y mordiscos suaves. Se aparean repetidamente durante varios días y después el macho se marcha, dejando a la hembra a cargo de las crías.\n\nTras una gestación de unos 100–110 días, la hembra suele parir 2 o 3 cachorros, ocasionalmente hasta 5. Durante las primeras semanas dependen de la protección y la leche de la madre. Ella los oculta entre vegetación densa o en cuevas y los cambia de lugar con frecuencia. A los 2 meses empiezan a comer carne y hacia los 6 meses aprenden a cazar observando a su madre.\n\nLos jóvenes permanecen con ella aproximadamente 1,5–2 años antes de independizarse y establecer sus propios territorios. La madurez sexual llega hacia los 3–5 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les tigres de Sumatra sont solitaires et ne se rencontrent que pour s'accoupler, à l'exception des mères accompagnées de leurs petits.\n\nLa reproduction peut avoir lieu toute l'année, surtout pendant la saison des pluies. Ils sont très territoriaux. Une femelle réceptive marque son territoire par des odeurs et attire les mâles par des appels. Plusieurs mâles peuvent se battre pour l'accès à la femelle. Le couple victorieux passe par une courte phase de parade comprenant reniflements, frottements, souffles amicaux et petites morsures. Les accouplements se répètent pendant plusieurs jours, puis le mâle repart et la femelle élève seule les petits.\n\nAprès une gestation d'environ 100–110 jours, elle met généralement au monde 2 ou 3 petits, parfois jusqu'à 5. Pendant les premières semaines, ils dépendent du lait et de la protection de leur mère, qui les cache dans la végétation dense ou des grottes et les déplace souvent. Vers 2 mois, ils commencent à manger de la viande, et vers 6 mois ils apprennent à chasser en observant leur mère.\n\nLes jeunes restent avec elle environ 1,5–2 ans avant de devenir indépendants et d'établir leur propre territoire. La maturité sexuelle est atteinte vers 3–5 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le tigri di Sumatra sono solitarie e si incontrano solo per l'accoppiamento, fatta eccezione per le madri con i piccoli.\n\nIl corteggiamento e l'accoppiamento possono avvenire tutto l'anno, soprattutto durante la stagione delle piogge. Sono fortemente territoriali. Una femmina ricettiva marca il territorio con odori e richiama i maschi con vocalizzazioni. Se arrivano più maschi, possono combattere per accoppiarsi. Il maschio vincente e la femmina attraversano una breve fase di corteggiamento con annusate, sfregamenti, sbuffi amichevoli e piccoli morsi. Si accoppiano più volte per diversi giorni, poi il maschio si allontana e la femmina alleva da sola i piccoli.\n\nDopo una gestazione di circa 100–110 giorni, la femmina partorisce normalmente 2 o 3 cuccioli, occasionalmente fino a 5. Nelle prime settimane dipendono dal latte e dalla protezione materna. La madre li nasconde nella vegetazione fitta o nelle grotte e li sposta spesso. Verso i 2 mesi iniziano a mangiare carne e verso i 6 mesi imparano a cacciare osservando la madre.\n\nI giovani rimangono con la madre per circa 1,5–2 anni prima di diventare indipendenti e stabilire propri territori. La maturità sessuale viene raggiunta verso 3–5 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Tigres-de-sumatra são solitários e só se encontram para acasalar, com exceção das mães com filhotes.\n\nO cortejo e o acasalamento podem ocorrer o ano todo, especialmente durante a estação chuvosa. São fortemente territoriais. Uma fêmea receptiva marca seu território com odores e atrai machos com vocalizações. Se vários machos respondem, podem lutar pelo direito de acasalar. O macho bem-sucedido e a fêmea passam por uma curta fase de cortejo com cheiros, esfregadas, bufos amistosos e mordidas suaves. O acasalamento se repete durante vários dias e depois o macho segue adiante, deixando a fêmea responsável pelos filhotes.\n\nApós uma gestação de cerca de 100–110 dias, a fêmea geralmente dá à luz 2 ou 3 filhotes, ocasionalmente até 5. Nas primeiras semanas eles dependem do leite e da proteção materna. A mãe os esconde em vegetação densa ou cavernas e os muda frequentemente de lugar. Por volta dos 2 meses começam a comer carne e aos 6 meses aprendem a caçar observando a mãe.\n\nOs jovens permanecem com a mãe por cerca de 1,5–2 anos antes de se tornarem independentes e estabelecerem seus próprios territórios. A maturidade sexual ocorre aproximadamente aos 3–5 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラトラは単独性で、交尾のときだけ出会います。例外は子を連れた母親です。\n\n求愛と交尾は一年中見られますが、特に雨季に多くなります。強い縄張り性があり単独で生活します。発情した雌はにおい付けと鳴き声で雄を呼びます。複数の雄が来ると交尾権をめぐって争うことがあります。勝った雄と雌は、においを嗅ぐ、体をこすり合わせる、友好的な鼻息、軽い甘噛みなど短い求愛を行います。数日間にわたり複数回交尾した後、雄は去り、雌が単独で子育てをします。\n\n妊娠期間は約100～110日で、通常2～3頭、まれに最大5頭を産みます。最初の数週間、子は母親の保護と母乳に依存します。母親は密な茂みや洞穴に隠し、安全のため頻繁に移動させます。約2か月で肉を食べ始め、約6か月で母親を観察しながら狩りを学びます。\n\n若いトラは約1.5～2年間母親と過ごした後、独立して自分の縄張りを作ります。性成熟は約3～5歳です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊虎通常独居，只在交配时相遇，带幼崽的母虎是例外。\n\n全年都可求偶和交配，雨季尤为常见。它们领地意识很强。发情雌虎会用气味标记领地并用叫声吸引雄虎。若多只雄虎前来，可能会为交配权争斗。成功的雄虎会与雌虎进行短暂求偶，包括嗅闻、摩擦、友好喷气声和轻咬。几天内会多次交配，以提高受精机会。之后雄虎离开，雌虎独自抚育幼崽。\n\n妊娠约100～110天，通常产2～3只幼崽，偶尔最多5只。出生后的最初几周，幼崽依赖母虎的保护和乳汁。母虎会将它们藏在茂密灌丛或洞穴中，并经常搬迁以避开危险。约2个月开始吃肉，约6个月通过观察母虎学习捕猎。\n\n幼虎会与母虎生活约1.5～2年，之后独立并建立自己的领地。约3～5岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Tiger haben von allen Katzen die beeindruckendsten Zähne: Ihre Eckzähne können bis zu 90 mm lang werden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wie alle Tiger haben auch Sumatra-Tiger nicht nur gestreiftes Fell, sondern auch gestreifte Haut.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sumatra-Tiger lieben Wasser und sind ausgezeichnete Schwimmer. Sie überqueren häufig Flüsse und Seen auf der Suche nach Beute oder neuen Revieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Arbeiter in Mangrovenwäldern tragen teilweise Masken auf dem Hinterkopf, um Tigerangriffe zu verhindern. Tiger greifen meist von hinten an, glauben aber, beobachtet zu werden, wenn sie ein „Gesicht“ sehen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Urin von Tigern riecht wie Butterpopcorn, da er dieselbe Aromazusammensetzung hat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Tigers have exceptionally impressive teeth among cats: their canine teeth can reach 90 mm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Like all tigers, Sumatran Tigers have stripes not only in their fur but also on their skin.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sumatran Tigers love water and are excellent swimmers, often crossing rivers and lakes in search of prey or new territories.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Workers in mangrove forests sometimes wear masks on the backs of their heads to deter tiger attacks, because tigers often attack from behind and may think they are being watched when they see a 'face'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tiger urine smells like buttered popcorn because it contains the same aroma compound.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Tigers have exceptionally impressive teeth among cats: their canine teeth can reach 90 mm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Like all tigers, Sumatran Tigers have stripes not only in their fur but also on their skin.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sumatran Tigers love water and are excellent swimmers, often crossing rivers and lakes in search of prey or new territories.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Workers in mangrove forests sometimes wear masks on the backs of their heads to deter tiger attacks, because tigers often attack from behind and may think they are being watched when they see a 'face'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tiger urine smells like buttered popcorn because it contains the same aroma compound.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los caninos de los tigres pueden alcanzar 90 mm de longitud.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Como todos los tigres, el tigre de Sumatra tiene rayas no solo en el pelaje, sino también en la piel.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es un excelente nadador y cruza con frecuencia ríos y lagos en busca de presas o nuevos territorios.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Algunos trabajadores de manglares llevan máscaras en la parte posterior de la cabeza para disuadir ataques, ya que los tigres suelen atacar por detrás.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La orina del tigre huele a palomitas con mantequilla porque contiene el mismo compuesto aromático.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les canines des tigres peuvent atteindre 90 mm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Comme tous les tigres, le tigre de Sumatra porte des rayures non seulement sur son pelage, mais aussi sur sa peau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "C'est un excellent nageur qui traverse souvent rivières et lacs à la recherche de proies ou de nouveaux territoires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Certains travailleurs des mangroves portent des masques à l'arrière de la tête afin de dissuader les attaques de tigres, qui surviennent souvent par derrière.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L'urine de tigre sent le pop-corn au beurre car elle contient le même composé aromatique.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I canini delle tigri possono raggiungere 90 mm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Come tutte le tigri, anche la tigre di Sumatra ha strisce non solo sul pelo ma anche sulla pelle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È un'eccellente nuotatrice e attraversa spesso fiumi e laghi alla ricerca di prede o nuovi territori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Alcuni lavoratori delle mangrovie indossano maschere sulla nuca per scoraggiare gli attacchi, poiché le tigri spesso attaccano da dietro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L'urina delle tigri ha un odore simile ai popcorn al burro perché contiene lo stesso composto aromatico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os caninos dos tigres podem alcançar 90 mm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Como todos os tigres, o tigre-de-sumatra tem listras não apenas na pelagem, mas também na pele.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É um excelente nadador e frequentemente atravessa rios e lagos em busca de presas ou novos territórios.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Alguns trabalhadores de manguezais usam máscaras na parte de trás da cabeça para desencorajar ataques, pois tigres normalmente atacam por trás.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A urina dos tigres tem cheiro de pipoca com manteiga porque contém o mesmo composto aromático.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "トラの犬歯は最長90mmに達します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "他のトラと同様、スマトラトラは毛だけでなく皮膚にも縞模様があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "水を好み泳ぎが得意で、獲物や新しい縄張りを求めて川や湖を渡ることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "マングローブで働く人の中には、後ろからの攻撃を防ぐため後頭部に顔のマスクを付ける人もいます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "トラの尿は、同じ芳香成分を含むためバターポップコーンのようなにおいがします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "虎的犬齿可长达90毫米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "和所有虎一样，苏门答腊虎不仅毛皮有条纹，皮肤本身也有条纹。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们喜欢水且游泳能力很强，经常游过河流和湖泊寻找猎物或新领地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "部分红树林工作人员会在后脑戴面具，以减少老虎从背后袭击的风险。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "虎尿闻起来像黄油爆米花，因为含有相同的芳香化合物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/a76b1ada/Tiger_Sumatran_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/map/Panthera tigris sumatrae map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYTc2YjFhZGEvVGlnZXJfU3VtYXRyYW4uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Sumatra-Tiger – Planet Zoo 2",
+            "en": "Sumatran Tiger – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sumatra-Tigers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sumatran Tiger."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/bilder/Panthera tigris sumatrae 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sumatra-Tiger",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/sumatra-tiger"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

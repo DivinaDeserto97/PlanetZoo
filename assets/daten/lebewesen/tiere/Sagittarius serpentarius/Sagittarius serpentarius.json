@@ -1,0 +1,905 @@
+{
+  "id": "Sagittarius serpentarius",
+  "identitaet": {
+    "namen": {
+      "de": "Sekretär",
+      "en": "Secretarybird",
+      "en-US": "Secretarybird",
+      "es": "Secretario",
+      "fr": "Messager sagittaire",
+      "it": "Serpentario",
+      "pt-BR": "Secretário",
+      "ja": "ヘビクイワシ",
+      "zh-Hans": "蛇鹫"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Accipitriformes",
+          "familie": "Sagittariidae",
+          "gattung": "Sagittarius",
+          "art": "Sagittarius serpentarius",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.2,
+          "max": 1.5,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Männchen und Weibchen mit 1,2 bis 1,5 m Körpergröße.",
+            "en": "The Zoopedia gives a body size of 1.2–1.5 m for both males and females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3.7,
+          "max": 4.3,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 6700,
+          "max": 67000,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Sagittarius serpentarius"
+          ],
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "inkubation",
+          "min": 42,
+          "max": 46,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 1,
+          "max": 3,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt bis zu 3 Eier pro Gelege; meist werden sie im Abstand von etwa 2 Tagen gelegt.",
+            "en": "The Zoopedia states up to 3 eggs per clutch, usually laid about 2 days apart."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "paar",
+          "wert": "monogamousPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Sekretäre sind laut Zoopedia monogam und leben gemeinsam als Paar.",
+            "en": "According to the Zoopedia, Secretarybirds are monogamous and live together as pairs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "snakes",
+                "typ": "tier",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "insects",
+                "typ": "tier",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "arachnids",
+                "typ": "tier",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "smallMammals",
+                "typ": "tier",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Sekretär (Sagittarius serpentarius) ist in den Savannen Afrikas südlich der Sahara verbreitet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El secretario (Sagittarius serpentarius) se distribuye por las sabanas del África subsahariana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le messager sagittaire (Sagittarius serpentarius) est présent dans les savanes de l’Afrique subsaharienne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il serpentario (Sagittarius serpentarius) è diffuso nelle savane dell’Africa subsahariana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O secretário (Sagittarius serpentarius) ocorre nas savanas da África ao sul do Saara.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヘビクイワシ（Sagittarius serpentarius）はサハラ以南アフリカのサバンナに分布します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蛇鹫（Sagittarius serpentarius）分布于撒哈拉以南非洲的稀树草原。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Sekretär (auch Sagittarius serpentarius) ist ein großer Greifvogel, der in den Savannen Afrikas südlich der Sahara verbreitet ist.\n\nEr besitzt lange Beine, einen weiß gefiederten Körper mit schwarzen Schwungfedern an den Flügeln und schwarze Federn an den Oberschenkeln. Sein hakenförmiger Schnabel ist weiß. Der Bereich um die Augen ist orangerot gefärbt. Der Sekretär hat eine markante Haube aus schwarzen und weißen Federn, die an seinem Hinterkopf hervorstehen.\n\nSowohl Männchen als auch Weibchen sind zwischen 1,2 und 1,5 m groß, haben eine Flügelspannweite von 1,9 bis 2,2 m und wiegen zwischen 3,7 und 4,3 kg. Einige Männchen verfügen über etwas größere Schwanzfedern oder Hauben als die Weibchen, aber im Allgemeinen sehen sich beide Geschlechter sehr ähnlich.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Africa.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Africa.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El secretario (Sagittarius serpentarius) es una gran ave rapaz que vive en las sabanas del África subsahariana.\n\nPosee patas largas, cuerpo cubierto de plumas blancas, plumas de vuelo negras y plumas negras en los muslos. Su pico ganchudo es claro y la zona alrededor de los ojos es anaranjada rojiza. Tiene una cresta característica de plumas negras y blancas en la parte posterior de la cabeza.\n\nMachos y hembras miden entre 1,2 y 1,5 m, tienen una envergadura de 1,9–2,2 m y pesan 3,7–4,3 kg. Algunos machos tienen plumas de la cola o de la cresta algo mayores, pero ambos sexos son muy parecidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le messager sagittaire (Sagittarius serpentarius) est un grand rapace des savanes de l’Afrique subsaharienne.\n\nIl possède de longues pattes, un corps couvert de plumes blanches, des rémiges noires et des plumes noires sur les cuisses. Son bec crochu est clair et la zone autour des yeux est rouge orangé. Une huppe caractéristique de plumes noires et blanches dépasse de l’arrière de sa tête.\n\nMâles et femelles mesurent 1,2 à 1,5 m, ont une envergure de 1,9 à 2,2 m et pèsent 3,7 à 4,3 kg. Certains mâles ont une queue ou une huppe légèrement plus longue, mais les deux sexes se ressemblent fortement.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il serpentario (Sagittarius serpentarius) è un grande rapace delle savane dell’Africa subsahariana.\n\nHa zampe lunghe, corpo ricoperto di piume bianche, remiganti nere e piume nere sulle cosce. Il becco uncinato è chiaro e la zona intorno agli occhi è rosso-arancio. Sul retro della testa presenta una caratteristica cresta di piume bianche e nere.\n\nMaschi e femmine sono alti 1,2–1,5 m, hanno un’apertura alare di 1,9–2,2 m e pesano 3,7–4,3 kg. Alcuni maschi hanno penne della coda o della cresta leggermente più lunghe, ma i sessi sono molto simili.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O secretário (Sagittarius serpentarius) é uma grande ave de rapina das savanas da África subsaariana.\n\nPossui pernas longas, corpo com penas brancas, penas de voo pretas nas asas e penas pretas nas coxas. O bico curvo é claro e a região ao redor dos olhos é vermelho-alaranjada. Uma crista marcante de penas pretas e brancas se projeta na parte posterior da cabeça.\n\nMachos e fêmeas medem 1,2–1,5 m, têm envergadura de 1,9–2,2 m e pesam 3,7–4,3 kg. Alguns machos apresentam penas da cauda ou crista um pouco maiores, mas os sexos são muito parecidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヘビクイワシ（Sagittarius serpentarius）は、サハラ以南アフリカのサバンナに生息する大型の猛禽類です。\n\n長い脚、白い体羽、黒い風切羽、黒い腿の羽を持ちます。鉤状のくちばしは淡色で、目の周囲は橙赤色です。後頭部には黒と白の羽からなる特徴的な冠羽があります。\n\n雌雄ともに全長1.2～1.5m、翼開長1.9～2.2m、体重3.7～4.3kgです。雄の一部は尾羽や冠羽がやや大きいものの、全体的には雌雄の外見はよく似ています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蛇鹫（Sagittarius serpentarius）是一种生活在撒哈拉以南非洲稀树草原的大型猛禽。\n\n它腿很长，身体覆盖白色羽毛，翅膀飞羽和大腿羽毛为黑色。弯曲的喙颜色较浅，眼周呈橙红色。后脑有一簇显眼的黑白羽冠。\n\n雄性和雌性体高均为1.2～1.5米，翼展1.9～2.2米，体重3.7～4.3千克。一些雄性的尾羽或羽冠略大，但总体上雌雄外形非常相似。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Sekretär galt einst als gefährdet und wird heute als stark gefährdet eingestuft; sein Bestand ist aufgrund von Lebensraumverlust und -zerstörung stark zurückgegangen. Ein Großteil der offenen Graslandschaften, auf die er angewiesen ist, wurde für landwirtschaftliche Zwecke umgewandelt, während Veränderungen in der Landnutzung und -bewirtschaftung, wie übermäßige Brandrodung und intensive Beweidung, das Beuteangebot verringern und die Jagdgebiete beeinträchtigen. Darüber hinaus verschärfen Kollisionen mit Stromleitungen, das Verfangen in Zäunen, Sekundärvergiftungen durch Pestizide und unvorhersehbare Klimaextreme wie zunehmende Hitze und Dürre diese Bedrohungen zusätzlich.\n\nLangzeitbeobachtungen, einschließlich Bürgerwissenschaftsberichten, und ökologische Forschungen über den Sekretär sind Mittel, um diese Probleme zu verstehen und zu mindern. Durch die Zusammenarbeit mit Landbesitzern sollen wildtierfreundliche Anbaumethoden gefördert werden. Angepasste Zaunkonstruktionen und gekennzeichnete Stromleitungen können infrastrukturbedingte Verluste verringern. Die Zucht in Gefangenschaft liefert Erkenntnisse für mögliche Auswilderungen zur Unterstützung bedrohter wildlebender Populationen. Mit diesen Strategien besteht die Hoffnung, dass bestehende Populationen geschützt und angesichts des Klimawandels und zunehmender menschlicher Eingriffe widerstandsfähiger gemacht werden können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Secretarybird was once considered Vulnerable and is now classified as Endangered; its population has declined sharply because of habitat loss and degradation. Much of the open grassland it depends on has been converted for agriculture, while changes in land use and management, such as excessive burning and intensive grazing, reduce prey availability and damage hunting areas. Collisions with power lines, entanglement in fences, secondary poisoning from pesticides and unpredictable climate extremes such as increasing heat and drought add further pressure.\n\nLong-term monitoring, including citizen-science records, and ecological research help to understand and reduce these problems. Cooperation with landowners aims to promote wildlife-friendly farming practices. Modified fences and marked power lines can reduce infrastructure-related losses. Captive breeding provides knowledge for possible reintroductions to support threatened wild populations. Together, these strategies aim to protect existing populations and make them more resilient to climate change and increasing human pressure.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Secretarybird was once considered Vulnerable and is now classified as Endangered; its population has declined sharply because of habitat loss and degradation. Much of the open grassland it depends on has been converted for agriculture, while changes in land use and management, such as excessive burning and intensive grazing, reduce prey availability and damage hunting areas. Collisions with power lines, entanglement in fences, secondary poisoning from pesticides and unpredictable climate extremes such as increasing heat and drought add further pressure.\n\nLong-term monitoring, including citizen-science records, and ecological research help to understand and reduce these problems. Cooperation with landowners aims to promote wildlife-friendly farming practices. Modified fences and marked power lines can reduce infrastructure-related losses. Captive breeding provides knowledge for possible reintroductions to support threatened wild populations. Together, these strategies aim to protect existing populations and make them more resilient to climate change and increasing human pressure.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El secretario estuvo considerado Vulnerable y actualmente está clasificado como En Peligro. Su población ha disminuido mucho debido a la pérdida y degradación del hábitat. Grandes extensiones de pastizal abierto se han convertido en tierras agrícolas y cambios de gestión, como las quemas excesivas y el pastoreo intensivo, reducen las presas y afectan a las zonas de caza. Las colisiones con tendidos eléctricos, el atrapamiento en cercas, la intoxicación secundaria por pesticidas y los extremos climáticos, como el aumento del calor y la sequía, agravan aún más las amenazas.\n\nEl seguimiento a largo plazo, los registros de ciencia ciudadana y la investigación ecológica ayudan a comprender y mitigar estos problemas. La cooperación con propietarios busca fomentar prácticas agrícolas favorables para la fauna. Cercas adaptadas y líneas eléctricas señalizadas pueden reducir las pérdidas. La cría en cautividad aporta conocimientos para posibles reintroducciones. Estas estrategias buscan proteger las poblaciones existentes y aumentar su resiliencia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le messager sagittaire, autrefois considéré comme Vulnérable, est aujourd’hui classé En danger. Ses effectifs ont fortement diminué à cause de la perte et de la dégradation de son habitat. Une grande partie des prairies ouvertes dont il dépend a été convertie en terres agricoles, tandis que les brûlages excessifs et le pâturage intensif réduisent l’abondance des proies et détériorent les zones de chasse. Les collisions avec les lignes électriques, l’enchevêtrement dans les clôtures, l’empoisonnement secondaire par les pesticides ainsi que l’augmentation de la chaleur et de la sécheresse aggravent encore les menaces.\n\nLe suivi à long terme, les données de science participative et les recherches écologiques contribuent à comprendre et réduire ces problèmes. La collaboration avec les propriétaires vise à favoriser des pratiques agricoles compatibles avec la faune. Des clôtures adaptées et des lignes électriques signalées peuvent réduire les pertes. L’élevage en captivité fournit des connaissances utiles à d’éventuelles réintroductions. Ces stratégies visent à protéger les populations existantes et à renforcer leur résilience.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il serpentario, un tempo considerato Vulnerabile, è oggi classificato In pericolo. La popolazione è diminuita fortemente a causa della perdita e del degrado dell’habitat. Gran parte delle praterie aperte da cui dipende è stata convertita in terreni agricoli, mentre pratiche come incendi eccessivi e pascolo intensivo riducono le prede e danneggiano le aree di caccia. Collisioni con linee elettriche, impigliamento nelle recinzioni, avvelenamento secondario da pesticidi e condizioni climatiche estreme come caldo e siccità crescenti aggravano le minacce.\n\nMonitoraggi a lungo termine, segnalazioni di citizen science e ricerca ecologica aiutano a comprendere e ridurre questi problemi. La collaborazione con i proprietari terrieri mira a promuovere pratiche agricole favorevoli alla fauna. Recinzioni adattate e linee elettriche segnalate possono ridurre le perdite. L’allevamento in cattività fornisce conoscenze per possibili reintroduzioni. Queste strategie puntano a proteggere le popolazioni esistenti e a renderle più resilienti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O secretário, antes considerado Vulnerável, hoje é classificado como Em Perigo. Sua população caiu muito devido à perda e degradação do habitat. Grande parte das áreas abertas de gramíneas de que depende foi convertida para agricultura, enquanto queimadas excessivas e pastoreio intensivo reduzem as presas e afetam as áreas de caça. Colisões com linhas elétricas, aprisionamento em cercas, envenenamento secundário por pesticidas e extremos climáticos como aumento do calor e da seca agravam as ameaças.\n\nMonitoramento de longo prazo, registros de ciência cidadã e pesquisas ecológicas ajudam a compreender e reduzir esses problemas. A cooperação com proprietários busca promover práticas agrícolas favoráveis à fauna. Cercas adaptadas e linhas elétricas sinalizadas podem reduzir perdas. A reprodução em cativeiro fornece conhecimento para possíveis reintroduções. Essas estratégias buscam proteger as populações existentes e aumentar sua resiliência.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヘビクイワシはかつて危急種とされていましたが、現在は絶滅危惧種に分類されています。生息地の喪失と劣化により個体数は大きく減少しました。依存する開けた草原の多くが農地に転換され、過度な野焼きや集中的な放牧が餌資源を減らし、狩猟場所を悪化させています。送電線への衝突、柵への絡まり、農薬による二次中毒、増加する暑さや干ばつなどの気候極端現象も脅威を強めています。\n\n長期モニタリング、市民科学の記録、生態研究は問題の理解と軽減に役立ちます。土地所有者との協力により野生生物に配慮した農法を促進し、改良された柵や目印を付けた送電線によってインフラ由来の死亡を減らせます。飼育繁殖は将来の再導入に役立つ知見を提供します。これらの対策は既存個体群の保護と将来の環境変化への耐性向上を目指しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蛇鹫过去曾被列为易危，如今被列为濒危。由于栖息地丧失和退化，其数量已经显著下降。大量依赖的开放草地被改作农业用地，而过度烧荒和高强度放牧等土地利用方式会减少猎物并破坏狩猎区域。撞击电线、被围栏缠住、农药造成的二次中毒，以及不断增加的高温和干旱等极端气候，也进一步加剧了威胁。\n\n长期监测、市民科学记录和生态研究有助于理解并缓解这些问题。与土地所有者合作可推广对野生动物更友好的农业方式。改良围栏和为电线加装醒目标记可以减少基础设施造成的死亡。圈养繁殖则为未来可能的放归提供经验。这些策略旨在保护现有种群，并增强其面对气候变化和人类活动的韧性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Sekretäre sind monogam und leben gemeinsam als Pärchen.\n\nSekretäre sind ganzjährig paarungsbereit, solange ausreichend Beute vorhanden ist. Die Hauptpaarungszeit fällt jedoch in die Regenzeit. Männchen und Weibchen suchen sich einen dornigen Baum, meist eine Akazie, in dessen Kronenwerk sie ihr Nest in Form einer großen Plattform bauen. Während der Balz fliegen sie hoch in die Luft und schweben im Sturzflug übereinander und das Nest hinweg. Das Männchen ist dabei oft aktiver. Die Paarung findet meist am Boden statt.\n\nKurz nach der Paarung legt das Weibchen bis zu 3 Eier ins Nest, meist in Abständen von 2 Tagen. Männchen und Weibchen brüten abwechselnd die Eier über einen Zeitraum von insgesamt 42 bis 46 Tagen aus, bis sie schlüpfen. Nach dem Schlüpfen gehen beide Elternteile auf Beutefang und füttern die Küken 3- bis 5-mal am Tag. Im Alter von 63 bis 106 Tagen werden die Küken flügge, womit die elterliche Fürsorge endet.\n\nDie Jungvögel verlassen das Revier ihrer Eltern und machen sich auf die Suche nach einem eigenen. Sekretäre werden im Alter von 3 bis 4 Jahren geschlechtsreif und beginnen dann mit der Suche nach einem Partner und einem Nistplatz.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Secretarybirds are monogamous and live together as pairs.\n\nThey can breed throughout the year when enough prey is available, although the main breeding period occurs during the rainy season. Males and females choose a thorny tree, usually an acacia, and build a large platform nest in the crown. During courtship they fly high and glide or dive above one another and over the nest, with the male often being more active. Mating usually takes place on the ground.\n\nSoon after mating, the female lays up to three eggs, usually about two days apart. The male and female take turns incubating the eggs for 42–46 days until they hatch. After hatching, both parents hunt and feed the chicks 3–5 times per day. The chicks fledge at 63–106 days, after which parental care ends.\n\nYoung birds leave their parents' territory and search for their own. Secretarybirds reach sexual maturity at 3–4 years and then begin searching for a partner and nesting site.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Secretarybirds are monogamous and live together as pairs.\n\nThey can breed throughout the year when enough prey is available, although the main breeding period occurs during the rainy season. Males and females choose a thorny tree, usually an acacia, and build a large platform nest in the crown. During courtship they fly high and glide or dive above one another and over the nest, with the male often being more active. Mating usually takes place on the ground.\n\nSoon after mating, the female lays up to three eggs, usually about two days apart. The male and female take turns incubating the eggs for 42–46 days until they hatch. After hatching, both parents hunt and feed the chicks 3–5 times per day. The chicks fledge at 63–106 days, after which parental care ends.\n\nYoung birds leave their parents' territory and search for their own. Secretarybirds reach sexual maturity at 3–4 years and then begin searching for a partner and nesting site.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los secretarios son monógamos y viven en pareja.\n\nPueden reproducirse durante todo el año si hay suficiente alimento, aunque la principal época reproductiva coincide con la estación lluviosa. Macho y hembra eligen un árbol espinoso, normalmente una acacia, y construyen una gran plataforma como nido en la copa. Durante el cortejo vuelan alto y planean o se lanzan en picado uno sobre otro y sobre el nido. El macho suele ser más activo y el apareamiento normalmente tiene lugar en el suelo.\n\nPoco después, la hembra pone hasta tres huevos, normalmente con unos dos días de diferencia. Ambos progenitores se turnan para incubarlos durante 42–46 días. Tras la eclosión, los dos cazan y alimentan a los polluelos 3–5 veces al día. Los jóvenes vuelan a los 63–106 días y entonces finaliza el cuidado parental.\n\nLos juveniles abandonan el territorio de sus padres y buscan uno propio. Alcanzan la madurez sexual entre los 3 y 4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les messagers sagittaires sont monogames et vivent en couple.\n\nIls peuvent se reproduire toute l’année si les proies sont suffisamment abondantes, mais la période principale correspond à la saison des pluies. Le couple choisit un arbre épineux, généralement un acacia, et construit un grand nid en plateforme dans la couronne. Pendant la parade, ils volent haut et planent ou plongent l’un au-dessus de l’autre et du nid. Le mâle est souvent le plus actif. L’accouplement a généralement lieu au sol.\n\nPeu après, la femelle pond jusqu’à trois œufs, généralement espacés de deux jours. Les deux parents alternent l’incubation pendant 42 à 46 jours. Après l’éclosion, ils chassent tous les deux et nourrissent les poussins 3 à 5 fois par jour. Les jeunes s’envolent à l’âge de 63 à 106 jours et les soins parentaux prennent alors fin.\n\nLes jeunes quittent le territoire parental et cherchent le leur. La maturité sexuelle est atteinte entre 3 et 4 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I serpentari sono monogami e vivono in coppia.\n\nPossono riprodursi tutto l’anno se le prede sono sufficienti, anche se la principale stagione riproduttiva coincide con la stagione delle piogge. Maschio e femmina scelgono un albero spinoso, di solito un’acacia, e costruiscono un grande nido a piattaforma nella chioma. Durante il corteggiamento volano in alto e planano o si tuffano sopra il partner e il nido. Il maschio è spesso più attivo. L’accoppiamento avviene generalmente a terra.\n\nPoco dopo, la femmina depone fino a tre uova, di solito a intervalli di due giorni. I genitori si alternano nell’incubazione per 42–46 giorni. Dopo la schiusa entrambi cacciano e nutrono i pulcini 3–5 volte al giorno. I giovani involano a 63–106 giorni, momento in cui terminano le cure parentali.\n\nI giovani lasciano il territorio dei genitori e ne cercano uno proprio. La maturità sessuale viene raggiunta a 3–4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os secretários são monogâmicos e vivem em pares.\n\nPodem reproduzir-se durante todo o ano se houver presas suficientes, embora a principal estação reprodutiva coincida com o período chuvoso. O casal escolhe uma árvore espinhosa, normalmente uma acácia, e constrói um grande ninho em plataforma na copa. Durante o cortejo, voam alto e planam ou mergulham um sobre o outro e sobre o ninho. O macho costuma ser mais ativo. O acasalamento normalmente ocorre no solo.\n\nPouco depois, a fêmea põe até três ovos, normalmente com intervalos de dois dias. Macho e fêmea se revezam na incubação por 42–46 dias. Após a eclosão, ambos caçam e alimentam os filhotes 3–5 vezes ao dia. Os jovens começam a voar entre 63 e 106 dias, quando termina o cuidado parental.\n\nOs jovens deixam o território dos pais e procuram o próprio. A maturidade sexual ocorre entre 3 e 4 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヘビクイワシは一夫一妻で、つがいで生活します。\n\n餌が十分であれば一年中繁殖可能ですが、主な繁殖期は雨季です。雌雄は通常アカシアなどのとげのある木を選び、樹冠部に大きな平台状の巣を作ります。求愛時には高く飛び、互いの上や巣の上を滑空・急降下します。雄の方が活発なことが多く、交尾は通常地上で行われます。\n\n交尾後まもなく、雌は最大3個の卵を通常2日おきに産みます。雌雄が交代で42～46日間抱卵します。孵化後は両親が狩りを行い、1日に3～5回ヒナへ餌を与えます。ヒナは63～106日で巣立ち、その後は親の世話が終わります。\n\n若鳥は親の縄張りを離れて自分の縄張りを探します。3～4歳で性成熟し、つがい相手と営巣場所を探し始めます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蛇鹫实行一夫一妻制，并以配偶成对生活。\n\n只要猎物充足，它们全年都可以繁殖，但主要繁殖期在雨季。雌雄会选择有刺的树木，通常是金合欢，在树冠上筑造大型平台状巢。求偶时会飞到高空，在彼此和巢上方滑翔或俯冲，雄性通常更活跃。交配多在地面完成。\n\n交配后不久，雌性最多产3枚卵，通常间隔约2天。双亲轮流孵卵42～46天。孵化后，双亲都会捕猎，并每天给雏鸟喂食3～5次。雏鸟在63～106天时离巢，此后亲代照料结束。\n\n幼鸟会离开父母的领地并寻找自己的活动区。3～4岁达到性成熟，随后开始寻找配偶和巢址。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Obwohl Sekretäre fliegen können, tun sie das nur selten. Sie bewegen sich meist zu Fuß fort.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der wissenschaftliche Name des Sekretärs, „Sagittarius serpentarius“, bedeutet „der Schlangenbogenschütze“.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Man nimmt an, dass der Sekretär seinen Namen aufgrund der Federfransen um seinen Kopf herum erhielt. Diese erinnern an die Federkiele, die sich die Rechtssekretäre des 19. Jahrhunderts hinter die Ohren steckten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Sekretär hat einen sehr kräftigen Tritt, mit dem er Schlangen töten kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Obwohl man sie oft nur mit Schlangen in Verbindung bringt, gehören ebenfalls Insekten, Spinnentiere und kleine Säugetiere zur Beute des Sekretärs.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Although Secretarybirds can fly, they do so only rarely and usually move about on foot.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The scientific name Sagittarius serpentarius means 'the snake archer'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Secretarybird is thought to have been named for the feather quills around its head, which resemble the quill pens that 19th-century legal secretaries tucked behind their ears.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Secretarybird has an extremely powerful kick that can kill snakes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Although often associated mainly with snakes, its prey also includes insects, arachnids and small mammals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Although Secretarybirds can fly, they do so only rarely and usually move about on foot.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The scientific name Sagittarius serpentarius means 'the snake archer'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Secretarybird is thought to have been named for the feather quills around its head, which resemble the quill pens that 19th-century legal secretaries tucked behind their ears.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Secretarybird has an extremely powerful kick that can kill snakes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Although often associated mainly with snakes, its prey also includes insects, arachnids and small mammals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Aunque pueden volar, lo hacen rara vez y normalmente se desplazan a pie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El nombre científico Sagittarius serpentarius significa «el arquero de serpientes».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se cree que su nombre procede de las plumas de la cabeza, parecidas a las plumas de escribir que los secretarios jurídicos del siglo XIX llevaban detrás de la oreja.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Posee una patada extremadamente potente capaz de matar serpientes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Además de serpientes, también captura insectos, arácnidos y pequeños mamíferos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Bien qu’ils sachent voler, ils le font rarement et se déplacent surtout à pied.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le nom scientifique Sagittarius serpentarius signifie « l’archer des serpents ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "On pense que son nom vient des plumes autour de la tête, rappelant les plumes d’écriture que les secrétaires juridiques du XIXe siècle portaient derrière l’oreille.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il possède un coup de patte extrêmement puissant capable de tuer des serpents.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Outre les serpents, ses proies comprennent aussi des insectes, des arachnides et de petits mammifères.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sebbene sappiano volare, lo fanno raramente e si spostano soprattutto a piedi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il nome scientifico Sagittarius serpentarius significa «l’arciere dei serpenti».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Si ritiene che il nome derivi dalle piume intorno alla testa, simili alle penne che i segretari legali del XIX secolo portavano dietro l’orecchio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possiede un calcio estremamente potente con cui può uccidere i serpenti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Oltre ai serpenti, cattura anche insetti, aracnidi e piccoli mammiferi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Embora possam voar, fazem isso raramente e geralmente se deslocam a pé.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O nome científico Sagittarius serpentarius significa «o arqueiro das serpentes».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Acredita-se que o nome venha das penas ao redor da cabeça, semelhantes às penas de escrever que secretários jurídicos do século XIX colocavam atrás da orelha.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possui um chute extremamente poderoso capaz de matar serpentes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Além de serpentes, também captura insetos, aracnídeos e pequenos mamíferos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "飛ぶことはできますが、飛行することは少なく、通常は歩いて移動します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "学名Sagittarius serpentariusは「ヘビの射手」を意味します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "名前は頭部の羽が、19世紀の法律秘書が耳の後ろに挿していた羽ペンを思わせることに由来すると考えられています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "非常に強力な蹴りを持ち、ヘビを殺すことができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ヘビだけでなく、昆虫、クモ類、小型哺乳類も獲物に含まれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "虽然会飞，但它们很少飞行，通常主要步行活动。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "学名Sagittarius serpentarius意为“射蛇的弓箭手”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "一般认为“秘书鸟”这一名称来自头部羽毛，其外形让人联想到19世纪法律秘书夹在耳后的羽毛笔。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "蛇鹫拥有极为有力的踢击，可以杀死蛇。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "除了蛇之外，它们的猎物还包括昆虫、蛛形纲动物和小型哺乳动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/07b53a43/Secretarybird_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Sagittarius serpentarius/map/Sagittarius serpentarius map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDdiNTNhNDMvU2VjcmV0YXJ5YmlyZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Sekretär – Planet Zoo 2",
+            "en": "Secretarybird – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sekretärs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Secretarybird."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Sagittarius serpentarius/bilder/Sagittarius serpentarius 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/07b53a43/Secretarybird_illustration.jpg",
+          "alt": {
+            "de": "Sekretär – Zoopedia-Illustration",
+            "en": "Secretarybird – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Sekretärs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Secretarybird illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Sagittarius serpentarius/bilder/Sagittarius serpentarius illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sekretär",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/sekret%C3%A4r",
+        "en": "https://www.planetzoogame.com/2/zoopedia/secretarybird",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/secretarybird",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/secretario",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/messager-sagittaire",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/serpentario",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/secret%C3%A1rio",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%98%E3%83%93%E3%82%AF%E3%82%A4%E3%83%AF%E3%82%B7",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%9B%87%E9%B9%AB"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

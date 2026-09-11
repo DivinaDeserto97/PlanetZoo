@@ -1,0 +1,823 @@
+{
+  "id": "Triturus dobrogicus",
+  "identitaet": {
+    "namen": {
+      "de": "Donau-Kammmolch",
+      "en": "Danube Crested Newt",
+      "en-US": "Danube Crested Newt",
+      "es": "Tritón crestado del Danubio",
+      "fr": "Triton crêté du Danube",
+      "it": "Tritone crestato del Danubio",
+      "pt-BR": "Tritão-de-crista-do-danúbio",
+      "ja": "ダニューブクシイモリ",
+      "zh-Hans": "多瑙河冠欧螈"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "europe"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Urodela",
+          "familie": "Salamandridae",
+          "gattung": "Triturus",
+          "art": "Triturus dobrogicus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.13,
+          "max": 0.15,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "max": 0.18,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Weibchen eine Länge von bis zu 18 cm.",
+            "en": "The Zoopedia gives a maximum female length of 18 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Triturus dobrogicus"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "min": 2,
+          "max": 3,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProFortpflanzungsperiode",
+          "min": null,
+          "max": null,
+          "durchschnitt": 200,
+          "hinweis": {
+            "de": "Das Weibchen legt innerhalb von etwa zwei Wochen ungefähr 200 Eier einzeln auf Wasserpflanzen und faltet die Blätter um die Eier.",
+            "en": "Over about two weeks, the female lays roughly 200 eggs individually on aquatic plants and folds the leaves around them."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Donau-Kammmolche leben hauptsächlich einzelgängerisch, tolerieren bei genügend Platz und Nahrung aber Artgenossen in der Nähe.",
+            "en": "Danube Crested Newts are mainly solitary but tolerate conspecifics nearby when sufficient space and food are available."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Laut Zoopedia sind Donau-Kammmolche ab dem Schlupf reine Fleischfresser.",
+              "en": "According to the Zoopedia, Danube Crested Newts are strict carnivores from the moment they hatch."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Donau-Kammmolch (Triturus dobrogicus) lebt in langsam fließenden Gewässern, Nebenflüssen und den umliegenden Wäldern entlang der Donau in Europa.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Danube Crested Newt (Triturus dobrogicus) lives in slow-moving waters, tributaries and surrounding forests along the Danube in Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Danube Crested Newt (Triturus dobrogicus) lives in slow-moving waters, tributaries and surrounding forests along the Danube in Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tritón crestado del Danubio (Triturus dobrogicus) vive en aguas de corriente lenta, afluentes y bosques circundantes a lo largo del Danubio en Europa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le triton crêté du Danube (Triturus dobrogicus) vit dans les eaux lentes, les affluents et les forêts environnantes le long du Danube en Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il tritone crestato del Danubio (Triturus dobrogicus) vive nelle acque a lento corso, negli affluenti e nei boschi circostanti lungo il Danubio in Europa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tritão-de-crista-do-danúbio (Triturus dobrogicus) vive em águas de corrente lenta, afluentes e florestas ao redor do rio Danúbio na Europa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ダニューブクシイモリ（Triturus dobrogicus）は、ヨーロッパのドナウ川沿いの流れの緩やかな水域、支流、その周辺の森林に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "多瑙河冠欧螈（Triturus dobrogicus）生活在欧洲多瑙河沿岸的缓流水域、支流及其周边森林中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Donau-Kammmolch (auch Triturus dobrogicus) ist eine Amphibienart, die in den langsam fließenden Gewässern, Nebenflüssen und den umliegenden Wäldern entlang der Donau lebt.\n\nDie Seiten und der Rücken der Molche sind mit schwarzer und brauner Haut bedeckt, die weiß und schwarz gesprenkelt ist, während ihr Bauch und ihre Kehle leuchtend rot und orange sind und dunkle Muster aufweisen.\n\nWie bei allen Kammmolchen zeigt diese Art einen Geschlechtsdimorphismus: Während der Paarungszeit haben die Männchen einen markanten, stacheligen Kamm, der sich über die gesamte Länge ihres Rückens erstreckt. Männliche Molche sind 13 bis 15 cm lang, Weibchen sind mit einer Länge von bis zu 18 cm etwas größer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Danube Crested Newt (Triturus dobrogicus) is an amphibian species found in slow-moving waters, tributaries and surrounding forests along the Danube.\n\nIts sides and back are covered in black and brown skin speckled with white and black, while the belly and throat are bright red and orange with dark markings.\n\nLike all crested newts, this species shows sexual dimorphism. During the breeding season, males develop a prominent spiky crest extending along the length of the back. Males are 13–15 cm long, while females are slightly larger and can reach 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Danube Crested Newt (Triturus dobrogicus) is an amphibian species found in slow-moving waters, tributaries and surrounding forests along the Danube.\n\nIts sides and back are covered in black and brown skin speckled with white and black, while the belly and throat are bright red and orange with dark markings.\n\nLike all crested newts, this species shows sexual dimorphism. During the breeding season, males develop a prominent spiky crest extending along the length of the back. Males are 13–15 cm long, while females are slightly larger and can reach 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tritón crestado del Danubio (Triturus dobrogicus) es un anfibio que vive en aguas de corriente lenta, afluentes y bosques cercanos al Danubio.\n\nLos lados y el dorso presentan piel negra y marrón moteada de blanco y negro, mientras que el vientre y la garganta son de color rojo y naranja intenso con manchas oscuras.\n\nComo todos los tritones crestados, presenta dimorfismo sexual. Durante la época reproductiva los machos desarrollan una cresta espinosa muy marcada a lo largo del dorso. Los machos miden 13–15 cm y las hembras pueden alcanzar 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le triton crêté du Danube (Triturus dobrogicus) est un amphibien vivant dans les eaux lentes, les affluents et les forêts environnantes du Danube.\n\nSes flancs et son dos sont noirs et bruns, mouchetés de blanc et de noir, tandis que le ventre et la gorge sont rouge et orange vif avec des motifs sombres.\n\nComme tous les tritons crêtés, il présente un dimorphisme sexuel. Pendant la reproduction, les mâles développent une crête épineuse très marquée le long du dos. Les mâles mesurent 13 à 15 cm et les femelles peuvent atteindre 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il tritone crestato del Danubio (Triturus dobrogicus) è un anfibio che vive nelle acque a lento corso, negli affluenti e nei boschi circostanti lungo il Danubio.\n\nI fianchi e il dorso hanno pelle nera e marrone punteggiata di bianco e nero, mentre ventre e gola sono rosso e arancione brillante con motivi scuri.\n\nCome tutti i tritoni crestati, presenta dimorfismo sessuale. Durante la stagione riproduttiva i maschi sviluppano una marcata cresta spinosa lungo tutto il dorso. I maschi misurano 13–15 cm, mentre le femmine possono raggiungere 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tritão-de-crista-do-danúbio (Triturus dobrogicus) é um anfíbio que vive em águas de corrente lenta, afluentes e florestas ao redor do Danúbio.\n\nAs laterais e o dorso têm pele preta e marrom salpicada de branco e preto, enquanto o ventre e a garganta apresentam vermelho e laranja intensos com padrões escuros.\n\nComo todos os tritões crestados, apresenta dimorfismo sexual. Durante a época reprodutiva, os machos desenvolvem uma crista espinhosa bem marcada ao longo das costas. Machos medem 13–15 cm e fêmeas podem chegar a 18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ダニューブクシイモリ（Triturus dobrogicus）は、ドナウ川沿いの流れの緩やかな水域、支流、周辺の森林に生息する両生類です。\n\n体側と背中は黒と茶色で、白と黒の斑点があります。腹部と喉は鮮やかな赤とオレンジ色で、暗い模様があります。\n\n他のクシイモリ類と同様に雌雄差があり、繁殖期の雄には背中全体に目立つとげ状のクレストが発達します。雄は13～15cm、雌は最大18cmです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "多瑙河冠欧螈（Triturus dobrogicus）是一种生活在多瑙河沿岸缓流水域、支流及周边森林中的两栖动物。\n\n体侧和背部为黑褐色，并带有白色和黑色斑点；腹部和喉部则呈鲜艳的红色和橙色，并带有深色花纹。\n\n与其他冠螈一样，该物种具有性二型。繁殖季雄性会在整个背部形成明显的刺状背冠。雄性体长13～15厘米，雌性可长到18厘米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der als nicht gefährdet eingestufte Donau-Kammmolch ist dennoch vom Artensterben bedroht und durch den Verlust seines Lebensraums gefährdet. Die Trockenlegung von Feuchtgebieten, Verschmutzung und Staudämme sowie die Verwüstung infolge des Klimawandels zerstören den geeigneten Lebensraum für diese Amphibien. Wie andere Salamander ist auch der Donau-Kammmolch potenziell durch Infektionen mit Bsal (Batrachochytrium salamandrivorans) bedroht, einem relativ neuen Pilz, der extrem tödlich ist, obwohl er im natürlichen Verbreitungsgebiet dieses Molchs noch nicht vorkommt.\n\nMehrere Gebiete innerhalb des Lebensraums des Donau-Kammmolchs sind als Schutzgebiete ausgewiesen. Der Schwerpunkt liegt auf dem fortlaufenden Schutz von Feuchtgebieten, um das Überleben dieser und anderer Molcharten zu sichern. Umsiedlungen aus bedrohten Gewässern können geschwächte Populationen stärken oder bedrohte Populationen retten. Obwohl Bsal derzeit nicht im Verbreitungsgebiet des Donau-Kammmolchs aktiv ist, fordern Naturschützer dringend einen Aktionsplan für dessen Bekämpfung auf EU-Ebene, um Ausbrüche einzudämmen und die Salamanderarten in Zukunft vor dem Aussterben zu bewahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Although classified as Least Concern, the Danube Crested Newt still faces extinction risks and habitat loss. Drainage of wetlands, pollution, dams and climate-change-driven degradation destroy suitable habitat. Like other salamanders, it is also potentially threatened by Bsal (Batrachochytrium salamandrivorans), a relatively new and highly lethal fungus, although it has not yet reached the species' natural range.\n\nSeveral areas within the newt's range are protected. Conservation focuses on continued wetland protection to safeguard this and other newt species. Translocations from threatened waters can strengthen weakened populations or rescue populations at risk. Although Bsal is not currently active within the range of the Danube Crested Newt, conservationists are calling for an EU-level action plan to contain outbreaks and protect salamander species from future extinction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Although classified as Least Concern, the Danube Crested Newt still faces extinction risks and habitat loss. Drainage of wetlands, pollution, dams and climate-change-driven degradation destroy suitable habitat. Like other salamanders, it is also potentially threatened by Bsal (Batrachochytrium salamandrivorans), a relatively new and highly lethal fungus, although it has not yet reached the species' natural range.\n\nSeveral areas within the newt's range are protected. Conservation focuses on continued wetland protection to safeguard this and other newt species. Translocations from threatened waters can strengthen weakened populations or rescue populations at risk. Although Bsal is not currently active within the range of the Danube Crested Newt, conservationists are calling for an EU-level action plan to contain outbreaks and protect salamander species from future extinction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Aunque está clasificado como de Preocupación Menor, el tritón crestado del Danubio sigue amenazado por la pérdida de hábitat. El drenaje de humedales, la contaminación, las presas y la degradación asociada al cambio climático destruyen hábitats adecuados. Como otros salamándridos, también podría verse amenazado por Bsal (Batrachochytrium salamandrivorans), un hongo relativamente nuevo y extremadamente letal que todavía no está presente en su área natural.\n\nVarias zonas de su distribución están protegidas. La conservación se centra en la protección continua de humedales. Los traslados desde masas de agua amenazadas pueden reforzar poblaciones debilitadas o salvar poblaciones en riesgo. Aunque Bsal aún no está activo en su área de distribución, los conservacionistas reclaman un plan de acción a escala de la UE.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Bien que classé en Préoccupation mineure, le triton crêté du Danube reste menacé par la perte de son habitat. Le drainage des zones humides, la pollution, les barrages et la dégradation liée au changement climatique détruisent des habitats adaptés. Comme d'autres salamandres, il pourrait aussi être menacé par Bsal (Batrachochytrium salamandrivorans), un champignon relativement récent et extrêmement mortel, même s'il n'est pas encore présent dans son aire naturelle.\n\nPlusieurs zones de son habitat sont protégées. Les efforts portent sur la protection continue des zones humides. Des translocations depuis des plans d'eau menacés peuvent renforcer des populations affaiblies ou sauver des populations en danger. Bien que Bsal ne soit pas encore actif dans son aire, les défenseurs de la nature demandent un plan d'action à l'échelle de l'UE.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pur essendo classificato a rischio minimo, il tritone crestato del Danubio è comunque minacciato dalla perdita dell'habitat. Il drenaggio delle zone umide, l'inquinamento, le dighe e il degrado causato dai cambiamenti climatici distruggono habitat adatti. Come altre salamandre, può essere minacciato anche dal Bsal (Batrachochytrium salamandrivorans), un fungo relativamente recente ed estremamente letale, sebbene non sia ancora presente nel suo areale naturale.\n\nDiverse aree del suo habitat sono protette. La conservazione si concentra sulla protezione continua delle zone umide. Le traslocazioni da acque minacciate possono rafforzare popolazioni deboli o salvarne altre a rischio. Anche se Bsal non è attualmente attivo nel suo areale, i conservazionisti chiedono un piano d'azione a livello UE.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Embora classificado como Pouco Preocupante, o tritão-de-crista-do-danúbio ainda é ameaçado pela perda de habitat. A drenagem de áreas úmidas, poluição, barragens e degradação causada pelas mudanças climáticas destroem habitats adequados. Como outras salamandras, ele também pode ser ameaçado pelo Bsal (Batrachochytrium salamandrivorans), um fungo relativamente novo e extremamente letal, embora ainda não esteja presente em sua distribuição natural.\n\nDiversas áreas de seu habitat são protegidas. O foco está na proteção contínua de áreas úmidas. Translocações de corpos d'água ameaçados podem fortalecer populações debilitadas ou salvar populações em risco. Embora o Bsal ainda não esteja ativo na área de distribuição da espécie, conservacionistas pedem um plano de ação em nível da União Europeia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種に分類されていますが、生息地喪失による脅威を受けています。湿地の排水、汚染、ダム、気候変動による環境悪化が適した生息地を破壊します。他のサンショウウオ類と同様に、非常に致死性の高い新興真菌Bsal（Batrachochytrium salamandrivorans）による感染も潜在的な脅威ですが、現在は自然分布域には存在していません。\n\n分布域内の複数地域が保護区となっています。保全の中心は湿地を継続して守ることです。脅かされた水域からの移送は弱った個体群の強化や救済に役立ちます。Bsalは現在分布域で活動していませんが、保全関係者はEUレベルの対策計画を求めています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "虽然被列为无危，但多瑙河冠欧螈仍受到栖息地丧失的威胁。湿地排水、污染、水坝以及气候变化造成的环境退化都会破坏适宜生境。和其他蝾螈一样，它还可能受到Bsal（Batrachochytrium salamandrivorans）感染的威胁。这是一种较新的、致死率极高的真菌，不过目前尚未进入该物种的自然分布区。\n\n其分布区内已有多个保护区域。保护工作重点是持续保护湿地。将个体从受威胁水域迁出，可以增强衰弱种群或挽救处于危险中的种群。虽然Bsal目前尚未在其分布区活动，但保护人员呼吁在欧盟层面制定应对计划。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Donau-Kammmolche haben keine besonderen sozialen Erfordernisse und leben hauptsächlich einzelgängerisch. Falls genügend Raum und Nahrung vorhanden sind, tolerieren sie auch andere Exemplare in der Nähe.\n\nVon Februar bis März wandern Donau-Kammmolche in ihre Laichgewässer, also Bereiche mit langsam fließendem oder stehendem Wasser in der Nähe ihres Geburtsortes. Die Männchen verfolgen die Weibchen und führen ein Balzritual durch, bei dem sie mit dem Schwanz wedeln und schlagen, den Rücken krümmen und ihre Kämme schwingen. Nach einem erfolgreichen Paarungsritual legt das Männchen eine Spermatophore für das Weibchen auf den Boden ab, das diese in ihre Kloake aufnimmt, um ihre Eier innerlich zu befruchten.\n\nEin paar Tage später legt sie ihre Eier auf die Blätter von Wasserpflanzen und faltet diese um die Eier herum, um sie zu schützen. Innerhalb von zwei Wochen legt sie auf diese Weise etwa 200 Eier. Zwei bis drei Wochen später schlüpfen die Larven aus den Eiern. Sie bleiben zwei bis vier Monate lang in ihrer aquatischen Larvenform, bevor die Metamorphose zur adulten Form stattfindet.\n\nDaraufhin begeben sie sich in geschützte, feuchte Bereiche an Land, normalerweise in der Nähe von Waldgebieten. Donau-Kammmolche erreichen die Geschlechtsreife im Alter von zwei bis drei Jahren und bekommen in ihrer aquatischen Phase einmal pro Jahr Junge.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Danube Crested Newts have no special social requirements and are mainly solitary. When enough space and food are available, they tolerate other individuals nearby.\n\nFrom February to March they migrate to spawning waters, areas of slow-moving or standing water close to where they were born. Males follow females and perform a courtship ritual involving tail waving and striking, arching the back and displaying the crest. After successful courtship, the male deposits a spermatophore on the substrate, which the female takes into her cloaca for internal fertilisation.\n\nA few days later she lays eggs on the leaves of aquatic plants and folds the leaves around them for protection. Over about two weeks she lays roughly 200 eggs in this way. The larvae hatch two to three weeks later and remain in their aquatic larval form for two to four months before metamorphosing into the adult form.\n\nThey then move into sheltered, damp areas on land, usually near woodland. Danube Crested Newts reach sexual maturity at two to three years and reproduce once per year during their aquatic phase.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Danube Crested Newts have no special social requirements and are mainly solitary. When enough space and food are available, they tolerate other individuals nearby.\n\nFrom February to March they migrate to spawning waters, areas of slow-moving or standing water close to where they were born. Males follow females and perform a courtship ritual involving tail waving and striking, arching the back and displaying the crest. After successful courtship, the male deposits a spermatophore on the substrate, which the female takes into her cloaca for internal fertilisation.\n\nA few days later she lays eggs on the leaves of aquatic plants and folds the leaves around them for protection. Over about two weeks she lays roughly 200 eggs in this way. The larvae hatch two to three weeks later and remain in their aquatic larval form for two to four months before metamorphosing into the adult form.\n\nThey then move into sheltered, damp areas on land, usually near woodland. Danube Crested Newts reach sexual maturity at two to three years and reproduce once per year during their aquatic phase.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "No tiene necesidades sociales especiales y vive principalmente de forma solitaria, aunque tolera otros individuos cerca si dispone de suficiente espacio y alimento.\n\nEntre febrero y marzo migra hacia las aguas de desove, generalmente de corriente lenta o estancadas y próximas al lugar de nacimiento. Los machos siguen a las hembras y realizan un ritual de cortejo con movimientos y golpes de la cola, arqueo del dorso y exhibición de la cresta. Después, el macho deposita un espermatóforo que la hembra recoge con la cloaca para realizar la fecundación interna.\n\nDías después, la hembra deposita los huevos sobre hojas de plantas acuáticas y dobla las hojas alrededor de ellos. Durante unas dos semanas pone aproximadamente 200 huevos. Las larvas eclosionan dos o tres semanas después y permanecen dos a cuatro meses en fase larvaria acuática antes de la metamorfosis.\n\nDespués pasan a zonas terrestres húmedas y protegidas, generalmente cerca de bosques. Alcanzan la madurez sexual a los dos o tres años y se reproducen una vez al año durante la fase acuática.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le triton crêté du Danube n'a pas d'exigences sociales particulières et vit principalement seul. Il tolère cependant d'autres individus à proximité lorsque l'espace et la nourriture sont suffisants.\n\nDe février à mars, il migre vers ses eaux de reproduction, généralement lentes ou stagnantes et proches du lieu de naissance. Les mâles suivent les femelles et réalisent une parade comprenant des mouvements et coups de queue, un dos arqué et la mise en valeur de la crête. Après la parade, le mâle dépose un spermatophore que la femelle recueille dans son cloaque pour féconder les œufs en interne.\n\nQuelques jours plus tard, elle dépose les œufs sur des feuilles de plantes aquatiques qu'elle replie autour d'eux. En environ deux semaines, elle pond près de 200 œufs. Les larves éclosent deux à trois semaines plus tard et restent aquatiques pendant deux à quatre mois avant la métamorphose.\n\nElles gagnent ensuite des zones terrestres humides et abritées, souvent près des forêts. La maturité sexuelle est atteinte à deux ou trois ans et la reproduction a lieu une fois par an pendant la phase aquatique.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Non ha particolari esigenze sociali e vive principalmente da solo, ma tollera altri individui nelle vicinanze se spazio e cibo sono sufficienti.\n\nDa febbraio a marzo migra verso le acque di deposizione, generalmente lente o stagnanti e vicine al luogo di nascita. I maschi seguono le femmine ed eseguono un rituale di corteggiamento con movimenti e colpi di coda, inarcamento del dorso e ostentazione della cresta. Dopo il corteggiamento, il maschio deposita una spermatofora che la femmina raccoglie nella cloaca per la fecondazione interna.\n\nPochi giorni dopo depone le uova sulle foglie delle piante acquatiche e ripiega le foglie intorno alle uova. In circa due settimane depone approssimativamente 200 uova. Le larve si schiudono dopo due o tre settimane e rimangono nella fase larvale acquatica per due-quattro mesi prima della metamorfosi.\n\nPoi si spostano in aree terrestri umide e riparate, generalmente vicino ai boschi. Raggiungono la maturità sessuale a due-tre anni e si riproducono una volta all'anno durante la fase acquatica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Não possui necessidades sociais especiais e vive principalmente sozinho, embora tolere outros indivíduos por perto quando há espaço e alimento suficientes.\n\nDe fevereiro a março, migra para águas de reprodução, geralmente de corrente lenta ou paradas e próximas ao local de nascimento. Os machos seguem as fêmeas e realizam um ritual com movimentos e golpes da cauda, arqueamento das costas e exibição da crista. Depois, o macho deposita um espermatóforo que a fêmea recolhe pela cloaca para fertilização interna.\n\nAlguns dias depois, a fêmea deposita os ovos em folhas de plantas aquáticas e dobra as folhas ao redor deles. Em cerca de duas semanas, deposita aproximadamente 200 ovos. As larvas eclodem duas a três semanas depois e permanecem na fase aquática por dois a quatro meses antes da metamorfose.\n\nEm seguida, migram para áreas terrestres úmidas e protegidas, geralmente próximas a florestas. A maturidade sexual ocorre aos dois ou três anos e a reprodução acontece uma vez por ano durante a fase aquática.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "特別な社会的要求はなく、主に単独で生活しますが、十分な空間と餌があれば近くの同種個体を許容します。\n\n2～3月に出生地近くの流れの緩やかな、または止水の繁殖水域へ移動します。雄は雌を追い、尾を振ったり打ちつけたり、背中を反らせたり、クレストを見せる求愛を行います。成功すると雄は基質上に精包を置き、雌が総排泄腔に取り込んで体内受精します。\n\n数日後、雌は水草の葉に卵を産み、葉を折りたたんで卵を守ります。約2週間でおよそ200個を産みます。2～3週間後に幼生が孵化し、2～4か月間水生幼生として過ごした後、成体へ変態します。\n\nその後は森林の近くなど、湿った保護された陸上環境へ移動します。2～3歳で性成熟し、水生期に年1回繁殖します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "没有特殊社会需求，主要独居；如果空间和食物充足，也能容忍附近存在其他同类。\n\n每年2月至3月，它们会迁往出生地附近的繁殖水域，通常为缓流或静水。雄性会跟随雌性，并通过摆尾、击尾、弓背和展示背冠进行求偶。成功后，雄性会把精包留在底部，雌性通过泄殖腔将其摄入进行体内受精。\n\n几天后，雌性会把卵产在水生植物叶片上，并将叶片折叠包住卵以提供保护。在大约两周内会产下约200枚卵。两到三周后幼体孵化，并保持水生幼体形态两到四个月，之后完成变态。\n\n随后它们会转移到陆地上潮湿、隐蔽的区域，通常靠近森林。2～3岁达到性成熟，并在水生阶段每年繁殖一次。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Donau-Kammmolch ist die kleinste aller Kammmolch-Arten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wird er bedroht, nimmt der Donau-Kammmolch eine Verteidigungshaltung ein, um seine grellfarbige Unterseite zu präsentieren und Toxine abzugeben. Diese Verhaltensweise ist als Unkenreflex bekannt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wie andere Molche auch sind Donau-Kammmolche ab dem Moment ihres Schlüpfens reine Fleischfresser.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Donau-Kammmolche verbringen mehr als die Hälfte des Jahres im Wasser, um sich zu vermehren und zu jagen, und die restlichen Monate an Land. Damit haben sie die längste aquatische Phase aller Kammmolche.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Donau-Kammmolche gab es schon vor der letzten Eiszeit. Wahrscheinlich haben sie wie andere Kammmolch-Arten in kleinen Zufluchtsorten überlebt und sich danach erneut in ihre heutigen Gebiete ausgebreitet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Danube Crested Newt is the smallest of all crested newt species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "When threatened, it adopts a defensive posture that exposes its brightly coloured underside and releases toxins. This behaviour is known as the unken reflex.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Like other newts, Danube Crested Newts are strict carnivores from the moment they hatch.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They spend more than half the year in water to breed and hunt, and the remaining months on land, giving them the longest aquatic phase of all crested newts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Danube Crested Newts existed before the last Ice Age. They probably survived in small refuges, like other crested newts, and later spread back into their present range.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Danube Crested Newt is the smallest of all crested newt species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "When threatened, it adopts a defensive posture that exposes its brightly coloured underside and releases toxins. This behaviour is known as the unken reflex.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Like other newts, Danube Crested Newts are strict carnivores from the moment they hatch.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They spend more than half the year in water to breed and hunt, and the remaining months on land, giving them the longest aquatic phase of all crested newts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Danube Crested Newts existed before the last Ice Age. They probably survived in small refuges, like other crested newts, and later spread back into their present range.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es la especie más pequeña de tritón crestado.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Cuando se siente amenazado adopta una postura defensiva que muestra su vientre de vivos colores y libera toxinas; este comportamiento se conoce como reflejo unken.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Desde el momento de la eclosión es estrictamente carnívoro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pasa más de la mitad del año en el agua para reproducirse y cazar, y el resto en tierra, por lo que posee la fase acuática más larga de todos los tritones crestados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La especie ya existía antes de la última glaciación y probablemente sobrevivió en pequeños refugios antes de volver a expandirse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "C'est la plus petite espèce de triton crêté.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Lorsqu'il est menacé, il adopte une posture défensive qui expose son ventre vivement coloré et libère des toxines; ce comportement est appelé réflexe unken.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dès l'éclosion, il est strictement carnivore.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il passe plus de la moitié de l'année dans l'eau pour se reproduire et chasser, et le reste sur terre, ce qui constitue la plus longue phase aquatique des tritons crêtés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L'espèce existait déjà avant la dernière période glaciaire et a probablement survécu dans de petits refuges avant de recoloniser son aire actuelle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È la più piccola specie di tritone crestato.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Quando è minacciato assume una postura difensiva che mostra il ventre vivacemente colorato e rilascia tossine; questo comportamento è chiamato riflesso unken.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dal momento della schiusa è strettamente carnivoro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Trascorre più della metà dell'anno in acqua per riprodursi e cacciare e il resto sulla terraferma, avendo la fase acquatica più lunga tra i tritoni crestati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La specie esisteva già prima dell'ultima glaciazione e probabilmente sopravvisse in piccoli rifugi prima di espandersi nuovamente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É a menor de todas as espécies de tritão crestado.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Quando ameaçado, assume uma postura defensiva que expõe a parte inferior fortemente colorida e libera toxinas; esse comportamento é conhecido como reflexo unken.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Desde o momento da eclosão, é estritamente carnívoro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Passa mais da metade do ano na água para se reproduzir e caçar e os meses restantes em terra, tendo a fase aquática mais longa entre os tritões crestados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A espécie já existia antes da última era glacial e provavelmente sobreviveu em pequenos refúgios antes de voltar a ocupar sua distribuição atual.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "すべてのクシイモリ類の中で最小の種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "脅威を受けると鮮やかな腹面を見せて毒を放出する防御姿勢をとります。この行動はウンケン反射として知られています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "孵化した瞬間から完全な肉食です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "繁殖と狩りのため一年の半分以上を水中で過ごし、残りを陸上で過ごします。クシイモリ類で最も長い水生期を持ちます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "最終氷期より前から存在しており、小さな避難地で生き残った後、現在の分布域へ再び広がったと考えられています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "它是所有冠螈中体型最小的一种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "受到威胁时会采取防御姿势，展示鲜艳的腹面并释放毒素，这种行为称为“铃蟾反射”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "从孵化开始就是严格的肉食动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "一年中超过一半时间生活在水中用于繁殖和捕食，其余时间生活在陆地上，因此拥有所有冠螈中最长的水生阶段。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "该物种在最后一次冰期之前就已经存在，可能像其他冠螈一样在小型避难地中存活，随后重新扩散到如今的分布区。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/31465222/Salamander_DanubeCrestedNewt_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/map/Triturus dobrogicus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMzE0NjUyMjIvU2FsYW1hbmRlcl9EYW51YmVDcmVzdGVkTmV3dC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Donau-Kammmolch – Planet Zoo 2",
+            "en": "Danube Crested Newt – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Donau-Kammmolchs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Danube Crested Newt."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/bilder/Triturus dobrogicus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Donau-Kammmolch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/donau-kammmolch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/danube-crested-newt",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/danube-crested-newt",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/trit%C3%B3n-crestado-del-danubio",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/triton-cr%C3%AAt%C3%A9-du-danube",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/tritone-crestato-del-danubio",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/trit%C3%A3o-de-crista-do-dan%C3%BAbio",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%80%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%96%E3%82%AF%E3%82%B7%E3%82%A4%E3%83%A2%E3%83%AA",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%A4%9A%E7%91%99%E6%B2%B3%E5%86%A0%E6%AC%A7%E8%9E%88"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

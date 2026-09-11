@@ -1,0 +1,872 @@
+{
+  "id": "Hippopotamus amphibius",
+  "identitaet": {
+    "namen": {
+      "de": "Flusspferd",
+      "en": "Common Hippopotamus",
+      "en-US": "Common Hippopotamus",
+      "es": "Hipopótamo común",
+      "fr": "Hippopotame commun",
+      "it": "Ippopotamo",
+      "pt-BR": "Hipopótamo-comum",
+      "ja": "カバ",
+      "zh-Hans": "河马"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland",
+      "Feuchtgebiete",
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Hippopotamidae",
+          "gattung": "Hippopotamus",
+          "art": "Hippopotamus amphibius",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 4.0,
+          "max": 5.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 3.3,
+          "max": 4.2,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1500,
+          "max": 2000,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1000,
+          "max": 1500,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 115000,
+          "max": 130000,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Hippopotamus amphibius"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt 115.000 bis 130.000 Individuen und bezeichnet den Bestand als rückläufig.",
+            "en": "The Zoopedia gives 115,000–130,000 individuals and describes the population as declining."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 5,
+          "max": 7,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Das Weibchen bringt laut Zoopedia unter Wasser ein einzelnes Jungtier zur Welt.",
+            "en": "According to the Zoopedia, the female gives birth underwater to a single calf."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "variable",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Flusspferde interagieren miteinander, bilden aber keine engen sozialen Bindungen. Männchen leben halbwegs einzelgängerisch und territorial; in ihrem Flussabschnitt tolerieren sie Gruppen aus Weibchen und nicht konkurrierenden Männchen.",
+            "en": "Hippos interact with one another but do not form close social bonds. Males are semi-solitary and territorial, while allowing groups of females and non-competing males within their river section."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nocturnalForaging",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt, dass Flusspferde den Tag zur Abkühlung im Wasser verbringen und nachts bis zu 5 km zurücklegen, um an Land zu grasen.",
+            "en": "The Zoopedia states that hippos spend the day in water to cool off and travel up to 5 km at night to graze on land."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt nächtliches Grasen an Land.",
+              "en": "The Zoopedia describes nocturnal grazing on land."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Flusspferd (Hippopotamus amphibius) ist ein großes Säugetier, das in den Flüssen Subsahara-Afrikas zu Hause ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El hipopótamo común (Hippopotamus amphibius) es un gran mamífero propio de los ríos del África subsahariana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’hippopotame commun (Hippopotamus amphibius) est un grand mammifère originaire des rivières d’Afrique subsaharienne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero originario dei fiumi dell’Africa subsahariana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O hipopótamo-comum (Hippopotamus amphibius) é um grande mamífero nativo dos rios da África subsaariana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "カバ（Hippopotamus amphibius）はサハラ以南アフリカの河川に生息する大型哺乳類です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "河马（Hippopotamus amphibius）是一种生活在撒哈拉以南非洲河流中的大型哺乳动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Flusspferd (auch Hippopotamus amphibius) ist ein großes Säugetier, das in den Flüssen Subsahara-Afrikas zu Hause ist.\n\nEs handelt sich um ein großes im Wasser lebendes Tier. Es hat lange, hervorstehende Zähne. Seine Nasenlöcher befinden sich auf der Oberseite der Schnauze, die Ohren sind klein, und die dicke Haut zeigt eine graubraune Färbung.\n\nMännchen werden 4 bis 5 m lang und wiegen zwischen 1.500 und 2.000 kg, während Weibchen 3,3 bis 4,2 m lang und 1.000 bis 1.500 kg schwer werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El hipopótamo común (Hippopotamus amphibius) es un gran mamífero que vive en los ríos del África subsahariana.\n\nEs un animal acuático de gran tamaño, con dientes largos y prominentes. Las fosas nasales se sitúan en la parte superior del hocico, las orejas son pequeñas y la piel gruesa tiene una coloración gris parduzca.\n\nLos machos miden 4–5 m y pesan 1.500–2.000 kg, mientras que las hembras miden 3,3–4,2 m y pesan 1.000–1.500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’hippopotame commun (Hippopotamus amphibius) est un grand mammifère vivant dans les rivières d’Afrique subsaharienne.\n\nC’est un grand animal aquatique doté de longues dents saillantes. Ses narines se situent sur le dessus du museau, ses oreilles sont petites et sa peau épaisse est gris-brun.\n\nLes mâles mesurent 4 à 5 m et pèsent 1 500 à 2 000 kg, tandis que les femelles mesurent 3,3 à 4,2 m et pèsent 1 000 à 1 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero che vive nei fiumi dell’Africa subsahariana.\n\nÈ un grande animale acquatico con lunghi denti sporgenti. Le narici si trovano sulla parte superiore del muso, le orecchie sono piccole e la pelle spessa è grigio-bruna.\n\nI maschi misurano 4–5 m e pesano 1.500–2.000 kg, mentre le femmine misurano 3,3–4,2 m e pesano 1.000–1.500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O hipopótamo-comum (Hippopotamus amphibius) é um grande mamífero que vive nos rios da África subsaariana.\n\nÉ um grande animal aquático, com dentes longos e salientes. As narinas ficam na parte superior do focinho, as orelhas são pequenas e a pele espessa é cinza-acastanhada.\n\nMachos medem 4–5 m e pesam 1.500–2.000 kg, enquanto fêmeas medem 3,3–4,2 m e pesam 1.000–1.500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "カバ（Hippopotamus amphibius）はサハラ以南アフリカの河川に生息する大型哺乳類です。\n\n大型の水生動物で、長く突き出した歯を持ちます。鼻孔は吻の上面にあり、耳は小さく、厚い皮膚は灰褐色です。\n\n雄は全長4～5m、体重1,500～2,000kg、雌は3.3～4.2m、1,000～1,500kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "河马（Hippopotamus amphibius）是一种生活在撒哈拉以南非洲河流中的大型哺乳动物。\n\n它是一种大型水生动物，拥有长而突出的牙齿。鼻孔位于吻部上方，耳朵很小，厚厚的皮肤呈灰褐色。\n\n雄性体长4～5米，体重1,500～2,000千克；雌性体长3.3～4.2米，体重1,000～1,500千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Flusspferd gilt derzeit als gefährdet und die Bestände sind rückläufig. Große Graslandflächen für die Weidehaltung gehen durch Wüstenbildung und die Ausbreitung von Städten und Straßen verloren. Außerdem werden sie von Menschen getötet, um Schäden an Feldfrüchten zu verhindern, ihr Fleisch, ihre Haut und ihre Zähne zu verkaufen oder einfach, weil sie als gefährlich angesehen werden. Inzucht ist ein weiteres Risiko, das besteht, wenn lokale Bestände kleiner als 50 Tiere sind. Im Gegensatz dazu nimmt die Zahl der Flusspferde in Kolumbien rapide zu, nachdem sie aus der Ranch des Drogenbarons Pablo Escobar entkommen sind. Sie haben keine natürlichen Fressfeinde, überweiden Feuchtgebiete, verschmutzen Gewässer und übertragen Krankheiten, die für die lokale Fauna gefährlich sind.\n\nDerzeit laufen Projekte, die gezielt die Wiederherstellung der Lebensräume von Flusspferden vorantreiben. Dazu gehören die Vergrößerung von Naturschutzgebieten, um sie miteinander zu vernetzen, sowie die Wiederanbindung von Feuchtgebieten und Flüssen. Viele Lebensräume der Flusspferde stehen zwar offiziell unter Schutz, doch die Umsetzung dieser Maßnahmen gestaltet sich oft schwierig – und manche Gebiete sind bislang gar nicht geschützt.\n\nUm das Überleben der Flusspferde zu sichern, sind weitere Schutzmaßnahmen und Aktionen nötig.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Hippopotamus is currently considered Vulnerable and populations are declining. Large areas of grazing grassland are being lost through desertification and the expansion of cities and roads. Hippos are also killed to prevent crop damage, for their meat, skin and teeth, or simply because they are considered dangerous. Inbreeding is another risk when local populations fall below 50 animals. By contrast, hippo numbers in Colombia are increasing rapidly after animals escaped from Pablo Escobar's ranch. There they have no natural predators, overgraze wetlands, pollute waterways and spread diseases that can threaten local wildlife.\n\nProjects are currently working to restore hippo habitat, including expanding and connecting protected areas and reconnecting wetlands and rivers. Although many hippo habitats are officially protected, enforcement can be difficult and some areas remain unprotected.\n\nFurther conservation measures and action are needed to secure the species' survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Hippopotamus is currently considered Vulnerable and populations are declining. Large areas of grazing grassland are being lost through desertification and the expansion of cities and roads. Hippos are also killed to prevent crop damage, for their meat, skin and teeth, or simply because they are considered dangerous. Inbreeding is another risk when local populations fall below 50 animals. By contrast, hippo numbers in Colombia are increasing rapidly after animals escaped from Pablo Escobar's ranch. There they have no natural predators, overgraze wetlands, pollute waterways and spread diseases that can threaten local wildlife.\n\nProjects are currently working to restore hippo habitat, including expanding and connecting protected areas and reconnecting wetlands and rivers. Although many hippo habitats are officially protected, enforcement can be difficult and some areas remain unprotected.\n\nFurther conservation measures and action are needed to secure the species' survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El hipopótamo común está considerado Vulnerable y sus poblaciones están disminuyendo. Grandes extensiones de pastizal se pierden por la desertificación y la expansión de ciudades y carreteras. También se mata a hipopótamos para evitar daños en cultivos, vender su carne, piel y dientes o simplemente porque se consideran peligrosos. La endogamia supone otro riesgo cuando las poblaciones locales descienden por debajo de 50 individuos. En cambio, en Colombia la población aumenta rápidamente tras la fuga de animales de la finca de Pablo Escobar; allí carecen de depredadores naturales, sobrepastorean humedales, contaminan cursos de agua y transmiten enfermedades peligrosas para la fauna local.\n\nSe están desarrollando proyectos para restaurar su hábitat, ampliar y conectar áreas protegidas y reconectar humedales y ríos. Muchos hábitats están protegidos oficialmente, pero la aplicación de las medidas puede ser difícil y algunas zonas siguen sin protección.\n\nSon necesarias más medidas para garantizar la supervivencia de la especie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’hippopotame commun est actuellement classé Vulnérable et ses populations sont en déclin. De vastes prairies de pâturage disparaissent à cause de la désertification et de l’expansion des villes et des routes. Les hippopotames sont également tués pour éviter les dégâts aux cultures, pour leur viande, leur peau et leurs dents, ou simplement parce qu’ils sont jugés dangereux. La consanguinité devient un risque lorsque les populations locales comptent moins de 50 individus. À l’inverse, leur nombre augmente rapidement en Colombie après l’évasion d’animaux de la propriété de Pablo Escobar; ils n’y ont pas de prédateurs naturels, surpâturent les zones humides, polluent les eaux et propagent des maladies menaçant la faune locale.\n\nDes projets visent à restaurer leurs habitats, notamment en agrandissant et reliant les zones protégées et en reconnectant zones humides et rivières. De nombreux habitats sont officiellement protégés, mais l’application reste difficile et certaines zones ne le sont toujours pas.\n\nDes mesures supplémentaires sont nécessaires pour assurer la survie de l’espèce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’ippopotamo è attualmente classificato Vulnerabile e le popolazioni sono in diminuzione. Ampie aree di prateria vengono perse a causa della desertificazione e dell’espansione di città e strade. Gli ippopotami vengono inoltre uccisi per evitare danni alle colture, per venderne carne, pelle e denti o semplicemente perché considerati pericolosi. La consanguineità è un altro rischio quando le popolazioni locali scendono sotto i 50 individui. Al contrario, in Colombia il numero di ippopotami aumenta rapidamente dopo la fuga di animali dalla tenuta di Pablo Escobar; lì non hanno predatori naturali, sovrasfruttano le zone umide, inquinano le acque e diffondono malattie pericolose per la fauna locale.\n\nSono in corso progetti per ripristinare l’habitat, ampliare e collegare le aree protette e riconnettere zone umide e fiumi. Molti habitat sono ufficialmente protetti, ma l’applicazione delle misure è spesso difficile e alcune zone restano prive di protezione.\n\nSono necessarie ulteriori azioni per garantirne la sopravvivenza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O hipopótamo-comum é atualmente classificado como Vulnerável e suas populações estão diminuindo. Grandes áreas de pastagem estão sendo perdidas pela desertificação e expansão de cidades e estradas. Hipopótamos também são mortos para evitar danos a plantações, por sua carne, pele e dentes ou simplesmente por serem considerados perigosos. A endogamia é outro risco quando populações locais caem abaixo de 50 indivíduos. Em contraste, na Colômbia a população cresce rapidamente após animais escaparem da fazenda de Pablo Escobar; ali não possuem predadores naturais, sobrepastoreiam áreas úmidas, poluem cursos d’água e transmitem doenças perigosas para a fauna local.\n\nProjetos estão trabalhando na restauração do habitat, ampliação e conexão de áreas protegidas e reconexão de áreas úmidas e rios. Muitos habitats são oficialmente protegidos, mas a aplicação pode ser difícil e algumas áreas continuam sem proteção.\n\nMais medidas são necessárias para garantir a sobrevivência da espécie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "カバは現在危急種に分類され、個体数は減少しています。放牧に利用される広い草地が砂漠化や都市・道路の拡大によって失われています。また、農作物への被害を防ぐため、肉・皮・歯を売るため、あるいは危険視されるために殺されることもあります。地域個体群が50頭未満になると近親交配もリスクになります。一方、コロンビアではパブロ・エスコバルの農場から逃げたカバが急速に増えており、天敵がいないため湿地を過放牧し、水域を汚染し、在来動物に危険な病気を広げています。\n\n生息地回復、保護区の拡大と連結、湿地と河川の再接続を進める事業が行われています。多くの生息地は公式には保護されていますが、実施が難しい場合もあり、未保護の地域も残っています。\n\n種の存続にはさらなる保全措置が必要です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "河马目前被列为易危，种群数量正在下降。用于觅食的大面积草地因荒漠化以及城市和道路扩张而丧失。人们还会为了防止农作物受损、出售肉、皮和牙齿，或仅仅因为认为河马危险而杀死它们。当地方种群少于50只时，近亲繁殖也是风险。相反，哥伦比亚的河马数量在从巴勃罗·埃斯科瓦尔的庄园逃逸后迅速增加；它们在那里没有天敌，会过度啃食湿地、污染水体并传播对当地野生动物有害的疾病。\n\n目前有项目专门恢复河马栖息地，包括扩大并连接保护区，以及重新连通湿地与河流。许多河马栖息地虽然名义上受到保护，但执行往往困难，一些地区仍没有保护。\n\n要确保该物种存续，还需要进一步的保护措施。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Flusspferde interagieren miteinander, bilden aber keine engen Gruppen oder Beziehungen. Männchen leben halbwegs einzelgängerisch und sind territorial. Sie beherrschen einen Flussabschnitt und erlauben Gruppen aus Weibchen sowie nicht konkurrierenden Männchen, dort zu leben. Weibchen wählen ihren Standort nach der Qualität des Lebensraums aus, sodass sich größere Gruppen in besonders günstigen Flussabschnitten aufhalten. Im Wasser verhalten sich Flusspferde untereinander meist friedlich; an Land können sie jedoch deutlich aggressiver auftreten – insbesondere beim Fressen.\n\nFlusspferde paaren sich das ganze Jahr über, vor allem während der Regenzeit. Männliche Flusspferde mit besseren Revieren haben größere Chancen, eine Partnerin zu finden, da es wahrscheinlicher ist, dass Weibchen diesen Flussabschnitt als ihren Lebensraum wählen. Männchen erkennen paarungswillige Weibchen an ihrem Geruch und verfolgen sie dann. Sie umwerben das Weibchen mit Lauten, bis es die Paarung zulässt. Diese erfolgt unter Wasser, und oft sind nur die Nasenlöcher des Weibchens an der Wasseroberfläche zu sehen.\n\nAcht Monate nach der Paarung bringt das Weibchen unter Wasser ein einziges Jungtier zur Welt, das dann für seinen ersten Atemzug zur Wasseroberfläche schwimmt. Die Jungtiere bleiben bis zu einem Alter zwischen 5 und 7 Jahren bei ihrer Mutter, bis sie die Geschlechtsreife erreichen. Danach suchen sie sich ihren eigenen Lebensraum abseits verwandter Tiere.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Hippos interact with each other but do not form close groups or relationships. Males are semi-solitary and territorial. A male controls a section of river and allows groups of females and non-competing males to live there. Females choose areas based on habitat quality, so larger aggregations occur in especially favourable stretches of river. In water hippos are usually relatively peaceful with one another, but on land they can be much more aggressive, especially while feeding.\n\nHippos mate throughout the year, particularly during the rainy season. Males holding better territories are more likely to find mates because females are more likely to choose those river sections. Males identify receptive females by smell and follow them, courting with vocalisations until mating is accepted. Mating takes place underwater, often with only the female's nostrils visible above the surface.\n\nEight months after mating, the female gives birth underwater to a single calf, which then swims to the surface for its first breath. Young remain with their mother until about 5–7 years of age, when they reach sexual maturity. They then move away from related animals to establish their own habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Hippos interact with each other but do not form close groups or relationships. Males are semi-solitary and territorial. A male controls a section of river and allows groups of females and non-competing males to live there. Females choose areas based on habitat quality, so larger aggregations occur in especially favourable stretches of river. In water hippos are usually relatively peaceful with one another, but on land they can be much more aggressive, especially while feeding.\n\nHippos mate throughout the year, particularly during the rainy season. Males holding better territories are more likely to find mates because females are more likely to choose those river sections. Males identify receptive females by smell and follow them, courting with vocalisations until mating is accepted. Mating takes place underwater, often with only the female's nostrils visible above the surface.\n\nEight months after mating, the female gives birth underwater to a single calf, which then swims to the surface for its first breath. Young remain with their mother until about 5–7 years of age, when they reach sexual maturity. They then move away from related animals to establish their own habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los hipopótamos interactúan entre sí, pero no forman grupos ni vínculos estrechos. Los machos son semisolitarios y territoriales. Controlan tramos de río y permiten que vivan allí grupos de hembras y machos no competidores. Las hembras eligen las zonas según la calidad del hábitat, por lo que se forman agrupaciones mayores en los mejores tramos. En el agua suelen ser relativamente pacíficos, pero en tierra pueden mostrarse mucho más agresivos, sobre todo al alimentarse.\n\nSe aparean durante todo el año, especialmente en la estación lluviosa. Los machos con mejores territorios tienen más oportunidades de aparearse. Detectan a las hembras receptivas por el olor, las siguen y las cortejan mediante vocalizaciones. El apareamiento tiene lugar bajo el agua.\n\nOcho meses después, la hembra da a luz bajo el agua a una sola cría, que nada hasta la superficie para respirar por primera vez. Las crías permanecen con la madre hasta los 5–7 años, cuando alcanzan la madurez sexual, y después buscan su propio espacio lejos de sus parientes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les hippopotames interagissent entre eux mais ne forment pas de groupes ni de liens étroits. Les mâles sont semi-solitaire et territoriaux. Ils contrôlent une portion de rivière et y tolèrent des groupes de femelles ainsi que des mâles non concurrents. Les femelles choisissent leur emplacement selon la qualité de l’habitat, si bien que les meilleurs tronçons accueillent de plus grands rassemblements. Dans l’eau, ils sont généralement relativement paisibles entre eux; à terre ils peuvent devenir beaucoup plus agressifs, surtout lorsqu’ils se nourrissent.\n\nIls s’accouplent toute l’année, surtout pendant la saison des pluies. Les mâles occupant les meilleurs territoires ont davantage de chances de rencontrer des femelles. Ils détectent les femelles réceptives à l’odeur et les courtisent par des vocalisations. L’accouplement se déroule sous l’eau.\n\nHuit mois plus tard, la femelle met bas sous l’eau un seul petit, qui remonte à la surface pour sa première respiration. Les jeunes restent avec leur mère jusqu’à 5–7 ans, âge de leur maturité sexuelle, puis s’éloignent de leurs apparentés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli ippopotami interagiscono tra loro ma non formano gruppi o legami stretti. I maschi sono semi-solitari e territoriali. Controllano un tratto di fiume e tollerano gruppi di femmine e maschi non concorrenti. Le femmine scelgono le aree in base alla qualità dell’habitat, per cui nei tratti migliori si formano aggregazioni più grandi. In acqua sono generalmente relativamente pacifici, mentre sulla terra possono essere più aggressivi, soprattutto durante l’alimentazione.\n\nSi accoppiano durante tutto l’anno, soprattutto nella stagione delle piogge. I maschi con territori migliori hanno più possibilità di trovare una compagna. Riconoscono le femmine ricettive dall’odore e le corteggiano con vocalizzazioni. L’accoppiamento avviene sott’acqua.\n\nOtto mesi dopo, la femmina partorisce sott’acqua un solo piccolo, che nuota in superficie per il primo respiro. I giovani rimangono con la madre fino a 5–7 anni, quando raggiungono la maturità sessuale, e poi cercano un proprio habitat lontano dai parenti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Hipopótamos interagem entre si, mas não formam grupos ou laços próximos. Machos são semi-solitários e territoriais. Controlam trechos de rio e toleram grupos de fêmeas e machos não concorrentes. As fêmeas escolhem áreas conforme a qualidade do habitat, de modo que os melhores trechos recebem agregações maiores. Na água costumam ser relativamente pacíficos entre si, mas em terra podem ser muito mais agressivos, especialmente durante a alimentação.\n\nAcasalam-se o ano todo, principalmente na estação chuvosa. Machos com melhores territórios têm mais chances de encontrar fêmeas. Identificam fêmeas receptivas pelo cheiro e as cortejam com vocalizações. O acasalamento ocorre debaixo d’água.\n\nOito meses depois, a fêmea dá à luz debaixo d’água a um único filhote, que nada até a superfície para respirar pela primeira vez. Os jovens permanecem com a mãe até 5–7 anos, quando atingem a maturidade sexual, e depois procuram seu próprio habitat longe de parentes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "カバは互いに関わりますが、緊密な群れや関係を作るわけではありません。雄は半単独性で縄張りを持ち、川の一区間を支配して雌の群れや競争相手ではない雄を許容します。雌は生息地の質によって場所を選ぶため、良好な川区間には大きな集団が集まります。水中では比較的平和ですが、陸上では特に採食時に攻撃的になることがあります。\n\n一年中繁殖しますが、特に雨季に多くなります。良い縄張りを持つ雄ほど雌と出会いやすく、匂いで発情した雌を識別し、鳴き声で求愛します。交尾は水中で行われます。\n\n交尾から8か月後、雌は水中で1頭の子を出産し、子は最初の呼吸のため水面へ泳ぎます。若いカバは5～7歳で性成熟するまで母親と暮らし、その後、血縁個体から離れた自分の生息場所を探します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "河马会彼此互动，但不会形成紧密的群体关系。雄性具有半独居性和领地性，会控制一段河流，并允许雌性群体及不构成竞争的雄性在其中生活。雌性会根据栖息地质量选择位置，因此条件特别好的河段会聚集更大的群体。它们在水中通常相对和平，但在陆地上，尤其进食时，可能明显更具攻击性。\n\n河马全年都可交配，雨季尤其常见。拥有更好领地的雄性更容易找到配偶。雄性通过气味识别愿意交配的雌性，并用叫声求偶。交配在水下进行。\n\n交配8个月后，雌性会在水下产下一只幼崽，幼崽随后游到水面进行第一次呼吸。幼崽会跟随母亲直到5～7岁达到性成熟，之后会离开亲属寻找自己的栖息地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die nächsten lebenden Verwandten der Flusspferde sind Wale und Delfine.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Haut von Flusspferden ist 6 cm dick und sondert eine rote Substanz ab, die wie Sonnencreme wirkt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Flusspferde können ihr Maul in einem Winkel von 150° öffnen. Dies wird als Gähnen bezeichnet und ist für gewöhnlich ein Ausdruck der Aggression.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Flusspferde haben sehr große Zähne; ihre Eckzähne werden bis zu 50 cm lang.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Flusspferde verbringen den Tag im Wasser, um sich abzukühlen, und legen nachts bis zu 5 km zurück, um an Land zu grasen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The closest living relatives of hippos are whales and dolphins.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippo skin is about 6 cm thick and secretes a red substance that acts like sunscreen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos can open their mouths to an angle of 150°. This 'yawning' is usually a sign of aggression.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos have very large teeth; their canine teeth can reach 50 cm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos spend the day in water to keep cool and travel up to 5 km at night to graze on land.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The closest living relatives of hippos are whales and dolphins.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippo skin is about 6 cm thick and secretes a red substance that acts like sunscreen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos can open their mouths to an angle of 150°. This 'yawning' is usually a sign of aggression.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos have very large teeth; their canine teeth can reach 50 cm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hippos spend the day in water to keep cool and travel up to 5 km at night to graze on land.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los parientes vivos más cercanos de los hipopótamos son las ballenas y los delfines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su piel mide unos 6 cm de grosor y segrega una sustancia roja que actúa como protector solar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pueden abrir la boca hasta un ángulo de 150°; este 'bostezo' suele ser una expresión de agresividad.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sus caninos pueden alcanzar 50 cm de longitud.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pasan el día en el agua para refrescarse y recorren hasta 5 km por la noche para pastar en tierra.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les plus proches parents vivants des hippopotames sont les baleines et les dauphins.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leur peau mesure environ 6 cm d’épaisseur et sécrète une substance rouge jouant le rôle d’écran solaire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils peuvent ouvrir la bouche à 150°; ce 'bâillement' est généralement une démonstration d’agressivité.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leurs canines peuvent atteindre 50 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils passent la journée dans l’eau pour se rafraîchir et parcourent jusqu’à 5 km la nuit pour brouter à terre.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I parenti viventi più prossimi degli ippopotami sono balene e delfini.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La pelle è spessa circa 6 cm e secerne una sostanza rossa che funziona come protezione solare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possono aprire la bocca fino a 150°; questo 'sbadiglio' è normalmente un segnale di aggressività.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I canini possono raggiungere 50 cm di lunghezza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Passano il giorno in acqua per rinfrescarsi e percorrono fino a 5 km di notte per pascolare sulla terraferma.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os parentes vivos mais próximos dos hipopótamos são baleias e golfinhos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A pele tem cerca de 6 cm de espessura e secreta uma substância vermelha que funciona como protetor solar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Podem abrir a boca em um ângulo de 150°; esse 'bocejo' normalmente expressa agressividade.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os caninos podem chegar a 50 cm de comprimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Passam o dia na água para se refrescar e percorrem até 5 km à noite para pastar em terra.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "カバに最も近い現生の仲間はクジラとイルカです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "皮膚は約6cmの厚さがあり、日焼け止めのように働く赤い物質を分泌します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "口を150°まで開くことができ、この『あくび』は通常攻撃性の表現です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "犬歯は最大50cmになります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "日中は体を冷やすため水中で過ごし、夜には陸上で草を食べるため最大5km移動します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "河马现存的最近亲是鲸和海豚。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "河马皮肤厚约6厘米，并会分泌一种红色物质，具有类似防晒霜的作用。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "河马能把嘴张到150°，这种“打哈欠”通常是攻击性的表现。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "犬齿可长到50厘米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "白天待在水中降温，夜间可行走最多5公里到陆地上吃草。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/5ca986c0/Hippopotamus_Common_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Hippopotamus amphibius/map/Hippopotamus amphibius map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNWNhOTg2YzAvSGlwcG9wb3RhbXVzX0NvbW1vbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Flusspferd – Planet Zoo 2",
+            "en": "Common Hippopotamus – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Flusspferds aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Common Hippopotamus."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Hippopotamus amphibius/bilder/Hippopotamus amphibius 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/5ca986c0/Hippopotamus_Common_illustration.jpg",
+          "alt": {
+            "de": "Flusspferd – Zoopedia-Illustration",
+            "en": "Common Hippopotamus – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Flusspferds aus der Planet Zoo 2 Zoopedia.",
+            "en": "Common Hippopotamus illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Hippopotamus amphibius/bilder/Hippopotamus amphibius illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Flusspferd",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/flusspferd",
+        "en": "https://www.planetzoogame.com/2/zoopedia/common-hippopotamus",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/common-hippopotamus",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/hipop%C3%B3tamo-com%C3%BAn",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/hippopotame-commun",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/ippopotamo",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/hipop%C3%B3tamo-comum",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AB%E3%83%90",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%B2%B3%E9%A9%AC"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "id": "Caesio teres",
+  "identitaet": {
+    "namen": {
+      "de": "Goldband-Füsilier",
+      "en": "Blue and Gold Fusilier",
+      "en-US": "Blue and Gold Fusilier",
+      "es": "Fusilero azul de bandas doradas",
+      "fr": "Fusilier bleu et or",
+      "it": "Pesce fuciliere blu e oro",
+      "pt-BR": "Fuzileiro-azul",
+      "ja": "ササムロ",
+      "zh-Hans": "褐梅鲷"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      ""
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Lutjanidae",
+          "gattung": "Caesio",
+          "art": "Caesio teres",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "wert": 0.25,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine durchschnittliche Länge von 25 cm und keine geschlechtsspezifischen Größenunterschiede.",
+            "en": "The Zoopedia gives an average length of 25 cm and states that there are no sex-specific size differences."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Caesio teres"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1,
+          "max": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "min": 24,
+          "max": 48,
+          "einheit": "stunde",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "laich",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Männchen und Weibchen geben beim Massenlaichen gleichzeitig Eier und Sperma ins freie Wasser ab. Eine Anzahl der Eier nennt die Zoopedia nicht.",
+            "en": "During mass spawning, males and females release eggs and sperm into open water at the same time. The Zoopedia does not state the number of eggs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "schwarm",
+          "wert": "largeSchool",
+          "minGruppengroesse": 100,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt riesige Schwärme mit Hunderten von Artgenossen; gelegentlich schließen sich Goldband-Füsiliere anderen Füsilierarten an.",
+            "en": "The Zoopedia describes huge schools with hundreds of conspecifics; Blue and Gold Fusiliers sometimes join other fusilier species."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "planktivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt hauptsächlich Zooplankton als Nahrung.",
+              "en": "The Zoopedia states that the species mainly feeds on zooplankton."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "microscopicOrganisms",
+                "typ": "nahrung",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "zooplankton",
+                "typ": "nahrung",
+                "beziehung": "praedation",
+                "wirkung": "+/-",
+                "bedingung": {
+                  "selbst": [],
+                  "ziel": []
+                },
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Goldband-Füsilier (Caesio teres) kommt überall im tropischen Indo-Pazifik vor. Er lebt in Riffgebieten, meistens in Tiefen von bis zu 60 m, in tiefen Lagunen und entlang der seewärtigen Riffseiten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue and Gold Fusilier (Caesio teres) occurs throughout the tropical Indo-Pacific. It inhabits reef areas, usually at depths of up to 60 m, including deep lagoons and the seaward sides of reefs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue and Gold Fusilier (Caesio teres) occurs throughout the tropical Indo-Pacific. It inhabits reef areas, usually at depths of up to 60 m, including deep lagoons and the seaward sides of reefs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El fusilero azul de bandas doradas (Caesio teres) se encuentra por todo el Indo-Pacífico tropical. Vive en zonas de arrecifes, normalmente hasta 60 m de profundidad, en lagunas profundas y en las laderas de los arrecifes orientadas al mar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le fusilier bleu et or (Caesio teres) est présent dans tout l’Indo-Pacifique tropical. Il vit dans les zones récifales, généralement jusqu’à 60 m de profondeur, notamment dans les lagons profonds et sur les pentes externes des récifs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce fuciliere blu e oro (Caesio teres) è diffuso in tutto l’Indo-Pacifico tropicale. Vive nelle aree di barriera corallina, generalmente fino a 60 m di profondità, nelle lagune profonde e lungo i versanti esterni delle barriere.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O fuzileiro-azul (Caesio teres) ocorre em todo o Indo-Pacífico tropical. Vive em áreas de recifes, geralmente até 60 m de profundidade, incluindo lagoas profundas e as faces dos recifes voltadas para o mar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ササムロ（Caesio teres）は熱帯インド太平洋全域に分布し、通常は水深60mまでのサンゴ礁域、深いラグーン、外洋側の礁斜面に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐梅鲷（Caesio teres）广泛分布于热带印度-太平洋海域，通常生活在水深60米以内的珊瑚礁环境、深泻湖以及面向外海的礁坡。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Goldband-Füsilier (auch Caesio teres) ist ein Meeresfisch, den man überall im tropischen Indo-Pazifik findet. Er lebt in Riffgebieten, meistens in Tiefen von bis zu 60 m, wo er in tiefen Lagunen und entlang der Riffe zum Meer hin Schwärme bildet.\n\nSie haben einen schlanken, dünnen blauen Körper mit einer helleren Unterseite. Ein goldener Streifen verläuft von der Rückenflosse bis zur Schwanzflosse, die vollständig goldfarben ist.\n\nDer Goldband-Füsilier ist im Schnitt 25 cm lang und es liegen keine geschlechtsspezifischen Unterschiede in Erscheinung oder Größe vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue and Gold Fusilier (Caesio teres) is a marine fish found throughout the tropical Indo-Pacific. It inhabits reef areas, usually at depths of up to 60 m, where it forms schools in deep lagoons and along the seaward sides of reefs.\n\nIt has a slender blue body with a paler underside. A golden stripe runs from the dorsal fin to the tail fin, which is entirely golden.\n\nThe Blue and Gold Fusilier averages 25 cm in length, and there are no sex-specific differences in appearance or size.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue and Gold Fusilier (Caesio teres) is a marine fish found throughout the tropical Indo-Pacific. It inhabits reef areas, usually at depths of up to 60 m, where it forms schools in deep lagoons and along the seaward sides of reefs.\n\nIt has a slender blue body with a paler underside. A golden stripe runs from the dorsal fin to the tail fin, which is entirely golden.\n\nThe Blue and Gold Fusilier averages 25 cm in length, and there are no sex-specific differences in appearance or size.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El fusilero azul de bandas doradas (Caesio teres) es un pez marino presente en todo el Indo-Pacífico tropical. Vive en zonas de arrecifes, normalmente hasta 60 m de profundidad, donde forma bancos en lagunas profundas y a lo largo de las laderas exteriores de los arrecifes.\n\nTiene un cuerpo esbelto y azul con la parte inferior más clara. Una franja dorada se extiende desde la aleta dorsal hasta la aleta caudal, que es totalmente dorada.\n\nMide de media 25 cm y no presenta diferencias sexuales de aspecto o tamaño.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le fusilier bleu et or (Caesio teres) est un poisson marin présent dans tout l’Indo-Pacifique tropical. Il vit dans les zones récifales, généralement jusqu’à 60 m de profondeur, où il forme des bancs dans les lagons profonds et le long des pentes récifales tournées vers le large.\n\nSon corps est fin, élancé et bleu, avec une face ventrale plus claire. Une bande dorée s’étend de la nageoire dorsale à la nageoire caudale, entièrement dorée.\n\nIl mesure en moyenne 25 cm et ne présente pas de différence entre les sexes en apparence ou en taille.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce fuciliere blu e oro (Caesio teres) è un pesce marino diffuso in tutto l’Indo-Pacifico tropicale. Vive nelle aree di barriera corallina, generalmente fino a 60 m di profondità, dove forma banchi nelle lagune profonde e lungo i versanti rivolti verso il mare.\n\nHa un corpo snello e blu con la parte inferiore più chiara. Una striscia dorata corre dalla pinna dorsale alla pinna caudale, completamente dorata.\n\nÈ lungo in media 25 cm e non presenta differenze tra i sessi nell’aspetto o nelle dimensioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O fuzileiro-azul (Caesio teres) é um peixe marinho encontrado em todo o Indo-Pacífico tropical. Vive em áreas de recifes, geralmente até 60 m de profundidade, onde forma cardumes em lagoas profundas e ao longo das faces dos recifes voltadas para o mar.\n\nPossui corpo azul fino e alongado, com a parte inferior mais clara. Uma faixa dourada vai da nadadeira dorsal até a caudal, que é totalmente dourada.\n\nMede em média 25 cm e não apresenta diferenças sexuais de aparência ou tamanho.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ササムロ（Caesio teres）は熱帯インド太平洋全域に分布する海水魚です。通常は水深60mまでのサンゴ礁域に生息し、深いラグーンや外洋側の礁斜面で群れを作ります。\n\n細長い青い体を持ち、腹側はより淡い色です。背びれ付近から尾びれまで金色の帯が走り、尾びれ全体も金色です。\n\n平均全長は25cmで、外見や大きさに雌雄差はありません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐梅鲷（Caesio teres）是一种广泛分布于热带印度-太平洋的海鱼。它通常生活在水深60米以内的珊瑚礁环境，在深泻湖以及面向外海的礁坡附近成群活动。\n\n它的身体细长呈蓝色，腹部颜色较浅。从背鳍附近到尾鳍有一条金黄色带纹，尾鳍整体也呈金黄色。\n\n平均体长约25厘米，雌雄在外观和体型上没有明显差异。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Goldband-Füsilier gilt zwar als nicht gefährdet, ist aber trotzdem von Überfischung und der Zerstörung seines Lebensraums betroffen. Als Schwarmfisch ist er besonders leicht zu fangen, vor allem mit Netzen und anderen Fischfanggeräten. Zusätzlich verschlechtert sich der Zustand der Korallenriff-Ökosysteme weltweit aufgrund des Klimawandels, der Übersäuerung der Weltmeere und der Umweltverschmutzung, wodurch Rückzugsorte und Nahrungsgebiete verloren gehen. Die Bebauung der Küsten und zerstörerische Fangmethoden wie Dynamitfischen verstärken diese Bedrohungen noch zusätzlich.\n\nFüsiliere profitieren von allgemeinen Maßnahmen zum Schutz ihres Lebensraums und einem nachhaltigen Fischereimanagement. Wichtige Rifflebensräume werden im Rahmen von Meeresschutzgebieten geschützt, sodass von Riffen abhängige Arten ohne menschliche Interferenz laichen und wachsen können. Fangbeschränkungen und saisonale Einschränkungen tragen dazu bei, eine Überfischung zu verhindern. Aktive Projekte zur Wiederherstellung von Riffen zielen darauf ab, beschädigte Korallenlebensräume zu rehabilitieren. Durch gemeinschaftliche Kampagnen wird die lokale Bevölkerung mit wirtschaftlichen Anreizen dazu ermutigt, nachhaltige Fangmethoden anzuwenden.\n\nZusammen helfen diese Maßnahmen auch den Goldband-Füsilieren, sich in gesunden Riff-Ökosystemen weiter gut zu entwickeln.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Although the Blue and Gold Fusilier is considered Least Concern, it is still affected by overfishing and habitat destruction. As a schooling fish it is especially easy to catch, particularly with nets and other fishing gear. Coral reef ecosystems worldwide are also deteriorating because of climate change, ocean acidification and pollution, which removes shelter and feeding areas. Coastal development and destructive fishing practices such as dynamite fishing intensify these threats.\n\nFusiliers benefit from general habitat protection measures and sustainable fisheries management. Important reef habitats are protected within marine protected areas, allowing reef-dependent species to spawn and grow without human interference. Catch limits and seasonal restrictions help prevent overfishing. Active reef-restoration projects aim to rehabilitate damaged coral habitats. Community campaigns encourage local people to use sustainable fishing methods by providing economic incentives.\n\nTogether, these measures also help Blue and Gold Fusiliers continue to thrive in healthy reef ecosystems.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Although the Blue and Gold Fusilier is considered Least Concern, it is still affected by overfishing and habitat destruction. As a schooling fish it is especially easy to catch, particularly with nets and other fishing gear. Coral reef ecosystems worldwide are also deteriorating because of climate change, ocean acidification and pollution, which removes shelter and feeding areas. Coastal development and destructive fishing practices such as dynamite fishing intensify these threats.\n\nFusiliers benefit from general habitat protection measures and sustainable fisheries management. Important reef habitats are protected within marine protected areas, allowing reef-dependent species to spawn and grow without human interference. Catch limits and seasonal restrictions help prevent overfishing. Active reef-restoration projects aim to rehabilitate damaged coral habitats. Community campaigns encourage local people to use sustainable fishing methods by providing economic incentives.\n\nTogether, these measures also help Blue and Gold Fusiliers continue to thrive in healthy reef ecosystems.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Aunque está clasificado como de Preocupación Menor, el fusilero azul de bandas doradas se ve afectado por la sobrepesca y la destrucción del hábitat. Al ser un pez de cardumen resulta especialmente fácil de capturar, sobre todo con redes y otros aparejos. Además, los arrecifes de coral de todo el mundo se deterioran por el cambio climático, la acidificación de los océanos y la contaminación, lo que reduce las zonas de refugio y alimentación. El desarrollo costero y las técnicas destructivas como la pesca con dinamita agravan aún más estas amenazas.\n\nLos fusileros se benefician de las medidas generales de protección del hábitat y de una gestión pesquera sostenible. Los arrecifes importantes se protegen mediante áreas marinas protegidas, permitiendo que las especies dependientes de los arrecifes desoven y crezcan sin interferencia humana. Los límites de captura y las restricciones estacionales ayudan a evitar la sobrepesca. Los proyectos de restauración buscan rehabilitar los hábitats coralinos dañados. Las campañas comunitarias ofrecen incentivos económicos para fomentar métodos de pesca sostenibles.\n\nEn conjunto, estas medidas ayudan a que el fusilero azul de bandas doradas continúe prosperando en ecosistemas de arrecife saludables.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Bien que classé en Préoccupation mineure, le fusilier bleu et or est affecté par la surpêche et la destruction de son habitat. En tant que poisson grégaire, il est particulièrement facile à capturer, notamment avec des filets et d’autres engins de pêche. Les écosystèmes coralliens se dégradent également dans le monde entier sous l’effet du changement climatique, de l’acidification des océans et de la pollution, ce qui réduit les zones de refuge et d’alimentation. L’aménagement côtier et les méthodes destructrices telles que la pêche à la dynamite aggravent encore ces menaces.\n\nLes fusiliers profitent des mesures générales de protection de l’habitat et d’une gestion durable de la pêche. Les habitats récifaux importants sont protégés dans des aires marines protégées, permettant aux espèces dépendantes des récifs de frayer et de grandir sans intervention humaine. Les restrictions de capture et les fermetures saisonnières contribuent à éviter la surpêche. Des projets actifs de restauration visent à réhabiliter les coraux endommagés. Des campagnes communautaires encouragent les populations locales à adopter des méthodes de pêche durables grâce à des incitations économiques.\n\nEnsemble, ces mesures aident également les fusiliers bleu et or à continuer de prospérer dans des récifs en bonne santé.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sebbene sia considerato a rischio minimo, il pesce fuciliere blu e oro risente comunque della pesca eccessiva e della distruzione dell’habitat. Vivendo in banchi è particolarmente facile da catturare, soprattutto con reti e altri attrezzi da pesca. Inoltre, gli ecosistemi delle barriere coralline di tutto il mondo si stanno deteriorando a causa dei cambiamenti climatici, dell’acidificazione degli oceani e dell’inquinamento, con perdita di rifugi e aree di alimentazione. Lo sviluppo costiero e metodi distruttivi come la pesca con la dinamite aggravano ulteriormente le minacce.\n\nI fucilieri beneficiano delle misure generali di protezione dell’habitat e di una gestione sostenibile della pesca. Importanti habitat di barriera sono protetti in aree marine protette, permettendo alle specie dipendenti dalle barriere di deporre le uova e crescere senza interferenze umane. Limiti di cattura e restrizioni stagionali aiutano a prevenire la pesca eccessiva. Progetti di ripristino mirano a riabilitare gli habitat corallini danneggiati. Campagne comunitarie incoraggiano la popolazione locale ad adottare metodi sostenibili tramite incentivi economici.\n\nNel complesso, queste misure aiutano i fucilieri blu e oro a prosperare in ecosistemi di barriera sani.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Embora seja considerado Pouco Preocupante, o fuzileiro-azul ainda é afetado pela sobrepesca e pela destruição do habitat. Como vive em cardumes, é particularmente fácil de capturar, sobretudo com redes e outros equipamentos. Os ecossistemas de recifes de coral também estão se deteriorando no mundo todo devido às mudanças climáticas, à acidificação dos oceanos e à poluição, o que reduz áreas de abrigo e alimentação. O desenvolvimento costeiro e métodos destrutivos, como a pesca com dinamite, agravam essas ameaças.\n\nOs fuzileiros se beneficiam de medidas gerais de proteção do habitat e da gestão sustentável da pesca. Habitats recifais importantes são protegidos em áreas marinhas protegidas, permitindo que espécies dependentes dos recifes desovem e cresçam sem interferência humana. Limites de captura e restrições sazonais ajudam a evitar a sobrepesca. Projetos de restauração buscam recuperar habitats de coral danificados. Campanhas comunitárias incentivam a população local a adotar métodos sustentáveis por meio de incentivos econômicos.\n\nEm conjunto, essas medidas ajudam o fuzileiro-azul a continuar prosperando em recifes saudáveis.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ササムロは低危険種とされていますが、乱獲や生息地破壊の影響を受けています。群れで泳ぐため網などで捕獲されやすく、さらに気候変動、海洋酸性化、汚染によって世界各地のサンゴ礁生態系が悪化し、隠れ場所や餌場が失われています。沿岸開発やダイナマイト漁などの破壊的漁法も脅威を増大させます。\n\nササムロは、生息地保護や持続可能な漁業管理の恩恵を受けます。重要なサンゴ礁は海洋保護区で守られ、礁に依存する種が人間の干渉を受けずに産卵・成長できるようになります。漁獲制限や季節的な規制は乱獲防止に役立ちます。損傷したサンゴ礁の再生事業も進められ、地域住民には経済的インセンティブを通じて持続可能な漁法の採用が促されています。\n\nこれらの対策は、健全なサンゴ礁生態系の中でササムロが繁栄し続ける助けとなります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "虽然褐梅鲷被列为无危物种，但仍受到过度捕捞和栖息地破坏的影响。由于它们集群活动，尤其容易被渔网和其他渔具捕获。与此同时，气候变化、海洋酸化和污染正导致全球珊瑚礁生态系统恶化，使其失去庇护场所和觅食区域。沿海开发以及炸鱼等破坏性捕捞方式进一步加剧了这些威胁。\n\n褐梅鲷能够从一般性的栖息地保护措施和可持续渔业管理中受益。重要的珊瑚礁栖息地被纳入海洋保护区，使依赖珊瑚礁的物种能够在人类干扰较少的环境中产卵和生长。捕捞限制和季节性禁渔有助于防止过度捕捞。主动的珊瑚礁修复项目旨在恢复受损的珊瑚生境。社区项目通过经济激励鼓励当地居民采用可持续捕捞方式。\n\n这些措施共同帮助褐梅鲷在健康的珊瑚礁生态系统中继续繁衍。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Der Goldband-Füsilier ist ein sehr geselliger Fisch, der in riesigen Schwärmen mit Hunderten von Artgenossen lebt und sich beim Schwimmen über Korallenriffen im offenen Meer mitunter anderen Füsilierarten anschließt.\n\nGoldband-Füsiliere paaren sich das ganze Jahr über, besonders häufig in den wärmeren Monaten. Bei der Balz in Schwärmen zeigen die Männchen ihre leuchtenden Farben und schwimmen besonders geschickt, um die Weibchen zu beeindrucken und anzulocken. Das Laichen findet in offenen Gewässern oder in der Nähe von Korallenriffen statt, wobei Männchen und Weibchen gleichzeitig Eier und Sperma freisetzen – ein Prozess, der als „Massenlaichen“ bezeichnet wird.\n\nNach der Befruchtung sind die Eier pelagisch (sie treiben frei im offenen Meer) und schlüpfen innerhalb von 24 bis 48 Stunden zu winzigen, durchsichtigen Larven. Sie treiben mit dem Plankton, ernähren sich von mikroskopisch kleinen Organismen und entwickeln sich über mehrere Wochen hinweg allmählich zu jungen Füsilieren.\n\nWenn sie größer werden, lassen sich die Jungfische in der Nähe von Korallenriffen nieder und bilden eigene Schwärme, um sich vor Fressfeinden zu schützen. Goldband-Füsiliere werden mit 1 bis 2 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue and Gold Fusilier is a highly social fish that lives in huge schools containing hundreds of conspecifics and sometimes joins other fusilier species while swimming above coral reefs in the open sea.\n\nBlue and Gold Fusiliers breed throughout the year, especially during the warmer months. During schooling courtship, males display their bright colours and swim skillfully to impress and attract females. Spawning occurs in open water or close to coral reefs, with males and females releasing eggs and sperm at the same time in a process known as mass spawning.\n\nAfter fertilisation, the eggs are pelagic and drift freely in the open sea. They hatch within 24–48 hours into tiny transparent larvae. The larvae drift with the plankton, feed on microscopic organisms and gradually develop into juvenile fusiliers over several weeks.\n\nAs they grow, juveniles settle near coral reefs and form their own schools for protection from predators. Blue and Gold Fusiliers reach sexual maturity at 1–2 years of age.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue and Gold Fusilier is a highly social fish that lives in huge schools containing hundreds of conspecifics and sometimes joins other fusilier species while swimming above coral reefs in the open sea.\n\nBlue and Gold Fusiliers breed throughout the year, especially during the warmer months. During schooling courtship, males display their bright colours and swim skillfully to impress and attract females. Spawning occurs in open water or close to coral reefs, with males and females releasing eggs and sperm at the same time in a process known as mass spawning.\n\nAfter fertilisation, the eggs are pelagic and drift freely in the open sea. They hatch within 24–48 hours into tiny transparent larvae. The larvae drift with the plankton, feed on microscopic organisms and gradually develop into juvenile fusiliers over several weeks.\n\nAs they grow, juveniles settle near coral reefs and form their own schools for protection from predators. Blue and Gold Fusiliers reach sexual maturity at 1–2 years of age.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El fusilero azul de bandas doradas es un pez muy sociable que vive en enormes bancos de cientos de individuos y a veces se une a otras especies de fusileros mientras nada sobre arrecifes de coral en mar abierto.\n\nSe reproduce durante todo el año, especialmente en los meses más cálidos. Durante el cortejo en bancos, los machos muestran colores brillantes y nadan con habilidad para impresionar y atraer a las hembras. El desove tiene lugar en aguas abiertas o cerca de arrecifes de coral, cuando machos y hembras liberan simultáneamente huevos y esperma, un proceso conocido como desove masivo.\n\nTras la fecundación, los huevos son pelágicos y flotan libremente en el mar abierto. Eclosionan en 24–48 horas y producen diminutas larvas transparentes. Estas derivan con el plancton, se alimentan de organismos microscópicos y se desarrollan gradualmente durante varias semanas.\n\nAl crecer, los juveniles se establecen cerca de arrecifes y forman sus propios bancos para protegerse de los depredadores. Alcanzan la madurez sexual entre 1 y 2 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le fusilier bleu et or est un poisson très sociable qui vit en immenses bancs de plusieurs centaines d’individus et rejoint parfois d’autres espèces de fusiliers au-dessus des récifs coralliens en pleine mer.\n\nIl se reproduit toute l’année, surtout pendant les mois les plus chauds. Lors des parades en bancs, les mâles affichent leurs couleurs vives et nagent avec adresse afin d’impressionner et d’attirer les femelles. Le frai se déroule en eau libre ou près des récifs coralliens, mâles et femelles libérant simultanément leurs gamètes lors d’un frai collectif.\n\nAprès la fécondation, les œufs sont pélagiques et dérivent librement en mer. Ils éclosent en 24 à 48 heures en minuscules larves transparentes. Celles-ci dérivent avec le plancton, se nourrissent d’organismes microscopiques et se développent progressivement pendant plusieurs semaines.\n\nEn grandissant, les jeunes s’installent près des récifs et forment leurs propres bancs pour se protéger des prédateurs. La maturité sexuelle est atteinte entre 1 et 2 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce fuciliere blu e oro è molto sociale e vive in enormi banchi composti da centinaia di individui, a volte unendosi ad altre specie di fucilieri sopra le barriere coralline in mare aperto.\n\nSi riproduce tutto l’anno, soprattutto nei mesi più caldi. Durante il corteggiamento in branco, i maschi mostrano colori vivaci e nuotano abilmente per impressionare e attirare le femmine. La deposizione avviene in acque aperte o vicino alle barriere coralline, con maschi e femmine che rilasciano simultaneamente uova e sperma in un processo di deposizione di massa.\n\nDopo la fecondazione, le uova sono pelagiche e galleggiano liberamente in mare aperto. Si schiudono entro 24–48 ore in minuscole larve trasparenti. Le larve si lasciano trasportare dal plancton, si nutrono di organismi microscopici e si sviluppano gradualmente nel corso di diverse settimane.\n\nCrescendo, i giovani si stabiliscono vicino alle barriere e formano banchi propri per proteggersi dai predatori. La maturità sessuale viene raggiunta tra 1 e 2 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O fuzileiro-azul é um peixe muito social que vive em enormes cardumes com centenas de indivíduos e às vezes se junta a outras espécies de fuzileiros enquanto nada sobre recifes de coral em mar aberto.\n\nReproduz-se durante todo o ano, especialmente nos meses mais quentes. Durante o cortejo em cardumes, os machos exibem cores vivas e nadam com habilidade para impressionar e atrair as fêmeas. A desova ocorre em águas abertas ou perto de recifes, com machos e fêmeas liberando ovos e esperma ao mesmo tempo em um processo de desova em massa.\n\nApós a fecundação, os ovos são pelágicos e ficam à deriva livremente em mar aberto. Eclodem em 24–48 horas, originando pequenas larvas transparentes. As larvas derivam com o plâncton, alimentam-se de organismos microscópicos e se desenvolvem gradualmente ao longo de várias semanas.\n\nÀ medida que crescem, os juvenis se estabelecem perto de recifes e formam seus próprios cardumes para se proteger de predadores. A maturidade sexual é atingida entre 1 e 2 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ササムロは非常に社会性が高く、数百匹からなる巨大な群れで生活し、外洋のサンゴ礁上では他のタカサゴ科魚類の群れに加わることもあります。\n\n一年中繁殖しますが、特に暖かい時期に活発です。群れの中での求愛では、雄が鮮やかな体色を見せ、巧みな泳ぎで雌を引きつけます。産卵は外洋やサンゴ礁付近で行われ、雄と雌が同時に卵と精子を放出する集団産卵を行います。\n\n受精後の卵は浮遊性で、外洋を漂いながら24～48時間で小さな透明の仔魚になります。仔魚はプランクトンとともに漂い、微小な生物を食べながら数週間かけて若魚へ成長します。\n\n成長すると若魚はサンゴ礁付近に定着し、捕食者から身を守るため自分たちの群れを形成します。1～2歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐梅鲷是一种高度群居的鱼类，常形成由数百只个体组成的大型鱼群，在外海珊瑚礁上方游动时有时会与其他梅鲷类一起活动。\n\n它们全年都可繁殖，较温暖的月份尤为频繁。群体求偶时，雄鱼会展示鲜艳体色并进行灵活游动以吸引雌鱼。产卵发生在开阔水域或珊瑚礁附近，雄鱼和雌鱼同时释放精子和卵，属于集群产卵。\n\n受精后的卵为浮游性，在外海自由漂浮，并在24–48小时内孵化成细小透明的仔鱼。仔鱼随浮游生物漂流，以微小生物为食，在数周内逐渐发育成幼鱼。\n\n随着体型增大，幼鱼会在珊瑚礁附近定居，并形成自己的鱼群以躲避捕食者。1–2岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Goldband-Füsilier ist weit verbreitet – vom Roten Meer bis nach Französisch-Polynesien.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goldband-Füsiliere werden als Nahrungsmittel gefangen und vor allem in Südostasien verzehrt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Goldband-Füsilier frisst hauptsächlich Zooplankton, das in offenen Gewässern vorkommt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Goldband-Füsiliere sind eine wichtige Köderfischart in der Thunfischindustrie.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Männliche Goldband-Füsiliere vollführen aufwendige Balzrituale, darunter spiralförmige Schwimmbewegungen an die Wasseroberfläche.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue and Gold Fusilier is widely distributed, from the Red Sea to French Polynesia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Blue and Gold Fusiliers are caught for food and are consumed especially in Southeast Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Blue and Gold Fusilier mainly feeds on zooplankton found in open water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Juvenile Blue and Gold Fusiliers are an important baitfish in the tuna industry.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Male Blue and Gold Fusiliers perform elaborate courtship displays, including spiral swimming movements toward the water surface.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue and Gold Fusilier is widely distributed, from the Red Sea to French Polynesia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Blue and Gold Fusiliers are caught for food and are consumed especially in Southeast Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Blue and Gold Fusilier mainly feeds on zooplankton found in open water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Juvenile Blue and Gold Fusiliers are an important baitfish in the tuna industry.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Male Blue and Gold Fusiliers perform elaborate courtship displays, including spiral swimming movements toward the water surface.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está ampliamente distribuido desde el mar Rojo hasta la Polinesia Francesa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se captura como alimento y se consume especialmente en el Sudeste Asiático.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se alimenta principalmente de zooplancton de aguas abiertas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los juveniles son una importante especie de cebo en la industria del atún.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los machos realizan complejos rituales de cortejo, incluidos movimientos de natación en espiral hacia la superficie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’espèce est largement répartie, de la mer Rouge à la Polynésie française.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle est pêchée pour l’alimentation et consommée notamment en Asie du Sud-Est.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle se nourrit principalement de zooplancton présent en pleine eau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les jeunes constituent un appât important pour l’industrie du thon.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les mâles effectuent des parades élaborées, notamment des mouvements en spirale vers la surface.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È ampiamente diffuso dal Mar Rosso alla Polinesia Francese.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Viene pescato come alimento e consumato soprattutto nel Sud-est asiatico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Si nutre principalmente di zooplancton presente in acque aperte.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I giovani sono un importante pesce-esca nell’industria del tonno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I maschi eseguono elaborati rituali di corteggiamento, compresi movimenti a spirale verso la superficie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A espécie é amplamente distribuída, do Mar Vermelho à Polinésia Francesa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É capturada para alimentação e consumida principalmente no Sudeste Asiático.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Alimenta-se principalmente de zooplâncton encontrado em águas abertas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os juvenis são uma importante espécie de isca na indústria do atum.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os machos realizam elaborados rituais de cortejo, incluindo movimentos em espiral em direção à superfície.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "分布域は広く、紅海からフランス領ポリネシアまで見られます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "食用として漁獲され、特に東南アジアで消費されます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "主に外洋の動物プランクトンを食べます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼魚はマグロ漁業で重要な餌魚として利用されます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雄は水面へ向かうらせん状の泳ぎなど、複雑な求愛行動を行います。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "分布非常广，从红海一直延伸到法属波利尼西亚。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "会被捕捞作为食物，尤其在东南亚地区食用。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "主要以开阔水域中的浮游动物为食。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼鱼是金枪鱼产业中重要的饵鱼。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雄鱼会进行复杂的求偶行为，包括螺旋状游向水面的动作。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/68b783e3/Fusilier_BlueAndGold_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Caesio teres/map/Caesio teres map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjhiNzgzZTMvRnVzaWxpZXJfQmx1ZUFuZEdvbGQuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Goldband-Füsilier – Planet Zoo 2",
+            "en": "Blue and Gold Fusilier – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Goldband-Füsiliers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Blue and Gold Fusilier."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Caesio teres/bilder/Caesio teres 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/68b783e3/Fusilier_BlueAndGold_illustration.jpg",
+          "alt": {
+            "de": "Goldband-Füsilier – Zoopedia-Illustration",
+            "en": "Blue and Gold Fusilier – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Goldband-Füsiliers aus der Planet Zoo 2 Zoopedia im Bereich Sozialverhalten und Fortpflanzung.",
+            "en": "Blue and Gold Fusilier illustration from the Planet Zoo 2 Zoopedia social behaviour and reproduction section."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Caesio teres/bilder/Caesio teres illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Goldband-Füsilier",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/goldband-f%C3%BCsilier",
+        "en": "https://www.planetzoogame.com/2/zoopedia/blue-and-gold-fusilier",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/blue-and-gold-fusilier",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/fusilero-azul-de-bandas-doradas",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/fusilier-bleu-et-or",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-fuciliere-blu-e-oro",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/fuzileiro-azul",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B5%E3%82%B5%E3%83%A0%E3%83%AD",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A4%90%E6%A2%85%E9%B2%B7"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

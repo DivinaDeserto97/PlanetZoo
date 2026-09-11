@@ -3,189 +3,112 @@
 /* ======================================== */
 
 const TIER_JSON_DATEIEN = [
-  "assets/daten/lebewesen/tiere/Ambystoma mexicanum/Ambystoma mexicanum.json",
   "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json",
-  "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json",
+  "assets/daten/lebewesen/tiere/Ambystoma mexicanum/Ambystoma mexicanum.json",
+  "assets/daten/lebewesen/tiere/Spheniscus demersus/Spheniscus demersus.json",
+  "assets/daten/lebewesen/tiere/Bison bonasus/Bison bonasus.json",
+  "assets/daten/lebewesen/tiere/Caesio teres/Caesio teres.json",
+  "assets/daten/lebewesen/tiere/Leontopithecus rosalia/Leontopithecus rosalia.json",
+  "assets/daten/lebewesen/tiere/Sphyrna mokarran/Sphyrna mokarran.json",
+  "assets/daten/lebewesen/tiere/Platax pinnatus/Platax pinnatus.json",
+  "assets/daten/lebewesen/tiere/Sagittarius serpentarius/Sagittarius serpentarius.json",
+  "assets/daten/lebewesen/tiere/Aquila chrysaetos/Aquila chrysaetos.json",
+  "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/Panthera tigris sumatrae.json",
+  "assets/daten/lebewesen/tiere/Triturus dobrogicus/Triturus dobrogicus.json",
+  "assets/daten/lebewesen/tiere/Hippopotamus amphibius/Hippopotamus amphibius.json",
+  "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/Dendrolagus goodfellowi.json",
+  "assets/daten/lebewesen/tiere/Ailurus fulgens/Ailurus fulgens.json",
+  "assets/daten/lebewesen/tiere/Crocodylus porosus/Crocodylus porosus.json",
   "assets/daten/lebewesen/tiere/Panthera leo/Panthera leo.json",
+  "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json",
 ];
-
 
 /* ======================================== */
 /* HILFSFUNKTIONEN                          */
 /* ======================================== */
 
-function alsArray(
-  wert,
-) {
-  if (
-    Array.isArray(
-      wert,
-    )
-  ) {
+function alsArray(wert) {
+  if (Array.isArray(wert)) {
     return wert;
   }
 
-
-  if (
-    wert ===
-      undefined ||
-    wert ===
-      null ||
-    wert ===
-      ""
-  ) {
+  if (wert === undefined || wert === null || wert === "") {
     return [];
   }
 
-
-  return [
-    wert,
-  ];
+  return [wert];
 }
-
 
 /* ======================================== */
 /* ID ERSTELLEN                             */
 /* ======================================== */
 
-function erstelleTierId(
-  name,
-) {
-  return String(
-    name,
-  )
+function erstelleTierId(name) {
+  return String(name)
     .toLowerCase()
-    .normalize(
-      "NFD",
-    )
-    .replace(
-      /[\u0300-\u036f]/g,
-      "",
-    )
-    .replace(
-      /[^a-z0-9]+/g,
-      "_",
-    )
-    .replace(
-      /^_+|_+$/g,
-      "",
-    );
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
 }
-
 
 /* ======================================== */
 /* MEDIEN-PFAD FINDEN                       */
 /* ======================================== */
 
-function findeMedienPfad(
-  medium,
-) {
+function findeMedienPfad(medium) {
   if (!medium) {
     return null;
   }
 
-
-  const direkterPfad =
-    medium.pfad ??
-    medium.Pfad ??
-    null;
-
+  const direkterPfad = medium.pfad ?? medium.Pfad ?? null;
 
   if (direkterPfad) {
     return direkterPfad;
   }
 
+  const varianten = alsArray(medium.varianten);
 
-  const varianten =
-    alsArray(
-      medium.varianten,
-    );
-
-
-  for (
-    const variante of
-    varianten
-  ) {
-    const dateien =
-      alsArray(
-        variante
-          ?.dateien,
-      );
-
+  for (const variante of varianten) {
+    const dateien = alsArray(variante?.dateien);
 
     const datei =
       dateien.find(
-        (eintrag) =>
-          eintrag?.typ ===
-            "wiedergabe" &&
-          eintrag?.pfad,
+        (eintrag) => eintrag?.typ === "wiedergabe" && eintrag?.pfad,
       ) ??
-      dateien.find(
-        (eintrag) =>
-          eintrag?.typ ===
-            "original" &&
-          eintrag?.pfad,
-      ) ??
-      dateien.find(
-        (eintrag) =>
-          eintrag?.pfad,
-      );
+      dateien.find((eintrag) => eintrag?.typ === "original" && eintrag?.pfad) ??
+      dateien.find((eintrag) => eintrag?.pfad);
 
-
-    if (
-      datei?.pfad
-    ) {
+    if (datei?.pfad) {
       return datei.pfad;
     }
   }
 
-
   return null;
 }
-
 
 /* ======================================== */
 /* HAUPTBILD FINDEN                         */
 /* ======================================== */
 
-function findeHauptbild(
-  bilder,
-) {
-  const bildListe =
-    alsArray(
-      bilder,
-    );
-
+function findeHauptbild(bilder) {
+  const bildListe = alsArray(bilder);
 
   return (
-    bildListe.find(
-      (bild) =>
-        bild?.typ ===
-        "hauptbild",
-    ) ??
-    bildListe[0] ??
-    null
+    bildListe.find((bild) => bild?.typ === "hauptbild") ?? bildListe[0] ?? null
   );
 }
-
 
 /* ======================================== */
 /* KARTEN-DATEIEN                           */
 /* ======================================== */
 
-function findeKartenPngPfad(
-  karte,
-) {
+function findeKartenPngPfad(karte) {
   if (!karte) {
     return null;
   }
 
-
-  const dateien =
-    alsArray(
-      karte.dateien,
-    );
-
+  const dateien = alsArray(karte.dateien);
 
   /*
       Neue Struktur:
@@ -199,26 +122,14 @@ function findeKartenPngPfad(
   return (
     dateien.find(
       (datei) =>
-        datei?.typ ===
-          "original" &&
-        String(
-          datei?.dateityp ??
-          "",
-        ).toLowerCase() ===
-          "png" &&
+        datei?.typ === "original" &&
+        String(datei?.dateityp ?? "").toLowerCase() === "png" &&
         datei?.pfad,
     )?.pfad ??
-
     dateien.find(
       (datei) =>
-        String(
-          datei?.dateityp ??
-          "",
-        ).toLowerCase() ===
-          "png" &&
-        datei?.pfad,
+        String(datei?.dateityp ?? "").toLowerCase() === "png" && datei?.pfad,
     )?.pfad ??
-
     /*
         Altes Schema weiterhin
         unterstützen.
@@ -230,82 +141,46 @@ function findeKartenPngPfad(
   );
 }
 
-
-function findeKartenSvgPfad(
-  karte,
-) {
-  const dateien =
-    alsArray(
-      karte?.dateien,
-    );
-
+function findeKartenSvgPfad(karte) {
+  const dateien = alsArray(karte?.dateien);
 
   return (
     dateien.find(
       (datei) =>
-        datei?.typ ===
-          "wiedergabe" &&
-        String(
-          datei?.dateityp ??
-          "",
-        ).toLowerCase() ===
-          "svg" &&
+        datei?.typ === "wiedergabe" &&
+        String(datei?.dateityp ?? "").toLowerCase() === "svg" &&
         datei?.pfad,
     )?.pfad ??
-
     dateien.find(
       (datei) =>
-        String(
-          datei?.dateityp ??
-          "",
-        ).toLowerCase() ===
-          "svg" &&
-        datei?.pfad,
+        String(datei?.dateityp ?? "").toLowerCase() === "svg" && datei?.pfad,
     )?.pfad ??
-
     null
   );
 }
-
 
 /* ======================================== */
 /* ALLE TIERDATEN IMPORTIEREN               */
 /* ======================================== */
 
 export async function datenImportieren() {
-  const importierteTiere =
-    [];
-
+  const importierteTiere = [];
 
   for (
     let importIndex = 0;
-    importIndex <
-    TIER_JSON_DATEIEN.length;
+    importIndex < TIER_JSON_DATEIEN.length;
     importIndex++
   ) {
-    const jsonPfad =
-      TIER_JSON_DATEIEN[
-        importIndex
-      ];
-
+    const jsonPfad = TIER_JSON_DATEIEN[importIndex];
 
     try {
-      const antwort =
-        await fetch(
-          jsonPfad,
-        );
-
+      const antwort = await fetch(jsonPfad);
 
       if (!antwort.ok) {
-        throw new Error(
-          `JSON konnte nicht geladen werden: ${jsonPfad}`,
-        );
+        throw new Error(`JSON konnte nicht geladen werden: ${jsonPfad}`);
       }
 
-
-      const tierdaten =
-        await antwort.json();
-
+      const tierdaten = await antwort.json();
 
       /* ================================== */
       /* IDENTITÄT                          */
@@ -317,35 +192,17 @@ export async function datenImportieren() {
         tierdaten.wissenschaftlicherName ??
         "Unbekannte Tierart";
 
+      const namen = tierdaten.identitaet?.namen ?? tierdaten.namen ?? {};
 
-      const namen =
-        tierdaten
-          .identitaet
-          ?.namen ??
-        tierdaten.namen ??
-        {};
+      const deutscherName = namen.de ?? wissenschaftlicherName;
 
-
-      const deutscherName =
-        namen.de ??
-        wissenschaftlicherName;
-
-
-      const id =
-        erstelleTierId(
-          wissenschaftlicherName,
-        );
-
+      const id = erstelleTierId(wissenschaftlicherName);
 
       /* ================================== */
       /* KARTE                              */
       /* ================================== */
 
-      const karte =
-        tierdaten.karte ??
-        tierdaten.Karte ??
-        null;
-
+      const karte = tierdaten.karte ?? tierdaten.Karte ?? null;
 
       /*
           Wichtig:
@@ -357,49 +214,25 @@ export async function datenImportieren() {
           immer mit der Quelldatei PNG.
       */
 
-      const kartenPfad =
-        findeKartenPngPfad(
-          karte,
-        );
+      const kartenPfad = findeKartenPngPfad(karte);
 
-
-      const kartenSvgPfad =
-        findeKartenSvgPfad(
-          karte,
-        );
-
+      const kartenSvgPfad = findeKartenSvgPfad(karte);
 
       /* ================================== */
       /* BILDER                             */
       /* ================================== */
 
-      const bilder =
-        alsArray(
-          tierdaten.bilder ??
-          tierdaten.tierbilder,
-        );
+      const bilder = alsArray(tierdaten.bilder ?? tierdaten.tierbilder);
 
+      const hauptbild = findeHauptbild(bilder);
 
-      const hauptbild =
-        findeHauptbild(
-          bilder,
-        );
-
-
-      const hauptbildPfad =
-        findeMedienPfad(
-          hauptbild,
-        );
-
+      const hauptbildPfad = findeMedienPfad(hauptbild);
 
       /* ================================== */
       /* FILTER                             */
       /* ================================== */
 
-      const filter =
-        tierdaten.filter ??
-        {};
-
+      const filter = tierdaten.filter ?? {};
 
       /* ================================== */
       /* IMPORTIERTES TIER                  */
@@ -408,48 +241,28 @@ export async function datenImportieren() {
       importierteTiere.push({
         id,
 
-        datenId:
-          tierdaten.id ??
-          wissenschaftlicherName,
+        datenId: tierdaten.id ?? wissenschaftlicherName,
 
-        name:
-          deutscherName,
+        name: deutscherName,
 
         namen,
 
         wissenschaftlicherName,
 
-
         filter: {
-          edition:
-            filter.edition ??
-            "standard",
+          edition: filter.edition ?? "standard",
 
-          gehegetyp:
-            alsArray(
-              filter.gehegetyp,
-            ),
+          gehegetyp: alsArray(filter.gehegetyp),
 
-          kontinente:
-            alsArray(
-              filter.kontinente,
-            ),
+          kontinente: alsArray(filter.kontinente),
 
-          biome:
-            alsArray(
-              filter.biome,
-            ),
+          biome: alsArray(filter.biome),
 
           schutzstatus:
             filter.schutzstatus ??
-            tierdaten.daten
-              ?.schutzstatus
-              ?.werte
-              ?.[0]
-              ?.wert ??
+            tierdaten.daten?.schutzstatus?.werte?.[0]?.wert ??
             null,
         },
-
 
         /* ============================== */
         /* KARTE                          */
@@ -461,11 +274,7 @@ export async function datenImportieren() {
 
         kartenSvgPfad,
 
-        kartenDateien:
-          alsArray(
-            karte?.dateien,
-          ),
-
+        kartenDateien: alsArray(karte?.dateien),
 
         /* ============================== */
         /* MEDIEN                         */
@@ -475,31 +284,17 @@ export async function datenImportieren() {
 
         hauptbildPfad,
 
-        audio:
-          alsArray(
-            tierdaten.audio,
-          ),
+        audio: alsArray(tierdaten.audio),
 
-        video:
-          alsArray(
-            tierdaten.video,
-          ),
-
+        video: alsArray(tierdaten.video),
 
         /* ============================== */
         /* SPÄTERE SEITEN                 */
         /* ============================== */
 
-        systematik:
-          tierdaten.systematik ??
-          null,
+        systematik: tierdaten.systematik ?? null,
 
-        nahrungsnetz:
-          tierdaten.daten
-            ?.ernaehrung
-            ?.nahrungsnetz ??
-          null,
-
+        nahrungsnetz: tierdaten.daten?.ernaehrung?.nahrungsnetz ?? null,
 
         /* ============================== */
         /* SORTIERUNG                     */
@@ -508,32 +303,22 @@ export async function datenImportieren() {
         importIndex,
 
         veroeffentlichtAm:
-          tierdaten
-            .planetZoo2
-            ?.veroeffentlichtAm ??
+          tierdaten.planetZoo2?.veroeffentlichtAm ??
           tierdaten.veroeffentlichtAm ??
           null,
-
 
         /* ============================== */
         /* ORIGINAL                       */
         /* ============================== */
 
-        originalDaten:
-          tierdaten,
+        originalDaten: tierdaten,
 
         jsonPfad,
       });
-    }
-
-    catch (fehler) {
-      console.error(
-        `Fehler beim Import von ${jsonPfad}`,
-        fehler,
-      );
+    } catch (fehler) {
+      console.error(`Fehler beim Import von ${jsonPfad}`, fehler);
     }
   }
-
 
   return importierteTiere;
 }

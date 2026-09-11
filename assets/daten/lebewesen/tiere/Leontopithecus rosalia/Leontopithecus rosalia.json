@@ -1,0 +1,861 @@
+{
+  "id": "Leontopithecus rosalia",
+  "identitaet": {
+    "namen": {
+      "de": "Goldenes Löwenäffchen",
+      "en": "Golden Lion Tamarin",
+      "en-US": "Golden Lion Tamarin",
+      "es": "Tití león dorado",
+      "fr": "Tamarin-lion doré",
+      "it": "Scimmia leonina",
+      "pt-BR": "Mico-leão-dourado",
+      "ja": "ゴールデンライオンタマリン",
+      "zh-Hans": "金狮面狨"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "southAmerica"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Callitrichidae",
+          "gattung": "Leontopithecus",
+          "art": "Leontopithecus rosalia",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "kopfUndKoerper",
+          "min": 0.2,
+          "max": 0.3,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Zusätzlich besitzt das Goldene Löwenäffchen laut Zoopedia einen 32 bis 40 cm langen Schwanz.",
+            "en": "According to the Zoopedia, the Golden Lion Tamarin also has a tail measuring 32–40 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.6,
+          "max": 0.8,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Männchen und Weibchen unterscheiden sich laut Zoopedia kaum in Größe und Färbung.",
+            "en": "According to the Zoopedia, males and females differ very little in size and coloration."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 4800,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Leontopithecus rosalia"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt den Wildbestand als 4.8 an; dies entspricht 4,8 Tausend beziehungsweise rund 4.800 Individuen.",
+            "en": "The Zoopedia displays the wild population as 4.8, corresponding to 4.8 thousand or approximately 4,800 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 125,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 3,
+          "durchschnitt": 2,
+          "hinweis": {
+            "de": "In der Regel werden Zwillinge geboren; Einzelgeburten und Drillinge kommen ebenfalls vor.",
+            "en": "Twins are typical, but single births and triplets can also occur."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "familiengruppe",
+          "wert": "familyGroup",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 8,
+          "hinweis": {
+            "de": "Die Gruppe besteht meist aus einem Brutpaar und dessen Nachkommen aus einem oder mehreren Würfen.",
+            "en": "The group usually consists of a breeding pair and offspring from one or more litters."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Goldene Löwenäffchen (Leontopithecus rosalia) ist in den atlantischen Küstenregenwäldern im Südosten Brasiliens heimisch und lebt vor allem in feuchten Tiefland- und Sekundärwäldern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Lion Tamarin (Leontopithecus rosalia) is native to the Atlantic coastal rainforests of southeastern Brazil, particularly humid lowland and secondary forests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Lion Tamarin (Leontopithecus rosalia) is native to the Atlantic coastal rainforests of southeastern Brazil, particularly humid lowland and secondary forests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tití león dorado (Leontopithecus rosalia) es nativo de los bosques lluviosos costeros atlánticos del sureste de Brasil, especialmente de bosques húmedos de tierras bajas y secundarios.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le tamarin-lion doré (Leontopithecus rosalia) est originaire des forêts pluviales côtières atlantiques du sud-est du Brésil, notamment des forêts humides de basse altitude et secondaires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La scimmia leonina (Leontopithecus rosalia) è originaria delle foreste pluviali costiere atlantiche del Brasile sud-orientale, soprattutto delle foreste umide di pianura e secondarie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O mico-leão-dourado (Leontopithecus rosalia) é nativo das florestas tropicais costeiras da Mata Atlântica no sudeste do Brasil, especialmente de florestas úmidas de baixada e secundárias.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ゴールデンライオンタマリン（Leontopithecus rosalia）は、ブラジル南東部の大西洋岸熱帯雨林に固有で、特に湿潤な低地林や二次林に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金狮面狨（Leontopithecus rosalia）原产于巴西东南部的大西洋沿岸雨林，主要生活在湿润的低地森林和次生林中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Goldene Löwenäffchen (auch Leontopithecus rosalia) ist ein Primat der Neuen Welt, der in den atlantischen Küstenregenwäldern im Südosten Brasiliens heimisch ist und vor allem in feuchten Tiefland- und Sekundärwäldern lebt.\n\nDiese Äffchen sind klein und schlank, besitzen ein goldfarbenes bis rotgoldenes Fell und eine markante, lange Mähne, die ihr dunkles Gesicht umrahmt.\n\nIhre Kopf- und Körperlänge beträgt im Durchschnitt etwa 20 bis 30 cm, dazu kommt ein langer Schwanz von 32 bis 40 cm. Ausgewachsene Tiere wiegen in der Regel etwa 600 bis 800 g. Männchen und Weibchen unterscheiden sich kaum in Größe und Färbung.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Lion Tamarin (Leontopithecus rosalia) is a New World primate native to the Atlantic coastal rainforests of southeastern Brazil, where it mainly lives in humid lowland and secondary forests.\n\nThese tamarins are small and slender, with golden to reddish-gold fur and a distinctive long mane framing the dark face.\n\nTheir head-and-body length averages about 20–30 cm, with a long tail measuring 32–40 cm. Adults usually weigh around 600–800 g. Males and females differ very little in size or coloration.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Lion Tamarin (Leontopithecus rosalia) is a New World primate native to the Atlantic coastal rainforests of southeastern Brazil, where it mainly lives in humid lowland and secondary forests.\n\nThese tamarins are small and slender, with golden to reddish-gold fur and a distinctive long mane framing the dark face.\n\nTheir head-and-body length averages about 20–30 cm, with a long tail measuring 32–40 cm. Adults usually weigh around 600–800 g. Males and females differ very little in size or coloration.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tití león dorado (Leontopithecus rosalia) es un primate del Nuevo Mundo originario de los bosques lluviosos costeros atlánticos del sureste de Brasil, donde vive sobre todo en bosques húmedos de tierras bajas y secundarios.\n\nEs pequeño y esbelto, con pelaje dorado a rojizo y una larga melena característica que enmarca su rostro oscuro.\n\nLa longitud de cabeza y cuerpo es de unos 20–30 cm, a la que se añade una cola de 32–40 cm. Los adultos pesan normalmente entre 600 y 800 g. Machos y hembras apenas difieren en tamaño o coloración.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le tamarin-lion doré (Leontopithecus rosalia) est un primate du Nouveau Monde originaire des forêts pluviales côtières atlantiques du sud-est du Brésil, où il vit surtout dans les forêts humides de basse altitude et les forêts secondaires.\n\nPetit et élancé, il possède un pelage doré à roux doré ainsi qu’une longue crinière caractéristique qui encadre son visage sombre.\n\nLa longueur de la tête et du corps est d’environ 20–30 cm, à laquelle s’ajoute une queue de 32–40 cm. Les adultes pèsent généralement 600–800 g. Les mâles et les femelles diffèrent très peu par la taille ou la coloration.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La scimmia leonina (Leontopithecus rosalia) è un primate del Nuovo Mondo originario delle foreste pluviali costiere atlantiche del Brasile sud-orientale, dove vive soprattutto nelle foreste umide di pianura e secondarie.\n\nÈ piccola e snella, con pelliccia dorata o rosso-dorata e una caratteristica lunga criniera che incornicia il muso scuro.\n\nLa lunghezza testa-corpo è di circa 20–30 cm, con una coda di 32–40 cm. Gli adulti pesano generalmente 600–800 g. Maschi e femmine differiscono poco per dimensioni o colorazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O mico-leão-dourado (Leontopithecus rosalia) é um primata do Novo Mundo nativo das florestas tropicais costeiras da Mata Atlântica no sudeste do Brasil, onde vive principalmente em florestas úmidas de baixada e secundárias.\n\nÉ pequeno e esguio, com pelagem dourada a avermelhada e uma longa juba característica que emoldura o rosto escuro.\n\nO comprimento da cabeça e do corpo é de cerca de 20–30 cm, além de uma cauda de 32–40 cm. Adultos pesam geralmente 600–800 g. Machos e fêmeas diferem pouco em tamanho ou coloração.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ゴールデンライオンタマリン（Leontopithecus rosalia）は、ブラジル南東部の大西洋岸熱帯雨林に固有の新世界ザルで、主に湿潤な低地林や二次林に生息します。\n\n小型で細身の体を持ち、金色から赤金色の毛と、暗い顔を囲む特徴的な長い「たてがみ」があります。\n\n頭胴長は約20～30cm、尾は32～40cmです。成獣の体重は通常600～800gで、雄と雌は体格や体色にほとんど差がありません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金狮面狨（Leontopithecus rosalia）是一种新世界灵长类，原产于巴西东南部的大西洋沿岸雨林，主要栖息在湿润的低地森林和次生林中。\n\n它们体型小而修长，拥有金色到红金色的毛发，以及围绕深色面部的醒目长鬃毛。\n\n头体长约20–30厘米，尾长32–40厘米。成年个体通常重600–800克。雄性和雌性在体型和毛色方面差异很小。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Goldene Löwenäffchen gilt als stark gefährdet. Seit Jahrzehnten steht es aufgrund von Lebensraumverlust, Fragmentierung und einem geschrumpften Genpool vor großen Herausforderungen hinsichtlich seines Artenschutzes. Der verbleibende Atlantische Regenwald besteht aus winzigen, isolierten Flecken, die zu klein sind, um gesunde Bestände zu erhalten, wodurch sie anfällig für genetischen Rückgang und Krankheitsausbrüche sind. Illegale Abholzung, die Ausdehnung der Landwirtschaft, die städtische Entwicklung und der illegale Handel mit Haustieren haben zu Bestandsrückgängen beigetragen, und Krankheiten haben in einigen Teilpopulationen über 30 % der Tiere getötet.\n\nDurch Arterhaltungsmaßnahmen wurden Lebensräume geschützt und wiederhergestellt, isolierte Waldstücke durch Baumkronen-Korridore miteinander verbunden und Wildbestände gestärkt, was zu einem dramatischen Anstieg der Tierpopulationen führte. Naturschutzgebiete bieten einen sicheren Lebensraum, und durch Umsiedlungs- und Wiederansiedlungsprogramme konnten neue, lebensfähige Populationen gebildet werden. Impfungen gegen Gelbfieber und Initiativen für nachhaltige Landwirtschaft an Waldrändern zielen darauf ab, die Auswirkungen von Krankheiten und den Druck durch den Menschen zu verringern.\n\nBildung zum Thema Umwelt, Förderung der Agrarforstwirtschaft und langfristige Strategien sollen den Äffchen eine vernetzte, genetisch robuste Zukunft sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them vulnerable to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them vulnerable to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tití león dorado está En Peligro. Durante décadas se ha enfrentado a graves problemas de conservación debido a la pérdida y fragmentación del hábitat y a la reducción del acervo genético. Los restos del bosque atlántico consisten en pequeños fragmentos aislados, demasiado reducidos para mantener poblaciones sanas, lo que aumenta su vulnerabilidad al deterioro genético y a brotes de enfermedades. La tala ilegal, la expansión agrícola, el desarrollo urbano y el comercio ilegal de mascotas han contribuido al descenso de las poblaciones, y las enfermedades han matado a más del 30% de los individuos de algunas subpoblaciones.\n\nLas medidas de conservación han protegido y restaurado hábitats, conectado fragmentos aislados mediante corredores de copas y reforzado poblaciones silvestres, lo que ha producido un aumento espectacular de los efectivos. Las áreas protegidas proporcionan hábitat seguro, mientras que los programas de traslado y reintroducción han permitido crear nuevas poblaciones viables. Las vacunaciones contra la fiebre amarilla y las iniciativas de agricultura sostenible en los bordes del bosque buscan reducir el impacto de enfermedades y la presión humana.\n\nLa educación ambiental, el fomento de la agroforestería y las estrategias a largo plazo pretenden asegurar un futuro conectado y genéticamente robusto para la especie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le tamarin-lion doré est classé En danger. Depuis des décennies, il fait face à d’importants défis de conservation dus à la perte et à la fragmentation de son habitat ainsi qu’à la réduction de son patrimoine génétique. Les vestiges de la forêt atlantique sont constitués de minuscules fragments isolés, trop petits pour maintenir des populations saines, ce qui les rend vulnérables à l’appauvrissement génétique et aux épidémies. L’exploitation forestière illégale, l’expansion agricole, l’urbanisation et le commerce illégal d’animaux de compagnie ont contribué au déclin, et des maladies ont tué plus de 30 % des animaux dans certaines sous-populations.\n\nLes actions de conservation ont protégé et restauré les habitats, relié les fragments isolés par des corridors de canopée et renforcé les populations sauvages, entraînant une forte augmentation des effectifs. Les réserves offrent des habitats sûrs et les programmes de transfert et de réintroduction ont permis de créer de nouvelles populations viables. Les vaccinations contre la fièvre jaune et les initiatives d’agriculture durable en bordure de forêt visent à réduire l’impact des maladies et la pression humaine.\n\nL’éducation environnementale, le développement de l’agroforesterie et les stratégies à long terme visent à assurer un avenir connecté et génétiquement robuste à l’espèce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La scimmia leonina è classificata In pericolo. Da decenni affronta importanti problemi di conservazione dovuti alla perdita e frammentazione dell’habitat e alla riduzione del patrimonio genetico. La foresta atlantica rimasta è costituita da piccoli frammenti isolati, troppo ridotti per mantenere popolazioni sane, rendendole vulnerabili al declino genetico e alle epidemie. Il disboscamento illegale, l’espansione agricola, lo sviluppo urbano e il commercio illegale di animali da compagnia hanno contribuito al calo delle popolazioni, mentre alcune malattie hanno ucciso più del 30% degli individui in certe sottopopolazioni.\n\nLe misure di conservazione hanno protetto e ripristinato habitat, collegato frammenti isolati tramite corridoi della chioma e rafforzato le popolazioni selvatiche, con un forte aumento degli individui. Le aree protette offrono habitat sicuri e i programmi di traslocazione e reintroduzione hanno creato nuove popolazioni vitali. Le vaccinazioni contro la febbre gialla e le iniziative di agricoltura sostenibile ai margini della foresta mirano a ridurre l’impatto delle malattie e la pressione umana.\n\nL’educazione ambientale, la promozione dell’agroforestazione e le strategie a lungo termine puntano a garantire un futuro connesso e geneticamente robusto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O mico-leão-dourado é classificado como Em Perigo. Há décadas enfrenta grandes desafios de conservação devido à perda e fragmentação do habitat e à redução do conjunto genético. A Mata Atlântica remanescente consiste em pequenos fragmentos isolados, pequenos demais para manter populações saudáveis, tornando-as vulneráveis ao declínio genético e a surtos de doenças. O desmatamento ilegal, a expansão agrícola, o desenvolvimento urbano e o comércio ilegal de animais contribuíram para quedas populacionais, e doenças mataram mais de 30% dos indivíduos em algumas subpopulações.\n\nAs medidas de conservação protegeram e restauraram habitats, conectaram fragmentos isolados por corredores de copa e fortaleceram populações silvestres, resultando em um aumento expressivo. Áreas protegidas fornecem habitat seguro, enquanto programas de translocação e reintrodução criaram novas populações viáveis. Vacinação contra febre amarela e iniciativas de agricultura sustentável nas bordas da floresta buscam reduzir os impactos das doenças e a pressão humana.\n\nEducação ambiental, promoção de sistemas agroflorestais e estratégias de longo prazo buscam garantir um futuro conectado e geneticamente robusto para a espécie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ゴールデンライオンタマリンは絶滅危惧種です。長年にわたり、生息地の喪失と分断、遺伝的多様性の縮小によって大きな保全上の課題に直面してきました。残された大西洋岸森林は小さく孤立した断片に分かれ、健全な個体群を維持するには狭すぎるため、遺伝的劣化や感染症に弱くなっています。違法伐採、農地拡大、都市開発、違法なペット取引が個体数減少に寄与し、一部の亜個体群では病気により30%以上が死亡しました。\n\n保全活動により生息地の保護・再生、樹冠回廊による森林断片の連結、野生個体群の強化が進み、個体数は大きく増加しました。保護区は安全な生息地を提供し、移送や再導入によって新たな存続可能な個体群も形成されています。黄熱病ワクチン接種や森林縁辺部での持続可能な農業施策は、病気と人間活動の影響を軽減することを目的としています。\n\n環境教育、アグロフォレストリーの推進、長期戦略により、つながりのある遺伝的に健全な未来を確保することが目指されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金狮面狨属于濒危物种。几十年来，它一直因栖息地丧失和破碎化以及基因库缩小而面临严峻的保护挑战。残存的大西洋森林由极小且彼此隔离的斑块组成，面积不足以维持健康种群，因此容易发生遗传衰退和疾病暴发。非法采伐、农业扩张、城市开发和非法宠物贸易都造成了种群下降，一些亚种群中疾病甚至导致超过30%的个体死亡。\n\n保护措施包括保护和恢复栖息地、通过树冠廊道连接孤立森林斑块，以及增强野生种群，这些行动使数量大幅回升。自然保护区提供安全栖息地，迁移和重新引入项目建立了新的可持续种群。黄热病疫苗接种以及森林边缘的可持续农业项目旨在降低疾病影响和人类压力。\n\n环境教育、推广农林复合系统以及长期保护战略，旨在为该物种建立互相连通且遗传上更稳健的未来。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Goldene Löwenäffchen sind sehr gesellige Primaten. Sie leben in Familiengruppen von 2 bis 8 Tieren, die meist aus einem Brutpaar und dessen Nachkommen aus einem oder mehreren Würfen bestehen.\n\nDie Paarungszeit erstreckt sich von September bis März. Goldene Löwenäffchen bilden innerhalb ihrer Familiengruppen monogame oder sozial eng verbundene Paare. Die Partnersuche verläuft relativ zurückhaltend, beinhaltet jedoch Rufe, gegenseitige Fellpflege und engen Körperkontakt zwischen Männchen und Weibchen. Im Rahmen der Umwerbung von potenziellen Partnern bringen Männchen den Weibchen manchmal Nahrungsmittel wie Früchte oder Insekten. Die Paarungszeit fällt oft mit Zeiten zusammen, in denen im Atlantischen Regenwald besonders viele Früchte verfügbar sind, was eine ausreichende Nahrungsgrundlage für die Aufzucht der Nachkommen sicherstellt.\n\nWeibchen bringen nach einer Tragzeit von etwa 125 Tagen in der Regel Zwillinge zur Welt, es können jedoch auch Einzelgeburten oder Drillinge vorkommen. Die Fortpflanzung bei Goldenen Löwenäffchen verläuft ausgesprochen kooperativ, da alle Gruppenmitglieder sich an der Aufzucht der Jungtiere beteiligen. Erwachsene und ältere Jungtiere tragen, pflegen und beschützen die Neugeborenen abwechselnd, während die Mutter hauptsächlich für die Säugung zuständig ist. Die Jungtiere klammern sich beim Herumtragen in den Baumkronen während der Nahrungssuche fest an den Körper des Elterntiers.\n\nJungtiere werden im Alter von etwa 2 bis 3 Monaten entwöhnt und erreichen ihre Geschlechtsreife im Alter von etwa 2 bis 3 Jahren, bleiben aber meist noch länger in der Gruppe, in der sie geboren wurden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden Lion Tamarins are highly social primates. They live in family groups of 2–8 animals, usually consisting of a breeding pair and their offspring from one or more litters.\n\nThe breeding season runs from September to March. Within their family groups, Golden Lion Tamarins form monogamous or closely bonded social pairs. Courtship is relatively subtle but includes calls, mutual grooming and close physical contact between males and females. Males sometimes bring females food items such as fruit or insects while courting them. The breeding season often coincides with periods when fruit is particularly abundant in the Atlantic Forest, providing enough food to raise offspring.\n\nAfter a gestation of about 125 days, females usually give birth to twins, although single births and triplets can also occur. Reproduction is highly cooperative, with all group members helping to raise the young. Adults and older juveniles take turns carrying, grooming and protecting newborns, while the mother is mainly responsible for nursing. The young cling tightly to the body of the carrier while the group moves through the canopy and forages.\n\nYoung are weaned at around 2–3 months and reach sexual maturity at about 2–3 years, but usually remain in their natal group for longer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden Lion Tamarins are highly social primates. They live in family groups of 2–8 animals, usually consisting of a breeding pair and their offspring from one or more litters.\n\nThe breeding season runs from September to March. Within their family groups, Golden Lion Tamarins form monogamous or closely bonded social pairs. Courtship is relatively subtle but includes calls, mutual grooming and close physical contact between males and females. Males sometimes bring females food items such as fruit or insects while courting them. The breeding season often coincides with periods when fruit is particularly abundant in the Atlantic Forest, providing enough food to raise offspring.\n\nAfter a gestation of about 125 days, females usually give birth to twins, although single births and triplets can also occur. Reproduction is highly cooperative, with all group members helping to raise the young. Adults and older juveniles take turns carrying, grooming and protecting newborns, while the mother is mainly responsible for nursing. The young cling tightly to the body of the carrier while the group moves through the canopy and forages.\n\nYoung are weaned at around 2–3 months and reach sexual maturity at about 2–3 years, but usually remain in their natal group for longer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los titíes león dorado son primates muy sociales. Viven en grupos familiares de 2–8 individuos, normalmente formados por una pareja reproductora y sus descendientes de una o varias camadas.\n\nLa época reproductiva se extiende de septiembre a marzo. Dentro de los grupos familiares forman parejas monógamas o vínculos sociales estrechos. El cortejo es relativamente discreto, pero incluye llamadas, acicalamiento mutuo y contacto físico cercano. Los machos a veces llevan a las hembras alimentos como fruta o insectos durante el cortejo. La época reproductiva suele coincidir con periodos de gran abundancia de fruta en el bosque atlántico.\n\nTras unos 125 días de gestación, la hembra suele dar a luz gemelos, aunque también pueden nacer una sola cría o trillizos. La reproducción es muy cooperativa: todos los miembros del grupo participan en el cuidado. Adultos y juveniles mayores se turnan para transportar, asear y proteger a las crías, mientras la madre se ocupa principalmente de amamantarlas.\n\nLas crías se destetan a los 2–3 meses y alcanzan la madurez sexual aproximadamente a los 2–3 años, aunque suelen permanecer más tiempo en su grupo natal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les tamarins-lions dorés sont des primates très sociaux. Ils vivent en groupes familiaux de 2 à 8 individus, généralement constitués d’un couple reproducteur et de ses descendants issus d’une ou plusieurs portées.\n\nLa saison de reproduction s’étend de septembre à mars. Au sein des groupes familiaux, ils forment des couples monogames ou des liens sociaux étroits. La parade est relativement discrète mais comprend des cris, le toilettage mutuel et des contacts physiques rapprochés. Les mâles apportent parfois aux femelles des aliments tels que des fruits ou des insectes. La saison de reproduction coïncide souvent avec les périodes où les fruits sont particulièrement abondants dans la forêt atlantique.\n\nAprès environ 125 jours de gestation, la femelle donne généralement naissance à des jumeaux, mais des naissances simples ou des triplés sont également possibles. La reproduction est très coopérative : tous les membres du groupe participent aux soins. Les adultes et les jeunes plus âgés portent, toilettent et protègent les nouveau-nés à tour de rôle, tandis que la mère assure principalement l’allaitement.\n\nLes jeunes sont sevrés vers 2–3 mois et atteignent leur maturité sexuelle vers 2–3 ans, mais restent généralement plus longtemps dans leur groupe natal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le scimmie leonine sono primati molto sociali. Vivono in gruppi familiari di 2–8 individui, generalmente composti da una coppia riproduttiva e dai suoi figli di una o più cucciolate.\n\nLa stagione riproduttiva va da settembre a marzo. All’interno dei gruppi familiari formano coppie monogame o legami sociali stretti. Il corteggiamento è relativamente discreto ma comprende richiami, pulizia reciproca e stretto contatto fisico. I maschi talvolta portano alle femmine alimenti come frutta o insetti. La stagione riproduttiva coincide spesso con periodi di grande disponibilità di frutti nella foresta atlantica.\n\nDopo circa 125 giorni di gestazione, le femmine partoriscono normalmente gemelli, ma possono verificarsi anche parti singoli o trigemini. La riproduzione è fortemente cooperativa: tutti i membri del gruppo partecipano alla cura. Adulti e giovani più grandi trasportano, puliscono e proteggono a turno i neonati, mentre la madre è principalmente responsabile dell’allattamento.\n\nI piccoli vengono svezzati a circa 2–3 mesi e raggiungono la maturità sessuale a circa 2–3 anni, ma di solito restano più a lungo nel gruppo natale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os micos-leões-dourados são primatas muito sociais. Vivem em grupos familiares de 2–8 animais, geralmente formados por um casal reprodutor e seus descendentes de uma ou mais ninhadas.\n\nA estação reprodutiva vai de setembro a março. Dentro dos grupos familiares, formam pares monogâmicos ou socialmente muito unidos. O cortejo é relativamente discreto, mas inclui vocalizações, higiene mútua e contato corporal próximo. Os machos às vezes levam alimentos como frutas ou insetos às fêmeas. A época reprodutiva frequentemente coincide com períodos de grande disponibilidade de frutos na Mata Atlântica.\n\nApós cerca de 125 dias de gestação, as fêmeas normalmente dão à luz gêmeos, embora também possam ocorrer partos de um único filhote ou trigêmeos. A reprodução é altamente cooperativa: todos os membros do grupo ajudam nos cuidados. Adultos e jovens mais velhos revezam-se para carregar, limpar e proteger os recém-nascidos, enquanto a mãe é principalmente responsável pela amamentação.\n\nOs filhotes são desmamados com cerca de 2–3 meses e atingem a maturidade sexual por volta dos 2–3 anos, mas normalmente permanecem por mais tempo no grupo natal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ゴールデンライオンタマリンは非常に社会性の高い霊長類です。2～8頭の家族群で暮らし、多くの場合、繁殖ペアと1回以上の出産で生まれた子どもたちから構成されます。\n\n繁殖期は9月から3月です。家族群の中で一夫一妻または強い社会的結びつきを持つペアを形成します。求愛は比較的控えめですが、鳴き声、相互グルーミング、密接な身体接触が含まれます。雄が果物や昆虫などの食物を雌に渡すこともあります。繁殖期は大西洋岸森林で果実が豊富な時期と重なることが多く、子育てに十分な食物を確保できます。\n\n妊娠期間は約125日で、通常は双子を産みますが、1頭または3頭のこともあります。子育ては非常に協力的で、群れの全個体が参加します。成獣や年長の若者が交代で新生児を運び、毛づくろいし、守り、母親は主に授乳を担当します。\n\n子どもは約2～3か月で離乳し、約2～3歳で性成熟しますが、多くの場合はその後もしばらく出生群に残ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金狮面狨是高度社会化的灵长类。它们生活在2～8只组成的家庭群体中，通常由一对繁殖伴侣及其一窝或多窝后代组成。\n\n繁殖季从9月持续到次年3月。家庭群体中的个体形成一夫一妻或社会联系紧密的配偶关系。求偶行为较为含蓄，包括鸣叫、互相理毛和密切身体接触。雄性有时会给雌性带来水果或昆虫等食物。繁殖季通常与大西洋森林中果实最丰富的时期重合，为抚育后代提供充足食物。\n\n雌性妊娠约125天，通常产双胞胎，但也可能产单胎或三胞胎。育幼高度合作，群体中的所有成员都会参与。成年个体和年长幼体轮流携带、理毛和保护新生幼体，而母亲主要负责哺乳。\n\n幼体约2～3个月断奶，约2～3岁达到性成熟，但通常会在出生群体中停留更久。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Goldene Löwenäffchen sind sehr stimmgewaltig; sie nutzen hohe, pfeifende „Fii“-Rufe, Trillern, Zwitschern und Warnrufe, um den Kontakt aufrechtzuerhalten, vor Raubtieren zu warnen und Gruppenaktivitäten zu koordinieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Früher gab es weniger als 200 Goldene Löwenäffchen in freier Wildbahn, doch dank Arterhaltungsprogrammen ist der Wildbestand inzwischen auf mehrere Tausend angewachsen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gruppen von Goldenen Löwenäffchen verteidigen Reviere von 5 bis 25 Hektar und nutzen dabei Duftmarkierungen und Laute, um Eindringlinge abzuschrecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goldene Löwenäffchen schlafen in Baumhöhlen, hohlen Ästen oder dichten Lianengeflechten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Jungtiere haben in freier Wildbahn in Gruppen mit Helfern deutlich bessere Überlebenschancen, was die zentrale Rolle kooperativer Aufzucht und sozialer Fürsorge verdeutlicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden Lion Tamarins are highly vocal and use high-pitched whistling 'fii' calls, trills, chirps and alarm calls to maintain contact, warn of predators and coordinate group activities.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "There were once fewer than 200 Golden Lion Tamarins in the wild, but conservation programmes have increased the wild population to several thousand.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Groups defend territories of 5–25 hectares using scent marking and vocalisations to deter intruders.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Lion Tamarins sleep in tree holes, hollow branches or dense tangles of vines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild, young have a much better chance of survival in groups with helpers, highlighting the importance of cooperative care.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden Lion Tamarins are highly vocal and use high-pitched whistling 'fii' calls, trills, chirps and alarm calls to maintain contact, warn of predators and coordinate group activities.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "There were once fewer than 200 Golden Lion Tamarins in the wild, but conservation programmes have increased the wild population to several thousand.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Groups defend territories of 5–25 hectares using scent marking and vocalisations to deter intruders.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Lion Tamarins sleep in tree holes, hollow branches or dense tangles of vines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild, young have a much better chance of survival in groups with helpers, highlighting the importance of cooperative care.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Son animales muy vocales y utilizan silbidos agudos, trinos, gorjeos y llamadas de alarma para mantener el contacto, advertir de depredadores y coordinar las actividades del grupo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En el pasado quedaban menos de 200 individuos silvestres, pero los programas de conservación han elevado la población a varios miles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los grupos defienden territorios de 5–25 hectáreas mediante marcas olorosas y vocalizaciones.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Duermen en huecos de árboles, ramas huecas o densos entramados de lianas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las crías tienen muchas más probabilidades de sobrevivir en grupos con ayudantes, lo que demuestra la importancia de la crianza cooperativa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ils sont très vocaux et utilisent des sifflements aigus, des trilles, des gazouillis et des cris d’alarme pour maintenir le contact, avertir des prédateurs et coordonner le groupe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il y avait autrefois moins de 200 individus à l’état sauvage, mais les programmes de conservation ont porté la population à plusieurs milliers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les groupes défendent des territoires de 5 à 25 hectares à l’aide de marquages olfactifs et de vocalisations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils dorment dans des cavités d’arbres, des branches creuses ou des enchevêtrements denses de lianes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les jeunes ont de bien meilleures chances de survie dans les groupes comptant des assistants, ce qui souligne le rôle essentiel des soins coopératifs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sono molto vocali e utilizzano fischi acuti, trilli, cinguettii e richiami d’allarme per mantenere il contatto, avvertire dei predatori e coordinare le attività del gruppo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un tempo ne rimanevano meno di 200 in natura, ma i programmi di conservazione hanno portato la popolazione a diverse migliaia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I gruppi difendono territori di 5–25 ettari usando marcature odorose e vocalizzazioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dormono in cavità degli alberi, rami cavi o densi grovigli di liane.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I giovani hanno probabilità di sopravvivenza molto maggiori nei gruppi con aiutanti, evidenziando l’importanza dell’allevamento cooperativo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "São muito vocais e usam assobios agudos, trinados, chilreios e chamados de alarme para manter contato, alertar sobre predadores e coordenar as atividades do grupo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Antigamente havia menos de 200 indivíduos na natureza, mas os programas de conservação elevaram a população para vários milhares.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os grupos defendem territórios de 5–25 hectares usando marcação de cheiro e vocalizações.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dormem em cavidades de árvores, galhos ocos ou densos emaranhados de cipós.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Filhotes têm chances muito maiores de sobrevivência em grupos com ajudantes, demonstrando a importância do cuidado cooperativo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "非常に声が大きく、高い口笛のような「フィー」音、トリル、さえずり、警戒声を使って仲間との連絡、捕食者への警告、群れの活動調整を行います。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "かつて野生個体は200頭未満でしたが、保全プログラムにより現在は数千頭まで増加しました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "群れは5～25ヘクタールの縄張りを守り、臭い付けや鳴き声で侵入者を遠ざけます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "木の洞、空洞の枝、密集したつる植物の中で眠ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野生では、ヘルパーのいる群れの子どもの方が生存率が高く、協力的な子育ての重要性が示されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金狮面狨非常善于发声，会用高音哨声、“fii”声、颤音、啁啾和警戒声保持联系、警告捕食者并协调群体活动。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "过去野外个体曾少于200只，但保护项目使种群恢复到数千只。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "群体会守卫5～25公顷的领地，并通过气味标记和鸣叫驱赶入侵者。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们会在树洞、空心树枝或密集藤蔓中睡觉。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "在野外，有帮手参与育幼的群体中，幼体的存活率明显更高，这体现了合作育幼的重要性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c893857c/Monkey_GoldenLionTamarin_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Leontopithecus rosalia/map/Leontopithecus rosalia map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzg5Mzg1N2MvTW9ua2V5X0dvbGRlbkxpb25UYW1hcmluLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Goldenes Löwenäffchen – Planet Zoo 2",
+            "en": "Golden Lion Tamarin – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Goldenen Löwenäffchens aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Golden Lion Tamarin."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Leontopithecus rosalia/bilder/Leontopithecus rosalia 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c893857c/Monkey_GoldenLionTamarin_illustration.jpg",
+          "alt": {
+            "de": "Goldenes Löwenäffchen – Zoopedia-Illustration",
+            "en": "Golden Lion Tamarin – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Goldenen Löwenäffchens aus der Planet Zoo 2 Zoopedia im Bereich Arterhaltung.",
+            "en": "Golden Lion Tamarin illustration from the Planet Zoo 2 Zoopedia conservation section."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Leontopithecus rosalia/bilder/Leontopithecus rosalia illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Goldenes Löwenäffchen",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/goldenes-l%C3%B6wen%C3%A4ffchen",
+        "en": "https://www.planetzoogame.com/2/zoopedia/golden-lion-tamarin",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/golden-lion-tamarin",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/tit%C3%AD-le%C3%B3n-dorado",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/tamarin-lion-dor%C3%A9",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/scimmia-leonina",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/mico-le%C3%A3o-dourado",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%83%A9%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%BF%E3%83%9E%E3%83%AA%E3%83%B3",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%87%91%E7%8B%AE%E9%9D%A2%E7%8B%A8"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "id": "Ailurus fulgens",
+  "identitaet": {
+    "namen": {
+      "de": "Kleiner Panda",
+      "en": "Red Panda",
+      "en-US": "Red Panda",
+      "es": "Panda rojo",
+      "fr": "Panda roux",
+      "it": "Panda minore",
+      "pt-BR": "Panda-vermelho",
+      "ja": "レッサーパンダ",
+      "zh-Hans": "小熊猫"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Ailuridae",
+          "gattung": "Ailurus",
+          "art": "Ailurus fulgens",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.5,
+          "max": 0.64,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich eine Schwanzlänge von 28 bis 59 cm.",
+            "en": "The Zoopedia additionally gives a tail length of 28–59 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 3.7,
+          "max": 6.2,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 3.0,
+          "max": 6.0,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 10,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Ailurus fulgens"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Der bereitgestellte Planet-Zoo-2-Zoopedia-Auszug zeigt beim Wildbestand wörtlich „10“. Ein Tausender-Faktor oder eine andere Einheit ist im Auszug nicht angegeben und wird daher nicht ergänzt.",
+            "en": "The supplied Planet Zoo 2 Zoopedia extract literally displays '10' for the wild population. No thousands multiplier or other unit is shown in the extract, so none has been added."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 12,
+          "max": 18,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 4,
+          "max": 5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 4,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt bis zu 4 Jungtiere pro Geburt; eine typische oder durchschnittliche Wurfgröße wird nicht angegeben.",
+            "en": "The Zoopedia states up to 4 young per birth; no typical or average litter size is given."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Kleine Pandas sind territoriale Einzelgänger. Männchen und Weibchen treffen sich in freier Wildbahn normalerweise nur während der Paarungszeit.",
+            "en": "Red Pandas are territorial and solitary. In the wild, males and females normally meet only during the breeding season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "bambooSpecialist",
+            "hinweis": {
+              "de": "Die Zoopedia nennt Bambus als wichtigste beziehungsweise hauptsächliche Nahrungsquelle.",
+              "en": "The Zoopedia identifies bamboo as the main food source."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Kleine Panda (Ailurus fulgens) ist ein kleines Säugetier, das in den Waldgebieten des Himalaya und in verschiedenen Regionen Chinas heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Panda (Ailurus fulgens) is a small mammal native to forested areas of the Himalayas and various regions of China.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Panda (Ailurus fulgens) is a small mammal native to forested areas of the Himalayas and various regions of China.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El panda rojo (Ailurus fulgens) es un pequeño mamífero originario de las zonas boscosas del Himalaya y de distintas regiones de China.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le panda roux (Ailurus fulgens) est un petit mammifère originaire des régions forestières de l’Himalaya et de plusieurs régions de Chine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il panda minore (Ailurus fulgens) è un piccolo mammifero originario delle zone forestali dell’Himalaya e di varie regioni della Cina.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O panda-vermelho (Ailurus fulgens) é um pequeno mamífero nativo das regiões florestais do Himalaia e de várias regiões da China.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "レッサーパンダ（Ailurus fulgens）は、ヒマラヤの森林地帯および中国各地に生息する小型哺乳類です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "小熊猫（Ailurus fulgens）是一种生活在喜马拉雅森林地区以及中国多个地区的小型哺乳动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Kleine Panda (auch Ailurus fulgens) ist ein kleines Säugetier, das in den Waldgebieten des Himalaya und in verschiedenen Regionen Chinas heimisch ist.\n\nTrotz des Namens ist die Art nicht näher mit dem Großen Panda verwandt, auch wenn beide einige Eigenschaften teilen, wie etwa die Tatsache, dass sie sich hauptsächlich von Bambus ernähren. Der Kleine Panda hat auffälliges rötliches Fell, schwarze Beine, einen von Ringen gezeichneten Schwanz, weiße Ohren und eine weiße Schnauze.\n\nDer Kleine Panda ist im Schnitt zwischen 50 cm und 64 cm groß und sein Schwanz ist zwischen 28 cm und 59 cm lang. Die Männchen sind ein bisschen schwerer als die Weibchen, sie wiegen zwischen 3,7 kg und 6,2 kg, während die Weibchen 3 kg bis 6 kg auf die Waage bringen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Panda (Ailurus fulgens) is a small mammal native to forested areas of the Himalayas and various regions of China.\n\nDespite its name, the species is not closely related to the Giant Panda, although they share some traits, including a diet based mainly on bamboo. The Red Panda has striking reddish fur, black legs, a ringed tail, white ears and a white muzzle.\n\nRed Pandas average 50–64 cm in body length, with a tail 28–59 cm long. Males are slightly heavier than females, weighing 3.7–6.2 kg, while females weigh 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Panda (Ailurus fulgens) is a small mammal native to forested areas of the Himalayas and various regions of China.\n\nDespite its name, the species is not closely related to the Giant Panda, although they share some traits, including a diet based mainly on bamboo. The Red Panda has striking reddish fur, black legs, a ringed tail, white ears and a white muzzle.\n\nRed Pandas average 50–64 cm in body length, with a tail 28–59 cm long. Males are slightly heavier than females, weighing 3.7–6.2 kg, while females weigh 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El panda rojo (Ailurus fulgens) es un pequeño mamífero originario de las zonas boscosas del Himalaya y de distintas regiones de China.\n\nA pesar de su nombre, no está estrechamente emparentado con el panda gigante, aunque comparten algunas características, como alimentarse principalmente de bambú. Posee un llamativo pelaje rojizo, patas negras, cola anillada, orejas blancas y hocico blanco.\n\nMide unos 50–64 cm y su cola mide 28–59 cm. Los machos pesan 3,7–6,2 kg y las hembras 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le panda roux (Ailurus fulgens) est un petit mammifère des régions forestières de l’Himalaya et de plusieurs régions de Chine.\n\nMalgré son nom, il n’est pas étroitement apparenté au panda géant, même si les deux partagent certaines caractéristiques, notamment une alimentation principalement composée de bambou. Il possède un pelage roux remarquable, des pattes noires, une queue annelée, des oreilles blanches et un museau blanc.\n\nIl mesure environ 50–64 cm et sa queue 28–59 cm. Les mâles pèsent 3,7–6,2 kg et les femelles 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il panda minore (Ailurus fulgens) è un piccolo mammifero originario delle zone forestali dell’Himalaya e di varie regioni della Cina.\n\nNonostante il nome, non è strettamente imparentato con il panda gigante, anche se condivide alcune caratteristiche, come una dieta basata principalmente sul bambù. Ha un vistoso mantello rossiccio, zampe nere, coda ad anelli, orecchie bianche e muso bianco.\n\nÈ lungo in media 50–64 cm e la coda misura 28–59 cm. I maschi pesano 3,7–6,2 kg, le femmine 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O panda-vermelho (Ailurus fulgens) é um pequeno mamífero nativo das regiões florestais do Himalaia e de várias regiões da China.\n\nApesar do nome, não é um parente próximo do panda-gigante, embora ambos compartilhem algumas características, como a alimentação principalmente baseada em bambu. Possui pelagem avermelhada, pernas pretas, cauda anelada, orelhas brancas e focinho branco.\n\nMede em média 50–64 cm e a cauda 28–59 cm. Machos pesam 3,7–6,2 kg e fêmeas 3–6 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "レッサーパンダ（Ailurus fulgens）は、ヒマラヤの森林地帯および中国各地に生息する小型哺乳類です。\n\n名前に「パンダ」とありますがジャイアントパンダとは近縁ではありません。ただし主に竹を食べるなど共通点があります。赤みのある毛、黒い脚、輪模様の尾、白い耳と鼻口部が特徴です。\n\n体長は平均50～64cm、尾は28～59cm。雄は3.7～6.2kg、雌は3～6kgで、雄の方がやや重い傾向があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "小熊猫（Ailurus fulgens）是一种生活在喜马拉雅森林地区以及中国多个地区的小型哺乳动物。\n\n尽管名称中带有“熊猫”，它与大熊猫并非近亲，不过两者有一些共同特征，例如主要以竹子为食。小熊猫拥有醒目的红褐色毛发、黑色四肢、带环纹的尾巴、白色耳朵和白色吻部。\n\n平均体长50～64厘米，尾长28～59厘米。雄性略重，体重3.7～6.2千克；雌性3～6千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Kleine Pandas sind stark gefährdet. Die Hauptursache dafür ist der Verlust ihres Lebensraums durch Abholzung aufgrund von Siedlungsausbau und Holzgewinnung. Ihre wichtigste Nahrungsquelle, Bambus, geht nach der Blüte häufig in großem Umfang zugrunde. Durch die fragmentierten Lebensräume haben Kleine Pandas keine Möglichkeit mehr, in Gebiete mit wachsendem Bambus auszuweichen. Außerdem beeinflusst der Klimawandel die Verbreitung von Bambus und erhöht das Risiko von Naturkatastrophen wie Erdrutschen. Auch Wilderei und illegaler Handel mit Wildtieren sind eine Gefahr für die Kleinen Pandas.\n\nViele Länder verfolgen Projekte zum Schutz und zur Rückgewinnung von Lebensräumen. Dabei werden Waldkorridore angelegt, um fragmentierte Lebensräume miteinander zu verbinden. Durch Gemeinschaftsprogramme zur Arterhaltung haben die Menschen vor Ort die Möglichkeit, sich an der Überwachung und dem Schutz der Kleinen Pandas zu beteiligen. Gleichzeitig werden ihnen alternative Einkommensquellen geboten, um ihre Abhängigkeit von den Ressourcen des Waldes zu reduzieren. Die Zucht in Gefangenschaft dient vor allem der Forschung und dem Aufbau einer gesunden Ersatzpopulation. Die internationale Zusammenarbeit zwischen verschiedenen Organisationen fördert die Sensibilisierung, finanziert Arterhaltungsprojekte und stärkt Maßnahmen gegen Wilderei. So gibt es Hoffnung für das langfristige Überleben dieser liebenswerten Tierart.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Red Pandas are Endangered. The main cause is habitat loss through deforestation driven by settlement expansion and timber extraction. Their main food source, bamboo, often dies back on a large scale after flowering. Habitat fragmentation prevents Red Pandas from moving to areas where bamboo is still growing. Climate change also affects bamboo distribution and increases the risk of natural disasters such as landslides. Poaching and illegal wildlife trade are additional threats.\n\nMany countries carry out projects to protect and restore habitat. Forest corridors are created to reconnect fragmented habitat. Community conservation programmes allow local people to participate in monitoring and protecting Red Pandas while also providing alternative sources of income to reduce dependence on forest resources. Captive breeding is used mainly for research and to build a healthy backup population. International cooperation among organisations raises awareness, funds conservation projects and strengthens anti-poaching measures. Together these efforts provide hope for the species' long-term survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Red Pandas are Endangered. The main cause is habitat loss through deforestation driven by settlement expansion and timber extraction. Their main food source, bamboo, often dies back on a large scale after flowering. Habitat fragmentation prevents Red Pandas from moving to areas where bamboo is still growing. Climate change also affects bamboo distribution and increases the risk of natural disasters such as landslides. Poaching and illegal wildlife trade are additional threats.\n\nMany countries carry out projects to protect and restore habitat. Forest corridors are created to reconnect fragmented habitat. Community conservation programmes allow local people to participate in monitoring and protecting Red Pandas while also providing alternative sources of income to reduce dependence on forest resources. Captive breeding is used mainly for research and to build a healthy backup population. International cooperation among organisations raises awareness, funds conservation projects and strengthens anti-poaching measures. Together these efforts provide hope for the species' long-term survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El panda rojo está En Peligro. La principal causa es la pérdida de hábitat por deforestación debida a la expansión de asentamientos y la explotación maderera. Su alimento principal, el bambú, puede morir en grandes extensiones tras florecer. La fragmentación impide que los animales se desplacen hacia nuevas zonas con bambú. El cambio climático altera además la distribución del bambú y aumenta riesgos como los deslizamientos. La caza furtiva y el comercio ilegal de fauna son otras amenazas.\n\nDiversos países desarrollan proyectos para proteger y recuperar hábitats, incluyendo corredores forestales. Los programas comunitarios permiten a la población local participar en la vigilancia y protección y ofrecen fuentes de ingresos alternativas. La cría en cautividad sirve para la investigación y para mantener una población de reserva sana. La cooperación internacional financia proyectos, sensibiliza y refuerza las medidas contra la caza furtiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le panda roux est En danger. La principale cause est la perte d’habitat due à la déforestation liée à l’expansion des habitations et à l’exploitation du bois. Sa principale ressource alimentaire, le bambou, peut mourir massivement après la floraison. La fragmentation des habitats empêche les animaux de rejoindre des zones où le bambou pousse encore. Le changement climatique modifie également la répartition du bambou et accroît le risque de catastrophes naturelles comme les glissements de terrain. Le braconnage et le commerce illégal constituent d’autres menaces.\n\nPlusieurs pays mettent en œuvre des projets de protection et de restauration, notamment la création de corridors forestiers. Les programmes communautaires permettent aux habitants de participer au suivi et à la protection, tout en leur proposant d’autres sources de revenus. L’élevage en captivité sert principalement à la recherche et à constituer une population de secours saine. La coopération internationale sensibilise le public, finance les projets et renforce la lutte contre le braconnage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il panda minore è In pericolo. La causa principale è la perdita di habitat dovuta alla deforestazione per l’espansione degli insediamenti e l’estrazione del legname. La principale fonte alimentare, il bambù, spesso muore su vaste aree dopo la fioritura. Gli habitat frammentati impediscono agli animali di spostarsi verso zone con bambù in crescita. Il cambiamento climatico altera inoltre la distribuzione del bambù e aumenta il rischio di disastri naturali come le frane. Bracconaggio e commercio illegale di fauna sono ulteriori minacce.\n\nMolti paesi realizzano progetti di protezione e recupero dell’habitat, creando corridoi forestali. I programmi comunitari permettono alle popolazioni locali di partecipare al monitoraggio e alla protezione e offrono fonti di reddito alternative. L’allevamento in cattività serve soprattutto alla ricerca e alla creazione di una popolazione di riserva sana. La collaborazione internazionale aumenta la sensibilizzazione, finanzia progetti e rafforza le misure contro il bracconaggio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O panda-vermelho está Em Perigo. A principal causa é a perda de habitat provocada pelo desmatamento decorrente da expansão de assentamentos e extração de madeira. Sua principal fonte de alimento, o bambu, frequentemente morre em grande escala após a floração. A fragmentação impede que os animais migrem para áreas com bambu em crescimento. As mudanças climáticas também alteram a distribuição do bambu e aumentam o risco de desastres como deslizamentos. A caça ilegal e o comércio de fauna são ameaças adicionais.\n\nMuitos países desenvolvem projetos de proteção e recuperação de habitat, incluindo corredores florestais. Programas comunitários permitem a participação da população local no monitoramento e proteção e oferecem fontes alternativas de renda. A reprodução em cativeiro é usada principalmente para pesquisa e criação de uma população de reserva saudável. A cooperação internacional aumenta a conscientização, financia projetos e fortalece ações contra a caça ilegal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "レッサーパンダは絶滅危惧種です。主な原因は住宅地拡大や木材採取による森林伐採です。主要な餌である竹は開花後に広範囲で枯れることがあり、生息地が分断されることで成長中の竹がある地域へ移動できなくなります。気候変動も竹の分布に影響し、地滑りなどの自然災害リスクを高めます。密猟や違法な野生動物取引も脅威です。\n\n各国で生息地の保護・回復事業が進められ、分断された森林をつなぐ回廊が作られています。地域住民が監視や保護に参加できる保全プログラムでは、森林資源への依存を減らすため代替収入も提供されます。飼育繁殖は研究と健全な予備個体群の確保に役立ちます。国際協力により啓発、資金提供、密猟対策が進められています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "小熊猫属于濒危物种。主要原因是居住区扩张和木材采伐造成的森林砍伐与栖息地丧失。它们最重要的食物竹子在开花后常会大面积死亡，而破碎化的栖息地使小熊猫无法迁移到仍有竹子生长的地区。气候变化还会改变竹子的分布，并增加滑坡等自然灾害风险。偷猎和非法野生动物贸易也是威胁。\n\n许多国家都在开展栖息地保护和恢复项目，包括建立森林廊道连接破碎化生境。社区保护项目让当地居民参与监测和保护，同时提供替代收入来源，降低对森林资源的依赖。圈养繁育主要用于研究和建立健康的后备种群。国际组织之间的合作提高公众意识、资助保护项目并加强反偷猎行动。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Kleine Pandas sind territoriale Einzelgänger, wobei Männchen in der Regel größere Gebiete beanspruchen als Weibchen. In freier Wildbahn treffen Männchen und Weibchen nur während der Paarungszeit aufeinander. Da sie von Schneeleoparden und Mardern gejagt werden, suchen sie sich gerne abgelegene Verstecke.\n\nDie Paarung findet im späten Winter und Frühling von Mitte Januar bis Anfang März statt. Sie finden ihre Partner mithilfe von Duftmarken. Wenn sich ein Männchen und ein Weibchen treffen, lädt das Weibchen das Männchen zur Paarung ein, indem es mit dem Schwanz wedelt und sich auf dem Boden wälzt.\n\nNach einer Tragzeit von 4 bis 5 Monaten bringt das Weibchen bis zu 4 Junge zur Welt, die die ersten 4 Monate ihres Lebens im Nest oder in der Höhle verbringen. Wenn die Jungen anfangen, mit ihrer Mutter auf Streifzug zu gehen, lernen sie wichtige Überlebensfähigkeiten und wie sie sich in ihrer Umgebung zurechtfinden.\n\nWenn sie etwa 7 bis 8 Monate alt sind oder die nächste Paarungszeit beginnt, ziehen sie los, um ihr eigenes Revier zu finden. Kleine Pandas sind mit 12 bis 18 Monaten geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Red Pandas are territorial and solitary, with males generally holding larger areas than females. In the wild, males and females meet only during the breeding season. Because they are hunted by Snow Leopards and martens, they prefer secluded hiding places.\n\nMating takes place in late winter and spring, from mid-January to early March. Individuals locate partners using scent marks. When a male and female meet, the female invites mating by waving her tail and rolling on the ground.\n\nAfter a gestation of 4–5 months, the female gives birth to up to four young. They spend the first four months of life in a nest or den. Once the young begin travelling with their mother, they learn important survival skills and how to navigate their environment.\n\nAt around 7–8 months of age, or when the next breeding season begins, they leave to find their own territory. Red Pandas reach sexual maturity at 12–18 months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Red Pandas are territorial and solitary, with males generally holding larger areas than females. In the wild, males and females meet only during the breeding season. Because they are hunted by Snow Leopards and martens, they prefer secluded hiding places.\n\nMating takes place in late winter and spring, from mid-January to early March. Individuals locate partners using scent marks. When a male and female meet, the female invites mating by waving her tail and rolling on the ground.\n\nAfter a gestation of 4–5 months, the female gives birth to up to four young. They spend the first four months of life in a nest or den. Once the young begin travelling with their mother, they learn important survival skills and how to navigate their environment.\n\nAt around 7–8 months of age, or when the next breeding season begins, they leave to find their own territory. Red Pandas reach sexual maturity at 12–18 months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los pandas rojos son territoriales y solitarios; los machos suelen ocupar áreas mayores que las hembras. En la naturaleza ambos sexos solo se encuentran durante la época reproductiva. Debido a depredadores como leopardos de las nieves y martas, prefieren escondites apartados.\n\nEl apareamiento tiene lugar desde mediados de enero hasta comienzos de marzo. Encuentran pareja mediante marcas olorosas. Cuando se encuentran, la hembra invita al apareamiento moviendo la cola y rodando por el suelo.\n\nTras 4–5 meses de gestación, la hembra puede parir hasta cuatro crías, que pasan sus primeros cuatro meses en el nido o la madriguera. Al empezar a acompañar a su madre aprenden importantes habilidades de supervivencia.\n\nA los 7–8 meses, o al comenzar la siguiente época reproductiva, se marchan para buscar su propio territorio. Alcanzan la madurez sexual a los 12–18 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les pandas roux sont territoriaux et solitaires, les mâles occupant généralement des territoires plus vastes. Dans la nature, mâles et femelles ne se rencontrent que pendant la saison de reproduction. Pour échapper notamment aux panthères des neiges et aux martres, ils recherchent des cachettes isolées.\n\nL’accouplement a lieu de la mi-janvier au début mars. Ils trouvent leurs partenaires grâce au marquage olfactif. Lorsqu’un mâle et une femelle se rencontrent, la femelle invite le mâle à s’accoupler en agitant la queue et en se roulant au sol.\n\nAprès 4–5 mois de gestation, la femelle met au monde jusqu’à quatre petits qui passent les quatre premiers mois de leur vie dans le nid ou la tanière. En accompagnant ensuite leur mère, ils apprennent les compétences nécessaires à leur survie.\n\nVers 7–8 mois, ou au début de la saison de reproduction suivante, ils partent chercher leur propre territoire. La maturité sexuelle est atteinte entre 12 et 18 mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I panda minori sono territoriali e solitari; i maschi occupano generalmente territori più ampi. In natura, maschi e femmine si incontrano soltanto durante la stagione riproduttiva. Per sfuggire a predatori come leopardi delle nevi e martore cercano rifugi appartati.\n\nL’accoppiamento avviene tra metà gennaio e l’inizio di marzo. I partner si trovano grazie alle marcature odorose. Quando maschio e femmina si incontrano, la femmina invita il maschio all’accoppiamento agitando la coda e rotolandosi a terra.\n\nDopo 4–5 mesi di gestazione la femmina partorisce fino a quattro piccoli, che trascorrono i primi quattro mesi nel nido o nella tana. Quando iniziano a seguire la madre imparano importanti capacità di sopravvivenza.\n\nA circa 7–8 mesi, o all’inizio della successiva stagione riproduttiva, partono alla ricerca del proprio territorio. La maturità sessuale viene raggiunta a 12–18 mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pandas-vermelhos são territoriais e solitários, e os machos normalmente ocupam áreas maiores. Na natureza, machos e fêmeas só se encontram durante a época de reprodução. Por serem caçados por leopardos-das-neves e martas, preferem esconderijos isolados.\n\nO acasalamento ocorre do meio de janeiro ao início de março. Encontram parceiros por meio de marcações de cheiro. Quando macho e fêmea se encontram, a fêmea convida o macho ao acasalamento abanando a cauda e rolando no chão.\n\nApós 4–5 meses de gestação, a fêmea dá à luz até quatro filhotes, que passam os primeiros quatro meses no ninho ou toca. Quando começam a acompanhar a mãe, aprendem habilidades essenciais de sobrevivência.\n\nPor volta dos 7–8 meses, ou quando começa a estação reprodutiva seguinte, saem em busca do próprio território. A maturidade sexual ocorre aos 12–18 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "レッサーパンダは縄張りを持つ単独性動物で、雄の縄張りは通常雌より広くなります。野生では繁殖期にのみ雌雄が出会います。ユキヒョウやテンに捕食されるため、人目につきにくい隠れ場所を好みます。\n\n交尾期は1月中旬から3月初めです。におい付けで相手を探し、出会うと雌は尾を振り地面に転がることで交尾を促します。\n\n妊娠4～5か月後、雌は最大4頭の子を産みます。子は最初の4か月を巣や巣穴で過ごし、その後母親と行動しながら生存に必要な能力を学びます。\n\n約7～8か月齢、または次の繁殖期が始まるころに自分の縄張りを探して独立します。性成熟は12～18か月です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "小熊猫具有领地性并独居，雄性的领地通常比雌性更大。在野外，雌雄一般只在繁殖季相遇。由于会被雪豹和貂类捕食，它们偏爱偏僻的藏身处。\n\n交配期从1月中旬持续到3月初。它们利用气味标记寻找配偶。雌雄相遇后，雌性会摇尾巴并在地面翻滚，以邀请雄性交配。\n\n妊娠4～5个月后，雌性最多产4只幼崽。幼崽出生后的前4个月生活在巢或洞穴中，随后开始跟随母兽活动并学习生存技能以及如何适应周围环境。\n\n大约7～8个月大，或下一繁殖季开始时，幼崽会离开去寻找自己的领地。12～18个月达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Kleine Panda wird auch „Feuerfuchs“ genannt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kleine Pandas haben Fell auf den Sohlen der Pfoten, das vor Kälte schützt und ihnen hilft, Duftmarken zu hinterlassen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kleine Pandas haben einen veränderten Handgelenksknochen, der eine Art „sechsten Finger“ bildet, mit dem sie Bambus schälen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Trächtige Kleine Pandas bauen Nester in Felsspalten oder hohlen Baumstämmen, bevor sie ihre Jungen zur Welt bringen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "2005 entkam ein Kleiner Panda namens „Babu“ aus dem Birmingham Nature Centre in Großbritannien und floh in die Stadt. Er wurde zu einer lokalen Berühmtheit und zum „Brummie des Jahres“ ernannt – damit ist er das erste und einzige Tier, das jemals diese Auszeichnung erhalten hat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Panda is also known as the 'fire fox'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Red Pandas have fur on the soles of their feet, which protects them from the cold and helps them leave scent marks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Red Pandas have a modified wrist bone that forms a kind of 'sixth finger' used to strip bamboo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pregnant Red Pandas build nests in rock crevices or hollow tree trunks before giving birth.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In 2005, a Red Panda named 'Babu' escaped from Birmingham Nature Centre in the United Kingdom and ran into the city. He became a local celebrity and was named 'Brummie of the Year', making him the first and only animal ever to receive the award.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Panda is also known as the 'fire fox'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Red Pandas have fur on the soles of their feet, which protects them from the cold and helps them leave scent marks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Red Pandas have a modified wrist bone that forms a kind of 'sixth finger' used to strip bamboo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pregnant Red Pandas build nests in rock crevices or hollow tree trunks before giving birth.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In 2005, a Red Panda named 'Babu' escaped from Birmingham Nature Centre in the United Kingdom and ran into the city. He became a local celebrity and was named 'Brummie of the Year', making him the first and only animal ever to receive the award.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "También se conoce como «zorro de fuego».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tiene pelo en las plantas de las patas que lo protege del frío y ayuda a dejar marcas olorosas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Posee un hueso de la muñeca modificado que forma una especie de «sexto dedo» para pelar bambú.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las hembras gestantes construyen nidos en grietas de roca o troncos huecos antes de parir.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En 2005, un panda rojo llamado «Babu» escapó del Birmingham Nature Centre y se convirtió en una celebridad local, llegando a ser nombrado «Brummie del año».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le panda roux est aussi appelé « renard de feu ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il a des poils sous les pattes, qui le protègent du froid et l’aident à laisser des marques olfactives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un os modifié du poignet forme une sorte de « sixième doigt » utilisé pour éplucher le bambou.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les femelles gestantes construisent des nids dans des crevasses rocheuses ou des troncs creux avant de mettre bas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En 2005, un panda roux nommé « Babu » s’est échappé du Birmingham Nature Centre et est devenu une célébrité locale, recevant le titre de « Brummie de l’année ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il panda minore è chiamato anche «volpe di fuoco».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ha pelo sulle piante delle zampe, che protegge dal freddo e aiuta a lasciare marcature odorose.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possiede un osso del polso modificato che forma una specie di «sesto dito» usato per sbucciare il bambù.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le femmine gravide costruiscono nidi nelle fessure rocciose o nei tronchi cavi prima del parto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nel 2005 un panda minore chiamato «Babu» fuggì dal Birmingham Nature Centre e divenne una celebrità locale, ricevendo il titolo di «Brummie dell’anno».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O panda-vermelho também é chamado de «raposa-de-fogo».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tem pelos nas solas das patas, que protegem contra o frio e ajudam a deixar marcações de cheiro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possui um osso do punho modificado que forma uma espécie de «sexto dedo» usado para descascar bambu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fêmeas grávidas constroem ninhos em fendas de rochas ou troncos ocos antes do parto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Em 2005, um panda-vermelho chamado «Babu» escapou do Birmingham Nature Centre e se tornou uma celebridade local, sendo nomeado «Brummie do Ano».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "「ファイアフォックス」とも呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "足裏にも毛が生えており、寒さから守るとともににおい付けにも役立ちます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "手首の骨が変化して「第6の指」のような構造をつくり、竹をむくのに使われます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "妊娠した雌は出産前に岩の隙間や空洞の木の幹に巣を作ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "2005年、英国のBirmingham Nature Centreから「Babu」という個体が脱走して街へ出て地元の有名人となり、「Brummie of the Year」に選ばれました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "小熊猫也被称为“火狐”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "脚掌底部也长有毛，可御寒并帮助留下气味标记。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "腕骨发生特化，形成类似“第六根手指”的结构，可用于剥竹子。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "怀孕的雌性会在生产前于岩缝或空心树干内筑巢。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "2005年，一只名叫“Babu”的小熊猫从英国Birmingham Nature Centre逃入城市，成为当地名人，并被评为“Brummie of the Year”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes y estadísticas todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images et statistiques peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini e statistiche possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens e estatísticas ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片和统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/478676c1/Panda_Red_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Ailurus fulgens/map/Ailurus fulgens map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDc4Njc2YzEvUGFuZGFfUmVkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Kleiner Panda – Planet Zoo 2",
+            "en": "Red Panda – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Kleinen Pandas aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Red Panda."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Ailurus fulgens/bilder/Ailurus fulgens 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/478676c1/Panda_Red_illustration.jpg",
+          "alt": {
+            "de": "Kleiner Panda – Zoopedia-Illustration",
+            "en": "Red Panda – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Kleinen Pandas aus der Planet Zoo 2 Zoopedia.",
+            "en": "Red Panda illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Ailurus fulgens/bilder/Ailurus fulgens illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Kleiner Panda",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/kleiner-panda",
+        "en": "https://www.planetzoogame.com/2/zoopedia/red-panda",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/red-panda",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/panda-rojo",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/panda-roux",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/panda-minore",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/panda-vermelho",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%AC%E3%83%83%E3%82%B5%E3%83%BC%E3%83%91%E3%83%B3%E3%83%80",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B0%8F%E7%86%8A%E7%8C%AB"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Wildbestand wurde exakt wie angezeigt als 10 übernommen; kein nicht ausgewiesener Tausender-Faktor wurde ergänzt."
+    }
+  }
+}

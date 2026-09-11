@@ -1,0 +1,882 @@
+{
+  "id": "Sphyrna mokarran",
+  "identitaet": {
+    "namen": {
+      "de": "Großer Hammerhai",
+      "en": "Great Hammerhead",
+      "en-US": "Great Hammerhead",
+      "es": "Tiburón martillo gigante",
+      "fr": "Grand requin-marteau",
+      "it": "Squalo martello maggiore",
+      "pt-BR": "Tubarão-martelo-panã",
+      "ja": "ヒラシュモクザメ",
+      "zh-Hans": "无沟双髻鲨"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [],
+    "biome": [],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Chondrichthyes",
+          "ordnung": "Carcharhiniformes",
+          "familie": "Sphyrnidae",
+          "gattung": "Sphyrna",
+          "art": "Sphyrna mokarran",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 3.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Männchen durchschnittlich etwa 3 m.",
+            "en": "The Zoopedia gives an average length of about 3 m for males."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 4.0,
+          "max": 6.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Weibchen meist 4 bis 6 m.",
+            "en": "The Zoopedia gives a typical female length of 4–6 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 150,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 230,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Schwangere und sehr große Weibchen können laut Zoopedia über 500 kg wiegen.",
+            "en": "Pregnant and very large females may weigh over 500 kg according to the Zoopedia."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Sphyrna mokarran"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 5,
+          "max": 9,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 15,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Weibchen werden laut Zoopedia meist mit etwa 15 Jahren geschlechtsreif.",
+            "en": "According to the Zoopedia, females generally reach sexual maturity at about 15 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 11,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "lebendgeboreneJungtiereProWurf",
+          "min": 6,
+          "max": 50,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt 6 bis 50 lebende Jungtiere; typisch sind 20 bis 40 Jungtiere pro Wurf.",
+            "en": "The Zoopedia gives 6–50 live young per litter, with 20–40 being typical."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Im Gegensatz zu einigen anderen Hammerhaiarten ist der Große Hammerhai laut Zoopedia ein Einzelgänger.",
+            "en": "Unlike some other hammerhead species, the Great Hammerhead is solitary according to the Zoopedia."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Große Hammerhai (Sphyrna mokarran) lebt in warmen gemäßigten und tropischen Gewässern auf der ganzen Welt. Meistens findet man ihn an Kontinentalsockeln, in Lagunen und in der Nähe von Korallenriffen, gelegentlich auch in tieferen Küstengewässern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Great Hammerhead (Sphyrna mokarran) lives in warm temperate and tropical waters worldwide, most commonly around continental shelves, lagoons and coral reefs, and occasionally in deeper coastal waters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Great Hammerhead (Sphyrna mokarran) lives in warm temperate and tropical waters worldwide, most commonly around continental shelves, lagoons and coral reefs, and occasionally in deeper coastal waters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tiburón martillo gigante (Sphyrna mokarran) vive en aguas tropicales y templadas cálidas de todo el mundo, sobre todo en plataformas continentales, lagunas y cerca de arrecifes de coral, aunque también aparece en aguas costeras más profundas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le grand requin-marteau (Sphyrna mokarran) vit dans les eaux tropicales et tempérées chaudes du monde entier, surtout sur les plateaux continentaux, dans les lagons et près des récifs coralliens, mais parfois aussi dans des eaux côtières plus profondes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo squalo martello maggiore (Sphyrna mokarran) vive nelle acque tropicali e temperate calde di tutto il mondo, soprattutto sulle piattaforme continentali, nelle lagune e vicino alle barriere coralline, ma talvolta anche in acque costiere più profonde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tubarão-martelo-panã (Sphyrna mokarran) vive em águas tropicais e temperadas quentes do mundo inteiro, principalmente em plataformas continentais, lagoas e próximo a recifes de coral, mas também pode ocorrer em águas costeiras mais profundas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヒラシュモクザメ（Sphyrna mokarran）は世界中の温暖な温帯・熱帯海域に生息し、大陸棚、ラグーン、サンゴ礁付近でよく見られ、ときにはより深い沿岸域にも現れます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "无沟双髻鲨（Sphyrna mokarran）分布于全球温暖的温带和热带海域，常见于大陆架、泻湖和珊瑚礁附近，有时也进入更深的沿海水域。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Große Hammerhai (auch Sphyrna mokarran) ist eine große Hai-Spezies, die in warmen gemäßigten und tropischen Gewässern auf der ganzen Welt lebt. Meistens findet man ihn an Kontinentalsockeln, in Lagunen und in der Nähe von Korallenriffen, doch manchmal taucht er auch in tieferen Küstengewässern auf.\n\nGroße Hammerhaie zeichnen sich durch einen markanten, fast geradlinigen, hammerförmigen Kopf mit einer Kerbe in der Mitte aus. Sie haben eine hohe, sichelförmige erste Rückenflosse und sind graubraun gefärbt mit einer hellen Unterseite.\n\nWeibchen sind mit einer Länge von meist 4 m bis 6 m größer und schwerer als ihre männlichen Artgenossen, die mit durchschnittlich 3 m eher kleiner sind. Das Gewicht liegt bei Männchen im Durchschnitt bei 150 kg und bei Weibchen bei 230 kg, wobei schwangere und sehr große Weibchen Berichten zufolge über 500 kg wiegen können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Great Hammerhead (Sphyrna mokarran) is a large shark species found in warm temperate and tropical waters around the world. It is most commonly found around continental shelves, lagoons and coral reefs, though it also sometimes occurs in deeper coastal waters.\n\nGreat Hammerheads are distinguished by a prominent, nearly straight, hammer-shaped head with a notch in the centre. They have a tall, sickle-shaped first dorsal fin and are grey-brown with a paler underside.\n\nFemales are generally larger and heavier, usually measuring 4–6 m, while males average about 3 m. Males weigh around 150 kg on average and females about 230 kg, although pregnant and very large females have reportedly exceeded 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Great Hammerhead (Sphyrna mokarran) is a large shark species found in warm temperate and tropical waters around the world. It is most commonly found around continental shelves, lagoons and coral reefs, though it also sometimes occurs in deeper coastal waters.\n\nGreat Hammerheads are distinguished by a prominent, nearly straight, hammer-shaped head with a notch in the centre. They have a tall, sickle-shaped first dorsal fin and are grey-brown with a paler underside.\n\nFemales are generally larger and heavier, usually measuring 4–6 m, while males average about 3 m. Males weigh around 150 kg on average and females about 230 kg, although pregnant and very large females have reportedly exceeded 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tiburón martillo gigante (Sphyrna mokarran) es una gran especie de tiburón presente en aguas tropicales y templadas cálidas de todo el mundo. Suele encontrarse en plataformas continentales, lagunas y cerca de arrecifes de coral, aunque a veces aparece en aguas costeras más profundas.\n\nSe distingue por su cabeza ancha y casi recta con forma de martillo y una escotadura central. Posee una primera aleta dorsal alta y falciforme y una coloración gris parduzca con la parte inferior más clara.\n\nLas hembras son normalmente más grandes y pesadas, con 4–6 m de longitud, mientras que los machos miden unos 3 m de media. Los machos pesan unos 150 kg y las hembras unos 230 kg de media, aunque las hembras preñadas o muy grandes pueden superar los 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le grand requin-marteau (Sphyrna mokarran) est une grande espèce de requin présente dans les eaux tropicales et tempérées chaudes du monde entier. On le trouve surtout sur les plateaux continentaux, dans les lagons et près des récifs coralliens, mais il peut aussi fréquenter des eaux côtières plus profondes.\n\nIl se reconnaît à sa tête en forme de marteau presque rectiligne, marquée d'une encoche centrale. Sa première nageoire dorsale est haute et falciforme, et sa coloration est gris-brun avec une face ventrale plus claire.\n\nLes femelles sont généralement plus grandes et plus lourdes, atteignant 4–6 m, tandis que les mâles mesurent en moyenne environ 3 m. Les mâles pèsent environ 150 kg et les femelles 230 kg en moyenne, bien que les femelles gravides ou très grandes puissent dépasser 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo squalo martello maggiore (Sphyrna mokarran) è una grande specie di squalo diffusa nelle acque tropicali e temperate calde di tutto il mondo. Si trova soprattutto sulle piattaforme continentali, nelle lagune e vicino alle barriere coralline, ma a volte compare anche in acque costiere più profonde.\n\nÈ caratterizzato da una testa a martello quasi rettilinea con una tacca centrale. La prima pinna dorsale è alta e falciforme e il colore è grigio-bruno con la parte inferiore più chiara.\n\nLe femmine sono generalmente più grandi e pesanti, lunghe 4–6 m, mentre i maschi misurano in media circa 3 m. I maschi pesano in media 150 kg e le femmine 230 kg, anche se femmine gravide o molto grandi possono superare i 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tubarão-martelo-panã (Sphyrna mokarran) é uma grande espécie de tubarão encontrada em águas tropicais e temperadas quentes de todo o mundo. Costuma ocorrer em plataformas continentais, lagoas e perto de recifes de coral, embora às vezes apareça em águas costeiras mais profundas.\n\nEle se distingue pela cabeça em forma de martelo quase reta, com uma reentrância central. Possui uma primeira nadadeira dorsal alta e em forma de foice, e coloração cinza-acastanhada com a parte inferior mais clara.\n\nAs fêmeas são normalmente maiores e mais pesadas, medindo 4–6 m, enquanto os machos medem em média cerca de 3 m. Os machos pesam em média 150 kg e as fêmeas 230 kg, embora fêmeas prenhes e muito grandes possam ultrapassar 500 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヒラシュモクザメ（Sphyrna mokarran）は、世界中の温暖な温帯・熱帯海域に分布する大型のサメです。主に大陸棚、ラグーン、サンゴ礁付近で見られますが、より深い沿岸域にも現れることがあります。\n\n中央に切れ込みのある、ほぼ直線的なハンマー状の頭部が特徴です。第一背びれは高く鎌状で、体色は灰褐色、腹側は淡色です。\n\n雌は通常4～6mで雄より大きく重く、雄は平均約3mです。平均体重は雄約150kg、雌約230kgですが、妊娠中や非常に大型の雌は500kgを超えることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "无沟双髻鲨（Sphyrna mokarran）是一种大型鲨鱼，分布于全球温暖的温带和热带海域。它通常生活在大陆架、泻湖和珊瑚礁附近，有时也会出现在更深的沿海水域。\n\n其最显著的特征是近乎笔直、中央带缺口的锤状头部。第一背鳍高大呈镰刀形，体色灰褐，腹部较浅。\n\n雌性通常体型更大，体长多为4～6米，而雄性平均约3米。雄性平均体重约150千克，雌性约230千克；怀孕或特别大型的雌性据报道可超过500千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Große Hammerhai ist vom Aussterben bedroht und in seinem gesamten Verbreitungsgebiet gefährdet. In den letzten 70 Jahren sind mehr als 80 % der Großen Hammerhaie verschwunden. Überfischung ist ein wichtiger Grund für den Rückgang des Bestands, da Haifischflossen sehr gefragt sind. Durch das langsame Wachstum, die späte Geschlechtsreife und den zweijährigen Fortpflanzungszyklus kann sich der Bestand des Großen Hammerhais nur langsam erholen. Da seine Wanderbewegungen mehrere Länder mit unterschiedlichen Vorschriften und deren unterschiedlicher Durchsetzung betreffen, gestaltet sich die Arterhaltung äußerst schwierig.\n\nDer Schutz für Große Hammerhaie erfolgt auf nationaler und internationaler Ebene. International wird der Handel reguliert, während einige Länder zusätzlich zu den Handelsbeschränkungen für Haifischflossen Fangbeschränkungen und Überwachungssysteme eingeführt haben. Lokale Gemeinschaftsprojekte konzentrieren sich häufig auf die Minimierung von Beifängen, und es werden Forschungen durchgeführt, um die Bestandsdynamik besser zu verstehen. Mehrere Meeresschutzgebiete bieten zumindest einige sichere Lebensräume im Verbreitungsgebiet des Hais. Diese gemeinsamen Bemühungen zielen zwar darauf ab, die Bestände zu stabilisieren, ihre Wirksamkeit hängt jedoch letztlich von einer konsequenten Durchsetzung und internationaler Zusammenarbeit ab.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Great Hammerhead is Critically Endangered throughout its range. More than 80% of Great Hammerheads have disappeared over the last 70 years. Overfishing is a major cause of decline because shark fins are highly valued. Slow growth, late sexual maturity and a two-year reproductive cycle mean populations recover only slowly. Its migrations cross several countries with different regulations and levels of enforcement, making conservation particularly difficult.\n\nProtection takes place at national and international levels. International trade is regulated, while some countries also use catch restrictions and monitoring systems in addition to controls on the shark-fin trade. Local community projects often focus on reducing bycatch, and research is carried out to better understand population dynamics. Several marine protected areas provide at least some safe habitat within the shark's range. These combined efforts aim to stabilise populations, but their effectiveness ultimately depends on consistent enforcement and international cooperation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Great Hammerhead is Critically Endangered throughout its range. More than 80% of Great Hammerheads have disappeared over the last 70 years. Overfishing is a major cause of decline because shark fins are highly valued. Slow growth, late sexual maturity and a two-year reproductive cycle mean populations recover only slowly. Its migrations cross several countries with different regulations and levels of enforcement, making conservation particularly difficult.\n\nProtection takes place at national and international levels. International trade is regulated, while some countries also use catch restrictions and monitoring systems in addition to controls on the shark-fin trade. Local community projects often focus on reducing bycatch, and research is carried out to better understand population dynamics. Several marine protected areas provide at least some safe habitat within the shark's range. These combined efforts aim to stabilise populations, but their effectiveness ultimately depends on consistent enforcement and international cooperation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El tiburón martillo gigante está en peligro crítico en toda su área de distribución. En los últimos 70 años ha desaparecido más del 80% de la población. La sobrepesca es una causa principal debido a la elevada demanda de aletas. Su crecimiento lento, madurez sexual tardía y ciclo reproductivo bienal hacen que la recuperación sea lenta. Además, sus migraciones atraviesan países con normas y niveles de control diferentes, lo que dificulta mucho la conservación.\n\nLa protección se aplica a escala nacional e internacional. El comercio internacional está regulado y algunos países también han introducido límites de captura y sistemas de vigilancia. Los proyectos comunitarios suelen centrarse en reducir las capturas accidentales, y se investiga para comprender mejor la dinámica poblacional. Varias áreas marinas protegidas ofrecen al menos algunos refugios seguros. La eficacia de estas medidas depende de una aplicación constante y de la cooperación internacional.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le grand requin-marteau est En danger critique dans toute son aire de répartition. Plus de 80 % des individus ont disparu au cours des 70 dernières années. La surpêche est une cause majeure du déclin en raison de la forte demande en ailerons. Sa croissance lente, sa maturité sexuelle tardive et son cycle reproductif de deux ans rendent le rétablissement des populations très lent. Ses migrations traversent en outre plusieurs pays ayant des réglementations et des niveaux d'application différents, ce qui complique fortement la conservation.\n\nLa protection est mise en œuvre aux niveaux national et international. Le commerce international est réglementé, tandis que certains pays utilisent également des limites de capture et des systèmes de suivi. Les projets communautaires visent souvent à réduire les prises accessoires, et la recherche cherche à mieux comprendre la dynamique des populations. Plusieurs aires marines protégées offrent au moins certains refuges. L'efficacité de ces efforts dépend cependant d'une application cohérente et de la coopération internationale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo squalo martello maggiore è in pericolo critico in tutto il suo areale. Negli ultimi 70 anni è scomparso oltre l'80% degli individui. La pesca eccessiva è una delle cause principali, poiché le pinne di squalo sono molto richieste. La crescita lenta, la maturità sessuale tardiva e il ciclo riproduttivo biennale rendono lenta la ripresa delle popolazioni. Inoltre, le migrazioni attraversano diversi paesi con normative e livelli di applicazione differenti, complicando la conservazione.\n\nLa protezione avviene a livello nazionale e internazionale. Il commercio internazionale è regolamentato e alcuni paesi hanno introdotto limiti di cattura e sistemi di monitoraggio. I progetti comunitari si concentrano spesso sulla riduzione delle catture accidentali e la ricerca mira a comprendere meglio la dinamica delle popolazioni. Diverse aree marine protette offrono almeno alcuni rifugi sicuri. L'efficacia di queste misure dipende tuttavia da un'applicazione coerente e dalla cooperazione internazionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O tubarão-martelo-panã está criticamente ameaçado em toda a sua distribuição. Mais de 80% dos indivíduos desapareceram nos últimos 70 anos. A sobrepesca é uma das principais causas do declínio devido à grande procura por barbatanas. O crescimento lento, a maturidade sexual tardia e o ciclo reprodutivo de dois anos fazem com que a recuperação seja lenta. Suas migrações atravessam vários países com regras e níveis de fiscalização diferentes, tornando a conservação especialmente difícil.\n\nA proteção ocorre em níveis nacional e internacional. O comércio internacional é regulamentado, enquanto alguns países também adotam limites de captura e sistemas de monitoramento. Projetos comunitários frequentemente buscam reduzir capturas acidentais, e pesquisas tentam compreender melhor a dinâmica populacional. Diversas áreas marinhas protegidas oferecem pelo menos alguns habitats seguros. A eficácia dessas medidas depende, porém, de fiscalização consistente e cooperação internacional.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヒラシュモクザメは分布域全体で深刻な絶滅危惧状態にあります。過去70年間で80%以上が失われました。フカヒレ需要に伴う乱獲が主要な原因です。成長が遅く、性成熟が遅いうえ、繁殖周期が2年であるため個体群の回復には時間がかかります。また複数国をまたいで回遊し、国ごとに規制や取締り状況が異なるため、保全は非常に困難です。\n\n保護は国内・国際の両レベルで行われています。国際取引は規制され、一部の国では漁獲制限や監視制度も導入されています。地域の取り組みでは混獲削減が重視され、個体群動態を理解するための研究も進められています。複数の海洋保護区が一定の安全な生息地を提供していますが、対策の効果は継続的な取締りと国際協力に左右されます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "无沟双髻鲨在整个分布区均处于极危状态。过去70年中，超过80%的个体已经消失。由于鲨鱼鳍需求旺盛，过度捕捞是种群下降的重要原因。生长缓慢、性成熟晚以及两年一次的繁殖周期使其恢复速度很慢。其迁徙会跨越多个国家，而不同国家的法规和执法力度不同，因此保护工作十分困难。\n\n保护措施在国家和国际层面同时开展。国际贸易受到管制，一些国家还实行捕捞限制和监测制度。地方社区项目经常致力于减少兼捕，研究人员也在努力更好地了解种群动态。多个海洋保护区至少提供了一部分安全栖息地。这些措施能否有效，最终取决于持续执法和国际合作。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Im Gegensatz zu einigen anderen Hammerhaiarten ist der Große Hammerhai ein Einzelgänger.\n\nGroße Hammerhaie paaren sich in den wärmeren Monaten, vor allem im Frühling und Sommer in den gemäßigten Gebieten ihres Lebensraums. Während der Balz und der Paarung schwimmen die Pärchen manchmal umeinander herum und steigen dabei zur Oberfläche auf. Die Männchen beißen die Weibchen unter Umständen, um die Position zu halten.\n\nDie Schwangerschaft dauert ungefähr 11 Monate. Dabei werden 6 bis 50 lebende Jungtiere geboren, wobei 20 bis 40 Jungtiere eine typische Wurfgröße sind. Die Neugeborenen sind bei der Geburt 50 cm bis 70 cm lang und haben zunächst abgerundete, biegsame Cephalofoils, die sich mit zunehmendem Wachstum allmählich verhärten und aufrichten. Die Jungtiere sind von Geburt an unabhängig, und die Weibchen pflanzen sich in der Regel nur alle zwei Jahre fort.\n\nDie Geschlechtsreife steht in Zusammenhang mit einer bestimmten Körpergröße. Da die Wachstumsraten bei den Geschlechtern unterschiedlich sind, werden Männchen in der Regel im Alter von 5 bis 9 Jahren geschlechtsreif, während Weibchen später und bei einer größeren Körpergröße, meist im Alter von etwa 15 Jahren, geschlechtsreif werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Unlike some other hammerhead species, the Great Hammerhead is solitary.\n\nGreat Hammerheads mate during the warmer months, especially in spring and summer in temperate parts of their range. During courtship and mating, pairs may circle one another while rising toward the surface. Males may bite females to maintain position.\n\nPregnancy lasts about 11 months. Females give birth to 6–50 live young, with 20–40 being a typical litter size. Newborns are 50–70 cm long and initially have rounded, flexible cephalofoils that gradually harden and straighten as they grow. Young are independent from birth, and females generally reproduce only every two years.\n\nSexual maturity is associated with body size. Because growth rates differ between the sexes, males usually mature at 5–9 years, while females mature later and at a larger size, usually at about 15 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Unlike some other hammerhead species, the Great Hammerhead is solitary.\n\nGreat Hammerheads mate during the warmer months, especially in spring and summer in temperate parts of their range. During courtship and mating, pairs may circle one another while rising toward the surface. Males may bite females to maintain position.\n\nPregnancy lasts about 11 months. Females give birth to 6–50 live young, with 20–40 being a typical litter size. Newborns are 50–70 cm long and initially have rounded, flexible cephalofoils that gradually harden and straighten as they grow. Young are independent from birth, and females generally reproduce only every two years.\n\nSexual maturity is associated with body size. Because growth rates differ between the sexes, males usually mature at 5–9 years, while females mature later and at a larger size, usually at about 15 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "A diferencia de otras especies de tiburón martillo, el tiburón martillo gigante es solitario.\n\nSe aparea durante los meses más cálidos, especialmente en primavera y verano en las zonas templadas de su distribución. Durante el cortejo y el apareamiento, las parejas pueden nadar en círculos una alrededor de la otra y ascender hacia la superficie. Los machos pueden morder a las hembras para mantener la posición.\n\nLa gestación dura unos 11 meses. Nacen entre 6 y 50 crías vivas, siendo 20–40 el tamaño de camada típico. Las crías miden 50–70 cm al nacer y presentan inicialmente cefalofoilos redondeados y flexibles que se endurecen y enderezan al crecer. Son independientes desde el nacimiento y las hembras normalmente solo se reproducen cada dos años.\n\nLa madurez sexual depende del tamaño corporal. Los machos suelen madurar entre los 5 y 9 años, mientras que las hembras lo hacen más tarde, normalmente hacia los 15 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Contrairement à certaines autres espèces de requins-marteaux, le grand requin-marteau est solitaire.\n\nIl s'accouple pendant les mois les plus chauds, surtout au printemps et en été dans les parties tempérées de son aire. Pendant la parade et l'accouplement, les couples peuvent tourner l'un autour de l'autre en remontant vers la surface. Les mâles peuvent mordre les femelles pour maintenir leur position.\n\nLa gestation dure environ 11 mois. La femelle donne naissance à 6–50 jeunes vivants, une portée de 20–40 étant typique. Les nouveau-nés mesurent 50–70 cm et possèdent d'abord des céphalofoils arrondis et souples qui se durcissent et se redressent avec la croissance. Ils sont indépendants dès la naissance et les femelles ne se reproduisent généralement que tous les deux ans.\n\nLa maturité sexuelle dépend de la taille. Les mâles l'atteignent généralement entre 5 et 9 ans, tandis que les femelles mûrissent plus tard, vers 15 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "A differenza di alcune altre specie di squalo martello, lo squalo martello maggiore è solitario.\n\nSi accoppia nei mesi più caldi, soprattutto in primavera e in estate nelle zone temperate dell'areale. Durante il corteggiamento e l'accoppiamento, le coppie possono girarsi intorno mentre salgono verso la superficie. I maschi possono mordere le femmine per mantenere la posizione.\n\nLa gestazione dura circa 11 mesi. Nascono 6–50 piccoli vivi, con 20–40 come dimensione tipica della nidiata. I neonati misurano 50–70 cm e inizialmente possiedono cefalofoili arrotondati e flessibili che si induriscono e si raddrizzano con la crescita. Sono indipendenti dalla nascita e le femmine normalmente si riproducono solo ogni due anni.\n\nLa maturità sessuale dipende dalla dimensione corporea. I maschi maturano normalmente a 5–9 anni, mentre le femmine più tardi, di solito intorno ai 15 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Ao contrário de algumas outras espécies de tubarão-martelo, o tubarão-martelo-panã é solitário.\n\nO acasalamento ocorre nos meses mais quentes, principalmente na primavera e no verão nas partes temperadas da distribuição. Durante a corte e o acasalamento, os pares podem nadar em círculos um ao redor do outro enquanto sobem em direção à superfície. Os machos podem morder as fêmeas para manter a posição.\n\nA gestação dura cerca de 11 meses. Nascem 6–50 filhotes vivos, sendo 20–40 uma ninhada típica. Os recém-nascidos medem 50–70 cm e inicialmente apresentam cefalofólios arredondados e flexíveis, que se endurecem e se endireitam com o crescimento. Os filhotes são independentes desde o nascimento e as fêmeas normalmente se reproduzem apenas a cada dois anos.\n\nA maturidade sexual depende do tamanho corporal. Os machos normalmente amadurecem aos 5–9 anos, enquanto as fêmeas amadurecem mais tarde, geralmente por volta dos 15 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "他の一部のシュモクザメ類とは異なり、ヒラシュモクザメは単独性です。\n\n繁殖は暖かい時期に行われ、温帯域では特に春と夏に多く見られます。求愛や交尾の際、ペアが互いの周囲を回りながら水面へ上昇することがあります。雄は位置を保つために雌を噛むことがあります。\n\n妊娠期間は約11か月で、6～50匹の仔を産み、通常は20～40匹です。出生時の全長は50～70cmで、頭部のセファロフォイルは当初丸みがあり柔軟ですが、成長とともに硬くなり直線的になります。仔は出生時から独立しており、雌は通常2年に1度しか繁殖しません。\n\n性成熟は体サイズと関連します。雄は通常5～9歳、雌はより遅く約15歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "与一些其他双髻鲨不同，无沟双髻鲨通常独居。\n\n它们在较温暖的月份交配，在温带区域尤其集中于春季和夏季。求偶和交配时，配对个体有时会互相环绕并向水面上升。雄性可能会咬住雌性以保持位置。\n\n妊娠期约11个月，每胎产6～50只活仔，通常为20～40只。幼鲨出生时体长50～70厘米，头部的头翼起初较圆且柔软，随后逐渐变硬并伸直。幼鲨出生后即独立，雌性通常每两年繁殖一次。\n\n性成熟与体型相关。雄性通常在5～9岁成熟，雌性则更晚，通常约15岁成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Große Hammerhai gilt als die größte aller Hammerhaiarten und kann bis zu 6,1 m lang werden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Hammerkopfform dieses Hais wird als „Cephalofoil“ bezeichnet, was aus dem Altgriechischen „képhalos“ (Kopf) und dem Englischen „hydrofoil“ (eine Auftriebsfläche im Wasser) stammt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Cephalofoil des Hammerhais verfügt über ein elektrorezeptives Gewebe namens „Ampullen von Lorenzini“, das bei den meisten Haien und Rochen vorkommt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Hammerhaie schwimmen meistens in „Seitenlage“, um die Hydrodynamik zu verbessern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Große Hammerhaie sind dafür bekannt, dass sie ihren hammerförmigen Kopf benutzen, um ihre Beute zu erschlagen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Great Hammerhead is considered the largest hammerhead shark species and can reach 6.1 m in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The shark's hammer-shaped head is called a 'cephalofoil', a term derived from the Greek 'képhalos' (head) and the English 'hydrofoil'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The cephalofoil contains electroreceptive tissue called the ampullae of Lorenzini, which occurs in most sharks and rays.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hammerhead sharks often swim while tilted on their side to improve hydrodynamic efficiency.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Great Hammerheads are known to use their hammer-shaped heads to strike and subdue prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Great Hammerhead is considered the largest hammerhead shark species and can reach 6.1 m in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The shark's hammer-shaped head is called a 'cephalofoil', a term derived from the Greek 'képhalos' (head) and the English 'hydrofoil'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The cephalofoil contains electroreceptive tissue called the ampullae of Lorenzini, which occurs in most sharks and rays.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hammerhead sharks often swim while tilted on their side to improve hydrodynamic efficiency.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Great Hammerheads are known to use their hammer-shaped heads to strike and subdue prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es la mayor de las especies de tiburón martillo y puede alcanzar 6,1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La forma de martillo de la cabeza se denomina «cefalofoil».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El cefalofoil contiene tejido electrorreceptor llamado ampollas de Lorenzini.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los tiburones martillo suelen nadar inclinados de lado para mejorar la hidrodinámica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El tiburón martillo gigante utiliza su cabeza en forma de martillo para golpear y someter a sus presas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le grand requin-marteau est la plus grande espèce de requin-marteau et peut atteindre 6,1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La forme en marteau de sa tête est appelée « céphalofoil ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le céphalofoil contient un tissu électrorécepteur appelé ampoules de Lorenzini.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les requins-marteaux nagent souvent inclinés sur le côté afin d'améliorer leur hydrodynamisme.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le grand requin-marteau est connu pour utiliser sa tête en forme de marteau afin de frapper et maîtriser ses proies.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È la più grande specie di squalo martello e può raggiungere 6,1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La forma a martello della testa è chiamata «cefalofoil».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il cefalofoil contiene tessuto elettrorecettivo chiamato ampolle di Lorenzini.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli squali martello nuotano spesso inclinati su un fianco per migliorare l'idrodinamica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Lo squalo martello maggiore usa la testa a martello per colpire e immobilizzare le prede.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É a maior espécie de tubarão-martelo e pode atingir 6,1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A forma de martelo da cabeça é chamada de «cefalofólio».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O cefalofólio contém tecido eletrorreceptor chamado ampolas de Lorenzini.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tubarões-martelo frequentemente nadam inclinados de lado para melhorar a hidrodinâmica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O tubarão-martelo-panã usa sua cabeça em forma de martelo para atingir e subjugar presas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "シュモクザメ類で最大とされ、全長6.1mに達することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ハンマー状の頭部は「セファロフォイル」と呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "セファロフォイルにはロレンチーニ器官と呼ばれる電気受容組織があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "シュモクザメは流体力学的効率を高めるため、横に傾いた姿勢で泳ぐことがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ヒラシュモクザメはハンマー状の頭で獲物を打ちつけて制圧することで知られています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "无沟双髻鲨被认为是体型最大的双髻鲨，可长到6.1米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "其锤状头部结构被称为“头翼（cephalofoil）”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "头翼内含有称为洛伦兹壶腹的电感受组织。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "双髻鲨常以身体侧倾的姿态游泳，以提高流体力学效率。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "无沟双髻鲨会利用锤状头部击打并制服猎物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/6b305007/Shark_GreatHammerhead_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Sphyrna mokarran/map/Sphyrna mokarran map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNmIzMDUwMDcvU2hhcmtfR3JlYXRIYW1tZXJoZWFkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Großer Hammerhai – Planet Zoo 2",
+            "en": "Great Hammerhead – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Großen Hammerhais aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Great Hammerhead."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Sphyrna mokarran/bilder/Sphyrna mokarran 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/6b305007/Shark_GreatHammerhead_illustration.jpg",
+          "alt": {
+            "de": "Großer Hammerhai – Zoopedia-Illustration",
+            "en": "Great Hammerhead – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Großen Hammerhais aus der Planet Zoo 2 Zoopedia im Bereich Arterhaltung.",
+            "en": "Great Hammerhead illustration from the Planet Zoo 2 Zoopedia conservation section."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Sphyrna mokarran/bilder/Sphyrna mokarran illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Großer Hammerhai",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gro%C3%9Fer-hammerhai",
+        "en": "https://www.planetzoogame.com/2/zoopedia/great-hammerhead",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/great-hammerhead",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/tibur%C3%B3n-martillo-gigante",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/grand-requin-marteau",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/squalo-martello-maggiore",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/tubar%C3%A3o-martelo-pan%C3%A3",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%92%E3%83%A9%E3%82%B7%E3%83%A5%E3%83%A2%E3%82%AF%E3%82%B6%E3%83%A1",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%97%A0%E6%B2%9F%E5%8F%8C%E9%AB%BB%E9%B2%A8"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

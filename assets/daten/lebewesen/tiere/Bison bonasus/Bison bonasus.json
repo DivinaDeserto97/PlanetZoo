@@ -1,0 +1,856 @@
+{
+  "id": "Bison bonasus",
+  "identitaet": {
+    "namen": {
+      "de": "Europäischer Wisent",
+      "en": "European bison",
+      "en-US": "European bison",
+      "es": "Bisonte europeo",
+      "fr": "Bison d’Europe",
+      "it": "Bisonte europeo",
+      "pt-BR": "Bisão-europeu",
+      "ja": "ヨーロッパバイソン",
+      "zh-Hans": "欧洲野牛"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "europe"
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Bison",
+          "art": "Bison bonasus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 2.8,
+          "max": 3.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.4,
+          "max": 2.9,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.8,
+          "max": 2.1,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.7,
+          "max": 2.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 615,
+          "max": 920,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 425,
+          "max": 635,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 2518,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Bison bonasus"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand mit 2.518 Individuen an.",
+            "en": "The Zoopedia gives the wild population as 2,518 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlichErfolgreichePaarung",
+          "wert": 6,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 254,
+          "max": 277,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "kalbProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenJungtiereUndNichtAusgewachseneMaennchen",
+          "wert": "mixedHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "erwachseneMaennchenAusserhalbPaarungszeit",
+          "wert": "pairsOrTrios",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Wisent (Bison bonasus), auch einfach Wisent genannt, lebt in den osteuropäischen Wäldern und Wiesen Polens, Russlands, Belarus’, Litauens, der Ukraine und der Slowakei.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European bison (Bison bonasus), also known simply as the wisent, lives in the eastern European forests and meadows of Poland, Russia, Belarus, Lithuania, Ukraine and Slovakia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European bison (Bison bonasus), also known simply as the wisent, lives in the eastern European forests and meadows of Poland, Russia, Belarus, Lithuania, Ukraine and Slovakia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El bisonte europeo (Bison bonasus), también llamado wisent, vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le bison d’Europe (Bison bonasus), aussi appelé wisent, vit dans les forêts et prairies d’Europe de l’Est en Pologne, Russie, Biélorussie, Lituanie, Ukraine et Slovaquie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il bisonte europeo (Bison bonasus), detto anche wisent, vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O bisão-europeu (Bison bonasus), também chamado de wisent, vive nas florestas e pradarias do leste europeu na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパバイソン（Bison bonasus、ウィセントとも呼ばれる）は、ポーランド、ロシア、ベラルーシ、リトアニア、ウクライナ、スロバキアの東ヨーロッパの森林や草地に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲野牛（Bison bonasus，也称wisent）生活在波兰、俄罗斯、白俄罗斯、立陶宛、乌克兰和斯洛伐克的东欧森林和草地中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Wisent (Bison bonasus), auch einfach Wisent genannt, ist ein großes Huftier, das in den osteuropäischen Wäldern und Wiesen Polens, Russlands, Belarus’, Litauens, der Ukraine und der Slowakei lebt.\n\nWisente zeichnen sich durch ihren großen Kopf, ihren Schulterbuckel und ihr muskulöses Vorderteil aus, die alle mit einem braunen, struppigen Pelz bedeckt sind. Das Hinterteil ist weniger voluminös und mit einem dünneren Fell bedeckt. Männchen und Weibchen sehen sich sehr ähnlich. Beide haben geringelte Hörner, die nach innen zeigen. Männchen werden allerdings etwa 5 % größer.\n\nBullen erreichen eine Schulterhöhe von 1,8 bis 2,1 m, eine Länge von 2,8 bis 3,3 m und ein Gewicht von 615 bis 920 kg. Kühe haben eine Schulterhöhe von 1,7 bis 2 m, eine Länge von 2,4 bis 2,9 m und ein Gewicht von 425 bis 635 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European bison (Bison bonasus), also known as the wisent, is a large hoofed mammal found in the eastern European forests and meadows of Poland, Russia, Belarus, Lithuania, Ukraine and Slovakia.\n\nEuropean bison are characterised by their large head, shoulder hump and muscular forequarters, all covered in shaggy brown fur. The hindquarters are less bulky and covered with thinner fur. Males and females look very similar. Both have curved, ringed horns pointing inward, although males grow about 5% larger.\n\nBulls reach a shoulder height of 1.8–2.1 m, a length of 2.8–3.3 m and a weight of 615–920 kg. Cows have a shoulder height of 1.7–2.0 m, a length of 2.4–2.9 m and a weight of 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European bison (Bison bonasus), also known as the wisent, is a large hoofed mammal found in the eastern European forests and meadows of Poland, Russia, Belarus, Lithuania, Ukraine and Slovakia.\n\nEuropean bison are characterised by their large head, shoulder hump and muscular forequarters, all covered in shaggy brown fur. The hindquarters are less bulky and covered with thinner fur. Males and females look very similar. Both have curved, ringed horns pointing inward, although males grow about 5% larger.\n\nBulls reach a shoulder height of 1.8–2.1 m, a length of 2.8–3.3 m and a weight of 615–920 kg. Cows have a shoulder height of 1.7–2.0 m, a length of 2.4–2.9 m and a weight of 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El bisonte europeo (Bison bonasus), también llamado wisent, es un gran ungulado que vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.\n\nSe caracteriza por su gran cabeza, la joroba de los hombros y el musculoso tren anterior, cubiertos por un pelaje marrón y áspero. El tren posterior es menos voluminoso y tiene un pelaje más fino. Machos y hembras son muy parecidos y ambos tienen cuernos curvados y anillados que apuntan hacia dentro. Los machos, sin embargo, son aproximadamente un 5 % más grandes.\n\nLos machos alcanzan 1,8–2,1 m de altura a la cruz, 2,8–3,3 m de longitud y 615–920 kg. Las hembras alcanzan 1,7–2,0 m de altura a la cruz, 2,4–2,9 m de longitud y 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le bison d’Europe (Bison bonasus), aussi appelé wisent, est un grand ongulé vivant dans les forêts et prairies d’Europe de l’Est en Pologne, Russie, Biélorussie, Lituanie, Ukraine et Slovaquie.\n\nIl se distingue par sa grosse tête, sa bosse au niveau des épaules et son avant-train musclé, couverts d’un pelage brun et hirsute. L’arrière-train est moins massif et couvert d’un poil plus fin. Mâles et femelles se ressemblent beaucoup et portent des cornes annelées recourbées vers l’intérieur. Les mâles sont toutefois environ 5 % plus grands.\n\nLes mâles atteignent 1,8–2,1 m au garrot, 2,8–3,3 m de longueur et 615–920 kg. Les femelles atteignent 1,7–2,0 m au garrot, 2,4–2,9 m de longueur et 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il bisonte europeo (Bison bonasus), detto anche wisent, è un grande ungulato che vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.\n\nÈ caratterizzato da una grande testa, una gobba sulle spalle e una parte anteriore muscolosa, tutte ricoperte da un pelo marrone e ispido. La parte posteriore è meno voluminosa e presenta un mantello più sottile. Maschi e femmine sono molto simili e possiedono corna anellate rivolte verso l’interno. I maschi, tuttavia, sono circa il 5% più grandi.\n\nI maschi raggiungono 1,8–2,1 m al garrese, 2,8–3,3 m di lunghezza e 615–920 kg. Le femmine raggiungono 1,7–2,0 m al garrese, 2,4–2,9 m di lunghezza e 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O bisão-europeu (Bison bonasus), também chamado de wisent, é um grande ungulado que vive nas florestas e pradarias do leste europeu na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.\n\nEle se destaca pela cabeça grande, pela corcova nos ombros e pela região anterior musculosa, cobertas por pelagem marrom e desgrenhada. A parte traseira é menos volumosa e tem pelagem mais fina. Machos e fêmeas são muito semelhantes e ambos possuem chifres anelados curvados para dentro. Os machos, porém, ficam cerca de 5% maiores.\n\nOs machos atingem 1,8–2,1 m de altura no ombro, 2,8–3,3 m de comprimento e 615–920 kg. As fêmeas atingem 1,7–2,0 m de altura no ombro, 2,4–2,9 m de comprimento e 425–635 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパバイソン（Bison bonasus、ウィセントとも呼ばれる）は、東ヨーロッパの森林や草地に生息する大型の有蹄類です。\n\n大きな頭、肩のこぶ、筋肉質な前半身が特徴で、茶色の粗い毛に覆われています。後半身は比較的小さく、毛も薄めです。雄と雌はよく似ており、どちらも内側に向いた環状の角を持ちますが、雄は約5%大きくなります。\n\n雄は肩高1.8～2.1m、体長2.8～3.3m、体重615～920kg。雌は肩高1.7～2.0m、体長2.4～2.9m、体重425～635kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲野牛（Bison bonasus，也称wisent）是一种大型有蹄类动物，生活在东欧的森林和草地中。\n\n它具有硕大的头部、肩部隆起和肌肉发达的前躯，这些部位覆盖着棕色蓬松毛发。后躯较不粗壮，毛也更薄。雄性和雌性外形非常相似，都长有向内弯曲的环纹角，不过雄性大约大5%。\n\n雄性肩高1.8–2.1米、体长2.8–3.3米、体重615–920千克；雌性肩高1.7–2.0米、体长2.4–2.9米、体重425–635千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Wisent gilt heute als potenziell gefährdete Art. Zu Beginn des 20. Jahrhunderts waren Europäische Wisente in freier Wildbahn aufgrund von Überjagung und Verlust ihres Lebensraums vom Aussterben bedroht. Nur 60 Exemplare verblieben in Gefangenschaft oder verwalteten Gruppen. In der Folge wurde die Spezies umfassend geschützt und durch Zucht- und Wiedereinführungsprogramme in Gefangenschaft konnte der Europäische Wisent vor dem völligen Verschwinden bewahrt werden.\n\nAbholzung und Lebensraumverlust durch landwirtschaftliche Entwicklung sowie Inzuchtdepression und Kreuzung mit Hausrindern bedrohen die Art auch heute noch. Sorgfältig verwaltete Bestände des Europäischen Wisents wurden in vielen Gebieten Europas erfolgreich wiedereingeführt, weitere Wiedereinführungen sind geplant. Die Wiederansiedlungsbemühungen waren äußerst erfolgreich, insbesondere im Białowieża-Urwald in Polen und in den Südkarpaten in Rumänien, wo sich mehrere frei lebende Bestände etabliert haben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European bison is currently considered Near Threatened. At the beginning of the 20th century, European bison in the wild were threatened with extinction because of overhunting and habitat loss. Only 60 animals remained in captivity or managed groups. The species was subsequently given extensive protection, and captive breeding and reintroduction programmes saved the European bison from disappearing completely.\n\nDeforestation and habitat loss caused by agricultural development, as well as inbreeding depression and hybridisation with domestic cattle, still threaten the species today. Carefully managed European bison populations have been successfully reintroduced in many parts of Europe, and further reintroductions are planned. Reintroduction efforts have been particularly successful in Poland's Białowieża Forest and the Southern Carpathians of Romania, where several free-ranging populations have become established.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European bison is currently considered Near Threatened. At the beginning of the 20th century, European bison in the wild were threatened with extinction because of overhunting and habitat loss. Only 60 animals remained in captivity or managed groups. The species was subsequently given extensive protection, and captive breeding and reintroduction programmes saved the European bison from disappearing completely.\n\nDeforestation and habitat loss caused by agricultural development, as well as inbreeding depression and hybridisation with domestic cattle, still threaten the species today. Carefully managed European bison populations have been successfully reintroduced in many parts of Europe, and further reintroductions are planned. Reintroduction efforts have been particularly successful in Poland's Białowieża Forest and the Southern Carpathians of Romania, where several free-ranging populations have become established.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El bisonte europeo está considerado actualmente Casi Amenazado. A comienzos del siglo XX, las poblaciones silvestres estuvieron al borde de la extinción debido a la caza excesiva y la pérdida de hábitat. Solo quedaron 60 ejemplares en cautividad o grupos gestionados. Posteriormente, la especie recibió una amplia protección y los programas de cría en cautividad y reintroducción evitaron su desaparición completa.\n\nLa deforestación y la pérdida de hábitat por el desarrollo agrícola, junto con la depresión endogámica y el cruce con ganado doméstico, siguen amenazando a la especie. Se han reintroducido con éxito poblaciones cuidadosamente gestionadas en muchas zonas de Europa y hay nuevas reintroducciones previstas. Los esfuerzos han sido especialmente exitosos en el bosque de Białowieża, en Polonia, y en los Cárpatos meridionales de Rumanía, donde se han establecido varias poblaciones libres.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le bison d’Europe est aujourd’hui considéré comme Quasi menacé. Au début du XXe siècle, les populations sauvages étaient menacées d’extinction à cause de la chasse excessive et de la perte d’habitat. Il ne restait que 60 individus en captivité ou dans des groupes gérés. L’espèce a ensuite bénéficié d’une protection importante, et les programmes d’élevage en captivité et de réintroduction ont permis d’éviter sa disparition totale.\n\nLa déforestation et la perte d’habitat due au développement agricole, ainsi que la dépression de consanguinité et les croisements avec le bétail domestique, menacent encore l’espèce. Des populations soigneusement gérées ont été réintroduites avec succès dans de nombreuses régions d’Europe et d’autres réintroductions sont prévues. Les efforts ont été particulièrement fructueux dans la forêt de Białowieża en Pologne et dans les Carpates méridionales en Roumanie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il bisonte europeo è oggi considerato prossimo alla minaccia. All’inizio del XX secolo le popolazioni selvatiche erano minacciate di estinzione a causa della caccia eccessiva e della perdita di habitat. Rimanevano soltanto 60 esemplari in cattività o in gruppi gestiti. Successivamente la specie è stata ampiamente protetta e i programmi di allevamento in cattività e reintroduzione hanno impedito la sua completa scomparsa.\n\nLa deforestazione e la perdita di habitat dovute allo sviluppo agricolo, oltre alla depressione da consanguineità e agli incroci con bovini domestici, minacciano ancora la specie. Popolazioni attentamente gestite sono state reintrodotte con successo in molte zone d’Europa e sono previste ulteriori reintroduzioni. I risultati sono stati particolarmente positivi nella foresta di Białowieża in Polonia e nei Carpazi meridionali in Romania.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O bisão-europeu é atualmente considerado Quase Ameaçado. No início do século XX, as populações selvagens estavam ameaçadas de extinção devido à caça excessiva e à perda de habitat. Restaram apenas 60 indivíduos em cativeiro ou grupos manejados. A espécie passou então a receber ampla proteção, e programas de reprodução em cativeiro e reintrodução impediram seu desaparecimento completo.\n\nO desmatamento e a perda de habitat causada pela expansão agrícola, além da depressão por endogamia e dos cruzamentos com gado doméstico, ainda ameaçam a espécie. Populações cuidadosamente manejadas foram reintroduzidas com sucesso em muitas áreas da Europa, e outras reintroduções estão planejadas. Os esforços foram especialmente bem-sucedidos na Floresta de Białowieża, na Polônia, e nos Cárpatos Meridionais, na Romênia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパバイソンは現在、準絶滅危惧種とされています。20世紀初頭には乱獲と生息地の喪失により野生個体群が絶滅寸前となり、飼育下または管理された群れに60頭しか残りませんでした。その後、厳重な保護と飼育繁殖・再導入プログラムによって完全な消滅を免れました。\n\n現在も森林伐採や農業開発による生息地喪失、近親交配による問題、家畜牛との交雑が脅威となっています。慎重に管理された個体群はヨーロッパ各地で再導入に成功しており、さらに計画されています。特にポーランドのビャウォヴィエジャの森とルーマニア南カルパチアでは複数の野生個体群が定着しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲野牛目前被认为是近危物种。20世纪初，由于过度捕猎和栖息地丧失，野生欧洲野牛曾濒临灭绝，只剩60只生活在圈养或受管理的种群中。随后该物种得到全面保护，并通过圈养繁殖和重新引入计划避免了彻底消失。\n\n如今，森林砍伐和农业开发造成的栖息地丧失、近亲繁殖衰退以及与家牛杂交仍在威胁该物种。经过谨慎管理的欧洲野牛种群已在欧洲多个地区成功重新引入，并计划开展更多项目。波兰的比亚沃维耶扎森林和罗马尼亚南喀尔巴阡山的恢复尤其成功，已经建立了多个自由生活的种群。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Europäische Wisente leben in gemischten Herden aus Weibchen und ihrem Nachwuchs sowie nicht ausgewachsenen Männchen. Erwachsene Männchen leben meist in Paaren oder Trios, nur während der Paarungszeit kämpfen sie um den Zugang zu Weibchen. Gemischte Herden kommen oft zusammen, um Tiere auszutauschen, weshalb keine festen Familieneinheiten entstehen.\n\nIn der Paarungszeit, die von August bis Oktober stattfindet, versuchen dominante Bullen, meist 6 Jahre oder älter, sich einer Gruppe Weibchen anzuschließen und sie gegen rivalisierende Männchen zu verteidigen. Jüngere Bullen schließen sich ebenfalls weiblichen Gruppen an, werden jedoch normalerweise vom älteren Männchen an der Paarung gehindert. Nähert sich ein weiterer ausgewachsener Bulle der Herde, kämpfen die beiden um ihre Position. Der Bulle beurteilt die Paarungsbereitschaft seines Weibchens durch Prüfung ihres Urins. Ein sich der Brunst näherndes Weibchen trennt er von der Gruppe und bewacht es sorgfältig. Ist es fruchtbar, kommt es zur Paarung.\n\nWisentkühe sind 254 bis 277 Tage lang trächtig und bringen ein einzelnes Kalb zur Welt. Um das Kalb zu gebären, verlässt das Weibchen die Herde für ein paar Tage und kehrt dann mit dem Jungtier zurück. Das Kalb ist mit 14 Monaten vollständig entwöhnt.\n\nWeibliche Wisente erreichen die Geschlechtsreife mit 3 Jahren und bleiben in der Herde ihrer Mutter. Allerdings können Herden Mitglieder austauschen, wenn sie sich begegnen, sodass Herden nicht ausschließlich Familiengruppen sind. Männchen werden mit 2 Jahren geschlechtsreif und verlassen ihre Geburtsgruppe, um sich einer Junggesellenherde anzuschließen. Eine erfolgreiche Paarung vor dem 6. Lebensjahr ist jedoch unwahrscheinlich. Zu diesem Zeitpunkt trennen sie sich von ihrer Junggesellengruppe und werden zu Einzelgängern, die bis zur nächsten Paarungszeit am Rand gemischter Gruppen leben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "European bison live in mixed herds of females and their offspring together with immature males. Adult males usually live in pairs or trios and compete for access to females only during the breeding season. Mixed herds frequently come together and exchange individuals, so they do not form fixed family units.\n\nDuring the breeding season from August to October, dominant bulls, usually six years old or older, try to join groups of females and defend them against rival males. Younger bulls also join female groups but are normally prevented from mating by the older male. If another adult bull approaches the herd, the two fight for their position. A bull assesses whether a female is ready to mate by examining her urine. He separates a female approaching oestrus from the group and guards her closely. When she is fertile, mating takes place.\n\nEuropean bison cows are pregnant for 254–277 days and give birth to a single calf. The female leaves the herd for a few days to give birth and then returns with the calf. The calf is fully weaned at 14 months.\n\nFemales reach sexual maturity at three years and remain in their mother's herd, although herds may exchange members when they meet and therefore are not exclusively family groups. Males mature at two years and leave their birth group to join a bachelor herd. Successful mating before six years of age is unlikely. At that point they leave the bachelor group and become solitary, living around the edges of mixed groups until the next breeding season.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "European bison live in mixed herds of females and their offspring together with immature males. Adult males usually live in pairs or trios and compete for access to females only during the breeding season. Mixed herds frequently come together and exchange individuals, so they do not form fixed family units.\n\nDuring the breeding season from August to October, dominant bulls, usually six years old or older, try to join groups of females and defend them against rival males. Younger bulls also join female groups but are normally prevented from mating by the older male. If another adult bull approaches the herd, the two fight for their position. A bull assesses whether a female is ready to mate by examining her urine. He separates a female approaching oestrus from the group and guards her closely. When she is fertile, mating takes place.\n\nEuropean bison cows are pregnant for 254–277 days and give birth to a single calf. The female leaves the herd for a few days to give birth and then returns with the calf. The calf is fully weaned at 14 months.\n\nFemales reach sexual maturity at three years and remain in their mother's herd, although herds may exchange members when they meet and therefore are not exclusively family groups. Males mature at two years and leave their birth group to join a bachelor herd. Successful mating before six years of age is unlikely. At that point they leave the bachelor group and become solitary, living around the edges of mixed groups until the next breeding season.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los bisontes europeos viven en manadas mixtas de hembras con sus crías y machos inmaduros. Los machos adultos suelen vivir en parejas o tríos y solo durante la época de apareamiento compiten por el acceso a las hembras. Las manadas mixtas se encuentran con frecuencia e intercambian individuos, por lo que no forman unidades familiares fijas.\n\nLa época de apareamiento va de agosto a octubre. Los machos dominantes, normalmente de seis años o más, intentan unirse a grupos de hembras y defenderlos frente a rivales. Los machos más jóvenes también se unen, aunque normalmente el macho mayor les impide aparearse. Si se acerca otro macho adulto, ambos luchan por su posición. El macho comprueba la disposición reproductiva de una hembra examinando su orina, separa del grupo a la hembra que se acerca al celo y la vigila cuidadosamente. Cuando es fértil, se produce el apareamiento.\n\nLa gestación dura 254–277 días y nace una sola cría. La hembra abandona la manada durante unos días para parir y después regresa con el ternero. La cría queda completamente destetada a los 14 meses.\n\nLas hembras alcanzan la madurez sexual a los tres años y permanecen en la manada de su madre. Los machos maduran a los dos años y dejan su grupo natal para incorporarse a una manada de solteros. Es poco probable que se reproduzcan con éxito antes de los seis años; entonces abandonan el grupo de solteros y pasan a ser solitarios hasta la siguiente época de apareamiento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les bisons d’Europe vivent en troupeaux mixtes composés de femelles, de leurs jeunes et de mâles immatures. Les mâles adultes vivent généralement par deux ou trois et ne se battent pour l’accès aux femelles que pendant la saison des amours. Les troupeaux mixtes se rejoignent souvent et échangent des individus, de sorte qu’ils ne forment pas d’unités familiales fixes.\n\nLa saison des amours s’étend d’août à octobre. Les mâles dominants, généralement âgés d’au moins six ans, tentent de rejoindre des groupes de femelles et de les défendre contre leurs rivaux. Les jeunes mâles rejoignent également ces groupes, mais sont normalement empêchés de s’accoupler par le mâle plus âgé. Le mâle vérifie la réceptivité d’une femelle en examinant son urine, isole une femelle approchant de l’œstrus et la surveille attentivement. Lorsqu’elle est fertile, l’accouplement a lieu.\n\nLa gestation dure 254 à 277 jours et la femelle met au monde un seul veau. Elle quitte le troupeau quelques jours pour mettre bas puis revient avec son petit. Le veau est complètement sevré à 14 mois.\n\nLes femelles atteignent la maturité sexuelle à trois ans et restent dans le troupeau de leur mère. Les mâles deviennent sexuellement matures à deux ans et quittent leur groupe natal pour rejoindre un groupe de célibataires. Une reproduction réussie avant l’âge de six ans est toutefois peu probable ; ils quittent alors le groupe de célibataires et deviennent solitaires jusqu’à la prochaine saison des amours.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I bisonti europei vivono in mandrie miste composte da femmine, piccoli e maschi non ancora adulti. I maschi adulti vivono per lo più in coppie o gruppi di tre e combattono per l’accesso alle femmine soltanto durante la stagione degli amori. Le mandrie miste si incontrano spesso e si scambiano individui, perciò non formano unità familiari fisse.\n\nLa stagione degli amori va da agosto a ottobre. I maschi dominanti, in genere di almeno sei anni, cercano di unirsi a gruppi di femmine e di difenderli dai rivali. Anche i maschi più giovani si uniscono ai gruppi, ma normalmente vengono impediti nell’accoppiamento dal maschio più anziano. Il maschio valuta la disponibilità della femmina esaminandone l’urina, separa dal gruppo una femmina prossima all’estro e la sorveglia attentamente. Quando è fertile avviene l’accoppiamento.\n\nLa gestazione dura 254–277 giorni e nasce un solo vitello. La femmina lascia la mandria per alcuni giorni per partorire e poi ritorna con il piccolo. Il vitello è completamente svezzato a 14 mesi.\n\nLe femmine raggiungono la maturità sessuale a tre anni e rimangono nella mandria della madre. I maschi maturano a due anni e lasciano il gruppo natale per unirsi a una mandria di scapoli. Un accoppiamento riuscito prima dei sei anni è tuttavia improbabile; a quel punto lasciano il gruppo di scapoli e diventano solitari fino alla stagione riproduttiva successiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os bisões-europeus vivem em manadas mistas formadas por fêmeas, seus filhotes e machos imaturos. Machos adultos normalmente vivem em pares ou trios e só disputam o acesso às fêmeas durante a estação reprodutiva. As manadas mistas frequentemente se encontram e trocam indivíduos, portanto não formam unidades familiares fixas.\n\nA estação reprodutiva ocorre de agosto a outubro. Machos dominantes, normalmente com seis anos ou mais, tentam juntar-se a grupos de fêmeas e defendê-los contra rivais. Machos mais jovens também se juntam aos grupos, mas normalmente são impedidos de acasalar pelo macho mais velho. O macho avalia a receptividade de uma fêmea examinando sua urina, separa do grupo a fêmea próxima do estro e a vigia cuidadosamente. Quando ela está fértil, ocorre o acasalamento.\n\nA gestação dura 254–277 dias e nasce um único bezerro. A fêmea deixa a manada por alguns dias para dar à luz e depois retorna com o filhote. O bezerro está completamente desmamado aos 14 meses.\n\nAs fêmeas atingem a maturidade sexual aos três anos e permanecem na manada da mãe. Os machos amadurecem aos dois anos e deixam o grupo natal para entrar em uma manada de solteiros. Um acasalamento bem-sucedido antes dos seis anos é improvável; nessa idade deixam o grupo de solteiros e tornam-se solitários até a próxima estação reprodutiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパバイソンは、雌とその子ども、未成熟の雄からなる混合群で生活します。成獣の雄は通常2～3頭で暮らし、繁殖期にのみ雌をめぐって争います。混合群同士はしばしば合流して個体を交換するため、固定した家族単位ではありません。\n\n繁殖期は8～10月です。通常6歳以上の優位な雄が雌の群れに加わり、他の雄から守ろうとします。若い雄も雌の群れに加わりますが、多くの場合は年長の雄に交尾を妨げられます。雄は雌の尿を調べて繁殖可能か判断し、発情が近い雌を群れから離して慎重に守ります。雌が受胎可能になると交尾します。\n\n妊娠期間は254～277日で、通常1頭の子を産みます。雌は出産のため数日間群れを離れ、その後子とともに戻ります。子は14か月で完全に離乳します。\n\n雌は3歳で性成熟し、母親の群れに残ります。雄は2歳で性成熟し、生まれた群れを離れて雄だけの群れに加わります。ただし6歳になる前に繁殖に成功する可能性は低く、その頃になると雄だけの群れを離れて単独生活に移り、次の繁殖期まで混合群の周辺で暮らします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲野牛生活在由雌性、幼崽和未成年雄性组成的混合群体中。成年雄性通常以两三只为一组生活，只有在繁殖季才会为接近雌性而争斗。混合群体经常相遇并交换成员，因此并不存在固定的家庭单位。\n\n繁殖季为8月至10月。优势雄性通常至少6岁，会尝试加入雌性群体并抵御其他雄性。年轻雄性也会加入，但通常会被年长雄性阻止交配。雄性会通过检查雌性的尿液来判断其是否接近发情，并把即将发情的雌性与群体分开严密看守；当雌性具备生育能力时便会交配。\n\n雌性的妊娠期为254–277天，每胎产下一只幼崽。雌性会离群几天生产，之后带着幼崽返回。幼崽在14个月大时完全断奶。\n\n雌性3岁达到性成熟，并留在母亲所在的群体中。雄性2岁达到性成熟，离开出生群体加入雄性群。6岁以前成功繁殖的可能性很低；到这一年龄后，它们会离开雄性群转为独居，在下一繁殖季前生活在混合群体边缘。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "In Polen ist der Europäische Wisent als „Żubr“ bekannt und das Nationaltier des Landes.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Sommer kann ein Wisentmännchen am Tag bis zu 32 kg Nahrung fressen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Europäische Wisent wurde früher aufgrund seiner Haut, seines Fleisches und seiner Hörner, aus denen Trinkhörner gemacht wurden, stark gejagt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es gab früher drei Unterarten des Europäischen Wisent. Zwei davon sind inzwischen ausgestorben: der Karpaten-Wisent (B. b. hungarorum), heimisch in Moldawien, Rumänien, Ungarn und der Ukraine und der Kaukasus-Wisent (B. b. caucasicus), heimisch im Kaukasusgebirge von Georgien, Russland, Aserbaidschan und Armenien. Die Typusspezies (B. b. bonasus) ist der Wisent, den wir heute kennen – es ist die einzige Unterart, die das drohende Aussterben überlebt hat.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Europäische Wisent ist das schwerste Landsäugetier Europas. Einzelne Bullen können über 1.000 kg wiegen. Das höchste jemals dokumentierte Gewicht lag sogar bei 1.900 kg. Dennoch sind Europäische Wisente im Allgemeinen leichter als ihre amerikanischen Verwandten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "In Poland, the European bison is known as the “Żubr” and is the country's national animal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During summer, a male European bison can eat up to 32 kg of food per day.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "European bison were formerly hunted heavily for their hides, meat and horns, which were made into drinking horns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the Caucasian bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The European bison is Europe's heaviest land mammal. Individual bulls can weigh more than 1,000 kg, and the highest documented weight was 1,900 kg. Nevertheless, European bison are generally lighter than their American relatives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "In Poland, the European bison is known as the “Żubr” and is the country's national animal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During summer, a male European bison can eat up to 32 kg of food per day.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "European bison were formerly hunted heavily for their hides, meat and horns, which were made into drinking horns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the Caucasian bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The European bison is Europe's heaviest land mammal. Individual bulls can weigh more than 1,000 kg, and the highest documented weight was 1,900 kg. Nevertheless, European bison are generally lighter than their American relatives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "En Polonia, el bisonte europeo se conoce como «Żubr» y es el animal nacional del país.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En verano, un macho puede comer hasta 32 kg de alimento al día.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Antiguamente fue cazado intensamente por su piel, carne y cuernos, que se utilizaban para fabricar cuernos para beber.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Antiguamente existían tres subespecies. Dos están extinguidas: el bisonte de los Cárpatos (B. b. hungarorum) y el bisonte del Cáucaso (B. b. caucasicus). La subespecie nominal B. b. bonasus es la única que sobrevivió a la amenaza de extinción.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El bisonte europeo es el mamífero terrestre más pesado de Europa. Algunos machos superan los 1.000 kg y el mayor peso documentado fue de 1.900 kg, aunque en general son más ligeros que sus parientes americanos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "En Pologne, le bison d’Europe est connu sous le nom de « Żubr » et constitue l’animal national du pays.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En été, un mâle peut consommer jusqu’à 32 kg de nourriture par jour.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le bison d’Europe était autrefois fortement chassé pour sa peau, sa viande et ses cornes, utilisées comme cornes à boire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il existait autrefois trois sous-espèces. Deux sont désormais éteintes : le bison des Carpates (B. b. hungarorum) et le bison du Caucase (B. b. caucasicus). La sous-espèce nominale B. b. bonasus est la seule à avoir survécu à la menace d’extinction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le bison d’Europe est le mammifère terrestre le plus lourd d’Europe. Certains mâles dépassent 1 000 kg et le poids maximal documenté atteint 1 900 kg, bien qu’ils soient généralement plus légers que leurs parents américains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "In Polonia il bisonte europeo è noto come «Żubr» ed è l’animale nazionale del paese.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In estate un maschio può mangiare fino a 32 kg di cibo al giorno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In passato il bisonte europeo veniva cacciato intensamente per la pelle, la carne e le corna, usate per realizzare corni potori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In passato esistevano tre sottospecie. Due sono oggi estinte: il bisonte dei Carpazi (B. b. hungarorum) e il bisonte del Caucaso (B. b. caucasicus). La sottospecie nominale B. b. bonasus è l’unica sopravvissuta alla minaccia di estinzione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il bisonte europeo è il mammifero terrestre più pesante d’Europa. Alcuni maschi superano i 1.000 kg e il peso massimo documentato è stato di 1.900 kg, anche se in generale sono più leggeri dei parenti americani.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Na Polônia, o bisão-europeu é conhecido como «Żubr» e é o animal nacional do país.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No verão, um macho pode consumir até 32 kg de alimento por dia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No passado, o bisão-europeu foi muito caçado por sua pele, carne e chifres, usados para produzir recipientes para beber.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Antigamente existiam três subespécies. Duas estão extintas: o bisão-dos-Cárpatos (B. b. hungarorum) e o bisão-do-Cáucaso (B. b. caucasicus). A subespécie nominal B. b. bonasus é a única que sobreviveu à ameaça de extinção.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O bisão-europeu é o mamífero terrestre mais pesado da Europa. Alguns machos ultrapassam 1.000 kg e o maior peso documentado foi de 1.900 kg, embora em geral sejam mais leves que seus parentes americanos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ポーランドではヨーロッパバイソンは「Żubr」と呼ばれ、国を象徴する動物です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "夏には雄1頭が1日に最大32kgの餌を食べることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "かつては皮、肉、飲用の角杯に使われる角を目的に激しく狩猟されました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "かつて3亜種が存在しましたが、カルパチアバイソン（B. b. hungarorum）とコーカサスバイソン（B. b. caucasicus）は絶滅しました。現存する基亜種B. b. bonasusだけが絶滅の危機を生き延びました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ヨーロッパバイソンはヨーロッパで最も重い陸生哺乳類です。雄は1,000kgを超えることがあり、記録上最大は1,900kgでした。それでも一般にはアメリカの近縁種より軽量です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "在波兰，欧洲野牛被称为“Żubr”，并被视为该国的代表性动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "夏季，一只雄性欧洲野牛每天最多可吃32千克食物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "过去人们曾大量猎杀欧洲野牛，以获取皮、肉和可制成饮酒角杯的角。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "过去共有三个亚种，其中喀尔巴阡欧洲野牛（B. b. hungarorum）和高加索欧洲野牛（B. b. caucasicus）已经灭绝。现存的指名亚种B. b. bonasus是唯一幸存下来的亚种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "欧洲野牛是欧洲最重的陆生哺乳动物。部分雄性可超过1,000千克，记录中的最高体重甚至达到1,900千克，不过总体而言仍比其美洲近亲更轻。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/ea0effdf/Bison_European_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/map/Bison bonasus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZWEwZWZmZGYvQmlzb25fRXVyb3BlYW4uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Europäischer Wisent – Planet Zoo 2",
+            "en": "European Bison – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Europäischen Wisents aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the European bison."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/bilder/Bison bonasus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Europäischer Wisent",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/europ%C3%A4ischer-wisent"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

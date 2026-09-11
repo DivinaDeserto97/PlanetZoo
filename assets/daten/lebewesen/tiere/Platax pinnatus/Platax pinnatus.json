@@ -1,0 +1,842 @@
+{
+  "id": "Platax pinnatus",
+  "identitaet": {
+    "namen": {
+      "de": "Langflossen-Fledermausfisch",
+      "en": "Longfin Batfish",
+      "en-US": "Longfin Batfish",
+      "es": "Pez murciélago de aleta larga",
+      "fr": "Platax à longues nageoires",
+      "it": "Pesce pipistrello pinna lunga",
+      "pt-BR": "Peixe-bandeira-comum",
+      "ja": "ツバメウオ",
+      "zh-Hans": "尖翅燕鱼"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Ephippidae",
+          "gattung": "Platax",
+          "art": "Platax pinnatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.45,
+          "max": 0.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.5,
+          "max": 3.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Platax pinnatus"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "laich",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Männchen und Weibchen geben Sperma und Eier im offenen Wasser ab. Die Zoopedia nennt keine Eizahl.",
+            "en": "Males and females release sperm and eggs into open water. The Zoopedia does not state the number of eggs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "variable",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Langflossen-Fledermausfische als soziale Tiere, die alleine, paarweise, in kleinen Gruppen oder großen Schwärmen vorkommen können.",
+            "en": "The Zoopedia describes Longfin Batfish as social animals that may occur alone, in pairs, small groups or large schools."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Langflossen-Fledermausfisch (Platax pinnatus), auch Rotsaum-Fledermausfisch genannt, ist in den tropischen Küstenregionen des Westpazifik heimisch und kommt dort in Tiefen von etwa 3 bis 25 m vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Longfin Batfish (Platax pinnatus), also known as the Redfin Batfish, is native to tropical coastal regions of the western Pacific, where it occurs at depths of about 3–25 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Longfin Batfish (Platax pinnatus), also known as the Redfin Batfish, is native to tropical coastal regions of the western Pacific, where it occurs at depths of about 3–25 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez murciélago de aleta larga (Platax pinnatus) es originario de las regiones costeras tropicales del Pacífico occidental, donde vive a unos 3–25 m de profundidad.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le platax à longues nageoires (Platax pinnatus) est originaire des régions côtières tropicales du Pacifique occidental et vit à environ 3–25 m de profondeur.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce pipistrello pinna lunga (Platax pinnatus) è originario delle regioni costiere tropicali del Pacifico occidentale, dove vive a circa 3–25 m di profondità.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-bandeira-comum (Platax pinnatus) é nativo das regiões costeiras tropicais do Pacífico ocidental, onde ocorre a cerca de 3–25 m de profundidade.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ツバメウオ（Platax pinnatus）は西太平洋の熱帯沿岸域に生息し、水深約3～25mで見られます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "尖翅燕鱼（Platax pinnatus）原产于西太平洋热带沿海地区，通常生活在约3～25米水深。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Langflossen-Fledermausfisch – auch bekannt als Platax pinnatus oder Rotsaum-Fledermausfisch – ist ein Meeresfisch, der in den tropischen Küstenregionen des Westpazifik in einer Tiefe von 3 bis 25 m heimisch ist.\n\nSie haben einen gedrungenen, runden Körper mit gelben Bauchflossen und einem gelben Streifen am Ende der Schwanzflosse. Erwachsene Exemplare sind silber- bis dunkelgrau, mit senkrechten schwarzen Bändern an der Körperseite.\n\nSie werden durchschnittlich 45 bis 60 cm lang und wiegen zwischen 1,5 kg und 3,5 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Longfin Batfish (Platax pinnatus), also known as the Redfin Batfish, is a marine fish native to tropical coastal regions of the western Pacific at depths of 3–25 m.\n\nIt has a deep, rounded body with yellow pelvic fins and a yellow band at the end of the tail fin. Adults are silver to dark grey with vertical black bands along the sides of the body.\n\nThey average 45–60 cm in length and weigh between 1.5 and 3.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Longfin Batfish (Platax pinnatus), also known as the Redfin Batfish, is a marine fish native to tropical coastal regions of the western Pacific at depths of 3–25 m.\n\nIt has a deep, rounded body with yellow pelvic fins and a yellow band at the end of the tail fin. Adults are silver to dark grey with vertical black bands along the sides of the body.\n\nThey average 45–60 cm in length and weigh between 1.5 and 3.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez murciélago de aleta larga (Platax pinnatus) es un pez marino de las regiones costeras tropicales del Pacífico occidental, donde vive a profundidades de 3–25 m.\n\nTiene un cuerpo alto y redondeado, aletas pélvicas amarillas y una banda amarilla al final de la aleta caudal. Los adultos son plateados a gris oscuro y presentan bandas negras verticales en los lados.\n\nMide unos 45–60 cm y pesa entre 1,5 y 3,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le platax à longues nageoires (Platax pinnatus) est un poisson marin des régions côtières tropicales du Pacifique occidental, où il vit entre 3 et 25 m de profondeur.\n\nIl possède un corps haut et arrondi, des nageoires pelviennes jaunes et une bande jaune à l'extrémité de la nageoire caudale. Les adultes sont argentés à gris foncé avec des bandes noires verticales sur les flancs.\n\nIls mesurent en moyenne 45–60 cm et pèsent entre 1,5 et 3,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce pipistrello pinna lunga (Platax pinnatus) è un pesce marino delle regioni costiere tropicali del Pacifico occidentale e vive a profondità di 3–25 m.\n\nHa un corpo alto e tondeggiante, pinne pelviche gialle e una fascia gialla all'estremità della pinna caudale. Gli adulti sono argentati o grigio scuro con bande nere verticali sui fianchi.\n\nRaggiunge mediamente 45–60 cm di lunghezza e pesa 1,5–3,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-bandeira-comum (Platax pinnatus) é um peixe marinho das regiões costeiras tropicais do Pacífico ocidental, vivendo entre 3 e 25 m de profundidade.\n\nPossui corpo alto e arredondado, nadadeiras pélvicas amarelas e uma faixa amarela na extremidade da nadadeira caudal. Adultos são prateados a cinza-escuros, com faixas pretas verticais nas laterais.\n\nAtingem em média 45–60 cm e pesam entre 1,5 e 3,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ツバメウオ（Platax pinnatus）は西太平洋の熱帯沿岸域に生息する海水魚で、水深3～25mに分布します。\n\n体は高く丸みがあり、腹びれは黄色、尾びれの端には黄色い帯があります。成魚は銀色から濃い灰色で、体側に縦の黒帯があります。\n\n平均全長は45～60cm、体重は1.5～3.5kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "尖翅燕鱼（Platax pinnatus）是一种生活在西太平洋热带沿海地区的海鱼，分布于约3～25米水深。\n\n身体高而圆，腹鳍呈黄色，尾鳍末端有黄色条带。成鱼呈银色至深灰色，身体侧面有垂直黑色条纹。\n\n平均体长45～60厘米，体重1.5～3.5千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Langflossen-Fledermausfisch gilt aufgrund seiner weiten Verbreitung als nicht gefährdet, steht aber dennoch vor Herausforderungen. In Teilen seines Verbreitungsgebiets – zum Beispiel in Südostasien und im südlichen China – sind regionale Populationen durch Überfischung (zur Nahrungsgewinnung und für den Aquaristikhandel) zurückgegangen. Besonders die Jungtiere sind aufgrund ihres ungewöhnlichen Aussehens bei Aquarianern beliebt. Eine weitere Bedrohung ist der Lebensraumverlust durch Küstenbebauung und Mangrovensterben, weil dadurch Brutplätze verloren gehen. Die durch den Klimawandel verursachte Korallenbleiche schwächt die Riff-Ökosysteme zusätzlich, was die Fortpflanzung und das Überleben des Langflossen-Fledermausfischs bedroht.\n\nEs gibt mehrere Strategien zur Arterhaltung des Langflossen-Fledermausfischs. Meeresschutzgebiete helfen bei der Erhaltung von Riffen und Mangroven, die für den Lebenszyklus dieser Art entscheidend sind, und begrenzen die regionale Überfischung. Zudem soll die Nachzucht in Gefangenschaft und großen Aquakulturen den Druck auf die wildlebenden Populationen verringern, indem Märkte versorgt werden, ohne dass natürliche Bestände weiter angegriffen werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Longfin Batfish is considered Least Concern because of its wide distribution, but it still faces challenges. In parts of its range, such as Southeast Asia and southern China, regional populations have declined because of overfishing for food and the aquarium trade. Juveniles are particularly popular among aquarists because of their unusual appearance. Habitat loss caused by coastal development and mangrove decline is another threat because breeding areas are lost. Coral bleaching driven by climate change further weakens reef ecosystems, threatening reproduction and survival.\n\nSeveral conservation strategies are used. Marine protected areas help preserve reefs and mangroves that are important to the species' life cycle and can limit regional overfishing. Captive breeding and large-scale aquaculture are also intended to reduce pressure on wild populations by supplying markets without further depleting natural stocks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Longfin Batfish is considered Least Concern because of its wide distribution, but it still faces challenges. In parts of its range, such as Southeast Asia and southern China, regional populations have declined because of overfishing for food and the aquarium trade. Juveniles are particularly popular among aquarists because of their unusual appearance. Habitat loss caused by coastal development and mangrove decline is another threat because breeding areas are lost. Coral bleaching driven by climate change further weakens reef ecosystems, threatening reproduction and survival.\n\nSeveral conservation strategies are used. Marine protected areas help preserve reefs and mangroves that are important to the species' life cycle and can limit regional overfishing. Captive breeding and large-scale aquaculture are also intended to reduce pressure on wild populations by supplying markets without further depleting natural stocks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Se considera de Preocupación Menor debido a su amplia distribución, aunque sigue afrontando amenazas. En partes de su área, como el Sudeste Asiático y el sur de China, algunas poblaciones han disminuido por la sobrepesca destinada a la alimentación y al comercio de acuarios. Los juveniles son especialmente populares por su aspecto poco común. La urbanización costera y la pérdida de manglares eliminan zonas de cría, mientras que el blanqueamiento de corales provocado por el cambio climático debilita aún más los ecosistemas de arrecife.\n\nLas áreas marinas protegidas ayudan a conservar arrecifes y manglares y pueden limitar la sobrepesca regional. La cría en cautividad y la acuicultura a gran escala también pretenden reducir la presión sobre las poblaciones silvestres abasteciendo los mercados sin extraer más ejemplares de la naturaleza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est classée en Préoccupation mineure grâce à sa vaste répartition, mais elle reste confrontée à plusieurs menaces. Dans certaines parties de son aire, notamment en Asie du Sud-Est et dans le sud de la Chine, des populations régionales ont diminué à cause de la surpêche pour l'alimentation et le commerce aquariophile. Les jeunes sont particulièrement recherchés en raison de leur apparence inhabituelle. L'aménagement côtier et le recul des mangroves détruisent des zones de reproduction, tandis que le blanchissement des coraux lié au changement climatique affaiblit encore les écosystèmes récifaux.\n\nLes aires marines protégées contribuent à préserver les récifs et les mangroves et peuvent réduire la surpêche régionale. L'élevage en captivité et l'aquaculture à grande échelle visent également à diminuer la pression sur les populations sauvages en approvisionnant les marchés sans nouveaux prélèvements.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È considerato a rischio minimo grazie alla sua ampia distribuzione, ma affronta comunque varie minacce. In alcune parti dell'areale, come il Sud-est asiatico e la Cina meridionale, popolazioni regionali sono diminuite per la pesca eccessiva destinata al consumo e al commercio acquariofilo. I giovani sono particolarmente richiesti per il loro aspetto insolito. Lo sviluppo costiero e la perdita delle mangrovie eliminano aree riproduttive, mentre lo sbiancamento dei coralli dovuto ai cambiamenti climatici indebolisce ulteriormente gli ecosistemi di barriera.\n\nLe aree marine protette aiutano a conservare barriere e mangrovie e possono limitare la pesca eccessiva regionale. L'allevamento in cattività e l'acquacoltura su larga scala mirano inoltre a ridurre la pressione sulle popolazioni selvatiche rifornendo i mercati senza ulteriori prelievi dalla natura.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É considerado Pouco Preocupante devido à ampla distribuição, mas ainda enfrenta ameaças. Em partes da área de ocorrência, como o Sudeste Asiático e o sul da China, populações regionais diminuíram por causa da sobrepesca para alimentação e comércio de aquários. Juvenis são especialmente populares devido à aparência incomum. O desenvolvimento costeiro e a perda de manguezais eliminam áreas de reprodução, enquanto o branqueamento de corais causado pelas mudanças climáticas enfraquece ainda mais os recifes.\n\nÁreas marinhas protegidas ajudam a conservar recifes e manguezais e podem limitar a sobrepesca regional. A reprodução em cativeiro e a aquicultura em grande escala também buscam reduzir a pressão sobre populações selvagens ao abastecer os mercados sem retirar mais animais da natureza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "広い分布域を持つため低危険種とされていますが、複数の脅威に直面しています。東南アジアや中国南部などでは、食用や観賞魚取引のための乱獲により地域個体群が減少しています。特に幼魚は独特な外見から観賞魚として人気があります。沿岸開発やマングローブの減少による生息地喪失も繁殖場所を奪います。さらに気候変動によるサンゴの白化が礁生態系を弱体化させ、繁殖と生存を脅かしています。\n\n海洋保護区は、生活史に重要なサンゴ礁とマングローブを保全し、地域的な乱獲を抑えるのに役立ちます。また、飼育繁殖や大規模養殖によって市場を供給し、野生個体への圧力を下げる取り組みも進められています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "由于分布范围广，尖翅燕鱼被列为无危，但仍面临多种威胁。在东南亚和中国南部等部分地区，由于食用捕捞和观赏鱼贸易，区域种群已经下降。幼鱼因外形独特尤其受到水族爱好者欢迎。沿海开发和红树林减少导致繁殖场所丧失，气候变化引起的珊瑚白化又进一步削弱礁生态系统，对繁殖和生存构成威胁。\n\n海洋保护区有助于保护该物种生命周期所依赖的珊瑚礁和红树林，并限制区域性过度捕捞。圈养繁殖和大型水产养殖也旨在通过人工供应市场，减少对野生种群的捕捞压力。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Langflossen-Fledermausfische sind soziale Tiere und können alleine, paarweise, in kleinen Gruppen oder großen Schwärmen unterwegs sein.\n\nDer Langflossen-Fledermausfisch pflanzt sich das ganze Jahr über fort, besonders häufig aber im Frühling und im Sommer. Er hat einen Fortpflanzungszyklus, der typisch für viele in Riffen lebende Meeresfische ist, und zeigt kein aufwendiges Balzverhalten. Erwachsene Tiere bilden meist lose Balzgruppen, in denen Männchen und Weibchen Sperma und Eier im offenen Wasser freisetzen, wodurch es zu einer äußeren Befruchtung kommt.\n\nDie befruchteten Eier sind pelagisch – sie treiben im Ozean dahin, bis aus ihnen winzige Larven schlüpfen. Diese Larven bleiben eine Weile lang Teil des Planktons, bis sie sich in seichten Küstengewässern niederlassen. Mit ihrem orange-schwarz gestreiften Körper, der giftigen Plattwürmern ähnelt, sehen die Jungtiere deutlich anders aus als erwachsene Exemplare. Mit zunehmendem Alter verlieren sie diese Tarnung jedoch.\n\nSchließlich schwimmen die Jungtiere tiefer ins Riff oder in offene Gewässer hinaus und nehmen ihre runde, erwachsene Form an. Langflossen-Fledermausfische werden mit 2 bis 4 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Longfin Batfish are social animals and may occur alone, in pairs, in small groups or in large schools.\n\nThey reproduce throughout the year, particularly often in spring and summer. Their reproductive cycle is typical of many reef-dwelling marine fish and they do not show elaborate courtship. Adults usually form loose spawning groups in which males and females release sperm and eggs into open water, resulting in external fertilisation.\n\nThe fertilised eggs are pelagic and drift in the ocean until tiny larvae hatch. These larvae remain part of the plankton for a time before settling in shallow coastal waters. With their orange-and-black striped bodies resembling toxic flatworms, juveniles look very different from adults. This mimicry is gradually lost as they age.\n\nEventually, juveniles move deeper into reefs or out into open water and take on the rounded adult form. Longfin Batfish reach sexual maturity at 2–4 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Longfin Batfish are social animals and may occur alone, in pairs, in small groups or in large schools.\n\nThey reproduce throughout the year, particularly often in spring and summer. Their reproductive cycle is typical of many reef-dwelling marine fish and they do not show elaborate courtship. Adults usually form loose spawning groups in which males and females release sperm and eggs into open water, resulting in external fertilisation.\n\nThe fertilised eggs are pelagic and drift in the ocean until tiny larvae hatch. These larvae remain part of the plankton for a time before settling in shallow coastal waters. With their orange-and-black striped bodies resembling toxic flatworms, juveniles look very different from adults. This mimicry is gradually lost as they age.\n\nEventually, juveniles move deeper into reefs or out into open water and take on the rounded adult form. Longfin Batfish reach sexual maturity at 2–4 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Son peces sociales y pueden encontrarse solos, en parejas, en pequeños grupos o en grandes bancos.\n\nSe reproducen durante todo el año, especialmente en primavera y verano. Su ciclo reproductivo es típico de muchos peces marinos de arrecife y no presentan un cortejo complejo. Los adultos forman grupos de desove poco cohesionados en los que machos y hembras liberan esperma y huevos en el agua, produciéndose fecundación externa.\n\nLos huevos fecundados son pelágicos y flotan en el océano hasta que eclosionan pequeñas larvas. Estas forman parte del plancton durante un tiempo y después se establecen en aguas costeras poco profundas. Los juveniles, con rayas naranja y negras semejantes a gusanos planos venenosos, tienen un aspecto muy distinto al de los adultos, aunque pierden este mimetismo al crecer.\n\nFinalmente se desplazan a zonas más profundas del arrecife o a aguas abiertas y adoptan la forma redondeada del adulto. Alcanzan la madurez sexual entre los 2 y 4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les platax à longues nageoires sont sociaux et peuvent être observés seuls, en couple, en petits groupes ou en grands bancs.\n\nIls se reproduisent toute l'année, surtout au printemps et en été. Leur cycle reproductif est typique de nombreux poissons marins récifaux et ne comprend pas de parade élaborée. Les adultes forment généralement des groupes de frai lâches, au sein desquels mâles et femelles libèrent leurs gamètes dans l'eau libre, provoquant une fécondation externe.\n\nLes œufs fécondés sont pélagiques et dérivent dans l'océan jusqu'à l'éclosion de minuscules larves. Celles-ci restent quelque temps dans le plancton avant de s'installer dans les eaux côtières peu profondes. Les jeunes, orange et noirs, ressemblent à des vers plats toxiques et diffèrent fortement des adultes. Cette imitation disparaît progressivement avec l'âge.\n\nIls gagnent ensuite des zones plus profondes du récif ou la haute mer et prennent leur forme adulte arrondie. Ils atteignent la maturité sexuelle entre 2 et 4 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sono pesci sociali e possono essere osservati da soli, in coppia, in piccoli gruppi o in grandi banchi.\n\nSi riproducono tutto l'anno, soprattutto in primavera e in estate. Il ciclo riproduttivo è tipico di molti pesci marini di barriera e non prevede un corteggiamento elaborato. Gli adulti formano gruppi di deposizione poco compatti nei quali maschi e femmine rilasciano sperma e uova nell'acqua aperta, con fecondazione esterna.\n\nLe uova fecondate sono pelagiche e vanno alla deriva nell'oceano fino alla schiusa di piccole larve. Le larve restano per un periodo nel plancton prima di insediarsi in acque costiere poco profonde. I giovani, arancio e neri, ricordano vermi piatti velenosi e sono molto diversi dagli adulti. Questa mimetizzazione viene persa con l'età.\n\nInfine si spostano più in profondità nella barriera o in acque aperte e assumono la forma adulta rotondeggiante. Raggiungono la maturità sessuale tra 2 e 4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "São peixes sociais e podem ocorrer sozinhos, em pares, em pequenos grupos ou em grandes cardumes.\n\nReproduzem-se durante todo o ano, principalmente na primavera e no verão. Seu ciclo reprodutivo é típico de muitos peixes marinhos de recife e não apresenta corte elaborada. Adultos formam grupos de desova pouco coesos nos quais machos e fêmeas liberam esperma e ovos na água aberta, resultando em fecundação externa.\n\nOs ovos fertilizados são pelágicos e ficam à deriva no oceano até a eclosão de pequenas larvas. Estas permanecem por algum tempo no plâncton antes de se estabelecerem em águas costeiras rasas. Os juvenis, laranja e pretos, lembram platelmintos venenosos e têm aparência muito diferente dos adultos. Essa imitação desaparece com a idade.\n\nDepois os juvenis se deslocam para partes mais profundas do recife ou para águas abertas e assumem a forma arredondada do adulto. A maturidade sexual é atingida entre 2 e 4 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ツバメウオは社会性のある魚で、単独、ペア、小さな群れ、大きな群れのいずれでも見られます。\n\n一年中繁殖しますが、特に春と夏に多く見られます。繁殖様式は多くのサンゴ礁性海水魚に典型的で、複雑な求愛は行いません。成魚は緩やかな産卵群をつくり、雄と雌が外洋で精子と卵を放出して体外受精します。\n\n受精卵は浮遊性で、海を漂いながら小さな仔魚が孵化します。仔魚はしばらくプランクトンとして生活した後、浅い沿岸水域に定着します。幼魚は橙色と黒の縞模様で、有毒な扁形動物に似ており、成魚とは大きく異なります。この擬態は成長とともに失われます。\n\n成長した幼魚はより深い礁や外洋へ移動し、丸みのある成魚の姿になります。2～4歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "尖翅燕鱼具有社会性，既可单独活动，也可成对、小群或大型鱼群出现。\n\n它们全年都可繁殖，尤其常见于春季和夏季。繁殖方式与许多礁区海鱼相似，没有复杂的求偶行为。成鱼通常形成松散的产卵群，雄性和雌性在开放水域释放精子和卵，进行体外受精。\n\n受精卵为浮游性，会随海水漂流直到孵化成细小仔鱼。仔鱼会暂时作为浮游生物生活，之后在浅水沿海区域定居。幼鱼身体呈橙黑条纹，类似有毒扁虫，与成鱼外观差异很大；这种拟态会随着成长逐渐消失。\n\n之后幼鱼会游向更深的珊瑚礁或开放水域，并逐渐形成成鱼的圆形体态。2～4岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Langflossen-Fledermausfische wachsen außergewöhnlich schnell und können bereits nach nur 6 Monaten nahezu ihre volle Größe erreichen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Jungtiere sehen extrem anders aus als erwachsene Langflossen-Fledermausfische; ihre Tarnung soll an giftige Plattwürmer erinnern, um Fressfeinde abzuschrecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Langflossen-Fledermausfische haben eine Vorliebe für vor Anker liegende Boote und sammeln sich gerne um Ankerketten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In Gefangenschaft lebende Langflossen-Fledermausfische sind dafür bekannt, dass sie sich Fütterungszeiten merken und Tierpfleger erkennen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Langflossen-Fledermausfische sind sehr neugierig und nähern sich oft Tauchern, um sie zu untersuchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Longfin Batfish grow exceptionally quickly and can reach nearly their full size after only six months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Juveniles look extremely different from adults; their appearance is thought to mimic toxic flatworms and discourage predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Longfin Batfish are attracted to anchored boats and often gather around anchor chains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Captive Longfin Batfish are known to remember feeding times and recognise keepers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Longfin Batfish are very curious and often approach divers to investigate them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Longfin Batfish grow exceptionally quickly and can reach nearly their full size after only six months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Juveniles look extremely different from adults; their appearance is thought to mimic toxic flatworms and discourage predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Longfin Batfish are attracted to anchored boats and often gather around anchor chains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Captive Longfin Batfish are known to remember feeding times and recognise keepers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Longfin Batfish are very curious and often approach divers to investigate them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Crecen de forma extraordinariamente rápida y pueden alcanzar casi su tamaño completo en solo seis meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los juveniles son muy diferentes a los adultos y su aspecto parece imitar gusanos planos venenosos para disuadir a los depredadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sienten atracción por los barcos fondeados y suelen reunirse alrededor de las cadenas de ancla.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En cautividad pueden recordar los horarios de alimentación y reconocer a los cuidadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son muy curiosos y a menudo se acercan a los buceadores para investigarlos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ils grandissent exceptionnellement vite et peuvent atteindre presque leur taille adulte en seulement six mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les jeunes ont un aspect très différent des adultes et semblent imiter des vers plats toxiques pour décourager les prédateurs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils sont attirés par les bateaux au mouillage et se regroupent souvent autour des chaînes d'ancre.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En captivité, ils peuvent mémoriser les heures de nourrissage et reconnaître les soigneurs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils sont très curieux et s'approchent souvent des plongeurs pour les examiner.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Crescono eccezionalmente in fretta e possono raggiungere quasi la dimensione adulta in soli sei mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I giovani sono estremamente diversi dagli adulti e sembrano imitare vermi piatti velenosi per scoraggiare i predatori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sono attratti dalle barche ancorate e si radunano spesso intorno alle catene dell'ancora.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In cattività possono ricordare gli orari di alimentazione e riconoscere i custodi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sono molto curiosi e si avvicinano spesso ai subacquei per osservarli.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Crescem excepcionalmente rápido e podem atingir quase o tamanho adulto em apenas seis meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os juvenis são extremamente diferentes dos adultos e parecem imitar platelmintos venenosos para afastar predadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "São atraídos por barcos ancorados e costumam se reunir ao redor das correntes das âncoras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Em cativeiro, podem lembrar horários de alimentação e reconhecer tratadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "São muito curiosos e frequentemente se aproximam de mergulhadores para investigá-los.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "非常に成長が速く、わずか6か月でほぼ成魚の大きさに達することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼魚は成魚と大きく異なり、有毒な扁形動物に似た姿で捕食者を遠ざけると考えられています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "停泊中の船を好み、アンカーチェーンの周囲に集まることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "飼育下では給餌時間を覚え、飼育員を識別することが知られています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "非常に好奇心が強く、ダイバーに近づいて観察することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "生长速度非常快，约6个月就可能接近成体大小。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼鱼与成鱼外观差异极大，其拟态被认为类似有毒扁虫，可用于威慑捕食者。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们偏爱停泊中的船只，经常聚集在锚链周围。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "圈养个体能够记住喂食时间并识别饲养员。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们非常好奇，经常接近潜水员进行观察。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/639680f0/Batfish_Longfin_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Platax pinnatus/map/Platax pinnatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjM5NjgwZjAvQmF0ZmlzaF9Mb25nZmluLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Langflossen-Fledermausfisch – Planet Zoo 2",
+            "en": "Longfin Batfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Langflossen-Fledermausfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Longfin Batfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Platax pinnatus/bilder/Platax pinnatus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/639680f0/Batfish_Longfin_illustration.jpg",
+          "alt": {
+            "de": "Langflossen-Fledermausfisch – Zoopedia-Illustration",
+            "en": "Longfin Batfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Langflossen-Fledermausfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Longfin Batfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Platax pinnatus/bilder/Platax pinnatus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Langflossen-Fledermausfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/langflossen-fledermausfisch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/longfin-batfish",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/longfin-batfish",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pez-murci%C3%A9lago-de-aleta-larga",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/platax-%C3%A0-longues-nageoires",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-pipistrello-pinna-lunga",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/peixe-bandeira-comum",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%84%E3%83%90%E3%83%A1%E3%82%A6%E3%82%AA",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B0%96%E7%BF%85%E7%87%95%E9%B1%BC"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}

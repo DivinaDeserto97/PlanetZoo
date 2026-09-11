@@ -1,30 +1,31 @@
 {
-  "id": "",
+  "id": "Spheniscus demersus",
   "identitaet": {
     "namen": {
-      "de": "",
-      "en": "",
-      "en-US": "",
-      "es": "",
-      "fr": "",
-      "it": "",
-      "pt-BR": "",
-      "ja": "",
-      "zh-Hans": ""
+      "de": "Brillenpinguin",
+      "en": "African Penguin",
+      "en-US": "African Penguin",
+      "es": "Pingüino africano",
+      "fr": "Manchot du Cap",
+      "it": "Pinguino africano",
+      "pt-BR": "Pinguim-africano",
+      "ja": "ケープペンギン",
+      "zh-Hans": "非洲企鹅"
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "habitatTerrestrial"
     ],
     "kontinente": [
-      ""
+      "africa"
     ],
     "biome": [
-      ""
+      "Offenes Meer",
+      "Wüste"
     ],
-    "schutzstatus": ""
+    "schutzstatus": "criticallyEndangered"
   },
   "daten": {
     "taxonomie": {
@@ -32,703 +33,789 @@
         {
           "reich": "",
           "stamm": "",
-          "klasse": "",
-          "ordnung": "",
-          "familie": "",
-          "gattung": "",
-          "art": "",
-          "quelle": ""
+          "klasse": "Aves",
+          "ordnung": "Sphenisciformes",
+          "familie": "Spheniscidae",
+          "gattung": "Spheniscus",
+          "art": "Spheniscus demersus",
+          "quelle": "planetZoo2"
         }
       ]
     },
     "koerperlaenge": {
       "werte": [
         {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
+          "typ": "ausgewachsen",
+          "min": 0.6,
+          "max": 0.68,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt den Wert als Körpergröße.",
+            "en": "The Zoopedia describes this value as body size."
+          },
+          "quelle": "planetZoo2"
         }
       ]
     },
     "schulterhoehe": {
-      "werte": [
-        {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
-        },
-        {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
-        }
-      ]
+      "werte": []
     },
     "gewicht": {
       "werte": [
         {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
-        },
-        {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
+          "typ": "ausgewachsen",
+          "min": 2.2,
+          "max": 3.5,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Männchen können laut Zoopedia etwas größer sein als Weibchen.",
+            "en": "According to the Zoopedia, males can be slightly larger than females."
+          },
+          "quelle": "planetZoo2"
         }
       ]
     },
     "lebensspanne": {
-      "werte": [
-        {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "einheit": "",
-          "quelle": ""
-        }
-      ]
+      "werte": []
     },
     "geschwindigkeit": {
-      "werte": [
-        {
-          "typ": "",
-          "wert": null,
-          "einheit": "",
-          "quelle": ""
-        }
-      ]
+      "werte": []
     },
     "schutzstatus": {
       "werte": [
         {
-          "wert": "",
-          "system": "",
-          "quelle": ""
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
         }
       ]
     },
     "wildpopulation": {
       "werte": [
         {
-          "wert": null,
-          "einheit": "",
+          "wert": 19800,
+          "einheit": "individuum",
           "giltFuer": [
-            ""
+            "Spheniscus demersus"
           ],
           "jahrDerGrundlage": null,
           "hinweis": {
-            "de": "",
-            "en": ""
+            "de": "Die Zoopedia zeigt den Wildbestand als 19.8 an; dies entspricht 19,8 Tausend beziehungsweise 19.800 Individuen.",
+            "en": "The Zoopedia displays the wild population as 19.8, corresponding to 19.8 thousand or 19,800 individuals."
           },
-          "quelle": ""
+          "quelle": "planetZoo2"
         }
       ]
     },
     "geschlechtsreife": {
       "werte": [
         {
-          "typ": "",
-          "wert": null,
-          "einheit": "",
-          "quelle": ""
-        },
-        {
-          "typ": "",
-          "wert": null,
-          "einheit": "",
-          "quelle": ""
+          "typ": "ersteFortpflanzung",
+          "min": 4,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
         }
       ]
     },
     "tragzeit": {
       "werte": [
         {
-          "wert": null,
-          "einheit": "",
-          "quelle": ""
+          "typ": "inkubation",
+          "wert": 40,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
         }
       ]
     },
     "nachwuchs": {
       "werte": [
         {
-          "typ": "",
-          "min": null,
-          "max": null,
-          "durchschnitt": null,
-          "quelle": ""
+          "typ": "eierProGelege",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "quelle": "planetZoo2"
         }
       ]
     },
     "sozialeStruktur": {
       "werte": [
         {
-          "typ": "",
-          "wert": "",
+          "typ": "kolonie",
+          "wert": "veryLargeBreedingColony",
           "minGruppengroesse": null,
           "maxGruppengroesse": null,
-          "quelle": ""
-        },
-        {
-          "typ": "",
-          "wert": "",
-          "quelle": ""
+          "hinweis": {
+            "de": "Wenn sie nicht jagen, sammeln sich Brillenpinguine laut Zoopedia in riesigen Kolonien mit mehreren tausend Pärchen.",
+            "en": "When not hunting, African penguins gather in huge colonies containing several thousand pairs."
+          },
+          "quelle": "planetZoo2"
         }
       ]
     },
     "biome": {
       "werte": [
         {
-          "wert": "",
-          "quelle": ""
+          "wert": "openOcean",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "desert",
+          "quelle": "planetZoo2"
         }
       ]
     },
     "aktivitaet": {
-      "werte": [
-        {
-          "wert": "",
-          "beschreibung": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": ""
-        }
-      ]
+      "werte": []
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [
-          {
-            "wert": "",
-            "quelle": ""
-          }
-        ]
+        "werte": []
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "",
-                "bedingung": "",
-                "quelle": ""
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "",
-                "quelle": ""
-              }
-            ]
-          }
+        "jungtier": {
+          "werte": []
         },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "",
-                "quelle": ""
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
+        "erwachsen": {
+          "werte": []
         }
       }
     }
   },
   "systematik": {
     "hinweis": {
-      "de": "",
-      "en": ""
+      "de": "Im Zoopedia-Durchgang werden nur die dort angegebenen taxonomischen Ränge übernommen. Reich, Stamm und weiterführende Systematik folgen mit Fachquellen.",
+      "en": "The Zoopedia pass only records taxonomic ranks stated there. Kingdom, phylum and extended systematics will be added from specialist sources later."
     },
-    "naheVerwandte": [
-      {
-        "id": "",
-        "beziehung": "",
-        "deutscherName": "",
-        "quelle": ""
-      }
-    ],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [
-        {
-          "id": "",
-          "rang": "",
-          "name": "",
-          "deutscherName": "",
-          "lebensstatus": null,
-          "domestikationsstatus": null,
-          "schutzstatus": null,
-          "spiele": [],
-          "position": null,
-          "hinweis": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": ""
-        }
-      ],
-      "aufspaltungen": [
-        {
-          "linieA": "",
-          "linieB": "",
-          "zeitVorHeuteMioJahre": null,
-          "typ": "",
-          "quelle": ""
-        }
-      ],
-      "verbindungen": [
-        {
-          "von": "",
-          "nach": "",
-          "typ": "",
-          "hinweis": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": ""
-        }
-      ]
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {
     "vorkommen": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Der Brillenpinguin lebt an der Küste und auf den Inseln Südafrikas und Namibias.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "The African penguin lives along the coast and on the islands of South Africa and Namibia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "The African penguin lives along the coast and on the islands of South Africa and Namibia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "El pingüino africano vive en las costas y las islas de Sudáfrica y Namibia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "fr": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Le manchot du Cap vit sur les côtes et les îles d’Afrique du Sud et de Namibie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "it": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Il pinguino africano vive lungo le coste e sulle isole del Sudafrica e della Namibia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "O pinguim-africano vive ao longo das costas e nas ilhas da África do Sul e da Namíbia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "ja": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "ケープペンギンは南アフリカとナミビアの沿岸および島々に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "zh-Hans": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "非洲企鹅生活在南非和纳米比亚的海岸及岛屿上。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     },
     "uebersicht": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Der Brillenpinguin (auch Spheniscus demersus) ist ein flugunfähiger Vogel, der an der Küste und auf den Inseln Südafrikas und Namibias lebt.\n\nRücken, Flügel und Füße des Brillenpinguins sind schwarz, zudem hat er eine schwarze „Maske“ im Gesicht, die weiß umrandet ist. Der Körper ist weiß mit einem schwarzen Streifen auf der Brust. Die Augen des Brillenpinguins haben rosafarbene Ränder, die ihm bei der Regulierung der Körpertemperatur helfen. Darüber hinaus besitzt jeder Brillenpinguin ein individuelles Muster aus schwarzen Punkten auf der Brust.\n\nBrillenpinguine werden 60 cm bis 68 cm groß und wiegen zwischen 2,2 kg und 3,5 kg. Die Männchen können etwas größer sein als die Weibchen.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "The African penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Africa and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every African penguin has an individual pattern of black spots on its chest.\n\nAfrican penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "The African penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Africa and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every African penguin has an individual pattern of black spots on its chest.\n\nAfrican penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "El pingüino africano (Spheniscus demersus) es un ave no voladora que vive en las costas y las islas de Sudáfrica y Namibia.\n\nEl dorso, las aletas y las patas son negros y presenta una «máscara» negra en la cara bordeada de blanco. El cuerpo es blanco con una franja negra en el pecho. Las zonas rosadas alrededor de los ojos ayudan a regular la temperatura corporal. Además, cada individuo posee un patrón único de puntos negros en el pecho.\n\nMide entre 60 y 68 cm y pesa entre 2,2 y 3,5 kg. Los machos pueden ser algo más grandes que las hembras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "fr": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Le manchot du Cap (Spheniscus demersus) est un oiseau incapable de voler qui vit sur les côtes et les îles d’Afrique du Sud et de Namibie.\n\nSon dos, ses nageoires et ses pattes sont noirs. Son visage porte un « masque » noir bordé de blanc. Le corps est blanc avec une bande noire sur la poitrine. Les zones roses autour des yeux l’aident à réguler sa température corporelle. Chaque individu possède en outre un motif unique de points noirs sur la poitrine.\n\nIl mesure de 60 à 68 cm et pèse de 2,2 à 3,5 kg. Les mâles peuvent être légèrement plus grands que les femelles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "it": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Il pinguino africano (Spheniscus demersus) è un uccello incapace di volare che vive lungo le coste e sulle isole del Sudafrica e della Namibia.\n\nDorso, pinne e zampe sono neri e sul volto presenta una «maschera» nera bordata di bianco. Il corpo è bianco con una fascia nera sul petto. Le aree rosa attorno agli occhi aiutano a regolare la temperatura corporea. Ogni individuo possiede inoltre un disegno unico di macchie nere sul petto.\n\nRaggiunge 60–68 cm e pesa 2,2–3,5 kg. I maschi possono essere leggermente più grandi delle femmine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "O pinguim-africano (Spheniscus demersus) é uma ave que não voa e vive ao longo das costas e nas ilhas da África do Sul e da Namíbia.\n\nAs costas, nadadeiras e patas são pretas, e o rosto tem uma «máscara» preta contornada de branco. O corpo é branco, com uma faixa preta no peito. As áreas rosadas ao redor dos olhos ajudam a regular a temperatura corporal. Além disso, cada indivíduo possui um padrão único de pontos pretos no peito.\n\nMede de 60 a 68 cm e pesa entre 2,2 e 3,5 kg. Os machos podem ser um pouco maiores que as fêmeas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "ja": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "ケープペンギン（Spheniscus demersus）は飛べない鳥で、南アフリカとナミビアの沿岸や島々に生息します。\n\n背中、フリッパー、足は黒く、顔には白く縁取られた黒い「マスク」があります。体は白く、胸には黒い帯があります。目の周囲のピンク色の部分は体温調節に役立ちます。 また、胸の黒い斑点の模様は個体ごとに異なります。\n\n体長は60～68cm、体重は2.2～3.5kgで、雄は雌よりやや大きくなることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "zh-Hans": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "非洲企鹅（Spheniscus demersus）是一种不会飞的鸟，生活在南非和纳米比亚的海岸及岛屿上。\n\n它的背部、鳍状翅和脚为黑色，脸上有白边的黑色“面罩”。身体为白色，胸部有一条黑色带纹。眼睛周围的粉红色区域有助于调节体温。 此外，每只非洲企鹅胸前的黑色斑点图案都各不相同。\n\n体长约60–68厘米，体重2.2–3.5千克。雄性可能比雌性稍大。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     },
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Brillenpinguine sind vom Aussterben bedroht, was auf den schnellen und anhaltenden Rückgang ihrer Population zurückzuführen ist, der durch menschliche und ökologische Ursachen bedingt ist. Die Überfischung ihrer Hauptnahrungsquellen wie Sardinen und Sardellen schmälert ihr Nahrungsangebot. Die Küstenbebauung und Umweltverschmutzung, insbesondere Ölverschmutzungen, beeinträchtigen ihre Brutplätze erheblich. Schon früher wurden ihre Eier in großem Umfang gestohlen. Zusätzlich gefährdet der Klimawandel ihr Fortbestehen, da er die Meeresströmungen verändert und die Populationen ihrer Beute reduziert.\n\nDie Maßnahmen zur Arterhaltung konzentrieren sich auf den Schutz der Lebensräume, die Sicherung der Beute und die Reduzierung menschlicher Einflüsse. Die Rettung und Rehabilitation verletzter oder ölverschmutzter Pinguine sowie ein neu eingerichtetes Zucht- und Auswilderungsprogramm sollen die Populationen aufstocken. Meeresschutzgebiete (MPA) beschränken die Fischerei in der Nähe von Kolonien. An Brutplätzen werden künstliche Höhlen angelegt, da das Sammeln von Guano ihre natürlichen Nistplätze zerstört hat. Sensibilisierungskampagnen und Ökotourismus fördern und finanzieren die Arterhaltungsarbeit.\n\nTrotz dieser Bemühungen sinkt die Population der Brillenpinguine weiterhin alarmierend schnell. Es sind weitere Maßnahmen nötig, um die Zukunft dieser Art zu sichern.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the African penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the African penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "El pingüino africano está en peligro crítico debido al rápido y continuo descenso de su población, provocado por causas humanas y ecológicas. La sobrepesca de sus principales fuentes de alimento, como sardinas y anchoas, reduce la disponibilidad de presas. El desarrollo costero y la contaminación, especialmente los vertidos de petróleo, dañan gravemente sus zonas de cría. En el pasado también se recolectaron sus huevos a gran escala. El cambio climático supone otra amenaza porque altera las corrientes marinas y reduce las poblaciones de sus presas.\n\nLas medidas de conservación se centran en proteger el hábitat, asegurar la disponibilidad de presas y reducir los impactos humanos. El rescate y la rehabilitación de pingüinos heridos o afectados por petróleo, junto con un nuevo programa de cría y liberación, pretenden reforzar las poblaciones. Las áreas marinas protegidas restringen la pesca cerca de las colonias. En las zonas de cría se instalan madrigueras artificiales porque la extracción de guano destruyó lugares naturales de nidificación. Las campañas de sensibilización y el ecoturismo apoyan y financian la conservación.\n\nA pesar de estos esfuerzos, la población sigue disminuyendo a un ritmo alarmante. Se necesitan más medidas para asegurar el futuro de la especie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "fr": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Le manchot du Cap est en danger critique en raison du déclin rapide et continu de sa population, causé par des facteurs humains et écologiques. La surpêche de ses principales proies, notamment les sardines et les anchois, réduit ses ressources alimentaires. L’aménagement du littoral et la pollution, en particulier les marées noires, détériorent fortement les sites de reproduction. Autrefois, ses œufs étaient également prélevés à grande échelle. Le changement climatique constitue une menace supplémentaire puisqu’il modifie les courants marins et réduit les populations de proies.\n\nLes mesures de conservation se concentrent sur la protection des habitats, la disponibilité des proies et la réduction des impacts humains. Le sauvetage et la réhabilitation des manchots blessés ou souillés par le pétrole, ainsi qu’un nouveau programme d’élevage et de réintroduction, visent à renforcer les populations. Les aires marines protégées limitent la pêche à proximité des colonies. Des terriers artificiels sont installés sur les sites de reproduction, l’extraction du guano ayant détruit des sites de nidification naturels. Les campagnes de sensibilisation et l’écotourisme soutiennent et financent les actions de conservation.\n\nMalgré ces efforts, la population continue de diminuer à un rythme alarmant. D’autres mesures sont nécessaires pour assurer l’avenir de l’espèce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "it": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Il pinguino africano è in pericolo critico a causa del rapido e continuo declino della popolazione dovuto a pressioni umane ed ecologiche. La pesca eccessiva delle principali prede, come sardine e acciughe, riduce la disponibilità di cibo. Lo sviluppo costiero e l’inquinamento, soprattutto le fuoriuscite di petrolio, danneggiano gravemente i siti riproduttivi. In passato anche le uova venivano raccolte su larga scala. Il cambiamento climatico rappresenta un’ulteriore minaccia perché modifica le correnti marine e riduce le popolazioni di prede.\n\nLe misure di conservazione si concentrano sulla protezione degli habitat, sulla disponibilità delle prede e sulla riduzione degli impatti umani. Il salvataggio e la riabilitazione di pinguini feriti o contaminati dal petrolio, insieme a un nuovo programma di allevamento e rilascio, mirano a rafforzare le popolazioni. Le aree marine protette limitano la pesca vicino alle colonie. Nei siti riproduttivi vengono installate tane artificiali perché la raccolta del guano ha distrutto i siti naturali di nidificazione. Campagne di sensibilizzazione ed ecoturismo sostengono e finanziano la conservazione.\n\nNonostante questi sforzi, la popolazione continua a diminuire a un ritmo allarmante. Sono necessarie ulteriori misure per garantire il futuro della specie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "O pinguim-africano está criticamente ameaçado devido ao rápido e contínuo declínio populacional causado por fatores humanos e ecológicos. A pesca excessiva de suas principais fontes de alimento, como sardinhas e anchovas, reduz a disponibilidade de presas. A ocupação costeira e a poluição, especialmente derramamentos de petróleo, prejudicam seriamente as áreas de reprodução. No passado, seus ovos também foram coletados em grande escala. As mudanças climáticas representam outra ameaça porque alteram as correntes oceânicas e reduzem as populações de presas.\n\nAs medidas de conservação concentram-se na proteção do habitat, na disponibilidade de presas e na redução dos impactos humanos. O resgate e a reabilitação de pinguins feridos ou contaminados por óleo, juntamente com um novo programa de reprodução e soltura, buscam reforçar as populações. Áreas marinhas protegidas restringem a pesca perto das colônias. Tocas artificiais são instaladas em áreas de reprodução porque a coleta de guano destruiu locais naturais de nidificação. Campanhas de conscientização e o ecoturismo apoiam e financiam os trabalhos de conservação.\n\nApesar desses esforços, a população continua diminuindo em ritmo alarmante. São necessárias outras medidas para garantir o futuro da espécie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "ja": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "ケープペンギンは、人為的・生態学的要因による急速かつ継続的な個体数減少のため、深刻な絶滅危惧状態にあります。 イワシやカタクチイワシなど主要な餌資源の乱獲によって食物が減少しています。沿岸開発や、特に油流出を含む汚染は繁殖地に大きな被害を与えます。 過去には卵も大規模に採取されました。さらに気候変動が海流を変化させ、獲物の個体数を減らすことで存続を脅かしています。\n\n保全対策は、生息地の保護、餌資源の確保、人間による影響の削減に重点を置いています。負傷した個体や油で汚染された個体の救護・リハビリに加え、新たな繁殖・放野プログラムによって個体数の回復が図られています。 海洋保護区ではコロニー周辺の漁業を制限しています。グアノ採取によって自然の営巣場所が失われたため、繁殖地には人工巣穴も設置されています。啓発活動やエコツーリズムは保全活動の支援と資金調達に役立っています。\n\nこうした取り組みにもかかわらず、個体数は依然として危険な速さで減少しています。この種の将来を守るには、さらなる対策が必要です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "zh-Hans": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "非洲企鹅因种群快速且持续下降而处于极危状态，这种下降由人类活动和生态因素共同造成。 对沙丁鱼和鳀鱼等主要食物资源的过度捕捞减少了可利用的猎物。沿海开发和环境污染，尤其是石油污染，严重影响其繁殖地。 过去，人们还曾大规模收集它们的蛋。气候变化也构成额外威胁，因为它会改变海流并减少猎物种群。\n\n保护措施主要集中在栖息地保护、保障猎物资源和减少人类影响。救助和康复受伤或被油污染的企鹅，以及新建立的繁育和放归项目，都旨在补充种群。 海洋保护区限制企鹅群落附近的捕鱼活动。由于采集鸟粪破坏了天然巢址，繁殖地还设置了人工洞穴。公众宣传和生态旅游也为保护工作提供支持和资金。\n\n尽管采取了这些措施，非洲企鹅种群仍以令人担忧的速度下降。要确保该物种的未来，还需要采取更多措施。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Brillenpinguine haben ein ausgeprägtes Sozialverhalten und sammeln sich, wenn sie nicht jagen, in riesigen Kolonien mit mehreren tausend Pärchen.\n\nBrillenpinguine kommen zur Paarungszeit an Land, die in Namibia im Sommer und in Südafrika im Herbst stattfindet. Die Männchen kommen vier Tage vor den Weibchen an und nutzen diese Zeit, um einen Nistplatz zu suchen und aus Kieselsteinen, Guano und anderen Abfällen ein Nest zu bauen. Brillenpinguine bleiben in der Regel ihr Leben lang mit demselben Partner zusammen. Bereits verpaarte Paare finden sich durch bestimmte Rufe, während unverpaarte Männchen versuchen, Weibchen durch Lautäußerungen, Imponiergehabe mit dem Kopf und das Vorzeigen ihres Nistplatzes anzulocken. Ein Paar festigt seine Bindung, indem es gemeinsam Rufe ausstößt und die Hälse ineinander verschränkt.\n\nDas Weibchen legt 3 Wochen nach der Paarung 2 Eier ins Nest, die das Paar 40 Tage lang bebrütet, wobei sie sich während dieser Zeit beim Jagen abwechseln. Nach dem Schlüpfen sind die Küken extrem gefährdet und werden oft von Mungos, Möwen oder Hauskatzen gefressen. In 90 % der Fälle überlebt nur ein Küken bis zum Flüggewerden. Die Eltern beschützen und füttern ihr Küken, bis es 2 bis 4 Monate alt ist. Dann schließen sie sich einer Gemeinschaftskinderstube an, die von Erwachsenen beaufsichtigt wird.\n\nDie Küken werden mit etwa 4 Monaten flügge, wenn sie zum ersten Mal aufs Meer hinausschwimmen. Pinguine kommen jedes Jahr an ihren Geburtsort zurück, um zu mausern und sich zu paaren. Brillenpinguine sind mit 3 Jahren ausgewachsen und pflanzen sich zum ersten Mal mit 4 bis 5 Jahren fort.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Africa. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. African penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely vulnerable and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. African penguins are fully grown at three years and breed for the first time at four to five years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Africa. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. African penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely vulnerable and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. African penguins are fully grown at three years and breed for the first time at four to five years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Los pingüinos africanos son muy sociales y, cuando no están cazando, se reúnen en enormes colonias formadas por varios miles de parejas.\n\nLlegan a tierra durante la época reproductiva, que tiene lugar en verano en Namibia y en otoño en Sudáfrica. Los machos llegan cuatro días antes que las hembras y aprovechan ese tiempo para buscar un lugar de nidificación y construir un nido con guijarros, guano y otros restos. Normalmente permanecen con la misma pareja durante toda la vida. Las parejas ya formadas se reconocen mediante llamadas específicas, mientras que los machos sin pareja intentan atraer a las hembras con vocalizaciones, exhibiciones de cabeza y mostrando el nido. La pareja refuerza su vínculo emitiendo llamadas conjuntamente y entrelazando los cuellos.\n\nTres semanas después del apareamiento, la hembra pone dos huevos. La pareja los incuba durante 40 días y se alterna para ir a cazar. Después de la eclosión, los polluelos son extremadamente vulnerables y suelen ser depredados por mangostas, gaviotas o gatos domésticos. En el 90% de los casos solo un polluelo sobrevive hasta emplumar. Los padres lo protegen y alimentan hasta los 2–4 meses; después se une a una guardería comunal supervisada por adultos.\n\nLos polluelos empluman aproximadamente a los cuatro meses, cuando nadan hacia el mar por primera vez. Cada año regresan a su lugar de nacimiento para mudar y reproducirse. Alcanzan el tamaño adulto a los tres años y se reproducen por primera vez entre los cuatro y cinco años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "fr": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Les manchots du Cap sont très sociaux et, lorsqu’ils ne chassent pas, se rassemblent en immenses colonies comptant plusieurs milliers de couples.\n\nIls viennent à terre pendant la saison de reproduction, qui se déroule en été en Namibie et en automne en Afrique du Sud. Les mâles arrivent quatre jours avant les femelles et utilisent ce temps pour choisir un site et construire un nid avec des cailloux, du guano et d’autres débris. Ils restent généralement avec le même partenaire toute leur vie. Les couples établis se retrouvent grâce à des cris particuliers, tandis que les mâles célibataires tentent d’attirer les femelles par des vocalisations, des parades de la tête et la présentation du nid. Le couple renforce son lien en criant ensemble et en entrelaçant les cous.\n\nTrois semaines après l’accouplement, la femelle pond deux œufs. Le couple les couve pendant 40 jours et alterne les sorties de chasse. Après l’éclosion, les poussins sont extrêmement vulnérables et sont souvent dévorés par des mangoustes, des mouettes ou des chats domestiques. Dans 90 % des cas, un seul poussin survit jusqu’à l’envol. Les parents le protègent et le nourrissent jusqu’à l’âge de 2 à 4 mois, puis il rejoint une crèche collective surveillée par des adultes.\n\nLes jeunes prennent leur envol vers quatre mois, lorsqu’ils gagnent la mer pour la première fois. Chaque année, ils reviennent sur leur lieu de naissance pour muer et se reproduire. Ils atteignent leur taille adulte à trois ans et se reproduisent pour la première fois entre quatre et cinq ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "it": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "I pinguini africani sono molto sociali e, quando non cacciano, si riuniscono in enormi colonie composte da diverse migliaia di coppie.\n\nRaggiungono la terraferma nella stagione riproduttiva, che cade in estate in Namibia e in autunno in Sudafrica. I maschi arrivano quattro giorni prima delle femmine e usano questo tempo per scegliere il sito e costruire un nido con ciottoli, guano e altri detriti. Di norma rimangono con lo stesso partner per tutta la vita. Le coppie già formate si ritrovano grazie a richiami specifici, mentre i maschi senza partner cercano di attirare le femmine con vocalizzazioni, movimenti della testa e mostrando il nido. La coppia rafforza il legame emettendo richiami insieme e intrecciando i colli.\n\nTre settimane dopo l’accoppiamento, la femmina depone due uova. La coppia le cova per 40 giorni alternandosi nella caccia. Dopo la schiusa i pulcini sono estremamente vulnerabili e vengono spesso predati da manguste, gabbiani o gatti domestici. Nel 90% dei casi soltanto un pulcino sopravvive fino all’involo. I genitori lo proteggono e lo nutrono fino a 2–4 mesi, poi entra in una nursery comunitaria sorvegliata dagli adulti.\n\nI giovani diventano indipendenti a circa quattro mesi, quando entrano in mare per la prima volta. Ogni anno tornano al luogo di nascita per mutare e riprodursi. Sono completamente cresciuti a tre anni e si riproducono per la prima volta tra quattro e cinque anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Os pinguins-africanos são muito sociais e, quando não estão caçando, reúnem-se em enormes colônias com vários milhares de pares.\n\nEles vão para terra durante a estação reprodutiva, que ocorre no verão na Namíbia e no outono na África do Sul. Os machos chegam quatro dias antes das fêmeas e usam esse tempo para escolher um local e construir um ninho com pedras, guano e outros detritos. Normalmente permanecem com o mesmo parceiro por toda a vida. Pares já formados se encontram por meio de chamados específicos, enquanto machos sem parceira tentam atrair fêmeas com vocalizações, exibições de cabeça e mostrando o ninho. O casal reforça o vínculo emitindo chamados em conjunto e entrelaçando os pescoços.\n\nTrês semanas após o acasalamento, a fêmea põe dois ovos. O casal os incuba por 40 dias, alternando-se na caça. Após a eclosão, os filhotes são extremamente vulneráveis e frequentemente são predados por mangustos, gaivotas ou gatos domésticos. Em 90% dos casos, apenas um filhote sobrevive até emplumar. Os pais o protegem e alimentam até os 2–4 meses; depois ele se junta a uma creche comunitária supervisionada por adultos.\n\nOs filhotes emplumam por volta dos quatro meses, quando entram no mar pela primeira vez. Todos os anos retornam ao local onde nasceram para mudar as penas e se reproduzir. Estão totalmente crescidos aos três anos e se reproduzem pela primeira vez entre quatro e cinco anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "ja": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "ケープペンギンは社会性が強く、狩りをしていないときには数千組のつがいからなる巨大なコロニーに集まります。\n\n繁殖期には陸に上がり、ナミビアでは夏、南アフリカでは秋に繁殖します。雄は雌より4日早く到着し、その間に営巣場所を探して小石、グアノ、その他の物で巣を作ります。 通常は生涯同じ相手とつがいになります。既につがいになっている個体は特定の鳴き声で互いを見つけ、相手のいない雄は鳴き声、頭を使ったディスプレイ、巣を見せる行動で雌を誘います。 つがいは一緒に鳴き、首を絡ませることで絆を強めます。\n\n交尾から3週間後、雌は巣に2個の卵を産みます。つがいは40日間抱卵し、その間は交代で狩りに出ます。孵化後の雛は非常に危険にさらされ、マングース、カモメ、飼い猫などに捕食されることがあります。 90%のケースでは巣立ちまで生き残る雛は1羽だけです。親は雛が2～4か月になるまで守り、餌を与えます。その後、幼鳥は成鳥が見守る共同の保育群に加わります。\n\n雛は約4か月で巣立ち、初めて海へ泳ぎ出します。毎年、生まれた場所へ戻って換羽し繁殖します。3歳で成鳥の大きさになり、4～5歳で初めて繁殖します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "zh-Hans": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "非洲企鹅具有很强的社会性，在不捕猎时会聚集成由数千对伴侣组成的大型群落。\n\n繁殖季节它们会上岸，纳米比亚的繁殖期在夏季，南非则在秋季。雄性比雌性早4天到达，并利用这段时间寻找巢址，用小石子、鸟粪和其他材料筑巢。 它们通常会终生与同一伴侣配对。已有伴侣的个体通过特定叫声找到彼此，而未配对的雄性则会用鸣叫、头部展示和展示巢址来吸引雌性。 一对企鹅会一起鸣叫并将颈部交缠，以加强彼此的联系。\n\n交配3周后，雌性会在巢中产下2枚卵。双亲共同孵卵40天，并在此期间轮流外出捕食。孵化后的雏鸟非常脆弱，经常会被獴、海鸥或家猫捕食。 90%的情况下只有一只雏鸟能够存活到离巢。亲鸟会保护和喂养雏鸟直到2–4个月大，之后幼鸟会加入由成鸟照看的集体“托儿所”。\n\n幼鸟约4个月大时离巢并首次游向大海。企鹅每年都会回到出生地换羽和繁殖。它们3岁时完全长成，并在4–5岁时首次繁殖。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     },
     "tierfakten": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Bis in die 1970er Jahre galten Brillenpinguineier als Delikatesse, was zum starken Rückgang des Bestands beigetragen hat.",
+          "quelle": "planetZoo2"
         },
         {
-          "inhalt": "",
-          "quelle": "",
-          "uebersetzung": ""
+          "inhalt": "Brillenpinguine haben viele Feinde – im Meer sind es Haie und Seebären, an Land sind es Dominikanermöwen, Mangusten, Ginsterkatzen sowie Hauskatzen und Hunde.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Brillenpinguine werden im Englischen aufgrund ihres Rufs – der an die Laute eines Esels erinnert – auch als „Jackass penguins“ bezeichnet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pinguin-Ausscheidungen, auch als Guano bezeichnet, sind ein sehr effektiver Dünger. Die Entnahme durch den Menschen stört allerdings die Brut der Brillenpinguine und nimmt ihnen ein wichtiges Material für den Nestbau.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Brillenpinguine können während der Mauser nicht jagen, da ihr Gefieder nicht wasserabweisend ist – sie müssen daher fasten, bis sich ihr Gefieder vollständig entwickelt hat. Die Mauser dauert etwa 3 Wochen. In dieser Zeit verlieren die Pinguine etwa 50 % ihres Körpergewichts.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "Until the 1970s, African penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In English, African penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs African penguin breeding and removes an important nesting material.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "Until the 1970s, African penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "African penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In English, African penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs African penguin breeding and removes an important nesting material.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Hasta la década de 1970, los huevos del pingüino africano se consideraban una exquisitez, lo que contribuyó mucho al descenso de la población.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tienen numerosos depredadores: en el mar, tiburones y lobos marinos; en tierra, gaviotas cocineras, mangostas, ginetas, gatos domésticos y perros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En inglés también se les llama «jackass penguins» porque su llamada recuerda al rebuzno de un burro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El guano de los pingüinos es un fertilizante muy eficaz, pero su extracción por parte de los humanos perturba la reproducción y elimina un material importante para construir los nidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante la muda no pueden cazar porque su plumaje deja de ser impermeable. Deben ayunar hasta que el plumaje vuelva a desarrollarse por completo. La muda dura unas tres semanas y durante ese tiempo pierden alrededor del 50% de su peso corporal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Jusqu’aux années 1970, les œufs de manchot du Cap étaient considérés comme un mets délicat, ce qui a fortement contribué au déclin de la population.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils ont de nombreux prédateurs : en mer, les requins et les otaries à fourrure ; à terre, les goélands dominicains, les mangoustes, les genettes, les chats domestiques et les chiens.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En anglais, ils sont également appelés « jackass penguins », car leur cri rappelle le braiment d’un âne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le guano des manchots est un engrais très efficace, mais son prélèvement par l’homme perturbe la reproduction et retire un matériau important pour la construction des nids.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pendant la mue, ils ne peuvent pas chasser car leur plumage n’est plus imperméable. Ils doivent donc jeûner jusqu’à son renouvellement complet. La mue dure environ trois semaines et ils perdent alors près de 50 % de leur poids.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Fino agli anni Settanta le uova di pinguino africano erano considerate una prelibatezza, contribuendo fortemente al declino della popolazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hanno molti predatori: in mare squali e otarie orsine; sulla terra gabbiani del Kelp, manguste, genette, gatti domestici e cani.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In inglese sono chiamati anche «jackass penguins» perché il loro richiamo ricorda il raglio di un asino.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il guano dei pinguini è un fertilizzante molto efficace, ma la sua raccolta da parte dell’uomo disturba la riproduzione e sottrae un importante materiale per il nido.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante la muta non possono cacciare perché il piumaggio non è impermeabile. Devono quindi digiunare finché non si è completamente rinnovato. La muta dura circa tre settimane e in questo periodo perdono circa il 50% del peso corporeo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Até a década de 1970, os ovos de pinguim-africano eram considerados uma iguaria, o que contribuiu fortemente para o declínio da população.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eles têm muitos predadores: no mar, tubarões e lobos-marinhos; em terra, gaivotas-dominicanas, mangustos, genetas, gatos domésticos e cães.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Em inglês também são chamados de «jackass penguins» porque seu chamado lembra o zurro de um burro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O guano dos pinguins é um fertilizante muito eficiente, mas sua coleta por humanos interfere na reprodução e remove um material importante para a construção dos ninhos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante a muda, eles não conseguem caçar porque a plumagem não é impermeável. Por isso precisam jejuar até que as penas estejam totalmente renovadas. A muda dura cerca de três semanas e nesse período perdem aproximadamente 50% do peso corporal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "1970年代までケープペンギンの卵は珍味とされ、個体数の大幅な減少につながりました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "天敵は多く、海ではサメやオットセイ、陸ではミナミオオセグロカモメ、マングース、ジェネット、飼い猫、犬などに襲われます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "鳴き声がロバのいななきに似ているため、英語では「jackass penguin」とも呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ペンギンの糞であるグアノは非常に優れた肥料ですが、人間による採取は繁殖を妨げ、巣作りに必要な重要な材料も奪います。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "換羽中は羽毛に防水性がないため狩りができず、羽毛が完全に生えそろうまで絶食します。換羽は約3週間続き、その間に体重の約50%を失います。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "直到20世纪70年代，非洲企鹅蛋仍被视为美食，这对种群大幅下降产生了重要影响。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "非洲企鹅有许多天敌：海中包括鲨鱼和海狗；陆地上包括黑背鸥、獴、麝猫、家猫和狗。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "由于叫声类似驴叫，英语中非洲企鹅也被称为“jackass penguins”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "企鹅粪便（鸟粪）是一种非常有效的肥料，但人类采集鸟粪会干扰企鹅繁殖，同时夺走重要的筑巢材料。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "非洲企鹅在换羽期间无法捕猎，因为此时羽毛不具防水性；它们必须禁食直到羽毛完全重新长成。换羽约持续3周，在此期间体重会下降约50%。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     },
     "entwicklungshinweis": {
       "de": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
         }
       ],
       "en": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other information are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "",
-          "quelle": ""
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other information are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás información no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres informations ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altre informazioni non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outras informações não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
         }
       ]
     }
   },
   "karte": {
-    "url": "",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/1b6fe767/Penguin_African_map.png",
     "dateien": [
       {
-        "typ": "",
-        "dateityp": "",
-        "pfad": ""
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Spheniscus demersus/map/Spheniscus demersus map.png"
       }
     ],
-    "quelle": ""
+    "quelle": "planetZoo2"
   },
   "bilder": [
     {
-      "typ": "",
+      "typ": "hauptbild",
       "varianten": [
         {
-          "variante": null,
-          "quelle": "",
-          "url": "",
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMWI2ZmU3NjcvUGVuZ3Vpbl9BZnJpY2FuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
           "alt": {
-            "de": "",
-            "en": ""
+            "de": "Brillenpinguin – Planet Zoo 2",
+            "en": "African Penguin – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Brillenpinguins aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the African penguin."
           },
           "metadaten": [],
           "dateien": [
             {
-              "typ": "",
-              "dateityp": "",
-              "pfad": ""
-            }
-          ],
-          "beschreibung": {
-            "de": "",
-            "en": ""
-          }
-        }
-      ]
-    }
-  ],
-  "audio": [
-    {
-      "typ": "",
-      "varianten": [
-        {
-          "variante": null,
-          "quelle": "",
-          "metadaten": [
-            {
-              "typ": "",
-              "format": "",
-              "pfad": ""
-            }
-          ],
-          "dateien": [
-            {
-              "typ": "",
-              "dateityp": "",
-              "pfad": ""
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Spheniscus demersus/bilder/Spheniscus demersus 1.webp"
             }
           ]
         }
       ]
     }
   ],
-  "video": [
-    {
-      "typ": "",
-      "varianten": [
-        {
-          "variante": null,
-          "reihe": "",
-          "titel": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": "",
-          "url": "",
-          "metadaten": [],
-          "dateien": [
-            {
-              "typ": "",
-              "dateityp": "",
-              "pfad": ""
-            }
-          ],
-          "dauerSekunden": null,
-          "beschreibung": {
-            "de": "",
-            "en": ""
-          }
-        }
-      ]
-    }
-  ],
+  "audio": [],
+  "video": [],
   "planetZoo2": {
     "rechner": null
   },
   "quellen": {
-    "": {
-      "name": "",
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Brillenpinguin",
       "seiten": {
-        "en": ""
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/brillenpinguin"
       },
-      "status": ""
+      "status": "Zoopedia-Pass vollständig aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen; Rechner und spätere Quellen noch offen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
     }
   }
 }

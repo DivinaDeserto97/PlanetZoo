@@ -1,0 +1,904 @@
+{
+  "id": "Aquila chrysaetos",
+  "identitaet": {
+    "namen": {
+      "de": "Steinadler",
+      "en": "Golden Eagle",
+      "en-US": "Golden Eagle",
+      "es": "Águila real",
+      "fr": "Aigle royal",
+      "it": "Aquila reale",
+      "pt-BR": "Águia-real",
+      "ja": "イヌワシ",
+      "zh-Hans": "金雕"
+    }
+  },
+  "filter": {
+    "edition": "deluxe",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "northAmerica",
+      "europe",
+      "africa",
+      "asia"
+    ],
+    "biome": [
+      "Grasland",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Accipitriformes",
+          "familie": "Accipitridae",
+          "gattung": "Aquila",
+          "art": "Aquila chrysaetos",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.7,
+          "max": 1.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich eine Flügelspannweite von 1,8 bis 2,3 m.",
+            "en": "The Zoopedia also gives a wingspan of 1.8–2.3 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 3.0,
+          "max": 5.0,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 4.0,
+          "max": 6.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "sturzflug",
+          "max": 193,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Die Zoopedia nennt bis zu 193 km/h beim Sturzflug auf Beute.",
+            "en": "The Zoopedia states speeds of up to 193 km/h when diving on prey."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 85000,
+          "max": 160000,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Aquila chrysaetos"
+          ],
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 4,
+          "max": 5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia formuliert dies als Alter, in dem Steinadler erwachsen werden, ein eigenes Revier etablieren und einen Partner suchen.",
+            "en": "The Zoopedia describes this as the age at which Golden Eagles become adults, establish a territory and seek a mate."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "inkubation",
+          "min": 40,
+          "max": 45,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 1,
+          "max": 4,
+          "durchschnitt": 2,
+          "hinweis": {
+            "de": "Die Zoopedia nennt 1 bis 4 Eier; zwei Eier sind üblich.",
+            "en": "The Zoopedia gives 1–4 eggs per clutch, with two being usual."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryOrPair",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Steinadler leben laut Zoopedia meist allein oder zu zweit.",
+            "en": "According to the Zoopedia, Golden Eagles usually live alone or in pairs."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "longTermMonogamous",
+          "hinweis": {
+            "de": "Steinadler bilden langfristige, oft lebenslange, monogame Partnerschaften.",
+            "en": "Golden Eagles form long-term, often lifelong, monogamous partnerships."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "tundra",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "desert",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Steinadler (Aquila chrysaetos) kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er bevorzugt offene oder halboffene Lebensräume wie Berge, Grasland, Tundra und Wüsten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El águila real (Aquila chrysaetos) se distribuye por el hemisferio norte en Norteamérica, Europa, Asia y partes del norte de África. Prefiere hábitats abiertos o semiabiertos como montañas, pastizales, tundra y desiertos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’aigle royal (Aquila chrysaetos) est présent dans l’hémisphère Nord en Amérique du Nord, en Europe, en Asie et dans certaines régions d’Afrique du Nord. Il préfère les milieux ouverts ou semi-ouverts comme les montagnes, prairies, toundras et déserts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’aquila reale (Aquila chrysaetos) è diffusa nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Africa. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A águia-real (Aquila chrysaetos) ocorre no Hemisfério Norte, na América do Norte, Europa, Ásia e partes do norte da África. Prefere ambientes abertos ou semiabertos como montanhas, campos, tundra e desertos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシ（Aquila chrysaetos）は北半球の北アメリカ、ヨーロッパ、アジア、北アフリカの一部に分布し、山地、草原、ツンドラ、砂漠などの開けた、または半開けた環境を好みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕（Aquila chrysaetos）分布于北半球的北美洲、欧洲、亚洲以及北非部分地区，偏好山地、草原、苔原和沙漠等开阔或半开阔环境。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Steinadler (auch Aquila chrysaetos) ist einer der am weitesten verbreiteten Raubvögel und kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er mag offene oder halboffene Lebensräume wie Berge, Grasland, Tundra und Wüsten und nistet oft auf Klippen oder hohen Bäumen, von denen aus er einen guten Überblick über seine Jagdgebiete hat.\n\nSteinadler besitzen ein dunkelbraunes Gefieder, das durch goldene Federn am Nacken und auf der Kopfkrone akzentuiert wird, kräftige Krallen und einen scharfen, hakenförmigen Schnabel.\n\nSie haben eine Flügelspannweite von 1,8 m bis 2,3 m und sind 70 cm bis 100 cm lang. Wie bei den meisten Raubvögeln sind die Weibchen etwas größer und schwerer als die Männchen. Erwachsene Männchen wiegen in der Regel zwischen 3 kg und 5 kg, während die Weibchen 4 kg bis 6,5 kg auf die Waage bringen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El águila real (Aquila chrysaetos) es una de las rapaces más extendidas y vive en el hemisferio norte, en Norteamérica, Europa, Asia y partes del norte de África. Prefiere hábitats abiertos o semiabiertos como montañas, pastizales, tundra y desiertos, y suele anidar en acantilados o árboles altos con buena visibilidad sobre sus zonas de caza.\n\nPresenta plumaje marrón oscuro con plumas doradas en la nuca y la coronilla, garras fuertes y un pico afilado y curvado.\n\nTiene una envergadura de 1,8–2,3 m y mide 70–100 cm. Las hembras son algo mayores y más pesadas que los machos. Los machos adultos suelen pesar 3–5 kg y las hembras 4–6,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’aigle royal (Aquila chrysaetos) est l’un des rapaces les plus répandus. On le trouve dans l’hémisphère Nord en Amérique du Nord, en Europe, en Asie et dans certaines régions d’Afrique du Nord. Il préfère les milieux ouverts ou semi-ouverts comme les montagnes, prairies, toundras et déserts, et niche souvent sur des falaises ou de grands arbres dominant ses territoires de chasse.\n\nSon plumage est brun foncé, rehaussé de plumes dorées sur la nuque et le sommet de la tête. Il possède de puissantes serres et un bec crochu et acéré.\n\nSon envergure est de 1,8 à 2,3 m et sa longueur de 70 à 100 cm. Les femelles sont généralement un peu plus grandes et plus lourdes que les mâles. Les mâles adultes pèsent généralement 3–5 kg et les femelles 4–6,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’aquila reale (Aquila chrysaetos) è uno dei rapaci più diffusi e vive nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Africa. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti e nidifica spesso su falesie o alberi alti da cui può controllare le aree di caccia.\n\nHa piumaggio marrone scuro con penne dorate sulla nuca e sulla sommità del capo, artigli potenti e un becco affilato e ricurvo.\n\nL’apertura alare è di 1,8–2,3 m e la lunghezza del corpo di 70–100 cm. Le femmine sono generalmente più grandi e pesanti dei maschi. I maschi adulti pesano normalmente 3–5 kg e le femmine 4–6,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A águia-real (Aquila chrysaetos) é uma das aves de rapina de distribuição mais ampla e ocorre no Hemisfério Norte, na América do Norte, Europa, Ásia e partes do norte da África. Prefere ambientes abertos ou semiabertos como montanhas, campos, tundra e desertos, e costuma nidificar em penhascos ou árvores altas com boa visão das áreas de caça.\n\nPossui plumagem marrom-escura com penas douradas na nuca e no topo da cabeça, garras fortes e bico afiado e curvo.\n\nA envergadura é de 1,8–2,3 m e o comprimento de 70–100 cm. As fêmeas são normalmente um pouco maiores e mais pesadas que os machos. Machos adultos pesam 3–5 kg e fêmeas 4–6,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシ（Aquila chrysaetos）は最も広く分布する猛禽類のひとつで、北半球の北アメリカ、ヨーロッパ、アジア、北アフリカの一部に生息します。山地、草原、ツンドラ、砂漠などの開けた、または半開けた環境を好み、狩場を見渡せる崖や高木に巣を作ることがよくあります。\n\n羽毛は濃い褐色で、首の後ろと頭頂には金色の羽があります。強力な鉤爪と鋭い鉤状のくちばしを持ちます。\n\n翼開長は1.8～2.3m、体長は70～100cmです。多くの猛禽類と同様に、雌は雄よりやや大きく重くなります。成鳥の雄は通常3～5kg、雌は4～6.5kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕（Aquila chrysaetos）是分布最广的猛禽之一，生活在北半球的北美洲、欧洲、亚洲以及北非部分地区。它偏好山地、草原、苔原和沙漠等开阔或半开阔环境，并常在悬崖或高大树木上筑巢，以便俯瞰狩猎区域。\n\n金雕拥有深褐色羽毛，颈后和头顶带有金色羽毛，并具有强壮的爪和锋利的钩状喙。\n\n翼展1.8～2.3米，体长70～100厘米。与多数猛禽一样，雌性通常比雄性稍大且更重。成年雄性通常重3～5千克，雌性重4～6.5千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Obwohl der Steinadler als „nicht gefährdet“ gilt, ist er durch den Verlust und die Fragmentierung seines Lebensraums bedroht, da sein Lebensraum zusehends der Landwirtschaft, Forstwirtschaft, dem Städtebau und Infrastrukturprojekten weichen muss. Dadurch wird seine Fähigkeit zu jagen, Partner zu finden und Nester zu bauen eingeschränkt. In manchen Gebieten wird er auch direkt durch Abschüsse, Fallen und Vergiftungen bedroht. Eine weitere Gefahr ist die sekundäre Bleivergiftung durch den Verzehr von Kadavern, die Munition enthalten. Außerdem besteht die Gefahr von Kollisionen und Stromschlägen durch Stromleitungen oder Windkraftanlagen. Der Klimawandel verändert zusätzlich die Verfügbarkeit von Beute und Lebensraum.\n\nEs wird viel für die Rettung und den besseren Schutz jener Lebensräume gemacht. In Großbritannien wurden junge und fast erwachsene Steinadler umgesiedelt, um die Population im Süden Schottlands zu stärken, und das mit großem Erfolg. In vielen Ländern gibt es außerdem strenge Gesetze, die es verbieten, die Vögel oder ihre Nester zu stören oder zu beschädigen. Darüber hinaus werden an vielen Orten die Wiederherstellung von Lebensräumen und die Bewirtschaftung von Land verbessert, um die durch Menschen verursachte Todesrate zu senken und die Vernetzung der Lebensräume zu verbessern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Although the Golden Eagle is considered Least Concern, it is threatened by habitat loss and fragmentation as land is increasingly converted to agriculture, forestry, urban development and infrastructure. This limits its ability to hunt, find mates and build nests. In some areas it is also directly threatened by shooting, trapping and poisoning. Secondary lead poisoning can occur when eagles consume carcasses containing ammunition. Collisions and electrocution from power lines or wind turbines are additional hazards, while climate change alters prey and habitat availability.\n\nConsiderable work is being carried out to protect and restore habitat. In the United Kingdom, young and near-adult Golden Eagles have been translocated to strengthen the population in southern Scotland, with considerable success. Many countries also have strict laws preventing disturbance or damage to the birds and their nests. Habitat restoration and improved land management are also used to reduce human-caused mortality and improve connectivity between habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Although the Golden Eagle is considered Least Concern, it is threatened by habitat loss and fragmentation as land is increasingly converted to agriculture, forestry, urban development and infrastructure. This limits its ability to hunt, find mates and build nests. In some areas it is also directly threatened by shooting, trapping and poisoning. Secondary lead poisoning can occur when eagles consume carcasses containing ammunition. Collisions and electrocution from power lines or wind turbines are additional hazards, while climate change alters prey and habitat availability.\n\nConsiderable work is being carried out to protect and restore habitat. In the United Kingdom, young and near-adult Golden Eagles have been translocated to strengthen the population in southern Scotland, with considerable success. Many countries also have strict laws preventing disturbance or damage to the birds and their nests. Habitat restoration and improved land management are also used to reduce human-caused mortality and improve connectivity between habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Aunque se considera de Preocupación Menor, el águila real está amenazada por la pérdida y fragmentación del hábitat debido a la agricultura, silvicultura, urbanización e infraestructuras. Esto limita su capacidad para cazar, encontrar pareja y construir nidos. En algunas zonas también sufre disparos, trampas y envenenamiento. Otra amenaza es la intoxicación secundaria por plomo al consumir cadáveres con munición. Las líneas eléctricas y aerogeneradores pueden causar colisiones o electrocuciones, y el cambio climático modifica la disponibilidad de presas y hábitats.\n\nSe realizan numerosos esfuerzos para proteger y restaurar sus hábitats. En el Reino Unido se han trasladado ejemplares jóvenes y casi adultos para reforzar la población del sur de Escocia con gran éxito. Muchos países cuentan con leyes estrictas que prohíben molestar o dañar a las aves y sus nidos. También se restauran hábitats y se mejora la gestión del territorio para reducir la mortalidad causada por las personas y aumentar la conectividad.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Bien que classé en Préoccupation mineure, l’aigle royal est menacé par la perte et la fragmentation de son habitat au profit de l’agriculture, de la sylviculture, de l’urbanisation et des infrastructures. Cela réduit ses possibilités de chasser, de trouver un partenaire et de nicher. Dans certaines régions, il est aussi victime de tirs, de pièges et d’empoisonnement. Une autre menace est l’intoxication secondaire au plomb liée à la consommation de carcasses contenant des munitions. Les lignes électriques et les éoliennes entraînent également des collisions ou des électrocutions, tandis que le changement climatique modifie les ressources alimentaires et les habitats.\n\nDe nombreux efforts visent à protéger et restaurer les habitats. Au Royaume-Uni, de jeunes aigles et des individus presque adultes ont été transférés pour renforcer la population du sud de l’Écosse, avec beaucoup de succès. De nombreux pays disposent également de lois strictes interdisant de déranger ou d’endommager les oiseaux et leurs nids. La restauration des habitats et une meilleure gestion des terres permettent aussi de réduire la mortalité liée aux activités humaines et d’améliorer la connectivité des milieux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Sebbene sia considerata a rischio minimo, l’aquila reale è minacciata dalla perdita e frammentazione dell’habitat dovuta ad agricoltura, silvicoltura, urbanizzazione e infrastrutture. Ciò limita la capacità di cacciare, trovare un partner e costruire nidi. In alcune regioni è inoltre minacciata da abbattimenti, trappole e avvelenamenti. Un ulteriore pericolo è l’avvelenamento secondario da piombo attraverso carcasse contenenti munizioni. Linee elettriche e turbine eoliche possono provocare collisioni o folgorazioni, mentre il cambiamento climatico modifica la disponibilità di prede e habitat.\n\nSono in corso numerosi interventi per proteggere e ripristinare gli habitat. Nel Regno Unito giovani e individui quasi adulti sono stati trasferiti per rafforzare la popolazione della Scozia meridionale con grande successo. Molti paesi hanno leggi severe che vietano di disturbare o danneggiare gli uccelli e i loro nidi. Il ripristino degli habitat e una migliore gestione del territorio aiutano inoltre a ridurre la mortalità causata dall’uomo e ad aumentare la connettività.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Embora seja considerada Pouco Preocupante, a águia-real é ameaçada pela perda e fragmentação do habitat devido à agricultura, silvicultura, urbanização e infraestrutura. Isso reduz sua capacidade de caçar, encontrar parceiros e construir ninhos. Em algumas regiões também sofre com tiros, armadilhas e envenenamento. Outra ameaça é o envenenamento secundário por chumbo ao consumir carcaças contendo munição. Linhas elétricas e turbinas eólicas podem causar colisões e choques, e as mudanças climáticas alteram a disponibilidade de presas e habitat.\n\nHá muitos esforços para proteger e recuperar habitats. No Reino Unido, jovens e indivíduos quase adultos foram transferidos para fortalecer a população do sul da Escócia, com grande sucesso. Muitos países possuem leis rigorosas que proíbem perturbar ou danificar as aves e seus ninhos. A restauração de habitats e uma melhor gestão do território também ajudam a reduzir a mortalidade causada por humanos e aumentar a conectividade.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシは低危険種とされていますが、農業、林業、都市開発、インフラ整備による生息地の喪失と分断に脅かされています。これにより狩り、つがい形成、営巣が難しくなります。一部地域では射殺、わな、毒殺も脅威です。弾薬を含む死骸を食べることで起こる二次的な鉛中毒も問題です。送電線や風力発電設備との衝突・感電、さらに気候変動による餌や生息地の変化も影響します。\n\n生息地の保護と回復に多くの取り組みが行われています。英国では若鳥や亜成鳥を移送し、スコットランド南部の個体群を強化する試みが大きな成果を上げました。多くの国には鳥や巣を妨害・損傷することを禁じる厳格な法律があります。生息地回復や土地管理の改善も、人為的死亡を減らし、生息地のつながりを高めるために行われています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "虽然金雕被列为无危，但仍受到栖息地丧失和破碎化的威胁，因为农业、林业、城市建设和基础设施不断占用其生境。这会限制它们狩猎、寻找配偶和筑巢的能力。一些地区还存在射杀、陷阱和投毒等直接威胁。食用含弹药残留的尸体还可能造成二次铅中毒。电线和风力设施带来的撞击或触电，以及气候变化对猎物和生境可用性的改变，也构成威胁。\n\n各地正在采取大量措施保护和恢复栖息地。在英国，年轻和接近成年的金雕被迁移以加强苏格兰南部种群，并取得了显著成效。许多国家还制定严格法律，禁止干扰或破坏金雕及其巢穴。各地也通过栖息地恢复和改进土地管理来减少人为死亡并改善生境连通性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Steinadler sind in der Regel Einzelgänger oder leben zu zweit, und ihre Interaktionen beschränken sich meist auf die Paarung und Aufzucht der Jungen. Erwachsene Tiere verteidigen ihr großes Revier vehement gegen andere Steinadler, vor allem während der Paarungszeit.\n\nSteinadler bilden langfristige, oft lebenslange, monogame Partnerschaften. Die Balz erfolgt normalerweise im späten Winter bis zum frühen Frühling und besteht aus synchronen Flugmanövern, Kreisen und Sturzflügen. Sowohl neue als auch alte Paare machen das, um ihre Beziehung zu stärken. Zusammen bauen oder reparieren sie ihr Nest auf einer Klippe, einem hohen Baum oder einem anderen hohen Aussichtspunkt.\n\nNach der Paarung legt das Weibchen in der Regel 1 bis 4 Eier, wobei zwei Eier üblich sind, und brütet sie etwa 40 bis 45 Tage lang aus, während das Männchen Futter besorgt. Die Jungvögel sind mit weißem Flaum bedeckt und wachsen schnell, doch der Konkurrenzkampf zwischen den Geschwistern kann heftig ausfallen, sodass oft nur ein oder zwei Küken überleben. Die Jungvögel werden im Alter von etwa 10 bis 12 Wochen flügge, bleiben aber möglicherweise noch mehrere Monate lang auf die Versorgung und den Schutz ihrer Eltern angewiesen, bevor sie sich schließlich verselbstständigen.\n\nSteinadler werden mit etwa vier bis fünf Jahren erwachsen. Zu diesem Zeitpunkt legen sie ihr eigenes Revier fest und suchen sich einen Partner.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden Eagles are usually solitary or live in pairs, and their interactions are largely limited to mating and raising young. Adults strongly defend their large territories against other Golden Eagles, especially during the breeding season.\n\nGolden Eagles form long-term, often lifelong, monogamous partnerships. Courtship usually takes place from late winter to early spring and includes synchronised flight displays, circling and dives. Both new and established pairs perform these displays to strengthen their bond. Together they build or repair a nest on a cliff, tall tree or another elevated lookout.\n\nAfter mating, the female usually lays 1–4 eggs, with two being common, and incubates them for around 40–45 days while the male provides food. Chicks are covered in white down and grow quickly, but competition between siblings can be intense, so often only one or two survive. Young fledge at around 10–12 weeks but may remain dependent on their parents for food and protection for several more months.\n\nGolden Eagles become adults at about four to five years of age, when they establish their own territory and seek a mate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden Eagles are usually solitary or live in pairs, and their interactions are largely limited to mating and raising young. Adults strongly defend their large territories against other Golden Eagles, especially during the breeding season.\n\nGolden Eagles form long-term, often lifelong, monogamous partnerships. Courtship usually takes place from late winter to early spring and includes synchronised flight displays, circling and dives. Both new and established pairs perform these displays to strengthen their bond. Together they build or repair a nest on a cliff, tall tree or another elevated lookout.\n\nAfter mating, the female usually lays 1–4 eggs, with two being common, and incubates them for around 40–45 days while the male provides food. Chicks are covered in white down and grow quickly, but competition between siblings can be intense, so often only one or two survive. Young fledge at around 10–12 weeks but may remain dependent on their parents for food and protection for several more months.\n\nGolden Eagles become adults at about four to five years of age, when they establish their own territory and seek a mate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las águilas reales suelen ser solitarias o vivir en pareja, y sus interacciones se concentran principalmente en la reproducción y la crianza. Los adultos defienden con intensidad sus grandes territorios, especialmente durante la época reproductiva.\n\nForman parejas monógamas duraderas, a menudo de por vida. El cortejo suele producirse desde finales del invierno hasta comienzos de primavera e incluye maniobras de vuelo sincronizadas, círculos y picados. Tanto las parejas nuevas como las establecidas realizan estas exhibiciones para reforzar el vínculo. Juntos construyen o reparan el nido en un acantilado, árbol alto u otro punto elevado.\n\nTras el apareamiento, la hembra suele poner 1–4 huevos, siendo dos lo habitual, y los incuba durante unos 40–45 días mientras el macho lleva alimento. Los polluelos están cubiertos de plumón blanco y crecen rápido, aunque la competencia entre hermanos puede ser fuerte y a menudo solo sobreviven uno o dos. Vuelan por primera vez a las 10–12 semanas, pero pueden depender de sus padres durante varios meses más.\n\nSe convierten en adultos hacia los 4–5 años, momento en el que establecen su propio territorio y buscan pareja.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les aigles royaux sont généralement solitaires ou vivent en couple, et leurs interactions concernent surtout la reproduction et l’élevage des jeunes. Les adultes défendent vigoureusement leur vaste territoire contre les autres aigles, notamment pendant la saison de reproduction.\n\nIls forment des couples monogames durables, souvent pour la vie. La parade a généralement lieu de la fin de l’hiver au début du printemps et comprend des vols synchronisés, des cercles et des piqués. Les couples nouveaux comme établis réalisent ces figures pour renforcer leur lien. Ensemble, ils construisent ou réparent leur nid sur une falaise, un grand arbre ou un autre point élevé.\n\nAprès l’accouplement, la femelle pond généralement 1 à 4 œufs, le plus souvent deux, et les couve pendant environ 40 à 45 jours tandis que le mâle apporte la nourriture. Les jeunes sont couverts de duvet blanc et grandissent vite, mais la concurrence entre frères et sœurs peut être intense et seuls un ou deux survivent souvent. Ils prennent leur envol vers 10 à 12 semaines, mais peuvent dépendre encore plusieurs mois de leurs parents.\n\nIls deviennent adultes vers quatre à cinq ans, établissent alors leur propre territoire et cherchent un partenaire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le aquile reali sono normalmente solitarie o vivono in coppia, e le interazioni riguardano soprattutto l’accoppiamento e l’allevamento dei giovani. Gli adulti difendono con forza il proprio vasto territorio, specialmente durante la stagione riproduttiva.\n\nFormano coppie monogame durature, spesso per tutta la vita. Il corteggiamento avviene di solito tra la fine dell’inverno e l’inizio della primavera e comprende voli sincronizzati, volteggi e picchiate. Sia le coppie nuove sia quelle consolidate eseguono queste manovre per rafforzare il legame. Insieme costruiscono o riparano il nido su una falesia, un albero alto o un altro punto elevato.\n\nDopo l’accoppiamento, la femmina depone di solito 1–4 uova, spesso due, e le cova per circa 40–45 giorni mentre il maschio porta il cibo. I piccoli sono coperti di piumino bianco e crescono rapidamente, ma la competizione tra fratelli può essere intensa e spesso sopravvivono solo uno o due. Involano a circa 10–12 settimane, ma possono restare dipendenti dai genitori per diversi mesi.\n\nDiventano adulti a circa quattro-cinque anni, quando stabiliscono il proprio territorio e cercano un compagno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Águias-reais normalmente são solitárias ou vivem em pares, e suas interações se concentram na reprodução e criação dos filhotes. Adultos defendem vigorosamente seus grandes territórios, sobretudo durante a época reprodutiva.\n\nFormam pares monogâmicos duradouros, muitas vezes por toda a vida. A corte ocorre geralmente do fim do inverno ao começo da primavera e inclui manobras de voo sincronizadas, círculos e mergulhos. Pares novos e antigos realizam essas exibições para fortalecer o vínculo. Juntos constroem ou reparam o ninho em penhascos, árvores altas ou outros pontos elevados.\n\nApós o acasalamento, a fêmea normalmente põe 1–4 ovos, sendo dois comuns, e os incuba por cerca de 40–45 dias enquanto o macho fornece alimento. Os filhotes nascem cobertos de penugem branca e crescem rapidamente, mas a competição entre irmãos pode ser intensa, de modo que muitas vezes apenas um ou dois sobrevivem. Eles começam a voar por volta de 10–12 semanas, mas podem depender dos pais por vários meses adicionais.\n\nTornam-se adultos por volta dos quatro a cinco anos, quando estabelecem o próprio território e procuram um parceiro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "イヌワシは通常単独またはつがいで生活し、個体同士の交流は主に繁殖と子育てに限られます。成鳥は広い縄張りを他のイヌワシから強く防衛し、とくに繁殖期には顕著です。\n\n長期的でしばしば生涯続く一夫一妻のつがいを形成します。求愛は通常、晩冬から早春にかけて行われ、同期した飛行、旋回、急降下などが含まれます。新しいつがいも長年のつがいも、絆を強めるためにこれらの行動を行います。巣は崖、高木、その他の高い場所に共同で作るか修復します。\n\n交尾後、雌は通常1～4個、一般的には2個の卵を産み、雄が餌を運ぶ間に約40～45日抱卵します。ヒナは白い綿羽に覆われて急速に成長しますが、兄弟間の競争が激しく、1～2羽しか生き残らないことも多くあります。約10～12週で巣立ちますが、その後も数か月は親の餌や保護に依存する場合があります。\n\n約4～5歳で成鳥となり、自分の縄張りを確立してつがい相手を探します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金雕通常独居或成对生活，个体间互动主要集中在繁殖和育幼。成年个体会强烈保卫自己的大片领地，尤其是在繁殖季。\n\n它们形成长期、通常终生的一夫一妻配偶关系。求偶通常发生在冬末至早春，包括同步飞行、盘旋和俯冲。新形成和长期配对的伴侣都会通过这些飞行展示加强联系。双方会共同在悬崖、高树或其他高处建造或修复巢穴。\n\n交配后，雌性通常产1～4枚卵，常见为2枚，并孵化约40～45天，在此期间雄性负责提供食物。雏鸟覆盖白色绒羽，生长迅速，但兄弟姐妹间竞争可能很激烈，因此往往只有1～2只存活。幼鸟约10～12周时离巢，但此后数月仍可能依赖父母提供食物和保护。\n\n约4～5岁时成为成鸟，此时会建立自己的领地并寻找配偶。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Steinadler können beim Sturzflug auf ihre Beute Geschwindigkeiten von bis zu 193 km/h erreichen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Steinadlernester sind gewaltige Gebilde: Im Schnitt sind sie etwa 1,7 bis 2 m breit und 60 cm hoch, wobei einige Rekordnester sogar 6 m hoch und 2,6 m breit waren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Steinadler benutzen über viele Jahre hinweg dieselben Nester oder Reviere und bauen sie immer wieder aus.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Steinadler besitzen in der Regel weiße Flecken, die sie mit der Mauser verlieren, wenn sie das Erwachsenengefieder entwickeln.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Steinadler sieht vier- bis achtmal besser als ein Mensch und kann Beute aus über drei Kilometern Entfernung erkennen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden Eagles can reach speeds of up to 193 km/h when diving on prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagle nests are enormous: they average about 1.7–2 m wide and 60 cm high, while record nests have reached 6 m high and 2.6 m wide.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagles reuse the same nests or territories for many years and continue adding to them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Young Golden Eagles usually have white patches that disappear during moulting as adult plumage develops.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagles can see four to eight times better than a human and can detect prey from more than three kilometres away.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden Eagles can reach speeds of up to 193 km/h when diving on prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagle nests are enormous: they average about 1.7–2 m wide and 60 cm high, while record nests have reached 6 m high and 2.6 m wide.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagles reuse the same nests or territories for many years and continue adding to them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Young Golden Eagles usually have white patches that disappear during moulting as adult plumage develops.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Golden Eagles can see four to eight times better than a human and can detect prey from more than three kilometres away.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pueden alcanzar hasta 193 km/h en un picado sobre una presa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sus nidos son enormes: normalmente miden 1,7–2 m de ancho y unos 60 cm de alto, aunque algunos nidos récord alcanzaron 6 m de altura y 2,6 m de ancho.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Reutilizan durante muchos años los mismos nidos o territorios y continúan ampliándolos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los jóvenes suelen tener manchas blancas que desaparecen con la muda al desarrollar el plumaje adulto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su visión es entre cuatro y ocho veces mejor que la humana y pueden detectar presas a más de tres kilómetros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ils peuvent atteindre 193 km/h en piqué sur une proie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les nids sont immenses : en moyenne 1,7–2 m de large et 60 cm de haut, certains records atteignant 6 m de haut et 2,6 m de large.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils réutilisent les mêmes nids ou territoires pendant de nombreuses années et continuent de les agrandir.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les jeunes présentent généralement des taches blanches qui disparaissent au fil des mues vers le plumage adulte.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leur vue est quatre à huit fois meilleure que celle d’un humain et ils peuvent détecter une proie à plus de trois kilomètres.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Possono raggiungere 193 km/h durante una picchiata su una preda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I nidi sono enormi: in media larghi 1,7–2 m e alti 60 cm, con record di 6 m di altezza e 2,6 m di larghezza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Utilizzano gli stessi nidi o territori per molti anni e continuano ad ampliarli.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I giovani presentano generalmente chiazze bianche che scompaiono con la muta verso il piumaggio adulto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La vista è da quattro a otto volte migliore di quella umana e permette di individuare prede a oltre tre chilometri.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Podem atingir até 193 km/h em mergulhos sobre a presa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os ninhos são enormes: em média 1,7–2 m de largura e 60 cm de altura, com ninhos recordes chegando a 6 m de altura e 2,6 m de largura.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Usam os mesmos ninhos ou territórios durante muitos anos e continuam ampliando-os.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Jovens normalmente apresentam manchas brancas que desaparecem durante a muda para a plumagem adulta.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sua visão é quatro a oito vezes melhor que a humana e permite detectar presas a mais de três quilômetros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "獲物へ急降下する際に最高193km/hに達することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "巣は非常に巨大で、平均して幅1.7～2m、高さ60cmほどですが、記録的な巣は高さ6m、幅2.6mに達しました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "同じ巣や縄張りを何年も使い続け、巣を繰り返し拡張します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "若鳥には通常白い斑があり、成鳥の羽毛へ換羽するにつれて失われます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "視力は人間の4～8倍とされ、3km以上離れた獲物を見つけることができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "俯冲攻击猎物时速度可达193公里/小时。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "巢穴非常巨大，平均宽约1.7～2米、高约60厘米，记录中的巢甚至高达6米、宽2.6米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "会多年重复使用同一巢穴或领地，并不断扩建巢穴。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼鸟通常带有白色斑块，随着换羽形成成鸟羽毛而逐渐消失。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "视力约为人类的4～8倍，可发现3公里以外的猎物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore être modifiés ou complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/753a390a/Eagle_Golden_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/map/Aquila chrysaetos map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNzUzYTM5MGEvRWFnbGVfR29sZGVuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Steinadler – Planet Zoo 2",
+            "en": "Golden Eagle – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Steinadlers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Golden Eagle."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/753a390a/Eagle_Golden_illustration.jpg",
+          "alt": {
+            "de": "Steinadler – Zoopedia-Illustration",
+            "en": "Golden Eagle – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Steinadlers aus der Planet Zoo 2 Zoopedia.",
+            "en": "Golden Eagle illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Aquila chrysaetos/bilder/Aquila chrysaetos illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Steinadler",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/steinadler",
+        "en": "https://www.planetzoogame.com/2/zoopedia/golden-eagle",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/golden-eagle",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/%C3%A1guila-real",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/aigle-royal",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/aquila-reale",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/%C3%A1guia-real",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A4%E3%83%8C%E3%83%AF%E3%82%B7",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%87%91%E9%9B%95"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}
