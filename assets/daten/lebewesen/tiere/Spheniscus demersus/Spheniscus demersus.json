@@ -1,0 +1,734 @@
+{
+  "id": "",
+  "identitaet": {
+    "namen": {
+      "de": "",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      ""
+    ],
+    "biome": [
+      ""
+    ],
+    "schutzstatus": ""
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "",
+          "ordnung": "",
+          "familie": "",
+          "gattung": "",
+          "art": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        },
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        },
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "",
+          "wert": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "",
+          "system": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [
+            ""
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": ""
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "",
+          "wert": null,
+          "einheit": "",
+          "quelle": ""
+        },
+        {
+          "typ": "",
+          "wert": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "quelle": ""
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "",
+          "wert": "",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": ""
+        },
+        {
+          "typ": "",
+          "wert": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "",
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": ""
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "",
+            "quelle": ""
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "",
+                "bedingung": "",
+                "quelle": ""
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "",
+                "quelle": ""
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": [
+              {
+                "wert": "",
+                "quelle": ""
+              }
+            ]
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [
+      {
+        "id": "",
+        "beziehung": "",
+        "deutscherName": "",
+        "quelle": ""
+      }
+    ],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "",
+          "rang": "",
+          "name": "",
+          "deutscherName": "",
+          "lebensstatus": null,
+          "domestikationsstatus": null,
+          "schutzstatus": null,
+          "spiele": [],
+          "position": null,
+          "hinweis": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": ""
+        }
+      ],
+      "aufspaltungen": [
+        {
+          "linieA": "",
+          "linieB": "",
+          "zeitVorHeuteMioJahre": null,
+          "typ": "",
+          "quelle": ""
+        }
+      ],
+      "verbindungen": [
+        {
+          "von": "",
+          "nach": "",
+          "typ": "",
+          "hinweis": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "",
+        "dateityp": "",
+        "pfad": ""
+      }
+    ],
+    "quelle": ""
+  },
+  "bilder": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": null,
+          "quelle": "",
+          "url": "",
+          "alt": {
+            "de": "",
+            "en": ""
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ],
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": null,
+          "quelle": "",
+          "metadaten": [
+            {
+              "typ": "",
+              "format": "",
+              "pfad": ""
+            }
+          ],
+          "dateien": [
+            {
+              "typ": "",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "video": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": null,
+          "reihe": "",
+          "titel": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": "",
+          "url": "",
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ],
+          "dauerSekunden": null,
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "": {
+      "name": "",
+      "seiten": {
+        "en": ""
+      },
+      "status": ""
+    }
+  }
+}

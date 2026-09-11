@@ -199,6 +199,16 @@
               - `Panthera leo map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera leo/videos/.gitkeep>)
+          - `Spheniscus demersus/`
+            - [Spheniscus demersus.json](<../assets/daten/lebewesen/tiere/Spheniscus demersus/Spheniscus demersus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Spheniscus demersus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Spheniscus demersus/bilder/.gitkeep>)
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Spheniscus demersus/map/.gitkeep>)
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Spheniscus demersus/videos/.gitkeep>)
           - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
     - `js/`
       - `features/`

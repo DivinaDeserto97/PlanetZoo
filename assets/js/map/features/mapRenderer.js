@@ -427,7 +427,7 @@ export async function initMapRenderer(
       /* ============================== */
 
       if (
-        event.button === 0
+        event.button === 2
       ) {
         event.preventDefault();
 
@@ -1493,6 +1493,68 @@ function createCleanBaseMap(
 function createRangeMask(
   image,
 ) {
+  /*
+      Normalfall:
+      Die pinke Verbreitungsfläche liegt
+      direkt auf der oberen Weltkarte.
+  */
+  const directMask =
+    createDirectWorldRangeMask(
+      image,
+    );
+
+
+  if (
+    countMaskPixels(
+      directMask,
+    ) > 0
+  ) {
+    return directMask;
+  }
+
+
+  /*
+      Sonderfall der Zoopedia:
+
+      Bei Arten mit einem extrem kleinen
+      Verbreitungsgebiet (z. B. Axolotl)
+      zeigt die obere Weltkarte nur einen
+      weißen Ausschnitt-Rahmen. Die echte
+      pinke Verbreitung liegt in einer
+      vergrößerten Detailkarte darunter.
+
+      Dieser Fallback erkennt den Ausschnitt
+      automatisch und projiziert die pinken
+      Pixel aus der Detailkarte zurück auf
+      die Weltkarte.
+
+      Dadurch bleibt die Weltkarte für ALLE
+      Tiere hit-testbar, ohne dass für jedes
+      Tier manuell Koordinaten gepflegt
+      werden müssen.
+  */
+  const insetMask =
+    createInsetRangeMask(
+      image,
+    );
+
+
+  if (
+    countMaskPixels(
+      insetMask,
+    ) > 0
+  ) {
+    return insetMask;
+  }
+
+
+  return directMask;
+}
+
+
+function createDirectWorldRangeMask(
+  image,
+) {
   const canvas =
     document.createElement(
       "canvas",
@@ -1576,6 +1638,1037 @@ function createRangeMask(
 
 
   return mask;
+}
+
+
+/* ======================================== */
+/* ZOOPEDIA-DETAILKARTE ZURÜCKPROJIZIEREN  */
+/* ======================================== */
+
+function createInsetRangeMask(
+  image,
+) {
+  const width =
+    image.naturalWidth ||
+    image.width;
+
+  const height =
+    image.naturalHeight ||
+    image.height;
+
+
+  if (
+    !width ||
+    !height
+  ) {
+    return createEmptyRangeMask();
+  }
+
+
+  const canvas =
+    document.createElement(
+      "canvas",
+    );
+
+  canvas.width =
+    width;
+
+  canvas.height =
+    height;
+
+
+  const context =
+    canvas.getContext(
+      "2d",
+      {
+        willReadFrequently:
+          true,
+      },
+    );
+
+
+  context.drawImage(
+    image,
+    0,
+    0,
+    width,
+    height,
+  );
+
+
+  const imageData =
+    context.getImageData(
+      0,
+      0,
+      width,
+      height,
+    );
+
+  const data =
+    imageData.data;
+
+
+  const pinkPixels =
+    findPinkPixels(
+      data,
+      width,
+      height,
+    );
+
+
+  if (!pinkPixels.length) {
+    return createEmptyRangeMask();
+  }
+
+
+  /*
+      Nur pinke Pixel außerhalb der oberen
+      Weltkarte sind für den Inset-Fallback
+      interessant.
+  */
+  const insetPinkPixels =
+    pinkPixels.filter(
+      ({
+        x,
+        y,
+      }) =>
+        !pointInsideRect(
+          x,
+          y,
+          WORLD_CROP,
+        ),
+    );
+
+
+  if (!insetPinkPixels.length) {
+    return createEmptyRangeMask();
+  }
+
+
+  const pinkCenter =
+    averagePoint(
+      insetPinkPixels,
+    );
+
+
+  const detailRect =
+    findWhiteFrameAroundPoint(
+      data,
+      width,
+      height,
+      pinkCenter,
+    );
+
+
+  const locatorRect =
+    findWorldLocatorFrame(
+      data,
+      width,
+      height,
+    );
+
+
+  if (
+    !detailRect ||
+    !locatorRect
+  ) {
+    return createEmptyRangeMask();
+  }
+
+
+  const detailInner =
+    insetRect(
+      detailRect,
+      2,
+    );
+
+  const locatorInner =
+    insetRect(
+      locatorRect,
+      2,
+    );
+
+
+  if (
+    detailInner.width <= 0 ||
+    detailInner.height <= 0 ||
+    locatorInner.width <= 0 ||
+    locatorInner.height <= 0
+  ) {
+    return createEmptyRangeMask();
+  }
+
+
+  const mask =
+    createEmptyRangeMask();
+
+
+  insetPinkPixels.forEach(
+    ({
+      x,
+      y,
+    }) => {
+      if (
+        !pointInsideRect(
+          x,
+          y,
+          detailInner,
+        )
+      ) {
+        return;
+      }
+
+
+      const u =
+        clamp(
+          (
+            x -
+            detailInner.x
+          ) /
+          Math.max(
+            1,
+            detailInner.width - 1,
+          ),
+          0,
+          1,
+        );
+
+      const v =
+        clamp(
+          (
+            y -
+            detailInner.y
+          ) /
+          Math.max(
+            1,
+            detailInner.height - 1,
+          ),
+          0,
+          1,
+        );
+
+
+      const worldImageX =
+        locatorInner.x +
+        u *
+        Math.max(
+          0,
+          locatorInner.width - 1,
+        );
+
+      const worldImageY =
+        locatorInner.y +
+        v *
+        Math.max(
+          0,
+          locatorInner.height - 1,
+        );
+
+
+      const mapX =
+        Math.round(
+          worldImageX -
+          WORLD_CROP.x,
+        );
+
+      const mapY =
+        Math.round(
+          worldImageY -
+          WORLD_CROP.y,
+        );
+
+
+      setMaskPixel(
+        mask,
+        mapX,
+        mapY,
+      );
+    },
+  );
+
+
+  /*
+      Ein einzelner Punkt wäre bei Zoom 1
+      praktisch nicht anklickbar. Nur bei
+      sehr kleinen Inset-Gebieten wird die
+      Maske deshalb minimal erweitert.
+
+      Das ist KEINE neue Verbreitungsfläche,
+      sondern lediglich die sicht- und
+      anklickbare Darstellung des Zoopedia-
+      Punktes auf der kleinen Weltkarte.
+  */
+  const activePixels =
+    countMaskPixels(
+      mask,
+    );
+
+
+  if (
+    activePixels > 0 &&
+    activePixels < 12
+  ) {
+    return dilateRangeMask(
+      mask,
+      2,
+    );
+  }
+
+
+  return mask;
+}
+
+
+function findPinkPixels(
+  data,
+  width,
+  height,
+) {
+  const result =
+    [];
+
+
+  for (
+    let y = 0;
+    y < height;
+    y++
+  ) {
+    for (
+      let x = 0;
+      x < width;
+      x++
+    ) {
+      const i =
+        (
+          y * width +
+          x
+        ) * 4;
+
+
+      if (
+        isRangePixel({
+          r: data[i],
+          g: data[i + 1],
+          b: data[i + 2],
+        })
+      ) {
+        result.push({
+          x,
+          y,
+        });
+      }
+    }
+  }
+
+
+  return result;
+}
+
+
+function findWhiteFrameAroundPoint(
+  data,
+  width,
+  height,
+  point,
+) {
+  const centerX =
+    clamp(
+      Math.round(
+        point.x,
+      ),
+      0,
+      width - 1,
+    );
+
+  const centerY =
+    clamp(
+      Math.round(
+        point.y,
+      ),
+      0,
+      height - 1,
+    );
+
+
+  const left =
+    scanForWhitePixel(
+      data,
+      width,
+      height,
+      centerX,
+      centerY,
+      -1,
+      0,
+    );
+
+  const right =
+    scanForWhitePixel(
+      data,
+      width,
+      height,
+      centerX,
+      centerY,
+      1,
+      0,
+    );
+
+  const top =
+    scanForWhitePixel(
+      data,
+      width,
+      height,
+      centerX,
+      centerY,
+      0,
+      -1,
+    );
+
+  const bottom =
+    scanForWhitePixel(
+      data,
+      width,
+      height,
+      centerX,
+      centerY,
+      0,
+      1,
+    );
+
+
+  if (
+    !left ||
+    !right ||
+    !top ||
+    !bottom
+  ) {
+    return null;
+  }
+
+
+  const rect = {
+    x: left.x,
+    y: top.y,
+    width:
+      right.x -
+      left.x + 1,
+    height:
+      bottom.y -
+      top.y + 1,
+  };
+
+
+  /*
+      Ein echter Detailausschnitt muss
+      deutlich größer als der Locator auf
+      der Weltkarte sein.
+  */
+  if (
+    rect.width < 80 ||
+    rect.height < 80
+  ) {
+    return null;
+  }
+
+
+  return rect;
+}
+
+
+function findWorldLocatorFrame(
+  data,
+  width,
+  height,
+) {
+  const minY =
+    clamp(
+      WORLD_CROP.y,
+      0,
+      height - 1,
+    );
+
+  const maxY =
+    clamp(
+      WORLD_CROP.y +
+      WORLD_CROP.height -
+      1,
+      0,
+      height - 1,
+    );
+
+  const minX =
+    clamp(
+      WORLD_CROP.x,
+      0,
+      width - 1,
+    );
+
+  const maxX =
+    clamp(
+      WORLD_CROP.x +
+      WORLD_CROP.width -
+      1,
+      0,
+      width - 1,
+    );
+
+
+  const horizontalRuns =
+    [];
+
+
+  for (
+    let y = minY;
+    y <= maxY;
+    y++
+  ) {
+    let runStart =
+      null;
+
+
+    for (
+      let x = minX;
+      x <= maxX + 1;
+      x++
+    ) {
+      const white =
+        x <= maxX &&
+        isWhitePixelAt(
+          data,
+          width,
+          x,
+          y,
+        );
+
+
+      if (
+        white &&
+        runStart === null
+      ) {
+        runStart = x;
+      }
+
+
+      if (
+        !white &&
+        runStart !== null
+      ) {
+        const runEnd =
+          x - 1;
+
+        const runWidth =
+          runEnd -
+          runStart + 1;
+
+
+        /*
+            Der kleine Zoopedia-Locator ist
+            ein kurzer weißer Rechteckrahmen.
+            Lange Linien gehören eher zum
+            Detailausschnitt/Verbinder.
+        */
+        if (
+          runWidth >= 8 &&
+          runWidth <= 120
+        ) {
+          horizontalRuns.push({
+            y,
+            x1: runStart,
+            x2: runEnd,
+            width: runWidth,
+          });
+        }
+
+
+        runStart = null;
+      }
+    }
+  }
+
+
+  let best =
+    null;
+
+
+  for (
+    let i = 0;
+    i < horizontalRuns.length;
+    i++
+  ) {
+    const top =
+      horizontalRuns[i];
+
+
+    for (
+      let j = i + 1;
+      j < horizontalRuns.length;
+      j++
+    ) {
+      const bottom =
+        horizontalRuns[j];
+
+      const frameHeight =
+        bottom.y -
+        top.y;
+
+
+      if (
+        frameHeight < 6 ||
+        frameHeight > 100
+      ) {
+        continue;
+      }
+
+
+      const overlapLeft =
+        Math.max(
+          top.x1,
+          bottom.x1,
+        );
+
+      const overlapRight =
+        Math.min(
+          top.x2,
+          bottom.x2,
+        );
+
+      const overlapWidth =
+        overlapRight -
+        overlapLeft + 1;
+
+
+      if (
+        overlapWidth < 6
+      ) {
+        continue;
+      }
+
+
+      const leftX =
+        Math.round(
+          (
+            top.x1 +
+            bottom.x1
+          ) /
+          2,
+        );
+
+      const rightX =
+        Math.round(
+          (
+            top.x2 +
+            bottom.x2
+          ) /
+          2,
+        );
+
+
+      const verticalCoverage =
+        countWhiteOnVerticalLine(
+          data,
+          width,
+          height,
+          leftX,
+          top.y,
+          bottom.y,
+        ) +
+        countWhiteOnVerticalLine(
+          data,
+          width,
+          height,
+          rightX,
+          top.y,
+          bottom.y,
+        );
+
+      const expectedCoverage =
+        Math.max(
+          1,
+          frameHeight * 2,
+        );
+
+      const score =
+        verticalCoverage /
+        expectedCoverage;
+
+
+      if (
+        score < 0.45
+      ) {
+        continue;
+      }
+
+
+      const candidate = {
+        x:
+          Math.min(
+            leftX,
+            rightX,
+          ),
+        y:
+          top.y,
+        width:
+          Math.abs(
+            rightX -
+            leftX,
+          ) + 1,
+        height:
+          frameHeight + 1,
+        score,
+      };
+
+
+      /*
+          Bei mehreren Kandidaten gewinnt
+          zuerst der sauberste Rahmen, dann
+          der kleinere. So wird nicht
+          versehentlich eine größere
+          Dekorationslinie gewählt.
+      */
+      if (
+        !best ||
+        candidate.score >
+          best.score + 0.05 ||
+        (
+          Math.abs(
+            candidate.score -
+            best.score,
+          ) <= 0.05 &&
+          candidate.width *
+            candidate.height <
+          best.width *
+            best.height
+        )
+      ) {
+        best =
+          candidate;
+      }
+    }
+  }
+
+
+  if (!best) {
+    return null;
+  }
+
+
+  return {
+    x: best.x,
+    y: best.y,
+    width: best.width,
+    height: best.height,
+  };
+}
+
+
+function scanForWhitePixel(
+  data,
+  width,
+  height,
+  startX,
+  startY,
+  dx,
+  dy,
+) {
+  let x =
+    startX;
+
+  let y =
+    startY;
+
+
+  while (
+    x >= 0 &&
+    y >= 0 &&
+    x < width &&
+    y < height
+  ) {
+    if (
+      isWhitePixelAt(
+        data,
+        width,
+        x,
+        y,
+      )
+    ) {
+      return {
+        x,
+        y,
+      };
+    }
+
+
+    x += dx;
+    y += dy;
+  }
+
+
+  return null;
+}
+
+
+function countWhiteOnVerticalLine(
+  data,
+  width,
+  height,
+  x,
+  startY,
+  endY,
+) {
+  let count =
+    0;
+
+
+  for (
+    let y = startY;
+    y <= endY;
+    y++
+  ) {
+    if (
+      x >= 0 &&
+      x < width &&
+      y >= 0 &&
+      y < height &&
+      isWhitePixelAt(
+        data,
+        width,
+        x,
+        y,
+      )
+    ) {
+      count++;
+    }
+  }
+
+
+  return count;
+}
+
+
+function isWhitePixelAt(
+  data,
+  width,
+  x,
+  y,
+) {
+  const i =
+    (
+      y * width +
+      x
+    ) * 4;
+
+
+  return isWhitePixel({
+    r: data[i],
+    g: data[i + 1],
+    b: data[i + 2],
+  });
+}
+
+
+function isWhitePixel(
+  pixel,
+) {
+  return (
+    pixel.r >= 225 &&
+    pixel.g >= 225 &&
+    pixel.b >= 225 &&
+    Math.abs(
+      pixel.r -
+      pixel.g,
+    ) <= 25 &&
+    Math.abs(
+      pixel.r -
+      pixel.b,
+    ) <= 25
+  );
+}
+
+
+function pointInsideRect(
+  x,
+  y,
+  rect,
+) {
+  return (
+    x >= rect.x &&
+    y >= rect.y &&
+    x <
+      rect.x +
+      rect.width &&
+    y <
+      rect.y +
+      rect.height
+  );
+}
+
+
+function insetRect(
+  rect,
+  amount,
+) {
+  return {
+    x:
+      rect.x +
+      amount,
+    y:
+      rect.y +
+      amount,
+    width:
+      Math.max(
+        0,
+        rect.width -
+        amount * 2,
+      ),
+    height:
+      Math.max(
+        0,
+        rect.height -
+        amount * 2,
+      ),
+  };
+}
+
+
+function averagePoint(
+  points,
+) {
+  let x = 0;
+  let y = 0;
+
+
+  points.forEach(
+    (point) => {
+      x += point.x;
+      y += point.y;
+    },
+  );
+
+
+  return {
+    x:
+      x /
+      points.length,
+    y:
+      y /
+      points.length,
+  };
+}
+
+
+function createEmptyRangeMask() {
+  return new Uint8Array(
+    WORLD_CROP.width *
+    WORLD_CROP.height,
+  );
+}
+
+
+function setMaskPixel(
+  mask,
+  x,
+  y,
+) {
+  if (
+    x < 0 ||
+    y < 0 ||
+    x >= WORLD_CROP.width ||
+    y >= WORLD_CROP.height
+  ) {
+    return;
+  }
+
+
+  mask[
+    y *
+    WORLD_CROP.width +
+    x
+  ] = 1;
+}
+
+
+function countMaskPixels(
+  mask,
+) {
+  let count =
+    0;
+
+
+  for (
+    let i = 0;
+    i < mask.length;
+    i++
+  ) {
+    count +=
+      mask[i]
+        ? 1
+        : 0;
+  }
+
+
+  return count;
+}
+
+
+function dilateRangeMask(
+  mask,
+  radius,
+) {
+  const result =
+    mask.slice();
+
+
+  for (
+    let y = 0;
+    y < WORLD_CROP.height;
+    y++
+  ) {
+    for (
+      let x = 0;
+      x < WORLD_CROP.width;
+      x++
+    ) {
+      const index =
+        y *
+        WORLD_CROP.width +
+        x;
+
+
+      if (!mask[index]) {
+        continue;
+      }
+
+
+      for (
+        let dy = -radius;
+        dy <= radius;
+        dy++
+      ) {
+        for (
+          let dx = -radius;
+          dx <= radius;
+          dx++
+        ) {
+          if (
+            dx * dx +
+            dy * dy >
+            radius * radius
+          ) {
+            continue;
+          }
+
+
+          setMaskPixel(
+            result,
+            x + dx,
+            y + dy,
+          );
+        }
+      }
+    }
+  }
+
+
+  return result;
 }
 
 
