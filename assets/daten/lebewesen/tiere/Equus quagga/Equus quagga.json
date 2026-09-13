@@ -1,0 +1,842 @@
+{
+  "id": "Equus quagga",
+  "identitaet": {
+    "namen": {
+      "de": "Steppenzebra",
+      "en": "Plains Zebra",
+      "en-US": "Plains Zebra",
+      "es": "Cebra común",
+      "fr": "Zèbre des plaines",
+      "it": "Zebra di pianura",
+      "pt-BR": "Zebra-da-planície",
+      "ja": "サバンナシマウマ",
+      "zh-Hans": "平原斑马"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Grasland"
+    ],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Perissodactyla",
+          "familie": "Equidae",
+          "gattung": "Equus",
+          "art": "Equus quagga",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2.17,
+          "max": 2.46,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Männchen und Weibchen 2,17 bis 2,46 m Körperlänge; Männchen werden meist rund 10 % größer.",
+            "en": "The Zoopedia gives a body length of 2.17–2.46 m for males and females, with males usually around 10% larger."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 220,
+          "max": 320,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 175,
+          "max": 250,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Potenziell gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Near Threatened."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 150000,
+          "max": 250000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 12,
+          "max": 14,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt, dass eine Stute üblicherweise nur ein Fohlen zur Welt bringt.",
+            "en": "The Zoopedia states that a mare usually gives birth to only one foal."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperate",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art in Savannen Ost- und Südafrikas; zusätzlich wird die Nähe zu Wasserquellen hervorgehoben.",
+            "en": "The Zoopedia describes the species in East and southern African savannas and highlights its preference for habitats near water sources."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Savanne wird im Projekt dem Grasland-Kontext zugeordnet.",
+            "en": "Savanna is mapped to the project's grassland context."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Steppenzebra (Equus quagga) ist in Ost- und Südafrika beheimatet und bevorzugt Lebensräume in der Nähe von Wasserquellen in der Savanne.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La cebra común (Equus quagga) es nativa del este y sur de África y prefiere hábitats de sabana cercanos a fuentes de agua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le zèbre des plaines (Equus quagga) est originaire d'Afrique orientale et australe et préfère les savanes proches de points d'eau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La zebra di pianura (Equus quagga) è originaria dell'Africa orientale e meridionale e preferisce le savane vicine alle fonti d'acqua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A zebra-da-planície (Equus quagga) é nativa do leste e sul da África e prefere savanas próximas a fontes de água.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナシマウマ（Equus quagga）は東アフリカと南部アフリカに生息し、水場に近いサバンナを好みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "平原斑马（Equus quagga）原产于东非和南部非洲，偏好靠近水源的稀树草原环境。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Steppenzebra (auch Equus quagga) ist in Ost- und Südafrika beheimatet und bevorzugt Lebensräume in der Nähe von Wasserquellen in der Savanne.\n\nDie Art gliedert sich in sechs Unterarten, die sich durch verschiedene Merkmale unterscheiden, etwa abweichende Musterung oder eine strikte Paarung innerhalb der Herde. Steppenzebras besitzen die für Zebras typische Streifenmusterung und sind kleiner als Grevyzebras, jedoch größer als Bergzebras.\n\nMännchen und Weibchen sind in der Regel zwischen 1,10 und 1,45 m groß und zwischen 2,17 und 2,46 m lang, wobei männliche Tiere meist rund 10 % größer werden als weibliche Tiere. Männchen sind mit 220 kg bis 320 kg außerdem schwerer als Weibchen, die zwischen 175 kg und 250 kg auf die Waage bringen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La cebra común (Equus quagga) vive en el este y sur de África, especialmente en sabanas próximas al agua.\n\nLa especie se divide en seis subespecies que se diferencian, entre otras cosas, por el patrón de rayas y determinados comportamientos de apareamiento. Es más pequeña que la cebra de Grévy y mayor que la cebra de montaña.\n\nMachos y hembras miden normalmente 1,10–1,45 m de altura y 2,17–2,46 m de longitud. Los machos suelen ser aproximadamente un 10% mayores y pesan 220–320 kg, frente a los 175–250 kg de las hembras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le zèbre des plaines (Equus quagga) vit en Afrique orientale et australe dans des savanes proches de l'eau.\n\nL'espèce comprend six sous-espèces qui diffèrent notamment par leur dessin de rayures et certains comportements d'accouplement. Il est plus petit que le zèbre de Grévy mais plus grand que le zèbre de montagne.\n\nMâles et femelles mesurent généralement 1,10–1,45 m de haut et 2,17–2,46 m de long. Les mâles sont souvent environ 10% plus grands et pèsent 220–320 kg, contre 175–250 kg pour les femelles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La zebra di pianura (Equus quagga) vive nell'Africa orientale e meridionale, soprattutto nelle savane vicine all'acqua.\n\nLa specie comprende sei sottospecie, diverse tra loro per caratteristiche come il disegno delle strisce e alcuni comportamenti riproduttivi. È più piccola della zebra di Grévy ma più grande della zebra di montagna.\n\nMaschi e femmine misurano generalmente 1,10–1,45 m di altezza e 2,17–2,46 m di lunghezza. I maschi sono spesso circa il 10% più grandi e pesano 220–320 kg; le femmine 175–250 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A zebra-da-planície (Equus quagga) vive no leste e sul da África, principalmente em savanas próximas à água.\n\nA espécie possui seis subespécies que diferem em características como padrões de listras e determinados comportamentos de acasalamento. É menor que a zebra-de-Grévy e maior que a zebra-das-montanhas.\n\nMachos e fêmeas medem geralmente 1,10–1,45 m de altura e 2,17–2,46 m de comprimento. Machos costumam ser cerca de 10% maiores e pesam 220–320 kg; fêmeas pesam 175–250 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サバンナシマウマ（Equus quagga）は東アフリカと南部アフリカに生息し、水場に近いサバンナを好みます。\n\n6亜種に分けられ、縞模様や繁殖行動などに違いがあります。グレビーシマウマより小さく、ヤマシマウマより大きいです。\n\n雌雄とも通常は体高1.10～1.45m、体長2.17～2.46mで、雄は雌より約10%大きくなることが多いです。雄は220～320kg、雌は175～250kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "平原斑马（Equus quagga）生活在东非和南部非洲，并偏好靠近水源的稀树草原。\n\n该物种分为6个亚种，在条纹图案以及部分交配行为等方面有所差异。体型比细纹斑马小，但比山斑马大。\n\n雌雄通常高1.10～1.45米、体长2.17～2.46米，雄性通常比雌性大约10%。雄性体重220～320千克，雌性175～250千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand der Steppenzebras ist „potenziell gefährdet“, da sie aufgrund der Ausbreitung von Städten und Landwirtschaft vom Verlust ihres Lebensraums und vom Wettbewerb um Weideland mit Nutztieren betroffen sind. In manchen Regionen ist die Wilderei zur Gewinnung von Zebrafellen und Fleisch eine zusätzliche Bedrohung. Obwohl Steppenzebras anpassungsfähiger und weiter verbreitet sind als andere Zebraarten, hat der Druck zu einem Rückgang der Bestände in bestimmten Gebieten geführt; eine Unterart des Steppenzebras (das Quagga) wurde 1878 bis zur Ausrottung gejagt.\n\nNaturschützer konzentrieren sich auf den Schutz von Lebensräumen, Maßnahmen gegen Wilderei und eine nachhaltige Landnutzungsplanung. Viele Zebras leben in geschützten Nationalparks. Als weit wandernde Tierart verlassen sie jedoch während ihrer Wanderungen häufig diese Schutzgebiete. Umsiedlungs- und Wiederansiedlungsprogramme haben erfolgreich dazu beigetragen, zuvor rückläufige Bestände zu stärken, und Initiativen der Gemeinden helfen dabei, die Konkurrenz durch Weidevieh zu bewältigen. Organisationen wie die IUCN und der WWF unterstützen Erhaltungsbemühungen mit Forschung, Finanzierung und Beratung, um das langfristige Überleben der wildlebenden Steppenzebras zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Plains Zebra is Near Threatened because urban and agricultural expansion causes habitat loss and competition with livestock for grazing land. In some regions, poaching for skins and meat is an additional threat. Although Plains Zebras are more adaptable and widespread than other zebra species, these pressures have caused declines in some areas; one subspecies, the quagga, was hunted to extinction in 1878.\n\nConservationists focus on habitat protection, anti-poaching measures and sustainable land-use planning. Many zebras live in protected national parks, but as wide-ranging animals they often leave these areas during migration. Translocation and reintroduction programmes have strengthened declining populations, while community initiatives help manage competition with livestock. Organisations including the IUCN and WWF support conservation through research, funding and advice.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Plains Zebra is Near Threatened because urban and agricultural expansion causes habitat loss and competition with livestock for grazing land. In some regions, poaching for skins and meat is an additional threat. Although Plains Zebras are more adaptable and widespread than other zebra species, these pressures have caused declines in some areas; one subspecies, the quagga, was hunted to extinction in 1878.\n\nConservationists focus on habitat protection, anti-poaching measures and sustainable land-use planning. Many zebras live in protected national parks, but as wide-ranging animals they often leave these areas during migration. Translocation and reintroduction programmes have strengthened declining populations, while community initiatives help manage competition with livestock. Organisations including the IUCN and WWF support conservation through research, funding and advice.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificada como Casi Amenazada por la pérdida de hábitat causada por ciudades y agricultura y por la competencia con el ganado. En algunas regiones también existe caza furtiva por pieles y carne. El quagga, una subespecie, fue cazado hasta su extinción en 1878.\n\nLas medidas incluyen protección de hábitats, lucha contra la caza furtiva, planificación sostenible del territorio, traslocaciones y reintroducciones, además de iniciativas comunitarias para reducir los conflictos con el ganado.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le zèbre des plaines est Quasi menacé en raison de la perte d'habitat liée aux villes et à l'agriculture et de la concurrence avec le bétail. Le braconnage pour la peau et la viande constitue également une menace dans certaines régions. Le quagga, une sous-espèce, a été chassé jusqu'à l'extinction en 1878.\n\nLa conservation repose sur la protection des habitats, la lutte contre le braconnage, la planification durable, les translocations et réintroductions ainsi que des initiatives communautaires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificata Quasi minacciata a causa della perdita di habitat dovuta a città e agricoltura e della competizione con il bestiame. In alcune regioni è minacciata anche dal bracconaggio per pelle e carne. Il quagga, una sottospecie, fu cacciato fino all'estinzione nel 1878.\n\nLa conservazione comprende protezione degli habitat, misure anti-bracconaggio, pianificazione sostenibile del territorio, traslocazioni, reintroduzioni e iniziative comunitarie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificada como Quase Ameaçada devido à perda de habitat causada por cidades e agricultura e à competição com o gado. Em algumas regiões, a caça por pele e carne também é uma ameaça. O quaga, uma subespécie, foi caçado até a extinção em 1878.\n\nA conservação inclui proteção de habitats, combate à caça ilegal, planejamento sustentável, translocações, reintroduções e iniciativas comunitárias.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "準絶滅危惧に分類されています。都市や農地の拡大による生息地喪失、家畜との放牧地競争、地域によっては皮や肉目的の密猟が脅威です。亜種のクアッガは1878年までに絶滅しました。\n\n生息地保護、密猟対策、持続可能な土地利用、移送・再導入、地域社会との協力などが保全策として行われています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为近危。城市和农业扩张造成栖息地丧失，并与家畜争夺牧场；部分地区还存在为获取皮毛和肉而偷猎的问题。其亚种斑驴于1878年被猎杀至灭绝。\n\n保护措施包括栖息地保护、反偷猎、可持续土地利用、迁移和重新引入项目，以及社区参与的管理措施。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Steppenzebras leben in freier Wildbahn in zusammengeschlossenen Herden, die aus mehreren Harems bestehen können, dem jeweils ein Hengst, mehrere Stuten und deren Fohlen angehören. Junghengste, die noch keinen eigenen Harem haben, leben in Junggesellenherden. Unter den Stuten eines Harems besteht eine feste Rangordnung, die durch die Dauer der Zugehörigkeit zum Harem bestimmt wird: Die Stute, die sich dem Hengst zuerst angeschlossen hat, ist die Leitstute.\n\nZebrahengste „sichern“ sich junge Stuten, indem sie sich ihnen in deren Familiengruppe nähern, sobald die Stute geschlechtsreif ist. Die Hengste müssen dann das Vatertier der Stute herausfordern und besiegen, erst dann schließt sich ihnen die Stute an. Andere Hengste können den Siegern die Stuten jedoch auch wieder streitig machen. Die Stute bleibt bei dem Hengst, mit dem sie sich als erstes gepaart hat.\n\nEine Zebrastute trägt ihr Fohlen 12 bis 14 Monate aus und bringt dann üblicherweise nur eines zur Welt.\n\nWeibliche Jungtiere bleiben bei ihrer Herde, bis sie sich einem Hengst anschließen, mit dem sie nicht verwandt sind. Männliche Jungtiere bleiben dagegen nur bis zur nächsten Trächtigkeit des Muttertiers bei der Herde und schließen sich dann Junggesellenherden an.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Plains Zebras live in joined herds that may consist of several harems, each containing one stallion, several mares and their foals. Young stallions without harems live in bachelor herds. Mares within a harem have a stable hierarchy based on how long they have belonged to it; the first mare to join the stallion is the lead mare.\n\nStallions approach young mares in their family groups when the mares become sexually mature. A stallion must challenge and defeat the mare's father before she joins him, although other stallions may later compete for her. A mare remains with the stallion with whom she first mated.\n\nA mare carries her foal for 12–14 months and usually gives birth to only one.\n\nFemale young remain with the herd until joining an unrelated stallion. Young males remain until their mother becomes pregnant again, then join bachelor herds.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Plains Zebras live in joined herds that may consist of several harems, each containing one stallion, several mares and their foals. Young stallions without harems live in bachelor herds. Mares within a harem have a stable hierarchy based on how long they have belonged to it; the first mare to join the stallion is the lead mare.\n\nStallions approach young mares in their family groups when the mares become sexually mature. A stallion must challenge and defeat the mare's father before she joins him, although other stallions may later compete for her. A mare remains with the stallion with whom she first mated.\n\nA mare carries her foal for 12–14 months and usually gives birth to only one.\n\nFemale young remain with the herd until joining an unrelated stallion. Young males remain until their mother becomes pregnant again, then join bachelor herds.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Vive en grandes manadas que pueden estar formadas por varios harenes, cada uno con un semental, varias yeguas y sus potros. Los machos jóvenes viven en grupos de solteros.\n\nLos sementales se acercan a yeguas jóvenes cuando alcanzan la madurez y pueden tener que enfrentarse al padre de la yegua.\n\nLa gestación dura 12–14 meses y normalmente nace un solo potro.\n\nLas hembras jóvenes permanecen en la manada hasta unirse a un macho no emparentado; los machos jóvenes pasan después a grupos de solteros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il vit en troupeaux pouvant réunir plusieurs harems, chacun comprenant un étalon, plusieurs juments et leurs poulains. Les jeunes mâles vivent dans des groupes de célibataires.\n\nLes étalons approchent les jeunes juments lorsqu'elles deviennent sexuellement matures et peuvent devoir affronter leur père.\n\nLa gestation dure 12–14 mois et la jument met généralement au monde un seul poulain.\n\nLes jeunes femelles restent dans le troupeau jusqu'à rejoindre un étalon non apparenté; les jeunes mâles rejoignent ensuite des groupes de célibataires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive in branchi che possono comprendere più harem, ciascuno formato da uno stallone, diverse femmine e i loro puledri. I giovani maschi vivono in gruppi di scapoli.\n\nGli stalloni si avvicinano alle giovani femmine quando diventano sessualmente mature e possono dover affrontare il padre della femmina.\n\nLa gestazione dura 12–14 mesi e normalmente nasce un solo puledro.\n\nLe giovani femmine restano nel branco fino a unirsi a uno stallone non imparentato; i giovani maschi passano poi ai gruppi di scapoli.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Vive em manadas que podem reunir vários haréns, cada um com um garanhão, várias fêmeas e seus potros. Machos jovens vivem em grupos de solteiros.\n\nGaranhões se aproximam de fêmeas jovens quando elas atingem a maturidade sexual e podem ter de enfrentar o pai da fêmea.\n\nA gestação dura 12–14 meses e normalmente nasce apenas um potro.\n\nFêmeas jovens permanecem na manada até se juntarem a um garanhão não aparentado; machos jovens depois passam para grupos de solteiros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "複数のハーレムが合流した群れで暮らすことがあり、各ハーレムは1頭の雄、複数の雌、その子からなります。若い雄は独身群を作ります。\n\n雄は若い雌が性成熟すると家族群に近づき、雌の父親と争うことがあります。\n\n妊娠期間は12～14か月で、通常1頭の子を産みます。\n\n若い雌は血縁のない雄に加わるまで群れに残り、若い雄はその後独身群に加わります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "可生活在由多个后宫群组成的大群体中，每个后宫群通常包含1只雄性、数只雌性和幼驹。没有自己后宫群的年轻雄性会组成单身群。\n\n当年轻雌性达到性成熟时，雄性会接近其家庭群，并可能挑战其父亲。\n\n妊娠期12～14个月，通常每次只产1只幼驹。\n\n年轻雌性会留在群体中，直到加入一只没有亲缘关系的雄性；年轻雄性则会加入单身群。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Zebras erkennen sich gegenseitig an ihren unterschiedlichen Streifenmustern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Zebras schlafen im Stehen und übernehmen währenddessen „Wachschichten“, in denen sie nach Feinden Ausschau halten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Zweck der Streifenmusterung von Zebras ist noch immer nicht ganz klar. Sie könnte der Tarnung im hohen Gras oder im Schatten dienen (vor allem bei Fohlen), der Tarnung in der Bewegung, um Räuber zu verwirren, wenn die Herde flüchtet, der Abwehr von Parasiten oder als soziales Erkennungsmerkmal.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Zebrastuten in einem Harem verhalten sich neuen Stuten gegenüber aggressiv, daher muss der Hengst diese Tiere beschützen, bis sich die Spannungen gelegt haben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Zebraherden folgen dem Regen und legen bei Wanderungen Strecken von bis zu 1.600 km zurück, um in der Nähe von Nahrungs- und Wasserquellen zu bleiben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Zebras recognise one another by their individual stripe patterns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zebras sleep standing up and take turns keeping watch for predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The purpose of zebra stripes is still uncertain; possible functions include camouflage, confusing predators during movement, deterring parasites and social recognition.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Mares in a harem can be aggressive toward new mares, so the stallion protects newcomers until tensions settle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zebra herds follow the rains and may migrate up to 1,600 km to remain close to food and water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Zebras recognise one another by their individual stripe patterns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zebras sleep standing up and take turns keeping watch for predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The purpose of zebra stripes is still uncertain; possible functions include camouflage, confusing predators during movement, deterring parasites and social recognition.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Mares in a harem can be aggressive toward new mares, so the stallion protects newcomers until tensions settle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zebra herds follow the rains and may migrate up to 1,600 km to remain close to food and water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las cebras se reconocen por sus diferentes patrones de rayas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Duermen de pie y realizan turnos de vigilancia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La función exacta de las rayas sigue sin estar clara y podría incluir camuflaje, confusión de depredadores, defensa contra parásitos o reconocimiento social.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las yeguas de un harén pueden ser agresivas con nuevas integrantes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las manadas siguen las lluvias y pueden migrar hasta 1.600 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les zèbres se reconnaissent grâce à leurs motifs de rayures individuels.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils dorment debout et assurent des tours de garde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La fonction exacte des rayures reste incertaine et pourrait inclure le camouflage, la confusion des prédateurs, la protection contre les parasites ou la reconnaissance sociale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les juments d'un harem peuvent être agressives envers les nouvelles venues.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les troupeaux suivent les pluies et peuvent migrer jusqu'à 1 600 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le zebre si riconoscono grazie ai loro diversi motivi di strisce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dormono in piedi e fanno turni di guardia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La funzione esatta delle strisce non è ancora chiara e potrebbe riguardare mimetismo, confusione dei predatori, protezione dai parassiti o riconoscimento sociale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le femmine di un harem possono essere aggressive verso le nuove arrivate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I branchi seguono le piogge e possono migrare fino a 1.600 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Zebras reconhecem umas às outras pelos padrões individuais de listras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dormem em pé e fazem turnos de vigilância.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A função exata das listras ainda é incerta e pode envolver camuflagem, confusão de predadores, proteção contra parasitas ou reconhecimento social.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fêmeas de um harém podem ser agressivas com novas integrantes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As manadas seguem as chuvas e podem migrar até 1.600 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "個体ごとに異なる縞模様で仲間を見分けます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "立ったまま眠り、交代で見張りをします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "縞模様の正確な役割はまだ不明で、カモフラージュ、捕食者の混乱、寄生虫対策、社会的識別などの説があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ハーレムの雌は新しく加わる雌に攻撃的になることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "群れは雨を追い、食物と水を求めて最大1,600km移動することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "斑马通过彼此不同的条纹图案识别个体。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "斑马会站立睡觉，并轮流负责警戒。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "斑马条纹的确切作用仍不清楚，可能与伪装、迷惑捕食者、防止寄生虫或社会识别有关。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "后宫群中的雌性可能会攻击新加入的雌性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "斑马群会追随降雨迁移，为寻找食物和水源可移动最多1,600公里。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/48ec061b/Zebra_Plains_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Equus quagga/map/Equus quagga map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDhlYzA2MWIvWmVicmFfUGxhaW5zLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Steppenzebra – Planet Zoo 2",
+            "en": "Plains Zebra – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Steppenzebras aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Plains Zebra."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Equus quagga/bilder/Equus quagga 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/48ec061b/Zebra_Plains_illustration.jpg",
+          "alt": {
+            "de": "Steppenzebra – Zoopedia-Illustration",
+            "en": "Plains Zebra – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Steppenzebras aus der Planet Zoo 2 Zoopedia.",
+            "en": "Plains Zebra illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Equus quagga/bilder/Equus quagga illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Steppenzebra",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/steppenzebra",
+        "en": "https://www.planetzoogame.com/2/zoopedia/plains-zebra",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/plains-zebra",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/cebra-com%C3%BAn",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/z%C3%A8bre-des-plaines",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/zebra-di-pianura",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/zebra-da-plan%C3%ADcie",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B5%E3%83%90%E3%83%B3%E3%83%8A%E3%82%B7%E3%83%9E%E3%82%A6%E3%83%9E",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B9%B3%E5%8E%9F%E6%96%91%E9%A9%AC"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bleiben bewusst offen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

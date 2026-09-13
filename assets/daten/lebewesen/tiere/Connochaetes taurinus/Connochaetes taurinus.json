@@ -1,0 +1,851 @@
+{
+  "id": "Connochaetes taurinus",
+  "identitaet": {
+    "namen": {
+      "de": "Streifengnu",
+      "en": "Blue Wildebeest",
+      "en-US": "Blue Wildebeest",
+      "es": "Ñu común",
+      "fr": "Gnou bleu",
+      "it": "Gnu comune",
+      "pt-BR": "Gnu-de-cauda-preta",
+      "ja": "オグロヌー",
+      "zh-Hans": "黑尾牛羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Connochaetes",
+          "art": "Connochaetes taurinus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.7,
+          "max": 2.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.75,
+          "max": 2.15,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.23,
+          "max": 1.65,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.14,
+          "max": 1.42,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 165,
+          "max": 290,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 140,
+          "max": 260,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 1550000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 16,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia weist darauf hin, dass es noch einige Jahre dauern kann, bis die Hörner weit genug entwickelt sind, um Territorien oder Paarungsrechte erfolgreich zu erkämpfen.",
+            "en": "The Zoopedia notes that it may take several more years before the horns are sufficiently developed for successful territorial or mating competition."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 8.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Die Kuh gebärt laut Zoopedia ein einzelnes Kalb. Es trinkt bis 4 Wochen ausschließlich Milch, beginnt danach Gras zu fressen und wird mit 8 bis 10 Monaten entwöhnt.",
+            "en": "According to the Zoopedia, the cow gives birth to a single calf. It drinks only milk for the first four weeks, then begins eating grass and is weaned at 8–10 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Streifengnu (Connochaetes taurinus) ist eine im südlichen Afrika beheimatete große Antilope. Es ist auch als Blaues Gnu bekannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa. It is also known as the brindled gnu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa. It is also known as the brindled gnu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El ñu común (Connochaetes taurinus) es un gran antílope nativo del sur de África, también conocido como ñu azul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le gnou bleu (Connochaetes taurinus) est une grande antilope originaire d'Afrique australe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope originaria dell'Africa meridionale, nota anche come gnu blu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O gnu-de-cauda-preta (Connochaetes taurinus) é um grande antílope nativo do sul da África, também conhecido como gnu-azul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オグロヌー（Connochaetes taurinus）は南部アフリカ原産の大型レイヨウで、ブルーヌーとも呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黑尾牛羚（Connochaetes taurinus）是原产于非洲南部的大型羚羊，也被称为蓝角马。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Streifengnu (auch Connochaetes taurinus) ist eine im südlichen Afrika beheimatete große Antilope. Es ist auch als Blaues Gnu bekannt.\n\nEs hat ein blassgraues oder braunes Fell mit dunklen Streifen am Hals, an den Schultern und an der Brust. Streifengnus haben einen langen schwarzen Schwanz und eine lange schwarze Mähne, die je nach Unterart entweder absteht oder den Hals bedeckt. Der Bart unter dem Hals ist weiß. Die Spezies ist sexuell dimorph und Bullen sind größer als Kühe, allerdings besitzen beide charakteristische L-förmige Hörner.\n\nDie Schulterhöhe von Bullen beträgt 1,23 bis 1,65 m, sie erreichen eine Länge von 1,7 bis 2,4 m und wiegen zwischen 165 und 290 kg. Kühe haben eine Schulterhöhe von 1,14 bis 1,42 m, erreichen eine Länge von 1,75 bis 2,15 m und wiegen zwischen 140 und 260 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El ñu común (Connochaetes taurinus) es un gran antílope del sur de África.\n\nTiene pelaje gris pálido o marrón con bandas oscuras en cuello, hombros y pecho, cola negra larga, melena negra y barba blanca. Los machos son mayores que las hembras y ambos sexos tienen cuernos característicos en forma de L.\n\nLos machos miden 1,23–1,65 m a la cruz, 1,7–2,4 m de largo y pesan 165–290 kg. Las hembras miden 1,14–1,42 m a la cruz, 1,75–2,15 m de largo y pesan 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le gnou bleu (Connochaetes taurinus) est une grande antilope d'Afrique australe.\n\nSon pelage est gris pâle ou brun avec des rayures sombres sur le cou, les épaules et la poitrine. Il possède une longue queue noire, une longue crinière noire et une barbe blanche. Les mâles sont plus grands que les femelles, mais les deux sexes portent des cornes en L.\n\nLes mâles mesurent 1,23–1,65 m au garrot, 1,7–2,4 m de long et pèsent 165–290 kg. Les femelles mesurent 1,14–1,42 m au garrot, 1,75–2,15 m de long et pèsent 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope dell'Africa meridionale.\n\nHa pelo grigio pallido o marrone con strisce scure sul collo, spalle e petto, lunga coda nera, lunga criniera nera e barba bianca. I maschi sono più grandi delle femmine, ma entrambi i sessi hanno corna a forma di L.\n\nI maschi misurano 1,23–1,65 m al garrese, 1,7–2,4 m di lunghezza e pesano 165–290 kg. Le femmine misurano 1,14–1,42 m al garrese, 1,75–2,15 m di lunghezza e pesano 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O gnu-de-cauda-preta (Connochaetes taurinus) é um grande antílope do sul da África.\n\nPossui pelagem cinza-clara ou marrom com listras escuras no pescoço, ombros e peito, cauda preta longa, crina preta e barba branca. Machos são maiores que fêmeas, mas ambos possuem chifres em forma de L.\n\nMachos medem 1,23–1,65 m no ombro, 1,7–2,4 m de comprimento e pesam 165–290 kg. Fêmeas medem 1,14–1,42 m no ombro, 1,75–2,15 m de comprimento e pesam 140–260 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オグロヌー（Connochaetes taurinus）は南部アフリカに生息する大型レイヨウです。\n\n淡い灰色または茶色の体毛に、首、肩、胸の暗い縞があります。長い黒い尾と黒いたてがみ、白いあごひげを持ちます。雄は雌より大きいですが、雌雄とも特徴的なL字型の角があります。\n\n雄の肩高は1.23～1.65m、体長1.7～2.4m、体重165～290kg。雌の肩高は1.14～1.42m、体長1.75～2.15m、体重140～260kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黑尾牛羚（Connochaetes taurinus）是非洲南部的大型羚羊。\n\n毛色为浅灰或棕色，颈部、肩部和胸部有深色条纹，具有长黑尾、长黑鬃毛和白色胡须。雄性比雌性大，但雌雄均有明显的L形角。\n\n雄性肩高1.23～1.65米，体长1.7～2.4米，体重165～290千克。雌性肩高1.14～1.42米，体长1.75～2.15米，体重140～260千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Streifengnu gilt als „nicht gefährdet“. Trotzdem drohen ihm verschiedene Gefahren: Die Fragmentierung seines Lebensraums durch Landwirtschaft und Städtebau behindert seine herkömmlichen Wanderrouten, während veränderte Niederschlagsmuster infolge des Klimawandels die Versorgung mit Weideflächen und Wasser zusätzlich erschweren. Die Übertragung von Krankheiten durch Nutztiere, vor allem die Rinderpest, hat ebenfalls verheerende Auswirkungen. Wilderei und Konkurrenz mit Nutztieren um Weideflächen stellen weitere Bedrohungen außerhalb von Schutzgebieten dar.\n\nEiner der größten Erfolge bei der Arterhaltung war die Ausrottung der Rinderpest durch koordinierte Veterinärkampagnen. Arterhaltungsinitiativen trugen zum Schutz und Erhalt wichtiger Lebensräume und Wanderkorridore bei und förderten die Koexistenz und nachhaltige Landnutzung in örtlichen Gemeinden. Durch Wiederansiedlungs- und Umsiedlungsmaßnahmen konnten Populationen in mehreren Gebieten wiederaufgebaut werden.\n\nAll diese Bemühungen führten zu einer Stabilisierung und in manchen Regionen sogar zu einem Anstieg der Population des Streifengnus.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue Wildebeest is classified as Least Concern, but faces several threats. Habitat fragmentation from agriculture and urban development obstructs traditional migration routes, while climate-driven changes in rainfall make access to grazing and water more difficult. Disease transmission from livestock, especially rinderpest, has also had severe effects. Poaching and competition with livestock for grazing land are further threats outside protected areas.\n\nOne of the greatest conservation successes was the eradication of rinderpest through coordinated veterinary campaigns. Conservation initiatives have protected key habitats and migration corridors and promoted coexistence and sustainable land use in local communities. Reintroduction and translocation have rebuilt populations in several areas.\n\nThese efforts have stabilised the population and led to increases in some regions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue Wildebeest is classified as Least Concern, but faces several threats. Habitat fragmentation from agriculture and urban development obstructs traditional migration routes, while climate-driven changes in rainfall make access to grazing and water more difficult. Disease transmission from livestock, especially rinderpest, has also had severe effects. Poaching and competition with livestock for grazing land are further threats outside protected areas.\n\nOne of the greatest conservation successes was the eradication of rinderpest through coordinated veterinary campaigns. Conservation initiatives have protected key habitats and migration corridors and promoted coexistence and sustainable land use in local communities. Reintroduction and translocation have rebuilt populations in several areas.\n\nThese efforts have stabilised the population and led to increases in some regions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificado como de Preocupación Menor, aunque la fragmentación del hábitat, los cambios en las lluvias, las enfermedades transmitidas por el ganado, la caza furtiva y la competencia por pastos representan amenazas.\n\nLa erradicación de la peste bovina fue un gran éxito de conservación. También se protegen corredores migratorios y se realizan reintroducciones y traslocaciones.\n\nEstas medidas han estabilizado y en algunas zonas aumentado las poblaciones.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est classée en Préoccupation mineure, mais la fragmentation de l'habitat, les changements de précipitations, les maladies transmises par le bétail, le braconnage et la concurrence pour les pâturages représentent des menaces.\n\nL'éradication de la peste bovine a été un grand succès. La conservation protège également les corridors migratoires et utilise des réintroductions et translocations.\n\nCes mesures ont stabilisé les populations et permis des hausses dans certaines régions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo, ma la frammentazione dell'habitat, i cambiamenti nelle precipitazioni, le malattie trasmesse dal bestiame, il bracconaggio e la concorrenza per i pascoli rappresentano minacce.\n\nL'eradicazione della peste bovina è stata un grande successo. La conservazione protegge inoltre habitat e corridoi migratori e utilizza reintroduzioni e traslocazioni.\n\nQuesti interventi hanno stabilizzato le popolazioni e in alcune aree ne hanno favorito l'aumento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante, mas fragmentação do habitat, mudanças nas chuvas, doenças transmitidas pelo gado, caça ilegal e competição por pastagens ainda são ameaças.\n\nA erradicação da peste bovina foi um grande sucesso. A conservação também protege corredores migratórios e utiliza reintroduções e translocações.\n\nEssas medidas estabilizaram as populações e aumentaram algumas delas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種ですが、農地や都市開発による生息地分断、降雨パターンの変化、家畜由来の病気、密猟、牧草地をめぐる競争が脅威です。\n\n牛疫の根絶は大きな保全成功例で、重要な生息地や移動回廊の保護、再導入や移送も行われています。\n\nこれらの努力により個体群は安定し、一部地域では増加しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为无危，但农业和城市扩张造成的栖息地破碎化、降雨变化、家畜传播疾病、偷猎以及与家畜竞争牧场仍构成威胁。\n\n牛瘟的根除是重要保护成功之一。保护行动还包括维护重要栖息地和迁徙通道，以及重新引入和迁移个体。\n\n这些措施使种群趋于稳定，并在一些地区有所增加。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "In der Wildnis leben Streifengnus in großen Herden. Diese bestehen aus mehreren Untergruppen miteinander verwandter Kühe und ihrer Kälber, Junggesellenherden sowie dominanten Bullen, die Reviere im Weideland bewachen.\n\nWährend der dreiwöchigen Paarungszeit gegen Ende der Regensaison spüren dominante territoriale Bullen durch ihr Gebiet ziehende und dort grasende zeugungsfähige Kühe auf. Solang paarungsbereite Kühe in der Nähe sind, essen und schlafen sie kaum. Bullen können auch ein sogenanntes Lek-Verhalten zeigen und sich in reinen Bullengruppen zusammenschließen, um sich Kühen durch Kämpfe und Laute zu präsentieren. Ein Bulle, der seine Rivalen in einem Lek übertrifft, sichert sich die Paarungsrechte an Kühen in der Nähe. Danach besteigt er eine paarungsbereite Kuh und paart sich mehrmals mit ihr. Nach dem Abschluss bleibt sie in der Nähe des Bullen, der andere Männchen daran hindert, sich ihr zu nähern. Auf diese Weise kann ein Bulle während der Paarungszeit einen Harem zusammenstellen, obwohl sich aus Leks und Harems schon kurz darauf wieder Junggesellen- und Jährlingsherden bilden.\n\nNach einer ungefähr 8,5 Monate dauernden Schwangerschaft gebärt die Kuh ein einzelnes Kalb. Dieses ernährt sich bis zu einem Alter von 4 Wochen ausschließlich von ihrer Milch und beginnt danach, Gras zu fressen. Kälber werden im Alter von 8 bis 10 Monaten entwöhnt, wenn die Mutter wahrscheinlich erneut schwanger ist. Bald darauf verlässt der Jährling die Weibchengruppe, um sich einer Herde aus anderen Jährlingen oder jungen ausgewachsenen Tieren anzuschließen.\n\nStreifengnukühe sind mit 16 Monaten und Bullen mit 2 Jahren geschlechtsreif, obwohl es einige Jahre dauern kann, bis sich ihre Hörner entwickeln, mit denen sie Territorien verteidigen oder den Sieg in einem Lek erringen können, um sich zu paaren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "In the wild, Blue Wildebeest live in large herds composed of related cows and calves, bachelor herds and dominant bulls that guard territories in grazing areas.\n\nDuring the three-week breeding season near the end of the rainy season, dominant territorial bulls locate fertile cows moving and grazing through their territories. Bulls may also form leks, gathering in male-only groups and displaying to cows through fighting and vocalisation. Successful bulls gain mating access to nearby cows and may temporarily assemble harems, although bachelor and yearling herds soon form again.\n\nAfter a pregnancy of about 8.5 months, a cow gives birth to a single calf. It drinks only milk for the first four weeks, then begins eating grass. Calves are weaned at 8–10 months and soon afterwards join groups of yearlings or young adults.\n\nCows reach sexual maturity at 16 months and bulls at two years, although horn development sufficient for successful territorial and mating competition may take several more years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "In the wild, Blue Wildebeest live in large herds composed of related cows and calves, bachelor herds and dominant bulls that guard territories in grazing areas.\n\nDuring the three-week breeding season near the end of the rainy season, dominant territorial bulls locate fertile cows moving and grazing through their territories. Bulls may also form leks, gathering in male-only groups and displaying to cows through fighting and vocalisation. Successful bulls gain mating access to nearby cows and may temporarily assemble harems, although bachelor and yearling herds soon form again.\n\nAfter a pregnancy of about 8.5 months, a cow gives birth to a single calf. It drinks only milk for the first four weeks, then begins eating grass. Calves are weaned at 8–10 months and soon afterwards join groups of yearlings or young adults.\n\nCows reach sexual maturity at 16 months and bulls at two years, although horn development sufficient for successful territorial and mating competition may take several more years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Vive en grandes manadas con grupos de hembras emparentadas y sus crías, grupos de machos solteros y machos dominantes territoriales.\n\nDurante una época reproductiva de unas tres semanas al final de la estación lluviosa, los machos territoriales compiten por las hembras y pueden formar leks y harenes temporales.\n\nTras unos 8,5 meses de gestación nace una sola cría. Durante cuatro semanas toma solo leche, después empieza a comer hierba y se desteta a los 8–10 meses.\n\nLas hembras alcanzan la madurez sexual a los 16 meses y los machos a los 2 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il vit en grands troupeaux composés de groupes de femelles apparentées et de leurs petits, de groupes de jeunes mâles et de mâles dominants territoriaux.\n\nPendant environ trois semaines à la fin de la saison des pluies, les mâles se disputent les femelles et peuvent former des leks et des harems temporaires.\n\nAprès environ 8,5 mois de gestation, une femelle donne naissance à un seul petit. Il boit uniquement du lait pendant quatre semaines, puis commence à manger de l'herbe et est sevré à 8–10 mois.\n\nLes femelles deviennent sexuellement matures à 16 mois et les mâles à 2 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive in grandi mandrie composte da gruppi di femmine imparentate e piccoli, gruppi di scapoli e maschi dominanti territoriali.\n\nDurante le circa tre settimane della stagione riproduttiva alla fine della stagione delle piogge, i maschi competono per le femmine e possono formare lek e harem temporanei.\n\nDopo circa 8,5 mesi di gestazione nasce un solo piccolo. Per quattro settimane beve solo latte, poi inizia a mangiare erba e viene svezzato a 8–10 mesi.\n\nLe femmine sono sessualmente mature a 16 mesi e i maschi a 2 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Vive em grandes manadas formadas por grupos de fêmeas aparentadas e seus filhotes, grupos de machos solteiros e machos dominantes territoriais.\n\nDurante cerca de três semanas no fim da estação chuvosa, machos competem pelas fêmeas e podem formar leks e haréns temporários.\n\nApós cerca de 8,5 meses de gestação nasce um único filhote. Ele bebe apenas leite por quatro semanas, depois começa a comer grama e é desmamado aos 8–10 meses.\n\nFêmeas atingem a maturidade sexual aos 16 meses e machos aos 2 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "野生では大きな群れで暮らし、血縁のある雌と子の群れ、独身雄の群れ、採食地に縄張りを持つ優位雄などから構成されます。\n\n雨季末の約3週間の繁殖期には、雄が雌をめぐって争い、レックや一時的なハーレムを作ることがあります。\n\n妊娠期間は約8.5か月で、1頭の子を産みます。最初の4週間は乳だけを飲み、その後草を食べ始め、8～10か月で離乳します。\n\n雌は16か月、雄は2歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "野外生活在大型群体中，包括有亲缘关系的雌性和幼崽、单身雄性群以及守卫草场领地的优势雄性。\n\n雨季末约3周的繁殖季里，雄性会争夺雌性，并可能形成求偶场和临时后宫群。\n\n妊娠期约8.5个月，每次产1只幼崽。最初4周只吃奶，之后开始吃草，8～10个月断奶。\n\n雌性16个月达到性成熟，雄性2岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Streifengnus werden auch Blaue Gnus genannt, weil ihr Fellkleid einen blauen Schimmer hat.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Streifengnus legen pro Jahr Strecken von mehr als 1.600 km zurück und überqueren dabei zwei Flüsse.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bis zu 90 % des Streifengnunachwuchses wird innerhalb eines Zeitraums von 2 Wochen geboren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Streifengnus bilden oftmals Herden mit Steppenzebras. Die beiden Spezies konkurrieren jedoch nicht um Nahrung, da Zebras langes Gras bevorzugen und Gnus das kürzere Gras fressen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nicht alle Streifengnus wandern. Einige Weibchengruppen bilden eng verbundene ansässige Herden und bleiben das ganze Jahr über im selben Gebiet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Blue Wildebeest are also called blue gnus because their coats have a bluish sheen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They travel more than 1,600 km per year and cross two rivers during their migrations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Up to 90% of calves are born within a two-week period.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Blue Wildebeest often form mixed herds with Plains Zebras. They do not compete directly for food because zebras prefer long grass while wildebeest eat shorter grass.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Not all Blue Wildebeest migrate; some female groups form close resident herds and remain in the same area year-round.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Blue Wildebeest are also called blue gnus because their coats have a bluish sheen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They travel more than 1,600 km per year and cross two rivers during their migrations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Up to 90% of calves are born within a two-week period.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Blue Wildebeest often form mixed herds with Plains Zebras. They do not compete directly for food because zebras prefer long grass while wildebeest eat shorter grass.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Not all Blue Wildebeest migrate; some female groups form close resident herds and remain in the same area year-round.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "También se llama ñu azul por el brillo azulado del pelaje.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Recorre más de 1.600 km al año y cruza dos ríos durante sus migraciones.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hasta el 90% de las crías nace en un periodo de dos semanas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Forma manadas mixtas con cebras de llanura sin competir directamente por alimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No todos migran; algunos grupos de hembras permanecen todo el año en la misma zona.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le nom gnou bleu vient du reflet bleuté de son pelage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il parcourt plus de 1 600 km par an et traverse deux rivières.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Jusqu'à 90% des petits naissent en l'espace de deux semaines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il forme souvent des troupeaux avec les zèbres des plaines sans concurrence directe pour la nourriture.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tous les individus ne migrent pas; certains groupes de femelles restent toute l'année dans la même zone.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È chiamato anche gnu blu per il riflesso bluastro del mantello.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Percorre più di 1.600 km all'anno e attraversa due fiumi durante le migrazioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fino al 90% dei piccoli nasce in un periodo di due settimane.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Forma spesso mandrie con zebre di pianura senza competere direttamente per il cibo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Non tutti migrano; alcuni gruppi di femmine restano tutto l'anno nella stessa area.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Também é chamado de gnu-azul pelo brilho azulado da pelagem.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Percorre mais de 1.600 km por ano e cruza dois rios durante as migrações.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Até 90% dos filhotes nasce em um período de duas semanas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Forma manadas com zebras-da-planície sem competir diretamente por alimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nem todos migram; alguns grupos de fêmeas permanecem o ano todo na mesma área.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "毛に青みがあることからブルーヌーとも呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "年間1,600km以上を移動し、2本の川を渡ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "子の最大90%が2週間ほどの間に集中して生まれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "サバンナシマウマと混群を作りますが、食べる草の長さが異なるため直接競合しません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "すべての個体が移動するわけではなく、一部の雌群は一年中同じ地域に残ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "因毛皮带蓝色光泽，也被称为蓝角马。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "每年迁徙超过1,600公里，并会穿越两条河流。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "多达90%的幼崽会集中在两周内出生。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "经常与平原斑马形成混合群体，但双方偏好的草长度不同，因此并不直接争夺食物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "并非所有个体都会迁徙，一些雌性群全年留在同一区域。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c732811c/Wildebeest_Blue_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Connochaetes taurinus/map/Connochaetes taurinus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzczMjgxMWMvV2lsZGViZWVzdF9CbHVlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Streifengnu – Planet Zoo 2",
+            "en": "Blue Wildebeest – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Streifengnus aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Blue Wildebeest."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Connochaetes taurinus/bilder/Connochaetes taurinus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c732811c/Wildebeest_Blue_illustration.jpg",
+          "alt": {
+            "de": "Streifengnu – Zoopedia-Illustration",
+            "en": "Blue Wildebeest – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Streifengnus aus der Planet Zoo 2 Zoopedia.",
+            "en": "Blue Wildebeest illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Connochaetes taurinus/bilder/Connochaetes taurinus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Streifengnu",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/streifengnu",
+        "en": "https://www.planetzoogame.com/2/zoopedia/blue-wildebeest",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/blue-wildebeest",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/%C3%B1u-com%C3%BAn",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/gnou-bleu",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/gnu-comune",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/gnu-de-cauda-preta",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%82%B0%E3%83%AD%E3%83%8C%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%91%E5%B0%BE%E7%89%9B%E7%BE%9A"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bleiben bewusst offen."
+    }
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "id": "Phyllobates terribilis",
+  "identitaet": {
+    "namen": {
+      "de": "Schrecklicher Pfeilgiftfrosch",
+      "en": "Golden Poison Frog",
+      "en-US": "Golden Poison Frog",
+      "es": "Rana dorada venenosa",
+      "fr": "Kokoï de Colombie",
+      "it": "Rana dorata",
+      "pt-BR": "Rã-venenosa-dourada",
+      "ja": "モウドクフキヤガエル",
+      "zh-Hans": "金色箭毒蛙"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "southAmerica"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Anura",
+          "familie": "Dendrobatidae",
+          "gattung": "Phyllobates",
+          "art": "Phyllobates terribilis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.05,
+          "max": 0.055,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt durchschnittlich 50 bis 55 mm Körpergröße; Weibchen sind in der Regel größer als Männchen.",
+            "en": "The Zoopedia gives an average body size of 50–55 mm; females are usually larger than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia zeigt als Arterhaltungszustand „Stark gefährdet“.",
+            "en": "The Zoopedia lists the conservation status as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 12,
+          "max": 18,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "min": 11,
+          "max": 12,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "kaulquappenentwicklungBisJungfrosch",
+          "min": 55,
+          "max": 60,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Kaulquappen bleiben nach dem Schlupf im Wasser und entwickeln sich 55 bis 60 Tage später zu kleinen Fröschen.",
+            "en": "After hatching, the tadpoles remain in water and develop into small frogs 55–60 days later."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Eiablage, Befruchtung und Transport des Geleges, nennt aber keine Anzahl Eier.",
+            "en": "The Zoopedia describes egg laying, fertilisation and clutch transport but does not give an egg count."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "wert": "socialGroup",
+          "minGruppengroesse": 4,
+          "maxGruppengroesse": 7,
+          "hinweis": {
+            "de": "Schreckliche Pfeilgiftfrösche leben laut Zoopedia in nicht miteinander verwandten Gruppen von 4 bis 7 Tieren.",
+            "en": "According to the Zoopedia, Golden Poison Frogs live in unrelated groups of 4–7 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt die Regenwälder der kolumbianischen Pazifikküste als Lebensraum.",
+            "en": "The Zoopedia gives the rainforests of Colombia's Pacific coast as the species' habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Schreckliche Pfeilgiftfrosch (Phyllobates terribilis), auch bekannt als Goldener Blattsteiger oder Schrecklicher Blattsteiger, ist eine Art der Baumsteigerfrösche und in den Regenwäldern der kolumbianischen Pazifikküste heimisch.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Poison Frog (Phyllobates terribilis), also known as the golden dart frog, is a poison-dart frog native to the rainforests of Colombia's Pacific coast.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Poison Frog (Phyllobates terribilis), also known as the golden dart frog, is a poison-dart frog native to the rainforests of Colombia's Pacific coast.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La rana dorada venenosa (Phyllobates terribilis) es una especie de rana dardo venenosa nativa de las selvas de la costa pacífica de Colombia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le kokoï de Colombie (Phyllobates terribilis) est une dendrobate originaire des forêts tropicales de la côte pacifique colombienne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La rana dorata (Phyllobates terribilis) è una rana freccia velenosa originaria delle foreste pluviali della costa pacifica colombiana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A rã-venenosa-dourada (Phyllobates terribilis) é uma rã-dardo venenosa nativa das florestas tropicais da costa pacífica da Colômbia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "モウドクフキヤガエル（Phyllobates terribilis）は、コロンビア太平洋岸の熱帯雨林に生息するヤドクガエルの一種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金色箭毒蛙（Phyllobates terribilis）是一种箭毒蛙，原产于哥伦比亚太平洋沿岸的热带雨林。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schreckliche Pfeilgiftfrosch (Phyllobates terribilis), auch bekannt als Goldener Blattsteiger oder Schrecklicher Blattsteiger, ist eine Art der Baumsteigerfrösche und in den Regenwäldern der kolumbianischen Pazifikküste heimisch.\n\nObwohl er auch unter dem Namen „Goldener Giftfrosch“ bekannt ist, kommt er tatsächlich in mintgrünen, gelben und orangefarbenen Farbvarianten vor. Alle Varianten verfügen über eine extrem giftige Haut, die als Abwehrmechanismus gegen Fressfeinde dient. Ihre leuchtende Färbung fungiert hingegen als Warnsignal für potenzielle Bedrohungen. Sie leben auf dem Waldboden und müssen im Gegensatz zu anderen Froscharten nicht im oder am Wasser leben, benötigen jedoch eine Wasserquelle, um ihre Eier abzulegen.\n\nSchreckliche Pfeilgiftfrösche werden durchschnittlich 50 bis 55 mm groß, wobei die Weibchen in der Regel größer sind als die Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Poison Frog (Phyllobates terribilis) is a poison-dart frog native to the rainforests of Colombia's Pacific coast.\n\nDespite the name, it occurs in mint-green, yellow and orange colour forms. All forms have extremely toxic skin used as a defence against predators, while their bright colouration acts as a warning signal. They live on the forest floor and do not need to live in or next to water, although they require a water source for laying eggs.\n\nAdults average 50–55 mm in body size, with females usually larger than males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Poison Frog (Phyllobates terribilis) is a poison-dart frog native to the rainforests of Colombia's Pacific coast.\n\nDespite the name, it occurs in mint-green, yellow and orange colour forms. All forms have extremely toxic skin used as a defence against predators, while their bright colouration acts as a warning signal. They live on the forest floor and do not need to live in or next to water, although they require a water source for laying eggs.\n\nAdults average 50–55 mm in body size, with females usually larger than males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La rana dorada venenosa vive en las selvas de la costa pacífica de Colombia.\n\nExisten formas verde menta, amarillas y naranjas. Todas poseen una piel extremadamente tóxica que sirve de defensa y una coloración brillante de advertencia. Viven en el suelo del bosque y necesitan agua para depositar los huevos.\n\nLos adultos miden en promedio 50–55 mm y las hembras suelen ser mayores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le kokoï de Colombie vit dans les forêts tropicales de la côte pacifique colombienne.\n\nIl existe en formes vert menthe, jaunes et orange. Toutes possèdent une peau extrêmement toxique servant de défense, tandis que la coloration vive avertit les prédateurs. Il vit au sol forestier et a besoin d'une source d'eau pour pondre.\n\nLes adultes mesurent en moyenne 50–55 mm, les femelles étant généralement plus grandes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La rana dorata vive nelle foreste pluviali della costa pacifica colombiana.\n\nEsistono varianti verde menta, gialle e arancioni. Tutte possiedono pelle estremamente tossica usata come difesa e una colorazione brillante di avvertimento. Vivono sul suolo della foresta e hanno bisogno di una fonte d'acqua per deporre le uova.\n\nGli adulti misurano in media 50–55 mm e le femmine sono generalmente più grandi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A rã-venenosa-dourada vive nas florestas tropicais da costa pacífica colombiana.\n\nExistem variações verde-menta, amarela e laranja. Todas possuem pele extremamente tóxica usada como defesa e coloração brilhante de aviso. Vivem no chão da floresta e precisam de água para depositar os ovos.\n\nAdultos medem em média 50–55 mm, e as fêmeas geralmente são maiores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "モウドクフキヤガエルは、コロンビア太平洋岸の熱帯雨林に生息します。\n\nミントグリーン、黄色、オレンジ色の型があり、すべての型が強い毒を皮膚に持ちます。鮮やかな色は警告色として機能します。森林の地表で生活し、産卵には水場が必要です。\n\n成体は平均50～55mmで、雌の方が一般に大きいです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "金色箭毒蛙生活在哥伦比亚太平洋沿岸的热带雨林中。\n\n存在薄荷绿、黄色和橙色等不同色型。所有色型的皮肤都具有极强毒性，用于防御捕食者，而鲜艳体色则作为警戒信号。它们生活在森林地面，产卵时需要水源。\n\n成体平均体长50～55毫米，雌性通常比雄性更大。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Schreckliche Pfeilgiftfrosch gilt aufgrund des anhaltenden Verlusts und der Verschlechterung seines Lebensraums als stark gefährdet. Abgesehen von der Rodung der Wälder zur Holzgewinnung und für den Bergbau wird der Regenwald zudem illegal abgeholzt, um Platz für den illegalen Anbau von Nutzpflanzen zu schaffen. Das zerstört nicht nur wertvollen Lebensraum für diese Laubfrösche. Die Verschmutzung durch Pestizide, die bei diesen Kulturen eingesetzt werden, hat zudem schädliche Auswirkungen auf die Tierwelt in diesen Gebieten. Schreckliche Pfeilgiftfrösche sind im Tierhandel beliebt, obwohl die Zahl der in freier Wildbahn gefangenen Exemplare wahrscheinlich gering ist.\n\nEin kleiner Teil des Lebensraums dieser Frösche befindet sich in Schutzgebieten. Der internationale Handel ist gemäß CITES Anhang II eingeschränkt, und dank des Angebots an in Gefangenschaft gezüchteter Schrecklicher Pfeilgiftfrösche ist das illegale Fangen von Wildtieren tatsächlich stark zurückgegangen. Die Frösche sind aufgrund ihrer Ernährung in freier Wildbahn giftig, weshalb in Gefangenschaft gezüchtete Exemplare für Liebhaber eine wesentlich sicherere und kostengünstigere Option darstellen. Dennoch ist weiterer Schutz ihres Lebensraums erforderlich, um das Überleben dieser Art in freier Wildbahn zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Poison Frog is Endangered because of ongoing habitat loss and degradation. Forests are cleared for timber and mining and illegally cleared for crop production, while pesticides used on those crops also harm local wildlife. The species is popular in the animal trade, although relatively few individuals are thought to be taken from the wild.\n\nA small part of its habitat lies in protected areas. International trade is restricted under CITES Appendix II, and captive-bred animals have greatly reduced illegal wild collection. Wild frogs are toxic because of their diet, making captive-bred animals safer for keepers. Further habitat protection is still required to secure the species in the wild.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Poison Frog is Endangered because of ongoing habitat loss and degradation. Forests are cleared for timber and mining and illegally cleared for crop production, while pesticides used on those crops also harm local wildlife. The species is popular in the animal trade, although relatively few individuals are thought to be taken from the wild.\n\nA small part of its habitat lies in protected areas. International trade is restricted under CITES Appendix II, and captive-bred animals have greatly reduced illegal wild collection. Wild frogs are toxic because of their diet, making captive-bred animals safer for keepers. Further habitat protection is still required to secure the species in the wild.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro por la pérdida y degradación continuas del hábitat. La tala, la minería, los cultivos ilegales y los pesticidas afectan a la selva. También es popular en el comercio de animales.\n\nParte del hábitat está protegida y el comercio internacional está restringido por CITES Apéndice II. La cría en cautividad ha reducido la captura ilegal, pero sigue siendo necesaria una mayor protección del hábitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est En danger en raison de la perte et de la dégradation continues de son habitat. L'exploitation forestière, l'extraction minière, les cultures illégales et les pesticides endommagent les forêts. L'espèce est également appréciée dans le commerce animalier.\n\nUne petite partie de l'habitat est protégée et le commerce international est limité par la CITES Annexe II. L'élevage en captivité a réduit les prélèvements illégaux, mais une protection accrue de l'habitat reste nécessaire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificata In pericolo per la continua perdita e degradazione dell'habitat. Disboscamento, attività mineraria, coltivazioni illegali e pesticidi danneggiano la foresta. La specie è inoltre popolare nel commercio di animali.\n\nUna piccola parte dell'habitat è protetta e il commercio internazionale è limitato dalla CITES Appendice II. L'allevamento in cattività ha ridotto la cattura illegale, ma rimane necessario proteggere ulteriormente l'habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Está Em Perigo devido à perda e degradação contínuas do habitat. Desmatamento, mineração, plantações ilegais e pesticidas prejudicam a floresta. A espécie também é popular no comércio de animais.\n\nUma pequena parte do habitat é protegida e o comércio internacional é limitado pela CITES Apêndice II. A criação em cativeiro reduziu a captura ilegal, mas ainda é necessário ampliar a proteção do habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "生息地の継続的な喪失と劣化により絶滅危惧種です。森林伐採、鉱山開発、違法作物栽培、農薬が生息地を損なっています。ペット取引でも人気があります。\n\n生息地の一部は保護され、国際取引はCITES附属書IIで制限されています。飼育繁殖により違法採集は大きく減りましたが、野生個体群のためにはさらなる生息地保護が必要です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "由于栖息地持续丧失和退化，该物种被列为濒危。伐木、采矿、非法农作物种植和农药都破坏雨林生态。该物种在宠物贸易中也很受欢迎。\n\n部分栖息地位于保护区，国际贸易受到CITES附录II限制。人工繁育已显著减少非法野外捕捉，但仍需要进一步保护其野生栖息地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schreckliche Pfeilgiftfrösche sind soziale Tiere, die in freier Wildbahn in nicht miteinander verwandten Gruppen von 4 bis 7 Exemplaren leben.\n\nSchreckliche Pfeilgiftfrösche paaren sich das ganze Jahr über. Wenn Weibchen bereit sind, ihre Eier zu legen, versuchen Männchen, ihre Aufmerksamkeit mit einer Reihe trillernder Rufe zu erringen. Sie paaren sich in großen Gruppen, wobei die Männchen von Weibchen zu Weibchen wechseln, um deren Eier während des Legens zu befruchten. Dann nehmen sie das Gelege auf den Rücken und tragen es zu einer geeigneten Wasserstelle, um es dort abzulegen.\n\nDie Eier schlüpfen 11 bis 12 Tage nach der Eiablage, doch die Kaulquappen bleiben im Wasser, bis sie 55 bis 60 Tage später zu kleinen Fröschen herangewachsen sind.\n\nDie jungen Frösche werden nach 12 bis 18 Monaten geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Golden Poison Frogs are social animals that live in unrelated groups of 4–7 individuals in the wild.\n\nThey breed throughout the year. When females are ready to lay eggs, males attract them with trilling calls. They mate in large groups, with males moving between females to fertilise eggs as they are laid. The clutch is then carried on the back to a suitable water site.\n\nThe eggs hatch 11–12 days after laying, and the tadpoles remain in water until they develop into small frogs 55–60 days later.\n\nYoung frogs reach sexual maturity after 12–18 months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Golden Poison Frogs are social animals that live in unrelated groups of 4–7 individuals in the wild.\n\nThey breed throughout the year. When females are ready to lay eggs, males attract them with trilling calls. They mate in large groups, with males moving between females to fertilise eggs as they are laid. The clutch is then carried on the back to a suitable water site.\n\nThe eggs hatch 11–12 days after laying, and the tadpoles remain in water until they develop into small frogs 55–60 days later.\n\nYoung frogs reach sexual maturity after 12–18 months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es una especie social que vive en grupos no emparentados de 4–7 individuos.\n\nSe reproduce durante todo el año. Los machos atraen a las hembras con llamadas y fecundan los huevos durante la puesta. Después transportan la puesta sobre la espalda hasta una zona adecuada con agua.\n\nLos huevos eclosionan tras 11–12 días y los renacuajos se transforman en pequeñas ranas 55–60 días más tarde.\n\nLa madurez sexual se alcanza a los 12–18 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "C'est une espèce sociale vivant en groupes non apparentés de 4 à 7 individus.\n\nLa reproduction a lieu toute l'année. Les mâles attirent les femelles par des trilles et fécondent les œufs pendant la ponte, puis transportent la ponte sur leur dos vers un point d'eau approprié.\n\nLes œufs éclosent après 11–12 jours et les têtards deviennent de petites grenouilles 55–60 jours plus tard.\n\nLa maturité sexuelle est atteinte entre 12 et 18 mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È una specie sociale che vive in gruppi non imparentati di 4–7 individui.\n\nSi riproduce tutto l'anno. I maschi attirano le femmine con richiami trillanti e fecondano le uova durante la deposizione, poi trasportano la covata sulla schiena verso una zona d'acqua adatta.\n\nLe uova schiudono dopo 11–12 giorni e i girini diventano piccole rane 55–60 giorni più tardi.\n\nLa maturità sessuale viene raggiunta a 12–18 mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É uma espécie social que vive em grupos não aparentados de 4–7 indivíduos.\n\nReproduz-se durante todo o ano. Machos atraem fêmeas com chamados e fertilizam os ovos durante a postura, depois transportam a massa de ovos nas costas até um local adequado com água.\n\nOs ovos eclodem após 11–12 dias e os girinos tornam-se pequenas rãs 55–60 dias depois.\n\nA maturidade sexual ocorre aos 12–18 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "社会性があり、野生では血縁のない4～7個体の群れで暮らします。\n\n一年中繁殖します。雄はトリル状の鳴き声で雌を引きつけ、産卵中の卵を受精させます。その後、卵塊を背中に乗せて適した水場へ運びます。\n\n卵は産卵後11～12日で孵化し、オタマジャクシはさらに55～60日後に小さなカエルになります。\n\n12～18か月で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "具有社会性，野外以4～7只无亲缘关系的个体组成群体生活。\n\n全年均可繁殖。雄性通过颤音吸引雌性，并在雌性产卵时受精。之后会把卵块背到适合的水域。\n\n卵在产下后11～12天孵化，蝌蚪再经过55～60天发育成小青蛙。\n\n12～18个月达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Schreckliche Pfeilgiftfrosch ist der größte Pfeilgiftfrosch.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ein einziger Schrecklicher Pfeilgiftfrosch hat genug Gift auf seiner Haut, um 10 bis 20 Menschen zu töten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Frösche in Gefangenschaft produzieren kein Gift, weil sie nicht dieselben wirbellosen Tiere fressen wie in der Wildnis. Ihnen fehlt die Quelle ihres Gifts.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ureinwohnerstämme im Regenwald nutzen das Gift des Frosches auf Giftpfeilen zur Jagd, daher der Name.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die meisten Baumfroscharten sind extrem scheu und verstecken sich gut, doch diese Art ist ziemlich furchtlos, wahrscheinlich weil sie aufgrund ihres Gifts kaum Feinde hat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Golden Poison Frog is the largest poison-dart frog.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A single frog carries enough toxin on its skin to kill 10–20 people.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Captive frogs do not produce toxin because they do not eat the same invertebrates as wild frogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Indigenous rainforest peoples use the frog's toxin on hunting darts, giving the group its common name.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Unlike many shy tree frogs, this species is relatively fearless, probably because its toxin leaves it with few predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Golden Poison Frog is the largest poison-dart frog.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A single frog carries enough toxin on its skin to kill 10–20 people.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Captive frogs do not produce toxin because they do not eat the same invertebrates as wild frogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Indigenous rainforest peoples use the frog's toxin on hunting darts, giving the group its common name.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Unlike many shy tree frogs, this species is relatively fearless, probably because its toxin leaves it with few predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es la rana dardo venenosa de mayor tamaño.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un solo individuo puede llevar suficiente veneno en la piel para matar a 10–20 personas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los ejemplares cautivos no producen veneno porque no consumen los mismos invertebrados que los silvestres.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pueblos indígenas utilizan el veneno en dardos de caza.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es relativamente poco tímida, probablemente porque su toxicidad reduce el número de depredadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "C'est la plus grande grenouille dendrobate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un seul individu porte assez de toxine pour tuer 10 à 20 personnes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les individus élevés en captivité ne produisent pas de poison car leur alimentation diffère de celle des animaux sauvages.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Des peuples autochtones utilisent le poison sur leurs fléchettes de chasse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L'espèce est relativement peu farouche, probablement grâce à sa forte toxicité.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È la più grande rana freccia velenosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un singolo individuo possiede abbastanza veleno sulla pelle da uccidere 10–20 persone.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli esemplari in cattività non producono veleno perché non mangiano gli stessi invertebrati degli animali selvatici.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Popoli indigeni usano il veleno sulle frecce da caccia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È relativamente poco timida, probabilmente perché la tossicità la protegge da molti predatori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É a maior rã-dardo venenosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Um único indivíduo possui toxina suficiente na pele para matar 10–20 pessoas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Animais criados em cativeiro não produzem veneno porque não comem os mesmos invertebrados que os selvagens.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Povos indígenas usam o veneno em dardos de caça.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A espécie é relativamente destemida, provavelmente porque sua toxicidade reduz o número de predadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "最大のヤドクガエルです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "1個体の皮膚には10～20人を死亡させるほどの毒があるとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "飼育個体は野生個体と同じ無脊椎動物を食べないため毒を作りません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "先住民はこの毒を狩猟用の吹き矢に利用します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "他の多くのカエルより大胆で、毒のおかげで捕食者が少ないためと考えられています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "是体型最大的箭毒蛙。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "单只个体皮肤上的毒素足以杀死10～20人。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "人工饲养个体不会产生毒素，因为它们不食用与野生个体相同的无脊椎动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雨林中的原住民会把毒素用于狩猎吹箭。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "相比许多其他蛙类，它较为大胆，可能是因为毒性让它几乎没有天敌。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/9ce7660e/TreeFrog_GoldenPoison_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/map/Phyllobates terribilis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOWNlNzY2MGUvVHJlZUZyb2dfR29sZGVuUG9pc29uLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Schrecklicher Pfeilgiftfrosch – Planet Zoo 2",
+            "en": "Golden Poison Frog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schrecklichen Pfeilgiftfroschs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Golden Poison Frog."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/bilder/Phyllobates terribilis 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schrecklicher Pfeilgiftfrosch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/schrecklicher-pfeilgiftfrosch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/golden-poison-frog",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/golden-poison-frog",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/rana-dorada-venenosa",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/koko%C3%AF-de-colombie",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/rana-dorata",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/r%C3%A3-venenosa-dourada",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%A2%E3%82%A6%E3%83%89%E3%82%AF%E3%83%95%E3%82%AD%E3%83%A4%E3%82%AC%E3%82%A8%E3%83%AB",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%87%91%E8%89%B2%E7%AE%AD%E6%AF%92%E8%9B%99"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten; Rechnerwerte bleiben bewusst offen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

@@ -1,0 +1,847 @@
+{
+  "id": "Tiliqua scincoides",
+  "identitaet": {
+    "namen": {
+      "de": "Gemeiner Blauzungenskink",
+      "en": "Common Bluetongue",
+      "en-US": "Common Bluetongue",
+      "es": "Escinco de lengua azul",
+      "fr": "Scinque à langue bleue",
+      "it": "Scinco dalla lingua blu",
+      "pt-BR": "Lagarto-de-língua-azul",
+      "ja": "ハスオビアオジタトカゲ",
+      "zh-Hans": "蓝舌蜥"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "oceania"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Grasland",
+      "Wüste"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Scincidae",
+          "gattung": "Tiliqua",
+          "art": "Tiliqua scincoides",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.45,
+          "max": 0.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.35,
+          "max": 1.0,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Gemeinen Blauzungenskink als nicht gefährdet ein.",
+            "en": "The Zoopedia classifies the Common Bluetongue as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 18,
+          "max": 24,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich, dass die Tiere mit etwa 3 Jahren ausgewachsen sind und dann ungefähr 40 cm Länge erreicht haben.",
+            "en": "The Zoopedia additionally states that the animals are fully grown at around three years of age, when they have reached roughly 40 cm in length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 3,
+          "max": 5,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art als lebendgebärend.",
+            "en": "The Zoopedia describes the species as live-bearing."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "lebendeJungtiereProGeburt",
+          "min": 10,
+          "max": 15,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt durchschnittlich 10 bis 15 lebende Jungtiere. Die Jungen sind von Geburt an selbstständig; das Weibchen betreut sie danach nicht weiter.",
+            "en": "The Zoopedia gives an average of 10–15 live young. The young are independent from birth and receive no further maternal care."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Gemeine Blauzungenskinks sind Einzelgänger und kommen nur zur Paarung oder bei Kämpfen um Partner miteinander in Kontakt.",
+            "en": "Common Bluetongues are solitary and only interact for mating or during fights over mates."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperate",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Waldgebiete.",
+            "en": "The Zoopedia mentions woodland habitats."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Buschgebiete; im Projekt wird dies vorsichtig dem offenen Grasland-/Buschland-Kontext zugeordnet.",
+            "en": "The Zoopedia mentions scrub habitats; in the project this is cautiously mapped to an open grassland/scrub context."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "desert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Halbwüstengebiete.",
+            "en": "The Zoopedia mentions semi-desert habitats."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Gemeine Blauzungenskink (Tiliqua scincoides), auch Blauzunge genannt, ist eine Reptilienart, die in den Wald-, Busch- und Halbwüstengebieten Australiens lebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Bluetongue (Tiliqua scincoides), also known as a blue-tongued skink, is a reptile found in woodland, scrub and semi-desert habitats in Australia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Bluetongue (Tiliqua scincoides), also known as a blue-tongued skink, is a reptile found in woodland, scrub and semi-desert habitats in Australia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El escinco de lengua azul (Tiliqua scincoides) es un reptil que vive en bosques, matorrales y zonas semidesérticas de Australia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le scinque à langue bleue (Tiliqua scincoides) est un reptile vivant dans les forêts, broussailles et zones semi-désertiques d’Australie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) è un rettile che vive nelle foreste, nelle boscaglie e nelle zone semidesertiche dell’Australia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O lagarto-de-língua-azul (Tiliqua scincoides) é um réptil que vive em florestas, matagais e áreas semidesérticas da Austrália.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ハスオビアオジタトカゲ（Tiliqua scincoides）は、オーストラリアの森林、低木地、半砂漠地域に生息する爬虫類です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蓝舌蜥（Tiliqua scincoides）是一种生活在澳大利亚森林、灌丛和半荒漠地区的爬行动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Gemeine Blauzungenskink (Tiliqua scincoides), auch Blauzunge genannt, ist eine Reptilienart, die in den Wald-, Busch- und Halbwüstengebieten Australiens lebt.\n\nDie stämmigen Tiere haben einen dreieckigen Kopf und einen dicken Schwanz. Die Färbung ist recht unterschiedlich, meist haben sie aber eine beige-schwarze Streifenmusterung. Wie der Name schon vermuten lässt, ist die Zunge der Tiere leuchtend blau.\n\nAusgewachsene Gemeine Blauzungenskinks erreichen eine Länge von 45 bis 60 cm und wiegen zwischen 0,35 kg und 1 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Bluetongue (Tiliqua scincoides), also known as a blue-tongued skink, is a reptile found in woodland, scrub and semi-desert habitats in Australia.\n\nThese stocky animals have a triangular head and thick tail. Their colouration varies, but they commonly show beige-and-black banding. As the name suggests, the tongue is bright blue.\n\nAdults reach 45–60 cm in length and weigh 0.35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Bluetongue (Tiliqua scincoides), also known as a blue-tongued skink, is a reptile found in woodland, scrub and semi-desert habitats in Australia.\n\nThese stocky animals have a triangular head and thick tail. Their colouration varies, but they commonly show beige-and-black banding. As the name suggests, the tongue is bright blue.\n\nAdults reach 45–60 cm in length and weigh 0.35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El escinco de lengua azul (Tiliqua scincoides) vive en bosques, matorrales y zonas semidesérticas de Australia.\n\nEs un animal robusto, con cabeza triangular y cola gruesa. La coloración varía, aunque suele presentar bandas beige y negras. Su lengua es de un azul intenso.\n\nLos adultos miden 45–60 cm y pesan 0,35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le scinque à langue bleue (Tiliqua scincoides) vit dans les forêts, broussailles et régions semi-désertiques d’Australie.\n\nCet animal trapu possède une tête triangulaire et une queue épaisse. Sa coloration varie mais présente souvent des bandes beiges et noires. Sa langue est d’un bleu vif.\n\nLes adultes mesurent 45–60 cm et pèsent 0,35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) vive nelle foreste, boscaglie e regioni semidesertiche dell’Australia.\n\nÈ un animale robusto con testa triangolare e coda spessa. La colorazione varia, ma spesso presenta bande beige e nere. La lingua è di un blu brillante.\n\nGli adulti misurano 45–60 cm e pesano 0,35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O lagarto-de-língua-azul (Tiliqua scincoides) vive em florestas, matagais e regiões semidesérticas da Austrália.\n\nÉ robusto, com cabeça triangular e cauda grossa. A coloração varia, mas geralmente apresenta faixas bege e pretas. A língua é azul-viva.\n\nAdultos medem 45–60 cm e pesam 0,35–1 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ハスオビアオジタトカゲ（Tiliqua scincoides）は、オーストラリアの森林、低木地、半砂漠地域に生息します。\n\nずんぐりした体、三角形の頭、太い尾を持ちます。体色は変化に富みますが、ベージュと黒の縞模様が一般的です。舌は鮮やかな青色です。\n\n成体は全長45～60cm、体重0.35～1kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蓝舌蜥（Tiliqua scincoides）生活在澳大利亚的森林、灌丛和半荒漠环境中。\n\n身体粗壮，头部呈三角形，尾巴粗厚。体色变化较大，但通常有米色和黑色条纹。舌头呈鲜艳蓝色。\n\n成体体长45～60厘米，体重0.35～1千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Gemeine Blauzungenskink gilt als nicht gefährdet. Obwohl die zunehmende Städteentwicklung entlang der australischen Küste seinen natürlichen Lebensraum beeinträchtigt, scheint sich diese Eidechse gut an diese veränderte Landschaft angepasst zu haben. Wie viele andere australische Tiere ist sie jedoch durch die invasive Aga-Kröte bedroht. Die aus Südamerika eingeführte Krötenart produziert ein starkes Gift und kann Gewöhnliche Blauzungenskinke töten, wenn sie von ihnen gefressen wird.\n\nEin erheblicher Teil des Verbreitungsgebiets des Gemeinen Blauzungenskinks ist durch Nationalparks und Naturschutzgebiete geschützt. Es gibt keine weiteren direkten Schutzmaßnahmen, die speziell auf diese Art ausgerichtet sind. Maßnahmen gegen invasive Arten würden dem Gemeinen Blauzungenskink generell ebenfalls helfen, und es gibt Vorschläge, dass ein Training zur Geschmacksaversion ein wirksames Mittel sein könnte, um zu verhindern, dass Gemeine Blauzungenskinks Aga-Kröten jagen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Bluetongue is classified as Least Concern. Although increasing urban development along the Australian coast affects its natural habitat, the species appears to adapt well to altered landscapes. Like many Australian animals, however, it is threatened by the invasive cane toad. This South American species produces a potent toxin and can kill bluetongues when eaten.\n\nA significant part of the Common Bluetongue's range is protected by national parks and nature reserves. No other direct conservation measures specifically target the species. Control of invasive species would also benefit it, and taste-aversion training has been proposed as a way to discourage bluetongues from preying on cane toads.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Bluetongue is classified as Least Concern. Although increasing urban development along the Australian coast affects its natural habitat, the species appears to adapt well to altered landscapes. Like many Australian animals, however, it is threatened by the invasive cane toad. This South American species produces a potent toxin and can kill bluetongues when eaten.\n\nA significant part of the Common Bluetongue's range is protected by national parks and nature reserves. No other direct conservation measures specifically target the species. Control of invasive species would also benefit it, and taste-aversion training has been proposed as a way to discourage bluetongues from preying on cane toads.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificado como de Preocupación Menor. La expansión urbana afecta parte de su hábitat, aunque parece adaptarse bien a paisajes modificados. Una amenaza importante es el sapo de caña invasor, cuyo veneno puede matar al escinco si intenta comérselo.\n\nGran parte de su distribución está protegida por parques nacionales y reservas. No existen muchas medidas directas específicas, aunque el control de especies invasoras y el entrenamiento de aversión al sabor podrían ayudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’espèce est classée en Préoccupation mineure. Le développement urbain réduit une partie de son habitat, mais elle semble bien s’adapter aux milieux modifiés. Le crapaud buffle invasif constitue toutefois une menace importante, son poison pouvant tuer les scinques qui le consomment.\n\nUne grande partie de l’aire de répartition est protégée par des parcs et réserves. Le contrôle des espèces invasives et l’apprentissage d’une aversion gustative pourraient contribuer à la protection.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo. Lo sviluppo urbano modifica parte dell’habitat, ma la specie sembra adattarsi bene. Una minaccia importante è il rospo delle canne invasivo, il cui veleno può uccidere gli scinchi che lo mangiano.\n\nUna parte consistente dell’areale è protetta da parchi nazionali e riserve. Il controllo delle specie invasive e l’addestramento all’avversione gustativa potrebbero aiutare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante. O desenvolvimento urbano afeta parte do habitat, mas a espécie parece adaptar-se bem. Uma ameaça importante é o sapo-cururu invasor, cujo veneno pode matar o lagarto se for ingerido.\n\nGrande parte da distribuição está protegida por parques e reservas. O controle de espécies invasoras e treinamento de aversão ao sabor podem ajudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種に分類されています。沿岸部の都市開発は生息地に影響しますが、変化した環境にも比較的よく適応しています。一方、外来種のオオヒキガエルは強い毒を持ち、捕食すると死亡する可能性があります。\n\n分布域のかなりの部分が国立公園や保護区に含まれています。外来種対策や味覚嫌悪学習が有効な対策として提案されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为无危。澳大利亚沿海地区的城市扩张会影响自然栖息地，但该物种似乎能较好适应改变后的环境。不过外来入侵的甘蔗蟾蜍具有强毒，如果蓝舌蜥误食可能死亡。\n\n其分布区相当大一部分位于国家公园和自然保护区。控制入侵物种以及味觉厌恶训练可能有助于保护该物种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gemeine Blauzungenskinks sind Einzelgänger und kommen nur zur Paarung oder bei Kämpfen um Partner miteinander in Kontakt.\n\nMännliche Gemeine Blauzungenskinks spüren während der Paarungszeit von September bis November Weibchen anhand ihres Geruchs auf. Wenn mehrere Männchen dasselbe Weibchen verfolgen, treffen sie wahrscheinlich aufeinander und kämpfen aggressiv um das Recht auf die Paarung. Der Sieger darf sich mit dem Weibchen fortpflanzen. Die Paarung verläuft unter Umständen recht aggressiv, und Weibchen tragen oft Kratzer und Narben davon.\n\nEtwa 3 bis 5 Monate nach der Paarung bringen die Weibchen durchschnittlich 10 bis 15 lebende Jungtiere zur Welt. Die Jungtiere sind von Geburt an selbstständig, und das Weibchen kümmert sich nicht weiter um sie.\n\nGemeine Blauzungenskinks erreichen ihre Geschlechtsreife im Alter von 18 bis 24 Monaten und sind mit etwa 3 Jahren ausgewachsen, nachdem sie eine Länge von etwa 40 cm erreicht haben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Common Bluetongues are solitary and only interact to mate or during fights over partners.\n\nDuring the September–November breeding season, males locate females by scent. If several males follow the same female, they may meet and fight aggressively for mating access. The winner mates with the female. Mating itself can be rough, and females often carry scratches and scars.\n\nAround 3–5 months after mating, females give birth to an average of 10–15 live young. The young are independent from birth and receive no further maternal care.\n\nCommon Bluetongues reach sexual maturity at 18–24 months and are fully grown at around three years, after reaching roughly 40 cm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Common Bluetongues are solitary and only interact to mate or during fights over partners.\n\nDuring the September–November breeding season, males locate females by scent. If several males follow the same female, they may meet and fight aggressively for mating access. The winner mates with the female. Mating itself can be rough, and females often carry scratches and scars.\n\nAround 3–5 months after mating, females give birth to an average of 10–15 live young. The young are independent from birth and receive no further maternal care.\n\nCommon Bluetongues reach sexual maturity at 18–24 months and are fully grown at around three years, after reaching roughly 40 cm in length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitario y solo entra en contacto con otros individuos para reproducirse o luchar por parejas.\n\nEntre septiembre y noviembre, los machos localizan a las hembras por el olor. Varios machos pueden pelear agresivamente por una misma hembra, y el apareamiento también puede ser brusco.\n\nEntre 3 y 5 meses después, la hembra pare una media de 10–15 crías vivas. Las crías son independientes desde el nacimiento.\n\nLa madurez sexual se alcanza a los 18–24 meses y el crecimiento completo alrededor de los 3 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est solitaire et ne rencontre ses congénères que pour se reproduire ou lors de combats pour les partenaires.\n\nEntre septembre et novembre, les mâles trouvent les femelles grâce à l’odorat. Plusieurs mâles peuvent se battre violemment pour une même femelle, et l’accouplement peut être brutal.\n\nAprès 3–5 mois, la femelle met au monde en moyenne 10–15 jeunes vivants, indépendants dès la naissance.\n\nLa maturité sexuelle est atteinte à 18–24 mois et la taille adulte vers 3 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario e interagisce con altri individui solo per accoppiarsi o durante combattimenti per i partner.\n\nTra settembre e novembre, i maschi localizzano le femmine grazie all’olfatto. Più maschi possono combattere aggressivamente per la stessa femmina e l’accoppiamento può essere piuttosto violento.\n\nDopo 3–5 mesi la femmina partorisce in media 10–15 piccoli vivi, indipendenti dalla nascita.\n\nLa maturità sessuale viene raggiunta a 18–24 mesi e la crescita completa verso i 3 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitário e só interage com outros indivíduos para reprodução ou durante disputas por parceiros.\n\nDe setembro a novembro, machos encontram fêmeas pelo cheiro. Vários machos podem lutar agressivamente pela mesma fêmea, e o acasalamento pode ser brusco.\n\nApós 3–5 meses, a fêmea dá à luz em média 10–15 filhotes vivos, independentes desde o nascimento.\n\nA maturidade sexual ocorre aos 18–24 meses e o tamanho adulto por volta dos 3 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独で生活し、交尾や配偶者をめぐる争いのときだけ他個体と接触します。\n\n9～11月の繁殖期に雄は匂いで雌を探します。同じ雌を複数の雄が追うと激しく争うことがあります。交尾そのものもかなり激しく、雌には傷跡が残る場合があります。\n\n交尾から3～5か月後、雌は平均10～15頭の生きた子を産みます。子は出生時から自立しています。\n\n18～24か月で性成熟し、約3歳で成長が完了します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，只在交配或争夺配偶时接触其他个体。\n\n9月至11月繁殖季，雄性通过气味寻找雌性。如果多只雄性追逐同一只雌性，可能会发生激烈争斗。交配本身也可能相当粗暴，雌性常留下抓痕和伤疤。\n\n交配后约3～5个月，雌性平均产下10～15只活体幼崽。幼崽出生后即可独立生活。\n\n18～24个月达到性成熟，约3岁完全长成。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Gemeine Blauzungenskinks bringen lebende Junge zur Welt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gemeine Blauzungenskinks können ihren Schwanz abwerfen, um angreifende Feinde zu verwirren. Der Schwanz wächst mit der Zeit nach.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Fühlt sich ein Gemeiner Blauzungenskink bedroht, plustert er sich auf, faucht und streckt seine blaue Zunge heraus, um Räuber einzuschüchtern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ausgewachsene Gemeine Blauzungenskinks häuten sich etwa alle 6 Wochen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gemeine Blauzungenskinks haben einen kräftigen und sehr schmerzhaften Biss, zudem verbeißen sie sich oft.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Common Bluetongues give birth to live young.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can shed their tail to confuse attacking predators, and the tail grows back over time.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "When threatened, they puff themselves up, hiss and display their blue tongue to intimidate predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Adult Common Bluetongues shed their skin about every six weeks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have a strong and very painful bite and may hold on after biting.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Common Bluetongues give birth to live young.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can shed their tail to confuse attacking predators, and the tail grows back over time.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "When threatened, they puff themselves up, hiss and display their blue tongue to intimidate predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Adult Common Bluetongues shed their skin about every six weeks.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have a strong and very painful bite and may hold on after biting.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Da a luz crías vivas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede desprenderse de la cola para distraer a depredadores y esta vuelve a crecer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Cuando se siente amenazado se hincha, sisea y muestra la lengua azul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los adultos mudan la piel aproximadamente cada seis semanas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tiene una mordida fuerte y muy dolorosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il met au monde des jeunes vivants.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il peut abandonner sa queue pour distraire un prédateur, puis elle repousse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Lorsqu’il est menacé, il se gonfle, siffle et montre sa langue bleue.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les adultes muent environ toutes les six semaines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa morsure est puissante et très douloureuse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Partorisce piccoli vivi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Può perdere la coda per confondere i predatori e questa ricresce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se minacciato si gonfia, sibila e mostra la lingua blu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli adulti cambiano pelle circa ogni sei settimane.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ha un morso forte e molto doloroso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Dá à luz filhotes vivos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pode soltar a cauda para confundir predadores, e ela cresce novamente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Quando ameaçado, infla o corpo, sibila e mostra a língua azul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Adultos trocam de pele aproximadamente a cada seis semanas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possui uma mordida forte e muito dolorosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "卵ではなく生きた子を産みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "捕食者を混乱させるため尾を切り離し、後に再生します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "脅威を感じると体を膨らませ、威嚇音を出し、青い舌を見せます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "成体は約6週間ごとに脱皮します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "非常に強く痛い咬みつきをします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "会直接产下活体幼崽。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "可通过脱落尾巴迷惑捕食者，尾巴之后会再生。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "受威胁时会鼓起身体、发出嘶声并伸出蓝色舌头威吓敌害。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "成体大约每6周蜕皮一次。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "咬合力强而且非常疼痛，咬住后常不会立即松口。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/3f3140f9/Lizard_EasternBlueTongued_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/map/Tiliqua scincoides map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvM2YzMTQwZjkvTGl6YXJkX0Vhc3Rlcm5CbHVlVG9uZ3VlZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Gemeiner Blauzungenskink – Planet Zoo 2",
+            "en": "Common Bluetongue – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gemeinen Blauzungenskinks aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Common Bluetongue."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/bilder/Tiliqua scincoides 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Gemeiner Blauzungenskink",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gemeiner-blauzungenskink",
+        "en": "https://www.planetzoogame.com/2/zoopedia/common-bluetongue",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/common-bluetongue",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/escinco-de-lengua-azul",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/scinque-%C3%A0-langue-bleue",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/scinco-dalla-lingua-blu",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/lagarto-de-l%C3%ADngua-azul",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8F%E3%82%B9%E3%82%AA%E3%83%93%E3%82%A2%E3%82%AA%E3%82%B8%E3%82%BF%E3%83%88%E3%82%AB%E3%82%B2",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%93%9D%E8%88%8C%E8%9C%A5"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten; Rechnerwerte bleiben bewusst offen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

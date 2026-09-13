@@ -1,0 +1,786 @@
+{
+  "id": "Salamandra salamandra",
+  "identitaet": {
+    "namen": {
+      "de": "Feuersalamander",
+      "en": "Fire Salamander",
+      "en-US": "Fire Salamander",
+      "es": "Salamandra común",
+      "fr": "Salamandre tachetée",
+      "it": "Salamandra pezzata",
+      "pt-BR": "Salamandra-de-fogo",
+      "ja": "ファイアサラマンダー",
+      "zh-Hans": "火蝾螈"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe"
+    ],
+    "biome": [
+      "Gemäßigt"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Urodela",
+          "familie": "Salamandridae",
+          "gattung": "Salamandra",
+          "art": "Salamandra salamandra",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.15,
+          "max": 0.3,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Männchen und Weibchen unterscheiden sich laut Zoopedia weder in Größe noch Aussehen.",
+            "en": "According to the Zoopedia, males and females do not differ in size or appearance."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.03,
+          "max": 0.05,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia nennt den aktuellen Arterhaltungszustand „Gefährdet“ und beschreibt einen drastischen Populationsrückgang, insbesondere durch den Bsal-Pilz und Lebensraumverlust.",
+            "en": "The Zoopedia lists the current conservation status as Vulnerable and describes a severe population decline, especially because of the Bsal fungus and habitat loss."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 6,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 3 bis 6 Monate, abhängig von den Umweltbedingungen.",
+            "en": "The Zoopedia gives 3–6 months, depending on environmental conditions."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Feuersalamander sind laut Zoopedia in der Wildnis Einzelgänger, tolerieren Artgenossen aber bei genügend Platz, Nahrung und Geschlechtspartnern.",
+            "en": "According to the Zoopedia, Fire Salamanders are solitary in the wild but tolerate conspecifics when space, food and mates are sufficient."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperate",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Laubwälder auf dem europäischen Festland.",
+            "en": "The Zoopedia lists deciduous forests across mainland Europe."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Feuersalamander (Salamandra salamandra) ist ein Amphibium, das in den Laubwäldern auf dem gesamten europäischen Festland vorkommt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Fire Salamander (Salamandra salamandra) is an amphibian found in deciduous forests across mainland Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Fire Salamander (Salamandra salamandra) is an amphibian found in deciduous forests across mainland Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La salamandra común (Salamandra salamandra) es un anfibio que vive en bosques caducifolios de la Europa continental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La salamandre tachetée (Salamandra salamandra) est un amphibien présent dans les forêts de feuillus de l'Europe continentale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La salamandra pezzata (Salamandra salamandra) è un anfibio presente nei boschi decidui dell'Europa continentale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A salamandra-de-fogo (Salamandra salamandra) é um anfíbio encontrado em florestas decíduas da Europa continental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ファイアサラマンダー（Salamandra salamandra）は、ヨーロッパ大陸の落葉樹林に生息する両生類です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "火蝾螈（Salamandra salamandra）是一种生活在欧洲大陆落叶林中的两栖动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Feuersalamander (auch Salamandra salamandra) ist ein Amphibium, das in den Laubwäldern auf dem gesamten europäischen Festland vorkommt.\n\nSeine Haut ist schwarz mit gelben Flecken, wobei die Musterung sehr unterschiedlich ausfallen kann. Während die Larven im Wasser leben, können die ausgewachsenen Tiere nicht schwimmen und verbringen ihr Leben an Land.\n\nFeuersalamander sind zwischen 15 cm und 30 cm lang und wiegen etwa 30 g bis 50 g. Männchen und Weibchen unterscheiden sich weder in der Größe noch im Aussehen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Fire Salamander (Salamandra salamandra) is an amphibian found in deciduous forests across mainland Europe.\n\nIts skin is black with yellow markings that vary greatly between individuals. The larvae live in water, while adults cannot swim and spend their lives on land.\n\nFire Salamanders are 15–30 cm long and weigh around 30–50 g. Males and females do not differ in size or appearance.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Fire Salamander (Salamandra salamandra) is an amphibian found in deciduous forests across mainland Europe.\n\nIts skin is black with yellow markings that vary greatly between individuals. The larvae live in water, while adults cannot swim and spend their lives on land.\n\nFire Salamanders are 15–30 cm long and weigh around 30–50 g. Males and females do not differ in size or appearance.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La salamandra común vive en bosques caducifolios de la Europa continental.\n\nSu piel es negra con manchas amarillas de patrón variable. Las larvas viven en el agua, mientras que los adultos son terrestres y no saben nadar.\n\nMide 15–30 cm y pesa unos 30–50 g. Machos y hembras tienen un tamaño y aspecto similares.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La salamandre tachetée vit dans les forêts de feuillus de l'Europe continentale.\n\nSa peau est noire avec des taches jaunes très variables. Les larves vivent dans l'eau, tandis que les adultes sont terrestres et ne savent pas nager.\n\nElle mesure 15–30 cm et pèse environ 30–50 g. Mâles et femelles ont une taille et une apparence similaires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La salamandra pezzata vive nei boschi decidui dell'Europa continentale.\n\nLa pelle è nera con macchie gialle molto variabili. Le larve vivono in acqua, mentre gli adulti sono terrestri e non sanno nuotare.\n\nMisura 15–30 cm e pesa circa 30–50 g. Maschi e femmine non differiscono per dimensioni o aspetto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A salamandra-de-fogo vive em florestas decíduas da Europa continental.\n\nA pele é preta com manchas amarelas muito variáveis. As larvas vivem na água, enquanto os adultos vivem em terra e não conseguem nadar.\n\nMede 15–30 cm e pesa cerca de 30–50 g. Machos e fêmeas têm tamanho e aparência semelhantes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ファイアサラマンダーはヨーロッパ大陸の落葉樹林に生息します。\n\n皮膚は黒地に黄色い斑紋があり、模様は個体差があります。幼生は水中で生活しますが、成体は泳げず陸上で生活します。\n\n全長15～30cm、体重約30～50gです。雌雄で大きさや外見に差はありません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "火蝾螈生活在欧洲大陆的落叶林中。\n\n皮肤黑色并带黄色斑纹，花纹个体差异很大。幼体生活在水中，但成体不会游泳，主要在陆地生活。\n\n体长15～30厘米，体重约30～50克。雌雄在体型和外观上没有明显差异。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Bei ihrer Ersteinstufung wurden Feuersalamander als nicht gefährdet klassifiziert, doch nun gelten sie als gefährdete Spezies. Die Population der Tierart ist drastisch zurückgegangen (und es wird davon ausgegangen, dass sie noch weiter schrumpft). Grund dafür ist die Ausbreitung des „Bsal“ in Europa, einem für Salamander äußert tödlichen Pilz, der bereits verheerende Auswirkungen auf Populationen in verschiedenen Ländern hatte. Ein fortschreitender Lebensraumverlust übt zusätzlichen Druck auf wilde Feuersalamander aus.\n\nZwar lässt sich die Pilzinfektion durch menschliches Eingreifen behandeln, doch gibt es keine vorbeugenden Medikamente, und die Arterhaltungsmaßnahmen konzentrieren sich derzeit auf die Zucht von Ersatzpopulationen in Gefangenschaft, um hoffentlich eines Tages Gebiete wieder besiedeln zu können, in denen diese ikonischen Amphibien ausgestorben sind. Derzeit gibt es nur wenige Initiativen und Erfolge bei der Eindämmung der Ausbreitung des Bsal-Pilzes selbst, sodass weitere Forschung und Arbeit erforderlich sind, um das Überleben des Feuersalamanders zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Fire Salamanders were originally classified as Least Concern but are now considered Vulnerable. Their population has declined dramatically and is expected to continue shrinking. A major cause is the spread of Bsal in Europe, a fungus that is extremely deadly to salamanders and has devastated populations in several countries. Ongoing habitat loss adds further pressure.\n\nFungal infections can be treated through human intervention, but no preventive medicine is available. Conservation currently focuses on breeding backup populations in captivity in the hope of eventually reintroducing the species to areas where it has disappeared. There have so far been only limited successes in containing Bsal itself, so further research and conservation work are required.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Fire Salamanders were originally classified as Least Concern but are now considered Vulnerable. Their population has declined dramatically and is expected to continue shrinking. A major cause is the spread of Bsal in Europe, a fungus that is extremely deadly to salamanders and has devastated populations in several countries. Ongoing habitat loss adds further pressure.\n\nFungal infections can be treated through human intervention, but no preventive medicine is available. Conservation currently focuses on breeding backup populations in captivity in the hope of eventually reintroducing the species to areas where it has disappeared. There have so far been only limited successes in containing Bsal itself, so further research and conservation work are required.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Inicialmente fue clasificada como de Preocupación Menor, pero ahora se considera Vulnerable. Las poblaciones han disminuido drásticamente, principalmente por la expansión del hongo Bsal en Europa y por la pérdida de hábitat.\n\nLa infección puede tratarse con intervención humana, pero no existen medicamentos preventivos. La conservación se centra en poblaciones de reserva en cautividad y en futuras reintroducciones, mientras continúa la investigación para controlar Bsal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "D'abord classée en Préoccupation mineure, elle est désormais considérée Vulnérable. Les populations ont fortement chuté, surtout en raison du champignon Bsal qui se propage en Europe, ainsi que de la perte d'habitat.\n\nL'infection peut être traitée avec intervention humaine, mais aucun médicament préventif n'existe. La conservation s'appuie sur des populations de sauvegarde en captivité et sur la recherche visant à limiter Bsal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Inizialmente classificata a rischio minimo, oggi è considerata Vulnerabile. Le popolazioni sono diminuite drasticamente soprattutto per la diffusione del fungo Bsal in Europa e per la perdita di habitat.\n\nL'infezione può essere trattata con intervento umano ma non esistono farmaci preventivi. La conservazione si concentra su popolazioni di riserva in cattività e sulla ricerca per contenere Bsal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Inicialmente classificada como Pouco Preocupante, agora é considerada Vulnerável. As populações caíram drasticamente, principalmente pela disseminação do fungo Bsal na Europa e pela perda de habitat.\n\nA infecção pode ser tratada com intervenção humana, mas não há medicamento preventivo. A conservação se concentra em populações de segurança em cativeiro e em pesquisas para conter Bsal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "当初は低危険種とされていましたが、現在は危急種とされています。ヨーロッパで拡大している致死性の高いBsal菌と生息地喪失により個体数が大きく減少しています。\n\n感染は人の介入で治療できる場合がありますが、予防薬はありません。保全では飼育下の代替個体群を維持し、将来の再導入に備えることが重視されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "该物种最初被列为无危，但目前被视为易危。欧洲传播的致命Bsal真菌以及持续的栖息地丧失导致种群大幅下降。\n\n真菌感染可在人为干预下治疗，但目前没有预防药物。保护工作主要集中在建立人工饲养的备用种群，并继续研究如何控制Bsal传播。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Feuersalamander sind in der Wildnis Einzelgänger, aber generell Artgenossen gegenüber tolerant, wenn ausreichend Platz, Geschlechtspartner und Nahrung verfügbar sind. Männchen können aggressiv aufeinander reagieren, wenn sie um Reviere oder Partnerinnen konkurrieren.\n\nIn der Paarungszeit von Oktober bis Januar versuchen die Männchen, Weibchen aufzuspüren, die sich in ihrem Revier aufhalten. Hat das Männchen eine Partnerin gefunden, überreicht er ihr eine Spermatophore: einen geleeartigen Kegel, der sein Sperma enthält und den das Weibchen in ihre Kloake aufnimmt.\n\nDas Weibchen kann eine verzögerte Einnistung durchführen, je nachdem, wann die Umweltbedingungen am günstigsten sind; dies kann bis zu 2 bis 5 Monate nach der Paarung der Fall sein. Weibliche Feuersalamander tragen ihre Jungen oft während des Winterschlafs aus, wobei sich die Eier in dieser Zeit im Leib des Weibchens entwickeln. Wenn sie bereit ist zu gebären, setzt sie über mehrere Tage hinweg 20 bis 75 Larven in flachen Tümpeln aus. Feuersalamanderlarven sind 2,5 cm lang und haben bereits voll entwickelte Gliedmaßen. Die Larven besitzen Kiemen und sind im Gegensatz zu den erwachsenen Tieren auf Wasser angewiesen. Das Larvenstadium dauert mindestens 4 Wochen, kann sich jedoch je nach Umweltbedingungen verlängern. Sobald die Kiemen zurückgebildet werden, verlassen die Jungtiere das Wasser und gehen zu einem Leben an Land über.\n\nIm Alter von 3 bis 6 Monaten, wiederum abhängig von den Umweltbedingungen, erreichen Feuersalamander die Geschlechtsreife.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Fire Salamanders are solitary in the wild but generally tolerate conspecifics when enough space, food and mates are available. Males may become aggressive when competing for territories or females.\n\nDuring the October–January breeding season, males seek females within their territories. A male transfers a spermatophore, a jelly-like cone containing sperm, which the female takes into her cloaca.\n\nThe female may delay implantation until conditions are favourable, potentially for 2–5 months after mating. Females often carry developing young during hibernation. When ready to give birth, a female releases 20–75 larvae into shallow pools over several days. Larvae are about 2.5 cm long, already have fully developed limbs and depend on water because they possess gills. The larval stage lasts at least four weeks and may be longer depending on environmental conditions. Once the gills regress, juveniles leave the water and become terrestrial.\n\nFire Salamanders reach sexual maturity at 3–6 months, again depending on environmental conditions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Fire Salamanders are solitary in the wild but generally tolerate conspecifics when enough space, food and mates are available. Males may become aggressive when competing for territories or females.\n\nDuring the October–January breeding season, males seek females within their territories. A male transfers a spermatophore, a jelly-like cone containing sperm, which the female takes into her cloaca.\n\nThe female may delay implantation until conditions are favourable, potentially for 2–5 months after mating. Females often carry developing young during hibernation. When ready to give birth, a female releases 20–75 larvae into shallow pools over several days. Larvae are about 2.5 cm long, already have fully developed limbs and depend on water because they possess gills. The larval stage lasts at least four weeks and may be longer depending on environmental conditions. Once the gills regress, juveniles leave the water and become terrestrial.\n\nFire Salamanders reach sexual maturity at 3–6 months, again depending on environmental conditions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitaria en estado silvestre, aunque tolera a otros individuos si hay suficiente espacio, alimento y parejas.\n\nLa época reproductiva va de octubre a enero. El macho entrega a la hembra un espermatóforo que ella introduce en la cloaca.\n\nLa implantación puede retrasarse entre 2 y 5 meses. La hembra libera entre 20 y 75 larvas en charcas poco profundas. Las larvas miden unos 2,5 cm, poseen branquias y permanecen en fase larvaria al menos 4 semanas antes de pasar a vida terrestre.\n\nLa madurez sexual se alcanza a los 3–6 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est solitaire à l'état sauvage mais tolère ses congénères lorsqu'il y a suffisamment d'espace, de nourriture et de partenaires.\n\nLa reproduction a lieu d'octobre à janvier. Le mâle remet à la femelle un spermatophore qu'elle absorbe par le cloaque.\n\nL'implantation peut être retardée de 2 à 5 mois. La femelle dépose 20–75 larves dans des mares peu profondes. Les larves mesurent environ 2,5 cm, possèdent des branchies et restent au stade larvaire au moins 4 semaines avant de devenir terrestres.\n\nLa maturité sexuelle est atteinte entre 3 et 6 mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitaria in natura ma tollera altri individui se spazio, cibo e partner sono sufficienti.\n\nLa stagione riproduttiva va da ottobre a gennaio. Il maschio consegna alla femmina uno spermatoforo che lei raccoglie con la cloaca.\n\nL'impianto può essere ritardato di 2–5 mesi. La femmina rilascia 20–75 larve in pozze poco profonde. Le larve misurano circa 2,5 cm, hanno branchie e restano nello stadio larvale almeno 4 settimane prima di passare alla vita terrestre.\n\nLa maturità sessuale viene raggiunta a 3–6 mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitária na natureza, mas tolera outros indivíduos quando há espaço, alimento e parceiros suficientes.\n\nA reprodução ocorre de outubro a janeiro. O macho entrega à fêmea um espermatóforo que ela recolhe pela cloaca.\n\nA implantação pode ser adiada por 2–5 meses. A fêmea libera 20–75 larvas em poças rasas. As larvas medem cerca de 2,5 cm, têm brânquias e permanecem no estágio larval por pelo menos 4 semanas antes de se tornarem terrestres.\n\nA maturidade sexual ocorre aos 3–6 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "野生では単独性ですが、十分な空間、食物、繁殖相手があれば同種個体を許容します。\n\n繁殖期は10月から1月です。雄は精子を含むゼリー状の精包を雌に渡します。\n\n着床は交尾後2～5か月遅れることがあります。雌は浅い水たまりに20～75匹の幼生を数日にわたって産みます。幼生は約2.5cmで鰓を持ち、水中生活に依存します。幼生期は少なくとも4週間続き、その後鰓が退縮すると陸上生活へ移ります。\n\n3～6か月で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "野外主要独居，但在空间、食物和配偶充足时可容忍同类。\n\n繁殖季为10月至1月。雄性向雌性提供含精子的胶状精包，由雌性通过泄殖腔接收。\n\n胚胎着床可在交配后延迟2～5个月。雌性会在浅水池中分数天产下20～75只幼体。幼体约2.5厘米长，具有鳃并依赖水环境。幼体期至少持续4周，鳃退化后转为陆栖。\n\n3～6个月达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Feuersalamander finden sich hauptsächlich unter feuchtem, verfaulendem Laub am Boden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die auffällige Färbung des Feuersalamanders dient als Warnsignal für seine Giftigkeit. Über die Haut kann er ein Nervengift namens Samandarin absondern, das Muskelkrämpfe, Atembeschwerden und Bluthochdruck verursachen kann und in schweren Fällen tödlich ist. Für Menschen ist das Gift in der Regel nur dann gefährlich, wenn es verschluckt wird.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Legende nach kam der Feuersalamander zu seinem Namen, weil er im Feuer geboren wurde. Am wahrscheinlichsten ist es, dass die Tiere sich in Holz versteckt haben, das Menschen für Feuer gesammelt hatten, und dann aus der Glut gekrochen ist, um den Flammen zu entkommen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Feuersalamander neigen dazu, viele Jahre hindurch im gleichen Heimatrevier zu bleiben, während manche sogar für ihren Winterschlaf immer zu den gleichen Orten zurückkehren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Nachwuchs der meisten Unterarten des Feuersalamanders entwickelt sich in Eiern im Leib des Weibchens, um dann als aquatische Larve geboren zu werden. Die Fastuosa- und Bernardezi-Unterarten können jedoch Jungtiere zur Welt bringen, die die Metamorphose bereits abgeschlossen haben und somit die aquatische Phase überspringen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Fire Salamanders are mainly found beneath damp, decaying leaf litter on the ground.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Their striking colouration warns of toxicity. They can secrete the neurotoxin samandarin through the skin; it can cause muscle cramps, breathing problems and high blood pressure and may be fatal in severe cases. For humans it is generally dangerous only if swallowed.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A legend says the Fire Salamander was born from fire. More likely, salamanders hid inside firewood and crawled from the embers when the wood was burned.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fire Salamanders often remain in the same home range for many years and some return to the same hibernation sites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In most subspecies, offspring develop in eggs inside the female and are born as aquatic larvae. The Fastuosa and Bernardezi subspecies may give birth to juveniles that have already completed metamorphosis and therefore skip the aquatic phase.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Fire Salamanders are mainly found beneath damp, decaying leaf litter on the ground.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Their striking colouration warns of toxicity. They can secrete the neurotoxin samandarin through the skin; it can cause muscle cramps, breathing problems and high blood pressure and may be fatal in severe cases. For humans it is generally dangerous only if swallowed.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A legend says the Fire Salamander was born from fire. More likely, salamanders hid inside firewood and crawled from the embers when the wood was burned.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fire Salamanders often remain in the same home range for many years and some return to the same hibernation sites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In most subspecies, offspring develop in eggs inside the female and are born as aquatic larvae. The Fastuosa and Bernardezi subspecies may give birth to juveniles that have already completed metamorphosis and therefore skip the aquatic phase.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Suele encontrarse bajo hojarasca húmeda y en descomposición.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su coloración advierte de su toxicidad y puede secretar la neurotoxina samandarina.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La leyenda afirma que nació del fuego, probablemente porque se escondía en leña que luego era quemada.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede permanecer muchos años en el mismo territorio y volver a los mismos lugares de hibernación.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La mayoría de las subespecies da a luz larvas acuáticas, aunque algunas pueden producir juveniles ya metamorfoseados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle se trouve surtout sous les feuilles humides et en décomposition.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa coloration avertit de sa toxicité et elle peut sécréter la neurotoxine samandarine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Une légende dit qu'elle naît du feu, probablement parce qu'elle se cachait dans le bois de chauffage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle peut rester de nombreuses années dans le même domaine vital et revenir aux mêmes lieux d'hibernation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La plupart des sous-espèces mettent au monde des larves aquatiques, mais certaines peuvent donner naissance à des jeunes déjà métamorphosés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Si trova soprattutto sotto foglie umide e in decomposizione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La colorazione segnala la tossicità e può secernere la neurotossina samandarina.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Una leggenda sostiene che nasca dal fuoco, probabilmente perché si nascondeva nella legna da ardere.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Può restare per molti anni nello stesso territorio e tornare agli stessi siti di ibernazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La maggior parte delle sottospecie partorisce larve acquatiche, mentre alcune possono partorire giovani già metamorfosati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É encontrada principalmente sob folhas úmidas e em decomposição.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sua coloração alerta para a toxicidade e ela pode secretar a neurotoxina samandarina.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Uma lenda diz que nasce do fogo, provavelmente porque se escondia na lenha.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pode permanecer muitos anos no mesmo território e voltar aos mesmos locais de hibernação.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A maioria das subespécies dá à luz larvas aquáticas, mas algumas podem produzir jovens já metamorfoseados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "主に湿った腐葉土の下で見つかります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "鮮やかな体色は毒性を警告し、皮膚から神経毒サマンダリンを分泌できます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "火から生まれるという伝説がありますが、薪の中に隠れていた個体が火から逃げ出したことが由来と考えられます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "何年も同じ行動圏にとどまり、同じ冬眠場所へ戻る個体もいます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "多くの亜種は水生幼生を産みますが、FastuosaとBernardeziでは変態済みの幼体を産むことがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "通常生活在潮湿、腐烂的落叶层下。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "鲜艳体色是毒性警告，可通过皮肤分泌神经毒素Samandarin。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "传说它们出生于火焰，更可能的来源是个体藏在柴火中后从燃烧木材里爬出。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "常多年生活在同一领域，一些个体还会返回相同地点冬眠。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "多数亚种在体内发育后产下水生幼体，但Fastuosa和Bernardezi亚种有时可直接产下已完成变态的幼体。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/3e57e529/Salamander_Fire_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/map/Salamandra salamandra map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvM2U1N2U1MjkvU2FsYW1hbmRlcl9GaXJlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Feuersalamander – Planet Zoo 2",
+            "en": "Fire Salamander – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Feuersalamanders aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Fire Salamander."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/bilder/Salamandra salamandra 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Feuersalamander",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/feuersalamander",
+        "en": "https://www.planetzoogame.com/2/zoopedia/fire-salamander",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/fire-salamander",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/salamandra-com%C3%BAn",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/salamandre-tachet%C3%A9e",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/salamandra-pezzata",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/salamandra-de-fogo",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%B5%E3%83%A9%E3%83%9E%E3%83%B3%E3%83%80%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%81%AB%E8%9D%BE%E8%9E%88"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. Verzögerte Einnistung (2–5 Monate), 20–75 Larven und mindestens 4 Wochen Larvenstadium bleiben in der Prosa, sofern kein sicher kompatibler strukturierter Typ vorhanden ist. Kein separates Illustrationsbild im Auszug."
+    }
+  }
+}

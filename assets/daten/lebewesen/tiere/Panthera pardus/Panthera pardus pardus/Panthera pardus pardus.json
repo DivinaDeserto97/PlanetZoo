@@ -1,0 +1,842 @@
+{
+  "id": "Panthera pardus pardus",
+  "identitaet": {
+    "namen": {
+      "de": "Afrikanischer Leopard",
+      "en": "African Leopard",
+      "en-US": "African Leopard",
+      "es": "Leopardo africano",
+      "fr": "Léopard d'Afrique",
+      "it": "Leopardo africano",
+      "pt-BR": "Leopardo-africano",
+      "ja": "アフリカヒョウ",
+      "zh-Hans": "非洲豹"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Felidae",
+          "gattung": "Panthera",
+          "art": "Panthera pardus pardus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.52,
+          "max": 1.83,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Zusätzlich nennt die Zoopedia beim Männchen eine Schwanzlänge von 66 cm.",
+            "en": "The Zoopedia additionally gives a male tail length of 66 cm."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.39,
+          "max": 1.67,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Zusätzlich nennt die Zoopedia beim Weibchen eine Schwanzlänge von 60 cm.",
+            "en": "The Zoopedia additionally gives a female tail length of 60 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.6,
+          "max": 0.7,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 0.55,
+          "max": 0.65,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 58,
+          "max": 96,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 24,
+          "max": 37.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Vulnerable."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": 2.5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 3.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Afrikanische Leoparden als Einzelgänger; nur Muttertiere ziehen ihre Jungen groß.",
+            "en": "The Zoopedia describes African Leopards as solitary; only mothers raise their young."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Leopard (Panthera pardus pardus) ist die namensgebende Unterart des Leoparden und lebt in Zentral- und Südafrika.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El leopardo africano (Panthera pardus pardus) es la subespecie nominal del leopardo y vive en África central y meridional.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le léopard d'Afrique (Panthera pardus pardus) est la sous-espèce nominale du léopard et vit en Afrique centrale et australe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il leopardo africano (Panthera pardus pardus) è la sottospecie nominale del leopardo e vive nell'Africa centrale e meridionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O leopardo-africano (Panthera pardus pardus) é a subespécie nominal do leopardo e vive na África Central e no sul da África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカヒョウ（Panthera pardus pardus）はヒョウの基亜種で、中央アフリカと南部アフリカに生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "非洲豹（Panthera pardus pardus）是豹的指名亚种，生活在非洲中部和南部。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Leopard (auch Panthera pardus pardus) ist die namensgebende Unterart des Leoparden und lebt in Zentral- und Südafrika.\n\nEr besitzt einen schlanken Körperbau mit einem eleganten Kopf. Die Grundfarbe seines Fells reicht von gelb bis dunkelgolden und ist mit kleinen, dicht beieinander liegenden Rosetten bedeckt, die zum Unterkörper, zum Gesicht und zur Schwanzspitze hin zu schwarzen Flecken werden. Die Unter- und Innenseite der Beine sind weiß.\n\nDer Afrikanische Leopard ist sexuell dimorph, wobei Männchen größer und schwerer sind als die Weibchen. Männchen haben eine Schulterhöhe von 60 bis 70 cm, eine Länge von 1,52 bis 1,83 m (zuzüglich 66 cm Schwanz) und wiegen zwischen 58 und 96 kg. Weibchen haben eine Schulterhöhe von 55 bis 65 cm, eine Länge von 1,39 bis 1,67 m, eine Schwanzlänge von 60 cm und ein Gewicht von 24 bis 37,5 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Africa.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Africa.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El leopardo africano vive en África central y meridional.\n\nTiene cuerpo esbelto, cabeza elegante y pelaje amarillo a dorado oscuro cubierto de pequeñas rosetas.\n\nLos machos miden 60–70 cm a la cruz, 1,52–1,83 m de longitud más 66 cm de cola y pesan 58–96 kg. Las hembras miden 55–65 cm a la cruz, 1,39–1,67 m más 60 cm de cola y pesan 24–37,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le léopard d'Afrique vit en Afrique centrale et australe.\n\nIl possède une silhouette élancée, une tête élégante et un pelage jaune à doré foncé couvert de petites rosettes.\n\nLes mâles mesurent 60–70 cm au garrot, 1,52–1,83 m de long plus 66 cm de queue et pèsent 58–96 kg. Les femelles mesurent 55–65 cm au garrot, 1,39–1,67 m plus 60 cm de queue et pèsent 24–37,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il leopardo africano vive nell'Africa centrale e meridionale.\n\nHa corporatura snella, testa elegante e mantello dal giallo all'oro scuro ricoperto di piccole rosette.\n\nI maschi misurano 60–70 cm al garrese, 1,52–1,83 m di lunghezza più 66 cm di coda e pesano 58–96 kg. Le femmine misurano 55–65 cm al garrese, 1,39–1,67 m più 60 cm di coda e pesano 24–37,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O leopardo-africano vive na África Central e no sul da África.\n\nPossui corpo esguio, cabeça elegante e pelagem amarela a dourada escura coberta de pequenas rosetas.\n\nMachos têm 60–70 cm no ombro, 1,52–1,83 m de comprimento mais 66 cm de cauda e pesam 58–96 kg. Fêmeas têm 55–65 cm no ombro, 1,39–1,67 m mais 60 cm de cauda e pesam 24–37,5 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカヒョウは中央アフリカと南部アフリカに生息します。\n\n細身の体と優雅な頭部を持ち、黄色から濃い金色の毛に小さなロゼット模様があります。\n\n雄は肩高60～70cm、体長1.52～1.83mに加えて尾66cm、体重58～96kg。雌は肩高55～65cm、体長1.39～1.67mに加えて尾60cm、体重24～37.5kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "非洲豹生活在非洲中部和南部。\n\n体型修长，头部优雅，毛色从黄色到深金色，并覆盖密集的小型玫瑰斑。\n\n雄性肩高60～70厘米、体长1.52～1.83米，另有66厘米尾长，体重58～96千克。雌性肩高55～65厘米、体长1.39～1.67米，尾长60厘米，体重24～37.5千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Trotz seines großen Verbreitungsgebietes und seiner Anpassungsfähigkeit gilt der Afrikanische Leopard als gefährdet. Die Ausdehnung von Landwirtschaft und Siedlungsflächen sowie die Abholzung von Wäldern zerstören seinen Lebensraum und verringern die Verfügbarkeit von Beutetieren. Zudem stellen Wilderei und illegaler Handel eine erhebliche Bedrohung dar, da Felle, Krallen und Zähne für traditionelle Rituale oder als Jagdtrophäen der sogenannten „Big Five“ begehrt sind.\n\nBemühungen zur Arterhaltung konzentrieren sich auf rechtlichen Schutz, den Erhalt von Lebensräumen und die Einbindung der lokalen Bevölkerung.\n\nViele Länder beschränken Jagd und Handel. Anhang I des CITES-Abkommens verbietet außerdem den internationalen Handel mit wild gefangenen Tieren.\n\nGeschützte Gebiete und Wildtierkorridore stärken die Leopardpopulationen und verringern gleichzeitig Konflikte zwischen Mensch und Tier. Aufklärungsprogramme informieren die Bevölkerung über die ökologische Bedeutung der Leoparden und schaffen Anreize für ein friedliches Zusammenleben, etwa durch Ausgleichszahlungen für von Leoparden gerissene Nutztiere oder die Förderung von Ökotourismus.\n\nLangfristiger Erfolg hängt von fortlaufender Finanzierung, Forschung und Zusammenarbeit zwischen Regierungen, NGOs und lokalen Gemeinschaften ab.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Despite its large range and adaptability, the African Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Despite its large range and adaptability, the African Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está considerado Vulnerable. La expansión agrícola y urbana, la deforestación, la pérdida de presas, la caza furtiva y el comercio ilegal son amenazas importantes.\n\nLa conservación incluye protección legal, hábitats protegidos, corredores de fauna y trabajo con comunidades locales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est considéré Vulnérable. L'expansion agricole et urbaine, la déforestation, la diminution des proies, le braconnage et le commerce illégal sont les principales menaces.\n\nLa conservation repose sur la protection juridique, les habitats protégés, les corridors écologiques et la participation des communautés locales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È considerato Vulnerabile. Espansione agricola e urbana, deforestazione, riduzione delle prede, bracconaggio e commercio illegale sono minacce importanti.\n\nLa conservazione comprende protezione legale, habitat protetti, corridoi faunistici e coinvolgimento delle comunità locali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É considerado Vulnerável. Expansão agrícola e urbana, desmatamento, redução das presas, caça ilegal e comércio ilegal são ameaças importantes.\n\nA conservação inclui proteção legal, áreas protegidas, corredores de fauna e participação das comunidades locais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "危急種とされています。農地・都市の拡大、森林伐採、獲物の減少、密猟、違法取引が大きな脅威です。\n\n法的保護、生息地保全、野生動物回廊、地域社会との協力が保全の中心です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被视为易危。农业和城市扩张、森林砍伐、猎物减少、偷猎和非法贸易都是重要威胁。\n\n保护措施包括法律保护、生境保护、野生动物通道以及与当地社区合作。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Leoparden sind Einzelgänger, nur Muttertiere ziehen ihre Jungen groß.\n\nAfrikanische Leoparden können sich ganzjährig paaren. Östruszyklen dauern etwa 46 Tage und das Weibchen ist pro Zyklus eine Woche lang empfänglich. Männchen verfolgen Weibchen anhand ihrer Laute und Urinmarkierungen. Ein Pärchen bleibt einige Tage zusammen und paart sich in dieser Zeit mehrmals, bevor es sich wieder trennt.\n\nDie Tragzeit dauert 3 bis 3,5 Monate, nach denen ein Wurf von 2 bis 4 Jungen in einem Bau oder einer Felsspalte geboren wird, wobei in freier Wildbahn nur 40 bis 50 % der Jungen ihr erstes Jahr überleben. Sie werden blind und hilflos geboren und bleiben die ersten Wochen ihres Lebens im Bau. Mit 9 Wochen beginnen sie, feste Nahrung zu sich zu nehmen, und im Alter von 3 Monaten fangen sie an, ihrer Mutter auf Jagdausflügen zu folgen. Die Jungen bleiben bis zu 2 Jahre bei der Mutter, auch wenn sie ab dem ersten Lebensjahr allein überleben können.\n\nNach der Trennung von ihrer Mutter können junge Leoparden noch eine Weile mit ihren Geschwistern umherziehen, bevor sie schließlich ganz in einen einzelgängerischen Lebensstil fallen. Leoparden erreichen die Geschlechtsreife im Alter von etwa 2,5 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "African Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "African Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitario; solo las madres crían a sus cachorros.\n\nPuede reproducirse todo el año. La gestación dura 3–3,5 meses y nacen 2–4 cachorros. Solo el 40–50% sobrevive al primer año en libertad.\n\nLos cachorros empiezan a comer alimento sólido a las 9 semanas, siguen a la madre en cacerías desde los 3 meses y permanecen con ella hasta 2 años. Alcanzan la madurez sexual alrededor de los 2,5 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est solitaire; seules les mères élèvent les jeunes.\n\nLa reproduction peut avoir lieu toute l'année. La gestation dure 3 à 3,5 mois et 2 à 4 petits naissent. Dans la nature, seuls 40 à 50% survivent à leur première année.\n\nLes jeunes commencent à manger des aliments solides à 9 semaines, suivent leur mère à la chasse vers 3 mois et restent avec elle jusqu'à 2 ans. La maturité sexuelle est atteinte vers 2,5 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario; solo le madri allevano i piccoli.\n\nPuò riprodursi tutto l'anno. La gestazione dura 3–3,5 mesi e nascono 2–4 cuccioli. In natura solo il 40–50% sopravvive al primo anno.\n\nI piccoli iniziano a mangiare cibo solido a 9 settimane, seguono la madre durante la caccia a circa 3 mesi e restano con lei fino a 2 anni. La maturità sessuale viene raggiunta verso 2,5 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitário; apenas as mães criam os filhotes.\n\nPode se reproduzir o ano todo. A gestação dura 3–3,5 meses e nascem 2–4 filhotes. Na natureza, apenas 40–50% sobrevivem ao primeiro ano.\n\nOs filhotes começam a comer alimento sólido com 9 semanas, acompanham a mãe em caçadas por volta de 3 meses e ficam com ela por até 2 anos. A maturidade sexual ocorre por volta dos 2,5 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性で、子育てをするのは母親だけです。\n\n一年中繁殖できます。妊娠期間は3～3.5か月で、2～4頭の子を産みます。野生では最初の1年を生き延びるのは40～50%です。\n\n子は9週で固形物を食べ始め、3か月頃から母親の狩りについて行き、最長2年間母親と暮らします。約2.5歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，只有母兽负责抚养幼崽。\n\n全年均可繁殖。妊娠期3～3.5个月，每胎2～4只幼崽。野外仅40～50%的幼崽能活过第一年。\n\n幼崽9周开始吃固体食物，3个月左右开始跟随母亲狩猎，最长可与母亲生活2年。约2.5岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Leoparden leben verstärkt auf Bäumen und nutzen sie, um ihre getötete Beute unerreichbar für andere, stärkere Raubtiere wie Löwen, Hyänen oder Wildhunde zu lagern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Afrikanische Leopard wurde sehr wahrscheinlich in Nordafrika ausgerottet und nur die Subsahara-Populationen verbleiben in ihrem ursprünglichen Lebensraum.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Leoparden treten manchmal als melanistische Morphe mit schwarzer Grundfellfarbe auf. In bestimmten Lichtverhältnissen sind trotzdem noch die Rosetten zu erkennen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zulu verehren den Leoparden als edle, tapfere und ehrwürdige Kreatur. In ihrer Sprache heißt er „Ingwe“.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Leoparden besitzen eine phänomenale Sicht, die ihr nächtliches Jagdverhalten unterstützt. Sie können etwa 7-mal so gut im Dunkeln sehen wie Menschen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "African Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The African Leopard has very probably been extirpated from North Africa, leaving only sub-Saharan populations in its original range.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leopards sometimes occur as melanistic morphs with a black ground colour, while the rosettes remain visible in certain light.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Zulu revere the leopard as a noble, brave and dignified creature and call it 'Ingwe'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leopards have exceptional eyesight that supports nocturnal hunting and can see around seven times better than humans in the dark.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "African Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The African Leopard has very probably been extirpated from North Africa, leaving only sub-Saharan populations in its original range.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leopards sometimes occur as melanistic morphs with a black ground colour, while the rosettes remain visible in certain light.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The Zulu revere the leopard as a noble, brave and dignified creature and call it 'Ingwe'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Leopards have exceptional eyesight that supports nocturnal hunting and can see around seven times better than humans in the dark.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Utiliza los árboles para guardar presas fuera del alcance de depredadores más fuertes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Probablemente fue extirpado del norte de África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede presentar melanismo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los zulúes veneran al leopardo y lo llaman 'Ingwe'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede ver unas siete veces mejor que los humanos en la oscuridad.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il utilise les arbres pour mettre ses proies à l'abri de prédateurs plus puissants.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il a probablement disparu d'Afrique du Nord.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Des formes mélaniques existent.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les Zoulous vénèrent le léopard et l'appellent « Ingwe ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa vision nocturne est environ sept fois meilleure que celle des humains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Usa gli alberi per conservare le prede lontano da predatori più forti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Probabilmente è stato estirpato dal Nord Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possono comparire forme melaniche.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli Zulu venerano il leopardo e lo chiamano 'Ingwe'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La vista notturna è circa sette volte migliore di quella umana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Usa árvores para guardar presas fora do alcance de predadores mais fortes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Provavelmente foi extirpado do norte da África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Podem ocorrer formas melanísticas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os zulus veneram o leopardo e o chamam de 'Ingwe'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sua visão noturna é cerca de sete vezes melhor que a humana.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "木の上に獲物を置き、ライオンやハイエナなどから守ります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "北アフリカではおそらく絶滅しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黒化型が現れることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ズールーの人々はヒョウを『Ingwe』と呼び、尊敬しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "暗闇では人間の約7倍よく見えるとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "会把猎物拖到树上，避开狮子、鬣狗和野犬等更强壮的捕食者。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "在北非很可能已经局部灭绝。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "有时会出现黑化型个体。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "祖鲁人把豹视为高贵、勇敢且值得尊敬的动物，并称其为“Ingawe/Ingwe”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "夜间视力约为人类的7倍。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_African_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Panthera pardus/Panthera pardus pardus/map/Panthera pardus pardus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNTZhYjg2MGIvTGVvcGFyZF9BZnJpY2FuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Afrikanischer Leopard – Planet Zoo 2",
+            "en": "African Leopard – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Afrikanischen Leoparden aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the African Leopard."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Panthera pardus/Panthera pardus pardus/bilder/Panthera pardus pardus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_African_illustration.jpg",
+          "alt": {
+            "de": "Afrikanischer Leopard – Zoopedia-Illustration",
+            "en": "African Leopard – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Afrikanischen Leoparden aus der Planet Zoo 2 Zoopedia.",
+            "en": "African Leopard illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Panthera pardus/Panthera pardus pardus/bilder/Panthera pardus pardus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Afrikanischer Leopard",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/afrikanischer-leopard",
+        "en": "https://www.planetzoogame.com/2/zoopedia/african-leopard",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/african-leopard",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/leopardo-africano",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/l%C3%A9opard-d-afrique",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/leopardo-africano",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/leopardo-africano",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB%E3%83%92%E3%83%A7%E3%82%A6",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%9D%9E%E6%B4%B2%E8%B1%B9"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 2–4 Junge pro Wurf bleiben in der Fortpflanzungs-Prosa, weil kein sicher bestätigter strukturierter Nachwuchs-Typ verwendet wird. Der Auszug nennt keinen konkreten Biomtyp, daher bleibt der strukturierte Biomwert offen. Das Nahrungsnetz bleibt leer, weil keine projektkompatiblen Beute-Ziel-IDs aus dem Zoopedia-Auszug bestätigt sind."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

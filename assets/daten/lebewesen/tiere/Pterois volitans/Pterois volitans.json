@@ -1,0 +1,822 @@
+{
+  "id": "Pterois volitans",
+  "identitaet": {
+    "namen": {
+      "de": "Rotfeuerfisch",
+      "en": "Red Lionfish",
+      "en-US": "Red Lionfish",
+      "es": "Pez escorpión",
+      "fr": "Rascasse volante",
+      "it": "Pesce scorpione",
+      "pt-BR": "Peixe-leão",
+      "ja": "ハナミノカサゴ",
+      "zh-Hans": "魔鬼蓑鲉"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [],
+    "biome": [
+      "Riff"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Perciformes",
+          "familie": "Scorpaenidae",
+          "gattung": "Pterois",
+          "art": "Pterois volitans",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "min": 0.25,
+          "max": 0.32,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Männchen werden laut Zoopedia etwas größer als Weibchen; weitere sichtbare Geschlechtsunterschiede werden nicht genannt.",
+            "en": "According to the Zoopedia, males grow slightly larger than females; no other visible sex differences are listed."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "min": 1.2,
+          "max": 1.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Gleichzeitig beschreibt sie den Rotfeuerfisch im westlichen Zentralatlantik als invasive Art mit erheblichen Auswirkungen auf heimische Riff-Fischbestände.",
+            "en": "The Zoopedia lists the conservation status as Least Concern, while also describing the Red Lionfish as an invasive species in the western central Atlantic with major impacts on native reef-fish populations."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass Rotfeuerfische mit etwa einem Jahr ausgewachsen sind.",
+            "en": "The Zoopedia states that Red Lionfish are fully grown at around one year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Rotfeuerfische als Einzelgänger, die während der Paarungszeit vorübergehend Harems bilden können.",
+            "en": "The Zoopedia describes Red Lionfish as solitary, although they may temporarily form harems during the breeding season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Korallenriffe ausdrücklich als typischen Lebensraum; zusätzlich werden Felsformationen, Lagunen und Seegraswiesen genannt.",
+            "en": "The Zoopedia explicitly lists coral reefs as typical habitat, alongside rocky formations, lagoons and seagrass beds."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt den Rotfeuerfisch als Spitzenprädator, der große Mengen an Jungfischen und Krebstieren frisst.",
+              "en": "The Zoopedia describes the Red Lionfish as a top predator that consumes large quantities of juvenile fish and crustaceans."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Rotfeuerfisch (Pterois volitans) ist ein giftiger Riff-Fisch, der im Indo-Pazifik, einschließlich des Roten Meeres, des Indischen Ozeans und des westlichen Pazifiks, beheimatet ist. Durch Freilassungen aus Aquarien hat er sich im Westatlantik, in der Karibik und in Teilen des Golfs von Mexiko als invasive Spezies etabliert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Lionfish (Pterois volitans) is a venomous reef fish native to the Indo-Pacific, including the Red Sea, Indian Ocean and western Pacific. After aquarium releases, it became established as an invasive species in the western Atlantic, Caribbean and parts of the Gulf of Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Lionfish (Pterois volitans) is a venomous reef fish native to the Indo-Pacific, including the Red Sea, Indian Ocean and western Pacific. After aquarium releases, it became established as an invasive species in the western Atlantic, Caribbean and parts of the Gulf of Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez escorpión (Pterois volitans) es un pez venenoso de arrecife nativo del Indo-Pacífico y establecido como especie invasora en el Atlántico occidental, el Caribe y partes del golfo de México.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La rascasse volante (Pterois volitans) est un poisson de récif venimeux originaire de l'Indo-Pacifique, devenu invasif dans l'Atlantique occidental, les Caraïbes et certaines parties du golfe du Mexique.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce scorpione (Pterois volitans) è un pesce velenoso di barriera originario dell'Indo-Pacifico e diventato invasivo nell'Atlantico occidentale, nei Caraibi e in parti del golfo del Messico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-leão (Pterois volitans) é um peixe venenoso de recife nativo do Indo-Pacífico e invasor no Atlântico ocidental, Caribe e partes do golfo do México.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ハナミノカサゴ（Pterois volitans）は、紅海、インド洋、西太平洋を含むインド太平洋原産の有毒なサンゴ礁魚で、西大西洋やカリブ海、メキシコ湾の一部では外来種として定着しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "魔鬼蓑鲉（Pterois volitans）是一种原产于印度洋-太平洋的有毒珊瑚礁鱼类，包括红海、印度洋和西太平洋；如今在西大西洋、加勒比海和墨西哥湾部分地区已成为入侵物种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Rotfeuerfisch (auch Pterois volitans) ist ein giftiger Riff-Fisch, der im Indo-Pazifik, einschließlich des Roten Meeres, des Indischen Ozeans und des westlichen Pazifiks, beheimatet ist. Weil er aus Aquarien freigelassen wurde, hat er sich im Westatlantik, in der Karibik und in Teilen des Golfs von Mexiko als invasive Spezies etabliert, wo er die heimischen Meeresökosysteme bedroht. Rotfeuerfische leben typischerweise in Korallenriffen, Felsformationen, Lagunen und Seegraswiesen.\n\nDer Fisch zeichnet sich durch seine weißen und roten Streifen am Körper, seine fächerartigen Brustflossen und seine langen giftigen Dorsalstacheln aus.\n\nErwachsene Tiere erreichen eine Länge von 25 cm bis 32 cm und wiegen 1,2 kg bis 1,5 kg, wobei die Männchen etwas größer werden als die Weibchen. Abgesehen davon gibt es keine sichtbaren Unterschiede zwischen den Geschlechtern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Lionfish (Pterois volitans) is a venomous reef fish native to the Indo-Pacific, including the Red Sea, Indian Ocean and western Pacific. After aquarium releases, it became established as an invasive species in the western Atlantic, Caribbean and parts of the Gulf of Mexico, where it threatens native marine ecosystems. Red Lionfish typically live around coral reefs, rocky formations, lagoons and seagrass beds.\n\nThe species is characterised by red and white body stripes, fan-like pectoral fins and long venomous dorsal spines.\n\nAdults reach 25–32 cm in length and weigh 1.2–1.5 kg. Males grow slightly larger than females, but otherwise there are no visible differences between the sexes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Lionfish (Pterois volitans) is a venomous reef fish native to the Indo-Pacific, including the Red Sea, Indian Ocean and western Pacific. After aquarium releases, it became established as an invasive species in the western Atlantic, Caribbean and parts of the Gulf of Mexico, where it threatens native marine ecosystems. Red Lionfish typically live around coral reefs, rocky formations, lagoons and seagrass beds.\n\nThe species is characterised by red and white body stripes, fan-like pectoral fins and long venomous dorsal spines.\n\nAdults reach 25–32 cm in length and weigh 1.2–1.5 kg. Males grow slightly larger than females, but otherwise there are no visible differences between the sexes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez escorpión vive normalmente en arrecifes de coral, formaciones rocosas, lagunas y praderas marinas.\n\nPresenta bandas rojas y blancas, grandes aletas pectorales en forma de abanico y largas espinas dorsales venenosas.\n\nLos adultos miden 25–32 cm y pesan 1,2–1,5 kg. Los machos son algo mayores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle vit généralement sur les récifs coralliens, les formations rocheuses, dans les lagons et les herbiers marins.\n\nElle présente des bandes rouges et blanches, de grandes nageoires pectorales en éventail et de longues épines dorsales venimeuses.\n\nLes adultes mesurent 25–32 cm et pèsent 1,2–1,5 kg. Les mâles sont légèrement plus grands.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive normalmente nelle barriere coralline, tra formazioni rocciose, lagune e praterie di fanerogame marine.\n\nHa strisce rosse e bianche, grandi pinne pettorali a ventaglio e lunghe spine dorsali velenose.\n\nGli adulti misurano 25–32 cm e pesano 1,2–1,5 kg. I maschi sono leggermente più grandi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Vive normalmente em recifes de coral, formações rochosas, lagoas e pradarias marinhas.\n\nTem listras vermelhas e brancas, grandes nadadeiras peitorais em leque e longos espinhos dorsais venenosos.\n\nAdultos medem 25–32 cm e pesam 1,2–1,5 kg. Machos são um pouco maiores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "サンゴ礁、岩礁、ラグーン、海草藻場などに生息します。\n\n赤白の縞模様、扇状の胸びれ、長い有毒な背びれ棘が特徴です。\n\n成体は25～32cm、体重1.2～1.5kgで、雄がやや大きくなります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "常生活于珊瑚礁、岩石构造、潟湖和海草床。\n\n具有红白相间的条纹、扇状胸鳍以及细长的有毒背鳍棘。\n\n成体体长25～32厘米，体重1.2～1.5千克，雄性略大。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Rotfeuerfisch ist als „nicht gefährdet“ eingestuft, stellt aber als invasive Spezies im westlichen Zentralatlantik eine große Herausforderung für die Arterhaltung dar. Durch den Aquarienhandel in den 1980er Jahren eingeführt, hat sich der Feuerfisch seitdem schnell verbreitet, weil er keine natürlichen Fressfeinde hat und sich schnell vermehrt. Durch seine vielseitige Ernährung ist er in vielen befallenen Lebensräumen zum Spitzenprädator geworden und reduziert die Populationen einheimischer Riff-Fische erheblich, da er große Mengen an Jungfischen und Krebstieren frisst.\n\nEs wurden verschiedene Maßnahmen zur Eindämmung und Kontrolle ihrer Auswirkungen umgesetzt. Organisierte Programme zur Bekämpfung von Rotfeuerfischen, wie Speerfisch-Wettbewerbe und gezielte Tauchgänge, sollen die lokalen Populationen reduzieren und den Druck auf einheimische Spezies verringern. Sie werden außerdem als Nahrungsquelle für Menschen beworben, und es werden sichere Umgangstechniken vermittelt, um die kommerzielle Befischung zu fördern. Forschungen sollen Aufschluss darüber geben, wie einheimische Raubtiere Rotfeuerfische langfristig als Nahrungsquelle akzeptieren können.\n\nAuch wenn es im Moment nicht möglich ist, das Problem vollständig zu beseitigen, kann man die Ausbreitung und die ökologischen Schäden zumindest minimieren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Red Lionfish is classified as Least Concern, but as an invasive species in the western central Atlantic it represents a major conservation challenge. Introduced through the aquarium trade in the 1980s, it spread rapidly because it has few natural predators and reproduces quickly. Its varied diet has made it a top predator in many invaded habitats, where it greatly reduces native reef-fish populations by consuming large numbers of juveniles and crustaceans.\n\nControl measures include organised lionfish removals, spearfishing competitions and targeted dives. The fish is also promoted as food for humans, while safe handling methods are taught to encourage commercial harvest. Research is investigating how native predators might increasingly accept lionfish as prey.\n\nAlthough complete eradication is currently impossible, spread and ecological damage can be reduced.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Red Lionfish is classified as Least Concern, but as an invasive species in the western central Atlantic it represents a major conservation challenge. Introduced through the aquarium trade in the 1980s, it spread rapidly because it has few natural predators and reproduces quickly. Its varied diet has made it a top predator in many invaded habitats, where it greatly reduces native reef-fish populations by consuming large numbers of juveniles and crustaceans.\n\nControl measures include organised lionfish removals, spearfishing competitions and targeted dives. The fish is also promoted as food for humans, while safe handling methods are taught to encourage commercial harvest. Research is investigating how native predators might increasingly accept lionfish as prey.\n\nAlthough complete eradication is currently impossible, spread and ecological damage can be reduced.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificado como de Preocupación Menor, pero como especie invasora en el Atlántico occidental representa un grave problema ecológico. Consume grandes cantidades de peces juveniles y crustáceos.\n\nLos programas de control incluyen capturas dirigidas, buceo, pesca con arpón y promoción de su consumo humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est classée en Préoccupation mineure, mais son caractère invasif dans l'Atlantique occidental pose un problème écologique majeur. Elle consomme de grandes quantités de jeunes poissons et de crustacés.\n\nLes programmes de contrôle comprennent des captures ciblées, des plongées, la chasse sous-marine et la promotion de sa consommation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo, ma come specie invasiva nell'Atlantico occidentale rappresenta un serio problema ecologico. Consuma grandi quantità di giovani pesci e crostacei.\n\nI programmi di controllo comprendono catture mirate, immersioni, pesca subacquea e promozione del consumo umano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante, mas como espécie invasora no Atlântico ocidental representa um sério problema ecológico. Consome grandes quantidades de peixes jovens e crustáceos.\n\nProgramas de controle incluem remoção direcionada, mergulhos, pesca submarina e incentivo ao consumo humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種ですが、西大西洋では侵略的外来種として大きな生態系問題となっています。多くの稚魚や甲殻類を捕食します。\n\n駆除ダイビング、スピアフィッシング、食用利用の推進などが対策として行われています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为无危，但在西大西洋作为入侵物种造成严重生态问题。它会大量捕食幼鱼和甲壳类。\n\n控制措施包括定向捕捞、潜水清除、鱼叉捕捞以及鼓励食用。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Rotfeuerfische sind Einzelgänger, bilden aber während der Paarungszeit vorübergehend Harems.\n\nRotfeuerfische paaren sich das ganze Jahr über, am häufigsten aber in den wärmeren Monaten, wobei die Paarungshäufigkeit bis zu alle vier Tage betragen kann. Ein einzelnes, Revier besetzendes Männchen kann einen temporären Harem von bis zu 7 paarungsbereiten Weibchen um sich scharen. Die Balz in einem solchen Harem umfasst Umkreisen, Seitwärtsbewegungen und Imponiergehabe. Als Massenlaicher legen die Weibchen jeweils 4.000 bis 30.000 Eier ab, die knapp unter der Wasseroberfläche treiben, während das Männchen sein Sperma abgibt und die Eier so extern befruchtet werden.\n\nNach der Befruchtung wachsen die Embryonen schnell und die Larven schlüpfen etwa 36 Stunden nach der Befruchtung. Die Larven der Feuerfische schwimmen frei und sind pelagisch. Sie entwickeln sich 20 bis 40 Tage lang, während sie sich von mikroskopisch kleinem Zooplankton ernähren. Danach werden sie zu Jungfischen, die im Riff leben, und sie lassen sich in der benthischen Zone nieder.\n\nRotfeuerfische sind mit etwa einem Jahr ausgewachsen, wenn die Weibchen 17,5 cm bis 18 cm und die Männchen 10 cm bis 18 cm lang sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Red Lionfish are solitary but temporarily form harems during the breeding season.\n\nThey mate throughout the year, most often in warmer months, and may breed as frequently as every four days. A territorial male may gather a temporary harem of up to seven receptive females. During courtship they circle, move sideways and display. Females release 4,000–30,000 eggs at a time near the surface while the male releases sperm for external fertilisation.\n\nEmbryos develop quickly and larvae hatch about 36 hours after fertilisation. The larvae are free-swimming and pelagic, developing for 20–40 days while feeding on microscopic zooplankton. They then become juvenile reef fish and settle into the benthic zone.\n\nRed Lionfish are fully grown at around one year, when females are 17.5–18 cm long and males 10–18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Red Lionfish are solitary but temporarily form harems during the breeding season.\n\nThey mate throughout the year, most often in warmer months, and may breed as frequently as every four days. A territorial male may gather a temporary harem of up to seven receptive females. During courtship they circle, move sideways and display. Females release 4,000–30,000 eggs at a time near the surface while the male releases sperm for external fertilisation.\n\nEmbryos develop quickly and larvae hatch about 36 hours after fertilisation. The larvae are free-swimming and pelagic, developing for 20–40 days while feeding on microscopic zooplankton. They then become juvenile reef fish and settle into the benthic zone.\n\nRed Lionfish are fully grown at around one year, when females are 17.5–18 cm long and males 10–18 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitario, aunque forma harenes temporales durante la reproducción.\n\nPuede reproducirse durante todo el año y hasta cada cuatro días. Las hembras liberan 4.000–30.000 huevos, fecundados externamente.\n\nLas larvas eclosionan unas 36 horas después y se desarrollan durante 20–40 días antes de asentarse en el arrecife.\n\nAlcanza el tamaño adulto aproximadamente al año.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est solitaire mais forme temporairement des harems pendant la reproduction.\n\nElle peut se reproduire toute l'année et jusqu'à tous les quatre jours. Les femelles libèrent 4 000–30 000 œufs qui sont fécondés extérieurement.\n\nLes larves éclosent environ 36 heures plus tard et se développent pendant 20–40 jours avant de s'installer sur le récif.\n\nElle atteint sa taille adulte vers un an.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario ma forma temporaneamente harem durante la riproduzione.\n\nPuò riprodursi tutto l'anno e fino a ogni quattro giorni. Le femmine rilasciano 4.000–30.000 uova, fecondate esternamente.\n\nLe larve schiudono dopo circa 36 ore e si sviluppano per 20–40 giorni prima di stabilirsi sulla barriera.\n\nRaggiunge le dimensioni adulte intorno a un anno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitário, mas forma haréns temporários durante a reprodução.\n\nPode se reproduzir o ano todo e até a cada quatro dias. Fêmeas liberam 4.000–30.000 ovos, fecundados externamente.\n\nAs larvas eclodem cerca de 36 horas depois e se desenvolvem por 20–40 dias antes de se estabelecer no recife.\n\nAtinge o tamanho adulto por volta de um ano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "通常は単独性ですが、繁殖期には一時的なハーレムを形成します。\n\n一年中繁殖でき、最短で4日ごとに繁殖します。雌は4,000～30,000個の卵を放出し、体外受精します。\n\n幼生は受精後約36時間で孵化し、20～40日間成長してからサンゴ礁に定着します。\n\n約1歳で成体になります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "通常独居，但繁殖期会暂时形成后宫群。\n\n全年均可繁殖，频率最高可达每4天一次。雌性每次释放4,000～30,000枚卵，并进行体外受精。\n\n幼体在受精后约36小时孵化，持续发育20～40天后进入珊瑚礁底栖生活。\n\n约1岁时达到成体阶段。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Rotfeuerfisch besitzt giftige Stacheln entlang seiner Rücken-, After- und Beckenflossen, die Fressfeinden und Menschen schmerzhafte Stiche zufügen können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Rotfeuerfisch kann sich alle 4 Tage vermehren, wobei die Weibchen unter tropischen Bedingungen bis zu 2 Millionen Eier pro Jahr freisetzen können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Rotfeuerfisch ist ein Lauerjäger, der seine großen, fächerartigen Brustflossen nutzt, um seine Beute in die Enge zu treiben, und dann mit schnellen Angriffen zuschlägt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Rotfeuerfisch kann Beute fressen, die halb so groß ist wie er selbst.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Rotfeuerfisch hat über 7.000.000 km² der Weltmeere erobert, darunter den Golf von Mexiko, die Karibik und die Ostküste der USA.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Red Lionfish have venomous spines along the dorsal, anal and pelvic fins that can inflict painful stings.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can reproduce every four days, and females in tropical conditions may release up to two million eggs per year.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They are ambush predators that use large fan-like pectoral fins to corner prey before striking quickly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can eat prey up to half their own size.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have colonised more than 7,000,000 km² of ocean, including the Gulf of Mexico, Caribbean and eastern coast of the United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Red Lionfish have venomous spines along the dorsal, anal and pelvic fins that can inflict painful stings.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can reproduce every four days, and females in tropical conditions may release up to two million eggs per year.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They are ambush predators that use large fan-like pectoral fins to corner prey before striking quickly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They can eat prey up to half their own size.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have colonised more than 7,000,000 km² of ocean, including the Gulf of Mexico, Caribbean and eastern coast of the United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Sus espinas dorsales, anales y pélvicas son venenosas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede reproducirse cada cuatro días y liberar hasta dos millones de huevos al año.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es un depredador de emboscada.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede comer presas de hasta la mitad de su propio tamaño.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ha colonizado más de 7.000.000 km² de océano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ses épines dorsales, anales et pelviennes sont venimeuses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle peut se reproduire tous les quatre jours et libérer jusqu'à deux millions d'œufs par an.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "C'est un prédateur à l'affût.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle peut avaler des proies atteignant la moitié de sa propre taille.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle a colonisé plus de 7 000 000 km² d'océan.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le spine dorsali, anali e pelviche sono velenose.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Può riprodursi ogni quattro giorni e liberare fino a due milioni di uova l'anno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È un predatore d'agguato.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Può mangiare prede grandi fino alla metà del proprio corpo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ha colonizzato oltre 7.000.000 km² di oceano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os espinhos dorsais, anais e pélvicos são venenosos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pode se reproduzir a cada quatro dias e liberar até dois milhões de ovos por ano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É um predador de emboscada.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pode comer presas de até metade do próprio tamanho.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Colonizou mais de 7.000.000 km² de oceano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "背びれ、尻びれ、腹びれの棘には毒があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "4日ごとに繁殖でき、年間最大200万個の卵を放出することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "待ち伏せ型の捕食者です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "自分の半分ほどの大きさの獲物も食べられます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "700万km²以上の海域に分布を拡大しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "背鳍、臀鳍和腹鳍上的棘具有毒性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "可每4天繁殖一次，在热带条件下每年最多释放约200万枚卵。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "属于伏击型捕食者。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "可吞食相当于自身一半大小的猎物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "已经扩散到超过700万平方公里的海域。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/afb19a34/Lionfish_Red_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Pterois volitans/map/Pterois volitans map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYWZiMTlhMzQvTGlvbmZpc2hfUmVkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Rotfeuerfisch – Planet Zoo 2",
+            "en": "Red Lionfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Rotfeuerfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Red Lionfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Pterois volitans/bilder/Pterois volitans 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/afb19a34/Lionfish_Red_illustration.jpg",
+          "alt": {
+            "de": "Rotfeuerfisch – Zoopedia-Illustration",
+            "en": "Red Lionfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Rotfeuerfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Red Lionfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Pterois volitans/bilder/Pterois volitans illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Rotfeuerfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/rotfeuerfisch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/red-lionfish",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/red-lionfish",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pez-escorpi%C3%B3n",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/rascasse-volante",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-scorpione",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/peixe-le%C3%A3o",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8F%E3%83%8A%E3%83%9F%E3%83%8E%E3%82%AB%E3%82%B5%E3%82%B4",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%AD%94%E9%AC%BC%E8%93%91%E9%B2%89"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Der Kontinentfilter bleibt offen, weil die Quelle 'Westlicher Indo-Pazifik' statt eines Projekt-Kontinentwerts nennt. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 4.000–30.000 Eier, Schlupf nach etwa 36 Stunden und 20–40 Tage Larvenentwicklung bleiben in der Fortpflanzungs-Prosa, weil kein sicher bestätigter Ei-/Inkubations-Typ verwendet wird. Die invasive Verbreitung im Westatlantik/Karibik/Golf von Mexiko wird nur in der Prosa geführt und nicht in den nativen Filter übernommen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

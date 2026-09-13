@@ -1,0 +1,896 @@
+{
+  "id": "Ursus arctos arctos",
+  "identitaet": {
+    "namen": {
+      "de": "Europäischer Braunbär",
+      "en": "Eurasian Brown Bear",
+      "en-US": "Eurasian Brown Bear",
+      "es": "Oso pardo europeo",
+      "fr": "Ours brun d'Europe",
+      "it": "Orso bruno eurasiatico",
+      "pt-BR": "Urso-pardo-europeu",
+      "ja": "ヨーロッパヒグマ",
+      "zh-Hans": "欧洲棕熊"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "europe",
+      "asia"
+    ],
+    "biome": [
+      "Taiga",
+      "Gemäßigt",
+      "Grasland",
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Ursidae",
+          "gattung": "Ursus",
+          "art": "Ursus arctos arctos",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 2.2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für ein durchschnittliches Männchen 2,2 m Körperlänge.",
+            "en": "The Zoopedia gives 2.2 m body length for an average male."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 1.8,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für ein durchschnittliches Weibchen 1,8 m Körperlänge.",
+            "en": "The Zoopedia gives 1.8 m body length for an average female."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 350,
+          "max": 500,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 150,
+          "max": 300,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Europäischen Braunbären gegenwärtig als nicht gefährdet ein, weist aber auf große historische Arealverluste und lokale Ausrottungen hin.",
+            "en": "The Zoopedia currently classifies the Eurasian Brown Bear as Least Concern while noting major historical range losses and local extinctions."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 100,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Der bereitgestellte Zoopedia-Auszug zeigt beim Wildbestand wörtlich „100“. Ein Tausender-Faktor oder eine andere Einheit ist dort nicht angegeben und wird daher nicht ergänzt.",
+            "en": "The supplied Zoopedia extract literally displays '100' for the wild population. No thousands multiplier or other unit is shown, so none has been added."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 4,
+          "max": 6,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia weist darauf hin, dass die tatsächliche Fortpflanzung abhängig von Umwelt- und Sozialbedingungen auch später erfolgen kann.",
+            "en": "The Zoopedia notes that actual reproduction may occur later depending on environmental and social conditions."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 7,
+          "max": 8,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt zusätzlich eine verzögerte Einnistung: Die Befruchtung erfolgt kurz nach der Paarung, die Einnistung aber erst im Spätherbst kurz vor dem Winterschlaf.",
+            "en": "The Zoopedia additionally describes delayed implantation: fertilisation occurs soon after mating, but implantation takes place in late autumn shortly before hibernation."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": null,
+          "max": 4,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein Wurf besteht laut Zoopedia aus bis zu 4, meist 2 oder 3 Jungen. Die Jungen bleiben normalerweise etwa 1,5 bis 2,5 Jahre bei der Mutter.",
+            "en": "According to the Zoopedia, a litter contains up to four cubs, usually two or three. The young normally remain with their mother for about 1.5–2.5 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Abgesehen von Muttertieren mit Jungen sind Europäische Braunbären Einzelgänger. Sie kommen zur Paarung, bei Konkurrenz um Partner oder an besonders ergiebigen Nahrungsquellen zeitweise zusammen.",
+            "en": "Apart from mothers with cubs, Eurasian Brown Bears are solitary. They may temporarily gather for mating, competition over mates or at especially rich food sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "taiga",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "temperate",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "wetlands",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "hibernation",
+          "hinweis": {
+            "de": "Die Zoopedia nennt als Tierfakt bis zu 7 Monate Winterschlaf in freier Wildbahn.",
+            "en": "The Zoopedia states in an animal fact that wild Eurasian Brown Bears may hibernate for up to seven months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Braunbär (Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaften und Feuchtgebieten zu finden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El oso pardo europeo (Ursus arctos arctos) es una subespecie del oso pardo presente en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'ours brun d'Europe (Ursus arctos arctos) est une sous-espèce d'ours brun présente en Europe et en Russie centrale, dans les forêts boréales et tempérées, les prairies et les zones humides.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'orso bruno eurasiatico (Ursus arctos arctos) è una sottospecie dell'orso bruno presente in Europa e Russia centrale, in foreste boreali e temperate, praterie e zone umide.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O urso-pardo-europeu (Ursus arctos arctos) é uma subespécie de urso-pardo encontrada na Europa e na Rússia central, em florestas boreais e temperadas, campos e áreas úmidas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパヒグマ（Ursus arctos arctos）は、ヨーロッパとロシア中央部の亜寒帯林・温帯林、草原、湿地に生息するヒグマの亜種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲棕熊（Ursus arctos arctos）是棕熊的一个亚种，分布于欧洲和俄罗斯中部的北方针叶林、温带森林、草地和湿地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Braunbär (auch Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaften und Feuchtgebieten zu finden.\n\nEuropäische Braunbären besitzen ein dichtes, braunes Fell, einen großen Schulterhöcker, einen runden Kopf und kleine, abgerundete Ohren. Sie haben kräftige Vorderbeine mit langen Klauen, die sie zum Graben und Jagen nutzen.\n\nBraunbären können extrem groß werden, wobei es jedoch Größenunterschiede zwischen den verschiedenen Beständen gibt. Ein durchschnittlicher männlicher Bär wiegt zwischen 350 kg und 500 kg und wird 2,2 m lang, während ein durchschnittlicher weiblicher Bär zwischen 150 kg und 300 kg wiegt und 1,8 m lang wird.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurasian Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurasian Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El oso pardo europeo (Ursus arctos arctos) vive en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.\n\nPosee pelaje marrón denso, una gran joroba en los hombros, cabeza redondeada y orejas pequeñas. Sus fuertes extremidades delanteras tienen largas garras utilizadas para excavar y cazar.\n\nLos machos pesan normalmente 350–500 kg y miden unos 2,2 m; las hembras pesan 150–300 kg y miden unos 1,8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'ours brun d'Europe (Ursus arctos arctos) vit en Europe et en Russie centrale dans les forêts boréales et tempérées, les prairies et les zones humides.\n\nIl possède un pelage brun dense, une grosse bosse aux épaules, une tête ronde et de petites oreilles arrondies. Ses puissantes pattes antérieures portent de longues griffes utilisées pour creuser et chasser.\n\nUn mâle moyen pèse 350–500 kg et mesure environ 2,2 m, tandis qu'une femelle pèse 150–300 kg et mesure environ 1,8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'orso bruno eurasiatico (Ursus arctos arctos) vive in Europa e Russia centrale in foreste boreali e temperate, praterie e zone umide.\n\nHa folta pelliccia marrone, una grande gobba sulle spalle, testa rotonda e piccole orecchie arrotondate. Le forti zampe anteriori hanno lunghi artigli usati per scavare e cacciare.\n\nUn maschio medio pesa 350–500 kg ed è lungo circa 2,2 m; una femmina pesa 150–300 kg ed è lunga circa 1,8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O urso-pardo-europeu (Ursus arctos arctos) vive na Europa e Rússia central em florestas boreais e temperadas, campos e áreas úmidas.\n\nPossui pelagem marrom densa, grande corcova nos ombros, cabeça arredondada e orelhas pequenas. As patas dianteiras fortes têm garras longas usadas para cavar e caçar.\n\nUm macho médio pesa 350–500 kg e mede cerca de 2,2 m; uma fêmea pesa 150–300 kg e mede cerca de 1,8 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヨーロッパヒグマ（Ursus arctos arctos）は、ヨーロッパとロシア中央部の亜寒帯林・温帯林、草原、湿地に生息します。\n\n密な茶色の毛、肩の大きな隆起、丸い頭、小さく丸い耳が特徴です。強い前肢には長い爪があり、穴掘りや狩りに使います。\n\n平均的な雄は350～500kgで体長約2.2m、雌は150～300kgで約1.8mです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "欧洲棕熊（Ursus arctos arctos）生活在欧洲和俄罗斯中部的北方针叶林、温带森林、草地和湿地。\n\n具有浓密棕色毛发、明显的肩峰、圆头和小而圆的耳朵。强壮前肢带有长爪，用于挖掘和捕猎。\n\n平均雄性体重350～500千克，体长约2.2米；雌性150～300千克，体长约1.8米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Braunbär wird gegenwärtig als nicht gefährdet eingestuft, hat jedoch große Teile seines historischen Verbreitungsgebietes verloren. Jahrhundertelange Lebensraumzerstörung, Bejagung und gezielte Eindämmung der Spezies führten zu drastischen Bestandsrückgängen und lokaler Ausrottung. Anfang des 20. Jahrhunderts waren Bären aus weiten Teilen Westeuropas verschwunden und überlebten nur noch in abgelegenen Gebirgs- und Waldregionen. Mit wachsendem Umweltbewusstsein und rechtlichen Schutzinstrumenten wie der Fauna-Flora-Habitat-Richtlinie der Europäischen Union und der Berner Konvention wurden Grundlagen für Schutz und Erholung der Bestände geschaffen.\n\nUm- und Wiederansiedlungen spielten eine entscheidende Rolle bei der Rückkehr des Bären in frühere Lebensräume, etwa in der italienischen Provinz Trient oder in den Pyrenäen. Hier wurden Tiere aus Slowenien ausgewildert, um eine nahezu erloschene Population zu stärken. Solche Programme umfassen sorgfältig ausgewählte Tiere, behutsame Freilassungen, Nachbeobachtung sowie intensive Zusammenarbeit mit der Bevölkerung, um Konflikte zu minimieren.\n\nMehrere dieser Populationen vermehren sich inzwischen erfolgreich und breiten sich weiter aus. Damit gilt der Europäische Braunbär heute als eines der bemerkenswerten Beispiele für erfolgreichen Großraubtierschutz in Europa.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the Eurasian Brown Bear a notable example of successful large-carnivore conservation in Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the Eurasian Brown Bear a notable example of successful large-carnivore conservation in Europe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificado como de Preocupación Menor, aunque ha perdido gran parte de su distribución histórica. Siglos de destrucción del hábitat, caza y persecución provocaron fuertes descensos y extinciones locales. La protección legal y una mayor conciencia ambiental permitieron iniciar la recuperación.\n\nLas reintroducciones y traslocaciones han sido importantes en lugares como Trentino y los Pirineos, utilizando animales procedentes de Eslovenia y realizando seguimiento y cooperación con la población local.\n\nVarias poblaciones se reproducen ahora con éxito y se están expandiendo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est classé en Préoccupation mineure mais a perdu une grande partie de son aire historique. Des siècles de destruction de l'habitat, de chasse et de persécution ont provoqué de forts déclins et des extinctions locales. La protection juridique et la prise de conscience écologique ont permis la reprise de certaines populations.\n\nLes translocations et réintroductions ont joué un rôle important dans le Trentin et les Pyrénées, avec des animaux provenant notamment de Slovénie et un suivi étroit.\n\nPlusieurs populations se reproduisent aujourd'hui avec succès et continuent de s'étendre.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo ma ha perso gran parte dell'areale storico. Secoli di distruzione dell'habitat, caccia e persecuzione hanno provocato forti cali e estinzioni locali. La protezione legale e una maggiore consapevolezza ambientale hanno creato le condizioni per la ripresa.\n\nTraslocazioni e reintroduzioni sono state importanti in Trentino e nei Pirenei, anche con animali provenienti dalla Slovenia e un attento monitoraggio.\n\nDiverse popolazioni ora si riproducono con successo e continuano a espandersi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante, mas perdeu grande parte de sua distribuição histórica. Séculos de destruição de habitat, caça e perseguição provocaram fortes declínios e extinções locais. A proteção legal e o aumento da consciência ambiental possibilitaram a recuperação de algumas populações.\n\nTranslocações e reintroduções tiveram papel importante em Trentino e nos Pireneus, inclusive com animais vindos da Eslovênia e acompanhamento cuidadoso.\n\nVárias populações agora se reproduzem com sucesso e continuam se expandindo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種に分類されていますが、歴史的分布域の大部分を失いました。長年の生息地破壊、狩猟、駆除により個体数が大きく減少し、地域絶滅も起きました。法的保護と環境意識の高まりによって回復の基盤が作られました。\n\nイタリアのトレンティーノやピレネーでは、スロベニア由来の個体を含む再導入や移送が個体群の回復に重要な役割を果たしました。\n\nいくつかの個体群は現在順調に繁殖し、分布を広げています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "目前被列为无危，但已经失去大部分历史分布区。数百年的栖息地破坏、捕猎和人为控制造成严重下降和局部灭绝。随着环境意识提高和法律保护加强，一些种群开始恢复。\n\n在意大利特伦蒂诺和比利牛斯山等地，迁移和重新引入项目发挥了重要作用，包括放归来自斯洛文尼亚的个体，并配合监测和当地社区合作。\n\n多个种群目前已经能够成功繁殖并继续扩散。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Abgesehen von Muttertieren mit Jungen sind Braunbären Einzelgänger. Sie interagieren nur miteinander, um sich zu paaren oder um einen Partner zu kämpfen. In unmittelbarer Nähe zueinander sind sie vor allem dann zu beobachten, wenn eine besonders begehrte Nahrungsquelle lockt, wie zum Beispiel bei Versammlungen von Bären an Flussufern während der Laichzeit der Lachse. Meist ignorieren Bären andere Bären, wenn sie ihnen begegnen.\n\nDie Paarungszeit des Europäischen Braunbären erstreckt sich von Mai bis Juli. Die Männchen ziehen auf der Suche nach paarungsbereiten Weibchen weit umher und kämpfen manchmal mit Artgenossen um die Weibchen. Dominante Tiere haben in der Regel mehr Erfolg bei der Fortpflanzung. Braunbären sind promiskuitiv, das heißt, sowohl Männchen als auch Weibchen paaren sich mit mehreren Partnern. Aufgrund einer Verzögerung nistet sich das befruchtete Ei nicht sofort nach der Paarung in der Gebärmutter ein, obwohl die Befruchtung kurz nach der Paarung stattfindet. Stattdessen erfolgt die Einnistung im Spätherbst, kurz bevor das Weibchen in den Winterschlaf geht.\n\nDie Jungen kommen in der Regel im Januar oder Februar nach einer Trächtigkeitsdauer von 7 bis 8 Monaten während des Winterschlafs in einer Höhle zur Welt. Ein Wurf besteht gewöhnlich aus bis zu 4, meist 2 oder 3 Jungen, die blind, haarlos und sehr klein zur Welt kommen. Sie verbringen ihre ersten 3 bis 4 Lebensmonate in der Höhle und ernähren sich ausschließlich von Milch. Zu diesem Zeitpunkt verlassen sie zum ersten Mal die Höhle und beginnen, feste Nahrung zu sich zu nehmen. Das Weibchen paart sich nicht, während es seine Jungen aufzieht, die in der Regel etwa 1,5 bis 2,5 Jahre bei ihrer Mutter bleiben. In dieser Zeit bringt sie ihnen wichtige Überlebensfähigkeiten bei, darunter die Nahrungssuche und das Vermeiden von Gefahren.\n\nSobald die Jungen selbstständig sind, verlassen sie ihre Mutter, um ein eigenständiges Leben zu führen und ihr eigenes Revier zu erobern. Braunbären erreichen die Geschlechtsreife im Alter von 4 bis 6 Jahren, obwohl die Fortpflanzung je nach umweltbedingten und sozialen Bedingungen auch später erfolgen kann.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Apart from mothers with cubs, Brown Bears are solitary. They mainly interact to mate or compete for mates. They may be seen close together where especially rich food sources are available, such as salmon spawning rivers, but normally ignore other bears they encounter.\n\nThe breeding season runs from May to July. Males travel widely in search of receptive females and may fight rivals. Dominant animals generally reproduce more successfully. Brown Bears are promiscuous, with both males and females mating with several partners. Fertilisation occurs soon after mating, but implantation is delayed until late autumn shortly before the female enters hibernation.\n\nCubs are usually born in January or February after a 7–8 month gestation while the mother is hibernating in a den. A litter contains up to four cubs, usually two or three. They are born blind, hairless and very small and spend the first 3–4 months in the den feeding only on milk. They then begin eating solid food. Cubs normally stay with their mother for around 1.5–2.5 years while learning survival skills.\n\nOnce independent, the young leave their mother to establish their own lives and territories. Brown Bears reach sexual maturity at 4–6 years, although successful reproduction may occur later depending on environmental and social conditions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Apart from mothers with cubs, Brown Bears are solitary. They mainly interact to mate or compete for mates. They may be seen close together where especially rich food sources are available, such as salmon spawning rivers, but normally ignore other bears they encounter.\n\nThe breeding season runs from May to July. Males travel widely in search of receptive females and may fight rivals. Dominant animals generally reproduce more successfully. Brown Bears are promiscuous, with both males and females mating with several partners. Fertilisation occurs soon after mating, but implantation is delayed until late autumn shortly before the female enters hibernation.\n\nCubs are usually born in January or February after a 7–8 month gestation while the mother is hibernating in a den. A litter contains up to four cubs, usually two or three. They are born blind, hairless and very small and spend the first 3–4 months in the den feeding only on milk. They then begin eating solid food. Cubs normally stay with their mother for around 1.5–2.5 years while learning survival skills.\n\nOnce independent, the young leave their mother to establish their own lives and territories. Brown Bears reach sexual maturity at 4–6 years, although successful reproduction may occur later depending on environmental and social conditions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Salvo las madres con crías, son solitarios. Se relacionan principalmente para aparearse o competir por pareja y a veces se concentran en lugares con abundante alimento.\n\nLa época reproductiva va de mayo a julio. Ambos sexos se aparean con varias parejas. La fecundación ocurre poco después del apareamiento, pero la implantación del embrión se retrasa hasta finales de otoño.\n\nLas crías nacen normalmente en enero o febrero tras 7–8 meses de gestación. Una camada tiene hasta cuatro crías, normalmente dos o tres. Permanecen con la madre aproximadamente 1,5–2,5 años.\n\nAlcanzan la madurez sexual entre los 4 y 6 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Sauf les mères accompagnées de leurs petits, les ours bruns sont solitaires. Ils se rencontrent surtout pour s'accoupler ou rivaliser pour un partenaire, et parfois autour de ressources alimentaires très abondantes.\n\nLa saison de reproduction s'étend de mai à juillet. Les deux sexes s'accouplent avec plusieurs partenaires. La fécondation a lieu rapidement, mais l'implantation est retardée jusqu'à la fin de l'automne.\n\nLes petits naissent généralement en janvier ou février après 7–8 mois de gestation. Une portée compte jusqu'à quatre petits, le plus souvent deux ou trois. Ils restent généralement 1,5 à 2,5 ans avec leur mère.\n\nLa maturité sexuelle est atteinte entre 4 et 6 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Tranne le madri con i piccoli, gli orsi bruni sono solitari. Interagiscono principalmente per accoppiarsi o competere per un partner e possono concentrarsi temporaneamente vicino a fonti alimentari molto ricche.\n\nLa stagione riproduttiva va da maggio a luglio. Entrambi i sessi si accoppiano con più partner. La fecondazione avviene presto, ma l'impianto dell'embrione è ritardato fino al tardo autunno.\n\nI piccoli nascono generalmente in gennaio o febbraio dopo 7–8 mesi di gestazione. Una cucciolata comprende fino a quattro piccoli, più spesso due o tre. Rimangono con la madre per circa 1,5–2,5 anni.\n\nLa maturità sessuale viene raggiunta a 4–6 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Exceto mães com filhotes, são solitários. Interagem principalmente para acasalar ou disputar parceiros e podem se reunir temporariamente em locais com alimento abundante.\n\nA época de reprodução vai de maio a julho. Ambos os sexos acasalam com vários parceiros. A fecundação ocorre logo após o acasalamento, mas a implantação é adiada até o fim do outono.\n\nOs filhotes geralmente nascem em janeiro ou fevereiro após 7–8 meses de gestação. Uma ninhada pode ter até quatro filhotes, geralmente dois ou três. Eles permanecem com a mãe por cerca de 1,5–2,5 anos.\n\nA maturidade sexual ocorre entre 4 e 6 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "子連れの母親を除き単独で生活します。交尾や配偶者をめぐる競争のときに交流し、サケの遡上など非常に豊富な餌場では一時的に集まることがあります。\n\n繁殖期は5～7月です。雌雄とも複数の相手と交尾します。受精は交尾後すぐに起こりますが、着床は晩秋まで遅れます。\n\n妊娠期間7～8か月後、通常1～2月に冬眠中の巣穴で子を産みます。1回の出産は最大4頭で、通常は2～3頭です。子は母親と約1.5～2.5年間過ごします。\n\n4～6歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "除带幼崽的母熊外，棕熊通常独居。它们主要在交配或争夺配偶时互动，也会在特别丰富的食物来源附近暂时聚集。\n\n繁殖季为5月至7月，雌雄都会与多个伴侣交配。受精发生在交配后不久，但胚胎着床会延迟到深秋。\n\n妊娠7～8个月后，幼崽通常在1月或2月冬眠期间出生。一窝最多4只，通常2～3只。幼崽通常跟随母亲约1.5～2.5年。\n\n4～6岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Geruchssinn des Europäischen Braunbären ist 2.100 Mal besser als der des Menschen und sogar besser als der von Hunden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Europäische Braunbärenjunge haben in der Regel mehrere Väter.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Europäische Braunbären laufen auf ihren Fußsohlen, wenn sie aufrecht stehen, genau wie wir Menschen. Dadurch haben sie einen ausgezeichneten Gleichgewichtssinn.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In freier Wildbahn halten Europäische Braunbären bis zu 7 Monate lang Winterschlaf, ohne zu essen, zu trinken, zu pinkeln oder Kot abzusetzen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Obwohl Europäische Braunbären gefährliche Raubtiere sein können, sind sie eigentlich Allesfresser, die sich zu 70 bis 80 % vegetarisch ernähren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eurasian Brown Bear cubs usually have multiple fathers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eurasian Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild they can hibernate for up to seven months without eating, drinking, urinating or defecating.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Although they can be dangerous predators, they are omnivores and 70–80% of their diet is vegetarian.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eurasian Brown Bear cubs usually have multiple fathers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eurasian Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild they can hibernate for up to seven months without eating, drinking, urinating or defecating.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Although they can be dangerous predators, they are omnivores and 70–80% of their diet is vegetarian.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Su olfato se describe como 2.100 veces mejor que el humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las crías suelen tener varios padres.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Caminan sobre las plantas de los pies cuando están erguidos, como los humanos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pueden hibernar hasta siete meses sin comer, beber, orinar ni defecar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son omnívoros y entre el 70 y el 80% de su dieta es vegetal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Son odorat est présenté comme 2 100 fois meilleur que celui de l'être humain.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les oursons ont généralement plusieurs pères.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils marchent sur la plante des pieds lorsqu'ils se dressent, comme les humains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils peuvent hiberner jusqu'à sept mois sans manger, boire, uriner ni déféquer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils sont omnivores et leur alimentation est végétarienne à 70–80%.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il senso dell'olfatto è descritto come 2.100 volte migliore di quello umano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I cuccioli hanno generalmente più padri.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Quando sono eretti camminano sulla pianta dei piedi, proprio come gli esseri umani.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In natura possono ibernare fino a sette mesi senza mangiare, bere, urinare o defecare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sono onnivori e il 70–80% della dieta è vegetale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O olfato é descrito como 2.100 vezes melhor que o humano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os filhotes geralmente têm vários pais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Quando ficam de pé, caminham sobre as plantas dos pés, como humanos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Podem hibernar por até sete meses sem comer, beber, urinar ou defecar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "São onívoros e 70–80% da dieta é vegetal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "嗅覚は人間の2,100倍優れているとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "子グマには通常複数の父親がいます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "直立時には人間のように足裏全体で歩きます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野生では最大7か月、食事・飲水・排尿・排便をせずに冬眠できます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "危険な捕食者にもなりますが実際は雑食で、食事の70～80%は植物質です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "嗅觉被描述为人类的2,100倍，并且比狗还强。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼崽通常有多个父亲。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "直立时会像人类一样用整个脚掌行走。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野外可冬眠最长7个月，期间不吃、不喝、不排尿也不排便。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "虽然可能是危险捕食者，但实际是杂食动物，70～80%的食物为植物性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los contenidos todavía pueden cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurasianBrown_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/map/Ursus arctos arctos map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjYwM2YyNWYvQmVhcl9FdXJhc2lhbkJyb3duLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Europäischer Braunbär – Planet Zoo 2",
+            "en": "Eurasian Brown Bear – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Europäischen Braunbären aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Brown Bear."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/bilder/Ursus arctos arctos 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurasianBrown_illustration.jpg",
+          "alt": {
+            "de": "Europäischer Braunbär – Zoopedia-Illustration",
+            "en": "Eurasian Brown Bear – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Europäischen Braunbären aus der Planet Zoo 2 Zoopedia.",
+            "en": "Eurasian Brown Bear illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/bilder/Ursus arctos arctos illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Europäischer Braunbär",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/europ%C3%A4ischer-braunb%C3%A4r",
+        "en": "https://www.planetzoogame.com/2/zoopedia/eurasian-brown-bear",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/eurasian-brown-bear",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/oso-pardo-europeo",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/ours-brun-d-europe",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/orso-bruno-eurasiatico",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/urso-pardo-europeu",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%92%E3%82%B0%E3%83%9E",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%AC%A7%E6%B4%B2%E6%A3%95%E7%86%8A"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bewusst noch nicht bearbeitet. Wildbestand wurde exakt wie angezeigt als 100 übernommen."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

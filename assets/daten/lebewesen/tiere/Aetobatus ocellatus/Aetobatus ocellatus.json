@@ -1,0 +1,809 @@
+{
+  "id": "Aetobatus ocellatus",
+  "identitaet": {
+    "namen": {
+      "de": "Gefleckter Adlerrochen",
+      "en": "Ocellated Eagle Ray",
+      "en-US": "Ocellated Eagle Ray",
+      "es": "Raya águila ocelada",
+      "fr": "Raie aigle tachetée",
+      "it": "Aquila di mare ocellata",
+      "pt-BR": "Raia-águia-ocelada",
+      "ja": "マダラトビエイ",
+      "zh-Hans": "眼斑鹰鲼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [],
+    "biome": [
+      "Riff"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Chondrichthyes",
+          "ordnung": "Myliobatiformes",
+          "familie": "Aetobatidae",
+          "gattung": "Aetobatus",
+          "art": "Aetobatus ocellatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 20,
+          "max": 35,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Weibchen ein Gewicht von bis zu 90 kg; da kein Mindestwert genannt wird, bleibt diese Angabe in der Prosa.",
+            "en": "The Zoopedia gives females a maximum weight of up to 90 kg; because no minimum is stated, that value remains in prose."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 6,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt etwa 3 bis 6 Jahre; Männchen werden in der Regel früher geschlechtsreif als Weibchen.",
+            "en": "The Zoopedia gives about 3–6 years; males generally mature earlier than females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Schwangerschaft von in der Regel etwa einem Jahr.",
+            "en": "The Zoopedia states that pregnancy usually lasts about one year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt warme Küstengewässer, flache Buchten, Korallenriffe sowie sandige oder schlammige Meeresböden.",
+            "en": "The Zoopedia lists warm coastal waters, shallow bays, coral reefs and sandy or muddy seabeds."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Gefleckte Adlerrochen (Aetobatus ocellatus) lebt in warmen Küstengewässern tropischer und subtropischer Regionen im gesamten Indo-Pazifik und in Teilen des östlichen Pazifiks. Er kommt vor allem in flachen Buchten, Korallenriffen sowie auf sandigen oder schlammigen Meeresböden vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Ocellated Eagle Ray (Aetobatus ocellatus) inhabits warm coastal waters in tropical and subtropical regions across the Indo-Pacific and parts of the eastern Pacific. It is usually found in shallow bays, coral reefs and over sandy or muddy seabeds.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Ocellated Eagle Ray (Aetobatus ocellatus) inhabits warm coastal waters in tropical and subtropical regions across the Indo-Pacific and parts of the eastern Pacific. It is usually found in shallow bays, coral reefs and over sandy or muddy seabeds.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La raya águila ocelada (Aetobatus ocellatus) vive en aguas costeras cálidas de regiones tropicales y subtropicales del Indo-Pacífico y partes del Pacífico oriental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La raie aigle tachetée (Aetobatus ocellatus) vit dans les eaux côtières chaudes des régions tropicales et subtropicales de l'Indo-Pacifique et de certaines parties du Pacifique oriental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'aquila di mare ocellata (Aetobatus ocellatus) vive nelle calde acque costiere tropicali e subtropicali dell'Indo-Pacifico e di parte del Pacifico orientale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A raia-águia-ocelada (Aetobatus ocellatus) vive em águas costeiras quentes tropicais e subtropicais do Indo-Pacífico e de partes do Pacífico oriental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "マダラトビエイ（Aetobatus ocellatus）は、インド太平洋全域と東部太平洋の一部にある温暖な熱帯・亜熱帯の沿岸海域に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "眼斑鹰鲼（Aetobatus ocellatus）生活在印度洋-太平洋以及东太平洋部分地区的热带和亚热带温暖沿海水域。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Gefleckte Adlerrochen (auch Aetobatus ocellatus) lebt in warmen Küstengewässern tropischer und subtropischer Regionen im gesamten Indo-Pazifik und in Teilen des östlichen Pazifiks. Diese Rochen sind in der Regel in flachen Buchten, Korallenriffen und auf sandigen oder schlammigen Meeresböden zu finden.\n\nDie Tiere zeichnen sich durch einen dunklen Rücken mit leuchtend weißen Flecken, eine deutlich abgesetzte weiße Unterseite, einen abgeflachten, rautenförmigen Körper und lange, spitze, flügelähnliche Brustflossen aus.\n\nErwachsene Männchen sind 1,5 m bis 2,0 m groß und wiegen 20 kg bis 35 kg. Die Weibchen sind mit einer Größe von bis zu 2,5 m und einem Gewicht von bis zu 90 kg bedeutend größer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Ocellated Eagle Ray (Aetobatus ocellatus) inhabits warm coastal waters in tropical and subtropical regions across the Indo-Pacific and parts of the eastern Pacific.\n\nIt has a dark back covered in bright white spots, a clearly contrasting white underside, a flattened diamond-shaped body and long pointed wing-like pectoral fins.\n\nAdult males are 1.5–2.0 m in size and weigh 20–35 kg. Females are considerably larger, reaching up to 2.5 m and up to 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Ocellated Eagle Ray (Aetobatus ocellatus) inhabits warm coastal waters in tropical and subtropical regions across the Indo-Pacific and parts of the eastern Pacific.\n\nIt has a dark back covered in bright white spots, a clearly contrasting white underside, a flattened diamond-shaped body and long pointed wing-like pectoral fins.\n\nAdult males are 1.5–2.0 m in size and weigh 20–35 kg. Females are considerably larger, reaching up to 2.5 m and up to 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La raya águila ocelada vive en bahías poco profundas, arrecifes de coral y fondos marinos arenosos o fangosos.\n\nTiene el dorso oscuro con manchas blancas brillantes, vientre blanco, cuerpo aplanado en forma de rombo y largas aletas pectorales parecidas a alas.\n\nLos machos adultos miden 1,5–2,0 m y pesan 20–35 kg. Las hembras alcanzan hasta 2,5 m y 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle fréquente les baies peu profondes, les récifs coralliens et les fonds sableux ou vaseux.\n\nSon dos sombre est couvert de taches blanches, son ventre est blanc, son corps aplati est en forme de losange et ses longues nageoires pectorales ressemblent à des ailes.\n\nLes mâles adultes mesurent 1,5–2,0 m et pèsent 20–35 kg. Les femelles atteignent jusqu'à 2,5 m et 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive in baie poco profonde, barriere coralline e fondali sabbiosi o fangosi.\n\nHa dorso scuro con macchie bianche, ventre bianco, corpo appiattito a forma di rombo e lunghe pinne pettorali simili ad ali.\n\nI maschi adulti misurano 1,5–2,0 m e pesano 20–35 kg. Le femmine possono raggiungere 2,5 m e 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É encontrada em baías rasas, recifes de coral e fundos arenosos ou lamacentos.\n\nPossui dorso escuro com manchas brancas, ventre branco, corpo achatado em forma de losango e longas nadadeiras peitorais semelhantes a asas.\n\nMachos adultos medem 1,5–2,0 m e pesam 20–35 kg. Fêmeas podem alcançar 2,5 m e 90 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "浅い湾、サンゴ礁、砂地や泥地の海底でよく見られます。\n\n暗い背面に白い斑点があり、腹面は白く、体はひし形に扁平で、長く尖った翼状の胸びれを持ちます。\n\n成体雄は1.5～2.0m、20～35kg。雌は最大2.5m、90kgまで大きくなります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "常见于浅海湾、珊瑚礁以及沙质或泥质海底。\n\n背部颜色深并布满明亮白斑，腹面明显为白色，身体扁平呈菱形，胸鳍修长尖锐、形似翅膀。\n\n成年雄性体型约1.5～2.0米、体重20～35千克。雌性更大，可达2.5米和90千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Gefleckte Adlerrochen gilt als stark gefährdet. Als langsam wachsende Spezies mit geringer Fortpflanzungsrate ist er besonders anfällig für Überfischung. Er wird oft als Beifang in Netzen und Leinen gefangen, die eigentlich für andere Arten gedacht sind. In manchen Regionen wird er auch wegen seines Fleisches, seiner Knorpel und seiner Kiemenreusen gejagt. Die Zerstörung seines Lebensraums, vor allem von Korallenriffen, Seegraswiesen und Küstenaufzuchtgebieten, bedroht seine Populationen zusätzlich. Verschmutzung, Schiffsverkehr und Stressfaktoren durch den Klimawandel machen es den Beständen schwer, sich zu erholen.\n\nDer Handel mit Gefleckten Adlerrochen wird reglementiert, um eine Überfischung zu verhindern. Mehrere Länder haben Fangvorschriften, Schutzgebiete und Strategien zur Reduzierung von Beifängen eingeführt, um die Art zu schützen. Forschungsprogramme nutzen Satelliten- und akustische Markierungen, um mehr über ihre Bewegungen, ihre Lebensraumnutzung und ihr Verhalten zu erfahren. Aufklärungskampagnen und Ökotourismus-Initiativen tragen dazu bei, das Bewusstsein zu schärfen und die Auswirkungen menschlicher Aktivitäten zu verringern.\n\nAuch wenn die direkten Bemühungen zur Wiederansiedlung begrenzt sind, helfen der Erhalt gesunder Lebensräume und die Verringerung des Drucks durch den Menschen dabei, dass die Bestände der Gefleckten Adlerrochen langfristig überleben können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly vulnerable to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly vulnerable to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro. Su lento crecimiento y baja tasa reproductiva la hacen especialmente vulnerable a la sobrepesca, las capturas accidentales, la degradación de arrecifes y zonas costeras, la contaminación y el cambio climático.\n\nEl comercio está regulado y varios países aplican restricciones pesqueras, áreas protegidas y medidas para reducir las capturas accidentales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est En danger. Sa croissance lente et son faible taux de reproduction la rendent très sensible à la surpêche, aux prises accessoires, à la dégradation des récifs et des zones côtières, à la pollution et au changement climatique.\n\nLe commerce est réglementé et plusieurs pays ont mis en place des restrictions de pêche, des zones protégées et des mesures de réduction des prises accessoires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È In pericolo. La crescita lenta e il basso tasso riproduttivo la rendono vulnerabile a sovrapesca, catture accidentali, degrado di barriere e aree costiere, inquinamento e cambiamento climatico.\n\nIl commercio è regolamentato e diversi paesi hanno introdotto restrizioni di pesca, aree protette e misure per ridurre le catture accidentali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Está Em Perigo. O crescimento lento e a baixa taxa reprodutiva aumentam a vulnerabilidade à sobrepesca, captura acidental, degradação de recifes e áreas costeiras, poluição e mudanças climáticas.\n\nO comércio é regulamentado e vários países adotam restrições de pesca, áreas protegidas e medidas para reduzir a captura acidental.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "絶滅危惧種です。成長が遅く繁殖率が低いため、乱獲、混獲、サンゴ礁や沿岸育成場の劣化、汚染、気候変動の影響を受けやすいです。\n\n取引規制、漁獲規制、保護区、混獲低減策、標識調査などが行われています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为濒危。生长缓慢、繁殖率低，使其特别容易受到过度捕捞、兼捕、珊瑚礁与沿海育幼场退化、污染和气候变化的影响。\n\n相关保护包括贸易监管、捕捞限制、保护区、减少兼捕措施，以及卫星和声学标记研究。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gefleckte Adlerrochen können als Einzelgänger oder in lockeren Gruppen unterwegs sein. Man sieht sie oft zusammen, wenn sie fressen, sich fortpflanzen oder auf Wanderschaft sind.\n\nIn manchen Gegenden pflanzt sich die Spezies saisonal fort, oft wenn das Wasser wärmer ist und es genug Futter gibt, was häufig im späten Frühling bis Frühsommer der Fall ist. Man geht davon aus, dass sie sich alle zwei Jahre fortpflanzen, aber der Fortpflanzungszyklus kann je nach Region und Umweltbedingungen variieren. Bei der Balz folgen die Männchen den Weibchen und zwicken sie, ehe sie sich mithilfe ihrer Klammerorgane miteinander verbinden und Sperma über die Kloake übertragen.\n\nDie Schwangerschaft dauert in der Regel etwa ein Jahr, und die Weibchen bringen pro Wurf 1 bis 4 Junge zur Welt. Die Neugeborenen sind Miniaturausgaben der Erwachsenen, etwa 30 cm bis 45 cm groß und sofort selbstständig.\n\nGefleckte Adlerrochen werden mit etwa 3 bis 6 Jahren geschlechtsreif, wobei die Männchen in der Regel früher reif sind als die Weibchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Ocellated Eagle Rays may travel alone or in loose groups. They are often seen together while feeding, breeding or migrating.\n\nIn some regions reproduction is seasonal, often during warmer water periods with abundant food, commonly from late spring into early summer. They are thought to reproduce every two years, although this varies by region and environmental conditions. During courtship, males follow and nip females before mating with their claspers.\n\nPregnancy usually lasts about one year, and females give birth to 1–4 young per litter. Newborns are miniature versions of adults, about 30–45 cm in size and immediately independent.\n\nSexual maturity is reached at around 3–6 years, with males generally maturing earlier than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Ocellated Eagle Rays may travel alone or in loose groups. They are often seen together while feeding, breeding or migrating.\n\nIn some regions reproduction is seasonal, often during warmer water periods with abundant food, commonly from late spring into early summer. They are thought to reproduce every two years, although this varies by region and environmental conditions. During courtship, males follow and nip females before mating with their claspers.\n\nPregnancy usually lasts about one year, and females give birth to 1–4 young per litter. Newborns are miniature versions of adults, about 30–45 cm in size and immediately independent.\n\nSexual maturity is reached at around 3–6 years, with males generally maturing earlier than females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Puede vivir sola o en grupos sueltos y suele reunirse para alimentarse, reproducirse o migrar.\n\nLa reproducción puede ser estacional y se cree que ocurre aproximadamente cada dos años. La gestación dura alrededor de un año y nacen 1–4 crías de 30–45 cm, independientes desde el nacimiento.\n\nLa madurez sexual se alcanza a los 3–6 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle peut vivre seule ou en groupes lâches et se rassemble souvent pour se nourrir, se reproduire ou migrer.\n\nLa reproduction peut être saisonnière et aurait lieu environ tous les deux ans. La gestation dure environ un an et la femelle donne naissance à 1–4 petits de 30–45 cm, autonomes dès la naissance.\n\nLa maturité sexuelle est atteinte entre 3 et 6 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Può vivere da sola o in gruppi poco stabili e si riunisce spesso per alimentarsi, riprodursi o migrare.\n\nLa riproduzione può essere stagionale e si ritiene avvenga circa ogni due anni. La gestazione dura circa un anno e nascono 1–4 piccoli di 30–45 cm, indipendenti fin dalla nascita.\n\nLa maturità sessuale viene raggiunta a 3–6 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pode viver sozinha ou em grupos soltos e costuma se reunir para alimentação, reprodução ou migração.\n\nA reprodução pode ser sazonal e acredita-se que ocorra aproximadamente a cada dois anos. A gestação dura cerca de um ano e nascem 1–4 filhotes de 30–45 cm, independentes desde o nascimento.\n\nA maturidade sexual ocorre aos 3–6 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独または緩やかな群れで行動し、採食、繁殖、移動の際に集まることがあります。\n\n繁殖は地域によって季節的で、約2年ごとと考えられています。妊娠期間は約1年で、30～45cmの子を1～4匹産み、子は出生時から自立しています。\n\n3～6歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "可单独活动，也会形成松散群体，常在觅食、繁殖或迁移时聚集。\n\n部分地区具有季节性繁殖，通常约每两年繁殖一次。妊娠期约1年，每胎1～4只幼体，出生时约30～45厘米并能立即独立生活。\n\n约3～6岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Gefleckte Adlerrochen sind dafür bekannt, dass sie aus dem Wasser „springen“ – manchmal bis zu 1 m hoch.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gefleckte Adlerrochen haben ganz spezielle Zähne, die eine flache, raspelartige Oberfläche bilden, mit der sie Muscheln zerkleinern können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die langen, peitschenartigen Schwänze der Gefleckten Adlerrochen sind mit giftigen Stacheln versehen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Jeder Gefleckte Adlerrochen weist ein einzigartiges Fleckenmuster auf, das wie ein Fingerabdruck zur individuellen Identifikation dient.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gefleckte Adlerrochen heißen so, weil ihre großen Flossen an Flügel erinnern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Ocellated Eagle Rays are known to leap from the water, sometimes up to 1 m high.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have specialised teeth forming a flat rasp-like surface used to crush shellfish.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Their long whip-like tails carry venomous spines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Each individual has a unique spot pattern that can be used like a fingerprint for identification.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They are called eagle rays because their large fins resemble wings.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Ocellated Eagle Rays are known to leap from the water, sometimes up to 1 m high.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have specialised teeth forming a flat rasp-like surface used to crush shellfish.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Their long whip-like tails carry venomous spines.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Each individual has a unique spot pattern that can be used like a fingerprint for identification.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They are called eagle rays because their large fins resemble wings.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Puede saltar fuera del agua hasta aproximadamente 1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sus dientes forman una superficie plana adaptada a triturar moluscos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La cola tiene espinas venenosas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Cada individuo posee un patrón de manchas único.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sus grandes aletas recuerdan a alas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle peut bondir hors de l'eau jusqu'à environ 1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ses dents forment une surface plate adaptée à l'écrasement des coquillages.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa longue queue porte des épines venimeuses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chaque individu possède un motif de taches unique.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ses grandes nageoires rappellent des ailes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Può saltare fuori dall'acqua fino a circa 1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I denti formano una superficie piatta adatta a frantumare molluschi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La lunga coda porta spine velenose.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ogni individuo possiede un disegno di macchie unico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le grandi pinne ricordano ali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pode saltar para fora da água até cerca de 1 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os dentes formam uma superfície plana para esmagar moluscos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A longa cauda possui espinhos venenosos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Cada indivíduo tem um padrão de manchas único.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As grandes nadadeiras lembram asas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "水面から約1mの高さまで跳び上がることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "歯は貝類を砕く平らな面を形成します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "長い尾には毒棘があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "斑点模様は個体ごとに異なります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "大きな胸びれが翼のように見えることが名前の由来です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "会跃出水面，有时可高达约1米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "牙齿形成平坦的磨碎面，可用于压碎贝类。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "长而鞭状的尾部带有毒刺。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "每只个体都有独特的斑点图案。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "名称来自其如翅膀般巨大的胸鳍。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2a1cb22c/Ray_SpottedEagle_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Aetobatus ocellatus/map/Aetobatus ocellatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMmExY2IyMmMvUmF5X1Nwb3R0ZWRFYWdsZS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Gefleckter Adlerrochen – Planet Zoo 2",
+            "en": "Ocellated Eagle Ray – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gefleckten Adlerrochens aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Ocellated Eagle Ray."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aetobatus ocellatus/bilder/Aetobatus ocellatus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2a1cb22c/Ray_SpottedEagle_illustration.jpg",
+          "alt": {
+            "de": "Gefleckter Adlerrochen – Zoopedia-Illustration",
+            "en": "Ocellated Eagle Ray – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gefleckten Adlerrochens aus der Planet Zoo 2 Zoopedia.",
+            "en": "Ocellated Eagle Ray illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Aetobatus ocellatus/bilder/Aetobatus ocellatus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Gefleckter Adlerrochen",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gefleckter-adlerrochen",
+        "en": "https://www.planetzoogame.com/2/zoopedia/ocellated-eagle-ray",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/ocellated-eagle-ray",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/raya-%C3%A1guila-ocelada",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/raie-aigle-tachet%C3%A9e",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/aquila-di-mare-ocellata",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/raia-%C3%A1guia-ocelada",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%9E%E3%83%80%E3%83%A9%E3%83%88%E3%83%93%E3%82%A8%E3%82%A4",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%9C%BC%E6%96%91%E9%B9%9E%E9%B2%BC"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Die Größenangaben 1,5–2,0 m bei Männchen und bis 2,5 m bei Weibchen bleiben in der Prosa, weil die Quelle nur allgemein 'groß' sagt. Beim Gewicht wird nur der geschlossene männliche Bereich 20–35 kg strukturiert; das weibliche Maximum bis 90 kg bleibt in der Prosa. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 1–4 Junge pro Wurf und 30–45 cm Neugeborenengröße bleiben in der Fortpflanzungs-Prosa, da dafür kein sicher bestätigter strukturierter Nachwuchs-Typ verwendet wird. Die Sozialstruktur bleibt strukturiert offen, weil die Quelle sowohl Einzelgänger als auch lockere Gruppen nennt."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

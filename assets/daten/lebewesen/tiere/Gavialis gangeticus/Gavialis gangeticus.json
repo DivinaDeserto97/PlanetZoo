@@ -1,0 +1,832 @@
+{
+  "id": "Gavialis gangeticus",
+  "identitaet": {
+    "namen": {
+      "de": "Gangesgavial",
+      "en": "Gharial",
+      "en-US": "Gharial",
+      "es": "Gavial",
+      "fr": "Gavial du Gange",
+      "it": "Gaviale",
+      "pt-BR": "Gavial",
+      "ja": "インドガビアル",
+      "zh-Hans": "恒河鳄"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Crocodilia",
+          "familie": "Gavialidae",
+          "gattung": "Gavialis",
+          "art": "Gavialis gangeticus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 2.6,
+          "max": 4.5,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Weibchen erreichen laut Zoopedia 2,6 bis 4,5 m. Männchen werden 3 m bis über 6 m lang; diese offene Obergrenze bleibt in der Prosa.",
+            "en": "According to the Zoopedia, females reach 2.6–4.5 m. Males reach 3 m to over 6 m; that open-ended upper range is retained in prose."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 150,
+          "max": 250,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 150 bis 250 kg als Durchschnittsgewicht ausgewachsener Tiere; sehr große Männchen können über 600 kg erreichen.",
+            "en": "The Zoopedia gives 150–250 kg as the average weight of adults; very large males can exceed 600 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Vom Aussterben bedroht“ an.",
+            "en": "The Zoopedia lists the conservation status as Critically Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 650,
+          "einheit": "individuum",
+          "hinweis": {
+            "de": "Der bereitgestellte Zoopedia-Auszug zeigt den Wildbestand wörtlich als 650.",
+            "en": "The supplied Zoopedia extract lists the wild population as 650."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 13,
+          "max": 16,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt etwa 13 bis 16 Jahre. Weibchen werden bei 2,6 bis 3 m Körperlänge geschlechtsreif, Männchen bei 3 bis 4 m.",
+            "en": "The Zoopedia gives about 13–16 years. Females mature at 2.6–3 m body length and males at 3–4 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "lakesAndRivers",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Flüsse des indischen Subkontinents als Lebensraum und beschreibt die Art als nahezu ausschließlich aquatisch.",
+            "en": "The Zoopedia lists rivers of the Indian subcontinent as habitat and describes the species as almost entirely aquatic."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia bezeichnet Gangesgaviale auch als fischfressende Krokodile und beschreibt ihre langen, dünnen Kiefer als Anpassung an den Fischfang.",
+              "en": "The Zoopedia also calls gharials fish-eating crocodiles and describes their long, narrow jaws as an adaptation for catching fish."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Gangesgaviale (Gavialis gangeticus), auch Gaviale oder fischfressende Krokodile genannt, sind in den Flüssen des indischen Subkontinents heimisch und kommen in Nepal und Nordindien nur noch in vier Flussabschnitten vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gharial (Gavialis gangeticus), also known as the fish-eating crocodile, is native to rivers of the Indian subcontinent and now remains in only four river sections in Nepal and northern India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gharial (Gavialis gangeticus), also known as the fish-eating crocodile, is native to rivers of the Indian subcontinent and now remains in only four river sections in Nepal and northern India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El gavial (Gavialis gangeticus) es un cocodriliano nativo de los ríos del subcontinente indio y hoy solo permanece en cuatro tramos fluviales de Nepal y el norte de India.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le gavial du Gange (Gavialis gangeticus) est un crocodilien originaire des rivières du sous-continent indien et ne subsiste plus que dans quatre tronçons fluviaux au Népal et dans le nord de l'Inde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il gaviale (Gavialis gangeticus) è un coccodrillo originario dei fiumi del subcontinente indiano e oggi rimane soltanto in quattro tratti fluviali del Nepal e dell'India settentrionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O gavial (Gavialis gangeticus) é um crocodiliano nativo dos rios do subcontinente indiano e atualmente resta apenas em quatro trechos de rios no Nepal e no norte da Índia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "インドガビアル（Gavialis gangeticus）はインド亜大陸の河川に生息するワニの仲間で、現在はネパールと北インドの4つの河川区間にのみ残っています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "恒河鳄（Gavialis gangeticus）原产于印度次大陆的河流，如今仅存于尼泊尔和印度北部的四段河流中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Gangesgaviale (auch Gavialis gangeticus) sind eine Krokodilart, die in den Flüssen des indischen Subkontinents heimisch ist und in Nepal und Nordindien nur noch in vier Flussabschnitten vorkommt. Man nennt sie auch Gaviale oder fischfressende Krokodile.\n\nGangesgaviale haben lange, dünne Kiefer, mit denen sie Fische ideal erbeuten können. Sie leben nahezu ausschließlich im Wasser. Im Gegensatz zu anderen Krokodilarten haben sie nur schwache Beine und sind daher an Land sehr unbeholfen. In tiefen Gewässern sind sie dank ihrer langen, flachen und muskulösen Schwänze jedoch extrem wendig. Männchen haben eine markante Verdickung an der Schnauzenspitze, mit der sie Laute ausstoßen können, um während der Paarungszeit Weibchen anzulocken und andere Männchen einzuschüchtern.\n\nAbgesehen von diesem Unterschied weist die Art zudem einen Größenunterschied der Geschlechter auf: Männchen werden zwischen 3 m und über 6 m lang. Weibchen sind kleiner und leichter und erreichen eine Länge von 2,6 m bis 4,5 m. Das Durchschnittsgewicht ausgewachsener Tiere liegt bei 150 kg bis 250 kg, sehr große Männchen können ein Gewicht von über 600 kg erreichen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gharial (Gavialis gangeticus) is a crocodilian native to rivers of the Indian subcontinent and now occurs in only four river sections in Nepal and northern India.\n\nGharials have long, narrow jaws ideal for catching fish. They live almost entirely in water and, unlike other crocodilians, have weak legs that make them awkward on land. In deep water they are extremely agile thanks to their long, flat, muscular tails. Males have a prominent swelling at the tip of the snout that is used to produce sounds during the breeding season.\n\nMales grow from 3 m to over 6 m long. Females are smaller and lighter at 2.6–4.5 m. Average adult weight is 150–250 kg, while very large males can exceed 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gharial (Gavialis gangeticus) is a crocodilian native to rivers of the Indian subcontinent and now occurs in only four river sections in Nepal and northern India.\n\nGharials have long, narrow jaws ideal for catching fish. They live almost entirely in water and, unlike other crocodilians, have weak legs that make them awkward on land. In deep water they are extremely agile thanks to their long, flat, muscular tails. Males have a prominent swelling at the tip of the snout that is used to produce sounds during the breeding season.\n\nMales grow from 3 m to over 6 m long. Females are smaller and lighter at 2.6–4.5 m. Average adult weight is 150–250 kg, while very large males can exceed 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El gavial vive casi exclusivamente en el agua y posee mandíbulas largas y estrechas adaptadas a capturar peces.\n\nLos machos presentan una protuberancia característica en el extremo del hocico. Pueden medir desde 3 m hasta más de 6 m. Las hembras miden 2,6–4,5 m. Los adultos pesan de media 150–250 kg, aunque los machos muy grandes pueden superar 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le gavial vit presque exclusivement dans l'eau et possède de longues mâchoires étroites adaptées à la capture des poissons.\n\nLes mâles présentent un renflement caractéristique au bout du museau et mesurent de 3 m à plus de 6 m. Les femelles mesurent 2,6–4,5 m. Les adultes pèsent en moyenne 150–250 kg, tandis que les très grands mâles peuvent dépasser 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il gaviale vive quasi esclusivamente in acqua e possiede mascelle lunghe e strette adatte alla cattura dei pesci.\n\nI maschi hanno un caratteristico rigonfiamento sulla punta del muso e misurano da 3 m a oltre 6 m. Le femmine misurano 2,6–4,5 m. Gli adulti pesano in media 150–250 kg, mentre i maschi molto grandi possono superare 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O gavial vive quase exclusivamente na água e possui mandíbulas longas e estreitas adaptadas à captura de peixes.\n\nMachos possuem uma protuberância característica na ponta do focinho e medem de 3 m a mais de 6 m. Fêmeas medem 2,6–4,5 m. Adultos pesam em média 150–250 kg, enquanto machos muito grandes podem ultrapassar 600 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "インドガビアルはほぼ完全に水中で生活し、魚を捕らえるのに適した細長い顎を持ちます。\n\n雄には吻端の特徴的なふくらみがあり、体長は3mから6m超。雌は2.6～4.5mです。成体の平均体重は150～250kgで、非常に大きな雄は600kgを超えることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "恒河鳄几乎完全生活在水中，具有细长的颌部，非常适合捕食鱼类。\n\n雄性吻端具有明显膨大结构，体长从3米到超过6米；雌性体长2.6～4.5米。成体平均体重150～250千克，特别大的雄性可超过600千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Gangesgavial gilt als vom Aussterben bedroht und ist in weiten Teilen seines früheren Verbreitungsgebiets lokal bereits ausgestorben. Der dramatische Bestandsrückgang ist auf die zunehmende Verschmutzung der Flüsse zurückzuführen, die den Fischbestand verringert, sowie auf den Sandabbau, der die für die Eiablage der Weibchen und das Sonnenbaden unverzichtbaren Sandbänke zerstört. Unregulierte Fischerei und das versehentliche Verfangen in Fischernetzen bedrohen die Art zusätzlich, während die Fragmentierung der Flüsse durch Staudämme und Bewässerungsprojekte ihre natürlichen Bewegungsmöglichkeiten und Fortpflanzungschancen einschränkt.\n\nDie Arterhaltungsmaßnahmen konzentrieren sich auf den Schutz der Lebensräume, die Einbindung der Bevölkerung sowie die Zucht in Gefangenschaft und die Auswilderung. Geschützte Flussabschnitte bieten sichere Nistplätze, und durch Flussrenaturierungsinitiativen werden weitere Gebiete nutzbar gemacht. Außerdem arbeiten Naturschutzorganisationen mit den Gemeinden vor Ort zusammen, um die fischereibedingte Todesrate zu senken. Zwar wurden seit den 1970er Jahren Tausende von Jungtieren gezüchtet und ausgewildert, doch haben die Wiederansiedlungen allein nicht wesentlich zur Wiederherstellung der Bestände beigetragen, da andere Faktoren nicht berücksichtigt wurden.\n\nDank der gemeinsamen und anhaltenden Bemühungen ist die aktuelle Bestandsentwicklung jedoch positiv.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gharial is Critically Endangered and is already locally extinct across much of its former range. River pollution reduces fish stocks, while sand mining destroys sandbanks needed for nesting and basking. Unregulated fishing, entanglement in fishing nets, dams and irrigation projects further restrict movement and breeding.\n\nConservation focuses on habitat protection, community involvement, captive breeding and release. Protected river sections provide safe nesting sites, restoration projects improve habitat, and conservation organisations work with local communities to reduce fishing-related mortality. Thousands of juveniles have been bred and released since the 1970s, although releases alone have not restored populations because other threats remained.\n\nCurrent population trends are nevertheless positive thanks to sustained conservation efforts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gharial is Critically Endangered and is already locally extinct across much of its former range. River pollution reduces fish stocks, while sand mining destroys sandbanks needed for nesting and basking. Unregulated fishing, entanglement in fishing nets, dams and irrigation projects further restrict movement and breeding.\n\nConservation focuses on habitat protection, community involvement, captive breeding and release. Protected river sections provide safe nesting sites, restoration projects improve habitat, and conservation organisations work with local communities to reduce fishing-related mortality. Thousands of juveniles have been bred and released since the 1970s, although releases alone have not restored populations because other threats remained.\n\nCurrent population trends are nevertheless positive thanks to sustained conservation efforts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro Crítico. La contaminación, la extracción de arena, la pesca no regulada, las redes, las presas y los proyectos de riego han reducido gravemente sus poblaciones y su hábitat.\n\nLa conservación incluye protección de ríos, restauración del hábitat, trabajo con comunidades, cría en cautividad y liberación de juveniles. La tendencia actual de la población es positiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est En danger critique. Pollution des rivières, extraction de sable, pêche non réglementée, filets, barrages et irrigation ont fortement réduit les populations et l'habitat.\n\nLa conservation comprend la protection des rivières, la restauration des habitats, la participation des communautés, l'élevage en captivité et les réintroductions. La tendance actuelle est positive.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È In pericolo critico. Inquinamento, estrazione di sabbia, pesca non regolamentata, reti, dighe e irrigazione hanno gravemente ridotto habitat e popolazioni.\n\nLa conservazione comprende protezione dei fiumi, ripristino degli habitat, coinvolgimento delle comunità, allevamento in cattività e rilascio di giovani. La tendenza attuale è positiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Criticamente Em Perigo. Poluição, extração de areia, pesca não regulamentada, redes, barragens e projetos de irrigação reduziram fortemente habitat e populações.\n\nA conservação inclui proteção de rios, restauração de habitat, envolvimento de comunidades, reprodução em cativeiro e soltura de jovens. A tendência atual da população é positiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "近絶滅種です。河川汚染、砂採取、無規制の漁業、漁網、ダム、灌漑事業などにより生息地と個体数が大きく減少しました。\n\n河川保護、生息地再生、地域社会との協力、飼育繁殖、放流などが行われています。現在の個体数傾向は増加方向です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为极危。河流污染、采砂、无监管捕鱼、渔网、筑坝和灌溉工程严重破坏了栖息地并降低种群数量。\n\n保护措施包括保护河段、恢复栖息地、社区合作、人工繁育和放归。当前种群趋势为积极增长。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gangesgaviale können zwar auf engem Raum zusammenleben und um sandige Flussufer konkurrieren, auf denen sie sich gerne sonnen, sind aber keine Gruppentiere. Dennoch kämpfen sie kaum gegeneinander, doch rivalisierende Männchen zischen sich mithilfe ihrer Schnauzenverdickung zu Einschüchterungszwecken gegenseitig an. Während der Brutzeit können zahlreiche Weibchen in unmittelbarer Nähe zusammenleben, während sie die Eier beschützen, die sie in den Sandbänken vergraben haben.\n\nWährend der Paarungszeit von November bis Januar jagen sich männliche und weibliche Gangesgaviale gegenseitig, bis sie sich für einen Partner entscheiden, mit dem sie zufrieden sind. Ein Männchen paart sich mit vielen Weibchen, während die Weibchen sich nur ein Männchen aussuchen. Größere Männchen sichern sich die besten Nistplätze gegenüber ihren kleineren, noch nicht voll ausgewachsenen Rivalen.\n\nIn der Trockenzeit, zwischen März und April, versammeln sich die Weibchen, um Gelege mit 30 bis 50 Eiern in einem sandigen Flussufer abzulegen und zu vergraben, die sie anschließend bewachen. Drei Monate später, im Juli, schlüpfen die Jungtiere. Die Weibchen helfen ihnen beim Ausgraben aus dem Sand, wenn sie ihre Rufe hören, und manche bleiben mit den Jungtieren an den Flussufern, bis die Monsunfluten alles überschwemmen. Darüber hinaus gibt es keine elterliche Fürsorge, und die Jungtiere müssen sich bereits nach dem Schlüpfen selbstständig Nahrung suchen.\n\nWeibliche Gangesgaviale werden bei einer Körperlänge von 2,6 bis 3 m geschlechtsreif, Männchen bei 3 bis 4 m, was einem Alter von etwa 13 bis 16 Jahren entspricht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Gharials can live close together and compete for sandy riverbanks used for basking, but they are not social group animals. Rival males rarely fight directly and instead hiss at one another using the swelling on the snout. During nesting, many females may remain close together while guarding buried eggs.\n\nDuring the November–January mating season, males and females pursue one another before choosing partners. A male mates with multiple females, while each female chooses one male. Larger males secure the best nesting areas against smaller rivals.\n\nDuring the dry season from March to April, females gather to lay and bury clutches of 30–50 eggs in sandy riverbanks and guard them. The young hatch about three months later in July. Females help uncover hatchlings after hearing their calls, and some remain nearby until monsoon flooding arrives. Beyond this, there is no parental care and hatchlings must find food independently.\n\nFemales mature at 2.6–3 m body length and males at 3–4 m, corresponding to an age of about 13–16 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Gharials can live close together and compete for sandy riverbanks used for basking, but they are not social group animals. Rival males rarely fight directly and instead hiss at one another using the swelling on the snout. During nesting, many females may remain close together while guarding buried eggs.\n\nDuring the November–January mating season, males and females pursue one another before choosing partners. A male mates with multiple females, while each female chooses one male. Larger males secure the best nesting areas against smaller rivals.\n\nDuring the dry season from March to April, females gather to lay and bury clutches of 30–50 eggs in sandy riverbanks and guard them. The young hatch about three months later in July. Females help uncover hatchlings after hearing their calls, and some remain nearby until monsoon flooding arrives. Beyond this, there is no parental care and hatchlings must find food independently.\n\nFemales mature at 2.6–3 m body length and males at 3–4 m, corresponding to an age of about 13–16 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pueden vivir cerca unos de otros, pero no son animales de grupo.\n\nLa reproducción ocurre de noviembre a enero. Durante marzo y abril las hembras depositan y entierran 30–50 huevos en bancos de arena. Las crías eclosionan unos tres meses después, en julio.\n\nLas hembras alcanzan la madurez con 2,6–3 m y los machos con 3–4 m, lo que corresponde aproximadamente a 13–16 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ils peuvent vivre à proximité les uns des autres mais ne sont pas des animaux grégaires.\n\nLa reproduction a lieu de novembre à janvier. En mars et avril, les femelles pondent 30–50 œufs dans les bancs de sable. Les jeunes éclosent environ trois mois plus tard, en juillet.\n\nLes femelles deviennent matures à 2,6–3 m et les mâles à 3–4 m, soit environ 13–16 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Possono vivere vicini ma non sono animali sociali di gruppo.\n\nLa riproduzione avviene da novembre a gennaio. Tra marzo e aprile le femmine depongono 30–50 uova nei banchi di sabbia. I piccoli schiudono circa tre mesi dopo, in luglio.\n\nLe femmine diventano mature a 2,6–3 m e i maschi a 3–4 m, corrispondenti a circa 13–16 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Podem viver próximos uns dos outros, mas não são animais de grupo.\n\nA reprodução ocorre de novembro a janeiro. Entre março e abril, as fêmeas enterram 30–50 ovos em bancos de areia. Os filhotes eclodem cerca de três meses depois, em julho.\n\nFêmeas amadurecem com 2,6–3 m e machos com 3–4 m, correspondendo a cerca de 13–16 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "互いに近くで生活することはありますが、群れを作る動物ではありません。\n\n繁殖期は11～1月です。3～4月に雌は砂州に30～50個の卵を産んで埋め、約3か月後の7月に孵化します。\n\n雌は体長2.6～3m、雄は3～4mで性成熟し、年齢では約13～16歳です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "可以近距离生活，但并不是群居动物。\n\n繁殖季为11月至1月。3月至4月，雌性会在沙质河岸埋下30～50枚卵，约3个月后于7月孵化。\n\n雌性在体长2.6～3米时性成熟，雄性为3～4米，对应年龄约13～16岁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Verdickung an der Schnauzenspitze männlicher Gangesgaviale wird nach dem indischen Wort für Topf „Ghara“ benannt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gangesgaviale sind die einzige Krokodilart, bei der sich der Geschlechtsdimorphismus nicht nur in der Größe, sondern auch in der Anatomie zeigt; die Männchen unterscheiden sich durch ihre markante Nasenverdickung von den Weibchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gangesgaviale legen die größten Eier aller Krokodilarten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gangesgaviale sind nicht aggressiv. Ihre langen, dünnen Kiefer sind nicht dazu geeignet, größere Tiere anzugreifen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Schnauze des Gangesgavials weist Sensorzellen auf, die Vibrationen im Wasser erkennen können, was sie zu ausgezeichneten Fischjägern macht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The swelling at the tip of a male gharial's snout is named 'ghara', after the Indian word for a pot.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials are the only crocodilian in which sexual dimorphism appears not only in size but also in anatomy, because males have the distinctive nasal swelling.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials lay the largest eggs of any crocodilian.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials are not aggressive; their long, narrow jaws are poorly suited to attacking large animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The gharial's snout contains sensory cells that detect vibrations in water, making it an excellent fish hunter.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The swelling at the tip of a male gharial's snout is named 'ghara', after the Indian word for a pot.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials are the only crocodilian in which sexual dimorphism appears not only in size but also in anatomy, because males have the distinctive nasal swelling.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials lay the largest eggs of any crocodilian.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gharials are not aggressive; their long, narrow jaws are poorly suited to attacking large animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The gharial's snout contains sensory cells that detect vibrations in water, making it an excellent fish hunter.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La protuberancia del hocico del macho se llama 'ghara'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es el único cocodriliano cuyo dimorfismo sexual también afecta claramente a la anatomía.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pone los huevos más grandes entre los cocodrilianos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No es agresivo y sus mandíbulas no están adaptadas para atacar animales grandes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El hocico contiene células sensoriales capaces de detectar vibraciones en el agua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le renflement du museau du mâle est appelé 'ghara'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "C'est le seul crocodilien dont le dimorphisme sexuel concerne aussi clairement l'anatomie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il pond les plus gros œufs de tous les crocodiliens.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il n'est pas agressif et ses mâchoires ne sont pas adaptées à l'attaque de grands animaux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son museau possède des cellules sensorielles capables de détecter les vibrations dans l'eau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il rigonfiamento sul muso del maschio si chiama 'ghara'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È l'unico coccodrillo in cui il dimorfismo sessuale riguarda chiaramente anche l'anatomia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Depone le uova più grandi tra tutti i coccodrilli.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Non è aggressivo e le sue mascelle non sono adatte ad attaccare grandi animali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il muso contiene cellule sensoriali che rilevano vibrazioni nell'acqua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A protuberância no focinho do macho é chamada 'ghara'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É o único crocodiliano cujo dimorfismo sexual também se manifesta claramente na anatomia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Põe os maiores ovos entre todos os crocodilianos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Não é agressivo e suas mandíbulas não são adequadas para atacar animais grandes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O focinho possui células sensoriais que detectam vibrações na água.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "雄の吻端のふくらみはインドの壺を意味する『ghara』に由来します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "大きさだけでなく解剖学的特徴にも明確な雌雄差がある唯一のワニ類です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "ワニ類で最大の卵を産みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "攻撃性は低く、細長い顎は大型動物への攻撃に適していません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "吻には水中の振動を感知する感覚細胞があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "雄性吻端的膨大结构名称来自印度语中表示壶的“ghara”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它是唯一不仅体型、连解剖结构也表现出明显两性差异的鳄类。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "会产下所有鳄类中最大的卵。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "攻击性不强，细长的颌部并不适合攻击大型动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "吻部具有可感知水中振动的感觉细胞。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/64870c43/Gharial_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Gavialis gangeticus/map/Gavialis gangeticus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjQ4NzBjNDMvR2hhcmlhbC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Gangesgavial – Planet Zoo 2",
+            "en": "Gharial – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gangesgavials aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Gharial."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Gavialis gangeticus/bilder/Gavialis gangeticus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/64870c43/Gharial_illustration.jpg",
+          "alt": {
+            "de": "Gangesgavial – Zoopedia-Illustration",
+            "en": "Gharial – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gangesgavials aus der Planet Zoo 2 Zoopedia.",
+            "en": "Gharial illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Gavialis gangeticus/bilder/Gavialis gangeticus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Gangesgavial",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gangesgavial",
+        "en": "https://www.planetzoogame.com/2/zoopedia/gharial",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/gharial",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/gavial",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/gavial-du-gange",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/gaviale",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/gavial",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A4%E3%83%B3%E3%83%89%E3%82%AC%E3%83%93%E3%82%A2%E3%83%AB",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%81%92%E6%B2%B3%E9%B3%84"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Männliche Körperlänge '3 m bis über 6 m' bleibt vollständig in der Prosa, damit keine falsche harte Maximalgrenze erzeugt wird. Wildbestand wurde exakt wie angezeigt als 650 übernommen. 30–50 Eier und etwa 3 Monate bis zum Schlupf bleiben in der Fortpflanzungs-Prosa, weil dafür kein sicher bestätigter strukturierter Nachwuchs-/Inkubations-Typ verwendet wird. Die Sozialstruktur bleibt strukturiert offen, da die Quelle zwar ausdrücklich 'keine Gruppentiere' sagt, aber keine einfache Einzelgänger-Klassifikation liefert."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

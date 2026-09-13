@@ -1,0 +1,825 @@
+{
+  "id": "Giraffa tippelskirchi",
+  "identitaet": {
+    "namen": {
+      "de": "Massai-Giraffe",
+      "en": "Masai Giraffe",
+      "en-US": "Masai Giraffe",
+      "es": "Jirafa masái",
+      "fr": "Girafe masaï",
+      "it": "Giraffa masai",
+      "pt-BR": "Girafa-massai",
+      "ja": "マサイキリン",
+      "zh-Hans": "马赛长颈鹿"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Giraffidae",
+          "gattung": "Giraffa",
+          "art": "Giraffa tippelskirchi",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 1200,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Männchen durchschnittlich 1.200 kg; besonders große Exemplare können bis zu 1.300 kg erreichen.",
+            "en": "The Zoopedia gives an average male weight of 1,200 kg; especially large individuals may reach 1,300 kg."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 800,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Weibchen durchschnittlich 800 kg.",
+            "en": "The Zoopedia gives an average female weight of 800 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 35,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Der bereitgestellte Zoopedia-Auszug zeigt beim Wildbestand wörtlich „35“. Ein Tausender-Faktor wird nicht angegeben und deshalb nicht ergänzt.",
+            "en": "The supplied Zoopedia extract literally displays '35' for the wild population. No thousands multiplier is shown, so none has been added."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 13,
+          "max": 15,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Savannen und offene Wälder in Kenia, Tansania und Uganda. Für den strukturierten Projektwert wird nur die ausdrücklich genannte Savanne als Grasland abgebildet.",
+            "en": "The Zoopedia lists savannas and open woodlands in Kenya, Tanzania and Uganda. For the structured project value, only the explicitly stated savanna is mapped to grassland."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Massai-Giraffe (Giraffa tippelskirchi) ist eine Art der Giraffe, die in den Savannen und offenen Wäldern Kenias, Tansanias und Ugandas lebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Masai Giraffe (Giraffa tippelskirchi) is a giraffe species found in the savannas and open woodlands of Kenya, Tanzania and Uganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Masai Giraffe (Giraffa tippelskirchi) is a giraffe species found in the savannas and open woodlands of Kenya, Tanzania and Uganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La jirafa masái (Giraffa tippelskirchi) vive en las sabanas y bosques abiertos de Kenia, Tanzania y Uganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La girafe masaï (Giraffa tippelskirchi) vit dans les savanes et les forêts ouvertes du Kenya, de Tanzanie et d'Ouganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La giraffa masai (Giraffa tippelskirchi) vive nelle savane e nei boschi aperti di Kenya, Tanzania e Uganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A girafa-massai (Giraffa tippelskirchi) vive nas savanas e florestas abertas do Quênia, Tanzânia e Uganda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "マサイキリン（Giraffa tippelskirchi）は、ケニア、タンザニア、ウガンダのサバンナと開けた森林に生息するキリンの一種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "马赛长颈鹿（Giraffa tippelskirchi）生活在肯尼亚、坦桑尼亚和乌干达的稀树草原与开阔林地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Massai-Giraffe (auch Giraffa tippelskirchi) ist eine Art der Giraffe, die in den Savannen und offenen Wäldern Kenias, Tansanias und Ugandas lebt.\n\nDie Massai-Giraffe unterscheidet sich von anderen Giraffenarten durch ihre stacheligen, blattförmigen Flecken in dunkelbraunen bis roten Farbtönen, die durch hellgelbe Verbindungslinien voneinander getrennt sind. Männchen besitzen gut entwickelte Knochenhörner (Ossicones) auf dem Kopf, während die Hörner der Weibchen kleiner und dünner sind.\n\nMassai-Giraffen sind riesig und haben den typischen langen Hals: Männchen erreichen durchschnittlich eine Größe von 5,4 m und ein Gewicht von 1.200 kg. Besonders große Exemplare können bis zu 5,8 m groß und 1.300 kg schwer werden. Weibchen sind im Durchschnitt 4,7 m groß und wiegen 800 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Masai Giraffe (Giraffa tippelskirchi) is a giraffe species found in the savannas and open woodlands of Kenya, Tanzania and Uganda.\n\nIt differs from other giraffe species through its jagged, leaf-shaped dark brown to reddish patches separated by pale yellow lines. Males have well-developed ossicones, while those of females are smaller and thinner.\n\nMasai Giraffes are enormous and have the characteristic long neck. Males average 5.4 m in height and 1,200 kg in weight; especially large individuals may reach 5.8 m and 1,300 kg. Females average 4.7 m and 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Masai Giraffe (Giraffa tippelskirchi) is a giraffe species found in the savannas and open woodlands of Kenya, Tanzania and Uganda.\n\nIt differs from other giraffe species through its jagged, leaf-shaped dark brown to reddish patches separated by pale yellow lines. Males have well-developed ossicones, while those of females are smaller and thinner.\n\nMasai Giraffes are enormous and have the characteristic long neck. Males average 5.4 m in height and 1,200 kg in weight; especially large individuals may reach 5.8 m and 1,300 kg. Females average 4.7 m and 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La jirafa masái vive en las sabanas y bosques abiertos de Kenia, Tanzania y Uganda.\n\nSe distingue por sus manchas irregulares en forma de hoja, de tonos marrón oscuro a rojizos, separadas por líneas amarillas claras. Los machos poseen osiconos más desarrollados que las hembras.\n\nLos machos miden en promedio 5,4 m y pesan 1.200 kg; los ejemplares especialmente grandes pueden alcanzar 5,8 m y 1.300 kg. Las hembras promedian 4,7 m y 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La girafe masaï vit dans les savanes et forêts ouvertes du Kenya, de Tanzanie et d'Ouganda.\n\nElle se distingue par ses taches irrégulières en forme de feuilles, brun foncé à rougeâtres, séparées par des lignes jaune clair. Les mâles possèdent des ossicônes plus développés que les femelles.\n\nLes mâles mesurent en moyenne 5,4 m et pèsent 1 200 kg; les plus grands peuvent atteindre 5,8 m et 1 300 kg. Les femelles mesurent en moyenne 4,7 m et pèsent 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La giraffa masai vive nelle savane e nei boschi aperti di Kenya, Tanzania e Uganda.\n\nSi distingue per le macchie irregolari a forma di foglia, dal marrone scuro al rossastro, separate da linee giallo chiaro. I maschi possiedono ossiconi più sviluppati delle femmine.\n\nI maschi sono alti in media 5,4 m e pesano 1.200 kg; gli esemplari più grandi possono raggiungere 5,8 m e 1.300 kg. Le femmine sono alte in media 4,7 m e pesano 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A girafa-massai vive nas savanas e florestas abertas do Quênia, Tanzânia e Uganda.\n\nDistingue-se por manchas irregulares em forma de folhas, em tons marrom-escuros a avermelhados, separadas por linhas amarelo-claras. Machos possuem ossicones mais desenvolvidos que as fêmeas.\n\nMachos têm em média 5,4 m e 1.200 kg; indivíduos muito grandes podem chegar a 5,8 m e 1.300 kg. Fêmeas têm em média 4,7 m e 800 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "マサイキリンはケニア、タンザニア、ウガンダのサバンナと開けた森林に生息します。\n\n暗褐色から赤褐色のギザギザした葉状斑紋と、その間を分ける淡黄色の線が特徴です。雄はよく発達したオシコーンを持ち、雌のものはより小さく細いです。\n\n雄は平均5.4m、1,200kgで、大型個体は5.8m、1,300kgに達します。雌は平均4.7m、800kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "马赛长颈鹿生活在肯尼亚、坦桑尼亚和乌干达的稀树草原与开阔林地。\n\n其特征是深棕至红褐色、边缘呈锯齿状叶片形的斑块，斑块之间由浅黄色线条分隔。雄性的骨质角更加发达，雌性则较小较细。\n\n雄性平均高5.4米、重1,200千克，特别大的个体可达5.8米和1,300千克。雌性平均高4.7米、重800千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Massai-Giraffe gilt als stark gefährdet. In den letzten 30 Jahren sind die Bestände aufgrund von Lebensraumverlust, Ausweitung der Landwirtschaft, Konflikten zwischen Mensch und Wildtieren sowie Wilderei wegen Fleisch, Häuten und traditioneller Medizin um mehr als 50 % zurückgegangen. Giraffen verlieren durch die Ausbreitung menschlicher Siedlungen den Zugang zu wichtigen Futter- und Fortpflanzungsgebieten, und politische Instabilität sowie unzureichende Durchsetzung der Wildtiergesetze in Teilen ihres Verbreitungsgebiets erschweren die Bekämpfung der Wilderei.\n\nUngeachtet dieser Herausforderungen gab es jedoch auch bemerkenswerte Erfolge bei der Arterhaltung. Einige Initiativen unter der Leitung von Nichtregierungsorganisationen und nationalen Naturschutzbehörden haben die Überwachung, den Schutz und das Engagement der Bevölkerung verbessert. Ein besseres Verständnis der Bewegungsmuster durch GPS-Ortung und Bestandserhebungen haben zu einer Verbesserung des Lebensraummanagements geführt, und die Wiederansiedlung in Schutzgebieten hat die lokalen Bestände gestärkt. Darüber hinaus hat der Ausbau von Naturschutzgebieten und Ökotourismus den lokalen Gemeinden wirtschaftliche Anreize geboten, die Arterhaltungsmaßnahmen zu unterstützen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Masai Giraffe is Endangered. Over the last 30 years, populations have declined by more than 50% because of habitat loss, agricultural expansion, human-wildlife conflict and poaching for meat, hides and traditional medicine. Expanding settlements reduce access to important feeding and breeding areas, while political instability and weak enforcement of wildlife laws make anti-poaching work more difficult.\n\nThere have nevertheless been notable conservation successes. NGO and government-led initiatives have improved monitoring, protection and community engagement. GPS tracking and surveys have improved habitat management, reintroductions into protected areas have strengthened local populations, and expansion of protected areas and ecotourism has created economic incentives for local communities to support conservation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Masai Giraffe is Endangered. Over the last 30 years, populations have declined by more than 50% because of habitat loss, agricultural expansion, human-wildlife conflict and poaching for meat, hides and traditional medicine. Expanding settlements reduce access to important feeding and breeding areas, while political instability and weak enforcement of wildlife laws make anti-poaching work more difficult.\n\nThere have nevertheless been notable conservation successes. NGO and government-led initiatives have improved monitoring, protection and community engagement. GPS tracking and surveys have improved habitat management, reintroductions into protected areas have strengthened local populations, and expansion of protected areas and ecotourism has created economic incentives for local communities to support conservation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro. En los últimos 30 años las poblaciones han disminuido más del 50% por pérdida de hábitat, expansión agrícola, conflictos con humanos y caza furtiva.\n\nEl seguimiento por GPS, los censos, las reintroducciones, las áreas protegidas y el ecoturismo han contribuido a mejorar la conservación y el apoyo de las comunidades locales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La girafe masaï est En danger. Les populations ont diminué de plus de 50% en 30 ans en raison de la perte d'habitat, de l'agriculture, des conflits avec l'humain et du braconnage.\n\nLe suivi GPS, les recensements, les réintroductions, l'extension des zones protégées et l'écotourisme ont amélioré la conservation et l'implication des communautés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È In pericolo. Negli ultimi 30 anni le popolazioni sono diminuite di oltre il 50% a causa di perdita dell'habitat, espansione agricola, conflitti con l'uomo e bracconaggio.\n\nMonitoraggio GPS, censimenti, reintroduzioni, aree protette ed ecoturismo hanno migliorato la conservazione e il coinvolgimento delle comunità locali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Está Em Perigo. Nos últimos 30 anos, as populações diminuíram mais de 50% por perda de habitat, expansão agrícola, conflitos com humanos e caça ilegal.\n\nMonitoramento por GPS, levantamentos populacionais, reintroduções, áreas protegidas e ecoturismo melhoraram a conservação e o apoio das comunidades.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "絶滅危惧種です。過去30年間で、生息地喪失、農地拡大、人と野生動物の衝突、密猟により個体数が50%以上減少しました。\n\nGPS追跡、個体数調査、保護区への再導入、保護区拡大、エコツーリズムなどが保全に役立っています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为濒危。过去30年中，由于栖息地丧失、农业扩张、人兽冲突以及为肉、皮和传统医药而进行的偷猎，种群下降超过50%。\n\nGPS追踪、种群调查、保护区重新引入、扩大保护区以及生态旅游都改善了保护成效和当地社区参与。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Masai-Giraffen leben in flexiblen sozialen Gruppen, was bedeutet, dass die Tiere oft einer Gruppe beitreten oder sie verlassen, ohne starke Bindungen aufzubauen, und dass sich die Zusammensetzung der Gruppen regelmäßig ändert. Diese Gruppen basieren oft auf Alter, Geschlecht oder Verwandtschaft. Weibchen und ihre Kälber bilden lose Verbände, während Männchen entweder allein leben oder vorübergehende Junggesellengruppen bilden.\n\nMasai-Giraffen paaren sich das ganze Jahr über. Ausgewachsene, alleinstehende Männchen nähern sich den Kuhherden und untersuchen deren Urin auf Anzeichen von Brunst. Zur Balz gehört es, rivalisierende Männchen zu bekämpfen und die Weibchen zu beschnuppern, bis sie sich zur Paarung bereit erklären.\n\nGiraffen tragen 13 bis 15 Monate lang ihre Kälber aus. Kurz vor der Geburt trennt sich das Muttertier von der Herde. Sie bringt ein Kalb zur Welt, obwohl gelegentlich auch Zwillinge verzeichnet wurden. Das Kalb fällt 1,5 m tief auf den Boden und kann innerhalb einer Stunde nach der Geburt laufen. Die Mutter versteckt das Kalb in Büschen und sucht allein nach Futter, bis es etwa 3 Wochen alt ist. Dann schließen sich Mutter und Kalb wieder der Herde an. Giraffen fangen im Alter von 1 Monat an, feste Nahrung zu fressen, wobei die Entwöhnung schrittweise erfolgt und spätestens im Alter von 1 Jahr abgeschlossen ist. Die Kälber sind bis zu einem Alter von etwa 18 Monaten eng mit ihrer Mutter verbunden, bevor sie sich von ihr lösen.\n\nGiraffen erreichen ihre Geschlechtsreife mit etwa 4 Jahren. Junge Bullen verlassen mit 3 Jahren ihre Geburtsherde, um sich einer Junggesellenherde anzuschließen, und werden nach und nach immer eigenständiger, bis sie mit etwa 7 Jahren ganz allein unterwegs sind. Kühe bleiben meistens bei den Herden ihrer Mütter, können aber im Laufe ihres Lebens gelegentlich zu anderen wechseln.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Masai Giraffes live in flexible social groups whose membership changes frequently and may be based on age, sex or relatedness. Females and calves form loose associations, while males may live alone or in temporary bachelor groups.\n\nThey mate throughout the year. Adult solitary males approach female groups and investigate urine for signs of oestrus, while courtship includes fighting rivals and smelling females.\n\nGestation lasts 13–15 months. Shortly before birth, the mother separates from the herd and usually gives birth to one calf, although twins are occasionally recorded. The calf drops about 1.5 m to the ground and can walk within an hour. The mother hides it in bushes until around three weeks old. Calves begin eating solid food at one month and are fully weaned by one year; they remain closely associated with their mother until around 18 months.\n\nGiraffes reach sexual maturity at around four years. Young bulls leave their natal herd at about three years, join bachelor groups and become progressively more independent until living alone at around seven years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Masai Giraffes live in flexible social groups whose membership changes frequently and may be based on age, sex or relatedness. Females and calves form loose associations, while males may live alone or in temporary bachelor groups.\n\nThey mate throughout the year. Adult solitary males approach female groups and investigate urine for signs of oestrus, while courtship includes fighting rivals and smelling females.\n\nGestation lasts 13–15 months. Shortly before birth, the mother separates from the herd and usually gives birth to one calf, although twins are occasionally recorded. The calf drops about 1.5 m to the ground and can walk within an hour. The mother hides it in bushes until around three weeks old. Calves begin eating solid food at one month and are fully weaned by one year; they remain closely associated with their mother until around 18 months.\n\nGiraffes reach sexual maturity at around four years. Young bulls leave their natal herd at about three years, join bachelor groups and become progressively more independent until living alone at around seven years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Vive en grupos sociales flexibles cuya composición cambia con frecuencia. Las hembras y sus crías forman asociaciones sueltas, mientras que los machos pueden vivir solos o en grupos temporales de solteros.\n\nSe reproduce durante todo el año. La gestación dura 13–15 meses y normalmente nace una sola cría, aunque ocasionalmente hay gemelos. La cría puede caminar una hora después del nacimiento, empieza a comer alimento sólido al mes y queda destetada como muy tarde al año.\n\nLa madurez sexual se alcanza alrededor de los 4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle vit en groupes sociaux flexibles dont la composition change fréquemment. Les femelles et les jeunes forment des associations lâches, tandis que les mâles peuvent vivre seuls ou en groupes temporaires de célibataires.\n\nLa reproduction a lieu toute l'année. La gestation dure 13 à 15 mois et la femelle donne généralement naissance à un seul petit, bien que des jumeaux soient parfois observés. Le jeune peut marcher dans l'heure suivant la naissance, commence à manger des aliments solides vers un mois et est sevré au plus tard vers un an.\n\nLa maturité sexuelle est atteinte vers 4 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive in gruppi sociali flessibili che cambiano frequentemente composizione. Femmine e piccoli formano associazioni poco stabili, mentre i maschi possono vivere soli o in gruppi temporanei di scapoli.\n\nSi riproduce tutto l'anno. La gestazione dura 13–15 mesi e normalmente nasce un solo piccolo, anche se occasionalmente sono stati registrati gemelli. Il piccolo può camminare entro un'ora, inizia a mangiare cibo solido a un mese e viene completamente svezzato entro un anno.\n\nLa maturità sessuale viene raggiunta intorno ai 4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Vive em grupos sociais flexíveis cuja composição muda regularmente. Fêmeas e filhotes formam associações soltas, enquanto machos podem viver sozinhos ou em grupos temporários de solteiros.\n\nReproduz-se durante todo o ano. A gestação dura 13–15 meses e geralmente nasce um único filhote, embora gêmeos ocorram ocasionalmente. O filhote pode caminhar em uma hora, começa a comer sólidos com um mês e é desmamado até cerca de um ano.\n\nA maturidade sexual ocorre por volta dos 4 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "構成が頻繁に変化する柔軟な社会群で生活します。雌と子は緩やかな集団を作り、雄は単独または一時的な独身群で暮らします。\n\n一年中繁殖します。妊娠期間は13～15か月で、通常1頭の子を産みますが、まれに双子も記録されています。子は出生後1時間以内に歩け、1か月で固形物を食べ始め、1歳までに離乳します。\n\n約4歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "生活在成员经常变化的灵活社会群体中。雌性和幼崽形成松散群体，雄性可独居或组成临时单身群。\n\n全年均可繁殖。妊娠期13～15个月，通常产1只幼崽，但偶尔记录到双胞胎。幼崽出生后一小时内即可行走，1个月开始吃固体食物，并在1岁前完成断奶。\n\n约4岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Giraffe ist das Tier mit der größten Körperhöhe der Welt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zunge einer Giraffe ist 45 cm lang und kann zum Greifen verwendet werden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Giraffenbullen schleudern im Kampf ihre Hälse gegeneinander und versuchen, sich mit ihren Hörner zu verletzen, um sich so das Recht zur Paarung mit einer Kuh zu sichern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Haut von Giraffen gibt Stoffe ab, die Parasiten fernhalten und ihnen einen sehr eigenen Geruch verleihen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Giraffen verfügen über robuste Lippen und kräftige Kiefer, mit denen sie Dornen und zähe Blätter zerkauen können, die viele andere Pflanzenfresser meiden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The giraffe is the tallest land animal in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A giraffe's tongue is about 45 cm long and can be used for grasping.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Male giraffes swing their necks against rivals and try to injure them with their ossicones to gain mating rights.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Giraffe skin releases substances that repel parasites and give the animals a distinctive smell.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other herbivores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The giraffe is the tallest land animal in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A giraffe's tongue is about 45 cm long and can be used for grasping.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Male giraffes swing their necks against rivals and try to injure them with their ossicones to gain mating rights.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Giraffe skin releases substances that repel parasites and give the animals a distinctive smell.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other herbivores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La jirafa es el animal terrestre más alto del mundo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su lengua mide unos 45 cm y puede utilizarse para agarrar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los machos combaten golpeándose con el cuello.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La piel libera sustancias que ayudan a mantener alejados a los parásitos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sus labios resistentes y fuertes mandíbulas permiten comer espinas y hojas duras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La girafe est l'animal terrestre le plus haut du monde.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa langue mesure environ 45 cm et peut saisir des objets.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les mâles combattent en balançant leur cou contre leurs rivaux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La peau libère des substances qui repoussent les parasites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les lèvres robustes et les mâchoires puissantes permettent de mâcher épines et feuilles coriaces.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La giraffa è l'animale terrestre più alto del mondo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La lingua è lunga circa 45 cm e può essere usata per afferrare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I maschi combattono colpendo i rivali con il collo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La pelle produce sostanze che tengono lontani i parassiti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Labbra robuste e forti mascelle permettono di masticare spine e foglie coriacee.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A girafa é o animal terrestre mais alto do mundo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A língua mede cerca de 45 cm e pode ser usada para agarrar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Machos lutam golpeando seus pescoços contra rivais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A pele libera substâncias que ajudam a afastar parasitas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Lábios resistentes e mandíbulas fortes permitem mastigar espinhos e folhas duras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キリンは世界で最も背の高い陸上動物です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "舌は約45cmあり、物をつかむことができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雄は首をぶつけ合って争います。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "皮膚から寄生虫を遠ざける物質が出ます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "丈夫な唇と強い顎で棘や硬い葉を食べることができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "长颈鹿是世界上身高最高的陆生动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "舌头约45厘米长，并可用于抓取。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雄性会用颈部互相撞击进行争斗。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "皮肤会释放有助于驱赶寄生虫的物质。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "坚韧的嘴唇和强壮的颌部可以咀嚼荆棘和坚硬叶片。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/234e9b8c/Giraffe_Masai_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Giraffa tippelskirchi/map/Giraffa tippelskirchi map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjM0ZTliOGMvR2lyYWZmZV9NYXNhaS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Massai-Giraffe – Planet Zoo 2",
+            "en": "Masai Giraffe – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Massai-Giraffe aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Masai Giraffe."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Giraffa tippelskirchi/bilder/Giraffa tippelskirchi 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/234e9b8c/Giraffe_Masai_illustration.jpg",
+          "alt": {
+            "de": "Massai-Giraffe – Zoopedia-Illustration",
+            "en": "Masai Giraffe – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Massai-Giraffe aus der Planet Zoo 2 Zoopedia.",
+            "en": "Masai Giraffe illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Giraffa tippelskirchi/bilder/Giraffa tippelskirchi illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Massai-Giraffe",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/massai-giraffe",
+        "en": "https://www.planetzoogame.com/2/zoopedia/masai-giraffe",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/masai-giraffe",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/jirafa-mas%C3%A1i",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/girafe-masa%C3%AF",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/giraffa-masai",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/girafa-massai",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%9E%E3%82%B5%E3%82%A4%E3%82%AD%E3%83%AA%E3%83%B3",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%A9%AC%E8%B5%9B%E9%95%BF%E9%A2%88%E9%B9%BF"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Die Größenangaben 5,4 m / 5,8 m / 4,7 m werden nicht in Körper- oder Schulterlänge umgedeutet, weil die Quelle nur allgemein von 'Größe' spricht. Wildbestand wurde exakt wie angezeigt als 35 übernommen. Ein Kalb, gelegentliche Zwillinge sowie die flexible Sozialstruktur bleiben in der Prosa, da dafür keine sicher bestätigten strukturierten Projekt-Enums verwendet werden."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

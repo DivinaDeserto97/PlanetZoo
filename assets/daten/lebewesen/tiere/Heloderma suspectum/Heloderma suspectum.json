@@ -1,0 +1,775 @@
+{
+  "id": "Heloderma suspectum",
+  "identitaet": {
+    "namen": {
+      "de": "Gila-Krustenechse",
+      "en": "Gila Monster",
+      "en-US": "Gila Monster",
+      "es": "Monstruo de Gila",
+      "fr": "Monstre de Gila",
+      "it": "Mostro di Gila",
+      "pt-BR": "Monstro-de-gila",
+      "ja": "アメリカドクトカゲ",
+      "zh-Hans": "希拉毒蜥"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Helodermatidae",
+          "gattung": "Heloderma",
+          "art": "Heloderma suspectum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "min": 0.51,
+          "max": 0.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "min": 0.35,
+          "max": 0.7,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Potenziell gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Near Threatened."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass die jungen Gila-Krustenechsen nach 3 bis 5 Jahren ausgewachsen sind und die Geschlechtsreife erreichen.",
+            "en": "The Zoopedia states that young Gila Monsters are fully grown and reach sexual maturity after 3–5 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Gila-Krustenechsen als Einzelgänger, die nur zur Paarung oder zum Vertreiben von Rivalen interagieren.",
+            "en": "The Zoopedia describes Gila Monsters as solitary, interacting only to mate or drive away rivals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Gila-Krustenechse (Heloderma suspectum) ist eine große, giftige Eidechsenart, die in den Trockengebieten im Süden der Vereinigten Staaten und im Norden Mexikos beheimatet ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gila Monster (Heloderma suspectum) is a large venomous lizard native to dry regions of the southern United States and northern Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gila Monster (Heloderma suspectum) is a large venomous lizard native to dry regions of the southern United States and northern Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El monstruo de Gila (Heloderma suspectum) es un gran lagarto venenoso nativo de las regiones secas del sur de Estados Unidos y el norte de México.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le monstre de Gila (Heloderma suspectum) est un grand lézard venimeux originaire des régions sèches du sud des États-Unis et du nord du Mexique.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il mostro di Gila (Heloderma suspectum) è una grande lucertola velenosa originaria delle regioni aride degli Stati Uniti meridionali e del Messico settentrionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O monstro-de-gila (Heloderma suspectum) é um grande lagarto venenoso nativo das regiões secas do sul dos Estados Unidos e do norte do México.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アメリカドクトカゲ（Heloderma suspectum）は、アメリカ南部とメキシコ北部の乾燥地域に生息する大型の有毒トカゲです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "希拉毒蜥（Heloderma suspectum）是一种大型有毒蜥蜴，原产于美国南部和墨西哥北部的干旱地区。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Gila-Krustenechse (auch Heloderma suspectum) ist eine große, giftige Eidechsenart, die in den Trockengebieten im Süden der Vereinigten Staaten und im Norden Mexikos beheimatet ist.\n\nSie verfügt über orangefarbene und schwarze Schuppen, die in einem gestreiften und netzartigen Muster angeordnet sind. Die Gila-Krustenechse hat einen sehr ausgeprägten Geruchssinn, den sie bei der Jagd einsetzt, und man kann oft beobachten, wie sie mit schnellen Zungenbewegungen die Luft beschnuppert.\n\nDie Gila-Krustenechse wird 51 bis 60 cm lang und wiegt zwischen 0,35 kg und 0,7 kg, was sie zur größten in den Vereinigten Staaten heimischen Eidechse macht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gila Monster (Heloderma suspectum) is a large venomous lizard native to dry regions of the southern United States and northern Mexico.\n\nIt has orange and black scales arranged in striped and net-like patterns. The Gila Monster has a highly developed sense of smell that it uses while hunting and is often seen flicking its tongue rapidly to sample the air.\n\nIt grows to 51–60 cm in length and weighs 0.35–0.7 kg, making it the largest lizard native to the United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gila Monster (Heloderma suspectum) is a large venomous lizard native to dry regions of the southern United States and northern Mexico.\n\nIt has orange and black scales arranged in striped and net-like patterns. The Gila Monster has a highly developed sense of smell that it uses while hunting and is often seen flicking its tongue rapidly to sample the air.\n\nIt grows to 51–60 cm in length and weighs 0.35–0.7 kg, making it the largest lizard native to the United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El monstruo de Gila vive en regiones secas del sur de Estados Unidos y el norte de México.\n\nTiene escamas naranjas y negras dispuestas en patrones rayados y reticulados, y posee un olfato muy desarrollado.\n\nMide 51–60 cm y pesa 0,35–0,7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le monstre de Gila vit dans les régions sèches du sud des États-Unis et du nord du Mexique.\n\nSes écailles orange et noires forment des motifs rayés et réticulés, et il possède un odorat très développé.\n\nIl mesure 51–60 cm et pèse 0,35–0,7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il mostro di Gila vive nelle regioni aride degli Stati Uniti meridionali e del Messico settentrionale.\n\nHa squame arancioni e nere disposte in motivi striati e reticolati e un olfatto molto sviluppato.\n\nMisura 51–60 cm e pesa 0,35–0,7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O monstro-de-gila vive nas regiões secas do sul dos Estados Unidos e do norte do México.\n\nPossui escamas laranjas e pretas em padrões listrados e reticulados e um olfato muito desenvolvido.\n\nMede 51–60 cm e pesa 0,35–0,7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アメリカドクトカゲはアメリカ南部とメキシコ北部の乾燥地域に生息します。\n\nオレンジ色と黒色の鱗が縞状・網目状の模様を作り、非常に発達した嗅覚を持ちます。\n\n全長51～60cm、体重0.35～0.7kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "希拉毒蜥生活在美国南部和墨西哥北部的干旱地区。\n\n橙色和黑色鳞片形成条纹和网状花纹，并拥有非常发达的嗅觉。\n\n体长51～60厘米，体重0.35～0.7千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Gila-Krustenechse gilt als potenziell gefährdet und ist vor allem vom Verlust ihres Lebensraums durch die Ausdehnung von Stadtgebieten und landwirtschaftlichen Flächen betroffen. Diese Tiere können befestigte Kanäle und Autobahnen nicht überqueren, gelangen daher nicht in geeignetere Lebensräume oder kommen bei dem Versuch durch Verkehrsunfälle ums Leben. In manchen Gegenden werden sie für kommerzielle oder private Sammlungen gefangen. Außerdem werden sie oft aus Angst von Menschen getötet, obwohl sie sich zu langsam bewegen, um eine ernsthafte Gefahr für Menschen darzustellen.\n\nDie Gila-Krustenechse war die erste giftige Art, die 1952 gesetzlich geschützt wurde. Heute stehen diese Tiere und ihr Lebensraum in ihrem gesamten natürlichen Verbreitungsgebiet unter Schutz, und der internationale Handel ist gemäß CITES Anhang II eingeschränkt. Umsiedlungen von Gila-Krustenechsen aus gefährdeten Lebensräumen haben sich als erfolglos erwiesen, da diese Tiere unter großem Risiko versuchen, in ihr ursprüngliches Verbreitungsgebiet zurückzukehren. Öffentliche Aufklärungskampagnen, die das Ansehen der Tiere verbessern und die Angst in der Bevölkerung verringern, könnten stattdessen dazu beitragen, ein friedliches Miteinander zu fördern, wenn neue Siedlungen im Verbreitungsgebiet der Gila-Krustenechsen entstehen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gila Monster is Near Threatened and is mainly affected by habitat loss caused by urban and agricultural expansion. It cannot cross concrete-lined canals and highways safely, limiting access to suitable habitat and causing road deaths. In some areas it is collected for commercial or private collections, and people sometimes kill it out of fear despite its slow movement.\n\nThe Gila Monster was the first venomous species to receive legal protection in 1952. Today the animals and their habitat are protected throughout their natural range, and international trade is restricted under CITES Appendix II. Translocations have generally failed because individuals attempt to return to their original home ranges, so public education may be a more effective way to reduce conflict.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gila Monster is Near Threatened and is mainly affected by habitat loss caused by urban and agricultural expansion. It cannot cross concrete-lined canals and highways safely, limiting access to suitable habitat and causing road deaths. In some areas it is collected for commercial or private collections, and people sometimes kill it out of fear despite its slow movement.\n\nThe Gila Monster was the first venomous species to receive legal protection in 1952. Today the animals and their habitat are protected throughout their natural range, and international trade is restricted under CITES Appendix II. Translocations have generally failed because individuals attempt to return to their original home ranges, so public education may be a more effective way to reduce conflict.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está considerado Casi Amenazado. La pérdida de hábitat por urbanización y agricultura, las carreteras, la captura para colecciones y la persecución por miedo son amenazas importantes.\n\nEstá protegido legalmente en toda su área natural y el comercio internacional está restringido por CITES Apéndice II.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est classé Quasi menacé. La perte d'habitat due à l'urbanisation et à l'agriculture, les routes, la capture pour les collections et la persécution par peur sont des menaces importantes.\n\nIl est protégé légalement dans toute son aire naturelle et le commerce international est limité par l'Annexe II de la CITES.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato Quasi minacciato. Perdita di habitat, espansione urbana e agricola, strade, catture per collezioni e persecuzione da parte delle persone sono minacce importanti.\n\nÈ protetto legalmente in tutto l'areale naturale e il commercio internazionale è limitato dalla CITES Appendice II.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Quase Ameaçado. Perda de habitat, expansão urbana e agrícola, estradas, captura para coleções e perseguição por medo são ameaças importantes.\n\nÉ protegido legalmente em toda a área natural e o comércio internacional é restrito pela CITES Apêndice II.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "準絶滅危惧種です。都市化や農地拡大による生息地喪失、道路、収集目的の捕獲、人々による駆除などが脅威です。\n\n自然分布域では法的に保護され、国際取引はワシントン条約附属書IIで制限されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为近危。城市和农业扩张造成的栖息地丧失、道路、收藏捕捉以及因恐惧而被人类杀死都是主要威胁。\n\n在整个自然分布区受到法律保护，国际贸易受CITES附录II限制。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gila-Krustenechsen sind Einzelgänger und interagieren nur mit anderen, um sich zu paaren oder um Rivalen zu vertreiben.\n\nWährend der Paarungszeit von Mai bis Juni spüren männliche Gila-Krustenechsen Weibchen anhand ihres Geruchs auf. Trifft ein Männchen auf ein Weibchen, versucht es, sich auf sie zu setzen. Wenn sie es zulässt, paaren sich die beiden; sie kann dies jedoch ablehnen, indem sie ihn beißt.\n\nEtwa zwei Monate später gräbt das Weibchen ein flaches Nest in den Sand, legt ein Gelege von 2 bis 12 Eiern ab und bedeckt diese. Neun Monate später schlüpfen die Jungtiere.\n\nNach 3 bis 5 Jahren sind die jungen Gila-Krustenechsen ausgewachsen und erreichen ihre Geschlechtsreife.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Gila Monsters are solitary and interact only to mate or drive away rivals.\n\nDuring the May–June breeding season, males locate females by scent. A male attempts to mount a female, although she may reject him by biting.\n\nAbout two months later, the female digs a shallow nest in sand, lays a clutch of 2–12 eggs and covers them. The young hatch nine months later.\n\nYoung Gila Monsters are fully grown and reach sexual maturity after 3–5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Gila Monsters are solitary and interact only to mate or drive away rivals.\n\nDuring the May–June breeding season, males locate females by scent. A male attempts to mount a female, although she may reject him by biting.\n\nAbout two months later, the female digs a shallow nest in sand, lays a clutch of 2–12 eggs and covers them. The young hatch nine months later.\n\nYoung Gila Monsters are fully grown and reach sexual maturity after 3–5 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitario y solo interactúa con otros individuos para reproducirse o expulsar rivales.\n\nLa reproducción ocurre de mayo a junio. Aproximadamente dos meses después, la hembra pone 2–12 huevos en un nido poco profundo en la arena. Las crías eclosionan nueve meses después.\n\nAlcanza la madurez sexual a los 3–5 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est solitaire et n'interagit avec ses congénères que pour la reproduction ou pour chasser des rivaux.\n\nLa reproduction a lieu de mai à juin. Environ deux mois plus tard, la femelle pond 2 à 12 œufs dans un nid peu profond creusé dans le sable. Les jeunes éclosent neuf mois plus tard.\n\nLa maturité sexuelle est atteinte entre 3 et 5 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario e interagisce con altri individui solo per accoppiarsi o scacciare rivali.\n\nLa riproduzione avviene tra maggio e giugno. Circa due mesi dopo, la femmina depone 2–12 uova in un nido poco profondo nella sabbia. I piccoli schiudono nove mesi dopo.\n\nLa maturità sessuale viene raggiunta a 3–5 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitário e só interage com outros indivíduos para acasalar ou expulsar rivais.\n\nA reprodução ocorre de maio a junho. Cerca de dois meses depois, a fêmea põe 2–12 ovos em um ninho raso na areia. Os filhotes eclodem nove meses depois.\n\nA maturidade sexual ocorre aos 3–5 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性で、交尾やライバルを追い払う時だけ同種と関わります。\n\n繁殖期は5～6月です。約2か月後、雌は砂に浅い巣を掘り、2～12個の卵を産みます。幼体は9か月後に孵化します。\n\n3～5歳で成体となり性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，只在交配或驱赶竞争对手时与同类互动。\n\n繁殖季为5月至6月。大约两个月后，雌性会在沙中挖浅巢并产下2～12枚卵。幼体9个月后孵化。\n\n3～5岁时长成并达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Gila-Krustenechse kann Gift nicht wie eine Schlange injizieren. Stattdessen beißt sie hart zu, kaut und versucht auf diese Weise, giftigen Speichel in die Wunde zu bringen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In freier Wildbahn frisst die Gila-Krustenechse nur fünf bis zehn Mal pro Jahr und hält einen Winterschlaf.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Gift der Gila-Krustenechse ist nicht tödlich, aber angeblich gehört es zu den schmerzhaftesten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ein Derivat des Gifts der Gila-Krustenechse wird zur Behandlung von Diabetes mellitus Typ 2 verwendet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Gift der Gila-Krustenechse wird erforscht, weil es sich eventuell für die Behandlung von Alzheimer eignen könnte.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gila Monster cannot inject venom like a snake; it bites hard, chews and works venomous saliva into the wound.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild it eats only five to ten times per year and hibernates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its venom is not deadly, but is said to be among the most painful.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A derivative of Gila Monster venom is used to treat type 2 diabetes mellitus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its venom is being researched for possible use in Alzheimer's treatment.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gila Monster cannot inject venom like a snake; it bites hard, chews and works venomous saliva into the wound.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In the wild it eats only five to ten times per year and hibernates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its venom is not deadly, but is said to be among the most painful.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A derivative of Gila Monster venom is used to treat type 2 diabetes mellitus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its venom is being researched for possible use in Alzheimer's treatment.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "No inyecta veneno como una serpiente; muerde y mastica para introducir saliva venenosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En libertad come solo cinco a diez veces al año y hiberna.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su veneno no es mortal, pero se considera extremadamente doloroso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un derivado de su veneno se usa para tratar la diabetes tipo 2.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su veneno se investiga por un posible uso contra el Alzheimer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il n'injecte pas son venin comme un serpent; il mord et mâche pour faire pénétrer la salive venimeuse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Dans la nature, il ne mange que cinq à dix fois par an et hiberne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son venin n'est pas mortel mais serait extrêmement douloureux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un dérivé de son venin est utilisé contre le diabète de type 2.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son venin est étudié pour un possible usage contre Alzheimer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Non inietta il veleno come un serpente; morde e mastica per far penetrare la saliva velenosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In natura mangia solo cinque-dieci volte l'anno e va in ibernazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il veleno non è letale ma è considerato estremamente doloroso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Un derivato del veleno viene usato contro il diabete di tipo 2.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il veleno è studiato per un possibile uso contro l'Alzheimer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Não injeta veneno como uma cobra; morde e mastiga para introduzir saliva venenosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Na natureza, come apenas cinco a dez vezes por ano e hiberna.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O veneno não é mortal, mas é considerado extremamente doloroso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Um derivado do veneno é usado no tratamento do diabetes tipo 2.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O veneno é estudado por um possível uso contra Alzheimer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ヘビのように毒を注入するのではなく、強く噛んで咀嚼し毒性の唾液を傷口に入れます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野生では年に5～10回しか食べず、冬眠します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒は致死的ではありませんが、非常に強い痛みを引き起こすとされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒由来成分は2型糖尿病の治療に使われています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒はアルツハイマー病治療への応用可能性も研究されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "不会像蛇一样注射毒液，而是通过持续咬合和咀嚼把有毒唾液带入伤口。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野外每年只进食5～10次，并会冬眠。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒液通常不致命，但据称会造成极强疼痛。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒液衍生物被用于治疗2型糖尿病。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "毒液也被研究是否可用于阿尔茨海默病治疗。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/53830ec0/Lizard_GilaMonster_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Heloderma suspectum/map/Heloderma suspectum map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNTM4MzBlYzAvTGl6YXJkX0dpbGFNb25zdGVyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Gila-Krustenechse – Planet Zoo 2",
+            "en": "Gila Monster – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Gila-Krustenechse aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Gila Monster."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Heloderma suspectum/bilder/Heloderma suspectum 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Gila-Krustenechse",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gila-krustenechse",
+        "en": "https://www.planetzoogame.com/2/zoopedia/gila-monster",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/gila-monster",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/monstruo-de-gila",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/monstre-de-gila",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/mostro-di-gila",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/monstro-de-gila",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%89%E3%82%AF%E3%83%88%E3%82%AB%E3%82%B2",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B8%8C%E6%8B%89%E6%AF%92%E8%9C%A5"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 2–12 Eier, Eiablage etwa zwei Monate nach der Paarung und Schlupf neun Monate später bleiben in der Fortpflanzungs-Prosa, weil kein sicher bestätigter Ei-/Inkubations-Typ verwendet wird. Das Biom bleibt strukturiert offen, weil die Quelle lediglich allgemein 'Trockengebiete' nennt. Der Tierfakt zum Winterschlaf bleibt in der Prosa und wird nicht in ein unbestätigtes Aktivitäts-Enum umgewandelt. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

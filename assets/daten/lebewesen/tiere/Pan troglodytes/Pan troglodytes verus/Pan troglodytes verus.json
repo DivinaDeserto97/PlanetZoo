@@ -1,0 +1,843 @@
+{
+  "id": "Pan troglodytes verus",
+  "identitaet": {
+    "namen": {
+      "de": "Westlicher Schimpanse",
+      "en": "Western Chimpanzee",
+      "en-US": "Western Chimpanzee",
+      "es": "Chimpancé occidental",
+      "fr": "Chimpanzé verus",
+      "it": "Scimpanzé occidentale",
+      "pt-BR": "Chimpanzé-ocidental",
+      "ja": "ニシチンパンジー",
+      "zh-Hans": "西非黑猩猩"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Hominidae",
+          "gattung": "Pan",
+          "art": "Pan troglodytes verus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "stehendeKoerpergroesse",
+          "min": 1.0,
+          "max": 1.5,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 1 bis 1,5 m ausdrücklich als Größe im Stehen; dies ist keine klassische Körperlängenangabe.",
+            "en": "The Zoopedia explicitly gives 1–1.5 m as standing height, not as a conventional body-length measurement."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 40,
+          "max": 70,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 27,
+          "max": 50,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 21000,
+          "max": 53000,
+          "einheit": "individuum",
+          "populationstrend": "",
+          "jahrDerGrundlage": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 8,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 8 Jahre für die Geschlechtsreife; eine erfolgreiche Fortpflanzung gelingt häufig erst im Alter von 13 bis 16 Jahren.",
+            "en": "The Zoopedia gives 8 years for sexual maturity; successful reproduction often does not occur until 13–16 years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Laut Zoopedia wird jeweils ein Jungtier geboren und bis etwa zum Alter von 4 Jahren von der Mutter versorgt.",
+            "en": "According to the Zoopedia, one infant is born at a time and is cared for by its mother until about four years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "wert": "largeGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Westafrikanische Schimpansen leben laut Zoopedia in großen Gruppen. Männchen sind dominant; ihr Rang hängt vor allem vom Alter ab. Die Männchen einer Gruppe sind miteinander verwandt, während Weibchen aus anderen Gruppen zuwandern.",
+            "en": "According to the Zoopedia, Western Chimpanzees live in large groups. Males are dominant and rank mainly by age. Males within a group are related, while females immigrate from other groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Westafrikanische Schimpanse (Pan troglodytes verus) ist eine Unterart des Gemeinen Schimpansen, die in den Wäldern von Guinea, Liberia, Sierra Leone, dem Senegal und der Elfenbeinküste heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Western Chimpanzee (Pan troglodytes verus) is a subspecies of the Common Chimpanzee native to forests in Guinea, Liberia, Sierra Leone, Senegal and Côte d'Ivoire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Western Chimpanzee (Pan troglodytes verus) is a subspecies of the Common Chimpanzee native to forests in Guinea, Liberia, Sierra Leone, Senegal and Côte d'Ivoire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El chimpancé occidental (Pan troglodytes verus) es una subespecie del chimpancé común originaria de los bosques de Guinea, Liberia, Sierra Leona, Senegal y Costa de Marfil.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le chimpanzé verus (Pan troglodytes verus) est une sous-espèce du chimpanzé commun originaire des forêts de Guinée, du Liberia, de Sierra Leone, du Sénégal et de Côte d'Ivoire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo scimpanzé occidentale (Pan troglodytes verus) è una sottospecie dello scimpanzé comune originaria delle foreste di Guinea, Liberia, Sierra Leone, Senegal e Costa d'Avorio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O chimpanzé-ocidental (Pan troglodytes verus) é uma subespécie do chimpanzé-comum nativa das florestas da Guiné, Libéria, Serra Leoa, Senegal e Costa do Marfim.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ニシチンパンジー（Pan troglodytes verus）は、ギニア、リベリア、シエラレオネ、セネガル、コートジボワールの森林に生息するチンパンジーの亜種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "西非黑猩猩（Pan troglodytes verus）是普通黑猩猩的一个亚种，原产于几内亚、利比里亚、塞拉利昂、塞内加尔和科特迪瓦的森林。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Westafrikanische Schimpanse (auch Pan troglodytes verus) ist eine Unterart des Gemeinen Schimpansen, die in den Wäldern von Guinea, Liberia, Sierra Leone, dem Senegal und der Elfenbeinküste heimisch ist. Die Tiere sind gemeinsam mit Bonobos die nächsten Verwandten des Menschen – ihre DNS stimmt zu über 98 % mit der menschlichen überein.\n\nIhr Fell ist schwarz, ihre Haut und ihre Augen sind braun. Sie haben lange Arme, Füße und Hände, zudem verfügen sie über opponierbare Daumen, die ihnen komplexe motorische Handlungen ermöglichen. Die Unterart unterscheidet sich äußerlich kaum vom Zentralafrikanischen oder Ostafrikanischen Schimpansen, die Population ist jedoch bereits seit einer halben Million Jahren von den anderen Populationen getrennt und weist deutliche genetische Abweichungen zu ihnen auf.\n\nSchimpansen erreichen im Stehen eine Größe von 1 m bis 1,5 m. Männchen sind größer und auch schwerer als Weibchen, mit einem Gewicht von 40 kg bis 70 kg im Vergleich zu 27 kg bis 50 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Western Chimpanzee (Pan troglodytes verus) is a subspecies of the Common Chimpanzee native to forests in Guinea, Liberia, Sierra Leone, Senegal and Côte d'Ivoire. Together with bonobos, chimpanzees are humans' closest living relatives, sharing more than 98% of their DNA with humans.\n\nThey have black fur, brown skin and brown eyes, with long arms, feet and hands and opposable thumbs that allow complex motor tasks. The subspecies looks very similar to Central and Eastern Chimpanzees, but its population has been separated from the others for around half a million years and shows clear genetic differences.\n\nChimpanzees stand around 1–1.5 m tall. Males are larger and heavier than females, weighing 40–70 kg compared with 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Western Chimpanzee (Pan troglodytes verus) is a subspecies of the Common Chimpanzee native to forests in Guinea, Liberia, Sierra Leone, Senegal and Côte d'Ivoire. Together with bonobos, chimpanzees are humans' closest living relatives, sharing more than 98% of their DNA with humans.\n\nThey have black fur, brown skin and brown eyes, with long arms, feet and hands and opposable thumbs that allow complex motor tasks. The subspecies looks very similar to Central and Eastern Chimpanzees, but its population has been separated from the others for around half a million years and shows clear genetic differences.\n\nChimpanzees stand around 1–1.5 m tall. Males are larger and heavier than females, weighing 40–70 kg compared with 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El chimpancé occidental (Pan troglodytes verus) es una subespecie del chimpancé común que vive en los bosques de Guinea, Liberia, Sierra Leona, Senegal y Costa de Marfil. Junto con los bonobos, los chimpancés son los parientes vivos más cercanos del ser humano y comparten más del 98% de su ADN.\n\nTienen pelaje negro, piel y ojos marrones, brazos largos y manos y pies con pulgares oponibles que permiten movimientos complejos. Aunque externamente se parecen mucho a otros chimpancés, su población lleva aproximadamente medio millón de años separada y presenta diferencias genéticas claras.\n\nDe pie miden alrededor de 1–1,5 m. Los machos pesan 40–70 kg y las hembras 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le chimpanzé verus (Pan troglodytes verus) est une sous-espèce du chimpanzé commun vivant dans les forêts de Guinée, du Liberia, de Sierra Leone, du Sénégal et de Côte d'Ivoire. Avec les bonobos, les chimpanzés sont les plus proches parents vivants de l’être humain et partagent plus de 98% de leur ADN avec nous.\n\nLe pelage est noir, la peau et les yeux bruns. Les bras, mains et pieds sont longs, et les pouces opposables permettent des gestes complexes. Cette sous-espèce ressemble beaucoup aux autres chimpanzés, mais sa population est séparée d’eux depuis environ un demi-million d’années et présente des différences génétiques nettes.\n\nDebout, les chimpanzés mesurent environ 1 à 1,5 m. Les mâles pèsent 40–70 kg et les femelles 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo scimpanzé occidentale (Pan troglodytes verus) è una sottospecie dello scimpanzé comune delle foreste di Guinea, Liberia, Sierra Leone, Senegal e Costa d'Avorio. Insieme ai bonobo, gli scimpanzé sono i parenti viventi più vicini all’uomo e condividono oltre il 98% del DNA umano.\n\nHanno pelo nero, pelle e occhi marroni, arti lunghi e pollici opponibili che consentono azioni motorie complesse. Esternamente sono simili ad altri scimpanzé, ma la popolazione è separata da circa mezzo milione di anni e presenta differenze genetiche evidenti.\n\nIn piedi raggiungono circa 1–1,5 m. I maschi pesano 40–70 kg, le femmine 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O chimpanzé-ocidental (Pan troglodytes verus) é uma subespécie do chimpanzé-comum que vive nas florestas da Guiné, Libéria, Serra Leoa, Senegal e Costa do Marfim. Junto com os bonobos, os chimpanzés são os parentes vivos mais próximos dos humanos e compartilham mais de 98% do DNA humano.\n\nPossuem pelagem preta, pele e olhos marrons, braços, mãos e pés longos e polegares opositores que permitem movimentos complexos. Embora sejam muito parecidos com outros chimpanzés, sua população está separada há cerca de meio milhão de anos e apresenta diferenças genéticas claras.\n\nEm pé, medem cerca de 1–1,5 m. Machos pesam 40–70 kg e fêmeas 27–50 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ニシチンパンジー（Pan troglodytes verus）は、ギニア、リベリア、シエラレオネ、セネガル、コートジボワールの森林に生息するチンパンジーの亜種です。ボノボとともに人間に最も近い現生の近縁種で、DNAは人間と98%以上一致します。\n\n毛は黒く、皮膚と目は茶色です。長い腕、手足、対向する親指を持ち、複雑な動作ができます。外見上は他のチンパンジーとよく似ていますが、約50万年前から他の個体群と分かれており、遺伝的差異があります。\n\n立ったときの身長は約1～1.5mです。雄は40～70kg、雌は27～50kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "西非黑猩猩（Pan troglodytes verus）是普通黑猩猩的一个亚种，生活在几内亚、利比里亚、塞拉利昂、塞内加尔和科特迪瓦的森林中。黑猩猩与倭黑猩猩同为人类现存最近亲，其DNA与人类超过98%相同。\n\n毛发黑色，皮肤和眼睛为棕色，拥有长臂、长手足以及可对握的拇指，能够完成复杂动作。虽然外观与其他黑猩猩亚种相近，但该种群与其他种群已分离约50万年，并具有明显遗传差异。\n\n站立高度约1～1.5米。雄性体重40～70千克，雌性27～50千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Westafrikanische Schimpansen sind vom Aussterben bedroht, da ihr Lebensraum durch Abholzung und die zunehmende Ausweitung der Landwirtschaft verloren geht und sie für Buschfleisch, traditionelle Medizin und den illegalen Handel mit Haustieren gejagt werden. Sie sind zwar durch nationale und internationale Gesetze geschützt, allerdings wird deren Durchsetzung nur unzureichend gewährleistet. Etwa 30 % der Schimpansen leben in geschützten Nationalparks. Der Rest der Bestände ist jedoch weiterhin stark gefährdet. Hinzu kommt, dass es aufgrund der Bürgerkriege in Westafrika keine einheitlichen, länderübergreifenden Naturschutzgesetze in der Region gibt.\n\nEin Plan, um die Westafrikanischen Schimpansen zu schützen, erfordert weitere Forschung hinsichtlich ihres Lebensraums, ihrer Lebensgeschichte und der Risiken, denen sie ausgesetzt sind. Das könnte zu einer ethischeren Landnutzung bei der weiteren Ausdehnung in ihren Lebensraum beitragen und den rechtlichen Schutz durch eine bessere Durchsetzung der Gesetze gegen Wilderei verbessern. Spendenaktionen und Aufklärungskampagnen tragen dazu bei, laufende Schutz- und Forschungsprojekte zu unterstützen und die Menschen über die Gefährdung unserer nächsten Verwandten zu informieren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Africa have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Africa have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro Crítico por la pérdida de hábitat causada por la tala y la expansión agrícola, además de la caza para carne de monte, medicina tradicional y comercio ilegal de mascotas. Aunque existen leyes nacionales e internacionales, su aplicación es insuficiente. Aproximadamente el 30% vive en parques nacionales protegidos, mientras el resto sigue muy amenazado. Los conflictos civiles también dificultan una protección uniforme entre países.\n\nLa protección requiere más investigación sobre el hábitat, la historia vital y los riesgos, una mejor planificación del uso del suelo y una aplicación más efectiva de las leyes contra la caza furtiva. Las campañas de educación y recaudación apoyan los proyectos de conservación e investigación.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le chimpanzé verus est En danger critique en raison de la déforestation, de l’expansion agricole et de la chasse pour la viande de brousse, la médecine traditionnelle et le commerce illégal d’animaux. Les lois existent mais sont insuffisamment appliquées. Environ 30% des individus vivent dans des parcs nationaux protégés, tandis que le reste reste fortement menacé. Les conflits civils compliquent également l’adoption de mesures cohérentes entre pays.\n\nLa protection nécessite davantage de recherches, une utilisation plus responsable des terres et une meilleure application des lois contre le braconnage. Les campagnes de sensibilisation et de collecte de fonds soutiennent les recherches et les projets de conservation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È In pericolo critico per la perdita dell’habitat dovuta alla deforestazione e all’agricoltura, oltre alla caccia per carne, medicina tradizionale e commercio illegale di animali. Le leggi di protezione esistono ma sono applicate in modo insufficiente. Circa il 30% vive in parchi nazionali protetti; il resto rimane fortemente minacciato. I conflitti civili rendono inoltre difficile una legislazione uniforme tra i paesi.\n\nLa protezione richiede più ricerca, uso più responsabile del territorio e una migliore applicazione delle leggi contro il bracconaggio. Campagne di sensibilizzazione e raccolta fondi sostengono i progetti di conservazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Está Criticamente em Perigo devido à perda de habitat por desmatamento e expansão agrícola e à caça para carne, medicina tradicional e comércio ilegal de animais. Existem leis de proteção, mas a fiscalização é insuficiente. Cerca de 30% vivem em parques nacionais protegidos, enquanto o restante continua sob forte ameaça. Conflitos civis também dificultam uma proteção regional uniforme.\n\nA conservação exige mais pesquisas, uso mais responsável da terra e melhor aplicação das leis contra a caça ilegal. Campanhas de educação e arrecadação de fundos apoiam projetos de pesquisa e conservação.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "森林伐採と農地拡大による生息地喪失、ブッシュミート、伝統医療、違法ペット取引のための狩猟により、深刻な絶滅危惧状態です。国内外の法律で保護されていますが、十分に施行されていません。約30%は国立公園内に生息しますが、残りは強い脅威にさらされています。西アフリカの内戦も国境を越えた統一的な保全を難しくしています。\n\n保護には生息地や生活史、脅威に関するさらなる研究、より適切な土地利用、密猟防止法の強化が必要です。募金や啓発活動も保全・研究を支援します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "由于森林砍伐和农业扩张造成栖息地丧失，以及为了丛林肉、传统医药和非法宠物贸易而遭到捕猎，西非黑猩猩属于极危。虽然受到国内和国际法律保护，但执法不足。约30%的个体生活在受保护的国家公园中，其余种群仍受到严重威胁。西非内战也妨碍了统一的跨国保护措施。\n\n保护工作需要进一步研究栖息地、生活史和风险，并推动更合理的土地利用以及更严格的反偷猎执法。募款和公众教育也可支持持续的保护与研究项目。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schimpansen besitzen ein ausgeprägtes Sozialverhalten. In freier Wildbahn leben sie in großen Gruppen, wobei die Männchen dominant sind. Ihr Rang innerhalb der Hierarchie hängt vor allem vom Alter ab. Die Männchen einer Gruppe sind miteinander verwandt, während bei den Weibchen immer wieder Tiere aus anderen Gruppen zuwandern. Der soziale Zusammenhalt der Gruppe wird durch das gemeinsame Jagen und die gegenseitige Fellpflege gestärkt. Die Tiere geben sogar bestimmte erlernte Fähigkeiten weiter, etwa die Verwendung eines Steins oder eines Stocks als Werkzeug.\n\nSchimpansen sind ziemlich zügellose Tiere, sowohl die Männchen als auch die Weibchen paaren sich im Laufe ihres Lebens mit mehreren Partnern. Das Alpha-Männchen darf sich als erstes ein Weibchen aussuchen, während manche Männchen ihre auserwählten Weibchen wegen ihrer Zügellosigkeit von anderen Männchen fernhalten. Die Paarungszeit dauert das ganze Jahr über.\n\nDie Tragzeit bei Schimpansen beträgt 8 Monate und es wird jeweils nur ein Junges geboren, das von der Mutter bis zum Alter von etwa 4 Jahren versorgt wird. Ab diesem Zeitpunkt beginnt sich das Jungtier von seiner Mutter zu lösen. In diesem Alter knüpfen junge Männchen enge Bindungen zu anderen Männchen ihrer Gruppe, während die Weibchen beginnen, sich außerhalb der Familiengruppe umzuschauen.\n\nWeibchen verlassen ihre Gruppe mit etwa 10 Jahren, um sich einer anderen Gruppe anzuschließen, während die Männchen bei ihrer ursprünglichen Familie bleiben. Schimpansen werden schon mit 8 Jahren geschlechtsreif, können sich aber oft erst im Alter von 13 bis 16 Jahren erfolgreich fortpflanzen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Chimpanzees have highly developed social behaviour and live in large groups in the wild, with males dominant. Rank within the hierarchy depends largely on age. Males in a group are related, while females may immigrate from other groups. Group cohesion is strengthened through cooperative hunting and mutual grooming, and individuals pass on learned skills such as using stones or sticks as tools.\n\nBoth males and females mate with multiple partners throughout their lives. The alpha male has first access to females, while some males keep preferred females away from rivals. Breeding occurs throughout the year.\n\nGestation lasts eight months and one infant is born at a time. The mother cares for it until around four years of age, after which it gradually becomes more independent. Young males form close bonds with other males, while females begin to look beyond the family group.\n\nFemales leave their group at around ten years of age to join another group, while males remain with their natal family. Chimpanzees reach sexual maturity at around eight years, but often do not reproduce successfully until 13–16 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Chimpanzees have highly developed social behaviour and live in large groups in the wild, with males dominant. Rank within the hierarchy depends largely on age. Males in a group are related, while females may immigrate from other groups. Group cohesion is strengthened through cooperative hunting and mutual grooming, and individuals pass on learned skills such as using stones or sticks as tools.\n\nBoth males and females mate with multiple partners throughout their lives. The alpha male has first access to females, while some males keep preferred females away from rivals. Breeding occurs throughout the year.\n\nGestation lasts eight months and one infant is born at a time. The mother cares for it until around four years of age, after which it gradually becomes more independent. Young males form close bonds with other males, while females begin to look beyond the family group.\n\nFemales leave their group at around ten years of age to join another group, while males remain with their natal family. Chimpanzees reach sexual maturity at around eight years, but often do not reproduce successfully until 13–16 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los chimpancés tienen un comportamiento social complejo y viven en grandes grupos dominados por los machos. La posición jerárquica depende principalmente de la edad. Los machos de un grupo están emparentados, mientras que las hembras pueden inmigrar desde otros grupos. La caza cooperativa, el acicalamiento y la transmisión de habilidades como el uso de piedras o palos refuerzan la cohesión.\n\nMachos y hembras se aparean con varias parejas a lo largo de su vida y la reproducción puede darse todo el año.\n\nLa gestación dura ocho meses y nace una sola cría. La madre la cuida hasta alrededor de los cuatro años. Las hembras abandonan el grupo hacia los diez años, mientras los machos permanecen en su grupo natal.\n\nLa madurez sexual llega alrededor de los ocho años, aunque la reproducción exitosa suele comenzar entre los 13 y 16 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les chimpanzés ont une vie sociale développée et vivent en grands groupes dominés par les mâles. Le rang dépend principalement de l’âge. Les mâles d’un groupe sont apparentés tandis que des femelles provenant d’autres groupes peuvent les rejoindre. La chasse collective, le toilettage mutuel et la transmission de techniques comme l’utilisation d’outils renforcent la cohésion.\n\nMâles et femelles ont plusieurs partenaires au cours de leur vie et peuvent s’accoupler toute l’année.\n\nLa gestation dure huit mois et un seul petit naît à la fois. La mère s’en occupe jusqu’à environ quatre ans. Les femelles quittent leur groupe vers dix ans, tandis que les mâles restent dans leur groupe natal.\n\nLa maturité sexuelle est atteinte vers huit ans, mais la reproduction réussie commence souvent entre 13 et 16 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli scimpanzé hanno una complessa vita sociale e vivono in grandi gruppi dominati dai maschi. Il rango dipende soprattutto dall’età. I maschi del gruppo sono imparentati, mentre le femmine possono arrivare da altri gruppi. Caccia cooperativa, pulizia reciproca del pelo e trasmissione di tecniche come l’uso di strumenti rafforzano la coesione.\n\nMaschi e femmine hanno più partner nel corso della vita e si riproducono durante tutto l’anno.\n\nLa gestazione dura otto mesi e nasce un solo piccolo, accudito dalla madre fino a circa quattro anni. Le femmine lasciano il gruppo verso i dieci anni, i maschi rimangono nella famiglia originaria.\n\nLa maturità sessuale arriva a circa otto anni, ma la riproduzione efficace spesso non avviene prima dei 13–16 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os chimpanzés têm comportamento social complexo e vivem em grandes grupos dominados pelos machos. A posição hierárquica depende principalmente da idade. Os machos do grupo são aparentados, enquanto fêmeas podem migrar de outros grupos. Caça cooperativa, limpeza mútua e transmissão de habilidades como o uso de ferramentas reforçam a coesão.\n\nMachos e fêmeas acasalam com vários parceiros ao longo da vida, e a reprodução ocorre durante todo o ano.\n\nA gestação dura oito meses e nasce um único filhote, cuidado pela mãe até cerca de quatro anos. As fêmeas deixam o grupo por volta dos dez anos, enquanto os machos permanecem na família natal.\n\nA maturidade sexual é atingida aos oito anos, mas a reprodução bem-sucedida costuma ocorrer apenas entre 13 e 16 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "高度な社会性を持ち、野生では雄が優位な大きな群れで暮らします。順位は主に年齢に左右されます。群れの雄同士は血縁関係にあり、雌は他の群れから移入することがあります。共同狩猟、毛づくろい、石や棒を道具として使う技術の伝達が群れの結束を強めます。\n\n雌雄とも生涯に複数の相手と交尾し、一年中繁殖します。\n\n妊娠期間は8か月で、1頭の子を産みます。母親は約4歳まで子を世話します。雌は約10歳で別の群れへ移り、雄は出生群に残ります。\n\n約8歳で性成熟しますが、繁殖に成功するのは13～16歳以降であることが多いです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黑猩猩具有高度社会性，野外生活在由雄性占优势的大群体中。等级主要取决于年龄。群体中的雄性互有亲缘关系，而雌性会从其他群体迁入。共同捕猎、相互理毛以及传授使用石头或木棍等工具的技巧有助于维持群体凝聚力。\n\n雄性和雌性一生都会与多个伴侣交配，全年均可繁殖。\n\n妊娠期为8个月，每次只产1只幼崽，母兽会照料到约4岁。雌性约10岁时离开原群体加入其他群体，雄性则留在出生群体。\n\n约8岁达到性成熟，但通常要到13～16岁才成功繁殖。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Westafrikanische Schimpansen sind die einzige Schimpansen-Unterart, die Speere herstellt, um Jagd auf andere Primaten zu machen. Schimpansen können in freier Wildbahn sehr aggressiv sein und häufig planen sie Angriffe auf rivalisierende Gruppen oder versuchen, diese in Hinterhalte zu locken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schimpansen können Gebärdensprachen erlernen. Washoe, eine in freier Wildbahn geborene Schimpansin, die von der US-Luftwaffe gefangen wurde und im Anschluss bei einem Forscherpaar lebte, beherrschte schließlich 350 verschiedene Gebärden und brachte einige davon sogar ihrem Sohn bei.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schimpansen wurden dabei beobachtet, wie sie fermentierten, alkoholhaltigen Palmsaft mit Hilfe von Blättern sammeln und trinken. Die Wirkung des Alkohols scheint ihnen zu gefallen, und entdeckte Quellen werden immer wieder aufgesucht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es ist bekannt, dass sich Schimpansen in freier Wildbahn Schliefer für eine Weile als Haustiere halten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schimpansen nutzen Medizin: Wenn sie krank sind, essen sie bestimmte Blätter, um ihren Magen zu beruhigen und parasitäre Würmer abzutöten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Western Chimpanzees are the only chimpanzee subspecies known to make spears to hunt other primates. Wild chimpanzees can be highly aggressive and may plan attacks or ambushes against rival groups.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees can learn sign languages. Washoe eventually mastered 350 signs and taught some of them to her son.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees have been observed using leaves to collect and drink fermented alcoholic palm sap and repeatedly returning to known sources.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Wild chimpanzees have been observed keeping hyraxes as temporary pets.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees use medicine: when ill, they eat certain leaves to soothe the stomach and kill parasitic worms.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Western Chimpanzees are the only chimpanzee subspecies known to make spears to hunt other primates. Wild chimpanzees can be highly aggressive and may plan attacks or ambushes against rival groups.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees can learn sign languages. Washoe eventually mastered 350 signs and taught some of them to her son.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees have been observed using leaves to collect and drink fermented alcoholic palm sap and repeatedly returning to known sources.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Wild chimpanzees have been observed keeping hyraxes as temporary pets.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzees use medicine: when ill, they eat certain leaves to soothe the stomach and kill parasitic worms.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es la única subespecie de chimpancé conocida por fabricar lanzas para cazar otros primates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los chimpancés pueden aprender lenguas de signos; Washoe llegó a dominar 350 signos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se les ha observado recoger y beber savia de palma fermentada y alcohólica usando hojas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se sabe que algunos chimpancés mantienen damanes temporalmente como mascotas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Utilizan plantas medicinales para aliviar el estómago y combatir gusanos parásitos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "C’est la seule sous-espèce de chimpanzé connue pour fabriquer des lances afin de chasser d’autres primates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les chimpanzés peuvent apprendre des langues des signes; Washoe maîtrisait 350 signes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils ont été observés récoltant et buvant de la sève de palmier fermentée et alcoolisée avec des feuilles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Des chimpanzés sauvages ont été observés gardant temporairement des damans comme animaux de compagnie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils utilisent des plantes comme médicaments contre les troubles digestifs et certains parasites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È l’unica sottospecie di scimpanzé nota per costruire lance con cui caccia altri primati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli scimpanzé possono imparare lingue dei segni; Washoe arrivò a conoscere 350 segni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sono stati osservati mentre raccolgono e bevono linfa di palma fermentata e alcolica usando foglie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È noto che alcuni scimpanzé selvatici tengono temporaneamente iraci come animali da compagnia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Usano determinate foglie come medicina per lo stomaco e contro i vermi parassiti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É a única subespécie de chimpanzé conhecida por fabricar lanças para caçar outros primatas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzés podem aprender línguas de sinais; Washoe chegou a dominar 350 sinais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Já foram observados coletando e bebendo seiva de palmeira fermentada e alcoólica usando folhas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Chimpanzés selvagens já foram observados mantendo hiraxes temporariamente como animais de estimação.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Usam determinadas folhas como medicamento para aliviar o estômago e eliminar vermes parasitas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "他の霊長類を狩るための槍を作ることが知られている唯一のチンパンジー亜種です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "手話を学ぶことができ、Washoeは最終的に350種類の手話を使えるようになりました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "葉を使って発酵したアルコールを含むヤシの樹液を集めて飲む行動が観察されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野生でハイラックスを一時的にペットのように扱うことがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "体調が悪いときに特定の葉を食べ、胃を落ち着かせたり寄生虫を除去したりします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "这是唯一已知会制造长矛捕猎其他灵长类的黑猩猩亚种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黑猩猩能够学习手语，Washoe最终掌握了350个不同手势。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "曾观察到它们用树叶收集并饮用发酵、含酒精的棕榈汁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "野生黑猩猩有时会暂时把蹄兔当作宠物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "生病时会吃特定叶片来缓解胃部不适并清除寄生虫。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los contenidos todavía pueden cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Le contenu peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. I contenuti possono ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. O conteúdo ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8e37091e/Chimpanzee_Western_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Pan troglodytes/Pan troglodytes verus/map/Pan troglodytes verus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOGUzNzA5MWUvQ2hpbXBhbnplZV9XZXN0ZXJuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Westlicher Schimpanse – Planet Zoo 2",
+            "en": "Western Chimpanzee – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Westlichen Schimpansen aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Western Chimpanzee."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Pan troglodytes/Pan troglodytes verus/bilder/Pan troglodytes verus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8e37091e/Chimpanzee_Western_illustration.jpg",
+          "alt": {
+            "de": "Westlicher Schimpanse – Zoopedia-Illustration",
+            "en": "Western Chimpanzee – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Westlichen Schimpansen aus der Planet Zoo 2 Zoopedia.",
+            "en": "Western Chimpanzee illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Pan troglodytes/Pan troglodytes verus/bilder/Pan troglodytes verus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Westlicher Schimpanse",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/westlicher-schimpanse",
+        "en": "https://www.planetzoogame.com/2/zoopedia/western-chimpanzee",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/western-chimpanzee",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/chimpanc%C3%A9-occidental",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/chimpanz%C3%A9-verus",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/scimpanz%C3%A9-occidentale",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/chimpanz%C3%A9-ocidental",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8B%E3%82%B7%E3%83%81%E3%83%B3%E3%83%91%E3%83%B3%E3%82%B8%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A5%BF%E9%9D%9E%E9%BB%91%E7%8C%A9%E7%8C%A9"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bewusst noch nicht bearbeitet."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

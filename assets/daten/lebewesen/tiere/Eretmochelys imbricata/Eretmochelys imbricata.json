@@ -1,0 +1,906 @@
+{
+  "id": "Eretmochelys imbricata",
+  "identitaet": {
+    "namen": {
+      "de": "Echte Karettschildkröte",
+      "en": "Hawksbill Turtle",
+      "en-US": "Hawksbill Turtle",
+      "es": "Tortuga carey",
+      "fr": "Tortue imbriquée",
+      "it": "Tartaruga embricata",
+      "pt-BR": "Tartaruga-de-pente",
+      "ja": "タイマイ",
+      "zh-Hans": "玳瑁"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [],
+    "biome": [
+      "Riff",
+      "Offenes Meer"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Testudines",
+          "familie": "Cheloniidae",
+          "gattung": "Eretmochelys",
+          "art": "Eretmochelys imbricata",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "panzerlaenge",
+          "min": 0.75,
+          "max": 0.9,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ausdrücklich die Länge des Panzers.",
+            "en": "The Zoopedia explicitly gives carapace length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 45,
+          "max": 70,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "populationstrend": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 20,
+          "max": 35,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "inkubationBisSchlupf",
+          "wert": 2,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Eier werden laut Zoopedia etwa zwei Monate lang im Sand ausgebrütet.",
+            "en": "According to the Zoopedia, the eggs incubate in the sand for about two months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 100,
+          "max": 200,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein Weibchen kann in einer Saison über fünf Nester anlegen. Die Zoopedia nennt keine genaue Maximalzahl von Nestern.",
+            "en": "A female may build more than five nests in one season. The Zoopedia does not give an exact maximum number of nests."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Echte Karettschildkröten sind Einzelgänger und interagieren mit Artgenossen hauptsächlich zur Paarung.",
+            "en": "Hawksbill Turtles are solitary and mainly interact with conspecifics for mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Korallenriffe, Lagunen und felsige Küstengebiete als typische Lebensräume.",
+            "en": "The Zoopedia lists coral reefs, lagoons and rocky coastal areas as typical habitats."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "openOcean",
+          "hinweis": {
+            "de": "Jungtiere verbringen laut Zoopedia 10 bis 20 Jahre im offenen Meer, bevor sie in Küsten- und Riffhabitate wechseln.",
+            "en": "According to the Zoopedia, juveniles spend 10–20 years in the open ocean before moving to coastal and reef habitats."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "spongivore",
+            "hinweis": {
+              "de": "Die Zoopedia bezeichnet die Echte Karettschildkröte ausdrücklich als überwiegenden Schwammfresser.",
+              "en": "The Zoopedia explicitly describes Hawksbill Turtles as feeding mainly on sponges."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "plankton",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "smallMarineOrganisms",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "sponges",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Viele der gefressenen Schwämme sind laut Zoopedia für andere Tiere giftig.",
+                "en": "According to the Zoopedia, many of the sponges eaten are toxic to other animals."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Echte Karettschildkröte (Eretmochelys imbricata) ist eine mittelgroße Meeresschildkröte, die im Atlantik, Pazifik und Indischen Ozean lebt. Sie ist in tropischen und subtropischen Gewässern wie Korallenriffen, Lagunen und Küstengebieten mit Felsvorsprüngen zu finden, wo es reichlich Schwämme gibt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Hawksbill Turtle (Eretmochelys imbricata) is a medium-sized sea turtle found in the Atlantic, Pacific and Indian Oceans. It occurs in tropical and subtropical waters such as coral reefs, lagoons and rocky coastal areas where sponges are abundant.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Hawksbill Turtle (Eretmochelys imbricata) is a medium-sized sea turtle found in the Atlantic, Pacific and Indian Oceans. It occurs in tropical and subtropical waters such as coral reefs, lagoons and rocky coastal areas where sponges are abundant.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La tortuga carey (Eretmochelys imbricata) es una tortuga marina de tamaño medio presente en los océanos Atlántico, Pacífico e Índico, especialmente en aguas tropicales y subtropicales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue imbriquée (Eretmochelys imbricata) est une tortue marine de taille moyenne présente dans les océans Atlantique, Pacifique et Indien.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tartaruga embricata (Eretmochelys imbricata) è una tartaruga marina di medie dimensioni presente negli oceani Atlantico, Pacifico e Indiano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A tartaruga-de-pente (Eretmochelys imbricata) é uma tartaruga marinha de médio porte encontrada nos oceanos Atlântico, Pacífico e Índico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "タイマイ（Eretmochelys imbricata）は、大西洋・太平洋・インド洋に生息する中型のウミガメです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "玳瑁（Eretmochelys imbricata）是一种中型海龟，分布于大西洋、太平洋和印度洋。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Echte Karettschildkröte (auch Eretmochelys imbricata) ist eine mittelgroße Meeresschildkröte, die im Atlantik, Pazifik und Indischen Ozean lebt. Sie ist in tropischen und subtropischen Gewässern wie Korallenriffen, Lagunen und Küstengebieten mit Felsvorsprüngen zu finden, wo es reichlich Schwämme gibt.\n\nDie Echte Karettschildkröte besitzt einen gemusterten Panzer mit überlappenden Schuppen, die ein charakteristisches, gezacktes Aussehen haben. Ihr Panzer ist braun und goldfarben und oft mit dunklen und hellen Streifen versehen.\n\nErwachsene Echte Karettschildkröten werden etwa 75 cm bis 90 cm lang (Länge des Panzers) und wiegen zwischen 45 kg und 70 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Hawksbill Turtle (Eretmochelys imbricata) is a medium-sized sea turtle found in the Atlantic, Pacific and Indian Oceans. It inhabits tropical and subtropical waters including coral reefs, lagoons and rocky coastal areas where sponges are abundant.\n\nIt has a patterned shell with overlapping scutes that create a distinctive serrated appearance. The shell is brown and golden and is often marked with dark and pale streaks.\n\nAdults have a carapace length of about 75–90 cm and weigh 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Hawksbill Turtle (Eretmochelys imbricata) is a medium-sized sea turtle found in the Atlantic, Pacific and Indian Oceans. It inhabits tropical and subtropical waters including coral reefs, lagoons and rocky coastal areas where sponges are abundant.\n\nIt has a patterned shell with overlapping scutes that create a distinctive serrated appearance. The shell is brown and golden and is often marked with dark and pale streaks.\n\nAdults have a carapace length of about 75–90 cm and weigh 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La tortuga carey (Eretmochelys imbricata) vive en los océanos Atlántico, Pacífico e Índico. Habita aguas tropicales y subtropicales como arrecifes coralinos, lagunas y costas rocosas con abundancia de esponjas.\n\nSu caparazón presenta escudos superpuestos que le dan un aspecto dentado característico. Es de tonos marrones y dorados con franjas claras y oscuras.\n\nLos adultos tienen un caparazón de unos 75–90 cm y pesan 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue imbriquée (Eretmochelys imbricata) vit dans les océans Atlantique, Pacifique et Indien, surtout dans les eaux tropicales et subtropicales comme les récifs coralliens, les lagons et les zones côtières rocheuses riches en éponges.\n\nSa carapace possède des écailles imbriquées donnant un bord dentelé caractéristique. Elle est brune et dorée, souvent rayée de tons sombres et clairs.\n\nLes adultes mesurent environ 75–90 cm de longueur de carapace et pèsent 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tartaruga embricata (Eretmochelys imbricata) vive negli oceani Atlantico, Pacifico e Indiano, soprattutto in acque tropicali e subtropicali come barriere coralline, lagune e coste rocciose ricche di spugne.\n\nIl carapace presenta scuti sovrapposti che creano un caratteristico margine dentellato ed è marrone e dorato con striature chiare e scure.\n\nGli adulti hanno un carapace lungo circa 75–90 cm e pesano 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A tartaruga-de-pente (Eretmochelys imbricata) vive nos oceanos Atlântico, Pacífico e Índico, especialmente em águas tropicais e subtropicais como recifes de coral, lagoas e áreas costeiras rochosas com muitas esponjas.\n\nSeu casco possui placas sobrepostas que criam uma aparência serrilhada característica. A coloração é marrom e dourada, frequentemente com faixas claras e escuras.\n\nAdultos possuem carapaça de cerca de 75–90 cm e pesam 45–70 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "タイマイ（Eretmochelys imbricata）は、大西洋・太平洋・インド洋の熱帯・亜熱帯海域に生息し、サンゴ礁、ラグーン、岩礁性の沿岸域など、海綿が豊富な場所で見られます。\n\n甲羅には重なり合う鱗板があり、特徴的な鋸歯状の外観を作ります。色は茶色と金色で、濃淡の縞模様が見られます。\n\n成体の甲長は約75～90cm、体重45～70kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "玳瑁（Eretmochelys imbricata）生活在大西洋、太平洋和印度洋的热带与亚热带海域，常见于珊瑚礁、泻湖以及海绵丰富的岩石海岸。\n\n背甲由重叠的甲片组成，形成明显的锯齿状外观，颜色为棕色和金色，常带深浅相间的条纹。\n\n成体背甲长度约75～90厘米，体重45～70千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Echte Karettschildkröten gelten als vom Aussterben bedroht. Sie werden für ihre Panzer, die seit Jahrhunderten für Kunsthandwerk genutzt werden, oft illegal gejagt, und manchmal werden ihre Eier als Nahrung geerntet. Die Zerstörung der Korallenriffe gefährdet ihren Hauptlebensraum, während steigende globale Temperaturen die temperaturabhängige Geschlechtsbestimmung während des Schlüpfens beeinflussen, wobei wärmere Sandtemperaturen zu einem Ungleichgewicht der Geschlechter im Bestand führen. Meeresschildkröten verheddern sich in Fischernetzen und werden oft als Beifang erfasst oder verwechseln treibende Plastiktüten mit Nahrung und sterben so an Verstopfung. Die langsame Fortpflanzungsrate erschwert das Überleben der Spezies zusätzlich.\n\nDie Arterhaltung konzentriert sich auf den Schutz der Nester, Handelsbeschränkungen und die Reduzierung der Umweltverschmutzung. Dank dieser Maßnahmen haben sich einige Bestände stabilisiert oder sind sogar gewachsen. Naturschützer beobachten und verlegen gefährdete Nester. In sogenannten Headstart-Programmen werden Jungtiere in kontrollierten Umgebungen aufgezogen, bevor sie in die Wildnis entlassen werden. Strandreinigungen können das Risiko verringern, dass die Tiere Plastik verschlucken, während schildkrötenfreundliche Fanggeräte dazu beitragen können, Beifänge und Ertrinkungsunfälle zu reduzieren. Obwohl der Handel international verboten ist, kommt es an einigen Standorten weiterhin zu illegalen Aktivitäten. Ökotourismusprojekte können Menschen, die sonst vom Handel mit Schildkrötenprodukten abhängig wären, eine alternative Einkommensquelle bieten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Hawksbill Turtles are Critically Endangered. They are illegally hunted for their shells, which have been used for crafts for centuries, and their eggs are sometimes collected for food. Coral-reef destruction threatens their main habitat, while rising temperatures affect temperature-dependent sex determination during incubation, with warmer sand producing more females. Sea turtles also become entangled in fishing nets, are caught as bycatch and may mistake floating plastic bags for food, leading to fatal blockages. Their slow reproductive rate further increases the risk.\n\nConservation focuses on nest protection, trade restrictions and reducing pollution. Some populations have stabilised or increased. Conservationists monitor and relocate threatened nests, while head-start programmes rear young turtles in controlled environments before release. Beach clean-ups reduce plastic ingestion, and turtle-friendly fishing gear can reduce bycatch and drowning. International trade is banned, although illegal activity continues in some places. Ecotourism can provide alternative income for communities that might otherwise depend on turtle products.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Hawksbill Turtles are Critically Endangered. They are illegally hunted for their shells, which have been used for crafts for centuries, and their eggs are sometimes collected for food. Coral-reef destruction threatens their main habitat, while rising temperatures affect temperature-dependent sex determination during incubation, with warmer sand producing more females. Sea turtles also become entangled in fishing nets, are caught as bycatch and may mistake floating plastic bags for food, leading to fatal blockages. Their slow reproductive rate further increases the risk.\n\nConservation focuses on nest protection, trade restrictions and reducing pollution. Some populations have stabilised or increased. Conservationists monitor and relocate threatened nests, while head-start programmes rear young turtles in controlled environments before release. Beach clean-ups reduce plastic ingestion, and turtle-friendly fishing gear can reduce bycatch and drowning. International trade is banned, although illegal activity continues in some places. Ecotourism can provide alternative income for communities that might otherwise depend on turtle products.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está En Peligro Crítico. La caza ilegal por su caparazón, la recolección de huevos, la destrucción de arrecifes, el calentamiento global, las capturas accidentales y la contaminación por plásticos son amenazas importantes. Su baja tasa reproductiva agrava la situación.\n\nLa conservación se centra en proteger nidos, restringir el comercio y reducir la contaminación. También se trasladan nidos amenazados, se crían juveniles en programas controlados y se promueven artes de pesca más seguras y proyectos de ecoturismo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue imbriquée est En danger critique. Elle est illégalement chassée pour sa carapace, ses œufs sont parfois récoltés, et la destruction des récifs réduit son habitat. Le réchauffement modifie la détermination du sexe liée à la température, tandis que les filets de pêche, les prises accidentelles et les déchets plastiques causent également des mortalités. Sa reproduction lente augmente encore sa vulnérabilité.\n\nLa conservation repose sur la protection des nids, les restrictions commerciales, la réduction de la pollution, le déplacement de nids menacés, les programmes d’élevage temporaire et l’utilisation d’engins de pêche plus sûrs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È In pericolo critico. La caccia illegale per il carapace, la raccolta delle uova, la distruzione delle barriere coralline, il cambiamento climatico, le catture accidentali e l’ingestione di plastica sono minacce importanti. La lenta riproduzione aumenta ulteriormente il rischio.\n\nLa conservazione comprende protezione dei nidi, limitazioni al commercio, riduzione dell’inquinamento, trasferimento dei nidi minacciati, programmi di allevamento temporaneo e attrezzature da pesca più sicure.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Está Criticamente em Perigo. É caçada ilegalmente pelo casco, seus ovos às vezes são coletados, os recifes são destruídos e o aumento da temperatura afeta a determinação sexual dependente da temperatura. Redes de pesca, captura acidental e ingestão de plástico também causam mortes. A reprodução lenta aumenta a vulnerabilidade.\n\nA conservação envolve proteção de ninhos, restrições comerciais, redução da poluição, realocação de ninhos ameaçados, programas de criação temporária e equipamentos de pesca mais seguros.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "深刻な絶滅危惧種です。甲羅目的の違法捕獲、卵の採取、サンゴ礁の破壊、気温上昇による性比への影響、漁網への絡まり、混獲、プラスチック誤食などが脅威です。繁殖速度が遅いことも回復を難しくしています。\n\n保全活動には巣の保護、取引規制、汚染削減、危険な巣の移設、ヘッドスタート計画、ウミガメに配慮した漁具などが含まれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "玳瑁属于极危物种。非法猎杀获取背甲、采集卵、珊瑚礁破坏、全球变暖对温度决定性别的影响、渔网缠绕、兼捕以及误食塑料都会造成严重威胁。繁殖速度缓慢也进一步增加了风险。\n\n保护措施包括保护巢穴、限制贸易、减少污染、转移受威胁的巢、幼体人工保育以及使用对海龟更安全的渔具。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Echte Karettschildkröten sind Einzelgänger und interagieren nur zur Paarung mit anderen Artgenossen.\n\nDie Paarungszeit der Echten Karettschildkröten variiert je nach Ort, findet aber normalerweise zwischen April und November statt. Da die Zeit zwischen den Eiablagen relativ lang ist, paart sich ein Weibchen oft nur alle 2 bis 5 Jahre. Der Paarungsakt findet in flachen Gewässern statt, und sowohl Männchen als auch Weibchen paaren sich mit mehreren Partnern, sodass ein Gelege mehrere Väter haben kann.\n\nNach der Paarung kehren die Weibchen an ihre Geburtsstrände zurück, um ihre Eier abzulegen. Meistens kriechen die Weibchen nachts an Land und heben mit ihren Flossen ein Loch aus, in das sie dann 100 bis 200 Eier legen und vergraben. Ein Weibchen kann in einer Saison über 5 Nester anlegen, die sie dann verlässt. Die Eier werden 2 Monate lang im Boden ausgebrütet. Die Temperatur des Sandes bestimmt das Geschlecht der Jungtiere: Je wärmer der Sand, desto mehr Weibchen werden geboren. Wenn sie bereit sind zu schlüpfen, brechen die jungen Schildkröten mit einem Eierzahn, dem sogenannten Karunkel, aus dem Ei und verlassen das Nest bei Nacht, um Raubtieren zu entkommen. Ihr Instinkt treibt sie dazu, auf den hellsten Punkt am Horizont zuzukriechen, was normalerweise das mondbeschienene Meer ist, doch Lichtverschmutzung kann sie durcheinanderbringen.\n\nSobald sie es ins Meer geschafft haben, lassen sich die Jungtiere von den Strömungen treiben und ernähren sich von Plankton und kleinen Meeresorganismen. Sie bleiben 10 bis 20 Jahre im offenen Meer, ehe sie in Küsten- und Riffhabitate abwandern. Echte Karettschildkröten werden mit 20 bis 35 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Hawksbill Turtles are solitary and interact with other members of their species mainly for mating.\n\nThe mating season varies by location but usually occurs between April and November. Because intervals between nesting seasons are long, a female often mates only every 2–5 years. Mating occurs in shallow water, and both males and females mate with several partners, so one clutch can have multiple fathers.\n\nAfter mating, females return to their natal beaches to lay eggs. Usually at night, a female crawls ashore, digs a hole with her flippers and lays 100–200 eggs before burying them. She may make more than five nests in one season and then leaves them. The eggs incubate in the sand for two months. Sand temperature determines the sex of the hatchlings, with warmer sand producing more females. When ready to hatch, the young turtles break the shell with an egg tooth called a caruncle and leave the nest at night, moving toward the brightest horizon, normally the moonlit sea, although artificial lighting can confuse them.\n\nOnce at sea, juveniles drift with currents and feed on plankton and small marine organisms. They remain in the open ocean for 10–20 years before moving into coastal and reef habitats. Hawksbill Turtles reach sexual maturity at 20–35 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Hawksbill Turtles are solitary and interact with other members of their species mainly for mating.\n\nThe mating season varies by location but usually occurs between April and November. Because intervals between nesting seasons are long, a female often mates only every 2–5 years. Mating occurs in shallow water, and both males and females mate with several partners, so one clutch can have multiple fathers.\n\nAfter mating, females return to their natal beaches to lay eggs. Usually at night, a female crawls ashore, digs a hole with her flippers and lays 100–200 eggs before burying them. She may make more than five nests in one season and then leaves them. The eggs incubate in the sand for two months. Sand temperature determines the sex of the hatchlings, with warmer sand producing more females. When ready to hatch, the young turtles break the shell with an egg tooth called a caruncle and leave the nest at night, moving toward the brightest horizon, normally the moonlit sea, although artificial lighting can confuse them.\n\nOnce at sea, juveniles drift with currents and feed on plankton and small marine organisms. They remain in the open ocean for 10–20 years before moving into coastal and reef habitats. Hawksbill Turtles reach sexual maturity at 20–35 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitaria y se relaciona con otros individuos principalmente para reproducirse.\n\nLa época de apareamiento varía según la zona, normalmente entre abril y noviembre. Las hembras suelen reproducirse cada 2–5 años y ambos sexos pueden aparearse con varias parejas.\n\nLas hembras regresan a sus playas natales y ponen entre 100 y 200 huevos por nido, pudiendo construir más de cinco nidos en una temporada. Los huevos incuban durante unos dos meses y la temperatura de la arena determina el sexo de las crías.\n\nLos juveniles se alimentan de plancton y pequeños organismos marinos y pasan 10–20 años en mar abierto antes de trasladarse a hábitats costeros y arrecifes. Alcanzan la madurez sexual a los 20–35 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est solitaire et ne rencontre généralement ses congénères que pour l’accouplement.\n\nLa saison de reproduction varie selon les régions mais se situe souvent entre avril et novembre. Les femelles ne se reproduisent généralement que tous les 2 à 5 ans et les deux sexes peuvent avoir plusieurs partenaires.\n\nLes femelles reviennent sur leur plage natale et pondent 100–200 œufs par nid, avec parfois plus de cinq nids par saison. L’incubation dure environ deux mois et la température du sable détermine le sexe des jeunes.\n\nLes jeunes dérivent avec les courants, se nourrissent de plancton et de petits organismes marins et restent 10–20 ans en pleine mer avant de gagner les côtes et les récifs. La maturité sexuelle est atteinte entre 20 et 35 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitaria e interagisce con i conspecifici principalmente per l’accoppiamento.\n\nLa stagione riproduttiva varia secondo la zona, ma normalmente va da aprile a novembre. Le femmine si riproducono spesso solo ogni 2–5 anni e entrambi i sessi possono accoppiarsi con più partner.\n\nLe femmine tornano alle spiagge natali e depongono 100–200 uova per nido, potendo costruire più di cinque nidi in una stagione. Le uova incubano per circa due mesi e la temperatura della sabbia determina il sesso dei piccoli.\n\nI giovani si nutrono di plancton e piccoli organismi marini e rimangono 10–20 anni in mare aperto prima di spostarsi verso coste e barriere. La maturità sessuale arriva a 20–35 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitária e normalmente interage com outras tartarugas apenas para reprodução.\n\nA época de acasalamento varia, mas geralmente ocorre entre abril e novembro. As fêmeas costumam reproduzir apenas a cada 2–5 anos e ambos os sexos podem ter vários parceiros.\n\nAs fêmeas retornam às praias natais e põem 100–200 ovos por ninho, podendo fazer mais de cinco ninhos em uma temporada. A incubação dura cerca de dois meses e a temperatura da areia determina o sexo dos filhotes.\n\nOs juvenis derivam com as correntes e se alimentam de plâncton e pequenos organismos marinhos. Permanecem 10–20 anos em mar aberto antes de migrar para áreas costeiras e recifes. A maturidade sexual ocorre aos 20–35 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性で、同種個体との交流は主に交尾時だけです。\n\n繁殖期は地域によって異なりますが、通常4～11月です。雌は2～5年ごとに繁殖することが多く、雌雄とも複数の相手と交尾するため、一つの産卵群に複数の父親がいる場合があります。\n\n雌は出生した浜へ戻り、夜間に上陸して穴を掘り、1巣あたり100～200個の卵を産みます。1シーズンに5巣を超えることもあります。卵は約2か月砂中で孵化し、砂の温度が幼体の性別を決めます。\n\n幼体は海流に乗って漂い、プランクトンや小型海洋生物を食べ、10～20年間外洋で過ごした後に沿岸やサンゴ礁へ移ります。20～35歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，与同类的互动通常只发生在交配期间。\n\n繁殖季因地区而异，通常为4月至11月。雌性往往每2～5年才繁殖一次，雌雄都可能与多个伴侣交配，因此同一窝卵可能有多个父本。\n\n雌性会返回出生海滩，通常夜间上岸挖洞，每窝产100～200枚卵，一个繁殖季可筑超过5个巢。卵在沙中孵化约2个月，沙温决定幼体性别。\n\n幼体进入海洋后随洋流漂流，以浮游生物和小型海洋生物为食，并在外海生活10～20年，之后迁往沿岸和珊瑚礁。20～35岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Begriff „Schildpattzeichnung“ leitet sich vom Muster des Panzers der Echten Karettschildkröte ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Auf Englisch werden Echte Karettschildkröten „Hawksbill Turtles“ genannt. Der Name bezieht sich auf ihren spitzen Schnabel, mit dem sie Nahrung aus kleinen Spalten in Riffen holen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Echte Karettschildkröten fressen hauptsächlich Schwämme (Schwammfresser), wobei viele davon für andere Tiere giftig sind.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Echte Karettschildkröten legen enorme Entfernungen zurück und haben schon Strecken von fast 1.930 km bewältigt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Echte Karettschildkröten existieren seit 100 Millionen Jahren und haben somit einst ihren Lebensraum mit Dinosauriern geteilt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The term 'tortoiseshell pattern' comes from the pattern of the Hawksbill Turtle's shell.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The English name 'Hawksbill Turtle' refers to its pointed beak, which it uses to pull food from small reef crevices.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hawksbill Turtles mainly eat sponges, many of which are toxic to other animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They travel enormous distances and have been recorded covering almost 1,930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hawksbill Turtles have existed for 100 million years and once shared their world with dinosaurs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The term 'tortoiseshell pattern' comes from the pattern of the Hawksbill Turtle's shell.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The English name 'Hawksbill Turtle' refers to its pointed beak, which it uses to pull food from small reef crevices.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hawksbill Turtles mainly eat sponges, many of which are toxic to other animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They travel enormous distances and have been recorded covering almost 1,930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Hawksbill Turtles have existed for 100 million years and once shared their world with dinosaurs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El patrón conocido como carey deriva del aspecto de su caparazón.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su nombre inglés hace referencia a su pico puntiagudo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Se alimenta principalmente de esponjas, muchas de ellas tóxicas para otros animales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Puede recorrer distancias de casi 1.930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La especie existe desde hace unos 100 millones de años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le motif appelé écaille de tortue provient de l’aspect de sa carapace.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le nom anglais Hawksbill Turtle fait référence à son bec pointu.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle se nourrit principalement d’éponges, dont beaucoup sont toxiques pour d’autres animaux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle peut parcourir presque 1 930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Cette espèce existe depuis environ 100 millions d’années.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il motivo detto tartarugato deriva dal disegno del suo carapace.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il nome inglese Hawksbill Turtle fa riferimento al becco appuntito.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Si nutre principalmente di spugne, molte delle quali tossiche per altri animali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Può percorrere quasi 1.930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La specie esiste da circa 100 milioni di anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O padrão conhecido como casco de tartaruga deriva do desenho da carapaça desta espécie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "O nome inglês Hawksbill Turtle faz referência ao bico pontudo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Alimenta-se principalmente de esponjas, muitas delas tóxicas para outros animais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pode percorrer distâncias próximas de 1.930 km.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A espécie existe há cerca de 100 milhões de anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "べっ甲模様という名称はこの種の甲羅の模様に由来します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "英名Hawksbill Turtleは尖ったくちばしに由来します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "主に海綿を食べ、その多くは他の動物には有毒です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "約1,930kmもの距離を移動した記録があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "約1億年前から存在し、恐竜と同じ時代を生きていました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "“玳瑁纹”这一名称来源于其背甲花纹。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "英文名Hawksbill Turtle来自其尖锐的喙状嘴。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "主要以海绵为食，其中很多海绵对其他动物有毒。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "曾记录到接近1,930公里的长距离迁移。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "该物种已存在约1亿年，曾与恐龙生活在同一时代。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/a3b60e69/Turtle_Hawksbill_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/map/Eretmochelys imbricata map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYTNiNjBlNjkvVHVydGxlX0hhd2tzYmlsbC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Echte Karettschildkröte – Planet Zoo 2",
+            "en": "Hawksbill Turtle – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Echten Karettschildkröte aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Hawksbill Turtle."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/a3b60e69/Turtle_Hawksbill_illustration.jpg",
+          "alt": {
+            "de": "Echte Karettschildkröte – Zoopedia-Illustration",
+            "en": "Hawksbill Turtle – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Echten Karettschildkröte aus der Planet Zoo 2 Zoopedia.",
+            "en": "Hawksbill Turtle illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Echte Karettschildkröte",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/echte-karettschildkr%C3%B6te",
+        "en": "https://www.planetzoogame.com/2/zoopedia/hawksbill-turtle",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/hawksbill-turtle",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/tortuga-carey",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/tortue-imbriqu%C3%A9e",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/tartaruga-embricata",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/tartaruga-de-pente",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%BF%E3%82%A4%E3%83%9E%E3%82%A4",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%8E%B3%E7%91%81"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bewusst noch nicht bearbeitet."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

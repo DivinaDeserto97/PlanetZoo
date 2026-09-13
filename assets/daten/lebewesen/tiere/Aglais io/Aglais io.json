@@ -1,0 +1,860 @@
+{
+  "id": "Aglais io",
+  "identitaet": {
+    "namen": {
+      "de": "Tagpfauenauge",
+      "en": "European Peacock",
+      "en-US": "European Peacock",
+      "es": "Mariposa pavo real",
+      "fr": "Paon-du-jour",
+      "it": "Occhio di pavone",
+      "pt-BR": "Borboleta-pavão",
+      "ja": "クジャクチョウ",
+      "zh-Hans": "孔雀蛱蝶"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "europe",
+      "asia"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Nymphalidae",
+          "gattung": "Aglais",
+          "art": "Aglais io",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "hinweis",
+          "min": null,
+          "max": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt keine feste Lebensspanne. Weibchen legen gegen Ende ihres Lebens im Mai und etwa ein Jahr nach ihrem Schlüpfen Eier; Männchen leben kürzer.",
+            "en": "The Zoopedia does not give a fixed lifespan. Females lay eggs near the end of their lives in May, about a year after emerging; males have a shorter lifespan."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Aglais io"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an und beschreibt die Art zugleich als in großer Zahl vorhanden, mit zuletzt leichtem Populationsanstieg.",
+            "en": "The Zoopedia lists the wild population as unknown while describing the species as abundant across its range, with a small recent population increase."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "min": 1,
+          "max": 2,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenentwicklung",
+          "wert": 3,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Raupen durchlaufen laut Zoopedia innerhalb von ungefähr drei Wochen fünf Nymphenstadien.",
+            "en": "According to the Zoopedia, the caterpillars pass through five nymphal stages over roughly three weeks."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "verpuppung",
+          "min": 2,
+          "max": 4,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProEiablage",
+          "durchschnitt": 400,
+          "min": null,
+          "max": null,
+          "hinweis": {
+            "de": "Das Weibchen legt pro Vorgang ungefähr 400 Eier auf die Unterseite eines sonnenbeschienenen Nesselblatts. Dieser Vorgang kann bis zu dreimal wiederholt werden.",
+            "en": "The female lays roughly 400 eggs per laying event on the underside of a sunlit nettle leaf. This can be repeated up to three times."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Tagpfauenaugen leben größtenteils einzelgängerisch; Männchen verteidigen mitunter ihr Territorium gegen andere Männchen.",
+            "en": "European Peacocks are mostly solitary; males may defend territories against other males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperate",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "nettleLeaf",
+              "typ": "nahrung",
+              "beziehung": "herbivory",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Raupen ernähren sich laut Zoopedia gemeinschaftlich von ihrem Nesselblatt, bis es vollständig abgefressen ist.",
+                "en": "According to the Zoopedia, the caterpillars feed communally on their nettle leaf until it is completely eaten."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "flowers",
+              "typ": "nahrung",
+              "beziehung": "feeding",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt Weibchen, die sich von Blüten ernähren.",
+                "en": "The Zoopedia describes females feeding from flowers."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Tagpfauenauge (Aglais io) ist eine in gemäßigten Gras- und Waldlandschaften Europas und Asiens lebende Schmetterlingsart.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European Peacock (Aglais io) is a butterfly species found in temperate grassland and woodland habitats across Europe and Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European Peacock (Aglais io) is a butterfly species found in temperate grassland and woodland habitats across Europe and Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La mariposa pavo real (Aglais io) vive en praderas y bosques templados de Europa y Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le paon-du-jour (Aglais io) vit dans les prairies et forêts tempérées d’Europe et d’Asie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’occhio di pavone (Aglais io) vive in praterie e boschi temperati d’Europa e Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A borboleta-pavão (Aglais io) vive em campos e florestas temperadas da Europa e da Ásia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "クジャクチョウ（Aglais io）は、ヨーロッパとアジアの温帯の草地や森林に生息するチョウです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "孔雀蛱蝶（Aglais io）生活在欧洲和亚洲的温带草地与森林环境中。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Tagpfauenauge (auch Aglais io) ist eine in gemäßigten Gras- und Waldlandschaften Europas und Asiens lebende Schmetterlingsart.\n\nSie hat vier rote Flügel mit braunen Rändern und charakteristischen Augenflecken. Die Flecken bestehen aus gelben, blauen, roten oder lila Schuppen und sind von schwarzen Zeichnungen umgeben. Die Unterseiten der Flügel sind braun bis schwarz. Die Raupen der Tiere sind schwarz und behaart, die Kokons sind grün und weisen spitze Erhöhungen auf dem Rücken auf.\n\nMännchen und Weibchen sehen gleich aus, allerdings können Weibchen bis zu 10 % größer als Männchen sein. Tagpfauenaugen erreichen eine Flügelspannweite von 5 bis 6,4 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European Peacock (Aglais io) is a butterfly species found in temperate grassland and woodland habitats across Europe and Asia.\n\nIt has four red wings with brown margins and distinctive eyespots made up of yellow, blue, red or purple scales surrounded by black markings. The undersides of the wings are brown to black. Caterpillars are black and hairy, while the pupae are green with pointed projections along the back.\n\nMales and females look alike, although females may be up to 10% larger. The wingspan is 5–6.4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European Peacock (Aglais io) is a butterfly species found in temperate grassland and woodland habitats across Europe and Asia.\n\nIt has four red wings with brown margins and distinctive eyespots made up of yellow, blue, red or purple scales surrounded by black markings. The undersides of the wings are brown to black. Caterpillars are black and hairy, while the pupae are green with pointed projections along the back.\n\nMales and females look alike, although females may be up to 10% larger. The wingspan is 5–6.4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La mariposa pavo real (Aglais io) vive en paisajes templados de pradera y bosque de Europa y Asia.\n\nTiene cuatro alas rojas con bordes marrones y característicos ocelos formados por escamas amarillas, azules, rojas o lilas rodeadas de marcas negras. La cara inferior de las alas es marrón o negra. Las orugas son negras y peludas y las pupas verdes con protuberancias puntiagudas.\n\nMachos y hembras tienen un aspecto similar, aunque las hembras pueden ser hasta un 10% mayores. La envergadura es de 5–6,4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le paon-du-jour (Aglais io) vit dans les paysages tempérés de prairies et de forêts d’Europe et d’Asie.\n\nIl possède quatre ailes rouges bordées de brun avec des ocelles caractéristiques composés d’écailles jaunes, bleues, rouges ou violettes entourées de marques noires. Le dessous des ailes est brun à noir. Les chenilles sont noires et velues, et les chrysalides vertes avec des pointes dorsales.\n\nMâles et femelles se ressemblent, bien que les femelles puissent être jusqu’à 10% plus grandes. L’envergure est de 5 à 6,4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’occhio di pavone (Aglais io) vive in paesaggi temperati di prateria e bosco in Europa e Asia.\n\nHa quattro ali rosse con bordi marroni e tipici ocelli formati da scaglie gialle, blu, rosse o viola circondate da segni neri. La parte inferiore delle ali è marrone o nera. I bruchi sono neri e pelosi e le crisalidi verdi con protuberanze appuntite.\n\nMaschi e femmine sono simili, ma le femmine possono essere fino al 10% più grandi. L’apertura alare è di 5–6,4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A borboleta-pavão (Aglais io) vive em paisagens temperadas de campos e florestas da Europa e da Ásia.\n\nPossui quatro asas vermelhas com bordas marrons e ocelos característicos formados por escamas amarelas, azuis, vermelhas ou roxas cercadas por marcas pretas. A parte inferior das asas é marrom a preta. As lagartas são pretas e peludas, e as pupas são verdes com projeções pontiagudas.\n\nMachos e fêmeas têm aparência semelhante, embora as fêmeas possam ser até 10% maiores. A envergadura é de 5–6,4 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "クジャクチョウ（Aglais io）は、ヨーロッパとアジアの温帯の草地や森林に生息します。\n\n茶色い縁取りのある赤い4枚の翅と、黄色・青・赤・紫の鱗粉と黒い模様からなる特徴的な眼状紋を持ちます。翅の裏側は茶色から黒色です。幼虫は黒く毛があり、蛹は緑色で背中に尖った突起があります。\n\n雌雄の見た目はほぼ同じですが、雌は雄より最大10%大きくなることがあります。開張は5～6.4cmです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "孔雀蛱蝶（Aglais io）生活在欧洲和亚洲的温带草地与森林中。\n\n拥有四片红色翅膀和棕色边缘，并有明显的眼斑，由黄色、蓝色、红色或紫色鳞片构成，周围带黑色纹样。翅膀背面呈棕色至黑色。幼虫黑色且多毛，蛹为绿色，背部有尖状突起。\n\n雌雄外观相似，但雌性最多可比雄性大10%。翼展5～6.4厘米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Tagpfauenaugen gelten als nicht gefährdete Art. Man geht davon aus, dass diese Art keinen bedeutenden Bedrohungen ausgesetzt ist. Ihr Bestand, Wachstumstempo und Verhalten unterliegen Wetterbedingungen – pro Jahr kann es bis zu drei Generationen geben und in normalen Jahren schwanken die sichtbaren Populationen. In gewissem Umfang werden alle Schmetterlingsarten gesammelt, aber für diese Art ist das Ausmaß nicht besorgniserregend.\n\nIn ihrem ursprünglichen Lebensraum kommt diese Art in einigen Schutzgebieten vor, aber es sind keine bestimmten Schutzmaßnahmen erforderlich.\n\nTagpfauenaugen sind in ihrem Verbreitungsgebiet in großer Zahl vorhanden. Die Bestände sollten weiterhin durch Forschungsprojekte überwacht werden. In den letzten Jahren wurde ein kleiner Populationsanstieg festgestellt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "European Peacocks are considered Least Concern and are not thought to face any major threats. Population size, growth and behaviour vary with weather conditions; there may be up to three generations per year, and visible numbers fluctuate in normal years. Butterfly collecting occurs to some extent but is not considered a serious concern for this species.\n\nThe species occurs in some protected areas within its native range, but no specific conservation measures are required.\n\nEuropean Peacocks are abundant across their range. Populations should continue to be monitored through research, and a small recent increase has been recorded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "European Peacocks are considered Least Concern and are not thought to face any major threats. Population size, growth and behaviour vary with weather conditions; there may be up to three generations per year, and visible numbers fluctuate in normal years. Butterfly collecting occurs to some extent but is not considered a serious concern for this species.\n\nThe species occurs in some protected areas within its native range, but no specific conservation measures are required.\n\nEuropean Peacocks are abundant across their range. Populations should continue to be monitored through research, and a small recent increase has been recorded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificada como de Preocupación Menor y no se considera expuesta a amenazas importantes. Sus poblaciones varían con las condiciones meteorológicas y puede haber hasta tres generaciones por año. La recolección de mariposas existe, pero no representa un problema importante.\n\nLa especie aparece en algunas áreas protegidas de su distribución natural, aunque no necesita medidas específicas.\n\nEs abundante en su área de distribución y debe seguir siendo objeto de seguimiento. En los últimos años se ha observado un ligero aumento de población.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’espèce est classée en Préoccupation mineure et ne semble pas subir de menaces importantes. Les populations varient selon les conditions météorologiques et jusqu’à trois générations peuvent apparaître par an. La collecte existe mais n’est pas jugée préoccupante.\n\nL’espèce est présente dans certaines zones protégées sans nécessiter de mesures particulières.\n\nElle est abondante dans son aire et devrait continuer à être suivie. Une légère augmentation récente a été constatée.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificata a rischio minimo e non sembra soggetta a minacce importanti. Le popolazioni variano in base al clima e possono esserci fino a tre generazioni all’anno. La raccolta di farfalle esiste ma non è considerata preoccupante per questa specie.\n\nLa specie è presente in alcune aree protette ma non richiede misure specifiche.\n\nÈ abbondante nel proprio areale e dovrebbe continuare a essere monitorata. Negli ultimi anni è stato osservato un piccolo aumento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificada como Pouco Preocupante e não enfrenta ameaças significativas. As populações variam conforme o clima e podem ocorrer até três gerações por ano. A coleta de borboletas existe, mas não é preocupante para essa espécie.\n\nA espécie ocorre em algumas áreas protegidas, sem necessidade de medidas específicas.\n\nÉ abundante e deve continuar sendo monitorada. Um pequeno aumento populacional foi observado recentemente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種で、重大な脅威はないと考えられています。個体数や増加率、行動は天候に左右され、1年に最大3世代が生じることがあります。採集は行われますが、この種では問題になる規模ではありません。\n\n自然分布域の一部は保護区ですが、特別な保全措置は必要ありません。\n\n分布域では多数見られ、今後も研究による監視が推奨されています。近年はわずかな増加が確認されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "该物种被列为无危，并未面临显著威胁。种群数量、增长和行为会受天气影响，一年最多可出现三代，正常年份可见数量会波动。虽然有人采集蝴蝶，但对该物种而言规模并不令人担忧。\n\n其自然分布区内有部分保护地，但不需要特定保护措施。\n\n在分布区内数量很多，应继续通过研究进行监测。近年来观察到轻微种群增长。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Das Tagpfauenauge lebt größtenteils als Einzelgänger. Männchen verteidigen ihr Territorium mitunter gegen andere Männchen.\n\nDie Paarungszeit erstreckt sich von Mai bis August und beginnt für die Tiere, die später im Jahr erwachen, nach dem Winterschlaf. Männchen verteidigen ihr Revier rund um sonnenbeschienene Blumen aggressiv gegen rivalisierende Männchen durch Luftkämpfe. Sie jagen Weibchen nach, die sich von den Blüten ernähren. Jene Weibchen fliegen davon, wenn sie von den Männchen bedrängt werden, und paaren sich nur mit einem Männchen – jenem, das während dieser Jagd mit ihnen Schritt halten kann. Akzeptiert ein Weibchen die Annäherung eines Männchens, landet das Pärchen auf einem Blatt, um sich zu paaren, wobei sie einander den Rücken zuwenden und ihre Hinterleiber aneinander reiben.\n\nNach der Paarung legt das Weibchen Eier – ungefähr jeweils 400 – auf der Unterseite eines sonnenbeschienenen Nesselblatts. Dieser Vorgang wird bis zu dreimal wiederholt. Die Raupen schlüpfen nach ungefähr einer bis zwei Wochen aus den Eiern und spinnen ein gemeinschaftliches Seidennetz um ihr Geburtsblatt. Alle Raupen ernähren sich von diesem Blatt, bis es vollkommen abgenagt ist, woraufhin sie sich trennen und fortan unabhängig voneinander fressen.\n\nDie Raupen des Tagpfauenauges durchlaufen über einen Zeitraum von ungefähr drei Wochen fünf Nymphenstadien, bevor sie einen Ort für die Verpuppung finden. Diese dauert je nach Umgebungsbedingungen zwei bis vier Wochen, woraufhin die Tiere im Juli als ausgewachsene Schmetterlinge schlüpfen. Weibchen legen gegen Ende ihres Lebens im Mai und etwa ein Jahr nach ihrem Schlüpfen Eier. Da die Männchen eine kürzere Lebensdauer haben, paaren sich die meisten Männchen und Weibchen nur mit einem einzigen Partner.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European Peacock is mostly solitary, and males may defend territories against other males.\n\nThe breeding season runs from May to August and begins after hibernation for individuals that wake later in the year. Males aggressively defend territories around sunlit flowers through aerial contests. They chase females feeding from flowers. Females flee when pursued and mate with only one male, the one able to keep pace during the chase. If a female accepts a male, the pair lands on a leaf and mates while facing away from each other and joining their abdomens.\n\nAfter mating, the female lays roughly 400 eggs at a time on the underside of a sunlit nettle leaf. This may be repeated up to three times. Caterpillars hatch after around one to two weeks and spin a communal silk web around their birth leaf. They all feed on the leaf until it is completely stripped, then separate and feed independently.\n\nThe caterpillars pass through five nymphal stages over roughly three weeks before pupating. Pupation lasts two to four weeks depending on environmental conditions, and adults emerge in July. Females lay eggs near the end of their lives in May, about a year after emerging. Because males live for a shorter time, most males and females mate with only one partner.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European Peacock is mostly solitary, and males may defend territories against other males.\n\nThe breeding season runs from May to August and begins after hibernation for individuals that wake later in the year. Males aggressively defend territories around sunlit flowers through aerial contests. They chase females feeding from flowers. Females flee when pursued and mate with only one male, the one able to keep pace during the chase. If a female accepts a male, the pair lands on a leaf and mates while facing away from each other and joining their abdomens.\n\nAfter mating, the female lays roughly 400 eggs at a time on the underside of a sunlit nettle leaf. This may be repeated up to three times. Caterpillars hatch after around one to two weeks and spin a communal silk web around their birth leaf. They all feed on the leaf until it is completely stripped, then separate and feed independently.\n\nThe caterpillars pass through five nymphal stages over roughly three weeks before pupating. Pupation lasts two to four weeks depending on environmental conditions, and adults emerge in July. Females lay eggs near the end of their lives in May, about a year after emerging. Because males live for a shorter time, most males and females mate with only one partner.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Vive principalmente de forma solitaria y los machos pueden defender sus territorios frente a otros machos.\n\nLa época reproductiva va de mayo a agosto. Los machos defienden zonas alrededor de flores soleadas mediante combates aéreos y persiguen a las hembras que se alimentan de flores. Las hembras solo se aparean con el macho capaz de seguirlas durante la persecución.\n\nDespués, la hembra deposita unas 400 unidades de huevos en la cara inferior de una hoja de ortiga soleada y puede repetir el proceso hasta tres veces. Las orugas eclosionan tras una o dos semanas, construyen una red comunal de seda y comen la hoja hasta agotarla.\n\nLas orugas pasan por cinco estadios durante unas tres semanas y luego se transforman en pupa durante dos a cuatro semanas. Las hembras ponen huevos cerca del final de su vida, aproximadamente un año después de emerger.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le paon-du-jour est principalement solitaire et les mâles peuvent défendre leur territoire contre d’autres mâles.\n\nLa reproduction a lieu de mai à août. Les mâles défendent agressivement des zones autour de fleurs ensoleillées par des combats aériens et poursuivent les femelles qui s’y nourrissent.\n\nAprès l’accouplement, la femelle pond environ 400 œufs à la fois sous une feuille d’ortie exposée au soleil, et peut répéter l’opération jusqu’à trois fois. Les chenilles éclosent après une à deux semaines, tissent une toile collective et mangent la feuille jusqu’à l’épuiser.\n\nElles passent par cinq stades en environ trois semaines, puis la nymphose dure deux à quatre semaines. Les femelles pondent vers la fin de leur vie, environ un an après leur émergence.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Vive soprattutto da sola e i maschi possono difendere il territorio dagli altri maschi.\n\nLa stagione riproduttiva va da maggio ad agosto. I maschi difendono aree attorno a fiori illuminati dal sole con combattimenti aerei e inseguono le femmine che si nutrono sui fiori.\n\nDopo l’accoppiamento, la femmina depone circa 400 uova alla volta sotto una foglia di ortica esposta al sole e può ripetere il processo fino a tre volte. I bruchi schiudono dopo una-due settimane, tessono una rete comune e mangiano la foglia fino a consumarla.\n\nPassano attraverso cinque stadi in circa tre settimane e poi restano in crisalide per due-quattro settimane. Le femmine depongono verso la fine della loro vita, circa un anno dopo lo sfarfallamento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Vive principalmente sozinha e os machos podem defender territórios contra outros machos.\n\nA época reprodutiva vai de maio a agosto. Machos defendem áreas ao redor de flores ensolaradas com disputas aéreas e perseguem fêmeas que se alimentam nelas.\n\nApós o acasalamento, a fêmea põe cerca de 400 ovos por vez na parte inferior de uma folha de urtiga ao sol e pode repetir isso até três vezes. As lagartas eclodem após uma ou duas semanas, constroem uma teia coletiva e comem a folha até esgotá-la.\n\nAs lagartas passam por cinco estágios durante cerca de três semanas e depois ficam em pupa por duas a quatro semanas. As fêmeas põem ovos perto do fim da vida, cerca de um ano depois de emergirem.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "主に単独で生活し、雄は他の雄から縄張りを守ることがあります。\n\n繁殖期は5～8月です。雄は日当たりの良い花の周辺を空中戦で守り、花で採食する雌を追います。雌は追跡について来られる雄とだけ交尾します。\n\n交尾後、雌は日当たりの良いイラクサの葉裏に1回あたり約400個の卵を産み、最大3回繰り返します。幼虫は約1～2週間後に孵化し、共同の絹網を作って葉を食べ尽くします。\n\n幼虫は約3週間で5段階を経て、蛹期間は2～4週間です。雌は羽化から約1年後、寿命の終わりごろに産卵します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，雄性有时会防御领地。\n\n繁殖期为5月至8月。雄性会围绕阳光照射的花朵通过空中争斗防御领地，并追逐正在花上取食的雌性。雌性只会与能在追逐中跟上的一只雄性交配。\n\n交配后，雌性每次会在阳光照射的荨麻叶背面产下约400枚卵，这一过程最多可重复3次。幼虫约1～2周后孵化，会在出生叶片周围结成共同丝网并把叶片吃光。\n\n幼虫约3周经历5个阶段，随后蛹期持续2～4周。雌性大约在羽化一年后、生命接近结束时产卵。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Das Tagpfauenauge kann ein für Menschen hörbares zischendes Geräusch von sich geben, indem es seine Flügel aneinanderreibt. Das Geräusch dient offenbar der Abwehr von Nagetieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Flügelmuster des Tagpfauenauges ist ein Abwehrmechanismus. Die Augenflecken und der Körper des Schmetterlings sehen wie die Augen und der Schnabel eines Vogels aus und sollen Raubtiere abschrecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Viele der Raupen des Tagpfauenauges fallen parasitischen Wespen zum Opfer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In Japan gilt das Tagpfauenauge als Symbol für eine glückliche Ehe.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Unterseite der Flügel des Tagpfauenauges sieht wie Laubblätter aus, was sich besonders beim Überwintern als nützlich erweist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The European Peacock can make a hissing sound audible to humans by rubbing its wings together, apparently to deter rodents.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its eyespots and body resemble a bird's eyes and beak and act as a defence against predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Many caterpillars are killed by parasitic wasps.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In Japan, the European Peacock is considered a symbol of a happy marriage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The underside of the wings resembles dead leaves, which is especially useful during overwintering.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The European Peacock can make a hissing sound audible to humans by rubbing its wings together, apparently to deter rodents.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its eyespots and body resemble a bird's eyes and beak and act as a defence against predators.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Many caterpillars are killed by parasitic wasps.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In Japan, the European Peacock is considered a symbol of a happy marriage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The underside of the wings resembles dead leaves, which is especially useful during overwintering.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Puede producir un siseo audible frotando las alas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los ocelos imitan los ojos y el pico de un ave para ahuyentar depredadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Muchas orugas son víctimas de avispas parásitas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En Japón simboliza un matrimonio feliz.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La parte inferior de las alas parece hojas secas y ayuda durante la hibernación.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il peut produire un sifflement audible en frottant ses ailes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les ocelles imitent les yeux et le bec d’un oiseau pour effrayer les prédateurs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "De nombreuses chenilles sont victimes de guêpes parasites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Au Japon, il symbolise un mariage heureux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le dessous des ailes ressemble à des feuilles mortes et facilite l’hivernage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Può produrre un sibilo udibile sfregando le ali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli ocelli imitano gli occhi e il becco di un uccello e scoraggiano i predatori.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Molti bruchi vengono parassitati da vespe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In Giappone è simbolo di matrimonio felice.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il lato inferiore delle ali assomiglia a foglie secche ed è utile durante lo svernamento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pode produzir um chiado audível esfregando as asas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os ocelos imitam olhos e bico de ave e ajudam a afastar predadores.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Muitas lagartas são vítimas de vespas parasitas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No Japão simboliza um casamento feliz.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A parte inferior das asas lembra folhas secas e ajuda durante o inverno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "翅をこすり合わせて人にも聞こえるシューという音を出せます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "眼状紋は鳥の目とくちばしのように見え、捕食者を威嚇します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "多くの幼虫が寄生バチの犠牲になります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "日本では幸せな結婚の象徴とされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "翅の裏側は枯れ葉のように見え、越冬時の保護に役立ちます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "通过摩擦翅膀可以发出人耳可闻的嘶嘶声。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "眼斑和身体看起来像鸟的眼睛和喙，可威慑捕食者。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "许多幼虫会成为寄生蜂的寄主。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "在日本象征幸福婚姻。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "翅膀背面像枯叶，在越冬时特别有用。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est encore en développement actif et le contenu de la Zoopedia peut évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è ancora in sviluppo attivo e il contenuto della Zoopedia può cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 ainda está em desenvolvimento ativo e o conteúdo da Zoopedia pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e57c612e/Butterfly_EuropeanPeacock_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Aglais io/map/Aglais io map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZTU3YzYxMmUvQnV0dGVyZmx5X0V1cm9wZWFuUGVhY29jay5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Tagpfauenauge – Planet Zoo 2",
+            "en": "European Peacock – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Tagpfauenauges aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the European Peacock."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aglais io/bilder/Aglais io 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Tagpfauenauge",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/tagpfauenauge",
+        "en": "https://www.planetzoogame.com/2/zoopedia/european-peacock",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/european-peacock",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/mariposa-pavo-real",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/paon-du-jour",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/occhio-di-pavone",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/borboleta-pav%C3%A3o",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AF%E3%82%B8%E3%83%A3%E3%82%AF%E3%83%81%E3%83%A7%E3%82%A6",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%AD%94%E9%9B%80%E8%9B%B1%E8%9D%B6"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten."
+    }
+  }
+}

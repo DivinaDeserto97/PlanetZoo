@@ -1,0 +1,845 @@
+{
+  "id": "Oryx gazella",
+  "identitaet": {
+    "namen": {
+      "de": "Spießbock",
+      "en": "Gemsbok",
+      "en-US": "Gemsbok",
+      "es": "Gacela órice",
+      "fr": "Oryx gazelle",
+      "it": "Orice gazzella",
+      "pt-BR": "Órix-do-cabo",
+      "ja": "オリックス",
+      "zh-Hans": "南非剑羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Wüste",
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Oryx",
+          "art": "Oryx gazella",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1.9,
+          "max": 2.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1.1,
+          "max": 1.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 220,
+          "max": 300,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 100,
+          "max": 210,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 373,
+          "einheit": "individuum",
+          "hinweis": {
+            "de": "Der bereitgestellte Zoopedia-Auszug zeigt beim Wildbestand wörtlich „373“. Ein Tausender-Faktor oder eine andere Skalierung wird nicht angegeben und deshalb nicht ergänzt.",
+            "en": "The supplied Zoopedia extract literally displays '373' for the wild population. No thousands multiplier or other scaling is shown, so none has been added."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Kälber erreichen laut Zoopedia mit 2 Jahren die Geschlechtsreife. Männchen können meist erst ab etwa 5 Jahren ein eigenes Revier verteidigen.",
+            "en": "According to the Zoopedia, calves reach sexual maturity at two years. Males generally do not defend their own territory until around five years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 8.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": []
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "desert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt die Wüsten Kalahari und Namib als Lebensraum.",
+            "en": "The Zoopedia lists the Kalahari and Namib deserts as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Im Arterhaltungstext werden Savannenflächen und trockene Graslandschaften als wichtige Gebiete für Nahrungssuche und saisonale Wanderungen genannt.",
+            "en": "The conservation text identifies savanna and dry grassland as important areas for foraging and seasonal movements."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Spießbock (Oryx gazella), manchmal auch Südafrikanischer Oryx genannt, ist eine Antilopenart, die in den Wüsten Kalahari und Namib im südlichen Afrika lebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South African oryx, is an antelope native to the Kalahari and Namib deserts of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South African oryx, is an antelope native to the Kalahari and Namib deserts of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La gacela órice (Oryx gazella) es un antílope que vive en los desiertos del Kalahari y Namib, en el sur de África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'oryx gazelle (Oryx gazella) est une antilope vivant dans les déserts du Kalahari et du Namib en Afrique australe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'orice gazzella (Oryx gazella) è un'antilope che vive nei deserti del Kalahari e del Namib nell'Africa meridionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O órix-do-cabo (Oryx gazella) é um antílope que vive nos desertos do Kalahari e Namibe, no sul da África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オリックス（Oryx gazella）は、南部アフリカのカラハリ砂漠とナミブ砂漠に生息するレイヨウです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "南非剑羚（Oryx gazella）是一种生活在非洲南部卡拉哈里沙漠和纳米布沙漠的羚羊。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Spießbock (auch Oryx gazella) ist eine Antilopenart, die manchmal auch als Südafrikanischer Oryx bezeichnet wird und in den Wüsten Kalahari und Namib im südlichen Afrika lebt.\n\nSpießböcke weisen mehrere eindeutige Erkennungsmerkmale auf: lange, dünne und spiralförmige Hörner, ein schwarzes Gesicht mit weißen Zeichnungen über den Augen und der Schnauze, graubraunes Fell mit schwarzen Markierungen an den Oberschenkeln und auf dem Rücken sowie weiße „Socken“.\n\nSpießböcke haben eine durchschnittliche Schulterhöhe von 1,1 bis 1,3 m, sind 1,9 bis 2,4 m lang und ihre Hörner sind im Durchschnitt 85 cm lang. Die Männchen sind etwas größer und mit 220 kg bis 300 kg deutlich schwerer als die Weibchen, die 100 kg bis 210 kg wiegen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Africa.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Africa.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La gacela órice vive en los desiertos del Kalahari y Namib.\n\nSe reconoce por sus cuernos largos y finos, la cara negra con marcas blancas y el pelaje pardo grisáceo con marcas negras.\n\nMide 1,1–1,3 m a la cruz y 1,9–2,4 m de longitud. Los machos pesan 220–300 kg y las hembras 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'oryx gazelle vit dans les déserts du Kalahari et du Namib.\n\nIl possède de longues cornes fines, un visage noir marqué de blanc et un pelage gris-brun avec des marques noires.\n\nIl mesure 1,1–1,3 m au garrot et 1,9–2,4 m de long. Les mâles pèsent 220–300 kg et les femelles 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'orice gazzella vive nei deserti del Kalahari e del Namib.\n\nHa lunghe corna sottili, muso nero con segni bianchi e mantello grigio-bruno con marcature nere.\n\nMisura 1,1–1,3 m al garrese e 1,9–2,4 m di lunghezza. I maschi pesano 220–300 kg e le femmine 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O órix-do-cabo vive nos desertos do Kalahari e Namibe.\n\nPossui chifres longos e finos, rosto preto com marcas brancas e pelagem marrom-acinzentada com marcas pretas.\n\nMede 1,1–1,3 m no ombro e 1,9–2,4 m de comprimento. Machos pesam 220–300 kg e fêmeas 100–210 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オリックスはカラハリ砂漠とナミブ砂漠に生息します。\n\n長く細い角、白い模様のある黒い顔、黒い模様の入った灰褐色の体毛が特徴です。\n\n肩高1.1～1.3m、体長1.9～2.4m。雄は220～300kg、雌は100～210kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "南非剑羚生活在卡拉哈里和纳米布沙漠。\n\n具有细长的角、带白色花纹的黑色面部，以及带黑色斑纹的灰褐色毛皮。\n\n平均肩高1.1～1.3米、体长1.9～2.4米。雄性体重220～300千克，雌性100～210千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Spießbock gilt als nicht gefährdet, steht aber wie viele andere Arten aufgrund von Lebensraumverlust und Klimawandel vor Herausforderungen. Die Ausbreitung des Menschen, die landwirtschaftliche Nutzung und die zunehmende Konkurrenz durch Weidevieh verkleinern die intakten Savannenflächen und trockenen Graslandschaften, die der Spießbock für die Nahrungssuche und saisonale Wanderungen braucht. Diese Fragmentierung isoliert Gruppen und verstärkt die Konkurrenz zwischen Wild- und Nutztieren. Zudem wird die Ressourcenknappheit durch längere Dürrephasen und den Klimawandel verschärft. Nicht nachhaltige Bejagung sowie Wilderei zur Gewinnung von Fleisch und Trophäen kann ebenfalls zum Rückgang von Beständen führen.\n\nArterhaltungsmaßnahmen konzentrieren sich auf den Schutz von Lebensräumen und das Verringern von Konflikten zwischen Mensch und Tier. Neu angelegte Wildtierkorridore verbinden Reservate, sodass die Spießböcke im Lauf der Jahreszeiten verschiedene Weideflächen und Trinkstellen erreichen können. Ökotourismusinitiativen schaffen Anreize für die örtliche Bevölkerung, den Wildtierschutz zu fördern, und Aufklärungskampagnen sowie Maßnahmen gegen Wilderei verringern den Druck durch illegale Bejagung. Außerdem haben Umsiedlungen auf private Wildtierfarmen in manchen Gebieten zu einem Anstieg von Subpopulationen geführt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Gemsbok is classified as Least Concern but faces challenges from habitat loss and climate change. Human expansion, agriculture and increasing competition with livestock reduce intact savanna and dry grassland used for foraging and seasonal movement. Fragmentation isolates groups and increases competition, while longer droughts worsen resource scarcity. Unsustainable hunting and poaching for meat and trophies can also reduce populations.\n\nConservation focuses on habitat protection and reducing human-wildlife conflict. Wildlife corridors connect reserves, ecotourism provides incentives for local conservation, education and anti-poaching measures reduce illegal hunting, and translocations to private wildlife farms have increased some subpopulations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Gemsbok is classified as Least Concern but faces challenges from habitat loss and climate change. Human expansion, agriculture and increasing competition with livestock reduce intact savanna and dry grassland used for foraging and seasonal movement. Fragmentation isolates groups and increases competition, while longer droughts worsen resource scarcity. Unsustainable hunting and poaching for meat and trophies can also reduce populations.\n\nConservation focuses on habitat protection and reducing human-wildlife conflict. Wildlife corridors connect reserves, ecotourism provides incentives for local conservation, education and anti-poaching measures reduce illegal hunting, and translocations to private wildlife farms have increased some subpopulations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificada como de Preocupación Menor, aunque la pérdida y fragmentación del hábitat, el cambio climático, las sequías, la competencia con el ganado y la caza representan amenazas.\n\nLas medidas de conservación incluyen corredores de fauna, protección del hábitat, ecoturismo, educación, lucha contra la caza furtiva y traslocaciones.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est classée en Préoccupation mineure, mais la perte et la fragmentation de l'habitat, le changement climatique, les sécheresses, la concurrence avec le bétail et la chasse constituent des menaces.\n\nLes mesures incluent des corridors écologiques, la protection des habitats, l'écotourisme, la sensibilisation, la lutte contre le braconnage et les translocations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo, ma perdita e frammentazione dell'habitat, cambiamento climatico, siccità, competizione con il bestiame e caccia sono minacce.\n\nLe misure includono corridoi faunistici, protezione degli habitat, ecoturismo, sensibilizzazione, lotta al bracconaggio e traslocazioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificado como Pouco Preocupante, mas perda e fragmentação de habitat, mudanças climáticas, secas, competição com o gado e caça são ameaças.\n\nAs medidas incluem corredores de fauna, proteção de habitats, ecoturismo, educação, combate à caça ilegal e translocações.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種ですが、生息地の喪失・分断、気候変動、干ばつ、家畜との競争、狩猟などが脅威です。\n\n保全策には野生動物回廊、生息地保護、エコツーリズム、啓発、密猟対策、移送などがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为无危，但栖息地丧失与破碎化、气候变化、干旱、与家畜竞争以及狩猎仍构成威胁。\n\n保护措施包括建立野生动物通道、保护栖息地、生态旅游、公众教育、反偷猎以及迁移个体。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Eine Spießbockherde besteht aus 10 bis 30 Tieren. Weibchen bilden zusammenhängende Herden mit ihren Jungtieren. Für gewöhnlich befindet sich auch ein dominantes, territoriales Männchen zu Paarungszwecken in der Herde. Junge Männchen finden sich in Junggesellenherden zusammen, bis sie alt genug sind, ihr eigenes Revier zu verteidigen und eine Herde mit Weibchen zu erobern.\n\nAusgewachsene männliche Spießböcke beanspruchen ein großes Revier, in dem sie Harems aus den dort grasenden Weibchen bilden. Das dominante Männchen schließt sich diesen Gruppen an, verteidigt sie gegen rivalisierende Männchen und paart sich mit paarungsbereiten Weibchen. Spießböcke können sich das ganze Jahr über fortpflanzen, und die Weibchen einer Herde sind in der Regel etwa zur gleichen Zeit paarungsbereit.\n\nEin Spießbockweibchen ist 8,5 Monate lang trächtig. Danach bringt die Mutter fernab der Herde ein Kalb zur Welt. Das Neugeborene bleibt die ersten 6 Wochen versteckt im Buschland. Danach kehrt das Kalb zur Herde zurück und beginnt, feste Nahrung zu sich zu nehmen, bevor es im Alter von 3,5 Monaten entwöhnt wird und etwa einen Monat später selbstständig wird.\n\nKälber erreichen mit 2 Jahren die Geschlechtsreife; die Männchen verlassen ihre Geburtsherde und schließen sich einer ausschließlich aus Männchen bestehenden Junggesellengruppe an, bis sie alt genug sind, um ihr eigenes Revier zu verteidigen – meist ab einem Alter von 5 Jahren –, während die Weibchen bei der Herde ihrer Mutter bleiben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "A Gemsbok herd contains 10–30 animals. Females form cohesive herds with their young, usually accompanied by a dominant territorial male. Young males form bachelor herds until they are old enough to defend a territory and take over a female herd.\n\nAdult males claim large territories and form harems from females grazing there. Gemsbok can breed throughout the year, and females in a herd are usually receptive at roughly the same time.\n\nA female is pregnant for 8.5 months and then gives birth to one calf away from the herd. The newborn remains hidden in scrub for the first six weeks, then returns to the herd and begins eating solid food. It is weaned at 3.5 months and becomes independent around a month later.\n\nCalves reach sexual maturity at two years. Males leave their natal herd and join bachelor groups until they can defend their own territory, usually from around five years of age, while females remain with their mother's herd.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "A Gemsbok herd contains 10–30 animals. Females form cohesive herds with their young, usually accompanied by a dominant territorial male. Young males form bachelor herds until they are old enough to defend a territory and take over a female herd.\n\nAdult males claim large territories and form harems from females grazing there. Gemsbok can breed throughout the year, and females in a herd are usually receptive at roughly the same time.\n\nA female is pregnant for 8.5 months and then gives birth to one calf away from the herd. The newborn remains hidden in scrub for the first six weeks, then returns to the herd and begins eating solid food. It is weaned at 3.5 months and becomes independent around a month later.\n\nCalves reach sexual maturity at two years. Males leave their natal herd and join bachelor groups until they can defend their own territory, usually from around five years of age, while females remain with their mother's herd.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las manadas tienen 10–30 animales. Las hembras viven con sus crías y normalmente hay un macho dominante territorial. Los machos jóvenes forman grupos de solteros.\n\nPuede reproducirse durante todo el año. La gestación dura 8,5 meses y normalmente nace una sola cría lejos de la manada. Permanece escondida seis semanas, se desteta a los 3,5 meses y se independiza aproximadamente un mes después.\n\nLa madurez sexual se alcanza a los 2 años, aunque los machos suelen defender territorios a partir de unos 5 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les troupeaux comptent 10 à 30 animaux. Les femelles vivent avec leurs jeunes et un mâle territorial dominant est généralement présent. Les jeunes mâles forment des groupes de célibataires.\n\nLa reproduction peut avoir lieu toute l'année. La gestation dure 8,5 mois et la femelle donne naissance à un seul petit à l'écart du troupeau. Il reste caché six semaines, est sevré à 3,5 mois puis devient indépendant environ un mois plus tard.\n\nLa maturité sexuelle est atteinte vers 2 ans, tandis que les mâles ne défendent généralement leur propre territoire qu'à partir d'environ 5 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le mandrie comprendono 10–30 animali. Le femmine vivono con i piccoli e normalmente è presente un maschio dominante territoriale. I giovani maschi formano gruppi di scapoli.\n\nPuò riprodursi tutto l'anno. La gestazione dura 8,5 mesi e nasce normalmente un solo piccolo lontano dalla mandria. Rimane nascosto per sei settimane, viene svezzato a 3,5 mesi e diventa indipendente circa un mese dopo.\n\nLa maturità sessuale viene raggiunta a 2 anni, mentre i maschi di solito difendono un territorio proprio da circa 5 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As manadas têm 10–30 animais. Fêmeas vivem com seus filhotes e normalmente há um macho territorial dominante. Machos jovens formam grupos de solteiros.\n\nPode se reproduzir o ano todo. A gestação dura 8,5 meses e normalmente nasce um único filhote longe da manada. Ele permanece escondido por seis semanas, é desmamado aos 3,5 meses e se torna independente cerca de um mês depois.\n\nA maturidade sexual ocorre aos 2 anos, enquanto machos geralmente só defendem território próprio a partir de cerca de 5 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "群れは10～30頭で、雌と子の群れに優位な縄張り雄が加わることが多く、若い雄は独身群を作ります。\n\n一年中繁殖でき、妊娠期間は8.5か月です。雌は群れから離れて1頭の子を産み、子は最初の6週間茂みに隠れます。3.5か月で離乳し、その約1か月後に独立します。\n\n2歳で性成熟し、雄が自分の縄張りを守れるようになるのは通常5歳頃からです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "群体通常由10～30只组成，雌性与幼崽形成群体，通常还有一只优势领地雄性。年轻雄性会组成单身群。\n\n全年均可繁殖。妊娠期8.5个月，雌性离群产下1只幼崽。幼崽最初6周藏在灌丛中，3.5个月断奶，再过约1个月独立。\n\n2岁达到性成熟，而雄性通常到约5岁才足以守卫自己的领地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Spießböcke können ihre Körpertemperatur auf bis zu 45 °C erhöhen, um besser mit den hohen Außentemperaturen zurechtzukommen und Flüssigkeitsverlust durch Schwitzen und Hecheln zu verhindern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Spießböcke verfügen über eine niedrige Stoffwechselrate, sodass sie seltener trinken müssen. Den Großteil des Jahres nehmen sie Flüssigkeit nur durch ihre Nahrung auf.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Spießbockweibchen haben längere Hörner als Spießbockmännchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nach der Geburt eines Kalbs dauert es oft nur wenige Wochen, bis das Muttertier erneut trächtig wird.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Mittelalter wurden Spießbockhörner in England als Hörner von Einhörnern verkauft.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Gemsbok can raise their body temperature to as high as 45 °C to cope with extreme heat and reduce water loss through sweating and panting.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have a low metabolic rate and need to drink less often; for much of the year they obtain water only from food.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Female Gemsbok have longer horns than males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Only a few weeks may pass after a calf is born before the mother becomes pregnant again.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In medieval England, Gemsbok horns were sold as unicorn horns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Gemsbok can raise their body temperature to as high as 45 °C to cope with extreme heat and reduce water loss through sweating and panting.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They have a low metabolic rate and need to drink less often; for much of the year they obtain water only from food.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Female Gemsbok have longer horns than males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Only a few weeks may pass after a calf is born before the mother becomes pregnant again.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In medieval England, Gemsbok horns were sold as unicorn horns.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Puede elevar su temperatura corporal hasta 45 °C.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su metabolismo bajo reduce la necesidad de beber agua.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las hembras tienen cuernos más largos que los machos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La madre puede volver a quedar preñada pocas semanas después del parto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "En la Inglaterra medieval sus cuernos se vendían como cuernos de unicornio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il peut faire monter sa température corporelle jusqu'à 45 °C.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son faible métabolisme réduit ses besoins en eau.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les femelles ont des cornes plus longues que les mâles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La femelle peut être de nouveau gestante quelques semaines après la naissance.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Au Moyen Âge, ses cornes étaient vendues en Angleterre comme des cornes de licorne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Può aumentare la temperatura corporea fino a 45 °C.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il metabolismo basso riduce la necessità di bere.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le femmine hanno corna più lunghe dei maschi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La madre può restare nuovamente gravida poche settimane dopo il parto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nel Medioevo le corna venivano vendute in Inghilterra come corna di unicorno.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pode elevar a temperatura corporal até 45 °C.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A baixa taxa metabólica reduz a necessidade de beber.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fêmeas têm chifres mais longos que machos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A mãe pode engravidar novamente poucas semanas após o nascimento.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Na Inglaterra medieval, seus chifres eram vendidos como chifres de unicórnio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "体温を45 °Cまで上げることができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "代謝率が低いため飲水の必要が少なくなります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雌の角は雄より長いです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "出産から数週間で再び妊娠することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "中世のイングランドでは角がユニコーンの角として売られていました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "可将体温升高到45 °C以适应高温。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "较低的代谢率减少了饮水需求。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雌性的角比雄性更长。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "产仔后往往只需数周便可能再次怀孕。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "中世纪英格兰曾把它们的角当作独角兽角出售。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/93896954/Oryx_Gemsbok_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Oryx gazella/map/Oryx gazella map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOTM4OTY5NTQvT3J5eF9HZW1zYm9rLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Spießbock – Planet Zoo 2",
+            "en": "Gemsbok – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Spießbocks aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Gemsbok."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Oryx gazella/bilder/Oryx gazella 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/93896954/Oryx_Gemsbok_illustration.jpg",
+          "alt": {
+            "de": "Spießbock – Zoopedia-Illustration",
+            "en": "Gemsbok – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Spießbocks aus der Planet Zoo 2 Zoopedia.",
+            "en": "Gemsbok illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Oryx gazella/bilder/Oryx gazella illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Spießbock",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/spie%C3%9Fbock",
+        "en": "https://www.planetzoogame.com/2/zoopedia/gemsbok",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/gemsbok",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/gacela-%C3%B3rice",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/oryx-gazelle",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/orice-gazzella",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/%C3%B3rix-do-cabo",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%8D%97%E9%9D%9E%E5%89%91%E7%BE%9A"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Wildbestand wurde exakt wie angezeigt als 373 übernommen. Ein Tausender-Faktor wird nicht ergänzt. Die Herdenstruktur und das einzelne Kalb bleiben in der Prosa, weil dafür keine zusätzlichen unbestätigten Projekt-Enums eingeführt werden."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

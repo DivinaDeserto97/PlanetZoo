@@ -1,0 +1,776 @@
+{
+  "id": "Phyllium giganteum",
+  "identitaet": {
+    "namen": {
+      "de": "Großes Wandelndes Blatt",
+      "en": "Giant Malaysian Leaf Insect",
+      "en-US": "Giant Malaysian Leaf Insect",
+      "es": "Insecto hoja gigante",
+      "fr": "Phyllie géante de Malaisie",
+      "it": "Insetto foglia gigante",
+      "pt-BR": "Bicho-folha-gigante-da-Malásia",
+      "ja": "オオコノハムシ",
+      "zh-Hans": "马来西亚巨人叶䗛"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": ""
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Phasmatodea",
+          "familie": "Phylliidae",
+          "gattung": "Pulchriphyllium",
+          "art": "Phyllium giganteum",
+          "hinweis": {
+            "de": "Der Zoopedia-Seitenkopf nennt „Phyllium giganteum“, während der Übersichtstext „Phyllium giganteum“ und das Gattungsfeld „Pulchriphyllium“ nennt. Die strukturierte Taxonomie folgt dem Übersichtstext und dem Gattungsfeld.",
+            "en": "The Zoopedia page heading says 'Phyllium giganteum', while the overview says 'Phyllium giganteum' and the genus field says 'Pulchriphyllium'. The structured taxonomy follows the overview and genus field."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 0.12,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Weibchen sind laut Zoopedia etwa 12 cm lang, breit und flach, besitzen kleine Flügelrudimente und sind flugunfähig.",
+            "en": "According to the Zoopedia, females are about 12 cm long, broad and flat, have small wing remnants and cannot fly."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 0.09,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Männchen sind laut Zoopedia etwa 9 cm lang, deutlich schlanker, besitzen lange Flügel und können fliegen.",
+            "en": "According to the Zoopedia, males are about 9 cm long, much slimmer, have long wings and can fly."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": []
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Große Wandelnde Blätter als Einzelgänger, die jedoch sehr passiv sind und deshalb auch in Gruppen gehalten werden können.",
+            "en": "The Zoopedia describes Giant Malaysian Leaf Insects as solitary but extremely passive, meaning they can also be kept in groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt den tropischen Regenwald Westmalaysias als Lebensraum.",
+            "en": "The Zoopedia gives the tropical rainforest of western Malaysia as the species' habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Große Wandelnde Blatt (Phyllium giganteum; im Zoopedia-Seitenkopf auch als Phyllium giganteum geführt) ist eine große Insektenart, die im tropischen Regenwald Westmalaysias heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect (Phyllium giganteum; also shown as Phyllium giganteum in the Zoopedia page heading) is a large insect native to the tropical rainforest of western Malaysia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect (Phyllium giganteum; also shown as Phyllium giganteum in the Zoopedia page heading) is a large insect native to the tropical rainforest of western Malaysia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El insecto hoja gigante (Phyllium giganteum; el encabezado de la Zoopedia también muestra Phyllium giganteum) es un gran insecto originario de la selva tropical del oeste de Malasia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La phyllie géante de Malaisie (Phyllium giganteum; l'en-tête de la Zoopedia indique aussi Phyllium giganteum) est un grand insecte originaire de la forêt tropicale de Malaisie occidentale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'insetto foglia gigante (Phyllium giganteum; l'intestazione della Zoopedia mostra anche Phyllium giganteum) è un grande insetto originario della foresta tropicale della Malesia occidentale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O bicho-folha-gigante-da-Malásia (Phyllium giganteum; o cabeçalho da Zoopedia também mostra Phyllium giganteum) é um grande inseto nativo da floresta tropical do oeste da Malásia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オオコノハムシ（Phyllium giganteum。Zoopediaの見出しではPhyllium giganteumとも表記）は、マレーシア西部の熱帯雨林に生息する大型昆虫です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "马来西亚巨人叶䗛（Phyllium giganteum；Zoopedia页面标题也写作Phyllium giganteum）是一种原产于马来西亚西部热带雨林的大型昆虫。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Große Wandelnde Blatt (auch Phyllium giganteum) ist eine große Insektenart, die im tropischen Regenwald Westmalaysias heimisch ist.\n\nDiese Spezies ist außergewöhnlich gut getarnt. Wie der Name bereits vermuten lässt, kann man es kaum von den Blättern der Bäume unterscheiden, in denen es lebt.\n\nDie Weibchen sind 12 cm lang, breit und flach und verfügen über kleine Flügelrudimente, sind allerdings flugunfähig. Die Männchen sind etwa 9 cm lang, wesentlich schlanker, haben lange Flügel und können fliegen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect (Phyllium giganteum) is a large insect native to the tropical rainforest of western Malaysia.\n\nThe species is exceptionally well camouflaged and can be extremely difficult to distinguish from the leaves among which it lives.\n\nFemales are about 12 cm long, broad and flat, with small wing remnants and are flightless. Males are about 9 cm long, much slimmer, have long wings and can fly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect (Phyllium giganteum) is a large insect native to the tropical rainforest of western Malaysia.\n\nThe species is exceptionally well camouflaged and can be extremely difficult to distinguish from the leaves among which it lives.\n\nFemales are about 12 cm long, broad and flat, with small wing remnants and are flightless. Males are about 9 cm long, much slimmer, have long wings and can fly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El insecto hoja gigante vive en la selva tropical del oeste de Malasia.\n\nEstá extraordinariamente bien camuflado y resulta difícil distinguirlo de las hojas.\n\nLas hembras miden unos 12 cm, son anchas, planas y no vuelan. Los machos miden unos 9 cm, son mucho más delgados, tienen alas largas y pueden volar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La phyllie géante de Malaisie vit dans la forêt tropicale de Malaisie occidentale.\n\nElle est extraordinairement bien camouflée et se confond presque avec les feuilles.\n\nLes femelles mesurent environ 12 cm, sont larges, plates et incapables de voler. Les mâles mesurent environ 9 cm, sont beaucoup plus fins, possèdent de longues ailes et peuvent voler.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L'insetto foglia gigante vive nella foresta tropicale della Malesia occidentale.\n\nÈ eccezionalmente mimetico ed è difficile distinguerlo dalle foglie.\n\nLe femmine misurano circa 12 cm, sono larghe, piatte e non possono volare. I maschi misurano circa 9 cm, sono molto più snelli, hanno ali lunghe e possono volare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O bicho-folha-gigante-da-Malásia vive na floresta tropical do oeste da Malásia.\n\nÉ extremamente bem camuflado e quase indistinguível das folhas.\n\nFêmeas medem cerca de 12 cm, são largas, achatadas e não voam. Machos medem cerca de 9 cm, são muito mais finos, têm asas longas e podem voar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オオコノハムシはマレーシア西部の熱帯雨林に生息します。\n\n非常に優れた擬態を持ち、葉と見分けるのが難しいほどです。\n\n雌は約12cmで幅広く平たく、翅は退化して飛べません。雄は約9cmで細身、長い翅を持ち飛行できます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "马来西亚巨人叶䗛生活在马来西亚西部热带雨林中。\n\n伪装能力极强，几乎与树叶无法区分。\n\n雌性约12厘米长，身体宽而扁平，翅膀退化且不能飞。雄性约9厘米长，身体更纤细，拥有长翅并能够飞行。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand des Großen Wandelnden Blatts wurde bisher nicht offiziell im Detail bewertet. Über seine Bestände ist wenig bekannt, und es gibt keine spezifischen Schutzprogramme. Die Art ist im Haustierhandel beliebt, lässt sich aber relativ gut züchten, sodass der Druck auf Wildbestände vermutlich begrenzt ist. Da sie stark auf dichte Vegetation zur Tarnung und Ernährung angewiesen ist, kann sie dennoch unter Abholzung und dem Verlust ihres Lebensraums leiden.\n\nDas Verbreitungsgebiet des Großen Wandelnden Blatts überschneidet sich vermutlich mit bestehenden Schutzgebieten in Malaysia. Dort kann die Art indirekt von allgemeinen Schutzmaßnahmen für Wälder profitieren; es gibt jedoch keine gezielten Erhaltungsprogramme, und weitere Forschung zu Verbreitung, Verhalten und Ökologie wäre nötig, um den tatsächlichen Status besser einschätzen zu können.\n\nDer Wildbestand wird in der Zoopedia als unbekannt angegeben. Im separaten Feld für den Arterhaltungszustand steht lediglich „???“.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The conservation status of the Giant Malaysian Leaf Insect has not yet been officially assessed in detail. Little is known about its populations and there are no species-specific conservation programmes. It is popular in the pet trade but breeds relatively well in captivity, so pressure on wild populations is thought to be limited. Because it depends heavily on dense vegetation for camouflage and food, deforestation and habitat loss may still affect it.\n\nIts range probably overlaps existing protected areas in Malaysia, where it may benefit indirectly from general forest protection. Further research is needed to assess its true status.\n\nThe Zoopedia lists the wild population as unknown, while the separate conservation-status field contains only '???'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The conservation status of the Giant Malaysian Leaf Insect has not yet been officially assessed in detail. Little is known about its populations and there are no species-specific conservation programmes. It is popular in the pet trade but breeds relatively well in captivity, so pressure on wild populations is thought to be limited. Because it depends heavily on dense vegetation for camouflage and food, deforestation and habitat loss may still affect it.\n\nIts range probably overlaps existing protected areas in Malaysia, where it may benefit indirectly from general forest protection. Further research is needed to assess its true status.\n\nThe Zoopedia lists the wild population as unknown, while the separate conservation-status field contains only '???'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Su estado de conservación aún no ha sido evaluado oficialmente en detalle. Se sabe poco de sus poblaciones y no existen programas específicos. La cría en cautividad probablemente reduce la presión del comercio, aunque la deforestación y la pérdida de vegetación densa pueden afectarlo.\n\nSu área probablemente se solapa con zonas protegidas de Malasia, pero se necesita más investigación.\n\nLa Zoopedia indica que la población silvestre es desconocida y el campo de estado muestra únicamente «???».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Son statut n'a pas encore été officiellement évalué en détail. On connaît mal ses populations et il n'existe pas de programme spécifique. L'élevage en captivité limite probablement la pression du commerce, mais la déforestation et la perte de végétation dense peuvent la menacer.\n\nSon aire chevauche probablement des zones protégées en Malaisie, mais davantage de recherches sont nécessaires.\n\nLa Zoopedia indique une population sauvage inconnue et affiche seulement «???» pour le statut.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo stato di conservazione non è ancora stato valutato ufficialmente in dettaglio. Si sa poco delle popolazioni e non esistono programmi specifici. L'allevamento in cattività probabilmente riduce la pressione del commercio, ma deforestazione e perdita di vegetazione fitta possono danneggiare la specie.\n\nL'areale probabilmente si sovrappone ad aree protette malesi, ma sono necessarie ulteriori ricerche.\n\nLa Zoopedia indica la popolazione selvatica come sconosciuta e mostra solo «???» nel campo dello stato.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O estado de conservação ainda não foi avaliado oficialmente em detalhe. Pouco se sabe sobre as populações e não existem programas específicos. A criação em cativeiro provavelmente reduz a pressão do comércio, mas o desmatamento e a perda de vegetação densa podem afetar a espécie.\n\nA distribuição provavelmente se sobrepõe a áreas protegidas na Malásia, mas mais pesquisas são necessárias.\n\nA Zoopedia indica população selvagem desconhecida e mostra apenas «???» no campo de estado.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "保全状況はまだ公式に詳しく評価されていません。野生個体群については情報が少なく、特定の保全計画もありません。飼育下繁殖が比較的容易なためペット取引による圧力は限定的と考えられますが、森林伐採や生息地喪失の影響を受ける可能性があります。\n\n分布域はマレーシアの保護地域と重なる可能性がありますが、実際の状況を評価するにはさらなる研究が必要です。\n\nZoopediaでは野生個体数は「不明」、保全状況欄は「???」とされています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "其保护状况尚未得到正式详细评估。野外种群资料很少，也没有专门的保护计划。由于人工繁育相对容易，宠物贸易对野外种群的压力可能有限，但森林砍伐和生境丧失仍可能造成影响。\n\n其分布区可能与马来西亚现有保护区重叠，但仍需更多研究。\n\nZoopedia将野生种群标为“未知”，保护状态字段仅显示“???”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Diese Insekten sind zwar Einzelgänger, aber äußerst passiv, weshalb man sie auch in Gruppen halten kann. Man sollte sie jedoch nicht mit anderen pflanzenfressenden Insekten zusammenhalten, da diese sie für Blätter halten und fressen könnten.\n\nÜber die Paarungsgewohnheiten des Großen Wandelnden Blatts ist nur wenig bekannt, da die Männchen bisher nur selten beobachtet wurden. Ein Großteil dieser Informationen basiert daher auf anderen Arten der Gattung Phyllium.\n\nGroße Wandelnde Blätter können sich das ganze Jahr über fortpflanzen. Die Männchen suchen im Flug nach Weibchen. Wenn sie ein paarungsbereites Weibchen finden, landen sie und paaren sich mit ihr. Die Weibchen sind jedoch parthenogenetisch, das heißt, sie können lebensfähige Eier legen, ohne sich paaren zu müssen, wenn kein Männchen vorhanden ist.\n\nDas weibliche Große Wandelnde Blatt legt etwa 40 Eier, die es im Boden vergräbt. Befruchtete Eier werden genauso abgelegt wie unbefruchtete, und zwar 1 bis 2 pro Tag. Die Eier schlüpfen 6 bis 9 Monate später. Die Jungtiere häuten sich etwa einmal pro Monat, bis sie ausgewachsen sind.\n\nMännliche Jungtiere häuten sich sechsmal, Weibchen siebenmal. Weibchen werden mit 8 Monaten geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "These insects are solitary but extremely passive, so they can also be kept in groups. They should not be kept with other herbivorous insects because those may mistake them for leaves and eat them.\n\nLittle is known about their mating behaviour because males have rarely been observed, and much of the information is based on other Phyllium species.\n\nThey can reproduce throughout the year. Males search for females in flight, but females are parthenogenetic and can lay viable eggs without mating if no male is present.\n\nA female lays around 40 eggs and buries them in the ground, laying fertilised and unfertilised eggs at a rate of 1–2 per day. The eggs hatch 6–9 months later. Juveniles moult roughly once per month until fully grown.\n\nMales moult six times and females seven times. Females reach sexual maturity at eight months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "These insects are solitary but extremely passive, so they can also be kept in groups. They should not be kept with other herbivorous insects because those may mistake them for leaves and eat them.\n\nLittle is known about their mating behaviour because males have rarely been observed, and much of the information is based on other Phyllium species.\n\nThey can reproduce throughout the year. Males search for females in flight, but females are parthenogenetic and can lay viable eggs without mating if no male is present.\n\nA female lays around 40 eggs and buries them in the ground, laying fertilised and unfertilised eggs at a rate of 1–2 per day. The eggs hatch 6–9 months later. Juveniles moult roughly once per month until fully grown.\n\nMales moult six times and females seven times. Females reach sexual maturity at eight months.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitario pero muy pasivo y puede mantenerse en grupos. No conviene mantenerlo con otros insectos herbívoros porque podrían confundirlo con una hoja.\n\nSe sabe poco sobre su reproducción. Puede reproducirse todo el año y las hembras son partenogenéticas, por lo que pueden producir huevos viables sin machos.\n\nUna hembra pone alrededor de 40 huevos, normalmente 1–2 al día, y estos eclosionan 6–9 meses después. Las crías mudan aproximadamente una vez al mes.\n\nLos machos mudan seis veces, las hembras siete, y las hembras alcanzan la madurez sexual a los 8 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est solitaire mais très passive et peut donc vivre en groupe. Elle ne doit pas être maintenue avec d'autres insectes herbivores qui pourraient la confondre avec une feuille.\n\nOn sait peu de choses sur sa reproduction. Elle peut se reproduire toute l'année et les femelles sont parthénogénétiques.\n\nUne femelle pond environ 40 œufs, à raison de 1 à 2 par jour, et l'éclosion a lieu 6 à 9 mois plus tard. Les jeunes muent environ une fois par mois.\n\nLes mâles muent six fois, les femelles sept fois, et les femelles atteignent la maturité sexuelle à 8 mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario ma molto passivo e può quindi essere tenuto in gruppo. Non dovrebbe convivere con altri insetti erbivori che potrebbero scambiarlo per una foglia.\n\nSi conosce poco sulla riproduzione. Può riprodursi tutto l'anno e le femmine sono partenogenetiche.\n\nUna femmina depone circa 40 uova, 1–2 al giorno, che schiudono 6–9 mesi dopo. I giovani fanno la muta circa una volta al mese.\n\nI maschi mutano sei volte, le femmine sette, e le femmine diventano sessualmente mature a 8 mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitário, mas muito passivo e pode ser mantido em grupos. Não deve ser mantido com outros insetos herbívoros que possam confundi-lo com uma folha.\n\nPouco se sabe sobre sua reprodução. Pode se reproduzir o ano todo e as fêmeas são partenogenéticas.\n\nUma fêmea põe cerca de 40 ovos, normalmente 1–2 por dia, que eclodem 6–9 meses depois. Os jovens mudam de pele aproximadamente uma vez por mês.\n\nMachos fazem seis mudas, fêmeas sete, e as fêmeas atingem maturidade sexual aos 8 meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性ですが非常におとなしく、群れで飼育することもできます。他の植食性昆虫と一緒にすると葉と間違えて食べられる可能性があります。\n\n繁殖行動については情報が少なく、雄はほとんど観察されていません。一年中繁殖でき、雌は単為生殖が可能です。\n\n雌は約40個の卵を土に埋め、1日に1～2個ずつ産みます。卵は6～9か月後に孵化します。幼虫は成体になるまで約月1回脱皮します。\n\n雄は6回、雌は7回脱皮し、雌は8か月で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，但性情非常被动，因此也可以群养。不应与其他植食性昆虫混养，否则可能被误认为树叶而被取食。\n\n对其繁殖行为了解很少，因为雄性很少被观察到。全年均可繁殖，雌性能够进行孤雌生殖。\n\n雌性约产40枚卵并埋入土中，每天产1～2枚。卵在6～9个月后孵化。幼体大约每月蜕皮一次直到成体。\n\n雄性蜕皮6次，雌性7次；雌性8个月达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Das Große Wandelnde Blatt ist äußerst friedfertig und verbringt die meiste Zeit bewegungslos und stoisch, wodurch es noch besser getarnt ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Große Wandelnde Blatt lebt im Taman-Negara-Regenwald, der über 130 Millionen Jahre alt ist und damit zu den ältesten Regenwäldern der Welt gehört.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Während der Häutung ist das Große Wandelnde Blatt extrem verwundbar und kann bei ungeeigneter Temperatur oder Luftfeuchtigkeit sowie bei Berührung vor der vollständigen Aushärtung leicht sterben. Dies erschwert die Aufzucht in Gefangenschaft.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weibchen benötigen zur Vermehrung keine Männchen und können sich asexuell fortpflanzen. Allerdings besteht in diesem Fall der gesamte Nachwuchs nur aus Weibchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Große Wandelnde Blatt wurde erst 1994 entdeckt, weshalb man über die Männchen dieser Spezies nur recht wenig weiß.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect is extremely peaceful and spends most of its time motionless, which improves its camouflage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "It lives in the Taman Negara rainforest, which is more than 130 million years old and among the world's oldest rainforests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During moulting it is extremely vulnerable and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Females can reproduce asexually without males; in that case all offspring are female.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The species was only discovered in 1994, and relatively little is known about the males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Giant Malaysian Leaf Insect is extremely peaceful and spends most of its time motionless, which improves its camouflage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "It lives in the Taman Negara rainforest, which is more than 130 million years old and among the world's oldest rainforests.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During moulting it is extremely vulnerable and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Females can reproduce asexually without males; in that case all offspring are female.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The species was only discovered in 1994, and relatively little is known about the males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es extremadamente pacífico y pasa gran parte del tiempo inmóvil para mejorar su camuflaje.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Vive en la selva de Taman Negara, de más de 130 millones de años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante la muda es extremadamente vulnerable.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las hembras pueden reproducirse sin machos y en ese caso todas las crías son hembras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La especie fue descubierta en 1994 y se sabe relativamente poco sobre los machos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est extrêmement paisible et reste immobile la plupart du temps pour améliorer son camouflage.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle vit dans la forêt de Taman Negara, âgée de plus de 130 millions d'années.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle est extrêmement vulnérable pendant la mue.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les femelles peuvent se reproduire sans mâles et produisent alors uniquement des femelles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "L'espèce n'a été découverte qu'en 1994 et les mâles restent mal connus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È estremamente pacifico e rimane immobile per gran parte del tempo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Vive nella foresta di Taman Negara, vecchia di oltre 130 milioni di anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante la muta è estremamente vulnerabile.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le femmine possono riprodursi senza maschi e in quel caso tutti i piccoli sono femmine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La specie è stata scoperta solo nel 1994 e si sa relativamente poco dei maschi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É extremamente pacífico e permanece imóvel durante grande parte do tempo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Vive na floresta de Taman Negara, com mais de 130 milhões de anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É extremamente vulnerável durante a muda.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fêmeas podem se reproduzir sem machos e nesse caso todos os descendentes são fêmeas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A espécie foi descoberta apenas em 1994 e pouco se sabe sobre os machos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "非常に温和で、ほとんどの時間を動かずに過ごします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "1億3千万年以上の歴史を持つタマン・ネガラ熱帯雨林に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "脱皮中は極めて脆弱です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雌は雄なしで繁殖でき、その場合はすべて雌の子が生まれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "1994年に発見されたため、雄についてはまだあまり知られていません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "性情非常温和，大部分时间保持不动，从而增强伪装效果。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "生活在拥有超过1.3亿年历史的塔曼尼加拉热带雨林。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "蜕皮期间极为脆弱。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "雌性无需雄性即可无性繁殖，此时后代全部为雌性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "该物种直到1994年才被发现，因此对雄性仍知之甚少。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/979be5cd/Insect_GiantMalaysianLeaf_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Phyllium giganteum/map/Phyllium giganteum map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOTc5YmU1Y2QvSW5zZWN0X0dpYW50TWFsYXlzaWFuTGVhZi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Großes Wandelndes Blatt – Planet Zoo 2",
+            "en": "Giant Malaysian Leaf Insect – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Großen Wandelnden Blatts aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Malaysian Leaf Insect."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Phyllium giganteum/bilder/Phyllium giganteum 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Großes Wandelndes Blatt",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gro%C3%9Fes-wandelndes-blatt",
+        "en": "https://www.planetzoogame.com/2/zoopedia/giant-malaysian-leaf-insect",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/giant-malaysian-leaf-insect",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/insecto-hoja-gigante",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/phyllie-g%C3%A9ante-de-malaisie",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/insetto-foglia-gigante",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/bicho-folha-gigante-da-mal%C3%A1sia",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%82%AA%E3%82%B3%E3%83%8E%E3%83%8F%E3%83%A0%E3%82%B7",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%B7%A8%E4%BA%BA%E5%8F%B6%E4%97%9B"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Die Quelle verwendet sowohl 'Phyllium giganteum' als auch 'Phyllium giganteum'; die strukturierte Taxonomie folgt dem Übersichtstext und dem Gattungsfeld Pulchriphyllium. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. Der Schutzstatus bleibt strukturiert offen, weil das dedizierte Feld nur '???' zeigt und der Text ausdrücklich sagt, dass keine offizielle Detailbewertung vorliegt. Etwa 40 Eier, 1–2 Eier pro Tag, 6–9 Monate bis zum Schlupf sowie 6/7 Häutungen bleiben in der Prosa. Kein separates Illustrationsbild im Auszug."
+    }
+  }
+}

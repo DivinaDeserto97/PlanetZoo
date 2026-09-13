@@ -1,0 +1,808 @@
+{
+  "id": "Boa constrictor",
+  "identitaet": {
+    "namen": {
+      "de": "Abgottschlange",
+      "en": "Boa Constrictor",
+      "en-US": "Boa Constrictor",
+      "es": "Boa constrictor",
+      "fr": "Boa constricteur",
+      "it": "Boa constrictor",
+      "pt-BR": "Jiboia",
+      "ja": "ボアコンストリクター",
+      "zh-Hans": "红尾蚺"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica",
+      "southAmerica"
+    ],
+    "biome": [
+      "Tropisch",
+      "Wüste"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Boidae",
+          "gattung": "Boa",
+          "art": "Boa constrictor",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.8,
+          "max": 2.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Männchen besitzen laut Zoopedia Aftersporne, die die Paarung erleichtern.",
+            "en": "According to the Zoopedia, males have anal spurs that assist during mating."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.1,
+          "max": 3.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Weibchen sind deutlich größer als Männchen; ihre Aftersporne sind kleiner.",
+            "en": "Females are considerably larger than males; their anal spurs are smaller."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": []
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 100,
+          "max": 120,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Abgottschlangen als Einzelgänger; sie interagieren in freier Wildbahn nur zur Paarung oder bei Konkurrenz um Paarungsrechte.",
+            "en": "The Zoopedia describes Boa Constrictors as solitary; in the wild they interact only to mate or compete for mating rights."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Regenwälder als einen Hauptlebensraum.",
+            "en": "The Zoopedia lists rainforests as one of the main habitats."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "desert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt außerdem Halbwüsten; diese werden im Projekt konservativ dem Wüsten-Biom zugeordnet.",
+            "en": "The Zoopedia also lists semi-deserts; these are conservatively mapped to the project's desert biome."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "naheVerwandte": [],
+    "evolution": {
+      "knoten": [],
+      "aufspaltungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Abgottschlange (Boa constrictor), auch Rotschwanzboa genannt, ist eine große Schlangenart aus Mittel- und Südamerika. Sie ist weit verbreitet und besitzt mehrere Unterarten, die vorwiegend in Regenwäldern, Küstengebieten und Halbwüsten vorkommen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La boa constrictor (Boa constrictor), también llamada boa de cola roja, es una gran serpiente nativa de Centroamérica y Sudamérica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le boa constricteur (Boa constrictor), aussi appelé boa à queue rouge, est un grand serpent originaire d'Amérique centrale et d'Amérique du Sud.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il boa constrictor (Boa constrictor), noto anche come boa dalla coda rossa, è un grande serpente originario dell'America centrale e meridionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A jiboia (Boa constrictor), também conhecida como jiboia-de-cauda-vermelha, é uma grande serpente nativa da América Central e da América do Sul.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ボアコンストリクター（Boa constrictor）は、中央アメリカと南アメリカ原産の大型のヘビで、レッドテールボアとも呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "红尾蚺（Boa constrictor）是一种原产于中美洲和南美洲的大型蛇类，也常被称为红尾蟒。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Abgottschlange ist eine große Schlangenart, die in Mittel- und Südamerika beheimatet ist. Sie ist auch als Rotschwanzboa bekannt, wird jedoch meist unter ihrem wissenschaftlichen Namen geführt. Die Abgottschlange ist eine weit verbreitete Spezies mit mehreren Unterarten, die alle vorwiegend in Regenwäldern, Küstengebieten und Halbwüsten vorkommen.\n\nObwohl es bei dieser Schlangenart viele verschiedene Farben und Muster gibt, ist das typische Erscheinungsbild durch hellbraune, dunkelbraune und schwarze Schuppen gekennzeichnet, die in einem rautenförmigen Muster über die gesamte Körperlänge verlaufen.\n\nMännchen sind zwischen 1,8 und 2,4 m lang und besitzen Aftersporne, die die Paarung erleichtern. Weibchen sind mit 2,1 bis 3,0 m Länge deutlich größer, ihre Aftersporne sind allerdings kleiner als die der Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La boa constrictor vive en Centroamérica y Sudamérica y posee varias subespecies que habitan principalmente selvas tropicales, zonas costeras y semidesiertos.\n\nPresenta una gran variedad de colores y patrones, aunque el aspecto típico combina escamas marrón claro, marrón oscuro y negras en patrones romboidales.\n\nLos machos miden 1,8–2,4 m y las hembras, claramente mayores, 2,1–3,0 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le boa constricteur vit en Amérique centrale et du Sud et compte plusieurs sous-espèces vivant surtout dans les forêts tropicales, les régions côtières et les semi-déserts.\n\nLa coloration et les motifs varient beaucoup; l'aspect typique associe des écailles brun clair, brun foncé et noires disposées en motifs losangés.\n\nLes mâles mesurent 1,8–2,4 m et les femelles, nettement plus grandes, 2,1–3,0 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il boa constrictor vive in America centrale e meridionale e comprende diverse sottospecie che abitano soprattutto foreste pluviali, aree costiere e semideserti.\n\nColori e disegni variano molto, ma l'aspetto tipico combina squame marrone chiaro, marrone scuro e nere in motivi romboidali.\n\nI maschi misurano 1,8–2,4 m e le femmine, nettamente più grandi, 2,1–3,0 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A jiboia vive na América Central e do Sul e possui várias subespécies encontradas principalmente em florestas tropicais, áreas costeiras e semidesertos.\n\nA coloração e os padrões variam muito; o aspecto típico combina escamas marrom-claras, marrom-escuras e pretas em padrões semelhantes a losangos.\n\nMachos medem 1,8–2,4 m e fêmeas, bem maiores, 2,1–3,0 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ボアコンストリクターは中央アメリカと南アメリカに分布し、熱帯雨林、沿岸地域、半砂漠などに生息する複数の亜種があります。\n\n色や模様には大きな変異がありますが、典型的には淡褐色、濃褐色、黒色の鱗が菱形模様を作ります。\n\n雄は1.8～2.4m、雌はより大きく2.1～3.0mです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "红尾蚺分布于中美洲和南美洲，拥有多个亚种，主要生活在热带雨林、沿海地区和半沙漠环境。\n\n体色和花纹差异很大，典型个体具有浅棕色、深棕色和黑色鳞片，形成菱形图案。\n\n雄性体长1.8～2.4米，雌性明显更大，体长2.1～3.0米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Abgottschlangen gelten als nicht gefährdet. Die Art wird sowohl legal als auch illegal wegen ihrer Haut und ihres Fleisches gejagt und für den Tierhandel gefangen, wo sie zu den am häufigsten in Gefangenschaft gehaltenen Schlangenarten gehört. Der Bestand der Spezies nimmt in ganz Südamerika allmählich ab, da ihr Lebensraum durch Bergbau, Ölförderung und Landwirtschaft erheblich beeinträchtigt wird.\n\nSchutzgebiete im gesamten Verbreitungsgebiet des Ökosystems sind für den Erhalt der Abgottschlange von Vorteil. Der Handel mit dieser Art ist international reguliert, und es wird weiterhin wissenschaftlich daran geforscht. Die langfristigen Aussichten für diese Art sind gut, und derzeit werden keine weitergehenden Schutz- oder Verwaltungsmaßnahmen angestrebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Boa Constrictors are considered Least Concern. They are hunted legally and illegally for skin and meat and are captured for the pet trade, where they are among the most commonly kept snakes. Populations are gradually declining across South America as mining, oil extraction and agriculture damage habitat.\n\nProtected areas throughout the range benefit the species. International trade is regulated and scientific research continues. Long-term prospects are considered good and no additional major management measures are currently being pursued.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Boa Constrictors are considered Least Concern. They are hunted legally and illegally for skin and meat and are captured for the pet trade, where they are among the most commonly kept snakes. Populations are gradually declining across South America as mining, oil extraction and agriculture damage habitat.\n\nProtected areas throughout the range benefit the species. International trade is regulated and scientific research continues. Long-term prospects are considered good and no additional major management measures are currently being pursued.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificada como de Preocupación Menor. Se caza legal e ilegalmente por su piel y carne y también se captura para el comercio de mascotas. En Sudamérica sus poblaciones disminuyen gradualmente por minería, extracción de petróleo y agricultura.\n\nLas áreas protegidas y la regulación internacional del comercio ayudan a conservar la especie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L'espèce est classée en Préoccupation mineure. Elle est chassée légalement et illégalement pour sa peau et sa viande et capturée pour le commerce des animaux. Les populations diminuent progressivement en Amérique du Sud à cause des activités minières, pétrolières et agricoles.\n\nLes aires protégées et la réglementation internationale du commerce contribuent à sa conservation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificato a rischio minimo. Viene cacciato legalmente e illegalmente per pelle e carne e catturato per il commercio di animali. Le popolazioni sudamericane diminuiscono gradualmente a causa di miniere, estrazione petrolifera e agricoltura.\n\nAree protette e regolamentazione internazionale del commercio favoriscono la conservazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificada como Pouco Preocupante. É caçada legal e ilegalmente por pele e carne e capturada para o comércio de animais. Na América do Sul, as populações diminuem gradualmente por causa de mineração, extração de petróleo e agricultura.\n\nÁreas protegidas e a regulamentação internacional do comércio ajudam na conservação.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種です。皮や肉目的の合法・違法狩猟、ペット取引のための捕獲が行われています。南米では鉱山、石油採掘、農業により生息地が悪化し、個体数が徐々に減少しています。\n\n保護区と国際取引の規制が保全に役立っています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "被列为无危。该物种因皮革和肉类而遭到合法或非法捕猎，也被大量捕捉用于宠物贸易。南美洲种群正因采矿、石油开采和农业导致的生境破坏而逐渐下降。\n\n保护区和国际贸易管制有助于其保护。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Abgottschlangen sind Einzelgänger und interagieren in freier Wildbahn nur miteinander, um sich zu paaren oder um das Recht zur Paarung zu kämpfen.\n\nDie Paarung findet in der Trockenzeit zwischen April und August statt. Weibliche Boas setzen Pheromone frei, denen die Männchen folgen. Wenn mehr als ein Männchen auf dasselbe Weibchen trifft, kämpfen sie miteinander, wobei der Sieger sich anschließend mit dem Weibchen paart. Das Weibchen speichert das Sperma des Männchens bis zu ihrem Eisprung und nutzt es dann zur Befruchtung ihrer Eizellen.\n\nDie Tragzeit beträgt zwischen 100 und 120 Tage. Anschließend bringt das Weibchen 20 bis 65 lebende Jungtiere zur Welt, die bereits von Geburt an selbstständig sind.\n\nAbgottschlangen erreichen ihre Geschlechtsreife im Alter von 3 bis 4 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Boa Constrictors are solitary and interact in the wild only to mate or compete for mating rights.\n\nMating takes place during the dry season from April to August. Females release pheromones followed by males. If several males reach the same female, they fight and the winner mates with her. The female stores sperm until ovulation and then uses it to fertilise her eggs.\n\nGestation lasts 100–120 days. The female then gives birth to 20–65 live young that are independent from birth.\n\nSexual maturity is reached at 3–4 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Boa Constrictors are solitary and interact in the wild only to mate or compete for mating rights.\n\nMating takes place during the dry season from April to August. Females release pheromones followed by males. If several males reach the same female, they fight and the winner mates with her. The female stores sperm until ovulation and then uses it to fertilise her eggs.\n\nGestation lasts 100–120 days. The female then gives birth to 20–65 live young that are independent from birth.\n\nSexual maturity is reached at 3–4 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es solitaria y solo interactúa con otros individuos para aparearse o competir por el apareamiento.\n\nLa reproducción ocurre en la estación seca, entre abril y agosto. Las hembras liberan feromonas y pueden almacenar el esperma hasta la ovulación.\n\nLa gestación dura 100–120 días. Después nacen 20–65 crías vivas, independientes desde el nacimiento.\n\nAlcanza la madurez sexual a los 3–4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est solitaire et n'interagit avec ses congénères que pour la reproduction ou la compétition entre mâles.\n\nLa reproduction a lieu pendant la saison sèche, d'avril à août. Les femelles libèrent des phéromones et peuvent stocker le sperme jusqu'à l'ovulation.\n\nLa gestation dure 100 à 120 jours. La femelle met ensuite au monde 20 à 65 petits vivants, indépendants dès la naissance.\n\nLa maturité sexuelle est atteinte entre 3 et 4 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È solitario e interagisce con altri individui solo per accoppiarsi o competere per il diritto alla riproduzione.\n\nL'accoppiamento avviene nella stagione secca tra aprile e agosto. Le femmine rilasciano feromoni e possono conservare lo sperma fino all'ovulazione.\n\nLa gestazione dura 100–120 giorni. La femmina partorisce poi 20–65 piccoli vivi, già indipendenti alla nascita.\n\nLa maturità sessuale viene raggiunta a 3–4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É solitária e só interage com outras jiboias para acasalar ou competir pelo direito de reprodução.\n\nO acasalamento ocorre na estação seca, entre abril e agosto. As fêmeas liberam feromônios e podem armazenar esperma até a ovulação.\n\nA gestação dura 100–120 dias. Depois nascem 20–65 filhotes vivos, independentes desde o nascimento.\n\nA maturidade sexual ocorre aos 3–4 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "単独性で、野生では交尾や交尾権をめぐる争い以外ではほとんど交流しません。\n\n繁殖は4～8月の乾季に行われます。雌はフェロモンを出し、排卵まで精子を保存できます。\n\n妊娠期間は100～120日で、その後20～65匹の生きた子を産みます。子は出生時から自立しています。\n\n3～4歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "主要独居，野外只有在交配或争夺交配权时才与同类互动。\n\n繁殖发生在4月至8月的旱季。雌性释放信息素，并可将精子保存到排卵时再用于受精。\n\n妊娠期100～120天，之后产下20～65只活幼体，出生后即能独立生活。\n\n3～4岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Boas und Pythons besitzen rudimentäre Beckenknochen und stark zurückgebildete Hinterbeine, die sich in ihrem Körper befinden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Färbung und Musterung einer Abgottschlange hängt von ihrer Herkunft ab: Sie können in freier Wildbahn sehr unterschiedliche Färbungen haben, in Gefangenschaft ist die Vielfalt durch gezielte Züchtungen sogar noch größer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Abgottschlangen gebären lebende Junge.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Abgottschlangen häuten sich alle zwei bis vier Monate, da sie ihr gesamtes Leben über wachsen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Entgegen landläufiger Meinung töten Abgottschlangen ihre Beute nicht, indem sie sie ersticken. Stattdessen unterbrechen sie die Blutzufuhr zu wichtigen Organen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Boas and pythons possess rudimentary pelvic bones and highly reduced hind limbs within the body.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Colour and pattern vary with geographic origin, and captive breeding has produced even more variation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Boa Constrictors give birth to live young.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They shed their skin every two to four months because they continue growing throughout life.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Contrary to popular belief, Boa Constrictors do not kill prey by suffocation; instead, they interrupt blood flow to vital organs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Boas and pythons possess rudimentary pelvic bones and highly reduced hind limbs within the body.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Colour and pattern vary with geographic origin, and captive breeding has produced even more variation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Boa Constrictors give birth to live young.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They shed their skin every two to four months because they continue growing throughout life.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Contrary to popular belief, Boa Constrictors do not kill prey by suffocation; instead, they interrupt blood flow to vital organs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Boas y pitones poseen huesos pélvicos rudimentarios y extremidades posteriores muy reducidas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La coloración y el patrón dependen del origen geográfico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las boas constrictoras dan a luz crías vivas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Mudan la piel cada dos a cuatro meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "No matan a sus presas por asfixia, sino interrumpiendo el flujo sanguíneo a órganos vitales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Boas et pythons possèdent des os pelviens rudimentaires et des membres postérieurs très réduits.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La coloration et les motifs varient selon l'origine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les boas constricteurs mettent au monde des petits vivants.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils muent tous les deux à quatre mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils ne tuent pas leurs proies par suffocation, mais en interrompant l'afflux sanguin vers les organes vitaux.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Boa e pitoni possiedono ossa pelviche rudimentali e arti posteriori fortemente ridotti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Colorazione e disegno dipendono dall'origine geografica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I boa constrictor partoriscono piccoli vivi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Fanno la muta ogni due-quattro mesi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Non uccidono le prede soffocandole, ma interrompendo il flusso sanguigno agli organi vitali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Boas e pítons possuem ossos pélvicos rudimentares e membros posteriores muito reduzidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A coloração e o padrão variam conforme a origem.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Jiboias dão à luz filhotes vivos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Trocam de pele a cada dois a quatro meses.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Não matam suas presas por asfixia, mas interrompendo o fluxo sanguíneo para órgãos vitais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ボアやニシキヘビには痕跡的な骨盤骨と退化した後肢があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "体色と模様は産地によって大きく異なります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "生きた子を産みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "生涯成長するため2～4か月ごとに脱皮します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "獲物を窒息死させるのではなく、重要な臓器への血流を遮断して仕留めます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "蚺和蟒拥有退化的骨盆骨以及高度退化的后肢。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "体色和花纹会随产地而显著变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "会产下活幼体。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "由于终生生长，每2～4个月会蜕皮一次。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "并非通过窒息杀死猎物，而是通过压迫血液循环使重要器官失去供血。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/611938e0/Constrictor_Boa_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Boa constrictor/map/Boa constrictor map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjExOTM4ZTAvQ29uc3RyaWN0b3JfQm9hLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Abgottschlange – Planet Zoo 2",
+            "en": "Boa Constrictor – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Abgottschlange aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Boa Constrictor."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Boa constrictor/bilder/Boa constrictor 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Abgottschlange",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/abgottschlange",
+        "en": "https://www.planetzoogame.com/2/zoopedia/boa-constrictor",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/boa-constrictor",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/boa-constrictor",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/boa-constricteur",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/boa-constrictor",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/jiboia",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%9C%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AA%E3%82%AF%E3%82%BF%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BA%A2%E5%B0%BE%E8%9A%BA"
+      },
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Mittelamerika wird mangels eigenem Kontinent-Enum im Projekt als northAmerica abgebildet. Halbwüste wird konservativ dem Wüsten-Biom zugeordnet. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 20–65 lebende Jungtiere bleiben in der Prosa, weil kein sicher bestätigter strukturierter Nachwuchs-Typ verwendet wird. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten."
+    },
+    "projekt": {
+      "name": "PlanetZoo2-Projekt",
+      "typ": "projektintern"
+    }
+  }
+}

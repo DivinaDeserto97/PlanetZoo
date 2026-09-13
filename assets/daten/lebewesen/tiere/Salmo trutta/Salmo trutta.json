@@ -1,0 +1,866 @@
+{
+  "id": "Salmo trutta",
+  "identitaet": {
+    "namen": {
+      "de": "Meerforelle",
+      "en": "Brown Trout",
+      "en-US": "Brown Trout",
+      "es": "Trucha común",
+      "fr": "Truite commune",
+      "it": "Trota atlantica",
+      "pt-BR": "Truta-marrom",
+      "ja": "ブラウントラウト",
+      "zh-Hans": "褐鳟"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [
+      ""
+    ],
+    "kontinente": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "biome": [
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Salmoniformes",
+          "familie": "Salmonidae",
+          "gattung": "Salmo",
+          "art": "Salmo trutta",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.3,
+          "max": 0.8,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.0,
+          "max": 7.0,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Salmo trutta"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eier",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein Weibchen kann je nach Größe und Gesundheit Tausende von Eiern legen. Als Tierfakt nennt die Zoopedia für ein typisches Weibchen etwa 2.000 Eier pro Kilogramm Körpergewicht.",
+            "en": "A female may lay thousands of eggs depending on size and health. As an animal fact, the Zoopedia states about 2,000 eggs per kilogram of body weight for a typical female."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Meerforellen sind Einzelgänger und verteidigen ihr Revier, werden während der Paarungszeit aber geselliger.",
+            "en": "Brown Trout are solitary and territorial but become more social during the breeding season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "lakesAndRivers",
+          "hinweis": {
+            "de": "Die Zoopedia nennt kühle, sauerstoffreiche Flüsse, Bäche und Seen sowie Stromschnellen und Becken.",
+            "en": "The Zoopedia lists cool, oxygen-rich rivers, streams and lakes, including riffles and pools."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "moreNocturnal",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Meerforellen als scheu und besonders im Frühling und Sommer häufig nachts aktiver.",
+            "en": "The Zoopedia describes Brown Trout as shy and often more active at night, especially in spring and summer."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "aquaticInvertebrates",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt für Jungfische wirbellose Wassertiere als Nahrung.",
+                "en": "The Zoopedia states that juveniles feed on aquatic invertebrates."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Meerforelle (Salmo trutta) ist ein weit verbreiteter Süßwasserfisch, der in Europa, Nordafrika und Westasien heimisch ist und in viele andere Regionen wie Nordamerika, Südamerika, Australien und Neuseeland eingeführt wurde. Sie lebt in kühlen, sauerstoffreichen Flüssen, Bächen und Seen und bevorzugt oft Gebiete mit Stromschnellen, Becken und reichlich Deckung wie versunkene Felsen oder überhängende Vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La trucha común (Salmo trutta) es un pez de agua dulce ampliamente distribuido, nativo de Europa, el norte de África y Asia occidental e introducido en muchas otras regiones.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La truite commune (Salmo trutta) est un poisson d’eau douce largement répandu, originaire d’Europe, d’Afrique du Nord et d’Asie occidentale, et introduit dans de nombreuses autres régions.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce ampiamente diffuso, originario di Europa, Nord Africa e Asia occidentale e introdotto in molte altre regioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A truta-marrom (Salmo trutta) é um peixe de água doce amplamente distribuído, nativo da Europa, norte da África e oeste da Ásia e introduzido em muitas outras regiões.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ブラウントラウト（Salmo trutta）は、ヨーロッパ、北アフリカ、西アジア原産の広く分布する淡水魚で、北米、南米、オーストラリア、ニュージーランドなどにも移入されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐鳟（Salmo trutta）是一种分布广泛的淡水鱼，原产于欧洲、北非和西亚，并被引入北美洲、南美洲、澳大利亚和新西兰等许多其他地区。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Meerforelle (auch Salmo trutta) ist ein weit verbreiteter Süßwasserfisch, der in Europa, Nordafrika und Westasien heimisch ist und in viele andere Regionen wie Nordamerika, Südamerika, Australien und Neuseeland eingeführt wurde. Sie lebt in kühlen, sauerstoffreichen Flüssen, Bächen und Seen und bevorzugt oft Gebiete mit Stromschnellen, Becken und reichlich Deckung wie versunkene Felsen oder überhängende Vegetation.\n\nMeerforellen weisen je nach Lebensraum unterschiedliche Färbungen und Markierungen auf, haben jedoch in der Regel einen goldbraunen bis olivbraunen Körper mit zahlreichen dunklen Flecken und vereinzelten roten oder orangefarbenen Flecken an den Seiten, die von hellen Ringen umgeben sind.\n\nEs handelt sich um mittelgroße Fische, die in der Regel zwischen 30 cm und 80 cm lang sind und 1 kg bis 7 kg wiegen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La trucha común (Salmo trutta) es un pez de agua dulce ampliamente distribuido, nativo de Europa, el norte de África y Asia occidental, e introducido en Norteamérica, Sudamérica, Australia y Nueva Zelanda. Vive en ríos, arroyos y lagos fríos y ricos en oxígeno, especialmente en zonas con rápidos, pozas y abundante refugio.\n\nSu coloración varía según el hábitat, pero normalmente presenta un cuerpo marrón dorado u oliva con numerosos puntos oscuros y algunos puntos rojos o naranjas rodeados de anillos claros.\n\nMide normalmente 30–80 cm y pesa 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La truite commune (Salmo trutta) est un poisson d’eau douce largement répandu, originaire d’Europe, d’Afrique du Nord et d’Asie occidentale, et introduit notamment en Amérique du Nord, en Amérique du Sud, en Australie et en Nouvelle-Zélande. Elle vit dans des rivières, ruisseaux et lacs frais et riches en oxygène, souvent dans des zones de rapides, de fosses et d’abris abondants.\n\nSa coloration varie selon l’habitat, mais son corps est généralement brun doré à brun olive avec de nombreuses taches sombres et quelques taches rouges ou orange entourées d’anneaux clairs.\n\nElle mesure généralement 30–80 cm et pèse 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce molto diffuso, originario di Europa, Nord Africa e Asia occidentale e introdotto anche in Nord America, Sud America, Australia e Nuova Zelanda. Vive in fiumi, ruscelli e laghi freschi e ricchi di ossigeno, spesso in zone con rapide, pozze e abbondanti ripari.\n\nLa colorazione varia con l’habitat, ma normalmente il corpo è marrone dorato o oliva con numerose macchie scure e alcune macchie rosse o arancioni circondate da anelli chiari.\n\nMisura generalmente 30–80 cm e pesa 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A truta-marrom (Salmo trutta) é um peixe de água doce amplamente distribuído, nativo da Europa, norte da África e oeste da Ásia e introduzido também na América do Norte, América do Sul, Austrália e Nova Zelândia. Vive em rios, riachos e lagos frios e ricos em oxigênio, muitas vezes em áreas com corredeiras, poços e bastante abrigo.\n\nA coloração varia conforme o habitat, mas normalmente o corpo é marrom-dourado a marrom-oliva, com muitas manchas escuras e algumas manchas vermelhas ou laranjas cercadas por anéis claros.\n\nMede normalmente 30–80 cm e pesa 1–7 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ブラウントラウト（Salmo trutta）は、ヨーロッパ、北アフリカ、西アジア原産の広く分布する淡水魚で、北米、南米、オーストラリア、ニュージーランドなどにも移入されています。冷たく酸素の豊富な川、小川、湖に生息し、瀬、淵、水中の岩や張り出した植物など隠れ場所の多い場所を好みます。\n\n体色や模様は生息地によって異なりますが、一般に金褐色からオリーブ褐色で、多数の暗色斑と、明るい縁取りのある赤または橙色の斑点があります。\n\n通常は全長30～80cm、体重1～7kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐鳟（Salmo trutta）是一种分布广泛的淡水鱼，原产于欧洲、北非和西亚，并被引入北美洲、南美洲、澳大利亚和新西兰等许多地区。它生活在寒冷、富含氧气的河流、溪流和湖泊中，常偏好有急流、深潭以及沉水岩石或悬垂植被等遮蔽物的区域。\n\n体色和斑纹会随栖息地变化，但通常呈金褐色到橄榄褐色，带有大量深色斑点和少量红色或橙色斑点，周围有浅色环纹。\n\n通常体长30～80厘米，体重1～7千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Meerforelle gilt als „nicht gefährdet“. In Europa gefährden steigende Flusstemperaturen aufgrund des Klimawandels den Laicherfolg, da die Eier kühles, sauerstoffreiches Wasser benötigen. In Nordamerika konkurrieren eingeführte Meerforellen mit einheimischen Salmoniden, während Dämme, Verschmutzung und Wasserentnahme geeignete Lebensräume reduzieren. In Teilen Afrikas, des Nahen Ostens und Asiens haben die sinkende Wasserqualität und die Abholzung der Wälder zu einer Fragmentierung der Populationen geführt. Insgesamt hat dies zu einem Rückgang der lokalen Populationen und einer erhöhten Anfälligkeit für Krankheiten geführt, sodass der Schutz der Meerforelle zu einem globalen Anliegen geworden ist.\n\nDie Maßnahmen, um diese Gefahren zu verringern, variieren je nach Region, verfolgen aber alle ähnliche Strategien. Zur Wiederherstellung von Lebensräumen gehört es, Hindernisse wie Dämme zu entfernen, die Wasserqualität zu verbessern und Flussufer sowie Laichgebiete wiederherzustellen. In Fischzuchtanlagen aufgezogene Forellen helfen dabei, die schwindenden Wildbestände aufzustocken, und die Regulierung der Fischerei soll die Überfischung eindämmen. Naturschutzorganisationen auf der ganzen Welt arbeiten gemeinsam an Überwachungsprogrammen und Aufklärungskampagnen, um eine nachhaltige Bewirtschaftung sicherzustellen.\n\nDiese vereinten Bemühungen zielen darauf ab, die Populationen der Meerforelle zu erhalten und gleichzeitig weltweit gesunde Süßwasserökosysteme zu bewahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Africa, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Africa, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Está clasificada como de Preocupación Menor. En Europa, el aumento de la temperatura de los ríos amenaza el éxito reproductivo. En Norteamérica, las poblaciones introducidas compiten con salmónidos nativos, mientras que presas, contaminación y extracción de agua reducen el hábitat. En partes de África, Oriente Medio y Asia, la pérdida de calidad del agua y la deforestación han fragmentado las poblaciones.\n\nLas medidas incluyen eliminar obstáculos, mejorar la calidad del agua y restaurar riberas y zonas de desove. También se utilizan peces criados en piscifactorías para reforzar poblaciones y se regula la pesca. Organizaciones de conservación cooperan en programas de seguimiento y educación.\n\nEstas medidas buscan conservar las poblaciones y los ecosistemas de agua dulce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Elle est classée en Préoccupation mineure. En Europe, la hausse de la température des cours d’eau menace la reproduction. En Amérique du Nord, les populations introduites concurrencent les salmonidés indigènes, tandis que barrages, pollution et prélèvements d’eau réduisent les habitats. Dans certaines régions d’Afrique, du Moyen-Orient et d’Asie, la baisse de la qualité de l’eau et la déforestation fragmentent les populations.\n\nLes mesures comprennent la suppression d’obstacles, l’amélioration de la qualité de l’eau et la restauration des berges et frayères. Des truites issues d’élevages peuvent renforcer les populations sauvages en déclin, tandis que la pêche est réglementée. Des organisations coopèrent à des programmes de suivi et de sensibilisation.\n\nL’objectif est de préserver les populations tout en maintenant des écosystèmes d’eau douce sains.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È classificata a rischio minimo. In Europa, l’aumento delle temperature dei fiumi minaccia il successo della riproduzione. In Nord America, le popolazioni introdotte competono con salmonidi nativi, mentre dighe, inquinamento e prelievo d’acqua riducono gli habitat. In parti dell’Africa, del Medio Oriente e dell’Asia, il peggioramento della qualità dell’acqua e la deforestazione hanno frammentato le popolazioni.\n\nLe misure comprendono rimozione degli ostacoli, miglioramento della qualità dell’acqua e ripristino delle rive e delle aree di deposizione. Trote allevate in impianti possono rafforzare popolazioni selvatiche in diminuzione e la pesca viene regolata. Le organizzazioni collaborano a programmi di monitoraggio e sensibilizzazione.\n\nQuesti interventi mirano a mantenere le popolazioni e gli ecosistemi d’acqua dolce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É classificada como Pouco Preocupante. Na Europa, o aumento da temperatura dos rios ameaça a reprodução. Na América do Norte, populações introduzidas competem com salmonídeos nativos, enquanto barragens, poluição e retirada de água reduzem o habitat. Em partes da África, Oriente Médio e Ásia, a queda da qualidade da água e o desmatamento fragmentaram populações.\n\nAs medidas incluem remover obstáculos, melhorar a qualidade da água e restaurar margens e áreas de desova. Trutas criadas em viveiros ajudam a reforçar populações selvagens em queda, e a pesca é regulamentada. Organizações de conservação cooperam em programas de monitoramento e educação.\n\nEsses esforços buscam conservar as populações e os ecossistemas de água doce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "低危険種です。ヨーロッパでは気候変動による河川水温の上昇が産卵成功率を脅かしています。北米では移入個体が在来サケ科魚類と競合し、ダム、汚染、取水が生息地を減らします。アフリカ、中東、アジアの一部では水質悪化と森林伐採によって個体群が分断されています。\n\n対策にはダムなどの障害物撤去、水質改善、河岸と産卵場の回復が含まれます。養殖個体を野生個体群の補充に用いることもあり、漁業規制で乱獲を抑えます。世界各地の保全団体が監視と啓発に協力しています。\n\nこれらの取り組みは個体群と健全な淡水生態系を維持することを目的としています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐鳟被列为无危。欧洲河流水温因气候变化上升，威胁产卵成功，因为卵需要凉爽且富含氧气的水。在北美，外来褐鳟与本地鲑科鱼类竞争，而水坝、污染和取水减少适宜栖息地。在非洲、中东和亚洲部分地区，水质下降和森林砍伐使种群破碎化。\n\n保护措施包括拆除水坝等障碍、改善水质、恢复河岸和产卵场。人工繁育的鳟鱼可用于补充衰退的野生种群，渔业管理则用于减少过度捕捞。全球保护组织合作开展监测和公众教育。\n\n这些措施旨在维持褐鳟种群并保护健康的淡水生态系统。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Meerforellen sind zwar Einzelgänger und verteidigen ihr Revier, doch während der Paarungszeit werden sie geselliger.\n\nDie Meerforellen fangen in den kühleren Monaten mit der Balz an, typischerweise im Herbst bis zum frühen Winter in gemäßigten Regionen. In dieser Zeit entwickeln die Männchen eine kräftigere Färbung und einen hakenförmigen Kiefer (Kype), um ihre Dominanz zu zeigen. Die Männchen kämpfen um die besten Nistplätze – flache Vertiefungen im kiesigen Flussbett. Sie stupsen die Weibchen an und umkreisen sie, um sie zum Laichen zu ermutigen, oft begleitet von Balzritualen, um rivalisierende Männchen abzuwehren. Die Weibchen suchen sich geeignete Stellen mit guter Strömung und Sauerstoffversorgung aus, um ihre Eier abzulegen, und die Männchen befruchten diese gleichzeitig extern. Dieses synchronisierte Laichen maximiert den Befruchtungserfolg. Ein einzelnes Weibchen kann je nach Größe und Gesundheit Tausende von Eiern legen.\n\nNach der Befruchtung entwickeln sich die Eier mehrere Wochen lang im Kies, ein Prozess, der durch höhere Wassertemperaturen beschleunigt wird. Sie bleiben im Kies verborgen und ernähren sich von ihrem Dottersack, bis aus ihnen frei schwimmende Jungfische werden. Die Jungfische ziehen nach und nach in flache Stromschnellen und Tümpel und ernähren sich von wirbellosen Wassertieren. Meerforellen haben ganz unterschiedliche Lebenszyklen: Manche bleiben ihr ganzes Leben lang im Süßwasser (Sesshafte Forellen), während andere anadrom leben, also ins Meer wandern, bevor sie zum Laichen ins Süßwasser zurückkehren. Dieser flexible Lebenszyklus ermöglicht es den Meerforellen, verschiedene Lebensräume zu nutzen und sich an veränderte Umweltbedingungen anzupassen, was die Widerstandsfähigkeit der Populationen stärkt.\n\nDie Meerforelle wird im Alter von 2 bis 4 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Brown Trout are solitary and territorial, but become more social during the breeding season.\n\nCourtship begins in the cooler months, typically autumn to early winter in temperate regions. Males develop stronger colouration and a hooked jaw, or kype, to display dominance. They compete for the best nesting sites, shallow depressions in gravel riverbeds. Males nudge and circle females to encourage spawning while also displaying toward rivals. Females choose sites with good current and oxygen levels to deposit their eggs, while males fertilise them externally at the same time. This synchronised spawning maximises fertilisation success. A single female may lay thousands of eggs depending on size and health.\n\nAfter fertilisation, the eggs develop in the gravel for several weeks, with warmer water accelerating development. They remain hidden in the gravel and use their yolk sacs until they become free-swimming juveniles. Young fish gradually move into shallow riffles and pools and feed on aquatic invertebrates. Brown Trout have highly variable life cycles: some remain in freshwater throughout life, while others are anadromous and migrate to the sea before returning to freshwater to spawn. This flexibility allows them to use different habitats and adapt to changing environmental conditions.\n\nBrown Trout reach sexual maturity at 2–4 years of age.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Brown Trout are solitary and territorial, but become more social during the breeding season.\n\nCourtship begins in the cooler months, typically autumn to early winter in temperate regions. Males develop stronger colouration and a hooked jaw, or kype, to display dominance. They compete for the best nesting sites, shallow depressions in gravel riverbeds. Males nudge and circle females to encourage spawning while also displaying toward rivals. Females choose sites with good current and oxygen levels to deposit their eggs, while males fertilise them externally at the same time. This synchronised spawning maximises fertilisation success. A single female may lay thousands of eggs depending on size and health.\n\nAfter fertilisation, the eggs develop in the gravel for several weeks, with warmer water accelerating development. They remain hidden in the gravel and use their yolk sacs until they become free-swimming juveniles. Young fish gradually move into shallow riffles and pools and feed on aquatic invertebrates. Brown Trout have highly variable life cycles: some remain in freshwater throughout life, while others are anadromous and migrate to the sea before returning to freshwater to spawn. This flexibility allows them to use different habitats and adapt to changing environmental conditions.\n\nBrown Trout reach sexual maturity at 2–4 years of age.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Las truchas comunes son solitarias y territoriales, aunque se vuelven más sociales durante la época reproductiva.\n\nEl cortejo empieza en los meses fríos, normalmente en otoño y principios de invierno. Los machos desarrollan colores más intensos y una mandíbula ganchuda. Compiten por los mejores lugares de desove en fondos de grava. Las hembras eligen zonas con buena corriente y oxigenación para poner los huevos, que los machos fecundan externamente. Una sola hembra puede poner miles de huevos según su tamaño y salud.\n\nLos huevos se desarrollan varias semanas en la grava. Los juveniles pasan después a rápidos y pozas poco profundas y se alimentan de invertebrados acuáticos. Algunas poblaciones permanecen siempre en agua dulce, mientras que otras son anádromas y migran al mar antes de regresar al agua dulce para desovar.\n\nAlcanzan la madurez sexual a los 2–4 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La truite commune est solitaire et territoriale, mais devient plus grégaire pendant la reproduction.\n\nLa parade commence durant les mois froids, généralement en automne et au début de l’hiver. Les mâles présentent une coloration plus intense et une mâchoire crochue et se disputent les meilleurs sites de ponte dans les graviers. Les femelles choisissent des endroits bien oxygénés où elles déposent leurs œufs, fécondés extérieurement par les mâles. Une femelle peut pondre des milliers d’œufs selon sa taille et son état.\n\nLes œufs se développent plusieurs semaines dans le gravier. Les jeunes gagnent ensuite des rapides et des fosses peu profondes et se nourrissent d’invertébrés aquatiques. Certaines populations restent toute leur vie en eau douce, tandis que d’autres sont anadromes et gagnent la mer avant de revenir frayer en eau douce.\n\nLa maturité sexuelle est atteinte à 2–4 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Le trote atlantiche sono solitarie e territoriali, ma diventano più sociali durante la riproduzione.\n\nIl corteggiamento inizia nei mesi più freddi, normalmente in autunno e all’inizio dell’inverno. I maschi sviluppano colori più intensi e una mascella uncinata e competono per i migliori siti di deposizione nella ghiaia. Le femmine scelgono punti con buona corrente e ossigenazione e i maschi fecondano le uova esternamente. Una femmina può deporre migliaia di uova in base a dimensioni e salute.\n\nLe uova si sviluppano per diverse settimane nella ghiaia. I giovani si spostano poi verso rapide e pozze poco profonde e si nutrono di invertebrati acquatici. Alcune popolazioni restano sempre in acqua dolce, altre sono anadrome e migrano in mare prima di tornare a deporre in acqua dolce.\n\nLa maturità sessuale viene raggiunta a 2–4 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A truta-marrom é solitária e territorial, mas fica mais sociável durante a reprodução.\n\nA corte começa nos meses mais frios, normalmente no outono e início do inverno. Machos desenvolvem coloração mais intensa e mandíbula em gancho e disputam os melhores locais de desova em fundos de cascalho. Fêmeas escolhem locais com boa corrente e oxigenação para liberar os ovos, fertilizados externamente pelos machos. Uma fêmea pode produzir milhares de ovos dependendo do tamanho e da saúde.\n\nOs ovos se desenvolvem por várias semanas no cascalho. Os jovens passam então para corredeiras rasas e poços e se alimentam de invertebrados aquáticos. Algumas populações permanecem toda a vida em água doce, enquanto outras são anádromas e migram para o mar antes de retornar à água doce para desovar.\n\nA maturidade sexual ocorre entre 2 e 4 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "ブラウントラウトは単独性で縄張りを守りますが、繁殖期にはより集まりやすくなります。\n\n求愛は寒い季節に始まり、温帯では通常秋から初冬です。雄はより鮮やかな体色と鉤状の顎を発達させ、砂利底の浅いくぼみをめぐって争います。雌は流れと酸素条件の良い場所で産卵し、雄が同時に体外受精します。雌は大きさと健康状態によって数千個の卵を産むことがあります。\n\n受精卵は砂利の中で数週間発生します。幼魚は浅い瀬や淵へ移動し、水生無脊椎動物を食べます。淡水に一生とどまる個体群もあれば、海へ移動してから淡水へ戻って産卵する遡河型もあります。\n\n2～4歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "褐鳟通常独居并具有领地性，但繁殖季会变得更加群聚。\n\n求偶在较冷的月份开始，温带地区通常为秋季至初冬。雄鱼会出现更鲜艳的体色和钩状下颌，并争夺砾石河床上的最佳产卵点。雌鱼选择水流和含氧条件良好的位置产卵，雄鱼同时进行体外受精。根据体型和健康状况，一只雌鱼可产数千枚卵。\n\n受精卵会在砾石中发育数周。幼鱼之后移到浅急流和水潭，并以水生无脊椎动物为食。有些个体一生都留在淡水中，另一些则为溯河洄游型，会进入海洋后再返回淡水产卵。\n\n2～4岁达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Es gibt verschiedene „Ökotypen“ der Meerforelle, wie zum Beispiel die Flussforelle (lebt in Flüssen), die Seeforelle (lebt in Seen) und die anadrome Forelle (lebt sowohl in Flüssen als auch im Meer).",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Meerforelle gehört zu den genetisch vielfältigsten Arten auf der Erde, wobei die britischen Populationen der Meerforelle eine größere genetische Vielfalt aufweisen als die gesamte Menschheit.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Eine typische weibliche Meerforelle legt 2.000 Eier pro Kilogramm Körpergewicht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Vergleich zu anderen Forellenarten verträgt die Meerforelle wärmeres Wasser besser. Dank dieser Anpassungsfähigkeit fühlt sie sich in vielen verschiedenen Lebensräumen wohl.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Meerforellen sind für ihre Scheu bekannt. Sie sind oft nachts aktiver, vor allem im Frühling und Sommer, was sie zu einer echten Herausforderung für Angler macht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "There are different Brown Trout ecotypes, including river trout, lake trout and anadromous trout that use both rivers and the sea.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Brown Trout are among the most genetically diverse species on Earth, with British populations showing more genetic diversity than the entire human species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A typical female Brown Trout lays about 2,000 eggs per kilogram of body weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Compared with other trout species, Brown Trout tolerate warmer water better, which helps them thrive in many different habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Brown Trout are known for being shy and are often more active at night, especially in spring and summer, making them challenging for anglers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "There are different Brown Trout ecotypes, including river trout, lake trout and anadromous trout that use both rivers and the sea.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Brown Trout are among the most genetically diverse species on Earth, with British populations showing more genetic diversity than the entire human species.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A typical female Brown Trout lays about 2,000 eggs per kilogram of body weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Compared with other trout species, Brown Trout tolerate warmer water better, which helps them thrive in many different habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Brown Trout are known for being shy and are often more active at night, especially in spring and summer, making them challenging for anglers.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Existen distintos ecotipos, como la trucha de río, la de lago y la anádroma.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es una de las especies genéticamente más diversas del planeta.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Una hembra típica pone unos 2.000 huevos por kilogramo de peso corporal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tolera aguas más cálidas que muchas otras especies de trucha.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Es conocida por su timidez y suele ser más activa de noche, especialmente en primavera y verano.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il existe plusieurs écotypes, notamment les formes de rivière, de lac et anadromes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La truite commune compte parmi les espèces les plus diversifiées génétiquement.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Une femelle typique pond environ 2 000 œufs par kilogramme de masse corporelle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle tolère mieux l’eau chaude que de nombreuses autres espèces de truites.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Elle est réputée farouche et souvent plus active la nuit, surtout au printemps et en été.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Esistono diversi ecotipi, tra cui forme fluviali, lacustri e anadrome.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È tra le specie geneticamente più diverse della Terra.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Una femmina tipica depone circa 2.000 uova per chilogrammo di peso corporeo.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tollera acque più calde rispetto a molte altre specie di trota.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "È nota per la sua timidezza ed è spesso più attiva di notte, soprattutto in primavera e in estate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Existem diferentes ecótipos, incluindo formas de rio, lago e anádromas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É uma das espécies geneticamente mais diversas da Terra.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Uma fêmea típica põe cerca de 2.000 ovos por quilograma de peso corporal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Tolera água mais quente melhor que muitas outras espécies de truta.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "É conhecida por ser tímida e muitas vezes fica mais ativa à noite, especialmente na primavera e no verão.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "河川型、湖沼型、河川と海の両方を利用する遡河型など、複数の生態型があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "地球上でも特に遺伝的多様性の高い種の一つです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "典型的な雌は体重1kgあたり約2,000個の卵を産みます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "他の多くのマス類より温かい水への耐性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "警戒心が強く、特に春と夏は夜間に活動的になることが多いです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "存在多种生态型，包括河流型、湖泊型和同时利用河流与海洋的溯河型。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "褐鳟是地球上遗传多样性最高的物种之一。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "典型雌鱼每千克体重可产约2,000枚卵。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "与许多其他鳟鱼相比，它对较温暖水温的耐受性更强。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它以胆小著称，尤其在春夏季经常夜间活动更加频繁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes y estadísticas todavía pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopedia reflète ce processus. Les textes, images et statistiques peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini e statistiche possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens e estatísticas ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発状況を反映しています。文章、画像、統計などは最終版とは限らず、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia也反映了这一开发过程。文本、图片和统计数据等内容并不一定是最终版本，今后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/0e1941db/Trout_Brown_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Salmo trutta/map/Salmo trutta map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMGUxOTQxZGIvVHJvdXRfQnJvd24uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Meerforelle – Planet Zoo 2",
+            "en": "Brown Trout – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Meerforelle aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Brown Trout."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Salmo trutta/bilder/Salmo trutta 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/0e1941db/Trout_Brown_illustration.jpg",
+          "alt": {
+            "de": "Meerforelle – Zoopedia-Illustration",
+            "en": "Brown Trout – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Meerforelle aus der Planet Zoo 2 Zoopedia.",
+            "en": "Brown Trout illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Salmo trutta/bilder/Salmo trutta illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Meerforelle",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/meerforelle",
+        "en": "https://www.planetzoogame.com/2/zoopedia/brown-trout",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/brown-trout",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/trucha-com%C3%BAn",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/truite-commune",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/trota-atlantica",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/truta-marrom",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%88%E3%83%A9%E3%82%A6%E3%83%88",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A4%90%E9%B3%9F"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    }
+  }
+}
