@@ -1,0 +1,522 @@
+{
+  "id": "Suricata suricatta",
+  "identitaet": {
+    "namen": {
+      "de": "Erdmännchen",
+      "en": "Meerkat",
+      "en-US": "Meerkat",
+      "es": "Suricata",
+      "fr": "Suricate",
+      "it": "Suricato",
+      "pt-BR": "Suricato",
+      "ja": "ミーアキャット",
+      "zh-Hans": "狐獴"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland",
+      "Wüste"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Herpestidae",
+          "gattung": "Suricata",
+          "art": "Suricata suricatta",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "kopfRumpf",
+          "min": 0.24,
+          "max": 0.35,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Kopf-Rumpf-Länge von 24 bis 35 cm.",
+            "en": "The Zoopedia gives a head-body length of 24 to 35 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.62,
+          "max": 0.97,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 620 bis 970 g; Weibchen sind meist etwas schwerer als Männchen.",
+            "en": "The Zoopedia gives 620 to 970 g and notes that females are usually slightly heavier than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der mitgeschickten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Least Concern. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "traechtigkeit",
+          "min": 60,
+          "max": 70,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 3,
+          "max": 7,
+          "einheit": "jungtier",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "imBau",
+          "wert": 16,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Jungen bleiben die ersten 16 Tage im geschützten Bau.",
+            "en": "The pups remain in the protected burrow for the first 16 days."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "folgtErwachsenenAufJagd",
+          "wert": 26,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Ab etwa 26 Tagen folgen die Jungen den erwachsenen Tieren auf der Jagd.",
+            "en": "From about 26 days of age, the pups follow adults on hunts."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 7,
+          "max": 9,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "selbststaendigeJagd",
+          "wert": 12,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Mit etwa 12 Wochen können die Jungtiere selbstständig jagen.",
+            "en": "At about 12 weeks, the young can hunt independently."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "eusocialFamilyGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Erdmännchen leben in Familiengruppen und werden in der Zoopedia als „eusozial“ beschrieben. Innerhalb der Gruppe bestehen feste Rangordnung und Rollen.",
+            "en": "Meerkats live in family groups and are described by the Zoopedia as eusocial, with a fixed hierarchy and defined roles."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "alphaweibchen",
+          "wert": "dominantFemale",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Das Alphaweibchen ist in der Regel das älteste und größte Weibchen und für den Großteil der Nachkommen verantwortlich.",
+            "en": "The alpha female is generally the oldest and largest female and is responsible for most offspring."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlicheAbwanderung",
+          "wert": "smallMaleGroup",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 3,
+          "hinweis": {
+            "de": "Mit der Geschlechtsreife wandern Männchen in Gruppen von bis zu 3 Tieren umher, um ein fremdes Rudel oder ein alleinstehendes Weibchen zu finden.",
+            "en": "At sexual maturity, males roam in groups of up to three to find another group or a solitary female."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Savannen im südlichen Afrika als Lebensraum.",
+            "en": "The Zoopedia names savannas in southern Africa as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "semiDesert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt außerdem Halbwüsten.",
+            "en": "The Zoopedia also names semi-deserts."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "predator",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Jagdverhalten und das Erlernen des Umgangs mit Beutetieren; konkret wird der Verzehr von Skorpionen genannt.",
+              "en": "The Zoopedia describes hunting behavior and learning how to handle prey; scorpion consumption is explicitly mentioned."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "skorpione",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "jungtier",
+                  "ab26TagenLernphase"
+                ],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Jungen lernen von Erwachsenen, wie man Skorpionen vor dem Verzehr den Stachel entfernt.",
+                "en": "Young meerkats learn from adults how to remove a scorpion's sting before eating it."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "skorpione",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Erdmännchen (auch Suricata suricatta) ist ein Tier aus der Familie der Mangusten, das in Gruppen in großen unterirdischen Bauen in den Savannen und Halbwüsten von Südafrika lebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Erdmännchen (auch Suricata suricatta) ist ein Tier aus der Familie der Mangusten, das in Gruppen in großen unterirdischen Bauen in den Savannen und Halbwüsten von Südafrika lebt.\n\nErdmännchen haben einen flachen, spitzen Kopf, sandfarbenes Fell sowie schwarze Augen und Ohren. Das Fell am Rücken ist grau-gelb gescheckt, der Schwanz hat eine schwarze Spitze. Erdmännchen bewegen sich auf allen vieren fort, nehmen jedoch eine charakteristische aufrechte Haltung auf den Hinterbeinen ein, wenn sie Gefahr wittern.\n\nDie Tiere erreichen eine Kopf-Rumpf-Länge von 24 bis 35 cm und wiegen zwischen 620 und 970 g, wobei die Weibchen meist etwas schwerer sind als die Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Erdmännchen wird heute als nicht gefährdet eingestuft und sieht sich nur wenigen direkten Bedrohungen für seinen Bestand gegenüber. Trotzdem können Lebensraumzerstörung durch Landwirtschaft, Bergbau und menschliche Besiedlung, der Klimawandel sowie Krankheiten lokale Bestände beeinträchtigen.\n\nDie Maßnahmen zur Arterhaltung konzentrieren sich auf Lebensraumschutz und ökologische Forschung. Nationalparks und Reservate in Südafrika schützen Lebensräume, während wissenschaftliche Studien zu Verhalten, Sozialstruktur und Krankheitsdynamik Erkenntnisse für Schutzstrategien liefern. Öffentliche Aufklärung und verantwortungsbewusster Ökotourismus unterstützen zusätzlich den Erhalt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Erdmännchen leben in Familiengruppen und gelten als „eusozial“, es gibt also eine feste Rangordnung innerhalb der Gruppe und die Mitglieder haben festgelegte Rollen. Das Alphaweibchen wird nach Alter und Größe ausgewählt, jüngere Weibchen können später um diese Position konkurrieren.\n\nErdmännchen paaren sich das ganze Jahr über, mit Hochphasen während der Regenzeit. Das Alphaweibchen ist für den Großteil der Nachkommen verantwortlich; auch untergeordnete Weibchen können Junge bekommen.\n\nNach einer Trächtigkeit von 60 bis 70 Tagen bringt das Weibchen 3 bis 7 Junge zur Welt. Diese bleiben die ersten 16 Tage im geschützten Bau und werden vom Alphaweibchen und anderen Rudelmitgliedern gefüttert. Ab etwa 26 Tagen folgen sie den Erwachsenen auf der Jagd und lernen den Umgang mit Beutetieren, darunter das Entfernen des Skorpionstachels vor dem Verzehr. Sie sind mit 7 bis 9 Wochen entwöhnt und können mit etwa 12 Wochen selbstständig jagen.\n\nMit 2 bis 3 Jahren werden die Jungtiere geschlechtsreif. Männchen ziehen dann in Gruppen von bis zu 3 Tieren umher, um ein fremdes Rudel oder ein alleinstehendes Weibchen zu finden. Weibchen bleiben oft bei ihrem Geburtsrudel.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Zähne und Vorderklauen der Erdmännchen sind zum Graben ausgelegt, zudem können die Tiere die Ohren und Nasenlöcher schließen, um zu verhindern, dass Dreck eindringt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Erdmännchen bekämpfen Schlangen, die in ihr Revier eindringen – gelegentlich töten sie sie sogar.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In einigen Teilen Südafrikas werden Erdmännchen auf landwirtschaftlich genutzten Flächen als Schädlingsbekämpfer gehalten, da sie wirksam Nagetiere und andere Schädlinge ausschalten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Unter weiblichen Erdmännchen gibt es eine feste Rangfolge, wobei das älteste und größte Weibchen in der Regel das Alphatier ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Erdmännchenrudel haben „Wachen“, die die anderen Mitglieder des Rudels durch verschiedene Rufe auf Gefahren durch Räuber aufmerksam machen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e01b43c9/Meerkat_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Suricata suricatta/map/Suricata suricatta map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZTAxYjQzYzkvTWVlcmthdC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Erdmännchen – Planet Zoo 2",
+            "en": "Meerkat – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Erdmännchens aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Meerkat."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Suricata suricatta/bilder/Suricata suricatta 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e01b43c9/Meerkat_illustration.jpg",
+          "alt": {
+            "de": "Erdmännchen – Zoopedia-Illustration",
+            "en": "Meerkat – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Erdmännchens aus der Planet Zoo 2 Zoopedia.",
+            "en": "Meerkat illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Suricata suricatta/bilder/Suricata suricatta illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Erdmännchen",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/erdm%C3%A4nnchen",
+        "en": "https://www.planetzoogame.com/2/zoopedia/meerkat",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/meerkat",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/suricata",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/suricate",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/suricato",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/suricato",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%9F%E3%83%BC%E3%82%A2%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%8B%90%E7%8D%B4"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer."
+    }
+  }
+}

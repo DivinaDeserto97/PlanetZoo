@@ -1,0 +1,478 @@
+{
+  "id": "Aquarana catesbeianus",
+  "identitaet": {
+    "namen": {
+      "de": "Nordamerikanischer Ochsenfrosch",
+      "en": "American Bullfrog",
+      "en-US": "American Bullfrog",
+      "es": "Rana toro",
+      "fr": "Grenouille-taureau",
+      "it": "Rana toro",
+      "pt-BR": "Rã-touro-americana",
+      "ja": "ウシガエル",
+      "zh-Hans": "美洲牛蛙"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Anura",
+          "familie": "Ranidae",
+          "gattung": "Lithobates",
+          "art": "Aquarana catesbeianus",
+          "hinweis": {
+            "de": "Die mitgeschickte Zoopedia-Seite nennt die Art oben „Aquarana catesbeianus“, führt bei der Gattung jedoch „Lithobates“ auf. Dieser Widerspruch wurde nicht mit externen Quellen korrigiert.",
+            "en": "The supplied Zoopedia page names the species 'Aquarana catesbeianus' at the top but lists the genus as 'Lithobates'. This inconsistency was not corrected using external sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.09,
+          "max": 0.152,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Körperlänge von 9 bis 15,2 cm.",
+            "en": "The Zoopedia gives a body length of 9 to 15.2 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.3,
+          "max": 0.5,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ein Gewicht von 300 bis 500 g.",
+            "en": "The Zoopedia gives a weight of 300 to 500 g."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt die Gesamtpopulation als weiterhin wachsend.",
+            "en": "The Zoopedia lists the wild population as unknown and describes the overall population as continuing to grow."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "erstePaarung",
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia formuliert vorsichtig, dass sich die Tiere wahrscheinlich erstmals im Alter von 3 bis 5 Jahren paaren.",
+            "en": "The Zoopedia cautiously states that they probably mate for the first time at 3 to 5 years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProPaarung",
+          "wert": 20000,
+          "einheit": "ei",
+          "hinweis": {
+            "de": "Die Zoopedia nennt etwa 20.000 Eier pro Paarung.",
+            "en": "The Zoopedia states about 20,000 eggs per mating."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 3,
+          "max": 5,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Eier schlüpfen 3 bis 5 Tage nach der Ablage.",
+            "en": "The eggs hatch 3 to 5 days after being laid."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "kaulquappeBisJungfrosch",
+          "min": 6,
+          "max": 36,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Je nach Temperatur und äußeren Bedingungen dauert die Entwicklung von der Kaulquappe zum Jungfrosch 6 Monate bis 3 Jahre.",
+            "en": "Depending on temperature and external conditions, development from tadpole to young frog takes 6 months to 3 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "ausserhalbPaarungszeit",
+          "wert": "tolerantWithSpace",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Nordamerikanische Ochsenfrösche tolerieren Artgenossen, wenn ausreichend Platz vorhanden ist.",
+            "en": "American Bullfrogs tolerate conspecifics when enough space is available."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarungszeit",
+          "wert": "largeGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Während der Paarungszeit versammeln sie sich in großen Gruppen. Männchen können untereinander aggressiv sein.",
+            "en": "During the breeding season they gather in large groups. Males can be aggressive toward one another."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlichNiedrigePopulationsdichte",
+          "wert": "territorial",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Bei geringer Populationsdichte verteidigen Männchen am Paarungsort Reviere von 3 bis 6 m².",
+            "en": "At low population density, males defend breeding territories of 3 to 6 m²."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "wetlands",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Sümpfe, Teiche und Seen als natürlichen Lebensraum.",
+            "en": "The Zoopedia names swamps, ponds and lakes as the natural habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "opportunisticPredator",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt das Fressverhalten als opportunistisch und nennt den Ochsenfrosch als vielseitigen Jäger.",
+              "en": "The Zoopedia describes its feeding behavior as opportunistic and calls the bullfrog a versatile hunter."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "fledermaeuse",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "voegel",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "taranteln",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt. Die Zoopedia-Seite selbst enthält eine Namens-/Gattungsabweichung zwischen „Aquarana catesbeianus“ und „Lithobates“.",
+      "en": "Additional systematics and evolution will be added in a later source pass. The Zoopedia page itself contains a name/genus inconsistency between 'Aquarana catesbeianus' and 'Lithobates'."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch (auch Aquarana catesbeianus) ist eine große Amphibie, die in den Sümpfen, Teichen und Seen Kanadas und der USA beheimatet ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The American Bullfrog (Aquarana catesbeianus) is a large amphibian native to swamps, ponds and lakes in Canada and the USA.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The American Bullfrog (Aquarana catesbeianus) is a large amphibian native to swamps, ponds and lakes in Canada and the USA.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch (auch Aquarana catesbeianus) ist eine große Amphibie, die in den Sümpfen, Teichen und Seen Kanadas und der USA beheimatet ist.\n\nJe nach Umgebung kann sein Rücken dunkelgrün, hellgrün oder hellbraun gefärbt sein und der Bauch ist etwas bleicher. Außerdem können sein Rücken dunklere Flecken und seine Beine eine Art Streifenmuster aufweisen. Manche Varianten des Ochsenfrosches haben jedoch gar kein Muster.\n\nDer Nordamerikanische Ochsenfrosch ist sexuell dimorph, Weibchen sind größer als Männchen, die Kehle des Männchens hat eine charakteristische gelbe Farbe und sein Tympanum – großes, rundes Trommelfell – an den Schädelseiten ist viel größer. Der Nordamerikanische Ochsenfrosch ist zwischen 9 und 15,2 cm lang und wiegt 300 bis 500 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch gilt als nicht gefährdet. In vielen Regionen außerhalb seines natürlichen Verbreitungsgebiets ist er eine invasive Art, unter anderem in Südamerika, Westeuropa, Südostasien, Japan und China. Er wird außerdem in großem Maßstab gezüchtet, sowohl als Nahrungsmittel als auch für Unterrichtszwecke in Schulen.\n\nIn Gebieten, in denen er eingeschleppt wurde, versucht man seine Ausbreitung einzudämmen, da er durch sein opportunistisches Fressverhalten heimische Arten verdrängt und Krankheiten übertragen kann. Programme zur Bestandskontrolle und Ausrottung werden daher in mehreren Ländern durchgeführt, begleitet von Forschung zu seinen ökologischen Auswirkungen. Aufklärung spielt dabei eine wichtige Rolle, da die Tiere leicht aus der Haltung entkommen können.\n\nInsgesamt ist der Ochsenfrosch sehr weit verbreitet und seine Gesamtpopulation wächst weiterhin. Die größte Herausforderung besteht daher darin, seine Ausbreitung in nicht heimischen Regionen einzudämmen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Nordamerikanische Ochsenfrösche tolerieren sich gegenseitig, wenn genug Platz ist. Während der Paarungszeit versammeln sie sich in großen Gruppen, aber die Männchen greifen sich gegenseitig gerne an.\n\nDie Paarungszeit variiert je nach heimischem Verbreitungsgebiet: Im Norden findet sie zwischen Mai und Juli statt, im Süden zwischen Februar und April. Bei geringer Populationsdichte errichten und verteidigen Männchen an einem Paarungsort wie einem Sumpf oder Teich ein Revier von 3 bis 6 Quadratmetern und quaken, um Weibchen anzulocken und rivalisierende Männchen abzuschrecken. Bei hoher Populationsdichte versammeln sich viele Männchen im selben Gebiet und geben Rufe von sich. Dieses ausgiebige Quaken wird als „Chor“ bezeichnet; man geht davon aus, dass lautere und häufigere Rufe mehr Weibchen anlocken.\n\nMännchen bleiben während der gesamten Paarungszeit am Brutplatz, um die Chancen zu erhöhen, sich mehrmals paaren zu können. Die Weibchen besuchen den Brutplatz und paaren sich nur einmal. In der Regel werden alle ihre Eier von ein und demselben Männchen befruchtet. Weibchen legen ihre Eier während der Paarung, die dann extern befruchtet werden, wobei sich eine schwimmende Eierschicht mit einem Durchmesser von einem Meter bildet. Die Eier schlüpfen 3 bis 5 Tage nach der Ablage.\n\nDas Wachstum der Kaulquappen hängt von der Temperatur und den äußeren Bedingungen ab, und es kann 6 Monate bis 3 Jahre dauern, bis aus ihnen junge Frösche geworden sind. Dann vergehen unter Umständen noch einmal 2 Jahre, bis die Jungfrösche groß genug sind, um begehrte Partner zu werden. Je nach Alter bei der Metamorphose ist es wahrscheinlich, dass sie sich zum ersten Mal mit 3 bis 5 Jahren paaren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Nordamerikanische Ochsenfrösche legen etwa 20.000 Eier pro Paarung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In den südlichen USA stehen Froschschenkel auf dem Speiseplan, weshalb der Nordamerikanische Ochsenfrosch gejagt wird.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch wird so genannt, weil der Paarungsruf des Männchens wie das Brüllen eines Bullen klingt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch gedeiht in Wassertemperaturen von 15 bis 30 °C. Bei einer Wassertemperatur von über 32 °C beginnen Kaulquappen jedoch, sich abnormal zu entwickeln.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Nordamerikanische Ochsenfrosch ist ein vielseitiger Jäger, von dem man weiß, dass er Fledermäuse, Vögel und Taranteln fängt und frisst.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/65367be7/Frog_AmericanBull_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Aquarana catesbeianus/map/Aquarana catesbeianus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjUzNjdiZTcvRnJvZ19BbWVyaWNhbkJ1bGwuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Nordamerikanischer Ochsenfrosch – Planet Zoo 2",
+            "en": "American Bullfrog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Nordamerikanischen Ochsenfroschs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the American Bullfrog."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aquarana catesbeianus/bilder/Aquarana catesbeianus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Nordamerikanischer Ochsenfrosch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/nordamerikanischer-ochsenfrosch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/american-bullfrog",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/american-bullfrog",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/rana-toro",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/grenouille-taureau",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/rana-toro",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/r%C3%A3-touro-americana",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A6%E3%82%B7%E3%82%AC%E3%82%A8%E3%83%AB",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BE%8E%E6%B4%B2%E7%89%9B%E8%9B%99"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte Werte bleiben leer. Die Gattungsabweichung der Quelle wurde nicht extern korrigiert."
+    }
+  }
+}

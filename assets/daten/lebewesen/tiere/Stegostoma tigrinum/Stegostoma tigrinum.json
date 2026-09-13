@@ -1,0 +1,548 @@
+{
+  "id": "Stegostoma tigrinum",
+  "identitaet": {
+    "namen": {
+      "de": "Indo-pazifischer Leopardenhai",
+      "en": "Indo-Pacific Leopard Shark",
+      "en-US": "Indo-Pacific Leopard Shark",
+      "es": "Tiburón leopardo del Indopacífico",
+      "fr": "Requin léopard",
+      "it": "Squalo zebra",
+      "pt-BR": "Tubarão-zebra",
+      "ja": "トラフザメ",
+      "zh-Hans": "豹纹鲨"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [],
+    "biome": [
+      "Riff"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Chondrichthyes",
+          "ordnung": "Orectolobiformes",
+          "familie": "Stegostomatidae",
+          "gattung": "Stegostoma",
+          "art": "Stegostoma tigrinum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2.0,
+          "max": 2.7,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Länge von 2,0 bis 2,7 m und weist darauf hin, dass Weibchen im Allgemeinen größer sind als Männchen.",
+            "en": "The Zoopedia gives a length of 2.0 to 2.7 m and notes that females are generally larger than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 30,
+          "max": 50,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 25,
+          "max": 30,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Tiere in Gefangenschaft eine Lebensspanne von 25 bis 30 Jahren.",
+            "en": "The Zoopedia gives a captive lifespan of 25 to 30 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "typisch",
+          "wert": 2,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art als sehr langsamen Schwimmer und nennt gewöhnlich etwa 2 km/h.",
+            "en": "The Zoopedia describes the species as a very slow swimmer and gives a usual speed of about 2 km/h."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die strukturierte Statusangabe der Zoopedia lautet „Gefährdet“. Im Fließtext steht dagegen „stark gefährdet“. Dieser Widerspruch wurde nicht extern aufgelöst.",
+            "en": "The Zoopedia's structured status field says 'Endangered', while the conservation text says 'strongly endangered'. This inconsistency was not resolved using external sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 6,
+          "max": 8,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Männchen werden laut Zoopedia mit etwa 6 bis 8 Jahren geschlechtsreif.",
+            "en": "According to the Zoopedia, males reach sexual maturity at about 6 to 8 years."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 8,
+          "max": 10,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Weibchen werden laut Zoopedia mit etwa 8 bis 10 Jahren geschlechtsreif.",
+            "en": "According to the Zoopedia, females reach sexual maturity at about 8 to 10 years."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "groesseBeiGeschlechtsreife",
+          "min": 1.5,
+          "max": 2.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für die Geschlechtsreife eine Körperlänge von etwa 1,5 bis 2 m.",
+            "en": "The Zoopedia gives a body length of about 1.5 to 2 m at sexual maturity."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProAblage",
+          "min": 2,
+          "max": 2,
+          "einheit": "ei",
+          "hinweis": {
+            "de": "Weibchen legen die Eier laut Zoopedia in der Regel paarweise.",
+            "en": "According to the Zoopedia, females usually lay eggs in pairs."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "inkubationszeit",
+          "min": 4,
+          "max": 6,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Eikapseln werden je nach Wassertemperatur 4 bis 6 Monate lang ausgebrütet.",
+            "en": "Depending on water temperature, the egg cases incubate for 4 to 6 months."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfgroesse",
+          "min": 0.2,
+          "max": 0.25,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die vollständig ausgebildeten Junghaie sind beim Schlupf etwa 20 bis 25 cm lang.",
+            "en": "Fully developed pups are about 20 to 25 cm long at hatching."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "eigroesse",
+          "min": 0.17,
+          "max": 0.22,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für die Eier eine Größe von 17 bis 22 cm.",
+            "en": "The Zoopedia gives an egg size of 17 to 22 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Indo-pazifische Leopardenhaie sind laut Zoopedia in der Regel Einzelgänger.",
+            "en": "According to the Zoopedia, Indo-Pacific Leopard Sharks are usually solitary."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "gelegentlich",
+          "wert": "largeGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Sie können sich laut Zoopedia manchmal aus unbekannten Gründen in großen Gruppen zusammenfinden.",
+            "en": "The Zoopedia states that they may sometimes gather in large groups for unknown reasons."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "lagoon",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "seagrass",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Seegraswiesen als Lebensraum.",
+            "en": "The Zoopedia names seagrass meadows as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "hardPreyCrusher",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt zermalmende Zähne und eine Vorliebe für hartschalige Beute.",
+              "en": "The Zoopedia describes crushing teeth and a preference for hard-shelled prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "krebstiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "weichtiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Leopardenhai (Stegostoma tigrinum), der auch als Zebrahai bekannt ist, kommt im gesamten tropischen Indo-Pazifik vor, vom Roten Meer und der Ostküste Afrikas bis nach Südostasien, Nordaustralien und Südjapan. Er lebt in Korallenriffen, sandigen Lagunen und Seegraswiesen in einer Tiefe von 0 bis 60 m.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East African coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East African coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Leopardenhai (Stegostoma tigrinum), der auch als Zebrahai bekannt ist, ist ein auffälliger und langsam schwimmender benthischer Hai. Er kommt im gesamten tropischen Indo-Pazifik vor, vom Roten Meer und der Ostküste Afrikas bis nach Südostasien, Nordaustralien und sogar in Südjapan. Er lebt in Korallenriffen, sandigen Lagunen und Seegraswiesen in einer Tiefe von 0 m bis 60 m.\n\nAls Jungtiere weisen diese Haie schwarz-weiße Streifen auf. Mit zunehmendem Alter verändert sich ihre Färbung zu einem blassgelben oder hellbraunen Körper mit dunklen, leopardenartigen Flecken.\n\nSie sind zwischen 2,0 m und 2,7 m lang, wobei die Weibchen im Allgemeinen größer sind als die Männchen, und wiegen zwischen 30 kg und 50 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Indo-Pazifische Leopardenhai gilt im Fließtext der Zoopedia als stark gefährdet. Als Hauptprobleme werden Überfischung für Fleisch, Flossen und Leberöl, Beifang sowie die Zerstörung von Korallenriffen durch Küstenbebauung, Umweltverschmutzung und Klimawandel genannt. Sein langsames Wachstum, die späte Geschlechtsreife und die geringe Fortpflanzungsrate erhöhen die Anfälligkeit.\n\nAls Schutzmaßnahmen nennt die Zoopedia Meeresschutzgebiete, erfolgreiche Zuchtprogramme in öffentlichen Aquarien, Bildungsprogramme für Küstengemeinden sowie die Regulierung und Überwachung des internationalen Handels.\n\nDie separat ausgewiesene Statuszeile der Zoopedia lautet jedoch „Gefährdet“. Dieser Unterschied wurde nicht extern korrigiert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Indo-pazifische Leopardenhaie sind in der Regel Einzelgänger, können sich aber manchmal aus unbekannten Gründen in großen Gruppen zusammenfinden.\n\nDer Indo-pazifische Leopardenhai kann das ganze Jahr über Nachwuchs zeugen. Die Männchen packen die Weibchen mit ihren Klammerorganen, um die Paarung einzuleiten. Anders als manche Haiarten legt der Indo-pazifische Leopardenhai Eier, statt lebende Junge zu gebären. Weibchen können Sperma über längere Zeit aufbewahren.\n\nWeibchen legen in der Regel paarweise Eier in großen, robusten, faserigen Eikapseln ab, die sich am Meeresboden oder an Riffstrukturen festsetzen. Die Eier werden je nach Wassertemperatur 4 bis 6 Monate lang ausgebrütet. Danach schlüpfen vollständig ausgebildete Junghaie mit einer Länge von etwa 20 bis 25 cm.\n\nDie Art wächst langsam. In Gefangenschaft kann sie 25 bis 30 Jahre alt werden. Männchen werden mit etwa 6 bis 8 Jahren geschlechtsreif, Weibchen mit 8 bis 10 Jahren, bei einer Größe von etwa 1,5 bis 2 m.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Anders als viele andere Haiarten müssen Indo-pazifische Leopardenhaie nicht schwimmen, um atmen zu können, und können stundenlang in einer Position verharren, während sie durch „Bukkales Pumpen“ atmen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Indo-pazifische Leopardenhaie besitzen zermalmende Zähne und ernähren sich bevorzugt von Beutetieren mit harter Schale wie Krebstieren und Weichtieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der lange, flexible Körper des Indo-pazifischen Leopardenhais ermöglicht es ihm, sich in kleine Spalten im Riff zu zwängen, um dort nach Futter zu suchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Eier des Indo-pazifischen Leopardenhais sind sehr groß und messen jeweils 17 cm bis 22 cm.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Indo-pazifische Leopardenhaie sind sehr langsame Schwimmer und bewegen sich in der Regel mit einer Geschwindigkeit von 2 km/h fort.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/9d0b900f/Shark_IndoPacificLeopard_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Stegostoma tigrinum/map/Stegostoma tigrinum map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOWQwYjkwMGYvU2hhcmtfSW5kb1BhY2lmaWNMZW9wYXJkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Indo-pazifischer Leopardenhai – Planet Zoo 2",
+            "en": "Indo-Pacific Leopard Shark – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Indo-pazifischen Leopardenhais aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Indo-Pacific Leopard Shark."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Stegostoma tigrinum/bilder/Stegostoma tigrinum 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/9d0b900f/Shark_IndoPacificLeopard_illustration.jpg",
+          "alt": {
+            "de": "Indo-pazifischer Leopardenhai – Zoopedia-Illustration",
+            "en": "Indo-Pacific Leopard Shark – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Indo-pazifischen Leopardenhais aus der Planet Zoo 2 Zoopedia.",
+            "en": "Indo-Pacific Leopard Shark illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Stegostoma tigrinum/bilder/Stegostoma tigrinum illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [
+    {
+      "typ": "tierVorstellung",
+      "quelle": "planetZoo2",
+      "titel": {
+        "de": "Tier-Vorstellung – Indo-pazifischer Leopardenhai",
+        "en": "Animal Spotlight – Indo-Pacific Leopard Shark"
+      },
+      "url": "https://youtube.com/watch?v=_hAziPqt_bo",
+      "seite": "https://www.planetzoogame.com/de-DE/2/galerie/video/animal-spotlight-indo-pacific-leopard-shark"
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Indo-pazifischer Leopardenhai",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/indo-pazifischer-leopardenhai",
+        "en": "https://www.planetzoogame.com/2/zoopedia/indo-pacific-leopard-shark",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/indo-pacific-leopard-shark",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/tibur%C3%B3n-leopardo-del-indopac%C3%ADfico",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/requin-l%C3%A9opard",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/squalo-zebra",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/tubar%C3%A3o-zebra",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%88%E3%83%A9%E3%83%95%E3%82%B6%E3%83%A1",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%B1%B9%E7%BA%B9%E9%B2%A8"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Der Widerspruch zwischen Fließtext ('stark gefährdet') und Statusfeld ('Gefährdet') wurde dokumentiert und nicht extern korrigiert."
+    }
+  }
+}

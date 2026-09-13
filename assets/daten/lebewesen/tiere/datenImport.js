@@ -46,6 +46,19 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Pterois volitans/Pterois volitans.json",
   "assets/daten/lebewesen/tiere/Heniochus diphreutes/Heniochus diphreutes.json",
   "assets/daten/lebewesen/tiere/Carcharhinus melanopterus/Carcharhinus melanopterus.json",
+  "assets/daten/lebewesen/tiere/Antidorcas marsupialis/Antidorcas marsupialis.json",
+  "assets/daten/lebewesen/tiere/Hydrocynus vittatus/Hydrocynus vittatus.json",
+  "assets/daten/lebewesen/tiere/Malaclemys terrapin/Malaclemys terrapin.json",
+  "assets/daten/lebewesen/tiere/Gnathanodon speciosus/Gnathanodon speciosus.json",
+  "assets/daten/lebewesen/tiere/Giraffa reticulata/Giraffa reticulata.json",
+  "assets/daten/lebewesen/tiere/Aquarana catesbeianus/Aquarana catesbeianus.json",
+  "assets/daten/lebewesen/tiere/Sardinops sagax/Sardinops sagax.json",
+  "assets/daten/lebewesen/tiere/Chromobotia macracanthus/Chromobotia macracanthus.json",
+  "assets/daten/lebewesen/tiere/Arothron nigropunctatus/Arothron nigropunctatus.json",
+  "assets/daten/lebewesen/tiere/Stegostoma tigrinum/Stegostoma tigrinum.json",
+  "assets/daten/lebewesen/tiere/Suricata suricatta/Suricata suricatta.json",
+  "assets/daten/lebewesen/tiere/Conraua goliath/Conraua goliath.json",
+  "assets/daten/lebewesen/tiere/Coryphaena hippurus/Coryphaena hippurus.json",
 ];
 
 /* ======================================== */

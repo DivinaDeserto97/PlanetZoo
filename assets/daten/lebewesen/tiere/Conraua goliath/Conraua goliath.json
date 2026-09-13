@@ -1,0 +1,443 @@
+{
+  "id": "Conraua goliath",
+  "identitaet": {
+    "namen": {
+      "de": "Goliathfrosch",
+      "en": "Giant Slippery Frog",
+      "en-US": "Giant Slippery Frog",
+      "es": "Conraua goliath",
+      "fr": "Grenouille goliath",
+      "it": "Rana golia",
+      "pt-BR": "Rã-gigante-africana",
+      "ja": "ゴライアスガエル",
+      "zh-Hans": "巨谐蛙"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Tropisch",
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Anura",
+          "familie": "Conrauidae",
+          "gattung": "Conraua",
+          "art": "Conraua goliath",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.17,
+          "max": 0.3,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Männchen als größer als die Weibchen und nennt für sie 17 bis 30 cm.",
+            "en": "The Zoopedia describes males as larger than females and gives 17 to 30 cm for them."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "max": 0.32,
+          "einheit": "m",
+          "hinweis": {
+            "de": "In den Tierfakten nennt die Zoopedia als Maximalwert bis zu 32 cm.",
+            "en": "In the animal facts, the Zoopedia gives a maximum length of up to 32 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.6,
+          "max": 3.0,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Männchen als größer als die Weibchen und nennt für sie 0,6 bis 3 kg.",
+            "en": "The Zoopedia describes males as larger than females and gives 0.6 to 3 kg for them."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "max": 3.25,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "In den Tierfakten nennt die Zoopedia ein Maximalgewicht von bis zu 3,25 kg.",
+            "en": "In the animal facts, the Zoopedia gives a maximum weight of up to 3.25 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an. Ein Bewertungssystem wird auf der mitgeschickten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as strongly endangered. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 10,
+          "max": 12,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die jungen Frösche werden laut Zoopedia nach 10 bis 12 Monaten geschlechtsreif.",
+            "en": "According to the Zoopedia, young frogs reach sexual maturity after 10 to 12 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "kaulquappeBisJungfrosch",
+          "wert": 3,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Kaulquappen entwickeln sich laut Zoopedia etwa drei Monate nach dem Schlupf zu kleinen Fröschen.",
+            "en": "According to the Zoopedia, tadpoles develop into small frogs about three months after hatching."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "elterlicheFuersorge",
+          "wert": null,
+          "hinweis": {
+            "de": "Beide Eltern verlassen die Eier nach dem Legen und kümmern sich nicht weiter um sie.",
+            "en": "Both parents leave the eggs after laying and provide no further care."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Goliathfrösche sind laut Zoopedia Einzelgänger und interagieren mit Artgenossen vor allem zur Paarung oder bei Rivalenkämpfen.",
+            "en": "According to the Zoopedia, Goliath Frogs are solitary and mainly interact with conspecifics for mating or rivalry."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt afrikanische Regenwälder.",
+            "en": "The Zoopedia names African rainforests."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "river",
+          "hinweis": {
+            "de": "Die Art lebt laut Zoopedia besonders an reißenden Flüssen und Bächen.",
+            "en": "According to the Zoopedia, the species lives especially in fast-flowing rivers and streams."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "eineSpezialisiertePflanzenart",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "kaulquappe"
+                ],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt keine Pflanzenart beim Namen, sagt aber, dass sich die Kaulquappen ausschließlich von einer einzigen Pflanzenart ernähren, die in schnell fließenden Gewässern und am Grund von Wasserfällen vorkommt.",
+                "en": "The Zoopedia does not name the plant species, but states that the tadpoles feed exclusively on a single plant species found in fast-flowing waters and at the base of waterfalls."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Goliathfrosch (auch Conraua goliath) ist eine extrem große Froschart, die in den afrikanischen Regenwäldern von Kamerun und Äquatorialguinea lebt, genauer gesagt in den reißenden Flüssen und Bächen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the African rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the African rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Goliathfrosch (auch Conraua goliath) ist eine extrem große Froschart, die in den afrikanischen Regenwäldern von Kamerun und Äquatorialguinea lebt, genauer gesagt in den reißenden Flüssen und Bächen.\n\nEr weist eine grüne bis dunkelbraune Farbe auf, wobei die Unterseite etwas heller ist. Er hat große gelbe Augen und eventuell kleine Runzeln oder Unebenheiten auf der Haut.\n\nDie Männchen sind größer als die Weibchen, wiegen zwischen 0,6 kg und 3 kg und sind zwischen 17 cm und 30 cm lang.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Art ist aufgrund von übermäßiger Bejagung zum Verzehr, zur Trophäenjagd und aufgrund großflächiger Entnahme für den Tierhandel stark gefährdet. Zudem ist sie vom Verlust ihres Lebensraums durch Landwirtschaft, Abholzung, Straßenverkehr und menschliche Besiedlung betroffen. Sedimentablagerungen und Verschmutzung ihrer Laichgewässer beeinträchtigen die Entwicklung der Kaulquappen sowie die Pflanzenarten, die für deren Ernährung unerlässlich sind. Die Frösche reagieren unberechenbar, wenn sie gestört werden, was die Fortpflanzung wahrscheinlich zusätzlich beeinträchtigt.\n\nSchutzgebiete im gesamten Verbreitungsgebiet des Ökosystems sind für den Erhalt des Goliathfrosches von Vorteil.\n\nDie Art ist aufgrund übermäßiger Entnahme stark rückläufig. Die Zoopedia nennt nachhaltige Entnahmemethoden gemeinsam mit lokalen Gemeinschaften sowie mögliche Zuchtprogramme in Gefangenschaft als weitere Ansätze.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Goliathfrösche sind Einzelgänger und interagieren mit anderen nur zur Paarung oder bei Kämpfen zwischen Rivalen.\n\nDer genaue Zeitpunkt der Paarungszeit ist laut Zoopedia unbekannt; vermutlich findet sie einmal jährlich statt. Wenn die Weibchen bereit sind, Eier zu legen, bauen die Männchen Nester am Flussbett nahe schnell fließendem Wasser, indem sie Steine im Sand zu halbkreisförmigen Formationen zusammenschieben. Rivalisierende Männchen können miteinander kämpfen. Die Weibchen wählen anschließend ein Nest, in dem sie ihre Eier ablegen, während das Männchen sie befruchtet.\n\nBeide Eltern verlassen die Eier danach und betreiben keine weitere Brutpflege. Aus den Eiern schlüpfen Kaulquappen, die sich etwa drei Monate später zu kleinen Fröschen entwickeln.\n\nDie jungen Frösche werden nach 10 bis 12 Monaten geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Goliathfrosch ist die größte lebende Froschart. Er kann bis zu 32 cm lang werden und bis zu 3,25 kg schwer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goliathfrösche haben keine Schallblasen und können nicht quaken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goliathfrösche können bis zu 3 m weit springen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Goliathfrosch-Kaulquappen ernähren sich ausschließlich von einer einzigen Pflanzenart, die nur in schnellfließenden Gewässern und am Grund von Wasserfällen zu finden ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goliathfrösche existieren laut Zoopedia bereits seit 250 Millionen Jahren; die Spezies wird dort als älter als die Dinosaurier beschrieben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/956a3745/Frog_Goliath_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Conraua goliath/map/Conraua goliath map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOTU2YTM3NDUvRnJvZ19Hb2xpYXRoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Goliathfrosch – Planet Zoo 2",
+            "en": "Goliath Frog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Goliathfroschs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Goliath Frog."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Conraua goliath/bilder/Conraua goliath 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Goliathfrosch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/goliathfrosch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/giant-slippery-frog",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/giant-slippery-frog",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/conraua-goliath",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/grenouille-goliath",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/rana-golia",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/r%C3%A3-gigante-africana",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B4%E3%83%A9%E3%82%A4%E3%82%A2%E3%82%B9%E3%82%AC%E3%82%A8%E3%83%AB",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B7%A8%E8%B0%90%E8%9B%99"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Eine Illustration wurde nicht ergänzt, weil im bereitgestellten Auszug keine Zoopedia-Illustration angegeben ist."
+    }
+  }
+}

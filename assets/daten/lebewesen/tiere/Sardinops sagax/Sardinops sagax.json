@@ -1,0 +1,483 @@
+{
+  "id": "Sardinops sagax",
+  "identitaet": {
+    "namen": {
+      "de": "Pazifische Sardine",
+      "en": "Pacific Sardine",
+      "en-US": "Pacific Sardine",
+      "es": "Sardina del Pacífico",
+      "fr": "Pilchard de Californie",
+      "it": "Sardina oceanica",
+      "pt-BR": "Sardinha",
+      "ja": "カリフォルニアマイワシ",
+      "zh-Hans": "远东拟沙丁鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Clupeiformes",
+          "familie": "Alosidae",
+          "gattung": "Sardinops",
+          "art": "Sardinops sagax",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ueblichMaximal",
+          "max": 0.3,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass Pazifische Sardinen in der Regel nicht länger als 30 cm werden.",
+            "en": "The Zoopedia states that Pacific Sardines are generally no longer than 30 cm."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "max": 0.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Einzelne Exemplare können laut Zoopedia bis zu 40 cm lang werden.",
+            "en": "According to the Zoopedia, some individuals can reach up to 40 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "unbekannt, aber fruchtbar",
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand wörtlich als „unbekannt, aber fruchtbar“ an. Diese Formulierung wurde nicht weiter interpretiert.",
+            "en": "The Zoopedia literally gives the wild population as 'unknown, but prolific'. This wording was not interpreted further."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProLaichvorgang",
+          "min": 45000,
+          "max": 65000,
+          "einheit": "ei",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 3,
+          "max": 4,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "larveBisJungfisch",
+          "min": 2,
+          "max": 3,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Nach zwei bis drei Monaten werden die Larven zu Jungfischen und beginnen langsam selbstständig zu schwimmen.",
+            "en": "After two to three months, the larvae become juveniles and slowly begin swimming independently."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "school",
+          "minGruppengroesse": 1000,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Pazifische Sardinen leben in Schwärmen aus Tausenden bis mitunter Millionen von Tieren.",
+            "en": "Pacific Sardines live in schools consisting of thousands and sometimes millions of individuals."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beobachtetesMaximum",
+          "wert": "school",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": 10000000,
+          "hinweis": {
+            "de": "In der Übersicht wird erwähnt, dass manche Schwärme aus bis zu 10 Millionen Exemplaren bestehen sollen.",
+            "en": "The overview states that some schools are said to contain up to 10 million individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nachtsOberflaechennahZurNahrungssuche",
+          "hinweis": {
+            "de": "Die Zoopedia nennt, dass Pazifische Sardinen nachts oft an die Oberfläche kommen, um zu fressen.",
+            "en": "The Zoopedia states that Pacific Sardines often come to the surface at night to feed."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "filterFeeder",
+            "hinweis": {
+              "de": "Pazifische Sardinen fressen Plankton, indem sie es durch ihre Kiemenreusen filtern.",
+              "en": "Pacific Sardines feed on plankton by filtering it through their gill rakers."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "plankton",
+              "typ": "sonstiges",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "groessereFische",
+              "typ": "tier",
+              "beziehung": "beuteVon",
+              "wirkung": "-/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "seevoegel",
+              "typ": "tier",
+              "beziehung": "beuteVon",
+              "wirkung": "-/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "meeressaeugetiere",
+              "typ": "tier",
+              "beziehung": "beuteVon",
+              "wirkung": "-/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Pazifische Sardine (auch Sardinops sagax) ist eine kleine Fischart, die in Schwärmen lebt und in den subtropischen und gemäßigten Gewässern des Pazifischen und Indischen Ozeans zu finden ist. Darüber hinaus ist sie im Atlantik vor der Küste Südafrikas verbreitet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Pazifische Sardine (auch Sardinops sagax) ist eine kleine Fischart, die in Schwärmen lebt und in den subtropischen und gemäßigten Gewässern des Pazifischen und Indischen Ozeans zu finden ist. Darüber hinaus ist sie im Atlantik vor der Küste Südafrikas verbreitet.\n\nEs handelt sich um kleine, silberfarbene Fische mit dunklen Flecken auf dem Rücken, die oft in sehr großen Schwärmen anzutreffen sind. Einige Schwärme sollen aus bis zu 10 Millionen Exemplaren bestehen.\n\nDie Tiere sind in der Regel nicht länger als 30 cm, auch wenn manche Exemplare bis zu 40 cm groß werden können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Obwohl Pazifische Sardinen im Moment als „nicht gefährdet“ gelten, sind ihre Populationen immer noch durch Fischerei, Umweltveränderungen und schwankende Nahrungsquellen bedroht.\n\nUm die Nachhaltigkeit der Sardinenpopulationen und die Gesundheit der Meeresökosysteme zu sichern, ist es wichtig, dass die Bestände durch Fangquoten, Schutz der Lebensräume und Maßnahmen zur Anpassung an den Klimawandel nachhaltig geschützt werden. Die Erhaltung von Sardinen in ausreichender Anzahl und Verbreitung ist entscheidend, da sie viele Nahrungsnetze aufrechterhalten und ein zentraler Bestandteil gesunder Ökosysteme sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Pazifische Sardinen leben in Schwärmen, die aus Tausenden, mitunter sogar Millionen von Tieren bestehen können.\n\nPazifische Sardinen laichen in den kühleren Monaten; wann genau das ist, hängt davon ab, auf welcher Hemisphäre sie anzutreffen sind. Während des Laichens geben die weiblichen Sardinen ihre Eier ins Wasser ab. Ein einzelnes Weibchen kann pro Laichvorgang 45.000 bis 65.000 Eier legen. Die Männchen geben ihr Sperma ins Wasser ab, und die Befruchtung erfolgt so extern. Die befruchteten Eier schwimmen 3 bis 4 Tage lang im Wasser, ehe sie Larven hervorbringen.\n\nNach dem Schlüpfen können sich Sardinenlarven noch nicht selbstständig fortbewegen, sondern treiben einfach mit der Strömung mit. Nach zwei bis drei Monaten werden sie zu Jungfischen und schwimmen langsam selbstständig. Sie schließen sich mit anderen Sardinenjungfischen zusammen und suchen gemeinsam nach Futter. Pazifische Sardinen werden mit zwei bis drei Jahren geschlechtsreif und leben ihr ganzes Leben lang in großen Schwärmen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die silbernen Schuppen der Pazifischen Sardine ermöglichen es ihr, perfekt mit den Bewegungen der Wasseroberfläche zu verschmelzen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pazifische Sardinen fressen Plankton, indem sie es durch ihre Kiemenreusen filtern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pazifische Sardinen spielen eine wichtige Rolle in vielen Nahrungsketten von Meerestieren, denn sie sind eine wichtige Futterquelle für größere Fische, Seevögel und Meeressäugetiere.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pazifische Sardinen bewegen sich oft mit warmen Meeresströmungen und können so Hunderte von Kilometern zurücklegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pazifische Sardinen kommen nachts oft an die Oberfläche, um zu fressen, wenn sie weniger Gefahr laufen, von anderen gefressen zu werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e81e414e/Sardine_Pacific_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Sardinops sagax/map/Sardinops sagax map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZTgxZTQxNGUvU2FyZGluZV9QYWNpZmljLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Pazifische Sardine – Planet Zoo 2",
+            "en": "Pacific Sardine – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Pazifischen Sardine aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Pacific Sardine."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Sardinops sagax/bilder/Sardinops sagax 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e81e414e/Sardine_Pacific_illustration.jpg",
+          "alt": {
+            "de": "Pazifische Sardine – Zoopedia-Illustration",
+            "en": "Pacific Sardine – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Pazifischen Sardine aus der Planet Zoo 2 Zoopedia.",
+            "en": "Pacific Sardine illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Sardinops sagax/bilder/Sardinops sagax illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Pazifische Sardine",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/pazifische-sardine",
+        "en": "https://www.planetzoogame.com/2/zoopedia/pacific-sardine",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/pacific-sardine",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/sardina-del-pac%C3%ADfico",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/pilchard-de-californie",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/sardina-oceanica",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/sardinha",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AB%E3%83%AA%E3%83%95%E3%82%A9%E3%83%AB%E3%83%8B%E3%82%A2%E3%83%9E%E3%82%A4%E3%83%AF%E3%82%B7",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%BF%9C%E4%B8%9C%E6%8B%9F%E6%B2%99%E4%B8%81%E9%B1%BC"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer; der Wildbestand wurde als Rohangabe übernommen und nicht interpretiert."
+    }
+  }
+}

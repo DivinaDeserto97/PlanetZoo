@@ -1,0 +1,869 @@
+{
+  "id": "Antidorcas marsupialis",
+  "identitaet": {
+    "namen": {
+      "de": "Springbock",
+      "en": "Springbok",
+      "en-US": "Springbok",
+      "es": "Gacela saltarina de El Cabo",
+      "fr": "Springbok",
+      "it": "Springbok",
+      "pt-BR": "Cabra-de-leque",
+      "ja": "スプリングボック",
+      "zh-Hans": "跳羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Antidorcas",
+          "art": "Antidorcas marsupialis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1.2,
+          "max": 1.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.71,
+          "max": 0.86,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 27,
+          "max": 42,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "maximal",
+          "max": 97,
+          "einheit": "km/h",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 2000000,
+          "max": 2500000,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Antidorcas marsupialis"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 2.000.000–2.500.000 Tieren an.",
+            "en": "The Zoopedia lists a wild population of 2,000,000–2,500,000 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 7,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia gibt an, dass Springböcke bereits mit 7 Monaten geschlechtsreif werden.",
+            "en": "The Zoopedia states that Springboks reach sexual maturity at 7 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 5,
+          "max": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Nach 5–6 Monaten Tragzeit bringt das Weibchen ein einzelnes Kalb zur Welt. Das Kalb wird mit 4 Monaten entwöhnt.",
+            "en": "After a gestation of 5–6 months, the female gives birth to a single calf. The calf is weaned at 4 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "wert": "herd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt ein variables Herdensystem mit gemischten Gruppen, Junggesellengruppen, einzelnen territorialen Männchen und Haremgruppen. Größe und Zusammensetzung ändern sich mit Jahreszeit und Nahrungsverfügbarkeit.",
+            "en": "The Zoopedia describes a variable herd system with mixed groups, bachelor groups, solitary territorial males and harem groups. Group size and composition change with season and food availability."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "hinweis": {
+            "de": "Die Zoopedia nennt die Savannen Südafrikas als natürlichen Lebensraum.",
+            "en": "The Zoopedia names the savannas of southern Africa as the natural habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Springbock (auch Antidorcas marsupialis) ist eine kleine Antilopenart, die in den Savannen Südafrikas heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El springbok (Antidorcas marsupialis) es un pequeño antílope nativo de las sabanas del sur de África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le springbok (Antidorcas marsupialis) est une petite antilope originaire des savanes d’Afrique australe.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope originaria delle savane dell’Africa meridionale.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A cabra-de-leque (Antidorcas marsupialis) é um pequeno antílope nativo das savanas do sul da África.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スプリングボック（Antidorcas marsupialis）は、アフリカ南部のサバンナに生息する小型のレイヨウです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "跳羚（Antidorcas marsupialis）是一种原产于非洲南部稀树草原的小型羚羊。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Springbock (auch Antidorcas marsupialis) ist eine kleine Antilopenart, die in den Savannen Südafrikas heimisch ist.\n\nEr verfügt über leierförmige schwarze Hörner, ein hellbraunes Fell mit dunkelbraunen Abzeichen, einen weißen Bauch und ein weißes Gesicht sowie dunkelbraune Tränenstreifen, die von den Augen bis zur Schnauze verlaufen.\n\nMännchen und Weibchen sind etwa gleich groß und haben beide 35 cm bis 50 cm lange Hörner, wobei die der Männchen kräftiger sind. Die durchschnittliche Schulterhöhe liegt zwischen 0,71 m und 0,86 m, die Kopf-Rumpf-Länge zwischen 1,2 m und 1,5 m und das Gewicht ausgewachsener Tiere beträgt zwischen 27 kg und 42 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El springbok (Antidorcas marsupialis) es un pequeño antílope de las sabanas del sur de África.\n\nTiene cuernos negros en forma de lira, pelaje marrón claro con marcas marrón oscuro, vientre y rostro blancos y franjas oscuras desde los ojos hasta el hocico.\n\nMachos y hembras tienen un tamaño similar y cuernos de 35–50 cm; la altura al hombro es de 0,71–0,86 m, la longitud corporal de 1,2–1,5 m y el peso de 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le springbok (Antidorcas marsupialis) est une petite antilope des savanes d’Afrique australe.\n\nIl possède des cornes noires en forme de lyre, un pelage brun clair marqué de brun foncé, un ventre et un visage blancs ainsi que des bandes sombres entre les yeux et le museau.\n\nMâles et femelles sont de taille similaire et portent des cornes de 35–50 cm ; la hauteur au garrot est de 0,71–0,86 m, la longueur du corps de 1,2–1,5 m et le poids de 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope delle savane dell’Africa meridionale.\n\nHa corna nere a forma di lira, mantello marrone chiaro con segni marrone scuro, ventre e muso bianchi e strisce scure dagli occhi al muso.\n\nMaschi e femmine hanno dimensioni simili e corna lunghe 35–50 cm; l’altezza alla spalla è 0,71–0,86 m, la lunghezza corporea 1,2–1,5 m e il peso 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A cabra-de-leque (Antidorcas marsupialis) é um pequeno antílope das savanas do sul da África.\n\nPossui chifres pretos em forma de lira, pelagem castanho-clara com marcas escuras, ventre e rosto brancos e faixas escuras dos olhos ao focinho.\n\nMachos e fêmeas têm tamanho semelhante e chifres de 35–50 cm; a altura no ombro é de 0,71–0,86 m, o comprimento corporal de 1,2–1,5 m e o peso de 27–42 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スプリングボックは、黒い竪琴形の角、濃い模様のある淡褐色の毛、白い腹と顔、目から鼻先へ伸びる濃褐色の線が特徴です。雌雄はほぼ同じ大きさで、角は35～50 cm、肩高0.71～0.86 m、体長1.2～1.5 m、体重27～42 kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "跳羚具有黑色竖琴形角、带深褐色斑纹的浅褐色被毛、白色腹部和面部，以及从眼睛延伸到口鼻部的深色条纹。雌雄体型接近，角长35–50厘米，肩高0.71–0.86米，体长1.2–1.5米，成年体重27–42千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Springböcke gelten als nicht gefährdet, doch im Vergleich zu den riesigen Wanderherden, die früher die Karoo und die Kalahari durchstreiften, sehen sie sich heute ebenfalls mit Problemen durch die Fragmentierung ihres Lebensraums konfrontiert. Die Ausweitung der Landwirtschaft, Viehzäune und Überweidung schränken den Zugang zu Nahrung und Wasser ein, besonders während Dürreperioden. Dort, wo sie kommerziell bejagt werden, züchten Wildtiermanager gezielt ungewöhnliche Farbvarianten, was bei unsachgemäßer Pflege zu einer Beeinträchtigung der genetischen Integrität führen kann.\n\nViele Nationalparks schützen wichtige aride und semiaride Lebensräume und ermöglichen eine natürlichere Populationsdynamik. Auch private Naturschutzgebiete und Wildreservate spielen eine wichtige Rolle bei der Erhaltung lebensfähiger Bestände im gesamten Süden Afrikas, indem sie Springböcke oft in gemischte Artengemeinschaften integrieren, die natürliche Weidegemeinschaften nachahmen. Eine verbesserte Planung von Wildkorridoren sowie die Entfernung oder Anpassung interner Zäune in einigen Reservaten tragen dazu bei, ökologische Verbindungen wiederherzustellen.\n\nDie kontinuierliche Beobachtung der Bestandsentwicklung, eine genetisch nachhaltige Bewirtschaftung auf Wildfarmen und anpassungsfähige Maßnahmen bei Dürre sind entscheidend dafür, dass Springböcke in ihrem gesamten natürlichen Verbreitungsgebiet weiterhin zahlreich vorkommen und ökologisch funktionsfähig bleiben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Springboks are considered Least Concern, but habitat fragmentation, agriculture, livestock fencing and overgrazing can restrict access to food and water, especially during droughts. Selective breeding of unusual colour variants in commercially hunted populations can also affect genetic integrity if poorly managed.\n\nNational parks, private reserves and wildlife conservancies protect important arid and semi-arid habitats. Wildlife corridors and the removal or adjustment of internal fences can help restore ecological connections.\n\nContinued population monitoring, genetically sustainable management and adaptable drought measures are important for maintaining abundant and ecologically functional populations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Springboks are considered Least Concern, but habitat fragmentation, agriculture, livestock fencing and overgrazing can restrict access to food and water, especially during droughts. Selective breeding of unusual colour variants in commercially hunted populations can also affect genetic integrity if poorly managed.\n\nNational parks, private reserves and wildlife conservancies protect important arid and semi-arid habitats. Wildlife corridors and the removal or adjustment of internal fences can help restore ecological connections.\n\nContinued population monitoring, genetically sustainable management and adaptable drought measures are important for maintaining abundant and ecologically functional populations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los springboks se consideran de preocupación menor, pero la fragmentación del hábitat, la agricultura, las cercas ganaderas y el sobrepastoreo pueden limitar el acceso a alimento y agua, especialmente durante las sequías. La cría selectiva de variantes de color también puede afectar la integridad genética si se gestiona mal.\n\nLos parques nacionales, reservas privadas y corredores de fauna ayudan a proteger los hábitats áridos y semiáridos y a mantener la conectividad ecológica.\n\nEl seguimiento de las poblaciones y una gestión genética sostenible son importantes para conservar poblaciones abundantes y funcionales.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le springbok est considéré comme une espèce de préoccupation mineure, mais la fragmentation de l’habitat, l’agriculture, les clôtures et le surpâturage peuvent réduire l’accès à la nourriture et à l’eau, surtout pendant les sécheresses. La sélection de variantes de couleur peut aussi nuire à l’intégrité génétique si elle est mal gérée.\n\nLes parcs nationaux, réserves privées et corridors écologiques protègent les habitats arides et semi-arides et favorisent la connectivité.\n\nLe suivi des populations et une gestion génétique durable restent essentiels.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Lo springbok è considerato a rischio minimo, ma la frammentazione dell’habitat, l’agricoltura, le recinzioni per il bestiame e il sovrapascolo possono ridurre l’accesso a cibo e acqua, soprattutto durante la siccità. Anche la selezione di varianti cromatiche può compromettere l’integrità genetica se mal gestita.\n\nParchi nazionali, riserve private e corridoi faunistici proteggono gli habitat aridi e semi-aridi e aiutano a ristabilire la connettività ecologica.\n\nIl monitoraggio delle popolazioni e una gestione geneticamente sostenibile sono fondamentali.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A cabra-de-leque é considerada pouco preocupante, mas a fragmentação do habitat, a agricultura, cercas de gado e o sobrepastoreio podem limitar o acesso a alimento e água, especialmente durante secas. A seleção de variantes de cor também pode afetar a integridade genética se for mal gerida.\n\nParques nacionais, reservas privadas e corredores de fauna protegem habitats áridos e semiáridos e ajudam a restaurar ligações ecológicas.\n\nO acompanhamento das populações e uma gestão geneticamente sustentável são essenciais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スプリングボックは低危険種とされていますが、生息地の分断、農地拡大、家畜用フェンス、過放牧によって、特に干ばつ時の餌や水へのアクセスが制限されることがあります。色彩変異を目的とした選択繁殖も、管理が不適切な場合は遺伝的健全性に影響します。国立公園や私有保護区、野生動物回廊などが重要な生息地と生態系のつながりを守っています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "跳羚被列为无危，但栖息地破碎化、农业扩张、牲畜围栏和过度放牧会限制其获取食物和水，尤其在干旱期间。针对特殊毛色的选择性繁育若管理不当，也可能影响遗传完整性。国家公园、私人保护区和野生动物廊道有助于保护干旱和半干旱栖息地并恢复生态连接。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Springböcke besitzen ein komplexes und veränderliches Sozialverhalten. Wie die meisten Hornträger leben auch sie in Herden, die sich aus verschiedenen Arten von Gruppen zusammensetzen. So gibt es gemischte Gruppen, die aus nicht dominanten Männchen, Weibchen und deren Jungen bestehen, zudem Junggesellengruppen aus männlichen Jungtieren, einzelne, territoriale Männchen, die ihr Territorium gegen andere Männchen verteidigen, und Haremgruppen aus einem dominanten Männchen und mehreren paarungsbereiten Weibchen. Die Anzahl und Größe dieser Gruppen verändern sich immer wieder und sind vor allem von der Jahreszeit und der Verfügbarkeit von Nahrung abhängig. In der Regenzeit gibt es beispielsweise mehr Haremgruppen als zu anderen Jahreszeiten.\n\nSpringböcke paaren sich das ganze Jahr über, wobei die Paarung in der Regenzeit häufiger stattfindet. Zur Paarung treibt ein territorial dominantes Männchen die Weibchen zusammen, die sein Revier durchqueren oder dort nach Futter suchen, und bildet so seinen Harem. Er imponiert ihnen, indem er prunkt und sein Revier gegen rivalisierende Männchen verteidigt. Um ein Weibchen in seinem Harem zu umwerben, nähert er sich diesem und klopft mehrmals mit dem Huf auf den Boden. Ist sie empfänglich, lässt sie zu, dass er sich mit ihr paart.\n\nNach einer Tragzeit von 5 bis 6 Monaten bringt das Muttertier ein einzelnes Kalb zur Welt, das sich zunächst versteckt hält, während das Weibchen auf Futtersuche ist. Nach etwa einem Monat kehren sie zur Herde zurück. Das Kalb wird im Alter von 4 Monaten entwöhnt.\n\nSpringböcke werden bereits im Alter von 7 Monaten geschlechtsreif, und während die Weibchen in der Herde bleiben, in der sie zur Welt gekommen sind, verlassen die Männchen diese ab einem Alter von 6 Monaten, um sich einer Junggesellenherde anzuschließen. Wenn sie etwa 2 Jahre alt sind, erreichen sie die soziale Reife und gründen ihr eigenes Revier; viele Männchen werden jedoch nie dominant und nie einen Harem gewinnen, sondern paaren sich stattdessen mit willigen Weibchen innerhalb einer gemischten Gruppe.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Springboks have complex and variable social behaviour. They live in herds that may include mixed groups of non-dominant males, females and young, bachelor groups of young males, solitary territorial males and harem groups with one dominant male and several receptive females. Group size and composition change with season and food availability.\n\nThey can mate throughout the year, with breeding more frequent in the rainy season. A dominant territorial male gathers females in his territory into a harem and displays while defending the area from rivals.\n\nAfter a gestation of 5–6 months, the female gives birth to one calf. The calf initially remains hidden while its mother forages, returns to the herd after about a month and is weaned at 4 months.\n\nSpringboks reach sexual maturity at 7 months. Females remain in their natal herd, while males leave from about 6 months to join bachelor herds. At about 2 years they reach social maturity and may establish their own territory.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Springboks have complex and variable social behaviour. They live in herds that may include mixed groups of non-dominant males, females and young, bachelor groups of young males, solitary territorial males and harem groups with one dominant male and several receptive females. Group size and composition change with season and food availability.\n\nThey can mate throughout the year, with breeding more frequent in the rainy season. A dominant territorial male gathers females in his territory into a harem and displays while defending the area from rivals.\n\nAfter a gestation of 5–6 months, the female gives birth to one calf. The calf initially remains hidden while its mother forages, returns to the herd after about a month and is weaned at 4 months.\n\nSpringboks reach sexual maturity at 7 months. Females remain in their natal herd, while males leave from about 6 months to join bachelor herds. At about 2 years they reach social maturity and may establish their own territory.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los springboks presentan un comportamiento social complejo y variable. Forman grupos mixtos, grupos de machos jóvenes, machos territoriales solitarios y harenes. El tamaño y la composición dependen de la estación y del alimento disponible.\n\nPueden aparearse durante todo el año, con mayor frecuencia en la estación lluviosa.\n\nTras 5–6 meses de gestación nace una sola cría. Al principio permanece oculta, vuelve al rebaño tras aproximadamente un mes y se desteta a los 4 meses.\n\nAlcanzan la madurez sexual a los 7 meses. Las hembras permanecen en su rebaño natal y los machos se unen a grupos de solteros desde unos 6 meses; la madurez social llega hacia los 2 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les springboks ont un comportement social complexe et variable, avec des groupes mixtes, des groupes de jeunes mâles, des mâles territoriaux solitaires et des harems. La taille et la composition des groupes varient selon la saison et la nourriture.\n\nIls peuvent se reproduire toute l’année, plus souvent pendant la saison des pluies.\n\nAprès 5 à 6 mois de gestation, la femelle donne naissance à un seul petit. Il reste d’abord caché, rejoint le troupeau après environ un mois et est sevré à 4 mois.\n\nLa maturité sexuelle est atteinte à 7 mois. Les femelles restent dans leur troupeau natal et les mâles rejoignent des groupes de célibataires vers 6 mois; la maturité sociale arrive vers 2 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli springbok hanno un comportamento sociale complesso e variabile, con gruppi misti, gruppi di giovani maschi, maschi territoriali solitari e harem. Dimensioni e composizione cambiano con la stagione e la disponibilità di cibo.\n\nPossono accoppiarsi tutto l’anno, più spesso nella stagione delle piogge.\n\nDopo 5–6 mesi di gestazione nasce un solo piccolo, che inizialmente rimane nascosto, rientra nel branco dopo circa un mese e viene svezzato a 4 mesi.\n\nLa maturità sessuale viene raggiunta a 7 mesi. Le femmine restano nel branco natale, mentre i maschi si uniscono a gruppi di scapoli da circa 6 mesi; la maturità sociale arriva verso i 2 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As cabras-de-leque têm comportamento social complexo e variável, formando grupos mistos, grupos de machos jovens, machos territoriais solitários e haréns. O tamanho e a composição variam conforme a estação e o alimento disponível.\n\nPodem acasalar durante todo o ano, com maior frequência na estação chuvosa.\n\nApós 5–6 meses de gestação nasce um único filhote. Ele fica escondido no início, retorna ao rebanho após cerca de um mês e é desmamado aos 4 meses.\n\nA maturidade sexual ocorre aos 7 meses. As fêmeas permanecem no rebanho natal e os machos entram em grupos de solteiros a partir de cerca de 6 meses; a maturidade social chega por volta dos 2 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スプリングボックは複雑で変化の大きい社会構造をもち、混成群、若い雄の群れ、単独で縄張りをもつ雄、ハーレム群などを形成します。群れの大きさや構成は季節と餌の量によって変化します。繁殖は一年中可能ですが雨季に多く、妊娠期間は5～6か月で1頭の子を産みます。子は約1か月後に群れへ戻り、4か月で離乳します。性成熟は7か月で、雄は約6か月から若雄群に入り、約2歳で社会的成熟に達します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "跳羚的社会结构复杂且会变化，包括混合群、年轻雄性的单身群、独居的领地雄性以及由优势雄性和多只雌性组成的后宫群。群体大小和组成随季节及食物供应而变化。全年均可繁殖，但雨季更常见。妊娠期为5–6个月，每胎1仔；幼仔最初躲藏，约一个月后回到群体，4个月断奶。7个月达到性成熟，雄性约6个月开始离开出生群加入单身群，约2岁达到社会成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Springböcke springen häufig bis zu 2 m hoch, besonders während der Paarungszeit. Dieses Sprungverhalten wird als „Prunken“ bezeichnet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Springböcke sind unglaublich schnell und können bis zu 97 km/h laufen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Springböcke benötigen kein Wasser – sie nehmen sämtliche benötigte Flüssigkeit über die Nahrung auf.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Springböcke können sich das gesamte Jahr über paaren, aber am häufigsten tun sie das während der Regenzeit.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es gibt Springböcke mit schwarzem oder weißem Fell, diese Varianten sind aber sehr selten und bei Trophäenjägern daher sehr begehrt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Springboks often jump up to 2 m high, especially during the breeding season. This jumping behaviour is called pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks are extremely fast and can run at up to 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks do not need to drink water; they obtain all the fluid they require from their food.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks can mate throughout the year, but breeding is most common during the rainy season.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Black- or white-coated Springboks exist, but these variants are very rare and therefore highly sought after by trophy hunters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Springboks often jump up to 2 m high, especially during the breeding season. This jumping behaviour is called pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks are extremely fast and can run at up to 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks do not need to drink water; they obtain all the fluid they require from their food.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Springboks can mate throughout the year, but breeding is most common during the rainy season.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Black- or white-coated Springboks exist, but these variants are very rare and therefore highly sought after by trophy hunters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los springboks saltan con frecuencia hasta 2 m de altura, especialmente durante la época de apareamiento; este comportamiento se conoce como pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los springboks son increíblemente rápidos y pueden correr hasta 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los springboks no necesitan beber agua; obtienen de los alimentos todo el líquido que necesitan.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los springboks pueden aparearse durante todo el año, pero lo hacen con mayor frecuencia en la estación lluviosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Existen springboks de pelaje negro o blanco, pero estas variantes son muy raras y por ello muy buscadas por los cazadores de trofeos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les springboks sautent souvent jusqu’à 2 m de haut, surtout pendant la période de reproduction ; ce comportement est appelé pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les springboks sont extrêmement rapides et peuvent courir jusqu’à 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les springboks n’ont pas besoin de boire de l’eau ; ils obtiennent tout le liquide nécessaire grâce à leur nourriture.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les springboks peuvent se reproduire toute l’année, mais les accouplements sont plus fréquents pendant la saison des pluies.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Il existe des springboks au pelage noir ou blanc, mais ces variantes sont très rares et donc très recherchées par les chasseurs de trophées.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli springbok saltano spesso fino a 2 m di altezza, soprattutto durante la stagione degli accoppiamenti; questo comportamento è chiamato pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli springbok sono incredibilmente veloci e possono correre fino a 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli springbok non hanno bisogno di bere acqua: ricavano dai cibi tutti i liquidi necessari.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gli springbok possono accoppiarsi tutto l’anno, ma lo fanno più spesso durante la stagione delle piogge.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Esistono springbok dal mantello nero o bianco, ma queste varianti sono molto rare e quindi molto ricercate dai cacciatori di trofei.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "As cabras-de-leque saltam frequentemente até 2 m de altura, especialmente na época de acasalamento; esse ação é chamada de pronking.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As cabras-de-leque são extremamente rápidas e podem correr a até 97 km/h.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As cabras-de-leque não precisam beber água; obtêm dos alimentos todo o líquido de que necessitam.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As cabras-de-leque podem acasalar durante todo o ano, mas isso é mais frequente na estação chuvosa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Existem cabras-de-leque de pelagem preta ou branca, mas essas variantes são muito raras e, por isso, muito procuradas por caçadores de troféus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スプリングボックは特に繁殖期に、しばしば高さ2 mまで跳びます。この跳躍行動はプロンキングと呼ばれます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "スプリングボックは非常に速く、最高97 km/hで走ることができます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "スプリングボックは水を飲む必要がなく、必要な水分をすべて食物から得ます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "スプリングボックは一年中繁殖できますが、最も多いのは雨季です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "黒色や白色の毛をもつスプリングボックもいますが、非常に珍しく、トロフィーハンターに高く評価されています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "跳羚经常能跳到2米高，尤其在繁殖期；这种跳跃行为称为“pronking”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "跳羚速度极快，最高可达97公里/小时。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "跳羚不需要饮水，所需水分全部可从食物中获得。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "跳羚全年都可交配，但雨季最为频繁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "存在黑色或白色被毛的跳羚，但这些变异非常罕见，因此很受战利品猎人追捧。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8f8de8cb/Antelope_Springbok_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/map/Antidorcas marsupialis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOGY4ZGU4Y2IvQW50ZWxvcGVfU3ByaW5nYm9rLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Springbock – Planet Zoo 2",
+            "en": "Springbok – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Springbocks aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Springbok."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8f8de8cb/Antelope_Springbok_illustration.jpg",
+          "alt": {
+            "de": "Springbock – Zoopedia-Illustration",
+            "en": "Springbok – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Springbocks aus der Planet Zoo 2 Zoopedia.",
+            "en": "Springbok illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Springbock",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/springbock",
+        "en": "https://www.planetzoogame.com/2/zoopedia/springbok",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/springbok",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/gacela-saltarina-de-el-cabo",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/springbok",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/springbok",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/cabra-de-leque",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%9C%E3%83%83%E3%82%AF",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%B7%B3%E7%BE%9A"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Projektfilter werden nur dort gesetzt, wo die Zoopedia-Angabe eindeutig auf eine bestehende Projektkategorie abgebildet werden kann."
+    }
+  }
+}

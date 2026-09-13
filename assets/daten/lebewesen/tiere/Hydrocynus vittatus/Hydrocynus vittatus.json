@@ -1,0 +1,935 @@
+{
+  "id": "Hydrocynus vittatus",
+  "identitaet": {
+    "namen": {
+      "de": "Tigersalmler",
+      "en": "African Tigerfish",
+      "en-US": "African Tigerfish",
+      "es": "Pez tigre goliat",
+      "fr": "Poisson-tigre africain",
+      "it": "Pesce tigre africano",
+      "pt-BR": "Peixe-tigre-africano",
+      "ja": "アフリカンタイガーフィッシュ",
+      "zh-Hans": "黄金猛鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Characiformes",
+          "familie": "Alestidae",
+          "gattung": "Hydrocynus",
+          "art": "Hydrocynus vittatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": null,
+          "max": 105,
+          "einheit": "cm",
+          "hinweis": {
+            "de": "Weibchen können laut Zoopedia bis zu 105 cm lang werden.",
+            "en": "According to the Zoopedia, females can reach up to 105 cm."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "min": null,
+          "max": 74,
+          "einheit": "cm",
+          "hinweis": {
+            "de": "Männchen werden laut Zoopedia im Durchschnitt bis zu 74 cm lang.",
+            "en": "According to the Zoopedia, males average up to 74 cm in length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 10,
+          "max": 15,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "min": null,
+          "max": null,
+          "durchschnitt": 12,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Männchen wiegen laut Zoopedia etwa 12 kg.",
+            "en": "According to the Zoopedia, males weigh about 12 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 10,
+          "max": 20,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [
+            "Hydrocynus vittatus"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "min": 24,
+          "max": 48,
+          "einheit": "stunde",
+          "hinweis": {
+            "de": "Die Zoopedia gibt an, dass die Eier meist innerhalb von 24 bis 48 Stunden schlüpfen.",
+            "en": "The Zoopedia states that the eggs usually hatch within 24 to 48 hours."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "wert": "solitary",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Erwachsene Tigersalmler leben überwiegend einzelgängerisch und jagen meist allein; unter günstigen Bedingungen können sie sich locker zusammenschließen.",
+            "en": "Adult African Tigerfish are predominantly solitary and usually hunt alone, but may loosely aggregate under favorable conditions."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "jungtier",
+          "wert": "smallGroups",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Jungtiere bilden laut Zoopedia häufiger kleine Gruppen.",
+            "en": "According to the Zoopedia, juveniles more often form small groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "lakesAndRivers",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art als Süßwasser-Räuber in Flüssen und Seen.",
+            "en": "The Zoopedia describes the species as a freshwater predator of rivers and lakes."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt erwachsene Tigersalmler als Fischjäger; Larven und Jungfische fressen zunächst Plankton und kleine wirbellose Tiere.",
+              "en": "The Zoopedia describes adult African Tigerfish as fish predators; larvae and juveniles initially feed on plankton and small invertebrates."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "plankton",
+              "typ": "nahrung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineWirbelloseTiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "fische",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt erwachsene Tiere Fischjäger.",
+                "en": "The Zoopedia describes adults as fish predators."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Tigersalmler (auch Hydrocynus vittatus) ist ein weit verbreiteter und kraftvoller Süßwasser-Räuber, der in Flüssen und Seen südlich der Sahara vorkommt, darunter im Kongo-, Nil-, Sambesi- und Okavango-System sowie im Tanganjikasee.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez tigre africano (Hydrocynus vittatus) vive en ríos y lagos al sur del Sáhara, incluidos los sistemas del Congo, Nilo, Zambeze y Okavango y el lago Tanganica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le poisson-tigre africain (Hydrocynus vittatus) vit dans les rivières et les lacs au sud du Sahara, notamment dans les bassins du Congo, du Nil, du Zambèze et de l’Okavango ainsi que dans le lac Tanganyika.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce tigre africano (Hydrocynus vittatus) vive nei fiumi e nei laghi a sud del Sahara, compresi i sistemi del Congo, del Nilo, dello Zambesi e dell’Okavango e il lago Tanganica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-tigre-africano (Hydrocynus vittatus) ocorre em rios e lagos ao sul do Saara, incluindo os sistemas dos rios Congo, Nilo, Zambeze e Okavango e o lago Tanganica.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカンタイガーフィッシュ（Hydrocynus vittatus）は、コンゴ川、ナイル川、ザンベジ川、オカバンゴ川の水系やタンガニーカ湖を含むサハラ以南の河川や湖に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄金猛鱼（Hydrocynus vittatus）分布在撒哈拉以南的河流和湖泊中，包括刚果河、尼罗河、赞比西河和奥卡万戈河水系以及坦噶尼喀湖。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Tigersalmler (auch Hydrocynus vittatus) ist ein weit verbreiteter und kraftvoller Süßwasser-Räuber, der in Flüssen und Seen südlich der Sahara vorkommt, darunter im Kongo-, Nil-, Sambesi- und Okavango-System sowie im Tanganjikasee.\n\nDie Fische sind stromlinienförmig und silbrig gefärbt, mit schmalen schwarzen Querstreifen. Sie besitzen eine tief gegabelte Schwanzflosse, oft mit rötlichen Rändern, sowie einen großen Kopf mit spitzen, ineinandergreifenden Zähnen.\n\nWeibchen sind in der Regel größer und kräftiger als Männchen. Sie können eine Länge von bis zu 105 cm erreichen und zwischen 10 und 15 kg wiegen. Männchen bleiben meist kleiner und werden im Durchschnitt bis zu 74 cm lang und etwa 12 kg schwer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez tigre africano (Hydrocynus vittatus) es un depredador de agua dulce potente y ampliamente distribuido que vive en ríos y lagos al sur del Sáhara, incluidos los sistemas del Congo, Nilo, Zambeze y Okavango, además del lago Tanganica.\n\nPresenta un cuerpo aerodinámico y plateado con estrechas franjas negras transversales, una aleta caudal profundamente ahorquillada, a menudo con bordes rojizos, y una cabeza grande con dientes puntiagudos que encajan entre sí.\n\nLas hembras suelen ser más grandes y robustas que los machos. Pueden alcanzar 105 cm y pesar entre 10 y 15 kg. Los machos suelen ser más pequeños, con una longitud media de hasta 74 cm y un peso de unos 12 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le poisson-tigre africain (Hydrocynus vittatus) est un puissant prédateur d’eau douce largement répandu dans les rivières et les lacs au sud du Sahara, notamment dans les bassins du Congo, du Nil, du Zambèze et de l’Okavango ainsi que dans le lac Tanganyika.\n\nSon corps est fuselé et argenté, avec de fines bandes transversales noires. Il possède une nageoire caudale profondément fourchue, souvent bordée de rouge, ainsi qu’une grosse tête munie de dents pointues qui s’emboîtent.\n\nLes femelles sont généralement plus grandes et plus robustes que les mâles. Elles peuvent atteindre 105 cm et peser entre 10 et 15 kg. Les mâles restent généralement plus petits, atteignant en moyenne jusqu’à 74 cm et environ 12 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce tigre africano (Hydrocynus vittatus) è un potente predatore d’acqua dolce ampiamente diffuso nei fiumi e nei laghi a sud del Sahara, compresi i sistemi del Congo, del Nilo, dello Zambesi e dell’Okavango e il lago Tanganica.\n\nHa un corpo affusolato e argentato con strette bande trasversali nere, una pinna caudale profondamente forcuta spesso bordata di rosso e una grande testa con denti appuntiti e intersecati.\n\nLe femmine sono generalmente più grandi e robuste dei maschi. Possono raggiungere 105 cm di lunghezza e pesare tra 10 e 15 kg. I maschi restano in genere più piccoli, con una lunghezza media fino a 74 cm e un peso di circa 12 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-tigre-africano (Hydrocynus vittatus) é um predador de água doce poderoso e amplamente distribuído em rios e lagos ao sul do Saara, incluindo os sistemas dos rios Congo, Nilo, Zambeze e Okavango e o lago Tanganica.\n\nOs peixes têm corpo hidrodinâmico e prateado, com estreitas faixas transversais pretas. Possuem nadadeira caudal profundamente bifurcada, muitas vezes com bordas avermelhadas, e cabeça grande com dentes pontiagudos que se encaixam.\n\nAs fêmeas geralmente são maiores e mais robustas que os machos. Podem chegar a 105 cm e pesar entre 10 e 15 kg. Os machos costumam ser menores, atingindo em média até 74 cm e cerca de 12 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカンタイガーフィッシュ（Hydrocynus vittatus）は、サハラ砂漠以南の河川や湖に広く分布する強力な淡水性捕食魚で、コンゴ川、ナイル川、ザンベジ川、オカバンゴ川の水系やタンガニーカ湖にも生息します。\n\n流線型の銀色の体に細い黒い横縞があり、深く二又に分かれた尾びれは赤みを帯びることがあります。大きな頭には鋭くかみ合う歯があります。\n\n雌は一般に雄より大きく頑丈で、全長105 cm、体重10～15 kgに達します。雄は通常より小さく、平均で全長74 cmほど、体重約12 kgです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄金猛鱼（Hydrocynus vittatus）是一种分布广泛、力量强大的淡水捕食鱼，生活在撒哈拉以南的河流和湖泊中，包括刚果河、尼罗河、赞比西河和奥卡万戈河水系以及坦噶尼喀湖。\n\n它们体形流线、呈银色，并带有狭窄的黑色横纹；尾鳍深叉，边缘常带红色，头部较大，长有尖锐并相互咬合的牙齿。\n\n雌鱼通常比雄鱼更大、更强壮，可长到105厘米，体重10至15千克。雄鱼通常较小，平均可长到74厘米左右，体重约12千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Tigersalmler gilt als nicht gefährdet und ist in ganz Subsahara-Afrika heimisch. In dieser Region spielt er sowohl eine wichtige ökologische als auch wirtschaftliche Rolle für die örtliche Bevölkerung. Die Populationszahlen der Tigersalmler sind zurückgegangen, was auf Umweltverschmutzung, Wasserentnahme, unkontrollierten Fischereidruck und physische Hürden zurückzuführen ist, die die Wanderrouten und das Laichen behindern und zu einer Fragmentierung der Populationen führen.\n\nTigersalmler stehen in manchen Gebieten unter Naturschutz. Forschungen konzentrieren sich darauf, die Anforderungen wichtiger Flüsse bezüglich Wassermenge und -qualität zu ermitteln, um fundierte Entscheidungen für die Verwaltung und Regulierung von Fischhabitaten zu treffen. Umfassendere Naturschutzmaßnahmen zielen darauf ab, die Wasserqualität zu verbessern, die Verschmutzung durch Landwirtschaft und die Abholzung zu minimieren und die Verbindungswege zwischen Süßwassersystemen zu erhalten, um gesündere Fischpopulationen zu fördern.\n\nDie kontinuierliche wissenschaftliche Forschung und die Berücksichtigung von Tigersalmlern bei der Gestaltung von Schutzgebieten in Süßgewässern tragen dazu bei, eine Grundlage für evidenzbasierte Schutzstrategien zu schaffen und sorgen für eine insgesamt positive Entwicklung für den Tigersalmler.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The African Tigerfish is classified as Least Concern and is native across sub-Saharan Africa. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The African Tigerfish is classified as Least Concern and is native across sub-Saharan Africa. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El pez tigre africano está clasificado como de preocupación menor y es nativo de toda el África subsahariana. Sus poblaciones han disminuido por la contaminación, la extracción de agua, la presión pesquera no controlada y las barreras físicas que dificultan las migraciones y el desove y fragmentan las poblaciones.\n\nEn algunas zonas está protegido. La investigación se centra en las necesidades de caudal y calidad del agua, mientras que otras medidas buscan mejorar la calidad del agua, reducir la contaminación agrícola y la deforestación y mantener la conectividad entre sistemas de agua dulce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le poisson-tigre africain est classé en préoccupation mineure et vit dans toute l’Afrique subsaharienne. Ses populations ont diminué en raison de la pollution, des prélèvements d’eau, de la pression de pêche non contrôlée et d’obstacles physiques qui perturbent les migrations et la reproduction et fragmentent les populations.\n\nL’espèce est protégée dans certaines régions. Les recherches portent sur les besoins des rivières en débit et en qualité d’eau, tandis que d’autres mesures visent à améliorer la qualité de l’eau, réduire la pollution agricole et la déforestation et maintenir les connexions entre les systèmes d’eau douce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce tigre africano è classificato a rischio minimo ed è diffuso nell’Africa subsahariana. Le popolazioni sono diminuite a causa di inquinamento, prelievo d’acqua, pressione di pesca incontrollata e barriere fisiche che ostacolano migrazioni e riproduzione e frammentano le popolazioni.\n\nIn alcune aree la specie è protetta. La ricerca studia le esigenze di portata e qualità dell’acqua, mentre altre misure puntano a migliorare la qualità dell’acqua, ridurre l’inquinamento agricolo e la deforestazione e mantenere i collegamenti tra sistemi d’acqua dolce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O peixe-tigre-africano é classificado como pouco preocupante e é nativo de toda a África subsaariana. Suas populações diminuíram por causa da poluição, retirada de água, pressão pesqueira descontrolada e barreiras físicas que prejudicam migrações e desova e fragmentam as populações.\n\nA espécie é protegida em algumas áreas. As pesquisas estudam as necessidades de vazão e qualidade da água, enquanto outras medidas buscam melhorar a qualidade da água, reduzir a poluição agrícola e o desmatamento e manter a conectividade entre sistemas de água doce.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカンタイガーフィッシュは低危険種とされ、サハラ以南のアフリカに広く分布します。個体数は、汚染、取水、無秩序な漁業圧、回遊や産卵を妨げて個体群を分断する物理的障害などにより減少しています。\n\n一部地域では保護対象となっています。研究では河川の水量や水質の要件が調べられ、より広い保全策として水質改善、農業由来の汚染や森林伐採の低減、淡水系同士のつながりの維持が進められています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄金猛鱼被列为无危物种，广泛原产于撒哈拉以南非洲。由于污染、取水、缺乏管制的捕捞压力以及阻碍洄游和产卵并造成种群破碎化的物理障碍，其种群数量已经下降。\n\n该物种在部分地区受到保护。研究重点包括重要河流的水量和水质需求，更广泛的保护措施则旨在改善水质、减少农业污染和森林砍伐，并保持淡水系统之间的连通性。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Tigersalmler leben meist einzelgängerisch, können sich aber unter günstigen Bedingungen locker zusammenschließen. Jungtiere bilden öfter Gruppen, während erwachsene Tiere überwiegend allein jagen und Artgenossen nur dann dulden, wenn es ihnen Vorteile bringt.\n\nDie Fortpflanzung ist eng an die Zeiten im Jahr gebunden, zu denen Flüsse über die Ufer treten. Das Balzverhalten ist eher unauffällig. Umweltfaktoren wie steigende Wasserstände, stärkere Strömung und Temperaturveränderungen während der Regenzeit geben den Tieren das Startzeichen. Zu Überschwemmungszeiten wandern die erwachsenen Tiere in überflutete Gebiete, wo Nahrung reichlich vorhanden ist und weniger Fressfeinde lauern. Dort geben Männchen und Weibchen gleichzeitig Eier und Samenflüssigkeit ins Wasser ab, sodass die Befruchtung außerhalb des Körpers erfolgt.\n\nEine Brutpflege findet nicht statt. Nach dem Ablaichen kehren die erwachsenen Tiere rasch in tiefere Flussbereiche zurück. Die Eier schlüpfen schnell, meist innerhalb von 24 bis 48 Stunden, was eine Anpassung an die unsicheren Bedingungen in Überschwemmungsgebieten darstellt. Die Larven und Jungfische wachsen in flachen, nährstoffreichen Gewässern heran und ernähren sich zunächst von Plankton und kleinen wirbellosen Tieren, bevor sie mit zunehmendem Alter zu Fischjägern werden.\n\nJungtiere bilden häufig kleine Gruppen, was ihnen Schutz bietet und die Nahrungssuche erleichtert. Sie wachsen schnell heran und werden schon in relativ jungem Alter zu effektiven Räubern. Mit zunehmendem Alter leben sie eher einzelgängerisch. Die Geschlechtsreife erreichen sie meist nach 2 bis 3 Jahren, und sie können 10 bis 20 Jahre alt werden. In dieser Zeit nehmen sie mehrfach an den saisonalen Wanderungen zur Fortpflanzung teil.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "African Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "African Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los peces tigre africanos viven principalmente solos, aunque pueden agruparse de forma laxa en condiciones favorables. Los juveniles forman grupos con mayor frecuencia y los adultos suelen cazar solos.\n\nLa reproducción está estrechamente ligada a las inundaciones estacionales. Durante la época de lluvias migran a zonas inundadas, donde machos y hembras liberan óvulos y esperma al agua y la fecundación es externa.\n\nNo hay cuidado parental. Los huevos suelen eclosionar en 24–48 horas. Las larvas y juveniles crecen en aguas poco profundas y ricas en nutrientes, alimentándose primero de plancton y pequeños invertebrados antes de pasar a cazar peces. Alcanzan la madurez sexual a los 2–3 años y pueden vivir entre 10 y 20 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les poissons-tigres africains vivent surtout seuls, mais peuvent se regrouper lâchement lorsque les conditions sont favorables. Les jeunes forment plus souvent des groupes, tandis que les adultes chassent généralement seuls.\n\nLa reproduction est étroitement liée aux crues saisonnières. Pendant la saison des pluies, les adultes gagnent les zones inondées, où mâles et femelles libèrent œufs et sperme dans l’eau et la fécondation est externe.\n\nIl n’y a pas de soins parentaux. Les œufs éclosent généralement en 24 à 48 heures. Les larves et les jeunes se nourrissent d’abord de plancton et de petits invertébrés avant de devenir piscivores. La maturité sexuelle est atteinte après 2 à 3 ans et l’espèce peut vivre 10 à 20 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "I pesci tigre africani vivono per lo più solitari, ma in condizioni favorevoli possono riunirsi in gruppi poco compatti. I giovani formano gruppi più spesso, mentre gli adulti cacciano soprattutto da soli.\n\nLa riproduzione è strettamente legata alle inondazioni stagionali. Durante la stagione delle piogge gli adulti migrano nelle aree allagate, dove maschi e femmine rilasciano uova e sperma nell’acqua e la fecondazione avviene esternamente.\n\nNon vi sono cure parentali. Le uova si schiudono in genere entro 24–48 ore. Larve e giovani si nutrono inizialmente di plancton e piccoli invertebrati prima di diventare predatori di pesci. La maturità sessuale arriva dopo 2–3 anni e la specie può vivere 10–20 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os peixes-tigre-africanos vivem principalmente sozinhos, mas podem formar agrupamentos frouxos em condições favoráveis. Jovens formam grupos com mais frequência, enquanto adultos geralmente caçam sozinhos.\n\nA reprodução está fortemente ligada às enchentes sazonais. Na estação chuvosa, os adultos migram para áreas inundadas, onde machos e fêmeas liberam ovos e esperma na água, ocorrendo fertilização externa.\n\nNão há cuidado parental. Os ovos normalmente eclodem em 24–48 horas. Larvas e jovens se alimentam primeiro de plâncton e pequenos invertebrados antes de se tornarem predadores de peixes. A maturidade sexual é atingida após 2–3 anos e a espécie pode viver de 10 a 20 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカンタイガーフィッシュは主に単独で生活しますが、条件が良いと緩やかな群れを作ることがあります。幼魚は成魚より群れを作ることが多く、成魚は主に単独で狩りをします。\n\n繁殖は季節的な増水と密接に関係します。雨季の増水時には成魚が氾濫域へ移動し、雄と雌が同時に卵と精子を水中へ放出して体外受精します。\n\n親による保護はありません。卵は通常24～48時間で孵化します。仔魚と幼魚は浅く栄養豊富な水域で育ち、最初はプランクトンや小型無脊椎動物を食べ、成長すると魚を捕食するようになります。性成熟は通常2～3年で、寿命は10～20年です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "黄金猛鱼主要独居，但在条件有利时也会形成松散群体。幼鱼更常成群，成鱼则通常单独捕猎。\n\n繁殖与季节性洪水密切相关。雨季水位上升时，成鱼迁入被淹没区域，雌雄同时将卵和精子释放到水中进行体外受精。\n\n该物种不进行育幼。鱼卵通常在24至48小时内孵化。仔鱼和幼鱼在浅而富营养的水域中成长，最初以浮游生物和小型无脊椎动物为食，随后逐渐转为捕食鱼类。通常2至3年达到性成熟，寿命可达10至20年。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "In einigen Regionen Afrikas genießen Tigersalmler einen fast mythischen Ruf. Sie tragen besondere Namen wie „mbenga“ im Suaheli, was so viel wie „gefährlicher Fisch“ bedeutet. Das spiegelt den Respekt wider, den viele Menschen diesen Tieren entgegenbringen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Tigersalmler besitzen große, dolchartige Zähne, die selbst bei geschlossenem Maul sichtbar sind und sich ideal zum Schnappen und Zerreißen von Beute eignen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schwanz- und paarige Flossen können besonders bei erwachsenen Männchen rötliche, gelbliche oder orangefarbene Töne zeigen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Tigersalmler reagieren empfindlich auf Sauerstoffmangel und sind auf gesunde Beutebestände angewiesen. Ihr Vorkommen gilt daher oft als Hinweis auf ein intaktes Flussökosystem.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sie halten sich meist in festen Revieren innerhalb von Flüssen auf, unternehmen jedoch zur Jagd oder Fortpflanzung weite Wanderungen von mehreren Kilometern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "In some parts of Africa, African Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The tail and paired fins can show reddish, yellowish or orange tones, especially in adult males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They usually remain in established territories within rivers but may travel several kilometres for hunting or reproduction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "In some parts of Africa, African Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The tail and paired fins can show reddish, yellowish or orange tones, especially in adult males.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "African Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "They usually remain in established territories within rivers but may travel several kilometres for hunting or reproduction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "En algunas regiones de África, los peces tigre africanos tienen una reputación casi mítica. Reciben nombres especiales como «mbenga» en suajili, aproximadamente «pez peligroso».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los peces tigre africanos poseen grandes dientes en forma de daga, visibles incluso con la boca cerrada y adecuados para atrapar y desgarrar presas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La aleta caudal y las aletas pares pueden mostrar tonos rojizos, amarillentos o anaranjados, especialmente en machos adultos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Son sensibles a la falta de oxígeno y dependen de poblaciones de presas sanas; su presencia suele considerarse un indicador de un ecosistema fluvial intacto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Suelen mantenerse en territorios fijos dentro de los ríos, aunque recorren varios kilómetros para cazar o reproducirse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Dans certaines régions d’Afrique, les poissons-tigres africains ont une réputation presque mythique et portent des noms particuliers comme « mbenga » en swahili, qui signifie approximativement « poisson dangereux ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils possèdent de grandes dents en forme de dague, visibles même lorsque la bouche est fermée, adaptées pour saisir et déchirer les proies.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La nageoire caudale et les nageoires paires peuvent présenter des teintes rougeâtres, jaunâtres ou orangées, surtout chez les mâles adultes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils sont sensibles au manque d’oxygène et dépendent de populations de proies saines ; leur présence est donc souvent considérée comme un signe de bon état de l’écosystème fluvial.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ils occupent généralement des territoires fixes dans les rivières mais effectuent des déplacements de plusieurs kilomètres pour chasser ou se reproduire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "In alcune regioni dell’Africa i pesci tigre africani hanno una reputazione quasi mitica e nomi particolari come “mbenga” in swahili, che significa approssimativamente “pesce pericoloso”.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Possiedono grandi denti simili a pugnali, visibili anche a bocca chiusa e adatti ad afferrare e lacerare le prede.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La pinna caudale e le pinne pari possono mostrare tonalità rossastre, giallastre o arancioni, soprattutto nei maschi adulti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sono sensibili alla carenza di ossigeno e dipendono da popolazioni sane di prede; la loro presenza è quindi spesso considerata un indicatore di un ecosistema fluviale integro.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Di solito restano in territori fissi nei fiumi, ma compiono spostamenti di diversi chilometri per cacciare o riprodursi.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Em algumas regiões da África, os peixes-tigre-africanos têm uma reputação quase mítica e recebem nomes especiais como “mbenga” em suaíli, aproximadamente “peixe perigoso”.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eles possuem grandes dentes em forma de adaga, visíveis mesmo com a boca fechada e ideais para agarrar e rasgar presas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A nadadeira caudal e as nadadeiras pares podem apresentar tons avermelhados, amarelados ou alaranjados, especialmente em machos adultos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Eles são sensíveis à falta de oxigênio e dependem de populações saudáveis de presas; sua presença costuma ser considerada um indicador de um ecossistema fluvial intacto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Geralmente permanecem em territórios fixos nos rios, mas percorrem vários quilômetros para caçar ou se reproduzir.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "アフリカの一部地域では、アフリカンタイガーフィッシュはほとんど神話的な評判を持ち、スワヒリ語の「mbenga」（おおよそ「危険な魚」）のような特別な呼び名があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "口を閉じても見える大きな短剣状の歯を持ち、獲物を捕らえて引き裂くのに適しています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "尾びれや対になったひれは、特に成魚の雄で赤色、黄色、オレンジ色を帯びることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "酸素不足に敏感で健全な獲物個体群に依存するため、その存在は良好な河川生態系の指標とみなされることがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "通常は河川内の一定の縄張りにいますが、狩りや繁殖のために数キロメートル移動することがあります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "在非洲部分地区，黄金猛鱼几乎具有神话般的名声，并有一些特殊称呼，例如斯瓦希里语中的“mbenga”，大意为“危险的鱼”。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们拥有大型匕首状牙齿，即使闭嘴时也清晰可见，非常适合抓住并撕裂猎物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "尾鳍和成对的鳍可能呈现红色、黄色或橙色调，成年雄鱼尤其明显。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们对缺氧较敏感，并依赖健康的猎物种群，因此其出现常被视为河流生态系统状况良好的指标。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "它们通常在河流中保持固定领地，但会为了捕猎或繁殖进行数公里的长距离迁移。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y el contenido de la Zoopedia aún puede cambiar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et le contenu de la Zoopedia peut encore évoluer.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in sviluppo attivo e il contenuto della Zoopedia può ancora cambiare.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo e o conteúdo da Zoopedia ainda pode mudar.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中で、Zoopediaの内容は今後変更される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2目前仍在积极开发中，Zoopedia内容今后可能继续变化。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_African_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Hydrocynus vittatus/map/Hydrocynus vittatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjI2OGNmZDEvVGlnZXJmaXNoX0FmcmljYW4uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Tigersalmler – Planet Zoo 2",
+            "en": "African Tigerfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Tigersalmlers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the African Tigerfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Hydrocynus vittatus/bilder/Hydrocynus vittatus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_African_illustration.jpg",
+          "alt": {
+            "de": "Tigersalmler – Zoopedia-Illustration",
+            "en": "African Tigerfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Tigersalmlers aus der Planet Zoo 2 Zoopedia.",
+            "en": "African Tigerfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Hydrocynus vittatus/bilder/Hydrocynus vittatus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Tigersalmler",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/tigersalmler",
+        "en": "https://www.planetzoogame.com/2/zoopedia/african-tigerfish",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/african-tigerfish",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pez-tigre-goliat",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/poisson-tigre-africain",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-tigre-africano",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/peixe-tigre-africano",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB%E3%83%B3%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E9%87%91%E7%8C%9B%E9%B1%BC"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Projektfilter werden nur dort gesetzt, wo die Zoopedia-Angabe eindeutig auf eine bestehende Projektkategorie abgebildet werden kann."
+    }
+  }
+}

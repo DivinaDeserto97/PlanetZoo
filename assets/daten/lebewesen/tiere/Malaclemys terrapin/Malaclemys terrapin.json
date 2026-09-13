@@ -1,0 +1,671 @@
+{
+  "id": "Malaclemys terrapin",
+  "identitaet": {
+    "namen": {
+      "de": "Diamantschildkröte",
+      "en": "Diamondback Terrapin",
+      "en-US": "Diamondback Terrapin",
+      "es": "Tortuga espalda de diamante",
+      "fr": "Tortue diamant",
+      "it": "Tartaruga dal dorso di diamante",
+      "pt-BR": "Cágado-diamante",
+      "ja": "キスイガメ",
+      "zh-Hans": "钻纹龟"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Testudines",
+          "familie": "Emydidae",
+          "gattung": "Malaclemys",
+          "art": "Malaclemys terrapin",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "durchschnitt": 13,
+          "einheit": "cm",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Männchen im Schnitt als etwa 13 cm groß.",
+            "en": "The Zoopedia describes males as averaging about 13 cm in size."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "durchschnitt": 17,
+          "einheit": "cm",
+          "hinweis": {
+            "de": "Die Zoopedia nennt bei Weibchen ausdrücklich eine durchschnittliche Panzerlänge von etwa 17 cm.",
+            "en": "The Zoopedia explicitly gives females an average carapace length of about 17 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "durchschnitt": 0.32,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "durchschnitt": 0.72,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [
+            "Malaclemys terrapin"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Männchen sind laut Zoopedia mit 110 mm Körpergröße geschlechtsreif, meist nach 2 bis 3 Jahren.",
+            "en": "According to the Zoopedia, males mature at 110 mm, usually after 2–3 years."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 8,
+          "max": 10,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Weibchen sind laut Zoopedia mit 171 mm geschlechtsreif, was einem Alter von 8 bis 10 Jahren entspricht.",
+            "en": "According to the Zoopedia, females mature at 171 mm, corresponding to 8–10 years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfgroesse",
+          "wert": 50,
+          "einheit": "mm",
+          "hinweis": {
+            "de": "Die Zoopedia gibt für frisch geschlüpfte Jungtiere eine Länge von etwa 50 mm an. Eine Eizahl oder Inkubationsdauer wird auf der mitgeschickten Seite nicht genannt.",
+            "en": "The Zoopedia gives hatchlings a length of about 50 mm. The provided page does not state clutch size or incubation duration."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "variable",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Bei ausreichend Platz tolerieren Diamantschildkröten Artgenossen und zeigen mitunter Sozialverhalten, hauptsächlich während der Paarungszeit.",
+            "en": "With sufficient space, Diamondback Terrapins tolerate conspecifics and may show social behavior, mainly during the mating season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "wetlands",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Sümpfe entlang der Küsten im Süden und Osten der USA und beschreibt Brackwasser als Lebensraum.",
+            "en": "The Zoopedia names coastal marshes in the southern and eastern United States and describes brackish water as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Diamantschildkröte (auch Malaclemys terrapin) ist eine kleine Schildkrötenart, die in den Sümpfen entlang der Küsten im Süden und Osten der USA heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Diamondback Terrapin (Malaclemys terrapin) is a small turtle species native to coastal marshes in the southern and eastern United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Diamondback Terrapin (Malaclemys terrapin) is a small turtle species native to coastal marshes in the southern and eastern United States.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La tortuga espalda de diamante (Malaclemys terrapin) es una pequeña especie de tortuga nativa de los pantanos costeros del sur y este de Estados Unidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue diamant (Malaclemys terrapin) est une petite espèce de tortue originaire des marais côtiers du sud et de l’est des États-Unis.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tartaruga dal dorso di diamante (Malaclemys terrapin) è una piccola specie di tartaruga originaria delle paludi costiere del sud e dell’est degli Stati Uniti.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O cágado-diamante (Malaclemys terrapin) é uma pequena espécie de tartaruga nativa dos pântanos costeiros do sul e do leste dos Estados Unidos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キスイガメ（Malaclemys terrapin）は、アメリカ合衆国南部および東部の沿岸湿地に生息する小型のカメです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "钻纹龟（Malaclemys terrapin）是一种小型龟类，原产于美国南部和东部沿海的沼泽湿地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Diamantschildkröte (auch Malaclemys terrapin) ist eine kleine Schildkrötenart, die in den Sümpfen entlang der Küsten im Süden und Osten der USA heimisch ist.\n\nDie Tiere sind leicht an ihrem Panzer zu erkennen, der aus verschränkt angeordneten „Diamanten“ besteht, die mit hellen und dunklen konzentrischen Ringen gemustert sind. Muster und Färbung sind jedoch von Tier zu Tier unterschiedlich.\n\nMännchen werden im Schnitt etwa 13 cm groß und wiegen rund 0,32 kg. Weibchen sind deutlich größer: Sie erreichen im Schnitt etwa 17 cm Panzerlänge und etwa 0,72 kg Gewicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Diamondback Terrapin (Malaclemys terrapin) is a small turtle species native to coastal marshes in the southern and eastern United States.\n\nThe animals are easily recognized by their shell, which is patterned with interlocking “diamonds” marked by light and dark concentric rings. Pattern and coloration vary between individuals.\n\nMales average about 13 cm in size and weigh around 0.32 kg. Females are considerably larger, averaging about 17 cm in carapace length and around 0.72 kg in weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Diamondback Terrapin (Malaclemys terrapin) is a small turtle species native to coastal marshes in the southern and eastern United States.\n\nThe animals are easily recognized by their shell, which is patterned with interlocking “diamonds” marked by light and dark concentric rings. Pattern and coloration vary between individuals.\n\nMales average about 13 cm in size and weigh around 0.32 kg. Females are considerably larger, averaging about 17 cm in carapace length and around 0.72 kg in weight.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La tortuga espalda de diamante (Malaclemys terrapin) es una pequeña especie de tortuga nativa de los pantanos costeros del sur y este de Estados Unidos.\n\nSe reconoce fácilmente por su caparazón, formado por dibujos de “diamantes” entrelazados con anillos concéntricos claros y oscuros. El patrón y la coloración varían entre individuos.\n\nLos machos miden de media unos 13 cm y pesan alrededor de 0,32 kg. Las hembras son claramente mayores y alcanzan de media unos 17 cm de longitud de caparazón y unos 0,72 kg de peso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue diamant (Malaclemys terrapin) est une petite espèce de tortue originaire des marais côtiers du sud et de l’est des États-Unis.\n\nElle se reconnaît facilement à sa carapace ornée de motifs en « diamants » imbriqués, marqués d’anneaux concentriques clairs et foncés. Les motifs et la coloration varient selon les individus.\n\nLes mâles mesurent en moyenne environ 13 cm et pèsent près de 0,32 kg. Les femelles sont nettement plus grandes, avec environ 17 cm de longueur de carapace et 0,72 kg en moyenne.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tartaruga dal dorso di diamante (Malaclemys terrapin) è una piccola specie di tartaruga originaria delle paludi costiere del sud e dell’est degli Stati Uniti.\n\nÈ facilmente riconoscibile per il carapace con motivi a “diamante” intrecciati e anelli concentrici chiari e scuri. Motivi e colorazione variano da individuo a individuo.\n\nI maschi misurano in media circa 13 cm e pesano circa 0,32 kg. Le femmine sono nettamente più grandi e raggiungono in media circa 17 cm di lunghezza del carapace e 0,72 kg di peso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O cágado-diamante (Malaclemys terrapin) é uma pequena espécie de tartaruga nativa dos pântanos costeiros do sul e do leste dos Estados Unidos.\n\nÉ facilmente reconhecido pelo casco com desenhos de “diamantes” interligados e anéis concêntricos claros e escuros. O padrão e a coloração variam entre indivíduos.\n\nOs machos medem em média cerca de 13 cm e pesam aproximadamente 0,32 kg. As fêmeas são bem maiores, chegando em média a cerca de 17 cm de comprimento de casco e 0,72 kg de peso.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キスイガメ（Malaclemys terrapin）は、アメリカ合衆国南部および東部の沿岸湿地に生息する小型のカメです。\n\n甲羅には明暗の同心円で彩られた、組み合わさった「ダイヤモンド」状の模様があり、個体によって模様や色合いが異なります。\n\nオスは平均約13 cm、体重約0.32 kgです。メスはかなり大きく、甲長は平均約17 cm、体重は約0.72 kgに達します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "钻纹龟（Malaclemys terrapin）是一种小型龟类，原产于美国南部和东部沿海的沼泽湿地。\n\n它们的背甲具有交错排列的“钻石”状图案，并带有明暗相间的同心环纹，因此很容易辨认；不同个体的花纹和颜色会有所差异。\n\n雄性平均约13厘米，体重约0.32千克。雌性明显更大，背甲长度平均约17厘米，体重约0.72千克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Diamantschildkröte gilt als gefährdet. Anfang des 20. Jahrhunderts wurde sie durch die intensive Jagd – begehrt waren ihr Fleisch und ihr Panzer – beinahe ausgerottet. Zwar haben sich die Bestände seitdem teilweise erholt, doch heute ist die Art neuen Bedrohungen ausgesetzt. Besonders häufig ertrinken Diamantschildkröten in den Krabbenfallen der kommerziellen Fischerei. Auch der Straßenverkehr stellt eine Gefahr dar, wenn die Tiere auf der Suche nach geeigneten Nistplätzen Straßen überqueren müssen. Hinzu kommen Fressfeinde in dicht besiedelten Gebieten sowie der Verlust ihrer Brackwasser-Lebensräume durch Bebauung und steigende Meeresspiegel. Trotz bestehender Schutzmaßnahmen werden Diamantschildkröten in einigen Regionen illegal für den Haustierhandel gesammelt.\n\nIn vielen Ländern stehen Diamantschildkröten unter Schutz und dürfen nicht gejagt werden, auch wenn es dabei einige Ausnahmen gibt. Spezielle Vorrichtungen an Krabbenfallen können verhindern, dass die Tiere als Beifang ertrinken. Eine flächendeckende Einführung dieser Maßnahmen stößt jedoch teilweise auf Widerstand aus der Fischereiwirtschaft. Um die Zahl überfahrener Schildkröten zu verringern, werden Schutzzäune entlang gefährdeter Straßenabschnitte errichtet. Daneben gibt es Projekte zur Wiederherstellung von Lebensräumen sowie Aufzuchtprogramme, bei denen Jungtiere in geschützten, fressfeindfreien Salzmarschen heranwachsen können, bevor sie ausgewildert werden.\n\nTrotz dieser Bemühungen gehen die Bestände vielerorts weiter zurück. Daher sind zusätzliche Maßnahmen nötig, um bestehende Schutzgesetze wirksam durchzusetzen und sowohl die Spezies als auch ihren Lebensraum langfristig zu erhalten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Diamondback Terrapin is considered endangered. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Diamondback Terrapin is considered endangered. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "La tortuga espalda de diamante se considera amenazada. A comienzos del siglo XX estuvo cerca de desaparecer por la intensa caza para obtener su carne y caparazón. Aunque algunas poblaciones se han recuperado, hoy afronta nuevas amenazas: ahogamiento en trampas para cangrejos, atropellos durante la búsqueda de lugares de nidificación, depredadores en zonas densamente pobladas, pérdida de hábitats de agua salobre por urbanización y subida del nivel del mar, y captura ilegal para el comercio de mascotas.\n\nEn muchas regiones está protegida y no puede cazarse, aunque existen excepciones. Dispositivos especiales en las trampas para cangrejos pueden reducir las capturas accidentales. También se instalan vallas en carreteras peligrosas y existen proyectos de restauración del hábitat y programas de cría de juveniles en marismas salinas protegidas antes de liberarlos.\n\nA pesar de estas medidas, muchas poblaciones siguen disminuyendo y se requieren más acciones de protección y aplicación de las leyes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "La tortue diamant est considérée comme menacée. Au début du XXe siècle, la chasse intensive pour sa chair et sa carapace l’a presque fait disparaître. Certaines populations se sont rétablies, mais l’espèce fait aujourd’hui face à de nouvelles menaces : noyade dans les casiers à crabes, collisions routières lors de la recherche de sites de ponte, prédateurs dans les zones densément peuplées, perte des habitats d’eau saumâtre à cause de l’urbanisation et de la montée du niveau de la mer, ainsi que capture illégale pour le commerce des animaux de compagnie.\n\nDans de nombreuses régions, l’espèce est protégée. Des dispositifs adaptés aux casiers à crabes peuvent réduire les noyades accidentelles. Des clôtures sont aussi installées le long de routes dangereuses, tandis que des projets restaurent les habitats et élèvent des jeunes dans des marais salés protégés avant leur remise en liberté.\n\nMalgré ces efforts, de nombreuses populations continuent de décliner et des mesures supplémentaires sont nécessaires.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La tartaruga dal dorso di diamante è considerata minacciata. All’inizio del XX secolo la caccia intensiva per carne e carapace la portò quasi all’estinzione. Alcune popolazioni si sono riprese, ma oggi la specie affronta nuove minacce: annegamento nelle trappole per granchi, traffico stradale durante la ricerca dei siti di nidificazione, predatori nelle aree densamente popolate, perdita degli habitat di acqua salmastra per lo sviluppo edilizio e l’innalzamento del livello del mare, oltre alla raccolta illegale per il commercio di animali da compagnia.\n\nIn molte regioni è protetta e non può essere cacciata, con alcune eccezioni. Dispositivi speciali nelle trappole per granchi possono ridurre le catture accidentali. Vengono inoltre installate recinzioni lungo le strade pericolose e sono attivi progetti di ripristino degli habitat e programmi di allevamento dei giovani in paludi salmastre protette prima del rilascio.\n\nNonostante questi sforzi, molte popolazioni continuano a diminuire e servono ulteriori misure di conservazione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O cágado-diamante é considerado ameaçado. No início do século XX, a caça intensa por sua carne e casco quase o levou à extinção. Algumas populações se recuperaram parcialmente, mas hoje a espécie enfrenta novas ameaças: afogamento em armadilhas comerciais para caranguejos, atropelamentos durante a busca por locais de nidificação, predadores em áreas densamente povoadas, perda de habitats de água salobra por urbanização e elevação do nível do mar e coleta ilegal para o comércio de animais de estimação.\n\nEm muitas regiões a espécie é protegida e não pode ser caçada, embora existam exceções. Dispositivos especiais em armadilhas para caranguejos podem reduzir os afogamentos acidentais. Também são instaladas cercas em trechos perigosos de estradas, e há projetos de restauração de habitat e programas de criação de jovens em marismas protegidas antes da soltura.\n\nApesar desses esforços, muitas populações continuam diminuindo, exigindo medidas adicionais de proteção e fiscalização.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "キスイガメは絶滅の危険がある種とされています。20世紀初頭には、肉や甲羅を目的とした激しい捕獲により、ほぼ絶滅寸前まで追い込まれました。その後一部の個体群は回復しましたが、現在はカニ漁の罠での溺死、産卵場所を探す際の交通事故、人口密集地での捕食、開発や海面上昇による汽水域の生息地喪失、ペット取引のための違法採集などが脅威となっています。\n\n多くの地域で保護されており、カニ罠への特殊な装置、危険な道路沿いの防護柵、生息地再生、捕食者のいない塩性湿地で幼体を育ててから放す育成プログラムなどが行われています。\n\nそれでも多くの地域で個体数は減少しており、保護法の実施と生息地保全の強化が必要です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "钻纹龟被认为处于受威胁状态。20世纪初，由于人们大量捕猎其肉和背甲，该物种一度接近灭绝。部分种群后来有所恢复，但如今又面临新的威胁，包括在商业捕蟹笼中溺亡、寻找产卵地点时遭车辆撞击、人口密集地区的捕食压力、开发和海平面上升造成的半咸水栖息地丧失，以及部分地区为宠物贸易进行的非法捕捉。\n\n许多地区已对其实施保护。捕蟹笼上的特殊装置可减少误捕溺亡，道路危险路段会设置防护围栏，同时还有栖息地修复项目和幼体培育计划，在无捕食者的盐沼中饲养幼龟后再放归。\n\n尽管如此，许多地区的种群仍在下降，因此仍需加强保护法规的执行并长期保护其栖息地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gibt es ausreichend Platz, tolerieren Diamantschildkröten andere Artgenossen und zeigen mitunter auch Sozialverhalten – hauptsächlich allerdings während der Paarungszeit.\n\nWährend der Paarungszeit im Frühling schwimmen die Weibchen an der Wasseroberfläche und warten darauf, dass sich ein Männchen nähert. Das Weibchen kann sich direkt mit ihm paaren – oder aber es schwimmt davon. Die Männchen verfolgen die Weibchen dann selbst über große Entfernungen. Die Weibchen können das Sperma mehrerer Männchen aufnehmen und über Jahre „aufbewahren“, zudem erfolgt die Befruchtung der Eier verzögert, sodass ein Gelege meist von mehreren Vätern stammt.\n\nIst das Weibchen zur Eiablage bereit, geht es an einem Sandstrand an Land, gräbt ein Nest von 10 bis 20 cm und legt dann seine Eier. Danach kehrt es ins Wasser zurück. Die Jungen schlüpfen im Spätsommer oder zu Beginn des Herbsts und haben bei der Geburt eine Länge von etwa 50 mm.\n\nDie Männchen sind mit 110 mm geschlechtsreif, meist nach 2 bis 3 Jahren, die Weibchen mit 171 mm, was einem Alter von 8 bis 10 Jahren entspricht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "With sufficient space, Diamondback Terrapins tolerate other members of their species and may show some social behavior, mainly during the mating season.\n\nDuring the spring mating season, females swim at the surface and wait for a male to approach. A female may mate with him immediately or swim away, with males sometimes following over long distances. Females can receive sperm from several males and store it for years, and fertilization is delayed, so one clutch usually has multiple fathers.\n\nWhen ready to lay eggs, the female comes ashore on a sandy beach, digs a nest 10–20 cm deep and lays her eggs before returning to the water. The young hatch in late summer or early autumn and are about 50 mm long at birth.\n\nMales reach sexual maturity at 110 mm, usually after 2–3 years. Females mature at 171 mm, corresponding to an age of 8–10 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "With sufficient space, Diamondback Terrapins tolerate other members of their species and may show some social behavior, mainly during the mating season.\n\nDuring the spring mating season, females swim at the surface and wait for a male to approach. A female may mate with him immediately or swim away, with males sometimes following over long distances. Females can receive sperm from several males and store it for years, and fertilization is delayed, so one clutch usually has multiple fathers.\n\nWhen ready to lay eggs, the female comes ashore on a sandy beach, digs a nest 10–20 cm deep and lays her eggs before returning to the water. The young hatch in late summer or early autumn and are about 50 mm long at birth.\n\nMales reach sexual maturity at 110 mm, usually after 2–3 years. Females mature at 171 mm, corresponding to an age of 8–10 years.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Si disponen de suficiente espacio, las tortugas espalda de diamante toleran a otros individuos de su especie y pueden mostrar cierto comportamiento social, principalmente durante la época de apareamiento.\n\nEn primavera, las hembras nadan en la superficie y esperan a que se acerque un macho. Pueden aparearse de inmediato o alejarse, y los machos pueden seguirlas durante grandes distancias. Las hembras pueden almacenar durante años el esperma de varios machos y la fecundación se retrasa, por lo que una puesta suele tener varios padres.\n\nPara poner los huevos, la hembra sale a una playa de arena, excava un nido de 10–20 cm y después regresa al agua. Las crías eclosionan a finales del verano o comienzos del otoño y miden unos 50 mm al nacer.\n\nLos machos alcanzan la madurez sexual con 110 mm, normalmente a los 2–3 años, y las hembras con 171 mm, a los 8–10 años.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Lorsqu’elles disposent de suffisamment d’espace, les tortues diamant tolèrent leurs congénères et peuvent parfois adopter un comportement social, surtout pendant la saison des amours.\n\nAu printemps, les femelles nagent en surface et attendent l’approche d’un mâle. Elles peuvent s’accoupler immédiatement ou s’éloigner, les mâles pouvant les poursuivre sur de longues distances. Les femelles peuvent conserver pendant des années le sperme de plusieurs mâles et la fécondation est différée, si bien qu’une ponte a souvent plusieurs pères.\n\nPour pondre, la femelle gagne une plage de sable, creuse un nid de 10 à 20 cm, dépose ses œufs puis retourne à l’eau. Les jeunes éclosent à la fin de l’été ou au début de l’automne et mesurent environ 50 mm à la naissance.\n\nLes mâles deviennent matures à 110 mm, généralement vers 2–3 ans, et les femelles à 171 mm, soit vers 8–10 ans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Quando hanno spazio sufficiente, le tartarughe dal dorso di diamante tollerano i conspecifici e possono mostrare un certo comportamento sociale, soprattutto durante la stagione degli amori.\n\nIn primavera le femmine nuotano in superficie e attendono l’avvicinarsi di un maschio. Possono accoppiarsi subito oppure allontanarsi, e i maschi possono seguirle per lunghe distanze. Le femmine possono conservare per anni lo sperma di più maschi e la fecondazione è ritardata, quindi una covata ha spesso più padri.\n\nPer deporre le uova, la femmina raggiunge una spiaggia sabbiosa, scava un nido profondo 10–20 cm, depone le uova e poi torna in acqua. I piccoli nascono a fine estate o all’inizio dell’autunno e misurano circa 50 mm alla nascita.\n\nI maschi raggiungono la maturità sessuale a 110 mm, normalmente a 2–3 anni; le femmine a 171 mm, corrispondenti a 8–10 anni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Quando há espaço suficiente, os cágados-diamante toleram outros indivíduos da mesma espécie e podem apresentar algum comportamento social, principalmente durante a época de acasalamento.\n\nNa primavera, as fêmeas nadam na superfície e esperam a aproximação de um macho. Elas podem acasalar imediatamente ou se afastar, e os machos podem segui-las por grandes distâncias. As fêmeas conseguem armazenar por anos o esperma de vários machos e a fertilização é adiada, de modo que uma ninhada costuma ter vários pais.\n\nPara colocar os ovos, a fêmea vai até uma praia arenosa, escava um ninho de 10–20 cm, deposita os ovos e volta para a água. Os filhotes eclodem no fim do verão ou início do outono e medem cerca de 50 mm ao nascer.\n\nOs machos atingem a maturidade sexual com 110 mm, normalmente aos 2–3 anos; as fêmeas com 171 mm, correspondendo a 8–10 anos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "十分な空間がある場合、キスイガメは同種個体を受け入れ、ときに社会的な行動を示しますが、主に繁殖期に見られます。\n\n春の繁殖期には、メスが水面を泳ぎながらオスが近づくのを待ちます。すぐに交尾する場合もあれば泳ぎ去ることもあり、オスは長距離追いかけることがあります。メスは複数のオスの精子を何年も保存でき、受精も遅れて起こるため、1回の産卵に複数の父親がいることが一般的です。\n\n産卵時、メスは砂浜に上陸して深さ10～20 cmの巣を掘り、卵を産んだ後、水に戻ります。幼体は夏の終わりから秋の初めに孵化し、出生時の全長は約50 mmです。\n\nオスは110 mm、通常2～3歳で性成熟し、メスは171 mm、8～10歳で性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "在空间充足的情况下，钻纹龟能够容忍同类，有时也会表现出一定的社会行为，但主要发生在繁殖期。\n\n春季繁殖期，雌龟会在水面游动并等待雄龟靠近。它可能立即交配，也可能游走，而雄龟会进行长距离追逐。雌龟能够储存多个雄龟的精子多年，而且受精会延迟，因此同一窝卵通常可能有多个父亲。\n\n准备产卵时，雌龟会爬上沙滩，挖一个10～20厘米深的巢穴并产卵，然后返回水中。幼龟会在夏末或初秋孵化，出生时体长约50毫米。\n\n雄性在体长110毫米时性成熟，通常为2～3岁；雌性在171毫米时性成熟，相当于8～10岁。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "1. Die Diamantschildkröte ist sexuell dimorph; die Männchen sind deutlich kleiner als die Weibchen.\n2. Diamantschildkröten leben in Brackwasser – einer Mischung aus Frisch- und Salzwasser –, benötigen aber eine Frischwasserquelle, um nicht zu verdursten.\n3. Diamantschildkröten haben Salzdrüsen hinter den Ohren, über die sie das Salz ausscheiden, das sie in ihrem küstennahen Lebensraum aufnehmen.\n4. Diamantschildkröten galten als Delikatesse und wurden im 19. Jahrhundert wegen ihres Fleischs gejagt und nahezu ausgerottet.\n5. Die konzentrischen Kreise auf dem Panzer der Diamantschildkröte sind Wachstumsringe, die sich bilden, wenn der Panzer größer wird.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "1. The Diamondback Terrapin is sexually dimorphic; males are considerably smaller than females.\n2. Diamondback Terrapins live in brackish water, a mixture of fresh and salt water, but need a freshwater source to avoid dehydration.\n3. Diamondback Terrapins have salt glands behind their ears that excrete salt absorbed in their coastal habitat.\n4. Diamondback Terrapins were considered a delicacy and were hunted for their meat in the 19th century, nearly to extinction.\n5. The concentric rings on the shell are growth rings that form as the shell becomes larger.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "1. The Diamondback Terrapin is sexually dimorphic; males are considerably smaller than females.\n2. Diamondback Terrapins live in brackish water, a mixture of fresh and salt water, but need a freshwater source to avoid dehydration.\n3. Diamondback Terrapins have salt glands behind their ears that excrete salt absorbed in their coastal habitat.\n4. Diamondback Terrapins were considered a delicacy and were hunted for their meat in the 19th century, nearly to extinction.\n5. The concentric rings on the shell are growth rings that form as the shell becomes larger.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "1. La tortuga espalda de diamante presenta dimorfismo sexual; los machos son claramente más pequeños que las hembras.\n2. Vive en agua salobre, una mezcla de agua dulce y salada, pero necesita una fuente de agua dulce para no deshidratarse.\n3. Tiene glándulas de sal detrás de las orejas con las que elimina la sal absorbida en su hábitat costero.\n4. Fue considerada una exquisitez y en el siglo XIX fue cazada por su carne hasta quedar cerca de la extinción.\n5. Los círculos concéntricos del caparazón son anillos de crecimiento que se forman a medida que este aumenta de tamaño.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "1. La tortue diamant présente un dimorphisme sexuel marqué : les mâles sont nettement plus petits que les femelles.\n2. Elle vit en eau saumâtre, mélange d’eau douce et d’eau salée, mais a besoin d’une source d’eau douce pour ne pas se déshydrater.\n3. Elle possède des glandes à sel derrière les oreilles qui lui permettent d’éliminer le sel absorbé dans son habitat côtier.\n4. Considérée comme un mets de choix, elle a été chassée pour sa chair au XIXe siècle et a failli disparaître.\n5. Les cercles concentriques de la carapace sont des anneaux de croissance qui apparaissent à mesure qu’elle grandit.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "1. La tartaruga dal dorso di diamante presenta dimorfismo sessuale: i maschi sono molto più piccoli delle femmine.\n2. Vive in acqua salmastra, una miscela di acqua dolce e salata, ma necessita di una fonte d’acqua dolce per non disidratarsi.\n3. Possiede ghiandole del sale dietro le orecchie che eliminano il sale assorbito nell’habitat costiero.\n4. Era considerata una prelibatezza e nel XIX secolo venne cacciata per la carne quasi fino all’estinzione.\n5. I cerchi concentrici sul carapace sono anelli di crescita che si formano mentre il carapace aumenta di dimensioni.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "1. O cágado-diamante apresenta dimorfismo sexual; os machos são bem menores que as fêmeas.\n2. Vive em água salobra, uma mistura de água doce e salgada, mas precisa de uma fonte de água doce para não desidratar.\n3. Possui glândulas de sal atrás das orelhas, pelas quais elimina o sal absorvido no habitat costeiro.\n4. Já foi considerado uma iguaria e, no século XIX, foi caçado por sua carne quase até a extinção.\n5. Os círculos concêntricos do casco são anéis de crescimento que se formam à medida que o casco aumenta de tamanho.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "1. キスイガメには性的二形があり、オスはメスよりかなり小型です。\n2. 淡水と海水が混ざる汽水域に生息しますが、脱水を防ぐため淡水源を必要とします。\n3. 耳の後ろに塩類腺があり、沿岸の生息地で取り込んだ塩分を排出します。\n4. かつて珍味とされ、19世紀には肉を目的に捕獲され、ほぼ絶滅寸前まで減少しました。\n5. 甲羅の同心円は、甲羅が成長するにつれて形成される成長輪です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "1. 钻纹龟具有明显的两性异形，雄性明显小于雌性。\n2. 钻纹龟生活在半咸水中，即淡水与海水的混合水体，但仍需要淡水水源以避免脱水。\n3. 它们耳后有盐腺，可以排出在沿海栖息地摄入的盐分。\n4. 钻纹龟曾被视为美味，19世纪因肉用捕猎而几乎灭绝。\n5. 背甲上的同心圆是生长环，会随着背甲增大而形成。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other information are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other information are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás datos no son necesariamente definitivos y pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopédie reflète ce processus. Les textes, images, statistiques et autres informations ne sont pas nécessairement définitifs et peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri dati non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopédia reflete esse processo. Textos, imagens, estatísticas e outras informações não são necessariamente definitivos e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2 は現在も開発中であり、Zoopedia の内容もその開発状況を反映しています。文章、画像、統計などは最終版ではなく、今後変更または追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Planet Zoo 2 目前仍处于积极开发阶段，动物园百科也反映了这一开发过程。文字、图片、统计数据等内容并不一定是最终版本，之后仍可能更改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/d55253a8/Turtle_DiamondbackTerrapin_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Malaclemys terrapin/map/Malaclemys terrapin map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDU1MjUzYTgvVHVydGxlX0RpYW1vbmRiYWNrVGVycmFwaW4uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Diamantschildkröte – Planet Zoo 2",
+            "en": "Diamondback Terrapin – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Diamantschildkröte aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Diamondback Terrapin."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Malaclemys terrapin/bilder/Malaclemys terrapin 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Diamantschildkröte",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/diamantschildkr%C3%B6te",
+        "en": "https://www.planetzoogame.com/2/zoopedia/diamondback-terrapin",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/diamondback-terrapin",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/tortuga-espalda-de-diamante",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/tortue-diamant",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/tartaruga-dal-dorso-di-diamante",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/c%C3%A1gado-diamante",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AD%E3%82%B9%E3%82%A4%E3%82%AC%E3%83%A1",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%92%BB%E7%BA%B9%E9%BE%9F"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Projektfilter werden nur dort gesetzt, wo die Zoopedia-Angabe eindeutig auf eine bestehende Projektkategorie abgebildet werden kann."
+    }
+  }
+}
