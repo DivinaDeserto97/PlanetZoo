@@ -1,0 +1,500 @@
+{
+  "id": "Asio otus",
+  "identitaet": {
+    "namen": {
+      "de": "Waldohreule",
+      "en": "Long-eared Owl",
+      "en-US": "Long-eared Owl",
+      "es": "Búho chico",
+      "fr": "Hibou moyen-duc",
+      "it": "Gufo comune",
+      "pt-BR": "Coruja-orelhuda",
+      "ja": "トラフズク",
+      "zh-Hans": "长耳鸮"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia",
+      "northAmerica",
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Strigiformes",
+          "familie": "Strigidae",
+          "gattung": "Asio",
+          "art": "Asio otus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 0.26,
+          "max": 0.435,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "min": 0.22,
+          "max": 0.305,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an und erwähnt zugleich einen allgemeinen Bestandsrückgang.",
+            "en": "The Zoopedia lists the conservation status as Least Concern while also noting an overall population decline."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 2200000,
+          "max": 3700000,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 2.200.000 bis 3.700.000 an.",
+            "en": "The Zoopedia gives a wild population of 2,200,000 to 3,700,000."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Geschlechtsreife mit einem Jahr.",
+            "en": "The Zoopedia states that sexual maturity is reached at one year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 2,
+          "max": 10,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt Gelege von 2 bis 10 Eiern, im Schnitt 4 bis 6.",
+            "en": "The Zoopedia gives clutches of 2 to 10 eggs, averaging 4 to 6."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 25,
+          "max": 30,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Das Weibchen brütet die Eier etwa 25 bis 30 Tage.",
+            "en": "The female incubates the eggs for about 25 to 30 days."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "nestverlassen",
+          "min": 3,
+          "max": 3,
+          "durchschnitt": 3,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Küken verlassen nach etwa 3 Wochen das Nest und sitzen anschließend auf nahegelegenen Ästen.",
+            "en": "The chicks leave the nest after about 3 weeks and then perch on nearby branches."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 5,
+          "max": 5,
+          "durchschnitt": 5,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Mit etwa 5 Wochen sind die Jungvögel flügge.",
+            "en": "The young are fledged at about 5 weeks."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "paarungszeit",
+          "wert": "territorialPair",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Während eines Großteils der Paarungszeit leben Waldohreulen territorial; Paare verteidigen ihre Nistplätze gemeinsam.",
+            "en": "During much of the breeding season Long-eared Owls are territorial, and pairs defend their nesting sites together."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ausserhalbPaarungszeit",
+          "wert": "communalRoost",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": 20,
+          "hinweis": {
+            "de": "Außerhalb der Paarungszeit versammeln sie sich häufig in Gruppen von bis zu 20 Eulen an gemeinschaftlichen Schlafplätzen.",
+            "en": "Outside the breeding season they often gather in groups of up to 20 owls at communal roosts."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "seasonalMonogamy",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Die Paare sind während einer Paarungszeit monogam, paaren sich aber normalerweise nicht jedes Jahr mit demselben Partner.",
+            "en": "Pairs are monogamous during a breeding season, but usually do not mate with the same partner every year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "forest",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Waldohreule als Jäger kleiner Säugetiere.",
+              "en": "The Zoopedia describes the Long-eared Owl as a hunter of small mammals."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "wuehlmaeuse",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "maeuse",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, kommt in weiten Teilen Europas, Asiens, Nordamerikas und Teilen Nordafrikas vor. Sie lebt in Wäldern, Forsten und dichten Buschwerken, oft in der Nähe von offenen Graslandschaften oder Wiesen, wo sie kleine Säugetiere wie Wühlmäuse und Mäuse jagt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Africa. It lives in forests, plantations and dense scrub, often near open grasslands or meadows where it hunts small mammals such as voles and mice.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Africa. It lives in forests, plantations and dense scrub, often near open grasslands or meadows where it hunts small mammals such as voles and mice.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, ist eine mittelgroße Eule aus Europa, Asien, Nordamerika und Teilen Nordafrikas. Sie lebt in Wäldern, Forsten und dichten Buschwerken, häufig nahe offenen Graslandschaften oder Wiesen.\n\nCharakteristisch sind ihre langen, aufrecht stehenden Ohrbüschel, orangefarbenen Augen und das fleckige braune Gefieder.\n\nWeibchen sind in der Regel größer als Männchen. Die Zoopedia nennt für Weibchen eine Größe von 27 bis 40 cm, eine Flügelspannweite von 90 bis 100 cm und ein Gewicht von 260 bis 435 g. Für Männchen nennt sie 25 bis 37 cm Größe, 84 bis 95 cm Flügelspannweite und 220 bis 305 g. Die Größenangaben wurden nicht als Körperlänge oder Schulterhöhe interpretiert, weil die Messart nicht ausdrücklich bezeichnet wird.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Waldohreulen kommen zahlreich vor und gelten als nicht gefährdet, ihre Populationen sind jedoch insgesamt rückläufig. Die Zoopedia nennt den Verlust von Brut- und Jagdlebensräumen durch die Beseitigung von Hecken, Waldrodung und intensivere Landwirtschaft sowie Sekundärvergiftungen durch Nagergifte als Bedrohungen. In städtischen Gebieten können außerdem Stromleitungen und Straßenverkehr Tiere töten.\n\nSchutzmaßnahmen konzentrieren sich auf den Erhalt und die Wiederherstellung von Mischwäldern und Graslandmosaiken, künstliche Nistmöglichkeiten, die Verringerung schädlicher Nagergifte und öffentliche Aufklärung.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Während eines Großteils der Paarungszeit sind Waldohreulen territorial; Paare verteidigen ihre Nistplätze aggressiv gegen andere Eulen. Außerhalb der Paarungszeit treffen sie sich häufig in Gruppen von bis zu 20 Tieren an gemeinschaftlichen Schlafplätzen.\n\nBalz und Paarung finden im späten Winter oder zu Beginn des Frühlings statt. Männchen locken Weibchen mit Rufen und Flugkünsten an und bringen ihnen manchmal Futter. Die Paare sind während der Paarungszeit monogam, paaren sich aber normalerweise nicht jedes Jahr mit demselben Partner. Statt ein eigenes Nest zu bauen, nutzen sie verlassene Nester.\n\nDas Weibchen legt im Durchschnitt 4 bis 6 Eier; ein Gelege kann 2 bis 10 Eier umfassen. Es brütet die Eier etwa 25 bis 30 Tage, während das Männchen Futter bringt. Die Küken bleiben nach dem Schlüpfen etwa 3 Wochen im Nest, sitzen anschließend auf nahegelegenen Ästen und werden weiter gefüttert. Mit etwa 5 Wochen sind sie flügge.\n\nWaldohreulen werden mit einem Jahr geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Waldohreule nutzt häufig alte Nester anderer Vögel, besonders von Krähen oder Elstern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die „langen Ohren“ der Waldohreule sind keine Ohren, sondern Federn, die der Tarnung und Kommunikation dienen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Spezielle Federn mit weichen, gefransten Rändern machen den Flug nahezu geräuschlos und helfen beim unbemerkten Annähern an Beute.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Populationen aus kälteren nördlichen Regionen ziehen im Winter nach Süden, während Tiere in milderen Gebieten eher ganzjährig bleiben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Waldohreule ist stark getarnt und sitzt tagsüber meist ruhig in dichten Nadelbäumen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/7b6774dd/Owl_LongEared_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Asio otus/map/Asio otus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvN2I2Nzc0ZGQvT3dsX0xvbmdFYXJlZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Waldohreule – Planet Zoo 2",
+            "en": "Long-eared Owl – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Waldohreule aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Long-eared Owl."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Asio otus/bilder/Asio otus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/7b6774dd/Owl_LongEared_illustration.jpg",
+          "alt": {
+            "de": "Waldohreule – Zoopedia-Illustration",
+            "en": "Long-eared Owl – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Waldohreule aus der Planet Zoo 2 Zoopedia.",
+            "en": "Long-eared Owl illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Asio otus/bilder/Asio otus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Waldohreule",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/waldohreule",
+        "en": "https://www.planetzoogame.com/2/zoopedia/long-eared-owl",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/long-eared-owl",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/b%C3%BAho-chico",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/hibou-moyen-duc",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/gufo-comune",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/coruja-orelhuda",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%88%E3%83%A9%E3%83%95%E3%82%BA%E3%82%AF",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%95%BF%E8%80%B3%E9%B8%AE"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Die Angaben 27–40 cm bei Weibchen und 25–37 cm bei Männchen werden im Quelltext nur als „Größe“ bezeichnet und deshalb nicht in ein Körperlängen- oder Schulterhöhenfeld gezwungen. Auch die Flügelspannweiten bleiben im Quelltext, da das aktuelle Schema kein eigenes Feld dafür vorsieht."
+    }
+  }
+}

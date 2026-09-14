@@ -1,0 +1,862 @@
+{
+  "id": "Pachliopta jophon",
+  "identitaet": {
+    "namen": {
+      "de": "Pachliopta jophon",
+      "en": "Sri Lankan Rose",
+      "en-US": "Sri Lankan Rose",
+      "es": "Rosa de Sri Lanka",
+      "fr": "Pachliopta jophon",
+      "it": "Rosa dello Sri Lanka",
+      "pt-BR": "Rosa do Sri Lanka",
+      "ja": "セイロンローズ",
+      "zh-Hans": "斯里兰卡曙凤蝶"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Papilionidae",
+          "gattung": "Pachliopta",
+          "art": "Pachliopta jophon",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "adultphase",
+          "wert": 1,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass ausgewachsene Tiere nach Erreichen der Geschlechtsreife ungefähr einen Monat leben.",
+            "en": "The Zoopedia states that adults live for about one month after reaching sexual maturity."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "min": 50,
+          "max": 100,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "eierProBlatt",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 3,
+          "max": 5,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenphase",
+          "min": null,
+          "max": 3,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Raupenphase dauert laut Zoopedia bis zu 3 Wochen und umfasst 5 Häutungen.",
+            "en": "According to the Zoopedia, the caterpillar stage lasts up to 3 weeks and includes 5 molts."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenphase",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "gelegentlich",
+          "wert": "pair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiRessourcenImUeberfluss",
+          "wert": "largerGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropicalRainforest",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Aristolochia",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "raupe"
+                ],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt Giftpflanzen als Raupennahrung und führt Pflanzen der Gattung Aristolochia als Beispiel an.",
+                "en": "The Zoopedia names poisonous host plants as caterpillar food and gives plants of the genus Aristolochia as an example."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [
+      {
+        "id": "Pachliopta hector",
+        "beziehung": "ehemalsAlsUnterartBetrachtet",
+        "deutscherName": "",
+        "quelle": "planetZoo2"
+      }
+    ],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Pachliopta jophon ist ein Schmetterling aus der Familie der Ritterfalter, der im Regenwald im Südwesten Sri Lankas heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Pachliopta jophon is a swallowtail butterfly native to rainforest in southwestern Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Pachliopta jophon is a swallowtail butterfly native to rainforest in southwestern Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pachliopta jophon es una mariposa de la familia Papilionidae nativa de la selva tropical del suroeste de Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Pachliopta jophon est un papillon de la famille des Papilionidae originaire de la forêt tropicale du sud-ouest du Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pachliopta jophon è una farfalla della famiglia Papilionidae originaria della foresta pluviale del sud-ovest dello Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pachliopta jophon é uma borboleta da família Papilionidae nativa da floresta tropical do sudoeste do Sri Lanka.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Pachliopta jophonは、スリランカ南西部の熱帯雨林に生息するアゲハチョウ科のチョウです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Pachliopta jophon是一种凤蝶科蝴蝶，原产于斯里兰卡西南部的热带雨林。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Pachliopta jophon ist ein Schmetterling aus der Familie der Ritterfalter aus dem Regenwald im Südwesten Sri Lankas.\n\nDie Flügel sind weiß mit schwarzen Rändern und Adern sowie roten Akzenten an den Hinterflügeln. Die Hinterflügel laufen zu „Schwänzen“ aus. Der Körper ist schwarz mit roten Streifen um den Unterleib. Die Raupen sind schwarz mit roten Fühlern und besitzen ein weißes Segment in der Körpermitte.\n\nMännchen und Weibchen sehen sich ähnlich; die Vorderflügel der Weibchen sind etwas größer und deutlicher gemustert. Die Flügelspannweite beträgt 9 bis 13 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Pachliopta jophon is a swallowtail butterfly from rainforest in southwestern Sri Lanka.\n\nIts wings are white with black borders and veins, with red accents on the hindwings. The hindwings end in tails. The body is black with red bands around the abdomen. Caterpillars are black with red feelers and a white segment in the middle of the body.\n\nMales and females look similar, although females have slightly larger and more strongly patterned forewings. Wingspan is 9 to 13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Pachliopta jophon is a swallowtail butterfly from rainforest in southwestern Sri Lanka.\n\nIts wings are white with black borders and veins, with red accents on the hindwings. The hindwings end in tails. The body is black with red bands around the abdomen. Caterpillars are black with red feelers and a white segment in the middle of the body.\n\nMales and females look similar, although females have slightly larger and more strongly patterned forewings. Wingspan is 9 to 13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pachliopta jophon es una mariposa papiliónida de la selva tropical del suroeste de Sri Lanka.\n\nSus alas son blancas con bordes y venas negras y detalles rojos en las alas posteriores, que terminan en colas. El cuerpo es negro con franjas rojas alrededor del abdomen. Las orugas son negras con apéndices rojos y un segmento blanco en la parte media del cuerpo.\n\nMachos y hembras son parecidos, aunque las hembras tienen las alas anteriores algo mayores y más marcadas. La envergadura es de 9 a 13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Pachliopta jophon est un papillon de la famille des Papilionidae de la forêt tropicale du sud-ouest du Sri Lanka.\n\nSes ailes sont blanches avec des bordures et nervures noires et des accents rouges sur les ailes postérieures, qui se terminent en queues. Le corps est noir avec des bandes rouges autour de l’abdomen. Les chenilles sont noires avec des appendices rouges et un segment blanc au milieu du corps.\n\nLes mâles et les femelles se ressemblent, mais les ailes antérieures des femelles sont un peu plus grandes et plus nettement marquées. L’envergure est de 9 à 13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pachliopta jophon è una farfalla papilionide della foresta pluviale del sud-ovest dello Sri Lanka.\n\nLe ali sono bianche con bordi e nervature nere e accenti rossi sulle ali posteriori, che terminano in code. Il corpo è nero con bande rosse attorno all’addome. I bruchi sono neri con appendici rosse e un segmento bianco a metà corpo.\n\nMaschi e femmine sono simili, ma le ali anteriori delle femmine sono leggermente più grandi e marcate. L’apertura alare è di 9–13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pachliopta jophon é uma borboleta papilionídea da floresta tropical do sudoeste do Sri Lanka.\n\nAs asas são brancas com bordas e nervuras pretas e detalhes vermelhos nas asas posteriores, que terminam em caudas. O corpo é preto com faixas vermelhas ao redor do abdômen. As lagartas são pretas com apêndices vermelhos e um segmento branco no meio do corpo.\n\nMachos e fêmeas são semelhantes, mas as asas anteriores das fêmeas são um pouco maiores e mais marcadas. A envergadura é de 9 a 13 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Pachliopta jophonはスリランカ南西部の熱帯雨林に生息するアゲハチョウ科のチョウです。\n\n翅は白地で黒い縁と翅脈があり、後翅には赤い模様があります。後翅は尾状に伸びます。体は黒く、腹部の周囲に赤い帯があります。幼虫は黒く赤い突起を持ち、体の中央に白い節があります。\n\n雌雄はよく似ていますが、雌の前翅はやや大きく模様も明瞭です。開張は9～13 cmです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Pachliopta jophon是斯里兰卡西南部热带雨林中的一种凤蝶。\n\n翅膀为白色，带黑色边缘和翅脉，后翅有红色斑纹并延伸成尾突。身体为黑色，腹部周围有红色条纹。幼虫黑色，带红色突起，身体中部有一个白色体节。\n\n雌雄外形相似，但雌蝶前翅稍大、花纹更明显。翅展为9至13厘米。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Pachliopta jophon gilt als stark gefährdet. Die Art leidet unter dem Verlust ihres ohnehin kleinen Lebensraums durch die Abholzung tropischer Wälder für Landwirtschaft. Zusätzlich ist sie bei Insektensammlern begehrt und kann vom illegalen Tierhandel betroffen sein.\n\nDie verbleibenden Waldgebiete ihres Verbreitungsgebiets stehen unter Schutz und werden wissenschaftlich erforscht. Der Handel mit der Art unterliegt gewissen Vorschriften. Die Aussichten sind dennoch ungewiss, weil aktuelle Informationen über die Art und ihre Bestandsentwicklung begrenzt sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Pachliopta jophon is considered endangered. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Pachliopta jophon is considered endangered. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pachliopta jophon está considerada una especie amenazada. Sufre la pérdida de su ya reducido hábitat por la tala de bosques tropicales para la agricultura. También es buscada por coleccionistas de insectos y puede verse afectada por el comercio ilegal de fauna.\n\nLas zonas forestales restantes están protegidas y se estudian científicamente, y el comercio de la especie está sujeto a ciertas normas. Aun así, sus perspectivas son inciertas porque la información actual sobre la especie y sus poblaciones es limitada.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Pachliopta jophon est considérée comme une espèce menacée. Elle souffre de la perte de son habitat déjà très restreint à cause du défrichement des forêts tropicales pour l’agriculture. Elle est aussi recherchée par les collectionneurs d’insectes et peut être touchée par le commerce illégal.\n\nLes zones forestières restantes sont protégées et étudiées scientifiquement, et le commerce de l’espèce est soumis à certaines règles. Ses perspectives restent toutefois incertaines, car les informations actuelles sur l’espèce et ses populations sont limitées.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pachliopta jophon è considerata una specie minacciata. Soffre per la perdita del suo già ristretto habitat a causa del disboscamento delle foreste tropicali per l’agricoltura. È inoltre ricercata dai collezionisti di insetti e può essere coinvolta nel commercio illegale.\n\nLe aree forestali rimanenti sono protette e studiate scientificamente e il commercio della specie è soggetto ad alcune regole. Le prospettive restano comunque incerte perché le informazioni attuali sulla specie e sull’andamento delle popolazioni sono limitate.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pachliopta jophon é considerada uma espécie ameaçada. Sofre com a perda de seu já restrito habitat devido ao desmatamento de florestas tropicais para a agricultura. Também é procurada por colecionadores de insetos e pode ser afetada pelo comércio ilegal de animais.\n\nAs áreas florestais restantes são protegidas e estudadas cientificamente, e o comércio da espécie está sujeito a algumas regras. Mesmo assim, as perspectivas continuam incertas porque as informações atuais sobre a espécie e suas populações são limitadas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Pachliopta jophonは絶滅危惧種とされており、もともと狭い生息地が農地化のための熱帯林伐採によって失われています。また昆虫収集家に人気があり、違法な野生生物取引の影響を受ける可能性があります。\n\n残存する森林は保護され、科学的調査も行われています。取引にも一定の規制がありますが、種や個体群の推移に関する最新情報が限られているため、将来の見通しは不確実です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Pachliopta jophon被列为濒危物种。由于热带森林被清理用于农业，它本就十分有限的栖息地继续缩小。此外，它也受到昆虫收藏者追捧，并可能受到非法野生动物贸易影响。\n\n现存森林区域受到保护并开展科学研究，该物种的交易也受到一定监管。不过，由于关于其种群变化的最新资料有限，其未来状况仍不确定。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Pachliopta jophon ist gewöhnlich einzelgängerischer als viele andere Schmetterlinge, kann aber paarweise auftreten. Bei reichlich vorhandenen Ressourcen können auch größere Gruppen zusammenleben.\n\nDie Paarung ist ganzjährig möglich, vermutlich mit höherer Fruchtbarkeit während der Regenzeit von Mai bis September. Paarungsbereitschaft wird über Pheromone und Flügelflattern kommuniziert. Ein Paar paart sich nach der Annahme durch das Weibchen etwa 30 bis 60 Minuten lang.\n\nDas Weibchen legt 1 bis 2 Eier pro Blatt und insgesamt etwa 50 bis 100 Eier an die Unterseite junger Blätter oder Stängel geeigneter Wirtspflanzen. Die Eier schlüpfen nach 3 bis 5 Tagen. Die Raupenphase dauert bis zu 3 Wochen; dabei häutet sich die Raupe 5-mal. Anschließend verpuppt sie sich für etwa 2 Wochen im Kokon.\n\nDer erwachsene Schmetterling schlüpft gewöhnlich am Morgen, wird einige Tage später geschlechtsreif und lebt danach ungefähr einen Monat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Pachliopta jophon is usually more solitary than many other butterflies, but it can occur in pairs. Larger groups may live together when resources are abundant.\n\nMating can occur throughout the year and is probably more frequent during the May-to-September rainy season. Readiness to mate is communicated through pheromones and wing fluttering. Once a female accepts a male, the pair mates for about 30 to 60 minutes.\n\nThe female lays 1 to 2 eggs per leaf and about 50 to 100 eggs in total on the underside of young leaves or stems of suitable host plants. Eggs hatch after 3 to 5 days. The caterpillar stage lasts up to 3 weeks and includes 5 molts, followed by about 2 weeks in a cocoon.\n\nThe adult usually emerges in the morning, becomes sexually mature after a few days and then lives for about one month.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Pachliopta jophon is usually more solitary than many other butterflies, but it can occur in pairs. Larger groups may live together when resources are abundant.\n\nMating can occur throughout the year and is probably more frequent during the May-to-September rainy season. Readiness to mate is communicated through pheromones and wing fluttering. Once a female accepts a male, the pair mates for about 30 to 60 minutes.\n\nThe female lays 1 to 2 eggs per leaf and about 50 to 100 eggs in total on the underside of young leaves or stems of suitable host plants. Eggs hatch after 3 to 5 days. The caterpillar stage lasts up to 3 weeks and includes 5 molts, followed by about 2 weeks in a cocoon.\n\nThe adult usually emerges in the morning, becomes sexually mature after a few days and then lives for about one month.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pachliopta jophon suele ser más solitaria que muchas otras mariposas, aunque puede encontrarse en parejas. Cuando abundan los recursos también pueden convivir grupos mayores.\n\nPuede aparearse durante todo el año y probablemente es más fértil durante la estación lluviosa de mayo a septiembre. La disposición al apareamiento se comunica mediante feromonas y aleteos. Cuando una hembra acepta a un macho, la pareja se aparea durante unos 30 a 60 minutos.\n\nLa hembra pone 1 o 2 huevos por hoja y unos 50 a 100 huevos en total en el envés de hojas jóvenes o tallos de plantas hospedadoras adecuadas. Los huevos eclosionan tras 3 a 5 días. La fase de oruga dura hasta 3 semanas e incluye 5 mudas, seguida de unas 2 semanas en el capullo.\n\nEl adulto emerge normalmente por la mañana, alcanza la madurez sexual pocos días después y vive aproximadamente un mes más.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Pachliopta jophon est généralement plus solitaire que beaucoup d’autres papillons, mais peut être observée en couple. Lorsque les ressources sont abondantes, des groupes plus importants peuvent cohabiter.\n\nL’accouplement est possible toute l’année et semble plus fréquent pendant la saison des pluies de mai à septembre. La disponibilité à l’accouplement est communiquée par les phéromones et les battements d’ailes. Lorsqu’une femelle accepte un mâle, l’accouplement dure environ 30 à 60 minutes.\n\nLa femelle pond 1 à 2 œufs par feuille et environ 50 à 100 œufs au total sous les jeunes feuilles ou sur les tiges des plantes hôtes adaptées. Les œufs éclosent après 3 à 5 jours. Le stade chenille dure jusqu’à 3 semaines avec 5 mues, puis la chrysalide reste environ 2 semaines dans le cocon.\n\nL’adulte émerge généralement le matin, devient sexuellement mature quelques jours plus tard et vit ensuite environ un mois.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pachliopta jophon è normalmente più solitaria di molte altre farfalle, ma può essere osservata in coppia. Quando le risorse sono abbondanti possono convivere anche gruppi più numerosi.\n\nL’accoppiamento può avvenire tutto l’anno ed è probabilmente più frequente durante la stagione delle piogge da maggio a settembre. La disponibilità all’accoppiamento viene comunicata tramite feromoni e battiti d’ali. Quando la femmina accetta il maschio, la coppia si accoppia per circa 30–60 minuti.\n\nLa femmina depone 1–2 uova per foglia e circa 50–100 uova in totale sulla pagina inferiore di giovani foglie o steli di piante ospiti adatte. Le uova si schiudono dopo 3–5 giorni. Lo stadio larvale dura fino a 3 settimane e comprende 5 mute, seguito da circa 2 settimane nel bozzolo.\n\nL’adulto emerge di solito al mattino, raggiunge la maturità sessuale pochi giorni dopo e vive poi per circa un mese.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pachliopta jophon costuma ser mais solitária do que muitas outras borboletas, mas pode ser encontrada em pares. Quando os recursos são abundantes, grupos maiores também podem viver juntos.\n\nO acasalamento pode ocorrer durante todo o ano e provavelmente é mais frequente na estação chuvosa, de maio a setembro. A receptividade é comunicada por feromônios e pelo bater das asas. Depois que a fêmea aceita o macho, o casal acasala por cerca de 30 a 60 minutos.\n\nA fêmea põe 1 a 2 ovos por folha e cerca de 50 a 100 ovos no total na parte inferior de folhas jovens ou caules de plantas hospedeiras adequadas. Os ovos eclodem após 3 a 5 dias. A fase de lagarta dura até 3 semanas e inclui 5 mudas, seguida por cerca de 2 semanas no casulo.\n\nO adulto geralmente emerge pela manhã, atinge a maturidade sexual poucos dias depois e vive então por aproximadamente um mês.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Pachliopta jophonは多くのチョウより単独性が強いものの、つがいで見られることがあります。資源が豊富な場合は、より大きな群れで生活することもあります。\n\n一年中交尾できますが、5月から9月の雨季には繁殖がより活発になると考えられています。交尾の準備はフェロモンや羽ばたきで伝えられ、雌が雄を受け入れると30～60分ほど交尾します。\n\n雌は適した食草の若い葉や茎の裏側に、1枚の葉につき1～2個、合計約50～100個の卵を産みます。卵は3～5日でふ化します。幼虫期は最長3週間で、その間に5回脱皮し、その後約2週間さなぎになります。\n\n成虫は通常朝に羽化し、数日後に性成熟して、その後約1か月生きます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Pachliopta jophon通常比许多其他蝴蝶更偏独居，但也会成对出现。当资源充足时，也可能形成较大的群体。\n\n全年均可交配，在5月至9月雨季可能繁殖更活跃。交配意愿通过信息素和振翅传递。雌蝶接受雄蝶后，交配约持续30至60分钟。\n\n雌蝶会在适宜寄主植物的嫩叶背面或茎上产卵，每片叶1至2枚，总计约50至100枚。卵在3至5天后孵化。幼虫期最长约3周，期间蜕皮5次，之后在茧中化蛹约2周。\n\n成蝶通常在早晨羽化，几天后达到性成熟，此后约可存活1个月。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Pachliopta jophon wurde früher als Unterart von Pachliopta hector betrachtet, einem verwandten und weiter verbreiteten Falter derselben Gattung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Gattungsname „Pachliopta“ leitet sich laut Zoopedia von den griechischen Wörtern für „dick“ und „Aussehen“ ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die auffällige Färbung ist Aposematismus, also eine Warnfärbung, die Fressfeinden signalisiert, dass das Tier giftig oder ungenießbar ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Raupen fressen Giftpflanzen, darunter Pflanzen der Gattung Aristolochia. Dadurch werden sie für Fressfeinde ungenießbar; die Giftstoffe bleiben auch im erwachsenen Tier erhalten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Spezies wurde laut Zoopedia 1853 erstmals vom britischen Zoologen John Edward Gray beschrieben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Pachliopta jophon was formerly regarded as a subspecies of Pachliopta hector, a related and more widespread butterfly of the same genus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "According to the Zoopedia, the genus name Pachliopta derives from Greek words meaning 'thick' and 'appearance'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its bright coloration is aposematism, a warning coloration signaling to predators that the animal is toxic or unpalatable.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The caterpillars feed on poisonous plants, including plants of the genus Aristolochia. This makes them unpalatable to predators, and the toxins remain in the adult butterfly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "According to the Zoopedia, the species was first described in 1853 by British zoologist John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Pachliopta jophon was formerly regarded as a subspecies of Pachliopta hector, a related and more widespread butterfly of the same genus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "According to the Zoopedia, the genus name Pachliopta derives from Greek words meaning 'thick' and 'appearance'.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Its bright coloration is aposematism, a warning coloration signaling to predators that the animal is toxic or unpalatable.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The caterpillars feed on poisonous plants, including plants of the genus Aristolochia. This makes them unpalatable to predators, and the toxins remain in the adult butterfly.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "According to the Zoopedia, the species was first described in 1853 by British zoologist John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Pachliopta jophon se consideró anteriormente una subespecie de Pachliopta hector, una mariposa emparentada y más extendida del mismo género.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Según la Zoopedia, el nombre del género Pachliopta deriva de palabras griegas que significan «grueso» y «apariencia».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Su coloración brillante es aposemática, una señal de advertencia para los depredadores de que el animal es tóxico o desagradable.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Las orugas comen plantas venenosas, incluidas plantas del género Aristolochia. Esto las vuelve desagradables para los depredadores y las toxinas permanecen en el adulto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Según la Zoopedia, la especie fue descrita por primera vez en 1853 por el zoólogo británico John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Pachliopta jophon était autrefois considérée comme une sous-espèce de Pachliopta hector, un papillon apparenté et plus répandu du même genre.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Selon la Zoopédie, le nom de genre Pachliopta vient de mots grecs signifiant « épais » et « apparence ».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Sa coloration vive est un aposématisme, une coloration d’avertissement indiquant aux prédateurs que l’animal est toxique ou immangeable.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les chenilles consomment des plantes toxiques, notamment du genre Aristolochia. Elles deviennent ainsi immangeables pour les prédateurs et les toxines restent présentes chez l’adulte.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Selon la Zoopédie, l’espèce a été décrite pour la première fois en 1853 par le zoologiste britannique John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Pachliopta jophon era in passato considerata una sottospecie di Pachliopta hector, una farfalla affine e più diffusa dello stesso genere.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Secondo la Zoopedia, il nome del genere Pachliopta deriva da parole greche che significano «spesso» e «aspetto».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La colorazione vivace è aposematica, cioè avverte i predatori che l’animale è tossico o sgradevole.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I bruchi si nutrono di piante velenose, comprese quelle del genere Aristolochia. Questo li rende sgradevoli ai predatori e le tossine vengono mantenute anche nell’adulto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Secondo la Zoopedia, la specie fu descritta per la prima volta nel 1853 dallo zoologo britannico John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Pachliopta jophon era anteriormente considerada uma subespécie de Pachliopta hector, uma borboleta aparentada e mais difundida do mesmo gênero.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Segundo a Zoopedia, o nome do gênero Pachliopta deriva de palavras gregas que significam «espesso» e «aparência».",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A coloração intensa é aposemática, uma coloração de alerta que indica aos predadores que o animal é tóxico ou desagradável.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "As lagartas comem plantas venenosas, incluindo plantas do gênero Aristolochia. Isso as torna desagradáveis aos predadores, e as toxinas permanecem no adulto.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Segundo a Zoopedia, a espécie foi descrita pela primeira vez em 1853 pelo zoólogo britânico John Edward Gray.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Pachliopta jophonは以前、同属でより広く分布する近縁種Pachliopta hectorの亜種と考えられていました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zoopediaによると、属名Pachlioptaは「厚い」と「外見」を意味するギリシャ語に由来します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "鮮やかな体色は警告色であり、捕食者に毒性または不味さを知らせます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼虫はAristolochia属などの有毒植物を食べ、その毒によって捕食者に食べられにくくなります。毒は成虫にも保持されます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zoopediaによると、この種は1853年に英国の動物学者John Edward Grayによって初めて記載されました。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "Pachliopta jophon过去曾被视为同属、分布更广的近缘种Pachliopta hector的一个亚种。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "据动物百科所述，属名Pachliopta源自表示“厚”和“外观”的希腊词。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "其鲜艳体色属于警戒色，用来向捕食者表明它有毒或不可口。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼虫会取食有毒植物，包括马兜铃属植物，因此对捕食者来说不可口；这些毒素在成蝶阶段仍会保留。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "据动物百科所述，该物种于1853年由英国动物学家John Edward Gray首次描述。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y aún pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopédie reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente finais e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発過程を反映しています。文章、画像、統計などは最終版ではなく、今後変更・追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "《动物园之星2》目前仍在积极开发中，动物百科反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，之后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/a429c782/Butterfly_MalabarRose_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Pachliopta jophon/map/Pachliopta jophon map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYTQyOWM3ODIvQnV0dGVyZmx5X01hbGFiYXJSb3NlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Pachliopta jophon – Planet Zoo 2",
+            "en": "Sri Lankan Rose – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild von Pachliopta jophon aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sri Lankan Rose."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Pachliopta jophon/bilder/Pachliopta jophon 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Pachliopta jophon",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/pachliopta-jophon",
+        "en": "https://www.planetzoogame.com/2/zoopedia/sri-lankan-rose",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/sri-lankan-rose",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/rosa-de-sri-lanka",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/pachliopta-jophon",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/rosa-dello-sri-lanka",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/rosa-do-sri-lanka",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%BB%E3%82%A4%E3%83%AD%E3%83%B3%E3%83%AD%E3%83%BC%E3%82%BA",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1%E6%9B%99%E5%87%A4%E8%9D%B6"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Flügelspannweite von 9 bis 13 cm ist im Übersichtstext enthalten; sie wurde nicht fälschlich als Körperlänge gespeichert. Eine Zoopedia-Illustration wurde nicht ergänzt, weil im bereitgestellten Auszug keine entsprechende Illustration-URL enthalten ist."
+    }
+  }
+}

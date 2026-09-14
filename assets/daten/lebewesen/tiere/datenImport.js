@@ -59,6 +59,22 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Suricata suricatta/Suricata suricatta.json",
   "assets/daten/lebewesen/tiere/Conraua goliath/Conraua goliath.json",
   "assets/daten/lebewesen/tiere/Coryphaena hippurus/Coryphaena hippurus.json",
+  "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/Abudefduf vaigiensis.json",
+  "assets/daten/lebewesen/tiere/Pachliopta jophon/Pachliopta jophon.json",
+  "assets/daten/lebewesen/tiere/Ramphastos toco/Ramphastos toco.json",
+  "assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/Syncerus caffer caffer.json",
+  "assets/daten/lebewesen/tiere/Eudorcas thomsonii/Eudorcas thomsonii.json",
+  "assets/daten/lebewesen/tiere/Asio otus/Asio otus.json",
+  "assets/daten/lebewesen/tiere/Canis lupus/Canis lupus.json",
+  "assets/daten/lebewesen/tiere/Buceros bicornis/Buceros bicornis.json",
+  "assets/daten/lebewesen/tiere/Lynx lynx/Lynx lynx.json",
+  "assets/daten/lebewesen/tiere/Zebrasoma flavescens/Zebrasoma flavescens.json",
+  "assets/daten/lebewesen/tiere/Papilio machaon/Papilio machaon.json",
+  "assets/daten/lebewesen/tiere/Haliaeetus albicilla/Haliaeetus albicilla.json",
+  "assets/daten/lebewesen/tiere/Crotalus atrox/Crotalus atrox.json",
+  "assets/daten/lebewesen/tiere/Crocuta crocuta/Crocuta crocuta.json",
+  "assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json",
+  "assets/daten/lebewesen/tiere/Chelonoidis nigra/Chelonoidis nigra.json",
 ];
 
 /* ======================================== */

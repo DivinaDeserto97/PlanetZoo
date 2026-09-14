@@ -1,0 +1,437 @@
+{
+  "id": "Crotalus atrox",
+  "identitaet": {
+    "namen": {
+      "de": "Texas-Klapperschlange",
+      "en": "Western Diamondback Rattlesnake",
+      "en-US": "Western Diamondback Rattlesnake",
+      "es": "Crótalo diamante occidental",
+      "fr": "Crotale diamantin de l'ouest",
+      "it": "Crotalo adamantino occidentale",
+      "pt-BR": "Cascavel-diamante-ocidental",
+      "ja": "ニシダイヤガラガラヘビ",
+      "zh-Hans": "西部菱斑响尾蛇"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [
+      "Wüste",
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Viperidae",
+          "gattung": "Crotalus",
+          "art": "Crotalus atrox",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "wert": 1.2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine durchschnittliche Länge von 1,2 m.",
+            "en": "The Zoopedia gives an average length of 1.2 m."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximalBeobachtet",
+          "wert": 2.1,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia erwähnt ein dokumentiertes Exemplar mit 2,1 m Länge.",
+            "en": "The Zoopedia mentions a documented specimen measuring 2.1 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Least Concern. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 6,
+          "max": 7,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Geburt 6 bis 7 Monate nach der Paarung.",
+            "en": "The Zoopedia describes birth occurring 6 to 7 months after mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 8,
+          "max": 25,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das Weibchen bringt laut Zoopedia 8 bis 25 Jungtiere zur Welt.",
+            "en": "According to the Zoopedia, the female gives birth to 8 to 25 young."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "selbststaendigAbGeburt",
+          "min": 0,
+          "max": 0,
+          "durchschnitt": 0,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Jungtiere sind laut Zoopedia von Geburt an selbstständig.",
+            "en": "According to the Zoopedia, the young are independent from birth."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Texas-Klapperschlangen sind Einzelgänger. Begegnungen mit Artgenossen sind selten und finden hauptsächlich im Zusammenhang mit der Partnersuche statt.",
+            "en": "Western Diamondback Rattlesnakes are solitary. Encounters with conspecifics are rare and occur mainly in connection with mate searching."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "desert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Wüsten als Lebensraum.",
+            "en": "The Zoopedia names deserts as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Graslandschaften als Lebensraum.",
+            "en": "The Zoopedia names grasslands as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "shrubland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Buschlandschaften als Lebensraum.",
+            "en": "The Zoopedia names shrublands as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "nager",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia sagt, dass die Präsenz der Texas-Klapperschlange für Menschen vorteilhaft ist, weil sie Nagerpopulationen niedrig hält. Daraus ist die direkte Beute-Beziehung zu Nagern abgeleitet.",
+                "en": "The Zoopedia states that the snake benefits humans by keeping rodent populations low, directly supporting a predator-prey relationship with rodents."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart, die in den Wüsten, Graslandschaften und Buschlandschaften der USA und Mexikos heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, grasslands and shrublands of the United States and Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, grasslands and shrublands of the United States and Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart aus den USA und Mexiko. Sie lebt in Wüsten, Graslandschaften und Buschlandschaften.\n\nIhren englischen Namen „Western Diamondback Rattlesnake“ verdankt sie dem grauen und braunen Schuppenmuster auf ihrem Rücken.\n\nDie durchschnittliche Länge beträgt etwa 1,2 m. Die Zoopedia erwähnt außerdem ein Exemplar mit 2,1 m Länge. Männchen sind größer als Weibchen. Die Art kann angreifen, wenn sie sich bedroht fühlt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Texas-Klapperschlange gilt als nicht gefährdet. Größere Bedrohungen für die Art insgesamt sind laut Zoopedia unwahrscheinlich, einzelne lokale Populationen leiden jedoch unter Lebensraumzerstörung, Straßenverkehr und Verfolgung durch Menschen.\n\nDie Art kommt in nordamerikanischen Schutzgebieten vor, es gibt laut Zoopedia jedoch keine laufenden speziellen Schutzmaßnahmen. Langfristig wird ein langsamer Rückgang im gesamten natürlichen Verbreitungsgebiet erwartet, wobei die Gesamtpopulation als groß und widerstandsfähig beschrieben wird.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Texas-Klapperschlangen sind Einzelgänger. Begegnungen mit Artgenossen sind selten und beschränken sich meist auf die Partnersuche der Männchen.\n\nDie Paarungszeit liegt im Herbst. Männchen suchen Weibchen, indem sie Pheromonsignalen folgen. Paarungsbereite Weibchen verhalten sich passiv und gestatten dem Männchen die Paarung.\n\nEtwa 6 bis 7 Monate später bringt das Weibchen 8 bis 25 Jungtiere zur Welt. Diese sind von Geburt an selbstständig. Mit 3 Jahren erreichen Texas-Klapperschlangen die Geschlechtsreife.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Laut Zoopedia werden die meisten tödlichen Schlangenbisse in Mexiko und den USA durch die Texas-Klapperschlange verursacht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Mit der Rassel am Schwanzende warnt die Texas-Klapperschlange Feinde, wenn sie sich bedroht fühlt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Hinter jedem Nasenloch besitzt sie eine hitzeempfindliche Grube, mit der sie kleinste Temperaturunterschiede wahrnehmen kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Texas-Klapperschlangen fressen laut Zoopedia in freier Wildbahn nur einmal alle zwei bis drei Wochen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ihre Präsenz ist laut Zoopedia für Menschen vorteilhaft, weil sie Nagerpopulationen niedrig hält.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/db6e1446/Viper_WesternDiamondback_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/map/Crotalus atrox map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZGI2ZTE0NDYvVmlwZXJfV2VzdGVybkRpYW1vbmRiYWNrLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Texas-Klapperschlange – Planet Zoo 2",
+            "en": "Western Diamondback Rattlesnake – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Texas-Klapperschlange aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Western Diamondback Rattlesnake."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/bilder/Crotalus atrox 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Texas-Klapperschlange",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/texas-klapperschlange",
+        "en": "https://www.planetzoogame.com/2/zoopedia/western-diamondback-rattlesnake",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/western-diamondback-rattlesnake",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/cr%C3%B3talo-diamante-occidental",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/crotale-diamantin-de-l-ouest",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/crotalo-adamantino-occidentale",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/cascavel-diamante-ocidental",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8B%E3%82%B7%E3%83%80%E3%82%A4%E3%83%A4%E3%82%AC%E3%83%A9%E3%82%AC%E3%83%A9%E3%83%98%E3%83%93",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A5%BF%E9%83%A8%E8%8F%B1%E6%96%91%E5%93%8D%E5%B0%BE%E8%9B%87"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Im bereitgestellten Auszug ist keine Zoopedia-Illustration für diese Art enthalten."
+    }
+  }
+}

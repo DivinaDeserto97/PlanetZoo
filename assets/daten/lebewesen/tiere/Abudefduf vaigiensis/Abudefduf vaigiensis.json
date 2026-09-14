@@ -1,0 +1,924 @@
+{
+  "id": "Abudefduf vaigiensis",
+  "identitaet": {
+    "namen": {
+      "de": "Indo-pazifischer Feldwebelfisch",
+      "en": "Indo-Pacific Sergeant",
+      "en-US": "Indo-Pacific Sergeant",
+      "es": "Sargento mayor del Pacífico",
+      "fr": "Poisson-bagnard",
+      "it": "Pesce sergente maggiore",
+      "pt-BR": "Sargento-do-Indo-Pacífico",
+      "ja": "オヤビッチャ",
+      "zh-Hans": "条纹豆娘鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [],
+    "biome": [
+      "Riff"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Blenniiformes",
+          "familie": "Pomacentridae",
+          "gattung": "Abudefduf",
+          "art": "Abudefduf vaigiensis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "typisch",
+          "min": 0.12,
+          "max": 0.18,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "typisch",
+          "min": 0.08,
+          "max": 0.15,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art im Allgemeinen als nicht gefährdet, nennt sie im Persischen Golf jedoch als gefährdet.",
+            "en": "The Zoopedia describes the species as generally Least Concern, but endangered in the Persian Gulf."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Mit etwa einem Jahr und ungefähr 12 cm Körperlänge sind die Tiere laut Zoopedia geschlechtsreif.",
+            "en": "According to the Zoopedia, sexual maturity is reached at about one year and around 12 cm length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "wert": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt keine exakte Dauer, sondern nur, dass die Eier nach „ein paar Tagen“ schlüpfen.",
+            "en": "The Zoopedia gives no exact duration, only that the eggs hatch after 'a few days'."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "larvenphase",
+          "wert": null,
+          "hinweis": {
+            "de": "Die planktonischen Larven treiben laut Zoopedia einige Wochen im offenen Meer, bevor sie sich als Jungtiere auf Riffen niederlassen.",
+            "en": "According to the Zoopedia, planktonic larvae drift in the open sea for a few weeks before settling on reefs as juveniles."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutpflege",
+          "wert": null,
+          "hinweis": {
+            "de": "Nach dem Laichen übernimmt das Männchen allein die Brutpflege, fächelt den Eiern Sauerstoff zu und verteidigt das Nest.",
+            "en": "After spawning, the male alone tends the eggs, fans them with oxygenated water and defends the nest."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "school",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt kleine bis große Schwärme und lockere Verbände.",
+            "en": "The Zoopedia describes small to large schools and loose aggregations."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "lagoon",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "coastalWaters",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Die Zoopedia bezeichnet den Indo-pazifischen Feldwebelfisch ausdrücklich als Allesfresser.",
+              "en": "The Zoopedia explicitly describes the Indo-Pacific Sergeant as omnivorous."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "zooplankton",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "algen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "seetang",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "copepoden",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "wirbelloseTiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Feldwebelfisch (auch Abudefduf vaigiensis) kommt im gesamten Indopazifik vom Roten Meer und Ostafrika bis nach Japan, Australien und zu den Pazifikinseln vor. Er lebt in flachen Küstengewässern, Lagunen und an äußeren Riffhängen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Africa to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Africa to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El sargento mayor del Pacífico (Abudefduf vaigiensis) se encuentra por todo el Indopacífico, desde el mar Rojo y África oriental hasta Japón, Australia y las islas del Pacífico. Vive en aguas costeras poco profundas, lagunas y laderas exteriores de arrecifes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le poisson-bagnard (Abudefduf vaigiensis) est présent dans tout l’Indo-Pacifique, de la mer Rouge et de l’Afrique de l’Est jusqu’au Japon, à l’Australie et aux îles du Pacifique. Il vit dans les eaux côtières peu profondes, les lagons et les pentes externes des récifs.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce sergente maggiore (Abudefduf vaigiensis) è diffuso in tutto l’Indo-Pacifico, dal Mar Rosso e dall’Africa orientale fino al Giappone, all’Australia e alle isole del Pacifico. Vive in acque costiere poco profonde, lagune e pendii esterni delle barriere coralline.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O sargento-do-Indo-Pacífico (Abudefduf vaigiensis) ocorre em todo o Indo-Pacífico, do Mar Vermelho e da África Oriental até o Japão, a Austrália e as ilhas do Pacífico. Vive em águas costeiras rasas, lagoas e encostas externas de recifes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オヤビッチャ（Abudefduf vaigiensis）は、紅海と東アフリカから日本、オーストラリア、太平洋諸島までのインド太平洋全域に分布します。浅い沿岸域、ラグーン、外礁斜面に生息します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "条纹豆娘鱼（Abudefduf vaigiensis）分布于整个印度—太平洋，从红海和东非一直到日本、澳大利亚和太平洋岛屿。它生活在浅海沿岸、潟湖和外侧礁坡。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Feldwebelfisch (auch Abudefduf vaigiensis) ist ein Riffbarsch des Indopazifiks. Er lebt in flachen Küstengewässern, Lagunen und an äußeren Riffhängen und bildet dort große Schwärme.\n\nDie Art hat einen silberweißen Körper mit fünf deutlichen vertikalen schwarzen Streifen und einem gelben Schimmer auf dem oberen Rücken.\n\nIndo-pazifische Feldwebelfische werden typischerweise 12 bis 18 cm lang und wiegen etwa 80 bis 150 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) is a damselfish of the Indo-Pacific. It lives in shallow coastal waters, lagoons and outer reef slopes, where it forms large schools.\n\nIt has a silvery-white body with five distinct vertical black bars and a yellow sheen on the upper back.\n\nIndividuals are typically 12–18 cm long and weigh about 80–150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) is a damselfish of the Indo-Pacific. It lives in shallow coastal waters, lagoons and outer reef slopes, where it forms large schools.\n\nIt has a silvery-white body with five distinct vertical black bars and a yellow sheen on the upper back.\n\nIndividuals are typically 12–18 cm long and weigh about 80–150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El sargento mayor del Pacífico es un pez damisela del Indopacífico que vive en aguas costeras poco profundas, lagunas y laderas exteriores de arrecifes, donde forma grandes cardúmenes.\n\nPresenta un cuerpo blanco plateado con cinco franjas negras verticales y un brillo amarillo en la parte superior del dorso.\n\nMide normalmente entre 12 y 18 cm y pesa unos 80–150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Le poisson-bagnard est un poisson-demoiselle de l’Indo-Pacifique vivant dans les eaux côtières peu profondes, les lagons et les pentes externes des récifs, où il forme de grands bancs.\n\nSon corps est blanc argenté avec cinq bandes noires verticales et un reflet jaune sur le haut du dos.\n\nIl mesure généralement 12 à 18 cm et pèse environ 80 à 150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Il pesce sergente maggiore è una castagnola dell’Indo-Pacifico che vive in acque costiere poco profonde, lagune e pendii esterni delle barriere coralline, formando grandi banchi.\n\nHa un corpo bianco-argenteo con cinque evidenti bande nere verticali e una sfumatura gialla sulla parte superiore del dorso.\n\nMisura normalmente 12–18 cm e pesa circa 80–150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O sargento-do-Indo-Pacífico é um peixe-donzela do Indo-Pacífico que vive em águas costeiras rasas, lagoas e encostas externas de recifes, onde forma grandes cardumes.\n\nPossui corpo branco-prateado com cinco faixas pretas verticais e um brilho amarelo na parte superior do dorso.\n\nMede normalmente 12–18 cm e pesa cerca de 80–150 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オヤビッチャはインド太平洋に生息するスズメダイの仲間で、浅い沿岸域、ラグーン、外礁斜面で大きな群れを作ります。\n\n銀白色の体に5本の明瞭な黒い縦帯があり、背中の上部には黄色みがあります。\n\n通常は全長12～18 cm、体重約80～150 gです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "条纹豆娘鱼是一种印度—太平洋的雀鲷，生活在浅海沿岸、潟湖和外侧礁坡，并会形成大型鱼群。\n\n身体呈银白色，有五条明显的黑色纵带，背部上方带黄色光泽。\n\n通常体长12–18厘米，体重约80–150克。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Feldwebelfisch gilt im Allgemeinen als nicht gefährdet, im Persischen Golf jedoch als gefährdet. Bedrohungen sind unter anderem Korallenbleiche, Erwärmung der Meere, Verschmutzung und zerstörerische Fangmethoden. Außerhalb seines natürlichen Verbreitungsgebiets wurde außerdem Hybridisierung mit lokalen Riffbarschen beobachtet.\n\nSchutzmaßnahmen konzentrieren sich vor allem auf den Schutz von Korallenriffen, genetische Überwachung, Meeresschutzgebiete und Beschränkungen zerstörerischer Fangmethoden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as endangered specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as endangered specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "En general se considera una especie no amenazada, aunque en el golfo Pérsico se considera amenazada. Entre las amenazas figuran el blanqueamiento de corales, el calentamiento del océano, la contaminación y los métodos de pesca destructivos. También se ha observado hibridación con peces damisela locales fuera de su área natural.\n\nLas medidas se centran en proteger los arrecifes, vigilar la genética, crear áreas marinas protegidas y restringir métodos de pesca destructivos.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’espèce est généralement considérée comme peu préoccupante, mais comme menacée dans le golfe Persique. Les menaces comprennent le blanchissement des coraux, le réchauffement des océans, la pollution et les méthodes de pêche destructrices. Des hybridations avec des poissons-demoiselles locaux ont aussi été observées hors de son aire naturelle.\n\nLes efforts portent surtout sur la protection des récifs, la surveillance génétique, les aires marines protégées et les restrictions des méthodes de pêche destructrices.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "La specie è generalmente considerata a rischio minimo, ma nel Golfo Persico è ritenuta minacciata. Le minacce comprendono sbiancamento dei coralli, riscaldamento degli oceani, inquinamento e tecniche di pesca distruttive. Fuori dall’areale naturale sono stati osservati anche incroci con castagnole locali.\n\nLe misure si concentrano sulla protezione delle barriere coralline, sul monitoraggio genetico, sulle aree marine protette e sulle limitazioni alla pesca distruttiva.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "A espécie é geralmente considerada pouco preocupante, mas no Golfo Pérsico é considerada ameaçada. As ameaças incluem branqueamento de corais, aquecimento dos oceanos, poluição e métodos destrutivos de pesca. Fora da distribuição natural também foi observada hibridização com peixes-donzela locais.\n\nAs medidas concentram-se na proteção dos recifes, monitoramento genético, áreas marinhas protegidas e restrições a métodos destrutivos de pesca.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オヤビッチャは全体としては低危険とされていますが、ペルシャ湾では絶滅のおそれがあるとされています。サンゴの白化、海水温上昇、汚染、破壊的な漁法などが脅威です。また、本来の分布域外では在来のスズメダイ類との交雑も確認されています。\n\n保全対策はサンゴ礁の保護、遺伝的モニタリング、海洋保護区、破壊的漁法の制限などが中心です。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "条纹豆娘鱼总体被视为无危，但在波斯湾被认为受到威胁。珊瑚白化、海洋变暖、污染和破坏性捕捞方式都是主要威胁。在自然分布区之外，也观察到它与当地雀鲷杂交。\n\n保护措施主要包括保护珊瑚礁、遗传监测、建立海洋保护区以及限制破坏性捕捞方式。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Indo-pazifische Feldwebelfische bilden kleine bis große Schwärme und leben in lockeren Verbänden.\n\nDie Paarung findet ganzjährig statt, besonders bei Springfluten. Männchen errichten und verteidigen kleine Reviere auf Korallen- oder Felsuntergründen und bereiten dort Brutplätze vor. Mehrere Weibchen können ihre klebrigen Eier im Nest desselben Männchens ablegen.\n\nNach dem Laichen betreuen die Männchen die Eier allein, fächeln ihnen Sauerstoff zu und verteidigen das Nest. Die Eier schlüpfen nach einigen Tagen. Die planktonischen Larven treiben einige Wochen im offenen Meer und siedeln sich anschließend als Jungtiere auf Riffen an.\n\nMit etwa einem Jahr und einer Länge von 12 cm sind die Tiere geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Indo-Pacific Sergeants form small to large schools and live in loose groups.\n\nMating occurs throughout the year, especially during spring tides. Males establish and defend small territories on coral or rocky substrates and prepare nesting sites. Several females may lay adhesive eggs in the same male's nest.\n\nAfter spawning, males care for the eggs alone, fan them with oxygenated water and defend the nest. The eggs hatch after a few days. Planktonic larvae drift in the open sea for a few weeks before settling on reefs as juveniles.\n\nThey reach sexual maturity at about one year of age and 12 cm length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Indo-Pacific Sergeants form small to large schools and live in loose groups.\n\nMating occurs throughout the year, especially during spring tides. Males establish and defend small territories on coral or rocky substrates and prepare nesting sites. Several females may lay adhesive eggs in the same male's nest.\n\nAfter spawning, males care for the eggs alone, fan them with oxygenated water and defend the nest. The eggs hatch after a few days. Planktonic larvae drift in the open sea for a few weeks before settling on reefs as juveniles.\n\nThey reach sexual maturity at about one year of age and 12 cm length.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Forman cardúmenes de pequeños a grandes y viven en asociaciones sueltas.\n\nSe reproducen durante todo el año, especialmente durante mareas vivas. Los machos establecen y defienden pequeños territorios sobre coral o roca y preparan zonas de puesta. Varias hembras pueden poner huevos adhesivos en el mismo nido.\n\nTras el desove, el macho cuida solo los huevos, los abanica para aportar oxígeno y defiende el nido. Los huevos eclosionan después de unos días. Las larvas planctónicas derivan varias semanas en mar abierto antes de asentarse en arrecifes.\n\nAlcanzan la madurez sexual aproximadamente al año y con unos 12 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Ils forment des bancs de petite à grande taille et vivent en associations lâches.\n\nLa reproduction a lieu toute l’année, surtout lors des grandes marées. Les mâles établissent et défendent de petits territoires sur le corail ou la roche et y préparent des sites de ponte. Plusieurs femelles peuvent déposer leurs œufs adhésifs dans le même nid.\n\nAprès la ponte, le mâle s’occupe seul des œufs, les ventile et défend le nid. Les œufs éclosent après quelques jours. Les larves planctoniques dérivent quelques semaines en pleine mer avant de s’installer sur les récifs.\n\nLa maturité sexuelle est atteinte vers un an et environ 12 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Formano banchi piccoli o grandi e vivono in aggregazioni poco compatte.\n\nL’accoppiamento avviene tutto l’anno, soprattutto durante le maree sigiziali. I maschi stabiliscono e difendono piccoli territori su corallo o roccia e preparano i siti di deposizione. Più femmine possono deporre uova adesive nello stesso nido.\n\nDopo la deposizione il maschio cura da solo le uova, le ventila e difende il nido. Le uova si schiudono dopo alcuni giorni. Le larve planctoniche restano alcune settimane in mare aperto prima di insediarsi sulle barriere come giovani.\n\nLa maturità sessuale viene raggiunta a circa un anno e 12 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Formam cardumes pequenos a grandes e vivem em associações soltas.\n\nA reprodução ocorre durante todo o ano, especialmente nas marés de sizígia. Os machos estabelecem e defendem pequenos territórios em coral ou rocha e preparam locais de desova. Várias fêmeas podem colocar ovos adesivos no mesmo ninho.\n\nApós a desova, o macho cuida sozinho dos ovos, abana-os para fornecer oxigênio e defende o ninho. Os ovos eclodem após alguns dias. As larvas planctônicas ficam algumas semanas no mar aberto antes de se fixarem nos recifes.\n\nA maturidade sexual é atingida por volta de um ano e 12 cm.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オヤビッチャは小規模から大規模の群れを作り、ゆるやかな集団で生活します。\n\n繁殖は一年中行われ、とくに大潮の時期に活発です。雄はサンゴや岩の上に小さな縄張りを作って守り、産卵場所を準備します。複数の雌が同じ雄の巣に粘着性の卵を産むことがあります。\n\n産卵後は雄だけが卵を世話し、ヒレで水を送り酸素を供給しながら巣を守ります。卵は数日でふ化します。浮遊性の仔魚は数週間外洋を漂った後、幼魚としてサンゴ礁に定着します。\n\n約1歳、全長12 cmほどで性成熟します。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "条纹豆娘鱼会形成从小型到大型的鱼群，以较松散的群体生活。\n\n全年都可繁殖，尤其常见于大潮期间。雄鱼会在珊瑚或岩石表面建立并防守小型领地，清理产卵地点。多只雌鱼可以把黏性卵产在同一只雄鱼的巢中。\n\n产卵后由雄鱼单独照料卵，用鳍扇水供氧并防守巢穴。鱼卵几天后孵化。浮游幼体会在外海漂流数周，之后以幼鱼形式定居在珊瑚礁。\n\n约1岁、体长约12厘米时达到性成熟。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Indo-pazifische Feldwebelfisch ist ein Allesfresser und frisst Zooplankton, Algen, Seetang, Copepoden und wirbellose Tiere.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Indo-pazifische Feldwebelfische lassen sich mit Seetang treiben, der ihnen Futter und Schutz bietet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Während der Laichzeit werden die männlichen Indo-pazifischen Feldwebelfische bunter, um Weibchen anzulocken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Laichvorgang erfolgt häufig bei starkem Gezeitenwechsel.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Eier kleben an Steinen und treiben nicht frei im Wasser.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant is omnivorous and eats zooplankton, algae, seaweed, copepods and invertebrates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Young Indo-Pacific Sergeants drift with seaweed, which provides food and protection.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During spawning, males become more colorful to attract females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Spawning often occurs during strong tidal changes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The eggs stick to rocks and do not drift freely in the water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Indo-Pacific Sergeant is omnivorous and eats zooplankton, algae, seaweed, copepods and invertebrates.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Young Indo-Pacific Sergeants drift with seaweed, which provides food and protection.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "During spawning, males become more colorful to attract females.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Spawning often occurs during strong tidal changes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "The eggs stick to rocks and do not drift freely in the water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Es omnívoro y come zooplancton, algas, algas marinas, copépodos e invertebrados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los juveniles derivan con algas marinas que les proporcionan alimento y protección.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante el desove los machos se vuelven más coloridos para atraer a las hembras.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "El desove suele coincidir con fuertes cambios de marea.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Los huevos se adhieren a las rocas y no flotan libremente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Il est omnivore et mange du zooplancton, des algues, des algues marines, des copépodes et des invertébrés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les jeunes dérivent avec des algues marines qui leur offrent nourriture et protection.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Pendant le frai, les mâles deviennent plus colorés pour attirer les femelles.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le frai se produit souvent lors de forts changements de marée.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Les œufs adhèrent aux rochers et ne dérivent pas librement.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "È onnivoro e mangia zooplancton, alghe, alghe marine, copepodi e invertebrati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "I giovani si lasciano trasportare con le alghe marine, che offrono cibo e protezione.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante la deposizione i maschi diventano più colorati per attirare le femmine.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "La deposizione avviene spesso durante forti cambiamenti di marea.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Le uova aderiscono alle rocce e non galleggiano liberamente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "É onívoro e come zooplâncton, algas, algas marinhas, copépodes e invertebrados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os juvenis derivam com algas marinhas, que fornecem alimento e proteção.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Durante a desova os machos ficam mais coloridos para atrair as fêmeas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "A desova ocorre frequentemente durante fortes mudanças de maré.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Os ovos aderem às pedras e não flutuam livremente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "雑食性で、動物プランクトン、藻類、海藻、カイアシ類、無脊椎動物を食べます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼魚は海藻とともに漂い、そこで餌と保護を得ます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "産卵期には雄の体色が鮮やかになり、雌を引きつけます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "産卵は強い潮汐変化の時に起こることが多いです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "卵は岩に付着し、水中を自由に漂いません。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "它是杂食性鱼类，吃浮游动物、藻类、海藻、桡足类和无脊椎动物。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "幼鱼会随海藻漂流，海藻为它们提供食物和保护。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "产卵期雄鱼体色会变得更鲜艳，以吸引雌鱼。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "产卵常发生在潮汐变化强烈的时候。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "鱼卵会黏在石头上，不会在水中自由漂浮。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Texts, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Planet Zoo 2 se encuentra actualmente en desarrollo activo y la Zoopedia refleja este proceso. Los textos, imágenes, estadísticas y demás contenidos no son necesariamente definitivos y aún pueden cambiar o ampliarse.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Planet Zoo 2 est actuellement en développement actif et la Zoopédie reflète ce processus. Les textes, images, statistiques et autres contenus ne sont pas nécessairement définitifs et peuvent encore changer ou être complétés.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Planet Zoo 2 è attualmente in fase di sviluppo attivo e la Zoopedia riflette questo processo. Testi, immagini, statistiche e altri contenuti non sono necessariamente definitivi e possono ancora cambiare o essere ampliati.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Planet Zoo 2 está atualmente em desenvolvimento ativo, e a Zoopedia reflete esse processo. Textos, imagens, estatísticas e outros conteúdos não são necessariamente finais e ainda podem mudar ou ser ampliados.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "Planet Zoo 2は現在も開発中であり、Zoopediaの内容もその開発過程を反映しています。文章、画像、統計などは最終版ではなく、今後変更・追加される可能性があります。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "《动物园之星2》目前仍在积极开发中，动物百科反映了这一开发过程。文本、图片、统计数据等内容并不一定是最终版本，之后仍可能修改或补充。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/378f470f/Sergeant_IndoPacific_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/map/Abudefduf vaigiensis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMzc4ZjQ3MGYvU2VyZ2VhbnRfSW5kb1BhY2lmaWMuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Indo-pazifischer Feldwebelfisch – Planet Zoo 2",
+            "en": "Indo-Pacific Sergeant – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Indo-pazifischen Feldwebelfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Indo-Pacific Sergeant."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/bilder/Abudefduf vaigiensis 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/378f470f/Sergeant_IndoPacific_illustration.jpg",
+          "alt": {
+            "de": "Indo-pazifischer Feldwebelfisch – Zoopedia-Illustration",
+            "en": "Indo-Pacific Sergeant – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Indo-pazifischen Feldwebelfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Indo-Pacific Sergeant illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/bilder/Abudefduf vaigiensis illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Indo-pazifischer Feldwebelfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/indo-pazifischer-feldwebelfisch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/indo-pacific-sergeant",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/indo-pacific-sergeant",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/sargento-mayor-del-pac%C3%ADfico",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/poisson-bagnard",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-sergente-maggiore",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/sargento-do-indo-pac%C3%ADfico",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%83%A4%E3%83%93%E3%83%83%E3%83%81%E3%83%A3",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%9D%A1%E7%BA%B9%E8%B1%86%E5%A8%98%E9%B1%BC"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Der regionale Hinweis, dass die Art im Persischen Golf als gefährdet gilt, wurde im Schutzstatus-Hinweis dokumentiert."
+    }
+  }
+}

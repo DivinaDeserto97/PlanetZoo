@@ -1,0 +1,503 @@
+{
+  "id": "Balaeniceps rex",
+  "identitaet": {
+    "namen": {
+      "de": "Schuhschnabel",
+      "en": "Shoebill",
+      "en-US": "Shoebill",
+      "es": "Picozapato",
+      "fr": "Bec-en-sabot du Nil",
+      "it": "Becco a scarpa",
+      "pt-BR": "Bico-de-tamanco",
+      "ja": "ハシビロコウ",
+      "zh-Hans": "鲸头鹳"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Feuchtgebiete",
+      "Tropisch"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Pelecaniformes",
+          "familie": "Balaenicipitidae",
+          "gattung": "Balaeniceps",
+          "art": "Balaeniceps rex",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 4,
+          "max": 7,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für erwachsene Tiere in der Regel 4 bis 7 kg.",
+            "en": "The Zoopedia gives a typical adult weight of 4 to 7 kg."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "min": null,
+          "max": 7.5,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Einige große Männchen können laut Zoopedia bis zu 7,5 kg wiegen.",
+            "en": "According to the Zoopedia, some large males can weigh up to 7.5 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Vulnerable. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 3000,
+          "max": 5300,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 3.000 bis 5.300 an.",
+            "en": "The Zoopedia gives a wild population of 3,000 to 5,300."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": null,
+          "max": 3,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das Weibchen legt laut Zoopedia in der Regel bis zu 3 weiße Eier.",
+            "en": "According to the Zoopedia, the female generally lays up to 3 white eggs."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 30,
+          "max": 30,
+          "durchschnitt": 30,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Beide Elternteile bebrüten die Eier etwa 30 Tage.",
+            "en": "Both parents incubate the eggs for about 30 days."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 95,
+          "max": 105,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ersteFluege",
+          "min": 105,
+          "max": 112,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Jungvögel beginnen laut Zoopedia nach etwa 105 bis 112 Tagen zu fliegen.",
+            "en": "According to the Zoopedia, the young begin flying after about 105 to 112 days."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Schuhschnäbel sind überwiegend Einzelgänger und leben außerhalb der Brutzeit allein.",
+            "en": "Shoebills are predominantly solitary and live alone outside the breeding season."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutzeit",
+          "wert": "seasonalMonogamousPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Zur Brutzeit bilden Schuhschnäbel saisonale monogame Paare.",
+            "en": "During the breeding season Shoebills form seasonal monogamous pairs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "freshwaterSwamp",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Süßwassersümpfe Ostafrikas als Lebensraum.",
+            "en": "The Zoopedia names tropical freshwater swamps of East Africa as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt den Schuhschnabel als Jäger großer Fische und anderer Beutetiere.",
+              "en": "The Zoopedia describes the Shoebill as a hunter of large fish and other prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "fische",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt große Fische ausdrücklich als Beute des Schuhschnabels.",
+                "en": "The Zoopedia explicitly describes large fish as prey of the Shoebill."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Schuhschnabel (Balaeniceps rex), auch Schuhschnabelstorch genannt, ist ein großer, einzelgängerischer Schreitvogel aus den tropischen Süßwassersümpfen Ostafrikas. Er bevorzugt stehendes, sauerstoffarmes Wasser, weil sich Fische dort langsamer bewegen und dadurch leichter erbeutet werden können.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Africa. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Africa. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schuhschnabel (Balaeniceps rex), auch Schuhschnabelstorch genannt, ist ein großer, überwiegend einzelgängerischer Schreitvogel aus den tropischen Süßwassersümpfen Ostafrikas.\n\nEr besitzt einen hochgewachsenen blaugrauen Körper, breite Flügel und einen riesigen schuhförmigen Schnabel mit hakenförmiger Spitze, mit dem er große Fische fangen kann.\n\nErwachsene Tiere werden laut Zoopedia 1,1 bis 1,5 m „groß“ und erreichen eine Flügelspannweite von 2,3 bis 2,6 m. Sie wiegen normalerweise 4 bis 7 kg; einige große Männchen können bis zu 7,5 kg erreichen. Weibchen sind etwas kleiner und leichter, während Männchen im Durchschnitt größer sind und einen massigeren Schnabel besitzen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Schuhschnäbel gelten als gefährdet. Die Zoopedia nennt vor allem den Verlust von Feuchtgebieten durch Umwandlung in Ackerland und Infrastrukturprojekte, Störungen und Zerstörung von Nestern, Jagd, den illegalen Fang von Küken sowie Klimawandel und veränderte Wasserverhältnisse als Bedrohungen.\n\nSchutzmaßnahmen konzentrieren sich auf Lebensraumschutz, die Einbindung lokaler Bevölkerung und gesetzliche Regelungen. In den Bangweulu-Feuchtgebieten in Sambia schützen Ranger die Nester; dort wurde außerdem eine Einrichtung zur Aufzucht und Rehabilitation eingerichtet, die zusätzliche Küken aufzieht und wieder auswildert. Weitere Programme nutzen Ökotourismus, Aufklärung und nachhaltige Landwirtschaft. Die Zoopedia nennt zudem CITES-Anhang II als internationale Handelsregelung.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schuhschnäbel sind Einzelgänger und bilden nur zur Brutzeit Paare. Zu Beginn der Regenzeit entstehen saisonale monogame Paarbindungen. Das Balzverhalten ist laut Zoopedia nicht umfassend dokumentiert, dürfte aber Schnabelklappern und Kopfbewegungen umfassen.\n\nWenn der Wasserstand am Ende der Regenzeit sinkt, errichtet das Paar auf schwimmender Vegetation eine große, oft zwischen Papyrus und Schilf versteckte Nestplattform.\n\nDas Weibchen legt in der Regel bis zu 3 weiße Eier. Beide Elternteile bebrüten die Eier ungefähr 30 Tage und können sie mit Wasser aus dem Schnabel kühlen. Nach dem Schlupf sind die Küken vollständig auf die Eltern angewiesen. In freier Wildbahn wird meist nur das älteste Küken weiter versorgt.\n\nDie Jungvögel werden gewöhnlich nach 95 bis 105 Tagen flügge und beginnen nach 105 bis 112 Tagen zu fliegen. Auch danach werden sie noch mehrere Wochen von den Eltern gefüttert. Die Geschlechtsreife wird mit etwa 3 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Schuhschnabel wird auch Walkopfstorch oder Walschnabel genannt; laut Zoopedia bedeutet der wissenschaftliche Name „Balaeniceps rex“ sinngemäß „Walkopf-König“.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der massive Schnabel dient nicht nur zum Fangen von Fischen, sondern auch zum Durchbohren und Überwältigen von Beute.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zoopedia nennt eine Flügelschlagfrequenz von etwa 150 Schlägen pro Minute und beschreibt sie als eine der langsamsten unter großen Vögeln.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schuhschnäbel sind überwiegend einzelgängerisch und territorial; selbst Brutpaare suchen häufig an entgegengesetzten Enden ihres Reviers nach Nahrung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schuhschnäbel verharren oft lange regungslos und warten auf Fische und andere Beutetiere.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2b0d7e28/Shoebill_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Balaeniceps rex/map/Balaeniceps rex map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMmIwZDdlMjgvU2hvZWJpbGwuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Schuhschnabel – Planet Zoo 2",
+            "en": "Shoebill – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schuhschnabels aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Shoebill."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Balaeniceps rex/bilder/Balaeniceps rex 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2b0d7e28/Shoebill_illustration.jpg",
+          "alt": {
+            "de": "Schuhschnabel – Zoopedia-Illustration",
+            "en": "Shoebill – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Schuhschnabels aus der Planet Zoo 2 Zoopedia.",
+            "en": "Shoebill illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Balaeniceps rex/bilder/Balaeniceps rex illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [
+    {
+      "typ": "dokumentation",
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "Tier-Vorstellung",
+          "titel": {
+            "de": "Tier-Vorstellung – Schuhschnabel",
+            "en": "Animal Spotlight – Shoebill"
+          },
+          "quelle": "planetZoo2",
+          "url": "https://youtube.com/watch?v=mfz7j7Xjcvg",
+          "metadaten": [],
+          "dateien": [],
+          "dauerSekunden": null,
+          "beschreibung": {
+            "de": "Offizielles Planet Zoo 2 Tier-Vorstellungs-Video zum Schuhschnabel.",
+            "en": "Official Planet Zoo 2 animal spotlight video featuring the Shoebill."
+          }
+        }
+      ]
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schuhschnabel",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/schuhschnabel",
+        "en": "https://www.planetzoogame.com/2/zoopedia/shoebill",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/shoebill",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/picozapato",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/bec-en-sabot-du-nil",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/becco-a-scarpa",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/bico-de-tamanco",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8F%E3%82%B7%E3%83%93%E3%83%AD%E3%82%B3%E3%82%A6",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%B2%B8%E5%A4%B4%E9%B9%B3"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Angabe „1,1–1,5 m groß“ wurde nicht als Körperlänge oder Schulterhöhe interpretiert; die Flügelspannweite 2,3–2,6 m bleibt im Beschreibungstext. Das auf der Zoopedia verlinkte offizielle Tier-Vorstellungs-Video wurde unter `video` eingetragen."
+    }
+  }
+}

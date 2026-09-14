@@ -1,0 +1,500 @@
+{
+  "id": "Canis lupus",
+  "identitaet": {
+    "namen": {
+      "de": "Wolf",
+      "en": "Grey Wolf",
+      "en-US": "Grey Wolf",
+      "es": "Lobo gris",
+      "fr": "Loup gris",
+      "it": "Lupo grigio",
+      "pt-BR": "Lobo ocidental",
+      "ja": "シンリンオオカミ",
+      "zh-Hans": "狼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia",
+      "northAmerica"
+    ],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Canidae",
+          "gattung": "Canis",
+          "art": "Canis lupus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.05,
+          "max": 1.6,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Körperlänge von 105 bis 160 cm; der Schwanz ist zusätzlich 29 bis 50 cm lang.",
+            "en": "The Zoopedia gives a body length of 105 to 160 cm; the tail is an additional 29 to 50 cm long."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.8,
+          "max": 0.85,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 43,
+          "max": 45,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 36,
+          "max": 38.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der mitgeschickten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Least Concern. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 200000,
+          "max": 250000,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 200.000 bis 250.000 an.",
+            "en": "The Zoopedia gives a wild population of 200,000 to 250,000."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Grauwölfe werden laut Zoopedia mit etwa 2 bis 3 Jahren geschlechtsreif.",
+            "en": "According to the Zoopedia, Grey Wolves reach sexual maturity at about 2 to 3 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 2.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 5,
+          "max": 7,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ersteWochenInHoehle",
+          "min": 3,
+          "max": 3,
+          "durchschnitt": 3,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Welpen verbringen die ersten etwa 3 Wochen in der abgelegenen Höhle bei der Mutter.",
+            "en": "The pups spend about their first 3 weeks in the secluded den with their mother."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "vorverdauteNahrungAb",
+          "min": 3,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Nach etwa 3 bis 4 Wochen beginnen die Welpen, von Erwachsenen vorverdaute Nahrung zu fressen.",
+            "en": "After about 3 to 4 weeks the pups begin eating food pre-digested by adults."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 8,
+          "max": 8,
+          "durchschnitt": 8,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Nach etwa 8 Wochen sind die Welpen vollständig entwöhnt.",
+            "en": "The pups are fully weaned after about 8 weeks."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "begleitetRudelAufJagd",
+          "min": 4,
+          "max": 6,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Mit etwa 4 bis 6 Monaten begleiten die Welpen das Rudel gewöhnlich auf die Jagd.",
+            "en": "At about 4 to 6 months the pups usually accompany the pack on hunts."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "rudel",
+          "wert": "familyPack",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Wolfsrudel als Familienverbände aus Alphamännchen, Alphaweibchen, einigen ausgewachsenen Jungtieren und Jungen unter einem Jahr.",
+            "en": "The Zoopedia describes wolf packs as family groups consisting of an alpha male, alpha female, some grown offspring and young under one year old."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "lifelongMonogamousPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Alphamännchen und Alphaweibchen werden als monogam und als Partner fürs Leben beschrieben; sie sind die einzigen Tiere im Rudel, die sich paaren.",
+            "en": "The alpha male and alpha female are described as monogamous lifelong partners and as the only animals in the pack that breed."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "abwanderung",
+          "wert": "dispersalFromNatalPack",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Junge Wölfe bleiben laut Zoopedia gewöhnlich zwischen 10 Monaten und 4 Jahren im Geburtsrudel. Einzelgänger suchen anschließend einen Partner und ein eigenes Territorium.",
+            "en": "According to the Zoopedia, young wolves usually remain in their natal pack for between 10 months and 4 years. Dispersing individuals then seek a mate and territory."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Grauwölfe als große Raubtiere und vielseitige Jäger, die praktisch jede Beute fressen, die sie erlegen können.",
+              "en": "The Zoopedia describes Grey Wolves as large predators and versatile hunters that eat virtually any prey they can kill."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia gibt an, dass es 38 Unterarten des Grauwolfs gibt, die jeweils an ihre Umgebung angepasst sind. Die einzelnen Unterarten werden auf der mitgeschickten Seite nicht aufgelistet.",
+      "en": "The Zoopedia states that there are 38 Grey Wolf subspecies, each adapted to its environment. The supplied page does not list the individual subspecies."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Grauwölfe (auch Canis lupus) sind große Raubtiere aus der Familie der Canidae, die fast überall in der nördlichen Hemisphäre vorkommen. Die Zoopedia nennt Europa, Asien und Nordamerika als Verbreitungsgebiete. Sie sind vielseitige Jäger und können sich an sehr unterschiedliche Umgebungen anpassen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Grey Wolves (Canis lupus) are large predators in the family Canidae that occur across much of the Northern Hemisphere. The Zoopedia lists Europe, Asia and North America as their range and describes them as versatile hunters that can adapt to many environments.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Grey Wolves (Canis lupus) are large predators in the family Canidae that occur across much of the Northern Hemisphere. The Zoopedia lists Europe, Asia and North America as their range and describes them as versatile hunters that can adapt to many environments.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Grauwölfe (auch Canis lupus) sind große Raubtiere aus der Familie der Canidae, die fast überall in der nördlichen Hemisphäre vorkommen. Sie sind vielseitige Jäger und passen sich an viele verschiedene Umgebungen an.\n\nDas Aussehen unterscheidet sich stark zwischen Populationen. Die Zoopedia nennt 38 Unterarten, die jeweils an ihre Umgebung angepasst sind. Meist besitzen Grauwölfe ein fleckiges grau-braunes Fell, spitze Ohren, eine lange gerade Schnauze, einen schlanken Körperbau, einen tiefen Brustkorb und lange Beine.\n\nDie Körperlänge beträgt 105 bis 160 cm, der Schwanz ist 29 bis 50 cm lang und die Schulterhöhe liegt bei 80 bis 85 cm. Männchen wiegen 43 bis 45 kg, Weibchen 36 bis 38,5 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Grauwolf wird aktuell als nicht gefährdet eingestuft, war jedoch über Jahrhunderte stark von Vertreibung, Lebensraumverlust und Verfolgung betroffen. In Teilen Europas und Nordamerikas wurde er fast ausgerottet. Fragmentierte Lebensräume, Verkehrsunfälle und illegale Tötungen gefährden Populationen zusätzlich.\n\nDie Zoopedia beschreibt eine Erholung vieler Bestände durch verbesserten gesetzlichen Schutz. Genannt werden unter anderem die Wiedereinführung im Yellowstone-Nationalpark ab 1995, die natürliche Rückkehr in viele europäische Regionen sowie Entschädigungen für Nutztierverluste, Überwachungsprogramme und Aufklärungskampagnen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Wölfe besitzen ein ausgeprägtes Sozialverhalten und leben in Familienrudeln. Diese bestehen laut Zoopedia gewöhnlich aus einem Alphamännchen, einem Alphaweibchen, einigen ausgewachsenen Jungtieren und Jungen unter einem Jahr. Der Zusammenhalt innerhalb des Rudels ist sehr stark.\n\nAlphamännchen und Alphaweibchen sind monogam und Partner fürs Leben. Sie sind die einzigen Tiere im Rudel, die sich paaren.\n\nNach einer Trächtigkeit von etwa 2,5 Monaten bringt das Weibchen in einer abgelegenen Höhle 5 bis 7 Welpen zur Welt. Während der ersten 3 Wochen kümmert sie sich dort um die Jungtiere, während das Männchen sie mit Futter versorgt. Nach etwa 3 bis 4 Wochen beginnen die Welpen, von Erwachsenen vorverdaute Nahrung zu fressen. Mit 8 Wochen sind sie vollständig entwöhnt. Mit etwa 4 bis 6 Monaten begleiten sie das Rudel gewöhnlich auf die Jagd.\n\nGrauwölfe werden mit etwa 2 bis 3 Jahren geschlechtsreif. Junge Tiere bleiben normalerweise zwischen 10 Monaten und 4 Jahren in ihrem Geburtsrudel. Abwandernde Einzelgänger suchen einen Partner des anderen Geschlechts und ein eigenes Territorium; findet sich ein Paar, bleibt es laut Zoopedia lebenslang zusammen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Wölfe sind laut Zoopedia – abgesehen von einigen gezüchteten Hunderassen – die größten Vertreter der Familie der Hunde.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wölfe heulen, um Artgenossen zu warnen, das Rudel zusammenzurufen, getrennte Tiere wiederzufinden und über große Entfernungen zu kommunizieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In Nordamerika haben sich Wölfe laut Zoopedia mit Haushunden gepaart; dadurch kam es in dieser Population zu schwarzer Fellfärbung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wölfe aus kälteren Regionen können laut Zoopedia Temperaturen von bis zu -40 °C überstehen und nutzen ihren Schwanz, um beim Liegen das Gesicht zu schützen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zoopedia beschreibt Wölfe als Spitzenräuber und nennt Tiger, Bären und Menschen als ihre einzigen natürlichen Feinde.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8bb3d123/Wolf_Grey_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Canis lupus/map/Canis lupus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOGJiM2QxMjMvV29sZl9HcmV5LmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Wolf – Planet Zoo 2",
+            "en": "Grey Wolf – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Wolfs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Grey Wolf."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Canis lupus/bilder/Canis lupus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8bb3d123/Wolf_Grey_illustration.jpg",
+          "alt": {
+            "de": "Wolf – Zoopedia-Illustration",
+            "en": "Grey Wolf – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Wolfs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Grey Wolf illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Canis lupus/bilder/Canis lupus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Wolf",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/wolf",
+        "en": "https://www.planetzoogame.com/2/zoopedia/grey-wolf",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/grey-wolf",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/lobo-gris",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/loup-gris",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/lupo-grigio",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/lobo-ocidental",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%B7%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%AA%E3%82%AA%E3%82%AB%E3%83%9F",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%8B%BC"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die 38 erwähnten Unterarten wurden nicht extern ergänzt oder einzeln aufgelistet."
+    }
+  }
+}

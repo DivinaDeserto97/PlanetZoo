@@ -1,0 +1,532 @@
+{
+  "id": "Eudorcas thomsonii",
+  "identitaet": {
+    "namen": {
+      "de": "Thomson-Gazelle",
+      "en": "Thomson's Gazelle",
+      "en-US": "Thomson's Gazelle",
+      "es": "Gacela de Thomson",
+      "fr": "Gazelle de Thomson",
+      "it": "Gazzella di Thomson",
+      "pt-BR": "Gazela-de-Thomson",
+      "ja": "トムソンガゼル",
+      "zh-Hans": "汤氏瞪羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Eudorcas",
+          "art": "Eudorcas thomsonii",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.8,
+          "max": 1.2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine durchschnittliche Körperlänge von 80 bis 120 cm.",
+            "en": "The Zoopedia gives an average body length of 80 to 120 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 20,
+          "max": 35,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 96,
+          "einheit": "km/h",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
+            "en": "The Zoopedia lists the conservation status as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "145",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt beim Wildbestand lediglich „145“. Da Kontext, Einheit und Größenordnung fehlen, wurde die Angabe nicht als numerischer Gesamtbestand interpretiert und nur als Rohwert übernommen.",
+            "en": "The Zoopedia displays only '145' for the wild population. Because context, unit and magnitude are missing, it was not interpreted as a total numeric population and is preserved only as a raw value."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "versteckt",
+          "min": 3,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Das Kalb lebt die ersten 3 bis 4 Wochen versteckt.",
+            "en": "The calf remains hidden for the first 3 to 4 weeks."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 5,
+          "max": 8,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Mit 5 bis 8 Monaten ist das Kalb vollständig entwöhnt.",
+            "en": "The calf is fully weaned at 5 to 8 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "gemischteGruppe",
+          "wert": "mixedHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Gemischte Gruppen bestehen aus nicht dominanten Männchen, Weibchen und deren Jungen.",
+            "en": "Mixed groups consist of non-dominant males, females and their young."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennchen",
+          "wert": "bachelorGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Männliche Jungtiere können sich Junggesellengruppen anschließen.",
+            "en": "Young males may join bachelor groups."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitaryTerritorial",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Ausgewachsene territoriale Männchen können einzeln leben und ihr Revier gegen andere Männchen verteidigen.",
+            "en": "Adult territorial males may live alone and defend their territory against other males."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "harem",
+          "wert": "dominantMaleWithFemales",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Haremgruppen bestehen aus einem dominanten Männchen und mehreren paarungsbereiten Weibchen.",
+            "en": "Harem groups consist of one dominant male and several receptive females."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beobachteteHerde",
+          "wert": "largeHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": 700,
+          "hinweis": {
+            "de": "Die Zoopedia nennt als beobachtetes Maximum Herden mit 700 Tieren.",
+            "en": "The Zoopedia mentions observed herds of up to 700 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "forest",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Thomson-Gazelle als grasendes Säugetier und nennt frisches Gras als Nahrung der Jungtiere nach der ersten Milchphase.",
+              "en": "The Zoopedia describes Thomson's Gazelle as a grazing mammal and mentions fresh grass as food after the initial milk-fed stage."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "muttermilch",
+              "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [
+                  "jungtier"
+                ],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "gras",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "abEtwa3Bis4Wochen"
+                ],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "gras",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier, das in der Serengeti von Tansania und Kenia beheimatet ist. Sie lebt bevorzugt in trockenen Graslandschaften, nutzt aber auch Wälder.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry grasslands but also uses woodland habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry grasslands but also uses woodland habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier aus der Serengeti von Tansania und Kenia. Sie bevorzugt trockene Graslandschaften, kommt aber auch in Wäldern vor.\n\nCharakteristisch sind der hellbraune Rücken, der weiße Bauch und die schwarzen Streifen auf den Flanken. Beide Geschlechter tragen dunkle, tief gefurchte Hörner; die Hörner der Männchen sind etwas länger und kräftiger.\n\nDie Zoopedia nennt im Durchschnitt eine Höhe von 55 bis 82 cm, eine Körperlänge von 80 bis 120 cm und ein Gewicht von 20 bis 35 kg. Die Höhenangabe wurde nicht als Schulterhöhe gespeichert, weil die Messart nicht ausdrücklich so bezeichnet wird.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Thomson-Gazelle gilt als nicht gefährdet, steht aber durch Lebensraumverlust, Fragmentierung und Konflikte mit Menschen unter Druck. Die Ausweitung der Landwirtschaft, Infrastruktur und Viehhaltung verkleinert und zerschneidet den Savannenlebensraum Ostafrikas. Zusätzlich nennt die Zoopedia Wilderei und illegale Jagd als lokale Bedrohungen.\n\nSchutzmaßnahmen konzentrieren sich auf Lebensraumschutz, nachhaltige Landbewirtschaftung, Schutzgebiete, Maßnahmen gegen Wilderei, Aufklärung, Ökotourismus sowie Wildkorridore und Pufferzonen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Die Thomson-Gazelle besitzt ein komplexes und veränderliches Sozialverhalten. Es gibt gemischte Herden aus nicht dominanten Männchen, Weibchen und Jungen, Junggesellengruppen, einzelne territoriale Männchen sowie Haremgruppen aus einem dominanten Männchen und mehreren paarungsbereiten Weibchen. Gruppengröße und Zusammensetzung hängen unter anderem von Jahreszeit und Nahrungsverfügbarkeit ab.\n\nDie Paarungszeit dauert das ganze Jahr, ist während der Regenzeit aber besonders intensiv. Dominante Böcke versuchen fruchtbare Weibchen in ihren Harem einzugliedern und zeigen territoriales sowie Dominanzverhalten.\n\nNach einer Trächtigkeit von 6 Monaten bringt die Mutter ein Kalb zur Welt. Dieses lebt die ersten 3 bis 4 Wochen versteckt und trinkt Milch, beginnt danach zunehmend frisches Gras zu fressen und ist mit 5 bis 8 Monaten vollständig entwöhnt.\n\nMännchen verlassen die mütterliche Herde mit etwa 6 Monaten und schließen sich einer Junggesellengruppe oder einer fremden gemischten Herde an. Weibchen verbleiben häufig in der mütterlichen Herde. Thomson-Gazellen werden mit 2 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Thomson-Gazelle erreicht laut Zoopedia Geschwindigkeiten von bis zu 96 km/h.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Als Fressfeinde nennt die Zoopedia Geparden, Leoparden, Löwen, Hyänen, Krokodile, Pythons, Adler, Afrikanische Wildhunde, Schakale und Paviane.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Männliche Jungtiere kämpfen mit ihren Hörnern um die Rangordnung, während reifere Männchen ihre Dominanz laut Zoopedia eher durch Präsentation zeigen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Thomson-Gazellen trinken nur sehr selten und beziehen den Großteil des benötigten Wassers aus ihrer Nahrung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Thomson-Gazellen sind sehr soziale Tiere; laut Zoopedia wurden in freier Wildbahn bereits Herden mit 700 Tieren beobachtet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4f0e28b0/Gazelle_Thomsons_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/map/Eudorcas thomsonii map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNGYwZTI4YjAvR2F6ZWxsZV9UaG9tc29ucy5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Thomson-Gazelle – Planet Zoo 2",
+            "en": "Thomson's Gazelle – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Thomson-Gazelle aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of Thomson's Gazelle."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4f0e28b0/Gazelle_Thomsons_illustration.jpg",
+          "alt": {
+            "de": "Thomson-Gazelle – Zoopedia-Illustration",
+            "en": "Thomson's Gazelle – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Thomson-Gazelle aus der Planet Zoo 2 Zoopedia.",
+            "en": "Thomson's Gazelle illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Thomson-Gazelle",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/thomson-gazelle",
+        "en": "https://www.planetzoogame.com/2/zoopedia/thomson-s-gazelle",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/thomson-s-gazelle",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/gacela-de-thomson",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/gazelle-de-thomson",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/gazzella-di-thomson",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/gazela-de-thomson",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%88%E3%83%A0%E3%82%BD%E3%83%B3%E3%82%AC%E3%82%BC%E3%83%AB",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%B1%A4%E6%B0%8F%E7%9E%AA%E7%BE%9A"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Der angezeigte Wildbestand „145“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern nur als Rohwert gespeichert. Die Angabe „55–82 cm Höhe“ wurde nicht als Schulterhöhe gespeichert, da die Zoopedia die Messart nicht ausdrücklich als Schulterhöhe bezeichnet."
+    }
+  }
+}

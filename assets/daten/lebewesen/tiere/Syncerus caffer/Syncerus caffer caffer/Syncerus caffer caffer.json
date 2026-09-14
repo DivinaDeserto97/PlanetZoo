@@ -1,0 +1,472 @@
+{
+  "id": "Syncerus caffer caffer",
+  "identitaet": {
+    "namen": {
+      "de": "Schwarzbüffel",
+      "en": "Cape Buffalo",
+      "en-US": "Cape Buffalo",
+      "es": "Búfalo africano",
+      "fr": "Buffle du Cap",
+      "it": "Bufalo cafro",
+      "pt-BR": "Búfalo-africano",
+      "ja": "アフリカスイギュウ",
+      "zh-Hans": "非洲水牛"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland",
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Syncerus",
+          "art": "Syncerus caffer caffer",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": null,
+          "max": 3.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für ausgewachsene Tiere eine Körperlänge von bis zu 3,4 m.",
+            "en": "The Zoopedia gives an adult body length of up to 3.4 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 500,
+          "max": 900,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 400,
+          "max": 600,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Potenziell gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Near Threatened. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "564",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt beim Wildbestand lediglich „564“. Da diese Angabe ohne Einheit, Kontext oder Größenordnung erscheint, wurde sie nicht als numerischer Bestand interpretiert und nur als Rohwert übernommen.",
+            "en": "The Zoopedia displays only '564' for the wild population. Because no unit, context or magnitude is given, it was not interpreted as a numeric population and is preserved only as a raw value."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 11.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiMutter",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Kälber bleiben laut Zoopedia 1 bis 2 Jahre bei ihrer Mutter.",
+            "en": "According to the Zoopedia, calves remain with their mother for 1 to 2 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "relatedFemaleHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Herden bestehen aus Gruppen verwandter Weibchen; eine Herde kann aus mehreren solchen Gruppen bestehen.",
+            "en": "Herds consist of groups of related females, and a herd may contain several such groups."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitaryOrBachelorGroup",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Bullen halten sich einzeln oder in Junggesellengruppen in der Nähe der Weibchengruppen auf.",
+            "en": "Bulls remain alone or in bachelor groups near the female groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "openWoodland",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "floodplain",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "madenhacker",
+              "typ": "tier",
+              "beziehung": "symbiose",
+              "wirkung": "+/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt eine symbiotische Beziehung mit Madenhackern, die die Büffel von Zecken befreien.",
+                "en": "The Zoopedia describes a symbiotic relationship with oxpeckers, which remove ticks from the buffalo."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "zecken",
+              "typ": "tier",
+              "beziehung": "parasitismus",
+              "wirkung": "-/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia erwähnt Zecken auf Schwarzbüffeln im Zusammenhang mit der Symbiose mit Madenhackern.",
+                "en": "The Zoopedia mentions ticks on Cape Buffalo in the context of their symbiosis with oxpeckers."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Schwarzbüffel (auch Syncerus caffer caffer) kommt in zahlreichen Ökosystemen Afrikas südlich der Sahara vor, etwa in Savannen, offenen Waldlandschaften, Auen und Grasländern. Er ist stets an ganzjährig verfügbare Wasserquellen gebunden. Sein Verbreitungsgebiet reicht vom östlichen und südlichen Afrika bis in Teile Zentralafrikas.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Africa, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Africa into parts of Central Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Africa, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Africa into parts of Central Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schwarzbüffel (auch Syncerus caffer caffer) lebt in Savannen, offenen Waldlandschaften, Auen und Grasländern Afrikas südlich der Sahara und ist an ganzjährig verfügbare Wasserquellen gebunden.\n\nEr ist ein massiges, kräftig gebautes Tier mit dunkelbraunem bis fast schwarzem Fell, breiter Schnauze und kräftigen Beinen. Ausgewachsene Männchen besitzen besonders dicke, gebogene Hörner, die am Ansatz zu einer schweren knöchernen Hornbasis zusammenwachsen.\n\nErwachsene Tiere werden laut Zoopedia 1,4 bis 1,7 m groß und bis zu 3,4 m lang. Männchen wiegen normalerweise 500 bis 900 kg, Weibchen etwa 400 bis 600 kg. Die Angabe 1,4 bis 1,7 m wurde nicht als Schulterhöhe interpretiert, da die Seite die Messart nicht genauer bezeichnet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Schwarzbüffel gelten als potenziell gefährdet. Lebensraumverlust, landwirtschaftliche Ausdehnung und großflächige Einzäunungen schränken den Zugang zu Weideflächen und dauerhaften Trinkstellen ein und können Populationen fragmentieren. Zusätzlich nennt die Zoopedia Bejagung, illegale Tötungen, Konflikte mit Menschen, Krankheiten wie Rindertuberkulose und Korridorkrankheit sowie regelmäßige Dürren als Belastungen.\n\nSchutzstrategien konzentrieren sich auf große, miteinander verbundene Populationen, Schutzgebiete, Maßnahmen gegen Wilderei, tierärztliche Überwachung sowie die Wiederherstellung von Bewegungspfaden und die Verringerung unnötiger Einzäunungen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schwarzbüffel leben in Herden aus Gruppen verwandter Weibchen. Bullen halten sich einzeln oder in Junggesellengruppen in deren Nähe auf; eine Herde kann aus mehreren solchen Gruppen bestehen.\n\nDie Paarung kann das ganze Jahr über stattfinden. Bullen suchen nach brünstigen Kühen und bewachen empfangsbereite Weibchen gegenüber Rivalen. Ranghöhere Bullen haben dabei bessere Chancen auf eine erfolgreiche Paarung.\n\nEine Kuh ist 11,5 Monate trächtig und bringt normalerweise ein einzelnes Kalb zur Welt. Kälber bleiben 1 bis 2 Jahre bei ihrer Mutter. Danach verlassen junge Bullen die mütterliche Gruppe und schließen sich einer Junggesellenherde an, während junge Kühe in der Herde ihrer Mutter bleiben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Schwarzbüffel zählen laut Zoopedia zu den gefährlichsten Tieren Afrikas und verursachen dort zahlreiche Verletzungen und Todesfälle durch Angriffe.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zoopedia beschreibt Schwarzbüffel als immun gegen die Schlafkrankheit, die von der Tsetse-Fliege übertragen wird.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schwarzbüffel besitzen laut Zoopedia ein ausgezeichnetes Erinnerungsvermögen und können Löwen oder Jäger angreifen, die ihre Herde zuvor attackiert haben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Aufgrund ihres aggressiven Charakters scheiterten laut Zoopedia Versuche, Schwarzbüffel als Nutztiere zu domestizieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schwarzbüffel haben laut Zoopedia eine symbiotische Beziehung mit Madenhackern, die sie von Zecken befreien.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c82b795f/Buffalo_Cape_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/map/Syncerus caffer caffer map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzgyYjc5NWYvQnVmZmFsb19DYXBlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Schwarzbüffel – Planet Zoo 2",
+            "en": "Cape Buffalo – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schwarzbüffels aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Cape Buffalo."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/bilder/Syncerus caffer caffer 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c82b795f/Buffalo_Cape_illustration.jpg",
+          "alt": {
+            "de": "Schwarzbüffel – Zoopedia-Illustration",
+            "en": "Cape Buffalo – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Schwarzbüffels aus der Planet Zoo 2 Zoopedia.",
+            "en": "Cape Buffalo illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/bilder/Syncerus caffer caffer illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schwarzbüffel",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/schwarzb%C3%BCffel",
+        "en": "https://www.planetzoogame.com/2/zoopedia/cape-buffalo",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/cape-buffalo",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/b%C3%BAfalo-africano",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/buffle-du-cap",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/bufalo-cafro",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/b%C3%BAfalo-africano",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB%E3%82%B9%E3%82%A4%E3%82%AE%E3%83%A5%E3%82%A6",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%9D%9E%E6%B4%B2%E6%B0%B4%E7%89%9B"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Der angezeigte Wildbestand „564“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern nur als Rohwert gespeichert. Die Angabe „1,4–1,7 m groß“ wurde nicht als Schulterhöhe gespeichert, weil die Seite die Messart nicht eindeutig bezeichnet."
+    }
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "id": "Papilio machaon",
+  "identitaet": {
+    "namen": {
+      "de": "Schwalbenschwanz",
+      "en": "Old World Swallowtail",
+      "en-US": "Old World Swallowtail",
+      "es": "Macaón",
+      "fr": "Machaon",
+      "it": "Macaone",
+      "pt-BR": "Borboleta-cauda-de-andorinha",
+      "ja": "キアゲハ",
+      "zh-Hans": "金凤蝶"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia",
+      "northAmerica"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Tundra"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Papilionidae",
+          "gattung": "Papilio",
+          "art": "Papilio machaon",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "maximalBeiUeberwinterung",
+          "min": null,
+          "max": 9,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass vor der Paarung überwinternde Schwalbenschwänze bis zu 9 Monate leben können. Außerdem sterben die Tiere etwa eine Woche nach der Paarung.",
+            "en": "The Zoopedia states that individuals overwintering before mating can live up to 9 months. It also states that adults die about one week after mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Least Concern. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt den Gesamtbestand zugleich als wachsend.",
+            "en": "The Zoopedia lists the wild population as unknown while describing the overall population as increasing."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "min": 200,
+          "max": 430,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das Weibchen legt laut Zoopedia innerhalb von vier Tagen 200 bis 430 Eier, jeweils einzeln auf ein Blatt.",
+            "en": "According to the Zoopedia, the female lays 200 to 430 eggs within four days, one at a time on individual leaves."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 4,
+          "max": 10,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenphase",
+          "min": 3,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Raupen fressen 3 bis 4 Wochen lang an weichen jungen Blättern, bevor sie einen Kokon spinnen.",
+            "en": "The caterpillars feed on soft young leaves for 3 to 4 weeks before spinning a cocoon."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenphase",
+          "min": 10,
+          "max": 20,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Nach der Verpuppung schlüpfen die Falter normalerweise nach 10 bis 20 Tagen. Bei einer Verpuppung gegen Ende des Sommers kann die Puppe bis zum folgenden Jahr überwintern.",
+            "en": "After pupation, adults normally emerge after 10 to 20 days. If pupation occurs late in summer, the pupa may overwinter until the following year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt keine eigentlichen sozialen Bedürfnisse außer Paarung und Konkurrenz um Partner. Artgenossen werden in der Nähe toleriert, wenn genügend Ressourcen vorhanden sind.",
+            "en": "The Zoopedia describes no real social needs apart from mating and competition for mates. Conspecifics are tolerated nearby when resources are sufficient."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "moehren",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt weiche junge Blätter von Pflanzen wie Möhren als Raupennahrung.",
+                "en": "The Zoopedia names soft young leaves of plants such as carrots as caterpillar food."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "fenchel",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt weiche junge Blätter von Pflanzen wie Fenchel als Raupennahrung.",
+                "en": "The Zoopedia names soft young leaves of plants such as fennel as caterpillar food."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Trogus lapidator",
+              "typ": "tier",
+              "beziehung": "parasitismus",
+              "wirkung": "-/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt Trogus lapidator als parasitoide Wespe: Sie legt Eier in die Körperhöhle der Raupe, und der Nachwuchs ernährt sich während der Verpuppung von ihr.",
+                "en": "The Zoopedia describes Trogus lapidator as a parasitoid wasp: it lays eggs in the caterpillar's body cavity and the developing wasp feeds on it during pupation."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Schwalbenschwanz (auch Papilio machaon) ist ein Schmetterling, der in gemäßigten Regionen, Waldlandschaften und sogar Tundren Europas, Asiens und Nordamerikas lebt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Old World Swallowtail (Papilio machaon) is a butterfly found in temperate regions, woodlands and even tundra across Europe, Asia and North America.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Old World Swallowtail (Papilio machaon) is a butterfly found in temperate regions, woodlands and even tundra across Europe, Asia and North America.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schwalbenschwanz (auch Papilio machaon) ist ein Schmetterling aus Europa, Asien und Nordamerika und lebt in gemäßigten Regionen, Waldlandschaften und Tundren.\n\nEr besitzt blassgelbe Flügel mit grauschwarzen Mustern auf den Vorderflügeln sowie blauschwarze Akzente und rote Augenflecken auf den Hinterflügeln. Die Hinterflügel tragen einen längeren „Schwanz“, der der Art ihren Namen gibt. Die Raupen sind dick und blassgrün mit schwarzen und orangefarbenen Zeichnungen; die Puppen können grün bis braun gefärbt sein.\n\nZwischen den Geschlechtern gibt es laut Zoopedia keinen Größen- oder Aussehensunterschied. Die durchschnittliche Flügelspannweite beträgt 6,5 bis 8,6 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Schwalbenschwanz gilt derzeit als nicht gefährdet. Regional können Populationen jedoch durch Lebensraumverlust, Wasserverschmutzung und Klimawandel zurückgehen. Die Art wird wie viele Schmetterlinge gesammelt, laut Zoopedia jedoch nicht in besorgniserregendem Ausmaß.\n\nSchutzmaßnahmen sollen insbesondere wichtige Lebensräume und Brutplätze in Mooren sichern und regionale Bestände überwachen. Die langfristigen Aussichten beschreibt die Zoopedia als gut; der Gesamtbestand gilt als wachsend.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Wie die meisten Schmetterlinge hat der Schwalbenschwanz außer bei Paarung und Konkurrenz um Partner keine ausgeprägten sozialen Bedürfnisse. Artgenossen werden in der Nähe toleriert, wenn genügend Ressourcen vorhanden sind.\n\nDie Paarungszeit liegt im Hochsommer zwischen Juni und Juli. Männchen zeigen eine sogenannte Gipfelbalz und verteidigen Reviere an hoch gelegenen Punkten, zu denen Weibchen zur Paarung fliegen.\n\nKurz nach der Paarung legt das Weibchen innerhalb von vier Tagen 200 bis 430 Eier, jeweils einzeln auf ein Blatt. Nach 4 bis 10 Tagen schlüpfen die Raupen. Diese fressen 3 bis 4 Wochen lang an weichen jungen Blättern von Pflanzen wie Möhren und Fenchel und spinnen anschließend einen Kokon.\n\nNach der Verpuppung schlüpfen die Falter normalerweise nach 10 bis 20 Tagen. Erfolgt die Verpuppung gegen Ende des Sommers, kann die Puppe bis zum folgenden Jahr überwintern. Schwalbenschwänze sterben laut Zoopedia etwa eine Woche nach der Paarung; Tiere, die zuvor überwintert haben, können insgesamt bis zu 9 Monate leben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Schwalbenschwanz ist laut Zoopedia die größte im Vereinigten Königreich vorkommende Schmetterlingsart.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Raupe besitzt am Kopf ein oranges Organ namens Osmaterium, das bei Gefahr ausgestülpt wird und unangenehme Gerüche zur Abschreckung von Fressfeinden produziert.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Raupe wird von der Wespenart Trogus lapidator parasitiert, die ihre Eier in die Körperhöhle der Raupe legt und sich während der Verpuppung von ihr ernährt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zunge des Schwalbenschwanzes ist an das Fressen von Blumen mit vielen kleinen, dünnen und röhrenförmigen Blütenbestandteilen wie bei Löwenzahn angepasst.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Schwalbenschwanz fliegt laut Zoopedia verglichen mit vielen anderen Schmetterlingsarten schnell und direkt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/e16e92be/Butterfly_OldWorldSwallowtail_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Papilio machaon/map/Papilio machaon map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZTE2ZTkyYmUvQnV0dGVyZmx5X09sZFdvcmxkU3dhbGxvd3RhaWwuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Schwalbenschwanz – Planet Zoo 2",
+            "en": "Old World Swallowtail – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schwalbenschwanzes aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Old World Swallowtail."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Papilio machaon/bilder/Papilio machaon 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schwalbenschwanz",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/schwalbenschwanz",
+        "en": "https://www.planetzoogame.com/2/zoopedia/old-world-swallowtail",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/old-world-swallowtail",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/maca%C3%B3n",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/machaon",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/macaone",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/borboleta-cauda-de-andorinha",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AD%E3%82%A2%E3%82%B2%E3%83%8F",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%87%91%E5%87%A4%E8%9D%B6"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Flügelspannweite von 6,5 bis 8,6 cm wurde nicht als Körperlänge gespeichert. Im bereitgestellten Auszug ist keine Zoopedia-Illustration für diese Art enthalten."
+    }
+  }
+}

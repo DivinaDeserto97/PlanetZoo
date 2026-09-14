@@ -104,6 +104,18 @@
               - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/map/.gitkeep>)
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/1leeres Tier/videos/.gitkeep>)
+          - `Abudefduf vaigiensis/`
+            - [Abudefduf vaigiensis.json](<../assets/daten/lebewesen/tiere/Abudefduf vaigiensis/Abudefduf vaigiensis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Abudefduf vaigiensis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Abudefduf vaigiensis/bilder/.gitkeep>)
+              - `Abudefduf vaigiensis 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Abudefduf vaigiensis/map/.gitkeep>)
+              - `Abudefduf vaigiensis map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Abudefduf vaigiensis/videos/.gitkeep>)
           - `Aetobatus ocellatus/`
             - [Aetobatus ocellatus.json](<../assets/daten/lebewesen/tiere/Aetobatus ocellatus/Aetobatus ocellatus.json>)
             - `audio/`
@@ -200,6 +212,30 @@
               - `Arothron nigropunctatus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Arothron nigropunctatus/videos/.gitkeep>)
+          - `Asio otus/`
+            - [Asio otus.json](<../assets/daten/lebewesen/tiere/Asio otus/Asio otus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/bilder/.gitkeep>)
+              - `Asio otus 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/map/.gitkeep>)
+              - `Asio otus map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/videos/.gitkeep>)
+          - `Balaeniceps rex/`
+            - [Balaeniceps rex.json](<../assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Balaeniceps rex/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Balaeniceps rex/bilder/.gitkeep>)
+              - `Balaeniceps rex 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Balaeniceps rex/map/.gitkeep>)
+              - `Balaeniceps rex map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Balaeniceps rex/videos/.gitkeep>)
           - `Bison bonasus/`
             - [Bison bonasus.json](<../assets/daten/lebewesen/tiere/Bison bonasus/Bison bonasus.json>)
             - `audio/`
@@ -224,6 +260,18 @@
               - `Boa constrictor map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Boa constrictor/videos/.gitkeep>)
+          - `Buceros bicornis/`
+            - [Buceros bicornis.json](<../assets/daten/lebewesen/tiere/Buceros bicornis/Buceros bicornis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Buceros bicornis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Buceros bicornis/bilder/.gitkeep>)
+              - `Buceros bicornis 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Buceros bicornis/map/.gitkeep>)
+              - `Buceros bicornis map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Buceros bicornis/videos/.gitkeep>)
           - `Caesio teres/`
             - [Caesio teres.json](<../assets/daten/lebewesen/tiere/Caesio teres/Caesio teres.json>)
             - `audio/`
@@ -236,6 +284,18 @@
               - `Caesio teres map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Caesio teres/videos/.gitkeep>)
+          - `Canis lupus/`
+            - [Canis lupus.json](<../assets/daten/lebewesen/tiere/Canis lupus/Canis lupus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Canis lupus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Canis lupus/bilder/.gitkeep>)
+              - `Canis lupus 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Canis lupus/map/.gitkeep>)
+              - `Canis lupus map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Canis lupus/videos/.gitkeep>)
           - `Carcharhinus melanopterus/`
             - [Carcharhinus melanopterus.json](<../assets/daten/lebewesen/tiere/Carcharhinus melanopterus/Carcharhinus melanopterus.json>)
             - `audio/`
@@ -272,6 +332,18 @@
               - `Cheilinus undulatus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Cheilinus undulatus/videos/.gitkeep>)
+          - `Chelonoidis nigra/`
+            - [Chelonoidis nigra.json](<../assets/daten/lebewesen/tiere/Chelonoidis nigra/Chelonoidis nigra.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Chelonoidis nigra/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Chelonoidis nigra/bilder/.gitkeep>)
+              - `Chelonoidis nigra 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Chelonoidis nigra/map/.gitkeep>)
+              - `Chelonoidis nigra map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Chelonoidis nigra/videos/.gitkeep>)
           - `Chromobotia macracanthus/`
             - [Chromobotia macracanthus.json](<../assets/daten/lebewesen/tiere/Chromobotia macracanthus/Chromobotia macracanthus.json>)
             - `audio/`
@@ -332,6 +404,30 @@
               - `Crocodylus porosus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Crocodylus porosus/videos/.gitkeep>)
+          - `Crocuta crocuta/`
+            - [Crocuta crocuta.json](<../assets/daten/lebewesen/tiere/Crocuta crocuta/Crocuta crocuta.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crocuta crocuta/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crocuta crocuta/bilder/.gitkeep>)
+              - `Crocuta crocuta 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crocuta crocuta/map/.gitkeep>)
+              - `Crocuta crocuta map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crocuta crocuta/videos/.gitkeep>)
+          - `Crotalus atrox/`
+            - [Crotalus atrox.json](<../assets/daten/lebewesen/tiere/Crotalus atrox/Crotalus atrox.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/bilder/.gitkeep>)
+              - `Crotalus atrox 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/map/.gitkeep>)
+              - `Crotalus atrox map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/videos/.gitkeep>)
           - `Dendrolagus goodfellowi/`
             - [Dendrolagus goodfellowi.json](<../assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/Dendrolagus goodfellowi.json>)
             - `audio/`
@@ -368,6 +464,18 @@
               - `Eretmochelys imbricata map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Eretmochelys imbricata/videos/.gitkeep>)
+          - `Eudorcas thomsonii/`
+            - [Eudorcas thomsonii.json](<../assets/daten/lebewesen/tiere/Eudorcas thomsonii/Eudorcas thomsonii.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Eudorcas thomsonii/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/.gitkeep>)
+              - `Eudorcas thomsonii 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Eudorcas thomsonii/map/.gitkeep>)
+              - `Eudorcas thomsonii map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Eudorcas thomsonii/videos/.gitkeep>)
           - `Gavialis gangeticus/`
             - [Gavialis gangeticus.json](<../assets/daten/lebewesen/tiere/Gavialis gangeticus/Gavialis gangeticus.json>)
             - `audio/`
@@ -416,6 +524,18 @@
               - `Gnathanodon speciosus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Gnathanodon speciosus/videos/.gitkeep>)
+          - `Haliaeetus albicilla/`
+            - [Haliaeetus albicilla.json](<../assets/daten/lebewesen/tiere/Haliaeetus albicilla/Haliaeetus albicilla.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Haliaeetus albicilla/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Haliaeetus albicilla/bilder/.gitkeep>)
+              - `Haliaeetus albicilla 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Haliaeetus albicilla/map/.gitkeep>)
+              - `Haliaeetus albicilla map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Haliaeetus albicilla/videos/.gitkeep>)
           - `Heloderma suspectum/`
             - [Heloderma suspectum.json](<../assets/daten/lebewesen/tiere/Heloderma suspectum/Heloderma suspectum.json>)
             - `audio/`
@@ -527,6 +647,18 @@
                 - `elephantVoices/`
                   - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/.gitkeep>)
                   - `1.mp4` *(Medium – nicht in Share-ZIP)*
+          - `Lynx lynx/`
+            - [Lynx lynx.json](<../assets/daten/lebewesen/tiere/Lynx lynx/Lynx lynx.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lynx lynx/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lynx lynx/bilder/.gitkeep>)
+              - `Lynx lynx 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lynx lynx/map/.gitkeep>)
+              - `Lynx lynx map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lynx lynx/videos/.gitkeep>)
           - `Malaclemys terrapin/`
             - [Malaclemys terrapin.json](<../assets/daten/lebewesen/tiere/Malaclemys terrapin/Malaclemys terrapin.json>)
             - `audio/`
@@ -583,6 +715,18 @@
               - `Oryx gazella map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Oryx gazella/videos/.gitkeep>)
+          - `Pachliopta jophon/`
+            - [Pachliopta jophon.json](<../assets/daten/lebewesen/tiere/Pachliopta jophon/Pachliopta jophon.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pachliopta jophon/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pachliopta jophon/bilder/.gitkeep>)
+              - `Pachliopta jophon 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pachliopta jophon/map/.gitkeep>)
+              - `Pachliopta jophon map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pachliopta jophon/videos/.gitkeep>)
           - `Pan troglodytes/`
             - [.gitkeep](<../assets/daten/lebewesen/tiere/Pan troglodytes/.gitkeep>)
             - `Pan troglodytes verus/`
@@ -637,6 +781,18 @@
                 - `Panthera tigris sumatrae map.png` *(Medium – nicht in Share-ZIP)*
               - `videos/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/videos/.gitkeep>)
+          - `Papilio machaon/`
+            - [Papilio machaon.json](<../assets/daten/lebewesen/tiere/Papilio machaon/Papilio machaon.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Papilio machaon/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Papilio machaon/bilder/.gitkeep>)
+              - `Papilio machaon 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Papilio machaon/map/.gitkeep>)
+              - `Papilio machaon map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Papilio machaon/videos/.gitkeep>)
           - `Phyllium giganteum/`
             - [Phyllium giganteum.json](<../assets/daten/lebewesen/tiere/Phyllium giganteum/Phyllium giganteum.json>)
             - `audio/`
@@ -685,6 +841,18 @@
               - `Pterois volitans map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Pterois volitans/videos/.gitkeep>)
+          - `Ramphastos toco/`
+            - [Ramphastos toco.json](<../assets/daten/lebewesen/tiere/Ramphastos toco/Ramphastos toco.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ramphastos toco/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ramphastos toco/bilder/.gitkeep>)
+              - `Ramphastos toco 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ramphastos toco/map/.gitkeep>)
+              - `Ramphastos toco map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Ramphastos toco/videos/.gitkeep>)
           - `Sagittarius serpentarius/`
             - [Sagittarius serpentarius.json](<../assets/daten/lebewesen/tiere/Sagittarius serpentarius/Sagittarius serpentarius.json>)
             - `audio/`
@@ -781,6 +949,20 @@
               - `Suricata suricatta map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Suricata suricatta/videos/.gitkeep>)
+          - `Syncerus caffer/`
+            - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/.gitkeep>)
+            - `Syncerus caffer caffer/`
+              - [Syncerus caffer caffer.json](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/Syncerus caffer caffer.json>)
+              - `audio/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/audio/.gitkeep>)
+              - `bilder/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/bilder/.gitkeep>)
+                - `Syncerus caffer caffer 1.webp` *(Medium – nicht in Share-ZIP)*
+              - `map/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/map/.gitkeep>)
+                - `Syncerus caffer caffer map.png` *(Medium – nicht in Share-ZIP)*
+              - `videos/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/videos/.gitkeep>)
           - `Tiliqua scincoides/`
             - [Tiliqua scincoides.json](<../assets/daten/lebewesen/tiere/Tiliqua scincoides/Tiliqua scincoides.json>)
             - `audio/`
@@ -819,6 +1001,18 @@
                 - `Ursus arctos arctos map.png` *(Medium – nicht in Share-ZIP)*
               - `videos/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/videos/.gitkeep>)
+          - `Zebrasoma flavescens/`
+            - [Zebrasoma flavescens.json](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/Zebrasoma flavescens.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/.gitkeep>)
+              - `Zebrasoma flavescens 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/map/.gitkeep>)
+              - `Zebrasoma flavescens map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/videos/.gitkeep>)
           - [datenImport.js](<../assets/daten/lebewesen/tiere/datenImport.js>)
     - `js/`
       - `features/`
