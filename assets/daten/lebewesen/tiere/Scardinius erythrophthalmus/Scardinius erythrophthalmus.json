@@ -14,8 +14,8 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Aquarium","Ausstellung"],
     "kontinente": [
       "europe",
       "asia"

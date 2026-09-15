@@ -14,15 +14,15 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      ""
+      "Gemäßigt"
     ],
     "schutzstatus": "endangered"
   },

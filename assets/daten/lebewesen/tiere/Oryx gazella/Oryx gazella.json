@@ -14,14 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
     "biome": [
       "Wüste",
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -154,7 +154,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Im Arterhaltungstext werden Savannenflächen und trockene Graslandschaften als wichtige Gebiete für Nahrungssuche und saisonale Wanderungen genannt.",
+            "de": "Im Arterhaltungstext werden Savannenflächen und trockene Graslandschaftschaften als wichtige Gebiete für Nahrungssuche und saisonale Wanderungen genannt.",
             "en": "The conservation text identifies savanna and dry grassland as important areas for foraging and seasonal movements."
           },
           "quelle": "planetZoo2"
@@ -317,7 +317,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Der Spießbock gilt als nicht gefährdet, steht aber wie viele andere Arten aufgrund von Lebensraumverlust und Klimawandel vor Herausforderungen. Die Ausbreitung des Menschen, die landwirtschaftliche Nutzung und die zunehmende Konkurrenz durch Weidevieh verkleinern die intakten Savannenflächen und trockenen Graslandschaften, die der Spießbock für die Nahrungssuche und saisonale Wanderungen braucht. Diese Fragmentierung isoliert Gruppen und verstärkt die Konkurrenz zwischen Wild- und Nutztieren. Zudem wird die Ressourcenknappheit durch längere Dürrephasen und den Klimawandel verschärft. Nicht nachhaltige Bejagung sowie Wilderei zur Gewinnung von Fleisch und Trophäen kann ebenfalls zum Rückgang von Beständen führen.\n\nArterhaltungsmaßnahmen konzentrieren sich auf den Schutz von Lebensräumen und das Verringern von Konflikten zwischen Mensch und Tier. Neu angelegte Wildtierkorridore verbinden Reservate, sodass die Spießböcke im Lauf der Jahreszeiten verschiedene Weideflächen und Trinkstellen erreichen können. Ökotourismusinitiativen schaffen Anreize für die örtliche Bevölkerung, den Wildtierschutz zu fördern, und Aufklärungskampagnen sowie Maßnahmen gegen Wilderei verringern den Druck durch illegale Bejagung. Außerdem haben Umsiedlungen auf private Wildtierfarmen in manchen Gebieten zu einem Anstieg von Subpopulationen geführt.",
+          "inhalt": "Der Spießbock gilt als nicht gefährdet, steht aber wie viele andere Arten aufgrund von Lebensraumverlust und Klimawandel vor Herausforderungen. Die Ausbreitung des Menschen, die landwirtschaftliche Nutzung und die zunehmende Konkurrenz durch Weidevieh verkleinern die intakten Savannenflächen und trockenen Graslandschaftschaften, die der Spießbock für die Nahrungssuche und saisonale Wanderungen braucht. Diese Fragmentierung isoliert Gruppen und verstärkt die Konkurrenz zwischen Wild- und Nutztieren. Zudem wird die Ressourcenknappheit durch längere Dürrephasen und den Klimawandel verschärft. Nicht nachhaltige Bejagung sowie Wilderei zur Gewinnung von Fleisch und Trophäen kann ebenfalls zum Rückgang von Beständen führen.\n\nArterhaltungsmaßnahmen konzentrieren sich auf den Schutz von Lebensräumen und das Verringern von Konflikten zwischen Mensch und Tier. Neu angelegte Wildtierkorridore verbinden Reservate, sodass die Spießböcke im Lauf der Jahreszeiten verschiedene Weideflächen und Trinkstellen erreichen können. Ökotourismusinitiativen schaffen Anreize für die örtliche Bevölkerung, den Wildtierschutz zu fördern, und Aufklärungskampagnen sowie Maßnahmen gegen Wilderei verringern den Druck durch illegale Bejagung. Außerdem haben Umsiedlungen auf private Wildtierfarmen in manchen Gebieten zu einem Anstieg von Subpopulationen geführt.",
           "quelle": "planetZoo2"
         }
       ],

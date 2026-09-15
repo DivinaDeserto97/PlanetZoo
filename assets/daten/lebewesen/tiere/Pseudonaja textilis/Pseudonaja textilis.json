@@ -14,13 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "oceania"
     ],
     "biome": [
-      "Grasland"
+      "Gemäßigt",
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },

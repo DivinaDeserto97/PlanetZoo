@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -320,7 +320,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier, das in der Serengeti von Tansania und Kenia beheimatet ist. Sie lebt bevorzugt in trockenen Graslandschaften, nutzt aber auch Wälder.",
+          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier, das in der Serengeti von Tansania und Kenia beheimatet ist. Sie lebt bevorzugt in trockenen Graslandschaftschaften, nutzt aber auch Wälder.",
           "quelle": "planetZoo2"
         }
       ],
@@ -348,7 +348,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier aus der Serengeti von Tansania und Kenia. Sie bevorzugt trockene Graslandschaften, kommt aber auch in Wäldern vor.\n\nCharakteristisch sind der hellbraune Rücken, der weiße Bauch und die schwarzen Streifen auf den Flanken. Beide Geschlechter tragen dunkle, tief gefurchte Hörner; die Hörner der Männchen sind etwas länger und kräftiger.\n\nDie Zoopedia nennt im Durchschnitt eine Höhe von 55 bis 82 cm, eine Körperlänge von 80 bis 120 cm und ein Gewicht von 20 bis 35 kg. Die Höhenangabe wurde nicht als Schulterhöhe gespeichert, weil die Messart nicht ausdrücklich so bezeichnet wird.",
+          "inhalt": "Die Thomson-Gazelle (auch Eudorcas thomsonii) ist ein kleines grasendes Säugetier aus der Serengeti von Tansania und Kenia. Sie bevorzugt trockene Graslandschaftschaften, kommt aber auch in Wäldern vor.\n\nCharakteristisch sind der hellbraune Rücken, der weiße Bauch und die schwarzen Streifen auf den Flanken. Beide Geschlechter tragen dunkle, tief gefurchte Hörner; die Hörner der Männchen sind etwas länger und kräftiger.\n\nDie Zoopedia nennt im Durchschnitt eine Höhe von 55 bis 82 cm, eine Körperlänge von 80 bis 120 cm und ein Gewicht von 20 bis 35 kg. Die Höhenangabe wurde nicht als Schulterhöhe gespeichert, weil die Messart nicht ausdrücklich so bezeichnet wird.",
           "quelle": "planetZoo2"
         }
       ],

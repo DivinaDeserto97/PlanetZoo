@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "habitatTerrestrial"
+      "Landgehege"
     ],
     "kontinente": [
       "africa"
@@ -157,7 +157,7 @@
         {
           "wert": "",
           "hinweis": {
-            "de": "Die Zoopedia beschreibt das Warzenschwein als in unterschiedlichen Lebensräumen südlich der Sahara verbreitet und nennt Savannen- und Graslandlandschaften im Zusammenhang mit Lebensraumverlust.",
+            "de": "Die Zoopedia beschreibt das Warzenschwein als in unterschiedlichen Lebensräumen südlich der Sahara verbreitet und nennt Savannen- und Graslandschaftlandschaften im Zusammenhang mit Lebensraumverlust.",
             "en": "The Zoopedia describes the warthog as occurring in various habitats south of the Sahara and mentions savanna and grassland landscapes in the context of habitat loss."
           },
           "quelle": "planetZoo2"
@@ -242,7 +242,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Obwohl das Warzenschwein eine weit verbreitete, anpassungsfähige Spezies ist und als nicht gefährdet eingestuft wird, ist es dennoch durch Lebensraumverlust und Konflikte zwischen Mensch und Tier bedroht. Die Ausbreitung menschlicher Siedlungen führt dazu, dass Savannen- und Graslandlandschaften verloren gehen, wodurch das Angebot an Nahrung und Bauten sinkt. Außerdem werden sie manchmal von Bauern getötet, die ihre Ernte oder ihr Vieh schützen wollen, da das Warzenschwein durch seine Nahrungssuche Ernten zerstört und Krankheiten auf andere Tiere übertragen kann. Wilderei und Trophäenjagd tragen ebenfalls zum Rückgang der Populationen in bestimmten Gebieten bei.\n\nWarzenschweine profitieren von allgemeinen Arterhaltungsmaßnahmen in ihrem gesamten Verbreitungsgebiet, wie beispielsweise dem Schutz ihrer Lebensräume, Kampagnen für nachhaltige Landnutzung und gemeindebasiertem Wildtiermanagement, etwa durch Ökotourismus-Initiativen oder Strategien zum Schutz von Nutzpflanzen. Spezifische Überwachungsmaßnahmen und die Durchsetzung von Gesetzen gegen Wilderei tragen zusätzlich zu ihrem langfristigen Überleben bei und sollen sicherstellen, dass Warzenschweine ein widerstandsfähiger und integraler Bestandteil der afrikanischen Savannenökosysteme bleiben.",
+          "inhalt": "Obwohl das Warzenschwein eine weit verbreitete, anpassungsfähige Spezies ist und als nicht gefährdet eingestuft wird, ist es dennoch durch Lebensraumverlust und Konflikte zwischen Mensch und Tier bedroht. Die Ausbreitung menschlicher Siedlungen führt dazu, dass Savannen- und Graslandschaftlandschaften verloren gehen, wodurch das Angebot an Nahrung und Bauten sinkt. Außerdem werden sie manchmal von Bauern getötet, die ihre Ernte oder ihr Vieh schützen wollen, da das Warzenschwein durch seine Nahrungssuche Ernten zerstört und Krankheiten auf andere Tiere übertragen kann. Wilderei und Trophäenjagd tragen ebenfalls zum Rückgang der Populationen in bestimmten Gebieten bei.\n\nWarzenschweine profitieren von allgemeinen Arterhaltungsmaßnahmen in ihrem gesamten Verbreitungsgebiet, wie beispielsweise dem Schutz ihrer Lebensräume, Kampagnen für nachhaltige Landnutzung und gemeindebasiertem Wildtiermanagement, etwa durch Ökotourismus-Initiativen oder Strategien zum Schutz von Nutzpflanzen. Spezifische Überwachungsmaßnahmen und die Durchsetzung von Gesetzen gegen Wilderei tragen zusätzlich zu ihrem langfristigen Überleben bei und sollen sicherstellen, dass Warzenschweine ein widerstandsfähiger und integraler Bestandteil der afrikanischen Savannenökosysteme bleiben.",
           "quelle": "planetZoo2"
         }
       ]

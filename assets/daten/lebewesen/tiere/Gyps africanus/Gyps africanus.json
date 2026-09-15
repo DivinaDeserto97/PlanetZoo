@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Voliere"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "criticallyEndangered"
   },
@@ -175,7 +175,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt Graslandschaften als typischen Lebensraum.",
+            "de": "Die Zoopedia nennt Graslandschaftschaften als typischen Lebensraum.",
             "en": "The Zoopedia names grasslands as typical habitat."
           },
           "quelle": "planetZoo2"
@@ -298,7 +298,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Der Weißrückengeier (Gyps africanus) lebt in Afrika südlich der Sahara. Sein Verbreitungsgebiet reicht von Senegal und Äthiopien im Norden bis nach Südafrika im Süden. Typische Lebensräume sind offene Savannen, trockene Wälder und Graslandschaften.",
+          "inhalt": "Der Weißrückengeier (Gyps africanus) lebt in Afrika südlich der Sahara. Sein Verbreitungsgebiet reicht von Senegal und Äthiopien im Norden bis nach Südafrika im Süden. Typische Lebensräume sind offene Savannen, trockene Wälder und Graslandschaftschaften.",
           "quelle": "planetZoo2"
         }
       ],

@@ -14,12 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Aquarium"
     ],
     "kontinente": [],
     "biome": [
+      "Ästuar",
       "Riff",
       "Offenes Meer"
     ],

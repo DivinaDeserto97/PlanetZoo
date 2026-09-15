@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland",
+      "Graslandschaft",
       "Wüste"
     ],
     "schutzstatus": "leastConcern"

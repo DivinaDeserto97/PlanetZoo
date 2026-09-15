@@ -16,13 +16,13 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "europe"
     ],
     "biome": [
-      ""
+      "Gemäßigt"
     ],
     "schutzstatus": "nearThreatened"
   },

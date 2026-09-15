@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -216,7 +216,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia beschreibt Graslandschaften und Weideland als zentralen Lebensraum.",
+            "de": "Die Zoopedia beschreibt Graslandschaftschaften und Weideland als zentralen Lebensraum.",
             "en": "The Zoopedia describes grasslands and grazing areas as central habitat."
           },
           "quelle": "planetZoo2"
@@ -269,7 +269,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Das Weißschwanzgnu (Connochaetes gnou) ist eine große Huftierart aus dem Süden Afrikas. Die Zoopedia beschreibt Graslandschaften und Weideland als wichtigen Lebensraum.",
+          "inhalt": "Das Weißschwanzgnu (Connochaetes gnou) ist eine große Huftierart aus dem Süden Afrikas. Die Zoopedia beschreibt Graslandschaftschaften und Weideland als wichtigen Lebensraum.",
           "quelle": "planetZoo2"
         }
       ],
@@ -313,7 +313,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Das Weißschwanzgnu gilt heute als nicht gefährdet. Im 19. und 20. Jahrhundert wurde die Art durch unkontrollierte Bejagung jedoch an den Rand des Aussterbens gebracht. Die Umwandlung offener Graslandschaften in Weideflächen schränkte Wanderungswege ein und führte zu fragmentierten, isolierten Beständen. Heute bestehen laut Zoopedia weiterhin Gefahren durch Wilderei und Zusammenstöße mit Fahrzeugen.\n\nSchutzmaßnahmen umfassen besonderen gesetzlichen Schutz in mehreren Ländern des südlichen Afrikas, Wiederansiedlungen in Nationalparks, privaten Reservaten und Schutzgebieten, Wildtierkorridore und große nicht eingezäunte Gebiete zur Verbindung von Populationen sowie Zuchtprogramme in Reservaten und Zoos. Langfristig bleibt Populationsmanagement notwendig.",
+          "inhalt": "Das Weißschwanzgnu gilt heute als nicht gefährdet. Im 19. und 20. Jahrhundert wurde die Art durch unkontrollierte Bejagung jedoch an den Rand des Aussterbens gebracht. Die Umwandlung offener Graslandschaftschaften in Weideflächen schränkte Wanderungswege ein und führte zu fragmentierten, isolierten Beständen. Heute bestehen laut Zoopedia weiterhin Gefahren durch Wilderei und Zusammenstöße mit Fahrzeugen.\n\nSchutzmaßnahmen umfassen besonderen gesetzlichen Schutz in mehreren Ländern des südlichen Afrikas, Wiederansiedlungen in Nationalparks, privaten Reservaten und Schutzgebieten, Wildtierkorridore und große nicht eingezäunte Gebiete zur Verbindung von Populationen sowie Zuchtprogramme in Reservaten und Zoos. Langfristig bleibt Populationsmanagement notwendig.",
           "quelle": "planetZoo2"
         }
       ],

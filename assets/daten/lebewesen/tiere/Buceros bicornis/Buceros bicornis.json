@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Voliere"],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": "vulnerable"
   },

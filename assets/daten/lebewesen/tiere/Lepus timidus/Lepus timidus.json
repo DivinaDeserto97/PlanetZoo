@@ -14,13 +14,10 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Gemäßigt"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

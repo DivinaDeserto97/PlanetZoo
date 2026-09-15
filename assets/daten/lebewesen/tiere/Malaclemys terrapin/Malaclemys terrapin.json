@@ -14,12 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "northAmerica"
     ],
     "biome": [
+      "Ästuar",
       "Feuchtgebiete"
     ],
     "schutzstatus": "endangered"

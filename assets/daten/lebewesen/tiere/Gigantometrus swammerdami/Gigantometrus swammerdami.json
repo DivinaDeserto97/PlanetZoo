@@ -16,13 +16,13 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "exhibit"
+      "Ausstellung"
     ],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": "notEvaluated"
   },
@@ -144,7 +144,7 @@
         {
           "wert": "tropicalRainforest",
           "hinweis": {
-            "de": "Tropische Regenwälder Indiens und Sri Lankas.",
+            "de": "Tropene Regenwälder Indiens und Sri Lankas.",
             "en": "Tropical rainforests of India and Sri Lanka."
           },
           "quelle": "planetZoo2"

@@ -14,14 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Voliere"],
     "kontinente": [
       "africa"
     ],
     "biome": [
       "Feuchtgebiete",
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": "vulnerable"
   },

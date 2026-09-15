@@ -14,12 +14,12 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
-    "biome": [],
+    "biome": ["Feuchtgebiete"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

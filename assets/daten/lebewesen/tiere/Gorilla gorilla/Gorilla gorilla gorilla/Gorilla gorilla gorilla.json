@@ -14,15 +14,10 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Tropisch",
-      "Feuchtgebiete"
-    ],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Feuchtgebiete", "Tropen"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {

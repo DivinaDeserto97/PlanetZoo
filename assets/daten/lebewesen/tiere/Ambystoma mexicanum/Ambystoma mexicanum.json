@@ -16,14 +16,13 @@
   "filter": {
     "edition": "deluxe",
     "gehegetyp": [
-      "exhibit"
+      "Ausstellung"
     ],
     "kontinente": [
       "northAmerica"
     ],
     "biome": [
-      "Wüste",
-      "Feuchtgebiete"
+      "Seen und Flüsse"
     ],
     "schutzstatus": "criticallyEndangered"
   },

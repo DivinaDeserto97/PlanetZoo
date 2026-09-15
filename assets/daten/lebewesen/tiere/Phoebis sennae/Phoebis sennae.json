@@ -14,15 +14,15 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "northAmerica",
       "southAmerica"
     ],
     "biome": [
       "Gemäßigt",
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -171,7 +171,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt unter anderem Graslandschaften in gemäßigten Regionen als Lebensraum; zusätzlich werden Parks, Gärten, Wasserläufe und Meeresküsten genannt.",
+            "de": "Die Zoopedia nennt unter anderem Graslandschaftschaften in gemäßigten Regionen als Lebensraum; zusätzlich werden Parks, Gärten, Wasserläufe und Meeresküsten genannt.",
             "en": "The Zoopedia names grasslands in temperate regions among its habitats; parks, gardens, waterways and sea coasts are also listed."
           },
           "quelle": "planetZoo2"
@@ -231,7 +231,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Der Wolkenlose Schwefel (Phoebis sennae) ist in gemäßigten Gebieten Nord-, Mittel- und Südamerikas verbreitet. Die Zoopedia nennt Graslandschaften, Parks, Gärten, Wasserläufe und Meeresküsten als Lebensräume.",
+          "inhalt": "Der Wolkenlose Schwefel (Phoebis sennae) ist in gemäßigten Gebieten Nord-, Mittel- und Südamerikas verbreitet. Die Zoopedia nennt Graslandschaftschaften, Parks, Gärten, Wasserläufe und Meeresküsten als Lebensräume.",
           "quelle": "planetZoo2"
         }
       ],

@@ -14,15 +14,33 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [
-      ""
-    ],
+    "edition": ["standard", "deluxe"],
+    "gehegetyp": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
     "kontinente": [
-      ""
+      "africa",
+      "arctic",
+      "asia",
+      "atlanticOcean",
+      "europe",
+      "indianOcean",
+      "northAmerica",
+      "oceania",
+      "pacificOcean",
+      "southAmerica"
     ],
     "biome": [
-      ""
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaftschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
     ],
     "schutzstatus": ""
   },
@@ -123,9 +141,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            ""
-          ],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "",

@@ -14,16 +14,16 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Ausstellung"
     ],
     "kontinente": [
       "oceania"
     ],
     "biome": [
       "Gemäßigt",
-      "Grasland",
+      "Graslandschaft",
       "Wüste"
     ],
     "schutzstatus": "leastConcern"
@@ -174,7 +174,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt Buschgebiete; im Projekt wird dies vorsichtig dem offenen Grasland-/Buschland-Kontext zugeordnet.",
+            "de": "Die Zoopedia nennt Buschgebiete; im Projekt wird dies vorsichtig dem offenen Graslandschaft-/Buschland-Kontext zugeordnet.",
             "en": "The Zoopedia mentions scrub habitats; in the project this is cautiously mapped to an open grassland/scrub context."
           },
           "quelle": "planetZoo2"

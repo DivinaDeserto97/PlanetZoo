@@ -14,16 +14,16 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "asia",
       "oceania"
     ],
     "biome": [
-      ""
+      "Ästuar"
     ],
     "schutzstatus": "leastConcern"
   },

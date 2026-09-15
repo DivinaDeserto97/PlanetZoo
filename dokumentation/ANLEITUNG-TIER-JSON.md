@@ -115,13 +115,13 @@ Die Werte unter `filter` steuern die Filter auf `home.html` und `map.html`.
 "filter": {
   "edition": "standard",
   "gehegetyp": [
-    "habitatTerrestrial"
+    "Landgehege"
   ],
   "kontinente": [
     "africa"
   ],
   "biome": [
-    "Grasland",
+    "Graslandschaft",
     "Wüste"
   ],
   "schutzstatus": "endangered"
@@ -151,16 +151,16 @@ Beispiel:
 
 | Anzeige | JSON-Wert |
 |---|---|
-| Landgehege | `habitatTerrestrial` |
-| Aquarium | `habitatAquarium` |
-| Voliere | `habitatFlying` |
-| Ausstellung | `exhibit` |
+| Landgehege | `Landgehege` |
+| Aquarium | `Aquarium` |
+| Voliere | `Voliere` |
+| Ausstellung | `Ausstellung` |
 
 Beispiel:
 
 ```json
 "gehegetyp": [
-  "habitatTerrestrial"
+  "Landgehege"
 ]
 ```
 
@@ -168,8 +168,8 @@ Tier mit mehreren passenden Typen:
 
 ```json
 "gehegetyp": [
-  "habitatTerrestrial",
-  "habitatAquarium"
+  "Landgehege",
+  "Aquarium"
 ]
 ```
 
@@ -211,13 +211,13 @@ Hier müssen die Werte exakt so geschrieben werden wie im Filter.
 | Ästuar | `Ästuar` |
 | Feuchtgebiete | `Feuchtgebiete` |
 | Gemässigt | `Gemäßigt` |
-| Grasland | `Grasland` |
+| Graslandschaft | `Graslandschaft` |
 | Mangrove | `Mangrove` |
 | Offenes Meer | `Offenes Meer` |
 | Riff | `Riff` |
 | Seen und Flüsse | `Seen und Flüsse` |
 | Taiga | `Taiga` |
-| Tropisch | `Tropisch` |
+| Tropen | `Tropen` |
 | Tundra | `Tundra` |
 | Wüste | `Wüste` |
 
@@ -226,7 +226,7 @@ Beispiel:
 ```json
 "biome": [
   "Feuchtgebiete",
-  "Grasland",
+  "Graslandschaft",
   "Wüste"
 ]
 ```
@@ -1528,10 +1528,10 @@ deluxe
 ### `filter.gehegetyp[]`
 
 ```text
-habitatTerrestrial
-habitatAquarium
-habitatFlying
-exhibit
+Landgehege
+Aquarium
+Voliere
+Ausstellung
 ```
 
 ### `filter.kontinente[]`
@@ -1551,13 +1551,13 @@ oceania
 Ästuar
 Feuchtgebiete
 Gemäßigt
-Grasland
+Graslandschaft
 Mangrove
 Offenes Meer
 Riff
 Seen und Flüsse
 Taiga
-Tropisch
+Tropen
 Tundra
 Wüste
 ```
@@ -1698,13 +1698,13 @@ unsichereVerwandtschaft
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "habitatTerrestrial"
+      "Landgehege"
     ],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland",
+      "Graslandschaft",
       "Wüste"
     ],
     "schutzstatus": "vulnerable"

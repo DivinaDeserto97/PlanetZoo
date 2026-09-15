@@ -16,14 +16,14 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "exhibit"
+      "Ausstellung"
     ],
     "kontinente": [
       "africa"
     ],
     "biome": [
       "Savanne",
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": "notEvaluated"
   },

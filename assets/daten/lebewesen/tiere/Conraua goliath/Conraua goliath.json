@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Tropisch",
+      "Tropen",
       "Seen und Flüsse"
     ],
     "schutzstatus": "endangered"

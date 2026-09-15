@@ -2,7 +2,7 @@ import { getLocalizedValue } from "./language.js";
 
 const LABELS = {
   enclosure: {
-    habitatTerrestrial: {
+    Landgehege: {
       de: "Landgehege",
       en: "Terrestrial habitat",
       "en-US": "Terrestrial habitat",
@@ -13,7 +13,7 @@ const LABELS = {
       ja: "陸上生息地",
       "zh-Hans": "陆地栖息地",
     },
-    habitatAquarium: {
+    Aquarium: {
       de: "Aquarium",
       en: "Aquarium",
       "en-US": "Aquarium",
@@ -24,7 +24,7 @@ const LABELS = {
       ja: "水族館",
       "zh-Hans": "水族馆",
     },
-    habitatFlying: {
+    Voliere: {
       de: "Voliere",
       en: "Aviary",
       "en-US": "Aviary",
@@ -35,7 +35,7 @@ const LABELS = {
       ja: "鳥類飼育舎",
       "zh-Hans": "鸟舍",
     },
-    exhibit: {
+    Ausstellung: {
       de: "Ausstellung",
       en: "Exhibit",
       "en-US": "Exhibit",
@@ -248,8 +248,8 @@ const LABELS = {
       "zh-Hans": "温带",
     },
 
-    Grasland: {
-      de: "Grasland",
+    Graslandschaft: {
+      de: "Graslandschaft",
       en: "Grassland",
       "en-US": "Grassland",
       es: "Pradera",
@@ -320,8 +320,8 @@ const LABELS = {
       "zh-Hans": "泰加林",
     },
 
-    Tropisch: {
-      de: "Tropisch",
+    Tropen: {
+      de: "Tropen",
       en: "Tropical",
       "en-US": "Tropical",
       es: "Tropical",

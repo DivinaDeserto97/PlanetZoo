@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Aquarium"
     ],
     "kontinente": [],
     "biome": [

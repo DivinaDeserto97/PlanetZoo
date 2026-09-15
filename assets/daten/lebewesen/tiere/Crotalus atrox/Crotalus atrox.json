@@ -14,14 +14,15 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "northAmerica"
     ],
     "biome": [
+      "Gemäßigt",
       "Wüste",
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -183,7 +184,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt Graslandschaften als Lebensraum.",
+            "de": "Die Zoopedia nennt Graslandschaftschaften als Lebensraum.",
             "en": "The Zoopedia names grasslands as habitat."
           },
           "quelle": "planetZoo2"
@@ -251,7 +252,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart, die in den Wüsten, Graslandschaften und Buschlandschaften der USA und Mexikos heimisch ist.",
+          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart, die in den Wüsten, Graslandschaftschaften und Buschlandschaften der USA und Mexikos heimisch ist.",
           "quelle": "planetZoo2"
         }
       ],
@@ -279,7 +280,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart aus den USA und Mexiko. Sie lebt in Wüsten, Graslandschaften und Buschlandschaften.\n\nIhren englischen Namen „Western Diamondback Rattlesnake“ verdankt sie dem grauen und braunen Schuppenmuster auf ihrem Rücken.\n\nDie durchschnittliche Länge beträgt etwa 1,2 m. Die Zoopedia erwähnt außerdem ein Exemplar mit 2,1 m Länge. Männchen sind größer als Weibchen. Die Art kann angreifen, wenn sie sich bedroht fühlt.",
+          "inhalt": "Die Texas-Klapperschlange (auch Crotalus atrox) ist eine giftige Schlangenart aus den USA und Mexiko. Sie lebt in Wüsten, Graslandschaftschaften und Buschlandschaften.\n\nIhren englischen Namen „Western Diamondback Rattlesnake“ verdankt sie dem grauen und braunen Schuppenmuster auf ihrem Rücken.\n\nDie durchschnittliche Länge beträgt etwa 1,2 m. Die Zoopedia erwähnt außerdem ein Exemplar mit 2,1 m Länge. Männchen sind größer als Weibchen. Die Art kann angreifen, wenn sie sich bedroht fühlt.",
           "quelle": "planetZoo2"
         }
       ],

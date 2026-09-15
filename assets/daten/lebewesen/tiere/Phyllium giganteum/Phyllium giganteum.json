@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": ""
   },

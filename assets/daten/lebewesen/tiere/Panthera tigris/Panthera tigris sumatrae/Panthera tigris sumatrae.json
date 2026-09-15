@@ -14,15 +14,16 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Feuchtgebiete",
+      "Tropen"
     ],
     "schutzstatus": "endangered"
   },

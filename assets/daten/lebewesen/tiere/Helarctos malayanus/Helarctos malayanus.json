@@ -16,13 +16,14 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "habitatTerrestrial"
+      "Landgehege"
     ],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Feuchtgebiete",
+      "Tropen"
     ],
     "schutzstatus": "vulnerable"
   },
@@ -143,7 +144,7 @@
         {
           "wert": "tropicalRainforest",
           "hinweis": {
-            "de": "Tropische Regenwälder Südostasiens.",
+            "de": "Tropene Regenwälder Südostasiens.",
             "en": "Tropical rainforests of Southeast Asia."
           },
           "quelle": "planetZoo2"

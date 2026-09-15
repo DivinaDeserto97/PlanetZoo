@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "endangered"
   },
@@ -134,7 +134,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt Savannen und offene Wälder in Kenia, Tansania und Uganda. Für den strukturierten Projektwert wird nur die ausdrücklich genannte Savanne als Grasland abgebildet.",
+            "de": "Die Zoopedia nennt Savannen und offene Wälder in Kenia, Tansania und Uganda. Für den strukturierten Projektwert wird nur die ausdrücklich genannte Savanne als Graslandschaft abgebildet.",
             "en": "The Zoopedia lists savannas and open woodlands in Kenya, Tanzania and Uganda. For the structured project value, only the explicitly stated savanna is mapped to grassland."
           },
           "quelle": "planetZoo2"

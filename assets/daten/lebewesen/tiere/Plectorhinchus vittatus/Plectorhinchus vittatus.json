@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "aquatic"
+      "Aquarium"
     ],
     "kontinente": [
       "africa",
@@ -24,8 +24,8 @@
       "oceania"
     ],
     "biome": [
-      "Aquatisch",
-      "Tropisch"
+      "Ästuar",
+      "Tropen"
     ],
     "schutzstatus": "leastConcern"
   },

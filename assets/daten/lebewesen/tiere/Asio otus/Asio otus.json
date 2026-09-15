@@ -14,8 +14,8 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Voliere"],
     "kontinente": [
       "europe",
       "asia",
@@ -23,7 +23,9 @@
       "africa"
     ],
     "biome": [
-      "Grasland"
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -288,7 +290,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, kommt in weiten Teilen Europas, Asiens, Nordamerikas und Teilen Nordafrikas vor. Sie lebt in Wäldern, Forsten und dichten Buschwerken, oft in der Nähe von offenen Graslandschaften oder Wiesen, wo sie kleine Säugetiere wie Wühlmäuse und Mäuse jagt.",
+          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, kommt in weiten Teilen Europas, Asiens, Nordamerikas und Teilen Nordafrikas vor. Sie lebt in Wäldern, Forsten und dichten Buschwerken, oft in der Nähe von offenen Graslandschaftschaften oder Wiesen, wo sie kleine Säugetiere wie Wühlmäuse und Mäuse jagt.",
           "quelle": "planetZoo2"
         }
       ],
@@ -316,7 +318,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, ist eine mittelgroße Eule aus Europa, Asien, Nordamerika und Teilen Nordafrikas. Sie lebt in Wäldern, Forsten und dichten Buschwerken, häufig nahe offenen Graslandschaften oder Wiesen.\n\nCharakteristisch sind ihre langen, aufrecht stehenden Ohrbüschel, orangefarbenen Augen und das fleckige braune Gefieder.\n\nWeibchen sind in der Regel größer als Männchen. Die Zoopedia nennt für Weibchen eine Größe von 27 bis 40 cm, eine Flügelspannweite von 90 bis 100 cm und ein Gewicht von 260 bis 435 g. Für Männchen nennt sie 25 bis 37 cm Größe, 84 bis 95 cm Flügelspannweite und 220 bis 305 g. Die Größenangaben wurden nicht als Körperlänge oder Schulterhöhe interpretiert, weil die Messart nicht ausdrücklich bezeichnet wird.",
+          "inhalt": "Die Waldohreule (Asio otus), auch bekannt als Nordische Waldohreule, Kleine Horn-Eule oder Katzen-Eule, ist eine mittelgroße Eule aus Europa, Asien, Nordamerika und Teilen Nordafrikas. Sie lebt in Wäldern, Forsten und dichten Buschwerken, häufig nahe offenen Graslandschaftschaften oder Wiesen.\n\nCharakteristisch sind ihre langen, aufrecht stehenden Ohrbüschel, orangefarbenen Augen und das fleckige braune Gefieder.\n\nWeibchen sind in der Regel größer als Männchen. Die Zoopedia nennt für Weibchen eine Größe von 27 bis 40 cm, eine Flügelspannweite von 90 bis 100 cm und ein Gewicht von 260 bis 435 g. Für Männchen nennt sie 25 bis 37 cm Größe, 84 bis 95 cm Flügelspannweite und 220 bis 305 g. Die Größenangaben wurden nicht als Körperlänge oder Schulterhöhe interpretiert, weil die Messart nicht ausdrücklich bezeichnet wird.",
           "quelle": "planetZoo2"
         }
       ],
@@ -332,7 +334,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Waldohreulen kommen zahlreich vor und gelten als nicht gefährdet, ihre Populationen sind jedoch insgesamt rückläufig. Die Zoopedia nennt den Verlust von Brut- und Jagdlebensräumen durch die Beseitigung von Hecken, Waldrodung und intensivere Landwirtschaft sowie Sekundärvergiftungen durch Nagergifte als Bedrohungen. In städtischen Gebieten können außerdem Stromleitungen und Straßenverkehr Tiere töten.\n\nSchutzmaßnahmen konzentrieren sich auf den Erhalt und die Wiederherstellung von Mischwäldern und Graslandmosaiken, künstliche Nistmöglichkeiten, die Verringerung schädlicher Nagergifte und öffentliche Aufklärung.",
+          "inhalt": "Waldohreulen kommen zahlreich vor und gelten als nicht gefährdet, ihre Populationen sind jedoch insgesamt rückläufig. Die Zoopedia nennt den Verlust von Brut- und Jagdlebensräumen durch die Beseitigung von Hecken, Waldrodung und intensivere Landwirtschaft sowie Sekundärvergiftungen durch Nagergifte als Bedrohungen. In städtischen Gebieten können außerdem Stromleitungen und Straßenverkehr Tiere töten.\n\nSchutzmaßnahmen konzentrieren sich auf den Erhalt und die Wiederherstellung von Mischwäldern und Graslandschaftmosaiken, künstliche Nistmöglichkeiten, die Verringerung schädlicher Nagergifte und öffentliche Aufklärung.",
           "quelle": "planetZoo2"
         }
       ],

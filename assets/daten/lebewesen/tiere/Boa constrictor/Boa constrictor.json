@@ -14,14 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "northAmerica",
       "southAmerica"
     ],
     "biome": [
-      "Tropisch",
+      "Tropen",
       "Wüste"
     ],
     "schutzstatus": "leastConcern"

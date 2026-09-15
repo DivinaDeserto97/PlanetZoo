@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "europe",
@@ -25,7 +25,7 @@
     ],
     "biome": [
       "Gemäßigt",
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -176,7 +176,7 @@
         {
           "wert": "temperate",
           "hinweis": {
-            "de": "Die Zoopedia nennt gemäßigte Graslandschaften, Wälder und Buschlandschaften.",
+            "de": "Die Zoopedia nennt gemäßigte Graslandschaftschaften, Wälder und Buschlandschaften.",
             "en": "The Zoopedia lists temperate grasslands, forests and scrublands."
           },
           "quelle": "planetZoo2"
@@ -184,7 +184,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt ausdrücklich Graslandschaften.",
+            "de": "Die Zoopedia nennt ausdrücklich Graslandschaftschaften.",
             "en": "The Zoopedia explicitly mentions grasslands."
           },
           "quelle": "planetZoo2"
@@ -219,7 +219,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Der Rothirsch (Cervus elaphus) ist ein weit verbreitetes Huftier, das in den gemäßigten Graslandschaften, Wäldern und Buschlandschaften Europas, Nordafrikas und Zentralasiens lebt. Er wurde auch in Südamerika und Ozeanien angesiedelt.",
+          "inhalt": "Der Rothirsch (Cervus elaphus) ist ein weit verbreitetes Huftier, das in den gemäßigten Graslandschaftschaften, Wäldern und Buschlandschaften Europas, Nordafrikas und Zentralasiens lebt. Er wurde auch in Südamerika und Ozeanien angesiedelt.",
           "quelle": "planetZoo2"
         }
       ],
@@ -283,7 +283,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Der Rothirsch (auch Cervus elaphus) ist ein weit verbreitetes Huftier, das in den gemäßigten Graslandschaften, Wäldern und Buschlandschaften Europas, Nordafrikas und Zentralasiens lebt. Er wurde auch in Südamerika und Ozeanien angesiedelt.\n\nDer Rothirsch weist ein rotbraunes Fell mit heller Unterseite auf. Rothirsche haben große, spitze Ohren, große Augen und eine lange Schnauze. Der Rothirsch ist sexuell dimorph: Das Männchen ist größer als das Weibchen und hat ein großes Geweih mit mehreren Gabelungen; die Geweihstangen bilden zusammen eine U-Form. Je nach Lebensraum und Umweltbedingungen kann die Größe des Rothirsches stark variieren.\n\nDie Männchen sind im Schnitt 175 cm bis 250 cm lang und wiegen zwischen 160 kg und 240 kg. Ihr Geweih kann zwischen 60 cm und 80 cm messen. Die Weibchen sind 160 cm bis 210 cm lang und wiegen zwischen 120 kg und 170 kg.",
+          "inhalt": "Der Rothirsch (auch Cervus elaphus) ist ein weit verbreitetes Huftier, das in den gemäßigten Graslandschaftschaften, Wäldern und Buschlandschaften Europas, Nordafrikas und Zentralasiens lebt. Er wurde auch in Südamerika und Ozeanien angesiedelt.\n\nDer Rothirsch weist ein rotbraunes Fell mit heller Unterseite auf. Rothirsche haben große, spitze Ohren, große Augen und eine lange Schnauze. Der Rothirsch ist sexuell dimorph: Das Männchen ist größer als das Weibchen und hat ein großes Geweih mit mehreren Gabelungen; die Geweihstangen bilden zusammen eine U-Form. Je nach Lebensraum und Umweltbedingungen kann die Größe des Rothirsches stark variieren.\n\nDie Männchen sind im Schnitt 175 cm bis 250 cm lang und wiegen zwischen 160 kg und 240 kg. Ihr Geweih kann zwischen 60 cm und 80 cm messen. Die Weibchen sind 160 cm bis 210 cm lang und wiegen zwischen 120 kg und 170 kg.",
           "quelle": "planetZoo2"
         }
       ],

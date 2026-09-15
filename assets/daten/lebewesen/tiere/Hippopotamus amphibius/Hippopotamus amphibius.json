@@ -14,15 +14,15 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "africa"
     ],
     "biome": [
-      "Grasland",
+      "Graslandschaft",
       "Feuchtgebiete",
       "Seen und Flüsse"
     ],
@@ -352,7 +352,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Das Flusspferd gilt derzeit als gefährdet und die Bestände sind rückläufig. Große Graslandflächen für die Weidehaltung gehen durch Wüstenbildung und die Ausbreitung von Städten und Straßen verloren. Außerdem werden sie von Menschen getötet, um Schäden an Feldfrüchten zu verhindern, ihr Fleisch, ihre Haut und ihre Zähne zu verkaufen oder einfach, weil sie als gefährlich angesehen werden. Inzucht ist ein weiteres Risiko, das besteht, wenn lokale Bestände kleiner als 50 Tiere sind. Im Gegensatz dazu nimmt die Zahl der Flusspferde in Kolumbien rapide zu, nachdem sie aus der Ranch des Drogenbarons Pablo Escobar entkommen sind. Sie haben keine natürlichen Fressfeinde, überweiden Feuchtgebiete, verschmutzen Gewässer und übertragen Krankheiten, die für die lokale Fauna gefährlich sind.\n\nDerzeit laufen Projekte, die gezielt die Wiederherstellung der Lebensräume von Flusspferden vorantreiben. Dazu gehören die Vergrößerung von Naturschutzgebieten, um sie miteinander zu vernetzen, sowie die Wiederanbindung von Feuchtgebieten und Flüssen. Viele Lebensräume der Flusspferde stehen zwar offiziell unter Schutz, doch die Umsetzung dieser Maßnahmen gestaltet sich oft schwierig – und manche Gebiete sind bislang gar nicht geschützt.\n\nUm das Überleben der Flusspferde zu sichern, sind weitere Schutzmaßnahmen und Aktionen nötig.",
+          "inhalt": "Das Flusspferd gilt derzeit als gefährdet und die Bestände sind rückläufig. Große Graslandschaftflächen für die Weidehaltung gehen durch Wüstenbildung und die Ausbreitung von Städten und Straßen verloren. Außerdem werden sie von Menschen getötet, um Schäden an Feldfrüchten zu verhindern, ihr Fleisch, ihre Haut und ihre Zähne zu verkaufen oder einfach, weil sie als gefährlich angesehen werden. Inzucht ist ein weiteres Risiko, das besteht, wenn lokale Bestände kleiner als 50 Tiere sind. Im Gegensatz dazu nimmt die Zahl der Flusspferde in Kolumbien rapide zu, nachdem sie aus der Ranch des Drogenbarons Pablo Escobar entkommen sind. Sie haben keine natürlichen Fressfeinde, überweiden Feuchtgebiete, verschmutzen Gewässer und übertragen Krankheiten, die für die lokale Fauna gefährlich sind.\n\nDerzeit laufen Projekte, die gezielt die Wiederherstellung der Lebensräume von Flusspferden vorantreiben. Dazu gehören die Vergrößerung von Naturschutzgebieten, um sie miteinander zu vernetzen, sowie die Wiederanbindung von Feuchtgebieten und Flüssen. Viele Lebensräume der Flusspferde stehen zwar offiziell unter Schutz, doch die Umsetzung dieser Maßnahmen gestaltet sich oft schwierig – und manche Gebiete sind bislang gar nicht geschützt.\n\nUm das Überleben der Flusspferde zu sichern, sind weitere Schutzmaßnahmen und Aktionen nötig.",
           "quelle": "planetZoo2"
         }
       ],

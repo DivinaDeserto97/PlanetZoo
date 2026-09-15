@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Tropisch"
+      "Tropen"
     ],
     "schutzstatus": "criticallyEndangered"
   },

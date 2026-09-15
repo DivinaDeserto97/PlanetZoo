@@ -14,13 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
     "kontinente": [
       "asia"
     ],
     "biome": [
-      "Grasland"
+      "Graslandschaft"
     ],
     "schutzstatus": "endangered"
   },
@@ -190,7 +190,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt die mongolische Steppe und die Graslandschaften Zentralasiens als Lebensraum.",
+            "de": "Die Zoopedia nennt die mongolische Steppe und die Graslandschaftschaften Zentralasiens als Lebensraum.",
             "en": "The Zoopedia names the Mongolian steppe and the grasslands of Central Asia as habitat."
           },
           "quelle": "planetZoo2"

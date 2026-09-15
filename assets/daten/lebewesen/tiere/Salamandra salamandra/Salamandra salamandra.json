@@ -14,12 +14,13 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "europe"
     ],
     "biome": [
+      "Feuchtgebiete",
       "Gemäßigt"
     ],
     "schutzstatus": "vulnerable"

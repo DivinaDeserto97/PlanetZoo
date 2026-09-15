@@ -14,13 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Voliere"],
     "kontinente": [
       "southAmerica"
     ],
     "biome": [
-      "Grasland"
+      "Feuchtgebiete",
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },

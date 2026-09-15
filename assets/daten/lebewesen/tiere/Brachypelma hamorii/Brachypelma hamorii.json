@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": ["northAmerica"],
-    "biome": ["Wüste"],
+    "biome": ["Gemäßigt","Wüste"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

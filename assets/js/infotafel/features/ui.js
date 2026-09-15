@@ -92,7 +92,7 @@ const VALUE_LABELS = {
   },
 
   temperateGrassland: {
-    de: "Gemäßigte Graslandschaft",
+    de: "Gemäßigte Graslandschaftschaft",
     en: "Temperate grassland",
   },
 

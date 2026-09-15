@@ -14,14 +14,14 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
+    "edition": "standard",
+    "gehegetyp": ["Ausstellung"],
     "kontinente": [
       "southAmerica"
     ],
     "biome": [
-      "Tropisch",
-      "Grasland"
+      "Tropen",
+      "Graslandschaft"
     ],
     "schutzstatus": ""
   },
@@ -170,7 +170,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Die Zoopedia nennt tropische Graslandschaften als Teil des Lebensraums.",
+            "de": "Die Zoopedia nennt tropische Graslandschaftschaften als Teil des Lebensraums.",
             "en": "The Zoopedia names tropical grasslands as part of the habitat."
           },
           "quelle": "planetZoo2"

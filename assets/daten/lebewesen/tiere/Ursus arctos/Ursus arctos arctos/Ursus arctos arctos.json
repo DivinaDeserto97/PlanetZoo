@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "",
+    "edition": "standard",
     "gehegetyp": [
-      ""
+      "Landgehege"
     ],
     "kontinente": [
       "europe",
@@ -25,8 +25,7 @@
     "biome": [
       "Taiga",
       "Gemäßigt",
-      "Grasland",
-      "Feuchtgebiete"
+      "Graslandschaft"
     ],
     "schutzstatus": "leastConcern"
   },
@@ -240,7 +239,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Der Europäische Braunbär (Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaften und Feuchtgebieten zu finden.",
+          "inhalt": "Der Europäische Braunbär (Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaftschaften und Feuchtgebieten zu finden.",
           "quelle": "planetZoo2"
         }
       ],
@@ -304,7 +303,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Der Europäische Braunbär (auch Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaften und Feuchtgebieten zu finden.\n\nEuropäische Braunbären besitzen ein dichtes, braunes Fell, einen großen Schulterhöcker, einen runden Kopf und kleine, abgerundete Ohren. Sie haben kräftige Vorderbeine mit langen Klauen, die sie zum Graben und Jagen nutzen.\n\nBraunbären können extrem groß werden, wobei es jedoch Größenunterschiede zwischen den verschiedenen Beständen gibt. Ein durchschnittlicher männlicher Bär wiegt zwischen 350 kg und 500 kg und wird 2,2 m lang, während ein durchschnittlicher weiblicher Bär zwischen 150 kg und 300 kg wiegt und 1,8 m lang wird.",
+          "inhalt": "Der Europäische Braunbär (auch Ursus arctos arctos) ist eine Unterart des Braunbären und in Europa und Zentralrussland in borealen und gemäßigten Wäldern, Graslandschaftschaften und Feuchtgebieten zu finden.\n\nEuropäische Braunbären besitzen ein dichtes, braunes Fell, einen großen Schulterhöcker, einen runden Kopf und kleine, abgerundete Ohren. Sie haben kräftige Vorderbeine mit langen Klauen, die sie zum Graben und Jagen nutzen.\n\nBraunbären können extrem groß werden, wobei es jedoch Größenunterschiede zwischen den verschiedenen Beständen gibt. Ein durchschnittlicher männlicher Bär wiegt zwischen 350 kg und 500 kg und wird 2,2 m lang, während ein durchschnittlicher weiblicher Bär zwischen 150 kg und 300 kg wiegt und 1,8 m lang wird.",
           "quelle": "planetZoo2"
         }
       ],

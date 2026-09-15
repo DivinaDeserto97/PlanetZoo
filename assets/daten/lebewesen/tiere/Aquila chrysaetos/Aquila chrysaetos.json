@@ -16,7 +16,7 @@
   "filter": {
     "edition": "deluxe",
     "gehegetyp": [
-      ""
+      "Voliere"
     ],
     "kontinente": [
       "northAmerica",
@@ -25,7 +25,8 @@
       "asia"
     ],
     "biome": [
-      "Grasland",
+      "Gemäßigt",
+      "Graslandschaft",
       "Tundra",
       "Wüste"
     ],
@@ -256,7 +257,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Der Steinadler (Aquila chrysaetos) kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er bevorzugt offene oder halboffene Lebensräume wie Berge, Grasland, Tundra und Wüsten.",
+          "inhalt": "Der Steinadler (Aquila chrysaetos) kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er bevorzugt offene oder halboffene Lebensräume wie Berge, Graslandschaft, Tundra und Wüsten.",
           "quelle": "planetZoo2"
         }
       ],
@@ -320,7 +321,7 @@
     "uebersicht": {
       "de": [
         {
-          "inhalt": "Der Steinadler (auch Aquila chrysaetos) ist einer der am weitesten verbreiteten Raubvögel und kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er mag offene oder halboffene Lebensräume wie Berge, Grasland, Tundra und Wüsten und nistet oft auf Klippen oder hohen Bäumen, von denen aus er einen guten Überblick über seine Jagdgebiete hat.\n\nSteinadler besitzen ein dunkelbraunes Gefieder, das durch goldene Federn am Nacken und auf der Kopfkrone akzentuiert wird, kräftige Krallen und einen scharfen, hakenförmigen Schnabel.\n\nSie haben eine Flügelspannweite von 1,8 m bis 2,3 m und sind 70 cm bis 100 cm lang. Wie bei den meisten Raubvögeln sind die Weibchen etwas größer und schwerer als die Männchen. Erwachsene Männchen wiegen in der Regel zwischen 3 kg und 5 kg, während die Weibchen 4 kg bis 6,5 kg auf die Waage bringen.",
+          "inhalt": "Der Steinadler (auch Aquila chrysaetos) ist einer der am weitesten verbreiteten Raubvögel und kommt auf der Nordhalbkugel in Nordamerika, Europa, Asien und Teilen Nordafrikas vor. Er mag offene oder halboffene Lebensräume wie Berge, Graslandschaft, Tundra und Wüsten und nistet oft auf Klippen oder hohen Bäumen, von denen aus er einen guten Überblick über seine Jagdgebiete hat.\n\nSteinadler besitzen ein dunkelbraunes Gefieder, das durch goldene Federn am Nacken und auf der Kopfkrone akzentuiert wird, kräftige Krallen und einen scharfen, hakenförmigen Schnabel.\n\nSie haben eine Flügelspannweite von 1,8 m bis 2,3 m und sind 70 cm bis 100 cm lang. Wie bei den meisten Raubvögeln sind die Weibchen etwas größer und schwerer als die Männchen. Erwachsene Männchen wiegen in der Regel zwischen 3 kg und 5 kg, während die Weibchen 4 kg bis 6,5 kg auf die Waage bringen.",
           "quelle": "planetZoo2"
         }
       ],

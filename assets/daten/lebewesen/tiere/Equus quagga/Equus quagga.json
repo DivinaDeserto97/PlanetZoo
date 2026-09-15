@@ -14,15 +14,10 @@
     }
   },
   "filter": {
-    "edition": "",
-    "gehegetyp": [],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Grasland"
-    ],
+    "edition": "standard",
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "nearThreatened"
   },
   "daten": {
@@ -151,7 +146,7 @@
         {
           "wert": "grassland",
           "hinweis": {
-            "de": "Savanne wird im Projekt dem Grasland-Kontext zugeordnet.",
+            "de": "Savanne wird im Projekt dem Graslandschaft-Kontext zugeordnet.",
             "en": "Savanna is mapped to the project's grassland context."
           },
           "quelle": "planetZoo2"

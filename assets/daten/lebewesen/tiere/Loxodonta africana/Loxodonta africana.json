@@ -16,14 +16,14 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": [
-      "habitatTerrestrial"
+      "Landgehege"
     ],
     "kontinente": [
       "africa"
     ],
     "biome": [
       "Feuchtgebiete",
-      "Grasland",
+      "Graslandschaft",
       "Wüste"
     ],
     "schutzstatus": "endangered"
