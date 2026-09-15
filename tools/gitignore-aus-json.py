@@ -27,6 +27,10 @@ STANDARD = '''# ============================================================
 .DS_Store
 Thumbs.db
 
+# Python
+__pycache__/
+*.pyc
+
 # Lokale/private Medien und Cache
 /assets/cache/
 /assets/private/

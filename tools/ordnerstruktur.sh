@@ -28,6 +28,55 @@ mkdir -p "$DOKU_DIR"
 
 
 # ============================================================
+# GITHUB-FREIGABEN AUS DEN JSON-DATEIEN LESEN
+# ============================================================
+
+FREIGABEN_DATEI="$(mktemp)"
+trap 'rm -f "$FREIGABEN_DATEI"' EXIT
+
+python3 - "$PROJECT_ROOT" > "$FREIGABEN_DATEI" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1])
+data_dir = root / "assets" / "daten"
+media_ext = {
+    ".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff", ".avif",
+    ".mp3", ".wav", ".ogg", ".flac", ".m4a", ".aac", ".wma", ".opus",
+    ".mkv", ".mp4", ".mov", ".avi", ".webm", ".m4v", ".ts", ".m2ts",
+}
+
+def walk(value):
+    if isinstance(value, dict):
+        pfad = value.get("pfad")
+        if isinstance(pfad, str) and Path(pfad).suffix.lower() in media_ext:
+            yield value
+        for child in value.values():
+            yield from walk(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from walk(child)
+
+for json_file in data_dir.rglob("*.json"):
+    try:
+        data = json.loads(json_file.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"Ungültiges JSON: {json_file.relative_to(root)}: {exc}", file=sys.stderr)
+        raise SystemExit(1)
+
+    for item in walk(data):
+        if item.get("githubFreigabe") is True:
+            print(item["pfad"].lstrip("/").replace("\\", "/"))
+PY
+
+ist_github_freigegeben() {
+    local relativ="$1"
+    grep -Fxq -- "$relativ" "$FREIGABEN_DATEI"
+}
+
+
+# ============================================================
 # MEDIEN ERKENNEN
 # ============================================================
 
@@ -66,8 +115,8 @@ ist_medium() {
 
     echo
 
-    echo "> Bilder, Videos und Audiodateien werden hier aufgeführt,"
-    echo "> auch wenn sie in der Share-ZIP nicht enthalten sind."
+    echo "> Bilder, Videos und Audiodateien werden mit ihrem aktuellen"
+    echo "> GitHub-/Share-Freigabestatus aus den JSON-Dateien aufgeführt."
 
     echo
 
@@ -86,7 +135,7 @@ ist_medium() {
 
         case "$relativ" in
 
-            .git|.git/*|share|share/*)
+            .git|.git/*|share|share/*|*/__pycache__|*/__pycache__/*|__pycache__|__pycache__/*)
 
                 continue
                 ;;
@@ -138,9 +187,17 @@ ist_medium() {
         if ist_medium "$name"
         then
 
-            printf '%s- `%s` *(Medium – nicht in Share-ZIP)*\n' \
+            if is_github_freigegeben "$relativ"
+            then
+                status="Medium – GitHub/Share freigegeben"
+            else
+                status="Medium – lokal / nicht freigegeben"
+            fi
+
+            printf '%s- `%s` *(%s)*\n' \
                 "$einrueckung" \
-                "$name"
+                "$name" \
+                "$status"
 
             continue
 
