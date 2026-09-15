@@ -404,7 +404,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/map/Brachypelma hamorii map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/map/Brachypelma hamorii map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -430,7 +431,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/bilder/Brachypelma hamorii 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/bilder/Brachypelma hamorii 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

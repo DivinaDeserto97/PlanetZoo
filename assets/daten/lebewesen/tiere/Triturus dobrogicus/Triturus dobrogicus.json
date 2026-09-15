@@ -757,7 +757,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/map/Triturus dobrogicus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/map/Triturus dobrogicus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -783,7 +784,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/bilder/Triturus dobrogicus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Triturus dobrogicus/bilder/Triturus dobrogicus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

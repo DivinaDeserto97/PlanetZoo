@@ -731,7 +731,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/map/Loxodonta africana map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/map/Loxodonta africana map.png",
+        "githubFreigabe": false
       },
       {
         "typ": "wiedergabe",
@@ -762,7 +763,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -788,7 +790,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 2.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/bilder/Loxodonta africana 2.jpg",
+              "githubFreigabe": false
             }
           ]
         }
@@ -813,17 +816,20 @@
             {
               "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.flac"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.flac",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.mp3"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.mp3",
+              "githubFreigabe": false
             },
             {
               "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.wav"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/1/LOXAFR17.wav",
+              "githubFreigabe": false
             }
           ]
         },
@@ -841,17 +847,20 @@
             {
               "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.flac"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.flac",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.mp3"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.mp3",
+              "githubFreigabe": false
             },
             {
               "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.wav"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/2/Loxodonta_africana_S0367_01.wav",
+              "githubFreigabe": false
             }
           ]
         },
@@ -869,17 +878,20 @@
             {
               "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.flac"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.flac",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.mp3"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.mp3",
+              "githubFreigabe": false
             },
             {
               "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.wav"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Grollen/Tierstimmenarchiv/3/LOXAFR14.wav",
+              "githubFreigabe": false
             }
           ]
         }
@@ -902,17 +914,20 @@
             {
               "typ": "original",
               "dateityp": "flac",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.flac"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.flac",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp3",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.mp3"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.mp3",
+              "githubFreigabe": false
             },
             {
               "typ": "original",
               "dateityp": "wav",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.wav"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/audio/Trompetenruf/Tierstimmenarchiv/1/LOXAFR15.wav",
+              "githubFreigabe": false
             }
           ]
         }
@@ -937,7 +952,8 @@
             {
               "typ": "original",
               "dateityp": "mp4",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/1.mp4",
+              "githubFreigabe": false
             }
           ],
           "dauerSekunden": 39,
@@ -965,12 +981,14 @@
             {
               "typ": "original",
               "dateityp": "mkv",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mkv"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mkv",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp4",
-              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4"
+              "pfad": "assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/Go Wild/1.mp4",
+              "githubFreigabe": false
             }
           ],
           "dauerSekunden": null,

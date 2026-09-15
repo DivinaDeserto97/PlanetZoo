@@ -1,56 +1,53 @@
-# ==========================================
-# LOKALE MEDIENDATEIEN
-# Nicht auf GitHub hochladen
-# ==========================================
+# ============================================================
+# AUTOMATISCH ERZEUGT
+# Quelle: Standardregeln + githubFreigabe aus assets/daten/**/*.json
+# NICHT von Hand bearbeiten – tools/gitignore-aus-json.py erzeugt diese Datei.
+# ============================================================
 
-assets/daten/**/*.png
-assets/daten/**/*.jpg
-assets/daten/**/*.jpeg
-assets/daten/**/*.webp
-assets/daten/**/*.gif
-
-assets/daten/**/*.mp3
-assets/daten/**/*.wav
-assets/daten/**/*.ogg
-assets/daten/**/*.flac
-assets/daten/**/*.m4a
-assets/daten/**/*.aac
-
-assets/daten/**/*.mkv
-assets/daten/**/*.mp4
-assets/daten/**/*.webm
-assets/daten/**/*.m4v
-
-
-# ==========================================
-# ARCHIVE
-# ==========================================
-
+# Archive
 *.zip
 *.rar
 *.7z
 *.tar
 *.tar.gz
 
-
-# ============================================================
-# AUTOMATISCH ERZEUGTE SHARE-DATEIEN
-# ============================================================
-
+# Automatisch erzeugte Share-Dateien
 /share/
 
-# ==========================================
-# SYSTEM
-# ==========================================
-
+# System
 .DS_Store
 Thumbs.db
-# ==========================================
-# PRIVATE / LOKALE MEDIEN UND CACHE
-# ==========================================
+
+# Lokale/private Medien und Cache
 /assets/cache/
 /assets/private/
 /assets/medien/lokal/
 
-# Freigegebene Medien unter assets/medien/freigegeben/
-# dürfen absichtlich auf GitHub und ins Share-ZIP.
+# Medien in Tier-/Kino-Daten standardmässig NICHT veröffentlichen.
+/assets/daten/**/*.png
+/assets/daten/**/*.jpg
+/assets/daten/**/*.jpeg
+/assets/daten/**/*.webp
+/assets/daten/**/*.gif
+/assets/daten/**/*.bmp
+/assets/daten/**/*.tif
+/assets/daten/**/*.tiff
+/assets/daten/**/*.avif
+/assets/daten/**/*.mp3
+/assets/daten/**/*.wav
+/assets/daten/**/*.ogg
+/assets/daten/**/*.flac
+/assets/daten/**/*.m4a
+/assets/daten/**/*.aac
+/assets/daten/**/*.wma
+/assets/daten/**/*.opus
+/assets/daten/**/*.mkv
+/assets/daten/**/*.mp4
+/assets/daten/**/*.mov
+/assets/daten/**/*.avi
+/assets/daten/**/*.webm
+/assets/daten/**/*.m4v
+/assets/daten/**/*.ts
+/assets/daten/**/*.m2ts
+
+# Keine Medien sind derzeit mit githubFreigabe: true freigegeben.

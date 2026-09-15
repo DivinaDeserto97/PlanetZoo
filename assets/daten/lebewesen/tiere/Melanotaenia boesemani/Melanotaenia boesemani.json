@@ -352,7 +352,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/map/Melanotaenia boesemani map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/map/Melanotaenia boesemani map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -378,7 +379,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -404,7 +406,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

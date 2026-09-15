@@ -373,7 +373,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/map/Gorilla gorilla gorilla map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/map/Gorilla gorilla gorilla map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -399,7 +400,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -425,7 +427,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

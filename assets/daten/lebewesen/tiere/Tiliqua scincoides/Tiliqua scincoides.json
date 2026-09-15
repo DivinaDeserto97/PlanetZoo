@@ -773,7 +773,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/map/Tiliqua scincoides map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/map/Tiliqua scincoides map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -799,7 +800,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/bilder/Tiliqua scincoides 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Tiliqua scincoides/bilder/Tiliqua scincoides 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

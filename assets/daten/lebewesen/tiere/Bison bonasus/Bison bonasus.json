@@ -798,7 +798,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/map/Bison bonasus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/map/Bison bonasus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -824,7 +825,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/bilder/Bison bonasus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Bison bonasus/bilder/Bison bonasus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

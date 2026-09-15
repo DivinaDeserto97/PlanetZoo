@@ -47,3 +47,23 @@ Wenn eine Datei nicht weitergegeben werden darf, sollte im Datensatz nur die Ori
 ```
 
 Mögliche Werte für `verwendung` sind beispielsweise `freigegeben`, `remote`, `embed`, `privat` oder `pruefen`.
+
+## GitHub-Freigabe direkt im JSON
+
+Ob eine **lokale Mediendatei** auf GitHub und in der Share-ZIP mitgeliefert werden darf, wird direkt beim jeweiligen `dateien`-Eintrag gespeichert:
+
+```json
+{
+  "typ": "original",
+  "dateityp": "png",
+  "pfad": "assets/daten/lebewesen/tiere/Beispiel/map/Beispiel map.png",
+  "githubFreigabe": false
+}
+```
+
+- `"githubFreigabe": true` = Datei darf von diesem Projekt auf GitHub und in der Share-ZIP mitgeliefert werden.
+- `"githubFreigabe": false` = Datei bleibt lokal und wird automatisch durch `.gitignore` ausgeschlossen.
+- Nur auf `true` setzen, wenn die konkrete Datei tatsächlich weiterverbreitet werden darf.
+- `quelle` und `url` bleiben unabhängig davon erhalten. Eine Quellenangabe allein ist **keine** Freigabe.
+
+`tools/gitignore-aus-json.py` erzeugt beim Commit die `.gitignore` automatisch aus diesen Angaben plus den festen Standardregeln.

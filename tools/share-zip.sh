@@ -26,19 +26,6 @@ mkdir -p "$SHARE_DIR"
 
 
 # ============================================================
-# ORDNERSTRUKTUR AKTUALISIEREN
-# ============================================================
-
-echo
-echo "============================================================"
-echo "1. Ordnerstruktur aktualisieren"
-echo "============================================================"
-echo
-
-"$SCRIPT_DIR/ordnerstruktur.sh"
-
-
-# ============================================================
 # DATEINAME
 # ============================================================
 
@@ -59,62 +46,31 @@ fi
 
 # ============================================================
 # DATEILISTE ERSTELLEN
+# .gitignore wurde vorher aus den JSON-Freigaben erzeugt.
+# githubFreigabe:true => Medium darf mit in die Share-ZIP.
 # ============================================================
 
 cd "$PROJECT_ROOT"
-
-
 DATEILISTE="$(mktemp)"
-
 trap 'rm -f "$DATEILISTE"' EXIT
 
+while IFS= read -r -d '' datei
+do
+    # Git-interne Daten und Share-Ausgabe nie einpacken.
+    case "$datei" in
+        ./.git/*|./share/*) continue ;;
+    esac
 
-find . \
-    -path './.git' -prune -o \
-    -path './share' -prune -o \
-    -type f \
-    ! -iname '*.jpg' \
-    ! -iname '*.jpeg' \
-    ! -iname '*.png' \
-    ! -iname '*.webp' \
-    ! -iname '*.gif' \
-    ! -iname '*.bmp' \
-    ! -iname '*.tif' \
-    ! -iname '*.tiff' \
-    ! -iname '*.avif' \
-    ! -iname '*.mkv' \
-    ! -iname '*.mp4' \
-    ! -iname '*.mov' \
-    ! -iname '*.avi' \
-    ! -iname '*.webm' \
-    ! -iname '*.m4v' \
-    ! -iname '*.ts' \
-    ! -iname '*.m2ts' \
-    ! -iname '*.mp3' \
-    ! -iname '*.wav' \
-    ! -iname '*.flac' \
-    ! -iname '*.ogg' \
-    ! -iname '*.m4a' \
-    ! -iname '*.aac' \
-    ! -iname '*.wma' \
-    ! -iname '*.opus' \
-    ! -iname '*.zip' \
-    ! -iname '*.7z' \
-    ! -iname '*.rar' \
-    > "$DATEILISTE"
+    # Alles, was die generierte .gitignore ignoriert, bleibt auch aus der Share-ZIP.
+    if git check-ignore -q -- "$datei" 2>/dev/null
+    then
+        continue
+    fi
 
-# Freigegebene Medien werden bewusst mitgeliefert.
-if [[ -d ./assets/medien/freigegeben ]]; then
-    find ./assets/medien/freigegeben \
-        -type f \
-        ! -iname '*.zip' \
-        ! -iname '*.7z' \
-        ! -iname '*.rar' \
-        >> "$DATEILISTE"
-fi
+    printf '%s\n' "$datei" >> "$DATEILISTE"
+done < <(find . -type f -print0)
 
 sort -u -o "$DATEILISTE" "$DATEILISTE"
-
 
 # ============================================================
 # SICHERHEITSPRÜFUNG
@@ -219,7 +175,7 @@ echo "- 7z / RAR"
 echo "- .git"
 echo "- share/"
 echo
-echo "Freigegebene Medien aus assets/medien/freigegeben/ sind enthalten."
+echo "Medien mit githubFreigabe: true in den JSON-Dateien sind enthalten."
 echo
 echo "Die übrigen Mediennamen und Medienpfade stehen weiterhin in:"
 echo

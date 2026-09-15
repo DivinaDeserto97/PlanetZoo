@@ -402,7 +402,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/map/Zebrasoma flavescens map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/map/Zebrasoma flavescens map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -428,7 +429,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/Zebrasoma flavescens 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/Zebrasoma flavescens 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -454,7 +456,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/Zebrasoma flavescens illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/Zebrasoma flavescens illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

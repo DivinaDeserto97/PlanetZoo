@@ -379,7 +379,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/map/Scardinius erythrophthalmus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/map/Scardinius erythrophthalmus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -405,7 +406,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -431,7 +433,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

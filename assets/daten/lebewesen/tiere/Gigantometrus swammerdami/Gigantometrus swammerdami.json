@@ -285,7 +285,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/map/Gigantometrus swammerdami map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/map/Gigantometrus swammerdami map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -311,7 +312,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/bilder/Gigantometrus swammerdami 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/bilder/Gigantometrus swammerdami 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

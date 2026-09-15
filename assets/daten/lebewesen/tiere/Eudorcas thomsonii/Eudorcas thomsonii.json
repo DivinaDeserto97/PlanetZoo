@@ -440,7 +440,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/map/Eudorcas thomsonii map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/map/Eudorcas thomsonii map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -466,7 +467,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -492,7 +494,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/bilder/Eudorcas thomsonii illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

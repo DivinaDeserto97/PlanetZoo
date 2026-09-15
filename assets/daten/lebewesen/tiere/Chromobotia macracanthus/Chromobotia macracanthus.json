@@ -402,7 +402,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/map/Chromobotia macracanthus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/map/Chromobotia macracanthus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -428,7 +429,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/bilder/Chromobotia macracanthus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/bilder/Chromobotia macracanthus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -454,7 +456,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/bilder/Chromobotia macracanthus illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/bilder/Chromobotia macracanthus illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

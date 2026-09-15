@@ -719,7 +719,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/map/Ambystoma mexicanum map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/map/Ambystoma mexicanum map.png",
+        "githubFreigabe": false
       },
       {
         "typ": "wiedergabe",
@@ -750,7 +751,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/bilder/Ambystoma mexicanum 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/bilder/Ambystoma mexicanum 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

@@ -724,7 +724,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/map/Salamandra salamandra map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/map/Salamandra salamandra map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -750,7 +751,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/bilder/Salamandra salamandra 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Salamandra salamandra/bilder/Salamandra salamandra 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

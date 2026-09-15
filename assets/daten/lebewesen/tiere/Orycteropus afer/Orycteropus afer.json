@@ -707,7 +707,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/map/Orycteropus afer map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/map/Orycteropus afer map.png",
+        "githubFreigabe": false
       },
       {
         "typ": "wiedergabe",
@@ -738,7 +739,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/bilder/Orycteropus afer 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/bilder/Orycteropus afer 1.webp",
+              "githubFreigabe": false
             }
           ],
           "status": "lokalNochNichtVorhanden"
@@ -789,12 +791,14 @@
             {
               "typ": "original",
               "dateityp": "mkv",
-              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mkv"
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mkv",
+              "githubFreigabe": false
             },
             {
               "typ": "wiedergabe",
               "dateityp": "mp4",
-              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mp4"
+              "pfad": "assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/1.mp4",
+              "githubFreigabe": false
             }
           ],
           "dauerSekunden": null,

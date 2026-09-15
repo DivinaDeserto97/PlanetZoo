@@ -793,7 +793,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/map/Panthera tigris sumatrae map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/map/Panthera tigris sumatrae map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -819,7 +820,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/bilder/Panthera tigris sumatrae 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/bilder/Panthera tigris sumatrae 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

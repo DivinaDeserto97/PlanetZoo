@@ -779,7 +779,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/map/Antidorcas marsupialis map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/map/Antidorcas marsupialis map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -805,7 +806,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -831,7 +833,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/bilder/Antidorcas marsupialis illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

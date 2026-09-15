@@ -290,7 +290,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/map/Phacochoerus africanus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/map/Phacochoerus africanus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -316,7 +317,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/bilder/Phacochoerus africanus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/bilder/Phacochoerus africanus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

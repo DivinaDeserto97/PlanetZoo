@@ -809,7 +809,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/map/Eretmochelys imbricata map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/map/Eretmochelys imbricata map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -835,7 +836,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -861,7 +863,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/bilder/Eretmochelys imbricata illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

@@ -263,7 +263,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/map/Plectorhinchus vittatus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/map/Plectorhinchus vittatus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -289,7 +290,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/bilder/Plectorhinchus vittatus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/bilder/Plectorhinchus vittatus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

@@ -386,7 +386,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/map/Morpho menelaus map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/map/Morpho menelaus map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -412,7 +413,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -438,7 +440,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

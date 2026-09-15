@@ -792,7 +792,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Aglais io/map/Aglais io map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Aglais io/map/Aglais io map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -818,7 +819,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Aglais io/bilder/Aglais io 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Aglais io/bilder/Aglais io 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

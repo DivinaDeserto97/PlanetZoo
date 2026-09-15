@@ -756,7 +756,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/map/Phyllobates terribilis map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/map/Phyllobates terribilis map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -782,7 +783,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/bilder/Phyllobates terribilis 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Phyllobates terribilis/bilder/Phyllobates terribilis 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

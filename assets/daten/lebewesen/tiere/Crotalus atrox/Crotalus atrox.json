@@ -374,7 +374,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/map/Crotalus atrox map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/map/Crotalus atrox map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -400,7 +401,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/bilder/Crotalus atrox 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Crotalus atrox/bilder/Crotalus atrox 1.webp",
+              "githubFreigabe": false
             }
           ]
         }

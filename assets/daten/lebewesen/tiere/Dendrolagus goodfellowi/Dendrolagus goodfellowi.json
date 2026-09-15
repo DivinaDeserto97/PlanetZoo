@@ -777,7 +777,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/map/Dendrolagus goodfellowi map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/map/Dendrolagus goodfellowi map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -803,7 +804,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/bilder/Dendrolagus goodfellowi 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/bilder/Dendrolagus goodfellowi 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
@@ -829,7 +831,8 @@
             {
               "typ": "original",
               "dateityp": "jpg",
-              "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/bilder/Dendrolagus goodfellowi illustration 1.jpg"
+              "pfad": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/bilder/Dendrolagus goodfellowi illustration 1.jpg",
+              "githubFreigabe": false
             }
           ]
         }

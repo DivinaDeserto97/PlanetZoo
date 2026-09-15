@@ -296,7 +296,8 @@
       {
         "typ": "original",
         "dateityp": "png",
-        "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/map/Ailuropoda melanoleuca map.png"
+        "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/map/Ailuropoda melanoleuca map.png",
+        "githubFreigabe": false
       }
     ],
     "quelle": "planetZoo2"
@@ -322,7 +323,8 @@
             {
               "typ": "original",
               "dateityp": "webp",
-              "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/bilder/Ailuropoda melanoleuca 1.webp"
+              "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/bilder/Ailuropoda melanoleuca 1.webp",
+              "githubFreigabe": false
             }
           ]
         }
