@@ -14,8 +14,16 @@
     }
   },
   "filter": {
-    "edition": ["standard", "deluxe"],
-    "gehegetyp": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
+    "edition": [
+      "standard",
+      "deluxe"
+    ],
+    "gehegetyp": [
+      "Landgehege",
+      "Aquarium",
+      "Voliere",
+      "Ausstellung"
+    ],
     "kontinente": [
       "africa",
       "arctic",
@@ -32,7 +40,7 @@
       "Ästuar",
       "Feuchtgebiete",
       "Gemäßigt",
-      "Graslandschaftschaft",
+      "Graslandschaft",
       "Mangrove",
       "Offenes Meer",
       "Riff",
@@ -42,7 +50,13 @@
       "Tundra",
       "Wüste"
     ],
-    "schutzstatus": ""
+    "schutzstatus": [
+      "leastConcern",
+      "nearThreatened",
+      "vulnerable",
+      "endangered",
+      "criticallyEndangered"
+    ]
   },
   "daten": {
     "taxonomie": {
@@ -141,7 +155,9 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [""],
+          "giltFuer": [
+            ""
+          ],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "",

@@ -1,8 +1,99 @@
+
+/* ======================================== */
+/* FILTER-ENUMS AUS "LEERES TIER"           */
+/* ======================================== */
+
+const FILTER_ENUM_URL =
+  "../assets/daten/lebewesen/tiere/1leeres%20Tier/leeres%20Tier.json";
+
+const FILTER_FELDER = {
+  gehegetyp: "[data-home-enclosure]",
+  kontinente: "[data-home-continent]",
+  biome: "[data-home-biome]",
+  schutzstatus: "[data-home-status]",
+  edition: "[data-home-edition]",
+};
+
+function holeVorhandeneOptionen(select) {
+  return new Map(
+    [...select.options]
+      .filter((option) => option.value)
+      .map((option) => [
+        option.value,
+        {
+          text: option.textContent.trim(),
+          attribute: [...option.attributes]
+            .filter((attribut) => attribut.name.startsWith("data-"))
+            .reduce((daten, attribut) => {
+              daten[attribut.name] = attribut.value;
+              return daten;
+            }, {}),
+        },
+      ]),
+  );
+}
+
+function baueFilterOptionen(select, werte) {
+  if (!select || !Array.isArray(werte)) {
+    return;
+  }
+
+  const vorhandene = holeVorhandeneOptionen(select);
+  const alleOption =
+    select.querySelector('option[value=""]')?.cloneNode(true);
+
+  select.replaceChildren();
+
+  if (alleOption) {
+    select.append(alleOption);
+  }
+
+  werte.forEach((wert) => {
+    const option = document.createElement("option");
+    const alt = vorhandene.get(wert);
+
+    option.value = wert;
+    option.textContent = alt?.text || wert;
+
+    Object.entries(alt?.attribute ?? {}).forEach(([name, value]) => {
+      option.setAttribute(name, value);
+    });
+
+    select.append(option);
+  });
+}
+
+async function ladeFilterEnumsAusLeeremTier(elemente) {
+  try {
+    const antwort = await fetch(FILTER_ENUM_URL);
+
+    if (!antwort.ok) {
+      throw new Error(`HTTP ${antwort.status}`);
+    }
+
+    const leeresTier = await antwort.json();
+    const filter = leeresTier?.filter ?? {};
+
+    Object.entries(FILTER_FELDER).forEach(([feld, selector]) => {
+      const select =
+        document.querySelector(selector);
+
+      baueFilterOptionen(select, filter[feld]);
+    });
+  } catch (fehler) {
+    console.error(
+      "Filter-Enumerationen konnten nicht aus dem leeren Tier geladen werden:",
+      fehler,
+    );
+  }
+}
+
+
 /* ======================================== */
 /* HOME-FILTER                              */
 /* ======================================== */
 
-export function initHomeFilter({
+export async function initHomeFilter({
   signal,
   onChange,
   onSelectAll,
@@ -64,6 +155,9 @@ export function initHomeFilter({
         "[data-home-reset]",
       ),
   };
+
+
+  await ladeFilterEnumsAusLeeremTier(elemente);
 
 
   /* ==================================== */

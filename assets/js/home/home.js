@@ -148,7 +148,7 @@ export async function init() {
   /* ==================================== */
 
   filterSteuerung =
-    initHomeFilter({
+    await initHomeFilter({
       signal,
 
       onChange:
