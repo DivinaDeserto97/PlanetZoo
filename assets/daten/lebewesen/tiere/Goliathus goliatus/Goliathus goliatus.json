@@ -1,0 +1,357 @@
+{
+  "id": "Goliathus goliatus",
+  "identitaet": {
+    "namen": {
+      "de": "Goliathkäfer",
+      "en": "Goliath Beetle",
+      "en-US": "Goliath Beetle",
+      "es": "Escarabajo goliat",
+      "fr": "Goliath",
+      "it": "Scarabeo Golia",
+      "pt-BR": "Besouro-golias",
+      "ja": "ゴライアスオオツノハナムグリ",
+      "zh-Hans": "歌利亚甲虫"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "exhibit"
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Savanne",
+      "Tropisch"
+    ],
+    "schutzstatus": "notEvaluated"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Coleoptera",
+          "familie": "Scarabaeidae",
+          "gattung": "Goliathus",
+          "art": "Goliathus goliatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 60,
+          "max": 100,
+          "einheit": "mm",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 50,
+          "max": 80,
+          "einheit": "mm",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "rekord",
+          "wert": 110,
+          "einheit": "mm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "larve",
+          "wert": 100,
+          "einheit": "g",
+          "hinweis": {
+            "de": "Die Larven können vor der Verpuppung etwa 100 g erreichen.",
+            "en": "Larvae can reach about 100 g before pupation."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "entwicklungLarveBisAdult",
+          "wert": 1,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "notEvaluated",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Der Erhaltungszustand wurde laut Zoopedia noch nicht bewertet; es besteht die Empfehlung einer Einstufung als potenziell gefährdet.",
+            "en": "According to the Zoopedia, the conservation status has not yet been assessed; classification as potentially threatened has been recommended."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unknown",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eier",
+          "schlupfzeitMin": 12,
+          "schlupfzeitMax": 14,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenstadium",
+          "wert": 5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Goliathkäfer sind Einzelgänger und interagieren in freier Wildbahn hauptsächlich zur Paarung oder zur Vertreibung von Rivalen.",
+            "en": "Goliath beetles are solitary and mainly interact in the wild for mating or to drive away rivals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "tropicalRainforest",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "adult",
+            "hinweis": {
+              "de": "Ausgewachsene Goliathkäfer zerkratzen Baumrinde mit ihren Fußgliedern, um Pflanzensaft zu gewinnen.",
+              "en": "Adult Goliath beetles scratch tree bark with their tarsi to extract plant sap."
+            },
+            "quelle": "planetZoo2"
+          },
+          {
+            "typ": "larve",
+            "hinweis": {
+              "de": "Larven ernähren sich von verrottendem pflanzlichem und tierischem Material und benötigen eine proteinreiche Ernährung.",
+              "en": "Larvae feed on decaying plant and animal matter and require a protein-rich diet."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Goliathkäfer (auch Goliathus goliatus) ist eine große Insektenart, die in den Savannen und Regenwäldern Zentralafrikas lebt. Männchen und Weibchen unterscheiden sich in Aussehen und Größe:\n\nDie Männchen sind größer – zwischen 60 mm und 100 mm – und haben einen dunkelbraunen Hinterleib, einen braunen Rumpf mit weißen Streifen, schwarze Beine sowie einen weißen Kopf mit einem Y-förmigen Horn. Die Weibchen verfügen über kürzere, dünnere Streifen auf dem Rumpf, sind kleiner – zwischen 50 mm und 80 mm – und haben kein Horn.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Afrika. Der Goliathkäfer lebt in den Savannen und Regenwäldern Zentralafrikas.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand von Goliathkäfern wurde noch nicht bewertet, es besteht jedoch die Empfehlung, sie als potenziell gefährdet einzustufen. In einigen Regionen geht der Bestand aufgrund von Lebensraumverlust durch Abholzung zurück. Als einer der größten Käfer der Welt werden wild lebende Exemplare häufig für den internationalen Insektenhandel aus der Wildnis entnommen, wodurch die Art in Teilen ihres Verbreitungsgebiets erheblich bedroht ist.\n\nZwar gibt es derzeit keine Artenschutzprojekte speziell für Goliathkäfer, doch profitieren sie indirekt von der Einrichtung mehrerer Nationalparks oder Reservate in ihrem Verbreitungsgebiet. Beschränkungen des internationalen Handels mit Wildtieren könnten zusätzlich dazu beitragen, die Bestandsentwicklung zu stabilisieren.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Goliathkäfer sind Einzelgänger. Sie interagieren in freier Wildbahn nur mit anderen, um sich zu paaren oder um Rivalen zu vertreiben.\n\nAm Ende der Regenzeit spüren die Männchen die Weibchen anhand ihrer Pheromone auf. Männchen sind territorial; sie vertreiben andere Männchen mit ihren Hörnern und paaren sich mit jedem Weibchen, das ihren Weg kreuzt. Nach der Paarung gräbt das Goliathkäfer-Weibchen ein flaches Loch in sandigen Boden und legt dort ihre Eier ab.\n\nNach 12 bis 14 Tagen schlüpfen aus den Eiern Larven. Die Larven ernähren sich von verrottendem pflanzlichem und tierischem Material auf dem Waldboden, bis sie ein Gewicht von etwa 100 g erreichen. Dann graben sie sich in den Boden ein, verpuppen sich und verbleiben dort fünf Monate lang, bis sie nach der Regenzeit, wenn der Boden feucht ist, schließlich schlüpfen.\n\nEs dauert etwa ein Jahr, bis aus einer Larve ein ausgewachsener Käfer wird, und diese ausgewachsenen Käfer schlüpfen mit dem Ziel, sich einen Partner zu suchen.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Goliathkäfer gehören zur Familie der Blatthornkäfer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Goliathkäfer kann eine Rekordlänge von bis zu 110 mm erreichen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Goliathkäfer zerkratzt die Rinde von Bäumen mit seinen Fußgliedern, um Pflanzensaft zu extrahieren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Larve des Goliathkäfers benötigt eine proteinhaltige Ernährung, um zu einer solch enormen Größe heranzuwachsen. Deshalb ist es äußerst wichtig, wohin ein Weibchen die Eier legt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Goliathkäfern ist im ausgewachsenen Zustand nur ein kurzes Leben vergönnt. Wenn sie nach der Verpuppung wieder auftauchen, machen sie sich sofort auf die Suche nach einem Partner für die Paarung, und sie sterben kurz danach.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Goliathus goliatus/map/Goliathus goliatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Goliathkäfer – Planet Zoo 2",
+            "en": "Goliath Beetle – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Goliathkäfers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Goliath Beetle."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Goliathus goliatus/bilder/Goliathus goliatus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Goliathkäfer",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

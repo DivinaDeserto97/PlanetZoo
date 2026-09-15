@@ -1,0 +1,324 @@
+{
+  "id": "Plectorhinchus vittatus",
+  "identitaet": {
+    "namen": {
+      "de": "Orient-Süsslippe",
+      "en": "Oriental Sweetlips",
+      "en-US": "Oriental Sweetlips",
+      "es": "Burro oriental",
+      "fr": "Gaterin rayé",
+      "it": "Grugnitore orientale",
+      "pt-BR": "Peixe-doce-oriental",
+      "ja": "ムスジコショウダイ",
+      "zh-Hans": "条纹胡椒鲷"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "aquatic"
+    ],
+    "kontinente": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Aquatisch",
+      "Tropisch"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Haemulidae",
+          "gattung": "Plectorhinchus",
+          "art": "Plectorhinchus vittatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "min": 50,
+          "max": 72,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unknown",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eier",
+          "hinweis": {
+            "de": "Freilaicher mit äußerer Befruchtung. Das Paar gibt gleichzeitig Eier und Sperma ins Wasser ab. Die schwimmfähigen Eier treiben mit der Strömung.",
+            "en": "Broadcast spawner with external fertilization. The pair releases eggs and sperm into the water simultaneously. The buoyant eggs drift with the current."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryPairSmallGroup",
+          "hinweis": {
+            "de": "Orient-Süsslippen leben allein, zu zweit oder in kleinen Gruppen und gelten nicht als besonders gesellig.",
+            "en": "Oriental sweetlips live alone, in pairs, or in small groups and are not considered especially social."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "marineTropical",
+          "hinweis": {
+            "de": "Flache Korallenriffe, Lagunen und Meerwasserriffe im Indo-Pazifik. Jungtiere nutzen Gezeitentümpel, Seegraswiesen und geschützte Riffbereiche.",
+            "en": "Shallow coral reefs, lagoons and marine reefs in the Indo-Pacific. Juveniles use tide pools, seagrass beds and sheltered reef areas."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "trophicRole",
+            "wert": "invertebratePredator",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Orient-Süsslippe als Fressfeind von wirbellosen Tieren und als wichtigen Bestandteil des Riffökosystems.",
+              "en": "The Zoopedia describes the Oriental sweetlips as a predator of invertebrates and an important part of the reef ecosystem."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "wirbellose Tiere",
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Orient-Süsslippe (auch Plectorhinchus vittatus) ist ein Meeresfisch, den man überall im Indo-Pazifik findet, von der Ostküste Afrikas und den Seychellen bis nach Mikronesien, Samoa und südlich bis nach Westaustralien und Neukaledonien. Er lebt in flachen Korallenriffen, Lagunen und Meerwasserriffen.\n\nDiese Spezies besitzt einen hellgrauen Körper mit abwechselnden schwarzen und weißen Streifen, gelben Flossen und dunklen Flecken auf den Rücken-, After- und Schwanzflossen; Jungtiere weisen Flecken auf, die sich später zu Streifen entwickeln.\n\nOrient-Süsslippen werden im Schnitt 50 cm bis 72 cm lang.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Indo-pazifische Riffe und Lagunen. Das Verbreitungsgebiet reicht von der Ostküste Afrikas und den Seychellen bis nach Mikronesien und Samoa sowie südlich bis nach Westaustralien und Neukaledonien.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Orient-Süsslippe steht trotz ihrer aktuellen Einstufung als „nicht gefährdet“ vor einigen Herausforderungen im Hinblick auf ihren Schutz. Zu den größten Bedrohungen zählen die Zerstörung ihres Lebensraums, Überfischung und Umweltverschmutzung. Die für das Überleben der Art wichtigen Korallenriff-Ökosysteme werden zunehmend durch den Klimawandel, die Übersäuerung der Meere und menschliche Aktivitäten bedroht, was zu erheblichen Risiken für ihre Population führt.\n\nUm diese Gefahren zu verringern, muss man die Lebensräume der Korallenriffe schützen, den Handel mit Aquarienfischen durch nachhaltige Praktiken regulieren und Meeresschutzgebiete einrichten. Auch Aufklärungs- und Sensibilisierungskampagnen sind für den Schutz der Riffe von großer Bedeutung. Außerdem wurden Forschungen zur Fortpflanzungsbiologie und Entwicklung der Arten durchgeführt, um Schutzstrategien zu entwickeln und eine nachhaltige Bewirtschaftung ihrer Populationen zu unterstützen.\n\nLangfristiger Erfolg basiert auf kontinuierlicher Überwachung, Forschung und dem anhaltenden Schutz wichtiger Rifflebensräume.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Die Orient-Süsslippe lebt allein, zu zweit oder in kleinen Gruppen und zählt nicht zu den besonders geselligen Arten.\n\nDie Paarungszeit erstreckt sich über das ganze Jahr, findet jedoch häufiger in den wärmeren Monaten statt. Die Balz der Orient-Süsslippe findet in der Regel statt, wenn sich die erwachsenen Tiere am Riff paaren, oft in flachen Bereichen, wo das Wasser ruhig ist. In dieser Zeit zeigen die Männchen oft Farbveränderungen und Flossenbewegungen, um die Weibchen anzulocken. Das Paar schwimmt dicht beieinander und gibt gleichzeitig Sperma und Eier ins Wasser ab, wodurch eine externe Befruchtung ermöglicht wird. Das Laichen erfolgt in der Regel paarweise und nicht in großen Gruppen. Die Eier sind schwimmfähig und treiben mit der Strömung, bis sie schlüpfen.\n\nNach der Befruchtung werden die Eier zu planktonischen Larven, die frei schwimmen und von Strömungen mitgenommen werden, bis sie sich in flachen Lebensräumen wie Gezeitentümpeln, Seegraswiesen oder geschützten Riffgebieten niederlassen.\n\nDie Jungtiere bleiben in diesen Aufzuchtgebieten, weil sie dort Schutz und genug Futter finden. Wenn sie größer werden, ziehen sie weiter zu Korallenriffen und tieferen Lagunengebieten und werden nach etwa 2 bis 3 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Jungtiere der Orient-Süsslippe leben oft in Gezeitentümpeln oder Seegraswiesen, wo sie vor Fressfeinden geschützt sind.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Orient-Süsslippen können je nach Alter und Umweltbedingungen allein oder in kleinen Gruppen unterwegs sein.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Orient-Süsslippe ändert ihre Farbe mit zunehmendem Alter grundlegend, von den Flecken der Jungtiere zu den Streifen der Erwachsenen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Orient-Süsslippe verfügt über gelbe Flossen mit schwarzen Flecken auf der Rücken-, After- und Schwanzflosse, die möglicherweise zur Erkennung innerhalb der Spezies dienen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Orient-Süsslippe spielt als Fressfeind von wirbellosen Tieren eine wichtige Rolle im Ökosystem der Riffe und hilft dabei, das Gleichgewicht in den Korallenriffgemeinschaften aufrechtzuerhalten.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/map/Plectorhinchus vittatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Orient-Süsslippe – Planet Zoo 2",
+            "en": "Oriental Sweetlips – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Orient-Süsslippe aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Oriental Sweetlips."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/bilder/Plectorhinchus vittatus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Orient-Süsslippe",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

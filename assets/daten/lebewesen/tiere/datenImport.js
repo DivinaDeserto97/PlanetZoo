@@ -104,6 +104,15 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Equus ferus/Equus ferus przewalskii/Equus ferus przewalskii.json",
   "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/Scardinius erythrophthalmus.json",
   "assets/daten/lebewesen/tiere/Gyps africanus/Gyps africanus.json",
+  "assets/daten/lebewesen/tiere/Pongo abelii/Pongo abelii.json",
+  "assets/daten/lebewesen/tiere/Epinephelus lanceolatus/Epinephelus lanceolatus.json",
+  "assets/daten/lebewesen/tiere/Goliathus goliatus/Goliathus goliatus.json",
+  "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/Ailuropoda melanoleuca.json",
+  "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/Gigantometrus swammerdami.json",
+  "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/Plectorhinchus vittatus.json",
+  "assets/daten/lebewesen/tiere/Panthera uncia/Panthera uncia.json",
+  "assets/daten/lebewesen/tiere/Helarctos malayanus/Helarctos malayanus.json",
+  "assets/daten/lebewesen/tiere/Phacochoerus africanus/Phacochoerus africanus.json",
 ];
 
 /* ======================================== */

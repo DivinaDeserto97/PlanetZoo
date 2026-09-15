@@ -1,0 +1,375 @@
+{
+  "id": "Panthera uncia",
+  "identitaet": {
+    "namen": {
+      "de": "Schneeleopard",
+      "en": "Snow Leopard",
+      "en-US": "Snow Leopard",
+      "es": "Leopardo de las nieves",
+      "fr": "Panthère des neiges",
+      "it": "Leopardo delle nevi",
+      "pt-BR": "Leopardo-das-neves",
+      "ja": "ユキヒョウ",
+      "zh-Hans": "雪豹"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Taiga",
+      "Tundra"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Felidae",
+          "gattung": "Panthera",
+          "art": "Panthera uncia",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "koerper",
+          "min": 0.75,
+          "max": 1.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schwanz",
+          "min": 0.8,
+          "max": 1.05,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "wert": 56,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 45,
+          "max": 55,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 35,
+          "max": 40,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 3900,
+          "max": 6500,
+          "status": "estimated",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 3,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 3,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Schneeleoparden sind Einzelgänger. Lediglich Muttertiere werden von ihren Jungen begleitet. Sie besitzen feste Gebiete, sind jedoch nicht stark territorial.",
+            "en": "Snow leopards are solitary. Only mothers are accompanied by their young. They have established ranges but are not strongly territorial."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "mountain",
+          "hinweis": {
+            "de": "Gebirgsregionen Zentral- und Südasiens; laut Zoopedia können Schneeleoparden in Höhen bis zu 5.400 m leben.",
+            "en": "Mountain regions of Central and South Asia; according to the Zoopedia, snow leopards can live at elevations up to 5,400 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "hinweis": {
+            "de": "Schneeleoparden sind während der Morgen- und Abenddämmerung am aktivsten.",
+            "en": "Snow leopards are most active at dawn and dusk."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "carnivore",
+            "hinweis": {
+              "de": "Die Hauptbeute besteht aus Bergziegen und Schafen; zusätzlich werden Vögel und Nagetiere gejagt.",
+              "en": "Their main prey consists of mountain goats and sheep; they also hunt birds and rodents."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "Bergziegen",
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "Schafe",
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "Vögel",
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "Nagetiere",
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schneeleopard (auch Panthera uncia), der an seinem weißen bis grauen Fell, den schwarzen Rosetten am Körper und den schwarzen Flecken im Gesicht zu erkennen ist, lebt in den Bergen von Nepal, Tibet, Nordindien, Südsibirien, Pakistan, Bhutan und der Mongolei.\n\nDas Fell des Tieres ist extrem dick und isoliert hervorragend, wodurch es Temperaturen bis zu -25 °C problemlos aushält. Es ernährt sich hauptsächlich von Bergziegen und Schafen, jagt aber auch Vögel und Nagetiere.\n\nDie Art weist einen geringeren Geschlechtsdimorphismus auf als andere Großkatzen, doch sind die Männchen im Durchschnitt immer noch etwas größer als die Weibchen. Die Körperlänge beträgt zwischen 0,75 m und 1,5 m, wobei der lange Schwanz noch 0,8 m bis 1,05 m hinzufügt. Die Schulterhöhe liegt bei etwa 56 cm. Männchen wiegen durchschnittlich 45 kg bis 55 kg, Weibchen sind mit 35 kg bis 40 kg etwas leichter.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Zentralasien. Der Schneeleopard lebt in den Bergen von Nepal, Tibet, Nordindien, Südsibirien, Pakistan, Bhutan und der Mongolei.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Als gefährdete Tierart stehen Schneeleoparden vor vielen Herausforderungen, die ihr Überleben in den Gebirgsregionen von Zentral- und Südasien bedrohen. Ihre Lebensräume werden durch Infrastruktur und die Nutzung für Landwirtschaft und Bergbau fragmentiert, was es ihnen erschwert, Beute zu finden. Außerdem ist ihre genetische Vielfalt aufgrund der so eingeschränkten Paarungsmöglichkeiten bedroht. Hinzu kommt die Bedrohung durch Wilderei und Vergeltungsmaßnahmen. Der Klimawandel verstärkt diese Herausforderungen: Geeignete Gebiete in Höhenlagen werden knapp, die Verteilung von Beutetieren ändert sich und der Konkurrenzkampf zwischen verschiedenen Raubtierarten wird heftiger.\n\nInternationale und regionale Organisationen arbeiten mit Regierungen und örtlichen Bevölkerungsgruppen zusammen, um Konflikte zwischen Mensch und Tier zu reduzieren, Patrouillen zur Eindämmung von Wilderei zu unterstützen und die Lebensräume besser zu schützen. Raubtiersichere Zäune, Viehversicherungen und andere wirtschaftliche Anreize sollen dafür sorgen, dass es zu weniger Vergeltungsmaßnamen und illegalem Handel kommt. In manchen Regionen haben Bevölkerungsumfragen und örtliche Initiativen vielversprechende Hinweise darauf geliefert, dass sich die Bestandszahlen stabilisieren. Gemäß Anhang I des CITES-Abkommens ist der Handel zwar weitestgehend verboten, aber in vielen Ländern ist der illegale Handel mit Körperteilen von Schneeleoparden (für kulturelle Bekleidung und traditionelle Medizin) nach wie vor ein Problem.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schneeleoparden sind Einzelgänger, lediglich Muttertiere werden von ihren Jungen begleitet. Die Tiere besitzen feste Gebiete, sind aber nicht sonderlich territorial und dulden es durchaus, wenn andere Schneeleoparden ihr Territorium durchqueren.\n\nWährend der Paarungszeit von Dezember bis März markieren Schneeleoparden ihr Revier mit Duftmarken und geben Rufe von sich, um Partner anzulocken. Wenn sich ein Männchen und ein Weibchen begegnen, paaren sie sich über mehrere Tage hinweg mehrmals. Sie lassen sich in jeder Paarungszeit nur auf einen Partner ein.\n\nWeibliche Schneeleoparden tragen 3 Monate lang ihre Jungtiere aus und bringen dann 1 bis 3 Junge in einer Höhle in einer Felsspalte zur Welt. Die Jungen kommen mit dickem Fell zur Welt, damit sie die rauen Temperaturen überstehen können, fangen im Alter von 5 Wochen an zu laufen und sind mit 10 Wochen bereits entwöhnt. Im Alter von 2 bis 4 Monaten folgen die Jungen ihren Müttern aus der Höhle und bleiben bei ihnen, bis sie fast 2 Jahre alt sind.\n\nIm Alter von 20 bis 23 Monaten fangen sie allmählich an, sich von ihren Müttern zu distanzieren, und verlassen schließlich deren Revier, um sich ein eigenes zu suchen. Die Geschlechtsreife erreichen sie mit 3 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Schneeleoparden haben im Verhältnis zu ihrem Körper sehr große Tatzen, die es ihnen erleichtern, sich schnell und leise über den Schnee zu bewegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneeleoparden können höher und weiter springen als jede andere Katzenart: Sie können mit einem Sprung eine Höhe von 6 m erreichen und kommen mit einem Satz bis zu 15 m weit.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneeleoparden können in Höhen von bis zu 5.400 m leben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneeleoparden sind dämmerungsaktive Tiere – das heißt, sie sind während der Morgen- und Abenddämmerung am aktivsten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es wird vermutet, dass Schneeleoparden oft ihren eigenen Schwanz im Maul halten, um sich vor Wind und Schnee zu schützen.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Panthera uncia/map/Panthera uncia map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Schneeleopard – Planet Zoo 2",
+            "en": "Snow Leopard – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schneeleoparden aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Snow Leopard."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Panthera uncia/bilder/Panthera uncia 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schneeleopard",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

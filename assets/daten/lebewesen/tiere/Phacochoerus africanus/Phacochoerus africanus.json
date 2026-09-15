@@ -1,0 +1,346 @@
+{
+  "id": "Phacochoerus africanus",
+  "identitaet": {
+    "namen": {
+      "de": "Warzenschwein",
+      "en": "Common Warthog",
+      "en-US": "Common Warthog",
+      "es": "Facóquero común",
+      "fr": "Phacochère commun",
+      "it": "Facocero comune",
+      "pt-BR": "Facóquero-comum",
+      "ja": "イボイノシシ",
+      "zh-Hans": "疣猪"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Suidae",
+          "gattung": "Phacochoerus",
+          "art": "Phacochoerus africanus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.3,
+          "max": 1.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 0.9,
+          "max": 1.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 60,
+          "max": 150,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 45,
+          "max": 75,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 250,
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Ferkel erreichen mit zwei Jahren die Geschlechtsreife. Männchen paaren sich in der Regel erstmals mit vier bis fünf Jahren.",
+            "en": "Piglets reach sexual maturity at two years. Males generally mate for the first time at four to five years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 5,
+          "max": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 5,
+          "hinweis": {
+            "de": "Das Weibchen bringt bis zu fünf Ferkel in einem Bau zur Welt.",
+            "en": "The female gives birth to up to five piglets in a burrow."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "complexSocialStructure",
+          "hinweis": {
+            "de": "Ausgewachsene Weibchen leben meist mit ihren Nachkommen in eng verbundenen Gruppen. Junge Männchen bilden Junggesellengruppen und werden später häufig Einzelgänger.",
+            "en": "Adult females usually live in closely bonded groups with their offspring. Young males form bachelor groups and often become solitary later."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt das Warzenschwein als in unterschiedlichen Lebensräumen südlich der Sahara verbreitet und nennt Savannen- und Graslandlandschaften im Zusammenhang mit Lebensraumverlust.",
+            "en": "The Zoopedia describes the warthog as occurring in various habitats south of the Sahara and mentions savanna and grassland landscapes in the context of habitat loss."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "nahrungssuche",
+            "hinweis": {
+              "de": "Die Zoopedia erwähnt Nahrungssuche und mögliche Schäden an landwirtschaftlichen Ernten, nennt jedoch keine konkreten natürlichen Nahrungsarten.",
+              "en": "The Zoopedia mentions foraging and possible damage to crops, but does not specify particular natural food items."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "Die Zoopedia erwähnt Räuber allgemein, nennt jedoch keine konkreten Arten.",
+              "en": "The Zoopedia mentions predators generally but does not name specific species."
+            },
+            "quelle": "planetZoo2"
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Warzenschwein (auch Phacochoerus africanus) ist in ganz Afrika südlich der Sahara in den unterschiedlichsten Lebensräumen anzutreffen.\n\nDas Warzenschwein hat einen großen Kopf mit einer rauen Mähne und markanten Hauern. Die oberen Hauer sind groß, dick und stumpf, die unteren hingegen kurz und scharf. Zudem haben sie große, knorplige Warzen an den Wangen.\n\nMännchen sind zwischen 1,3 und 1,5 m lang und wiegen zwischen 60 und 150 kg. Weibchen sind mit einer Länge von 0,9 bis 1,3 m und einem Gewicht von 45 bis 75 kg durchschnittlich kleiner und leichter.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Afrika. Das Warzenschwein ist in ganz Afrika südlich der Sahara in unterschiedlichen Lebensräumen anzutreffen.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Obwohl das Warzenschwein eine weit verbreitete, anpassungsfähige Spezies ist und als nicht gefährdet eingestuft wird, ist es dennoch durch Lebensraumverlust und Konflikte zwischen Mensch und Tier bedroht. Die Ausbreitung menschlicher Siedlungen führt dazu, dass Savannen- und Graslandlandschaften verloren gehen, wodurch das Angebot an Nahrung und Bauten sinkt. Außerdem werden sie manchmal von Bauern getötet, die ihre Ernte oder ihr Vieh schützen wollen, da das Warzenschwein durch seine Nahrungssuche Ernten zerstört und Krankheiten auf andere Tiere übertragen kann. Wilderei und Trophäenjagd tragen ebenfalls zum Rückgang der Populationen in bestimmten Gebieten bei.\n\nWarzenschweine profitieren von allgemeinen Arterhaltungsmaßnahmen in ihrem gesamten Verbreitungsgebiet, wie beispielsweise dem Schutz ihrer Lebensräume, Kampagnen für nachhaltige Landnutzung und gemeindebasiertem Wildtiermanagement, etwa durch Ökotourismus-Initiativen oder Strategien zum Schutz von Nutzpflanzen. Spezifische Überwachungsmaßnahmen und die Durchsetzung von Gesetzen gegen Wilderei tragen zusätzlich zu ihrem langfristigen Überleben bei und sollen sicherstellen, dass Warzenschweine ein widerstandsfähiger und integraler Bestandteil der afrikanischen Savannenökosysteme bleiben.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Warzenschweine weisen eine komplexe gesellschaftliche Struktur auf. Ausgewachsene Weibchen leben meist in eng miteinander verbundenen Gruppen zusammen mit ihren Nachkommen. Einjährige Ferkel verlassen jedoch häufig die Gruppe ihrer Mutter und schließen sich mit Geschwistern zusammen, bevor sie sich mit zunehmendem Alter wieder trennen. Die jungen Weibchen kehren in der Regel in die Gruppen ihrer Mütter zurück, während junge Männchen Junggesellenherden bilden, bis sie alt und stark genug sind, um ein Einzelgängerleben zu führen.\n\nWarzenschweine paaren sich von Januar bis Juni. Männliche Warzenschweine verfügen über zwei Paarungsstrategien, die in etwa mit Verteidigen und Wandern bezeichnet werden können. Ein verteidigendes Männchen schließt sich während der Paarungszeit einer Rotte Weibchen an, wehrt andere Männchen ab und versucht, Weibchen davon abzuhalten, sich anderen Männchen zuzuwenden. Ein wanderndes Männchen sucht nach mehreren Rotten und versucht, sich mit Weibchen dieser Rotten zu paaren, wobei es oft zu Auseinandersetzungen mit dem verteidigenden Männchen kommt.\n\nWarzenschweinweibchen sind 5 bis 6 Monate lang trächtig und bringen dann bis zu 5 Ferkel in ihrem Bau zur Welt. Dort säugen sie ihre Ferkel mehrere Wochen lang, bevor sie zur Rotte zurückkehren. Die jungen Ferkel beginnen im Alter von 3 Wochen, feste Nahrung zu sich zu nehmen, und sind mit 6 Monaten vollständig entwöhnt.\n\nFerkel erreichen mit 2 Jahren die Geschlechtsreife, wobei Männchen sich in der Regel erst im Alter von 4 bis 5 Jahren zum ersten Mal paaren. Die Weibchen bleiben bei ihrer Rotte, während sich die Männchen Junggesellengruppen anschließen und mit zunehmendem Alter zu Einzelgängern werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Gattungsname des Warzenschweins, Phacochoerus, leitet sich von den altgriechischen Wörtern „phakós“ – Warze – und „khoîros“ – Schwein – ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die oberen Hauer der Warzenschweine können bis zu 25 cm lang werden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Warzenschweine schlafen in verlassenen Bauen anderer Tiere, vor allem in denen von Erdferkeln.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Hauer der Warzenschweine reiben aneinander und schärfen so die unteren Hauer, mit denen sie Räuber angreifen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Warzenschweine gehen rückwärts in ihre Baue, sodass sie nach draußen sehen und Räuber bei Bedrohung direkt angreifen können.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/map/Phacochoerus africanus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Warzenschwein – Planet Zoo 2",
+            "en": "Common Warthog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Warzenschweins aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Common Warthog."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Phacochoerus africanus/bilder/Phacochoerus africanus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Warzenschwein",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

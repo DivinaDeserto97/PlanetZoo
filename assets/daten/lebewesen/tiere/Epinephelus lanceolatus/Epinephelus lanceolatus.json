@@ -1,0 +1,342 @@
+{
+  "id": "Epinephelus lanceolatus",
+  "identitaet": {
+    "namen": {
+      "de": "Dunkler Riesenzackenbarsch",
+      "en": "Giant Grouper",
+      "en-US": "Giant Grouper",
+      "es": "Mero gigante",
+      "fr": "Mérou géant",
+      "it": "Cernia gigante",
+      "pt-BR": "Garoupa-gigante",
+      "ja": "タマカイ",
+      "zh-Hans": "鞍带石斑鱼"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "aquatic"
+    ],
+    "kontinente": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Aquatisch",
+      "Tropisch"
+    ],
+    "schutzstatus": "dataDeficient"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Perciformes",
+          "familie": "Epinephelidae",
+          "gattung": "Epinephelus",
+          "art": "Epinephelus lanceolatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "erwachsenGewoehnlich",
+          "min": 1.5,
+          "max": 2.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "wert": 2.7,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "erwachsenGewoehnlich",
+          "min": 200,
+          "max": 400,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "wert": 450,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "dataDeficient",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unknown",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt kein genaues Alter; die Geschlechtsreife wird erst nach vielen Jahren erreicht.",
+            "en": "The Zoopedia gives no exact age; sexual maturity is reached only after many years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eier",
+          "hinweis": {
+            "de": "Freilaicher: Eier und Spermien werden gleichzeitig ins Wasser abgegeben. Die Eier schlüpfen nach etwa 24 bis 48 Stunden.",
+            "en": "Broadcast spawner: eggs and sperm are released into the water at the same time. Eggs hatch after about 24 to 48 hours."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "mostlySolitary",
+          "hinweis": {
+            "de": "Meist Einzelgänger; zur Fortpflanzung bilden die Tiere vorübergehend größere Laichgruppen.",
+            "en": "Mostly solitary; during reproduction they temporarily form larger spawning aggregations."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "marineTropicalSubtropical",
+          "hinweis": {
+            "de": "Korallenriffe, felsige Küsten, Lagunen und tiefe Riffabbrüche; Jungtiere nutzen auch Mangroven und Flussmündungen.",
+            "en": "Coral reefs, rocky coasts, lagoons and deep reef drop-offs; juveniles also use mangroves and estuaries."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "trophicRole",
+            "wert": "apexPredator",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt den Dunklen Riesenzackenbarsch als Räuber an der Spitze der Nahrungskette, der Bestände anderer Fische reguliert.",
+              "en": "The Zoopedia describes the giant grouper as an apex predator that regulates populations of other fish."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Dunkle Riesenzackenbarsch (Epinephelus lanceolatus), auch Schwarzer Zackenbarsch genannt, lebt in tropischen und subtropischen Meeren des Indopazifiks. Sein Verbreitungsgebiet reicht vom Roten Meer und der Ostküste Afrikas über den Indischen Ozean bis nach Südostasien, Nordaustralien und zu den Inseln im westlichen Pazifik. Man findet ihn vor allem an Korallenriffen, felsigen Küsten, in Lagunen und an tiefen Riffabbrüchen.\n\nEr besitzt einen massigen, kräftigen Körper, einen breiten Kopf mit großem Maul und eine abgerundete Schwanzflosse. Die Färbung ist meist braun, olivfarben oder grau mit dunkleren Flecken, die ihm eine gute Tarnung am Riff bieten.\n\nAusgewachsene Tiere erreichen gewöhnlich eine Länge von 1,5 bis 2 m und ein Gewicht von 200 bis 400 kg.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Indopazifische Riffe und Küsten. Das Verbreitungsgebiet reicht vom Roten Meer und der Ostküste Afrikas über den Indischen Ozean bis nach Südostasien, Nordaustralien und zu den Inseln im westlichen Pazifik.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Dunkle Riesenzackenbarsch gilt derzeit als unzureichend erforscht. Es fehlen langfristige Daten zur Bestandsentwicklung, doch insgesamt deutet vieles auf einen Rückgang hin. Intensive Fischerei, besonders für den Lebendfischhandel, hat vielerorts zu starken Bestandsverlusten geführt. Zudem beeinträchtigen die Zerstörung von Korallenriffen und der Verlust von Mangrovenlebensräumen durch Küstenentwicklung, Umweltverschmutzung, zerstörerische Fangmethoden und den Klimawandel die Lebensbedingungen dieser Art.\n\nSchutzmaßnahmen konzentrieren sich auf nachhaltige Aquakultur und den Erhalt von Lebensräumen. Zuchtprogramme und Fortschritte in der Aufzucht von Larven sollen helfen, den Druck auf Wildbestände zu verringern. Gleichzeitig arbeiten viele Regionen daran, Korallenriffe und Mangroven durch Schutzgebiete, Umweltüberwachung und gesetzliche Regelungen zu sichern.\n\nAuch wenn es weiterhin an Daten mangelt, sollen diese Maßnahmen dazu beitragen, den Druck zu senken, den die Fischerei auf die Spezies ausübt, und die ökologische Rolle dieses wichtigen Riffraubfisches zu erhalten.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Dunkle Riesenzackenbarsche leben meist allein, können sich zur Fortpflanzung jedoch vorübergehend zu Gruppen zusammenschließen.\n\nZur Fortpflanzungszeit im Frühling und Sommer wandern sie zu festen Laichplätzen. Obwohl die Tiere sonst Einzelgänger sind, bilden sie dann größere Laichgruppen. Auslöser für die Fortpflanzungsphase sind unter anderem Mondphasen, Wassertemperatur und jahreszeitliche Strömungen. Die Balz ist relativ kurz und äußert sich durch verändertes Verhalten und Färbung, wie etwa vermehrte Aktivität, Kreisen und bestimmte Körperhaltungen.\n\nDunkle Riesenzackenbarsche sind Freilaicher: Männchen und Weibchen geben gleichzeitig Spermien und Eier ins Wasser ab, wo daraufhin die Befruchtung stattfindet. Wie viele Zackenbarsche sind sie vermutlich protogyne Hermaphroditen, das heißt, sie werden als Weibchen geboren und einige entwickeln sich später zu Männchen, meist wenn sie sehr groß werden oder nur wenige Männchen vorhanden sind.\n\nDie befruchteten Eier treiben im offenen Wasser und schlüpfen nach etwa 24 bis 48 Stunden. Die durchsichtigen Larven werden mehrere Wochen lang von den Meeresströmungen mitgenommen. Später siedeln sich die Jungtiere in flachen Küstenlebensräumen wie Mangroven, Flussmündungen oder Riffen an, wo sie Schutz und reichlich Nahrung finden. Jungtiere sehen deutlich anders aus als Erwachsene und sind oft gelblich gefärbt mit auffälligen dunklen Mustern. Die Tiere wachsen nur langsam und erreichen ihre Geschlechtsreife erst nach vielen Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Dunkle Riesenzackenbarsch ist die größte Knochenfischart, die in Korallenriffen lebt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die größten Exemplare können eine Länge von bis zu 2,7 m erreichen und etwa 450 kg wiegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Alle Dunklen Riesenzackenbarsche werden als Weibchen geboren; die größten Tiere entwickeln sich später zu Männchen, wenn die Bedingungen es erfordern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Jungtiere sind leuchtend gelb mit unregelmäßigen dunklen Flecken, wodurch sie in ihrem Lebensraum gut getarnt sind.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Als Räuber an der Spitze der Nahrungskette regulieren Riesenzackenbarsche die Bestände anderer Fische und tragen so zu einem stabilen Gleichgewicht im Riff bei.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Epinephelus lanceolatus/map/Epinephelus lanceolatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Dunkler Riesenzackenbarsch – Planet Zoo 2",
+            "en": "Giant Grouper – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Dunklen Riesenzackenbarschs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Grouper."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Epinephelus lanceolatus/bilder/Epinephelus lanceolatus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Dunkler Riesenzackenbarsch",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

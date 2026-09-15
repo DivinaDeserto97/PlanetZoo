@@ -1,0 +1,621 @@
+{
+  "id": "Pongo abelii",
+  "identitaet": {
+    "namen": {
+      "de": "Sumatra-Orang-Utan",
+      "en": "Sumatran Orangutan",
+      "en-US": "Sumatran Orangutan",
+      "es": "Orangután de Sumatra",
+      "fr": "Orang-outan de Sumatra",
+      "it": "Orango di Sumatra",
+      "pt-BR": "Orangotango-de-sumatra",
+      "ja": "スマトラオランウータン",
+      "zh-Hans": "苏门答腊猩猩"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Hominidae",
+          "gattung": "Pongo",
+          "art": "Pongo abelii",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 50,
+          "max": 90,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 30,
+          "max": 50,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 14000,
+          "max": 15000,
+          "einheit": "individuum",
+          "giltFuer": [
+            "Pongo abelii"
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia kennzeichnet den Wildbestand als geschätzt.",
+            "en": "The Zoopedia marks the wild population as estimated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 8.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "mostlySolitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Meist leben Sumatra-Orang-Utans allein; Mütter leben mit ihrem Jungtier, und Männchen können zeitweise mit einem Weibchen umherziehen.",
+            "en": "Sumatran orangutans are mostly solitary; mothers live with their young, and males may temporarily travel with a female."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "mutterMitJungtier",
+          "wert": "motherWithYoung",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Regenwälder, darunter tief gelegene Sumpfwälder und Mangroven.",
+            "en": "The Zoopedia lists tropical rainforests, including lowland swamp forests and mangroves."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Sumatra-Orang-Utan (Pongo abelii) ist auf der indonesischen Insel Sumatra heimisch. Er lebt in tropischen Regenwäldern, darunter auch in tief gelegenen Sumpfwäldern und Mangroven.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sumatran orangutan (Pongo abelii) is native to the Indonesian island of Sumatra. It lives in tropical rainforests, including lowland swamp forests and mangroves.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sumatran orangutan (Pongo abelii) is native to the Indonesian island of Sumatra. It lives in tropical rainforests, including lowland swamp forests and mangroves.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El orangután de Sumatra (Pongo abelii) es originario de la isla indonesia de Sumatra. Vive en selvas tropicales, incluidos bosques pantanosos de tierras bajas y manglares.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’orang-outan de Sumatra (Pongo abelii) est originaire de l’île indonésienne de Sumatra. Il vit dans les forêts tropicales humides, notamment les forêts marécageuses de basse altitude et les mangroves.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’orango di Sumatra (Pongo abelii) è originario dell’isola indonesiana di Sumatra. Vive nelle foreste pluviali tropicali, comprese le foreste paludose di pianura e le mangrovie.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O orangotango-de-sumatra (Pongo abelii) é nativo da ilha indonésia de Sumatra. Vive em florestas tropicais, incluindo florestas pantanosas de baixa altitude e manguezais.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラオランウータン（Pongo abelii）はインドネシアのスマトラ島に生息し、低地の湿地林やマングローブを含む熱帯雨林で暮らします。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊猩猩（Pongo abelii）原产于印度尼西亚苏门答腊岛，生活在热带雨林中，包括低地沼泽森林和红树林。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Sumatra-Orang-Utan (auch Pongo abelii) ist ein Menschenaffe, der auf der indonesischen Insel Sumatra heimisch ist. Er lebt in tropischen Regenwäldern, darunter auch in tief gelegenen Sumpfwäldern und Mangroven.\n\nIhr langes, orangefarbenes Fell ist heller und seidiger als das ihrer Verwandten auf Borneo. Männchen entwickeln nach Erreichen der Geschlechtsreife große Wangenpolster (Flansche) und einen Kehlsack. Häufig wachsen ihnen auch Bärte und längere Gesichtsbehaarung.\n\nDie Männchen sind deutlich größer als die Weibchen. Sie wiegen zwischen 50 und 90 kg und erreichen eine Größe von bis zu 1,8 m. Ausgewachsene Weibchen wiegen in der Regel etwa 30 bis 50 kg und sind in aufrechter Haltung etwa 1,3 m groß.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sumatran orangutan (Pongo abelii) is a great ape native to the Indonesian island of Sumatra. It lives in tropical rainforests, including lowland swamp forests and mangroves.\n\nIts long orange fur is lighter and silkier than that of its relatives on Borneo. After reaching sexual maturity, males develop large cheek pads (flanges) and a throat sac. They also often grow beards and longer facial hair.\n\nMales are considerably larger than females. They weigh between 50 and 90 kg and can reach up to 1.8 m in height. Adult females usually weigh around 30 to 50 kg and stand about 1.3 m tall when upright.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sumatran orangutan (Pongo abelii) is a great ape native to the Indonesian island of Sumatra. It lives in tropical rainforests, including lowland swamp forests and mangroves.\n\nIts long orange fur is lighter and silkier than that of its relatives on Borneo. After reaching sexual maturity, males develop large cheek pads (flanges) and a throat sac. They also often grow beards and longer facial hair.\n\nMales are considerably larger than females. They weigh between 50 and 90 kg and can reach up to 1.8 m in height. Adult females usually weigh around 30 to 50 kg and stand about 1.3 m tall when upright.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "El orangután de Sumatra (Pongo abelii) es un gran simio originario de la isla indonesia de Sumatra. Vive en selvas tropicales, incluidos bosques pantanosos de tierras bajas y manglares.\n\nSu largo pelaje anaranjado es más claro y sedoso que el de sus parientes de Borneo. Tras alcanzar la madurez sexual, los machos desarrollan grandes almohadillas en las mejillas (bridas) y un saco gular. También suelen desarrollar barba y pelo facial más largo.\n\nLos machos son considerablemente mayores que las hembras. Pesan entre 50 y 90 kg y pueden alcanzar hasta 1,8 m de altura. Las hembras adultas suelen pesar entre 30 y 50 kg y miden unos 1,3 m erguidas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "L’orang-outan de Sumatra (Pongo abelii) est un grand singe originaire de l’île indonésienne de Sumatra. Il vit dans les forêts tropicales humides, notamment les forêts marécageuses de basse altitude et les mangroves.\n\nSon long pelage orange est plus clair et plus soyeux que celui de ses cousins de Bornéo. Après la maturité sexuelle, les mâles développent de larges bourrelets de joue (flanges) et un sac laryngé. Ils portent aussi souvent une barbe et une pilosité faciale plus longue.\n\nLes mâles sont nettement plus grands que les femelles. Ils pèsent entre 50 et 90 kg et peuvent atteindre 1,8 m. Les femelles adultes pèsent généralement 30 à 50 kg et mesurent environ 1,3 m lorsqu’elles se tiennent debout.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "L’orango di Sumatra (Pongo abelii) è una grande scimmia originaria dell’isola indonesiana di Sumatra. Vive nelle foreste pluviali tropicali, comprese le foreste paludose di pianura e le mangrovie.\n\nIl lungo pelo arancione è più chiaro e setoso di quello dei parenti del Borneo. Dopo la maturità sessuale, i maschi sviluppano grandi cuscinetti guanciali (flange) e una sacca golare. Spesso sviluppano anche barba e peli facciali più lunghi.\n\nI maschi sono notevolmente più grandi delle femmine. Pesano tra 50 e 90 kg e possono raggiungere 1,8 m. Le femmine adulte pesano in genere 30–50 kg e, in posizione eretta, raggiungono circa 1,3 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "O orangotango-de-sumatra (Pongo abelii) é um grande primata nativo da ilha indonésia de Sumatra. Vive em florestas tropicais, incluindo florestas pantanosas de baixa altitude e manguezais.\n\nSua longa pelagem alaranjada é mais clara e sedosa do que a de seus parentes de Bornéu. Após atingirem a maturidade sexual, os machos desenvolvem grandes almofadas nas bochechas (flanges) e uma bolsa na garganta. Também costumam desenvolver barba e pelos faciais mais longos.\n\nOs machos são consideravelmente maiores que as fêmeas. Pesam entre 50 e 90 kg e podem atingir até 1,8 m. As fêmeas adultas geralmente pesam entre 30 e 50 kg e medem cerca de 1,3 m quando eretas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラオランウータン（Pongo abelii）は、インドネシアのスマトラ島に生息する大型類人猿です。低地の湿地林やマングローブを含む熱帯雨林で暮らします。\n\n長いオレンジ色の毛は、ボルネオの近縁種より明るく絹のような質感です。オスは性成熟後、大きな頬のフランジと喉袋を発達させ、ひげや長い顔毛が生えることもよくあります。\n\nオスはメスよりかなり大きく、体重50～90 kg、最大約1.8 mになります。成体のメスは通常30～50 kgで、直立時の高さは約1.3 mです。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊猩猩（Pongo abelii）是原产于印度尼西亚苏门答腊岛的大型类人猿，生活在热带雨林中，包括低地沼泽森林和红树林。\n\n它们长长的橙色毛发比婆罗洲近亲的毛发更浅、更柔顺。雄性达到性成熟后会长出明显的颊垫（颊胼胝）和喉囊，也常有胡须和较长的面部毛发。\n\n雄性明显大于雌性，体重50至90千克，体型最高可达约1.8米。成年雌性通常重30至50千克，直立时约1.3米高。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Sumatra-Orang-Utans sind vom Aussterben bedroht. Ihr Rückgang ist in erster Linie auf den Verlust ihres Lebensraums sowie auf illegale Tötungen und Handel zurückzuführen. Zwischen 1985 und 2014 ist die Regenwaldfläche auf Sumatra dramatisch geschrumpft, und auch heute noch werden große Waldflächen für Palmölplantagen, Holzgewinnung und andere landwirtschaftliche Zwecke gerodet. Das zerstört und fragmentiert den wertvollen Lebensraum und hindert die Orang-Utans daran, Nahrung und Partner zu finden. Zudem werden Orang-Utans trotz gesetzlicher Schutzbestimmungen manchmal für den Tierhandel gefangen und wegen ihres Fleisches getötet oder weil sie auf Plantagen als Schädlinge angesehen werden. Aufgrund ihrer langsamen Fortpflanzungsrate wirken sich schon wenige Todesfälle erheblich auf das Überleben der Population aus.\n\nZu den Arterhaltungsmaßnahmen gehören der Schutz von Lebensräumen, die Rehabilitation und gemeindebasierter Naturschutz. Orang-Utans, die aus dem illegalen Handel beschlagnahmt wurden, werden rehabilitiert und in Schutzgebiete wieder ausgewildert. Darüber hinaus arbeiten Naturschutzorganisationen mit lokalen Gemeinden zusammen, um nachhaltige Lebensgrundlagen zu fördern und so den Druck zu verringern, Regenwald in Plantagen umzuwandeln. Weltweite Bemühungen, das Bewusstsein zu schärfen, die Verbrauchernachfrage von Palmöl weg zu lenken und den Schutz vor illegalem Abholzen zu verstärken, tragen langsam aber sicher dazu bei, die Ursachen für die Zerstörung von Lebensräumen zu verringern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Sumatran orangutans are critically endangered. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Sumatran orangutans are critically endangered. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Los orangutanes de Sumatra están en peligro crítico de extinción. Su disminución se debe principalmente a la pérdida de hábitat, las matanzas ilegales y el comercio. Entre 1985 y 2014, la superficie de selva tropical de Sumatra se redujo drásticamente y todavía se talan grandes áreas para plantaciones de aceite de palma, explotación maderera y otros usos agrícolas. Esto destruye y fragmenta el hábitat y dificulta que los orangutanes encuentren alimento y pareja. A pesar de la protección legal, algunos son capturados para el comercio de animales o matados por su carne o por considerarse plagas en plantaciones. Su lenta reproducción hace que incluso pocas muertes afecten mucho a la supervivencia de la población.\n\nLas medidas de conservación incluyen protección del hábitat, rehabilitación y conservación comunitaria. Los orangutanes confiscados del comercio ilegal son rehabilitados y reintroducidos en zonas protegidas. Las organizaciones también colaboran con comunidades locales para promover medios de vida sostenibles y reducir la conversión de selva en plantaciones. Los esfuerzos mundiales de concienciación, reducción de la demanda de aceite de palma y lucha contra la tala ilegal ayudan gradualmente a reducir las causas de la destrucción del hábitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Les orangs-outans de Sumatra sont en danger critique d’extinction. Leur déclin est principalement dû à la perte d’habitat, aux mises à mort illégales et au commerce. Entre 1985 et 2014, la superficie de forêt tropicale de Sumatra a fortement diminué et de vastes zones sont encore défrichées pour les plantations de palmier à huile, l’exploitation du bois et d’autres activités agricoles. Cela détruit et fragmente l’habitat et empêche les orangs-outans de trouver facilement nourriture et partenaires. Malgré leur protection légale, certains sont capturés pour le commerce d’animaux ou tués pour leur viande ou parce qu’ils sont considérés comme nuisibles dans les plantations. Leur reproduction lente rend chaque perte particulièrement importante.\n\nLes mesures de conservation comprennent la protection de l’habitat, la réhabilitation et la conservation communautaire. Les orangs-outans saisis dans le commerce illégal sont réhabilités puis relâchés dans des zones protégées. Les organisations travaillent aussi avec les communautés locales pour développer des moyens de subsistance durables et réduire la conversion des forêts en plantations. Les efforts mondiaux de sensibilisation, de réduction de la demande d’huile de palme et de lutte contre l’abattage illégal contribuent progressivement à réduire les causes de la destruction de l’habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Gli oranghi di Sumatra sono in pericolo critico di estinzione. Il loro declino è dovuto soprattutto alla perdita dell’habitat, alle uccisioni illegali e al commercio. Tra il 1985 e il 2014 la superficie della foresta pluviale di Sumatra si è ridotta drasticamente e ancora oggi vaste aree vengono disboscate per piantagioni di palma da olio, legname e altri usi agricoli. Questo distrugge e frammenta l’habitat e rende più difficile trovare cibo e partner. Nonostante la protezione legale, alcuni oranghi vengono catturati per il commercio di animali o uccisi per la carne o perché considerati nocivi nelle piantagioni. La lenta riproduzione fa sì che anche poche morti abbiano un forte impatto sulla popolazione.\n\nLe misure di conservazione includono protezione dell’habitat, riabilitazione e conservazione basata sulle comunità. Gli oranghi sequestrati al commercio illegale vengono riabilitati e reintrodotti in aree protette. Le organizzazioni collaborano inoltre con le comunità locali per promuovere mezzi di sussistenza sostenibili e ridurre la conversione delle foreste in piantagioni. Gli sforzi globali di sensibilizzazione, riduzione della domanda di olio di palma e contrasto al disboscamento illegale contribuiscono gradualmente a ridurre le cause della distruzione dell’habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Os orangotangos-de-sumatra estão criticamente ameaçados de extinção. Seu declínio é causado principalmente pela perda de habitat, mortes ilegais e comércio. Entre 1985 e 2014, a área de floresta tropical em Sumatra diminuiu drasticamente, e grandes áreas ainda são derrubadas para plantações de óleo de palma, exploração madeireira e outros usos agrícolas. Isso destrói e fragmenta o habitat e dificulta a busca por alimento e parceiros. Apesar da proteção legal, alguns orangotangos são capturados para o comércio de animais ou mortos por sua carne ou por serem considerados pragas em plantações. Sua reprodução lenta faz com que mesmo poucas mortes tenham grande impacto na sobrevivência da população.\n\nAs medidas de conservação incluem proteção do habitat, reabilitação e conservação comunitária. Orangotangos apreendidos do comércio ilegal são reabilitados e reintroduzidos em áreas protegidas. Organizações também trabalham com comunidades locais para promover meios de vida sustentáveis e reduzir a pressão para converter florestas em plantações. Esforços globais de conscientização, redução da demanda por óleo de palma e combate à extração ilegal de madeira ajudam gradualmente a enfrentar as causas da destruição do habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "スマトラオランウータンは絶滅寸前です。減少の主な原因は生息地の喪失、違法な殺害、取引です。1985年から2014年にかけてスマトラ島の熱帯雨林は大幅に減少し、現在もパーム油農園、木材生産、その他の農業目的で広い森林が伐採されています。これにより生息地が破壊・分断され、食物や繁殖相手を見つけにくくなります。法的に保護されていても、動物取引のために捕獲されたり、肉目的や農園の害獣として殺されたりすることがあります。繁殖速度が遅いため、わずかな死亡でも個体群の存続に大きく影響します。\n\n保全策には、生息地保護、リハビリテーション、地域社会を基盤とした保全があります。違法取引から保護された個体はリハビリ後、保護地域へ再導入されます。また、保全団体は地域住民と協力して持続可能な生計を促進し、森林を農園へ転換する圧力を減らしています。啓発、パーム油需要の見直し、違法伐採への対策強化といった世界的な取り組みも、生息地破壊の原因を減らす助けとなっています。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "苏门答腊猩猩处于极度濒危状态。其数量下降主要源于栖息地丧失、非法捕杀和贸易。1985年至2014年间，苏门答腊的热带雨林面积大幅缩减，如今仍有大片森林因棕榈油种植园、木材采伐和其他农业用途而被清除。这会破坏并分割珍贵栖息地，使猩猩更难找到食物和配偶。尽管受到法律保护，它们有时仍会被捕捉用于动物贸易，或因肉食用途以及被种植园视为害兽而遭杀害。由于繁殖速度缓慢，即使少量死亡也会严重影响种群存续。\n\n保护措施包括栖息地保护、康复放归和社区参与式保护。从非法贸易中查获的猩猩会接受康复训练，并重新放归保护区。保护组织也与当地社区合作，推动可持续生计，以减少将雨林转为种植园的压力。全球范围内提高公众意识、减少对棕榈油的需求以及加强对非法砍伐的防范，也在逐步帮助减少栖息地破坏的根本原因。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gelegentlich zieht ein Männchen eine Zeit lang mit einem Weibchen umher, doch meist leben sie allein, abgesehen von Müttern mit ihrem Jungtier. Sie haben also weniger soziale Interaktionen als andere Affenarten, sind jedoch intelligente Tiere und mögen es nicht, komplett von ihren Artgenossen isoliert zu leben. Sie interagieren miteinander, wenn sie aufeinandertreffen. Dabei können sie freundlich, ausweichend oder aggressiv sein.\n\nSumatra-Orang-Utans sind das ganze Jahr über paarungsbereit: Die Paarungsbereitschaft der Weibchen richtet sich nach einem 30-tägigen Östruszyklus. Ausgewachsene, dominante Männchen beherrschen große Reviere. Sie entwickeln Wangen- und Kehlwülste, wodurch sie die Aufmerksamkeit der Weibchen weitaus leichter auf sich ziehen als jüngere oder weniger dominante Männchen, denen diese Wülste fehlen. Dominante Männchen geben oft Rufe von sich, um Weibchen aus großer Entfernung in ihr Revier zu locken.\n\nNach erfolgreicher Paarung ist das Weibchen 8,5 Monate lang trächtig und bringt dann ein einziges Junges zur Welt. Während der ersten 8 Lebensjahre kümmert sie sich hingebungsvoll um ihr Kind.\n\nJunge Orang-Utans bleiben bis zu einem Alter von 10 bis 11 Jahren bei ihren Müttern. Danach ziehen sie los, um ein Leben als Einzelgänger zu führen und ihr eigenes Revier zu etablieren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "A male may occasionally travel with a female for a time, but Sumatran orangutans usually live alone apart from mothers with their young. They therefore have fewer social interactions than other apes, but they are intelligent and do not like being completely isolated from their own kind. When they meet, interactions may be friendly, avoidant or aggressive.\n\nSumatran orangutans can mate throughout the year. Female receptivity follows a 30-day oestrous cycle. Adult dominant males control large territories and develop cheek and throat flanges, making them more attractive to females than younger or less dominant unflanged males. Dominant males often call to attract females from long distances.\n\nAfter mating, the female is pregnant for 8.5 months and gives birth to a single young. She cares closely for it during its first eight years.\n\nYoung orangutans remain with their mothers until about 10 to 11 years of age, after which they leave to live solitarily and establish their own territory.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "A male may occasionally travel with a female for a time, but Sumatran orangutans usually live alone apart from mothers with their young. They therefore have fewer social interactions than other apes, but they are intelligent and do not like being completely isolated from their own kind. When they meet, interactions may be friendly, avoidant or aggressive.\n\nSumatran orangutans can mate throughout the year. Female receptivity follows a 30-day oestrous cycle. Adult dominant males control large territories and develop cheek and throat flanges, making them more attractive to females than younger or less dominant unflanged males. Dominant males often call to attract females from long distances.\n\nAfter mating, the female is pregnant for 8.5 months and gives birth to a single young. She cares closely for it during its first eight years.\n\nYoung orangutans remain with their mothers until about 10 to 11 years of age, after which they leave to live solitarily and establish their own territory.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "Ocasionalmente, un macho puede desplazarse durante un tiempo con una hembra, pero normalmente viven solos, salvo las madres con sus crías. Por ello tienen menos interacciones sociales que otros simios, aunque son inteligentes y no les gusta estar completamente aislados de sus congéneres. Cuando se encuentran, pueden comportarse de forma amistosa, evasiva o agresiva.\n\nLos orangutanes de Sumatra pueden aparearse durante todo el año. La receptividad de las hembras sigue un ciclo estral de 30 días. Los machos adultos dominantes controlan grandes territorios y desarrollan grandes almohadillas faciales y una bolsa gular, lo que atrae más a las hembras que los machos jóvenes o menos dominantes sin estas estructuras. Los dominantes suelen emitir llamadas para atraer hembras desde grandes distancias.\n\nTras el apareamiento, la hembra gesta durante 8,5 meses y da a luz una sola cría, a la que cuida intensamente durante sus primeros ocho años.\n\nLas crías permanecen con sus madres hasta los 10 u 11 años. Después parten para llevar una vida solitaria y establecer su propio territorio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "Un mâle peut parfois se déplacer quelque temps avec une femelle, mais les orangs-outans de Sumatra vivent généralement seuls, à l’exception des mères avec leur petit. Ils ont donc moins d’interactions sociales que d’autres grands singes, tout en étant intelligents et peu enclins à un isolement total. Lorsqu’ils se rencontrent, leurs interactions peuvent être amicales, évitantes ou agressives.\n\nIls peuvent s’accoupler toute l’année. La réceptivité des femelles suit un cycle œstral de 30 jours. Les mâles adultes dominants contrôlent de vastes territoires et développent des bourrelets de joue et un sac laryngé, ce qui attire davantage les femelles que les mâles plus jeunes ou moins dominants. Les mâles dominants émettent souvent des appels pour attirer des femelles de loin.\n\nAprès l’accouplement, la gestation dure 8,5 mois et la femelle donne naissance à un seul petit, dont elle s’occupe attentivement pendant ses huit premières années.\n\nLes jeunes restent avec leur mère jusqu’à l’âge de 10 à 11 ans, puis partent vivre seuls et établir leur propre territoire.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "Talvolta un maschio può spostarsi per un periodo con una femmina, ma in genere gli oranghi di Sumatra vivono soli, fatta eccezione per le madri con i piccoli. Hanno quindi meno interazioni sociali rispetto ad altre grandi scimmie, ma sono intelligenti e non amano essere completamente isolati dai conspecifici. Quando si incontrano, le interazioni possono essere amichevoli, elusive o aggressive.\n\nPossono accoppiarsi durante tutto l’anno. La ricettività delle femmine segue un ciclo estrale di 30 giorni. I maschi adulti dominanti controllano ampi territori e sviluppano flange guanciali e una sacca golare, risultando più attraenti per le femmine rispetto ai maschi giovani o meno dominanti privi di tali strutture. I maschi dominanti emettono spesso richiami per attirare femmine da grande distanza.\n\nDopo l’accoppiamento, la femmina ha una gestazione di 8,5 mesi e partorisce un solo piccolo, che accudisce attentamente per i primi otto anni.\n\nI giovani restano con la madre fino a 10–11 anni, poi si allontanano per vivere da soli e stabilire il proprio territorio.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "Ocasionalmente, um macho pode acompanhar uma fêmea por algum tempo, mas os orangotangos-de-sumatra geralmente vivem sozinhos, exceto as mães com seus filhotes. Assim, têm menos interações sociais do que outros grandes primatas, embora sejam inteligentes e não gostem de ficar totalmente isolados de indivíduos da mesma espécie. Quando se encontram, as interações podem ser amigáveis, evasivas ou agressivas.\n\nPodem acasalar durante todo o ano. A receptividade das fêmeas segue um ciclo estral de 30 dias. Machos adultos dominantes controlam grandes territórios e desenvolvem grandes almofadas faciais e uma bolsa na garganta, atraindo mais facilmente as fêmeas do que machos jovens ou menos dominantes. Machos dominantes costumam vocalizar para atrair fêmeas a longas distâncias.\n\nApós o acasalamento, a fêmea fica gestante por 8,5 meses e dá à luz um único filhote, do qual cuida intensamente durante os primeiros oito anos.\n\nOs jovens permanecem com as mães até os 10 ou 11 anos, quando partem para viver de forma solitária e estabelecer seu próprio território.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "オスが一時的にメスと行動することもありますが、通常は母親と子どもの組み合わせを除き単独で暮らします。他の大型類人猿より社会的交流は少ないものの知能が高く、同種から完全に隔離されることは好みません。出会った際の反応は友好的、回避的、攻撃的のいずれの場合もあります。\n\n一年を通して繁殖可能で、メスの発情周期は約30日です。成体の優位なオスは広い縄張りを持ち、頬のフランジや喉袋を発達させるため、若いオスや非優位のオスよりメスを引きつけやすくなります。優位なオスは遠くのメスを呼び寄せるために鳴き声を上げることがあります。\n\n交尾後、メスは8.5か月妊娠し、1頭の子を産みます。最初の8年間は子を献身的に世話します。\n\n若い個体は10～11歳頃まで母親と暮らし、その後独立して単独生活を始め、自分の縄張りを築きます。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "雄性有时会与雌性共同活动一段时间，但通常除了母亲与幼崽外，苏门答腊猩猩多独居。因此它们的社会互动少于其他类人猿，但它们十分聪明，也不喜欢与同类完全隔离。相遇时可能表现得友好、回避或具有攻击性。\n\n它们全年都可交配，雌性的发情周期约为30天。成年优势雄性占据较大领地，并会长出明显的颊垫和喉囊，因此比年轻或地位较低、没有这些结构的雄性更容易吸引雌性。优势雄性常通过叫声吸引远处的雌性。\n\n成功交配后，雌性妊娠约8.5个月，并产下一只幼崽。在幼崽生命最初的8年里，母亲会悉心照料。\n\n幼年猩猩会与母亲共同生活到约10至11岁，之后离开，开始独居并建立自己的领地。",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Orang-Utans sind die einzige Menschenaffenspezies, die nicht in Afrika lebt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Orang-Utan bedeutet so viel wie „Waldmensch“ auf Malaiisch und Indonesisch. Sie sind 7-mal stärker als Menschen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Orang-Utans sind die größten Baumbewohner der Welt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Orang-Utans sind die einzigen Affen, die einzelgängerisch leben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Orang-Utans verwenden Werkzeuge mit dem Mund, im Gegensatz zu Gorillas und Schimpansen, die Werkzeuge mit den Händen handhaben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Orangutans are the only great ape species that does not live in Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutan means roughly “person of the forest” in Malay and Indonesian. They are 7 times stronger than humans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans are the world's largest tree-dwelling animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans are the only apes that live solitarily.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans use tools with their mouths, unlike gorillas and chimpanzees, which handle tools with their hands.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Orangutans are the only great ape species that does not live in Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutan means roughly “person of the forest” in Malay and Indonesian. They are 7 times stronger than humans.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans are the world's largest tree-dwelling animals.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans are the only apes that live solitarily.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Orangutans use tools with their mouths, unlike gorillas and chimpanzees, which handle tools with their hands.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is currently in active development, and the Zoopedia reflects this development process. Text, images, statistics and other content are not necessarily final and may still change or be expanded.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Pongo abelii/map/Pongo abelii map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Sumatra-Orang-Utan – Planet Zoo 2",
+            "en": "Sumatran Orangutan – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sumatra-Orang-Utans aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sumatran Orangutan."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Pongo abelii/bilder/Pongo abelii 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sumatra-Orang-Utan",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/sumatra-orang-utan"
+      },
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; die direkten Medien-URLs waren im bereitgestellten Text nicht enthalten."
+    }
+  }
+}

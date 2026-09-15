@@ -1,0 +1,354 @@
+{
+  "id": "Ailuropoda melanoleuca",
+  "identitaet": {
+    "namen": {
+      "de": "Großer Panda",
+      "en": "Giant Panda",
+      "en-US": "Giant Panda",
+      "es": "Panda gigante",
+      "fr": "Panda géant",
+      "it": "Panda gigante",
+      "pt-BR": "Panda-gigante",
+      "ja": "ジャイアントパンダ",
+      "zh-Hans": "大熊猫"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Gemaessigt"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Ursidae",
+          "gattung": "Ailuropoda",
+          "art": "Ailuropoda melanoleuca",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 1.2,
+          "max": 1.8,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 0.6,
+          "max": 0.9,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 85,
+          "max": 125,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 70,
+          "max": 100,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 500,
+          "max": 1000,
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 4,
+          "max": 8,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 95,
+          "max": 160,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 2,
+          "hinweis": {
+            "de": "Bei Zwillingen kümmert sich das Muttertier laut Zoopedia nur um ein Jungtier, da die Milch nicht für beide ausreicht.",
+            "en": "According to the Zoopedia, if twins are born the mother cares for only one cub because she cannot provide enough milk for both."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Große Pandas sind Einzelgänger. Weibchen sind territorialer als Männchen.",
+            "en": "Giant pandas are solitary. Females are more territorial than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "bambooForest",
+          "hinweis": {
+            "de": "Der Große Panda ist in den Bergen Zentralchinas beheimatet und stark von dichten Bambuswäldern abhängig.",
+            "en": "The giant panda is native to the mountains of central China and strongly dependent on dense bamboo forests."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "hauptnahrung",
+            "wert": "bamboo",
+            "hinweis": {
+              "de": "Pandas ernähren sich fast ausschließlich von Bambus. Wegen dessen geringen Nährwerts verbringen sie nahezu jede wache Minute mit Nahrungssuche und -aufnahme.",
+              "en": "Pandas feed almost exclusively on bamboo. Because it is nutrient-poor, they spend nearly every waking minute searching for and eating food."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "Bambus",
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Große Panda (auch Ailuropoda melanoleuca) gehört zur Familie der Bären und ist in den Bergen Zentralchinas beheimatet.\n\nEr ist an seiner markanten schwarzweißen Fellfärbung leicht zu erkennen, bei der die Beine, Ohren und Kreise um die Augen schwarz sind. Pandas ernähren sich fast ausschließlich von Bambus, ihr Überleben hängt daher stark von dichten Bambuswäldern ab. Da Bambus jedoch äußerst nährstoffarm ist, müssen Pandas sehr viel davon zu sich nehmen, sodass sie nahezu jede wache Minute mit der Nahrungssuche und -aufnahme verbringen. Dieses nährstoffarme Futter führt auch dazu, dass neugeborene Pandas sehr winzig und anfällig sind.\n\nGroße Pandas erreichen in der Regel eine Gesamtlänge von 1,2 bis 1,8 m und eine Schulterhöhe von 0,6 bis 0,9 m. Männchen werden 10 bis 20 % größer als Weibchen und sind durchschnittlich auch schwerer als diese: Männchen wiegen 85 bis 125 kg, Weibchen dagegen nur 70 bis 100 kg.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Asien. Der Große Panda ist in den Bergen Zentralchinas beheimatet und auf dichte Bambuswälder angewiesen.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Große Pandas gelten mittlerweile als gefährdet – eine Verbesserung gegenüber früheren Einstufungen als stark gefährdet. Die Art ist durch den Verlust und die Fragmentierung ihres Lebensraums bedroht, die auf die Abholzung und Urbanisierung der letzten Jahrzehnte zurückzuführen sind. Dadurch wurde ein Großteil der Bambuswälder zerstört, auf die die Pandas angewiesen sind. Dies führt zu einer Fragmentierung der Population und schränkt ihre Möglichkeiten ein, Partner zu finden. Hinzu kommt, dass Bambus manchmal massenhaft blüht und abstirbt – Pandas, die nicht in neue Lebensräume ausweichen können, drohen zu verhungern. Der Klimawandel kann das Bambuswachstum weiter stören; und die von Natur aus langsame Fortpflanzungsrate der Großen Pandas schränkt ihre Fähigkeit ein, sich von Bestandsrückgängen zu erholen.\n\nChina hat umfangreiche Anstrengungen unternommen, um den Pandabestand zu erhalten. Derzeit gibt es Dutzende von Panda-Schutzgebieten, in denen ein Großteil der verbliebenen Pandas geschützt wird. Durch Maßnahmen zur Wiederherstellung von Lebensräumen werden Verbindungskorridore zwischen den Lebensräumen geschaffen, sodass sich die Pandas frei bewegen können, um neue Nahrungsquellen und Partner zu finden. Zuchtprogramme in Gefangenschaft und ein sorgfältiges Management der Pandapopulationen ergänzen die lebensraumbezogenen Strategien und bieten ein Sicherheitsnetz für den Fall, dass die wildlebenden Populationen weiter zurückgehen sollten.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Pandas sind Einzelgänger, sie interagieren jedoch miteinander, wenn sie sich begegnen. Weibchen sind territorialer als Männchen und verjagen Eindringlinge in ihren Revieren häufiger. Sie benötigen jede Menge Raum und die Möglichkeit, sich bei Bedarf zurückzuziehen.\n\nGroße Pandas paaren sich zwischen März und Mai. Weibchen sind nur 2 bis 3 Tage im Jahr fruchtbar und finden nicht immer rechtzeitig ein Männchen. Trifft ein Paar aufeinander, paaren sie sich mehrmals, bevor sie wieder getrennte Wege gehen.\n\nNach einer erfolgreichen Befruchtung ist das Muttertier 95 bis 160 Tage lang trächtig und bringt dann bis zu zwei sehr kleine Junge zur Welt. Gebärt sie Zwillinge, kümmert sie sich nur um eins der Jungtiere, da sie nicht genug Milch für beide hat.\n\nPandajunge bleiben 1,5 bis 2 Jahre lang bei ihrer Mutter und suchen sich danach ihr eigenes Revier. Große Pandas erreichen ihre Geschlechtsreife im Alter zwischen 4 und 8 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Pandas haben von allen Plazentatieren die kleinsten Neugeborenen im Verhältnis zur Köpergröße eines ausgewachsenen Pandabären. Ein Junges ist 800-mal kleiner als seine Mutter.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pandas haben einen sechsten Finger entwickelt, um Bambusblätter leichter vom Stamm entfernen zu können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Große Panda ist die einzige Bärenart, die sich ausschließlich von Pflanzen ernährt. Im Gegensatz zu vielen anderen Tieren finden Pandas keine Verwendung in der traditionellen chinesischen Medizin.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es gibt eine Panda-Subpopulation namens Qinling-Panda, deren Fell schokoladenbraun und weiß ist. Einige Taxonomen sind sogar der Meinung, dass es sich hierbei um eine eigene Unterart handeln könnte.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Pandas gelten in China als Symbol des Friedens. Armeen hielten Flaggen mit Pandas hoch, um Waffenstillstände zu vereinbaren.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/map/Ailuropoda melanoleuca map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Großer Panda – Planet Zoo 2",
+            "en": "Giant Panda – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Großen Pandas aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Panda."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/bilder/Ailuropoda melanoleuca 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Großer Panda",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

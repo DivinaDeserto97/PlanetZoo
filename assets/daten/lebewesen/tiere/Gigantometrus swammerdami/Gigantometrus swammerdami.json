@@ -1,0 +1,343 @@
+{
+  "id": "Gigantometrus swammerdami",
+  "identitaet": {
+    "namen": {
+      "de": "Indischer Riesenskorpion",
+      "en": "Indian Giant Scorpion",
+      "en-US": "Indian Giant Scorpion",
+      "es": "Escorpión gigante de la India",
+      "fr": "Scorpion géant indien",
+      "it": "Scorpione gigante indiano",
+      "pt-BR": "Escorpião-gigante-indiano",
+      "ja": "インドオオサソリ",
+      "zh-Hans": "印度巨蝎"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "exhibit"
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "notEvaluated"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Arachnida",
+          "ordnung": "Scorpiones",
+          "familie": "Scorpionidae",
+          "gattung": "Gigantometrus",
+          "art": "Gigantometrus swammerdami",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maximum",
+          "wert": 23,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "wert": 56,
+          "einheit": "g",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "notEvaluated",
+          "system": "IUCN",
+          "hinweis": {
+            "de": "Der Erhaltungszustand wurde laut Zoopedia bisher nicht offiziell bewertet.",
+            "en": "According to the Zoopedia, the conservation status has not yet been officially assessed."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unknown",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 1,
+          "max": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "brutzeit",
+          "min": 5,
+          "max": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "lebendgeburt",
+          "hinweis": {
+            "de": "Das Weibchen bringt lebende Jungtiere zur Welt. Diese klettern auf ihren Rücken und werden bis zu einem Alter von etwa drei Wochen getragen.",
+            "en": "The female gives birth to live young. They climb onto her back and are carried until about three weeks old."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Indische Riesenskorpione sind Einzelgänger und interagieren mit Artgenossen hauptsächlich zur Paarung.",
+            "en": "Indian giant scorpions are solitary and mainly interact with conspecifics for mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropicalRainforest",
+          "hinweis": {
+            "de": "Tropische Regenwälder Indiens und Sri Lankas.",
+            "en": "Tropical rainforests of India and Sri Lanka."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "jagd",
+            "hinweis": {
+              "de": "Der Indische Riesenskorpion greift Beute eher mit seinen kräftigen Scheren als mit seinem Stachel an. Sein Gift wird als relativ schwach beschrieben.",
+              "en": "The Indian giant scorpion attacks prey primarily with its powerful pincers rather than its sting. Its venom is described as relatively weak."
+            },
+            "quelle": "planetZoo2"
+          },
+          {
+            "typ": "nahrungsverzicht",
+            "wert": 1,
+            "einheit": "jahr",
+            "hinweis": {
+              "de": "Laut Zoopedia kann die Art bis zu ein Jahr ohne Nahrung überleben.",
+              "en": "According to the Zoopedia, the species can survive for up to one year without food."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": []
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Indische Riesenskorpion (auch Gigantometrus swammerdami) gehört zu den großen Spinnentieren und lebt in den tropischen Regenwäldern Indiens und Sri Lankas.\n\nEr ist kräftig, schwarz und hat dicke, chitinartige Körperpanzer sowie sehr große Scheren. Seine Körperhülle kann zudem einen blauen oder grünen Schimmer aufweisen. Die Scheren des Indischen Riesenskorpions sind stark und in der Lage, Beute zu fangen und zu zerquetschen. Sein Gift ist dagegen relativ schwach; wahrscheinlich, weil er sich eher auf die Kraft seiner Scheren als auf die Wirksamkeit seines Stiches verlässt.\n\nDer Indische Riesenskorpion gilt als die größte Skorpionart der Welt. Im Durchschnitt werden sie bis zu 23 cm lang und wiegen 56 g.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Asien. Der Indische Riesenskorpion lebt in den tropischen Regenwäldern Indiens und Sri Lankas.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand des Indischen Riesenskorpions wurde bisher nicht offiziell bewertet. Über mögliche Gefährdungen ist nur wenig bekannt.\n\nMöglicherweise leidet die Art unter dem Verlust ihres Lebensraums durch Holzeinschlag und die Umwandlung von Wäldern in landwirtschaftliche Flächen. Als größter Skorpion der Welt wird die Spezies zudem für den Haustierhandel gesammelt, was Wildpopulationen zusätzlich belasten könnte.\n\nDerzeit gibt es keine speziellen Schutzgesetze für den Riesenwaldskorpion. Allerdings leben viele Tiere in geschützten Gebieten, in denen ihr Lebensraum weitgehend ungestört bleibt. Weitere Forschung ist nötig, um die Bestände in der Natur besser zu verstehen und geeignete Schutzmaßnahmen zu entwickeln.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Indische Riesenskorpione sind Einzelgänger und interagieren mit anderen nur zu Paarungszwecken.\n\nIndische Riesenskorpione paaren sich das ganze Jahr über. Wenn ein paarungsbereites Männchen und ein Weibchen aufeinander treffen, greift das Männchen mit seinen Pedipalpen (Mundwerkzeugen) nach ihren und zieht sie an eine geeignete Stelle im Substrat, um die Paarung zu vollziehen. Dort gibt er Sperma aus seinem Hinterleib auf den Boden ab. Wenn sich das Weibchen nicht dagegen wehrt, zieht er sie auf das Sperma, damit sie es über eine Porenöffnung an ihrem Hinterleib aufnehmen kann.\n\nDas Weibchen befruchtet die Eier und brütet sie 5 bis 8 Monate lang aus. Danach bringt es lebende Jungtiere zur Welt, die auf den Rücken des Weibchens klettern. Es trägt sie, bis sie 3 Wochen alt sind, sich gehäutet haben und selbstständig genug sind, um alleine zu überleben.\n\nDiese jungen Skorpione werden im Alter zwischen 1 und 3 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Indische Riesenskorpion ist die größte Skorpionart der Welt und kann zu einer Länge von bis zu 23 cm heranwachsen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Indische Riesenskorpion leuchtet wie alle Skorpione im UV-Licht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Indische Riesenskorpione greifen eher mit ihren Scheren als mit ihren Stacheln an.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Indische Riesenskorpione können ein Jahr lang ohne Nahrung überleben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Indische Riesenskorpione können 48 Stunden unter Wasser überleben.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/map/Gigantometrus swammerdami map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Indischer Riesenskorpion – Planet Zoo 2",
+            "en": "Indian Giant Scorpion – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Indischen Riesenskorpions aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Indian Giant Scorpion."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/bilder/Gigantometrus swammerdami 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Indischer Riesenskorpion",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

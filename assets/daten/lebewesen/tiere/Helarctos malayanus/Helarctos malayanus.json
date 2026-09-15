@@ -1,0 +1,341 @@
+{
+  "id": "Helarctos malayanus",
+  "identitaet": {
+    "namen": {
+      "de": "Sonnenbär",
+      "en": "Sun Bear",
+      "en-US": "Sun Bear",
+      "es": "Oso malayo",
+      "fr": "Ours malais",
+      "it": "Orso malese",
+      "pt-BR": "Urso-malaio",
+      "ja": "マレーグマ",
+      "zh-Hans": "马来熊"
+    }
+  },
+  "filter": {
+    "edition": "standard",
+    "gehegetyp": [
+      "habitatTerrestrial"
+    ],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Ursidae",
+          "gattung": "Helarctos",
+          "art": "Helarctos malayanus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 120,
+          "max": 150,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 27,
+          "max": 65,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "IUCN",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "status": "unknown",
+          "einheit": "individuum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 3,
+          "max": 7,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 3,
+          "hinweis": {
+            "de": "Das Weibchen bringt bis zu drei Jungtiere in einer Höhle, beispielsweise in einem hohlen Baumstamm, zur Welt.",
+            "en": "The female gives birth to up to three cubs in a den, for example inside a hollow tree trunk."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Abgesehen von Muttertieren mit ihren Jungen leben Sonnenbären einzelgängerisch und interagieren hauptsächlich während der Paarungszeit.",
+            "en": "Apart from mothers with their cubs, sun bears live solitarily and mainly interact during the mating period."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropicalRainforest",
+          "hinweis": {
+            "de": "Tropische Regenwälder Südostasiens.",
+            "en": "Tropical rainforests of Southeast Asia."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "typ": "nahrung",
+            "hinweis": {
+              "de": "Die Zoopedia nennt Honig und Insekten. Sonnenbären plündern Bienennester und nutzen ihre 20 bis 25 cm lange Zunge, um an Honig und Insekten zu gelangen.",
+              "en": "The Zoopedia mentions honey and insects. Sun bears raid bee nests and use their 20 to 25 cm long tongue to reach honey and insects."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "frisst": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [
+              {
+                "wert": "Honig",
+                "quelle": "planetZoo2"
+              },
+              {
+                "wert": "Insekten",
+                "quelle": "planetZoo2"
+              }
+            ]
+          }
+        },
+        "wirdGefressenVon": {
+          "jungtier": {
+            "werte": []
+          },
+          "erwachsen": {
+            "werte": [],
+            "keineRegelmaessigenNatuerlichenFressfeinde": null,
+            "hinweis": {
+              "de": "",
+              "en": ""
+            },
+            "quelle": ""
+          }
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Sonnenbär (Helarctos malayanus), auch Malaienbär genannt, ist eine kleine Bärenart, die in den tropischen Regenwäldern Südostasiens lebt.\n\nSein Fell ist dunkelbraun bis schwarz. Gesicht und Schnauze sind gelblich-hell gefärbt, und auf der Brust trägt er eine auffällige, orangefarbene halbmondförmige Zeichnung. Der Sonnenbär hat einen breiten Kopf, eine längliche Schnauze und kleine, rundliche Ohren.\n\nMännchen und Weibchen sehen sich äußerlich sehr ähnlich, doch Männchen sind etwa 10 bis 20 % größer. Sie erreichen eine Körperlänge von 120 bis 150 cm und wiegen durchschnittlich zwischen 27 und 65 kg.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Südostasien. Der Sonnenbär lebt in den tropischen Regenwäldern Südostasiens.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Sonnenbären gelten aufgrund von Lebensraumverlust, Wilderei und illegalem Handel mit Wildtieren als gefährdet. Die Abholzung für Palmölplantagen und die Holzgewinnung haben ihren natürlichen Lebensraum im Regenwald stark beeinträchtigt. Darüber hinaus werden diese Bären oft für den Handel exotischer Haustiere gefangen oder für ihre Körperteile getötet, die in der traditionellen Medizin verwendet werden. Ihre scheue und einzelgängerische Natur erschwert es Forschern, die Bestände genau zu überwachen, was die Planung von Schutzmaßnahmen und Interventionsbemühungen erschwert.\n\nLokale Behörden und Naturschutzorganisationen versuchen, Sonnenbären auf verschiedene Weise zu schützen: Schutzgebiete bieten Bären, die aus dem illegalen Wildtierhandel oder aus Gefangenschaft gerettet wurden, eine sichere Umgebung und ermöglichen ihre Rehabilitation mit dem Ziel einer möglichen Auswilderung. Die Förderung einer nachhaltigen Palmölproduktion könnte die Abholzung der Wälder eindämmen. Auch Aufklärungsprogramme für die Bevölkerung spielen eine wichtige Rolle, indem sie das Bewusstsein für die ökologische Bedeutung der Sonnenbären schärfen und zur Bekämpfung der Wilderei beitragen. Laufende In-situ- und Ex-situ-Forschungsprojekte helfen dabei, das Verhalten der Sonnenbären besser zu verstehen, und dienen als Grundlage für Arterhaltungsstrategien und politische Entscheidungen zum langfristigen Überleben der Tiere.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Abgesehen von Muttertieren mit ihren Jungen leben Sonnenbären einzelgängerisch und interagieren nur in der Paarungszeit miteinander.\n\nDas Paarungsverhalten dieser sehr scheuen Spezies ist noch nicht vollständig erforscht.\n\nBekannt ist, dass sich Sonnenbären das ganze Jahr über fortpflanzen können. Männchen spüren paarungsbereite Weibchen über deren Urin auf. Treffen sie aufeinander, kommt es zu einer kurzen Balz, anschließend paaren sich die Tiere und trennen sich wieder.\n\nDie Tragzeit beträgt etwa 3 bis 7 Monate. Gegen Ende der Schwangerschaft sucht sich das Weibchen eine Höhle, zum Beispiel in einem hohlen Baumstamm, wo sie bis zu 3 Jungtiere zur Welt bringt. Die Jungen bleiben etwa 3 Jahre bei ihrer Mutter.\n\nDanach paaren sich die Weibchen in der Regel erneut, während die heranwachsenden Jungtiere das mütterliche Revier verlassen und fortan allein leben. Sonnenbären werden im Alter von 3 bis 4 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Sonnenbär ist die kleinste Bärenart.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sonnenbärenjunge kommen blind und nackt zur Welt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sonnenbären werden wegen ihrer Vorliebe für Honig und ihrer Gewohnheit, Bienennester zu plündern, auch Honigbären genannt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zunge des Sonnenbären ist 20 bis 25 cm lang und ermöglicht ihm, mühelos an Insekten und Honig zu gelangen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sonnenbären ahmen die Mimik ihrer Artgenossen nach, ein Verhalten, das man sonst vor allem von Primaten kennt.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Helarctos malayanus/map/Helarctos malayanus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Sonnenbär – Planet Zoo 2",
+            "en": "Sun Bear – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sonnenbären aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sun Bear."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Helarctos malayanus/bilder/Helarctos malayanus 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sonnenbär",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}
