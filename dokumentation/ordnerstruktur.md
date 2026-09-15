@@ -7,8 +7,11 @@
 
 - `PlanetZoo2/`
   - [.gitignore](<../.gitignore>)
+  - `.vscode/`
+    - [settings.json](<../.vscode/settings.json>)
   - [README.md](<../README.md>)
   - `assets/`
+    - `cache/`
     - `components/`
       - `button/`
       - `footer/`
@@ -1558,6 +1561,7 @@
         - [systematik.js](<../assets/js/systematik/systematik.js>)
       - `tier/`
         - [tier.js](<../assets/js/tier/tier.js>)
+    - `private/`
   - `dokumentation/`
     - [ANLEITUNG-TIER-JSON.md](<../dokumentation/ANLEITUNG-TIER-JSON.md>)
     - [PlanetZoo2-Tierdaten-Checkliste.md](<../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md>)
