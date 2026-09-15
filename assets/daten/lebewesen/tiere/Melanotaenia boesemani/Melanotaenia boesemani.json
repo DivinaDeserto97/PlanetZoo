@@ -1,0 +1,440 @@
+{
+  "id": "Melanotaenia boesemani",
+  "identitaet": {
+    "namen": {
+      "de": "Harlekin-Regenbogenfisch",
+      "en": "Boeseman's Rainbowfish",
+      "en-US": "Boeseman's Rainbowfish",
+      "es": "Pez arcoíris",
+      "fr": "Arc-en-ciel de Boeseman",
+      "it": "Pesce arcobaleno di Boeseman",
+      "pt-BR": "Peixe-arco-íris boesemani",
+      "ja": "ハーフオレンジ・レインボー",
+      "zh-Hans": "贝氏虹银汉鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Atheriniformes",
+          "familie": "Melanotaeniidae",
+          "gattung": "Melanotaenia",
+          "art": "Melanotaenia boesemani",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Endangered. The supplied page does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 7,
+          "max": 14,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Eier schlüpfen je nach Wassertemperatur und Umgebung nach etwa 7 bis 14 Tagen.",
+            "en": "The eggs hatch after about 7 to 14 days depending on water temperature and environmental conditions."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "dotterreserveNachSchlupf",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Frisch geschlüpfte Jungfische leben zunächst von ihren Dotterreserven, bevor sie selbstständig schwimmen.",
+            "en": "Newly hatched fry initially live on their yolk reserves before becoming free-swimming."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "largeSchool",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Harlekin-Regenbogenfische leben laut Zoopedia in großen, lose organisierten Schwärmen mit starkem Zusammenhalt.",
+            "en": "According to the Zoopedia, Boeseman's Rainbowfish live in large, loosely organized schools with strong cohesion."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "shallowLake",
+          "hinweis": {
+            "de": "Die Zoopedia nennt flache Seen mit Vegetation und klarem Wasser.",
+            "en": "The Zoopedia names shallow lakes with vegetation and clear water."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "slowFlowingFreshwater",
+          "hinweis": {
+            "de": "Die Zoopedia nennt langsam fließende Gewässer und Nebenflüsse.",
+            "en": "The Zoopedia names slow-flowing waters and tributaries."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "algen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineKrebstiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "insektenlarven",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Harlekin-Regenbogenfisch (Melanotaenia boesemani) ist ein kleiner Süßwasserfisch, der ausschließlich in den Ayamaru-Seen und deren Nebenflüssen auf der Vogelkop-Halbinsel in West-Papua, Indonesien, vorkommt. Er lebt dort in flachen Seen und langsam fließenden Gewässern mit Vegetation und klarem Wasser.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Boeseman's Rainbowfish (Melanotaenia boesemani) is a small freshwater fish found only in the Ayamaru Lakes and their tributaries on the Vogelkop Peninsula in West Papua, Indonesia. It inhabits shallow lakes and slow-flowing waters with vegetation and clear water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Boeseman's Rainbowfish (Melanotaenia boesemani) is a small freshwater fish found only in the Ayamaru Lakes and their tributaries on the Vogelkop Peninsula in West Papua, Indonesia. It inhabits shallow lakes and slow-flowing waters with vegetation and clear water.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Harlekin-Regenbogenfisch (Melanotaenia boesemani) ist ein kleiner, farbenprächtiger Süßwasserfisch aus den Ayamaru-Seen und deren Nebenflüssen in West-Papua, Indonesien.\n\nErwachsene Tiere werden laut Zoopedia etwa 8 bis 11 cm „groß“. Männchen sind etwas größer als Weibchen und kräftiger gefärbt. Ihre vordere Körperhälfte ist bläulich-grau bis violett, die hintere Hälfte leuchtend orange-rot. Weibchen sind meist schlanker und weniger farbenfroh.\n\nDa die Quelle die Messart der Angabe 8 bis 11 cm nicht genauer bezeichnet, wurde dieser Wert nicht als Körperlänge strukturiert gespeichert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Harlekin-Regenbogenfisch gilt als stark gefährdet. Sein gesamter Wildbestand ist auf wenige Süßgewässer auf der Vogelkop-Halbinsel in West-Papua beschränkt. Die Zoopedia nennt Lebensraumzerstörung, Veränderungen der Wasserqualität, Sedimentablagerungen, schwankende Wasserstände, Konkurrenz durch eingeführte Arten und die langjährige Entnahme für den internationalen Aquarienhandel als Bedrohungen.\n\nZuchtprogramme in Gefangenschaft und genetische Überwachung sollen die genetische Vielfalt erhalten, Inzuchtdepression vermeiden und Sicherheitsbestände aufbauen. Zusätzlich nennt die Zoopedia verstärkte Kontrollen der Entnahme und die Möglichkeit späterer Wiederansiedlungen bei verbesserten Lebensräumen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Harlekin-Regenbogenfische leben in großen, lose organisierten Schwärmen mit starkem Zusammenhalt. Sie zeigen paralleles Schwimmen, leichtes Nachjagen und visuelle Balzrituale.\n\nDie Fortpflanzung findet das ganze Jahr über statt. Männchen werben mit ihrer kräftigen Färbung und ritualisierten Schwimmbewegungen um Weibchen.\n\nDie Art ist ein Freilaicher. Männchen und Weibchen geben Eier und Fischmilch gleichzeitig ab, wodurch die Eier äußerlich befruchtet werden. Die klebrigen Eier haften anschließend an feinblättrigen Pflanzen oder anderen glatten Oberflächen.\n\nDie Eier schlüpfen abhängig von Wassertemperatur und Umgebung nach etwa 7 bis 14 Tagen. Frisch geschlüpfte Jungfische leben zunächst von ihren Dotterreserven. Später bilden sie Schwärme und entwickeln mit zunehmendem Alter die typische Zweifärbung. Die Geschlechtsreife wird mit etwa 6 Monaten erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Harlekin-Regenbogenfisch, auch Boesemans Regenbogenfisch genannt, ist nach dem niederländischen Ichthyologen Marinus Boeseman benannt, der ihn laut Zoopedia 1982 erstmals beschrieb.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Farben kommen besonders während der Balz, bei Imponierverhalten und in stressfreien Situationen stark zur Geltung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Art wird wegen ihrer ständigen Bewegung, schillernden Farben und ihres friedlichen Verhaltens häufig als Blickfang in großen Gesellschaftsaquarien eingesetzt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Harlekin-Regenbogenfische sind meist silbergrau und entwickeln die typische blau-orange Färbung erst später; bei Männchen ist sie kräftiger.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In freier Wildbahn ernähren sich Harlekin-Regenbogenfische laut Zoopedia von Algen, kleinen Krebstieren, Insektenlarven und Plankton.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/386c7344/Rainbowfish_Boesemans_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/map/Melanotaenia boesemani map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMzg2YzczNDQvUmFpbmJvd2Zpc2hfQm9lc2VtYW5zLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Harlekin-Regenbogenfisch – Planet Zoo 2",
+            "en": "Boeseman's Rainbowfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Harlekin-Regenbogenfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of Boeseman's Rainbowfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/386c7344/Rainbowfish_Boesemans_illustration.jpg",
+          "alt": {
+            "de": "Harlekin-Regenbogenfisch – Zoopedia-Illustration",
+            "en": "Boeseman's Rainbowfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Harlekin-Regenbogenfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Boeseman's Rainbowfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/Melanotaenia boesemani illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Harlekin-Regenbogenfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/harlekin-regenbogenfisch",
+        "en": "https://www.planetzoogame.com/2/zoopedia/boeseman-s-rainbowfish",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/boeseman-s-rainbowfish",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pez-arco%C3%ADris",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/arc-en-ciel-de-boeseman",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/pesce-arcobaleno-di-boeseman",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/peixe-arco-%C3%ADris-boesemani",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%8F%E3%83%BC%E3%83%95%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8-%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%B4%9D%E6%B0%8F%E8%99%B9%E9%93%B6%E6%B1%89%E9%B1%BC"
+      },
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Angabe „8–11 cm groß“ wurde nicht als Körperlänge gespeichert, weil die Messart nicht genauer bezeichnet wird."
+    }
+  }
+}

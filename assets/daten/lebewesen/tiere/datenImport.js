@@ -75,6 +75,9 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Crocuta crocuta/Crocuta crocuta.json",
   "assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json",
   "assets/daten/lebewesen/tiere/Chelonoidis nigra/Chelonoidis nigra.json",
+  "assets/daten/lebewesen/tiere/Melanotaenia boesemani/Melanotaenia boesemani.json",
+  "assets/daten/lebewesen/tiere/Tapirus indicus/Tapirus indicus.json",
+  "assets/daten/lebewesen/tiere/Brachypelma hamorii/Brachypelma hamorii.json",
 ];
 
 /* ======================================== */

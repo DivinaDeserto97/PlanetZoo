@@ -260,6 +260,18 @@
               - `Boa constrictor map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Boa constrictor/videos/.gitkeep>)
+          - `Brachypelma hamorii/`
+            - [Brachypelma hamorii.json](<../assets/daten/lebewesen/tiere/Brachypelma hamorii/Brachypelma hamorii.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Brachypelma hamorii/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Brachypelma hamorii/bilder/.gitkeep>)
+              - `Brachypelma hamorii 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Brachypelma hamorii/map/.gitkeep>)
+              - `Brachypelma hamorii map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Brachypelma hamorii/videos/.gitkeep>)
           - `Buceros bicornis/`
             - [Buceros bicornis.json](<../assets/daten/lebewesen/tiere/Buceros bicornis/Buceros bicornis.json>)
             - `audio/`
@@ -671,6 +683,18 @@
               - `Malaclemys terrapin map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Malaclemys terrapin/videos/.gitkeep>)
+          - `Melanotaenia boesemani/`
+            - [Melanotaenia boesemani.json](<../assets/daten/lebewesen/tiere/Melanotaenia boesemani/Melanotaenia boesemani.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Melanotaenia boesemani/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Melanotaenia boesemani/bilder/.gitkeep>)
+              - `Melanotaenia boesemani 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Melanotaenia boesemani/map/.gitkeep>)
+              - `Melanotaenia boesemani map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Melanotaenia boesemani/videos/.gitkeep>)
           - `Mola mola/`
             - [Mola mola.json](<../assets/daten/lebewesen/tiere/Mola mola/Mola mola.json>)
             - `audio/`
@@ -963,6 +987,18 @@
                 - `Syncerus caffer caffer map.png` *(Medium – nicht in Share-ZIP)*
               - `videos/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/videos/.gitkeep>)
+          - `Tapirus indicus/`
+            - [Tapirus indicus.json](<../assets/daten/lebewesen/tiere/Tapirus indicus/Tapirus indicus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tapirus indicus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tapirus indicus/bilder/.gitkeep>)
+              - `Tapirus indicus 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tapirus indicus/map/.gitkeep>)
+              - `Tapirus indicus map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tapirus indicus/videos/.gitkeep>)
           - `Tiliqua scincoides/`
             - [Tiliqua scincoides.json](<../assets/daten/lebewesen/tiere/Tiliqua scincoides/Tiliqua scincoides.json>)
             - `audio/`
@@ -987,6 +1023,18 @@
               - `Triturus dobrogicus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Triturus dobrogicus/videos/.gitkeep>)
+          - `Tropheus moorii/`
+            - [Tropheus moorii.json](<../assets/daten/lebewesen/tiere/Tropheus moorii/Tropheus moorii.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tropheus moorii/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tropheus moorii/bilder/.gitkeep>)
+              - `Tropheus moorii 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tropheus moorii/map/.gitkeep>)
+              - `Tropheus moorii map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Tropheus moorii/videos/.gitkeep>)
           - `Ursus arctos/`
             - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/.gitkeep>)
             - `Ursus arctos arctos/`

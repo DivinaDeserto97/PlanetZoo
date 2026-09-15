@@ -1,0 +1,433 @@
+{
+  "id": "Brachypelma hamorii",
+  "identitaet": {
+    "namen": {
+      "de": "Mexikanische Rotknie-Vogelspinne",
+      "en": "Mexican Red-knee Tarantula",
+      "en-US": "Mexican Red-knee Tarantula",
+      "es": "Tarántula mexicana de rodillas rojas",
+      "fr": "Mygale mexicaine à genoux rouges",
+      "it": "Tarantola messicana dalle ginocchia rosse",
+      "pt-BR": "Tarântula-mexicana-de-joelho-vermelho",
+      "ja": "メキシカンレッドニータランチュラ",
+      "zh-Hans": "墨西哥红膝捕鸟蛛"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica"
+    ],
+    "biome": [
+      "Wüste"
+    ],
+    "schutzstatus": "vulnerable"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Arachnida",
+          "ordnung": "Araneae",
+          "familie": "Theraphosidae",
+          "gattung": "Brachypelma",
+          "art": "Brachypelma hamorii",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "wert": 0.1,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Körperlänge von etwa 10 cm. Zusätzlich wird eine Beinspannweite von 15 cm angegeben.",
+            "en": "The Zoopedia gives a body length of about 10 cm. A leg span of 15 cm is also stated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "vulnerable",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an. Ein Bewertungssystem wird im bereitgestellten Text nicht ausdrücklich genannt.",
+            "en": "The Zoopedia lists the conservation status as Vulnerable. The supplied text does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 6,
+          "max": 7,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "min": 200,
+          "max": 400,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das Weibchen legt 200 bis 400 Eier in einem Eiersack ab.",
+            "en": "The female lays 200 to 400 eggs in an egg sac."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "eiersackBewacht",
+          "min": 1,
+          "max": 3,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Das Weibchen bewacht den Eiersack 1 bis 3 Monate lang.",
+            "en": "The female guards the egg sac for 1 to 3 months."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ersteHaeutung",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "selbststaendigAb",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Nach der ersten Häutung im Alter von etwa zwei Wochen verlassen die Jungspinnen den Bau und werden selbstständig.",
+            "en": "After their first molt at about two weeks, the spiderlings leave the burrow and become independent."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Mexikanische Rotknie-Vogelspinnen sind Einzelgänger.",
+            "en": "Mexican Red-knee Tarantulas are solitary."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "shrubland",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "desert",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "forest",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "hinweis": {
+            "de": "Die Art ist laut Zoopedia nachtaktiv, lebt tagsüber in Höhlen und jagt nachts.",
+            "en": "The Zoopedia describes the species as nocturnal, remaining in burrows by day and hunting at night."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt Insekten, kleine Amphibien und kleine Säugetiere als Beute.",
+              "en": "The Zoopedia names insects, small amphibians and small mammals as prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "insekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineAmphibien",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineSaeugetiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Mexikanische Rotknie-Vogelspinne (Brachypelma hamorii) lebt in Buschlandschaften, Wüsten und Wäldern Mexikos.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and forests of Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and forests of Mexico.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Mexikanische Rotknie-Vogelspinne (Brachypelma hamorii) ist eine Vogelspinnenart aus Mexiko. Sie besitzt einen schwarzen Körper und schwarze Beine mit orange-roter Färbung an den Gelenken. Der Körper ist mit empfindlichen Sinneshaaren bedeckt. Die Art ist nachtaktiv und jagt nachts Insekten, kleine Amphibien und kleine Säugetiere. Sie wird etwa 10 cm lang und erreicht eine Beinspannweite von etwa 15 cm. Weibchen besitzen einen etwas größeren Körper, aber kürzere Beine als Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Mexikanische Rotknie-Vogelspinne gilt als gefährdet. Ihr Lebensraum schrumpft durch Städte und Agrarflächen und wird zunehmend fragmentiert. Männchen werden auf der Suche nach Weibchen häufig überfahren. Zusätzlich werden Tiere illegal für den Haustierhandel gefangen. Der internationale Handel unterliegt laut Zoopedia CITES Anhang II. Nachzuchten, Umsiedlungen und Schutzgebiete sollen die Wildbestände unterstützen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Mexikanische Rotknie-Vogelspinnen sind Einzelgänger. Die Paarungszeit liegt zwischen Juli und Oktober. Das Männchen überträgt Sperma mit seinen Pedipalpen. Das Weibchen speichert es, bis es 200 bis 400 Eier in einem Eiersack ablegt. Diesen bewacht es 1 bis 3 Monate. Die Jungspinnen bleiben zunächst im Bau, vollziehen mit etwa zwei Wochen ihre erste Häutung und werden danach selbstständig. Männchen werden mit etwa 4 Jahren geschlechtsreif, Weibchen mit etwa 6 bis 7 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Nach einer reichhaltigen Mahlzeit kann die Mexikanische Rotknie-Vogelspinne unter Umständen einen ganzen Monat lang nicht mehr jagen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "An jedem Bein besitzt sie zwei kleine Krallen, mit denen sie glatte Oberflächen erklimmen kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sie nutzt ihre Beine, um winzige Vibrationen im Boden wahrzunehmen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Enden der Beine dienen nicht nur dem Tasten, sondern auch dem Riechen und Schmecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Gift ist laut Zoopedia für Menschen nicht besonders stark; der Biss wird dort mit einem Bienenstich verglichen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Mexikanische Rotknie-Vogelspinne",
+      "seiten": {
+        "de": "",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Im bereitgestellten Text waren keine direkten Medien-URLs oder Sprachseiten-URLs enthalten; daher wurden keine URLs erfunden."
+    }
+  }
+}
