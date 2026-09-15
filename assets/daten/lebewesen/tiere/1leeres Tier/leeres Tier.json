@@ -14,17 +14,20 @@
     }
   },
   "filter": {
-    "edition": [
+    "edition": "",
+    "editionAuswahl": [
       "standard",
       "deluxe"
     ],
-    "gehegetyp": [
+    "gehegetyp": [],
+    "gehegetypAuswahl": [
       "Landgehege",
       "Aquarium",
       "Voliere",
       "Ausstellung"
     ],
-    "kontinente": [
+    "kontinente": [],
+    "kontinenteAuswahl": [
       "africa",
       "arctic",
       "asia",
@@ -36,7 +39,8 @@
       "pacificOcean",
       "southAmerica"
     ],
-    "biome": [
+    "biome": [],
+    "biomeAuswahl": [
       "Ästuar",
       "Feuchtgebiete",
       "Gemäßigt",
@@ -50,7 +54,8 @@
       "Tundra",
       "Wüste"
     ],
-    "schutzstatus": [
+    "schutzstatus": "",
+    "schutzstatusAuswahl": [
       "leastConcern",
       "nearThreatened",
       "vulnerable",

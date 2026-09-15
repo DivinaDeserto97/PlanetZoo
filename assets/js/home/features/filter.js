@@ -7,11 +7,11 @@ const FILTER_ENUM_URL =
   "../assets/daten/lebewesen/tiere/1leeres%20Tier/leeres%20Tier.json";
 
 const FILTER_FELDER = {
-  gehegetyp: "[data-home-enclosure]",
-  kontinente: "[data-home-continent]",
-  biome: "[data-home-biome]",
-  schutzstatus: "[data-home-status]",
-  edition: "[data-home-edition]",
+  gehegetypAuswahl: "[data-home-enclosure]",
+  kontinenteAuswahl: "[data-home-continent]",
+  biomeAuswahl: "[data-home-biome]",
+  schutzstatusAuswahl: "[data-home-status]",
+  editionAuswahl: "[data-home-edition]",
 };
 
 function holeVorhandeneOptionen(select) {
