@@ -78,6 +78,7 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Melanotaenia boesemani/Melanotaenia boesemani.json",
   "assets/daten/lebewesen/tiere/Tapirus indicus/Tapirus indicus.json",
   "assets/daten/lebewesen/tiere/Brachypelma hamorii/Brachypelma hamorii.json",
+  "assets/daten/lebewesen/tiere/Pseudonaja textilis/Pseudonaja textilis.json",
 ];
 
 /* ======================================== */

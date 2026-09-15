@@ -16,12 +16,8 @@
   "filter": {
     "edition": "",
     "gehegetyp": [],
-    "kontinente": [
-      "northAmerica"
-    ],
-    "biome": [
-      "Wüste"
-    ],
+    "kontinente": ["northAmerica"],
+    "biome": ["Wüste"],
     "schutzstatus": "vulnerable"
   },
   "daten": {
@@ -403,11 +399,44 @@
     }
   },
   "karte": {
-    "url": "",
-    "dateien": [],
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/d993642a/Tortoise_GalapagosGiant_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/map/Brachypelma hamorii map.png"
+      }
+    ],
     "quelle": "planetZoo2"
   },
-  "bilder": [],
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDk5MzY0MmEvVG9ydG9pc2VfR2FsYXBhZ29zR2lhbnQuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Mexikanische Rotknie-Vogelspinne – Planet Zoo 2",
+            "en": "Mexican Red-knee Tarantula – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Mexikanische Rotknie-Vogelspinne aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Mexican Red-knee Tarantula."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Brachypelma hamorii/bilder/Brachypelma hamorii 1.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "audio": [],
   "video": [],
   "planetZoo2": {

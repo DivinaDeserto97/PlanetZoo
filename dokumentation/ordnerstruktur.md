@@ -853,6 +853,18 @@
               - `Platax pinnatus map.png` *(Medium – nicht in Share-ZIP)*
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Platax pinnatus/videos/.gitkeep>)
+          - `Pseudonaja textilis/`
+            - [Pseudonaja textilis.json](<../assets/daten/lebewesen/tiere/Pseudonaja textilis/Pseudonaja textilis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pseudonaja textilis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pseudonaja textilis/bilder/.gitkeep>)
+              - `Pseudonaja textilis 1.webp` *(Medium – nicht in Share-ZIP)*
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pseudonaja textilis/map/.gitkeep>)
+              - `Pseudonaja textilis map.png` *(Medium – nicht in Share-ZIP)*
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Pseudonaja textilis/videos/.gitkeep>)
           - `Pterois volitans/`
             - [Pterois volitans.json](<../assets/daten/lebewesen/tiere/Pterois volitans/Pterois volitans.json>)
             - `audio/`
