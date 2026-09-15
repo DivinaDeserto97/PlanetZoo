@@ -1,0 +1,482 @@
+{
+  "id": "Tragelaphus angasii",
+  "identitaet": {
+    "namen": {
+      "de": "Nyala",
+      "en": "Nyala",
+      "en-US": "Nyala",
+      "es": "Niala",
+      "fr": "Nyala",
+      "it": "Nyala",
+      "pt-BR": "Niala",
+      "ja": "ニアラ",
+      "zh-Hans": "尼亚拉羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Tragelaphus",
+          "art": "Tragelaphus angasii",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.35,
+          "max": 1.95,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für beide Geschlechter eine Körperlänge von 1,35 bis 1,95 m. Zusätzlich werden Männchen als 0,9 bis 1,1 m und Weibchen als 0,75 bis 0,9 m „groß“ beschrieben; diese Angabe wurde nicht als Schulterhöhe interpretiert.",
+            "en": "The Zoopedia gives a body length of 1.35 to 1.95 m for both sexes. It additionally describes males as 0.9 to 1.1 m and females as 0.75 to 0.9 m 'tall'; this was not interpreted as shoulder height."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 98,
+          "max": 125,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 50,
+          "max": 68,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 32000,
+          "max": 36500,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen Wildbestand von 32.000 bis 36.500 Tieren.",
+            "en": "The Zoopedia gives a wild population of 32,000 to 36,500 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "wert": 1,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "wert": 18,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Männchen sind mit 18 Monaten geschlechtsreif, können sich laut Zoopedia aber meist erst mit etwa 5 Jahren erfolgreich eine Partnerin sichern.",
+            "en": "Males are sexually mature at 18 months, but according to the Zoopedia generally do not become strong enough to secure a mate until about 5 years old."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 7,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "versteckt",
+          "min": null,
+          "max": 3,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Das einzelne Kalb wird im dichten Gestrüpp oder Gebüsch verborgen und bleibt dort bis zu drei Wochen, bevor es sich der Herde anschließt.",
+            "en": "The single calf is hidden in dense scrub or bushes and remains there for up to three weeks before joining the herd."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "relatedFemaleHerd",
+          "hinweis": {
+            "de": "Weibchen leben mit ihrem Nachwuchs in kleinen Gruppen. Weibliche Jungtiere bleiben später in der Herde ihrer Mutter.",
+            "en": "Females live in small groups with their offspring. Female young later remain in their mother's herd."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Ausgewachsene Bullen sind Einzelgänger und schließen sich nur zur Paarungszeit vorübergehend Weibchengruppen an.",
+            "en": "Adult bulls are solitary and only temporarily join groups of females during the mating season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt dichtes Unterholz der südafrikanischen Savanne als Lebensraum.",
+            "en": "The Zoopedia describes dense undergrowth in southern African savanna as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "hinweis": {
+            "de": "Nyalas suchen laut Zoopedia in der Morgen- und Abenddämmerung nach Nahrung und ruhen während der Tageshitze.",
+            "en": "According to the Zoopedia, Nyalas forage at dawn and dusk and rest during the heat of the day."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "paviane",
+              "typ": "tier",
+              "beziehung": "kommensalismus",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia sagt, dass Nyalas sich auf Warnrufe von Pavianen verlassen. Der Nutzen liegt bei der Nyala; ein Effekt auf die Paviane wird nicht genannt.",
+                "en": "The Zoopedia states that Nyalas rely on warning calls from baboons. The benefit is to the Nyala; no effect on the baboons is stated."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "impalas",
+              "typ": "tier",
+              "beziehung": "kommensalismus",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia sagt, dass Nyalas sich auf Warnrufe von Impalas verlassen. Der Nutzen liegt bei der Nyala; ein Effekt auf die Impalas wird nicht genannt.",
+                "en": "The Zoopedia states that Nyalas rely on warning calls from impalas. The benefit is to the Nyala; no effect on the impalas is stated."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Nyalas (Tragelaphus angasii), auch Tiefland-Nyalas genannt, leben im dichten Unterholz der südafrikanischen Savanne.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Nyala (Tragelaphus angasii), also known as the lowland nyala, lives in dense undergrowth in the savannas of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Nyala (Tragelaphus angasii), also known as the lowland nyala, lives in dense undergrowth in the savannas of southern Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Nyalas weisen einen starken Geschlechtsdimorphismus auf. Männchen besitzen ein dunkelgraues zotteliges Fell, gelbe Beine und gewundene Hörner mit gelben Spitzen. Weibchen sind hellbraun und hornlos. Beide Geschlechter tragen vertikale weiße Streifen auf dem Rücken.\n\nMännchen werden laut Zoopedia 0,9 bis 1,1 m groß, 1,35 bis 1,95 m lang und 98 bis 125 kg schwer. Weibchen werden 0,75 bis 0,9 m groß, ebenfalls 1,35 bis 1,95 m lang und wiegen 50 bis 68 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Nyalas gelten aufgrund ihrer stabilen Populationsentwicklung als nicht gefährdet, sind jedoch weiterhin von Lebensraumverlust und Wilderei betroffen. Historisch wurden die Bestände durch übermäßige Bejagung und Rinderpest dezimiert. Die Ausbreitung menschlicher Siedlungen und Landwirtschaft hat das Verbreitungsgebiet in Teilen Südafrikas eingeschränkt.\n\nWichtige Populationen leben in Schutzgebieten und Nationalparks sowie auf privaten Grundstücken. Regulierte Bewirtschaftung unterstützt dort Wiederansiedlung und nachhaltige Nutzung. Außerhalb dieser Gebiete bleiben Lebensraumzerstörung und illegale Jagd lokale Belastungsfaktoren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Weibliche Nyalas leben mit ihrem Nachwuchs in kleinen Gruppen und suchen gemeinsam im Unterholz nach Nahrung. Ausgewachsene Bullen sind Einzelgänger und schließen sich nur während der Paarungszeit vorübergehend Weibchengruppen an.\n\nNyalas können sich ganzjährig paaren; die Paarungsaktivität erreicht im Frühling und Herbst ihren Höhepunkt. Männchen nähern sich Weibchengruppen mit gesenktem Kopf und gesenkten Hörnern. Treffen mehrere Männchen aufeinander, präsentieren sie sich zunächst durch Umkreisen, gesträubtes Fell sowie hochgehaltenen Schwanz und Hörner; bleibt die Konkurrenz unentschieden, kann es zum Kampf kommen.\n\nNach sieben Monaten Tragzeit bringt das Weibchen ein einzelnes Kalb zur Welt und versteckt es im dichten Gestrüpp oder Gebüsch. Das Kalb bleibt dort bis zu drei Wochen und wird regelmäßig gesäugt, bevor es sich der Herde anschließt.\n\nWeibchen werden mit etwa einem Jahr geschlechtsreif, Männchen mit ungefähr 18 Monaten. Junge Männchen verlassen ihre Mutter danach und leben als Einzelgänger; Weibchen bleiben in der Herde ihrer Mutter. Männchen sind laut Zoopedia erst mit etwa fünf Jahren voll entwickelt und stark genug, um sich erfolgreich eine Partnerin zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Nyalas sind auf Wasser angewiesen und müssen laut Zoopedia täglich trinken; deshalb leben sie stets in der Nähe einer Wasserquelle.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nyalas stoßen einen hundeartigen Bellruf aus, um andere Mitglieder ihrer Herde vor Gefahren zu warnen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Name „Nyala“ stammt aus der Tsonga-Sprache Südafrikas.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nyalas sind dämmerungsaktiv: Sie suchen während Morgen- und Abenddämmerung nach Nahrung und ruhen während der Tageshitze.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nyalas besitzen ein ausgezeichnetes Gehör und nutzen zusätzlich die Warnrufe von Pavianen und Impalas.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/cfa1ec7a/Antelope_Nyala_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Tragelaphus angasii/map/Tragelaphus angasii map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvY2ZhMWVjN2EvQW50ZWxvcGVfTnlhbGEuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Nyala – Planet Zoo 2",
+            "en": "Nyala – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Nyala aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Nyala."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Tragelaphus angasii/bilder/Tragelaphus angasii 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/cfa1ec7a/Antelope_Nyala_illustration.jpg",
+          "alt": {
+            "de": "Nyala – Zoopedia-Illustration",
+            "en": "Nyala – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Nyala aus der Planet Zoo 2 Zoopedia.",
+            "en": "Nyala illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Tragelaphus angasii/bilder/Tragelaphus angasii illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Nyala",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/nyala",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID cfa1ec7a und Asset-Stamm Antelope_Nyala belegt."
+    }
+  }
+}

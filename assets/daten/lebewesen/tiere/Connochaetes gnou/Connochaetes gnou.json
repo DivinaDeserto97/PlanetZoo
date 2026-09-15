@@ -1,0 +1,481 @@
+{
+  "id": "Connochaetes gnou",
+  "identitaet": {
+    "namen": {
+      "de": "Weißschwanzgnu",
+      "en": "Black Wildebeest",
+      "en-US": "Black Wildebeest",
+      "es": "Ñu de cola blanca",
+      "fr": "Gnou à queue blanche",
+      "it": "Gnu dalla coda bianca",
+      "pt-BR": "Gnu-de-cauda-branca",
+      "ja": "オジロヌー",
+      "zh-Hans": "白尾角马"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Bovidae",
+          "gattung": "Connochaetes",
+          "art": "Connochaetes gnou",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.11,
+          "max": 1.21,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.06,
+          "max": 1.16,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 147,
+          "max": 193,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 120,
+          "max": 160,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 80,
+          "einheit": "km/h",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "11.16",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt beim Wildbestand lediglich „11.16“ an. Da die Bedeutung beziehungsweise Formatierung nicht eindeutig ist, wurde daraus kein numerischer Populationswert abgeleitet.",
+            "en": "The Zoopedia displays only '11.16' for the wild population. Because the meaning or formatting is ambiguous, no numeric population value was derived from it."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 8.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "festeNahrungAb",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "saeugezeit",
+          "min": 6,
+          "max": 8,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiMutter",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Das Kalb bleibt etwa ein Jahr in der Nähe seiner Mutter und wird unabhängig, wenn diese ungefähr ein Jahr später das nächste Kalb bekommt.",
+            "en": "The calf remains near its mother for about a year and becomes independent when she gives birth to her next calf roughly one year later."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "relatedFemaleHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Herden umfassen Gruppen verwandter Kühe mit ihren jungen Kälbern. Weibchen bleiben in ihrer Geburtsherde.",
+            "en": "Herds include groups of related females with their young calves. Females remain in their natal herd."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "bachelorGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Männliche Jungtiere schließen sich nach dem Verlassen der Mutter Junggesellenherden an.",
+            "en": "Young males join bachelor herds after leaving their mothers."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarungszeitMaennchen",
+          "wert": "dominantMaleWithFemales",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Während der Paarungszeit besetzen dominante Bullen Reviere und versammeln darin Harems aus paarungsbereiten Weibchen.",
+            "en": "During the mating season, dominant bulls hold territories and gather harems of receptive females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Graslandschaften und Weideland als zentralen Lebensraum.",
+            "en": "The Zoopedia describes grasslands and grazing areas as central habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Tiere beim Weiden und nennt Weideland als Nahrungsraum.",
+              "en": "The Zoopedia describes the animals grazing and refers to grazing land as a feeding area."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Weißschwanzgnu (Connochaetes gnou) ist eine große Huftierart aus dem Süden Afrikas. Die Zoopedia beschreibt Graslandschaften und Weideland als wichtigen Lebensraum.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Africa. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Africa. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Weißschwanzgnu (Connochaetes gnou) ist an seiner braunschwarzen Fellfärbung, den L-förmigen Hörnern und dem markanten weißen Schwanz zu erkennen. Beide Geschlechter besitzen eine dichte, buschige Mähne. Der Name Gnu leitet sich laut Zoopedia von dem charakteristischen Ruf ab, den die Tiere bei Gefahr ausstoßen.\n\nBullen sind meist etwas dunkler und größer als Weibchen. Männchen erreichen eine Schulterhöhe von 1,11 bis 1,21 m und wiegen 147 bis 193 kg. Weibchen erreichen 1,06 bis 1,16 m Schulterhöhe und wiegen 120 bis 160 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Weißschwanzgnu gilt heute als nicht gefährdet. Im 19. und 20. Jahrhundert wurde die Art durch unkontrollierte Bejagung jedoch an den Rand des Aussterbens gebracht. Die Umwandlung offener Graslandschaften in Weideflächen schränkte Wanderungswege ein und führte zu fragmentierten, isolierten Beständen. Heute bestehen laut Zoopedia weiterhin Gefahren durch Wilderei und Zusammenstöße mit Fahrzeugen.\n\nSchutzmaßnahmen umfassen besonderen gesetzlichen Schutz in mehreren Ländern des südlichen Afrikas, Wiederansiedlungen in Nationalparks, privaten Reservaten und Schutzgebieten, Wildtierkorridore und große nicht eingezäunte Gebiete zur Verbindung von Populationen sowie Zuchtprogramme in Reservaten und Zoos. Langfristig bleibt Populationsmanagement notwendig.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Weißschwanzgnus leben in großen Herden. Diese bestehen aus verwandten Kühen mit jungen Kälbern, Junggesellenherden sowie dominanten Bullen, die Reviere im Weideland besetzen.\n\nWährend der Paarungszeit von Februar bis April versammeln dominante Bullen in ihren Revieren Harems aus paarungsbereiten Weibchen. Die Bullen verteidigen diese gegen Rivalen und verbringen während dieser Zeit nur wenig Zeit mit Weiden.\n\nDie Trächtigkeit dauert etwa 8,5 Monate. Das Weibchen bringt ein einzelnes Kalb direkt in der Herde zur Welt. Das Kalb beginnt mit etwa einem Monat feste Nahrung zu fressen und wird 6 bis 8 Monate lang gesäugt. Es bleibt ungefähr ein Jahr bei seiner Mutter und wird unabhängig, wenn diese etwa ein Jahr später ihr nächstes Kalb bekommt.\n\nWeibchen bleiben in ihrer Geburtsherde, während Männchen sich Junggesellenherden anschließen. Die Geschlechtsreife wird mit etwa 3 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Hörner der Weißschwanzgnus sind laut Zoopedia deutlich größer und schwerer als die der Streifengnus.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sowohl Männchen als auch Weibchen besitzen Hörner; bei Bullen sind sie länger und dicker.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Während der Paarungszeit konzentrieren sich dominante Bullen stark auf Paarung und Verteidigung ihrer Kühe und verbringen dabei kaum Zeit mit Fressen und Schlafen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weißschwanzgnus können laut Zoopedia bei der Flucht vor Räubern wie Löwen oder Hyänen Geschwindigkeiten von bis zu 80 km/h erreichen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weibliche Gruppen besitzen einen starken Zusammenhalt und reagieren feindlich auf fremde Kühe, die sich der Herde anschließen wollen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/45bc9eb0/Wildebeest_Black_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Connochaetes gnou/map/Connochaetes gnou map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDViYzllYjAvV2lsZGViZWVzdF9CbGFjay5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Weißschwanzgnu – Planet Zoo 2",
+            "en": "Black Wildebeest – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Weißschwanzgnus aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Black Wildebeest."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Connochaetes gnou/bilder/Connochaetes gnou 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/45bc9eb0/Wildebeest_Black_illustration.jpg",
+          "alt": {
+            "de": "Weißschwanzgnu – Zoopedia-Illustration",
+            "en": "Black Wildebeest – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Weißschwanzgnus aus der Planet Zoo 2 Zoopedia.",
+            "en": "Black Wildebeest illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Connochaetes gnou/bilder/Connochaetes gnou illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Weißschwanzgnu",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/wei%C3%9Fschwanzgnu",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 45bc9eb0 und Asset-Stamm Wildebeest_Black belegt. Der Wildbestandswert „11.16“ wurde wegen unklarer Bedeutung nur als Rohwert übernommen."
+    }
+  }
+}

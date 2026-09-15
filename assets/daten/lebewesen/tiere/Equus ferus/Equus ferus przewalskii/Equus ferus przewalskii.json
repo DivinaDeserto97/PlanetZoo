@@ -1,0 +1,446 @@
+{
+  "id": "Equus ferus przewalskii",
+  "identitaet": {
+    "namen": {
+      "de": "Przewalski-Pferd",
+      "en": "Przewalski's Horse",
+      "en-US": "Przewalski's Horse",
+      "es": "Caballo de Przewalski",
+      "fr": "Cheval de Przewalski",
+      "it": "Cavallo di Przewalski",
+      "pt-BR": "Cavalo-de-Przewalski",
+      "ja": "モウコノウマ",
+      "zh-Hans": "普氏野马"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Perissodactyla",
+          "familie": "Equidae",
+          "gattung": "Equus",
+          "art": "Equus ferus przewalskii",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 2.1,
+          "max": 2.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.2,
+          "max": 1.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 250,
+          "max": 360,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt dieses Gewicht für geschlechtsreife Tiere. Männchen sind meist etwas größer als Weibchen.",
+            "en": "The Zoopedia gives this weight for sexually mature animals. Males are usually somewhat larger than females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 1900,
+          "min": null,
+          "max": null,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt 1.900 wiedereingeführte, halbwild lebende Tiere in Nationalparks und Reservaten.",
+            "en": "The Zoopedia lists 1,900 reintroduced, semi-wild animals living in national parks and reserves."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 2 Jahre bis zur Geschlechtsreife. Weibchen paaren sich jedoch selten vor dem 3. Lebensjahr und Männchen bilden nicht vor etwa 5 Jahren einen eigenen Harem.",
+            "en": "The Zoopedia gives 2 years for sexual maturity. Females rarely mate before age 3, while males do not establish their own harem before about age 5."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 11,
+          "max": 12,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "festeNahrungAb",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 8,
+          "max": 13,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Fohlen werden mit 8 bis 13 Monaten vollständig entwöhnt, meist wenn die Mutter ein neues Fohlen zur Welt bringt.",
+            "en": "Foals are fully weaned at 8 to 13 months, usually when the mother gives birth to a new foal."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "dominantMaleWithFemales",
+          "hinweis": {
+            "de": "Przewalski-Pferde leben in zusammengeschlossenen Herden aus mehreren Harems. Ein Harem besteht aus einem reifen Hengst, mehreren Stuten und deren Fohlen.",
+            "en": "Przewalski's Horses live in joined herds made up of several harems. A harem consists of one mature stallion, several mares and their foals."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "bachelorGroup",
+          "hinweis": {
+            "de": "Junghengste ohne eigenen Harem sowie alte Hengste, die ihren Harem verloren haben, können in Junggesellenherden leben.",
+            "en": "Young stallions without a harem of their own, and old stallions that have lost their harem, may live in bachelor groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt die mongolische Steppe und die Graslandschaften Zentralasiens als Lebensraum.",
+            "en": "The Zoopedia names the Mongolian steppe and the grasslands of Central Asia as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia weist darauf hin, dass der genaue taxonomische Status des Przewalski-Pferdes weiterhin diskutiert wird.",
+      "en": "The Zoopedia notes that the exact taxonomic status of Przewalski's Horse is still debated."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Przewalski-Pferd (Equus ferus przewalskii), auch Tachi, Mongolisches Wildpferd oder Asiatisches Wildpferd genannt, lebt in der Steppe der Mongolei. Nach seiner Ausrottung in freier Wildbahn wurde es wieder in asiatischen Steppengebieten ausgewildert; die Zoopedia nennt heutige Bestände in Schutzgebieten der Mongolei, Kasachstans und auch der Ukraine.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Przewalski's Horse (Equus ferus przewalskii), also known as the takhi, Mongolian wild horse and Asian wild horse, lives in the Mongolian steppe and has been reintroduced to Asian steppe habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Przewalski's Horse (Equus ferus przewalskii), also known as the takhi, Mongolian wild horse and Asian wild horse, lives in the Mongolian steppe and has been reintroduced to Asian steppe habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Przewalski-Pferd ist kleiner und stämmiger gebaut als die meisten anderen Pferdearten. Sein Fell ist orange-hellbraun mit hellerer Unterseite, aufrechter schwarzer Mähne, dickem schwarzem Schwanz und schwarzen Beinen.\n\nDie Tiere erreichen 2,1 bis 2,6 m Körperlänge und 1,2 bis 1,5 m Schulterhöhe. Geschlechtsreife Tiere wiegen 250 bis 360 kg. Männchen sind meist etwas größer als Weibchen, ohne dass ein auffälliger Geschlechtsdimorphismus besteht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Przewalski-Pferd war in den 1960er Jahren infolge von Lebensraumverlust und übermäßiger Jagd in freier Wildbahn ausgestorben beziehungsweise nur noch in Gefangenschaft erhalten. Heute gilt der wiedereingeführte Bestand als stark gefährdet. Die Umwandlung zentralasiatischer Grasländer in Ackerland, Jagd zur Fleischgewinnung und das Einfangen für Zoos hatten den Bestand stark reduziert.\n\nDie verbliebenen Tiere in Gefangenschaft bildeten die Grundlage eines Zucht- und Wiederansiedlungsprogramms. Ab 1992 wurden in Gefangenschaft gezüchtete Pferde wieder in ihrem natürlichen Lebensraum freigelassen. Die Zoopedia beschreibt heute gedeihende Bestände in Schutzgebieten der Mongolei, Kasachstans und der Ukraine und bezeichnet die Wiederansiedlung als einen besonders erfolgreichen Fall bei großen Säugetieren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Przewalski-Pferde leben in zusammengeschlossenen Herden aus mehreren Harems. Ein Harem besteht aus einem reifen Hengst, mehreren Stuten und ihren Fohlen. Junge Hengste ohne eigenen Harem und ältere Hengste, die ihren Harem verloren haben, können Junggesellenherden bilden.\n\nJunge Stuten verlassen ihre Geburtsgruppe und schließen sich dem Harem eines fremden Hengstes an. Hengste vergrößern ihren Harem im Laufe ihres Lebens, solange sie ihn verteidigen können. Von April bis Mai paart sich der dominante Hengst mit den Stuten seines Harems.\n\nDie Tragzeit beträgt 11 bis 12 Monate, anschließend wird jeweils ein Fohlen geboren. Nach einem Monat beginnt das Fohlen mit fester Nahrung. Mit 8 bis 13 Monaten ist es vollständig entwöhnt. Die Zoopedia nennt eine Fohlensterblichkeit von 85 %, die meist auf fremde Hengste zurückgeführt wird. Stuten können bereits 7 Tage nach einer Geburt wieder paarungs- und befruchtungsfähig sein.\n\nDie Geschlechtsreife wird mit etwa 2 Jahren erreicht. Weibchen paaren sich jedoch nur selten vor dem 3. Lebensjahr, während Männchen meist nicht vor ungefähr 5 Jahren einen eigenen Harem bilden. Männchen wandern im Alter von 1 bis 2 Jahren ab und schließen sich Junggesellenherden an.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der genaue taxonomische Status des Przewalski-Pferdes wird laut Zoopedia weiterhin diskutiert; es wird je nach Auffassung als Unterart oder als eigenständige Wildpferdart eingeordnet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Przewalski-Pferd besitzt laut Zoopedia 33 Chromosomenpaare, moderne Hauspferde dagegen 32.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Jahr 2020 wurde das erste geklonte Przewalski-Pferd im Rahmen eines assistierten Zuchtprogramms geboren; dafür wurde eine eingefrorene Zelle eines 1998 gestorbenen Hengstes verwendet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Im Sperrgebiet von Tschernobyl leben laut Zoopedia mehr als 100 Przewalski-Pferde.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Przewalski-Pferd wird als möglicherweise ähnlich zu den wilden Vorfahren des Hauspferdes beschrieben, mit dunklem Fell und einfachen Markierungen an Rücken und Beinen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/29505c45/Horse_Przewalskis_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Equus ferus/Equus ferus przewalskii/map/Equus ferus przewalskii map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjk1MDVjNDUvSG9yc2VfUHJ6ZXdhbHNraXMuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Przewalski-Pferd – Planet Zoo 2",
+            "en": "Przewalski's Horse – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Przewalski-Pferdes aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of Przewalski's Horse."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Equus ferus/Equus ferus przewalskii/bilder/Equus ferus przewalskii 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/29505c45/Horse_Przewalskis_illustration.jpg",
+          "alt": {
+            "de": "Przewalski-Pferd – Zoopedia-Illustration",
+            "en": "Przewalski's Horse – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Przewalski-Pferdes aus der Planet Zoo 2 Zoopedia.",
+            "en": "Przewalski's Horse illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Equus ferus/Equus ferus przewalskii/bilder/Equus ferus przewalskii illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Przewalski-Pferd",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/przewalski-pferd",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 29505c45 und Asset-Stamm Horse_Przewalskis belegt."
+    }
+  }
+}

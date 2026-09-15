@@ -1,0 +1,480 @@
+{
+  "id": "Manis javanica",
+  "identitaet": {
+    "namen": {
+      "de": "Sunda-Schuppentier",
+      "en": "Sunda Pangolin",
+      "en-US": "Sunda Pangolin",
+      "es": "Pangolín malayo",
+      "fr": "Pangolin de Malaisie",
+      "it": "Pangolino della Sonda",
+      "pt-BR": "Pangolim-de-Sunda",
+      "ja": "マレーセンザンコウ",
+      "zh-Hans": "马来穿山甲"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Pholidota",
+          "familie": "Manidae",
+          "gattung": "Manis",
+          "art": "Manis javanica",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.4,
+          "max": 0.65,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Zusätzlich nennt die Zoopedia eine Schwanzlänge von 35 bis 55 cm.",
+            "en": "The Zoopedia additionally gives a tail length of 35 to 55 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 4,
+          "max": 10,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Männchen sind laut Zoopedia im Durchschnitt etwas schwerer als Weibchen.",
+            "en": "According to the Zoopedia, males are on average slightly heavier than females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich CITES Anhang I; das strukturierte Schutzstatus-System bleibt leer, da CITES den internationalen Handel regelt.",
+            "en": "The Zoopedia also mentions CITES Appendix I; the structured conservation-status system remains blank because CITES regulates international trade."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 180,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt ein einzelnes Jungtier als Regelfall; Zwillinge sind selten möglich.",
+            "en": "The Zoopedia describes a single offspring as the usual case; twins are rarely possible."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "versteckt",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das Jungtier bleibt zunächst mehrere Wochen im Bau. Eine genaue Dauer nennt die Zoopedia nicht.",
+            "en": "The young initially remains in the burrow for several weeks. The Zoopedia does not give an exact duration."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "festeNahrungAb",
+          "min": 3,
+          "max": 3,
+          "durchschnitt": 3,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 4,
+          "max": 4,
+          "durchschnitt": 4,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Sunda-Schuppentiere führen ein zurückgezogenes Leben und sind nur während der Paarungszeit oder bei der Aufzucht der Jungtiere in Gesellschaft anderer.",
+            "en": "Sunda Pangolins live solitary lives and are only in the company of others during mating or while raising young."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "forest",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Tieflandwälder und Sekundärwälder als hauptsächliche Lebensräume; teilweise werden auch Plantagen genutzt.",
+            "en": "The Zoopedia names tropical lowland forests and secondary forests as the main habitats; plantations are also used in some cases."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "myrmecophagous",
+            "hinweis": {
+              "de": "Die Zoopedia nennt Ameisen und Termiten ausdrücklich als Beute.",
+              "en": "The Zoopedia explicitly names ants and termites as prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "ameisen",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "termiten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Sunda-Schuppentier (Manis javanica), auch Malaiisches oder Javanisches Schuppentier genannt, ist ein nachtaktives Säugetier Südostasiens. Es lebt vor allem in tropischen Tieflandwäldern und Sekundärwäldern und teilweise auch in Plantagen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a nocturnal mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a nocturnal mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Sunda-Schuppentier (Manis javanica) besitzt schützende Hornschuppen aus Keratin, die mit Ausnahme der Unterseite fast den gesamten Körper bedecken, sowie einen langen greiffähigen Schwanz. Die Färbung reicht von Braun über Gelbbraun bis zu olivfarbenen Tönen.\n\nErwachsene Tiere werden 40 bis 65 cm lang; hinzu kommen 35 bis 55 cm Schwanzlänge. Das Gewicht liegt zwischen 4 und 10 kg. Männchen sind im Durchschnitt etwas schwerer als Weibchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Sunda-Schuppentier gilt als vom Aussterben bedroht. Die Zoopedia beschreibt es als das am meisten gehandelte Säugetier der Welt. Es wird wegen seines Fleisches und seiner Schuppen gewildert. Zusätzlich verliert die Art durch Abholzung für Holzgewinnung, Plantagen, Städte und Landwirtschaft Lebensraum. Die langsame Fortpflanzungsrate erschwert die natürliche Erholung der Population.\n\nDie Art steht laut Zoopedia in CITES Anhang I, wodurch internationaler Handel verboten ist. Schutzmaßnahmen umfassen verstärkte Anti-Wilderei-Patrouillen, Zusammenarbeit mit Regierungen und lokalen Bevölkerungen, Rettungs- und Rehabilitationszentren, Wiederansiedlungen in geschützten Gebieten, Forschung zur Haltung sowie das Verfolgen freigelassener Tiere per Funksender. Aufklärungskampagnen sollen außerdem die Nachfrage nach Produkten aus Schuppentieren reduzieren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Sunda-Schuppentiere leben überwiegend allein und sind nur während der Paarungszeit oder bei der Aufzucht der Jungtiere in Gesellschaft anderer. Das Fortpflanzungsverhalten in freier Wildbahn ist laut Zoopedia nur wenig erforscht. Bei Tieren in Gefangenschaft wurde beobachtet, dass Männchen paarungsbereite Weibchen über den Geruch finden und ihnen folgen.\n\nDie Art kann sich das ganze Jahr über fortpflanzen; besonders viele Jungtiere werden in der Regenzeit gezeugt. Nach der Paarung trennen sich Männchen und Weibchen wieder.\n\nNach etwa 180 Tagen Tragzeit bringt das Weibchen gewöhnlich ein Jungtier in einem Bau oder einer mit Pflanzen ausgepolsterten Baumhöhle zur Welt; Zwillinge sind selten möglich. Das Jungtier bleibt zunächst mehrere Wochen im Bau und wird später von der Mutter auf Schwanz oder Rücken getragen. Mit etwa 3 Monaten beginnt es feste Nahrung zu fressen und mit 4 Monaten ist es entwöhnt. Mit ungefähr 5 Monaten wird es selbstständig. Die Geschlechtsreife wird mit etwa 2 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Körper eines Sunda-Schuppentiers ist durch mehr als 1.000 Hornschuppen geschützt, die laut Zoopedia etwa 20 % seines Körpergewichts ausmachen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sunda-Schuppentiere sind geschickte Kletterer und nutzen ihren greiffähigen Schwanz zum Festhalten an Ästen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zunge kann laut Zoopedia bis zu 40 cm lang werden und dient zum Erbeuten von Ameisen und Termiten; ein Tier frisst bis zu 70 Millionen Insekten pro Jahr.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schuppentiere besitzen keine Zähne und verschlucken kleine Steine, die im Magen bei der Zerkleinerung der Nahrung helfen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bei Gefahr rollt sich das Sunda-Schuppentier zu einem Ball zusammen und schützt sich mit seinen Hornschuppen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/03359a10/Pangolin_Sunda_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Manis javanica/map/Manis javanica map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDMzNTlhMTAvUGFuZ29saW5fU3VuZGEuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mzg0MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Sunda-Schuppentier – Planet Zoo 2",
+            "en": "Sunda Pangolin – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sunda-Schuppentiers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sunda Pangolin."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Manis javanica/bilder/Manis javanica 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/03359a10/Pangolin_Sunda_illustration.jpg",
+          "alt": {
+            "de": "Sunda-Schuppentier – Zoopedia-Illustration",
+            "en": "Sunda Pangolin – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Sunda-Schuppentiers aus der Planet Zoo 2 Zoopedia.",
+            "en": "Sunda Pangolin illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Manis javanica/bilder/Manis javanica illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sunda-Schuppentier",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/sunda-schuppentier",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Kontext verwendet, der Asset-ID 03359a10 und Asset-Stamm Pangolin_Sunda belegt."
+    }
+  }
+}

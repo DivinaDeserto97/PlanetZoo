@@ -1,0 +1,443 @@
+{
+  "id": "Phoebis sennae",
+  "identitaet": {
+    "namen": {
+      "de": "Wolkenloser Schwefel",
+      "en": "Cloudless Sulphur",
+      "en-US": "Cloudless Sulphur",
+      "es": "Azufre sin nubes",
+      "fr": "Soufré sans nuages",
+      "it": "Zolfo senza nuvole",
+      "pt-BR": "Enxofre-sem-nuvens",
+      "ja": "クラウドレスサルファー",
+      "zh-Hans": "无云硫蝶"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "northAmerica",
+      "southAmerica"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Pieridae",
+          "gattung": "Phoebis",
+          "art": "Phoebis sennae",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.055,
+          "max": 0.078,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "max": 9,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia sagt, dass zuvor überwinternde Tiere bis zu 9 Monate leben können; nach der Paarung sterben sie.",
+            "en": "The Zoopedia states that individuals that overwinter beforehand can live for up to 9 months; they die after mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt natürliche Bestandsschwankungen.",
+            "en": "The Zoopedia lists the wild population as unknown and describes natural population fluctuations."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProBlatt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Das Weibchen legt die Eier einzeln, jeweils ein Ei auf ein einzelnes Blatt.",
+            "en": "The female lays the eggs singly, one egg on each individual leaf."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 6,
+          "max": 6,
+          "durchschnitt": 6,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenphase",
+          "min": 14,
+          "max": 30,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Raupen ernähren sich 14 bis 30 Tage lang von Sennapflanzen, bevor sie einen Kokon spinnen.",
+            "en": "The caterpillars feed on senna plants for 14 to 30 days before spinning a cocoon."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenphase",
+          "min": 10,
+          "max": 14,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Der Wolkenlose Schwefel lebt als Einzelgänger und verbringt nur während der Paarung Zeit mit Artgenossen.",
+            "en": "The Cloudless Sulphur is solitary and spends time with conspecifics only during mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt unter anderem Graslandschaften in gemäßigten Regionen als Lebensraum; zusätzlich werden Parks, Gärten, Wasserläufe und Meeresküsten genannt.",
+            "en": "The Zoopedia names grasslands in temperate regions among its habitats; parks, gardens, waterways and sea coasts are also listed."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "sennapflanzen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Raupen ernähren sich laut Zoopedia von Sennapflanzen.",
+                "en": "According to the Zoopedia, the caterpillars feed on senna plants."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Wolkenlose Schwefel (Phoebis sennae) ist in gemäßigten Gebieten Nord-, Mittel- und Südamerikas verbreitet. Die Zoopedia nennt Graslandschaften, Parks, Gärten, Wasserläufe und Meeresküsten als Lebensräume.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists grasslands, parks, gardens, waterways and sea coasts as habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists grasslands, parks, gardens, waterways and sea coasts as habitats.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Wolkenlose Schwefel (Phoebis sennae) ist ein Schmetterling mit gelben Flügeln, die braune und/oder schwarze Flecken und Ränder aufweisen können. Raupen sind hellgelb oder hellgrün mit einem gelben Streifen und blauen Punkten an beiden Seiten. Die Kokons sind gelb oder grün und besitzen rosa oder grüne Streifen.\n\nWeibchen sind häufig weniger farbenfroh als Männchen und besitzen gelbe Flecken an den dunklen Flügelrändern. Die Flügelspannweite beträgt etwa 5,5 bis 7,8 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Wolkenlose Schwefel ist weit verbreitet und gilt als nicht gefährdet. Große Bedrohungen werden nicht genannt; regionale Rückgänge werden jedoch mit landwirtschaftlicher Nutzung, Lebensraumzerstörung und Klimawandel in Verbindung gebracht. Die Larven werden in Teilen des Verbreitungsgebiets als Nahrungsquelle genutzt. Außerdem wird die Art regelmäßig für Schmetterlingshäuser in Gefangenschaft gezüchtet.\n\nIn Schutzgebieten innerhalb seines natürlichen Verbreitungsgebiets kommt der Wolkenlose Schwefel regelmäßig vor und benötigt laut Zoopedia keine speziellen Schutzmaßnahmen. Die Population kann aufgrund natürlicher Bedingungen schwanken. Für die langfristige Beurteilung werden weitere Forschung und Überwachung von Lebensräumen und regionaler Bestandsstabilität genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Der Wolkenlose Schwefel lebt als Einzelgänger und hat keine sozialen Bedürfnisse. Nur während der Paarung verbringen die Tiere Zeit miteinander.\n\nDie Paarungszeit unterscheidet sich regional: In wärmeren Gebieten kann sie ganzjährig stattfinden, in kälteren Regionen ist sie auf Hochsommer und Herbst beschränkt. Männchen suchen über Blumenbeeten nach Weibchen und berühren bei der Balz deren Flügel mit Beinen und Flügeln. Akzeptiert das Weibchen die Balz, verbinden die Tiere ihre Hinterleiber zur Paarung.\n\nKurz nach der Paarung legt das Weibchen die Eier einzeln ab, jeweils ein Ei auf ein Blatt. Nach 6 Tagen schlüpfen die Raupen. Diese ernähren sich 14 bis 30 Tage von Sennapflanzen und spinnen anschließend einen Kokon. Die Puppenphase dauert weitere 10 bis 14 Tage.\n\nNach dem Schlupf als erwachsener Schmetterling suchen die Tiere je nach Jahreszeit einen Partner oder einen Ort zum Überwintern. Da sie nach der Paarung sterben, können zuvor überwinternde Tiere laut Zoopedia bis zu 9 Monate leben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Wolkenlose Schwefel ist ein Wanderfalter; Populationen aus den USA ziehen häufig nach Mexiko und in die Karibik zum Überwintern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Während der Migration kann ein Wolkenloser Schwefel laut Zoopedia bis zu 20 km pro Tag zurücklegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Art nimmt häufig Schlamm auf; die Zoopedia nennt als mögliche Erklärung die Nutzung als Salzquelle.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Kokon ähnelt einem Blatt und die darin befindliche Puppe windet sich bei Berührung, um Raubtiere abzuschrecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Eier sind beim Ablegen weiß und verfärben sich kurz vor dem Schlüpfen gelblich-orange.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/3178cf94/Butterfly_CloudlessSulphur_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Phoebis sennae/map/Phoebis sennae map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMzE3OGNmOTQvQnV0dGVyZmx5X0Nsb3VkbGVzc1N1bHBodXIuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Wolkenloser Schwefel – Planet Zoo 2",
+            "en": "Cloudless Sulphur – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Wolkenlosen Schwefels aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Cloudless Sulphur."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Phoebis sennae/bilder/Phoebis sennae 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/3178cf94/Butterfly_CloudlessSulphur_illustration.jpg",
+          "alt": {
+            "de": "Wolkenloser Schwefel – Zoopedia-Illustration",
+            "en": "Cloudless Sulphur – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Wolkenlosen Schwefels aus der Planet Zoo 2 Zoopedia.",
+            "en": "Cloudless Sulphur illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Phoebis sennae/bilder/Phoebis sennae illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Wolkenloser Schwefel",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/wolkenloser-schwefel",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 3178cf94 und Asset-Stamm Butterfly_CloudlessSulphur belegt."
+    }
+  }
+}

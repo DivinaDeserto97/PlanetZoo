@@ -1,0 +1,482 @@
+{
+  "id": "Lepus timidus",
+  "identitaet": {
+    "namen": {
+      "de": "Schneehase",
+      "en": "Mountain Hare",
+      "en-US": "Mountain Hare",
+      "es": "Liebre de montaña",
+      "fr": "Lièvre variable",
+      "it": "Lepre variabile",
+      "pt-BR": "Lebre-da-montanha",
+      "ja": "ユキウサギ",
+      "zh-Hans": "雪兔"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia"
+    ],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Hasenartige",
+          "familie": "Leporidae",
+          "gattung": "Lepus",
+          "art": "Lepus timidus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.45,
+          "max": 0.65,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Zusätzlich nennt die Zoopedia eine Schwanzlänge von 5 bis 10 cm.",
+            "en": "The Zoopedia additionally gives a tail length of 5 to 10 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "weiblich",
+          "min": 3.0,
+          "max": 4.2,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlich",
+          "min": 2.5,
+          "max": 3.8,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 64,
+          "einheit": "km/h",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "Reichlich, Unbekannt",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt den Wildbestand als „Reichlich, Unbekannt“ an. Die Angabe wurde nicht numerisch interpretiert.",
+            "en": "The Zoopedia displays the wild population as 'Abundant, Unknown'. The value was not interpreted numerically."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 6,
+          "max": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 47,
+          "max": 54,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": null,
+          "max": 4,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein Wurf besteht laut Zoopedia in der Regel aus bis zu 4 Jungtieren.",
+            "en": "According to the Zoopedia, a litter usually contains up to 4 young."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 3,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "wuerfeProJahr",
+          "min": null,
+          "max": 4,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Unter günstigen Bedingungen können Weibchen bis zu 4 Würfe pro Jahr bekommen.",
+            "en": "Under favorable conditions, females can have up to 4 litters per year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Schneehasen sind laut Zoopedia meist allein unterwegs.",
+            "en": "According to the Zoopedia, Mountain Hares are usually solitary."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarungszeit",
+          "wert": "temporaryGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Zur Paarungszeit suchen Schneehasen Kontakt zueinander; Männchen verfolgen Weibchen teilweise in vorübergehenden Gruppen.",
+            "en": "During the mating season, Mountain Hares seek contact with one another; males may temporarily form groups while pursuing females."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "futtersuche",
+          "wert": "temporaryFeedingGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Bei knappem Futter können sich Schneehasen an Nahrungsquellen versammeln.",
+            "en": "When food is scarce, Mountain Hares may gather at food sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "mountains",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Gebirgsregionen als Lebensraum.",
+            "en": "The Zoopedia names mountain regions as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "shrubland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Bereiche mit dichter Bodenvegetation wie Heidekraut und Sträucher.",
+            "en": "The Zoopedia describes areas with dense ground vegetation such as heather and shrubs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Schneehasen ausdrücklich als nachtaktiv; tagsüber verstecken sie sich in flachen Mulden.",
+            "en": "The Zoopedia explicitly describes Mountain Hares as nocturnal; during the day they hide in shallow depressions."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia erwähnt in Mitteleuropa Hybridisierung und Konkurrenz mit Europäischen Feldhasen (Lepus europaeus).",
+      "en": "The Zoopedia mentions hybridization and competition with European Hares (Lepus europaeus) in Central Europe."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Schneehase (Lepus timidus) ist in Nordeuropa und Zentralasien heimisch. Sein Verbreitungsgebiet reicht von Schottland und Skandinavien über Russland bis in Teile Nordchinas, der Mongolei und Hokkaido. Er lebt in Gebirgsregionen und bevorzugt kühle Klimazonen sowie Bereiche mit dichter Bodenvegetation wie Heidekraut, Sträucher und felsige Flächen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Mountain Hare (Lepus timidus) is native to northern Europe and central Asia, ranging from Scotland and Scandinavia through Russia to parts of northern China, Mongolia and Hokkaido. It inhabits mountain regions and prefers cool climates and areas with dense ground vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Mountain Hare (Lepus timidus) is native to northern Europe and central Asia, ranging from Scotland and Scandinavia through Russia to parts of northern China, Mongolia and Hokkaido. It inhabits mountain regions and prefers cool climates and areas with dense ground vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Schneehase (Lepus timidus) ist ein mittelgroßes Säugetier aus der Ordnung der Hasenartigen. Er ist an verschneite Lebensräume angepasst und wechselt seine Fellfarbe saisonal: Im Winter ist das Fell weiß, im Sommer braun oder grau.\n\nErwachsene Tiere erreichen 45 bis 65 cm Körperlänge; der Schwanz ist 5 bis 10 cm lang. Weibchen sind im Allgemeinen größer als Männchen und wiegen 3 bis 4,2 kg, Männchen 2,5 bis 3,8 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Schneehase gilt als nicht gefährdet. Die Zoopedia nennt Lebensraumverlust, Klimawandel, Konkurrenz durch eingeführte Arten und nicht nachhaltige Bestandsreduzierungen als wichtige Bedrohungen. Der Klimawandel kann zu einer Diskrepanz zwischen saisonaler Fellfarbe und tatsächlicher Schneedecke führen und dadurch die Sichtbarkeit für Raubtiere erhöhen. In Mitteleuropa bedrohen außerdem Hybridisierung und Konkurrenz mit Europäischen Feldhasen isolierte Bestände.\n\nIn Schottland stehen Schneehasen seit 2020 vollständig unter Naturschutz. Schutzmaßnahmen umfassen den Erhalt von Hochlandheiden und Mooren, Forschung, Überwachung, Wiederherstellung von Lebensräumen sowie Bemühungen gegen Klimawandelfolgen und Hybridisierung.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Schneehasen sind meist allein unterwegs, suchen aber zur Paarungszeit Kontakt zueinander und können sich bei knappem Futter an Nahrungsquellen versammeln.\n\nDie Paarungszeit reicht je nach regionalem Klima und Breitengrad von Januar bis September. Weibchen sind während der Paarung dominant und können Annäherungsversuche einleiten oder ablehnen. Das bekannte Boxen im Frühjahr dient unter anderem dazu, aufdringliche Männchen abzuwehren oder deren Ausdauer zu prüfen.\n\nDie Tragzeit beträgt etwa 47 bis 54 Tage. Unter günstigen Bedingungen sind bis zu 4 Würfe pro Jahr möglich; ein Wurf besteht in der Regel aus bis zu 4 Jungtieren. Die Mutter setzt jedes Jungtier in eine flache Mulde und besucht es nur kurz in der Dämmerung zum Säugen.\n\nDie Jungtiere werden nach 3 bis 4 Wochen entwöhnt und erreichen mit 6 bis 8 Monaten die Geschlechtsreife.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Schneehasen besitzen große, an Schnee angepasste Füße, mit denen sie auf der Schneedecke laufen können, ohne stark einzusinken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneehasen können laut Zoopedia Geschwindigkeiten von bis zu 64 km/h erreichen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Vor dem Ruhen bewegen sie sich eine Zeit lang in unregelmäßigen Zickzacklinien, um ihre Spur für Raubtiere schwerer verfolgbar zu machen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneehasen-Jungtiere werden vollständig behaart und mit offenen Augen geboren.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Schneehasen sind nachtaktiv und verstecken sich tagsüber in flachen Mulden im Boden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b4b07a3b/Hare_Mountain_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Lepus timidus/map/Lepus timidus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYjRiMDdhM2IvSGFyZV9Nb3VudGFpbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Schneehase – Planet Zoo 2",
+            "en": "Mountain Hare – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Schneehasen aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Mountain Hare."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Lepus timidus/bilder/Lepus timidus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b4b07a3b/Hare_Mountain_illustration.jpg",
+          "alt": {
+            "de": "Schneehase – Zoopedia-Illustration",
+            "en": "Mountain Hare – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Schneehasen aus der Planet Zoo 2 Zoopedia.",
+            "en": "Mountain Hare illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Lepus timidus/bilder/Lepus timidus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Schneehase",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/schneehase",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b4b07a3b und Asset-Stamm Hare_Mountain belegt."
+    }
+  }
+}

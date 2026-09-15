@@ -1,0 +1,484 @@
+{
+  "id": "Paracanthurus hepatus",
+  "identitaet": {
+    "namen": {
+      "de": "Paletten-Doktorfisch",
+      "en": "Palette Surgeonfish",
+      "en-US": "Palette Surgeonfish",
+      "es": "Pez cirujano azul",
+      "fr": "Chirurgien bleu",
+      "it": "Pesce chirurgo blu",
+      "pt-BR": "Cirurgião-patela",
+      "ja": "ナンヨウハギ",
+      "zh-Hans": "蓝倒吊"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Riff",
+      "Tropisch"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Acanthuridae",
+          "gattung": "Paracanthurus",
+          "art": "Paracanthurus hepatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.25,
+          "max": 0.31,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": null,
+          "max": 0.6,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ein Gewicht von bis zu 0,6 kg.",
+            "en": "The Zoopedia gives a weight of up to 0.6 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "wildbahn",
+          "min": null,
+          "max": 30,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 9,
+          "max": 12,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProLaichvorgang",
+          "min": null,
+          "max": 40000,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein einzelnes Weibchen kann laut Zoopedia bis zu 40.000 treibende Eier auf einmal freisetzen.",
+            "en": "According to the Zoopedia, a single female can release up to 40,000 drifting eggs at once."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 24,
+          "max": 28,
+          "durchschnitt": null,
+          "einheit": "stunde",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "pelagischeLarvenphase",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Larven sind planktonisch und treiben mit den Meeresströmungen, bevor sie sich später an Korallenriffen ansiedeln.",
+            "en": "The larvae are planktonic and drift with ocean currents before later settling on coral reefs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryPairOrGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Je nach Riff und Futterangebot können Paletten-Doktorfische allein, zu zweit, in kleinen Gruppen oder in größeren lockeren Verbänden leben.",
+            "en": "Depending on reef and food availability, Palette Surgeonfish may live alone, in pairs, small groups or larger loose aggregations."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fortpflanzung",
+          "wert": "pairOrGroupSpawning",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Beim Laichen steigen Paare oder kleine Gruppen gemeinsam im Wasser auf und geben gleichzeitig Eier und Sperma frei.",
+            "en": "During spawning, pairs or small groups rise together in the water and release eggs and sperm simultaneously."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Korallenriffe als Lebensraum.",
+            "en": "The Zoopedia names coral reefs as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "tropicalCoastalWaters",
+          "hinweis": {
+            "de": "Die Art lebt in warmen tropischen Gewässern des Indo-Pazifiks in etwa 2 bis 40 m Tiefe.",
+            "en": "The species lives in warm tropical Indo-Pacific waters at depths of about 2 to 40 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Paletten-Doktorfische als allesfressende Abweider, die Zooplankton und Algen fressen.",
+              "en": "The Zoopedia describes Palette Surgeonfish as omnivorous grazers feeding on zooplankton and algae."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "algen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "zooplankton",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia bezeichnet den Paletten-Doktorfisch als einzige Art der Gattung Paracanthurus.",
+      "en": "The Zoopedia states that the Palette Surgeonfish is the only species in the genus Paracanthurus."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Paletten-Doktorfisch (Paracanthurus hepatus), auch Blauer Doktorfisch oder Königlicher Doktorfisch genannt, lebt in den warmen tropischen Gewässern des Indo-Pazifiks von Ostafrika und Japan bis nach Australien und zum Great Barrier Reef. Er bewohnt Korallenriffe in etwa 2 bis 40 m Tiefe.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Africa and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Africa and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Paletten-Doktorfisch (Paracanthurus hepatus) ist ein tropischer Rifffisch des Indo-Pazifiks. Er ist an seinem königsblauen Körper, schwarzen Flecken und gelben Schwanz zu erkennen.\n\nErwachsene Tiere werden gewöhnlich etwa 25 bis 31 cm lang und wiegen bis zu 0,6 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Paletten-Doktorfisch gilt als nicht gefährdet, ist laut Zoopedia jedoch anfällig für Lebensraumzerstörung und eine hohe Sterblichkeit bei Jungtieren. Wegen seiner auffälligen Farben ist er im Meeresaquarienhandel sehr begehrt und lässt sich nur schwer in Gefangenschaft züchten. Viele Tiere werden daher in freier Wildbahn gefangen.\n\nKlimawandel, Ozeanversauerung und Korallenbleiche bedrohen die Riff-Ökosysteme. Wissenschaftler, Naturschutzverbände und Aquakulturinstitute versuchen, die Abhängigkeit von Wildfängen zu verringern. Die Zoopedia nennt einen ersten Zuchterfolg in Gefangenschaft im Jahr 2016 sowie Meeresschutzgebiete, Riff-Wiederherstellung, strengere Handelsvorschriften und öffentliche Aufklärung als Schutzmaßnahmen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Paletten-Doktorfische können je nach Riff und Futterangebot allein, zu zweit, in kleinen Gruppen oder größeren lockeren Verbänden leben.\n\nDie Art pflanzt sich das ganze Jahr über durch Massenlaichen fort, besonders zwischen April und September. Männchen umwerben Weibchen durch Umschwimmen, Nachjagen und Anstupsen. Paare oder kleine Gruppen steigen gemeinsam im Wasser auf und geben gleichzeitig Eier und Sperma ab. Die Befruchtung erfolgt außerhalb des Körpers.\n\nEin Weibchen kann bis zu 40.000 treibende Eier auf einmal freisetzen. Die Eier schlüpfen innerhalb von 24 bis 28 Stunden. Die Larven sind planktonisch und treiben mit den Meeresströmungen, bevor sie sich später auf Korallenriffen ansiedeln. Mit etwa 9 bis 12 Monaten werden Paletten-Doktorfische geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Paletten-Doktorfisch besitzt wie andere Doktorfische einen scharfen, skalpellartigen Stachel nahe der Schwanzflosse, den er zur Verteidigung einsetzt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Paletten-Doktorfisch ist laut Zoopedia die einzige Art der Gattung Paracanthurus.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Paletten-Doktorfische sind leuchtend gelb.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Paletten-Doktorfische sind allesfressende Abweider und ernähren sich von Zooplankton und Algen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Paletten-Doktorfische können in freier Wildbahn laut Zoopedia bis zu 30 Jahre alt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/eb5fc3cc/Surgeonfish_Palette_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Paracanthurus hepatus/map/Paracanthurus hepatus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZWI1ZmMzY2MvU3VyZ2VvbmZpc2hfUGFsZXR0ZS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Paletten-Doktorfisch – Planet Zoo 2",
+            "en": "Palette Surgeonfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Paletten-Doktorfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Palette Surgeonfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Paracanthurus hepatus/bilder/Paracanthurus hepatus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/eb5fc3cc/Surgeonfish_Palette_illustration.jpg",
+          "alt": {
+            "de": "Paletten-Doktorfisch – Zoopedia-Illustration",
+            "en": "Palette Surgeonfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Paletten-Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Palette Surgeonfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Paracanthurus hepatus/bilder/Paracanthurus hepatus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Paletten-Doktorfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/paletten-doktorfisch",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID eb5fc3cc und Asset-Stamm Surgeonfish_Palette belegt."
+    }
+  }
+}

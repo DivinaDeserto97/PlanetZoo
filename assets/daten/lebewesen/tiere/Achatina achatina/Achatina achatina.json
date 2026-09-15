@@ -1,0 +1,444 @@
+{
+  "id": "Achatina achatina",
+  "identitaet": {
+    "namen": {
+      "de": "Echte Achatschnecke",
+      "en": "Giant Tiger Land Snail",
+      "en-US": "Giant Tiger Land Snail",
+      "es": "Caracol gigante tigre",
+      "fr": "Escargot géant tigre",
+      "it": "Lumaca gigante tigre",
+      "pt-BR": "Caracol-gigante-tigre",
+      "ja": "ジャイアントタイガーランドスネイル",
+      "zh-Hans": "巨型虎纹陆蜗牛"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": ""
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Gastropoda",
+          "ordnung": "Stylommatophora",
+          "familie": "Achatinidae",
+          "gattung": "Achatina",
+          "art": "Achatina achatina",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "max": 0.3,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die größten Exemplare erreichen laut Zoopedia etwa 30 cm Länge und 15 cm Durchmesser.",
+            "en": "According to the Zoopedia, the largest specimens reach about 30 cm in length and 15 cm in diameter."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "",
+          "system": "",
+          "rohwert": "???",
+          "hinweis": {
+            "de": "Der Erhaltungszustand wurde laut Zoopedia bisher nicht offiziell bewertet; das strukturierte Statusfeld zeigt „???“.",
+            "en": "According to the Zoopedia, the conservation status has not yet been officially assessed; the structured status field shows '???'."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt die Art zugleich als sehr häufig.",
+            "en": "The Zoopedia lists the wild population as unknown while also describing the species as very common."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlicheRolle",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Echte Achatschnecken sind Zwitter. Laut Zoopedia können sie mit etwa 2 Jahren funktionell die männliche Rolle übernehmen und ein anderes Tier befruchten.",
+            "en": "Giant Tiger Land Snails are hermaphrodites. According to the Zoopedia, at about 2 years they can function in the male role and fertilize another individual."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblicheRolle",
+          "wert": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Bis eine Schnecke reif genug ist, bei der Fortpflanzung die weibliche Rolle zu übernehmen, kann es laut Zoopedia bis zu 3 Jahre dauern.",
+            "en": "According to the Zoopedia, it can take up to 3 years before a snail is mature enough to take the female reproductive role."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 10,
+          "max": 31,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fortpflanzungsintervall",
+          "min": 3,
+          "max": 3,
+          "durchschnitt": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt, dass sich Echte Achatschnecken in der Regel vor der Regenzeit fortpflanzen, allerdings nur alle drei Jahre.",
+            "en": "The Zoopedia states that Giant Tiger Land Snails generally reproduce before the rainy season, but only every three years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryTolerant",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Echte Achatschnecken leben nicht aktiv in Gruppen, begegnen anderen Artgenossen laut Zoopedia aber nicht aggressiv.",
+            "en": "Giant Tiger Land Snails do not actively live in groups, but according to the Zoopedia they are not aggressive toward conspecifics."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "forest",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Waldgebiete Westafrikas als natürlichen Lebensraum.",
+            "en": "The Zoopedia names forest areas of West Africa as the natural habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt, dass die Schnecken große Mengen Pflanzen beziehungsweise Vegetation mit ihrer Radula abraspeln und fressen.",
+              "en": "The Zoopedia describes the snails rasping and eating large amounts of plants or vegetation with their radula."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "vegetation",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Echte Achatschnecke raspelt mit ihrer Radula Vegetation ab und frisst Pflanzen.",
+                "en": "The Giant Tiger Land Snail rasps vegetation with its radula and feeds on plants."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia beschreibt Echte Achatschnecken als Zwitter mit männlichen und weiblichen Fortpflanzungsorganen.",
+      "en": "The Zoopedia describes Giant Tiger Land Snails as hermaphrodites possessing both male and female reproductive organs."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Echte Achatschnecke (Achatina achatina) lebt in Waldgebieten Westafrikas, insbesondere in Sierra Leone, Liberia, der Elfenbeinküste, Ghana und Nigeria.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in forest areas of West Africa, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in forest areas of West Africa, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Echte Achatschnecke (Achatina achatina) gehört zu den großen Schneckenarten Westafrikas. Sie besitzt einen grauen Körper und ein kegelförmiges Gehäuse, das gelb, orange oder hellbraun mit schwarzen Streifen sein kann.\n\nEchte Achatschnecken sind Zwitter und besitzen sowohl männliche als auch weibliche Fortpflanzungsorgane. Bei kleineren oder fast ausgewachsenen Tieren sind die Fortpflanzungsorgane teilweise noch nicht vollständig entwickelt. Die größten Exemplare erreichen etwa 30 cm Länge und 15 cm Durchmesser.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand der Echten Achatschnecke wurde laut Zoopedia bisher nicht offiziell bewertet. Die Art wird in ihrem natürlichen Verbreitungsgebiet teilweise als Nahrungsquelle genutzt, gezüchtet und als Haustier gehalten.\n\nAußerhalb ihres natürlichen Lebensraums kann sie sich in mildem Klima schnell ausbreiten und als invasive Art große Mengen Pflanzen fressen, heimische Schneckenarten verdrängen und Krankheiten übertragen. Deshalb sind Haltung und internationaler Handel in einigen Ländern verboten. Eindämmungsprogramme konnten regional Erfolge erzielen, dennoch kommt es durch Warenverkehr und versehentliche Freisetzungen immer wieder zu Neueinschleppungen.\n\nDie Zoopedia beschreibt die Art selbst als sehr häufig. Die größte Herausforderung aus Naturschutzsicht ist demnach, ihre Ausbreitung außerhalb des natürlichen Verbreitungsgebiets zu verhindern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Echte Achatschnecken leben nicht aktiv in Gruppen, reagieren laut Zoopedia aber auch nicht aggressiv auf Artgenossen.\n\nDie Fortpflanzung findet in der Regel vor der Regenzeit statt, allerdings nur alle drei Jahre. Paarungsbereite Tiere nähern sich einander und berühren sich mit ihren Antennen. Da die Tiere Zwitter sind, übernimmt das größere Exemplar bei der Paarung die weibliche Rolle. Nach der Paarung gräbt dieses Tier ein flaches Nest in den Waldboden und legt dort die Eier ab.\n\nNach 10 bis 31 Tagen schlüpfen die Jungtiere. Mit etwa 2 Jahren können Echte Achatschnecken funktionell die männliche Rolle übernehmen und andere Tiere befruchten. Bis sie reif genug sind, die weibliche Rolle zu übernehmen, kann es bis zu 3 Jahre dauern. Voll ausgewachsene Tiere können beide Rollen übernehmen; laut Zoopedia ist auch Selbstbefruchtung möglich.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Echte Achatschnecke gilt laut Zoopedia als größte Landschnecke der Welt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zoopedia nennt einen kleiner werdenden Lebensraum und menschliche Überjagung als Bedrohungen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In Ghana werden Echte Achatschnecken als Delikatesse betrachtet und deshalb gejagt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Art wurde versehentlich in den USA und in der Karibik eingeführt und gilt dort als Schädling.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Echte Achatschnecken besitzen eine Reibezunge (Radula) mit vielen kleinen Zähnchen, mit der sie Vegetation abraspeln.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4f6d1fc1/Snail_GiantTigerLand_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Achatina achatina/map/Achatina achatina map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNGY2ZDFmYzEvU25haWxfR2lhbnRUaWdlckxhbmQuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Echte Achatschnecke – Planet Zoo 2",
+            "en": "Giant Tiger Land Snail – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Echten Achatschnecke aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Tiger Land Snail."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Achatina achatina/bilder/Achatina achatina 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4f6d1fc1/Snail_GiantTigerLand_illustration.jpg",
+          "alt": {
+            "de": "Echte Achatschnecke – Zoopedia-Illustration",
+            "en": "Giant Tiger Land Snail – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Echten Achatschnecke aus der Planet Zoo 2 Zoopedia.",
+            "en": "Giant Tiger Land Snail illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Achatina achatina/bilder/Achatina achatina illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Echte Achatschnecke",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/echte-achatschnecke",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 4f6d1fc1 und Asset-Stamm Snail_GiantTigerLand belegt. Der Arterhaltungsstatus ist auf der Seite nicht offiziell bewertet und wird als „???“ angezeigt; deshalb bleibt der strukturierte Schutzstatus offen."
+    }
+  }
+}

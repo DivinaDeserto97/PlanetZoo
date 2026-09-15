@@ -1,0 +1,399 @@
+{
+  "id": "Thunnus orientalis",
+  "identitaet": {
+    "namen": {
+      "de": "Nordpazifischer Blauflossen-Thunfisch",
+      "en": "Pacific Bluefin Tuna",
+      "en-US": "Pacific Bluefin Tuna",
+      "es": "Atún rojo del Pacífico",
+      "fr": "Thon rouge du Pacifique",
+      "it": "Tonno rosso del Pacifico",
+      "pt-BR": "Atum-rabilho-do-Pacífico",
+      "ja": "クロマグロ",
+      "zh-Hans": "太平洋蓝鳍金枪鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia",
+      "northAmerica"
+    ],
+    "biome": [
+      "Offenes Meer"
+    ],
+    "schutzstatus": "nearThreatened"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Scombriformes",
+          "familie": "Scombridae",
+          "gattung": "Thunnus",
+          "art": "Thunnus orientalis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1,
+          "max": 2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 1 bis 2 m als durchschnittliche Länge. Einzelne Tiere können laut Tierfakten bis zu 3 m lang werden.",
+            "en": "The Zoopedia gives 1 to 2 m as the average length. According to the animal facts, some individuals can reach up to 3 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 60,
+          "max": 200,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 60 bis 200 kg als üblichen Bereich. Einzelne Tiere können laut Tierfakten bis zu 450 kg wiegen.",
+            "en": "The Zoopedia gives 60 to 200 kg as the usual range. According to the animal facts, some individuals can weigh up to 450 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "nearThreatened",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an. Im Arterhaltungstext wird beschrieben, dass die Bestände weiterhin gering sind, sich nach jüngsten Bewertungen aber langsam erholen.",
+            "en": "The Zoopedia lists the wild population as unknown. The conservation text states that stocks remain low but recent assessments suggest a slow recovery."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Eier schlüpfen laut Zoopedia nach etwa 24 bis 48 Stunden.",
+            "en": "According to the Zoopedia, the eggs hatch after about 24 to 48 hours."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "fortpflanzung",
+          "wert": "pairOrGroupSpawning",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt ein gruppenweises Laichverhalten, bei dem Männchen und Weibchen eng beieinander oder kreisförmig schwimmen und Eier sowie Spermien ins offene Wasser abgeben.",
+            "en": "The Zoopedia describes group spawning, with males and females swimming close together or in circles and releasing eggs and sperm into open water."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Nordpazifische Blauflossen-Thunfisch (Thunnus orientalis) ist ein großer Wanderfisch des gesamten Nordpazifiks. Sein Verbreitungsgebiet reicht von Japan und Korea bis zur Westküste Nordamerikas von Alaska bis Mexiko. Er lebt in pelagischen, offenen Meeresgebieten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Pacific Bluefin Tuna (Thunnus orientalis) is a large migratory fish found throughout the North Pacific, from waters off Japan and Korea to the west coast of North America from Alaska to Mexico. It inhabits pelagic open-ocean waters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Pacific Bluefin Tuna (Thunnus orientalis) is a large migratory fish found throughout the North Pacific, from waters off Japan and Korea to the west coast of North America from Alaska to Mexico. It inhabits pelagic open-ocean waters.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Nordpazifische Blauflossen-Thunfisch (Thunnus orientalis) besitzt einen stromlinienförmigen, metallisch-blauen Körper mit dunkelblauem bis schwarzem Rücken, silberner Unterseite und einer Reihe gelber kleiner Flösselchen bis zur Schwanzflosse.\n\nEr wird durchschnittlich etwa 1 bis 2 m lang und wiegt 60 bis 200 kg. Laut den Tierfakten können besonders große Exemplare bis zu 3 m Länge und 450 kg Gewicht erreichen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Nordpazifische Blauflossen-Thunfisch gilt als potenziell gefährdet. Die Zoopedia beschreibt eine frühere Überfischung weit über nachhaltige Grenzen hinaus, insbesondere von noch nicht geschlechtsreifen Jungfischen. Dadurch sank die Biomasse des Laichbestands auf weniger als 5 % des historischen Niveaus. Begrenzte Laichgebiete im Westpazifik sowie Fischerei, Lebensraumzerstörung und Klimawandel erhöhen die Anfälligkeit der Art.\n\nSchutzmaßnahmen umfassen strengere Fangquoten, saisonale Schonzeiten, Größenbeschränkungen, Zucht und Aufzucht in Gefangenschaft in Japan sowie laufende Bestandsbewertungsprogramme. Die Bestände bleiben laut Zoopedia gering, zeigen nach jüngsten Bewertungen aber eine langsame Erholung.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Junge Nordpazifische Blauflossen-Thunfische bilden häufig große Schwärme, teils gemeinsam mit anderen Thunfischarten. Mit zunehmendem Alter schwimmen sie weniger dicht beieinander, bleiben aber weiterhin in Gruppen oder lockeren Verbänden, besonders bei Nahrungssuche und Wanderung.\n\nDie Laichzeit reicht von April bis August bei Wassertemperaturen von 24 bis 29 °C. Die Fortpflanzung erfolgt in warmen Gewässern des Westpazifiks, besonders nahe Japan, im Ostchinesischen Meer und im Philippinischen Meer. Beim gruppenweisen Laichen schwimmen Männchen und Weibchen eng beieinander oder in Kreisen; die Eier werden ins offene Wasser abgegeben und extern befruchtet.\n\nEin großes Weibchen kann während einer Laichsaison Millionen Eier freisetzen. Die Eier schlüpfen nach etwa 24 bis 48 Stunden. Die Larven ernähren sich zunächst vom Dottersack und wechseln anschließend zu planktonischen Nahrungsquellen. Viele Jungtiere wandern später über den Pazifik zu den Küsten Kaliforniens und Mexikos. Die Geschlechtsreife wird mit ungefähr 5 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Nordpazifische Blauflossen-Thunfische können laut Zoopedia bis zu 3 m lang und bis zu 450 kg schwer werden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Einige Tiere unternehmen Wanderungen über Tausende Kilometer zwischen West- und Ostpazifik.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Art ist teilweise endotherm und kann ihre Körpertemperatur über der Wassertemperatur halten, was Geschwindigkeit, Ausdauer und Jagd in kälteren Gewässern unterstützt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die wichtigsten Laichgebiete liegen laut Zoopedia vor allem vor Japan sowie im Philippinischen Meer und im Japanischen Meer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wegen des fettreichen Bauchfleischs („Toro“) ist die Art besonders für Sushi und Sashimi begehrt; große Exemplare können auf Fischmärkten sehr hohe Preise erzielen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8f5579e1/Tuna_PacificBluefin_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Thunnus orientalis/map/Thunnus orientalis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOGY1NTc5ZTEvVHVuYV9QYWNpZmljQmx1ZWZpbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxOTIwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Nordpazifischer Blauflossen-Thunfisch – Planet Zoo 2",
+            "en": "Pacific Bluefin Tuna – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Nordpazifischen Blauflossen-Thunfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Pacific Bluefin Tuna."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Thunnus orientalis/bilder/Thunnus orientalis 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8f5579e1/Tuna_PacificBluefin_illustration.jpg",
+          "alt": {
+            "de": "Nordpazifischer Blauflossen-Thunfisch – Zoopedia-Illustration",
+            "en": "Pacific Bluefin Tuna – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Nordpazifischen Blauflossen-Thunfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Pacific Bluefin Tuna illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Thunnus orientalis/bilder/Thunnus orientalis illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Nordpazifischer Blauflossen-Thunfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/nordpazifischer-blauflossen-thunfisch",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 8f5579e1 und Asset-Stamm Tuna_PacificBluefin belegt."
+    }
+  }
+}

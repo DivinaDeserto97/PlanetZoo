@@ -1,0 +1,438 @@
+{
+  "id": "Oophaga lehmanni",
+  "identitaet": {
+    "namen": {
+      "de": "Lehmanns Pfeilgiftfrosch",
+      "en": "Lehmann's Poison Frog",
+      "en-US": "Lehmann's Poison Frog",
+      "es": "Rana venenosa de Lehmann",
+      "fr": "Dendrobate de Lehmann",
+      "it": "Rana velenosa di Lehmann",
+      "pt-BR": "Rã-venenosa-de-Lehmann",
+      "ja": "レーマンヤドクガエル",
+      "zh-Hans": "莱曼箭毒蛙"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "southAmerica"
+    ],
+    "biome": [
+      "Tropisch"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Anura",
+          "familie": "Dendrobatidae",
+          "gattung": "Oophaga",
+          "art": "Oophaga lehmanni",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.031,
+          "max": 0.036,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich eine Beschränkung des internationalen Handels gemäß CITES Anhang II; dieses Handelssystem wird nicht als Schutzstatus-System eingetragen.",
+            "en": "The Zoopedia also mentions restrictions on international trade under CITES Appendix II; this trade system is not entered as the conservation-status system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "brutdauer",
+          "min": 4,
+          "max": 4,
+          "durchschnitt": 4,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Das Männchen befruchtet die Eier und beschützt sie während der folgenden vier Wochen; kurz vor dem Schlüpfen bringt es sie zu getrennten Wasserstellen.",
+            "en": "The male fertilizes the eggs and guards them for the following four weeks; shortly before hatching it moves them to separate water sites."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "elterlicheVersorgungBis",
+          "min": 2,
+          "max": 3,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Nach zwei bis drei Monaten entwickeln sich die Kaulquappen zu kleinen Fröschen und werden selbstständig.",
+            "en": "After two to three months, the tadpoles develop into small frogs and become independent."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Lehmanns Pfeilgiftfrösche sind Einzelgänger und interagieren mit anderen Fröschen nur zur Paarung.",
+            "en": "Lehmann's Poison Frogs are solitary and interact with other frogs only for mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "forest",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt den kolumbianischen Regenwald des Anchicayá-Tals als natürlichen Lebensraum. Die Tiere halten sich hauptsächlich am Waldboden auf, gelegentlich auch auf niedrigen Ästen und in Büschen.",
+            "en": "The Zoopedia describes the Colombian rainforest of the Anchicayá Valley as the natural habitat. The frogs mainly use the forest floor, but are occasionally found on low branches and in bushes."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "unbefruchteteEierEigeneArt",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt, dass die Jungtiere nach dem Schlupf mit unbefruchteten Eiern gefüttert werden.",
+                "en": "The Zoopedia states that the young are fed unfertilized eggs after hatching."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kaulquappenEigeneArt",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia bezeichnet die Kaulquappen ausdrücklich als kannibalisch.",
+                "en": "The Zoopedia explicitly describes the tadpoles as cannibalistic."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Lehmanns Pfeilgiftfrosch (Oophaga lehmanni) ist ausschließlich in den kolumbianischen Regenwäldern des Anchicayá-Tals heimisch. Er nutzt vor allem den Waldboden, ist gelegentlich aber auch auf niedrigen Ästen und in Büschen anzutreffen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainforests of the Anchicayá Valley and is found nowhere else in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainforests of the Anchicayá Valley and is found nowhere else in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Lehmanns Pfeilgiftfrosch (Oophaga lehmanni) besitzt breite dunkelbraune bis schwarze Streifen auf Rücken, Kopf und Beinen. Dazwischen liegen leuchtende Farbstreifen, die rot, gelb oder orange gefärbt sein können.\n\nAusgewachsene Tiere erreichen laut Zoopedia eine durchschnittliche Länge von etwa 31 bis 36 mm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Lehmanns Pfeilgiftfrosch gilt als vom Aussterben bedroht. Als wichtigste Gefahren nennt die Zoopedia die übermäßige Entnahme für den Tierhandel und die Zerstörung des sehr kleinen natürlichen Verbreitungsgebiets. Wegen der auffälligen Färbung werden Tiere illegal aus der Wildnis entnommen. Zusätzlich gehen für die Fortpflanzung wichtige Bromelien durch Waldumwandlung, Landwirtschaft, Holzgewinnung und die Nutzung als Dekoration verloren.\n\nTeile des natürlichen Lebensraums liegen in Nationalparks und Naturschutzgebieten. Der internationale Handel ist gemäß CITES Anhang II eingeschränkt. Zusätzlich werden eine bessere Durchsetzung dieser Vorschriften, Zucht in Gefangenschaft und weitere Forschung zu Lebensraum und Fortpflanzung als Schutzmaßnahmen genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Lehmanns Pfeilgiftfrösche sind Einzelgänger und interagieren mit Artgenossen nur zur Paarung.\n\nNach der Regenzeit sucht das Männchen auf feuchtem Waldboden oder an tief hängenden Ästen einen geeigneten Ort zur Eiablage und lockt ein Weibchen mit schrillen Rufen an. Akzeptiert das Weibchen den Platz, legt es dort mehrere große Eier ab.\n\nDas Männchen befruchtet die Eier, bewacht sie während der folgenden vier Wochen und dreht sie wiederholt, damit sie feucht bleiben. Kurz vor dem Schlüpfen bringt es die Eier zu getrennten Wasserstellen. Nach dem Schlupf werden die Jungtiere laut Zoopedia mit unbefruchteten Eiern gefüttert.\n\nNach etwa zwei bis drei Monaten entwickeln sich die Kaulquappen zu kleinen Fröschen und werden selbstständig. Die Geschlechtsreife erreichen die Tiere nach ungefähr einem Jahr.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die auffällige Färbung dient als Warnsignal für mögliche Fressfeinde; das Hautgift verursacht laut Zoopedia starke Schmerzen und Schwellungen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das natürliche Verbreitungsgebiet umfasst laut Zoopedia nur etwa zehn Quadratkilometer, wodurch Lebensraumverlust besonders gefährlich ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die auffällige Farbe und Musterung macht die Art für den Tierhandel besonders begehrt und führt zu Übernutzung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Kaulquappen benötigen nur geringe Wassermengen und können sich beispielsweise in Wasseransammlungen hohler Bäume oder Bambusäste entwickeln.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Kaulquappen sind kannibalisch; deshalb werden die Eier laut Zoopedia vor dem Schlüpfen voneinander getrennt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/07f4ebc6/TreeFrog_LehmannsPoison_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Oophaga lehmanni/map/Oophaga lehmanni map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDdmNGViYzYvVHJlZUZyb2dfTGVobWFubnNQb2lzb24uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Lehmanns Pfeilgiftfrosch – Planet Zoo 2",
+            "en": "Lehmann's Poison Frog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild von Lehmanns Pfeilgiftfrosch aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of Lehmann's Poison Frog."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Oophaga lehmanni/bilder/Oophaga lehmanni 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/07f4ebc6/TreeFrog_LehmannsPoison_illustration.jpg",
+          "alt": {
+            "de": "Lehmanns Pfeilgiftfrosch – Zoopedia-Illustration",
+            "en": "Lehmann's Poison Frog – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration von Lehmanns Pfeilgiftfrosch aus der Planet Zoo 2 Zoopedia.",
+            "en": "Lehmann's Poison Frog illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Oophaga lehmanni/bilder/Oophaga lehmanni illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Lehmanns Pfeilgiftfrosch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/lehmanns-pfeilgiftfrosch",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 07f4ebc6 und Asset-Stamm TreeFrog_LehmannsPoison belegt."
+    }
+  }
+}

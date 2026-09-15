@@ -1,0 +1,392 @@
+{
+  "id": "Symphorichthys spilurus",
+  "identitaet": {
+    "namen": {
+      "de": "Segelflossen-Schnapper",
+      "en": "Sailfin Snapper",
+      "en-US": "Sailfin Snapper",
+      "es": "Pargo de aleta de vela",
+      "fr": "Vivaneau à nageoire voile",
+      "it": "Dentice pinna a vela",
+      "pt-BR": "Pargo-de-nadadeira-vela",
+      "ja": "セイルフィンスナッパー",
+      "zh-Hans": "帆鳍笛鲷"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Riff"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Lutjanidae",
+          "gattung": "Symphorichthys",
+          "art": "Symphorichthys spilurus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.35,
+          "max": 0.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3,
+          "max": 6,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "pelagischeLarvenphase",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Larven treiben nach dem Schlupf im offenen Wasser und siedeln sich später in einem geeigneten Riff- oder Geröllhabitat an. Eine genaue Dauer wird auf der Seite nicht genannt.",
+            "en": "After hatching, the larvae drift in open water and later settle in suitable reef or rubble habitat. The page does not give an exact duration."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "fortpflanzung",
+          "wert": "pairOrGroupSpawning",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Zur Laichzeit versammeln sich große Gruppen an bestimmten Stellen am Riffhang. Außerhalb dieser Zeit werden kleine Gruppen oder lockere Schwärme beschrieben.",
+            "en": "During spawning, large groups gather at specific reef-slope sites. Outside spawning, small groups or loose schools are described."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Korallenriffe und angrenzende Gebiete als Lebensraum.",
+            "en": "The Zoopedia names coral reefs and adjacent areas as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Die Zoopedia bezeichnet den Segelflossen-Schnapper als einzige bekannte Spezies der Gattung Symphorichthys.",
+      "en": "The Zoopedia states that the Sailfin Snapper is the only known species in the genus Symphorichthys."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Segelflossen-Schnapper (Symphorichthys spilurus) ist im Indo-Pazifik verbreitet, von den Malediven und Indonesien bis nach Nordaustralien und zu den Salomonen. Er lebt in Korallenriffen und angrenzenden Gebieten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sailfin Snapper (Symphorichthys spilurus) occurs across the Indo-Pacific, from the Maldives and Indonesia to northern Australia and the Solomon Islands. It inhabits coral reefs and adjacent areas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sailfin Snapper (Symphorichthys spilurus) occurs across the Indo-Pacific, from the Maldives and Indonesia to northern Australia and the Solomon Islands. It inhabits coral reefs and adjacent areas.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Segelflossen-Schnapper (Symphorichthys spilurus) ist ein Rifffisch des Indo-Pazifiks. Er ist an seiner länglichen Rückenflosse sowie seinem silbernen bis gelben Körper mit leuchtend blauen horizontalen Linien und einem dunklen Fleck nahe der Schwanzwurzel zu erkennen.\n\nErwachsene Tiere werden etwa 35 bis 50 cm lang und wiegen in der Regel 3 bis 6 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Segelflossen-Schnapper gilt als nicht gefährdet. Die Zoopedia nennt Langleinen- und Grundschleppnetzfischerei sowie die besondere Anfälligkeit großer Laichansammlungen für Überfischung als Belastungen. Zusätzlich können Sedimentation, zerstörerische Fischerei und Korallenbleiche Riff- und angrenzende Lebensräume beeinträchtigen.\n\nAls mögliche Schutzmaßnahmen werden zeitlich begrenzte Schließungen von Sammelplätzen während der Paarungszeit, Aquakultur zur Verringerung von Wildfängen, bessere Daten zu Geschlechtsreife und Populationsentwicklung, Schutz von Laichgebieten sowie nachhaltige Fischereipraktiken genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Segelflossen-Schnapper sind relativ gesellige Fische und werden häufig in kleinen Gruppen oder lockeren Schwärmen an Riffhängen und sandigen Bereichen neben Riffen beobachtet.\n\nDie Laichzeit beginnt in freier Wildbahn um den Vollmond herum und findet bevorzugt bei vom Ufer wegführenden Strömungen statt. Unter diesen Bedingungen versammeln sich große Gruppen an bestimmten Stellen des Riffhangs. Männchen verfolgen während der Laichzeit Weibchen; nur ein oder wenige Männchen können während dieser Jagd erfolgreich Eier befruchten.\n\nWährend der Paarungszeit entwickeln sich je nach Größe des Weibchens Tausende Eier im offenen Wasser. Die Larven treiben anschließend ab und siedeln sich später in einem geeigneten Riff- oder Geröllhabitat an.\n\nDas genaue Alter der Geschlechtsreife ist laut Zoopedia nicht gut dokumentiert. Es wird lediglich vermutet, dass es ähnlich wie bei anderen Schnapperarten zwischen 3 und 7 Jahren liegen könnte.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Segelflossen-Schnapper ist laut Zoopedia die einzige bekannte Spezies der Gattung Symphorichthys.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Artname „spilurus“ bedeutet laut Zoopedia im Altgriechischen „Fleckenschwanz“ und bezieht sich auf den dunklen Fleck nahe der Schwanzwurzel.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Segelflossen-Schnapper können sich laut Zoopedia zu Laichschwärmen von bis zu 50.000 Tieren zusammenfinden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In manchen Regionen wird vom Verzehr abgeraten, weil die Tiere wahrscheinlich hohe Mengen Ciguatoxin enthalten können, das Magen-Darm- und neurologische Symptome verursacht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der deutsche Name bezieht sich auf die lange, fadenförmige Verlängerung der Flosse, die an ein Segel erinnert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bacddd67/Snapper_Sailfin_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Symphorichthys spilurus/map/Symphorichthys spilurus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYmFjZGRkNjcvU25hcHBlcl9TYWlsZmluLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjExNjgsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Segelflossen-Schnapper – Planet Zoo 2",
+            "en": "Sailfin Snapper – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Segelflossen-Schnappers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sailfin Snapper."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Symphorichthys spilurus/bilder/Symphorichthys spilurus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bacddd67/Snapper_Sailfin_illustration.jpg",
+          "alt": {
+            "de": "Segelflossen-Schnapper – Zoopedia-Illustration",
+            "en": "Sailfin Snapper – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Segelflossen-Schnappers aus der Planet Zoo 2 Zoopedia.",
+            "en": "Sailfin Snapper illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Symphorichthys spilurus/bilder/Symphorichthys spilurus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Segelflossen-Schnapper",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/segelflossen-schnapper",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID bacddd67 und Asset-Stamm Snapper_Sailfin belegt. Der auf der Seite nur vermutete Bereich von 3 bis 7 Jahren bis zur Geschlechtsreife wurde nicht als gesicherter strukturierter Wert übernommen."
+    }
+  }
+}

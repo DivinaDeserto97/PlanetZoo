@@ -1,0 +1,468 @@
+{
+  "id": "Scardinius erythrophthalmus",
+  "identitaet": {
+    "namen": {
+      "de": "Rotfeder",
+      "en": "Common Rudd",
+      "en-US": "Common Rudd",
+      "es": "Escardinio",
+      "fr": "Rotengle",
+      "it": "Scardola",
+      "pt-BR": "Escardínio",
+      "ja": "ラッド",
+      "zh-Hans": "红眼鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia"
+    ],
+    "biome": [
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Cypriniformes",
+          "familie": "Leuciscidae",
+          "gattung": "Scardinius",
+          "art": "Scardinius erythrophthalmus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.2,
+          "max": 0.35,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.2,
+          "max": 0.4,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 2 bis 3 Jahre als gewöhnliches Alter der Geschlechtsreife und weist darauf hin, dass dies von Temperatur und Nahrungsangebot abhängt.",
+            "en": "The Zoopedia gives 2 to 3 years as the usual age of sexual maturity and notes that this depends on temperature and food availability."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Eier schlüpfen abhängig von der Wassertemperatur nach etwa ein bis zwei Wochen.",
+            "en": "Depending on water temperature, the eggs hatch after about one to two weeks."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "fortpflanzung",
+          "wert": "pairOrGroupSpawning",
+          "hinweis": {
+            "de": "Das Laichen findet gemeinschaftlich in Schwärmen statt; häufig umwerben mehrere Männchen ein einzelnes Weibchen und geben gleichzeitig Sperma zur externen Befruchtung ab.",
+            "en": "Spawning takes place communally in shoals; several males often court a single female and release sperm simultaneously for external fertilization."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Nahrung als Mischung aus Pflanzen und kleinen wirbellosen Tieren; junge Tiere fressen vor allem Zooplankton, Wasserinsekten und kleine Wirbellose, ältere zunehmend Wasserpflanzen und anderes Pflanzenmaterial.",
+              "en": "The Zoopedia describes a mixed diet of plants and small invertebrates; juveniles mainly eat zooplankton, aquatic insects and small invertebrates, while older fish increasingly consume aquatic plants and other plant material."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "zooplankton",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "wasserinsekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineWirbellose",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "wasserpflanzen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Mit zunehmendem Alter ernähren sich Rotfedern stärker von Wasserpflanzen und anderem Pflanzenmaterial. Erwachsene Tiere können laut Zoopedia täglich bis zu 40 % ihres Körpergewichts an Pflanzen fressen.",
+                "en": "With increasing age, Rudd feed more heavily on aquatic plants and other plant material. According to the Zoopedia, adults can consume up to 40% of their body weight in plants per day."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "insekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt Insekten als Nahrung an oder nahe der Wasseroberfläche.",
+                "en": "The Zoopedia names insects as food taken at or near the water surface."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Rotfeder (Scardinius erythrophthalmus) ist ein weit verbreiteter Süßwasserfisch, der in großen Teilen Europas und Westasiens heimisch ist. Sie wurde außerdem in Nordamerika, Neuseeland und Teilen Afrikas eingeführt. Typische Lebensräume sind langsam fließende Flüsse, Seen, Teiche und Kanäle mit reichhaltiger Vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Africa.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Rotfeder (Scardinius erythrophthalmus) ist ein mittelgroßer, seitlich gedrungener Fisch mit tiefem goldgrünem Körper, rötlichen Flossen und auffällig nach oben gebogenem Maul.\n\nAusgewachsene Tiere erreichen etwa 20 bis 35 cm Länge und wiegen 200 bis 400 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Rotfeder gilt als nicht gefährdet und wird in vielen eingeführten Verbreitungsgebieten als invasive Art betrachtet. Laut Zoopedia kann sie einheimische Fischarten aus Lebensräumen, Futterplätzen und Laichgebieten verdrängen. Starker Fraß an Wasserpflanzen kann Pflanzenbestände und Lebensräume verändern. Zusätzlich kann sich die Rotfeder mit Arten wie Rotaugen, Brassen und Ukeleien kreuzen und dadurch die genetische Integrität einheimischer Populationen beeinträchtigen.\n\nIn manchen Regionen gelten Einschränkungen für den Transport lebender Rotfedern oder ihre Nutzung als Lebendköder. Wo die Art bereits etabliert ist, werden Bestände teilweise durch mechanische Entfernung, Netzfischerei oder gezieltes Angeln reduziert. Überwachungs-, Forschungs- und Risikoanalyseprogramme sollen Ausbreitung und ökologische Auswirkungen begrenzen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Rotfedern leben meist in Schwärmen, besonders als Jungfische. Die Tiere koordinieren ihre Bewegungen und suchen häufig gemeinsam nahe der Wasseroberfläche oder zwischen Wasserpflanzen nach Nahrung. Mit zunehmendem Alter werden die Gruppen meist kleiner und lockerer; in weniger dicht besiedelten Gewässern können erwachsene Tiere auch als Einzelgänger auftreten.\n\nDie Laichzeit beginnt typischerweise im späten Frühjahr oder Frühsommer, wenn das Wasser etwa 18 bis 20 °C erreicht, in gemäßigten Regionen meist zwischen Mai und Juni. Während der Balz werden die Männchen aktiver und kräftiger gefärbt und umwerben Weibchen in flachen, bewachsenen Bereichen.\n\nDas Laichen erfolgt gemeinschaftlich in Schwärmen. Mehrere Männchen können ein Weibchen umwerben. Das Weibchen verteilt klebrige Eier auf Unterwasservegetation oder anderen Oberflächen, während die Männchen gleichzeitig Sperma zur externen Befruchtung abgeben.\n\nDie Eier schlüpfen je nach Wassertemperatur nach ungefähr ein bis zwei Wochen. Die Larven bleiben zunächst kurz an der Vegetation hängen und verbrauchen ihren Dottersack, bevor sie mit planktonischer Nahrung beginnen. Die Geschlechtsreife wird gewöhnlich mit 2 bis 3 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Widerstandsfähigkeit, auffälliges Aussehen und Anpassungsfähigkeit tragen laut Zoopedia dazu bei, dass sich die Rotfeder in unterschiedlichen Lebensräumen erfolgreich etablieren kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das nach oben gerichtete Maul ermöglicht es der Rotfeder, Insekten und Pflanzenmaterial an oder nahe der Wasseroberfläche aufzunehmen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Rotfedern ernähren sich hauptsächlich von Zooplankton, Wasserinsekten und kleinen wirbellosen Tieren; mit zunehmendem Alter steigt der Anteil von Wasserpflanzen und anderem Pflanzenmaterial.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ausgewachsene Rotfedern können laut Zoopedia täglich bis zu 40 % ihres Körpergewichts an Pflanzen fressen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Rotfedern kreuzen sich laut Zoopedia häufig mit anderen Karpfenartigen wie Rotaugen, Brassen und Döbeln.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/6deea619/Rudd_Common_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/map/Scardinius erythrophthalmus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNmRlZWE2MTkvUnVkZF9Db21tb24uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Rotfeder – Planet Zoo 2",
+            "en": "Common Rudd – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Rotfeder aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Common Rudd."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/6deea619/Rudd_Common_illustration.jpg",
+          "alt": {
+            "de": "Rotfeder – Zoopedia-Illustration",
+            "en": "Common Rudd – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Rotfeder aus der Planet Zoo 2 Zoopedia.",
+            "en": "Common Rudd illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/bilder/Scardinius erythrophthalmus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Rotfeder",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/rotfeder",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 6deea619 und Asset-Stamm Rudd_Common belegt."
+    }
+  }
+}

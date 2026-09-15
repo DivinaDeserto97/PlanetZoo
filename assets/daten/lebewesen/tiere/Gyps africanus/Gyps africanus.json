@@ -1,0 +1,510 @@
+{
+  "id": "Gyps africanus",
+  "identitaet": {
+    "namen": {
+      "de": "Weißrückengeier",
+      "en": "White-backed Vulture",
+      "en-US": "White-backed Vulture",
+      "es": "Buitre dorsiblanco africano",
+      "fr": "Vautour africain",
+      "it": "Avvoltoio dorsobianco africano",
+      "pt-BR": "Abutre-de-dorso-branco",
+      "ja": "コシジロハゲワシ",
+      "zh-Hans": "非洲白背兀鹫"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Accipitriformes",
+          "familie": "Accipitridae",
+          "gattung": "Gyps",
+          "art": "Gyps africanus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.96,
+          "max": 2.25,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 4.2,
+          "max": 7.2,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 4,2 bis 7,2 kg für ausgewachsene Tiere und weist darauf hin, dass Weibchen etwa 10 % schwerer als Männchen sind.",
+            "en": "The Zoopedia gives 4.2 to 7.2 kg for adults and notes that females are about 10% heavier than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 27000,
+          "max": 51300,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen geschätzten Wildbestand von 27.000 bis 51.300 Tieren.",
+            "en": "The Zoopedia gives an estimated wild population of 27,000 to 51,300 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 1,
+          "max": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 55,
+          "max": 55,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Beide Elternteile brüten das einzelne Ei abwechselnd ungefähr 55 Tage lang.",
+            "en": "Both parents take turns incubating the single egg for about 55 days."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 3.5,
+          "max": 4,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Das Küken wird laut Zoopedia mit etwa 3,5 bis 4 Monaten flügge. Die Eltern versorgen es danach noch mehrere Wochen weiter.",
+            "en": "According to the Zoopedia, the chick fledges at about 3.5 to 4 months. The parents continue caring for it for several more weeks."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "unterwegs",
+          "wert": "largerGroup",
+          "hinweis": {
+            "de": "Weißrückengeier sind gesellig und finden sich laut Zoopedia häufig in Gruppen von etwa 10 bis 12 Tieren zusammen, in denen sie gemeinsam fressen und Kadaver suchen.",
+            "en": "White-backed Vultures are social and, according to the Zoopedia, often gather in groups of about 10 to 12 birds to feed and locate carcasses together."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "monogamousLongTermPair",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt monogame Paare mit starken Bindungen, die durch gegenseitiges Putzen und synchronisierte Flüge gefestigt werden.",
+            "en": "The Zoopedia describes monogamous pairs with strong bonds reinforced by mutual preening and synchronized flights."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "hinweis": {
+            "de": "Die Zoopedia nennt offene Savannen als typischen Lebensraum.",
+            "en": "The Zoopedia names open savannas as typical habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Graslandschaften als typischen Lebensraum.",
+            "en": "The Zoopedia names grasslands as typical habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "openWoodland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt trockene Wälder als typischen Lebensraum.",
+            "en": "The Zoopedia names dry woodland as typical habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Der Weißrückengeier wird in der Zoopedia als obligater Aasfresser beschrieben.",
+              "en": "The White-backed Vulture is described by the Zoopedia as an obligate scavenger."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "aas",
+              "typ": "aas",
+              "beziehung": "nekrophagie",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Eltern füttern das Küken mit ausgewürgtem Aas.",
+                "en": "The parents feed the chick regurgitated carrion."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "aas",
+              "typ": "aas",
+              "beziehung": "nekrophagie",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Weißrückengeier sind obligate Aasfresser und beseitigen Tierkadaver.",
+                "en": "White-backed Vultures are obligate scavengers and consume animal carcasses."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "diclofenac",
+              "typ": "giftig",
+              "beziehung": "toxischeWirkung",
+              "wirkung": "-/0",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt Tierkadaver mit Diclofenac ausdrücklich als Vergiftungsgefahr für Weißrückengeier.",
+                "en": "The Zoopedia explicitly identifies carcasses containing diclofenac as a poisoning threat to White-backed Vultures."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "andereAasfresser",
+              "typ": "tier",
+              "beziehung": "kommensalismus",
+              "wirkung": "0/+",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Andere Aasfresser folgen Weißrückengeiern laut Zoopedia häufig, um Nahrung zu finden. Ein Nutzen für den Geier wird dabei nicht genannt.",
+                "en": "According to the Zoopedia, other scavengers often follow White-backed Vultures to find food. No benefit to the vulture is stated."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Weißrückengeier (Gyps africanus) lebt in Afrika südlich der Sahara. Sein Verbreitungsgebiet reicht von Senegal und Äthiopien im Norden bis nach Südafrika im Süden. Typische Lebensräume sind offene Savannen, trockene Wälder und Graslandschaften.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Africa, from Senegal and Ethiopia in the north to South Africa in the south, mainly in open savannas, dry woodland and grassland.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Africa, from Senegal and Ethiopia in the north to South Africa in the south, mainly in open savannas, dry woodland and grassland.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Weißrückengeier (Gyps africanus) besitzt einen dunkelbraunen Körper, einen weißen Rücken und Bürzel sowie einen kahlen hellen Kopf.\n\nErwachsene Tiere werden laut Zoopedia etwa 78 bis 98 cm groß, besitzen eine Flügelspannweite von 1,96 bis 2,25 m und wiegen 4,2 bis 7,2 kg. Weibchen sind ungefähr 10 % schwerer als Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Weißrückengeier verzeichnet einen starken Populationsrückgang und gilt als vom Aussterben bedroht. Zu den wichtigsten Gefahren zählen Vergiftungen durch Tierkadaver mit Substanzen wie Diclofenac sowie absichtlich vergiftete Kadaver, die von Wilderern zurückgelassen werden. Weitere Belastungen sind Lebensraumverlust, Stromschläge und Kollisionen mit Stromleitungen sowie die langsame Fortpflanzungsrate.\n\nSchutzmaßnahmen umfassen Schutzgebiete, Rehabilitationszentren, sogenannte Geierrestaurants mit sauberem Aas, Satellitenortung zur Identifizierung gefährdeter Gebiete, lokale Aufklärung und Bestrebungen zum Verbot schädlicher Tierarzneimittel.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Weißrückengeier sind gesellige Vögel und bilden häufig Gruppen von 10 bis 12 Tieren. Sie fressen gemeinsam und helfen sich gegenseitig bei der Suche nach Kadavern.\n\nDie Tiere bilden monogame Paare mit starken Bindungen. Diese werden durch Balzverhalten wie gegenseitiges Putzen und synchronisierte Flüge gefestigt. Die Paarungszeit variiert regional, findet aber meist während der Trockenzeit statt. Ein Paar baut gemeinsam ein Nest hoch in Bäumen; Nester werden häufig wiederverwendet und jährlich erneuert.\n\nNach der Paarung legt das Weibchen ein einzelnes Ei. Beide Elternteile brüten es abwechselnd ungefähr 55 Tage lang aus. Das Küken wird mit ausgewürgtem Aas gefüttert und wird mit etwa 3,5 bis 4 Monaten flügge. Die Eltern kümmern sich anschließend noch mehrere Wochen um das Jungtier, bis es selbstständig Nahrung suchen und fressen kann.\n\nJunge Weißrückengeier werden laut Zoopedia mit etwa 5 bis 7 Jahren erwachsen und suchen sich danach einen Partner.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Weißrückengeier sind obligate Aasfresser und helfen laut Zoopedia dabei, Krankheiten vorzubeugen, indem sie Kadaver beseitigen; ihre spezialisierten Mägen töten viele Krankheitserreger ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Auf der Nahrungssuche können Weißrückengeier an einem einzigen Tag Hunderte Kilometer zurücklegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weißrückengeier besitzen laut Zoopedia keinen Syrinx und geben daher meist nur Grunz- und Zischlaute von sich.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Gattungsname Gyps leitet sich laut Zoopedia vom altgriechischen Wort „gups“ für „Geier“ ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weißrückengeier besitzen ein sehr gutes Sehvermögen und können Aas aus großer Entfernung erkennen; andere Aasfresser folgen ihnen deshalb häufig, um Nahrung zu finden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/5cb85bb0/Vulture_WhiteBacked_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Gyps africanus/map/Gyps africanus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNWNiODViYjAvVnVsdHVyZV9XaGl0ZUJhY2tlZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Weißrückengeier – Planet Zoo 2",
+            "en": "White-backed Vulture – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Weißrückengeiers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the White-backed Vulture."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Gyps africanus/bilder/Gyps africanus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/5cb85bb0/Vulture_WhiteBacked_illustration.jpg",
+          "alt": {
+            "de": "Weißrückengeier – Zoopedia-Illustration",
+            "en": "White-backed Vulture – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Weißrückengeiers aus der Planet Zoo 2 Zoopedia.",
+            "en": "White-backed Vulture illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Gyps africanus/bilder/Gyps africanus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Weißrückengeier",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/wei%C3%9Fr%C3%BCckengeier",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 5cb85bb0 und Asset-Stamm Vulture_WhiteBacked belegt. Die Angabe 78–98 cm 'groß' wurde nicht als Körperlänge interpretiert."
+    }
+  }
+}

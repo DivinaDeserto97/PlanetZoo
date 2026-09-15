@@ -1,0 +1,456 @@
+{
+  "id": "Varanus komodoensis",
+  "identitaet": {
+    "namen": {
+      "de": "Komodowaran",
+      "en": "Komodo Dragon",
+      "en-US": "Komodo Dragon",
+      "es": "Dragón de Komodo",
+      "fr": "Dragon de Komodo",
+      "it": "Drago di Komodo",
+      "pt-BR": "Dragão-de-Komodo",
+      "ja": "コモドオオトカゲ",
+      "zh-Hans": "科莫多巨蜥"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "asia"
+    ],
+    "biome": [],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Varanidae",
+          "gattung": "Varanus",
+          "art": "Varanus komodoensis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 2.59,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 2.29,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 79,
+          "max": 91,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 68,
+          "max": 73,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "hoechstgeschwindigkeit",
+          "wert": 19,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt bei der Jagd Geschwindigkeiten von fast 19 km/h.",
+            "en": "The Zoopedia describes hunting speeds of almost 19 km/h."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "1.383",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt beim Wildbestand „1.383“ an. Wegen der unklaren Formatierung wurde daraus kein numerischer Populationswert abgeleitet.",
+            "en": "The Zoopedia displays '1.383' for the wild population. Because the formatting is ambiguous, no numeric population value was derived from it."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 8,
+          "max": 9,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "min": 15,
+          "max": 30,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 7,
+          "max": 8,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Komodowarane sind grundsätzlich Einzelgänger. Zum Fressen und zur Paarung können sie sich jedoch vorübergehend zusammenfinden; in solchen Gruppen ist das größte Männchen dominant.",
+            "en": "Komodo Dragons are basically solitary. They may temporarily gather for feeding and mating; in such groups the largest male is dominant."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Komodowarane als Lauerjäger und nennt unter anderem Timorhirsche sowie Jungtiere der eigenen Art als Beute.",
+              "en": "The Zoopedia describes Komodo Dragons as ambush predators and mentions Timor deer and juveniles of their own species among their prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "timorhirsch",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt Timorhirsche ausdrücklich als Beutetiere des Komodowarans.",
+                "en": "The Zoopedia explicitly names Timor deer as prey of the Komodo Dragon."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "komodowaranJungtier",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Komodowarane sind kannibalisch; Jungtiere der eigenen Art machen laut Zoopedia bis zu 10 % des Speiseplans aus.",
+                "en": "Komodo Dragons are cannibalistic; according to the Zoopedia, juveniles of their own species make up as much as 10% of the diet."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Komodowaran (Varanus komodoensis) kommt ausschließlich auf den indonesischen Inseln Komodo, Rinca, Flores, Gili Dasami und Gili Motang vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Komodo Dragon (Varanus komodoensis) occurs only on the Indonesian islands of Komodo, Rinca, Flores, Gili Dasami and Gili Motang.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Komodo Dragon (Varanus komodoensis) occurs only on the Indonesian islands of Komodo, Rinca, Flores, Gili Dasami and Gili Motang.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Komodowaran (Varanus komodoensis) besitzt eine stumpfe grünlich-braune Färbung, breite seitlich stehende Gliedmaßen, einen langen kräftigen Schwanz und eine gelbliche gespaltene Zunge. Sein Gang ist charakteristisch, da er die Gliedmaßen weit nach außen setzt und den Körper beim Laufen seitlich schlängelt.\n\nMännchen werden im Durchschnitt 2,59 m lang und wiegen 79 bis 91 kg. Weibchen werden im Durchschnitt 2,29 m lang und wiegen 68 bis 73 kg. Bei der Jagd können Komodowarane fast 19 km/h erreichen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Komodowaran gilt als stark gefährdet. Die Zoopedia nennt Lebensraumverlust, menschliche Eingriffe sowie die übermäßige Bejagung von Beutetieren wie Timorhirschen als wichtige Gefahren. Siedlungen und Landwirtschaft fragmentieren den Lebensraum; zusätzlich kann der klimabedingte Meeresspiegelanstieg niedrig gelegene Nistplätze und kleine Inseln bedrohen.\n\nDer Komodo-Nationalpark bietet der Art und ihrem Lebensraum rechtlichen Schutz. Weitere Maßnahmen umfassen Bestandsüberwachung, Bekämpfung der Wilderei, Ökotourismus, genetisch gesunde Ersatzpopulationen in Zoos sowie die Planung von Klimaanpassungsmaßnahmen. Der langfristige Erfolg hängt laut Zoopedia von Engagement vor Ort, vernetzten Lebensräumen und koordinierter globaler Unterstützung ab.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Komodowarane sind grundsätzlich Einzelgänger, können sich aber zum Fressen und zur Paarung vorübergehend versammeln. In solchen Gruppen ist das größte Männchen dominant und frisst zuerst beziehungsweise erhält Vorrang bei Weibchen.\n\nDie Paarungszeit dauert von Mai bis August. Männchen kämpfen um Territorium und Weibchen und richten sich dabei auf den Hinterbeinen auf. Weibchen reagieren häufig abwehrend auf Annäherungsversuche.\n\nEtwa 1 bis 3 Monate nach der Paarung legt das Weibchen 15 bis 30 Eier in ein Bodennest. Die Eier werden 7 bis 8 Monate lang bebrütet. Nach dem Schlüpfen graben sich die Jungtiere selbst aus dem Nest und suchen auf Bäumen und oberhalb des Bodens Schutz vor erwachsenen Tieren, die sie fressen können. Bis zu 90 % der Jungtiere sterben vor dem Erwachsenenalter.\n\nDie Geschlechtsreife wird erst im Alter von etwa 8 bis 9 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Komodowarane sind Lauerjäger und attackieren bei einem Angriff die Kehle ihrer Beute.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Komodowarane können Tiere von der Größe einer Ziege oder eines kleinen Rehs im Ganzen verschlingen und später unverdauliche Bestandteile wie Fell, Hörner und Knochen wieder hochwürgen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Komodowarane sind Kannibalen; Jungtiere der eigenen Art machen laut Zoopedia bis zu 10 % ihrer Nahrung aus.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Komodowarane übertragen mit mehreren Bisswunden ein starkes Gift, das durch Blutverlust und Schock zum Zusammenbruch der Beute beitragen kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Weibliche Komodowarane können sich durch Parthenogenese fortpflanzen; aus solchen Eiern schlüpfen laut Zoopedia nur männliche Tiere.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/08afbc5d/Lizard_KomodoDragon_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Varanus komodoensis/map/Varanus komodoensis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDhhZmJjNWQvTGl6YXJkX0tvbW9kb0RyYWdvbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Komodowaran – Planet Zoo 2",
+            "en": "Komodo Dragon – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Komodowarans aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Komodo Dragon."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Varanus komodoensis/bilder/Varanus komodoensis 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/08afbc5d/Lizard_KomodoDragon_illustration.jpg",
+          "alt": {
+            "de": "Komodowaran – Zoopedia-Illustration",
+            "en": "Komodo Dragon – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Komodowarans aus der Planet Zoo 2 Zoopedia.",
+            "en": "Komodo Dragon illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Varanus komodoensis/bilder/Varanus komodoensis illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Komodowaran",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/komodowaran",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 08afbc5d und Asset-Stamm Lizard_KomodoDragon belegt. Der Wildbestandswert „1.383“ wurde wegen unklarer Formatierung nur als Rohwert übernommen."
+    }
+  }
+}

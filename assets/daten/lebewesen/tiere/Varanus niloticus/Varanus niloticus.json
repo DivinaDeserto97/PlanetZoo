@@ -1,0 +1,440 @@
+{
+  "id": "Varanus niloticus",
+  "identitaet": {
+    "namen": {
+      "de": "Nilwaran",
+      "en": "Nile Monitor",
+      "en-US": "Nile Monitor",
+      "es": "Varano del Nilo",
+      "fr": "Varan du Nil",
+      "it": "Varano del Nilo",
+      "pt-BR": "Varano-do-Nilo",
+      "ja": "ナイルオオトカゲ",
+      "zh-Hans": "尼罗河巨蜥"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Varanidae",
+          "gattung": "Varanus",
+          "art": "Varanus niloticus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.2,
+          "max": 2.2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 1,2 bis 2,2 m Länge und beschreibt, dass Nilwarane ihr ganzes Leben lang weiterwachsen.",
+            "en": "The Zoopedia gives a length of 1.2 to 2.2 m and states that Nile Monitors continue growing throughout their lives."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.8,
+          "max": 15,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt große Gewichtsunterschiede je nach Größe und Umweltfaktoren. Männchen sind in der Regel größer und schwerer als Weibchen.",
+            "en": "The Zoopedia notes large differences in weight depending on size and environmental factors. Males are generally larger and heavier than females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "brutdauer",
+          "min": 3,
+          "max": 10,
+          "durchschnitt": null,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Eier werden je nach Umweltbedingungen 3 bis 10 Monate lang bebrütet.",
+            "en": "Depending on environmental conditions, the eggs incubate for 3 to 10 months."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "selbststaendigAbGeburt",
+          "min": 0,
+          "max": 0,
+          "durchschnitt": 0,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Nach dem Schlüpfen leben die Jungtiere eigenständig.",
+            "en": "After hatching, the young live independently."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Nilwarane sind Einzelgänger und leben bevorzugt allein.",
+            "en": "Nile Monitors are solitary and prefer to live alone."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "krokodileierUndJungtiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt Nilwarane als geschickt darin, Eier und Jungtiere aus Krokodilnestern zu erbeuten.",
+                "en": "The Zoopedia describes Nile Monitors as skilled at taking eggs and young from crocodile nests."
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "alligatoreierUndJungtiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Für Florida nennt die Zoopedia ausdrücklich Eier und Jungtiere von Alligatoren als Beute.",
+                "en": "For Florida, the Zoopedia explicitly identifies alligator eggs and young as prey."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Nilwaran (Varanus niloticus) lebt in Gebieten Afrikas südlich der Sahara, die nicht von Wüste bedeckt sind, sowie im Nildelta. Die Art wurde außerdem in die USA eingeführt, besonders nach Kalifornien und Florida, wo sie als invasive Spezies gilt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Africa and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Africa and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Nilwaran (Varanus niloticus), auch Guana, Wasserleguan oder Flussleguan genannt, ist eine große Reptilienart Afrikas. Ausgewachsene Tiere sind meist braun bis grün mit dunklen Streifen am Körper sowie gelben Flecken an Beinen und Kopf. Jungtiere sind schwarz mit leuchtend gelben Flecken.\n\nNilwarane werden etwa 1,2 bis 2,2 m lang und wachsen ihr ganzes Leben weiter. Ihr Gewicht reicht laut Zoopedia von 0,8 bis 15 kg; Männchen sind in der Regel größer und schwerer als Weibchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Nilwaran gilt aufgrund seiner weiten Verbreitung und seiner Anpassungsfähigkeit als nicht gefährdet. Regional nennt die Zoopedia jedoch die Umwandlung von Lebensräumen, übermäßige Bejagung zur Ledergewinnung, Trockenlegung von Feuchtgebieten und die Ausbreitung des Menschen als Bedrohungen.\n\nIn vielen Regionen gibt es keine speziellen Arterhaltungsmaßnahmen. In manchen Ländern ist die Art geschützt und der internationale Handel gemäß CITES Anhang II eingeschränkt. Allgemeine Projekte zur Wiederherstellung von Lebensräumen können der Art zugutekommen.\n\nIn Regionen, in denen Nilwarane invasiv sind, etwa Florida, werden Tiere eingefangen und über öffentliche Meldesysteme erfasst, um die Bestände zu kontrollieren und heimische Arten zu schützen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Nilwarane sind Einzelgänger und leben bevorzugt allein.\n\nDie Paarungszeit reicht von Juni bis Oktober. Männchen suchen Weibchen über deren Geruch. Treffen mehrere Männchen bei der Suche aufeinander, können sie kämpfen oder ein kleineres Tier weicht einem größeren aus.\n\nNach der Paarung trägt das Weibchen die Eier bis zur Regenzeit bei sich und gräbt nach einem Regenschauer ein Nest in weichen Boden. Die Eier werden je nach Umweltbedingungen 3 bis 10 Monate lang bebrütet. Die Jungtiere müssen sich nach dem Schlüpfen aus dem Nest graben und können dabei auf Regen angewiesen sein; manche Weibchen kehren laut Zoopedia zum Nest zurück und helfen ihnen.\n\nNach dem Schlüpfen leben die Jungtiere eigenständig. Die Geschlechtsreife erreichen sie mit etwa 3 bis 4 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Viele Nilwaranweibchen legen ihre Eier in Termitenhügeln ab; die Termiten reparieren danach den Bau und schützen dadurch die Eier.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bedrohte oder gereizte Nilwarane verteidigen sich mit kräftigen Schwanzschlägen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kampfadler jagen Nilwarane und können laut Zoopedia Exemplare bis etwa 4 kg erbeuten und wegtragen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nilwarane erbeuten geschickt Eier und Jungtiere aus Nestern von Krokodilen sowie in Florida auch von Alligatoren und können dort deren Bestände beeinträchtigen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nilwarane wachsen ihr ganzes Leben lang weiter.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b3a07407/Lizard_NileMonitor_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Varanus niloticus/map/Varanus niloticus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYjNhMDc0MDcvTGl6YXJkX05pbGVNb25pdG9yLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjExNjgsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Nilwaran – Planet Zoo 2",
+            "en": "Nile Monitor – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Nilwarans aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Nile Monitor."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Varanus niloticus/bilder/Varanus niloticus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b3a07407/Lizard_NileMonitor_illustration.jpg",
+          "alt": {
+            "de": "Nilwaran – Zoopedia-Illustration",
+            "en": "Nile Monitor – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Nilwarans aus der Planet Zoo 2 Zoopedia.",
+            "en": "Nile Monitor illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Varanus niloticus/bilder/Varanus niloticus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Nilwaran",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/nilwaran",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b3a07407 und Asset-Stamm Lizard_NileMonitor belegt."
+    }
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "id": "Lemur catta",
+  "identitaet": {
+    "namen": {
+      "de": "Katta",
+      "en": "Ring-tailed Lemur",
+      "en-US": "Ring-tailed Lemur",
+      "es": "Lémur de cola anillada",
+      "fr": "Lémur catta",
+      "it": "Lemure dalla coda ad anelli",
+      "pt-BR": "Lêmure-de-cauda-anelada",
+      "ja": "ワオキツネザル",
+      "zh-Hans": "环尾狐猴"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [],
+    "schutzstatus": "endangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Lemuridae",
+          "gattung": "Lemur",
+          "art": "Lemur catta",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.39,
+          "max": 0.46,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich eine Schwanzlänge von 56 bis 63 cm.",
+            "en": "The Zoopedia additionally gives a tail length of 56 to 63 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "wert": 2.2,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "endangered",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "rohwert": "2",
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt beim Wildbestand nur „2“ an. Da die Bedeutung oder Skalierung dieses Werts unklar ist, wurde kein numerischer Populationswert daraus abgeleitet.",
+            "en": "The Zoopedia shows only '2' for the wild population. Because the meaning or scale of this value is unclear, no numeric population value was derived from it."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 4.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt bis zu 2 Junge pro Geburt.",
+            "en": "The Zoopedia states up to 2 young per birth."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "getragenBis",
+          "min": 6,
+          "max": 6,
+          "durchschnitt": 6,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Jungen werden von der Mutter getragen, bis sie 6 Monate alt sind.",
+            "en": "The young are carried by the mother until they are 6 months old."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "groupLiving",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 30,
+          "hinweis": {
+            "de": "Kattas leben in Familiengruppen beziehungsweise „Truppen“ von bis zu 30 Tieren. Die Weibchen sind miteinander verwandt, während erwachsene Männchen ihre Geburtsgruppe verlassen.",
+            "en": "Ring-tailed lemurs live in family groups or 'troops' of up to 30 animals. The females are related, while adult males leave their natal group."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "blaetter",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "fruechte",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Wie alle Lemuren ist auch der Katta (Lemur catta) auf Madagaskar heimisch und kommt nirgendwo sonst auf der Welt vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Like all lemurs, the Ring-tailed Lemur (Lemur catta) is native to Madagascar and occurs nowhere else in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Like all lemurs, the Ring-tailed Lemur (Lemur catta) is native to Madagascar and occurs nowhere else in the world.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Kattas besitzen eine spitze Schnauze, katzenartige Ohren und einen langen Schwanz mit 12 oder 13 weißen sowie 13 oder 14 schwarzen Ringen. Die Schwanzspitze ist immer schwarz.\n\nErwachsene Tiere erreichen in der Regel eine Körperlänge von 39 bis 46 cm, dazu kommt eine Schwanzlänge von 56 bis 63 cm. Das durchschnittliche Gewicht liegt bei 2,2 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Katta gilt als stark gefährdet. Die Zoopedia beschreibt einen starken Rückgang der geschätzten Bestände in den letzten Jahrzehnten. Als Hauptursachen werden Abholzung durch Brandrodung, Holzkohleproduktion und Holzgewinnung, die Fragmentierung der Bestände, Jagd wegen des Fleisches, Fang für lokale und internationale Tiermärkte sowie extreme Wetterbedingungen und lange Dürreperioden auf Madagaskar genannt.\n\nSchutzmaßnahmen umfassen Schutzgebiete, Programme mit der lokalen Bevölkerung zur nachhaltigen Landbewirtschaftung und zu alternativen Einkommensquellen, Aufklärung gegen Jagd und Heimtierhandel sowie Zuchtprogramme in Gefangenschaft und Forschungsprojekte von Zoos und Naturschutzorganisationen. Dauerhafte Unterstützung und Durchsetzung bleiben laut Zoopedia entscheidend.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Kattas leben in Familiengruppen von bis zu 30 Tieren, sogenannten Truppen, die gemeinsam umherstreifen und Nahrung suchen. Die Weibchen sind miteinander verwandt, während Männchen ihre Familie beim Erwachsenwerden verlassen. Die Truppen legen täglich mehrere Kilometer auf der Suche nach Blättern und Früchten zurück. Gegenüber den eigenen Gruppenmitgliedern verhalten sich Kattas verspielt und freundlich, gegenüber anderen Truppen jedoch mitunter aggressiv.\n\nDie Paarungszeit dauert von Mitte April bis Mitte Mai. Sowohl Männchen als auch Weibchen paaren sich mit mehreren Partnern. Wer sich fortpflanzt, hängt von der Rangordnung in der Gruppe ab.\n\nDie Weibchen sind etwa 4,5 Monate trächtig und bringen dann bis zu 2 Junge zur Welt. Die Jungen werden von der Mutter getragen, bis sie 6 Monate alt sind, danach können sie sich frei bewegen.\n\nWeibchen bleiben dauerhaft in der Gruppe ihrer Mutter. Männchen verlassen im Alter von 3 bis 5 Jahren die Familiengruppe und wechseln im Lauf ihres Lebens oft mehrfach die Gruppe. Geschlechtsreif werden Kattas mit etwa 3 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der lateinische Name des Kattas lautet „Lemur catta“ und bezieht sich laut Zoopedia auf sein katzenartiges Aussehen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Schwanz eines Kattas ist länger als sein Körper.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kattas besitzen im Unterkiefer einen Zahnkamm, der zur Fellpflege genutzt wird.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kattas haben eine reflektierende Schicht in der Netzhaut und können deshalb bei Dunkelheit sehr gut sehen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Männliche Kattas veranstalten sogenannte „Stinkkämpfe“, bei denen sie ihren Schwanz mit stark duftenden Drüsensekreten einreiben und dem Rivalen entgegenschleudern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/293ac75a/Lemur_RingTailed_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Lemur catta/map/Lemur catta map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjkzYWM3NWEvTGVtdXJfUmluZ1RhaWxlZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Katta – Planet Zoo 2",
+            "en": "Ring-tailed Lemur – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Kattas aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Ring-tailed Lemur."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Lemur catta/bilder/Lemur catta 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/293ac75a/Lemur_RingTailed_illustration.jpg",
+          "alt": {
+            "de": "Katta – Zoopedia-Illustration",
+            "en": "Ring-tailed Lemur – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Kattas aus der Planet Zoo 2 Zoopedia.",
+            "en": "Ring-tailed Lemur illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Lemur catta/bilder/Lemur catta illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Katta",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/katta",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 293ac75a und Asset-Stamm Lemur_RingTailed belegt. Der Wildbestandswert „2“ wurde wegen unklarer Bedeutung nur als Rohwert übernommen."
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "id": "Hippotragus niger",
+  "identitaet": {
+    "namen": {
+      "de": "Rappenantilope",
+      "en": "Sable Antelope",
+      "en-US": "Sable Antelope",
+      "es": "Antílope sable",
+      "fr": "Hippotrague noir",
+      "it": "Antilope nera",
+      "pt-BR": "Antílope-negro",
+      "ja": "セーブルアンテロープ",
+      "zh-Hans": "黑马羚"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Grasland"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Hippotraginae",
+          "gattung": "Hippotragus",
+          "art": "Hippotragus niger",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.17,
+          "max": 1.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 0.95,
+          "max": 1.12,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 210,
+          "max": 260,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 200,
+          "max": 240,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia weist darauf hin, dass die Art insgesamt als nicht gefährdet gilt, die Riesen-Rappenantilope in Angola jedoch vom Aussterben bedroht ist.",
+            "en": "The Zoopedia notes that the species overall is considered least concern, while the Giant Sable Antelope in Angola is critically endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 50000,
+          "max": 60000,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen Wildbestand von 50.000 bis 60.000 Tieren.",
+            "en": "The Zoopedia gives a wild population of 50,000 to 60,000 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 18,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Rappenantilopen sind laut Zoopedia mit 18 Monaten geschlechtsreif, pflanzen sich aber meist erst später fort.",
+            "en": "According to the Zoopedia, Sable Antelope are sexually mature at 18 months but usually reproduce later."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 8,
+          "max": 9,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "versteckt",
+          "min": 4,
+          "max": 4,
+          "durchschnitt": 4,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Das Kalb bleibt die ersten 4 Wochen seines Lebens versteckt.",
+            "en": "The calf remains hidden for the first 4 weeks of its life."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 8,
+          "max": 8,
+          "durchschnitt": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "relatedFemaleHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Paarungsherden bestehen aus miteinander verwandten Weibchen, deren Jungen und einem nicht verwandten Männchen.",
+            "en": "Breeding herds consist of related females, their young, and one unrelated male."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "bachelorGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Männchen ohne eigenen Harem leben in Junggesellenherden.",
+            "en": "Males without their own harem live in bachelor herds."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarungszeitMaennchen",
+          "wert": "dominantMaleWithFemales",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Während der Paarungszeit paart sich das dominante Männchen mit den paarungsbereiten Weibchen seines Reviers.",
+            "en": "During the mating season, the dominant male mates with receptive females in his territory."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "savanna",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Savanne als Lebensraum.",
+            "en": "The Zoopedia describes savanna as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "openWoodland",
+          "hinweis": {
+            "de": "Die Art bevorzugt laut Zoopedia leicht bewaldete Gebiete gegenüber völlig offenen Landschaften.",
+            "en": "According to the Zoopedia, the species prefers lightly wooded areas over completely open landscapes."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Rappenantilope als weidend und fressend in der Savanne.",
+              "en": "The Zoopedia describes the Sable Antelope grazing and feeding in the savanna."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Rappenantilope (Hippotragus niger) lebt im Südosten Afrikas. Sie kommt in Savannen vor und bevorzugt leicht bewaldete Gebiete gegenüber völlig offenen Landschaften.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Africa. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Africa. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Rappenantilope (Hippotragus niger) besitzt lange, gekerbte und nach hinten gebogene Hörner sowie ein hellbraunes bis schwarzes Fell mit weißem Bauch, Kinn und Hals und weißen Tränenflecken im Gesicht.\n\nMännchen sind größer und dunkler als Weibchen. Sie erreichen 1,17 bis 1,40 m Schulterhöhe und 210 bis 260 kg Gewicht; ihre Hörner werden 0,81 bis 1,65 m lang. Weibchen erreichen 0,95 bis 1,12 m Schulterhöhe und 200 bis 240 kg Gewicht; ihre Hörner werden 0,61 bis 1,02 m lang.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Rappenantilope gilt auf Artenebene als nicht gefährdet. Die Zoopedia weist jedoch darauf hin, dass die Riesen-Rappenantilope in Angola vom Aussterben bedroht ist. Zu den Belastungen zählen Lebensraumverlust, Konkurrenz mit Nutztieren, die Umwandlung und Fragmentierung von Savannen, Wilderei für Fleisch und Trophäen sowie anhaltende Dürren.\n\nSchutzmaßnahmen umfassen Schutzgebiete und Wildreservate, Anti-Wilderei-Patrouillen, verbesserte Strafverfolgung, die Nutzung von Überwachungsdaten für die Flächenbewirtschaftung sowie gemeindebasierte Initiativen für nachhaltige Landnutzung und Wildtierschutz.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Rappenantilopen sind soziale Herdentiere. In freier Wildbahn leben sie entweder in Paarungsherden aus verwandten Weibchen, deren Jungen und einem nicht verwandten Männchen oder in Junggesellenherden aus Männchen ohne eigenen Harem.\n\nWährend der Paarungszeit von Mai bis Juli paart sich das dominante Männchen mit den paarungsbereiten Weibchen seines Reviers.\n\nNach 8 bis 9 Monaten Tragzeit verlässt das trächtige Weibchen die Herde und bringt ein einzelnes Kalb abseits der anderen zur Welt. Das Jungtier bleibt die ersten 4 Wochen versteckt, kehrt danach zur Herde zurück und wird mit 8 Monaten vollständig entwöhnt.\n\nRappenantilopen werden mit etwa 18 Monaten geschlechtsreif, pflanzen sich aber meist erst später fort. Weibchen bleiben bei der Herdengemeinschaft ihrer Mutter und bekommen ihr erstes Kalb gewöhnlich mit etwa 2,5 Jahren. Männchen werden mit ungefähr 3 Jahren aus ihrer Familie vertrieben, schließen sich einer Junggesellenherde an und gründen meist mit etwa 5 bis 6 Jahren ein eigenes Revier.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Unter den Weibchen besteht eine klare Hierarchie; das dominante Weibchen ist gewöhnlich das stärkste und gesündeste Tier der Herde.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Rappenantilopen kauen in freier Wildbahn auf Knochen, um Mineralstoffe aufzunehmen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das Fell wird mit zunehmendem Alter dunkler; eine dunklere Färbung geht laut Zoopedia häufig mit einem höheren Rang einher.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Junge Männchen kämpfen oft spielerisch, während ältere Männchen bei Auseinandersetzungen Köpfe und Hörner gegeneinander einsetzen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Rappenantilopen fliehen nicht immer vor Raubtieren, sondern stellen sich ihnen mit ihren Hörnern entgegen; laut Zoopedia sollen sie dabei sogar schon Löwen getötet haben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2bfb407f/Antelope_Sable_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Hippotragus niger/map/Hippotragus niger map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMmJmYjQwN2YvQW50ZWxvcGVfU2FibGUuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Rappenantilope – Planet Zoo 2",
+            "en": "Sable Antelope – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Rappenantilope aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sable Antelope."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Hippotragus niger/bilder/Hippotragus niger 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2bfb407f/Antelope_Sable_illustration.jpg",
+          "alt": {
+            "de": "Rappenantilope – Zoopedia-Illustration",
+            "en": "Sable Antelope – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Rappenantilope aus der Planet Zoo 2 Zoopedia.",
+            "en": "Sable Antelope illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Hippotragus niger/bilder/Hippotragus niger illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Rappenantilope",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/rappenantilope",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 2bfb407f und Asset-Stamm Antelope_Sable belegt."
+    }
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "id": "Eunectes notaeus",
+  "identitaet": {
+    "namen": {
+      "de": "Gelbe Anakonda",
+      "en": "Yellow Anaconda",
+      "en-US": "Yellow Anaconda",
+      "es": "Anaconda amarilla",
+      "fr": "Anaconda jaune",
+      "it": "Anaconda gialla",
+      "pt-BR": "Sucuri-amarela",
+      "ja": "キイロアナコンダ",
+      "zh-Hans": "黄水蚺"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "southAmerica"
+    ],
+    "biome": [
+      "Feuchtgebiete",
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Boidae",
+          "gattung": "Eunectes",
+          "art": "Eunectes notaeus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3.3,
+          "max": 4.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt 3,3 bis 4,4 m als durchschnittlichen Längenbereich ausgewachsener Tiere. Das größte dort genannte dokumentierte Exemplar war 4,6 m lang.",
+            "en": "The Zoopedia describes 3.3 to 4.4 m as the average length range of adults. The largest documented specimen mentioned there measured 4.6 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 25,
+          "max": 35,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt 25 bis 35 kg als durchschnittlichen Gewichtsbereich. Das größte dort genannte dokumentierte Exemplar wog 55 kg.",
+            "en": "The Zoopedia describes 25 to 35 kg as the average weight range. The largest documented specimen mentioned there weighed 55 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt die Population langfristig als stabil.",
+            "en": "The Zoopedia lists the wild population as unknown and describes the population as stable in the long term."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 4,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 4,
+          "max": 82,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Gelbe Anakonda bringt laut Zoopedia lebende Jungtiere zur Welt. Diese sind von Geburt an selbstständig.",
+            "en": "According to the Zoopedia, the Yellow Anaconda gives birth to live young. They are independent from birth."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Gelbe Anakondas sind Einzelgänger und begegnen Artgenossen in der Wildnis fast nur zur Paarung.",
+            "en": "Yellow Anacondas are solitary and encounter conspecifics in the wild mainly for mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "freshwaterSwamp",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Nebenflüsse, Sümpfe und Moore des Paraguay-Flussbeckens als Lebensraum.",
+            "en": "The Zoopedia names tributaries, swamps and marshes of the Paraguay River basin as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt watende Vögel ausdrücklich als Hauptbeute.",
+              "en": "The Zoopedia explicitly identifies wading birds as the main prey."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "watendeVoegel",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Gelbe Anakondas ernähren sich laut Zoopedia hauptsächlich von watenden Vögeln, denen sie unter Wasser auflauern.",
+                "en": "According to the Zoopedia, Yellow Anacondas mainly feed on wading birds, ambushing them from underwater."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda (Eunectes notaeus) lebt in Nebenflüssen, Sümpfen und Mooren des Paraguay-Flussbeckens. Sie kommt vor allem in Paraguay, Bolivien, Argentinien und Brasilien vor.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Yellow Anaconda (Eunectes notaeus) inhabits tributaries, swamps and marshes of the Paraguay River basin, especially in Paraguay, Bolivia, Argentina and Brazil.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Yellow Anaconda (Eunectes notaeus) inhabits tributaries, swamps and marshes of the Paraguay River basin, especially in Paraguay, Bolivia, Argentina and Brazil.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda (Eunectes notaeus) ist eine große Würgeschlange Südamerikas. Sie besitzt gelbe Schuppen mit braun-schwarzen Flecken auf dem Rücken.\n\nAusgewachsene Tiere erreichen laut Zoopedia gewöhnlich beziehungsweise im durchschnittlichen Bereich etwa 3,3 bis 4,4 m Länge und 25 bis 35 kg Gewicht. Das größte dort genannte dokumentierte Exemplar war 4,6 m lang und wog 55 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda gilt als nicht gefährdet. In der Vergangenheit wurde sie besonders wegen ihrer Haut sowie von traditionellen Gemeinschaften als Nahrungs- und Heilmittel gejagt. Der Wildfang für den Heimtierhandel wird von der Zoopedia als unerheblich beschrieben.\n\nNach einem vollständigen Handelsverbot in den 1990er-Jahren wird der internationale Handel mit Häuten heute reguliert und überwacht und scheint laut Zoopedia in nachhaltigem Umfang zu erfolgen. Die langfristigen Aussichten werden als stabil beschrieben. Künftige Wasserkraftprojekte und deren Auswirkungen auf Feuchtgebiete und Hochwasserzyklen werden als potenzielle Bedrohung genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Gelbe Anakondas sind Einzelgänger und treffen in der Wildnis nur selten auf Artgenossen, außer während der Paarungszeit.\n\nDie Paarungszeit dauert von April bis Mai. Paarungsbereite Weibchen setzen Pheromone frei, die Männchen anlocken. Treffen mehrere Männchen auf dasselbe Weibchen, kann sich ein Paarungsknäuel bilden, in dem viele Männchen das Weibchen gleichzeitig umschlingen. Solche Knäuel können wochenlang bestehen. Gewöhnlich setzt sich das größte Männchen durch und paart sich mit dem Weibchen, meist im Wasser.\n\nNach etwa 6 Monaten bringt das Weibchen 4 bis 82 lebende Jungtiere zur Welt. Diese sind von Geburt an selbstständig. Die Geschlechtsreife wird mit etwa 3 bis 4 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Gelbe Anakonda gehört laut Zoopedia zu den größten Schlangenarten der Welt; nur die Große Anakonda wird noch länger.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas wachsen ihr ganzes Leben lang weiter.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas ernähren sich hauptsächlich von watenden Vögeln, denen sie unter Wasser auflauern.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Nach einer großen Mahlzeit kann eine Gelbe Anakonda laut Zoopedia mehrere Monate ohne weitere Nahrung auskommen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gelbe Anakondas setzen laut Zoopedia eine Chemikalie frei, die sie vor Zeckenbissen schützt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/518ac83f/Constrictor_YellowAnaconda_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/map/Eunectes notaeus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNTE4YWM4M2YvQ29uc3RyaWN0b3JfWWVsbG93QW5hY29uZGEuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Gelbe Anakonda – Planet Zoo 2",
+            "en": "Yellow Anaconda – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Gelben Anakonda aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Yellow Anaconda."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/518ac83f/Constrictor_YellowAnaconda_illustration.jpg",
+          "alt": {
+            "de": "Gelbe Anakonda – Zoopedia-Illustration",
+            "en": "Yellow Anaconda – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Gelben Anakonda aus der Planet Zoo 2 Zoopedia.",
+            "en": "Yellow Anaconda illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Gelbe Anakonda",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/gelbe-anakonda",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 518ac83f und Asset-Stamm Constrictor_YellowAnaconda belegt."
+    }
+  }
+}

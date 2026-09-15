@@ -1,0 +1,462 @@
+{
+  "id": "Gorilla gorilla gorilla",
+  "identitaet": {
+    "namen": {
+      "de": "Westlicher Flachlandgorilla",
+      "en": "Western Lowland Gorilla",
+      "en-US": "Western Lowland Gorilla",
+      "es": "Gorila occidental de llanura",
+      "fr": "Gorille des plaines de l’Ouest",
+      "it": "Gorilla di pianura occidentale",
+      "pt-BR": "Gorila-das-planícies-ocidentais",
+      "ja": "ニシローランドゴリラ",
+      "zh-Hans": "西部低地大猩猩"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa"
+    ],
+    "biome": [
+      "Tropisch",
+      "Feuchtgebiete"
+    ],
+    "schutzstatus": "criticallyEndangered"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Hominidae",
+          "gattung": "Gorilla",
+          "art": "Gorilla gorilla gorilla",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 181.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 79,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "criticallyEndangered",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 230000,
+          "max": 260000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand mit 230.000 bis 260.000 Individuen an.",
+            "en": "The Zoopedia gives the wild population as 230,000 to 260,000 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 8,
+          "max": 9,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 8.5,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiMutter",
+          "min": 4,
+          "max": 4,
+          "durchschnitt": 4,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Mutter kümmert sich sorgfältig um das Jungtier, bis es etwa 4 Jahre alt ist; danach wird es zunehmend unabhängiger.",
+            "en": "The mother carefully cares for the infant until it is about 4 years old, after which it becomes increasingly independent."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "verlaesstGeburtsort",
+          "min": 9,
+          "max": 10,
+          "durchschnitt": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Junge Gorillas verlassen ihre Familiengruppe mit etwa 9 bis 10 Jahren.",
+            "en": "Young gorillas leave their family group at about 9 to 10 years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "smallGroupWithDominantMale",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Gorillas leben laut Zoopedia in kleinen Gruppen, die ungefähr zur Hälfte aus Männchen und zur Hälfte aus Weibchen bestehen. Üblicherweise führt ein dominantes Männchen die Gruppe.",
+            "en": "According to the Zoopedia, gorillas live in small groups composed roughly half of males and half of females, usually led by one dominant male."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "dominanteMaennchen",
+          "wert": "oneOrTwoDominantMales",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Manche Gruppen haben zwei dominante Männchen; laut Zoopedia handelt es sich dabei um ein Vater-Sohn-Gespann.",
+            "en": "Some groups have two dominant males; according to the Zoopedia these form a father-son pair."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "abwanderung",
+          "wert": "sexSpecificDispersal",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Junge Weibchen schließen sich nach dem Verlassen ihrer Familiengruppe einer anderen Gruppe an, während junge Männchen zunächst als Einzelgänger leben.",
+            "en": "Young females join another group after leaving their family group, while young males initially live alone."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "rainforest",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Regenwälder als Lebensraum.",
+            "en": "The Zoopedia names rainforests as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "freshwaterSwamp",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Sumpfwälder als Lebensraum.",
+            "en": "The Zoopedia names swamp forests as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "abandonedAgriculturalLand",
+          "hinweis": {
+            "de": "Die Zoopedia nennt außerdem verlassene landwirtschaftliche Flächen.",
+            "en": "The Zoopedia also names abandoned agricultural land."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Westliche Flachlandgorilla (Gorilla gorilla gorilla) ist laut Zoopedia in Kamerun, Äquatorialguinea, Gabun, der Demokratischen Republik Kongo und dem Süden von Niger heimisch. Die Tiere leben in Regen- und Sumpfwäldern sowie auf verlassenen landwirtschaftlichen Flächen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainforests, swamp forests and abandoned agricultural land.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainforests, swamp forests and abandoned agricultural land.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Westliche Flachlandgorilla (Gorilla gorilla gorilla) besitzt schwarze Haut, dunkle nach vorne gerichtete Augen, einen ausgeprägten Überaugenwulst, große Nasenlöcher und grobes Fell, das mit Ausnahme von Gesicht, Ohren, Händen und Füßen den Körper bedeckt. Bei älteren Männchen wird das Rückenfell grau, weshalb sie als Silberrücken bezeichnet werden.\n\nMännchen sind deutlich größer als Weibchen. Laut Zoopedia erreichen Männchen in aufrechter Haltung im Schnitt etwa 1,70 m und wiegen 181,5 kg; Weibchen werden etwa 1,50 m groß und wiegen rund 79 kg. Da die Größenangaben ausdrücklich für die aufrechte Haltung gelten, wurden sie nicht als Schulterhöhe strukturiert gespeichert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Westliche Flachlandgorilla gilt als vom Aussterben bedroht. Seine Lebensräume in den tropischen Wäldern Zentralafrikas werden durch Abholzung, Bergbau und die Ausweitung der Landwirtschaft zerstört und fragmentiert. Wilderei bleibt eine große Bedrohung; zusätzlich nennt die Zoopedia Krankheiten wie Ebola, die in manchen lokalen Beständen bis zu 90 % der Tiere ausgerottet haben, sowie den Klimawandel.\n\nSchutzmaßnahmen finden sowohl in situ als auch ex situ statt. Genannt werden Schutzgebiete und Nationalparks, Anti-Wilderei-Patrouillen, Lebensraummanagement, gemeindebasierte Arterhaltungsprogramme sowie Zuchtprogramme, öffentliche Aufklärung und genetische Forschung in Zoos und Zuchtzentren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Westliche Flachlandgorillas leben in kleinen sozialen Gruppen. Laut Zoopedia bestehen diese ungefähr zur Hälfte aus Männchen und zur Hälfte aus Weibchen. Üblicherweise führt ein dominantes Männchen, der Silberrücken, die Gruppe bei der Nahrungssuche oder Wanderung an. Manche Gruppen besitzen zwei dominante Männchen; dabei handelt es sich um ein Vater-Sohn-Gespann. Die Bindungen innerhalb der Gruppe, besonders zwischen den Weibchen und zum Silberrücken, sind stark.\n\nGorillas paaren sich das ganze Jahr über. Paarungsbereite Weibchen versuchen die Aufmerksamkeit des Silberrückens unter anderem durch Blickkontakt, gespitzte Lippen und gegebenenfalls Schlagen auf den Boden zu erregen.\n\nDie Trächtigkeit dauert etwa 8,5 Monate. Danach bringt die Mutter ein Jungtier zur Welt und kümmert sich sorgfältig darum, bis es etwa 4 Jahre alt ist. Mit 9 bis 10 Jahren verlassen junge Gorillas ihre Familiengruppe. Junge Weibchen schließen sich einer anderen Gruppe an, während Männchen zunächst als Einzelgänger leben, bis sie eine eigene Familiengruppe gründen können. Die Geschlechtsreife wird mit etwa 8 bis 9 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Gorillas sind laut Zoopedia die größte Primatenart.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gorillas sind für ihre Wälder wichtig, weil sie durch ihre Wanderungen und Fressgewohnheiten Pflanzensamen verbreiten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gorillas bauen tagsüber Nester, in denen sie nachts schlafen; meist befinden sich diese laut Zoopedia in Bäumen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gorillas stellen Werkzeuge her und verwenden sie, etwa bearbeitete Äste zum Erreichen von Nahrung oder zum Prüfen der Wassertiefe.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Gorillas können Gebärdensprachen erlernen; die Zoopedia nennt Koko als Beispiel und gibt über 1.100 erlernte Gebärden an.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/780f5e36/Gorilla_WesternLowland_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/map/Gorilla gorilla gorilla map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNzgwZjVlMzYvR29yaWxsYV9XZXN0ZXJuTG93bGFuZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Westlicher Flachlandgorilla – Planet Zoo 2",
+            "en": "Western Lowland Gorilla – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Westlichen Flachlandgorillas aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Western Lowland Gorilla."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/780f5e36/Gorilla_WesternLowland_illustration.jpg",
+          "alt": {
+            "de": "Westlicher Flachlandgorilla – Zoopedia-Illustration",
+            "en": "Western Lowland Gorilla – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Westlichen Flachlandgorillas aus der Planet Zoo 2 Zoopedia.",
+            "en": "Western Lowland Gorilla illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/bilder/Gorilla gorilla gorilla illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Westlicher Flachlandgorilla",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/westlicher-flachlandgorilla",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Kontext verwendet, der Asset-ID 780f5e36 und Asset-Stamm Gorilla_WesternLowland belegt. Die Angaben 1,70 m bzw. 1,50 m in aufrechter Haltung wurden nicht als Schulterhöhe strukturiert gespeichert."
+    }
+  }
+}

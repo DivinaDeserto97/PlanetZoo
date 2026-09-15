@@ -1,0 +1,439 @@
+{
+  "id": "Naso unicornis",
+  "identitaet": {
+    "namen": {
+      "de": "Kurznasen-Doktorfisch",
+      "en": "Bluespine Unicornfish",
+      "en-US": "Bluespine Unicornfish",
+      "es": "Pez unicornio de espina azul",
+      "fr": "Nason à éperons bleus",
+      "it": "Pesce unicorno dalle spine blu",
+      "pt-BR": "Peixe-unicórnio-de-espinho-azul",
+      "ja": "テングハギ",
+      "zh-Hans": "蓝棘鼻鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Riff",
+      "Tropisch"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Acanthuriformes",
+          "familie": "Acanthuridae",
+          "gattung": "Naso",
+          "art": "Naso unicornis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.45,
+          "max": 0.6,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3,
+          "max": 5.5,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt die Populationszahlen im Allgemeinen als stabil.",
+            "en": "The Zoopedia lists the wild population as unknown and describes population numbers as generally stable."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die frei im Plankton treibenden Eier schlüpfen laut Zoopedia meist innerhalb von 24 bis 48 Stunden.",
+            "en": "According to the Zoopedia, the free-floating planktonic eggs usually hatch within 24 to 48 hours."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "pelagischeLarvenphase",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Larven leben mehrere Wochen im offenen Meer und werden von Strömungen weit verteilt. Eine genaue Dauer nennt die Zoopedia nicht.",
+            "en": "The larvae live in the open ocean for several weeks and are widely dispersed by currents. The Zoopedia gives no exact duration."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "fortpflanzung",
+          "wert": "pairOrGroupSpawning",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Zur Fortpflanzung bilden Kurznasen-Doktorfische vorübergehend Laichgruppen, in denen mehrere Männchen und Weibchen gleichzeitig Eier und Spermien ins freie Wasser abgeben.",
+            "en": "For reproduction, Bluespine Unicornfish temporarily form spawning groups in which multiple males and females release eggs and sperm into open water simultaneously."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Korallenriffe, Riffhänge und äußere Riffkanten sowie Lagunen, Kanäle und Brandungszonen als Lebensraum erwachsener Tiere.",
+            "en": "The Zoopedia names tropical coral reefs, reef slopes and outer reef edges, as well as lagoons, channels and surf zones, as adult habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Braunalgenblätter als Hauptnahrung und nennt das Abweiden von Algen auf Korallenriffen.",
+              "en": "The Zoopedia describes brown-algae blades as the main food and mentions grazing algae on coral reefs."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "braunalgen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Erwachsene Kurznasen-Doktorfische ernähren sich laut Zoopedia hauptsächlich von Blättern der Braunalgen und begrenzen dadurch das Algenwachstum auf Korallenriffen.",
+                "en": "According to the Zoopedia, adult Bluespine Unicornfish feed mainly on brown-algae blades and thereby limit algal growth on coral reefs."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Kurznasen-Doktorfisch (Naso unicornis) lebt in tropischen Korallenriffen, an Riffhängen und äußeren Riffkanten. Sein Verbreitungsgebiet erstreckt sich über den Indopazifik von der Ostküste Afrikas und dem Roten Meer über Südostasien bis nach Australien, Japan und zu Inseln im zentralen Pazifik.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Africa and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Africa and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Kurznasen-Doktorfisch (Naso unicornis) besitzt einen stromlinienförmigen, seitlich abgeflachten Körper mit graublauer bis olivgrüner Färbung. Auffällig sind blaue stachelartige Fortsätze an der Schwanzwurzel. Erwachsene Tiere entwickeln außerdem einen hornartigen Fortsatz an der Stirn.\n\nDie Art wird gewöhnlich 45 bis 60 cm lang und wiegt 3 bis 5,5 kg. Männchen und Weibchen sehen ähnlich aus, Männchen besitzen jedoch längere Hörner sowie längere Flossenstacheln und -fäden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Kurznasen-Doktorfisch gilt aufgrund seines großen Verbreitungsgebiets und allgemein stabiler Populationszahlen als nicht gefährdet. Die Zoopedia beschreibt ihn jedoch als stark befischten Rifffisch. Zusätzlich ist er vom Rückgang der Korallenriffe durch Klimawandel, Habitatverlust und sinkende Artenvielfalt betroffen.\n\nDie Art ist langlebig und hat einen langsamen Fortpflanzungszyklus, wodurch sich Bestände nach Rückgängen nur langsam erholen. Schutzmaßnahmen konzentrieren sich auf Meeresschutzgebiete, Fangbeschränkungen, Fischereilizenzen, nachhaltige Fischereiverwaltung und den Schutz von Korallenriffen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Kurznasen-Doktorfische sind meist friedlich. Jungtiere bilden häufig Gruppen. Erwachsene Tiere leben einzeln, paarweise oder in kleinen Gruppen und können sich gelegentlich zu größeren Fressgruppen zusammenschließen. Reviere werden nur schwach verteidigt.\n\nDie Fortpflanzungszeit variiert regional. Zur Laichzeit bilden die Tiere vorübergehend Gruppen an Riffkanten, Durchlässen oder Abbruchstellen mit starker Strömung. Mehrere Männchen und Weibchen geben gleichzeitig Eier und Spermien ins freie Wasser ab.\n\nDie winzigen Eier treiben frei im Plankton und schlüpfen meist innerhalb von 24 bis 48 Stunden. Die Larven verbringen anschließend mehrere Wochen im offenen Meer und werden durch Strömungen weit verteilt. Später siedeln sich die Jungfische auf Korallenriffen an, leben bodennah und weiden Algen ab.\n\nDas Wachstum verläuft relativ langsam. Die Geschlechtsreife erreichen Kurznasen-Doktorfische mit ungefähr 3 bis 5 Jahren. Laut Zoopedia können sie mehrere Jahrzehnte alt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Haut des Kurznasen-Doktorfischs wirkt lederartig, da seine Schuppen klein sind und sich nicht überlappen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kurznasen-Doktorfische ernähren sich hauptsächlich von den Blättern der Braunalgen und begrenzen dadurch das Algenwachstum auf Korallenriffen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Erwachsene Tiere leben von flachen Bereichen bis in Tiefen von etwa 180 m in Riffen, Lagunen, Kanälen und Brandungszonen; Jungtiere halten sich eher in geschützten flachen Buchten und Häfen auf.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In vielen pazifischen Inselkulturen ist der Kurznasen-Doktorfisch ein traditionell wichtiger Speisefisch und erscheint auch in Kunst, auf Briefmarken und in Logos.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Auf Hawaii ist die Art kulturell bedeutsam und wird „Kala“ genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4909624b/Unicornfish_Bluespine_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Naso unicornis/map/Naso unicornis map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDkwOTYyNGIvVW5pY29ybmZpc2hfQmx1ZXNwaW5lLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjExNjgsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Kurznasen-Doktorfisch – Planet Zoo 2",
+            "en": "Bluespine Unicornfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Kurznasen-Doktorfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Bluespine Unicornfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Naso unicornis/bilder/Naso unicornis 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/4909624b/Unicornfish_Bluespine_illustration.jpg",
+          "alt": {
+            "de": "Kurznasen-Doktorfisch – Zoopedia-Illustration",
+            "en": "Bluespine Unicornfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Kurznasen-Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Bluespine Unicornfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Naso unicornis/bilder/Naso unicornis illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Kurznasen-Doktorfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/kurznasen-doktorfisch",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 4909624b und Asset-Stamm Unicornfish_Bluespine belegt."
+    }
+  }
+}

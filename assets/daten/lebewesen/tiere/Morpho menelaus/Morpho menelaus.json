@@ -1,0 +1,475 @@
+{
+  "id": "Morpho menelaus",
+  "identitaet": {
+    "namen": {
+      "de": "Blauer Morphofalter",
+      "en": "Blue Morpho",
+      "en-US": "Blue Morpho",
+      "es": "Morpho azul",
+      "fr": "Morpho bleu",
+      "it": "Morfo blu",
+      "pt-BR": "Borboleta-morfo-azul",
+      "ja": "メネラウスモルフォ",
+      "zh-Hans": "蓝闪蝶"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "southAmerica"
+    ],
+    "biome": [
+      "Tropisch",
+      "Grasland"
+    ],
+    "schutzstatus": ""
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Nymphalidae",
+          "gattung": "Morpho",
+          "art": "Morpho menelaus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "wert": 0.12,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "",
+          "system": "",
+          "rohwert": "???",
+          "hinweis": {
+            "de": "Die Zoopedia zeigt den formalen Arterhaltungsstatus als „???“ an. Im Fließtext steht lediglich, dass Morpho-Schmetterlinge derzeit nicht als stark gefährdet gelten. Daher wurde kein offizieller Status abgeleitet.",
+            "en": "The Zoopedia displays the formal conservation status as '???'. The prose only states that Morpho butterflies are not currently considered highly threatened, so no official status was inferred."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "min": 50,
+          "max": 100,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "eierProBlatt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Die Eier werden einzeln abgelegt, jeweils eines auf ein Blatt.",
+            "en": "The eggs are laid singly, one on each leaf."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 12,
+          "max": 12,
+          "durchschnitt": 12,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenphase",
+          "min": 14,
+          "max": 30,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Raupen ernähren sich 14 bis 30 Tage lang von Pflanzen, bevor die Verpuppung beginnt.",
+            "en": "The caterpillars feed on plants for 14 to 30 days before pupation begins."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenphase",
+          "min": 2,
+          "max": 8,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryTolerant",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Blaue Morphofalter leben als Einzelgänger, tolerieren Artgenossen in der Nähe und können sich selten gemeinsam an Ressourcen wie sonnigen Plätzen oder Nahrungsquellen sammeln.",
+            "en": "Blue Morphos are solitary, tolerate nearby conspecifics and may rarely gather around resources such as sunny spots or food sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Graslandschaften als Teil des Lebensraums.",
+            "en": "The Zoopedia names tropical grasslands as part of the habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "forest",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Waldlandschaften und alte Waldgebiete mit niedrigem Baumkronendach.",
+            "en": "The Zoopedia names tropical forest landscapes and old forest areas with a low canopy."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt für Raupen Pflanzen und für ausgewachsene Falter hauptsächlich gegorene Früchte als Nahrung.",
+              "en": "The Zoopedia lists plants for caterpillars and mainly fermented fruit for adult butterflies."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "pflanzen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Raupen ernähren sich laut Zoopedia von Pflanzen; konkrete Pflanzenarten werden nicht genannt.",
+                "en": "According to the Zoopedia, the caterpillars feed on plants; no specific plant species are named."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "gegoreneFruechte",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Ausgewachsene Blaue Morphofalter ernähren sich laut Zoopedia hauptsächlich von gegorenen Früchten.",
+                "en": "According to the Zoopedia, adult Blue Morphos feed mainly on fermented fruit."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Blaue Morphofalter (Morpho menelaus) ist in tropischen Gras- und Waldlandschaften Mittel- und Südamerikas heimisch.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical grassland and forest landscapes of Central and South America.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical grassland and forest landscapes of Central and South America.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Blaue Morphofalter (Morpho menelaus) besitzt charakteristisch hellblaue und türkisfarbene Flügel mit schwarzen Rändern und weißen Flecken. Die Flügelschuppen erzeugen ein stark schillerndes Erscheinungsbild. Die Unterseiten der Flügel sind braun und tragen mehrere Augenflecken. Die Raupen sind rotbraun mit grünen Flecken und besitzen reizende Stacheln zur Abwehr von Räubern.\n\nMännchen sind kleiner als Weibchen und besitzen deutlich heller blaue Flügel mit dünneren Rändern. Die durchschnittliche Flügelspannweite beträgt etwa 12 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Zoopedia zeigt für den Blauen Morphofalter keinen festgelegten Arterhaltungsstatus und gibt dort „???“ an. Im Fließtext wird beschrieben, dass Morpho-Schmetterlinge derzeit nicht als stark gefährdet gelten, jedoch von Lebensraumzerstörung und nicht nachhaltigem Sammeln betroffen sind. Viele Morpho-Arten benötigen alte Waldgebiete mit niedrigem Baumkronendach, die durch Abholzung zurückgehen. Ihre Größe, auffällige Färbung und langsame Fortbewegung machen sie außerdem für Sammler attraktiv.\n\nArterhaltungsinitiativen und indigene Gemeinschaften fördern Ökotourismus rund um Morpho-Schmetterlinge in geschützten Ökosystemen. Die langfristigen Aussichten bleiben laut Zoopedia ohne zusätzliche Forschung und Überwachung ungewiss; besonders die Taxonomie der Gruppe ist noch nicht ausreichend geklärt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Blaue Morphofalter leben überwiegend als Einzelgänger und verbringen hauptsächlich während der Paarung Zeit mit Artgenossen. Sie tolerieren andere Tiere ihrer Art in der Nähe und können sich selten gemeinsam an sonnigen Plätzen oder Nahrungsquellen sammeln.\n\nDie Paarung kann ganzjährig stattfinden und erreicht während der Regenzeit ihren Höhepunkt. Männchen besetzen Territorien mit attraktiven Nahrungsquellen und nutzen sowohl die intensive blaue Flügelfärbung als auch Pheromone bei Konkurrenz und Partnerwerbung. Weibchen wählen Partner anhand des Pheromonsignals, der Flügelhelligkeit und der Qualität des Territoriums.\n\nKurz nach der Paarung legt das Weibchen 50 bis 100 Eier einzeln ab, jeweils eines auf ein Blatt. Nach 12 Tagen schlüpfen die Raupen. Diese ernähren sich 14 bis 30 Tage lang von Pflanzen und durchlaufen während dieser Zeit laut Zoopedia fünf Nymphenphasen, bevor die Verpuppung beginnt.\n\nDie Puppenphase dauert abhängig von den Umweltbedingungen etwa 2 bis 8 Wochen. Danach schlüpfen die ausgewachsenen Falter, beginnen sofort zu fressen und paaren sich kurze Zeit später. Das ausgewachsene Stadium dauert ungefähr 3 bis 4 Wochen; die Tiere sterben kurz nach Paarung und Eiablage.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Blaue Morphofalter ernährt sich hauptsächlich von gegorenen Früchten; die Zoopedia erwähnt die Vermutung, dass diese Nahrung berauschend wirken könnte.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Blaue Morphofalter ist nach Menelaos, dem mythologischen König von Sparta, benannt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Raupen bilden laut Zoopedia keinen gewöhnlichen äußeren Kokon, sondern lassen dessen Hülle unter ihrer Haut entstehen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die stark schillernden Flügel wurden bereits im Hinblick auf eine technologische Nachbildung untersucht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die wasserabweisenden Flügel ermöglichen es dem Blauen Morphofalter laut Zoopedia, auch bei Regen zu fliegen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/732e17e9/Butterfly_MenelausBlueMorpho_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/map/Morpho menelaus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNzMyZTE3ZTkvQnV0dGVyZmx5X01lbmVsYXVzQmx1ZU1vcnBoby5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Blauer Morphofalter – Planet Zoo 2",
+            "en": "Blue Morpho – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Blauen Morphofalters aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Blue Morpho."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/732e17e9/Butterfly_MenelausBlueMorpho_illustration.jpg",
+          "alt": {
+            "de": "Blauer Morphofalter – Zoopedia-Illustration",
+            "en": "Blue Morpho – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Blauen Morphofalters aus der Planet Zoo 2 Zoopedia.",
+            "en": "Blue Morpho illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Morpho menelaus/bilder/Morpho menelaus illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Blauer Morphofalter",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/blauer-morphofalter",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 732e17e9 und Asset-Stamm Butterfly_MenelausBlueMorpho belegt. Der formale Schutzstatus wird auf der Zoopedia-Seite als „???“ angezeigt und deshalb nicht interpretiert."
+    }
+  }
+}

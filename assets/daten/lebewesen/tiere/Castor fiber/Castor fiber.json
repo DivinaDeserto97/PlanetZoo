@@ -1,0 +1,453 @@
+{
+  "id": "Castor fiber",
+  "identitaet": {
+    "namen": {
+      "de": "Europäischer Biber",
+      "en": "Eurasian Beaver",
+      "en-US": "Eurasian Beaver",
+      "es": "Castor europeo",
+      "fr": "Castor d'Eurasie",
+      "it": "Castoro europeo",
+      "pt-BR": "Castor-europeu",
+      "ja": "ヨーロッパビーバー",
+      "zh-Hans": "欧亚河狸"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia"
+    ],
+    "biome": [
+      "Gemäßigt",
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Rodentia",
+          "familie": "Castoridae",
+          "gattung": "Castor",
+          "art": "Castor fiber",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.8,
+          "max": 1.0,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Kopf-Rumpf-Länge von 80 bis 100 cm. Zusätzlich wird eine Schwanzlänge von 25 bis 50 cm angegeben.",
+            "en": "The Zoopedia gives a head-body length of 80 to 100 cm. A tail length of 25 to 50 cm is also stated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 11,
+          "max": 30,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 1500000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den aktuellen Wildbestand mit 1.500.000 Individuen an und beschreibt zusätzlich, dass es Anfang des 20. Jahrhunderts nur noch etwa 1.200 Tiere gab.",
+            "en": "The Zoopedia gives the current wild population as 1,500,000 individuals and additionally states that only about 1,200 animals remained in the early 20th century."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Biber werden laut Zoopedia mit etwa 2 Jahren geschlechtsreif, viele pflanzen sich jedoch erst ab ungefähr 3 Jahren erfolgreich fort.",
+            "en": "According to the Zoopedia, beavers become sexually mature at about 2 years, although many do not reproduce successfully until around 3 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 3,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "proGeburt",
+          "min": 2,
+          "max": 6,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "festeNahrungAb",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "min": 3,
+          "max": 3,
+          "durchschnitt": 3,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiMutter",
+          "min": 1.5,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Jungtiere bleiben gewöhnlich 1,5 bis 2 Jahre bei ihren Eltern; in manchen Fällen laut Zoopedia sogar bis zu 4 Jahre.",
+            "en": "The young usually remain with their parents for 1.5 to 2 years; according to the Zoopedia, in some cases they stay for up to 4 years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "paarbindung",
+          "wert": "monogamousLongTermPair",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Europäische Biber leben in Familiengruppen aus einem dominanten Elternpaar, heranwachsendem Nachwuchs der Vorjahre und Jungtieren des aktuellen Jahres. Das Elternpaar lebt monogam und bleibt einander treu.",
+            "en": "Eurasian Beavers live in family groups consisting of a dominant parental pair, growing offspring from previous years and the young of the current year. The parental pair is monogamous and remains bonded."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperateForest",
+          "hinweis": {
+            "de": "Die Zoopedia nennt gemäßigte Wald- und Flusslandschaften als Lebensraum.",
+            "en": "The Zoopedia names temperate forest and river landscapes as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "holzUndPflanzenmaterial",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt das Nagen an Holz und nennt die Fressgewohnheiten als Teil der ökologischen Wirkung des Bibers. Konkrete Pflanzenarten werden nicht genannt.",
+                "en": "The Zoopedia describes gnawing on wood and mentions feeding habits as part of the beaver's ecological role. No specific plant species are named."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Biber (Castor fiber) ist in gemäßigten Wald- und Flusslandschaften Europas und Asiens beheimatet.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Beaver (Castor fiber) is a large rodent native to temperate forest and river landscapes of Europe and Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Beaver (Castor fiber) is a large rodent native to temperate forest and river landscapes of Europe and Asia.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Biber (Castor fiber) ist eine große Nagetierart Europas und Asiens. Er besitzt ein Doppelfell aus einer äußeren Schicht langer, grober Haare und einer inneren Schicht kürzerer, feinerer Haare. Das Fell kann beige, braun, rötlich-braun oder schwarz sein. Auffällig sind außerdem kleine Ohren und Augen, eine schwarze Nase und große Schneidezähne.\n\nEuropäische Biber erreichen eine Kopf-Rumpf-Länge von 80 bis 100 cm und eine Schwanzlänge von 25 bis 50 cm. Ihr Gewicht liegt zwischen 11 und 30 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Europäische Biber gilt heute als nicht gefährdet. Anfang des 20. Jahrhunderts war er durch starke Bejagung wegen Fell, Fleisch und Castoreum sowie durch Abholzung, Trockenlegung von Feuchtgebieten und Verfolgung als vermeintlicher Schädling fast ausgestorben. Damals gab es laut Zoopedia nur noch etwa 1.200 Tiere in verstreuten Populationen.\n\nGesetzlicher Schutz, Wiederherstellung von Lebensräumen und Wiederansiedlungen führten zu einem starken Bestandsanstieg. Heute gibt die Zoopedia einen Wildbestand von 1.500.000 Tieren an. Biber tragen durch ihre Bautätigkeit und Lebensweise zur Artenvielfalt in Feuchtgebieten, zur Regulierung des Wasserflusses und zur Schaffung von Lebensräumen für andere Arten bei.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Europäische Biber leben in Familiengruppen aus einem dominanten Elternpaar, heranwachsendem Nachwuchs der Vorjahre und den Jungtieren des aktuellen Jahres. Die Tiere leben monogam und bleiben ihrem Partner treu.\n\nDie Paarungszeit erstreckt sich von Dezember bis Mai und erreicht im Januar ihren Höhepunkt. Die Paarung findet im Wasser statt. Nach einer Tragzeit von etwa 3 Monaten bringt das Weibchen 2 bis 6 Jungtiere in der Biberburg zur Welt.\n\nBereits wenige Tage nach der Geburt lernen die Jungtiere schwimmen. Mit etwa 2 Wochen nehmen sie erste feste Nahrung auf und nach ungefähr 3 Monaten sind sie vollständig entwöhnt. Sie bleiben gewöhnlich 1,5 bis 2 Jahre bei ihren Eltern, in manchen Fällen bis zu 4 Jahre.\n\nBiber werden mit ungefähr 2 Jahren geschlechtsreif, viele pflanzen sich jedoch erst ab etwa 3 Jahren erfolgreich fort. Junge erwachsene Tiere verlassen schließlich die Familiengruppe, suchen einen Partner und gründen ein eigenes Revier.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Bei Gefahr schlägt der Europäische Biber mit seinem breiten Schwanz auf die Wasseroberfläche, um seine Familie zu warnen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Beim Schwimmen kann der Europäische Biber laut Zoopedia bis zu 15 Minuten die Luft anhalten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Europäische Biber besitzen eine Nickhaut, ein durchsichtiges drittes Augenlid, das ihnen das Sehen unter Wasser ermöglicht.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das dichte, warme und wasserabweisende Fell isoliert die Tiere und hält sie trocken; diese Eigenschaften führten früher zu starker Bejagung.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Zähne des Europäischen Bibers wachsen ein Leben lang. Durch das Nagen an Holz werden sie abgenutzt; Eisenverbindungen im Zahnschmelz verursachen die orange Farbe und erhöhen die Härte.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8a1a80ac/Beaver_Eurasian_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Castor fiber/map/Castor fiber map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOGExYTgwYWMvQmVhdmVyX0V1cmFzaWFuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjExNjgsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Europäischer Biber – Planet Zoo 2",
+            "en": "Eurasian Beaver – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Europäischen Bibers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Beaver."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Castor fiber/bilder/Castor fiber 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/8a1a80ac/Beaver_Eurasian_illustration.jpg",
+          "alt": {
+            "de": "Europäischer Biber – Zoopedia-Illustration",
+            "en": "Eurasian Beaver – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Europäischen Bibers aus der Planet Zoo 2 Zoopedia.",
+            "en": "Eurasian Beaver illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Castor fiber/bilder/Castor fiber illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Europäischer Biber",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/europ%C3%A4ischer-biber",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 8a1a80ac und Asset-Stamm Beaver_Eurasian belegt."
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "id": "Cerastes cerastes",
+  "identitaet": {
+    "namen": {
+      "de": "Wüsten-Hornviper",
+      "en": "Desert Horned Viper",
+      "en-US": "Desert Horned Viper",
+      "es": "Víbora cornuda del desierto",
+      "fr": "Vipère à cornes",
+      "it": "Vipera cornuta del deserto",
+      "pt-BR": "Víbora-cornuda-do-deserto",
+      "ja": "サハラツノクサリヘビ",
+      "zh-Hans": "撒哈拉角蝰"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa",
+      "asia"
+    ],
+    "biome": [
+      "Wüste"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Reptilia",
+          "ordnung": "Squamata",
+          "familie": "Viperidae",
+          "gattung": "Cerastes",
+          "art": "Cerastes cerastes",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.3,
+          "max": 0.6,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Weibchen sind laut Zoopedia häufig etwas größer als Männchen.",
+            "en": "According to the Zoopedia, females are often slightly larger than males."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an und beschreibt die Population langfristig als stabil.",
+            "en": "The Zoopedia lists the wild population as unknown and describes the population as stable in the long term."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 8,
+          "max": 23,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfzeit",
+          "min": 50,
+          "max": 80,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt eine Inkubationsdauer von 50 bis 80 Tagen.",
+            "en": "The Zoopedia describes an incubation period of 50 to 80 days."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Wüsten-Hornvipern sind Einzelgänger und interagieren nur zur Paarung mit Artgenossen.",
+            "en": "Desert Horned Vipers are solitary and interact with conspecifics only for mating."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "desert",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Wüsten als natürlichen Lebensraum.",
+            "en": "The Zoopedia names deserts as natural habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "semiArid",
+          "hinweis": {
+            "de": "Die Zoopedia nennt zusätzlich Halbwüsten.",
+            "en": "The Zoopedia additionally names semi-desert habitats."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Wüsten-Hornviper (Cerastes cerastes) ist eine Giftschlange der Wüsten und Halbwüsten Nordafrikas und des Nahen Ostens.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Africa and the Middle East.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Africa and the Middle East.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Wüsten-Hornviper (Cerastes cerastes) besitzt einen sandfarbenen Körper mit häufig heller Unterseite und teilweise dunklerer Marmorierung. Der Kopf ist groß und dreieckig. Besonders auffällig sind die spitzen Hörner über den Augen.\n\nMännchen und Weibchen sehen ähnlich aus, wobei Weibchen häufig etwas größer sind. Die Körperlänge beträgt etwa 30 bis 60 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Wüsten-Hornviper gilt als nicht gefährdet. Regional werden einzelne Tiere von Schlangenbeschwörern, zur Giftgewinnung und für den Tierhandel gefangen; bei Begegnungen werden sie außerdem teilweise getötet. In ihrem natürlichen Verbreitungsgebiet ist die Art laut Zoopedia häufig.\n\nSie kommt in Schutzgebieten Nordafrikas vor, es bestehen jedoch keine speziellen laufenden Schutzmaßnahmen. Die langfristigen Aussichten werden als stabil beschrieben. Weitere Forschung wird insbesondere zur Nachhaltigkeit der Giftgewinnung und zur Genetik der Unterarten genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Wüsten-Hornvipern leben als Einzelgänger und treffen Artgenossen praktisch nur zur Paarung.\n\nDie Fortpflanzung findet im Sand vergraben statt und ist nur wenig erforscht. Der Paarungsakt scheint im April stattzufinden. Es wird angenommen, dass sich die Tiere mithilfe von Pheromonen finden. Der Geschlechtsakt kann drei bis vier Tage dauern, anschließend trennen sich die Tiere wieder.\n\nKurz nach der Paarung legt das Weibchen 8 bis 23 Eier unter Steine oder in einen verlassenen Bau. Es bleibt nicht bei den Eiern und betreibt keine elterliche Fürsorge. Nach einer Inkubationszeit von etwa 50 bis 80 Tagen schlüpfen die Jungtiere. Sie sind unmittelbar selbstständig und erreichen mit ungefähr 2 Jahren die Geschlechtsreife.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Das Gift der Wüsten-Hornviper kann beim Menschen Schwellungen, Blutungen, Nekrosen, Übelkeit und Erbrechen verursachen, ist laut Zoopedia aber nur selten tödlich.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Wüsten-Hornviper bewegt sich durch Seitenwinden schnell und mühelos über Sand.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Scharfkantige, speziell angepasste Schuppen an der Unterseite helfen der Schlange, auf lockerem Sand Halt zu finden.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Wüsten-Hornviper ist ein Lauerjäger und wartet verborgen auf vorbeikommende Beute.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Hörner bestehen aus speziell angepassten Schuppen und schützen die Augen vor Sand; laut Zoopedia besitzen allerdings nur etwa 50 % der Tiere dieses Merkmal.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/1931f561/Viper_DesertHorned_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Cerastes cerastes/map/Cerastes cerastes map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMTkzMWY1NjEvVmlwZXJfRGVzZXJ0SG9ybmVkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjExNjgsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "alt": {
+            "de": "Wüsten-Hornviper – Planet Zoo 2",
+            "en": "Desert Horned Viper – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Wüsten-Hornviper aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Desert Horned Viper."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Cerastes cerastes/bilder/Cerastes cerastes 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/1931f561/Viper_DesertHorned_illustration.jpg",
+          "alt": {
+            "de": "Wüsten-Hornviper – Zoopedia-Illustration",
+            "en": "Desert Horned Viper – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Wüsten-Hornviper aus der Planet Zoo 2 Zoopedia.",
+            "en": "Desert Horned Viper illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Cerastes cerastes/bilder/Cerastes cerastes illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Wüsten-Hornviper",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/w%C3%BCsten-hornviper",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 1931f561 und Asset-Stamm Viper_DesertHorned belegt."
+    }
+  }
+}

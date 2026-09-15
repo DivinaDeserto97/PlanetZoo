@@ -1,0 +1,437 @@
+{
+  "id": "Balistoides conspicillum",
+  "identitaet": {
+    "namen": {
+      "de": "Leopard-Drückerfisch",
+      "en": "Clown Triggerfish",
+      "en-US": "Clown Triggerfish",
+      "es": "Pez ballesta payaso",
+      "fr": "Baliste clown",
+      "it": "Pesce balestra pagliaccio",
+      "pt-BR": "Peixe-porco-palhaço",
+      "ja": "モンガラカワハギ",
+      "zh-Hans": "小丑炮弹鱼"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "biome": [
+      "Riff",
+      "Tropisch"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Tetraodontiformes",
+          "familie": "Balistidae",
+          "gattung": "Balistoides",
+          "art": "Balistoides conspicillum",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.3,
+          "max": 0.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 2,
+          "max": 4,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für erwachsene Tiere durchschnittlich 2 bis 4 kg.",
+            "en": "The Zoopedia gives an average adult weight of 2 to 4 kg."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": []
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryTerritorial",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Leopard-Drückerfische leben hauptsächlich einzelgängerisch und sind besonders als ausgewachsene Tiere territorial.",
+            "en": "Clown Triggerfish live mainly solitary lives and are territorial, especially as adults."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Korallenriffe und Riffhänge als Lebensraum.",
+            "en": "The Zoopedia names coral reefs and reef slopes as habitat."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "lagoon",
+          "hinweis": {
+            "de": "Die Zoopedia nennt außerdem Lagunen als Lebensraum.",
+            "en": "The Zoopedia also names lagoons as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt Krebstiere, Weichtiere und Seeigel als Nahrung, deren harte Schalen beziehungsweise Körperteile mit den kräftigen Zähnen zerkleinert werden.",
+              "en": "The Zoopedia names crustaceans, mollusks and sea urchins as food, crushed with the fish's powerful teeth."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "krebstiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "weichtiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "seeigel",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Leopard-Drückerfisch (Balistoides conspicillum) lebt in klaren tropischen und subtropischen Korallenriffen, Lagunen und an Riffhängen. Er ist im gesamten Indo-Pazifik verbreitet, von der Ostküste Afrikas und dem Roten Meer über den Indischen Ozean bis in den westlichen und zentralen Pazifik, einschließlich Indonesien, Australien und Mikronesien.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Africa and the Red Sea across the Indian Ocean to the western and central Pacific.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Africa and the Red Sea across the Indian Ocean to the western and central Pacific.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Leopard-Drückerfisch (Balistoides conspicillum) besitzt einen schwarzen bis braunen Körper mit großen weißen Flecken, ein gelbes Maul und ein maskenartiges Muster um die Augen. Der Körper ist kräftig und seitlich abgeflacht.\n\nErwachsene Tiere werden gewöhnlich 30 bis 40 cm lang und wiegen durchschnittlich 2 bis 4 kg. Männchen sind etwas größer und schwerer als Weibchen; Färbung und Körperform sind ansonsten sehr ähnlich.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Leopard-Drückerfisch gilt als nicht gefährdet, ist jedoch auf intakte Riffstrukturen angewiesen. Die Zoopedia nennt den Rückgang der Korallenriffe durch Klimawandel, Korallenbleiche, Ozeanversauerung, Küstenbebauung und schädliche Fischereimethoden als Belastungen. Zusätzlich kann der Aquarienhandel regional zu Überfischung beitragen.\n\nMeeresschutzgebiete, Riffschutz, nachhaltige Küstenentwicklung sowie Vorschriften zum Fang von Aquarienfischen und verantwortungsvolle Aquaristik können den Druck auf Wildpopulationen verringern. Überwachung, öffentliche Aufklärung und Naturschutzforschung werden als weitere wichtige Maßnahmen genannt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Leopard-Drückerfische sind überwiegend Einzelgänger und territorial. Erwachsene Tiere besetzen und verteidigen gewöhnlich ein bestimmtes Gebiet im Riff, das Schutz und Nahrung bietet.\n\nDie Paarungszeit erstreckt sich über das ganze Jahr und erreicht in wärmeren Jahreszeiten ihren Höhepunkt. Männchen errichten Reviere auf sandigen Ebenen nahe dem Riff und verteidigen mehrere Nistplätze. Bei der Balz führen sie Weibchen zu einem vorbereiteten Nistplatz. Das Weibchen legt Tausende Eier in eine flache Vertiefung im Sand, die anschließend vom Männchen extern befruchtet werden.\n\nNach dem Laichen übernimmt vor allem das Weibchen die Bewachung und Belüftung der Eier, während das Männchen das Revier verteidigt. Die Eltern sind in dieser Phase besonders aggressiv. Die Brut schlüpft nach einigen Tagen und lebt anschließend mehrere Wochen als planktonische Larve im offenen Ozean. Nach der Ansiedlung am Riff leben die Jungtiere vorwiegend am Meeresboden. Die Geschlechtsreife wird erst nach mehreren Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Leopard-Drückerfisch besitzt sehr kräftige Zähne, mit denen er die Schalen von Krebstieren, Weichtieren und Seeigeln zerkleinern kann.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Er besitzt einen aufrichtbaren Rückenflossenstachel, mit dem er sich in Felsspalten verankern kann, um Raubtieren zu entkommen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Leopard-Drückerfisch ist äußerst territorial und aggressiv und ist laut Zoopedia dafür bekannt, Taucher zu jagen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Er kann kräftige Wasserfontänen ausstoßen, um Nahrung unter Kieselsteinen und Sand freizulegen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sein auffälliges Aussehen macht ihn zu einem begehrten Aquarienfisch, während sein aggressives Verhalten die Haltung erschwert.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/65f778d4/Triggerfish_Clown_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Balistoides conspicillum/map/Balistoides conspicillum map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNjVmNzc4ZDQvVHJpZ2dlcmZpc2hfQ2xvd24uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MTE2OCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
+          "alt": {
+            "de": "Leopard-Drückerfisch – Planet Zoo 2",
+            "en": "Clown Triggerfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Leopard-Drückerfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Clown Triggerfish."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Balistoides conspicillum/bilder/Balistoides conspicillum 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/65f778d4/Triggerfish_Clown_illustration.jpg",
+          "alt": {
+            "de": "Leopard-Drückerfisch – Zoopedia-Illustration",
+            "en": "Clown Triggerfish – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Leopard-Drückerfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Clown Triggerfish illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Balistoides conspicillum/bilder/Balistoides conspicillum illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Leopard-Drückerfisch",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/leopard-dr%C3%BCckerfisch",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 65f778d4 und Asset-Stamm Triggerfish_Clown belegt."
+    }
+  }
+}

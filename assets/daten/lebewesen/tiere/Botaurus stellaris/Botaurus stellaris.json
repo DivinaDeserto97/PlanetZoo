@@ -1,0 +1,488 @@
+{
+  "id": "Botaurus stellaris",
+  "identitaet": {
+    "namen": {
+      "de": "Rohrdommel",
+      "en": "Eurasian Bittern",
+      "en-US": "Eurasian Bittern",
+      "es": "Avetoro común",
+      "fr": "Butor étoilé",
+      "it": "Tarabuso eurasiatico",
+      "pt-BR": "Abetouro-eurasiático",
+      "ja": "サンカノゴイ",
+      "zh-Hans": "大麻鳽"
+    }
+  },
+  "filter": {
+    "edition": "",
+    "gehegetyp": [],
+    "kontinente": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "biome": [
+      "Feuchtgebiete",
+      "Seen und Flüsse"
+    ],
+    "schutzstatus": "leastConcern"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Pelecaniformes",
+          "familie": "Ardeidae",
+          "gattung": "Botaurus",
+          "art": "Botaurus stellaris",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.0,
+          "max": 1.3,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.87,
+          "max": 1.9,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt 0,87 bis 1,9 kg für ausgewachsene Tiere und erwähnt, dass Männchen etwas größer sein können als Weibchen.",
+            "en": "The Zoopedia gives 0.87 to 1.9 kg for adults and notes that males can be somewhat larger than females."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "leastConcern",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 184000,
+          "max": 310000,
+          "einheit": "individuum",
+          "giltFuer": [],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen Wildbestand von 184.000 bis 310.000 Tieren.",
+            "en": "The Zoopedia gives a wild population of 184,000 to 310,000 animals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 3,
+          "max": 6,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 25,
+          "max": 28,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "nestverlassen",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Küken bleiben etwa zwei Wochen im Nest und verstreuen sich danach in die umliegenden Schilfgürtel.",
+            "en": "The chicks remain in the nest for about two weeks and then disperse into the surrounding reedbeds."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 6,
+          "max": 8,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Rohrdommeln sind Einzelgänger, tolerieren außerhalb der Paarungszeit jedoch andere Artgenossen. Dauerhafte Paarbindungen werden nicht gebildet.",
+            "en": "Eurasian Bitterns are solitary but tolerate other conspecifics outside the mating season. They do not form lasting pair bonds."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "freshwaterSwamp",
+          "hinweis": {
+            "de": "Die Zoopedia nennt dichte Schilfgürtel und Süßwasserfeuchtgebiete mit üppiger Vegetation als Lebensraum.",
+            "en": "The Zoopedia names dense reedbeds and freshwater wetlands with lush vegetation as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Die Zoopedia nennt ausschließlich tierische Beute: Fische, Amphibien, Insekten und kleine Säugetiere.",
+              "en": "The Zoopedia lists only animal prey: fish, amphibians, insects and small mammals."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "fische",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "amphibien",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "insekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "kleineSaeugetiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Rohrdommel (Botaurus stellaris), auch Große Rohrdommel genannt, kommt in Europa, Asien und Teilen Nordafrikas vor. Sie lebt in dichten Schilfgürteln und Süßwasserfeuchtgebieten mit üppiger Vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Eurasian Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Africa. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Eurasian Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Africa. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Rohrdommel (Botaurus stellaris) ist eine große Reiherart mit gestreiftem braunem Gefieder, stämmigem Körper, dickem Hals und kräftigem spitzem Schnabel.\n\nErwachsene Tiere werden laut Zoopedia in der Regel 69 bis 81 cm groß, besitzen eine Flügelspannweite von 100 bis 130 cm und wiegen 0,87 bis 1,9 kg. Männchen können etwas größer als Weibchen sein.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Rohrdommel gilt als nicht gefährdet, ihr Lebensraum aus Schilfgürteln und Feuchtgebieten ist jedoch durch Fragmentierung und Verfall bedroht. Die Art benötigt dichte hohe Schilfbestände über seichtem Wasser zum Fressen, Brüten und als Schutz. Entwässerung von Feuchtgebieten, Zersiedelung, Landwirtschaft, Umweltverschmutzung, Störungen an Nistplätzen und Klimawandel beeinträchtigen die Bestände.\n\nSchutzmaßnahmen konzentrieren sich auf die Wiederherstellung von Schilfgürteln und Feuchtgebieten, die Regulierung von Wasserständen und Aufklärung. Die Zoopedia nennt insbesondere erfolgreiche Projekte im Vereinigten Königreich sowie auf dem europäischen Festland, durch die sich stark zurückgegangene Populationen erholen konnten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Rohrdommeln sind Einzelgänger, tolerieren außerhalb der Paarungszeit jedoch Artgenossen. Sie bilden keine dauerhaften Paarbindungen und trennen sich kurz nach der Paarung wieder.\n\nDie Paarungszeit reicht vom späten Winter bis zum Frühlingsanfang. Männchen beanspruchen Reviere in großen Schilfgebieten und verteidigen sie mit ihrem tiefen „Bumm“-Ruf. Ein Männchen kann sich während einer Paarungszeit mit bis zu fünf Weibchen paaren.\n\nDas Weibchen baut aus Schilf, Seggen und Stängeln des Vorjahres eine flache schwimmende Nestplattform am Wasserrand und legt dort 3 bis 6 Eier. Die Brutdauer beträgt etwa 25 bis 28 Tage. Das Weibchen kümmert sich allein um die Jungen.\n\nDie Küken bleiben ungefähr zwei Wochen im Nest und verteilen sich danach in den umliegenden Schilfgürteln, werden aber weiterhin von der Mutter versorgt. Mit etwa 6 bis 8 Wochen werden sie flügge. Danach werden sie allmählich selbstständig. Die Geschlechtsreife erreicht die Rohrdommel mit etwa einem Jahr.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Rohrdommeln ernähren sich hauptsächlich von Fischen, Amphibien, Insekten und kleinen Säugetieren, die sie mit schnellen Stößen ihres spitzen Schnabels fangen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der tiefe Ruf des Männchens kann laut Zoopedia bis zu 5 km weit zu hören sein.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der charakteristische Ruf entsteht, indem die Rohrdommel ihre Speiseröhre aufbläst, die dabei als Resonanzkörper wirkt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Das gestreifte braune und gelbbraune Gefieder tarnt die Rohrdommel zwischen Schilfhalmen besonders gut, wenn sie regungslos mit nach oben gerichtetem Schnabel sitzt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Rohrdommel war im späten 19. Jahrhundert in Großbritannien fast ausgestorben und hat sich dort dank Projekten zur Renaturierung ihres Lebensraums wieder stark erholt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [],
+      "en-US": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "pt-BR": [],
+      "ja": [],
+      "zh-Hans": []
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_Eurasian_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Botaurus stellaris/map/Botaurus stellaris map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYjgxMGNhYTgvQml0dGVybl9FdXJhc2lhbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
+          "alt": {
+            "de": "Rohrdommel – Planet Zoo 2",
+            "en": "Eurasian Bittern – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Rohrdommel aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Bittern."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Botaurus stellaris/bilder/Botaurus stellaris 1.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_Eurasian_illustration.jpg",
+          "alt": {
+            "de": "Rohrdommel – Zoopedia-Illustration",
+            "en": "Eurasian Bittern – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration der Rohrdommel aus der Planet Zoo 2 Zoopedia.",
+            "en": "Eurasian Bittern illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Botaurus stellaris/bilder/Botaurus stellaris illustration 1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Rohrdommel",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/rohrdommel",
+        "en": "",
+        "en-US": "",
+        "es": "",
+        "fr": "",
+        "it": "",
+        "pt-BR": "",
+        "ja": "",
+        "zh-Hans": ""
+      },
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b810caa8 und Asset-Stamm Bittern_Eurasian belegt. Die Angabe 69–81 cm 'groß' wurde nicht als Körperlänge interpretiert."
+    }
+  }
+}
