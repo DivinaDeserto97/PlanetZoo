@@ -187,7 +187,7 @@ ist_medium() {
         if ist_medium "$name"
         then
 
-            if is_github_freigegeben "$relativ"
+            if ist_github_freigegeben "$relativ"
             then
                 status="Medium – GitHub/Share freigegeben"
             else
