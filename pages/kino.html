@@ -136,7 +136,7 @@
             <span>Nach dem letzten Film</span>
             <select data-kino-loop-mode>
               <option value="stop">Durchlauf beenden</option>
-              <option value="loop">Von vorne beginnen</option>
+              <option value="loop" selected>Von vorne beginnen</option>
             </select>
           </label>
 
@@ -175,6 +175,7 @@
         playsinline
         preload="auto"
       ></video>
+      <div class="kino-player__youtube" data-kino-youtube hidden></div>
       <audio data-kino-audio preload="auto"></audio>
 
       <div class="kino-player__card" data-kino-card hidden>

@@ -301,6 +301,23 @@
   background: #000;
 }
 
+.kino-player__youtube {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.kino-player__youtube iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.kino-player__youtube[hidden] {
+  display: none;
+}
+
 .kino-player__card {
   position: absolute;
   inset: 0;

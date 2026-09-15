@@ -167,18 +167,16 @@ export function sortiereTiere(tiere, sortierung = {}) {
         getLanguage(),
       );
     } else if (einstellungen.sortierenNach === "scientificName") {
-
-    /* ================================== */
-    /* WISSENSCHAFTLICHER NAME            */
-    /* ================================== */
+      /* ================================== */
+      /* WISSENSCHAFTLICHER NAME            */
+      /* ================================== */
       vergleich = String(a.wissenschaftlicherName ?? "").localeCompare(
         String(b.wissenschaftlicherName ?? ""),
       );
     } else {
-
-    /* ================================== */
-    /* NEUESTE                            */
-    /* ================================== */
+      /* ================================== */
+      /* NEUESTE                            */
+      /* ================================== */
       const datumA = holeDatum(a);
 
       const datumB = holeDatum(b);

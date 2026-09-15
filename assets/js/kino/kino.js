@@ -19,6 +19,8 @@ let playback = null;
 let pauseTimer = null;
 let beitragTimer = null;
 let lastBeitragId = null;
+let youtubePlayer = null;
+let youtubeApiPromise = null;
 
 /* ======================================== */
 /* INITIALISIERUNG                          */
@@ -175,6 +177,44 @@ function browserAudioDatei(datei) {
   return Boolean(datei?.pfad && AUDIO_MIME[mediaTyp(datei)]);
 }
 
+function youtubeVideoId(url) {
+  const wert = String(url ?? "").trim();
+  if (!wert) return "";
+
+  try {
+    const parsed = new URL(wert);
+    const host = parsed.hostname.replace(/^www\./, "").toLowerCase();
+
+    if (host === "youtu.be") {
+      return parsed.pathname.split("/").filter(Boolean)[0] ?? "";
+    }
+
+    if (host === "youtube.com" || host === "m.youtube.com") {
+      if (parsed.pathname === "/watch")
+        return parsed.searchParams.get("v") ?? "";
+      const teile = parsed.pathname.split("/").filter(Boolean);
+      if (["shorts", "embed", "live"].includes(teile[0])) return teile[1] ?? "";
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+function youtubeMedia(url) {
+  const videoId = youtubeVideoId(url);
+  if (!videoId) return null;
+  return {
+    pfad: String(url).trim(),
+    dateityp: "youtube",
+    mime: "",
+    browserGeeignet: true,
+    quelle: "youtube",
+    videoId,
+  };
+}
+
 function mimeFuerMedia(medien, art = "video") {
   const typ = String(
     medien?.dateityp ?? dateiendung(medien?.pfad),
@@ -252,12 +292,19 @@ function setzeBrowserQuelle(element, medien, art = "video") {
 function findeFilmPfad(variante) {
   const dateien = alsArray(variante?.dateien);
 
-  // Für das Kino werden AUSSCHLIESSLICH Browser-Videodateien verwendet.
-  // Originale wie MKV bleiben Archivdateien und werden nie an <video> übergeben.
+  // YouTube darf direkt als URL im Video-Eintrag stehen.
+  const youtube = youtubeMedia(variante?.url);
+  if (youtube) return youtube;
+
+  const youtubeDatei = dateien
+    .map((datei) => youtubeMedia(datei?.pfad ?? datei?.url))
+    .find(Boolean);
+  if (youtubeDatei) return youtubeDatei;
+
+  // Lokale Wiedergabe bevorzugt weiterhin Browser-Videoformate.
   const wiedergabe = dateien.find(
     (datei) => datei?.typ === "wiedergabe" && browserVideoDatei(datei),
   );
-
   const browserDatei =
     wiedergabe ?? dateien.find((datei) => browserVideoDatei(datei));
 
@@ -271,14 +318,8 @@ function findeFilmPfad(variante) {
     };
   }
 
-  // Externe URLs nur dann direkt verwenden, wenn sie auf eine typische
-  // Browser-Videodatei zeigen. Webseiten-URLs gehören nicht in <video>.
   if (variante?.url) {
-    const extern = {
-      pfad: variante.url,
-      dateityp: dateiendung(variante.url),
-    };
-
+    const extern = { pfad: variante.url, dateityp: dateiendung(variante.url) };
     if (browserVideoDatei(extern)) {
       return {
         ...extern,
@@ -304,12 +345,21 @@ function findeFilmPfad(variante) {
 
 function getAlleFilme() {
   return tiere.flatMap((tier) =>
-    alsArray(tier.video).flatMap((gruppe, gruppenIndex) =>
-      alsArray(gruppe?.varianten).map((variante, variantenIndex) => {
-        const quelleId = String(variante?.quelle ?? "unbekannt");
+    alsArray(tier.video).flatMap((gruppe, gruppenIndex) => {
+      // Unterstützt beide JSON-Formen:
+      // 1. direkter Video-Eintrag mit url/dateien
+      // 2. Video-Gruppe mit varianten[]
+      const varianten = Array.isArray(gruppe?.varianten)
+        ? gruppe.varianten
+        : [gruppe];
+
+      return varianten.map((variante, variantenIndex) => {
+        const quelleId = String(
+          variante?.quelle ?? gruppe?.quelle ?? "unbekannt",
+        );
         const quelleDaten = tier.originalDaten?.quellen?.[quelleId];
         const medien = findeFilmPfad(variante);
-        const typ = String(gruppe?.typ ?? "video");
+        const typ = String(gruppe?.typ ?? variante?.typ ?? "video");
         const filmId = [
           tier.id,
           typ,
@@ -325,15 +375,16 @@ function getAlleFilme() {
           typ,
           quelleId,
           quelleName: quelleDaten?.name ?? quelleId,
-          reihe: variante?.reihe ?? "",
-          titel: variante?.titel ?? {},
-          beschreibung: variante?.beschreibung ?? {},
-          dauerSekunden: Number(variante?.dauerSekunden) || null,
+          reihe: variante?.reihe ?? gruppe?.reihe ?? "",
+          titel: variante?.titel ?? gruppe?.titel ?? {},
+          beschreibung: variante?.beschreibung ?? gruppe?.beschreibung ?? {},
+          dauerSekunden:
+            Number(variante?.dauerSekunden ?? gruppe?.dauerSekunden) || null,
           medien,
           original: variante,
         };
-      }),
-    ),
+      });
+    }),
   );
 }
 
@@ -605,7 +656,7 @@ function renderFilme() {
     if (!film.medien.pfad) {
       pfad.textContent = "⚠ Kein Video-Pfad eingetragen";
     } else if (!film.medien.browserGeeignet) {
-      pfad.textContent = `⚠ ${film.medien.dateityp || "Datei"}: Browser-Wiedergabe unsicher – MP4-Wiedergabevariante empfohlen`;
+      pfad.textContent = `⚠ ${film.medien.dateityp || "Datei"}: Browser-Wiedergabe nicht unterstützt`;
     } else {
       pfad.textContent = film.medien.pfad;
     }
@@ -665,7 +716,7 @@ function renderSummary() {
 
   if (unsicher) {
     probleme.push(
-      `${unsicher} Film(e) haben keine browserfreundliche Wiedergabe-Datei. Für OBS am besten eine MP4-Datei als \"wiedergabe\" eintragen.`,
+      `${unsicher} Film(e) haben weder eine browserfreundliche Videodatei noch einen unterstützten YouTube-Link.`,
     );
   }
 
@@ -791,7 +842,7 @@ function startPlayback() {
     if (warning) {
       warning.hidden = false;
       warning.textContent =
-        "Es gibt keinen ausgewählten Film mit einer Browser-Videodatei (MP4, WebM oder OGV). Originaldateien wie MKV werden absichtlich nicht abgespielt.";
+        "Es gibt keinen ausgewählten Film mit einer Browser-Videodatei (MP4, WebM, OGV) oder einem unterstützten YouTube-Link.";
     }
 
     return;
@@ -824,7 +875,116 @@ function startPlayback() {
     player.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  spieleFilm(0);
+  // Auch vor Film 1 läuft das Zwischenprogramm mit Countdown.
+  if (playback.pauseSekunden > 0) {
+    startePause(0);
+  } else {
+    spieleFilm(0);
+  }
+}
+
+function ladeYouTubeApi() {
+  if (window.YT?.Player) return Promise.resolve(window.YT);
+  if (youtubeApiPromise) return youtubeApiPromise;
+
+  youtubeApiPromise = new Promise((resolve, reject) => {
+    const vorher = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      vorher?.();
+      resolve(window.YT);
+    };
+
+    if (
+      !document.querySelector(
+        'script[src="https://www.youtube.com/iframe_api"]',
+      )
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://www.youtube.com/iframe_api";
+      script.async = true;
+      script.onerror = () =>
+        reject(new Error("YouTube-IFrame-API konnte nicht geladen werden."));
+      document.head.appendChild(script);
+    }
+  });
+
+  return youtubeApiPromise;
+}
+
+function stoppeYouTube() {
+  if (youtubePlayer) {
+    try {
+      youtubePlayer.destroy();
+    } catch {}
+    youtubePlayer = null;
+  }
+  const host = getElement("[data-kino-youtube]");
+  if (host) {
+    host.replaceChildren();
+    host.hidden = true;
+  }
+}
+
+async function spieleYouTubeFilm(film) {
+  const host = getElement("[data-kino-youtube]");
+  const video = getElement("[data-kino-video]");
+  if (!host || !film?.medien?.videoId) return false;
+
+  if (video) {
+    leereMediaQuelle(video);
+    video.hidden = true;
+  }
+  stoppeYouTube();
+  host.hidden = false;
+
+  try {
+    await ladeYouTubeApi();
+    if (!playback?.aktiv || playback.phase !== "film") return true;
+
+    const mount = document.createElement("div");
+    host.appendChild(mount);
+    youtubePlayer = new window.YT.Player(mount, {
+      width: "100%",
+      height: "100%",
+      videoId: film.medien.videoId,
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        rel: 0,
+        playsinline: 1,
+        origin: window.location.origin,
+      },
+      events: {
+        onReady: (event) => event.target.playVideo(),
+        onStateChange: (event) => {
+          if (event.data === window.YT.PlayerState.ENDED) handleFilmEnded();
+        },
+        onError: (event) => {
+          console.warn(
+            "YouTube-Video konnte nicht eingebettet werden.",
+            event.data,
+            film.medien.pfad,
+          );
+          showMessage(
+            "Dieses YouTube-Video kann nicht eingebettet werden und wird übersprungen.",
+          );
+          window.setTimeout(() => {
+            if (playback?.aktiv && playback.phase === "film") handleFilmEnded();
+          }, 1500);
+        },
+      },
+    });
+    return true;
+  } catch (fehler) {
+    console.error(fehler);
+    showMessage(
+      "YouTube konnte nicht geladen werden. Der Film wird übersprungen.",
+    );
+    window.setTimeout(() => {
+      if (playback?.aktiv && playback.phase === "film") handleFilmEnded();
+    }, 1500);
+    return true;
+  }
 }
 
 function spieleFilm(index) {
@@ -849,13 +1009,16 @@ function spieleFilm(index) {
   setCountdown(null);
 
   stoppePauseAudio();
+  stoppeYouTube();
   video.hidden = false;
   video.controls = false;
   video.playsInline = true;
   video.muted = false;
   video.volume = 1;
 
-  if (!setzeBrowserQuelle(video, film.medien, "video")) {
+  if (film.medien.quelle === "youtube") {
+    spieleYouTubeFilm(film);
+  } else if (!setzeBrowserQuelle(video, film.medien, "video")) {
     showMessage("Für diesen Film ist keine Browser-Videodatei vorhanden.");
     window.setTimeout(handleFilmEnded, 1200);
     return;
@@ -873,15 +1036,17 @@ function spieleFilm(index) {
 
   updatePosition();
 
-  const playPromise = video.play();
+  if (film.medien.quelle !== "youtube") {
+    const playPromise = video.play();
 
-  if (playPromise?.catch) {
-    playPromise.catch((fehler) => {
-      console.warn("Film konnte nicht automatisch gestartet werden.", fehler);
-      showMessage(
-        "Der Film konnte nicht automatisch gestartet werden. Klicke einmal auf Weiter und danach wieder auf den Film.",
-      );
-    });
+    if (playPromise?.catch) {
+      playPromise.catch((fehler) => {
+        console.warn("Film konnte nicht automatisch gestartet werden.", fehler);
+        showMessage(
+          "Der Film konnte nicht automatisch gestartet werden. Klicke einmal auf Weiter und danach wieder auf den Film.",
+        );
+      });
+    }
   }
 }
 
@@ -984,6 +1149,7 @@ function startePause(naechsterFilmIndex) {
     video.hidden = true;
   }
   stoppePauseAudio();
+  stoppeYouTube();
 
   getElement("[data-kino-film-info]")?.setAttribute("hidden", "");
   hideMessage();
@@ -1319,6 +1485,7 @@ function finishPlayback() {
   }
 
   stoppePauseAudio();
+  stoppeYouTube();
   hideCard();
   setCountdown(null);
   getElement("[data-kino-film-info]")?.setAttribute("hidden", "");
@@ -1337,6 +1504,7 @@ function stopPlayback({ zurueckZumBuilder = true } = {}) {
   }
 
   stoppePauseAudio();
+  stoppeYouTube();
   playback = null;
   lastBeitragId = null;
 
