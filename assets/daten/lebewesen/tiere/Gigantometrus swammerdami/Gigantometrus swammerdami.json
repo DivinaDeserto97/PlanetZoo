@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "notEvaluated"
   },
   "daten": {

@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "oceania"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Graslandschaft",
-      "Wüste"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["oceania"],
+    "biome": ["Gemäßigt", "Graslandschaft", "Wüste"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Voliere"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      ""
-    ],
+    "gehegetyp": ["Voliere"],
+    "kontinente": ["africa"],
+    "biome": [""],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -91,9 +85,7 @@
           "min": 6700,
           "max": 67000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Sagittarius serpentarius"
-          ],
+          "giltFuer": ["Sagittarius serpentarius"],
           "jahrDerGrundlage": null,
           "quelle": "planetZoo2"
         }

@@ -16,14 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Seen und Flüsse"
-    ],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Gemäßigt", "Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

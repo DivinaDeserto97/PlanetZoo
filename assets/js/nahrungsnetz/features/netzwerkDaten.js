@@ -1,7 +1,4 @@
-import {
-  getLanguage,
-  getLocalizedValue,
-} from "../../features/language.js";
+import { getLanguage, getLocalizedValue } from "../../features/language.js";
 
 import {
   getAlleNahrungsBeziehungen,
@@ -14,7 +11,6 @@ import {
   getBeziehungsLabel,
   getWirkungDarstellung,
 } from "../../features/oekologischeBeziehungen.js";
-
 
 /*
     ============================================================
@@ -58,28 +54,21 @@ import {
     ============================================================
 */
 
-
 /* ======================================== */
 /* ALIASE                                   */
 /* ======================================== */
 
 const TIER_ALIASES = {
-  lion:
-    "Panthera leo",
+  lion: "Panthera leo",
 
-  hyena:
-    "Crocuta crocuta",
+  hyena: "Crocuta crocuta",
 
-  leopard:
-    "Panthera pardus",
+  leopard: "Panthera pardus",
 
-  crocodile:
-    "Crocodylus niloticus",
+  crocodile: "Crocodylus niloticus",
 
-  human:
-    "Homo sapiens",
+  human: "Homo sapiens",
 };
-
 
 /* ======================================== */
 /* LABELS FÜR NICHT GELADENE RESSOURCEN     */
@@ -167,7 +156,6 @@ const ENTITY_LABELS = {
   },
 };
 
-
 const CONDITION_LABELS = {
   jungtier: {
     de: "Jungtier",
@@ -225,39 +213,18 @@ const CONDITION_LABELS = {
   },
 };
 
-
 /* ======================================== */
 /* ÖFFENTLICHER GRAPH-BUILDER               */
 /* ======================================== */
 
-export function buildNahrungsnetzGraph(
-  tiere,
-  selectedIds = [],
-) {
-  const alleTiere =
-    Array.isArray(
-      tiere,
-    )
-      ? tiere
-      : [];
+export function buildNahrungsnetzGraph(tiere, selectedIds = []) {
+  const alleTiere = Array.isArray(tiere) ? tiere : [];
 
+  const selected = new Set(Array.isArray(selectedIds) ? selectedIds : []);
 
-  const selected =
-    new Set(
-      Array.isArray(
-        selectedIds,
-      )
-        ? selectedIds
-        : [],
-    );
+  const nodes = new Map();
 
-
-  const nodes =
-    new Map();
-
-  const edges =
-    new Map();
-
+  const edges = new Map();
 
   /*
       ====================================
@@ -271,18 +238,9 @@ export function buildNahrungsnetzGraph(
       Schritt 7.
   */
 
-  alleTiere.forEach(
-    (tier) => {
-      addTierNode(
-        nodes,
-        tier,
-        selected.has(
-          tier.id,
-        ),
-      );
-    },
-  );
-
+  alleTiere.forEach((tier) => {
+    addTierNode(nodes, tier, selected.has(tier.id));
+  });
 
   /*
       ====================================
@@ -296,166 +254,71 @@ export function buildNahrungsnetzGraph(
       mehr gelesen und nicht mehr benötigt.
   */
 
-  alleTiere.forEach(
-    (tier) => {
-      addTierRelations(
-        tier,
-        alleTiere,
-        nodes,
-        edges,
-      );
-    },
-  );
+  alleTiere.forEach((tier) => {
+    addTierRelations(tier, alleTiere, nodes, edges);
+  });
 
-
-  const focusCount =
-    alleTiere.filter(
-      (tier) =>
-        selected.has(
-          tier.id,
-        ),
-    ).length;
-
+  const focusCount = alleTiere.filter((tier) => selected.has(tier.id)).length;
 
   return {
-    nodes:
-      [...nodes.values()],
+    nodes: [...nodes.values()],
 
-    edges:
-      [...edges.values()],
+    edges: [...edges.values()],
 
     focusCount,
 
-    animalCount:
-      alleTiere.length,
+    animalCount: alleTiere.length,
   };
 }
-
 
 /* ======================================== */
 /* BEZIEHUNGEN EINES TIERES                 */
 /* ======================================== */
 
-function addTierRelations(
-  tier,
-  tiere,
-  nodes,
-  edges,
-) {
-  const selbstNodeId =
-    getTierNodeId(
-      tier,
-    );
+function addTierRelations(tier, tiere, nodes, edges) {
+  const selbstNodeId = getTierNodeId(tier);
 
+  const relationen = getAlleNahrungsBeziehungen(tier);
 
-  const relationen =
-    getAlleNahrungsBeziehungen(
-      tier,
-    );
+  relationen.forEach((relation, index) => {
+    const lebensphase = relation.lebensphase;
 
+    const beziehung = relation.beziehung;
 
-  relationen.forEach(
-    (
-      relation,
-      index,
-    ) => {
-      const lebensphase =
-        relation.lebensphase;
+    if (!beziehung || !hasText(beziehung.wert)) {
+      return;
+    }
 
-      const beziehung =
-        relation.beziehung;
+    const zielNode = resolveEntityNode(beziehung, tiere);
 
+    addNode(nodes, zielNode);
 
-      if (
-        !beziehung ||
-        !hasText(
-          beziehung.wert,
-        )
-      ) {
-        return;
-      }
+    const zielNodeId = zielNode.id;
 
+    if (selbstNodeId === zielNodeId) {
+      return;
+    }
 
-      const zielNode =
-        resolveEntityNode(
-          beziehung,
-          tiere,
-        );
+    const wirkung = String(beziehung.wirkung ?? "").trim();
 
+    const wirkungDarstellung = getWirkungDarstellung(wirkung);
 
-      addNode(
-        nodes,
-        zielNode,
-      );
+    const richtung = resolveCurrentEdgeDirection({
+      selbstNodeId,
+      zielNodeId,
+      wirkungDarstellung,
+    });
 
+    const beziehungsTyp = String(beziehung.beziehung ?? "").trim();
 
-      const zielNodeId =
-        zielNode.id;
+    const beziehungLabel = getBeziehungsLabel(beziehungsTyp, getLanguage());
 
+    const conditionLabel = getConditionLabel(beziehung, lebensphase);
 
-      if (
-        selbstNodeId ===
-        zielNodeId
-      ) {
-        return;
-      }
+    addEdge(edges, {
+      id: createEdgeId(tier.id, lebensphase, index, beziehung),
 
-
-      const wirkung =
-        String(
-          beziehung.wirkung ??
-          "",
-        ).trim();
-
-
-      const wirkungDarstellung =
-        getWirkungDarstellung(
-          wirkung,
-        );
-
-
-      const richtung =
-        resolveCurrentEdgeDirection({
-          selbstNodeId,
-          zielNodeId,
-          wirkungDarstellung,
-        });
-
-
-      const beziehungsTyp =
-        String(
-          beziehung.beziehung ??
-          "",
-        ).trim();
-
-
-      const beziehungLabel =
-        getBeziehungsLabel(
-          beziehungsTyp,
-          getLanguage(),
-        );
-
-
-      const conditionLabel =
-        getConditionLabel(
-          beziehung,
-          lebensphase,
-        );
-
-
-      addEdge(
-        edges,
-        {
-          id:
-            createEdgeId(
-              tier.id,
-              lebensphase,
-              index,
-              beziehung,
-            ),
-
-
-          /*
+      /*
               from/to dienen aktuell noch
               dem bestehenden SVG-Renderer.
 
@@ -466,18 +329,14 @@ function addTierRelations(
               zielNodeId
           */
 
-          from:
-            richtung.from,
+      from: richtung.from,
 
-          to:
-            richtung.to,
+      to: richtung.to,
 
+      selbstNodeId,
+      zielNodeId,
 
-          selbstNodeId,
-          zielNodeId,
-
-
-          /*
+      /*
               Tier, in dessen JSON diese
               Beziehung gepflegt wird.
 
@@ -485,36 +344,28 @@ function addTierRelations(
               die Tierfarbe bestimmen.
           */
 
-          ownerTierId:
-            tier.id,
+      ownerTierId: tier.id,
 
+      lebensphase,
 
-          lebensphase,
-
-
-          /*
+      /*
               WAS ist das Ziel?
 
               tier / pflanze / nutzung /
               aas / giftig
           */
 
-          zielTyp:
-            beziehung.typ ??
-            "",
+      zielTyp: beziehung.typ ?? "",
 
-
-          /*
+      /*
               WELCHE ökologische Beziehung?
           */
 
-          beziehung:
-            beziehungsTyp,
+      beziehung: beziehungsTyp,
 
-          beziehungLabel,
+      beziehungLabel,
 
-
-          /*
+      /*
               WIRKUNG aus Sicht:
 
               selbst / ziel
@@ -522,24 +373,18 @@ function addTierRelations(
               z. B. +/-
           */
 
-          wirkung,
+      wirkung,
 
-          wirkungDarstellung,
+      wirkungDarstellung,
 
-
-          /*
+      /*
               LINIENTYP bleibt unabhängig
               von Wirkung und Tierfarbe.
           */
 
-          type:
-            getGraphLineType(
-              beziehung,
-              lebensphase,
-            ),
+      type: getGraphLineType(beziehung, lebensphase),
 
-
-          /*
+      /*
               Der bestehende Renderer kann
               nur EIN Label anzeigen.
 
@@ -552,54 +397,28 @@ function addTierRelations(
               oder als Tooltip genutzt werden.
           */
 
-          label:
-            beziehungLabel,
+      label: beziehungLabel,
 
-          conditionLabel,
+      conditionLabel,
 
+      selbstBedingungen: getSelbstBedingungen(beziehung),
 
-          selbstBedingungen:
-            getSelbstBedingungen(
-              beziehung,
-            ),
+      zielBedingungen: getZielBedingungen(beziehung),
 
-          zielBedingungen:
-            getZielBedingungen(
-              beziehung,
-            ),
+      gift: beziehung.gift ?? null,
 
+      nutzung: beziehung.nutzung ?? null,
 
-          gift:
-            beziehung.gift ??
-            null,
+      aas: beziehung.aas ?? null,
 
-          nutzung:
-            beziehung.nutzung ??
-            null,
+      hinweis: beziehung.hinweis ?? null,
 
-          aas:
-            beziehung.aas ??
-            null,
+      quelle: beziehung.quelle ?? "",
 
-          hinweis:
-            beziehung.hinweis ??
-            null,
-
-          quelle:
-            beziehung.quelle ??
-            "",
-
-
-          route:
-            getEntryRoute(
-              beziehung,
-            ),
-        },
-      );
-    },
-  );
+      route: getEntryRoute(beziehung),
+    });
+  });
 }
-
 
 /* ======================================== */
 /* AKTUELLE PFEILRICHTUNG                   */
@@ -610,11 +429,7 @@ function resolveCurrentEdgeDirection({
   zielNodeId,
   wirkungDarstellung,
 }) {
-  const richtung =
-    wirkungDarstellung
-      ?.richtung ??
-    "selbst";
-
+  const richtung = wirkungDarstellung?.richtung ?? "selbst";
 
   /*
       Ein positiver Profiteur ist "selbst".
@@ -625,37 +440,25 @@ function resolveCurrentEdgeDirection({
       Zebra -> Löwe
   */
 
-  if (
-    richtung ===
-    "selbst"
-  ) {
+  if (richtung === "selbst") {
     return {
-      from:
-        zielNodeId,
+      from: zielNodeId,
 
-      to:
-        selbstNodeId,
+      to: selbstNodeId,
     };
   }
-
 
   /*
       Positiver Profiteur ist das Ziel.
   */
 
-  if (
-    richtung ===
-    "ziel"
-  ) {
+  if (richtung === "ziel") {
     return {
-      from:
-        selbstNodeId,
+      from: selbstNodeId,
 
-      to:
-        zielNodeId,
+      to: zielNodeId,
     };
   }
-
 
   /*
       +/+ oder Beziehungen ohne eindeutige
@@ -669,42 +472,26 @@ function resolveCurrentEdgeDirection({
   */
 
   return {
-    from:
-      selbstNodeId,
+    from: selbstNodeId,
 
-    to:
-      zielNodeId,
+    to: zielNodeId,
   };
 }
-
 
 /* ======================================== */
 /* LINIENTYP                                */
 /* ======================================== */
 
-function getGraphLineType(
-  beziehung,
-  lebensphase,
-) {
-  const type =
-    getLinienTyp(
-      beziehung,
-    );
-
+function getGraphLineType(beziehung, lebensphase) {
+  const type = getLinienTyp(beziehung);
 
   /*
       Aas und Gift haben Vorrang.
   */
 
-  if (
-    type ===
-      "carrion" ||
-    type ===
-      "toxic"
-  ) {
+  if (type === "carrion" || type === "toxic") {
     return type;
   }
-
 
   /*
       Die Legende lautet weiterhin:
@@ -717,123 +504,63 @@ function getGraphLineType(
       bedingung.selbst/ziel leer ist.
   */
 
-  if (
-    lebensphase ===
-    "jungtier"
-  ) {
+  if (lebensphase === "jungtier") {
     return "conditional";
   }
 
-
   return type;
 }
-
 
 /* ======================================== */
 /* TIER-KNOTEN                              */
 /* ======================================== */
 
-function addTierNode(
-  nodes,
-  tier,
-  focus,
-) {
-  addNode(
-    nodes,
-    {
-      id:
-        getTierNodeId(
-          tier,
-        ),
+function addTierNode(nodes, tier, focus) {
+  addNode(nodes, {
+    id: getTierNodeId(tier),
 
-      label:
-        getTierName(
-          tier,
-        ),
+    label: getTierName(tier),
 
-      subtitle:
-        tier.wissenschaftlicherName ??
-        tier.datenId ??
-        "",
+    subtitle: tier.wissenschaftlicherName ?? tier.datenId ?? "",
 
-      kind:
-        "animal",
+    kind: "animal",
 
-      kindLabel:
-        getKindLabel(
-          "animal",
-        ),
+    kindLabel: getKindLabel("animal"),
 
-      tierId:
-        tier.id,
+    tierId: tier.id,
 
-      focus:
-        Boolean(
-          focus,
-        ),
+    focus: Boolean(focus),
 
-      position:
-        getTierPosition(
-          tier,
-        ),
-    },
-  );
+    position: getTierPosition(tier),
+  });
 }
 
-
-function getTierNodeId(
-  tier,
-) {
+function getTierNodeId(tier) {
   return `tier:${tier.id}`;
 }
-
 
 /* ======================================== */
 /* EINTRAG -> KNOTEN                        */
 /* ======================================== */
 
-function resolveEntityNode(
-  entry,
-  tiere,
-) {
-  const value =
-    entry.wert;
+function resolveEntityNode(entry, tiere) {
+  const value = entry.wert;
 
-
-  const loadedTier =
-    findTier(
-      tiere,
-      value,
-    );
-
+  const loadedTier = findTier(tiere, value);
 
   if (loadedTier) {
     return {
-      id:
-        getTierNodeId(
-          loadedTier,
-        ),
+      id: getTierNodeId(loadedTier),
 
-      label:
-        getTierName(
-          loadedTier,
-        ),
+      label: getTierName(loadedTier),
 
-      subtitle:
-        loadedTier.wissenschaftlicherName ??
-        loadedTier.datenId ??
-        "",
+      subtitle: loadedTier.wissenschaftlicherName ?? loadedTier.datenId ?? "",
 
-      kind:
-        "animal",
+      kind: "animal",
 
-      kindLabel:
-        getKindLabel(
-          "animal",
-        ),
+      kindLabel: getKindLabel("animal"),
 
-      tierId:
-        loadedTier.id,
+      tierId: loadedTier.id,
 
       /*
           Der echte focus-Wert wird beim
@@ -841,73 +568,37 @@ function resolveEntityNode(
           gesetzt und von addNode erhalten.
       */
 
-      focus:
-        false,
+      focus: false,
 
-      position:
-        getTierPosition(
-          loadedTier,
-        ),
+      position: getTierPosition(loadedTier),
     };
   }
 
-
-  const kind =
-    inferKind(
-      value,
-      entry?.typ,
-    );
-
+  const kind = inferKind(value, entry?.typ);
 
   return {
-    id:
-      `entity:${slug(value)}`,
+    id: `entity:${slug(value)}`,
 
-    label:
-      getEntityLabel(
-        value,
-      ),
+    label: getEntityLabel(value),
 
-    subtitle:
-      looksScientificName(
-        value,
-      )
-        ? value
-        : "",
+    subtitle: looksScientificName(value) ? value : "",
 
     kind,
 
-    kindLabel:
-      getKindLabel(
-        kind,
-      ),
+    kindLabel: getKindLabel(kind),
 
-    focus:
-      false,
+    focus: false,
 
-    position:
-      normalizeSlot(
-        entry?.darstellung
-          ?.position ??
-        entry?.position,
-      ),
+    position: normalizeSlot(entry?.darstellung?.position ?? entry?.position),
   };
 }
-
 
 /* ======================================== */
 /* KNOTEN                                   */
 /* ======================================== */
 
-function addNode(
-  nodes,
-  node,
-) {
-  const existing =
-    nodes.get(
-      node.id,
-    );
-
+function addNode(nodes, node) {
+  const existing = nodes.get(node.id);
 
   if (existing) {
     /*
@@ -917,49 +608,29 @@ function addNode(
     */
 
     if (node.focus) {
-      existing.focus =
-        true;
+      existing.focus = true;
     }
 
-
-    if (
-      !existing.position &&
-      node.position
-    ) {
-      existing.position =
-        node.position;
+    if (!existing.position && node.position) {
+      existing.position = node.position;
     }
-
 
     return existing;
   }
 
-
-  nodes.set(
-    node.id,
-    node,
-  );
-
+  nodes.set(node.id, node);
 
   return node;
 }
-
 
 /* ======================================== */
 /* KANTEN                                   */
 /* ======================================== */
 
-function addEdge(
-  edges,
-  edge,
-) {
-  if (
-    edge.from ===
-    edge.to
-  ) {
+function addEdge(edges, edge) {
+  if (edge.from === edge.to) {
     return;
   }
-
 
   /*
       Keine automatische Zusammenfassung
@@ -974,246 +645,120 @@ function addEdge(
       nicht doppelt eingetragen.
   */
 
-  if (
-    edges.has(
-      edge.id,
-    )
-  ) {
+  if (edges.has(edge.id)) {
     return;
   }
 
-
-  edges.set(
-    edge.id,
-    edge,
-  );
+  edges.set(edge.id, edge);
 }
-
 
 /* ======================================== */
 /* POSITION AUS JSON                        */
 /* ======================================== */
 
-function getTierPosition(
-  tier,
-) {
-  return normalizeSlot(
-    tier.originalDaten
-      ?.darstellung
-      ?.nahrungsnetz
-      ?.position,
-  );
+function getTierPosition(tier) {
+  return normalizeSlot(tier.originalDaten?.darstellung?.nahrungsnetz?.position);
 }
-
 
 /* ======================================== */
 /* OPTIONALE ROUTE AUS JSON                 */
 /* ======================================== */
 
-function getEntryRoute(
-  entry,
-) {
+function getEntryRoute(entry) {
   const route =
-    entry?.darstellung
-      ?.route ??
-    entry?.darstellung
-      ?.linienRoute ??
-    entry?.layout
-      ?.route ??
+    entry?.darstellung?.route ??
+    entry?.darstellung?.linienRoute ??
+    entry?.layout?.route ??
     null;
 
-
-  if (
-    !Array.isArray(
-      route,
-    ) ||
-    !route.length
-  ) {
+  if (!Array.isArray(route) || !route.length) {
     return null;
   }
 
+  const normalized = route
+    .map((step) => {
+      if (typeof step === "string") {
+        if (!/^L\d+\.\d+$/i.test(step)) {
+          return null;
+        }
 
-  const normalized =
-    route
-      .map(
-        (step) => {
-          if (
-            typeof step ===
-            "string"
-          ) {
-            if (
-              !/^L\d+\.\d+$/i.test(
-                step,
-              )
-            ) {
-              return null;
-            }
+        return {
+          bereich: step,
 
+          spur: null,
+        };
+      }
 
-            return {
-              bereich:
-                step,
+      if (!step || typeof step !== "object") {
+        return null;
+      }
 
-              spur:
-                null,
-            };
-          }
+      const bereich = step.bereich ?? step.korridor ?? "";
 
+      if (!/^L\d+\.\d+$/i.test(bereich)) {
+        return null;
+      }
 
-          if (
-            !step ||
-            typeof step !==
-              "object"
-          ) {
-            return null;
-          }
+      const spur = Number(step.spur);
 
+      return {
+        bereich,
 
-          const bereich =
-            step.bereich ??
-            step.korridor ??
-            "";
+        spur: Number.isInteger(spur) && spur > 0 ? spur : null,
+      };
+    })
+    .filter(Boolean);
 
-
-          if (
-            !/^L\d+\.\d+$/i.test(
-              bereich,
-            )
-          ) {
-            return null;
-          }
-
-
-          const spur =
-            Number(
-              step.spur,
-            );
-
-
-          return {
-            bereich,
-
-            spur:
-              Number.isInteger(
-                spur,
-              ) &&
-              spur >
-                0
-                ? spur
-                : null,
-          };
-        },
-      )
-      .filter(
-        Boolean,
-      );
-
-
-  return normalized.length
-    ? normalized
-    : null;
+  return normalized.length ? normalized : null;
 }
-
 
 /* ======================================== */
 /* SLOT NORMALISIEREN                       */
 /* ======================================== */
 
-function normalizeSlot(
-  value,
-) {
-  if (
-    typeof value ===
-      "string" &&
-    /^\d+\.\d+$/.test(
-      value.trim(),
-    )
-  ) {
+function normalizeSlot(value) {
+  if (typeof value === "string" && /^\d+\.\d+$/.test(value.trim())) {
     return value.trim();
   }
 
+  if (value && typeof value === "object") {
+    const row = Number(value.zeile ?? value.row);
 
-  if (
-    value &&
-    typeof value ===
-      "object"
-  ) {
-    const row =
-      Number(
-        value.zeile ??
-        value.row,
-      );
-
-    const column =
-      Number(
-        value.spalte ??
-        value.column,
-      );
-
+    const column = Number(value.spalte ?? value.column);
 
     if (
-      Number.isInteger(
-        row,
-      ) &&
-      row >
-        0 &&
-      Number.isInteger(
-        column,
-      ) &&
-      column >
-        0
+      Number.isInteger(row) &&
+      row > 0 &&
+      Number.isInteger(column) &&
+      column > 0
     ) {
       return `${row}.${column}`;
     }
   }
 
-
   return null;
 }
-
 
 /* ======================================== */
 /* ART DES KNOTENS                          */
 /* ======================================== */
 
-function inferKind(
-  value,
-  typ,
-) {
-  const normalizedTyp =
-    String(
-      typ ??
-      "",
-    )
-      .trim()
-      .toLowerCase();
+function inferKind(value, typ) {
+  const normalizedTyp = String(typ ?? "")
+    .trim()
+    .toLowerCase();
 
-
-  if (
-    normalizedTyp ===
-      "aas" ||
-    value ===
-      "aas"
-  ) {
+  if (normalizedTyp === "aas" || value === "aas") {
     return "carrion";
   }
 
-
-  if (
-    normalizedTyp ===
-    "pflanze"
-  ) {
+  if (normalizedTyp === "pflanze") {
     return "plant";
   }
 
-
-  if (
-    normalizedTyp ===
-    "tier"
-  ) {
+  if (normalizedTyp === "tier") {
     return "animal";
   }
-
 
   /*
       "giftig" beschreibt in unserem
@@ -1223,27 +768,13 @@ function inferKind(
       möglich aus dem Wert abgeleitet.
   */
 
-  if (
-    looksScientificName(
-      value,
-    )
-  ) {
+  if (looksScientificName(value)) {
     return "animal";
   }
 
-
-  if (
-    [
-      "ants",
-      "termites",
-      "insects",
-    ].includes(
-      value,
-    )
-  ) {
+  if (["ants", "termites", "insects"].includes(value)) {
     return "animal";
   }
-
 
   if (
     [
@@ -1255,44 +786,28 @@ function inferKind(
       "twigs",
       "bark",
       "shrubs",
-    ].includes(
-      value,
-    )
+    ].includes(value)
   ) {
     return "plant";
   }
 
-
-  if (
-    value ===
-    "water"
-  ) {
+  if (value === "water") {
     return "water";
   }
 
-
-  if (
-    value ===
-    "mineralien"
-  ) {
+  if (value === "mineralien") {
     return "mineral";
   }
 
-
   return "resource";
 }
-
 
 /* ======================================== */
 /* KNOTENART BESCHRIFTEN                    */
 /* ======================================== */
 
-function getKindLabel(
-  kind,
-) {
-  const language =
-    getLanguage();
-
+function getKindLabel(kind) {
+  const language = getLanguage();
 
   const labels = {
     animal: {
@@ -1326,328 +841,139 @@ function getKindLabel(
     },
   };
 
-
-  return (
-    labels[
-      kind
-    ]?.[
-      language
-    ] ??
-    labels[
-      kind
-    ]?.de ??
-    kind
-  );
+  return labels[kind]?.[language] ?? labels[kind]?.de ?? kind;
 }
-
 
 /* ======================================== */
 /* RESSOURCEN BESCHRIFTEN                   */
 /* ======================================== */
 
-function getEntityLabel(
-  value,
-) {
-  const language =
-    getLanguage();
+function getEntityLabel(value) {
+  const language = getLanguage();
 
-  const labels =
-    ENTITY_LABELS[
-      value
-    ];
+  const labels = ENTITY_LABELS[value];
 
-
-  return (
-    labels?.[
-      language
-    ] ??
-    labels?.de ??
-    value
-  );
+  return labels?.[language] ?? labels?.de ?? value;
 }
-
 
 /* ======================================== */
 /* BEDINGUNGEN BESCHRIFTEN                  */
 /* ======================================== */
 
-function getConditionLabel(
-  entry,
-  lebensphase,
-) {
-  const teile =
-    [];
-
+function getConditionLabel(entry, lebensphase) {
+  const teile = [];
 
   /*
       Der obere JSON-Bereich beschreibt die
       Lebensphase von "selbst".
   */
 
-  if (
-    lebensphase ===
-    "jungtier"
-  ) {
+  if (lebensphase === "jungtier") {
+    teile.push(`${getRoleLabel("self")}: ${localizedCondition("jungtier")}`);
+  }
+
+  const selbst = getSelbstBedingungen(entry);
+
+  if (selbst.length) {
     teile.push(
-      `${getRoleLabel("self")}: ${localizedCondition("jungtier")}`,
+      `${getRoleLabel("self")}: ${selbst.map(localizedCondition).join(", ")}`,
     );
   }
 
+  const ziel = getZielBedingungen(entry);
 
-  const selbst =
-    getSelbstBedingungen(
-      entry,
-    );
-
-
-  if (
-    selbst.length
-  ) {
+  if (ziel.length) {
     teile.push(
-      `${getRoleLabel("self")}: ${selbst
-        .map(localizedCondition)
-        .join(", ")}`,
+      `${getRoleLabel("target")}: ${ziel.map(localizedCondition).join(", ")}`,
     );
   }
 
-
-  const ziel =
-    getZielBedingungen(
-      entry,
-    );
-
-
-  if (
-    ziel.length
-  ) {
-    teile.push(
-      `${getRoleLabel("target")}: ${ziel
-        .map(localizedCondition)
-        .join(", ")}`,
-    );
-  }
-
-
-  return [
-    ...new Set(
-      teile.filter(
-        Boolean,
-      ),
-    ),
-  ].join(
-    " · ",
-  );
+  return [...new Set(teile.filter(Boolean))].join(" · ");
 }
 
+function getRoleLabel(role) {
+  const english = String(getLanguage()).startsWith("en");
 
-function getRoleLabel(
-  role,
-) {
-  const english =
-    String(
-      getLanguage(),
-    ).startsWith(
-      "en",
-    );
-
-
-  if (
-    role ===
-    "target"
-  ) {
-    return english
-      ? "Target"
-      : "Ziel";
+  if (role === "target") {
+    return english ? "Target" : "Ziel";
   }
 
-
-  return english
-    ? "Self"
-    : "Selbst";
+  return english ? "Self" : "Selbst";
 }
 
-
-function localizedCondition(
-  value,
-) {
-  if (
-    !hasText(
-      value,
-    )
-  ) {
+function localizedCondition(value) {
+  if (!hasText(value)) {
     return "";
   }
 
+  const language = getLanguage();
 
-  const language =
-    getLanguage();
+  const labels = CONDITION_LABELS[value];
 
-  const labels =
-    CONDITION_LABELS[
-      value
-    ];
-
-
-  return (
-    labels?.[
-      language
-    ] ??
-    labels?.de ??
-    value
-  );
+  return labels?.[language] ?? labels?.de ?? value;
 }
-
 
 /* ======================================== */
 /* TIER FINDEN / ALIASE                     */
 /* ======================================== */
 
-function findTier(
-  tiere,
-  value,
-) {
-  const alias =
-    TIER_ALIASES[
-      value
-    ];
+function findTier(tiere, value) {
+  const alias = TIER_ALIASES[value];
 
-
-  const candidates =
-    [
-      value,
-      alias,
-    ]
-      .filter(
-        Boolean,
-      )
-      .map(
-        (item) =>
-          String(
-            item,
-          ).trim(),
-      );
-
+  const candidates = [value, alias]
+    .filter(Boolean)
+    .map((item) => String(item).trim());
 
   return (
     tiere.find(
       (tier) =>
-        candidates.includes(
-          String(
-            tier.id ??
-            "",
-          ).trim(),
-        ) ||
-        candidates.includes(
-          String(
-            tier.datenId ??
-            "",
-          ).trim(),
-        ) ||
-        candidates.includes(
-          String(
-            tier.wissenschaftlicherName ??
-            "",
-          ).trim(),
-        ) ||
-        candidates.includes(
-          String(
-            tier.originalDaten
-              ?.id ??
-            "",
-          ).trim(),
-        ),
-    ) ??
-    null
+        candidates.includes(String(tier.id ?? "").trim()) ||
+        candidates.includes(String(tier.datenId ?? "").trim()) ||
+        candidates.includes(String(tier.wissenschaftlicherName ?? "").trim()) ||
+        candidates.includes(String(tier.originalDaten?.id ?? "").trim()),
+    ) ?? null
   );
 }
 
-
-function getTierName(
-  tier,
-) {
+function getTierName(tier) {
   return (
-    getLocalizedValue(
-      tier.namen,
-      getLanguage(),
-    ) ??
+    getLocalizedValue(tier.namen, getLanguage()) ??
     tier.wissenschaftlicherName ??
     tier.id
   );
 }
 
-
 /* ======================================== */
 /* HELFER                                   */
 /* ======================================== */
 
-function createEdgeId(
-  tierId,
-  lebensphase,
-  index,
-  beziehung,
-) {
+function createEdgeId(tierId, lebensphase, index, beziehung) {
   return [
     "foodweb",
     tierId,
     lebensphase,
     index,
-    beziehung?.beziehung ??
-      "",
-    beziehung?.wirkung ??
-      "",
-    beziehung?.wert ??
-      "",
-  ].join(
-    "|",
-  );
+    beziehung?.beziehung ?? "",
+    beziehung?.wirkung ?? "",
+    beziehung?.wert ?? "",
+  ].join("|");
 }
 
+function hasText(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
 
-function hasText(
-  value,
-) {
+function looksScientificName(value) {
   return (
-    typeof value ===
-      "string" &&
-    value.trim().length >
-      0
+    typeof value === "string" && /^[A-Z][a-z-]+\s+[a-z][a-z-]+/.test(value)
   );
 }
 
-
-function looksScientificName(
-  value,
-) {
-  return (
-    typeof value ===
-      "string" &&
-    /^[A-Z][a-z-]+\s+[a-z][a-z-]+/.test(
-      value,
-    )
-  );
-}
-
-
-function slug(
-  value,
-) {
-  return String(
-    value,
-  )
+function slug(value) {
+  return String(value)
     .toLowerCase()
-    .normalize(
-      "NFD",
-    )
-    .replace(
-      /[\u0300-\u036f]/g,
-      "",
-    )
-    .replace(
-      /[^a-z0-9]+/g,
-      "-",
-    )
-    .replace(
-      /^-+|-+$/g,
-      "",
-    );
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }

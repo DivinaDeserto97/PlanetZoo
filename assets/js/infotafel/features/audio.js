@@ -1,518 +1,235 @@
-import {
-  getLanguage,
-} from "../../features/language.js";
+import { getLanguage } from "../../features/language.js";
 
-import {
-  getInfotafelAudioItems,
-} from "../../features/tierMedien.js";
+import { getInfotafelAudioItems } from "../../features/tierMedien.js";
 
-import {
-  clampIndex,
-  setText,
-  ui,
-  wrapIndex,
-} from "./ui.js";
+import { clampIndex, setText, ui, wrapIndex } from "./ui.js";
 
+let audioIndex = 0;
 
-let audioIndex =
-  0;
+let audioItems = [];
 
-let audioItems =
-  [];
-
-const audioMetaCache =
-  new Map();
-
+const audioMetaCache = new Map();
 
 export function resetAudioState() {
-  audioIndex =
-    0;
+  audioIndex = 0;
 
-  audioItems =
-    [];
+  audioItems = [];
 }
 
+export function bindAudioEvents(signal) {
+  const audio = document.querySelector("[data-audio-element]");
 
-export function bindAudioEvents(
-  signal,
-) {
-  const audio =
-    document.querySelector(
-      "[data-audio-element]",
-    );
+  audio?.addEventListener("play", () => setAudioPlayIcon("■"), { signal });
 
+  audio?.addEventListener("pause", () => setAudioPlayIcon("▶"), { signal });
 
-  audio?.addEventListener(
-    "play",
-    () =>
-      setAudioPlayIcon(
-        "■",
-      ),
-    { signal },
-  );
-
-
-  audio?.addEventListener(
-    "pause",
-    () =>
-      setAudioPlayIcon(
-        "▶",
-      ),
-    { signal },
-  );
-
-
-  audio?.addEventListener(
-    "ended",
-    () =>
-      setAudioPlayIcon(
-        "▶",
-      ),
-    { signal },
-  );
+  audio?.addEventListener("ended", () => setAudioPlayIcon("▶"), { signal });
 }
 
+export async function renderAudio(tier, getActiveTier) {
+  const requestedTierId = tier.id;
 
-export async function renderAudio(
-  tier,
-  getActiveTier,
-) {
-  const requestedTierId =
-    tier.id;
+  audioItems = getInfotafelAudioItems(tier);
 
+  audioIndex = clampIndex(audioIndex, audioItems.length);
 
-  audioItems =
-    getInfotafelAudioItems(
-      tier,
-    );
+  const audio = document.querySelector("[data-audio-element]");
 
+  const play = document.querySelector("[data-audio-play]");
 
-  audioIndex =
-    clampIndex(
-      audioIndex,
-      audioItems.length,
-    );
+  const left = document.querySelector("[data-audio-left]");
 
+  const right = document.querySelector("[data-audio-right]");
 
-  const audio =
-    document.querySelector(
-      "[data-audio-element]",
-    );
-
-  const play =
-    document.querySelector(
-      "[data-audio-play]",
-    );
-
-  const left =
-    document.querySelector(
-      "[data-audio-left]",
-    );
-
-  const right =
-    document.querySelector(
-      "[data-audio-right]",
-    );
-
-
-  if (
-    !audio ||
-    !play ||
-    !left ||
-    !right
-  ) {
+  if (!audio || !play || !left || !right) {
     return;
   }
 
-
-  setAudioUiVisible(
-    audioItems.length >
-      0,
-  );
-
+  setAudioUiVisible(audioItems.length > 0);
 
   audio.pause();
 
-  setAudioPlayIcon(
-    "▶",
-  );
+  setAudioPlayIcon("▶");
 
-
-  if (
-    !audioItems.length
-  ) {
-    audio.removeAttribute(
-      "src",
-    );
+  if (!audioItems.length) {
+    audio.removeAttribute("src");
 
     audio.load();
 
-    play.disabled =
-      true;
+    play.disabled = true;
 
-    left.disabled =
-      true;
+    left.disabled = true;
 
-    right.disabled =
-      true;
+    right.disabled = true;
 
+    setText("[data-audio-title]", ui("audio"));
 
-    setText(
-      "[data-audio-title]",
-      ui(
-        "audio",
-      ),
-    );
-
-
-    setText(
-      "[data-audio-description]",
-      ui(
-        "noAudio",
-      ),
-    );
-
+    setText("[data-audio-description]", ui("noAudio"));
 
     return;
   }
 
+  play.disabled = false;
 
-  play.disabled =
-    false;
+  left.disabled = false;
 
-  left.disabled =
-    false;
+  right.disabled = false;
 
-  right.disabled =
-    false;
+  const item = audioItems[audioIndex];
 
-
-  const item =
-    audioItems[
-      audioIndex
-    ];
-
-
-  audio.src =
-    item.src;
+  audio.src = item.src;
 
   audio.load();
-
 
   setText(
     "[data-audio-title]",
     `${item.typ} · ${audioIndex + 1}/${audioItems.length}`,
   );
 
+  setText("[data-audio-description]", item.typ);
 
-  setText(
-    "[data-audio-description]",
-    item.typ,
-  );
-
-
-  const meta =
-    await loadAudioMetadata(
-      item.metaPath,
-    );
-
+  const meta = await loadAudioMetadata(item.metaPath);
 
   if (
-    getActiveTier()?.id !==
-      requestedTierId ||
-    audioItems[
-      audioIndex
-    ]?.key !==
-      item.key
+    getActiveTier()?.id !== requestedTierId ||
+    audioItems[audioIndex]?.key !== item.key
   ) {
     return;
   }
 
+  const description = getAudioDescription(meta) || item.typ;
 
-  const description =
-    getAudioDescription(
-      meta,
-    ) ||
-    item.typ;
-
-
-  setText(
-    "[data-audio-description]",
-    description,
-  );
+  setText("[data-audio-description]", description);
 }
 
-
-function setAudioUiVisible(
-  visible,
-) {
+function setAudioUiVisible(visible) {
   [
     "[data-audio-left]",
     "[data-audio-right]",
     "[data-audio-play]",
     "[data-audio-panel]",
-  ].forEach(
-    (selector) => {
-      const element =
-        document.querySelector(
-          selector,
-        );
+  ].forEach((selector) => {
+    const element = document.querySelector(selector);
 
-
-      if (element) {
-        element.hidden =
-          !visible;
-      }
-    },
-  );
+    if (element) {
+      element.hidden = !visible;
+    }
+  });
 }
 
-
-async function loadAudioMetadata(
-  path,
-) {
+async function loadAudioMetadata(path) {
   if (!path) {
     return null;
   }
 
-
-  if (
-    audioMetaCache.has(
-      path,
-    )
-  ) {
-    return audioMetaCache.get(
-      path,
-    );
+  if (audioMetaCache.has(path)) {
+    return audioMetaCache.get(path);
   }
-
 
   try {
-    const response =
-      await fetch(
-        path,
-      );
-
+    const response = await fetch(path);
 
     if (!response.ok) {
-      throw new Error(
-        `${response.status} ${response.statusText}`,
-      );
+      throw new Error(`${response.status} ${response.statusText}`);
     }
 
+    const data = await response.json();
 
-    const data =
-      await response.json();
+    const meta = Array.isArray(data) ? (data[0] ?? null) : data;
 
-
-    const meta =
-      Array.isArray(
-        data,
-      )
-        ? data[0] ??
-          null
-        : data;
-
-
-    audioMetaCache.set(
-      path,
-      meta,
-    );
-
+    audioMetaCache.set(path, meta);
 
     return meta;
-  }
-
-  catch (error) {
+  } catch (error) {
     console.warn(
       `Audio-Metadaten konnten nicht geladen werden: ${path}`,
       error,
     );
 
-
-    audioMetaCache.set(
-      path,
-      null,
-    );
-
+    audioMetaCache.set(path, null);
 
     return null;
   }
 }
 
-
-function getAudioDescription(
-  meta,
-) {
-  if (
-    !meta ||
-    typeof meta !==
-      "object"
-  ) {
+function getAudioDescription(meta) {
+  if (!meta || typeof meta !== "object") {
     return "";
   }
 
+  const language = getLanguage();
 
-  const language =
-    getLanguage();
-
-
-  if (
-    language.startsWith(
-      "en",
-    ) &&
-    meta.description_en
-  ) {
+  if (language.startsWith("en") && meta.description_en) {
     return meta.description_en;
   }
 
-
-  return (
-    meta.description ??
-    meta.description_en ??
-    ""
-  );
+  return meta.description ?? meta.description_en ?? "";
 }
 
-
 export async function toggleAudio() {
-  const audio =
-    document.querySelector(
-      "[data-audio-element]",
-    );
+  const audio = document.querySelector("[data-audio-element]");
 
-  const play =
-    document.querySelector(
-      "[data-audio-play]",
-    );
+  const play = document.querySelector("[data-audio-play]");
 
-
-  if (
-    !audio ||
-    !play ||
-    !audio.src
-  ) {
+  if (!audio || !play || !audio.src) {
     return;
   }
-
 
   if (audio.paused) {
     try {
       await audio.play();
 
-      setAudioPlayIcon(
-        "■",
-      );
+      setAudioPlayIcon("■");
+    } catch (error) {
+      console.warn("Audio konnte nicht abgespielt werden.", error);
     }
-
-    catch (error) {
-      console.warn(
-        "Audio konnte nicht abgespielt werden.",
-        error,
-      );
-    }
-  }
-
-  else {
+  } else {
     audio.pause();
 
-    setAudioPlayIcon(
-      "▶",
-    );
+    setAudioPlayIcon("▶");
   }
 }
 
+export function handleAudioSide(direction, getActiveTier) {
+  const audio = document.querySelector("[data-audio-element]");
 
-export function handleAudioSide(
-  direction,
-  getActiveTier,
-) {
-  const audio =
-    document.querySelector(
-      "[data-audio-element]",
-    );
-
-
-  if (
-    !audio ||
-    !audioItems.length
-  ) {
+  if (!audio || !audioItems.length) {
     return;
   }
 
+  if (!audio.paused && !audio.ended) {
+    const duration = Number.isFinite(audio.duration)
+      ? audio.duration
+      : Infinity;
 
-  if (
-    !audio.paused &&
-    !audio.ended
-  ) {
-    const duration =
-      Number.isFinite(
-        audio.duration,
-      )
-        ? audio.duration
-        : Infinity;
-
-
-    if (
-      direction <
-      0
-    ) {
-      audio.currentTime =
-        Math.min(
-          duration,
-          audio.currentTime +
-            10,
-        );
+    if (direction < 0) {
+      audio.currentTime = Math.min(duration, audio.currentTime + 10);
 
       return;
     }
 
-
-    audio.currentTime =
-      Math.max(
-        0,
-        audio.currentTime -
-          10,
-      );
-
+    audio.currentTime = Math.max(0, audio.currentTime - 10);
 
     return;
   }
 
+  audioIndex = wrapIndex(
+    audioIndex + direction,
 
-  audioIndex =
-    wrapIndex(
-      audioIndex +
-        direction,
+    audioItems.length,
+  );
 
-      audioItems.length,
-    );
-
-
-  const tier =
-    getActiveTier();
-
+  const tier = getActiveTier();
 
   if (tier) {
-    renderAudio(
-      tier,
-      getActiveTier,
-    );
+    renderAudio(tier, getActiveTier);
   }
 }
 
-
-function setAudioPlayIcon(
-  icon,
-) {
-  const iconElement =
-    document.querySelector(
-      "[data-audio-play-icon]",
-    );
-
+function setAudioPlayIcon(icon) {
+  const iconElement = document.querySelector("[data-audio-play-icon]");
 
   if (iconElement) {
-    iconElement.textContent =
-      icon;
+    iconElement.textContent = icon;
   }
 }

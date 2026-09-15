@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "europe"
-    ],
-    "biome": [
-      "Feuchtgebiete"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["europe"],
+    "biome": ["Feuchtgebiete"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -88,9 +82,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Triturus dobrogicus"
-          ],
+          "giltFuer": ["Triturus dobrogicus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",

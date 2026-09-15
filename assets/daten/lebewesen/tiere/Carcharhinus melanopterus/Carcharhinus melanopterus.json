@@ -17,11 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [
-      "Ästuar",
-      "Riff",
-      "Offenes Meer"
-    ],
+    "biome": ["Ästuar", "Riff", "Offenes Meer"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -105,9 +101,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Carcharhinus melanopterus"
-          ],
+          "giltFuer": ["Carcharhinus melanopterus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",

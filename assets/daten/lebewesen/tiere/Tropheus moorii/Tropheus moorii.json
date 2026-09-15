@@ -15,13 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["Aquarium","Ausstellung"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Seen und Flüsse"
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": ["africa"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -223,9 +219,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "hinweis": {

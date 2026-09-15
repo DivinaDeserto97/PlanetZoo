@@ -1,536 +1,246 @@
-import {
-  enumLabel,
-  formatNumber,
-  ui,
-} from "./ui.js";
+import { enumLabel, formatNumber, ui } from "./ui.js";
 
+export function renderStats(tier) {
+  const daten = tier.originalDaten?.daten ?? {};
 
-export function renderStats(
-  tier,
-) {
-  const daten =
-    tier.originalDaten
-      ?.daten ??
-    {};
+  const socialEntry = daten.sozialeStruktur?.werte?.[0];
 
-
-  const socialEntry =
-    daten.sozialeStruktur
-      ?.werte
-      ?.[0];
-
-  const socialValue =
-    formatEnumValues(
-      daten.sozialeStruktur
-        ?.werte,
-    );
-
+  const socialValue = formatEnumValues(daten.sozialeStruktur?.werte);
 
   setIconOnlyStat(
     '[data-stat-icon-only="social"]',
-    ui(
-      "social",
-    ),
+    ui("social"),
     socialValue,
-    getSocialIcon(
-      socialEntry?.wert,
-    ),
+    getSocialIcon(socialEntry?.wert),
   );
 
-
-  const biomeElement =
-    document.querySelector(
-      "[data-stat-biome]",
-    );
-
+  const biomeElement = document.querySelector("[data-stat-biome]");
 
   if (biomeElement) {
-    const biomeValue =
-      formatEnumValues(
-        daten.biome
-          ?.werte,
-      );
+    const biomeValue = formatEnumValues(daten.biome?.werte);
 
-
-    setOrbitSteckbrief(
-      biomeElement,
-      ui(
-        "biome",
-      ),
-      biomeValue,
-      "🌍",
-    );
+    setOrbitSteckbrief(biomeElement, ui("biome"), biomeValue, "🌍");
   }
 
+  const steckbriefKandidaten = [
+    {
+      key: "bodyLength",
+      icon: "↔",
+      entry: daten.koerperlaenge?.werte?.[0],
+    },
 
-  const steckbriefKandidaten =
-    [
-      {
-        key:
-          "bodyLength",
-        icon:
-          "↔",
-        entry:
-          daten.koerperlaenge
-            ?.werte
-            ?.[0],
-      },
+    {
+      key: "wingspan",
+      icon: "🪽",
+      entry: daten.fluegelspannweite?.werte?.[0],
+    },
 
-      {
-        key:
-          "wingspan",
-        icon:
-          "🪽",
-        entry:
-          daten.fluegelspannweite
-            ?.werte
-            ?.[0],
-      },
+    {
+      key: "weight",
+      icon: "⚖",
+      entry: daten.gewicht?.werte?.[0],
+    },
 
-      {
-        key:
-          "weight",
-        icon:
-          "⚖",
-        entry:
-          daten.gewicht
-            ?.werte
-            ?.[0],
-      },
+    {
+      key: "lifespan",
+      icon: "⌛",
+      entry: daten.lebensspanne?.werte?.[0],
+    },
 
-      {
-        key:
-          "lifespan",
-        icon:
-          "⌛",
-        entry:
-          daten.lebensspanne
-            ?.werte
-            ?.[0],
-      },
+    {
+      key: "speed",
+      icon: "➤",
+      entry: daten.geschwindigkeit?.werte?.[0],
+    },
 
-      {
-        key:
-          "speed",
-        icon:
-          "➤",
-        entry:
-          daten.geschwindigkeit
-            ?.werte
-            ?.[0],
-      },
+    {
+      key: "maturity",
+      icon: "◉",
+      entry: daten.geschlechtsreife?.werte?.[0],
+    },
+  ]
+    .filter((item) => item.entry && typeof item.entry === "object")
+    .slice(0, 5);
 
-      {
-        key:
-          "maturity",
-        icon:
-          "◉",
-        entry:
-          daten.geschlechtsreife
-            ?.werte
-            ?.[0],
-      },
-    ]
-      .filter(
-        (item) =>
-          item.entry &&
-          typeof item.entry ===
-            "object",
-      )
-      .slice(
-        0,
-        5,
-      );
+  document.querySelectorAll("[data-stat-slot]").forEach((element) => {
+    const slotIndex = Number(element.dataset.statSlot);
 
+    const stat = steckbriefKandidaten[slotIndex];
 
-  document
-    .querySelectorAll(
-      "[data-stat-slot]",
-    )
-    .forEach(
-      (element) => {
-        const slotIndex =
-          Number(
-            element.dataset
-              .statSlot,
-          );
+    if (!stat) {
+      element.hidden = true;
 
-        const stat =
-          steckbriefKandidaten[
-            slotIndex
-          ];
+      return;
+    }
 
+    element.hidden = false;
 
-        if (!stat) {
-          element.hidden =
-            true;
-
-          return;
-        }
-
-
-        element.hidden =
-          false;
-
-
-        setOrbitSteckbrief(
-          element,
-          ui(
-            stat.key,
-          ),
-          formatRange(
-            stat.entry,
-          ),
-          stat.icon,
-        );
-      },
+    setOrbitSteckbrief(
+      element,
+      ui(stat.key),
+      formatRange(stat.entry),
+      stat.icon,
     );
+  });
 
+  const activityEntry = daten.aktivitaet?.werte?.[0];
 
-  const activityEntry =
-    daten.aktivitaet
-      ?.werte
-      ?.[0];
-
-  const activityValue =
-    formatEnumValues(
-      daten.aktivitaet
-        ?.werte,
-    );
-
+  const activityValue = formatEnumValues(daten.aktivitaet?.werte);
 
   setIconOnlyStat(
     '[data-stat-icon-only="activity"]',
-    ui(
-      "activity",
-    ),
+    ui("activity"),
     activityValue,
-    getActivityIcon(
-      activityEntry?.wert,
-    ),
+    getActivityIcon(activityEntry?.wert),
   );
 
+  const dietEntry = daten.ernaehrung?.fressverhalten?.werte?.[0];
 
-  const dietEntry =
-    daten.ernaehrung
-      ?.fressverhalten
-      ?.werte
-      ?.[0];
-
-  const dietValue =
-    formatEnumValues(
-      daten.ernaehrung
-        ?.fressverhalten
-        ?.werte,
-    );
-
+  const dietValue = formatEnumValues(daten.ernaehrung?.fressverhalten?.werte);
 
   setIconOnlyStat(
     '[data-stat-icon-only="dietType"]',
-    ui(
-      "dietType",
-    ),
+    ui("dietType"),
     dietValue,
-    getDietIcon(
-      dietEntry?.wert,
-    ),
+    getDietIcon(dietEntry?.wert),
   );
 }
 
+function setOrbitSteckbrief(element, label, value, icon) {
+  const iconElement = element.querySelector("[data-orbit-icon]");
 
-function setOrbitSteckbrief(
-  element,
-  label,
-  value,
-  icon,
-) {
-  const iconElement =
-    element.querySelector(
-      "[data-orbit-icon]",
-    );
-
-  const valueElement =
-    element.querySelector(
-      "[data-orbit-value]",
-    );
-
+  const valueElement = element.querySelector("[data-orbit-value]");
 
   if (iconElement) {
-    iconElement.textContent =
-      icon;
+    iconElement.textContent = icon;
   }
-
 
   if (valueElement) {
-    valueElement.textContent =
-      value ||
-      ui(
-        "noData",
-      );
+    valueElement.textContent = value || ui("noData");
   }
 
+  const tooltip = `${label}: ${value || ui("noData")}`;
 
-  const tooltip =
-    `${label}: ${value || ui("noData")}`;
+  element.dataset.tooltip = tooltip;
 
-
-  element.dataset.tooltip =
-    tooltip;
-
-  element.setAttribute(
-    "aria-label",
-    tooltip,
-  );
+  element.setAttribute("aria-label", tooltip);
 }
 
-
-function setIconOnlyStat(
-  selector,
-  label,
-  value,
-  icon,
-) {
-  const element =
-    document.querySelector(
-      selector,
-    );
-
+function setIconOnlyStat(selector, label, value, icon) {
+  const element = document.querySelector(selector);
 
   if (!element) {
     return;
   }
 
-
-  const iconElement =
-    element.querySelector(
-      "[data-orbit-icon]",
-    );
-
+  const iconElement = element.querySelector("[data-orbit-icon]");
 
   if (iconElement) {
-    iconElement.textContent =
-      icon;
+    iconElement.textContent = icon;
   }
 
+  const tooltip = `${label}: ${value || ui("noData")}`;
 
-  const tooltip =
-    `${label}: ${value || ui("noData")}`;
+  element.dataset.tooltip = tooltip;
 
-
-  element.dataset.tooltip =
-    tooltip;
-
-  element.setAttribute(
-    "aria-label",
-    tooltip,
-  );
+  element.setAttribute("aria-label", tooltip);
 }
 
-
-function getSocialIcon(
-  value,
-) {
+function getSocialIcon(value) {
   const icons = {
-    solitary:
-      "👤",
+    solitary: "👤",
 
-    solitaryOrPair:
-      "👥",
+    solitaryOrPair: "👥",
 
-    pair:
-      "👥",
+    pair: "👥",
 
-    pairs:
-      "👥",
+    pairs: "👥",
 
-    group:
-      "🐾",
+    group: "🐾",
 
-    groups:
-      "🐾",
+    groups: "🐾",
 
-    herd:
-      "🐾",
+    herd: "🐾",
 
-    pack:
-      "🐾",
+    pack: "🐾",
   };
 
-
-  return (
-    icons[value] ??
-    "👥"
-  );
+  return icons[value] ?? "👥";
 }
 
-
-function getActivityIcon(
-  value,
-) {
+function getActivityIcon(value) {
   const icons = {
-    diurnal:
-      "☀",
+    diurnal: "☀",
 
-    nocturnal:
-      "🌙",
+    nocturnal: "🌙",
 
-    crepuscular:
-      "◐",
+    crepuscular: "◐",
   };
 
-
-  return (
-    icons[value] ??
-    "◐"
-  );
+  return icons[value] ?? "◐";
 }
 
-
-function getDietIcon(
-  value,
-) {
+function getDietIcon(value) {
   const icons = {
-    carnivore:
-      "🥩",
+    carnivore: "🥩",
 
-    herbivore:
-      "🌿",
+    herbivore: "🌿",
 
-    omnivore:
-      "🍽",
+    omnivore: "🍽",
   };
 
-
-  return (
-    icons[value] ??
-    "🍽"
-  );
+  return icons[value] ?? "🍽";
 }
 
-
-function formatRange(
-  entry,
-) {
-  if (
-    !entry ||
-    typeof entry !==
-      "object"
-  ) {
-    return ui(
-      "noData",
-    );
+function formatRange(entry) {
+  if (!entry || typeof entry !== "object") {
+    return ui("noData");
   }
 
-
-  const unit =
-    formatUnit(
-      entry.einheit,
-    );
-
+  const unit = formatUnit(entry.einheit);
 
   if (
-    entry.min !==
-      undefined &&
-    entry.min !==
-      null &&
-    entry.max !==
-      undefined &&
-    entry.max !==
-      null
+    entry.min !== undefined &&
+    entry.min !== null &&
+    entry.max !== undefined &&
+    entry.max !== null
   ) {
     return `${formatNumber(entry.min)}–${formatNumber(entry.max)}${unit}`;
   }
 
-
-  if (
-    entry.max !==
-      undefined &&
-    entry.max !==
-      null
-  ) {
+  if (entry.max !== undefined && entry.max !== null) {
     return `${ui("upTo")} ${formatNumber(entry.max)}${unit}`;
   }
 
-
-  if (
-    entry.min !==
-      undefined &&
-    entry.min !==
-      null
-  ) {
+  if (entry.min !== undefined && entry.min !== null) {
     return `${ui("from")} ${formatNumber(entry.min)}${unit}`;
   }
 
-
-  if (
-    entry.wert !==
-      undefined &&
-    entry.wert !==
-      null
-  ) {
+  if (entry.wert !== undefined && entry.wert !== null) {
     return `${formatNumber(entry.wert)}${unit}`;
   }
 
-
-  return ui(
-    "noData",
-  );
+  return ui("noData");
 }
 
-
-function formatUnit(
-  unit,
-) {
+function formatUnit(unit) {
   if (!unit) {
     return "";
   }
 
-
-  if (
-    unit ===
-    "jahr"
-  ) {
+  if (unit === "jahr") {
     return ` ${ui("years")}`;
   }
-
 
   return ` ${unit}`;
 }
 
-
-function formatEnumValues(
-  entries,
-) {
-  if (
-    !Array.isArray(
-      entries,
-    ) ||
-    !entries.length
-  ) {
-    return ui(
-      "noData",
-    );
+function formatEnumValues(entries) {
+  if (!Array.isArray(entries) || !entries.length) {
+    return ui("noData");
   }
 
+  const values = entries.map((entry) => enumLabel(entry?.wert)).filter(Boolean);
 
-  const values =
-    entries
-      .map(
-        (entry) =>
-          enumLabel(
-            entry?.wert,
-          ),
-      )
-      .filter(
-        Boolean,
-      );
-
-
-  return values.length
-    ? values.join(
-        " · ",
-      )
-    : ui(
-        "noData",
-      );
+  return values.length ? values.join(" · ") : ui("noData");
 }

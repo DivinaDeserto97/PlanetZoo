@@ -14,10 +14,10 @@ Beispiel:
 
 assets/
 └── daten/
-    └── tiere/
-        └── Eunectes notaeus/
-            └── bilder/
-                └── Eunectes notaeus.webp
+└── tiere/
+└── Eunectes notaeus/
+└── bilder/
+└── Eunectes notaeus.webp
 
 Für die Gelbe Anakonda lautet der erwartete Pfad:
 
@@ -28,11 +28,11 @@ Der Dateiname muss mit dem Pfad in der jeweiligen Tier-JSON übereinstimmen.
 Beispiel:
 
 "bilder": [
-    {
-        "typ": "hauptbild",
-        "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
-        "quelle": "planetZoo2"
-    }
+{
+"typ": "hauptbild",
+"pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
+"quelle": "planetZoo2"
+}
 ]
 
 2. Verbreitungskarten der Tiere
@@ -43,10 +43,10 @@ Beispiel:
 
 assets/
 └── daten/
-    └── tiere/
-        └── Eunectes notaeus/
-            ├── Eunectes notaeus.json
-            └── Eunectes notaeus map.png
+└── tiere/
+└── Eunectes notaeus/
+├── Eunectes notaeus.json
+└── Eunectes notaeus map.png
 
 Für die Gelbe Anakonda lautet der erwartete Pfad:
 
@@ -55,8 +55,8 @@ assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png
 In der JSON-Datei muss derselbe Pfad eingetragen sein:
 
 "karte": {
-    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png",
-    "quelle": "planetZoo2"
+"pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png",
+"quelle": "planetZoo2"
 }
 
 3. Weltkarten-Referenz
@@ -67,8 +67,8 @@ Diese gehört nach:
 
 assets/
 └── daten/
-    └── Weltkarte/
-        └── Weltkartenreferenz_map.png
+└── Weltkarte/
+└── Weltkartenreferenz_map.png
 
 Der vollständige Pfad lautet:
 
@@ -84,19 +84,19 @@ Beispiel:
 
 assets/
 └── daten/
-    └── tiere/
-        └── Eunectes notaeus/
-            └── audio/
-                └── ruf.mp3
+└── tiere/
+└── Eunectes notaeus/
+└── audio/
+└── ruf.mp3
 
 Beispiel für den JSON-Eintrag:
 
 "audio": [
-    {
-        "typ": "ruf",
-        "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
-        "quelle": "tierstimmenarchiv"
-    }
+{
+"typ": "ruf",
+"pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
+"quelle": "tierstimmenarchiv"
+}
 ]
 
 Falls noch kein audio-Ordner vorhanden ist, kann er einfach erstellt werden.
@@ -113,10 +113,10 @@ Empfohlene Struktur:
 
 Asio otus/
 ├── bilder/
-│   └── Asio otus.webp
+│ └── Asio otus.webp
 │
 ├── audio/
-│   └── ruf.mp3
+│ └── ruf.mp3
 │
 ├── Asio otus map.png
 └── Asio otus.json
@@ -126,8 +126,8 @@ Danach muss die JSON-Datei in datenImport.js eingetragen werden.
 Beispiel:
 
 const TIER_JSON_DATEIEN = [
-    "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json",
-    "assets/daten/lebewesen/tiere/Asio otus/Asio otus.json"
+"assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json",
+"assets/daten/lebewesen/tiere/Asio otus/Asio otus.json"
 ];
 
 6. Quellen
@@ -137,15 +137,15 @@ Die Quelle eines Mediums wird nicht über den Ordnernamen festgelegt, sondern di
 Beispiel Bild:
 
 {
-    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
-    "quelle": "planetZoo2"
+"pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp",
+"quelle": "planetZoo2"
 }
 
 Beispiel Audio:
 
 {
-    "pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
-    "quelle": "tierstimmenarchiv"
+"pfad": "assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3",
+"quelle": "tierstimmenarchiv"
 }
 
 Damit können Bilder und Audiodateien aus verschiedenen Quellen gemeinsam verwendet werden.
@@ -178,26 +178,25 @@ Nach dem Einfügen der lokalen Medien sollte der Ordner so aussehen:
 
 assets/
 └── daten/
-    ├── tiere/
-    │   └── Eunectes notaeus/
-    │       ├── bilder/
-    │       │   ├── .gitkeep
-    │       │   └── Eunectes notaeus.webp
-    │       │
-    │       ├── audio/
-    │       │   └── ruf.mp3
-    │       │
-    │       ├── Eunectes notaeus map.png
-    │       └── Eunectes notaeus.json
-    │
-    └── Weltkarte/
-        ├── .gitkeep
-        └── Weltkartenreferenz_map.png
+├── tiere/
+│ └── Eunectes notaeus/
+│ ├── bilder/
+│ │ ├── .gitkeep
+│ │ └── Eunectes notaeus.webp
+│ │
+│ ├── audio/
+│ │ └── ruf.mp3
+│ │
+│ ├── Eunectes notaeus map.png
+│ └── Eunectes notaeus.json
+│
+└── Weltkarte/
+├── .gitkeep
+└── Weltkartenreferenz_map.png
 
 Die JSON- und JavaScript-Dateien befinden sich im Repository.
 
-Die Bilder, Karten und Audiodateien müssen lokal ergänzt werden.
----
+## Die Bilder, Karten und Audiodateien müssen lokal ergänzt werden.
 
 ## 8. Zentrale Tierauswahl
 
@@ -301,14 +300,7 @@ Statische Oberflächentexte werden direkt im HTML über `data-*`-Attribute gepfl
 Beispiel:
 
 ```html
-<span
-  data-i18n
-  data-de="Karte"
-  data-en="Map"
-  data-fr="Carte"
->
-  Karte
-</span>
+<span data-i18n data-de="Karte" data-en="Map" data-fr="Carte"> Karte </span>
 ```
 
 Dynamische Tiernamen und Tiertexte bleiben in der jeweiligen Tier-JSON.
@@ -334,3 +326,24 @@ zh-Hans
 ```
 
 Für vereinfachtes Chinesisch wird im Projekt einheitlich `zh-Hans` verwendet.
+
+## Medien veröffentlichen
+
+Veröffentlichbare Medien werden unter `assets/medien/freigegeben/` abgelegt. Sie werden von Git erfasst und in das Share-ZIP aufgenommen. Lokale/private Medien und Cache-Dateien liegen dagegen unter `assets/medien/lokal/`, `assets/private/` bzw. `assets/cache/` und werden nicht veröffentlicht.
+
+Weitere Hinweise stehen in `dokumentation/MEDIEN-UND-QUELLEN.md`.
+
+## Commit und Formatierung
+
+`tools/commit.sh` formatiert vor jedem Commit alle HTML-, CSS-, JavaScript-, JSON- und Markdown-Dateien mit dem bereits in VS Code installierten **Prettier - Code formatter**. Dafür wird kein npm-Paket in diesem Projekt und keine `package.json` benötigt.
+
+Ablauf:
+
+```text
+./tools/commit.sh "filter 1"
+→ gesamtes Projekt formatieren
+→ Share-ZIP erstellen
+→ git add
+→ git commit
+→ git push
+```

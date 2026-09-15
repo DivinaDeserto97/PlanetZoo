@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -108,9 +102,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Dendrolagus goodfellowi"
-          ],
+          "giltFuer": ["Dendrolagus goodfellowi"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den gesamten Wildbestand als unbekannt an. In den Tierfakten wird zusätzlich erwähnt, dass der Bestand in Papua-Neuguinea auf nur noch etwa 55 Tiere geschätzt wird.",

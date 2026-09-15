@@ -1,23 +1,12 @@
-import {
-  datenImportieren,
-} from "../../daten/lebewesen/tiere/datenImport.js";
+import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
-import {
-  getTierAuswahl,
-  setTierAusgewaehlt,
-} from "../features/tierAuswahl.js";
+import { getTierAuswahl, setTierAusgewaehlt } from "../features/tierAuswahl.js";
 
-import {
-  setAktivesTierId,
-} from "../features/tierAktiv.js";
+import { setAktivesTierId } from "../features/tierAktiv.js";
 
-import {
-  createGraphCanvas,
-} from "../features/graph/graphCanvas.js";
+import { createGraphCanvas } from "../features/graph/graphCanvas.js";
 
-import {
-  buildNahrungsnetzGraph,
-} from "./features/netzwerkDaten.js";
+import { buildNahrungsnetzGraph } from "./features/netzwerkDaten.js";
 
 import {
   applyNahrungsnetzFarben,
@@ -25,22 +14,15 @@ import {
   NAHRUNGSNETZ_GRAU,
 } from "./features/tierFarben.js";
 
+let controller = null;
 
-let controller =
-  null;
+let tiere = [];
 
-let tiere =
-  [];
+let graphCanvas = null;
 
-let graphCanvas =
-  null;
+let routeEdit = false;
 
-let routeEdit =
-  false;
-
-let rightPress =
-  null;
-
+let rightPress = null;
 
 /* ======================================== */
 /* INITIALISIEREN                           */
@@ -49,279 +31,152 @@ let rightPress =
 export async function init() {
   controller?.abort();
 
+  controller = new AbortController();
 
-  controller =
-    new AbortController();
+  const { signal } = controller;
 
+  tiere = await datenImportieren();
 
-  const {
-    signal,
-  } = controller;
+  const stage = document.querySelector("[data-graph-stage]");
 
+  const scroll = document.querySelector("[data-graph-scroll]");
 
-  tiere =
-    await datenImportieren();
+  const nodes = document.querySelector("[data-graph-nodes]");
 
+  const routePoints = document.querySelector("[data-graph-route-points]");
 
-  const stage =
-    document.querySelector(
-      "[data-graph-stage]",
-    );
+  const connections = document.querySelector("[data-graph-connections]");
 
-  const scroll =
-    document.querySelector(
-      "[data-graph-scroll]",
-    );
+  const page = document.querySelector("[data-nahrungsnetz-page]");
 
-  const nodes =
-    document.querySelector(
-      "[data-graph-nodes]",
-    );
-
-  const routePoints =
-    document.querySelector(
-      "[data-graph-route-points]",
-    );
-
-  const connections =
-    document.querySelector(
-      "[data-graph-connections]",
-    );
-
-  const page =
-    document.querySelector(
-      "[data-nahrungsnetz-page]",
-    );
-
-
-  if (
-    !stage ||
-    !scroll ||
-    !nodes ||
-    !routePoints ||
-    !connections
-  ) {
-    console.error(
-      "Nahrungsnetz-Graph konnte nicht initialisiert werden.",
-    );
+  if (!stage || !scroll || !nodes || !routePoints || !connections) {
+    console.error("Nahrungsnetz-Graph konnte nicht initialisiert werden.");
 
     return;
   }
 
+  graphCanvas = createGraphCanvas({
+    stage,
 
-  graphCanvas =
-    createGraphCanvas({
-      stage,
+    scroll,
 
-      scroll,
+    nodesContainer: nodes,
 
-      nodesContainer:
-        nodes,
+    routePointsContainer: routePoints,
 
-      routePointsContainer:
-        routePoints,
+    connectionsSvg: connections,
 
-      connectionsSvg:
-        connections,
+    storageKey: "planetZoo2-nahrungsnetz-layout-v3",
 
-      storageKey:
-        "planetZoo2-nahrungsnetz-layout-v3",
+    signal,
 
-      signal,
+    onDirtyChange: updateSaveStatus,
 
-      onDirtyChange:
-        updateSaveStatus,
-
-      onZoomChange:
-        updateZoomLabel,
-    });
-
+    onZoomChange: updateZoomLabel,
+  });
 
   /* ==================================== */
   /* VIEWPORT-STEUERUNG                   */
   /* ==================================== */
 
   document
-    .querySelectorAll(
-      "[data-graph-center], [data-graph-nav-center]",
-    )
-    .forEach(
-      (button) => {
-        button.addEventListener(
-          "click",
-          () => {
-            graphCanvas
-              .centerOnFocus();
-          },
-          { signal },
-        );
-      },
-    );
-
+    .querySelectorAll("[data-graph-center], [data-graph-nav-center]")
+    .forEach((button) => {
+      button.addEventListener(
+        "click",
+        () => {
+          graphCanvas.centerOnFocus();
+        },
+        { signal },
+      );
+    });
 
   const panControls = [
-    [
-      "[data-graph-pan-left]",
-      -0.7,
-      0,
-    ],
-    [
-      "[data-graph-pan-right]",
-      0.7,
-      0,
-    ],
-    [
-      "[data-graph-pan-up]",
-      0,
-      -0.7,
-    ],
-    [
-      "[data-graph-pan-down]",
-      0,
-      0.7,
-    ],
+    ["[data-graph-pan-left]", -0.7, 0],
+    ["[data-graph-pan-right]", 0.7, 0],
+    ["[data-graph-pan-up]", 0, -0.7],
+    ["[data-graph-pan-down]", 0, 0.7],
   ];
 
-
-  panControls.forEach(
-    ([
-      selector,
-      x,
-      y,
-    ]) => {
-      document
-        .querySelector(
-          selector,
-        )
-        ?.addEventListener(
-          "click",
-          () => {
-            graphCanvas
-              .panByViewport(
-                x,
-                y,
-              );
-          },
-          { signal },
-        );
-    },
-  );
-
-
-  document
-    .querySelector(
-      "[data-graph-zoom-reset]",
-    )
-    ?.addEventListener(
+  panControls.forEach(([selector, x, y]) => {
+    document.querySelector(selector)?.addEventListener(
       "click",
       () => {
-        graphCanvas
-          .resetZoom();
+        graphCanvas.panByViewport(x, y);
       },
       { signal },
     );
+  });
 
-
-  bindRightMouseControls(
-    page,
-    signal,
+  document.querySelector("[data-graph-zoom-reset]")?.addEventListener(
+    "click",
+    () => {
+      graphCanvas.resetZoom();
+    },
+    { signal },
   );
 
-  updateZoomLabel(
-    graphCanvas.getZoom(),
-  );
+  bindRightMouseControls(page, signal);
 
+  updateZoomLabel(graphCanvas.getZoom());
 
   /* ==================================== */
   /* SPUREN BEARBEITEN                    */
   /* ==================================== */
 
-  document
-    .querySelector(
-      "[data-graph-edit-lines]",
-    )
-    ?.addEventListener(
-      "click",
-      (event) => {
-        routeEdit =
-          !routeEdit;
+  document.querySelector("[data-graph-edit-lines]")?.addEventListener(
+    "click",
+    (event) => {
+      routeEdit = !routeEdit;
 
+      graphCanvas.setRouteEdit(routeEdit);
 
-        graphCanvas
-          .setRouteEdit(
-            routeEdit,
-          );
+      event.currentTarget.classList.toggle("is-active", routeEdit);
 
+      const text = event.currentTarget.querySelector(
+        "[data-graph-edit-lines-text]",
+      );
 
-        event.currentTarget
-          .classList.toggle(
-            "is-active",
-            routeEdit,
-          );
-
-
-        const text =
-          event.currentTarget
-            .querySelector(
-              "[data-graph-edit-lines-text]",
-            );
-
-
-        if (text) {
-          text.textContent =
-            routeEdit
-              ? "Linien ausblenden"
-              : "Linien bearbeiten";
-        }
-      },
-      {
-        signal,
-      },
-    );
-
+      if (text) {
+        text.textContent = routeEdit
+          ? "Linien ausblenden"
+          : "Linien bearbeiten";
+      }
+    },
+    {
+      signal,
+    },
+  );
 
   /* ==================================== */
   /* LAYOUT SPEICHERN                     */
   /* ==================================== */
 
-  document
-    .querySelector(
-      "[data-graph-save]",
-    )
-    ?.addEventListener(
-      "click",
-      () => {
-        graphCanvas
-          .saveLayout();
+  document.querySelector("[data-graph-save]")?.addEventListener(
+    "click",
+    () => {
+      graphCanvas.saveLayout();
 
-
-        showSavedMessage();
-      },
-      {
-        signal,
-      },
-    );
-
+      showSavedMessage();
+    },
+    {
+      signal,
+    },
+  );
 
   /* ==================================== */
   /* LAYOUT ZURÜCKSETZEN                  */
   /* ==================================== */
 
-  document
-    .querySelector(
-      "[data-graph-reset]",
-    )
-    ?.addEventListener(
-      "click",
-      () => {
-        graphCanvas
-          .resetPositions();
-      },
-      {
-        signal,
-      },
-    );
-
+  document.querySelector("[data-graph-reset]")?.addEventListener(
+    "click",
+    () => {
+      graphCanvas.resetPositions();
+    },
+    {
+      signal,
+    },
+  );
 
   /* ==================================== */
   /* INFO-BUTTON                          */
@@ -330,27 +185,18 @@ export async function init() {
   page?.addEventListener(
     "click",
     (event) => {
-      const info =
-        event.target.closest(
-          "[data-graph-info]",
-        );
-
+      const info = event.target.closest("[data-graph-info]");
 
       if (!info) {
         return;
       }
 
-
-      setAktivesTierId(
-        info.dataset
-          .graphTierId,
-      );
+      setAktivesTierId(info.dataset.graphTierId);
     },
     {
       signal,
     },
   );
-
 
   /* ==================================== */
   /* TIER-CHECKBOX                         */
@@ -359,302 +205,171 @@ export async function init() {
   page?.addEventListener(
     "change",
     (event) => {
-      const checkbox =
-        event.target.closest(
-          "[data-graph-tier-checkbox]",
-        );
-
+      const checkbox = event.target.closest("[data-graph-tier-checkbox]");
 
       if (!checkbox) {
         return;
       }
 
-
-      const tierId =
-        checkbox.dataset
-          .graphTierId;
-
+      const tierId = checkbox.dataset.graphTierId;
 
       if (!tierId) {
         return;
       }
-
 
       /*
           Das ist absichtlich dieselbe
           Auswahl wie auf home.html.
       */
 
-      setTierAusgewaehlt(
-        tierId,
-        checkbox.checked,
-      );
+      setTierAusgewaehlt(tierId, checkbox.checked);
     },
     {
       signal,
     },
   );
-
 
   /* ==================================== */
   /* GLOBALE AUSWAHL ÄNDERT SICH          */
   /* ==================================== */
 
-  document.addEventListener(
-    "tierAuswahlChanged",
-    render,
-    {
-      signal,
-    },
-  );
-
+  document.addEventListener("tierAuswahlChanged", render, {
+    signal,
+  });
 
   /* ==================================== */
   /* SPRACHE ÄNDERT SICH                  */
   /* ==================================== */
 
-  document.addEventListener(
-    "languageChanged",
-    render,
-    {
-      signal,
-    },
-  );
-
+  document.addEventListener("languageChanged", render, {
+    signal,
+  });
 
   render();
 }
-
 
 /* ======================================== */
 /* RECHTE MAUSTASTE AUF TIERKÄSTCHEN        */
 /* ======================================== */
 
-function bindRightMouseControls(
-  page,
-  signal,
-) {
+function bindRightMouseControls(page, signal) {
   if (!page) {
     return;
   }
 
-
   page.addEventListener(
     "contextmenu",
     (event) => {
-      if (
-        event.target.closest(
-          ".graph-node[data-graph-tier-id]",
-        )
-      ) {
+      if (event.target.closest(".graph-node[data-graph-tier-id]")) {
         event.preventDefault();
       }
     },
     { signal },
   );
 
-
   page.addEventListener(
     "pointerdown",
     (event) => {
-      if (
-        event.button !==
-        2
-      ) {
+      if (event.button !== 2) {
         return;
       }
 
-
-      const node =
-        event.target.closest(
-          ".graph-node[data-graph-tier-id]",
-        );
-
+      const node = event.target.closest(".graph-node[data-graph-tier-id]");
 
       if (!node) {
         return;
       }
 
-
       event.preventDefault();
 
-
       const press = {
-        pointerId:
-          event.pointerId,
+        pointerId: event.pointerId,
 
         node,
 
-        tierId:
-          node.dataset
-            .graphTierId,
+        tierId: node.dataset.graphTierId,
 
-        startX:
-          event.clientX,
+        startX: event.clientX,
 
-        startY:
-          event.clientY,
+        startY: event.clientY,
 
-        moved:
-          false,
+        moved: false,
 
-        longPress:
-          false,
+        longPress: false,
 
-        timer:
-          null,
+        timer: null,
       };
 
+      press.timer = window.setTimeout(() => {
+        press.longPress = true;
 
-      press.timer =
-        window.setTimeout(
-          () => {
-            press.longPress =
-              true;
+        node.querySelector("[data-graph-info]")?.click();
+      }, 600);
 
-            node
-              .querySelector(
-                "[data-graph-info]",
-              )
-              ?.click();
-          },
-          600,
-        );
-
-
-      rightPress =
-        press;
+      rightPress = press;
     },
     { signal },
   );
-
 
   page.addEventListener(
     "pointermove",
     (event) => {
-      if (
-        !rightPress ||
-        rightPress.pointerId !==
-          event.pointerId
-      ) {
+      if (!rightPress || rightPress.pointerId !== event.pointerId) {
         return;
       }
 
+      const distance = Math.hypot(
+        event.clientX - rightPress.startX,
+        event.clientY - rightPress.startY,
+      );
 
-      const distance =
-        Math.hypot(
-          event.clientX -
-            rightPress.startX,
-          event.clientY -
-            rightPress.startY,
-        );
+      if (distance > 8) {
+        rightPress.moved = true;
 
-
-      if (
-        distance >
-        8
-      ) {
-        rightPress.moved =
-          true;
-
-        window.clearTimeout(
-          rightPress.timer,
-        );
+        window.clearTimeout(rightPress.timer);
       }
     },
     { signal },
   );
 
+  const finish = (event) => {
+    if (!rightPress || rightPress.pointerId !== event.pointerId) {
+      return;
+    }
 
-  const finish =
-    (event) => {
-      if (
-        !rightPress ||
-        rightPress.pointerId !==
-          event.pointerId
-      ) {
-        return;
-      }
+    const press = rightPress;
 
+    rightPress = null;
 
-      const press =
-        rightPress;
+    window.clearTimeout(press.timer);
 
-      rightPress =
-        null;
+    if (press.longPress || press.moved || !press.tierId) {
+      return;
+    }
 
+    const selected = new Set(getTierAuswahl());
 
-      window.clearTimeout(
-        press.timer,
-      );
+    setTierAusgewaehlt(press.tierId, !selected.has(press.tierId));
+  };
 
+  page.addEventListener("pointerup", finish, { signal });
 
-      if (
-        press.longPress ||
-        press.moved ||
-        !press.tierId
-      ) {
-        return;
-      }
-
-
-      const selected =
-        new Set(
-          getTierAuswahl(),
-        );
-
-
-      setTierAusgewaehlt(
-        press.tierId,
-        !selected.has(
-          press.tierId,
-        ),
-      );
-    };
-
-
-  page.addEventListener(
-    "pointerup",
-    finish,
-    { signal },
-  );
-
-  page.addEventListener(
-    "pointercancel",
-    finish,
-    { signal },
-  );
+  page.addEventListener("pointercancel", finish, { signal });
 }
-
 
 /* ======================================== */
 /* ZOOM-ANZEIGE                             */
 /* ======================================== */
 
-function updateZoomLabel(
-  zoom,
-) {
-  const label =
-    document.querySelector(
-      "[data-graph-zoom-label]",
-    );
-
+function updateZoomLabel(zoom) {
+  const label = document.querySelector("[data-graph-zoom-label]");
 
   if (!label) {
     return;
   }
 
-
-  label.textContent =
-    `${Math.round(
-      (
-        Number(zoom) ||
-        1
-      ) *
-        100,
-    )}%`;
+  label.textContent = `${Math.round((Number(zoom) || 1) * 100)}%`;
 }
-
 
 /* ======================================== */
 /* RENDERN                                  */
@@ -665,23 +380,11 @@ function render() {
     return;
   }
 
+  const selectedIds = getTierAuswahl();
 
-  const selectedIds =
-    getTierAuswahl();
+  const selectedSet = new Set(selectedIds);
 
-
-  const selectedSet =
-    new Set(
-      selectedIds,
-    );
-
-
-  const graph =
-    buildNahrungsnetzGraph(
-      tiere,
-      selectedIds,
-    );
-
+  const graph = buildNahrungsnetzGraph(tiere, selectedIds);
 
   /*
       ==================================
@@ -695,66 +398,33 @@ function render() {
       - Linien folgen ownerTierId
   */
 
-  applyNahrungsnetzFarben(
-    graph,
-    selectedSet,
+  applyNahrungsnetzFarben(graph, selectedSet);
+
+  const empty = document.querySelector("[data-nahrungsnetz-empty]");
+
+  const graphArea = document.querySelector("[data-nahrungsnetz-graph]");
+
+  const animalCount = document.querySelector(
+    "[data-nahrungsnetz-animal-count]",
   );
 
+  const nodeCount = document.querySelector("[data-nahrungsnetz-node-count]");
 
-  const empty =
-    document.querySelector(
-      "[data-nahrungsnetz-empty]",
-    );
-
-  const graphArea =
-    document.querySelector(
-      "[data-nahrungsnetz-graph]",
-    );
-
-  const animalCount =
-    document.querySelector(
-      "[data-nahrungsnetz-animal-count]",
-    );
-
-  const nodeCount =
-    document.querySelector(
-      "[data-nahrungsnetz-node-count]",
-    );
-
-  const edgeCount =
-    document.querySelector(
-      "[data-nahrungsnetz-edge-count]",
-    );
-
+  const edgeCount = document.querySelector("[data-nahrungsnetz-edge-count]");
 
   if (animalCount) {
-    animalCount.textContent =
-      String(
-        graph.focusCount,
-      );
+    animalCount.textContent = String(graph.focusCount);
   }
-
 
   if (nodeCount) {
-    nodeCount.textContent =
-      String(
-        graph.nodes.length,
-      );
+    nodeCount.textContent = String(graph.nodes.length);
   }
-
 
   if (edgeCount) {
-    edgeCount.textContent =
-      String(
-        graph.edges.length,
-      );
+    edgeCount.textContent = String(graph.edges.length);
   }
 
-
-  const hasGraph =
-    graph.nodes.length >
-    0;
-
+  const hasGraph = graph.nodes.length > 0;
 
   /*
       Auch wenn KEIN Tier ausgewählt ist,
@@ -765,26 +435,18 @@ function render() {
   */
 
   if (empty) {
-    empty.hidden =
-      hasGraph;
+    empty.hidden = hasGraph;
   }
-
 
   if (graphArea) {
-    graphArea.hidden =
-      !hasGraph;
+    graphArea.hidden = !hasGraph;
   }
-
 
   if (!hasGraph) {
     return;
   }
 
-
-  graphCanvas.render(
-    graph,
-  );
-
+  graphCanvas.render(graph);
 
   /*
       graphCanvas erzeugt zuerst die
@@ -794,61 +456,28 @@ function render() {
       hinein.
   */
 
-  renderTierCheckboxes(
-    graph,
-    selectedSet,
-  );
+  renderTierCheckboxes(graph, selectedSet);
 
+  renderTierNodeColors(graph, selectedSet);
 
-  renderTierNodeColors(
-    graph,
-    selectedSet,
-  );
+  renderColorLegend(graph, selectedIds, selectedSet);
 
-
-  renderColorLegend(
-    graph,
-    selectedIds,
-    selectedSet,
-  );
-
-
-  graphCanvas.setRouteEdit(
-    routeEdit,
-  );
+  graphCanvas.setRouteEdit(routeEdit);
 }
-
 
 /* ======================================== */
 /* CHECKBOXEN IN DIE TIERKÄSTCHEN           */
 /* ======================================== */
 
-function renderTierCheckboxes(
-  graph,
-  selectedSet,
-) {
-  const nodeElements =
-    new Map();
+function renderTierCheckboxes(graph, selectedSet) {
+  const nodeElements = new Map();
 
+  document.querySelectorAll("[data-graph-node-id]").forEach((element) => {
+    nodeElements.set(element.dataset.graphNodeId, element);
+  });
 
-  document
-    .querySelectorAll(
-      "[data-graph-node-id]",
-    )
-    .forEach(
-      (element) => {
-        nodeElements.set(
-          element.dataset
-            .graphNodeId,
-          element,
-        );
-      },
-    );
-
-
-  graph.nodes.forEach(
-    (node) => {
-      /*
+  graph.nodes.forEach((node) => {
+    /*
           Nur echte Tiere aus unseren
           geladenen Tier-JSONs bekommen
           eine Auswahlbox.
@@ -857,363 +486,180 @@ function renderTierCheckboxes(
           bekommen keine.
       */
 
-      if (!node.tierId) {
-        return;
-      }
+    if (!node.tierId) {
+      return;
+    }
 
+    const element = nodeElements.get(node.id);
 
-      const element =
-        nodeElements.get(
-          node.id,
-        );
+    if (!element) {
+      return;
+    }
 
+    element.querySelector("[data-graph-tier-checkbox]")?.remove();
 
-      if (!element) {
-        return;
-      }
+    const checkbox = document.createElement("input");
 
+    checkbox.type = "checkbox";
 
-      element
-        .querySelector(
-          "[data-graph-tier-checkbox]",
-        )
-        ?.remove();
+    checkbox.className = "graph-node__select";
 
+    checkbox.dataset.graphTierCheckbox = "";
 
-      const checkbox =
-        document.createElement(
-          "input",
-        );
+    checkbox.dataset.graphTierId = node.tierId;
 
+    checkbox.checked = selectedSet.has(node.tierId);
 
-      checkbox.type =
-        "checkbox";
+    checkbox.setAttribute("aria-label", `${node.label} auswählen`);
 
-
-      checkbox.className =
-        "graph-node__select";
-
-
-      checkbox.dataset
-        .graphTierCheckbox =
-        "";
-
-
-      checkbox.dataset
-        .graphTierId =
-        node.tierId;
-
-
-      checkbox.checked =
-        selectedSet.has(
-          node.tierId,
-        );
-
-
-      checkbox.setAttribute(
-        "aria-label",
-        `${node.label} auswählen`,
-      );
-
-
-      /*
+    /*
           Vor dem Tiernamen einsetzen.
       */
 
-      const title =
-        element.querySelector(
-          ".graph-node__title",
-        );
+    const title = element.querySelector(".graph-node__title");
 
-
-      if (title) {
-        element.insertBefore(
-          checkbox,
-          title,
-        );
-      }
-
-      else {
-        element.prepend(
-          checkbox,
-        );
-      }
-    },
-  );
+    if (title) {
+      element.insertBefore(checkbox, title);
+    } else {
+      element.prepend(checkbox);
+    }
+  });
 }
-
 
 /* ======================================== */
 /* TIERKNOTEN FÄRBEN                        */
 /* ======================================== */
 
-function renderTierNodeColors(
-  graph,
-  selectedSet,
-) {
-  const nodeElements =
-    new Map();
+function renderTierNodeColors(graph, selectedSet) {
+  const nodeElements = new Map();
 
+  document.querySelectorAll("[data-graph-node-id]").forEach((element) => {
+    nodeElements.set(element.dataset.graphNodeId, element);
+  });
 
-  document
-    .querySelectorAll(
-      "[data-graph-node-id]",
-    )
-    .forEach(
-      (element) => {
-        nodeElements.set(
-          element.dataset
-            .graphNodeId,
-          element,
-        );
-      },
-    );
+  graph.nodes.forEach((node) => {
+    if (!node.tierId) {
+      return;
+    }
 
+    const element = nodeElements.get(node.id);
 
-  graph.nodes.forEach(
-    (node) => {
-      if (!node.tierId) {
-        return;
-      }
+    if (!element) {
+      return;
+    }
 
+    const selected = selectedSet.has(node.tierId);
 
-      const element =
-        nodeElements.get(
-          node.id,
-        );
+    const color = getTierDarstellungsFarbe(node.tierId, selectedSet);
 
+    element.style.setProperty("--nahrungsnetz-node-color", color);
 
-      if (!element) {
-        return;
-      }
+    element.classList.toggle("is-nahrungsnetz-selected", selected);
 
-
-      const selected =
-        selectedSet.has(
-          node.tierId,
-        );
-
-
-      const color =
-        getTierDarstellungsFarbe(
-          node.tierId,
-          selectedSet,
-        );
-
-
-      element.style.setProperty(
-        "--nahrungsnetz-node-color",
-        color,
-      );
-
-
-      element.classList.toggle(
-        "is-nahrungsnetz-selected",
-        selected,
-      );
-
-
-      element.classList.toggle(
-        "is-nahrungsnetz-unselected",
-        !selected,
-      );
-    },
-  );
+    element.classList.toggle("is-nahrungsnetz-unselected", !selected);
+  });
 }
-
 
 /* ======================================== */
 /* FARB-LEGENDE                             */
 /* ======================================== */
 
-function renderColorLegend(
-  graph,
-  selectedIds,
-  selectedSet,
-) {
-  const container =
-    document.querySelector(
-      "[data-nahrungsnetz-color-legend]",
-    );
-
+function renderColorLegend(graph, selectedIds, selectedSet) {
+  const container = document.querySelector("[data-nahrungsnetz-color-legend]");
 
   if (!container) {
     return;
   }
 
-
   container.replaceChildren();
 
+  const title = document.createElement("strong");
 
-  const title =
-    document.createElement(
-      "strong",
-    );
+  title.textContent = "Farben:";
 
-  title.textContent =
-    "Farben:";
+  container.appendChild(title);
 
-  container.appendChild(
-    title,
+  const tierNodesById = new Map(
+    graph.nodes
+      .filter((node) => node.tierId)
+      .map((node) => [node.tierId, node]),
   );
 
+  selectedIds.forEach((tierId) => {
+    const node = tierNodesById.get(tierId);
 
-  const tierNodesById =
-    new Map(
-      graph.nodes
-        .filter(
-          (node) =>
-            node.tierId,
-        )
-        .map(
-          (node) => [
-            node.tierId,
-            node,
-          ],
-        ),
+    if (!node) {
+      return;
+    }
+
+    container.appendChild(
+      createColorLegendItem({
+        label: node.label,
+
+        color: getTierDarstellungsFarbe(tierId, selectedSet),
+      }),
     );
-
-
-  selectedIds.forEach(
-    (tierId) => {
-      const node =
-        tierNodesById.get(
-          tierId,
-        );
-
-
-      if (!node) {
-        return;
-      }
-
-
-      container.appendChild(
-        createColorLegendItem({
-          label:
-            node.label,
-
-          color:
-            getTierDarstellungsFarbe(
-              tierId,
-              selectedSet,
-            ),
-        }),
-      );
-    },
-  );
-
+  });
 
   container.appendChild(
     createColorLegendItem({
-      label:
-        "Nicht ausgewählt",
+      label: "Nicht ausgewählt",
 
-      color:
-        NAHRUNGSNETZ_GRAU,
+      color: NAHRUNGSNETZ_GRAU,
 
-      muted:
-        true,
+      muted: true,
     }),
   );
 }
 
+function createColorLegendItem({ label, color, muted = false }) {
+  const item = document.createElement("span");
 
-function createColorLegendItem({
-  label,
-  color,
-  muted = false,
-}) {
-  const item =
-    document.createElement(
-      "span",
-    );
-
-  item.className =
-    "nahrungsnetz-color-item";
-
+  item.className = "nahrungsnetz-color-item";
 
   if (muted) {
-    item.classList.add(
-      "nahrungsnetz-color-item--muted",
-    );
+    item.classList.add("nahrungsnetz-color-item--muted");
   }
 
+  const swatch = document.createElement("i");
 
-  const swatch =
-    document.createElement(
-      "i",
-    );
+  swatch.className = "nahrungsnetz-color-item__swatch";
 
-  swatch.className =
-    "nahrungsnetz-color-item__swatch";
+  swatch.style.background = color;
 
-  swatch.style.background =
-    color;
+  const text = document.createElement("span");
 
+  text.textContent = label;
 
-  const text =
-    document.createElement(
-      "span",
-    );
-
-  text.textContent =
-    label;
-
-
-  item.append(
-    swatch,
-    text,
-  );
-
+  item.append(swatch, text);
 
   return item;
 }
-
 
 /* ======================================== */
 /* SPEICHERSTATUS                           */
 /* ======================================== */
 
-function updateSaveStatus(
-  dirty,
-) {
-  const status =
-    document.querySelector(
-      "[data-graph-save-status]",
-    );
+function updateSaveStatus(dirty) {
+  const status = document.querySelector("[data-graph-save-status]");
 
-  const button =
-    document.querySelector(
-      "[data-graph-save]",
-    );
-
+  const button = document.querySelector("[data-graph-save]");
 
   if (status) {
-    status.textContent =
-      dirty
-        ? "Ungespeicherte Änderungen"
-        : "Layout gespeichert";
+    status.textContent = dirty
+      ? "Ungespeicherte Änderungen"
+      : "Layout gespeichert";
   }
 
-
   if (button) {
-    button.classList.toggle(
-      "has-changes",
-      dirty,
-    );
+    button.classList.toggle("has-changes", dirty);
   }
 }
 
-
 function showSavedMessage() {
-  const status =
-    document.querySelector(
-      "[data-graph-save-status]",
-    );
-
+  const status = document.querySelector("[data-graph-save-status]");
 
   if (status) {
-    status.textContent =
-      "Layout gespeichert";
+    status.textContent = "Layout gespeichert";
   }
 }

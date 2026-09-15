@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {
@@ -86,9 +80,7 @@
           "min": 14000,
           "max": 15000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Pongo abelii"
-          ],
+          "giltFuer": ["Pongo abelii"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia kennzeichnet den Wildbestand als geschätzt.",

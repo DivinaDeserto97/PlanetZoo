@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft",
-      "Feuchtgebiete",
-      "Seen und Flüsse"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft", "Feuchtgebiete", "Seen und Flüsse"],
     "schutzstatus": "vulnerable"
   },
   "daten": {
@@ -103,9 +95,7 @@
           "min": 115000,
           "max": 130000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Hippopotamus amphibius"
-          ],
+          "giltFuer": ["Hippopotamus amphibius"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia nennt 115.000 bis 130.000 Individuen und bezeichnet den Bestand als rückläufig.",

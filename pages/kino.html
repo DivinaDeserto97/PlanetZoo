@@ -3,7 +3,9 @@
     <p class="kino-page__eyebrow">Kino-Baukasten</p>
     <h1>Kino</h1>
     <p>
-      Tiere und Filmquellen auswählen, Zwischenprogramm festlegen und danach den fertigen Ablauf automatisch abspielen. So kann der Durchlauf direkt mit OBS aufgenommen werden.
+      Tiere und Filmquellen auswählen, Zwischenprogramm festlegen und danach den
+      fertigen Ablauf automatisch abspielen. So kann der Durchlauf direkt mit
+      OBS aufgenommen werden.
     </p>
   </header>
 
@@ -77,9 +79,23 @@
           <label class="kino-input-row">
             <span>Pause zwischen zwei Filmen</span>
             <span class="kino-time-inputs">
-              <input type="number" min="0" max="59" step="1" value="1" data-kino-pause-minutes />
+              <input
+                type="number"
+                min="0"
+                max="59"
+                step="1"
+                value="1"
+                data-kino-pause-minutes
+              />
               <span>min</span>
-              <input type="number" min="0" max="59" step="1" value="0" data-kino-pause-seconds />
+              <input
+                type="number"
+                min="0"
+                max="59"
+                step="1"
+                value="0"
+                data-kino-pause-seconds
+              />
               <span>s</span>
             </span>
           </label>
@@ -87,7 +103,14 @@
           <label class="kino-input-row">
             <span>Standarddauer pro Text-/Bildbeitrag</span>
             <span class="kino-time-inputs">
-              <input type="number" min="3" max="300" step="1" value="15" data-kino-card-duration />
+              <input
+                type="number"
+                min="3"
+                max="300"
+                step="1"
+                value="15"
+                data-kino-card-duration
+              />
               <span>s</span>
             </span>
           </label>
@@ -146,7 +169,12 @@
 
   <section class="kino-player" data-kino-player hidden>
     <div class="kino-player__stage" data-kino-stage>
-      <video class="kino-player__video" data-kino-video playsinline preload="auto"></video>
+      <video
+        class="kino-player__video"
+        data-kino-video
+        playsinline
+        preload="auto"
+      ></video>
       <audio data-kino-audio preload="auto"></audio>
 
       <div class="kino-player__card" data-kino-card hidden>

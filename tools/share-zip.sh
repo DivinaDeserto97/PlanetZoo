@@ -103,6 +103,18 @@ find . \
     ! -iname '*.rar' \
     > "$DATEILISTE"
 
+# Freigegebene Medien werden bewusst mitgeliefert.
+if [[ -d ./assets/medien/freigegeben ]]; then
+    find ./assets/medien/freigegeben \
+        -type f \
+        ! -iname '*.zip' \
+        ! -iname '*.7z' \
+        ! -iname '*.rar' \
+        >> "$DATEILISTE"
+fi
+
+sort -u -o "$DATEILISTE" "$DATEILISTE"
+
 
 # ============================================================
 # SICHERHEITSPRÜFUNG
@@ -199,15 +211,17 @@ echo "Grösse:"
 echo "$ZIP_GROESSE"
 echo
 echo "Nicht enthalten:"
-echo "- Bilder"
-echo "- Videos"
-echo "- Audio"
+echo "- nicht freigegebene Bilder"
+echo "- nicht freigegebene Videos"
+echo "- nicht freigegebenes Audio"
 echo "- andere ZIP-Dateien"
 echo "- 7z / RAR"
 echo "- .git"
 echo "- share/"
 echo
-echo "Die Mediennamen und Medienpfade stehen weiterhin in:"
+echo "Freigegebene Medien aus assets/medien/freigegeben/ sind enthalten."
+echo
+echo "Die übrigen Mediennamen und Medienpfade stehen weiterhin in:"
 echo
 echo "dokumentation/ordnerstruktur.md"
 echo

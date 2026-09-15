@@ -15,11 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["Aquarium","Ausstellung"],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
     "kontinente": [],
-    "biome": [
-      "Riff"
-    ],
+    "biome": ["Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

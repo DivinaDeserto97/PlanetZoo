@@ -15,21 +15,9 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": [
-      "Voliere"
-    ],
-    "kontinente": [
-      "northAmerica",
-      "europe",
-      "africa",
-      "asia"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Graslandschaft",
-      "Tundra",
-      "Wüste"
-    ],
+    "gehegetyp": ["Voliere"],
+    "kontinente": ["northAmerica", "europe", "africa", "asia"],
+    "biome": ["Gemäßigt", "Graslandschaft", "Tundra", "Wüste"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -115,9 +103,7 @@
           "min": 85000,
           "max": 160000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Aquila chrysaetos"
-          ],
+          "giltFuer": ["Aquila chrysaetos"],
           "jahrDerGrundlage": null,
           "quelle": "planetZoo2"
         }

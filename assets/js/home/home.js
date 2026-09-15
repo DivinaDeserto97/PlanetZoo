@@ -1,6 +1,4 @@
-import {
-  datenImportieren,
-} from "../../daten/lebewesen/tiere/datenImport.js";
+import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
 import {
   bereinigeTierAuswahl,
@@ -8,31 +6,19 @@ import {
   setTierAuswahl,
 } from "../features/tierAuswahl.js";
 
-import {
-  filterUndSortiereTiere,
-} from "../features/tierFilter.js";
+import { filterUndSortiereTiere } from "../features/tierFilter.js";
 
-import {
-  initHomeFilter,
-} from "./features/filter.js";
+import { initHomeFilter } from "./features/filter.js";
 
-import {
-  renderHomeTierKarten,
-} from "./features/tierKarten.js";
+import { renderHomeTierKarten } from "./features/tierKarten.js";
 
-import {
-  pruefeLokaleTierDateien,
-} from "../features/tierDatenPruefung.js";
-
-
-
+import { pruefeLokaleTierDateien } from "../features/tierDatenPruefung.js";
 
 let controller = null;
 
 let tiere = [];
 
 let sichtbareTiere = [];
-
 
 /* ======================================== */
 /* HOME INITIALISIEREN                      */
@@ -41,34 +27,21 @@ let sichtbareTiere = [];
 export async function init() {
   controller?.abort();
 
-  controller =
-    new AbortController();
+  controller = new AbortController();
 
-  const {
-    signal,
-  } = controller;
-
+  const { signal } = controller;
 
   /* ==================================== */
   /* DATEN LADEN                          */
   /* ==================================== */
 
-  tiere =
-    await datenImportieren();
+  tiere = await datenImportieren();
 
+  await pruefeLokaleTierDateien(tiere);
 
-  await pruefeLokaleTierDateien(
-    tiere,
-  );
+  bereinigeTierAuswahl(tiere);
 
-  bereinigeTierAuswahl(
-    tiere,
-  );
-
-
-  let filterSteuerung =
-    null;
-
+  let filterSteuerung = null;
 
   /* ==================================== */
   /* RENDERN                              */
@@ -79,117 +52,68 @@ export async function init() {
       return;
     }
 
-    sichtbareTiere =
-      filterUndSortiereTiere(
-        tiere,
-        filterSteuerung.getState(),
-      );
+    sichtbareTiere = filterUndSortiereTiere(tiere, filterSteuerung.getState());
 
-    renderHomeTierKarten(
-      sichtbareTiere,
-      signal,
-    );
+    renderHomeTierKarten(sichtbareTiere, signal);
   }
-
 
   /* ==================================== */
   /* ALLE SICHTBAREN AUSWÄHLEN            */
   /* ==================================== */
 
   function selectAllVisible() {
-    const selected =
-      new Set(
-        getTierAuswahl(),
-      );
+    const selected = new Set(getTierAuswahl());
 
-    sichtbareTiere.forEach(
-      (tier) => {
-        selected.add(
-          tier.id,
-        );
-      },
-    );
+    sichtbareTiere.forEach((tier) => {
+      selected.add(tier.id);
+    });
 
-    setTierAuswahl(
-      [...selected],
-    );
+    setTierAuswahl([...selected]);
   }
-
 
   /* ==================================== */
   /* ALLE SICHTBAREN ABWÄHLEN             */
   /* ==================================== */
 
   function selectNoneVisible() {
-    const visibleIds =
-      new Set(
-        sichtbareTiere.map(
-          (tier) => tier.id,
-        ),
-      );
+    const visibleIds = new Set(sichtbareTiere.map((tier) => tier.id));
 
-    const selected =
-      getTierAuswahl()
-        .filter(
-          (tierId) =>
-            !visibleIds.has(
-              tierId,
-            ),
-        );
-
-    setTierAuswahl(
-      selected,
+    const selected = getTierAuswahl().filter(
+      (tierId) => !visibleIds.has(tierId),
     );
-  }
 
+    setTierAuswahl(selected);
+  }
 
   /* ==================================== */
   /* FILTER INITIALISIEREN                */
   /* ==================================== */
 
-  filterSteuerung =
-    await initHomeFilter({
-      signal,
+  filterSteuerung = await initHomeFilter({
+    signal,
 
-      onChange:
-        render,
+    onChange: render,
 
-      onSelectAll:
-        selectAllVisible,
+    onSelectAll: selectAllVisible,
 
-      onSelectNone:
-        selectNoneVisible,
-    });
-
+    onSelectNone: selectNoneVisible,
+  });
 
   /* ==================================== */
   /* GEMEINSAME EVENTS                    */
   /* ==================================== */
 
-  document.addEventListener(
-    "languageChanged",
-    render,
-    {
-      signal,
-    },
-  );
+  document.addEventListener("languageChanged", render, {
+    signal,
+  });
 
-  document.addEventListener(
-    "tierAuswahlChanged",
-    render,
-    {
-      signal,
-    },
-  );
+  document.addEventListener("tierAuswahlChanged", render, {
+    signal,
+  });
 
-  document.addEventListener(
-    "toolEinstellungenChanged",
-    render,
-    {
-      signal,
-    },
-  );
-
+  document.addEventListener("toolEinstellungenChanged", render, {
+    signal,
+  });
 
   /* ==================================== */
   /* ERSTER AUFBAU                        */

@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "northAmerica"
-    ],
-    "biome": [
-      "Seen und Flüsse"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["northAmerica"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {
@@ -742,7 +736,7 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url":"https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDc1ZjgwYTkvU2FsYW1hbmRlcl9BeG9sb3RsLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDc1ZjgwYTkvU2FsYW1hbmRlcl9BeG9sb3RsLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
           "alt": {
             "de": "Axolotl – Planet Zoo 2",
             "en": "Axolotl – Planet Zoo 2"

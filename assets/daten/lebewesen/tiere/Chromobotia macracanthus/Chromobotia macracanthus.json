@@ -15,13 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["Aquarium","Ausstellung"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Fluss"
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": ["asia"],
+    "biome": ["Fluss"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

@@ -15,9 +15,7 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": [
-      "Aquarium"
-    ],
+    "gehegetyp": ["Aquarium"],
     "kontinente": [],
     "biome": [],
     "schutzstatus": "criticallyEndangered"
@@ -105,9 +103,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Sphyrna mokarran"
-          ],
+          "giltFuer": ["Sphyrna mokarran"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",

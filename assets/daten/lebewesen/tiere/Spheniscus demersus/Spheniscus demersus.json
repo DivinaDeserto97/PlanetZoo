@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Offenes Meer",
-      "Wüste"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Offenes Meer", "Wüste"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {
@@ -95,9 +88,7 @@
         {
           "wert": 19800,
           "einheit": "individuum",
-          "giltFuer": [
-            "Spheniscus demersus"
-          ],
+          "giltFuer": ["Spheniscus demersus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia zeigt den Wildbestand als 19.8 an; dies entspricht 19,8 Tausend beziehungsweise 19.800 Individuen.",

@@ -17,9 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [
-      "Riff"
-    ],
+    "biome": ["Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -192,9 +190,7 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "quelle": "planetZoo2"
@@ -205,9 +201,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "quelle": "planetZoo2"

@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": [
-      "Aquarium","Ausstellung"
-    ],
-    "kontinente": [
-      ""
-    ],
-    "biome": [
-      ""
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": [""],
+    "biome": [""],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -81,9 +75,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Caesio teres"
-          ],
+          "giltFuer": ["Caesio teres"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",

@@ -16,9 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "northAmerica"
-    ],
+    "kontinente": ["northAmerica"],
     "biome": [],
     "schutzstatus": "nearThreatened"
   },

@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -105,9 +101,7 @@
           "min": 2000000,
           "max": 2500000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Antidorcas marsupialis"
-          ],
+          "giltFuer": ["Antidorcas marsupialis"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt einen Wildbestand von 2.000.000–2.500.000 Tieren an.",

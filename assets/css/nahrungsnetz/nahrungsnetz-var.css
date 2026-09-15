@@ -15,6 +15,5 @@
 
   --nahrungsnetz-panel-radius: 10px;
 
-  --nahrungsnetz-panel-shadow:
-    0 7px 24px rgb(0 0 0 / 0.28);
+  --nahrungsnetz-panel-shadow: 0 7px 24px rgb(0 0 0 / 0.28);
 }

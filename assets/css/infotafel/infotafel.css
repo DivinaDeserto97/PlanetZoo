@@ -17,7 +17,11 @@ body {
 
 .infotafel {
   --infotafel-gold: #d3a21d;
-  --infotafel-gold-soft: color-mix(in srgb, var(--infotafel-gold) 35%, transparent);
+  --infotafel-gold-soft: color-mix(
+    in srgb,
+    var(--infotafel-gold) 35%,
+    transparent
+  );
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -307,8 +311,7 @@ body {
   border: 0;
   border-radius: 50%;
 
-  box-shadow:
-    0 10px 26px rgb(0 0 0 / 0.18);
+  box-shadow: 0 10px 26px rgb(0 0 0 / 0.18);
 
   background: var(--farbe-element-2);
 }
@@ -457,32 +460,86 @@ button.orbit-point:focus-visible .orbit-point__icon {
 
 /* Die Nummern aus dem Wireframe werden NICHT angezeigt. */
 /* Punkt 3 */
-.orbit-point--social         { left: 39%; top: 11%; }
+.orbit-point--social {
+  left: 39%;
+  top: 11%;
+}
 
 /* Punkte 4-9 */
-.orbit-point--biome          { left: 55%; top: 18%; --data-line-width: clamp(155px, 18vw, 280px); }
-.orbit-point--stat-1         { left: 60%; top: 28%; --data-line-width: clamp(140px, 16vw, 250px); }
-.orbit-point--stat-2         { left: 63%; top: 40%; --data-line-width: clamp(125px, 14vw, 220px); }
-.orbit-point--stat-3         { left: 63%; top: 52%; --data-line-width: clamp(125px, 14vw, 220px); }
-.orbit-point--stat-4         { left: 60%; top: 64%; --data-line-width: clamp(140px, 16vw, 250px); }
-.orbit-point--stat-5         { left: 55%; top: 75%; --data-line-width: clamp(155px, 18vw, 280px); }
+.orbit-point--biome {
+  left: 55%;
+  top: 18%;
+  --data-line-width: clamp(155px, 18vw, 280px);
+}
+.orbit-point--stat-1 {
+  left: 60%;
+  top: 28%;
+  --data-line-width: clamp(140px, 16vw, 250px);
+}
+.orbit-point--stat-2 {
+  left: 63%;
+  top: 40%;
+  --data-line-width: clamp(125px, 14vw, 220px);
+}
+.orbit-point--stat-3 {
+  left: 63%;
+  top: 52%;
+  --data-line-width: clamp(125px, 14vw, 220px);
+}
+.orbit-point--stat-4 {
+  left: 60%;
+  top: 64%;
+  --data-line-width: clamp(140px, 16vw, 250px);
+}
+.orbit-point--stat-5 {
+  left: 55%;
+  top: 75%;
+  --data-line-width: clamp(155px, 18vw, 280px);
+}
 
 /* Punkte 10-12: Audio auf dem unteren Kreisbogen. */
-.orbit-point--audio-next     { left: 50%; top: 81%; }
-.orbit-point--audio-play     { left: 39%; top: 83%; }
-.orbit-point--audio-prev     { left: 28%; top: 81%; }
+.orbit-point--audio-next {
+  left: 50%;
+  top: 81%;
+}
+.orbit-point--audio-play {
+  left: 39%;
+  top: 83%;
+}
+.orbit-point--audio-prev {
+  left: 28%;
+  top: 81%;
+}
 
 .orbit-point--audio .orbit-point__icon {
   font-size: clamp(15px, 1.25vw, 21px);
 }
 
 /* Punkte 13-18 auf der linken Seite. */
-.orbit-point--placeholder-13 { left: 22%; top: 75%; }
-.orbit-point--placeholder-14 { left: 18%; top: 64%; }
-.orbit-point--activity       { left: 15%; top: 52%; }
-.orbit-point--placeholder-16 { left: 15%; top: 40%; }
-.orbit-point--diet           { left: 18%; top: 28%; }
-.orbit-point--placeholder-18 { left: 23%; top: 18%; }
+.orbit-point--placeholder-13 {
+  left: 22%;
+  top: 75%;
+}
+.orbit-point--placeholder-14 {
+  left: 18%;
+  top: 64%;
+}
+.orbit-point--activity {
+  left: 15%;
+  top: 52%;
+}
+.orbit-point--placeholder-16 {
+  left: 15%;
+  top: 40%;
+}
+.orbit-point--diet {
+  left: 18%;
+  top: 28%;
+}
+.orbit-point--placeholder-18 {
+  left: 23%;
+  top: 18%;
+}
 
 /*
  * Alle noch unbekannten Punkte haben dieselbe Überklasse.
@@ -803,8 +860,12 @@ button.orbit-point:focus-visible .orbit-point__icon {
   font-size: 32px;
 }
 
-.media-dialog__arrow--left { left: 12px; }
-.media-dialog__arrow--right { right: 12px; }
+.media-dialog__arrow--left {
+  left: 12px;
+}
+.media-dialog__arrow--right {
+  right: 12px;
+}
 
 .map-dialog__controls {
   display: flex;
@@ -847,41 +908,24 @@ button.orbit-point:focus-visible .orbit-point__icon {
   }
 }
 
-
 /* ======================================== */
 /* DATENPRÜFUNG IN DER TIER-NAVIGATION      */
 /* ======================================== */
 
 .tier-nav__item.has-data-error {
-  background: color-mix(
-    in srgb,
-    #ef4444 22%,
-    var(--farbe-bereich)
-  );
+  background: color-mix(in srgb, #ef4444 22%, var(--farbe-bereich));
 }
 
 .tier-nav__item.has-data-warning {
-  background: color-mix(
-    in srgb,
-    #eab308 22%,
-    var(--farbe-bereich)
-  );
+  background: color-mix(in srgb, #eab308 22%, var(--farbe-bereich));
 }
 
 .tier-nav__item.active.has-data-error {
-  background: color-mix(
-    in srgb,
-    #ef4444 28%,
-    var(--farbe-element)
-  );
+  background: color-mix(in srgb, #ef4444 28%, var(--farbe-element));
 }
 
 .tier-nav__item.active.has-data-warning {
-  background: color-mix(
-    in srgb,
-    #eab308 28%,
-    var(--farbe-element)
-  );
+  background: color-mix(in srgb, #eab308 28%, var(--farbe-element));
 }
 
 /* ======================================== */

@@ -1,14 +1,6 @@
-export const SYSTEMATIK_LEBENSSTATUS = [
-  "lebend",
-  "ausgestorben",
-];
+export const SYSTEMATIK_LEBENSSTATUS = ["lebend", "ausgestorben"];
 
-
-export const SYSTEMATIK_DOMESTIKATIONSSTATUS = [
-  "wildform",
-  "domestiziert",
-];
-
+export const SYSTEMATIK_DOMESTIKATIONSSTATUS = ["wildform", "domestiziert"];
 
 export const SYSTEMATIK_SPIELE = [
   "planetZoo2",
@@ -16,7 +8,6 @@ export const SYSTEMATIK_SPIELE = [
   "jurassicWorldEvolution2",
   "jurassicWorldEvolution3",
 ];
-
 
 export const SYSTEMATIK_VERBINDUNGSTYPEN = [
   "abstammungslinie",
@@ -27,50 +18,22 @@ export const SYSTEMATIK_VERBINDUNGSTYPEN = [
   "unsichereVerwandtschaft",
 ];
 
+export function istGueltigerLebensstatus(value) {
+  return typeof value === "string" && SYSTEMATIK_LEBENSSTATUS.includes(value);
+}
 
-export function istGueltigerLebensstatus(
-  value,
-) {
+export function istGueltigerDomestikationsstatus(value) {
   return (
-    typeof value === "string" &&
-    SYSTEMATIK_LEBENSSTATUS.includes(
-      value,
-    )
+    typeof value === "string" && SYSTEMATIK_DOMESTIKATIONSSTATUS.includes(value)
   );
 }
 
-
-export function istGueltigerDomestikationsstatus(
-  value,
-) {
-  return (
-    typeof value === "string" &&
-    SYSTEMATIK_DOMESTIKATIONSSTATUS.includes(
-      value,
-    )
-  );
+export function istGueltigesSystematikSpiel(value) {
+  return typeof value === "string" && SYSTEMATIK_SPIELE.includes(value);
 }
 
-
-export function istGueltigesSystematikSpiel(
-  value,
-) {
+export function istGueltigerSystematikVerbindungstyp(value) {
   return (
-    typeof value === "string" &&
-    SYSTEMATIK_SPIELE.includes(
-      value,
-    )
-  );
-}
-
-
-export function istGueltigerSystematikVerbindungstyp(
-  value,
-) {
-  return (
-    typeof value === "string" &&
-    SYSTEMATIK_VERBINDUNGSTYPEN.includes(
-      value,
-    )
+    typeof value === "string" && SYSTEMATIK_VERBINDUNGSTYPEN.includes(value)
   );
 }

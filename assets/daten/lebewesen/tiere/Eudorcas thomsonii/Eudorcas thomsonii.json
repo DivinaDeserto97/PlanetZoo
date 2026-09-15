@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -260,9 +256,7 @@
               "beziehung": "nutzung",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "quelle": "planetZoo2"
@@ -273,9 +267,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "abEtwa3Bis4Wochen"
-                ],
+                "selbst": ["abEtwa3Bis4Wochen"],
                 "ziel": []
               },
               "quelle": "planetZoo2"

@@ -9,7 +9,6 @@ const KINO_JSON_DATEIEN = [
   "assets/daten/kino/allgemeine-tierinfos/allgemeine-tierinfos.json",
 ];
 
-
 /* ======================================== */
 /* HILFSFUNKTIONEN                          */
 /* ======================================== */
@@ -26,7 +25,6 @@ function alsArray(wert) {
   return [wert];
 }
 
-
 /* ======================================== */
 /* ALLE KINO-DATEN IMPORTIEREN              */
 /* ======================================== */
@@ -34,7 +32,11 @@ function alsArray(wert) {
 export async function kinoDatenImportieren() {
   const kategorien = [];
 
-  for (let importIndex = 0; importIndex < KINO_JSON_DATEIEN.length; importIndex++) {
+  for (
+    let importIndex = 0;
+    importIndex < KINO_JSON_DATEIEN.length;
+    importIndex++
+  ) {
     const jsonPfad = KINO_JSON_DATEIEN[importIndex];
 
     try {
@@ -45,7 +47,8 @@ export async function kinoDatenImportieren() {
       }
 
       const daten = await antwort.json();
-      const kategorie = daten.kategorie ?? daten.id ?? `kino-${importIndex + 1}`;
+      const kategorie =
+        daten.kategorie ?? daten.id ?? `kino-${importIndex + 1}`;
 
       kategorien.push({
         id: daten.id ?? kategorie,
@@ -70,7 +73,6 @@ export async function kinoDatenImportieren() {
 
   return kategorien;
 }
-
 
 export async function kinoBeitraegeImportieren() {
   const kategorien = await kinoDatenImportieren();

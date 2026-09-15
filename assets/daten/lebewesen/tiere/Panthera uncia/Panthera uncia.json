@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Taiga",
-      "Tundra"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia"],
+    "biome": ["Taiga", "Tundra"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

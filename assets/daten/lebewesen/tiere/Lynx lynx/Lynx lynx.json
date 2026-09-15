@@ -16,14 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Taiga"
-    ],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Gemäßigt", "Taiga"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

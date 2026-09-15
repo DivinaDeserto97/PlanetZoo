@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "southAmerica"
-    ],
-    "biome": [
-      "Tropen",
-      "Graslandschaft"
-    ],
+    "kontinente": ["southAmerica"],
+    "biome": ["Tropen", "Graslandschaft"],
     "schutzstatus": ""
   },
   "daten": {

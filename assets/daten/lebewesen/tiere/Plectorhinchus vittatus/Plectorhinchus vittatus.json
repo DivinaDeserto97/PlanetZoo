@@ -15,18 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Aquarium"
-    ],
-    "kontinente": [
-      "africa",
-      "asia",
-      "oceania"
-    ],
-    "biome": [
-      "Ästuar",
-      "Tropen"
-    ],
+    "gehegetyp": ["Aquarium"],
+    "kontinente": ["africa", "asia", "oceania"],
+    "biome": ["Ästuar", "Tropen"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

@@ -20,7 +20,6 @@ let pauseTimer = null;
 let beitragTimer = null;
 let lastBeitragId = null;
 
-
 /* ======================================== */
 /* INITIALISIERUNG                          */
 /* ======================================== */
@@ -40,13 +39,25 @@ export async function init() {
   document.addEventListener("tierAuswahlChanged", renderBuilder, { signal });
   document.addEventListener("languageChanged", renderBuilder, { signal });
 
-  document.querySelector("[data-kino-builder]")?.addEventListener("change", handleBuilderChange, { signal });
-  document.querySelector("[data-kino-builder]")?.addEventListener("click", handleBuilderClick, { signal });
+  document
+    .querySelector("[data-kino-builder]")
+    ?.addEventListener("change", handleBuilderChange, { signal });
+  document
+    .querySelector("[data-kino-builder]")
+    ?.addEventListener("click", handleBuilderClick, { signal });
 
-  document.querySelector("[data-kino-start]")?.addEventListener("click", startPlayback, { signal });
-  document.querySelector("[data-kino-stop]")?.addEventListener("click", () => stopPlayback(), { signal });
-  document.querySelector("[data-kino-skip]")?.addEventListener("click", skipCurrent, { signal });
-  document.querySelector("[data-kino-fullscreen]")?.addEventListener("click", toggleFullscreen, { signal });
+  document
+    .querySelector("[data-kino-start]")
+    ?.addEventListener("click", startPlayback, { signal });
+  document
+    .querySelector("[data-kino-stop]")
+    ?.addEventListener("click", () => stopPlayback(), { signal });
+  document
+    .querySelector("[data-kino-skip]")
+    ?.addEventListener("click", skipCurrent, { signal });
+  document
+    .querySelector("[data-kino-fullscreen]")
+    ?.addEventListener("click", toggleFullscreen, { signal });
 
   const video = getElement("[data-kino-video]");
   video?.addEventListener("ended", handleFilmEnded, { signal });
@@ -56,15 +67,18 @@ export async function init() {
   video?.addEventListener("playing", handleVideoBildBereit, { signal });
 
   const audio = getElement("[data-kino-audio]");
-  audio?.addEventListener("error", () => {
-    if (playback?.aktiv && playback.phase === "pause") {
-      console.warn("Zwischenprogramm-Audio konnte nicht geladen werden.");
-    }
-  }, { signal });
+  audio?.addEventListener(
+    "error",
+    () => {
+      if (playback?.aktiv && playback.phase === "pause") {
+        console.warn("Zwischenprogramm-Audio konnte nicht geladen werden.");
+      }
+    },
+    { signal },
+  );
 
   renderBuilder();
 }
-
 
 /* ======================================== */
 /* ALLGEMEINE HILFSFUNKTIONEN               */
@@ -147,7 +161,9 @@ function dateiendung(pfad) {
 }
 
 function mediaTyp(datei) {
-  const eingetragen = String(datei?.dateityp ?? "").trim().toLowerCase();
+  const eingetragen = String(datei?.dateityp ?? "")
+    .trim()
+    .toLowerCase();
   return eingetragen || dateiendung(datei?.pfad);
 }
 
@@ -160,12 +176,16 @@ function browserAudioDatei(datei) {
 }
 
 function mimeFuerMedia(medien, art = "video") {
-  const typ = String(medien?.dateityp ?? dateiendung(medien?.pfad)).toLowerCase();
+  const typ = String(
+    medien?.dateityp ?? dateiendung(medien?.pfad),
+  ).toLowerCase();
   return art === "audio" ? (AUDIO_MIME[typ] ?? "") : (VIDEO_MIME[typ] ?? "");
 }
 
 function normalisiereMediaPfad(pfad) {
-  const wert = String(pfad ?? "").trim().replace(/\\/g, "/");
+  const wert = String(pfad ?? "")
+    .trim()
+    .replace(/\\/g, "/");
 
   if (!wert) {
     return "";
@@ -234,11 +254,12 @@ function findeFilmPfad(variante) {
 
   // Für das Kino werden AUSSCHLIESSLICH Browser-Videodateien verwendet.
   // Originale wie MKV bleiben Archivdateien und werden nie an <video> übergeben.
-  const wiedergabe = dateien.find((datei) =>
-    datei?.typ === "wiedergabe" && browserVideoDatei(datei),
+  const wiedergabe = dateien.find(
+    (datei) => datei?.typ === "wiedergabe" && browserVideoDatei(datei),
   );
 
-  const browserDatei = wiedergabe ?? dateien.find((datei) => browserVideoDatei(datei));
+  const browserDatei =
+    wiedergabe ?? dateien.find((datei) => browserVideoDatei(datei));
 
   if (browserDatei?.pfad) {
     return {
@@ -276,7 +297,6 @@ function findeFilmPfad(variante) {
     quelle: "keine-browserdatei",
   };
 }
-
 
 /* ======================================== */
 /* FILME AUS TIER-JSONS                     */
@@ -338,23 +358,25 @@ function getQuellenFuerAusgewaehlteTiere() {
 
 function getTypenFuerAusgewaehlteTiere() {
   const tierIds = getAusgewaehlteTierIds();
-  return [...new Set(
-    getAlleFilme()
-      .filter((film) => tierIds.has(film.tierId))
-      .map((film) => film.typ),
-  )];
+  return [
+    ...new Set(
+      getAlleFilme()
+        .filter((film) => tierIds.has(film.tierId))
+        .map((film) => film.typ),
+    ),
+  ];
 }
 
 function getAktiveFilme() {
   const tierIds = getAusgewaehlteTierIds();
 
-  return getAlleFilme().filter((film) =>
-    tierIds.has(film.tierId) &&
-    filmQuellen.has(film.quelleId) &&
-    filmTypen.has(film.typ),
+  return getAlleFilme().filter(
+    (film) =>
+      tierIds.has(film.tierId) &&
+      filmQuellen.has(film.quelleId) &&
+      filmTypen.has(film.typ),
   );
 }
-
 
 /* ======================================== */
 /* BUILDER RENDERN                          */
@@ -427,7 +449,8 @@ function renderQuellen() {
   if (!quellen.size) {
     const leer = document.createElement("p");
     leer.className = "kino-empty";
-    leer.textContent = "Für die ausgewählten Tiere sind noch keine Filme eingetragen.";
+    leer.textContent =
+      "Für die ausgewählten Tiere sind noch keine Filme eingetragen.";
     container.appendChild(leer);
     return;
   }
@@ -516,7 +539,9 @@ function renderKategorien() {
   container.replaceChildren();
 
   kinoKategorien.forEach((kategorie) => {
-    const aktivCount = kategorie.beitraege.filter((beitrag) => beitrag.aktiv).length;
+    const aktivCount = kategorie.beitraege.filter(
+      (beitrag) => beitrag.aktiv,
+    ).length;
     const label = document.createElement("label");
     label.className = "kino-check-row";
 
@@ -553,7 +578,8 @@ function renderFilme() {
   if (!filme.length) {
     const leer = document.createElement("p");
     leer.className = "kino-empty";
-    leer.textContent = "Wähle mindestens ein Tier, eine Filmquelle und eine Filmart aus.";
+    leer.textContent =
+      "Wähle mindestens ein Tier, eine Filmquelle und eine Filmart aus.";
     container.appendChild(leer);
     return;
   }
@@ -609,7 +635,9 @@ function renderSummary() {
     `${filme.length} ${filme.length === 1 ? "Film" : "Filme"}`,
     `Pause ${formatZeit(pauseSekunden)}`,
     `${intermission.length} Zwischenprogramm-Arten`,
-    getElement("[data-kino-loop-mode]")?.value === "loop" ? "Endlosschleife" : "Ein Durchlauf",
+    getElement("[data-kino-loop-mode]")?.value === "loop"
+      ? "Endlosschleife"
+      : "Ein Durchlauf",
   ];
 
   werte.forEach((wert) => {
@@ -625,24 +653,31 @@ function renderSummary() {
   }
 
   const ohnePfad = filme.filter((film) => !film.medien.pfad).length;
-  const unsicher = filme.filter((film) => film.medien.pfad && !film.medien.browserGeeignet).length;
+  const unsicher = filme.filter(
+    (film) => film.medien.pfad && !film.medien.browserGeeignet,
+  ).length;
 
   if (ohnePfad) {
-    probleme.push(`${ohnePfad} Film(e) haben keinen Video-Pfad und werden beim Abspielen übersprungen.`);
+    probleme.push(
+      `${ohnePfad} Film(e) haben keinen Video-Pfad und werden beim Abspielen übersprungen.`,
+    );
   }
 
   if (unsicher) {
-    probleme.push(`${unsicher} Film(e) haben keine browserfreundliche Wiedergabe-Datei. Für OBS am besten eine MP4-Datei als \"wiedergabe\" eintragen.`);
+    probleme.push(
+      `${unsicher} Film(e) haben keine browserfreundliche Wiedergabe-Datei. Für OBS am besten eine MP4-Datei als \"wiedergabe\" eintragen.`,
+    );
   }
 
   if (pauseSekunden > 0 && !intermission.length) {
-    probleme.push("Die Pause ist größer als 0, aber es ist kein Zwischenprogramm ausgewählt. Die Pause bleibt dann schwarz mit Countdown.");
+    probleme.push(
+      "Die Pause ist größer als 0, aber es ist kein Zwischenprogramm ausgewählt. Die Pause bleibt dann schwarz mit Countdown.",
+    );
   }
 
   warning.hidden = !probleme.length;
   warning.textContent = probleme.join(" ");
 }
-
 
 /* ======================================== */
 /* BUILDER INTERAKTION                      */
@@ -729,7 +764,10 @@ function getPauseSekunden() {
 }
 
 function getCardDauer() {
-  return Math.max(3, Number(getElement("[data-kino-card-duration]")?.value) || 15);
+  return Math.max(
+    3,
+    Number(getElement("[data-kino-card-duration]")?.value) || 15,
+  );
 }
 
 function getIntermissionAuswahl() {
@@ -738,14 +776,13 @@ function getIntermissionAuswahl() {
     .filter(Boolean);
 }
 
-
 /* ======================================== */
 /* PLAYLIST STARTEN                         */
 /* ======================================== */
 
 function startPlayback() {
-  let filme = getAktiveFilme().filter((film) =>
-    film.medien.pfad && film.medien.browserGeeignet,
+  let filme = getAktiveFilme().filter(
+    (film) => film.medien.pfad && film.medien.browserGeeignet,
   );
 
   if (!filme.length) {
@@ -753,7 +790,8 @@ function startPlayback() {
 
     if (warning) {
       warning.hidden = false;
-      warning.textContent = "Es gibt keinen ausgewählten Film mit einer Browser-Videodatei (MP4, WebM oder OGV). Originaldateien wie MKV werden absichtlich nicht abgespielt.";
+      warning.textContent =
+        "Es gibt keinen ausgewählten Film mit einer Browser-Videodatei (MP4, WebM oder OGV). Originaldateien wie MKV werden absichtlich nicht abgespielt.";
     }
 
     return;
@@ -840,7 +878,9 @@ function spieleFilm(index) {
   if (playPromise?.catch) {
     playPromise.catch((fehler) => {
       console.warn("Film konnte nicht automatisch gestartet werden.", fehler);
-      showMessage("Der Film konnte nicht automatisch gestartet werden. Klicke einmal auf Weiter und danach wieder auf den Film.");
+      showMessage(
+        "Der Film konnte nicht automatisch gestartet werden. Klicke einmal auf Weiter und danach wieder auf den Film.",
+      );
     });
   }
 }
@@ -923,7 +963,6 @@ function handleVideoError() {
   }, 1800);
 }
 
-
 /* ======================================== */
 /* ZWISCHENPROGRAMM                         */
 /* ======================================== */
@@ -999,7 +1038,8 @@ function zeigeNaechstenBeitrag() {
     moegliche = pool.filter((beitrag) => beitrag.id !== lastBeitragId);
   }
 
-  const beitrag = moegliche[Math.floor(Math.random() * moegliche.length)] ?? pool[0];
+  const beitrag =
+    moegliche[Math.floor(Math.random() * moegliche.length)] ?? pool[0];
   lastBeitragId = beitrag.id;
 
   const dauer = Math.min(
@@ -1180,7 +1220,10 @@ function zeigeBeitrag(beitrag) {
     if (browserAudioDatei(media)) {
       setzeBrowserQuelle(audio, media, "audio");
       audio.play().catch((fehler) => {
-        console.warn("Zwischenprogramm-Audio konnte nicht gestartet werden.", fehler);
+        console.warn(
+          "Zwischenprogramm-Audio konnte nicht gestartet werden.",
+          fehler,
+        );
       });
     }
   }
@@ -1200,10 +1243,14 @@ function zeigeTextKarte(beitrag) {
   }
 
   card.hidden = false;
-  category.textContent = beitrag.kategorieLabel ?? beitrag.kategorie ?? "Zwischenprogramm";
-  title.textContent = beitrag.titelText ?? text(beitrag.titel, beitrag.id ?? "");
+  category.textContent =
+    beitrag.kategorieLabel ?? beitrag.kategorie ?? "Zwischenprogramm";
+  title.textContent =
+    beitrag.titelText ?? text(beitrag.titel, beitrag.id ?? "");
   body.textContent = beitrag.textText ?? text(beitrag.text, "");
-  source.textContent = beitrag.quelleText ? `Quelle: ${beitrag.quelleText}` : "";
+  source.textContent = beitrag.quelleText
+    ? `Quelle: ${beitrag.quelleText}`
+    : "";
 
   if (beitrag.bildPfad) {
     media.hidden = false;
@@ -1235,7 +1282,6 @@ function showBlackPause() {
     video.hidden = true;
   }
 }
-
 
 /* ======================================== */
 /* PLAYER-STEUERUNG                         */

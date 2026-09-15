@@ -16,14 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "northAmerica"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Wüste",
-      "Graslandschaft"
-    ],
+    "kontinente": ["northAmerica"],
+    "biome": ["Gemäßigt", "Wüste", "Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

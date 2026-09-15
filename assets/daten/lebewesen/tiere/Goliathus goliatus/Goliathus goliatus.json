@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Savanne",
-      "Tropen"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["africa"],
+    "biome": ["Savanne", "Tropen"],
     "schutzstatus": "notEvaluated"
   },
   "daten": {

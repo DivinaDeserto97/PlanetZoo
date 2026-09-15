@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "europe"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Gemäßigt"
-    ],
+    "kontinente": ["europe"],
+    "biome": ["Feuchtgebiete", "Gemäßigt"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

@@ -15,14 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["Aquarium","Ausstellung"],
-    "kontinente": [
-      "asia",
-      "oceania"
-    ],
-    "biome": [
-      "Riff"
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": ["asia", "oceania"],
+    "biome": ["Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -211,9 +206,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "hinweis": {
@@ -228,9 +221,7 @@
               "beziehung": "mutualismus",
               "wirkung": "+/+",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "hinweis": {

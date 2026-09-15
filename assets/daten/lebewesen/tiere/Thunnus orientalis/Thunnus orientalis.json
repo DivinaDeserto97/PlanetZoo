@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [
-      "asia",
-      "northAmerica"
-    ],
-    "biome": [
-      "Offenes Meer"
-    ],
+    "kontinente": ["asia", "northAmerica"],
+    "biome": ["Offenes Meer"],
     "schutzstatus": "nearThreatened"
   },
   "daten": {

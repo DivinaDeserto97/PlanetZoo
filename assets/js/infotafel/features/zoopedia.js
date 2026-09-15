@@ -1,221 +1,130 @@
-import {
-  getLanguage,
-} from "../../features/language.js";
+import { getLanguage } from "../../features/language.js";
 
-import {
-  getTextEntries,
-  ui,
-} from "./ui.js";
-
+import { getTextEntries, ui } from "./ui.js";
 
 const SECTIONS = [
   {
-    key:
-      "uebersicht",
+    key: "uebersicht",
 
     label: {
-      de:
-        "Übersicht",
+      de: "Übersicht",
 
-      en:
-        "Overview",
+      en: "Overview",
 
-      "en-US":
-        "Overview",
+      "en-US": "Overview",
     },
   },
 
   {
-    key:
-      "vorkommen",
+    key: "vorkommen",
 
     label: {
-      de:
-        "Vorkommen",
+      de: "Vorkommen",
 
-      en:
-        "Distribution",
+      en: "Distribution",
 
-      "en-US":
-        "Distribution",
+      "en-US": "Distribution",
     },
   },
 
   {
-    key:
-      "arterhaltung",
+    key: "arterhaltung",
 
     label: {
-      de:
-        "Arterhaltung",
+      de: "Arterhaltung",
 
-      en:
-        "Conservation",
+      en: "Conservation",
 
-      "en-US":
-        "Conservation",
+      "en-US": "Conservation",
     },
   },
 
   {
-    key:
-      "sozialverhaltenUndFortpflanzung",
+    key: "sozialverhaltenUndFortpflanzung",
 
     label: {
-      de:
-        "Sozialverhalten & Fortpflanzung",
+      de: "Sozialverhalten & Fortpflanzung",
 
-      en:
-        "Social behaviour & reproduction",
+      en: "Social behaviour & reproduction",
 
-      "en-US":
-        "Social behavior & reproduction",
+      "en-US": "Social behavior & reproduction",
     },
   },
 
   {
-    key:
-      "tierfakten",
+    key: "tierfakten",
 
     label: {
-      de:
-        "Tierfakten",
+      de: "Tierfakten",
 
-      en:
-        "Animal facts",
+      en: "Animal facts",
 
-      "en-US":
-        "Animal facts",
+      "en-US": "Animal facts",
     },
   },
 
   {
-    key:
-      "entwicklungshinweis",
+    key: "entwicklungshinweis",
 
     label: {
-      de:
-        "Hinweis",
+      de: "Hinweis",
 
-      en:
-        "Note",
+      en: "Note",
 
-      "en-US":
-        "Note",
+      "en-US": "Note",
     },
   },
 ];
 
-
-export function renderZoopedia(
-  tier,
-) {
-  const container =
-    document.querySelector(
-      "[data-zoopedia-text]",
-    );
-
+export function renderZoopedia(tier) {
+  const container = document.querySelector("[data-zoopedia-text]");
 
   if (!container) {
     return;
   }
 
-
-  const language =
-    getLanguage();
-
+  const language = getLanguage();
 
   container.replaceChildren();
 
+  let rendered = 0;
 
-  let rendered =
-    0;
+  SECTIONS.forEach((sectionData) => {
+    const entries = getTextEntries(tier, sectionData.key);
 
+    if (!entries.length) {
+      return;
+    }
 
-  SECTIONS.forEach(
-    (sectionData) => {
-      const entries =
-        getTextEntries(
-          tier,
-          sectionData.key,
-        );
+    rendered++;
 
+    const section = document.createElement("section");
 
-      if (
-        !entries.length
-      ) {
-        return;
-      }
+    section.className = "zoopedia-section";
 
+    const heading = document.createElement("h3");
 
-      rendered++;
+    heading.textContent =
+      sectionData.label[language] ?? sectionData.label.de ?? sectionData.key;
 
+    section.appendChild(heading);
 
-      const section =
-        document.createElement(
-          "section",
-        );
+    entries.forEach((entry) => {
+      const p = document.createElement("p");
 
-      section.className =
-        "zoopedia-section";
+      p.textContent = entry.inhalt;
 
+      section.appendChild(p);
+    });
 
-      const heading =
-        document.createElement(
-          "h3",
-        );
-
-
-      heading.textContent =
-        sectionData.label[
-          language
-        ] ??
-        sectionData.label.de ??
-        sectionData.key;
-
-
-      section.appendChild(
-        heading,
-      );
-
-
-      entries.forEach(
-        (entry) => {
-          const p =
-            document.createElement(
-              "p",
-            );
-
-          p.textContent =
-            entry.inhalt;
-
-          section.appendChild(
-            p,
-          );
-        },
-      );
-
-
-      container.appendChild(
-        section,
-      );
-    },
-  );
-
+    container.appendChild(section);
+  });
 
   if (!rendered) {
-    const p =
-      document.createElement(
-        "p",
-      );
+    const p = document.createElement("p");
 
-    p.textContent =
-      ui(
-        "noData",
-      );
+    p.textContent = ui("noData");
 
-    container.appendChild(
-      p,
-    );
+    container.appendChild(p);
   }
 }

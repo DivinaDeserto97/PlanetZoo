@@ -218,17 +218,11 @@ const BEZIEHUNGS_LABELS = {
 };
 
 export function istGueltigeOekologischeBeziehung(value) {
-  return (
-    typeof value === "string" &&
-    OEKOLOGISCHE_BEZIEHUNGEN.includes(value)
-  );
+  return typeof value === "string" && OEKOLOGISCHE_BEZIEHUNGEN.includes(value);
 }
 
 export function istGueltigeWirkung(value) {
-  return (
-    typeof value === "string" &&
-    OEKOLOGISCHE_WIRKUNGEN.includes(value)
-  );
+  return typeof value === "string" && OEKOLOGISCHE_WIRKUNGEN.includes(value);
 }
 
 export function istWirkungFuerBeziehungGueltig(beziehung, wirkung) {

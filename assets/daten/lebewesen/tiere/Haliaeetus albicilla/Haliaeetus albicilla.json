@@ -16,15 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Gemäßigt",
-      "Seen und Flüsse"
-    ],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Feuchtgebiete", "Gemäßigt", "Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

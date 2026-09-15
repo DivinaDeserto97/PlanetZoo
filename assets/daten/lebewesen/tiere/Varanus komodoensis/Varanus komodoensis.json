@@ -16,10 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": ["Feuchtgebiete" ],
+    "kontinente": ["asia"],
+    "biome": ["Feuchtgebiete"],
     "schutzstatus": "endangered"
   },
   "daten": {

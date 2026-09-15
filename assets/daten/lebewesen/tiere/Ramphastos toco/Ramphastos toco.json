@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": [
-      "southAmerica"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Graslandschaft"
-    ],
+    "kontinente": ["southAmerica"],
+    "biome": ["Feuchtgebiete", "Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

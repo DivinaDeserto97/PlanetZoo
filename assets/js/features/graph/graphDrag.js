@@ -4,7 +4,6 @@ import {
   findNearestVerticalGapColumn,
 } from "./graphGrid.js";
 
-
 /* ======================================== */
 /* KÄSTCHEN AUF LOGISCHEN SLOT ZIEHEN       */
 /* ======================================== */
@@ -17,228 +16,111 @@ export function initGraphSlotDrag({
   onPreview,
   onDrop,
 }) {
-  let drag =
-    null;
-
+  let drag = null;
 
   node.addEventListener(
     "pointerdown",
     (event) => {
       if (
-        event.button !==
-          0 ||
-        event.target.closest(
-          "button, a, input, select, textarea",
-        )
+        event.button !== 0 ||
+        event.target.closest("button, a, input, select, textarea")
       ) {
         return;
       }
 
-
       event.preventDefault();
 
+      const stageRect = stage.getBoundingClientRect();
 
-      const stageRect =
-        stage.getBoundingClientRect();
+      const nodeRect = node.getBoundingClientRect();
 
-      const nodeRect =
-        node.getBoundingClientRect();
-
-      const scale =
-        getStageScale(
-          stage,
-        );
-
+      const scale = getStageScale(stage);
 
       drag = {
-        pointerId:
-          event.pointerId,
+        pointerId: event.pointerId,
 
         scale,
 
-        offsetX:
-          (
-            event.clientX -
-            nodeRect.left
-          ) /
-          scale,
+        offsetX: (event.clientX - nodeRect.left) / scale,
 
-        offsetY:
-          (
-            event.clientY -
-            nodeRect.top
-          ) /
-          scale,
+        offsetY: (event.clientY - nodeRect.top) / scale,
 
-        stageLeft:
-          stageRect.left,
+        stageLeft: stageRect.left,
 
-        stageTop:
-          stageRect.top,
+        stageTop: stageRect.top,
       };
 
+      node.classList.add("is-dragging");
 
-      node.classList.add(
-        "is-dragging",
-      );
-
-
-      node.setPointerCapture(
-        event.pointerId,
-      );
+      node.setPointerCapture(event.pointerId);
     },
     {
       signal,
     },
   );
-
 
   node.addEventListener(
     "pointermove",
     (event) => {
-      if (
-        !drag ||
-        drag.pointerId !==
-          event.pointerId
-      ) {
+      if (!drag || drag.pointerId !== event.pointerId) {
         return;
       }
 
+      const left = (event.clientX - drag.stageLeft) / drag.scale - drag.offsetX;
 
-      const left =
-        (
-          event.clientX -
-          drag.stageLeft
-        ) /
-          drag.scale -
-        drag.offsetX;
+      const top = (event.clientY - drag.stageTop) / drag.scale - drag.offsetY;
 
-      const top =
-        (
-          event.clientY -
-          drag.stageTop
-        ) /
-          drag.scale -
-        drag.offsetY;
+      node.style.left = `${left}px`;
 
+      node.style.top = `${top}px`;
 
-      node.style.left =
-        `${left}px`;
+      const centerX = left + node.offsetWidth / 2;
 
-      node.style.top =
-        `${top}px`;
+      const centerY = top + node.offsetHeight / 2;
 
+      const slotId = findNearestSlot(layout, centerX, centerY);
 
-      const centerX =
-        left +
-        node.offsetWidth /
-          2;
-
-      const centerY =
-        top +
-        node.offsetHeight /
-          2;
-
-
-      const slotId =
-        findNearestSlot(
-          layout,
-          centerX,
-          centerY,
-        );
-
-
-      onPreview?.(
-        slotId,
-      );
+      onPreview?.(slotId);
     },
     {
       signal,
     },
   );
 
-
-  function finish(
-    event,
-  ) {
-    if (
-      !drag ||
-      drag.pointerId !==
-        event.pointerId
-    ) {
+  function finish(event) {
+    if (!drag || drag.pointerId !== event.pointerId) {
       return;
     }
 
+    const left = Number.parseFloat(node.style.left) || 0;
 
-    const left =
-      Number.parseFloat(
-        node.style.left,
-      ) ||
-      0;
+    const top = Number.parseFloat(node.style.top) || 0;
 
-    const top =
-      Number.parseFloat(
-        node.style.top,
-      ) ||
-      0;
-
-
-    const slotId =
-      findNearestSlot(
-        layout,
-        left +
-          node.offsetWidth /
-            2,
-        top +
-          node.offsetHeight /
-            2,
-      );
-
-
-    node.classList.remove(
-      "is-dragging",
+    const slotId = findNearestSlot(
+      layout,
+      left + node.offsetWidth / 2,
+      top + node.offsetHeight / 2,
     );
 
+    node.classList.remove("is-dragging");
 
-    if (
-      node.hasPointerCapture(
-        event.pointerId,
-      )
-    ) {
-      node.releasePointerCapture(
-        event.pointerId,
-      );
+    if (node.hasPointerCapture(event.pointerId)) {
+      node.releasePointerCapture(event.pointerId);
     }
 
+    drag = null;
 
-    drag =
-      null;
-
-
-    onDrop?.(
-      slotId,
-    );
+    onDrop?.(slotId);
   }
 
+  node.addEventListener("pointerup", finish, {
+    signal,
+  });
 
-  node.addEventListener(
-    "pointerup",
-    finish,
-    {
-      signal,
-    },
-  );
-
-
-  node.addEventListener(
-    "pointercancel",
-    finish,
-    {
-      signal,
-    },
-  );
+  node.addEventListener("pointercancel", finish, {
+    signal,
+  });
 }
-
 
 /* ======================================== */
 /* SPUR-HANDLE ZIEHEN                       */
@@ -254,115 +136,49 @@ export function initLaneHandleDrag({
   signal,
   onDrop,
 }) {
-  let drag =
-    null;
-
+  let drag = null;
 
   handle.addEventListener(
     "pointerdown",
     (event) => {
-      if (
-        event.button !==
-        0
-      ) {
+      if (event.button !== 0) {
         return;
       }
-
 
       event.preventDefault();
       event.stopPropagation();
 
+      const stageRect = stage.getBoundingClientRect();
 
-      const stageRect =
-        stage.getBoundingClientRect();
-
-      const scale =
-        getStageScale(
-          stage,
-        );
-
+      const scale = getStageScale(stage);
 
       drag = {
-        pointerId:
-          event.pointerId,
+        pointerId: event.pointerId,
 
         scale,
 
-        stageLeft:
-          stageRect.left,
+        stageLeft: stageRect.left,
 
-        stageTop:
-          stageRect.top,
+        stageTop: stageRect.top,
       };
 
+      handle.classList.add("is-dragging");
 
-      handle.classList.add(
-        "is-dragging",
-      );
-
-
-      handle.setPointerCapture(
-        event.pointerId,
-      );
+      handle.setPointerCapture(event.pointerId);
     },
     {
       signal,
     },
   );
-
 
   handle.addEventListener(
     "pointermove",
     (event) => {
-      if (
-        !drag ||
-        drag.pointerId !==
-          event.pointerId
-      ) {
+      if (!drag || drag.pointerId !== event.pointerId) {
         return;
       }
 
-
-      const lane =
-        getLaneFromPointer(
-          event,
-          drag,
-          layout,
-          corridorRect,
-          orientation,
-          laneCount,
-        );
-
-
-      handle.dataset.previewLane =
-        String(
-          lane,
-        );
-
-
-      handle.title =
-        `Spur ${lane}`;
-    },
-    {
-      signal,
-    },
-  );
-
-
-  function finish(
-    event,
-  ) {
-    if (
-      !drag ||
-      drag.pointerId !==
-        event.pointerId
-    ) {
-      return;
-    }
-
-
-    const lane =
-      getLaneFromPointer(
+      const lane = getLaneFromPointer(
         event,
         drag,
         layout,
@@ -371,51 +187,48 @@ export function initLaneHandleDrag({
         laneCount,
       );
 
+      handle.dataset.previewLane = String(lane);
 
-    handle.classList.remove(
-      "is-dragging",
-    );
+      handle.title = `Spur ${lane}`;
+    },
+    {
+      signal,
+    },
+  );
 
-
-    if (
-      handle.hasPointerCapture(
-        event.pointerId,
-      )
-    ) {
-      handle.releasePointerCapture(
-        event.pointerId,
-      );
+  function finish(event) {
+    if (!drag || drag.pointerId !== event.pointerId) {
+      return;
     }
 
-
-    drag =
-      null;
-
-
-    onDrop?.(
-      lane,
+    const lane = getLaneFromPointer(
+      event,
+      drag,
+      layout,
+      corridorRect,
+      orientation,
+      laneCount,
     );
+
+    handle.classList.remove("is-dragging");
+
+    if (handle.hasPointerCapture(event.pointerId)) {
+      handle.releasePointerCapture(event.pointerId);
+    }
+
+    drag = null;
+
+    onDrop?.(lane);
   }
 
+  handle.addEventListener("pointerup", finish, {
+    signal,
+  });
 
-  handle.addEventListener(
-    "pointerup",
-    finish,
-    {
-      signal,
-    },
-  );
-
-
-  handle.addEventListener(
-    "pointercancel",
-    finish,
-    {
-      signal,
-    },
-  );
+  handle.addEventListener("pointercancel", finish, {
+    signal,
+  });
 }
-
 
 /* ======================================== */
 /* GANZE LINIEN-ZEILE / -SPALTE ZIEHEN      */
@@ -429,290 +242,122 @@ export function initRouteGuideDrag({
   signal,
   onDrop,
 }) {
-  let drag =
-    null;
-
+  let drag = null;
 
   handle.addEventListener(
     "pointerdown",
     (event) => {
-      if (
-        event.button !==
-        0
-      ) {
+      if (event.button !== 0) {
         return;
       }
-
 
       event.preventDefault();
       event.stopPropagation();
 
+      const stageRect = stage.getBoundingClientRect();
 
-      const stageRect =
-        stage.getBoundingClientRect();
-
-      const scale =
-        getStageScale(
-          stage,
-        );
-
+      const scale = getStageScale(stage);
 
       drag = {
-        pointerId:
-          event.pointerId,
+        pointerId: event.pointerId,
         scale,
-        stageLeft:
-          stageRect.left,
-        stageTop:
-          stageRect.top,
+        stageLeft: stageRect.left,
+        stageTop: stageRect.top,
       };
 
+      handle.classList.add("is-dragging");
 
-      handle.classList.add(
-        "is-dragging",
-      );
-
-
-      handle.setPointerCapture(
-        event.pointerId,
-      );
+      handle.setPointerCapture(event.pointerId);
     },
     { signal },
   );
-
 
   handle.addEventListener(
     "pointermove",
     (event) => {
-      if (
-        !drag ||
-        drag.pointerId !==
-          event.pointerId
-      ) {
+      if (!drag || drag.pointerId !== event.pointerId) {
         return;
       }
 
+      const logicalX = (event.clientX - drag.stageLeft) / drag.scale;
 
-      const logicalX =
-        (
-          event.clientX -
-          drag.stageLeft
-        ) /
-        drag.scale;
+      const logicalY = (event.clientY - drag.stageTop) / drag.scale;
 
-      const logicalY =
-        (
-          event.clientY -
-          drag.stageTop
-        ) /
-        drag.scale;
+      if (orientation === "horizontal") {
+        handle.style.top = `${logicalY}px`;
 
+        const gapRow = findNearestHorizontalGapRow(layout, logicalY);
 
-      if (
-        orientation ===
-        "horizontal"
-      ) {
-        handle.style.top =
-          `${logicalY}px`;
+        handle.dataset.previewGuide = gapRow ? `Zeile L${gapRow * 2}` : "";
+      } else {
+        handle.style.left = `${logicalX}px`;
 
-        const gapRow =
-          findNearestHorizontalGapRow(
-            layout,
-            logicalY,
-          );
+        const gapColumn = findNearestVerticalGapColumn(layout, logicalX);
 
-        handle.dataset.previewGuide =
-          gapRow
-            ? `Zeile L${gapRow * 2}`
-            : "";
-      }
-
-      else {
-        handle.style.left =
-          `${logicalX}px`;
-
-        const gapColumn =
-          findNearestVerticalGapColumn(
-            layout,
-            logicalX,
-          );
-
-        handle.dataset.previewGuide =
-          gapColumn
-            ? `Spalte ${gapColumn}`
-            : "";
+        handle.dataset.previewGuide = gapColumn ? `Spalte ${gapColumn}` : "";
       }
     },
     { signal },
   );
 
-
-  function finishGuideDrag(
-    event,
-  ) {
-    if (
-      !drag ||
-      drag.pointerId !==
-        event.pointerId
-    ) {
+  function finishGuideDrag(event) {
+    if (!drag || drag.pointerId !== event.pointerId) {
       return;
     }
 
+    const logicalX = (event.clientX - drag.stageLeft) / drag.scale;
 
-    const logicalX =
-      (
-        event.clientX -
-        drag.stageLeft
-      ) /
-      drag.scale;
-
-    const logicalY =
-      (
-        event.clientY -
-        drag.stageTop
-      ) /
-      drag.scale;
-
+    const logicalY = (event.clientY - drag.stageTop) / drag.scale;
 
     const value =
-      orientation ===
-        "horizontal"
-        ? findNearestHorizontalGapRow(
-            layout,
-            logicalY,
-          )
-        : findNearestVerticalGapColumn(
-            layout,
-            logicalX,
-          );
+      orientation === "horizontal"
+        ? findNearestHorizontalGapRow(layout, logicalY)
+        : findNearestVerticalGapColumn(layout, logicalX);
 
+    handle.classList.remove("is-dragging");
 
-    handle.classList.remove(
-      "is-dragging",
-    );
-
-
-    if (
-      handle.hasPointerCapture(
-        event.pointerId,
-      )
-    ) {
-      handle.releasePointerCapture(
-        event.pointerId,
-      );
+    if (handle.hasPointerCapture(event.pointerId)) {
+      handle.releasePointerCapture(event.pointerId);
     }
 
-
-    drag =
-      null;
-
+    drag = null;
 
     if (value) {
-      onDrop?.(
-        value,
-      );
+      onDrop?.(value);
     }
   }
 
+  handle.addEventListener("pointerup", finishGuideDrag, { signal });
 
-  handle.addEventListener(
-    "pointerup",
-    finishGuideDrag,
-    { signal },
-  );
-
-
-  handle.addEventListener(
-    "pointercancel",
-    finishGuideDrag,
-    { signal },
-  );
+  handle.addEventListener("pointercancel", finishGuideDrag, { signal });
 }
 
-
-function getLaneFromPointer(
-  event,
-  drag,
-  layout,
-  rect,
-  orientation,
-  laneCount,
-) {
-  const config =
-    layout.config;
-
+function getLaneFromPointer(event, drag, layout, rect, orientation, laneCount) {
+  const config = layout.config;
 
   let offset;
 
-
-  if (
-    orientation ===
-    "vertical"
-  ) {
+  if (orientation === "vertical") {
     offset =
-      (
-        event.clientX -
-        drag.stageLeft
-      ) /
-        drag.scale -
+      (event.clientX - drag.stageLeft) / drag.scale -
       rect.x -
       config.edgeMargin;
-  }
-
-  else {
+  } else {
     offset =
-      (
-        event.clientY -
-        drag.stageTop
-      ) /
-        drag.scale -
-      rect.y -
-      config.edgeMargin;
+      (event.clientY - drag.stageTop) / drag.scale - rect.y - config.edgeMargin;
   }
 
+  const lane = Math.round(offset / config.lineGap) + 1;
 
-  const lane =
-    Math.round(
-      offset /
-      config.lineGap,
-    ) +
-    1;
-
-
-  return Math.max(
-    1,
-    Math.min(
-      Math.max(
-        1,
-        laneCount,
-      ),
-      lane,
-    ),
-  );
+  return Math.max(1, Math.min(Math.max(1, laneCount), lane));
 }
-
 
 /* ======================================== */
 /* AKTUELLEN GRAPH-ZOOM LESEN               */
 /* ======================================== */
 
-function getStageScale(
-  stage,
-) {
-  const scale =
-    Number(
-      stage?.dataset
-        ?.graphScale ??
-      1,
-    );
+function getStageScale(stage) {
+  const scale = Number(stage?.dataset?.graphScale ?? 1);
 
-
-  return (
-    Number.isFinite(
-      scale,
-    ) &&
-    scale > 0
-      ? scale
-      : 1
-  );
+  return Number.isFinite(scale) && scale > 0 ? scale : 1;
 }

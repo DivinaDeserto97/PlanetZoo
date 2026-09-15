@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft",
-      "Wüste"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft", "Wüste"],
     "schutzstatus": "vulnerable"
   },
   "daten": {
@@ -257,9 +250,7 @@
               "beziehung": "nutzung",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [
-                  "bisEtwa6Monate"
-                ],
+                "selbst": ["bisEtwa6Monate"],
                 "ziel": []
               },
               "nutzung": {
@@ -274,9 +265,7 @@
               "beziehung": "nutzung",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [
-                  "abEtwa3Monaten"
-                ],
+                "selbst": ["abEtwa3Monaten"],
                 "ziel": []
               },
               "nutzung": {
@@ -318,9 +307,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
-                "ziel": [
-                  "jungtier"
-                ]
+                "ziel": ["jungtier"]
               },
               "quelle": "sanDiegoZoo"
             },

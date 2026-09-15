@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Aquarium"
-    ],
+    "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [
-      "Ästuar",
-      "Riff",
-      "Offenes Meer"
-    ],
+    "biome": ["Ästuar", "Riff", "Offenes Meer"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {

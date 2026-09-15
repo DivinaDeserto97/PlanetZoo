@@ -45,3 +45,12 @@ assets/daten/**/*.m4v
 
 .DS_Store
 Thumbs.db
+# ==========================================
+# PRIVATE / LOKALE MEDIEN UND CACHE
+# ==========================================
+/assets/cache/
+/assets/private/
+/assets/medien/lokal/
+
+# Freigegebene Medien unter assets/medien/freigegeben/
+# dürfen absichtlich auf GitHub und ins Share-ZIP.

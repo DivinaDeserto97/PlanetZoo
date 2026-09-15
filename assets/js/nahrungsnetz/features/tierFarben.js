@@ -8,7 +8,6 @@
 */
 export const NAHRUNGSNETZ_GRAU = "#747b86";
 
-
 /*
     Für ausgewählte Tiere wird aus der
     Tier-ID deterministisch eine Farbe
@@ -18,177 +17,82 @@ export const NAHRUNGSNETZ_GRAU = "#747b86";
     seine Farbe auch dann, wenn die
     Reihenfolge der Auswahl geändert wird.
 */
-export function getTierFarbe(
-  tierId,
-) {
-  const id =
-    String(
-      tierId ??
-      "",
-    );
-
+export function getTierFarbe(tierId) {
+  const id = String(tierId ?? "");
 
   if (!id) {
     return NAHRUNGSNETZ_GRAU;
   }
 
+  const hash = hashString(id);
 
-  const hash =
-    hashString(
-      id,
-    );
+  const hue = Math.abs(hash) % 360;
 
+  const saturation = 70 + (Math.abs(hash >> 8) % 11);
 
-  const hue =
-    Math.abs(
-      hash,
-    ) %
-    360;
-
-
-  const saturation =
-    70 +
-    (
-      Math.abs(
-        hash >> 8,
-      ) %
-      11
-    );
-
-
-  const lightness =
-    58 +
-    (
-      Math.abs(
-        hash >> 16,
-      ) %
-      7
-    );
-
+  const lightness = 58 + (Math.abs(hash >> 16) % 7);
 
   return `hsl(${hue} ${saturation}% ${lightness}%)`;
 }
 
-
-export function getTierDarstellungsFarbe(
-  tierId,
-  selectedSet,
-) {
-  if (
-    !tierId ||
-    !selectedSet?.has(
-      tierId,
-    )
-  ) {
+export function getTierDarstellungsFarbe(tierId, selectedSet) {
+  if (!tierId || !selectedSet?.has(tierId)) {
     return NAHRUNGSNETZ_GRAU;
   }
 
-
-  return getTierFarbe(
-    tierId,
-  );
+  return getTierFarbe(tierId);
 }
 
-
-export function applyNahrungsnetzFarben(
-  graph,
-  selectedSet,
-) {
+export function applyNahrungsnetzFarben(graph, selectedSet) {
   if (!graph) {
     return graph;
   }
 
+  graph.nodes = graph.nodes.map((node) => {
+    if (!node.tierId) {
+      return {
+        ...node,
 
-  graph.nodes =
-    graph.nodes.map(
-      (node) => {
-        if (!node.tierId) {
-          return {
-            ...node,
+        selected: false,
 
-            selected:
-              false,
+        color: null,
+      };
+    }
 
-            color:
-              null,
-          };
-        }
+    const selected = selectedSet.has(node.tierId);
 
+    return {
+      ...node,
 
-        const selected =
-          selectedSet.has(
-            node.tierId,
-          );
+      selected,
 
+      color: getTierDarstellungsFarbe(node.tierId, selectedSet),
+    };
+  });
 
-        return {
-          ...node,
+  graph.edges = graph.edges.map((edge) => {
+    const selected = selectedSet.has(edge.ownerTierId);
 
-          selected,
+    return {
+      ...edge,
 
-          color:
-            getTierDarstellungsFarbe(
-              node.tierId,
-              selectedSet,
-            ),
-        };
-      },
-    );
+      selected,
 
-
-  graph.edges =
-    graph.edges.map(
-      (edge) => {
-        const selected =
-          selectedSet.has(
-            edge.ownerTierId,
-          );
-
-
-        return {
-          ...edge,
-
-          selected,
-
-          color:
-            getTierDarstellungsFarbe(
-              edge.ownerTierId,
-              selectedSet,
-            ),
-        };
-      },
-    );
-
+      color: getTierDarstellungsFarbe(edge.ownerTierId, selectedSet),
+    };
+  });
 
   return graph;
 }
 
+function hashString(value) {
+  let hash = 2166136261;
 
-function hashString(
-  value,
-) {
-  let hash =
-    2166136261;
+  for (let index = 0; index < value.length; index++) {
+    hash ^= value.charCodeAt(index);
 
-
-  for (
-    let index = 0;
-    index <
-    value.length;
-    index++
-  ) {
-    hash ^=
-      value.charCodeAt(
-        index,
-      );
-
-    hash =
-      Math.imul(
-        hash,
-        16777619,
-      );
+    hash = Math.imul(hash, 16777619);
   }
-
 
   return hash | 0;
 }

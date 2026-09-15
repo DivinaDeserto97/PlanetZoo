@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "africa",
-      "asia"
-    ],
-    "biome": [
-      "Wüste"
-    ],
+    "kontinente": ["africa", "asia"],
+    "biome": ["Wüste"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

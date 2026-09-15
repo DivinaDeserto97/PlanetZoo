@@ -1,4 +1,3 @@
-
 /* ======================================== */
 /* FILTER-ENUMS AUS "LEERES TIER"           */
 /* ======================================== */
@@ -39,8 +38,7 @@ function baueFilterOptionen(select, werte) {
   }
 
   const vorhandene = holeVorhandeneOptionen(select);
-  const alleOption =
-    select.querySelector('option[value=""]')?.cloneNode(true);
+  const alleOption = select.querySelector('option[value=""]')?.cloneNode(true);
 
   select.replaceChildren();
 
@@ -75,8 +73,7 @@ async function ladeFilterEnumsAusLeeremTier(elemente) {
     const filter = leeresTier?.filter ?? {};
 
     Object.entries(FILTER_FELDER).forEach(([feld, selector]) => {
-      const select =
-        document.querySelector(selector);
+      const select = document.querySelector(selector);
 
       baueFilterOptionen(select, filter[feld]);
     });
@@ -87,7 +84,6 @@ async function ladeFilterEnumsAusLeeremTier(elemente) {
     );
   }
 }
-
 
 /* ======================================== */
 /* HOME-FILTER                              */
@@ -100,65 +96,30 @@ export async function initHomeFilter({
   onSelectNone,
 }) {
   const elemente = {
-    suche:
-      document.querySelector(
-        "[data-home-search]",
-      ),
+    suche: document.querySelector("[data-home-search]"),
 
-    gehegetyp:
-      document.querySelector(
-        "[data-home-enclosure]",
-      ),
+    gehegetyp: document.querySelector("[data-home-enclosure]"),
 
-    kontinent:
-      document.querySelector(
-        "[data-home-continent]",
-      ),
+    kontinent: document.querySelector("[data-home-continent]"),
 
-    biome:
-      document.querySelector(
-        "[data-home-biome]",
-      ),
+    biome: document.querySelector("[data-home-biome]"),
 
-    schutzstatus:
-      document.querySelector(
-        "[data-home-status]",
-      ),
+    schutzstatus: document.querySelector("[data-home-status]"),
 
-    edition:
-      document.querySelector(
-        "[data-home-edition]",
-      ),
+    edition: document.querySelector("[data-home-edition]"),
 
-    sortierenNach:
-      document.querySelector(
-        "[data-home-sort-by]",
-      ),
+    sortierenNach: document.querySelector("[data-home-sort-by]"),
 
-    richtung:
-      document.querySelector(
-        "[data-home-sort-direction]",
-      ),
+    richtung: document.querySelector("[data-home-sort-direction]"),
 
-    alleAuswaehlen:
-      document.querySelector(
-        "[data-home-select-all]",
-      ),
+    alleAuswaehlen: document.querySelector("[data-home-select-all]"),
 
-    alleAbwaehlen:
-      document.querySelector(
-        "[data-home-select-none]",
-      ),
+    alleAbwaehlen: document.querySelector("[data-home-select-none]"),
 
-    reset:
-      document.querySelector(
-        "[data-home-reset]",
-      ),
+    reset: document.querySelector("[data-home-reset]"),
   };
 
-
   await ladeFilterEnumsAusLeeremTier(elemente);
-
 
   /* ==================================== */
   /* ZUSTAND HOLEN                        */
@@ -167,43 +128,26 @@ export async function initHomeFilter({
   function getState() {
     return {
       filter: {
-        suche:
-          elemente.suche?.value ??
-          "",
+        suche: elemente.suche?.value ?? "",
 
-        gehegetyp:
-          elemente.gehegetyp?.value ??
-          "",
+        gehegetyp: elemente.gehegetyp?.value ?? "",
 
-        kontinent:
-          elemente.kontinent?.value ??
-          "",
+        kontinent: elemente.kontinent?.value ?? "",
 
-        biome:
-          elemente.biome?.value ??
-          "",
+        biome: elemente.biome?.value ?? "",
 
-        schutzstatus:
-          elemente.schutzstatus?.value ??
-          "",
+        schutzstatus: elemente.schutzstatus?.value ?? "",
 
-        edition:
-          elemente.edition?.value ??
-          "",
+        edition: elemente.edition?.value ?? "",
       },
 
       sortierung: {
-        sortierenNach:
-          elemente.sortierenNach?.value ??
-          "newest",
+        sortierenNach: elemente.sortierenNach?.value ?? "newest",
 
-        richtung:
-          elemente.richtung?.value ??
-          "desc",
+        richtung: elemente.richtung?.value ?? "desc",
       },
     };
   }
-
 
   /* ==================================== */
   /* FILTER / SORTIERUNG                  */
@@ -220,63 +164,47 @@ export async function initHomeFilter({
     elemente.richtung,
   ];
 
+  elementListe.forEach((element) => {
+    if (!element) {
+      return;
+    }
 
-  elementListe.forEach(
-    (element) => {
-      if (!element) {
-        return;
-      }
+    element.addEventListener("input", onChange, {
+      signal,
+    });
 
-      element.addEventListener(
-        "input",
-        onChange,
-        {
-          signal,
-        },
-      );
-
-      element.addEventListener(
-        "change",
-        onChange,
-        {
-          signal,
-        },
-      );
-    },
-  );
-
+    element.addEventListener("change", onChange, {
+      signal,
+    });
+  });
 
   /* ==================================== */
   /* ALLE AUSWÄHLEN                       */
   /* ==================================== */
 
-  elemente.alleAuswaehlen
-    ?.addEventListener(
-      "click",
-      () => {
-        onSelectAll?.();
-      },
-      {
-        signal,
-      },
-    );
-
+  elemente.alleAuswaehlen?.addEventListener(
+    "click",
+    () => {
+      onSelectAll?.();
+    },
+    {
+      signal,
+    },
+  );
 
   /* ==================================== */
   /* ALLE ABWÄHLEN                        */
   /* ==================================== */
 
-  elemente.alleAbwaehlen
-    ?.addEventListener(
-      "click",
-      () => {
-        onSelectNone?.();
-      },
-      {
-        signal,
-      },
-    );
-
+  elemente.alleAbwaehlen?.addEventListener(
+    "click",
+    () => {
+      onSelectNone?.();
+    },
+    {
+      signal,
+    },
+  );
 
   /* ==================================== */
   /* RESET                                */
@@ -310,13 +238,11 @@ export async function initHomeFilter({
       }
 
       if (elemente.sortierenNach) {
-        elemente.sortierenNach.value =
-          "newest";
+        elemente.sortierenNach.value = "newest";
       }
 
       if (elemente.richtung) {
-        elemente.richtung.value =
-          "desc";
+        elemente.richtung.value = "desc";
       }
 
       onChange?.();
@@ -325,7 +251,6 @@ export async function initHomeFilter({
       signal,
     },
   );
-
 
   return {
     getState,

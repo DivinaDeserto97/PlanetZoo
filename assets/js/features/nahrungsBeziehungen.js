@@ -130,76 +130,35 @@ export function getAlleNahrungsBeziehungen(tier) {
    FRESSFEINDE AUTOMATISCH BERECHNEN
    ============================================================ */
 
-export function getFressfeinde(
-  alleTiere,
-  zielTier,
-  zielLebensphase = null,
-) {
-  if (
-    !Array.isArray(
-      alleTiere,
-    ) ||
-    !zielTier
-  ) {
+export function getFressfeinde(alleTiere, zielTier, zielLebensphase = null) {
+  if (!Array.isArray(alleTiere) || !zielTier) {
     return [];
   }
 
+  const zielIds = getTierIds(zielTier);
 
-  const zielIds =
-    getTierIds(
-      zielTier,
-    );
-
-
-  if (
-    zielIds.size ===
-    0
-  ) {
+  if (zielIds.size === 0) {
     return [];
   }
 
+  const result = [];
 
-  const result =
-    [];
-
-
-  alleTiere.forEach(
-    (
-      fressfeind,
-    ) => {
-      /*
+  alleTiere.forEach((fressfeind) => {
+    /*
           Das Ziel-Tier wird nicht
           mit sich selbst verglichen.
       */
 
-      if (
-        istGleichesTier(
-          fressfeind,
-          zielTier,
-        )
-      ) {
-        return;
-      }
+    if (istGleichesTier(fressfeind, zielTier)) {
+      return;
+    }
 
+    const beziehungen = getAlleNahrungsBeziehungen(fressfeind);
 
-      const beziehungen =
-        getAlleNahrungsBeziehungen(
-          fressfeind,
-        );
+    beziehungen.forEach((eintrag) => {
+      const { lebensphase, beziehung } = eintrag;
 
-
-      beziehungen.forEach(
-        (
-          eintrag,
-        ) => {
-          const {
-            lebensphase,
-            beziehung,
-          } =
-            eintrag;
-
-
-          /*
+      /*
               =================================
               WICHTIG:
               "Wird gefressen von"
@@ -233,7 +192,7 @@ export function getFressfeinde(
               obwohl Gift relevant ist.
           */
 
-          /*
+      /*
               Seit 5.1 gibt es zusätzlich:
 
               beziehung: "praedation"
@@ -247,27 +206,20 @@ export function getFressfeinde(
               vorhanden ist, gilt ausschließlich diese.
           */
 
-          if (!istPraedationsBeziehung(beziehung)) {
-            return;
-          }
+      if (!istPraedationsBeziehung(beziehung)) {
+        return;
+      }
 
-
-          /*
+      /*
               Gehört die Beziehung
               überhaupt zum gesuchten Tier?
           */
 
-          if (
-            !beziehungTrifftZiel(
-              beziehung,
-              zielIds,
-            )
-          ) {
-            return;
-          }
+      if (!beziehungTrifftZiel(beziehung, zielIds)) {
+        return;
+      }
 
-
-          /*
+      /*
               Prüfen, ob die Beziehung
               für die ausgewählte
               Lebensphase des ZIELS gilt.
@@ -285,32 +237,21 @@ export function getFressfeinde(
               ✗
           */
 
-          if (
-            !beziehungGiltFuerZielLebensphase(
-              beziehung,
-              zielLebensphase,
-            )
-          ) {
-            return;
-          }
+      if (!beziehungGiltFuerZielLebensphase(beziehung, zielLebensphase)) {
+        return;
+      }
 
-
-          result.push({
-            /*
+      result.push({
+        /*
                 Das Tier, dessen JSON
                 die Beziehung enthält.
             */
 
-            fressfeind,
+        fressfeind,
 
+        fressfeindId: getHauptTierId(fressfeind),
 
-            fressfeindId:
-              getHauptTierId(
-                fressfeind,
-              ),
-
-
-            /*
+        /*
                 Lebensphase des
                 FRESSFEINDES.
 
@@ -318,10 +259,9 @@ export function getFressfeinde(
                 erwachsener Löwe.
             */
 
-            lebensphase,
+        lebensphase,
 
-
-            /*
+        /*
                 Angefragte Lebensphase
                 des ZIEL-TIERES.
 
@@ -329,10 +269,9 @@ export function getFressfeinde(
                 Elefant Jungtier.
             */
 
-            zielLebensphase,
+        zielLebensphase,
 
-
-            /*
+        /*
                 Originale Beziehung.
 
                 Damit Infotafel und
@@ -341,23 +280,15 @@ export function getFressfeinde(
                 auswerten können.
             */
 
-            beziehung,
+        beziehung,
 
-
-            linienTyp:
-              getLinienTyp(
-                beziehung,
-              ),
-          });
-        },
-      );
-    },
-  );
-
+        linienTyp: getLinienTyp(beziehung),
+      });
+    });
+  });
 
   return result;
 }
-
 
 /* ============================================================
    PRÄDATION ERKENNEN
@@ -374,7 +305,11 @@ function istPraedationsBeziehung(beziehung) {
       Fallback für ältere / noch nicht umgestellte JSONs.
       Dadurch bricht die Infotafel während der Migration nicht.
   */
-  return String(beziehung?.typ ?? "").trim().toLowerCase() === "tier";
+  return (
+    String(beziehung?.typ ?? "")
+      .trim()
+      .toLowerCase() === "tier"
+  );
 }
 
 /* ============================================================

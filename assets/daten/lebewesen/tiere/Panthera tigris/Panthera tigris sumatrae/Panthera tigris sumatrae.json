@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Tropen"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia"],
+    "biome": ["Feuchtgebiete", "Tropen"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -114,9 +107,7 @@
           "min": 400,
           "max": 600,
           "einheit": "individuum",
-          "giltFuer": [
-            "Panthera tigris sumatrae"
-          ],
+          "giltFuer": ["Panthera tigris sumatrae"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia kennzeichnet den Wildbestand als geschätzt.",

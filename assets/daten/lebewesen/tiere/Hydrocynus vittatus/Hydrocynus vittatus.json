@@ -15,13 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": ["Aquarium","Ausstellung"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Seen und Flüsse"
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": ["africa"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -123,9 +119,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            "Hydrocynus vittatus"
-          ],
+          "giltFuer": ["Hydrocynus vittatus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",

@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -241,9 +235,7 @@
               "beziehung": "nutzung",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [
-                  "bisEtwa3Monate"
-                ],
+                "selbst": ["bisEtwa3Monate"],
                 "ziel": []
               },
               "nutzung": {
@@ -258,9 +250,7 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "abEtwa3Monaten"
-                ],
+                "selbst": ["abEtwa3Monaten"],
                 "ziel": []
               },
               "quelle": "animalDiversityWeb"

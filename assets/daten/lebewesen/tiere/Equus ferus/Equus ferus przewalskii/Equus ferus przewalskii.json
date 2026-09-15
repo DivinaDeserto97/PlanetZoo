@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Graslandschaft"
-    ],
+    "kontinente": ["asia"],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "endangered"
   },
   "daten": {

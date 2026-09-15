@@ -34,15 +34,9 @@ export function initMapLayout(signal) {
       }
     }
 
-    const verfuegbar = Math.max(
-      420,
-      Math.floor(unterkante - pageRect.top),
-    );
+    const verfuegbar = Math.max(420, Math.floor(unterkante - pageRect.top));
 
-    page.style.setProperty(
-      "--map-verfuegbare-hoehe",
-      `${verfuegbar}px`,
-    );
+    page.style.setProperty("--map-verfuegbare-hoehe", `${verfuegbar}px`);
   }
 
   update();

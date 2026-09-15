@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Aquarium","Ausstellung"
-    ],
-    "kontinente": [
-      "europe",
-      "asia",
-      "africa"
-    ],
-    "biome": [
-      "Seen und Flüsse"
-    ],
+    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "kontinente": ["europe", "asia", "africa"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -88,9 +80,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Salmo trutta"
-          ],
+          "giltFuer": ["Salmo trutta"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",

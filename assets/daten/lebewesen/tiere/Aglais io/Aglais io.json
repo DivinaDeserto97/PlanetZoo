@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Ausstellung"
-    ],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Graslandschaft"
-    ],
+    "gehegetyp": ["Ausstellung"],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Gemäßigt", "Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -84,9 +76,7 @@
         {
           "wert": null,
           "einheit": "individuum",
-          "giltFuer": [
-            "Aglais io"
-          ],
+          "giltFuer": ["Aglais io"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an und beschreibt die Art zugleich als in großer Zahl vorhanden, mit zuletzt leichtem Populationsanstieg.",

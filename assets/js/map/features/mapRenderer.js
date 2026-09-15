@@ -1,11 +1,6 @@
-import {
-  getLanguage,
-} from "../../features/language.js";
+import { getLanguage } from "../../features/language.js";
 
-import {
-  getTierName,
-} from "./tierListe.js";
-
+import { getTierName } from "./tierListe.js";
 
 /* ======================================== */
 /* REFERENZ-WELTKARTE                       */
@@ -14,14 +9,12 @@ import {
 const WORLD_REFERENCE_PATH =
   "./assets/daten/Weltkarte/Weltkartenreferenz_map.png";
 
-
 const WORLD_CROP = {
   x: 127,
   y: 15,
   width: 540,
   height: 267,
 };
-
 
 /* ======================================== */
 /* QUELLFARBEN                              */
@@ -33,13 +26,9 @@ const SOURCE_LAND = {
   b: 123,
 };
 
+const BASE_WATER = "#10242b";
 
-const BASE_WATER =
-  "#10242b";
-
-const BASE_LAND =
-  "#506b7b";
-
+const BASE_LAND = "#506b7b";
 
 /* ======================================== */
 /* ZOOM                                     */
@@ -49,74 +38,36 @@ const MIN_ZOOM = 1;
 const MAX_ZOOM = 8;
 const ZOOM_FACTOR = 1.18;
 
-
 /* ======================================== */
 /* RENDERER                                 */
 /* ======================================== */
 
-export async function initMapRenderer(
-  tiere,
-  signal,
-) {
-  const svg =
-    document.querySelector(
-      "[data-map-svg]",
-    );
+export async function initMapRenderer(tiere, signal) {
+  const svg = document.querySelector("[data-map-svg]");
 
-  const viewport =
-    document.querySelector(
-      "[data-map-viewport]",
-    );
+  const viewport = document.querySelector("[data-map-viewport]");
 
-  const worldTilesGroup =
-    document.querySelector(
-      "[data-map-world-tiles]",
-    );
+  const worldTilesGroup = document.querySelector("[data-map-world-tiles]");
 
-  const rangeTilesGroup =
-    document.querySelector(
-      "[data-map-range-tiles]",
-    );
+  const rangeTilesGroup = document.querySelector("[data-map-range-tiles]");
 
-  const hoverMarkersGroup =
-    document.querySelector(
-      "[data-map-hover-markers]",
-    );
+  const hoverMarkersGroup = document.querySelector("[data-map-hover-markers]");
 
-  const selectedMarkersGroup =
-    document.querySelector(
-      "[data-map-selected-markers]",
-    );
+  const selectedMarkersGroup = document.querySelector(
+    "[data-map-selected-markers]",
+  );
 
-  const status =
-    document.querySelector(
-      "[data-map-status]",
-    );
+  const status = document.querySelector("[data-map-status]");
 
-  const hoverInfo =
-    document.querySelector(
-      "[data-map-hover-info]",
-    );
+  const hoverInfo = document.querySelector("[data-map-hover-info]");
 
-  const selectedInfo =
-    document.querySelector(
-      "[data-map-selected-info]",
-    );
+  const selectedInfo = document.querySelector("[data-map-selected-info]");
 
-
-  if (
-    !svg ||
-    !viewport ||
-    !worldTilesGroup ||
-    !rangeTilesGroup
-  ) {
-    console.error(
-      "SVG-Kartenelemente wurden nicht gefunden.",
-    );
+  if (!svg || !viewport || !worldTilesGroup || !rangeTilesGroup) {
+    console.error("SVG-Kartenelemente wurden nicht gefunden.");
 
     return createEmptyRenderer();
   }
-
 
   /* ==================================== */
   /* WELTKARTE LADEN                     */
@@ -124,61 +75,37 @@ export async function initMapRenderer(
 
   let referenceImage;
 
-
   try {
-    referenceImage =
-      await loadImage(
-        WORLD_REFERENCE_PATH,
-      );
-  }
-
-  catch (error) {
+    referenceImage = await loadImage(WORLD_REFERENCE_PATH);
+  } catch (error) {
     console.error(
       `Referenz-Weltkarte konnte nicht geladen werden: ${WORLD_REFERENCE_PATH}`,
       error,
     );
 
-    setStatusText(
-      status,
-      "referenceError",
-    );
+    setStatusText(status, "referenceError");
 
     return createEmptyRenderer();
   }
 
+  const baseDataUrl = createCleanBaseMap(referenceImage);
 
-  const baseDataUrl =
-    createCleanBaseMap(
-      referenceImage,
-    );
+  createTiledImages(worldTilesGroup, baseDataUrl);
 
-
-  createTiledImages(
-    worldTilesGroup,
-    baseDataUrl,
+  const rangeTiles = createTiledImages(
+    rangeTilesGroup,
+    transparentMapDataUrl(),
   );
-
-
-  const rangeTiles =
-    createTiledImages(
-      rangeTilesGroup,
-      transparentMapDataUrl(),
-    );
-
 
   /* ==================================== */
   /* TIER-MASKEN                         */
   /* ==================================== */
 
-  const masks =
-    new Map();
+  const masks = new Map();
 
-  const colors =
-    new Map();
+  const colors = new Map();
 
-  let colorIndex =
-    0;
-
+  let colorIndex = 0;
 
   for (const tier of tiere) {
     /*
@@ -193,37 +120,17 @@ export async function initMapRenderer(
       continue;
     }
 
-
     try {
-      const image =
-        await loadImage(
-          tier.kartenPfad,
-        );
+      const image = await loadImage(tier.kartenPfad);
 
-      const mask =
-        createRangeMask(
-          image,
-        );
+      const mask = createRangeMask(image);
 
+      masks.set(tier.id, mask);
 
-      masks.set(
-        tier.id,
-        mask,
-      );
-
-
-      colors.set(
-        tier.id,
-        createMapColor(
-          colorIndex,
-        ),
-      );
-
+      colors.set(tier.id, createMapColor(colorIndex));
 
       colorIndex++;
-    }
-
-    catch (error) {
+    } catch (error) {
       console.error(
         `Tierkarte konnte nicht geladen werden: ${tier.kartenPfad}`,
         error,
@@ -231,46 +138,30 @@ export async function initMapRenderer(
     }
   }
 
+  let currentSelected = new Set();
 
-  let currentSelected =
-    new Set();
+  let hoverPoint = null;
 
-  let hoverPoint =
-    null;
-
-  let selectedPoint =
-    null;
-
+  let selectedPoint = null;
 
   /* ==================================== */
   /* ZOOM / PAN                          */
   /* ==================================== */
 
-  let zoom =
-    1;
+  let zoom = 1;
 
-  let panX =
-    0;
+  let panX = 0;
 
-  let panY =
-    0;
+  let panY = 0;
 
-  let dragging =
-    false;
+  let dragging = false;
 
-  let lastPointer =
-    null;
-
+  let lastPointer = null;
 
   function normalisierePan() {
-    const width =
-      WORLD_CROP.width *
-      zoom;
+    const width = WORLD_CROP.width * zoom;
 
-    const height =
-      WORLD_CROP.height *
-      zoom;
-
+    const height = WORLD_CROP.height * zoom;
 
     if (
       !Number.isFinite(width) ||
@@ -281,14 +172,7 @@ export async function initMapRenderer(
       return;
     }
 
-
-    panX =
-      modulo(
-        panX,
-        width,
-      ) -
-      width;
-
+    panX = modulo(panX, width) - width;
 
     /*
         Waagerecht wiederholt sich die Welt
@@ -298,14 +182,8 @@ export async function initMapRenderer(
         gespiegelt. Darum ist der vertikale
         Wiederholungszyklus 2 Kartenhöhen.
     */
-    panY =
-      modulo(
-        panY,
-        height * 2,
-      ) -
-      height * 2;
+    panY = modulo(panY, height * 2) - height * 2;
   }
-
 
   function applyTransform() {
     viewport.setAttribute(
@@ -313,25 +191,19 @@ export async function initMapRenderer(
       `translate(${panX} ${panY}) scale(${zoom})`,
     );
 
-
     updateMarkers();
   }
 
-
   function resetView() {
-    zoom =
-      1;
+    zoom = 1;
 
-    panX =
-      0;
+    panX = 0;
 
-    panY =
-      0;
+    panY = 0;
 
     normalisierePan();
     applyTransform();
   }
-
 
   /* ==================================== */
   /* MAUSRAD ZOOM                        */
@@ -342,78 +214,41 @@ export async function initMapRenderer(
     (event) => {
       event.preventDefault();
 
+      const mouse = clientToSvgPoint(svg, event.clientX, event.clientY);
 
-      const mouse =
-        clientToSvgPoint(
-          svg,
-          event.clientX,
-          event.clientY,
-        );
+      const oldZoom = zoom;
 
+      const nextZoom = clamp(
+        event.deltaY < 0 ? oldZoom * ZOOM_FACTOR : oldZoom / ZOOM_FACTOR,
 
-      const oldZoom =
-        zoom;
+        MIN_ZOOM,
+        MAX_ZOOM,
+      );
 
-
-      const nextZoom =
-        clamp(
-          event.deltaY < 0
-            ? oldZoom *
-              ZOOM_FACTOR
-            : oldZoom /
-              ZOOM_FACTOR,
-
-          MIN_ZOOM,
-          MAX_ZOOM,
-        );
-
-
-      if (
-        nextZoom ===
-        oldZoom
-      ) {
+      if (nextZoom === oldZoom) {
         return;
       }
 
+      const worldX = (mouse.x - panX) / oldZoom;
 
-      const worldX =
-        (mouse.x - panX) /
-        oldZoom;
+      const worldY = (mouse.y - panY) / oldZoom;
 
-      const worldY =
-        (mouse.y - panY) /
-        oldZoom;
+      zoom = nextZoom;
 
+      panX = mouse.x - worldX * zoom;
 
-      zoom =
-        nextZoom;
-
-
-      panX =
-        mouse.x -
-        worldX *
-        zoom;
-
-      panY =
-        mouse.y -
-        worldY *
-        zoom;
-
+      panY = mouse.y - worldY * zoom;
 
       normalisierePan();
       applyTransform();
 
-
-      updateHoverFromSvgPoint(
-        mouse,
-      );
+      updateHoverFromSvgPoint(mouse);
     },
     {
       passive: false,
       signal,
     },
   );
-
 
   /* ==================================== */
   /* MITTLERE MAUSTASTE = VERSCHIEBEN    */
@@ -426,19 +261,10 @@ export async function initMapRenderer(
       /* RECHTSKLICK = PUNKT SETZEN     */
       /* ============================== */
 
-      if (
-        event.button === 2
-      ) {
+      if (event.button === 2) {
         event.preventDefault();
 
-
-        const point =
-          clientToSvgPoint(
-            svg,
-            event.clientX,
-            event.clientY,
-          );
-
+        const point = clientToSvgPoint(svg, event.clientX, event.clientY);
 
         /*
             Es existiert absichtlich immer
@@ -447,93 +273,49 @@ export async function initMapRenderer(
             Jeder neue Rechtsklick ersetzt
             den vorherigen Punkt.
         */
-        selectedPoint =
-          svgPointToWorldPoint(
-            point,
-          );
-
+        selectedPoint = svgPointToWorldPoint(point);
 
         updateMarkers();
 
-
-        renderPointInfo(
-          selectedPoint,
-          selectedInfo,
-          "selected",
-        );
-
+        renderPointInfo(selectedPoint, selectedInfo, "selected");
 
         return;
       }
-
 
       /* ============================== */
       /* MITTLERE MAUSTASTE = PAN       */
       /* ============================== */
 
-      if (
-        event.button !== 1
-      ) {
+      if (event.button !== 1) {
         return;
       }
 
-
       event.preventDefault();
 
+      dragging = true;
 
-      dragging =
-        true;
+      lastPointer = clientToSvgPoint(svg, event.clientX, event.clientY);
 
-      lastPointer =
-        clientToSvgPoint(
-          svg,
-          event.clientX,
-          event.clientY,
-        );
+      svg.classList.add("is-dragging");
 
-
-      svg.classList.add(
-        "is-dragging",
-      );
-
-
-      svg.setPointerCapture(
-        event.pointerId,
-      );
+      svg.setPointerCapture(event.pointerId);
     },
     {
       signal,
     },
   );
 
-
   svg.addEventListener(
     "pointermove",
     (event) => {
-      const pointer =
-        clientToSvgPoint(
-          svg,
-          event.clientX,
-          event.clientY,
-        );
+      const pointer = clientToSvgPoint(svg, event.clientX, event.clientY);
 
+      if (dragging && lastPointer) {
+        panX += pointer.x - lastPointer.x;
 
-      if (
-        dragging &&
-        lastPointer
-      ) {
-        panX +=
-          pointer.x -
-          lastPointer.x;
+        panY += pointer.y - lastPointer.y;
 
-        panY +=
-          pointer.y -
-          lastPointer.y;
-
-
-        lastPointer =
-          pointer;
-
+        lastPointer = pointer;
 
         normalisierePan();
         applyTransform();
@@ -541,73 +323,41 @@ export async function initMapRenderer(
         return;
       }
 
-
-      updateHoverFromSvgPoint(
-        pointer,
-      );
+      updateHoverFromSvgPoint(pointer);
     },
     {
       signal,
     },
   );
 
-
-  function endDrag(
-    event,
-  ) {
+  function endDrag(event) {
     if (!dragging) {
       return;
     }
 
+    dragging = false;
 
-    dragging =
-      false;
+    lastPointer = null;
 
-    lastPointer =
-      null;
+    svg.classList.remove("is-dragging");
 
-
-    svg.classList.remove(
-      "is-dragging",
-    );
-
-
-    if (
-      svg.hasPointerCapture(
-        event.pointerId,
-      )
-    ) {
-      svg.releasePointerCapture(
-        event.pointerId,
-      );
+    if (svg.hasPointerCapture(event.pointerId)) {
+      svg.releasePointerCapture(event.pointerId);
     }
   }
 
+  svg.addEventListener("pointerup", endDrag, {
+    signal,
+  });
 
-  svg.addEventListener(
-    "pointerup",
-    endDrag,
-    {
-      signal,
-    },
-  );
-
-
-  svg.addEventListener(
-    "pointercancel",
-    endDrag,
-    {
-      signal,
-    },
-  );
-
+  svg.addEventListener("pointercancel", endDrag, {
+    signal,
+  });
 
   svg.addEventListener(
     "auxclick",
     (event) => {
-      if (
-        event.button === 1
-      ) {
+      if (event.button === 1) {
         event.preventDefault();
       }
     },
@@ -615,7 +365,6 @@ export async function initMapRenderer(
       signal,
     },
   );
-
 
   /* ==================================== */
   /* BROWSER-KONTEXTMENÜ UNTERDRÜCKEN     */
@@ -631,7 +380,6 @@ export async function initMapRenderer(
     },
   );
 
-
   svg.addEventListener(
     "pointerleave",
     () => {
@@ -639,152 +387,74 @@ export async function initMapRenderer(
         return;
       }
 
-
-      hoverPoint =
-        null;
+      hoverPoint = null;
 
       updateMarkers();
 
-
-      renderPointInfo(
-        null,
-        hoverInfo,
-        "hover",
-      );
+      renderPointInfo(null, hoverInfo, "hover");
     },
     {
       signal,
     },
   );
 
-
   document
-    .querySelector(
-      "[data-map-reset-view]",
-    )
-    ?.addEventListener(
-      "click",
-      resetView,
-      {
-        signal,
-      },
-    );
-
+    .querySelector("[data-map-reset-view]")
+    ?.addEventListener("click", resetView, {
+      signal,
+    });
 
   /* ==================================== */
   /* RENDERN                             */
   /* ==================================== */
 
-  function render(
-    selected,
-  ) {
-    currentSelected =
-      new Set(
-        selected,
-      );
+  function render(selected) {
+    currentSelected = new Set(selected);
 
-
-    const selectedTiere =
-      tiere.filter(
-        (tier) =>
-          currentSelected.has(
-            tier.id,
-          ) &&
-          masks.has(
-            tier.id,
-          ),
-      );
-
-
-    const overlayDataUrl =
-      createCombinedOverlay(
-        selectedTiere,
-        masks,
-        colors,
-      );
-
-
-    rangeTiles.forEach(
-      (image) => {
-        image.setAttribute(
-          "href",
-          overlayDataUrl,
-        );
-      },
+    const selectedTiere = tiere.filter(
+      (tier) => currentSelected.has(tier.id) && masks.has(tier.id),
     );
 
+    const overlayDataUrl = createCombinedOverlay(selectedTiere, masks, colors);
+
+    rangeTiles.forEach((image) => {
+      image.setAttribute("href", overlayDataUrl);
+    });
 
     setStatusText(
       status,
-      selectedTiere.length
-        ? "ready"
-        : "empty",
+      selectedTiere.length ? "ready" : "empty",
       selectedTiere.length,
     );
 
+    renderPointInfo(selectedPoint, selectedInfo, "selected");
 
-    renderPointInfo(
-      selectedPoint,
-      selectedInfo,
-      "selected",
-    );
-
-
-    renderPointInfo(
-      hoverPoint,
-      hoverInfo,
-      "hover",
-    );
+    renderPointInfo(hoverPoint, hoverInfo, "hover");
   }
-
 
   /* ==================================== */
   /* PUNKTE / HITTEST                    */
   /* ==================================== */
 
-  function updateHoverFromSvgPoint(
-    point,
-  ) {
+  function updateHoverFromSvgPoint(point) {
     if (dragging) {
       return;
     }
 
-
-    hoverPoint =
-      svgPointToWorldPoint(
-        point,
-      );
-
+    hoverPoint = svgPointToWorldPoint(point);
 
     updateMarkers();
 
-
-    renderPointInfo(
-      hoverPoint,
-      hoverInfo,
-      "hover",
-    );
+    renderPointInfo(hoverPoint, hoverInfo, "hover");
   }
 
+  function svgPointToWorldPoint(point) {
+    const rawX = (point.x - panX) / zoom;
 
-  function svgPointToWorldPoint(
-    point,
-  ) {
-    const rawX =
-      (point.x - panX) /
-      zoom;
-
-    const rawY =
-      (point.y - panY) /
-      zoom;
-
+    const rawY = (point.y - panY) / zoom;
 
     return {
-      x:
-        modulo(
-          rawX,
-          WORLD_CROP.width,
-        ),
+      x: modulo(rawX, WORLD_CROP.width),
 
       /*
           Senkrechte Wiederholung ist
@@ -797,301 +467,137 @@ export async function initMapRenderer(
           nicht direkt auf die andere
           Seite der Weltkarte.
       */
-      y:
-        mirrorModulo(
-          rawY,
-          WORLD_CROP.height,
-        ),
+      y: mirrorModulo(rawY, WORLD_CROP.height),
     };
   }
 
-
-  function getHitsAtPoint(
-    point,
-  ) {
+  function getHitsAtPoint(point) {
     if (!point) {
       return [];
     }
 
+    const x = clamp(Math.floor(point.x), 0, WORLD_CROP.width - 1);
 
-    const x =
-      clamp(
-        Math.floor(
-          point.x,
-        ),
-        0,
-        WORLD_CROP.width -
-          1,
-      );
+    const y = clamp(Math.floor(point.y), 0, WORLD_CROP.height - 1);
 
-    const y =
-      clamp(
-        Math.floor(
-          point.y,
-        ),
-        0,
-        WORLD_CROP.height -
-          1,
-      );
+    const index = y * WORLD_CROP.width + x;
 
+    return tiere.filter((tier) => {
+      if (!currentSelected.has(tier.id)) {
+        return false;
+      }
 
-    const index =
-      y *
-      WORLD_CROP.width +
-      x;
+      const mask = masks.get(tier.id);
 
-
-    return tiere.filter(
-      (tier) => {
-        if (
-          !currentSelected.has(
-            tier.id,
-          )
-        ) {
-          return false;
-        }
-
-
-        const mask =
-          masks.get(
-            tier.id,
-          );
-
-
-        return Boolean(
-          mask?.[index],
-        );
-      },
-    );
+      return Boolean(mask?.[index]);
+    });
   }
 
-
-  function renderPointInfo(
-    point,
-    container,
-    mode,
-  ) {
+  function renderPointInfo(point, container, mode) {
     if (!container) {
       return;
     }
 
-
     container.replaceChildren();
 
-
     if (!point) {
-      const placeholder =
-        document.createElement(
-          "span",
-        );
+      const placeholder = document.createElement("span");
 
-      placeholder.className =
-        "map-point-empty";
+      placeholder.className = "map-point-empty";
 
-      placeholder.textContent =
-        getPointPlaceholder(
-          mode,
-        );
+      placeholder.textContent = getPointPlaceholder(mode);
 
-
-      container.appendChild(
-        placeholder,
-      );
+      container.appendChild(placeholder);
 
       return;
     }
 
-
-    const hits =
-      getHitsAtPoint(
-        point,
-      );
-
+    const hits = getHitsAtPoint(point);
 
     if (!hits.length) {
-      const empty =
-        document.createElement(
-          "span",
-        );
+      const empty = document.createElement("span");
 
-      empty.className =
-        "map-point-empty";
+      empty.className = "map-point-empty";
 
-      empty.textContent =
-        getNoAnimalsText();
+      empty.textContent = getNoAnimalsText();
 
-
-      container.appendChild(
-        empty,
-      );
+      container.appendChild(empty);
 
       return;
     }
 
+    const list = document.createElement("div");
 
-    const list =
-      document.createElement(
-        "div",
-      );
+    list.className = "map-point-list";
 
-    list.className =
-      "map-point-list";
+    hits.forEach((tier) => {
+      const item = document.createElement("span");
 
+      item.className = "map-point-animal";
 
-    hits.forEach(
-      (tier) => {
-        const item =
-          document.createElement(
-            "span",
-          );
+      const color = document.createElement("span");
 
-        item.className =
-          "map-point-animal";
+      color.className = "map-point-animal__color";
 
+      color.style.backgroundColor = colors.get(tier.id);
 
-        const color =
-          document.createElement(
-            "span",
-          );
+      const name = document.createElement("span");
 
-        color.className =
-          "map-point-animal__color";
+      name.textContent = getTierName(tier);
 
-        color.style.backgroundColor =
-          colors.get(
-            tier.id,
-          );
+      item.append(color, name);
 
+      list.appendChild(item);
+    });
 
-        const name =
-          document.createElement(
-            "span",
-          );
-
-        name.textContent =
-          getTierName(
-            tier,
-          );
-
-
-        item.append(
-          color,
-          name,
-        );
-
-
-        list.appendChild(
-          item,
-        );
-      },
-    );
-
-
-    container.appendChild(
-      list,
-    );
+    container.appendChild(list);
   }
-
 
   function updateMarkers() {
-    renderMarkerCopies(
-      hoverMarkersGroup,
-      hoverPoint,
-      "hover",
-      zoom,
-    );
+    renderMarkerCopies(hoverMarkersGroup, hoverPoint, "hover", zoom);
 
-
-    renderMarkerCopies(
-      selectedMarkersGroup,
-      selectedPoint,
-      "selected",
-      zoom,
-    );
+    renderMarkerCopies(selectedMarkersGroup, selectedPoint, "selected", zoom);
   }
-
 
   function updateLanguage() {
     setStatusText(
       status,
-      currentSelected.size
-        ? "ready"
-        : "empty",
-      [...currentSelected].filter(
-        (tierId) =>
-          masks.has(
-            tierId,
-          ),
-      ).length,
+      currentSelected.size ? "ready" : "empty",
+      [...currentSelected].filter((tierId) => masks.has(tierId)).length,
     );
 
+    renderPointInfo(selectedPoint, selectedInfo, "selected");
 
-    renderPointInfo(
-      selectedPoint,
-      selectedInfo,
-      "selected",
-    );
-
-
-    renderPointInfo(
-      hoverPoint,
-      hoverInfo,
-      "hover",
-    );
+    renderPointInfo(hoverPoint, hoverInfo, "hover");
   }
-
 
   resetView();
 
-
-  setStatusText(
-    status,
-    masks.size
-      ? "empty"
-      : "none",
-  );
-
+  setStatusText(status, masks.size ? "empty" : "none");
 
   return {
     render,
     updateLanguage,
     resetView,
 
-    hasMap(
-      tierId,
-    ) {
-      return masks.has(
-        tierId,
-      );
+    hasMap(tierId) {
+      return masks.has(tierId);
     },
 
-    getMapColor(
-      tierId,
-    ) {
-      return (
-        colors.get(
-          tierId,
-        ) ??
-        null
-      );
+    getMapColor(tierId) {
+      return colors.get(tierId) ?? null;
     },
   };
 }
-
 
 /* ======================================== */
 /* ENDLOSE WELTKARTE                        */
 /* ======================================== */
 
-function createTiledImages(
-  group,
-  href,
-) {
+function createTiledImages(group, href) {
   group.replaceChildren();
 
-  const result =
-    [];
-
+  const result = [];
 
   /*
       Waagerecht:
@@ -1106,70 +612,28 @@ function createTiledImages(
       senkrechte Wiederholungszyklus durch
       die Spiegelung zwei Kartenhöhen hat.
   */
-  for (
-    let tileY = -2;
-    tileY <= 2;
-    tileY++
-  ) {
-    for (
-      let tileX = -1;
-      tileX <= 1;
-      tileX++
-    ) {
-      const image =
-        document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "image",
-        );
-
-
-      image.setAttribute(
-        "x",
-        "0",
+  for (let tileY = -2; tileY <= 2; tileY++) {
+    for (let tileX = -1; tileX <= 1; tileX++) {
+      const image = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "image",
       );
 
-      image.setAttribute(
-        "y",
-        "0",
-      );
+      image.setAttribute("x", "0");
 
-      image.setAttribute(
-        "width",
-        String(
-          WORLD_CROP.width,
-        ),
-      );
+      image.setAttribute("y", "0");
 
-      image.setAttribute(
-        "height",
-        String(
-          WORLD_CROP.height,
-        ),
-      );
+      image.setAttribute("width", String(WORLD_CROP.width));
 
-      image.setAttribute(
-        "preserveAspectRatio",
-        "none",
-      );
+      image.setAttribute("height", String(WORLD_CROP.height));
 
-      image.setAttribute(
-        "href",
-        href,
-      );
+      image.setAttribute("preserveAspectRatio", "none");
 
+      image.setAttribute("href", href);
 
-      const translateX =
-        tileX *
-        WORLD_CROP.width;
+      const translateX = tileX * WORLD_CROP.width;
 
-
-      const mirrored =
-        Math.abs(
-          tileY,
-        ) %
-          2 ===
-        1;
-
+      const mirrored = Math.abs(tileY) % 2 === 1;
 
       if (mirrored) {
         /*
@@ -1181,25 +645,14 @@ function createTiledImages(
             tileY = 1
             -> H ... 2H
         */
-        const translateY =
-          (
-            tileY +
-            1
-          ) *
-          WORLD_CROP.height;
-
+        const translateY = (tileY + 1) * WORLD_CROP.height;
 
         image.setAttribute(
           "transform",
           `translate(${translateX} ${translateY}) scale(1 -1)`,
         );
-      }
-
-      else {
-        const translateY =
-          tileY *
-          WORLD_CROP.height;
-
+      } else {
+        const translateY = tileY * WORLD_CROP.height;
 
         image.setAttribute(
           "transform",
@@ -1207,156 +660,70 @@ function createTiledImages(
         );
       }
 
+      group.appendChild(image);
 
-      group.appendChild(
-        image,
-      );
-
-
-      result.push(
-        image,
-      );
+      result.push(image);
     }
   }
 
-
   return result;
 }
-
 
 /* ======================================== */
 /* MARKER-KOPIEN                            */
 /* ======================================== */
 
-function renderMarkerCopies(
-  group,
-  point,
-  type,
-  zoom,
-) {
+function renderMarkerCopies(group, point, type, zoom) {
   if (!group) {
     return;
   }
 
-
   group.replaceChildren();
-
 
   if (!point) {
     return;
   }
 
+  for (let tileY = -2; tileY <= 2; tileY++) {
+    for (let tileX = -1; tileX <= 1; tileX++) {
+      const circle = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "circle",
+      );
 
-  for (
-    let tileY = -2;
-    tileY <= 2;
-    tileY++
-  ) {
-    for (
-      let tileX = -1;
-      tileX <= 1;
-      tileX++
-    ) {
-      const circle =
-        document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "circle",
-        );
-
-
-      const mirrored =
-        Math.abs(
-          tileY,
-        ) %
-          2 ===
-        1;
-
+      const mirrored = Math.abs(tileY) % 2 === 1;
 
       const markerY =
-        tileY *
-          WORLD_CROP.height +
-        (
-          mirrored
-            ? WORLD_CROP.height -
-              point.y
-            : point.y
-        );
+        tileY * WORLD_CROP.height +
+        (mirrored ? WORLD_CROP.height - point.y : point.y);
 
+      circle.setAttribute("cx", String(point.x + tileX * WORLD_CROP.width));
 
-      circle.setAttribute(
-        "cx",
-        String(
-          point.x +
-          tileX *
-          WORLD_CROP.width,
-        ),
-      );
+      circle.setAttribute("cy", String(markerY));
 
-      circle.setAttribute(
-        "cy",
-        String(
-          markerY,
-        ),
-      );
+      circle.setAttribute("r", String((type === "selected" ? 5 : 4) / zoom));
 
-      circle.setAttribute(
-        "r",
-        String(
-          (
-            type ===
-            "selected"
-              ? 5
-              : 4
-          ) /
-          zoom,
-        ),
-      );
+      circle.setAttribute("stroke-width", String(2 / zoom));
 
-      circle.setAttribute(
-        "stroke-width",
-        String(
-          2 /
-          zoom,
-        ),
-      );
-
-
-      group.appendChild(
-        circle,
-      );
+      group.appendChild(circle);
     }
   }
 }
-
 
 /* ======================================== */
 /* SAUBERE BASISKARTE                       */
 /* ======================================== */
 
-function createCleanBaseMap(
-  image,
-) {
-  const canvas =
-    document.createElement(
-      "canvas",
-    );
+function createCleanBaseMap(image) {
+  const canvas = document.createElement("canvas");
 
-  canvas.width =
-    WORLD_CROP.width;
+  canvas.width = WORLD_CROP.width;
 
-  canvas.height =
-    WORLD_CROP.height;
+  canvas.height = WORLD_CROP.height;
 
-
-  const context =
-    canvas.getContext(
-      "2d",
-      {
-        willReadFrequently:
-          true,
-      },
-    );
-
+  const context = canvas.getContext("2d", {
+    willReadFrequently: true,
+  });
 
   context.drawImage(
     image,
@@ -1372,146 +739,67 @@ function createCleanBaseMap(
     WORLD_CROP.height,
   );
 
+  const imageData = context.getImageData(
+    0,
+    0,
+    WORLD_CROP.width,
+    WORLD_CROP.height,
+  );
 
-  const imageData =
-    context.getImageData(
-      0,
-      0,
-      WORLD_CROP.width,
-      WORLD_CROP.height,
-    );
+  const land = hexToRgb(BASE_LAND);
 
+  const water = hexToRgb(BASE_WATER);
 
-  const land =
-    hexToRgb(
-      BASE_LAND,
-    );
-
-  const water =
-    hexToRgb(
-      BASE_WATER,
-    );
-
-
-  for (
-    let y = 0;
-    y < WORLD_CROP.height;
-    y++
-  ) {
-    for (
-      let x = 0;
-      x < WORLD_CROP.width;
-      x++
-    ) {
-      const index =
-        (
-          y *
-          WORLD_CROP.width +
-          x
-        ) *
-        4;
-
+  for (let y = 0; y < WORLD_CROP.height; y++) {
+    for (let x = 0; x < WORLD_CROP.width; x++) {
+      const index = (y * WORLD_CROP.width + x) * 4;
 
       const pixel = {
-        r:
-          imageData.data[
-            index
-          ],
+        r: imageData.data[index],
 
-        g:
-          imageData.data[
-            index + 1
-          ],
+        g: imageData.data[index + 1],
 
-        b:
-          imageData.data[
-            index + 2
-          ],
+        b: imageData.data[index + 2],
       };
-
 
       const edge =
         x < 2 ||
         y < 2 ||
-        x >=
-          WORLD_CROP.width -
-            2 ||
-        y >=
-          WORLD_CROP.height -
-            2;
+        x >= WORLD_CROP.width - 2 ||
+        y >= WORLD_CROP.height - 2;
 
+      const color = !edge && isLandPixel(pixel) ? land : water;
 
-      const color =
-        !edge &&
-        isLandPixel(
-          pixel,
-        )
-          ? land
-          : water;
+      imageData.data[index] = color.r;
 
+      imageData.data[index + 1] = color.g;
 
-      imageData.data[
-        index
-      ] =
-        color.r;
+      imageData.data[index + 2] = color.b;
 
-      imageData.data[
-        index + 1
-      ] =
-        color.g;
-
-      imageData.data[
-        index + 2
-      ] =
-        color.b;
-
-      imageData.data[
-        index + 3
-      ] =
-        255;
+      imageData.data[index + 3] = 255;
     }
   }
 
+  context.putImageData(imageData, 0, 0);
 
-  context.putImageData(
-    imageData,
-    0,
-    0,
-  );
-
-
-  return canvas.toDataURL(
-    "image/png",
-  );
+  return canvas.toDataURL("image/png");
 }
-
 
 /* ======================================== */
 /* TIERGEBIET AUS PNG                       */
 /* ======================================== */
 
-function createRangeMask(
-  image,
-) {
+function createRangeMask(image) {
   /*
       Normalfall:
       Die pinke Verbreitungsfläche liegt
       direkt auf der oberen Weltkarte.
   */
-  const directMask =
-    createDirectWorldRangeMask(
-      image,
-    );
+  const directMask = createDirectWorldRangeMask(image);
 
-
-  if (
-    countMaskPixels(
-      directMask,
-    ) > 0
-  ) {
+  if (countMaskPixels(directMask) > 0) {
     return directMask;
   }
-
 
   /*
       Sonderfall der Zoopedia:
@@ -1533,49 +821,25 @@ function createRangeMask(
       Tier manuell Koordinaten gepflegt
       werden müssen.
   */
-  const insetMask =
-    createInsetRangeMask(
-      image,
-    );
+  const insetMask = createInsetRangeMask(image);
 
-
-  if (
-    countMaskPixels(
-      insetMask,
-    ) > 0
-  ) {
+  if (countMaskPixels(insetMask) > 0) {
     return insetMask;
   }
-
 
   return directMask;
 }
 
+function createDirectWorldRangeMask(image) {
+  const canvas = document.createElement("canvas");
 
-function createDirectWorldRangeMask(
-  image,
-) {
-  const canvas =
-    document.createElement(
-      "canvas",
-    );
+  canvas.width = WORLD_CROP.width;
 
-  canvas.width =
-    WORLD_CROP.width;
+  canvas.height = WORLD_CROP.height;
 
-  canvas.height =
-    WORLD_CROP.height;
-
-
-  const context =
-    canvas.getContext(
-      "2d",
-      {
-        willReadFrequently:
-          true,
-      },
-    );
-
+  const context = canvas.getContext("2d", {
+    willReadFrequently: true,
+  });
 
   context.drawImage(
     image,
@@ -1591,203 +855,91 @@ function createDirectWorldRangeMask(
     WORLD_CROP.height,
   );
 
+  const data = context.getImageData(
+    0,
+    0,
+    WORLD_CROP.width,
+    WORLD_CROP.height,
+  ).data;
 
-  const data =
-    context.getImageData(
-      0,
-      0,
-      WORLD_CROP.width,
-      WORLD_CROP.height,
-    ).data;
+  const mask = new Uint8Array(WORLD_CROP.width * WORLD_CROP.height);
 
+  for (let pixelIndex = 0, i = 0; i < data.length; i += 4, pixelIndex++) {
+    mask[pixelIndex] = isRangePixel({
+      r: data[i],
 
-  const mask =
-    new Uint8Array(
-      WORLD_CROP.width *
-      WORLD_CROP.height,
-    );
+      g: data[i + 1],
 
-
-  for (
-    let pixelIndex = 0,
-      i = 0;
-    i < data.length;
-    i += 4,
-      pixelIndex++
-  ) {
-    mask[
-      pixelIndex
-    ] =
-      isRangePixel({
-        r:
-          data[i],
-
-        g:
-          data[
-            i + 1
-          ],
-
-        b:
-          data[
-            i + 2
-          ],
-      })
-        ? 1
-        : 0;
+      b: data[i + 2],
+    })
+      ? 1
+      : 0;
   }
-
 
   return mask;
 }
-
 
 /* ======================================== */
 /* ZOOPEDIA-DETAILKARTE ZURÜCKPROJIZIEREN  */
 /* ======================================== */
 
-function createInsetRangeMask(
-  image,
-) {
-  const width =
-    image.naturalWidth ||
-    image.width;
+function createInsetRangeMask(image) {
+  const width = image.naturalWidth || image.width;
 
-  const height =
-    image.naturalHeight ||
-    image.height;
+  const height = image.naturalHeight || image.height;
 
-
-  if (
-    !width ||
-    !height
-  ) {
+  if (!width || !height) {
     return createEmptyRangeMask();
   }
 
+  const canvas = document.createElement("canvas");
 
-  const canvas =
-    document.createElement(
-      "canvas",
-    );
+  canvas.width = width;
 
-  canvas.width =
-    width;
+  canvas.height = height;
 
-  canvas.height =
-    height;
+  const context = canvas.getContext("2d", {
+    willReadFrequently: true,
+  });
 
+  context.drawImage(image, 0, 0, width, height);
 
-  const context =
-    canvas.getContext(
-      "2d",
-      {
-        willReadFrequently:
-          true,
-      },
-    );
+  const imageData = context.getImageData(0, 0, width, height);
 
+  const data = imageData.data;
 
-  context.drawImage(
-    image,
-    0,
-    0,
-    width,
-    height,
-  );
-
-
-  const imageData =
-    context.getImageData(
-      0,
-      0,
-      width,
-      height,
-    );
-
-  const data =
-    imageData.data;
-
-
-  const pinkPixels =
-    findPinkPixels(
-      data,
-      width,
-      height,
-    );
-
+  const pinkPixels = findPinkPixels(data, width, height);
 
   if (!pinkPixels.length) {
     return createEmptyRangeMask();
   }
-
 
   /*
       Nur pinke Pixel außerhalb der oberen
       Weltkarte sind für den Inset-Fallback
       interessant.
   */
-  const insetPinkPixels =
-    pinkPixels.filter(
-      ({
-        x,
-        y,
-      }) =>
-        !pointInsideRect(
-          x,
-          y,
-          WORLD_CROP,
-        ),
-    );
-
+  const insetPinkPixels = pinkPixels.filter(
+    ({ x, y }) => !pointInsideRect(x, y, WORLD_CROP),
+  );
 
   if (!insetPinkPixels.length) {
     return createEmptyRangeMask();
   }
 
+  const pinkCenter = averagePoint(insetPinkPixels);
 
-  const pinkCenter =
-    averagePoint(
-      insetPinkPixels,
-    );
+  const detailRect = findWhiteFrameAroundPoint(data, width, height, pinkCenter);
 
+  const locatorRect = findWorldLocatorFrame(data, width, height);
 
-  const detailRect =
-    findWhiteFrameAroundPoint(
-      data,
-      width,
-      height,
-      pinkCenter,
-    );
-
-
-  const locatorRect =
-    findWorldLocatorFrame(
-      data,
-      width,
-      height,
-    );
-
-
-  if (
-    !detailRect ||
-    !locatorRect
-  ) {
+  if (!detailRect || !locatorRect) {
     return createEmptyRangeMask();
   }
 
+  const detailInner = insetRect(detailRect, 2);
 
-  const detailInner =
-    insetRect(
-      detailRect,
-      2,
-    );
-
-  const locatorInner =
-    insetRect(
-      locatorRect,
-      2,
-    );
-
+  const locatorInner = insetRect(locatorRect, 2);
 
   if (
     detailInner.width <= 0 ||
@@ -1798,94 +950,37 @@ function createInsetRangeMask(
     return createEmptyRangeMask();
   }
 
+  const mask = createEmptyRangeMask();
 
-  const mask =
-    createEmptyRangeMask();
+  insetPinkPixels.forEach(({ x, y }) => {
+    if (!pointInsideRect(x, y, detailInner)) {
+      return;
+    }
 
+    const u = clamp(
+      (x - detailInner.x) / Math.max(1, detailInner.width - 1),
+      0,
+      1,
+    );
 
-  insetPinkPixels.forEach(
-    ({
-      x,
-      y,
-    }) => {
-      if (
-        !pointInsideRect(
-          x,
-          y,
-          detailInner,
-        )
-      ) {
-        return;
-      }
+    const v = clamp(
+      (y - detailInner.y) / Math.max(1, detailInner.height - 1),
+      0,
+      1,
+    );
 
+    const worldImageX =
+      locatorInner.x + u * Math.max(0, locatorInner.width - 1);
 
-      const u =
-        clamp(
-          (
-            x -
-            detailInner.x
-          ) /
-          Math.max(
-            1,
-            detailInner.width - 1,
-          ),
-          0,
-          1,
-        );
+    const worldImageY =
+      locatorInner.y + v * Math.max(0, locatorInner.height - 1);
 
-      const v =
-        clamp(
-          (
-            y -
-            detailInner.y
-          ) /
-          Math.max(
-            1,
-            detailInner.height - 1,
-          ),
-          0,
-          1,
-        );
+    const mapX = Math.round(worldImageX - WORLD_CROP.x);
 
+    const mapY = Math.round(worldImageY - WORLD_CROP.y);
 
-      const worldImageX =
-        locatorInner.x +
-        u *
-        Math.max(
-          0,
-          locatorInner.width - 1,
-        );
-
-      const worldImageY =
-        locatorInner.y +
-        v *
-        Math.max(
-          0,
-          locatorInner.height - 1,
-        );
-
-
-      const mapX =
-        Math.round(
-          worldImageX -
-          WORLD_CROP.x,
-        );
-
-      const mapY =
-        Math.round(
-          worldImageY -
-          WORLD_CROP.y,
-        );
-
-
-      setMaskPixel(
-        mask,
-        mapX,
-        mapY,
-      );
-    },
-  );
-
+    setMaskPixel(mask, mapX, mapY);
+  });
 
   /*
       Ein einzelner Punkt wäre bei Zoom 1
@@ -1898,52 +993,21 @@ function createInsetRangeMask(
       anklickbare Darstellung des Zoopedia-
       Punktes auf der kleinen Weltkarte.
   */
-  const activePixels =
-    countMaskPixels(
-      mask,
-    );
+  const activePixels = countMaskPixels(mask);
 
-
-  if (
-    activePixels > 0 &&
-    activePixels < 12
-  ) {
-    return dilateRangeMask(
-      mask,
-      2,
-    );
+  if (activePixels > 0 && activePixels < 12) {
+    return dilateRangeMask(mask, 2);
   }
-
 
   return mask;
 }
 
+function findPinkPixels(data, width, height) {
+  const result = [];
 
-function findPinkPixels(
-  data,
-  width,
-  height,
-) {
-  const result =
-    [];
-
-
-  for (
-    let y = 0;
-    y < height;
-    y++
-  ) {
-    for (
-      let x = 0;
-      x < width;
-      x++
-    ) {
-      const i =
-        (
-          y * width +
-          x
-        ) * 4;
-
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4;
 
       if (
         isRangePixel({
@@ -1960,205 +1024,70 @@ function findPinkPixels(
     }
   }
 
-
   return result;
 }
 
+function findWhiteFrameAroundPoint(data, width, height, point) {
+  const centerX = clamp(Math.round(point.x), 0, width - 1);
 
-function findWhiteFrameAroundPoint(
-  data,
-  width,
-  height,
-  point,
-) {
-  const centerX =
-    clamp(
-      Math.round(
-        point.x,
-      ),
-      0,
-      width - 1,
-    );
+  const centerY = clamp(Math.round(point.y), 0, height - 1);
 
-  const centerY =
-    clamp(
-      Math.round(
-        point.y,
-      ),
-      0,
-      height - 1,
-    );
+  const left = scanForWhitePixel(data, width, height, centerX, centerY, -1, 0);
 
+  const right = scanForWhitePixel(data, width, height, centerX, centerY, 1, 0);
 
-  const left =
-    scanForWhitePixel(
-      data,
-      width,
-      height,
-      centerX,
-      centerY,
-      -1,
-      0,
-    );
+  const top = scanForWhitePixel(data, width, height, centerX, centerY, 0, -1);
 
-  const right =
-    scanForWhitePixel(
-      data,
-      width,
-      height,
-      centerX,
-      centerY,
-      1,
-      0,
-    );
+  const bottom = scanForWhitePixel(data, width, height, centerX, centerY, 0, 1);
 
-  const top =
-    scanForWhitePixel(
-      data,
-      width,
-      height,
-      centerX,
-      centerY,
-      0,
-      -1,
-    );
-
-  const bottom =
-    scanForWhitePixel(
-      data,
-      width,
-      height,
-      centerX,
-      centerY,
-      0,
-      1,
-    );
-
-
-  if (
-    !left ||
-    !right ||
-    !top ||
-    !bottom
-  ) {
+  if (!left || !right || !top || !bottom) {
     return null;
   }
-
 
   const rect = {
     x: left.x,
     y: top.y,
-    width:
-      right.x -
-      left.x + 1,
-    height:
-      bottom.y -
-      top.y + 1,
+    width: right.x - left.x + 1,
+    height: bottom.y - top.y + 1,
   };
-
 
   /*
       Ein echter Detailausschnitt muss
       deutlich größer als der Locator auf
       der Weltkarte sein.
   */
-  if (
-    rect.width < 80 ||
-    rect.height < 80
-  ) {
+  if (rect.width < 80 || rect.height < 80) {
     return null;
   }
-
 
   return rect;
 }
 
+function findWorldLocatorFrame(data, width, height) {
+  const minY = clamp(WORLD_CROP.y, 0, height - 1);
 
-function findWorldLocatorFrame(
-  data,
-  width,
-  height,
-) {
-  const minY =
-    clamp(
-      WORLD_CROP.y,
-      0,
-      height - 1,
-    );
+  const maxY = clamp(WORLD_CROP.y + WORLD_CROP.height - 1, 0, height - 1);
 
-  const maxY =
-    clamp(
-      WORLD_CROP.y +
-      WORLD_CROP.height -
-      1,
-      0,
-      height - 1,
-    );
+  const minX = clamp(WORLD_CROP.x, 0, width - 1);
 
-  const minX =
-    clamp(
-      WORLD_CROP.x,
-      0,
-      width - 1,
-    );
+  const maxX = clamp(WORLD_CROP.x + WORLD_CROP.width - 1, 0, width - 1);
 
-  const maxX =
-    clamp(
-      WORLD_CROP.x +
-      WORLD_CROP.width -
-      1,
-      0,
-      width - 1,
-    );
+  const horizontalRuns = [];
 
+  for (let y = minY; y <= maxY; y++) {
+    let runStart = null;
 
-  const horizontalRuns =
-    [];
+    for (let x = minX; x <= maxX + 1; x++) {
+      const white = x <= maxX && isWhitePixelAt(data, width, x, y);
 
-
-  for (
-    let y = minY;
-    y <= maxY;
-    y++
-  ) {
-    let runStart =
-      null;
-
-
-    for (
-      let x = minX;
-      x <= maxX + 1;
-      x++
-    ) {
-      const white =
-        x <= maxX &&
-        isWhitePixelAt(
-          data,
-          width,
-          x,
-          y,
-        );
-
-
-      if (
-        white &&
-        runStart === null
-      ) {
+      if (white && runStart === null) {
         runStart = x;
       }
 
+      if (!white && runStart !== null) {
+        const runEnd = x - 1;
 
-      if (
-        !white &&
-        runStart !== null
-      ) {
-        const runEnd =
-          x - 1;
-
-        const runWidth =
-          runEnd -
-          runStart + 1;
-
+        const runWidth = runEnd - runStart + 1;
 
         /*
             Der kleine Zoopedia-Locator ist
@@ -2166,10 +1095,7 @@ function findWorldLocatorFrame(
             Lange Linien gehören eher zum
             Detailausschnitt/Verbinder.
         */
-        if (
-          runWidth >= 8 &&
-          runWidth <= 120
-        ) {
+        if (runWidth >= 8 && runWidth <= 120) {
           horizontalRuns.push({
             y,
             x1: runStart,
@@ -2178,144 +1104,58 @@ function findWorldLocatorFrame(
           });
         }
 
-
         runStart = null;
       }
     }
   }
 
+  let best = null;
 
-  let best =
-    null;
+  for (let i = 0; i < horizontalRuns.length; i++) {
+    const top = horizontalRuns[i];
 
+    for (let j = i + 1; j < horizontalRuns.length; j++) {
+      const bottom = horizontalRuns[j];
 
-  for (
-    let i = 0;
-    i < horizontalRuns.length;
-    i++
-  ) {
-    const top =
-      horizontalRuns[i];
+      const frameHeight = bottom.y - top.y;
 
-
-    for (
-      let j = i + 1;
-      j < horizontalRuns.length;
-      j++
-    ) {
-      const bottom =
-        horizontalRuns[j];
-
-      const frameHeight =
-        bottom.y -
-        top.y;
-
-
-      if (
-        frameHeight < 6 ||
-        frameHeight > 100
-      ) {
+      if (frameHeight < 6 || frameHeight > 100) {
         continue;
       }
 
+      const overlapLeft = Math.max(top.x1, bottom.x1);
 
-      const overlapLeft =
-        Math.max(
-          top.x1,
-          bottom.x1,
-        );
+      const overlapRight = Math.min(top.x2, bottom.x2);
 
-      const overlapRight =
-        Math.min(
-          top.x2,
-          bottom.x2,
-        );
+      const overlapWidth = overlapRight - overlapLeft + 1;
 
-      const overlapWidth =
-        overlapRight -
-        overlapLeft + 1;
-
-
-      if (
-        overlapWidth < 6
-      ) {
+      if (overlapWidth < 6) {
         continue;
       }
 
+      const leftX = Math.round((top.x1 + bottom.x1) / 2);
 
-      const leftX =
-        Math.round(
-          (
-            top.x1 +
-            bottom.x1
-          ) /
-          2,
-        );
-
-      const rightX =
-        Math.round(
-          (
-            top.x2 +
-            bottom.x2
-          ) /
-          2,
-        );
-
+      const rightX = Math.round((top.x2 + bottom.x2) / 2);
 
       const verticalCoverage =
-        countWhiteOnVerticalLine(
-          data,
-          width,
-          height,
-          leftX,
-          top.y,
-          bottom.y,
-        ) +
-        countWhiteOnVerticalLine(
-          data,
-          width,
-          height,
-          rightX,
-          top.y,
-          bottom.y,
-        );
+        countWhiteOnVerticalLine(data, width, height, leftX, top.y, bottom.y) +
+        countWhiteOnVerticalLine(data, width, height, rightX, top.y, bottom.y);
 
-      const expectedCoverage =
-        Math.max(
-          1,
-          frameHeight * 2,
-        );
+      const expectedCoverage = Math.max(1, frameHeight * 2);
 
-      const score =
-        verticalCoverage /
-        expectedCoverage;
+      const score = verticalCoverage / expectedCoverage;
 
-
-      if (
-        score < 0.45
-      ) {
+      if (score < 0.45) {
         continue;
       }
 
-
       const candidate = {
-        x:
-          Math.min(
-            leftX,
-            rightX,
-          ),
-        y:
-          top.y,
-        width:
-          Math.abs(
-            rightX -
-            leftX,
-          ) + 1,
-        height:
-          frameHeight + 1,
+        x: Math.min(leftX, rightX),
+        y: top.y,
+        width: Math.abs(rightX - leftX) + 1,
+        height: frameHeight + 1,
         score,
       };
-
 
       /*
           Bei mehreren Kandidaten gewinnt
@@ -2326,30 +1166,18 @@ function findWorldLocatorFrame(
       */
       if (
         !best ||
-        candidate.score >
-          best.score + 0.05 ||
-        (
-          Math.abs(
-            candidate.score -
-            best.score,
-          ) <= 0.05 &&
-          candidate.width *
-            candidate.height <
-          best.width *
-            best.height
-        )
+        candidate.score > best.score + 0.05 ||
+        (Math.abs(candidate.score - best.score) <= 0.05 &&
+          candidate.width * candidate.height < best.width * best.height)
       ) {
-        best =
-          candidate;
+        best = candidate;
       }
     }
   }
 
-
   if (!best) {
     return null;
   }
-
 
   return {
     x: best.x,
@@ -2359,103 +1187,46 @@ function findWorldLocatorFrame(
   };
 }
 
+function scanForWhitePixel(data, width, height, startX, startY, dx, dy) {
+  let x = startX;
 
-function scanForWhitePixel(
-  data,
-  width,
-  height,
-  startX,
-  startY,
-  dx,
-  dy,
-) {
-  let x =
-    startX;
+  let y = startY;
 
-  let y =
-    startY;
-
-
-  while (
-    x >= 0 &&
-    y >= 0 &&
-    x < width &&
-    y < height
-  ) {
-    if (
-      isWhitePixelAt(
-        data,
-        width,
-        x,
-        y,
-      )
-    ) {
+  while (x >= 0 && y >= 0 && x < width && y < height) {
+    if (isWhitePixelAt(data, width, x, y)) {
       return {
         x,
         y,
       };
     }
 
-
     x += dx;
     y += dy;
   }
 
-
   return null;
 }
 
+function countWhiteOnVerticalLine(data, width, height, x, startY, endY) {
+  let count = 0;
 
-function countWhiteOnVerticalLine(
-  data,
-  width,
-  height,
-  x,
-  startY,
-  endY,
-) {
-  let count =
-    0;
-
-
-  for (
-    let y = startY;
-    y <= endY;
-    y++
-  ) {
+  for (let y = startY; y <= endY; y++) {
     if (
       x >= 0 &&
       x < width &&
       y >= 0 &&
       y < height &&
-      isWhitePixelAt(
-        data,
-        width,
-        x,
-        y,
-      )
+      isWhitePixelAt(data, width, x, y)
     ) {
       count++;
     }
   }
 
-
   return count;
 }
 
-
-function isWhitePixelAt(
-  data,
-  width,
-  x,
-  y,
-) {
-  const i =
-    (
-      y * width +
-      x
-    ) * 4;
-
+function isWhitePixelAt(data, width, x, y) {
+  const i = (y * width + x) * 4;
 
   return isWhitePixel({
     r: data[i],
@@ -2464,601 +1235,257 @@ function isWhitePixelAt(
   });
 }
 
-
-function isWhitePixel(
-  pixel,
-) {
+function isWhitePixel(pixel) {
   return (
     pixel.r >= 225 &&
     pixel.g >= 225 &&
     pixel.b >= 225 &&
-    Math.abs(
-      pixel.r -
-      pixel.g,
-    ) <= 25 &&
-    Math.abs(
-      pixel.r -
-      pixel.b,
-    ) <= 25
+    Math.abs(pixel.r - pixel.g) <= 25 &&
+    Math.abs(pixel.r - pixel.b) <= 25
   );
 }
 
-
-function pointInsideRect(
-  x,
-  y,
-  rect,
-) {
+function pointInsideRect(x, y, rect) {
   return (
     x >= rect.x &&
     y >= rect.y &&
-    x <
-      rect.x +
-      rect.width &&
-    y <
-      rect.y +
-      rect.height
+    x < rect.x + rect.width &&
+    y < rect.y + rect.height
   );
 }
 
-
-function insetRect(
-  rect,
-  amount,
-) {
+function insetRect(rect, amount) {
   return {
-    x:
-      rect.x +
-      amount,
-    y:
-      rect.y +
-      amount,
-    width:
-      Math.max(
-        0,
-        rect.width -
-        amount * 2,
-      ),
-    height:
-      Math.max(
-        0,
-        rect.height -
-        amount * 2,
-      ),
+    x: rect.x + amount,
+    y: rect.y + amount,
+    width: Math.max(0, rect.width - amount * 2),
+    height: Math.max(0, rect.height - amount * 2),
   };
 }
 
-
-function averagePoint(
-  points,
-) {
+function averagePoint(points) {
   let x = 0;
   let y = 0;
 
-
-  points.forEach(
-    (point) => {
-      x += point.x;
-      y += point.y;
-    },
-  );
-
+  points.forEach((point) => {
+    x += point.x;
+    y += point.y;
+  });
 
   return {
-    x:
-      x /
-      points.length,
-    y:
-      y /
-      points.length,
+    x: x / points.length,
+    y: y / points.length,
   };
 }
 
-
 function createEmptyRangeMask() {
-  return new Uint8Array(
-    WORLD_CROP.width *
-    WORLD_CROP.height,
-  );
+  return new Uint8Array(WORLD_CROP.width * WORLD_CROP.height);
 }
 
-
-function setMaskPixel(
-  mask,
-  x,
-  y,
-) {
-  if (
-    x < 0 ||
-    y < 0 ||
-    x >= WORLD_CROP.width ||
-    y >= WORLD_CROP.height
-  ) {
+function setMaskPixel(mask, x, y) {
+  if (x < 0 || y < 0 || x >= WORLD_CROP.width || y >= WORLD_CROP.height) {
     return;
   }
 
-
-  mask[
-    y *
-    WORLD_CROP.width +
-    x
-  ] = 1;
+  mask[y * WORLD_CROP.width + x] = 1;
 }
 
+function countMaskPixels(mask) {
+  let count = 0;
 
-function countMaskPixels(
-  mask,
-) {
-  let count =
-    0;
-
-
-  for (
-    let i = 0;
-    i < mask.length;
-    i++
-  ) {
-    count +=
-      mask[i]
-        ? 1
-        : 0;
+  for (let i = 0; i < mask.length; i++) {
+    count += mask[i] ? 1 : 0;
   }
-
 
   return count;
 }
 
+function dilateRangeMask(mask, radius) {
+  const result = mask.slice();
 
-function dilateRangeMask(
-  mask,
-  radius,
-) {
-  const result =
-    mask.slice();
-
-
-  for (
-    let y = 0;
-    y < WORLD_CROP.height;
-    y++
-  ) {
-    for (
-      let x = 0;
-      x < WORLD_CROP.width;
-      x++
-    ) {
-      const index =
-        y *
-        WORLD_CROP.width +
-        x;
-
+  for (let y = 0; y < WORLD_CROP.height; y++) {
+    for (let x = 0; x < WORLD_CROP.width; x++) {
+      const index = y * WORLD_CROP.width + x;
 
       if (!mask[index]) {
         continue;
       }
 
-
-      for (
-        let dy = -radius;
-        dy <= radius;
-        dy++
-      ) {
-        for (
-          let dx = -radius;
-          dx <= radius;
-          dx++
-        ) {
-          if (
-            dx * dx +
-            dy * dy >
-            radius * radius
-          ) {
+      for (let dy = -radius; dy <= radius; dy++) {
+        for (let dx = -radius; dx <= radius; dx++) {
+          if (dx * dx + dy * dy > radius * radius) {
             continue;
           }
 
-
-          setMaskPixel(
-            result,
-            x + dx,
-            y + dy,
-          );
+          setMaskPixel(result, x + dx, y + dy);
         }
       }
     }
   }
 
-
   return result;
 }
-
 
 /* ======================================== */
 /* GEMEINSAMER TIER-LAYER                   */
 /* ======================================== */
 
-function createCombinedOverlay(
-  selectedTiere,
-  masks,
-  colors,
-) {
-  const canvas =
-    document.createElement(
-      "canvas",
-    );
+function createCombinedOverlay(selectedTiere, masks, colors) {
+  const canvas = document.createElement("canvas");
 
-  canvas.width =
-    WORLD_CROP.width;
+  canvas.width = WORLD_CROP.width;
 
-  canvas.height =
-    WORLD_CROP.height;
+  canvas.height = WORLD_CROP.height;
 
+  const context = canvas.getContext("2d");
 
-  const context =
-    canvas.getContext(
-      "2d",
-    );
+  const output = context.createImageData(WORLD_CROP.width, WORLD_CROP.height);
 
+  const rgbColors = selectedTiere.map((tier) => hexToRgb(colors.get(tier.id)));
 
-  const output =
-    context.createImageData(
-      WORLD_CROP.width,
-      WORLD_CROP.height,
-    );
+  for (let y = 0; y < WORLD_CROP.height; y++) {
+    for (let x = 0; x < WORLD_CROP.width; x++) {
+      const mapIndex = y * WORLD_CROP.width + x;
 
+      const hitIndexes = [];
 
-  const rgbColors =
-    selectedTiere.map(
-      (tier) =>
-        hexToRgb(
-          colors.get(
-            tier.id,
-          ),
-        ),
-    );
+      for (let tierIndex = 0; tierIndex < selectedTiere.length; tierIndex++) {
+        const mask = masks.get(selectedTiere[tierIndex].id);
 
-
-  for (
-    let y = 0;
-    y < WORLD_CROP.height;
-    y++
-  ) {
-    for (
-      let x = 0;
-      x < WORLD_CROP.width;
-      x++
-    ) {
-      const mapIndex =
-        y *
-        WORLD_CROP.width +
-        x;
-
-
-      const hitIndexes =
-        [];
-
-
-      for (
-        let tierIndex = 0;
-        tierIndex <
-        selectedTiere.length;
-        tierIndex++
-      ) {
-        const mask =
-          masks.get(
-            selectedTiere[
-              tierIndex
-            ].id,
-          );
-
-
-        if (
-          mask?.[
-            mapIndex
-          ]
-        ) {
-          hitIndexes.push(
-            tierIndex,
-          );
+        if (mask?.[mapIndex]) {
+          hitIndexes.push(tierIndex);
         }
       }
 
-
-      if (
-        !hitIndexes.length
-      ) {
+      if (!hitIndexes.length) {
         continue;
       }
 
-
       let color;
 
-
-      if (
-        hitIndexes.length ===
-        1
-      ) {
-        color =
-          rgbColors[
-            hitIndexes[0]
-          ];
-      }
-
-      else {
+      if (hitIndexes.length === 1) {
+        color = rgbColors[hitIndexes[0]];
+      } else {
         /*
             Beliebig viele Tiere:
             diagonale Streifen wechseln
             durch alle beteiligten Farben.
         */
 
-        const stripeWidth =
-          4;
+        const stripeWidth = 4;
 
-        const stripeIndex =
-          Math.floor(
-            modulo(
-              x + y,
-              stripeWidth *
-                hitIndexes.length,
-            ) /
-              stripeWidth,
-          );
+        const stripeIndex = Math.floor(
+          modulo(x + y, stripeWidth * hitIndexes.length) / stripeWidth,
+        );
 
-
-        color =
-          rgbColors[
-            hitIndexes[
-              stripeIndex
-            ]
-          ];
+        color = rgbColors[hitIndexes[stripeIndex]];
       }
 
+      const outputIndex = mapIndex * 4;
 
-      const outputIndex =
-        mapIndex *
-        4;
+      output.data[outputIndex] = color.r;
 
+      output.data[outputIndex + 1] = color.g;
 
-      output.data[
-        outputIndex
-      ] =
-        color.r;
+      output.data[outputIndex + 2] = color.b;
 
-      output.data[
-        outputIndex + 1
-      ] =
-        color.g;
-
-      output.data[
-        outputIndex + 2
-      ] =
-        color.b;
-
-      output.data[
-        outputIndex + 3
-      ] =
-        255;
+      output.data[outputIndex + 3] = 255;
     }
   }
 
+  context.putImageData(output, 0, 0);
 
-  context.putImageData(
-    output,
-    0,
-    0,
-  );
-
-
-  return canvas.toDataURL(
-    "image/png",
-  );
+  return canvas.toDataURL("image/png");
 }
-
 
 /* ======================================== */
 /* PINK ERKENNEN                            */
 /* ======================================== */
 
-function isRangePixel(
-  pixel,
-) {
+function isRangePixel(pixel) {
   return (
-    pixel.r >
-      215 &&
-    pixel.g <
-      150 &&
-    pixel.b <
-      190 &&
-    pixel.r -
-      pixel.g >
-      70
+    pixel.r > 215 && pixel.g < 150 && pixel.b < 190 && pixel.r - pixel.g > 70
   );
 }
-
 
 /* ======================================== */
 /* LAND ERKENNEN                            */
 /* ======================================== */
 
-function isLandPixel(
-  pixel,
-) {
-  const dr =
-    pixel.r -
-    SOURCE_LAND.r;
+function isLandPixel(pixel) {
+  const dr = pixel.r - SOURCE_LAND.r;
 
-  const dg =
-    pixel.g -
-    SOURCE_LAND.g;
+  const dg = pixel.g - SOURCE_LAND.g;
 
-  const db =
-    pixel.b -
-    SOURCE_LAND.b;
+  const db = pixel.b - SOURCE_LAND.b;
 
-
-  return (
-    Math.sqrt(
-      dr * dr +
-      dg * dg +
-      db * db,
-    ) <
-    85
-  );
+  return Math.sqrt(dr * dr + dg * dg + db * db) < 85;
 }
-
 
 /* ======================================== */
 /* UNBEGRENZTE TIERFARBEN                   */
 /* ======================================== */
 
-function createMapColor(
-  index,
-) {
-  const hue =
-    modulo(
-      index *
-        137.508 +
-        197,
-      360,
-    );
+function createMapColor(index) {
+  const hue = modulo(index * 137.508 + 197, 360);
 
-
-  return hslToHex(
-    hue,
-    78,
-    58,
-  );
+  return hslToHex(hue, 78, 58);
 }
 
-
-function hslToHex(
-  h,
-  s,
-  l,
-) {
+function hslToHex(h, s, l) {
   s /= 100;
   l /= 100;
 
+  const c = (1 - Math.abs(2 * l - 1)) * s;
 
-  const c =
-    (
-      1 -
-      Math.abs(
-        2 * l -
-        1,
-      )
-    ) *
-    s;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
 
-  const x =
-    c *
-    (
-      1 -
-      Math.abs(
-        (
-          h /
-          60
-        ) %
-          2 -
-          1,
-      )
-    );
+  const m = l - c / 2;
 
-  const m =
-    l -
-    c /
-      2;
+  let r = 0;
 
+  let g = 0;
 
-  let r =
-    0;
+  let b = 0;
 
-  let g =
-    0;
-
-  let b =
-    0;
-
-
-  if (
-    h < 60
-  ) {
+  if (h < 60) {
     r = c;
     g = x;
-  }
-
-  else if (
-    h < 120
-  ) {
+  } else if (h < 120) {
     r = x;
     g = c;
-  }
-
-  else if (
-    h < 180
-  ) {
+  } else if (h < 180) {
     g = c;
     b = x;
-  }
-
-  else if (
-    h < 240
-  ) {
+  } else if (h < 240) {
     g = x;
     b = c;
-  }
-
-  else if (
-    h < 300
-  ) {
+  } else if (h < 300) {
     r = x;
     b = c;
-  }
-
-  else {
+  } else {
     r = c;
     b = x;
   }
 
-
-  const toHex =
-    (value) =>
-      Math.round(
-        (
-          value +
-          m
-        ) *
-          255,
-      )
-        .toString(
-          16,
-        )
-        .padStart(
-          2,
-          "0",
-        );
-
+  const toHex = (value) =>
+    Math.round((value + m) * 255)
+      .toString(16)
+      .padStart(2, "0");
 
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
-
 
 /* ======================================== */
 /* STATUS                                   */
 /* ======================================== */
 
-function setStatusText(
-  status,
-  type,
-  count = 0,
-) {
+function setStatusText(status, type, count = 0) {
   if (!status) {
     return;
   }
 
-
-  const language =
-    getLanguage();
-
+  const language = getLanguage();
 
   const texts = {
     referenceError: {
@@ -3110,26 +1537,15 @@ function setStatusText(
     },
   };
 
-
-  status.textContent =
-    texts[type]?.[
-      language
-    ] ??
-    texts[type]?.de ??
-    "";
+  status.textContent = texts[type]?.[language] ?? texts[type]?.de ?? "";
 }
-
 
 /* ======================================== */
 /* PUNKT-TEXTE                              */
 /* ======================================== */
 
-function getPointPlaceholder(
-  mode,
-) {
-  const language =
-    getLanguage();
-
+function getPointPlaceholder(mode) {
+  const language = getLanguage();
 
   const texts = {
     selected: {
@@ -3157,21 +1573,11 @@ function getPointPlaceholder(
     },
   };
 
-
-  return (
-    texts[mode]?.[
-      language
-    ] ??
-    texts[mode]?.de ??
-    ""
-  );
+  return texts[mode]?.[language] ?? texts[mode]?.de ?? "";
 }
 
-
 function getNoAnimalsText() {
-  const language =
-    getLanguage();
-
+  const language = getLanguage();
 
   const texts = {
     de: "Keines der ausgewählten Tiere lebt an dieser Stelle.",
@@ -3185,95 +1591,44 @@ function getNoAnimalsText() {
     "zh-Hans": "所选动物均不分布在此位置。",
   };
 
-
-  return (
-    texts[
-      language
-    ] ??
-    texts.de
-  );
+  return texts[language] ?? texts.de;
 }
-
 
 /* ======================================== */
 /* HILFSFUNKTIONEN                          */
 /* ======================================== */
 
 function transparentMapDataUrl() {
-  const canvas =
-    document.createElement(
-      "canvas",
-    );
+  const canvas = document.createElement("canvas");
 
-  canvas.width =
-    WORLD_CROP.width;
+  canvas.width = WORLD_CROP.width;
 
-  canvas.height =
-    WORLD_CROP.height;
+  canvas.height = WORLD_CROP.height;
 
-
-  return canvas.toDataURL(
-    "image/png",
-  );
+  return canvas.toDataURL("image/png");
 }
 
+function loadImage(src) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
 
-function loadImage(
-  src,
-) {
-  return new Promise(
-    (
-      resolve,
-      reject,
-    ) => {
-      const image =
-        new Image();
+    image.onload = () => resolve(image);
 
+    image.onerror = () =>
+      reject(new Error(`Bild konnte nicht geladen werden: ${src}`));
 
-      image.onload =
-        () =>
-          resolve(
-            image,
-          );
-
-
-      image.onerror =
-        () =>
-          reject(
-            new Error(
-              `Bild konnte nicht geladen werden: ${src}`,
-            ),
-          );
-
-
-      image.src =
-        src;
-    },
-  );
+    image.src = src;
+  });
 }
 
+function clientToSvgPoint(svg, clientX, clientY) {
+  const point = svg.createSVGPoint();
 
-function clientToSvgPoint(
-  svg,
-  clientX,
-  clientY,
-) {
-  const point =
-    svg.createSVGPoint();
+  point.x = clientX;
 
+  point.y = clientY;
 
-  point.x =
-    clientX;
-
-  point.y =
-    clientY;
-
-
-  const matrix =
-    svg
-      .getScreenCTM()
-      ?.inverse();
-
+  const matrix = svg.getScreenCTM()?.inverse();
 
   if (!matrix) {
     return {
@@ -3282,124 +1637,50 @@ function clientToSvgPoint(
     };
   }
 
-
-  const transformed =
-    point.matrixTransform(
-      matrix,
-    );
-
+  const transformed = point.matrixTransform(matrix);
 
   return {
-    x:
-      transformed.x,
+    x: transformed.x,
 
-    y:
-      transformed.y,
+    y: transformed.y,
   };
 }
 
-
-function clamp(
-  value,
-  min,
-  max,
-) {
-  return Math.min(
-    max,
-    Math.max(
-      min,
-      value,
-    ),
-  );
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
 }
 
-
-function modulo(
-  value,
-  divisor,
-) {
-  return (
-    (
-      value %
-      divisor
-    ) +
-    divisor
-  ) %
-  divisor;
+function modulo(value, divisor) {
+  return ((value % divisor) + divisor) % divisor;
 }
-
 
 /* ======================================== */
 /* GESPIEGELTER MODULO                      */
 /* ======================================== */
 
-function mirrorModulo(
-  value,
-  size,
-) {
-  const period =
-    size * 2;
+function mirrorModulo(value, size) {
+  const period = size * 2;
 
+  const position = modulo(value, period);
 
-  const position =
-    modulo(
-      value,
-      period,
-    );
-
-
-  return (
-    position <= size
-      ? position
-      : period -
-        position
-  );
+  return position <= size ? position : period - position;
 }
 
+function hexToRgb(hex) {
+  const normalized = String(hex ?? "#000000")
+    .replace("#", "")
+    .trim();
 
-function hexToRgb(
-  hex,
-) {
-  const normalized =
-    String(
-      hex ??
-      "#000000",
-    )
-      .replace(
-        "#",
-        "",
-      )
-      .trim();
-
-
-  const value =
-    Number.parseInt(
-      normalized,
-      16,
-    );
-
+  const value = Number.parseInt(normalized, 16);
 
   return {
-    r:
-      (
-        value >>
-        16
-      ) &
-      255,
+    r: (value >> 16) & 255,
 
-    g:
-      (
-        value >>
-        8
-      ) &
-      255,
+    g: (value >> 8) & 255,
 
-    b:
-      value &
-      255,
+    b: value & 255,
   };
 }
-
 
 function createEmptyRenderer() {
   return {

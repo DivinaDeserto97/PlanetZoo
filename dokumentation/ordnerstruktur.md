@@ -1561,9 +1561,14 @@
         - [systematik.js](<../assets/js/systematik/systematik.js>)
       - `tier/`
         - [tier.js](<../assets/js/tier/tier.js>)
+    - `medien/`
+      - `freigegeben/`
+        - [.gitkeep](<../assets/medien/freigegeben/.gitkeep>)
+      - `lokal/`
     - `private/`
   - `dokumentation/`
     - [ANLEITUNG-TIER-JSON.md](<../dokumentation/ANLEITUNG-TIER-JSON.md>)
+    - [MEDIEN-UND-QUELLEN.md](<../dokumentation/MEDIEN-UND-QUELLEN.md>)
     - [PlanetZoo2-Tierdaten-Checkliste.md](<../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md>)
     - [ordnerstruktur.md](<../dokumentation/ordnerstruktur.md>)
   - [index.html](<../index.html>)
@@ -1578,5 +1583,6 @@
     - [tier.html](<../pages/tier.html>)
   - `tools/`
     - [commit.sh](<../tools/commit.sh>)
+    - [format.sh](<../tools/format.sh>)
     - [ordnerstruktur.sh](<../tools/ordnerstruktur.sh>)
     - [share-zip.sh](<../tools/share-zip.sh>)

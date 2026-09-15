@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "vulnerable"
   },
   "daten": {
@@ -352,9 +348,7 @@
           "rang": "art",
           "name": "Buceros bicornis",
           "lebensstatus": "lebend",
-          "spiele": [
-            "planetZoo2"
-          ],
+          "spiele": ["planetZoo2"],
           "quelle": "planetZoo2"
         }
       ],

@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {

@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [
-      "asia",
-      "oceania"
-    ],
-    "biome": [
-      "Riff"
-    ],
+    "kontinente": ["asia", "oceania"],
+    "biome": ["Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

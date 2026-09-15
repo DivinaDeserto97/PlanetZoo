@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "northAmerica"
-    ],
-    "biome": [
-      "Feuchtgebiete"
-    ],
+    "kontinente": ["northAmerica"],
+    "biome": ["Feuchtgebiete"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "",
-    "editionAuswahl": [
-      "standard",
-      "deluxe"
-    ],
+    "editionAuswahl": ["standard", "deluxe"],
     "gehegetyp": [],
-    "gehegetypAuswahl": [
-      "Landgehege",
-      "Aquarium",
-      "Voliere",
-      "Ausstellung"
-    ],
+    "gehegetypAuswahl": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
     "kontinente": [],
     "kontinenteAuswahl": [
       "africa",
@@ -160,9 +152,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            ""
-          ],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "",

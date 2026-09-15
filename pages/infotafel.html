@@ -1,13 +1,27 @@
 <section class="infotafel" data-infotafel>
   <div class="infotafel__frame">
     <nav class="tier-nav" aria-label="Ausgewählte Tiere">
-      <button class="tier-nav__arrow tier-nav__arrow--prev" type="button" data-tier-nav-prev aria-label="Vorherige Tiere">‹</button>
+      <button
+        class="tier-nav__arrow tier-nav__arrow--prev"
+        type="button"
+        data-tier-nav-prev
+        aria-label="Vorherige Tiere"
+      >
+        ‹
+      </button>
 
       <div class="tier-nav__viewport" data-tier-nav-viewport>
         <div class="tier-nav__track" data-tier-nav-track></div>
       </div>
 
-      <button class="tier-nav__arrow tier-nav__arrow--next" type="button" data-tier-nav-next aria-label="Nächste Tiere">›</button>
+      <button
+        class="tier-nav__arrow tier-nav__arrow--next"
+        type="button"
+        data-tier-nav-next
+        aria-label="Nächste Tiere"
+      >
+        ›
+      </button>
 
       <label class="tier-nav__language" title="Sprache">
         <span aria-hidden="true">🌐</span>
@@ -24,12 +38,30 @@
         </select>
       </label>
 
-      <a class="tier-nav__home" href="#home" data-page="home" aria-label="Home" title="Home">🏠</a>
+      <a
+        class="tier-nav__home"
+        href="#home"
+        data-page="home"
+        aria-label="Home"
+        title="Home"
+        >🏠</a
+      >
     </nav>
 
     <div class="infotafel__empty" data-info-empty hidden>
-      <strong data-i18n data-de="Noch kein Tier ausgewählt." data-en="No animal selected yet.">Noch kein Tier ausgewählt.</strong>
-      <p data-i18n data-de="Wähle auf Home zuerst ein oder mehrere Tiere aus." data-en="Select one or more animals on Home first.">Wähle auf Home zuerst ein oder mehrere Tiere aus.</p>
+      <strong
+        data-i18n
+        data-de="Noch kein Tier ausgewählt."
+        data-en="No animal selected yet."
+        >Noch kein Tier ausgewählt.</strong
+      >
+      <p
+        data-i18n
+        data-de="Wähle auf Home zuerst ein oder mehrere Tiere aus."
+        data-en="Select one or more animals on Home first."
+      >
+        Wähle auf Home zuerst ein oder mehrere Tiere aus.
+      </p>
       <a href="#home" data-page="home">🏠 Home</a>
     </div>
 
@@ -38,86 +70,190 @@
         <section class="tier-orbit" data-tier-orbit>
           <div class="tier-orbit__ring" aria-hidden="true"></div>
 
-          <button class="tier-image" type="button" data-main-image-button aria-label="Tierbild vergrößern">
+          <button
+            class="tier-image"
+            type="button"
+            data-main-image-button
+            aria-label="Tierbild vergrößern"
+          >
             <img data-main-image alt="" />
-            <span class="tier-image__fallback" data-main-image-fallback hidden>Kein Bild</span>
+            <span class="tier-image__fallback" data-main-image-fallback hidden
+              >Kein Bild</span
+            >
             <span class="tier-image__hint" data-image-count></span>
           </button>
 
           <!-- Punkt 3: nur Icon; Text erscheint per Hover/Focus. -->
-          <button class="orbit-point orbit-point--social orbit-point--icon-only" type="button" data-stat-icon-only="social" aria-label="Soziale Struktur">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">👥</span>
+          <button
+            class="orbit-point orbit-point--social orbit-point--icon-only"
+            type="button"
+            data-stat-icon-only="social"
+            aria-label="Soziale Struktur"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >👥</span
+            >
           </button>
 
           <!-- Punkt 4: Biome = erster sichtbarer Steckbriefwert. -->
-          <div class="orbit-point orbit-point--biome orbit-point--steckbrief" data-stat-biome>
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🌍</span>
+          <div
+            class="orbit-point orbit-point--biome orbit-point--steckbrief"
+            data-stat-biome
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >🌍</span
+            >
             <span class="orbit-point__data-line">
               <strong data-orbit-value></strong>
             </span>
           </div>
 
           <!-- Punkte 5–9: werden je Tier aus den vorhandenen Steckbriefdaten befüllt. -->
-          <div class="orbit-point orbit-point--stat-1 orbit-point--steckbrief" data-stat-slot="0">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">↔</span>
-            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          <div
+            class="orbit-point orbit-point--stat-1 orbit-point--steckbrief"
+            data-stat-slot="0"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >↔</span
+            >
+            <span class="orbit-point__data-line"
+              ><strong data-orbit-value></strong
+            ></span>
           </div>
 
-          <div class="orbit-point orbit-point--stat-2 orbit-point--steckbrief" data-stat-slot="1">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🪽</span>
-            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          <div
+            class="orbit-point orbit-point--stat-2 orbit-point--steckbrief"
+            data-stat-slot="1"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >🪽</span
+            >
+            <span class="orbit-point__data-line"
+              ><strong data-orbit-value></strong
+            ></span>
           </div>
 
-          <div class="orbit-point orbit-point--stat-3 orbit-point--steckbrief" data-stat-slot="2">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">⚖</span>
-            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          <div
+            class="orbit-point orbit-point--stat-3 orbit-point--steckbrief"
+            data-stat-slot="2"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >⚖</span
+            >
+            <span class="orbit-point__data-line"
+              ><strong data-orbit-value></strong
+            ></span>
           </div>
 
-          <div class="orbit-point orbit-point--stat-4 orbit-point--steckbrief" data-stat-slot="3">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">⌛</span>
-            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          <div
+            class="orbit-point orbit-point--stat-4 orbit-point--steckbrief"
+            data-stat-slot="3"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >⌛</span
+            >
+            <span class="orbit-point__data-line"
+              ><strong data-orbit-value></strong
+            ></span>
           </div>
 
-          <div class="orbit-point orbit-point--stat-5 orbit-point--steckbrief" data-stat-slot="4">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">➤</span>
-            <span class="orbit-point__data-line"><strong data-orbit-value></strong></span>
+          <div
+            class="orbit-point orbit-point--stat-5 orbit-point--steckbrief"
+            data-stat-slot="4"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >➤</span
+            >
+            <span class="orbit-point__data-line"
+              ><strong data-orbit-value></strong
+            ></span>
           </div>
 
           <!-- Punkt 10 / 11 / 12: Audio direkt auf dem Kreis. -->
-          <button class="orbit-point orbit-point--audio-next orbit-point--audio" type="button" data-audio-right aria-label="Nächster Ruf / vorspulen">
+          <button
+            class="orbit-point orbit-point--audio-next orbit-point--audio"
+            type="button"
+            data-audio-right
+            aria-label="Nächster Ruf / vorspulen"
+          >
             <span class="orbit-point__icon" aria-hidden="true">›</span>
           </button>
 
-          <button class="orbit-point orbit-point--audio-play orbit-point--audio" type="button" data-audio-play aria-label="Audio abspielen">
-            <span class="orbit-point__icon" data-audio-play-icon aria-hidden="true">▶</span>
+          <button
+            class="orbit-point orbit-point--audio-play orbit-point--audio"
+            type="button"
+            data-audio-play
+            aria-label="Audio abspielen"
+          >
+            <span
+              class="orbit-point__icon"
+              data-audio-play-icon
+              aria-hidden="true"
+              >▶</span
+            >
           </button>
 
-          <button class="orbit-point orbit-point--audio-prev orbit-point--audio" type="button" data-audio-left aria-label="Vorheriger Ruf / zurückspulen">
+          <button
+            class="orbit-point orbit-point--audio-prev orbit-point--audio"
+            type="button"
+            data-audio-left
+            aria-label="Vorheriger Ruf / zurückspulen"
+          >
             <span class="orbit-point__icon" aria-hidden="true">‹</span>
           </button>
 
           <!-- Punkte 13, 14, 16, 18: gemeinsame Platzhalterklasse; später einfach display:none. -->
-          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-13" data-placeholder="13" data-tooltip="Platzhalter">
+          <div
+            class="orbit-point orbit-point--placeholder orbit-point--placeholder-13"
+            data-placeholder="13"
+            data-tooltip="Platzhalter"
+          >
             <span class="orbit-point__icon" aria-hidden="true">?</span>
           </div>
 
-          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-14" data-placeholder="14" data-tooltip="Platzhalter">
+          <div
+            class="orbit-point orbit-point--placeholder orbit-point--placeholder-14"
+            data-placeholder="14"
+            data-tooltip="Platzhalter"
+          >
             <span class="orbit-point__icon" aria-hidden="true">?</span>
           </div>
 
-          <button class="orbit-point orbit-point--activity orbit-point--icon-only" type="button" data-stat-icon-only="activity" aria-label="Aktivität">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">☀</span>
+          <button
+            class="orbit-point orbit-point--activity orbit-point--icon-only"
+            type="button"
+            data-stat-icon-only="activity"
+            aria-label="Aktivität"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >☀</span
+            >
           </button>
 
-          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-16" data-placeholder="16" data-tooltip="Platzhalter">
+          <div
+            class="orbit-point orbit-point--placeholder orbit-point--placeholder-16"
+            data-placeholder="16"
+            data-tooltip="Platzhalter"
+          >
             <span class="orbit-point__icon" aria-hidden="true">?</span>
           </div>
 
-          <button class="orbit-point orbit-point--diet orbit-point--icon-only" type="button" data-stat-icon-only="dietType" aria-label="Fressverhalten">
-            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true">🥩</span>
+          <button
+            class="orbit-point orbit-point--diet orbit-point--icon-only"
+            type="button"
+            data-stat-icon-only="dietType"
+            aria-label="Fressverhalten"
+          >
+            <span class="orbit-point__icon" data-orbit-icon aria-hidden="true"
+              >🥩</span
+            >
           </button>
 
-          <div class="orbit-point orbit-point--placeholder orbit-point--placeholder-18" data-placeholder="18" data-tooltip="Platzhalter">
+          <div
+            class="orbit-point orbit-point--placeholder orbit-point--placeholder-18"
+            data-placeholder="18"
+            data-tooltip="Platzhalter"
+          >
             <span class="orbit-point__icon" aria-hidden="true">?</span>
           </div>
 
@@ -133,10 +269,19 @@
           <div class="info-panel__heading">
             <h2 data-ui="map">Karte</h2>
           </div>
-          <button class="map-preview" type="button" data-map-open aria-label="Karte öffnen">
+          <button
+            class="map-preview"
+            type="button"
+            data-map-open
+            aria-label="Karte öffnen"
+          >
             <img data-map-image alt="" />
-            <span class="map-preview__fallback" data-map-fallback hidden>Keine Karte</span>
-            <span class="map-preview__hint" data-ui="openMap">Zum Vergrößern anklicken</span>
+            <span class="map-preview__fallback" data-map-fallback hidden
+              >Keine Karte</span
+            >
+            <span class="map-preview__hint" data-ui="openMap"
+              >Zum Vergrößern anklicken</span
+            >
           </button>
         </section>
       </section>
@@ -161,9 +306,23 @@
               <h2 data-ui="facts">Tierfakten</h2>
             </div>
             <div class="facts-card__body">
-              <button class="facts-card__arrow" type="button" data-fact-prev aria-label="Vorheriger Tierfakt">‹</button>
+              <button
+                class="facts-card__arrow"
+                type="button"
+                data-fact-prev
+                aria-label="Vorheriger Tierfakt"
+              >
+                ‹
+              </button>
               <p data-fact-text></p>
-              <button class="facts-card__arrow" type="button" data-fact-next aria-label="Nächster Tierfakt">›</button>
+              <button
+                class="facts-card__arrow"
+                type="button"
+                data-fact-next
+                aria-label="Nächster Tierfakt"
+              >
+                ›
+              </button>
             </div>
             <span class="facts-card__counter" data-fact-counter></span>
           </section>
@@ -174,13 +333,25 @@
             </div>
 
             <div class="foodweb-card__nav foodweb-card__nav--relation">
-              <button type="button" data-food-relation="frisst" data-ui="eats">Frisst</button>
-              <button type="button" data-food-relation="wirdGefressenVon" data-ui="eatenBy">Wird gefressen von</button>
+              <button type="button" data-food-relation="frisst" data-ui="eats">
+                Frisst
+              </button>
+              <button
+                type="button"
+                data-food-relation="wirdGefressenVon"
+                data-ui="eatenBy"
+              >
+                Wird gefressen von
+              </button>
             </div>
 
             <div class="foodweb-card__nav foodweb-card__nav--age">
-              <button type="button" data-food-age="jungtier" data-ui="young">Jungtier</button>
-              <button type="button" data-food-age="erwachsen" data-ui="adult">Erwachsen</button>
+              <button type="button" data-food-age="jungtier" data-ui="young">
+                Jungtier
+              </button>
+              <button type="button" data-food-age="erwachsen" data-ui="adult">
+                Erwachsen
+              </button>
             </div>
 
             <div class="foodweb-card__content" data-food-content></div>
@@ -194,12 +365,28 @@
     <div class="media-dialog__topbar">
       <strong data-image-dialog-title>Bild</strong>
       <span data-image-dialog-counter></span>
-      <button type="button" data-image-dialog-close aria-label="Schließen">×</button>
+      <button type="button" data-image-dialog-close aria-label="Schließen">
+        ×
+      </button>
     </div>
     <div class="image-dialog__stage">
-      <button class="media-dialog__arrow media-dialog__arrow--left" type="button" data-image-prev aria-label="Vorheriges Bild">‹</button>
+      <button
+        class="media-dialog__arrow media-dialog__arrow--left"
+        type="button"
+        data-image-prev
+        aria-label="Vorheriges Bild"
+      >
+        ‹
+      </button>
       <img data-dialog-image alt="" />
-      <button class="media-dialog__arrow media-dialog__arrow--right" type="button" data-image-next aria-label="Nächstes Bild">›</button>
+      <button
+        class="media-dialog__arrow media-dialog__arrow--right"
+        type="button"
+        data-image-next
+        aria-label="Nächstes Bild"
+      >
+        ›
+      </button>
     </div>
   </dialog>
 
@@ -207,9 +394,13 @@
     <div class="media-dialog__topbar">
       <strong data-map-dialog-title>Karte</strong>
       <div class="map-dialog__controls">
-        <button type="button" data-map-zoom-out aria-label="Karte verkleinern">−</button>
+        <button type="button" data-map-zoom-out aria-label="Karte verkleinern">
+          −
+        </button>
         <button type="button" data-map-reset>100%</button>
-        <button type="button" data-map-zoom-in aria-label="Karte vergrößern">+</button>
+        <button type="button" data-map-zoom-in aria-label="Karte vergrößern">
+          +
+        </button>
         <button type="button" data-map-close aria-label="Schließen">×</button>
       </div>
     </div>

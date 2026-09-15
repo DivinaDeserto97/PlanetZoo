@@ -1,40 +1,20 @@
-import {
-  datenImportieren,
-} from "../../daten/lebewesen/tiere/datenImport.js";
+import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
-import {
-  getTierAuswahl,
-} from "../features/tierAuswahl.js";
+import { getTierAuswahl } from "../features/tierAuswahl.js";
 
-import {
-  filterUndSortiereTiere,
-} from "../features/tierFilter.js";
+import { filterUndSortiereTiere } from "../features/tierFilter.js";
 
-import {
-  initMapFilter,
-} from "./features/filter.js";
+import { initMapFilter } from "./features/filter.js";
 
-import {
-  initMapLayout,
-} from "./features/layout.js";
+import { initMapLayout } from "./features/layout.js";
 
-import {
-  initMapRenderer,
-} from "./features/mapRenderer.js";
+import { initMapRenderer } from "./features/mapRenderer.js";
 
-import {
-  initTierListe,
-} from "./features/tierListe.js";
+import { initTierListe } from "./features/tierListe.js";
 
-import {
-  pruefeLokaleTierDateien,
-} from "../features/tierDatenPruefung.js";
-
-
-
+import { pruefeLokaleTierDateien } from "../features/tierDatenPruefung.js";
 
 let controller = null;
-
 
 /* ======================================== */
 /* MAP INITIALISIEREN                       */
@@ -43,81 +23,42 @@ let controller = null;
 export async function init() {
   controller?.abort();
 
-  controller =
-    new AbortController();
+  controller = new AbortController();
 
-  const {
-    signal,
-  } = controller;
+  const { signal } = controller;
 
+  const tiere = await datenImportieren();
 
-  const tiere =
-    await datenImportieren();
+  await pruefeLokaleTierDateien(tiere);
 
+  const renderer = await initMapRenderer(tiere, signal);
 
-  await pruefeLokaleTierDateien(
-    tiere,
-  );
-
-
-  const renderer =
-    await initMapRenderer(
-      tiere,
-      signal,
-    );
-
-
-  const tierListe =
-    initTierListe(
-      tiere,
-      renderer,
-      signal,
-    );
-
+  const tierListe = initTierListe(tiere, renderer, signal);
 
   if (!tierListe) {
     return;
   }
 
-
-  let filterSteuerung =
-    null;
-
+  let filterSteuerung = null;
 
   function renderListe() {
     if (!filterSteuerung) {
       return;
     }
 
+    const state = filterSteuerung.getState();
 
-    const state =
-      filterSteuerung.getState();
+    state.filter.ausgewaehlteIds = getTierAuswahl();
 
+    const sichtbareTiere = filterUndSortiereTiere(tiere, state);
 
-    state.filter.ausgewaehlteIds =
-      getTierAuswahl();
-
-
-    const sichtbareTiere =
-      filterUndSortiereTiere(
-        tiere,
-        state,
-      );
-
-
-    tierListe.render(
-      sichtbareTiere,
-    );
+    tierListe.render(sichtbareTiere);
   }
 
-
-  filterSteuerung =
-    initMapFilter({
-      signal,
-      onChange:
-        renderListe,
-    });
-
+  filterSteuerung = initMapFilter({
+    signal,
+    onChange: renderListe,
+  });
 
   document.addEventListener(
     "languageChanged",
@@ -130,28 +71,15 @@ export async function init() {
     },
   );
 
-
-  document.addEventListener(
-    "tierAuswahlChanged",
-    renderListe,
-    {
-      signal,
-    },
-  );
-
-  document.addEventListener(
-    "toolEinstellungenChanged",
-    renderListe,
-    {
-      signal,
-    },
-  );
-
-
-  initMapLayout(
+  document.addEventListener("tierAuswahlChanged", renderListe, {
     signal,
-  );
+  });
 
+  document.addEventListener("toolEinstellungenChanged", renderListe, {
+    signal,
+  });
+
+  initMapLayout(signal);
 
   renderListe();
 }

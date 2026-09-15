@@ -12,7 +12,6 @@ export const TOOL_IDS = {
   RECHNER: "rechner",
 };
 
-
 export const TOOLS = [
   {
     id: TOOL_IDS.MAP,
@@ -134,11 +133,6 @@ export const TOOLS = [
   },
 ];
 
-
 export function getTool(toolId) {
-  return (
-    TOOLS.find(
-      (tool) => tool.id === toolId,
-    ) ?? null
-  );
+  return TOOLS.find((tool) => tool.id === toolId) ?? null;
 }

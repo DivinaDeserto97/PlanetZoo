@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft",
-      "Wüste"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft", "Wüste"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -258,10 +253,7 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier",
-                  "ab26TagenLernphase"
-                ],
+                "selbst": ["jungtier", "ab26TagenLernphase"],
                 "ziel": []
               },
               "hinweis": {

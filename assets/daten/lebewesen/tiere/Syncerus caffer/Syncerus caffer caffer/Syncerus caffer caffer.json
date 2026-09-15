@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft",
-      "Feuchtgebiete"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft", "Feuchtgebiete"],
     "schutzstatus": "nearThreatened"
   },
   "daten": {

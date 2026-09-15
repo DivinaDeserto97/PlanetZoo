@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Tropen",
-      "Seen und Flüsse"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Tropen", "Seen und Flüsse"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -218,9 +213,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "kaulquappe"
-                ],
+                "selbst": ["kaulquappe"],
                 "ziel": []
               },
               "hinweis": {

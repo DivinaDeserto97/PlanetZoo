@@ -15,16 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia",
-      "oceania"
-    ],
-    "biome": [
-      "Ästuar"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia", "oceania"],
+    "biome": ["Ästuar"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -109,9 +102,7 @@
         {
           "wert": 500,
           "einheit": "individuum",
-          "giltFuer": [
-            "Crocodylus porosus"
-          ],
+          "giltFuer": ["Crocodylus porosus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Der bereitgestellte Zoopedia-Auszug zeigt beim Wildbestand wörtlich „500“. Ein Tausender-Faktor oder eine andere Einheit ist dort nicht ausgewiesen und wird daher nicht ergänzt.",

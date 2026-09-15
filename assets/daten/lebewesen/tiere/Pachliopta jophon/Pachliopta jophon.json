@@ -16,12 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Tropen"
-    ],
+    "kontinente": ["asia"],
+    "biome": ["Tropen"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -194,9 +190,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "raupe"
-                ],
+                "selbst": ["raupe"],
                 "ziel": []
               },
               "hinweis": {

@@ -18,15 +18,15 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
 
 ### JSON-Datentypen
 
-| Schreibweise | Bedeutung | Beispiel |
-|---|---|---|
-| `"Text"` | Text | `"Löwe"` |
-| `123` | Zahl | `415000` |
-| `1.5` | Dezimalzahl | `7.6` |
-| `true` / `false` | Ja/Nein | `true` |
-| `null` | Wert derzeit nicht bekannt / nicht gesetzt | `null` |
-| `[]` | Liste | `["africa", "asia"]` |
-| `{}` | Objekt mit Unterfeldern | `{ "de": "Text" }` |
+| Schreibweise     | Bedeutung                                  | Beispiel             |
+| ---------------- | ------------------------------------------ | -------------------- |
+| `"Text"`         | Text                                       | `"Löwe"`             |
+| `123`            | Zahl                                       | `415000`             |
+| `1.5`            | Dezimalzahl                                | `7.6`                |
+| `true` / `false` | Ja/Nein                                    | `true`               |
+| `null`           | Wert derzeit nicht bekannt / nicht gesetzt | `null`               |
+| `[]`             | Liste                                      | `["africa", "asia"]` |
+| `{}`             | Objekt mit Unterfeldern                    | `{ "de": "Text" }`   |
 
 ### Wichtig
 
@@ -93,17 +93,17 @@ Nicht den deutschen Namen verwenden.
 
 ### Sprachcodes
 
-| Code | Sprache |
-|---|---|
-| `de` | Deutsch |
-| `en` | Englisch |
-| `en-US` | Englisch USA |
-| `es` | Spanisch |
-| `fr` | Französisch |
-| `it` | Italienisch |
-| `pt-BR` | Portugiesisch Brasilien |
-| `ja` | Japanisch |
-| `zh-Hans` | Chinesisch vereinfacht |
+| Code      | Sprache                 |
+| --------- | ----------------------- |
+| `de`      | Deutsch                 |
+| `en`      | Englisch                |
+| `en-US`   | Englisch USA            |
+| `es`      | Spanisch                |
+| `fr`      | Französisch             |
+| `it`      | Italienisch             |
+| `pt-BR`   | Portugiesisch Brasilien |
+| `ja`      | Japanisch               |
+| `zh-Hans` | Chinesisch vereinfacht  |
 
 ---
 
@@ -132,10 +132,10 @@ Die Werte unter `filter` steuern die Filter auf `home.html` und `map.html`.
 
 **Genau einen Wert auswählen.**
 
-| Anzeige | JSON-Wert |
-|---|---|
+| Anzeige    | JSON-Wert  |
+| ---------- | ---------- |
 | Basisspiel | `standard` |
-| Deluxe | `deluxe` |
+| Deluxe     | `deluxe`   |
 
 Beispiel:
 
@@ -149,11 +149,11 @@ Beispiel:
 
 **Eine oder mehrere Angaben möglich.**
 
-| Anzeige | JSON-Wert |
-|---|---|
-| Landgehege | `Landgehege` |
-| Aquarium | `Aquarium` |
-| Voliere | `Voliere` |
+| Anzeige     | JSON-Wert     |
+| ----------- | ------------- |
+| Landgehege  | `Landgehege`  |
+| Aquarium    | `Aquarium`    |
+| Voliere     | `Voliere`     |
 | Ausstellung | `Ausstellung` |
 
 Beispiel:
@@ -179,14 +179,14 @@ Tier mit mehreren passenden Typen:
 
 **Eine oder mehrere Angaben möglich.**
 
-| Anzeige | JSON-Wert |
-|---|---|
-| Afrika | `africa` |
-| Asien | `asia` |
-| Europa | `europe` |
+| Anzeige     | JSON-Wert      |
+| ----------- | -------------- |
+| Afrika      | `africa`       |
+| Asien       | `asia`         |
+| Europa      | `europe`       |
 | Nordamerika | `northAmerica` |
-| Südamerika | `southAmerica` |
-| Ozeanien | `oceania` |
+| Südamerika  | `southAmerica` |
+| Ozeanien    | `oceania`      |
 
 Beispiel:
 
@@ -206,20 +206,20 @@ Beispiel:
 
 Hier müssen die Werte exakt so geschrieben werden wie im Filter.
 
-| Biom | JSON-Wert |
-|---|---|
-| Ästuar | `Ästuar` |
-| Feuchtgebiete | `Feuchtgebiete` |
-| Gemässigt | `Gemäßigt` |
-| Graslandschaft | `Graslandschaft` |
-| Mangrove | `Mangrove` |
-| Offenes Meer | `Offenes Meer` |
-| Riff | `Riff` |
+| Biom            | JSON-Wert         |
+| --------------- | ----------------- |
+| Ästuar          | `Ästuar`          |
+| Feuchtgebiete   | `Feuchtgebiete`   |
+| Gemässigt       | `Gemäßigt`        |
+| Graslandschaft  | `Graslandschaft`  |
+| Mangrove        | `Mangrove`        |
+| Offenes Meer    | `Offenes Meer`    |
+| Riff            | `Riff`            |
 | Seen und Flüsse | `Seen und Flüsse` |
-| Taiga | `Taiga` |
-| Tropen | `Tropen` |
-| Tundra | `Tundra` |
-| Wüste | `Wüste` |
+| Taiga           | `Taiga`           |
+| Tropen          | `Tropen`          |
+| Tundra          | `Tundra`          |
+| Wüste           | `Wüste`           |
 
 Beispiel:
 
@@ -239,12 +239,12 @@ Beispiel:
 
 **Genau einen Wert auswählen.**
 
-| Anzeige | JSON-Wert |
-|---|---|
-| Nicht gefährdet | `leastConcern` |
-| Potenziell gefährdet | `nearThreatened` |
-| Gefährdet | `vulnerable` |
-| Stark gefährdet | `endangered` |
+| Anzeige                | JSON-Wert              |
+| ---------------------- | ---------------------- |
+| Nicht gefährdet        | `leastConcern`         |
+| Potenziell gefährdet   | `nearThreatened`       |
+| Gefährdet              | `vulnerable`           |
+| Stark gefährdet        | `endangered`           |
 | Vom Aussterben bedroht | `criticallyEndangered` |
 
 Beispiel:
@@ -421,10 +421,7 @@ Mögliche Form mit Einzelwert:
 {
   "wert": 415000,
   "einheit": "individuum",
-  "giltFuer": [
-    "Loxodonta africana",
-    "Loxodonta cyclotis"
-  ],
+  "giltFuer": ["Loxodonta africana", "Loxodonta cyclotis"],
   "jahrDerGrundlage": 2016,
   "hinweis": {
     "de": "...",
@@ -699,13 +696,13 @@ Fressfeinde werden automatisch aus den anderen Tier-JSONs berechnet.
 
 Erlaubte Werte:
 
-| Bedeutung | JSON-Wert |
-|---|---|
-| Tierische Nahrung / Beute | `tier` |
-| Pflanzliche Nahrung | `pflanze` |
+| Bedeutung                  | JSON-Wert |
+| -------------------------- | --------- |
+| Tierische Nahrung / Beute  | `tier`    |
+| Pflanzliche Nahrung        | `pflanze` |
 | Nutzung, z. B. Muttermilch | `nutzung` |
-| Aas | `aas` |
-| Giftige/toxische Beziehung | `giftig` |
+| Aas                        | `aas`     |
+| Giftige/toxische Beziehung | `giftig`  |
 
 ---
 
@@ -713,23 +710,23 @@ Erlaubte Werte:
 
 Erlaubte Werte:
 
-| Beziehung | JSON-Wert |
-|---|---|
-| Nutzung | `nutzung` |
-| Prädation / Räuber–Beute | `praedation` |
-| Herbivorie | `herbivorie` |
-| Parasitismus | `parasitismus` |
-| Parasitoidismus | `parasitoidismus` |
-| Konkurrenz | `konkurrenz` |
-| Mutualismus | `mutualismus` |
-| Symbiose | `symbiose` |
-| Kommensalismus | `kommensalismus` |
-| Amensalismus | `amensalismus` |
-| Neutralismus | `neutralismus` |
-| Aas-/Nekrophagie | `nekrophagie` |
-| Detritivorie | `detritivorie` |
-| Kleptoparasitismus | `kleptoparasitismus` |
-| Toxische Wirkung | `toxischeWirkung` |
+| Beziehung                | JSON-Wert            |
+| ------------------------ | -------------------- |
+| Nutzung                  | `nutzung`            |
+| Prädation / Räuber–Beute | `praedation`         |
+| Herbivorie               | `herbivorie`         |
+| Parasitismus             | `parasitismus`       |
+| Parasitoidismus          | `parasitoidismus`    |
+| Konkurrenz               | `konkurrenz`         |
+| Mutualismus              | `mutualismus`        |
+| Symbiose                 | `symbiose`           |
+| Kommensalismus           | `kommensalismus`     |
+| Amensalismus             | `amensalismus`       |
+| Neutralismus             | `neutralismus`       |
+| Aas-/Nekrophagie         | `nekrophagie`        |
+| Detritivorie             | `detritivorie`       |
+| Kleptoparasitismus       | `kleptoparasitismus` |
+| Toxische Wirkung         | `toxischeWirkung`    |
 
 ---
 
@@ -759,23 +756,23 @@ Erlaubte Werte insgesamt:
 
 ### Welche Wirkung passt zu welcher Beziehung?
 
-| Beziehung | Erlaubte Wirkung |
-|---|---|
-| `nutzung` | `+/0`, `0/+` |
-| `praedation` | `+/-`, `-/+` |
-| `herbivorie` | `+/-`, `-/+` |
-| `parasitismus` | `+/-`, `-/+` |
-| `parasitoidismus` | `+/-`, `-/+` |
-| `konkurrenz` | `-/-` |
-| `mutualismus` | `+/+` |
-| `symbiose` | `+/+` |
-| `kommensalismus` | `+/0`, `0/+` |
-| `amensalismus` | `-/0`, `0/-` |
-| `neutralismus` | `0/0` |
-| `nekrophagie` | `+/0`, `0/+` |
-| `detritivorie` | `+/0`, `0/+` |
-| `kleptoparasitismus` | `+/-`, `-/+` |
-| `toxischeWirkung` | `-/0`, `0/-` |
+| Beziehung            | Erlaubte Wirkung |
+| -------------------- | ---------------- |
+| `nutzung`            | `+/0`, `0/+`     |
+| `praedation`         | `+/-`, `-/+`     |
+| `herbivorie`         | `+/-`, `-/+`     |
+| `parasitismus`       | `+/-`, `-/+`     |
+| `parasitoidismus`    | `+/-`, `-/+`     |
+| `konkurrenz`         | `-/-`            |
+| `mutualismus`        | `+/+`            |
+| `symbiose`           | `+/+`            |
+| `kommensalismus`     | `+/0`, `0/+`     |
+| `amensalismus`       | `-/0`, `0/-`     |
+| `neutralismus`       | `0/0`            |
+| `nekrophagie`        | `+/0`, `0/+`     |
+| `detritivorie`       | `+/0`, `0/+`     |
+| `kleptoparasitismus` | `+/-`, `-/+`     |
+| `toxischeWirkung`    | `-/0`, `0/-`     |
 
 ---
 
@@ -865,9 +862,7 @@ Bei `nutzung` ist zusätzlich ein `nutzung`-Objekt Pflicht.
   "beziehung": "nutzung",
   "wirkung": "+/0",
   "bedingung": {
-    "selbst": [
-      "calf"
-    ],
+    "selbst": ["calf"],
     "ziel": []
   },
   "nutzung": {
@@ -1697,16 +1692,9 @@ unsichereVerwandtschaft
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Graslandschaft",
-      "Wüste"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Graslandschaft", "Wüste"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

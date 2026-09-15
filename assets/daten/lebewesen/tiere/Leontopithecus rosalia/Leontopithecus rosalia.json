@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "deluxe",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "southAmerica"
-    ],
-    "biome": [
-      ""
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["southAmerica"],
+    "biome": [""],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -94,9 +88,7 @@
         {
           "wert": 4800,
           "einheit": "individuum",
-          "giltFuer": [
-            "Leontopithecus rosalia"
-          ],
+          "giltFuer": ["Leontopithecus rosalia"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia zeigt den Wildbestand als 4.8 an; dies entspricht 4,8 Tausend beziehungsweise rund 4.800 Individuen.",

@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Gemäßigt"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["asia"],
+    "biome": ["Gemäßigt"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -97,9 +91,7 @@
         {
           "wert": 10,
           "einheit": "individuum",
-          "giltFuer": [
-            "Ailurus fulgens"
-          ],
+          "giltFuer": ["Ailurus fulgens"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Der bereitgestellte Planet-Zoo-2-Zoopedia-Auszug zeigt beim Wildbestand wörtlich „10“. Ein Tausender-Faktor oder eine andere Einheit ist im Auszug nicht angegeben und wird daher nicht ergänzt.",

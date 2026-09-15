@@ -53,62 +53,33 @@ import {
 
 import { renderUiText } from "./features/ui.js";
 
-
 let controller = null;
 let tiere = [];
 let selectedTiere = [];
 let activeTierId = null;
 
-
 export async function init() {
   controller?.abort();
 
-  controller =
-    new AbortController();
+  controller = new AbortController();
 
-  const { signal } =
-    controller;
+  const { signal } = controller;
 
+  tiere = await datenImportieren();
 
-  tiere =
-    await datenImportieren();
+  await pruefeLokaleTierDateien(tiere);
 
+  bindStaticEvents(signal);
 
-  await pruefeLokaleTierDateien(
-    tiere,
-  );
+  bindTierNavigationEvents(signal);
 
+  bindAudioEvents(signal);
 
-  bindStaticEvents(
-    signal,
-  );
+  bindMapEvents(signal);
 
-  bindTierNavigationEvents(
-    signal,
-  );
+  document.addEventListener("languageChanged", render, { signal });
 
-  bindAudioEvents(
-    signal,
-  );
-
-  bindMapEvents(
-    signal,
-  );
-
-
-  document.addEventListener(
-    "languageChanged",
-    render,
-    { signal },
-  );
-
-
-  document.addEventListener(
-    "toolEinstellungenChanged",
-    render,
-    { signal },
-  );
-
+  document.addEventListener("toolEinstellungenChanged", render, { signal });
 
   document.addEventListener(
     "tierAuswahlChanged",
@@ -119,65 +90,29 @@ export async function init() {
     { signal },
   );
 
-
   syncSelectedTiere();
   render();
 }
 
-
 function syncSelectedTiere() {
-  const ids =
-    getTierAuswahl();
+  const ids = getTierAuswahl();
 
+  const byId = new Map(tiere.map((tier) => [tier.id, tier]));
 
-  const byId =
-    new Map(
-      tiere.map(
-        (tier) => [
-          tier.id,
-          tier,
-        ],
-      ),
-    );
+  selectedTiere = ids.map((id) => byId.get(id)).filter(Boolean);
 
-
-  selectedTiere =
-    ids
-      .map(
-        (id) =>
-          byId.get(
-            id,
-          ),
-      )
-      .filter(
-        Boolean,
-      );
-
-
-  if (
-    !selectedTiere.length
-  ) {
-    activeTierId =
-      null;
+  if (!selectedTiere.length) {
+    activeTierId = null;
 
     return;
   }
 
-
-  if (
-    !selectedTiere.some(
-      (tier) =>
-        tier.id ===
-        activeTierId,
-    )
-  ) {
-    activeTierId =
-      selectedTiere[0].id;
+  if (!selectedTiere.some((tier) => tier.id === activeTierId)) {
+    activeTierId = selectedTiere[0].id;
 
     resetPerTierState();
   }
 }
-
 
 function resetPerTierState() {
   resetImageState();
@@ -187,159 +122,87 @@ function resetPerTierState() {
   resetMapState();
 }
 
-
 function render() {
-  const empty =
-    document.querySelector(
-      "[data-info-empty]",
-    );
+  const empty = document.querySelector("[data-info-empty]");
 
-  const content =
-    document.querySelector(
-      "[data-info-content]",
-    );
-
+  const content = document.querySelector("[data-info-content]");
 
   renderUiText();
 
-  renderTierNavigation(
-    selectedTiere,
-    activeTierId,
-  );
+  renderTierNavigation(selectedTiere, activeTierId);
 
-
-  if (
-    !selectedTiere.length
-  ) {
+  if (!selectedTiere.length) {
     if (empty) {
-      empty.hidden =
-        false;
+      empty.hidden = false;
     }
 
     if (content) {
-      content.hidden =
-        true;
+      content.hidden = true;
     }
 
     return;
   }
 
-
   if (empty) {
-    empty.hidden =
-      true;
+    empty.hidden = true;
   }
 
   if (content) {
-    content.hidden =
-      false;
+    content.hidden = false;
   }
 
-
-  const tier =
-    getActiveTier();
-
+  const tier = getActiveTier();
 
   if (!tier) {
     return;
   }
 
+  renderHeading(tier);
 
-  renderHeading(
-    tier,
-  );
+  renderMainImage(tier);
 
-  renderMainImage(
-    tier,
-  );
+  renderStats(tier);
 
-  renderStats(
-    tier,
-  );
+  renderMap(tier);
 
-  renderMap(
-    tier,
-  );
+  renderZoopedia(tier);
 
-  renderZoopedia(
-    tier,
-  );
+  renderFacts(tier);
 
-  renderFacts(
-    tier,
-  );
+  renderFoodWeb(tier, tiere);
 
-  renderFoodWeb(
-    tier,
-    tiere,
-  );
-
-  renderAudio(
-    tier,
-    getActiveTier,
-  );
+  renderAudio(tier, getActiveTier);
 }
-
 
 function getActiveTier() {
   return (
-    selectedTiere.find(
-      (tier) =>
-        tier.id ===
-        activeTierId,
-    ) ??
+    selectedTiere.find((tier) => tier.id === activeTierId) ??
     selectedTiere[0] ??
     null
   );
 }
 
+function bindStaticEvents(signal) {
+  document.addEventListener("click", handleClick, { signal });
 
-function bindStaticEvents(
-  signal,
-) {
-  document.addEventListener(
-    "click",
-    handleClick,
-    { signal },
-  );
-
-
-  document
-    .querySelectorAll(
-      "dialog",
-    )
-    .forEach(
-      (dialog) => {
-        dialog.addEventListener(
-          "click",
-          (event) => {
-            if (
-              event.target ===
-              dialog
-            ) {
-              dialog.close();
-            }
-          },
-          { signal },
-        );
+  document.querySelectorAll("dialog").forEach((dialog) => {
+    dialog.addEventListener(
+      "click",
+      (event) => {
+        if (event.target === dialog) {
+          dialog.close();
+        }
       },
+      { signal },
     );
+  });
 }
 
-
-function handleClick(
-  event,
-) {
-  const tierButton =
-    event.target.closest(
-      "[data-tier-id]",
-    );
-
+function handleClick(event) {
+  const tierButton = event.target.closest("[data-tier-id]");
 
   if (tierButton) {
-    activeTierId =
-      tierButton.dataset
-        .tierId;
+    activeTierId = tierButton.dataset.tierId;
 
     resetPerTierState();
     render();
@@ -347,265 +210,123 @@ function handleClick(
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-tier-nav-prev]",
-    )
-  ) {
-    scrollTierNav(
-      -1,
-    );
+  if (event.target.closest("[data-tier-nav-prev]")) {
+    scrollTierNav(-1);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-tier-nav-next]",
-    )
-  ) {
-    scrollTierNav(
-      1,
-    );
+  if (event.target.closest("[data-tier-nav-next]")) {
+    scrollTierNav(1);
 
     return;
   }
 
+  const tier = getActiveTier();
 
-  const tier =
-    getActiveTier();
-
-
-  if (
-    event.target.closest(
-      "[data-main-image-button]",
-    )
-  ) {
-    openImageDialog(
-      tier,
-    );
+  if (event.target.closest("[data-main-image-button]")) {
+    openImageDialog(tier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-image-dialog-close]",
-    )
-  ) {
-    document
-      .querySelector(
-        "[data-image-dialog]",
-      )
-      ?.close();
+  if (event.target.closest("[data-image-dialog-close]")) {
+    document.querySelector("[data-image-dialog]")?.close();
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-image-prev]",
-    )
-  ) {
-    changeImage(
-      -1,
-      tier,
-    );
+  if (event.target.closest("[data-image-prev]")) {
+    changeImage(-1, tier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-image-next]",
-    )
-  ) {
-    changeImage(
-      1,
-      tier,
-    );
+  if (event.target.closest("[data-image-next]")) {
+    changeImage(1, tier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-audio-play]",
-    )
-  ) {
+  if (event.target.closest("[data-audio-play]")) {
     toggleAudio();
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-audio-left]",
-    )
-  ) {
-    handleAudioSide(
-      -1,
-      getActiveTier,
-    );
+  if (event.target.closest("[data-audio-left]")) {
+    handleAudioSide(-1, getActiveTier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-audio-right]",
-    )
-  ) {
-    handleAudioSide(
-      1,
-      getActiveTier,
-    );
+  if (event.target.closest("[data-audio-right]")) {
+    handleAudioSide(1, getActiveTier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-map-open]",
-    )
-  ) {
-    openMapDialog(
-      tier,
-    );
+  if (event.target.closest("[data-map-open]")) {
+    openMapDialog(tier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-map-close]",
-    )
-  ) {
-    document
-      .querySelector(
-        "[data-map-dialog]",
-      )
-      ?.close();
+  if (event.target.closest("[data-map-close]")) {
+    document.querySelector("[data-map-dialog]")?.close();
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-map-zoom-in]",
-    )
-  ) {
-    zoomMap(
-      0.25,
-    );
+  if (event.target.closest("[data-map-zoom-in]")) {
+    zoomMap(0.25);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-map-zoom-out]",
-    )
-  ) {
-    zoomMap(
-      -0.25,
-    );
+  if (event.target.closest("[data-map-zoom-out]")) {
+    zoomMap(-0.25);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-map-reset]",
-    )
-  ) {
+  if (event.target.closest("[data-map-reset]")) {
     resetMapTransform();
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-fact-prev]",
-    )
-  ) {
-    changeFact(
-      -1,
-      tier,
-    );
+  if (event.target.closest("[data-fact-prev]")) {
+    changeFact(-1, tier);
 
     return;
   }
 
-
-  if (
-    event.target.closest(
-      "[data-fact-next]",
-    )
-  ) {
-    changeFact(
-      1,
-      tier,
-    );
+  if (event.target.closest("[data-fact-next]")) {
+    changeFact(1, tier);
 
     return;
   }
 
-
-  const relation =
-    event.target.closest(
-      "[data-food-relation]",
-    );
-
+  const relation = event.target.closest("[data-food-relation]");
 
   if (relation) {
-    setFoodRelation(
-      relation.dataset
-        .foodRelation,
-    );
+    setFoodRelation(relation.dataset.foodRelation);
 
     if (tier) {
-      renderFoodWeb(
-        tier,
-        tiere,
-      );
+      renderFoodWeb(tier, tiere);
     }
 
     return;
   }
 
-
-  const age =
-    event.target.closest(
-      "[data-food-age]",
-    );
-
+  const age = event.target.closest("[data-food-age]");
 
   if (age) {
-    setFoodAge(
-      age.dataset
-        .foodAge,
-    );
+    setFoodAge(age.dataset.foodAge);
 
     if (tier) {
-      renderFoodWeb(
-        tier,
-        tiere,
-      );
+      renderFoodWeb(tier, tiere);
     }
   }
 }

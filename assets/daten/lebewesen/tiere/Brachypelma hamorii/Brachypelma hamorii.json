@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["northAmerica"],
-    "biome": ["Gemäßigt","Wüste"],
+    "biome": ["Gemäßigt", "Wüste"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

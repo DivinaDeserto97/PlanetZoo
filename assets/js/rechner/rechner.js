@@ -33,17 +33,18 @@ function render() {
   if (!selectedTiere.length) {
     const empty = document.createElement("span");
     empty.className = "calculator-animal-chip";
-    empty.textContent = {
-      de: "Keine Tiere ausgewählt",
-      en: "No animals selected",
-      "en-US": "No animals selected",
-      es: "No hay animales seleccionados",
-      fr: "Aucun animal sélectionné",
-      it: "Nessun animale selezionato",
-      "pt-BR": "Nenhum animal selecionado",
-      ja: "動物が選択されていません",
-      "zh-Hans": "未选择动物",
-    }[getLanguage()] ?? "Keine Tiere ausgewählt";
+    empty.textContent =
+      {
+        de: "Keine Tiere ausgewählt",
+        en: "No animals selected",
+        "en-US": "No animals selected",
+        es: "No hay animales seleccionados",
+        fr: "Aucun animal sélectionné",
+        it: "Nessun animale selezionato",
+        "pt-BR": "Nenhum animal selecionado",
+        ja: "動物が選択されていません",
+        "zh-Hans": "未选择动物",
+      }[getLanguage()] ?? "Keine Tiere ausgewählt";
     list.appendChild(empty);
     return;
   }
@@ -52,7 +53,8 @@ function render() {
     const chip = document.createElement("span");
     chip.className = "calculator-animal-chip";
     chip.textContent =
-      getLocalizedValue(tier.namen, getLanguage()) ?? tier.wissenschaftlicherName;
+      getLocalizedValue(tier.namen, getLanguage()) ??
+      tier.wissenschaftlicherName;
     list.appendChild(chip);
   });
 }

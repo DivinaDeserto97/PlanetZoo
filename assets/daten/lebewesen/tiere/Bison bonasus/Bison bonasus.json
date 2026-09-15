@@ -15,15 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "europe"
-    ],
-    "biome": [
-      "Gemäßigt"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["europe"],
+    "biome": ["Gemäßigt"],
     "schutzstatus": "nearThreatened"
   },
   "daten": {
@@ -115,9 +109,7 @@
         {
           "wert": 2518,
           "einheit": "individuum",
-          "giltFuer": [
-            "Bison bonasus"
-          ],
+          "giltFuer": ["Bison bonasus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand mit 2.518 Individuen an.",

@@ -17,10 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [
-      "Ästuar",
-      "Riff"
-    ],
+    "biome": ["Ästuar", "Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
@@ -111,9 +108,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            "Gnathanodon speciosus"
-          ],
+          "giltFuer": ["Gnathanodon speciosus"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
@@ -224,9 +219,7 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "larve"
-                ],
+                "selbst": ["larve"],
                 "ziel": []
               },
               "quelle": "planetZoo2"

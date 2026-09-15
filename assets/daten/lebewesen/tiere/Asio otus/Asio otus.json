@@ -16,17 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": [
-      "europe",
-      "asia",
-      "northAmerica",
-      "africa"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Gemäßigt",
-      "Graslandschaft"
-    ],
+    "kontinente": ["europe", "asia", "northAmerica", "africa"],
+    "biome": ["Feuchtgebiete", "Gemäßigt", "Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

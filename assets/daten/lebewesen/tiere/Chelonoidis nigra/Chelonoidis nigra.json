@@ -16,9 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "southAmerica"
-    ],
+    "kontinente": ["southAmerica"],
     "biome": [],
     "schutzstatus": "vulnerable"
   },

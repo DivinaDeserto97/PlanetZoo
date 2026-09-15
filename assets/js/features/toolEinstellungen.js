@@ -1,11 +1,6 @@
-import {
-  TOOLS,
-} from "./toolRegistry.js";
+import { TOOLS } from "./toolRegistry.js";
 
-
-const STORAGE_KEY =
-  "planetZoo2-toolEinstellungen";
-
+const STORAGE_KEY = "planetZoo2-toolEinstellungen";
 
 export const TOOL_STUFEN = {
   WICHTIG: "wichtig",
@@ -13,129 +8,54 @@ export const TOOL_STUFEN = {
   UNSICHTBAR: "unsichtbar",
 };
 
-
-const GUELTIGE_STUFEN =
-  new Set(
-    Object.values(
-      TOOL_STUFEN,
-    ),
-  );
-
+const GUELTIGE_STUFEN = new Set(Object.values(TOOL_STUFEN));
 
 function getStandardEinstellungen() {
-  return Object.fromEntries(
-    TOOLS.map(
-      (tool) => [
-        tool.id,
-        tool.standard,
-      ],
-    ),
-  );
+  return Object.fromEntries(TOOLS.map((tool) => [tool.id, tool.standard]));
 }
 
-
 export function getToolEinstellungen() {
-  const standard =
-    getStandardEinstellungen();
-
+  const standard = getStandardEinstellungen();
 
   try {
-    const gespeichert =
-      JSON.parse(
-        localStorage.getItem(
-          STORAGE_KEY,
-        ) ??
-          "{}",
-      );
+    const gespeichert = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}");
 
-
-    for (
-      const [
-        toolId,
-        stufe,
-      ] of Object.entries(
-        gespeichert,
-      )
-    ) {
-      if (
-        GUELTIGE_STUFEN.has(
-          stufe,
-        )
-      ) {
-        standard[toolId] =
-          stufe;
+    for (const [toolId, stufe] of Object.entries(gespeichert)) {
+      if (GUELTIGE_STUFEN.has(stufe)) {
+        standard[toolId] = stufe;
       }
     }
+  } catch (error) {
+    console.warn("Tool-Einstellungen konnten nicht gelesen werden.", error);
   }
-
-  catch (error) {
-    console.warn(
-      "Tool-Einstellungen konnten nicht gelesen werden.",
-      error,
-    );
-  }
-
 
   return standard;
 }
 
-
-export function getToolEinstellung(
-  toolId,
-) {
-  return (
-    getToolEinstellungen()[
-      toolId
-    ] ??
-    TOOL_STUFEN.UNSICHTBAR
-  );
+export function getToolEinstellung(toolId) {
+  return getToolEinstellungen()[toolId] ?? TOOL_STUFEN.UNSICHTBAR;
 }
 
-
-export function setToolEinstellung(
-  toolId,
-  stufe,
-) {
-  if (
-    !GUELTIGE_STUFEN.has(
-      stufe,
-    )
-  ) {
-    console.error(
-      `Ungültige Tool-Stufe: ${stufe}`,
-    );
+export function setToolEinstellung(toolId, stufe) {
+  if (!GUELTIGE_STUFEN.has(stufe)) {
+    console.error(`Ungültige Tool-Stufe: ${stufe}`);
 
     return;
   }
 
+  const einstellungen = getToolEinstellungen();
 
-  const einstellungen =
-    getToolEinstellungen();
+  einstellungen[toolId] = stufe;
 
-
-  einstellungen[
-    toolId
-  ] = stufe;
-
-
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify(
-      einstellungen,
-    ),
-  );
-
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(einstellungen));
 
   document.dispatchEvent(
-    new CustomEvent(
-      "toolEinstellungenChanged",
-      {
-        detail: {
-          toolId,
-          stufe,
-          einstellungen,
-        },
+    new CustomEvent("toolEinstellungenChanged", {
+      detail: {
+        toolId,
+        stufe,
+        einstellungen,
       },
-    ),
+    }),
   );
 }

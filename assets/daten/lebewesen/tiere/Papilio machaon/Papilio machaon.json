@@ -16,15 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "europe",
-      "asia",
-      "northAmerica"
-    ],
-    "biome": [
-      "Gemäßigt",
-      "Tundra"
-    ],
+    "kontinente": ["europe", "asia", "northAmerica"],
+    "biome": ["Gemäßigt", "Tundra"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

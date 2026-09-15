@@ -1,8 +1,4 @@
-import {
-  getLanguage,
-  getLocalizedValue,
-} from "../../features/language.js";
-
+import { getLanguage, getLocalizedValue } from "../../features/language.js";
 
 const UI = {
   de: {
@@ -83,7 +79,6 @@ const UI = {
     years: "years",
   },
 };
-
 
 const VALUE_LABELS = {
   solitaryOrPair: {
@@ -347,219 +342,99 @@ const VALUE_LABELS = {
   },
 };
 
-
 export function renderUiText() {
-  document
-    .querySelectorAll(
-      "[data-ui]",
-    )
-    .forEach(
-      (element) => {
-        element.textContent =
-          ui(
-            element.dataset.ui,
-          );
-      },
-    );
+  document.querySelectorAll("[data-ui]").forEach((element) => {
+    element.textContent = ui(element.dataset.ui);
+  });
 }
 
+export function ui(key) {
+  const language = getLanguage();
 
-export function ui(
-  key,
-) {
-  const language =
-    getLanguage();
+  const base = language.startsWith("en") ? "en" : "de";
 
-  const base =
-    language.startsWith(
-      "en",
-    )
-      ? "en"
-      : "de";
-
-  return (
-    UI[base]?.[key] ??
-    UI.de[key] ??
-    key
-  );
+  return UI[base]?.[key] ?? UI.de[key] ?? key;
 }
 
-
-export function enumLabel(
-  key,
-) {
-  if (
-    key === undefined ||
-    key === null
-  ) {
+export function enumLabel(key) {
+  if (key === undefined || key === null) {
     return "";
   }
 
+  const language = getLanguage();
 
-  const language =
-    getLanguage();
-
-  const values =
-    VALUE_LABELS[key];
-
+  const values = VALUE_LABELS[key];
 
   if (!values) {
-    return String(
-      key,
-    );
+    return String(key);
   }
 
-
-  if (
-    language.startsWith(
-      "en",
-    )
-  ) {
-    return (
-      values.en ??
-      values.de ??
-      key
-    );
+  if (language.startsWith("en")) {
+    return values.en ?? values.de ?? key;
   }
 
-
-  return (
-    values[language] ??
-    values.de ??
-    values.en ??
-    key
-  );
+  return values[language] ?? values.de ?? values.en ?? key;
 }
 
+export function getTextEntries(tier, key) {
+  const value = getLocalizedValue(
+    tier?.originalDaten?.texte?.[key],
 
-export function getTextEntries(
-  tier,
-  key,
-) {
-  const value =
-    getLocalizedValue(
-      tier
-        ?.originalDaten
-        ?.texte
-        ?.[key],
+    getLanguage(),
+  );
 
-      getLanguage(),
-    );
-
-
-  if (
-    !Array.isArray(
-      value,
-    )
-  ) {
+  if (!Array.isArray(value)) {
     return [];
   }
 
-
   return value.filter(
-    (entry) =>
-      entry &&
-      typeof entry.inhalt ===
-        "string" &&
-      entry.inhalt.trim(),
+    (entry) => entry && typeof entry.inhalt === "string" && entry.inhalt.trim(),
   );
 }
 
-
-export function getTierName(
-  tier,
-) {
+export function getTierName(tier) {
   if (!tier) {
     return "";
   }
 
-
   return (
-    getLocalizedValue(
-      tier.namen,
-      getLanguage(),
-    ) ??
+    getLocalizedValue(tier.namen, getLanguage()) ??
     tier.wissenschaftlicherName ??
     tier.id ??
     ""
   );
 }
 
-
-export function setText(
-  selector,
-  value,
-) {
-  const element =
-    document.querySelector(
-      selector,
-    );
-
+export function setText(selector, value) {
+  const element = document.querySelector(selector);
 
   if (element) {
-    element.textContent =
-      value ??
-      "";
+    element.textContent = value ?? "";
   }
 }
 
-
-export function formatNumber(
-  value,
-) {
-  if (
-    typeof value !==
-    "number"
-  ) {
-    return String(
-      value ??
-      "",
-    );
+export function formatNumber(value) {
+  if (typeof value !== "number") {
+    return String(value ?? "");
   }
 
-
-  return new Intl.NumberFormat(
-    getLanguage(),
-    {
-      maximumFractionDigits:
-        2,
-    },
-  ).format(
-    value,
-  );
+  return new Intl.NumberFormat(getLanguage(), {
+    maximumFractionDigits: 2,
+  }).format(value);
 }
 
-
-export function clampIndex(
-  index,
-  length,
-) {
+export function clampIndex(index, length) {
   if (!length) {
     return 0;
   }
 
-
-  return Math.max(
-    0,
-    Math.min(
-      index,
-      length - 1,
-    ),
-  );
+  return Math.max(0, Math.min(index, length - 1));
 }
 
-
-export function wrapIndex(
-  index,
-  length,
-) {
+export function wrapIndex(index, length) {
   if (!length) {
     return 0;
   }
 
-
-  return (
-    index +
-    length
-  ) % length;
+  return (index + length) % length;
 }

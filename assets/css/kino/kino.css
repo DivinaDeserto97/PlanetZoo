@@ -348,7 +348,8 @@
   line-height: 1.05;
 }
 
-.kino-player__card-body > p:not(.kino-player__category):not(.kino-player__source) {
+.kino-player__card-body
+  > p:not(.kino-player__category):not(.kino-player__source) {
   margin: 0;
   max-width: 1000px;
   font-size: clamp(17px, 2vw, 30px);
@@ -478,7 +479,6 @@
     margin-left: 0;
   }
 }
-
 
 /* Audio-Zwischenprogramm läuft unter der Text-/Bildkarte und bekommt keine eigene schwarze Fläche. */
 [data-kino-audio] {

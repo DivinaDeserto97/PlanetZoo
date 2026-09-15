@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Tropen"
-    ],
+    "kontinente": ["africa"],
+    "biome": ["Feuchtgebiete", "Tropen"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

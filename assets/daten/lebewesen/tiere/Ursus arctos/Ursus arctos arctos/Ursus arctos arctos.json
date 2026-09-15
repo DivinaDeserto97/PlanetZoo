@@ -15,18 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "europe",
-      "asia"
-    ],
-    "biome": [
-      "Taiga",
-      "Gemäßigt",
-      "Graslandschaft"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["europe", "asia"],
+    "biome": ["Taiga", "Gemäßigt", "Graslandschaft"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

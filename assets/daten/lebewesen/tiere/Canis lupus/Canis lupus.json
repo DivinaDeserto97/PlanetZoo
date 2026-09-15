@@ -16,11 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "europe",
-      "asia",
-      "northAmerica"
-    ],
+    "kontinente": ["europe", "asia", "northAmerica"],
     "biome": ["Gemäßigt"],
     "schutzstatus": "leastConcern"
   },

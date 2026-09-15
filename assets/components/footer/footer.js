@@ -1,251 +1,116 @@
-import {
-  getTierAuswahl,
-} from "../../js/features/tierAuswahl.js";
+import { getTierAuswahl } from "../../js/features/tierAuswahl.js";
 
-import {
-  getCurrentPage,
-  pages,
-} from "../../js/pages.js";
+import { getCurrentPage, pages } from "../../js/pages.js";
 
-import {
-  getLanguage,
-} from "../../js/features/language.js";
+import { getLanguage } from "../../js/features/language.js";
 
-import {
-  TOOLS,
-} from "../../js/features/toolRegistry.js";
+import { TOOLS } from "../../js/features/toolRegistry.js";
 
 import {
   getToolEinstellungen,
   setToolEinstellung,
 } from "../../js/features/toolEinstellungen.js";
 
-
 let controller = null;
 
-
 function updateSelectionCount() {
-  const count =
-    document.querySelector(
-      "[data-footer-selection-count]",
-    );
-
+  const count = document.querySelector("[data-footer-selection-count]");
 
   if (count) {
-    count.textContent =
-      String(
-        getTierAuswahl().length,
-      );
+    count.textContent = String(getTierAuswahl().length);
   }
 }
 
-
 function updateActivePage() {
-  const currentPage =
-    getCurrentPage();
+  const currentPage = getCurrentPage();
 
-
-  document
-    .querySelectorAll(
-      "[data-footer-page]",
-    )
-    .forEach(
-      (link) => {
-        link.classList.toggle(
-          "active",
-          link.dataset
-            .footerPage ===
-            currentPage,
-        );
-      },
-    );
+  document.querySelectorAll("[data-footer-page]").forEach((link) => {
+    link.classList.toggle("active", link.dataset.footerPage === currentPage);
+  });
 }
 
-
 function renderTools() {
-  const container =
-    document.querySelector(
-      "[data-footer-tools]",
-    );
-
+  const container = document.querySelector("[data-footer-tools]");
 
   if (!container) {
     return;
   }
 
+  const language = getLanguage();
 
-  const language =
-    getLanguage();
-
-  const einstellungen =
-    getToolEinstellungen();
-
+  const einstellungen = getToolEinstellungen();
 
   container.replaceChildren();
 
+  TOOLS.forEach((tool) => {
+    const item = document.createElement("div");
 
-  TOOLS.forEach(
-    (tool) => {
-      const item =
-        document.createElement(
-          "div",
-        );
+    item.className = "app-footer__tool";
 
-      item.className =
-        "app-footer__tool";
+    const page = tool.page ? pages[tool.page] : null;
 
+    const labelText =
+      page?.headerTitle?.[language] ??
+      page?.headerTitle?.de ??
+      tool.label?.[language] ??
+      tool.label?.de ??
+      tool.id;
 
-      const page =
-        tool.page
-          ? pages[
-              tool.page
-            ]
-          : null;
+    let label;
 
+    if (page) {
+      label = document.createElement("a");
 
-      const labelText =
-        page?.headerTitle?.[
-          language
-        ] ??
-        page?.headerTitle?.de ??
-        tool.label?.[
-          language
-        ] ??
-        tool.label?.de ??
-        tool.id;
+      label.href = `#${tool.page}`;
 
+      label.dataset.page = tool.page;
 
-      let label;
+      label.dataset.footerPage = tool.page;
+    } else {
+      label = document.createElement("span");
+    }
 
+    label.className = "app-footer__tool-name";
 
-      if (page) {
-        label =
-          document.createElement(
-            "a",
-          );
+    label.textContent = labelText;
 
-        label.href =
-          `#${tool.page}`;
+    const select = document.createElement("select");
 
-        label.dataset.page =
-          tool.page;
+    select.className = "app-footer__tool-select";
 
-        label.dataset.footerPage =
-          tool.page;
-      }
+    select.dataset.toolId = tool.id;
 
-      else {
-        label =
-          document.createElement(
-            "span",
-          );
-      }
+    select.setAttribute("aria-label", `${labelText}: Priorität`);
 
+    [
+      ["wichtig", getSettingLabel("wichtig", language)],
+      ["nichtWichtig", getSettingLabel("nichtWichtig", language)],
+      ["unsichtbar", getSettingLabel("unsichtbar", language)],
+    ].forEach(([value, text]) => {
+      const option = document.createElement("option");
 
-      label.className =
-        "app-footer__tool-name";
+      option.value = value;
 
-      label.textContent =
-        labelText;
+      option.textContent = text;
 
+      select.appendChild(option);
+    });
 
-      const select =
-        document.createElement(
-          "select",
-        );
+    select.value = einstellungen[tool.id];
 
-      select.className =
-        "app-footer__tool-select";
+    select.addEventListener("change", () => {
+      setToolEinstellung(tool.id, select.value);
+    });
 
-      select.dataset.toolId =
-        tool.id;
+    item.append(label, select);
 
-      select.setAttribute(
-        "aria-label",
-        `${labelText}: Priorität`,
-      );
-
-
-      [
-        [
-          "wichtig",
-          getSettingLabel(
-            "wichtig",
-            language,
-          ),
-        ],
-        [
-          "nichtWichtig",
-          getSettingLabel(
-            "nichtWichtig",
-            language,
-          ),
-        ],
-        [
-          "unsichtbar",
-          getSettingLabel(
-            "unsichtbar",
-            language,
-          ),
-        ],
-      ].forEach(
-        ([value, text]) => {
-          const option =
-            document.createElement(
-              "option",
-            );
-
-          option.value =
-            value;
-
-          option.textContent =
-            text;
-
-          select.appendChild(
-            option,
-          );
-        },
-      );
-
-
-      select.value =
-        einstellungen[
-          tool.id
-        ];
-
-
-      select.addEventListener(
-        "change",
-        () => {
-          setToolEinstellung(
-            tool.id,
-            select.value,
-          );
-        },
-      );
-
-
-      item.append(
-        label,
-        select,
-      );
-
-
-      container.appendChild(
-        item,
-      );
-    },
-  );
-
+    container.appendChild(item);
+  });
 
   updateActivePage();
 }
 
-
-function getSettingLabel(
-  value,
-  language,
-) {
+function getSettingLabel(value, language) {
   const labels = {
     wichtig: {
       de: "Wichtig",
@@ -284,53 +149,26 @@ function getSettingLabel(
     },
   };
 
-
-  return (
-    labels[value]?.[
-      language
-    ] ??
-    labels[value]?.de ??
-    value
-  );
+  return labels[value]?.[language] ?? labels[value]?.de ?? value;
 }
-
 
 export function init() {
   controller?.abort();
-  controller =
-    new AbortController();
+  controller = new AbortController();
 
-  const { signal } =
-    controller;
+  const { signal } = controller;
 
+  document.addEventListener("tierAuswahlChanged", updateSelectionCount, {
+    signal,
+  });
 
-  document.addEventListener(
-    "tierAuswahlChanged",
-    updateSelectionCount,
-    { signal },
-  );
+  document.addEventListener("pageLoaded", updateActivePage, { signal });
 
+  document.addEventListener("languageChanged", renderTools, { signal });
 
-  document.addEventListener(
-    "pageLoaded",
-    updateActivePage,
-    { signal },
-  );
-
-
-  document.addEventListener(
-    "languageChanged",
-    renderTools,
-    { signal },
-  );
-
-
-  document.addEventListener(
-    "toolEinstellungenChanged",
-    renderTools,
-    { signal },
-  );
-
+  document.addEventListener("toolEinstellungenChanged", renderTools, {
+    signal,
+  });
 
   updateSelectionCount();
   renderTools();

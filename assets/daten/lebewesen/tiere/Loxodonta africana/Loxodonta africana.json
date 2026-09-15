@@ -15,17 +15,9 @@
   },
   "filter": {
     "edition": "standard",
-    "gehegetyp": [
-      "Landgehege"
-    ],
-    "kontinente": [
-      "africa"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Graslandschaft",
-      "Wüste"
-    ],
+    "gehegetyp": ["Landgehege"],
+    "kontinente": ["africa"],
+    "biome": ["Feuchtgebiete", "Graslandschaft", "Wüste"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -125,10 +117,7 @@
         {
           "wert": 415000,
           "einheit": "individuum",
-          "giltFuer": [
-            "Loxodonta africana",
-            "Loxodonta cyclotis"
-          ],
+          "giltFuer": ["Loxodonta africana", "Loxodonta cyclotis"],
           "jahrDerGrundlage": 2016,
           "hinweis": {
             "de": "Die häufig zitierte Zahl von rund 415.000 gilt für afrikanische Savannen- und Waldelefanten zusammen. Sie darf nicht als aktuelle Populationszahl nur von Loxodonta africana interpretiert werden.",
@@ -252,9 +241,7 @@
               "beziehung": "nutzung",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [
-                  "calf"
-                ],
+                "selbst": ["calf"],
                 "ziel": []
               },
               "nutzung": {
@@ -269,9 +256,7 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "increasingWithAge"
-                ],
+                "selbst": ["increasingWithAge"],
                 "ziel": []
               },
               "quelle": "sanDiegoZoo"

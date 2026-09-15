@@ -5,13 +5,9 @@ import {
   setTierAusgewaehlt,
 } from "../../features/tierAuswahl.js";
 
-import {
-  setAktivesTierId,
-} from "../../features/tierAktiv.js";
+import { setAktivesTierId } from "../../features/tierAktiv.js";
 
-import {
-  getTierMarkierungsStatus,
-} from "../../features/tierDatenPruefung.js";
+import { getTierMarkierungsStatus } from "../../features/tierDatenPruefung.js";
 
 import {
   getEnclosureLabel,

@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": [
-      "northAmerica"
-    ],
-    "biome": [
-      "Ästuar",
-      "Feuchtgebiete"
-    ],
+    "kontinente": ["northAmerica"],
+    "biome": ["Ästuar", "Feuchtgebiete"],
     "schutzstatus": "endangered"
   },
   "daten": {
@@ -107,9 +102,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            "Malaclemys terrapin"
-          ],
+          "giltFuer": ["Malaclemys terrapin"],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",

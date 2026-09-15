@@ -16,9 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "africa"
-    ],
+    "kontinente": ["africa"],
     "biome": [],
     "schutzstatus": "endangered"
   },

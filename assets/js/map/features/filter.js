@@ -2,112 +2,56 @@
 /* MAP-FILTER                               */
 /* ======================================== */
 
-export function initMapFilter({
-  signal,
-  onChange,
-}) {
+export function initMapFilter({ signal, onChange }) {
   const elemente = {
-    details:
-      document.querySelector(
-        "[data-map-filter]",
-      ),
+    details: document.querySelector("[data-map-filter]"),
 
-    suche:
-      document.querySelector(
-        "[data-map-search]",
-      ),
+    suche: document.querySelector("[data-map-search]"),
 
-    gehegetyp:
-      document.querySelector(
-        "[data-map-enclosure]",
-      ),
+    gehegetyp: document.querySelector("[data-map-enclosure]"),
 
-    kontinent:
-      document.querySelector(
-        "[data-map-continent]",
-      ),
+    kontinent: document.querySelector("[data-map-continent]"),
 
-    biome:
-      document.querySelector(
-        "[data-map-biome]",
-      ),
+    biome: document.querySelector("[data-map-biome]"),
 
-    schutzstatus:
-      document.querySelector(
-        "[data-map-conservation]",
-      ),
+    schutzstatus: document.querySelector("[data-map-conservation]"),
 
-    edition:
-      document.querySelector(
-        "[data-map-edition]",
-      ),
+    edition: document.querySelector("[data-map-edition]"),
 
-    nurAusgewaehlt:
-      document.querySelector(
-        "[data-map-selected-only]",
-      ),
+    nurAusgewaehlt: document.querySelector("[data-map-selected-only]"),
 
-    sortierenNach:
-      document.querySelector(
-        "[data-map-sort-by]",
-      ),
+    sortierenNach: document.querySelector("[data-map-sort-by]"),
 
-    richtung:
-      document.querySelector(
-        "[data-map-sort-direction]",
-      ),
+    richtung: document.querySelector("[data-map-sort-direction]"),
 
-    reset:
-      document.querySelector(
-        "[data-map-filter-reset]",
-      ),
+    reset: document.querySelector("[data-map-filter-reset]"),
   };
-
 
   function getState() {
     return {
       filter: {
-        suche:
-          elemente.suche?.value ??
-          "",
+        suche: elemente.suche?.value ?? "",
 
-        gehegetyp:
-          elemente.gehegetyp?.value ??
-          "",
+        gehegetyp: elemente.gehegetyp?.value ?? "",
 
-        kontinent:
-          elemente.kontinent?.value ??
-          "",
+        kontinent: elemente.kontinent?.value ?? "",
 
-        biome:
-          elemente.biome?.value ??
-          "",
+        biome: elemente.biome?.value ?? "",
 
-        schutzstatus:
-          elemente.schutzstatus?.value ??
-          "",
+        schutzstatus: elemente.schutzstatus?.value ?? "",
 
-        edition:
-          elemente.edition?.value ??
-          "",
+        edition: elemente.edition?.value ?? "",
 
-        nurAusgewaehlt:
-          elemente.nurAusgewaehlt?.checked ??
-          false,
+        nurAusgewaehlt: elemente.nurAusgewaehlt?.checked ?? false,
       },
 
       sortierung: {
-        sortierenNach:
-          elemente.sortierenNach?.value ??
-          "newest",
+        sortierenNach: elemente.sortierenNach?.value ?? "newest",
 
-        richtung:
-          elemente.richtung?.value ??
-          "desc",
+        richtung: elemente.richtung?.value ?? "desc",
       },
     };
   }
-
 
   const controls = [
     elemente.suche,
@@ -121,31 +65,19 @@ export function initMapFilter({
     elemente.richtung,
   ];
 
+  controls.forEach((element) => {
+    if (!element) {
+      return;
+    }
 
-  controls.forEach(
-    (element) => {
-      if (!element) {
-        return;
-      }
+    element.addEventListener("input", onChange, {
+      signal,
+    });
 
-      element.addEventListener(
-        "input",
-        onChange,
-        {
-          signal,
-        },
-      );
-
-      element.addEventListener(
-        "change",
-        onChange,
-        {
-          signal,
-        },
-      );
-    },
-  );
-
+    element.addEventListener("change", onChange, {
+      signal,
+    });
+  });
 
   elemente.reset?.addEventListener(
     "click",
@@ -179,13 +111,11 @@ export function initMapFilter({
       }
 
       if (elemente.sortierenNach) {
-        elemente.sortierenNach.value =
-          "newest";
+        elemente.sortierenNach.value = "newest";
       }
 
       if (elemente.richtung) {
-        elemente.richtung.value =
-          "desc";
+        elemente.richtung.value = "desc";
       }
 
       onChange();
@@ -195,16 +125,10 @@ export function initMapFilter({
     },
   );
 
-
   document.addEventListener(
     "pointerdown",
     (event) => {
-      if (
-        !elemente.details?.open ||
-        elemente.details.contains(
-          event.target,
-        )
-      ) {
+      if (!elemente.details?.open || elemente.details.contains(event.target)) {
         return;
       }
 
@@ -215,14 +139,10 @@ export function initMapFilter({
     },
   );
 
-
   document.addEventListener(
     "keydown",
     (event) => {
-      if (
-        event.key === "Escape" &&
-        elemente.details?.open
-      ) {
+      if (event.key === "Escape" && elemente.details?.open) {
         elemente.details.open = false;
       }
     },
@@ -230,7 +150,6 @@ export function initMapFilter({
       signal,
     },
   );
-
 
   return {
     getState,

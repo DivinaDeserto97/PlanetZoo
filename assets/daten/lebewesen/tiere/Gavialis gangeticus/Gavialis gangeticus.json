@@ -16,13 +16,8 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": [
-      "asia"
-    ],
-    "biome": [
-      "Feuchtgebiete",
-      "Seen und Flüsse"
-    ],
+    "kontinente": ["asia"],
+    "biome": ["Feuchtgebiete", "Seen und Flüsse"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {

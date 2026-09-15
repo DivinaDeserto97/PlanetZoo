@@ -1,321 +1,150 @@
-import {
-  getInfotafelBilder,
-} from "../../features/tierMedien.js";
+import { getInfotafelBilder } from "../../features/tierMedien.js";
 
-import {
-  clampIndex,
-  getTierName,
-  ui,
-  wrapIndex,
-} from "./ui.js";
+import { clampIndex, getTierName, ui, wrapIndex } from "./ui.js";
 
+let imageIndex = 0;
 
-let imageIndex =
-  0;
-
-
-function getTierImages(
-  tier,
-) {
-  return getInfotafelBilder(
-    tier,
-  );
+function getTierImages(tier) {
+  return getInfotafelBilder(tier);
 }
-
 
 export function resetImageState() {
-  imageIndex =
-    0;
+  imageIndex = 0;
 }
 
+export function renderMainImage(tier) {
+  const images = getTierImages(tier);
 
-export function renderMainImage(
-  tier,
-) {
-  const images =
-    getTierImages(
-      tier,
-    );
+  imageIndex = clampIndex(imageIndex, images.length);
 
+  const image = document.querySelector("[data-main-image]");
 
-  imageIndex =
-    clampIndex(
-      imageIndex,
-      images.length,
-    );
+  const fallback = document.querySelector("[data-main-image-fallback]");
 
+  const count = document.querySelector("[data-image-count]");
 
-  const image =
-    document.querySelector(
-      "[data-main-image]",
-    );
+  const button = document.querySelector("[data-main-image-button]");
 
-  const fallback =
-    document.querySelector(
-      "[data-main-image-fallback]",
-    );
-
-  const count =
-    document.querySelector(
-      "[data-image-count]",
-    );
-
-  const button =
-    document.querySelector(
-      "[data-main-image-button]",
-    );
-
-
-  if (
-    !image ||
-    !fallback ||
-    !button
-  ) {
+  if (!image || !fallback || !button) {
     return;
   }
 
+  if (!images.length) {
+    image.hidden = true;
 
-  if (
-    !images.length
-  ) {
-    image.hidden =
-      true;
+    fallback.hidden = false;
 
-    fallback.hidden =
-      false;
+    fallback.textContent = ui("noImage");
 
-    fallback.textContent =
-      ui(
-        "noImage",
-      );
-
-    button.disabled =
-      true;
-
+    button.disabled = true;
 
     if (count) {
-      count.textContent =
-        "";
+      count.textContent = "";
     }
-
 
     return;
   }
 
+  const current = images[imageIndex];
 
-  const current =
-    images[
-      imageIndex
-    ];
+  image.hidden = false;
 
+  fallback.hidden = true;
 
-  image.hidden =
-    false;
+  button.disabled = false;
 
-  fallback.hidden =
-    true;
+  image.src = current.pfad;
 
-  button.disabled =
-    false;
+  image.alt = getTierName(tier);
 
-  image.src =
-    current.pfad;
+  image.onerror = () => {
+    image.hidden = true;
 
-  image.alt =
-    getTierName(
-      tier,
-    );
+    fallback.hidden = false;
 
-
-  image.onerror =
-    () => {
-      image.hidden =
-        true;
-
-      fallback.hidden =
-        false;
-
-      fallback.textContent =
-        ui(
-          "noImage",
-        );
-    };
-
+    fallback.textContent = ui("noImage");
+  };
 
   if (count) {
     count.textContent =
-      images.length >
-      1
-        ? `${imageIndex + 1}/${images.length}`
-        : "↗";
+      images.length > 1 ? `${imageIndex + 1}/${images.length}` : "↗";
   }
 }
 
+export function openImageDialog(tier) {
+  const images = tier ? getTierImages(tier) : [];
 
-export function openImageDialog(
-  tier,
-) {
-  const images =
-    tier
-      ? getTierImages(
-          tier,
-        )
-      : [];
-
-
-  if (
-    !tier ||
-    !images.length
-  ) {
+  if (!tier || !images.length) {
     return;
   }
 
-
-  const dialog =
-    document.querySelector(
-      "[data-image-dialog]",
-    );
-
+  const dialog = document.querySelector("[data-image-dialog]");
 
   if (!dialog) {
     return;
   }
 
-
-  renderImageDialog(
-    tier,
-  );
+  renderImageDialog(tier);
 
   dialog.showModal();
 }
 
+function renderImageDialog(tier) {
+  const images = getTierImages(tier);
 
-function renderImageDialog(
-  tier,
-) {
-  const images =
-    getTierImages(
-      tier,
-    );
+  imageIndex = clampIndex(imageIndex, images.length);
 
-
-  imageIndex =
-    clampIndex(
-      imageIndex,
-      images.length,
-    );
-
-
-  if (
-    !images.length
-  ) {
+  if (!images.length) {
     return;
   }
 
+  const image = document.querySelector("[data-dialog-image]");
 
-  const image =
-    document.querySelector(
-      "[data-dialog-image]",
-    );
+  const title = document.querySelector("[data-image-dialog-title]");
 
-  const title =
-    document.querySelector(
-      "[data-image-dialog-title]",
-    );
+  const counter = document.querySelector("[data-image-dialog-counter]");
 
-  const counter =
-    document.querySelector(
-      "[data-image-dialog-counter]",
-    );
+  const prev = document.querySelector("[data-image-prev]");
 
-  const prev =
-    document.querySelector(
-      "[data-image-prev]",
-    );
-
-  const next =
-    document.querySelector(
-      "[data-image-next]",
-    );
-
+  const next = document.querySelector("[data-image-next]");
 
   if (image) {
-    image.src =
-      images[
-        imageIndex
-      ].pfad;
+    image.src = images[imageIndex].pfad;
 
-    image.alt =
-      getTierName(
-        tier,
-      );
+    image.alt = getTierName(tier);
   }
-
 
   if (title) {
-    title.textContent =
-      getTierName(
-        tier,
-      );
+    title.textContent = getTierName(tier);
   }
-
 
   if (counter) {
-    counter.textContent =
-      `${ui("image")} ${imageIndex + 1} / ${images.length}`;
+    counter.textContent = `${ui("image")} ${imageIndex + 1} / ${images.length}`;
   }
-
 
   if (prev) {
-    prev.hidden =
-      images.length <=
-      1;
+    prev.hidden = images.length <= 1;
   }
 
-
   if (next) {
-    next.hidden =
-      images.length <=
-      1;
+    next.hidden = images.length <= 1;
   }
 }
 
+export function changeImage(direction, tier) {
+  const images = tier ? getTierImages(tier) : [];
 
-export function changeImage(
-  direction,
-  tier,
-) {
-  const images =
-    tier
-      ? getTierImages(
-          tier,
-        )
-      : [];
-
-
-  if (
-    !tier ||
-    images.length <=
-      1
-  ) {
+  if (!tier || images.length <= 1) {
     return;
   }
 
+  imageIndex = wrapIndex(
+    imageIndex + direction,
 
-  imageIndex =
-    wrapIndex(
-      imageIndex +
-        direction,
-
-      images.length,
-    );
-
-
-  renderMainImage(
-    tier,
+    images.length,
   );
 
-  renderImageDialog(
-    tier,
-  );
+  renderMainImage(tier);
+
+  renderImageDialog(tier);
 }
