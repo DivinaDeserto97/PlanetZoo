@@ -50,16 +50,16 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
-      "werte": []
+      "werte": [""]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -79,7 +79,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
@@ -107,7 +107,7 @@
       ]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
       "werte": [
@@ -214,7 +214,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
           "werte": [
@@ -224,8 +224,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             },
@@ -235,8 +235,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             },
@@ -246,8 +246,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             }
@@ -261,15 +261,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -294,12 +294,12 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -308,14 +308,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -324,14 +324,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -340,14 +340,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -372,14 +372,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -388,14 +388,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     }
   },
   "karte": {
@@ -426,7 +426,7 @@
             "de": "Offizielles Zoopedia-Hauptbild der Mexikanische Rotknie-Vogelspinne aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Mexican Red-knee Tarantula."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -439,8 +439,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

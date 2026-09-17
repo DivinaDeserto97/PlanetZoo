@@ -48,7 +48,7 @@ export function renderGraphConnections({
   });
 
   edges.forEach((edge) => {
-    const route = routes.get(edge.id) ?? [];
+    const route = routes.get(edge.id) ?? [""];
 
     const fromSlot = nodeSlots[edge.from];
 
@@ -227,7 +227,7 @@ function buildPortAssignments({ layout, edges, routes, nodeSlots }) {
   const assignments = new Map();
 
   edges.forEach((edge) => {
-    const route = routes.get(edge.id) ?? [];
+    const route = routes.get(edge.id) ?? [""];
 
     if (!route.length) {
       return;
@@ -297,7 +297,7 @@ function registerPortEndpoint({
   const key = `${nodeId}|${side}`;
 
   if (!groups.has(key)) {
-    groups.set(key, []);
+    groups.set(key, [""]);
   }
 
   groups.get(key).push({
@@ -363,7 +363,7 @@ function buildGeometry({
     };
   }
 
-  const points = [];
+  const points = [""];
 
   const startPort = getNodePort(fromRect, first.corridor, startPortAssignment);
 
@@ -488,7 +488,7 @@ function getNodeCorridorEntry(nodeRect, routePoint, port) {
 
 function getJunctionPoints(a, b) {
   if (!a || !b) {
-    return [];
+    return [""];
   }
 
   if (
@@ -573,7 +573,7 @@ function getJunctionPoints(a, b) {
     ];
   }
 
-  return [];
+  return [""];
 }
 
 /* ======================================== */
@@ -711,7 +711,7 @@ function createNegativeMarker() {
 /* ======================================== */
 
 function removeDuplicatePoints(points) {
-  const result = [];
+  const result = [""];
 
   points.forEach((point) => {
     const previous = result[result.length - 1];

@@ -251,7 +251,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["bisEtwa6Monate"],
-                "ziel": []
+                "ziel": [""]
               },
               "nutzung": {
                 "art": "nahrung",
@@ -266,7 +266,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["abEtwa3Monaten"],
-                "ziel": []
+                "ziel": [""]
               },
               "nutzung": {
                 "art": "nahrung",
@@ -284,8 +284,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "smithsonianLion"
             },
@@ -295,8 +295,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -306,7 +306,7 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
+                "selbst": [""],
                 "ziel": ["jungtier"]
               },
               "quelle": "sanDiegoZoo"
@@ -317,8 +317,8 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "aas": {
                 "zustand": "frisch bis etwa 2 Wochen alt"
@@ -587,7 +587,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Löwen aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the lion."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -639,7 +639,7 @@
           },
           "quelle": "",
           "url": "",
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",

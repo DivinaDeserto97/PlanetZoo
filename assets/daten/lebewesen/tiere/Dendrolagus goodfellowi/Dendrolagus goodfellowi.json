@@ -62,7 +62,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -83,10 +83,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -177,18 +177,18 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
@@ -198,15 +198,15 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -799,7 +799,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Goodfellow-Baumkängurus aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of Goodfellow's Tree Kangaroo."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -826,7 +826,7 @@
             "de": "Illustration des Goodfellow-Baumkängurus aus der Planet Zoo 2 Zoopedia.",
             "en": "Goodfellow's Tree Kangaroo illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -839,8 +839,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

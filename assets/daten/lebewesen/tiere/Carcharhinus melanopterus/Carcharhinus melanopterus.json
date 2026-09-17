@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [],
+    "kontinente": [""],
     "biome": ["Ästuar", "Mangrove", "Riff"],
     "schutzstatus": "endangered"
   },
@@ -54,7 +54,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -75,7 +75,7 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
       "werte": [
@@ -199,7 +199,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -216,7 +216,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
           "werte": [
@@ -226,8 +226,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Zoopedia beschreibt, dass Gruppen Fischschwärme zusammentreiben und jagen.",
@@ -245,15 +245,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -980,7 +980,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Schwarzspitzenriffhais aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Blacktip Reef Shark."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -1007,7 +1007,7 @@
             "de": "Illustration des Schwarzspitzenriffhais aus der Planet Zoo 2 Zoopedia.",
             "en": "Blacktip Reef Shark illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -1020,8 +1020,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

@@ -51,7 +51,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -69,10 +69,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -229,7 +229,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -254,7 +254,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["jungtier", "ab26TagenLernphase"],
-                "ziel": []
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Jungen lernen von Erwachsenen, wie man Skorpionen vor dem Verzehr den Stachel entfernt.",
@@ -272,8 +272,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             }
@@ -287,15 +287,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -320,12 +320,12 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -334,14 +334,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -350,14 +350,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -366,14 +366,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -398,14 +398,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -414,14 +414,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     }
   },
   "karte": {
@@ -452,7 +452,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Erdmännchens aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Meerkat."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -479,7 +479,7 @@
             "de": "Illustration des Erdmännchens aus der Planet Zoo 2 Zoopedia.",
             "en": "Meerkat illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -492,8 +492,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

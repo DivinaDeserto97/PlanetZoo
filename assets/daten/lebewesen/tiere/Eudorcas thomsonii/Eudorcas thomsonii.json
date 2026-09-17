@@ -51,7 +51,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -65,7 +65,7 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
       "werte": [
@@ -96,7 +96,7 @@
           "wert": null,
           "rohwert": "145",
           "einheit": "",
-          "giltFuer": [],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia zeigt beim Wildbestand lediglich „145“. Da Kontext, Einheit und Größenordnung fehlen, wurde die Angabe nicht als numerischer Gesamtbestand interpretiert und nur als Rohwert übernommen.",
@@ -232,7 +232,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -257,7 +257,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["jungtier"],
-                "ziel": []
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             },
@@ -268,7 +268,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["abEtwa3Bis4Wochen"],
-                "ziel": []
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             }
@@ -282,8 +282,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "planetZoo2"
             }
@@ -297,15 +297,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -330,12 +330,12 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -344,14 +344,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -360,14 +360,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -376,14 +376,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -408,14 +408,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -424,14 +424,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     }
   },
   "karte": {
@@ -462,7 +462,7 @@
             "de": "Offizielles Zoopedia-Hauptbild der Thomson-Gazelle aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of Thomson's Gazelle."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -489,7 +489,7 @@
             "de": "Illustration der Thomson-Gazelle aus der Planet Zoo 2 Zoopedia.",
             "en": "Thomson's Gazelle illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -502,8 +502,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

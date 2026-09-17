@@ -16,7 +16,7 @@
   "filter": {
     "edition": "deluxe",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [],
+    "kontinente": [""],
     "biome": ["Offenes Meer", "Riff"],
     "schutzstatus": "criticallyEndangered"
   },
@@ -61,7 +61,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -84,10 +84,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -175,30 +175,30 @@
       ]
     },
     "biome": {
-      "werte": []
+      "werte": [""]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "frisst": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": []
+            "werte": [""]
           }
         },
         "wirdGefressenVon": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": [],
+            "werte": [""],
             "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
@@ -215,15 +215,15 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -816,7 +816,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Großen Hammerhais aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Great Hammerhead."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -843,7 +843,7 @@
             "de": "Illustration des Großen Hammerhais aus der Planet Zoo 2 Zoopedia im Bereich Arterhaltung.",
             "en": "Great Hammerhead illustration from the Planet Zoo 2 Zoopedia conservation section."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -856,8 +856,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

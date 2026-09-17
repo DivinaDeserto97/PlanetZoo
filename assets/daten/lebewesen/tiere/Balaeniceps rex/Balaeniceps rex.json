@@ -36,10 +36,10 @@
       ]
     },
     "koerperlaenge": {
-      "werte": []
+      "werte": [""]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -68,10 +68,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -93,7 +93,7 @@
           "min": 3000,
           "max": 5300,
           "einheit": "individuum",
-          "giltFuer": [],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt einen Wildbestand von 3.000 bis 5.300 an.",
@@ -114,7 +114,7 @@
       ]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
       "werte": [
@@ -202,7 +202,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -219,7 +219,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
           "werte": [
@@ -229,8 +229,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Zoopedia beschreibt große Fische ausdrücklich als Beute des Schuhschnabels.",
@@ -248,15 +248,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -281,12 +281,12 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -295,14 +295,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -311,14 +311,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -327,14 +327,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -359,14 +359,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -375,14 +375,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     }
   },
   "karte": {
@@ -413,7 +413,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Schuhschnabels aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Shoebill."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -440,7 +440,7 @@
             "de": "Illustration des Schuhschnabels aus der Planet Zoo 2 Zoopedia.",
             "en": "Shoebill illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -453,7 +453,7 @@
       ]
     }
   ],
-  "audio": [],
+  "audio": [""],
   "video": [
     {
       "typ": "dokumentation",
@@ -467,8 +467,8 @@
           },
           "quelle": "planetZoo2",
           "url": "https://youtube.com/watch?v=mfz7j7Xjcvg",
-          "metadaten": [],
-          "dateien": [],
+          "metadaten": [""],
+          "dateien": [""],
           "dauerSekunden": null,
           "beschreibung": {
             "de": "Offizielles Planet Zoo 2 Tier-Vorstellungs-Video zum Schuhschnabel.",

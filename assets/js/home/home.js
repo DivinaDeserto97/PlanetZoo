@@ -16,9 +16,9 @@ import { pruefeLokaleTierDateien } from "../features/tierDatenPruefung.js";
 
 let controller = null;
 
-let tiere = [];
+let tiere = [""];
 
-let sichtbareTiere = [];
+let sichtbareTiere = [""];
 
 /* ======================================== */
 /* HOME INITIALISIEREN                      */

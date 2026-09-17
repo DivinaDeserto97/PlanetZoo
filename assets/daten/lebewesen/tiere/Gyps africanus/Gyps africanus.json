@@ -36,10 +36,10 @@
       ]
     },
     "koerperlaenge": {
-      "werte": []
+      "werte": [""]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "fluegelspannweite": {
       "werte": [
@@ -68,10 +68,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -99,10 +99,10 @@
       ]
     },
     "geschlechtsreife": {
-      "werte": []
+      "werte": [""]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
       "werte": [
@@ -187,7 +187,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -211,8 +211,8 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Eltern füttern das Küken mit ausgewürgtem Aas.",
@@ -230,8 +230,8 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Weißrückengeier sind obligate Aasfresser und beseitigen Tierkadaver.",
@@ -245,8 +245,8 @@
               "beziehung": "toxischeWirkung",
               "wirkung": "-/0",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt Tierkadaver mit Diclofenac ausdrücklich als Vergiftungsgefahr für Weißrückengeier.",
@@ -260,8 +260,8 @@
               "beziehung": "kommensalismus",
               "wirkung": "0/+",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Andere Aasfresser folgen Weißrückengeiern laut Zoopedia häufig, um Nahrung zu finden. Ein Nutzen für den Geier wird dabei nicht genannt.",
@@ -279,15 +279,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -312,12 +312,12 @@
           "uebersetzung": "ChatGPT"
         }
       ],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -326,14 +326,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -342,14 +342,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -358,14 +358,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -390,14 +390,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -406,14 +406,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [],
-      "en-US": [],
-      "es": [],
-      "fr": [],
-      "it": [],
-      "pt-BR": [],
-      "ja": [],
-      "zh-Hans": []
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     }
   },
   "karte": {
@@ -444,7 +444,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Weißrückengeiers aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the White-backed Vulture."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -471,7 +471,7 @@
             "de": "Illustration des Weißrückengeiers aus der Planet Zoo 2 Zoopedia.",
             "en": "White-backed Vulture illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -484,8 +484,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

@@ -51,7 +51,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -69,10 +69,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -158,18 +158,18 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
@@ -179,15 +179,15 @@
       "de": "Im Zoopedia-Durchgang werden nur die dort angegebenen taxonomischen Ränge übernommen. Reich, Stamm und weiterführende Systematik folgen mit Fachquellen.",
       "en": "The Zoopedia pass only records taxonomic ranks stated there. Kingdom, phylum and extended systematics will be added from specialist sources later."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -780,7 +780,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Brillenpinguins aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the African penguin."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -793,8 +793,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

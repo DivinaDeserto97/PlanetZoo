@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["northAmerica"],
-    "biome": [],
+    "biome": [""],
     "schutzstatus": "nearThreatened"
   },
   "daten": {
@@ -46,7 +46,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -59,10 +59,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -78,7 +78,7 @@
       ]
     },
     "wildpopulation": {
-      "werte": []
+      "werte": [""]
     },
     "geschlechtsreife": {
       "werte": [
@@ -95,10 +95,10 @@
       ]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
-      "werte": []
+      "werte": [""]
     },
     "sozialeStruktur": {
       "werte": [
@@ -113,30 +113,30 @@
       ]
     },
     "biome": {
-      "werte": []
+      "werte": [""]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
   },
   "systematik": {
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
-      "knoten": [],
-      "aufspaltungen": []
+      "knoten": [""],
+      "aufspaltungen": [""]
     }
   },
   "texte": {
@@ -729,7 +729,7 @@
             "de": "Offizielles Zoopedia-Hauptbild der Gila-Krustenechse aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Gila Monster."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -742,8 +742,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

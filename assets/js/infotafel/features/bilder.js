@@ -72,7 +72,7 @@ export function renderMainImage(tier) {
 }
 
 export function openImageDialog(tier) {
-  const images = tier ? getTierImages(tier) : [];
+  const images = tier ? getTierImages(tier) : [""];
 
   if (!tier || !images.length) {
     return;
@@ -132,7 +132,7 @@ function renderImageDialog(tier) {
 }
 
 export function changeImage(direction, tier) {
-  const images = tier ? getTierImages(tier) : [];
+  const images = tier ? getTierImages(tier) : [""];
 
   if (!tier || images.length <= 1) {
     return;

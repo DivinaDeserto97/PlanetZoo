@@ -50,16 +50,16 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
-      "werte": []
+      "werte": [""]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -138,10 +138,10 @@
       ]
     },
     "biome": {
-      "werte": []
+      "werte": [""]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -166,8 +166,8 @@
                 "beziehung": "praedation",
                 "wirkung": "+/-",
                 "bedingung": {
-                  "selbst": [],
-                  "ziel": []
+                  "selbst": [""],
+                  "ziel": [""]
                 },
                 "quelle": "planetZoo2"
               }
@@ -181,8 +181,8 @@
                 "beziehung": "praedation",
                 "wirkung": "+/-",
                 "bedingung": {
-                  "selbst": [],
-                  "ziel": []
+                  "selbst": [""],
+                  "ziel": [""]
                 },
                 "quelle": "planetZoo2"
               }
@@ -191,10 +191,10 @@
         },
         "wirdGefressenVon": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": [],
+            "werte": [""],
             "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
@@ -211,15 +211,15 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -812,7 +812,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Goldband-Füsiliers aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Blue and Gold Fusilier."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -839,7 +839,7 @@
             "de": "Illustration des Goldband-Füsiliers aus der Planet Zoo 2 Zoopedia im Bereich Sozialverhalten und Fortpflanzung.",
             "en": "Blue and Gold Fusilier illustration from the Planet Zoo 2 Zoopedia social behaviour and reproduction section."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -852,8 +852,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

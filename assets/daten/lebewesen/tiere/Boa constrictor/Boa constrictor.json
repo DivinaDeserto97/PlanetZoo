@@ -62,16 +62,16 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
-      "werte": []
+      "werte": [""]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -87,7 +87,7 @@
       ]
     },
     "wildpopulation": {
-      "werte": []
+      "werte": [""]
     },
     "geschlechtsreife": {
       "werte": [
@@ -110,7 +110,7 @@
       ]
     },
     "nachwuchs": {
-      "werte": []
+      "werte": [""]
     },
     "sozialeStruktur": {
       "werte": [
@@ -145,27 +145,27 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
   },
   "systematik": {
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
-      "knoten": [],
-      "aufspaltungen": []
+      "knoten": [""],
+      "aufspaltungen": [""]
     }
   },
   "texte": {
@@ -758,7 +758,7 @@
             "de": "Offizielles Zoopedia-Hauptbild der Abgottschlange aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Boa Constrictor."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -771,8 +771,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

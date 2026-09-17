@@ -8,20 +8,20 @@ export function getTierAuswahl() {
   const gespeichert = localStorage.getItem(STORAGE_KEY);
 
   if (!gespeichert) {
-    return [];
+    return [""];
   }
 
   try {
     const tierIds = JSON.parse(gespeichert);
 
     if (!Array.isArray(tierIds)) {
-      return [];
+      return [""];
     }
 
     return [...new Set(tierIds.filter((id) => typeof id === "string"))];
   } catch (fehler) {
     console.warn("Gespeicherte Tierauswahl war ungültig.", fehler);
-    return [];
+    return [""];
   }
 }
 
@@ -31,7 +31,7 @@ export function getTierAuswahl() {
 
 export function setTierAuswahl(tierIds) {
   const bereinigt = [
-    ...new Set((tierIds ?? []).filter((id) => typeof id === "string")),
+    ...new Set((tierIds ?? [""]).filter((id) => typeof id === "string")),
   ];
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(bereinigt));

@@ -54,8 +54,8 @@ import {
 import { renderUiText } from "./features/ui.js";
 
 let controller = null;
-let tiere = [];
-let selectedTiere = [];
+let tiere = [""];
+let selectedTiere = [""];
 let activeTierId = null;
 
 export async function init() {

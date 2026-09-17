@@ -242,7 +242,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["calf"],
-                "ziel": []
+                "ziel": [""]
               },
               "nutzung": {
                 "art": "nahrung",
@@ -257,7 +257,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["increasingWithAge"],
-                "ziel": []
+                "ziel": [""]
               },
               "quelle": "sanDiegoZoo"
             }
@@ -271,8 +271,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -282,8 +282,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -293,8 +293,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -304,8 +304,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -315,8 +315,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -326,8 +326,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -337,8 +337,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "sanDiegoZoo"
             }
@@ -758,7 +758,7 @@
             "de": "Ein Afrikanischer Savannenelefant steht in einer trockenen Savannenlandschaft zwischen hohem gelblichem Gras. Im Hintergrund sind einzelne Bäume, Sträucher und felsige Hügel unter blauem Himmel zu sehen.",
             "en": "An African savanna elephant stands in a dry savanna landscape among tall yellowish grass. Scattered trees, shrubs and rocky hills can be seen in the background under a blue sky."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -785,7 +785,7 @@
             "de": "Ein Afrikanischer Savannenelefant steht frontal auf einer grünen Grasfläche. Seine großen ausgebreiteten Ohren, der lange Rüssel und die Stoßzähne sind deutlich zu erkennen; im Hintergrund befindet sich dichter grüner Bewuchs mit Bäumen und Sträuchern.",
             "en": "An African savanna elephant stands facing the camera on a green grassy area. Its large spread ears, long trunk and tusks are clearly visible, with dense green vegetation, trees and shrubs in the background."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -947,7 +947,7 @@
           },
           "quelle": "elephantVoices",
           "url": "https://cdn.sanity.io/files/1367lwmq/production/36f0bae01b9b21f41df2b29234225dd8c62f98b3.mp4",
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -976,7 +976,7 @@
           },
           "quelle": "goWild",
           "url": "",
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",

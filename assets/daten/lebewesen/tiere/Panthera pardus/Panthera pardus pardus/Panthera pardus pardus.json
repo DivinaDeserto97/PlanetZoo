@@ -98,10 +98,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -117,7 +117,7 @@
       ]
     },
     "wildpopulation": {
-      "werte": []
+      "werte": [""]
     },
     "geschlechtsreife": {
       "werte": [
@@ -139,7 +139,7 @@
       ]
     },
     "nachwuchs": {
-      "werte": []
+      "werte": [""]
     },
     "sozialeStruktur": {
       "werte": [
@@ -154,30 +154,30 @@
       ]
     },
     "biome": {
-      "werte": []
+      "werte": [""]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
   },
   "systematik": {
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
-      "knoten": [],
-      "aufspaltungen": []
+      "knoten": [""],
+      "aufspaltungen": [""]
     }
   },
   "texte": {
@@ -770,7 +770,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Afrikanischen Leoparden aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the African Leopard."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -797,7 +797,7 @@
             "de": "Illustration des Afrikanischen Leoparden aus der Planet Zoo 2 Zoopedia.",
             "en": "African Leopard illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -810,8 +810,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

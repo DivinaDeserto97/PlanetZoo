@@ -36,10 +36,10 @@
       ]
     },
     "koerperlaenge": {
-      "werte": []
+      "werte": [""]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -66,10 +66,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -120,10 +120,10 @@
       ]
     },
     "nachwuchs": {
-      "werte": []
+      "werte": [""]
     },
     "sozialeStruktur": {
-      "werte": []
+      "werte": [""]
     },
     "biome": {
       "werte": [
@@ -138,27 +138,27 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
   },
   "systematik": {
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
-      "knoten": [],
-      "aufspaltungen": []
+      "knoten": [""],
+      "aufspaltungen": [""]
     }
   },
   "texte": {
@@ -751,7 +751,7 @@
             "de": "Offizielles Zoopedia-Hauptbild der Massai-Giraffe aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Masai Giraffe."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -778,7 +778,7 @@
             "de": "Illustration der Massai-Giraffe aus der Planet Zoo 2 Zoopedia.",
             "en": "Masai Giraffe illustration from the Planet Zoo 2 Zoopedia."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -791,8 +791,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

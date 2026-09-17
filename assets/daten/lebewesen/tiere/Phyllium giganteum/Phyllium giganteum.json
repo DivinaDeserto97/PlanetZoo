@@ -64,22 +64,22 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
-      "werte": []
+      "werte": [""]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
-      "werte": []
+      "werte": [""]
     },
     "wildpopulation": {
-      "werte": []
+      "werte": [""]
     },
     "geschlechtsreife": {
       "werte": [
@@ -92,10 +92,10 @@
       ]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
-      "werte": []
+      "werte": [""]
     },
     "sozialeStruktur": {
       "werte": [
@@ -123,27 +123,27 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": []
+          "werte": [""]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
   },
   "systematik": {
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
-      "knoten": [],
-      "aufspaltungen": []
+      "knoten": [""],
+      "aufspaltungen": [""]
     }
   },
   "texte": {
@@ -736,7 +736,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Großen Wandelnden Blatts aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Malaysian Leaf Insect."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -749,8 +749,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

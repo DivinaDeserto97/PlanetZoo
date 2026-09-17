@@ -384,7 +384,7 @@ export function getTextEntries(tier, key) {
   );
 
   if (!Array.isArray(value)) {
-    return [];
+    return [""];
   }
 
   return value.filter(

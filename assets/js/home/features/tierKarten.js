@@ -228,7 +228,7 @@ function createAnimalCard(tier, selected, signal) {
 
   regions.className = "home-animal-card__regions";
 
-  regions.textContent = (tier.filter?.kontinente ?? [])
+  regions.textContent = (tier.filter?.kontinente ?? [""])
     .map((continent) => getContinentLabel(continent))
     .join(" · ");
 

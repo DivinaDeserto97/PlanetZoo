@@ -3,7 +3,7 @@ import { getLanguage, getLocalizedValue } from "../features/language.js";
 import { getTierAuswahl } from "../features/tierAuswahl.js";
 
 let controller = null;
-let tiere = [];
+let tiere = [""];
 
 export async function init() {
   controller?.abort();

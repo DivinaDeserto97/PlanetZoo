@@ -60,7 +60,7 @@
       ]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
       "werte": [
@@ -87,7 +87,7 @@
       ]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -113,10 +113,10 @@
       ]
     },
     "geschlechtsreife": {
-      "werte": []
+      "werte": [""]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
       "werte": [
@@ -161,7 +161,7 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -187,18 +187,18 @@
       "nahrungsnetz": {
         "frisst": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": []
+            "werte": [""]
           }
         },
         "wirdGefressenVon": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": [],
+            "werte": [""],
             "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
@@ -215,15 +215,15 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -320,7 +320,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Goliathkäfers aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Goliath Beetle."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -333,8 +333,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

@@ -217,10 +217,10 @@ const CONDITION_LABELS = {
 /* ÖFFENTLICHER GRAPH-BUILDER               */
 /* ======================================== */
 
-export function buildNahrungsnetzGraph(tiere, selectedIds = []) {
-  const alleTiere = Array.isArray(tiere) ? tiere : [];
+export function buildNahrungsnetzGraph(tiere, selectedIds = [""]) {
+  const alleTiere = Array.isArray(tiere) ? tiere : [""];
 
-  const selected = new Set(Array.isArray(selectedIds) ? selectedIds : []);
+  const selected = new Set(Array.isArray(selectedIds) ? selectedIds : [""]);
 
   const nodes = new Map();
 
@@ -861,7 +861,7 @@ function getEntityLabel(value) {
 /* ======================================== */
 
 function getConditionLabel(entry, lebensphase) {
-  const teile = [];
+  const teile = [""];
 
   /*
       Der obere JSON-Bereich beschreibt die

@@ -8,8 +8,8 @@ import {
 } from "../features/tierAuswahl.js";
 
 let controller = null;
-let tiere = [];
-let kinoKategorien = [];
+let tiere = [""];
+let kinoKategorien = [""];
 let filmQuellen = new Set();
 let filmTypen = new Set();
 let quellenInitialisiert = false;
@@ -96,7 +96,7 @@ function alsArray(wert) {
   }
 
   if (wert === undefined || wert === null || wert === "") {
-    return [];
+    return [""];
   }
 
   return [wert];
@@ -348,7 +348,7 @@ function getAlleFilme() {
     alsArray(tier.video).flatMap((gruppe, gruppenIndex) => {
       // Unterstützt beide JSON-Formen:
       // 1. direkter Video-Eintrag mit url/dateien
-      // 2. Video-Gruppe mit varianten[]
+      // 2. Video-Gruppe mit varianten[""]
       const varianten = Array.isArray(gruppe?.varianten)
         ? gruppe.varianten
         : [gruppe];
@@ -697,7 +697,7 @@ function renderSummary() {
     container.appendChild(chip);
   });
 
-  const probleme = [];
+  const probleme = [""];
 
   if (!filme.length) {
     probleme.push("Es ist noch kein Film für den Durchlauf ausgewählt.");
@@ -788,7 +788,7 @@ function handleBuilderClick(event) {
     filmTypen.clear();
     quellenInitialisiert = false;
     typenInitialisiert = false;
-    setTierAuswahl([]);
+    setTierAuswahl([""]);
     return;
   }
 
@@ -1223,8 +1223,8 @@ function zeigeNaechstenBeitrag() {
 }
 
 function baueZwischenprogrammPool() {
-  const ausgewaehlt = new Set(playback?.intermission ?? []);
-  const pool = [];
+  const ausgewaehlt = new Set(playback?.intermission ?? [""]);
+  const pool = [""];
 
   if (ausgewaehlt.has("tierinfo")) {
     const film = playback?.filme?.[playback?.naechsterFilmIndex];
@@ -1267,7 +1267,7 @@ function baueTierinfos(tier) {
     ["arterhaltung", "Artenschutz"],
   ];
 
-  const result = [];
+  const result = [""];
 
   kandidaten.forEach(([schluessel, label]) => {
     const sprachDaten = getSprachEintraege(texte?.[schluessel]);
@@ -1297,7 +1297,7 @@ function baueTierinfos(tier) {
 
 function getSprachEintraege(sprachObjekt) {
   if (!sprachObjekt || typeof sprachObjekt !== "object") {
-    return [];
+    return [""];
   }
 
   const sprache = getLanguage();
@@ -1317,7 +1317,7 @@ function getSprachEintraege(sprachObjekt) {
     }
   }
 
-  return [];
+  return [""];
 }
 
 function formatTierQuelle(tier, quelleId) {

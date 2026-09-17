@@ -236,7 +236,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["bisEtwa3Monate"],
-                "ziel": []
+                "ziel": [""]
               },
               "nutzung": {
                 "art": "nahrung",
@@ -251,7 +251,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["abEtwa3Monaten"],
-                "ziel": []
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             }
@@ -265,8 +265,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -276,8 +276,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             },
@@ -287,8 +287,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [],
-                "ziel": []
+                "selbst": [""],
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Diese unterirdisch reifende Frucht wird besonders aus Südafrika als pflanzliche Nahrung beschrieben.",
@@ -734,7 +734,7 @@
             "de": "Ein Erdferkel tritt aus dem Eingang eines selbst gegrabenen Baus in einer trockenen, felsigen Landschaft. Deutlich erkennbar sind die lange Schnauze, die großen aufgerichteten Ohren und der kräftige Körper.",
             "en": "An aardvark emerges from the entrance of a self-dug burrow in a dry, rocky landscape. Its long snout, large upright ears and sturdy body are clearly visible."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -786,7 +786,7 @@
           },
           "quelle": "Go Wild",
           "url": "https://serienstream.to/serie/go-wild-mission-wildnis/staffel-1/episode-3",
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",

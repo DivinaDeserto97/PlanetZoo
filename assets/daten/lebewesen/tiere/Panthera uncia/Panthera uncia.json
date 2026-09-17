@@ -82,10 +82,10 @@
       ]
     },
     "lebensspanne": {
-      "werte": []
+      "werte": [""]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -188,7 +188,7 @@
       "nahrungsnetz": {
         "frisst": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
             "werte": [
@@ -213,10 +213,10 @@
         },
         "wirdGefressenVon": {
           "jungtier": {
-            "werte": []
+            "werte": [""]
           },
           "erwachsen": {
-            "werte": [],
+            "werte": [""],
             "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
@@ -233,15 +233,15 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [],
+    "naheVerwandte": [""],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -338,7 +338,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Schneeleoparden aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Snow Leopard."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -351,8 +351,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null,
     "hinweis": {

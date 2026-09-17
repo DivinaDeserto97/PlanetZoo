@@ -36,13 +36,13 @@
       ]
     },
     "koerperlaenge": {
-      "werte": []
+      "werte": [""]
     },
     "schulterhoehe": {
-      "werte": []
+      "werte": [""]
     },
     "gewicht": {
-      "werte": []
+      "werte": [""]
     },
     "lebensspanne": {
       "werte": [
@@ -59,7 +59,7 @@
       ]
     },
     "geschwindigkeit": {
-      "werte": []
+      "werte": [""]
     },
     "schutzstatus": {
       "werte": [
@@ -79,7 +79,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als „unbekannt“ an.",
@@ -90,10 +90,10 @@
       ]
     },
     "geschlechtsreife": {
-      "werte": []
+      "werte": [""]
     },
     "tragzeit": {
-      "werte": []
+      "werte": [""]
     },
     "nachwuchs": {
       "werte": [
@@ -175,11 +175,11 @@
       ]
     },
     "aktivitaet": {
-      "werte": []
+      "werte": [""]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": []
+        "werte": [""]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -191,7 +191,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["raupe"],
-                "ziel": []
+                "ziel": [""]
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt Giftpflanzen als Raupennahrung und führt Pflanzen der Gattung Aristolochia als Beispiel an.",
@@ -202,7 +202,7 @@
           ]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [""]
         }
       }
     }
@@ -225,9 +225,9 @@
         "de": "",
         "en": ""
       },
-      "knoten": [],
-      "aufspaltungen": [],
-      "verbindungen": []
+      "knoten": [""],
+      "aufspaltungen": [""],
+      "verbindungen": [""]
     }
   },
   "texte": {
@@ -820,7 +820,7 @@
             "de": "Offizielles Zoopedia-Hauptbild von Pachliopta jophon aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Sri Lankan Rose."
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
@@ -833,8 +833,8 @@
       ]
     }
   ],
-  "audio": [],
-  "video": [],
+  "audio": [""],
+  "video": [""],
   "planetZoo2": {
     "rechner": null
   },

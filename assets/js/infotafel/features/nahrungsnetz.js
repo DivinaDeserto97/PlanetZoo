@@ -264,7 +264,7 @@ function findTierByFoodValue(wert, tiere) {
 }
 
 function formatFoodConditions(beziehung) {
-  const teile = [];
+  const teile = [""];
 
   const selbst = getSelbstBedingungen(beziehung);
 

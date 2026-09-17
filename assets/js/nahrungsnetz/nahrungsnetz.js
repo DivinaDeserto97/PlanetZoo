@@ -16,7 +16,7 @@ import {
 
 let controller = null;
 
-let tiere = [];
+let tiere = [""];
 
 let graphCanvas = null;
 

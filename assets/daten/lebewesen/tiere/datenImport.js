@@ -125,7 +125,7 @@ function alsArray(wert) {
   }
 
   if (wert === undefined || wert === null || wert === "") {
-    return [];
+    return [""];
   }
 
   return [wert];
@@ -256,7 +256,7 @@ function findeKartenSvgPfad(karte) {
 /* ======================================== */
 
 export async function datenImportieren() {
-  const importierteTiere = [];
+  const importierteTiere = [""];
 
   for (
     let importIndex = 0;

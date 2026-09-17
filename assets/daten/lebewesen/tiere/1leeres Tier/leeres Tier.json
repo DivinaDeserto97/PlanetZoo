@@ -16,9 +16,9 @@
   "filter": {
     "edition": "",
     "editionAuswahl": ["standard", "deluxe"],
-    "gehegetyp": [],
+    "gehegetyp": [""],
     "gehegetypAuswahl": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
-    "kontinente": [],
+    "kontinente": [""],
     "kontinenteAuswahl": [
       "africa",
       "arctic",
@@ -31,7 +31,7 @@
       "pacificOcean",
       "southAmerica"
     ],
-    "biome": [],
+    "biome": [""],
     "biomeAuswahl": [
       "Ästuar",
       "Feuchtgebiete",
@@ -273,7 +273,7 @@
             ]
           },
           "erwachsen": {
-            "werte": [],
+            "werte": [""],
             "keineRegelmaessigenNatuerlichenFressfeinde": null,
             "hinweis": {
               "de": "",
@@ -312,7 +312,7 @@
           "lebensstatus": null,
           "domestikationsstatus": null,
           "schutzstatus": null,
-          "spiele": [],
+          "spiele": [""],
           "position": null,
           "hinweis": {
             "de": "",
@@ -675,7 +675,7 @@
             "de": "",
             "en": ""
           },
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "",
@@ -729,7 +729,7 @@
           },
           "quelle": "",
           "url": "",
-          "metadaten": [],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "",
