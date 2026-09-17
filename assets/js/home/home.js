@@ -18,7 +18,7 @@ let controller = null;
 
 let tiere = [];
 
-let sichtbareTiere = [""];
+let sichtbareTiere = [];
 
 /* ======================================== */
 /* HOME INITIALISIEREN                      */

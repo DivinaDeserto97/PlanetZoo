@@ -242,7 +242,7 @@ export function istWirkungFuerBeziehungGueltig(beziehung, wirkung) {
 export function getErlaubteWirkungen(beziehung) {
   const erlaubt = WIRKUNGEN_PRO_BEZIEHUNG[beziehung];
 
-  return Array.isArray(erlaubt) ? [...erlaubt] : [""];
+  return Array.isArray(erlaubt) ? [...erlaubt] : [];
 }
 
 export function parseWirkung(value) {

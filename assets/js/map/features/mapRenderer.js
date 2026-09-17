@@ -473,7 +473,7 @@ export async function initMapRenderer(tiere, signal) {
 
   function getHitsAtPoint(point) {
     if (!point) {
-      return [""];
+      return [];
     }
 
     const x = clamp(Math.floor(point.x), 0, WORLD_CROP.width - 1);
@@ -1072,7 +1072,7 @@ function findWorldLocatorFrame(data, width, height) {
 
   const maxX = clamp(WORLD_CROP.x + WORLD_CROP.width - 1, 0, width - 1);
 
-  const horizontalRuns = [""];
+  const horizontalRuns = [];
 
   for (let y = minY; y <= maxY; y++) {
     let runStart = null;
@@ -1347,7 +1347,7 @@ function createCombinedOverlay(selectedTiere, masks, colors) {
     for (let x = 0; x < WORLD_CROP.width; x++) {
       const mapIndex = y * WORLD_CROP.width + x;
 
-      const hitIndexes = [""];
+      const hitIndexes = [];
 
       for (let tierIndex = 0; tierIndex < selectedTiere.length; tierIndex++) {
         const mask = masks.get(selectedTiere[tierIndex].id);

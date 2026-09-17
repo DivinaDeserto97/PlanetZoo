@@ -58,7 +58,7 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |   5 | African Tigerfish               | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 |   6 | American Bullfrog               | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 |   7 | Asian Elephant                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   8 | Axolotl                         | `Ausstellung`            | `deluxe`   | [""]                     |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   8 | Axolotl                         | `Ausstellung`            | `deluxe`   | []                       |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 |   9 | Black Wildebeest                | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 |  10 | Blackspotted Puffer             | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 |  11 | Blacktip Reef Shark             | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |

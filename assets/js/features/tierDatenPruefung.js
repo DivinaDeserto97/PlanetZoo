@@ -75,7 +75,7 @@ function sammleDateiPfade(tier) {
 
   const karte = tier?.originalDaten?.karte ?? tier?.karte ?? {};
 
-  const kartenDateien = Array.isArray(karte?.dateien) ? karte.dateien : [""];
+  const kartenDateien = Array.isArray(karte?.dateien) ? karte.dateien : [];
 
   kartenDateien.forEach((datei) => {
     if (
@@ -307,7 +307,7 @@ function pruefeOptionalenLokalisiertenText(fehlt, objekt, key, meldung) {
 /* ======================================== */
 
 function pruefeNahrungsBeziehung(wert, optionen = {}) {
-  const fehlt = [""];
+  const fehlt = [];
 
   /*
       Beziehung + Wirkung sind ausschließlich für das
@@ -560,7 +560,7 @@ function pruefeNahrungsBeziehung(wert, optionen = {}) {
 /* CHECK-OBJEKT                             */
 /* ======================================== */
 
-function item(label, pfad, ok, fehlt = [""]) {
+function item(label, pfad, ok, fehlt = []) {
   return {
     label,
 
@@ -616,7 +616,7 @@ function pruefeMap(tier) {
 
   const karte = tier?.originalDaten?.karte ?? tier?.karte ?? {};
 
-  const dateien = Array.isArray(karte?.dateien) ? karte.dateien : [""];
+  const dateien = Array.isArray(karte?.dateien) ? karte.dateien : [];
 
   const png = dateien.find(
     (datei) =>
@@ -670,7 +670,7 @@ function pruefeInfotafel(tier) {
 
     const gruppe = entry.gruppe?.typ || "Bild";
 
-    const fehlt = [""];
+    const fehlt = [];
 
     if (!hatText(entry.gruppe?.typ)) {
       fehlt.push("Bildtyp fehlt.");
@@ -795,7 +795,7 @@ function pruefeInfotafel(tier) {
 
   if (Array.isArray(fressverhaltenWerte)) {
     fressverhaltenWerte.forEach((eintrag, index) => {
-      const fehlt = [""];
+      const fehlt = [];
 
       if (!istObjekt(eintrag)) {
         fehlt.push("Eintrag ist kein Objekt.");
@@ -852,7 +852,7 @@ function pruefeAudio(tier) {
 
     const typ = entry.gruppe?.typ || "Audio";
 
-    const fehlt = [""];
+    const fehlt = [];
 
     if (!hatText(entry.gruppe?.typ)) {
       fehlt.push("Audio-Typ fehlt.");
@@ -916,7 +916,7 @@ function pruefeVideo(tier) {
 
     const typ = entry.gruppe?.typ || "Video";
 
-    const fehlt = [""];
+    const fehlt = [];
 
     if (!hatText(entry.gruppe?.typ)) {
       fehlt.push("Video-Typ fehlt.");
@@ -1051,7 +1051,7 @@ function pruefeNahrungsnetz(tier, optionen = {}) {
     }
 
     if (bereich.werte.length === 0) {
-      checks.push(item(label, `${pfad}.werte`, true, [""]));
+      checks.push(item(label, `${pfad}.werte`, true, []));
 
       return;
     }
@@ -1121,7 +1121,7 @@ function pruefeTool(tier, toolId) {
       return pruefeRechner(tier);
 
     default:
-      return [""];
+      return [];
   }
 }
 

@@ -6,14 +6,14 @@ import { clampIndex, setText, ui, wrapIndex } from "./ui.js";
 
 let audioIndex = 0;
 
-let audioItems = [""];
+let audioItems = [];
 
 const audioMetaCache = new Map();
 
 export function resetAudioState() {
   audioIndex = 0;
 
-  audioItems = [""];
+  audioItems = [];
 }
 
 export function bindAudioEvents(signal) {

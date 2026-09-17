@@ -25,7 +25,7 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
 | `1.5`            | Dezimalzahl                                | `7.6`                |
 | `true` / `false` | Ja/Nein                                    | `true`               |
 | `null`           | Wert derzeit nicht bekannt / nicht gesetzt | `null`               |
-| `[""]`           | Liste                                      | `["africa", "asia"]` |
+| `[]`             | Liste                                      | `["africa", "asia"]` |
 | `{}`             | Objekt mit Unterfeldern                    | `{ "de": "Text" }`   |
 
 ### Wichtig
@@ -33,7 +33,7 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
 - Zahlen **nicht** in Anführungszeichen schreiben.
 - Unbekannte Zahlen als `null` eintragen und nicht als `0`.
 - Listen dürfen mehrere Werte enthalten.
-- Keine leeren Platzhalter wie `[""]` stehen lassen, wenn der Bereich bereits aktiv verwendet wird.
+- Keine leeren Platzhalter wie `[]` stehen lassen, wenn der Bereich bereits aktiv verwendet wird.
 - `quelle` enthält normalerweise die **Quellen-ID**, nicht den ausgeschriebenen Namen.
 - Jede verwendete Quellen-ID sollte unten unter `quellen` definiert sein.
 - Interne Auswahlwerte immer exakt schreiben. Gross-/Kleinschreibung ist relevant.
@@ -51,9 +51,9 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
   "systematik": {},
   "texte": {},
   "karte": {},
-  "bilder": [""],
-  "audio": [""],
-  "video": [""],
+  "bilder": [],
+  "audio": [],
+  "video": [],
   "planetZoo2": {},
   "quellen": {}
 }
@@ -231,7 +231,7 @@ Beispiel:
 ]
 ```
 
-> Achtung: `filter.biome` verwendet die **deutschen Filterwerte**. Das ist nicht dasselbe wie `daten.biome.werte[""].wert`.
+> Achtung: `filter.biome` verwendet die **deutschen Filterwerte**. Das ist nicht dasselbe wie `daten.biome.werte[].wert`.
 
 ---
 
@@ -253,7 +253,7 @@ Beispiel:
 "schutzstatus": "endangered"
 ```
 
-Der gleiche interne Wert kann unter `daten.schutzstatus.werte[""].wert` verwendet werden.
+Der gleiche interne Wert kann unter `daten.schutzstatus.werte[].wert` verwendet werden.
 
 ---
 
@@ -668,10 +668,10 @@ Das Nahrungsnetz hat mehrere **technisch geprüfte Auswahllisten**.
 ```json
 "nahrungsnetz": {
   "jungtier": {
-    "werte": [""]
+    "werte": []
   },
   "erwachsen": {
-    "werte": [""]
+    "werte": []
   }
 }
 ```
@@ -784,8 +784,8 @@ Keine Bedingung:
 
 ```json
 "bedingung": {
-  "selbst": [""],
-  "ziel": [""]
+  "selbst": [],
+  "ziel": []
 }
 ```
 
@@ -796,7 +796,7 @@ Mit Bedingung:
   "selbst": [
     "bisEtwa3Monate"
   ],
-  "ziel": [""]
+  "ziel": []
 }
 ```
 
@@ -822,8 +822,8 @@ Bisher verwendet wurden z. B.:
   "beziehung": "praedation",
   "wirkung": "+/-",
   "bedingung": {
-    "selbst": [""],
-    "ziel": [""]
+    "selbst": [],
+    "ziel": []
   },
   "quelle": "quelleId"
 }
@@ -842,8 +842,8 @@ Wenn das Ziel ein Tier aus dem Projekt ist, bei `wert` möglichst dessen wissens
   "beziehung": "herbivorie",
   "wirkung": "+/-",
   "bedingung": {
-    "selbst": [""],
-    "ziel": [""]
+    "selbst": [],
+    "ziel": []
   },
   "quelle": "quelleId"
 }
@@ -863,7 +863,7 @@ Bei `nutzung` ist zusätzlich ein `nutzung`-Objekt Pflicht.
   "wirkung": "+/0",
   "bedingung": {
     "selbst": ["calf"],
-    "ziel": [""]
+    "ziel": []
   },
   "nutzung": {
     "art": "nahrung",
@@ -902,8 +902,8 @@ Bei Aas ist zusätzlich `aas.zustand` Pflicht.
   "beziehung": "nekrophagie",
   "wirkung": "+/0",
   "bedingung": {
-    "selbst": [""],
-    "ziel": [""]
+    "selbst": [],
+    "ziel": []
   },
   "aas": {
     "zustand": "frisch bis etwa 2 Wochen alt"
@@ -1121,7 +1121,7 @@ oder
 
 ## 8.8 Explizite Verbindungen
 
-Für `systematik.evolution.verbindungen[""].typ` gibt es eine feste Auswahl:
+Für `systematik.evolution.verbindungen[].typ` gibt es eine feste Auswahl:
 
 - `abstammungslinie`
 - `aufspaltung`
@@ -1180,7 +1180,7 @@ Beispiel:
 
 ### Regeln
 
-- Pro Sprache steht eine Liste `[""]`.
+- Pro Sprache steht eine Liste `[]`.
 - Mehrere getrennte Aussagen/Quellen können mehrere Einträge bekommen.
 - `inhalt` = eigentlicher Text.
 - `quelle` = Quellen-ID.
@@ -1255,7 +1255,7 @@ Beispiel:
           "de": "...",
           "en": "..."
         },
-        "metadaten": [""],
+        "metadaten": [],
         "dateien": [
           {
             "typ": "original",
@@ -1315,7 +1315,7 @@ Diese Gruppen sind momentan keine feste Enum und können bei Bedarf erweitert we
 ]
 ```
 
-### `audio[""].typ`
+### `audio[].typ`
 
 Freie Bezeichnung des Lauttyps, z. B.:
 
@@ -1369,7 +1369,7 @@ Aktuell verwendet:
         },
         "quelle": "goWild",
         "url": "",
-        "metadaten": [""],
+        "metadaten": [],
         "dateien": [
           {
             "typ": "original",
@@ -1520,7 +1520,7 @@ standard
 deluxe
 ```
 
-### `filter.gehegetyp[""]`
+### `filter.gehegetyp[]`
 
 ```text
 Landgehege
@@ -1529,7 +1529,7 @@ Voliere
 Ausstellung
 ```
 
-### `filter.kontinente[""]`
+### `filter.kontinente[]`
 
 ```text
 africa
@@ -1540,7 +1540,7 @@ southAmerica
 oceania
 ```
 
-### `filter.biome[""]`
+### `filter.biome[]`
 
 ```text
 Ästuar
@@ -1633,7 +1633,7 @@ wildform
 domestiziert
 ```
 
-### `spiele[""]`
+### `spiele[]`
 
 ```text
 planetZoo2
@@ -1642,7 +1642,7 @@ jurassicWorldEvolution2
 jurassicWorldEvolution3
 ```
 
-### `verbindungen[""].typ`
+### `verbindungen[].typ`
 
 ```text
 abstammungslinie
@@ -1701,10 +1701,10 @@ unsichereVerwandtschaft
     "ernaehrung": {
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

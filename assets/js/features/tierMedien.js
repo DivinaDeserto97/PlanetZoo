@@ -1,5 +1,5 @@
 function alsArray(wert) {
-  return Array.isArray(wert) ? wert : [""];
+  return Array.isArray(wert) ? wert : [];
 }
 
 function hatText(wert) {

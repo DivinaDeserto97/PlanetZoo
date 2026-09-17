@@ -37,9 +37,9 @@ export function createGraphCanvas({
   onZoomChange,
 }) {
   let currentGraph = {
-    nodes: [""],
+    nodes: [],
 
-    edges: [""],
+    edges: [],
   };
 
   let workspace = {
@@ -283,7 +283,7 @@ export function createGraphCanvas({
     }
 
     currentGraph.edges.forEach((edge) => {
-      const route = currentModel.routes.get(edge.id) ?? [""];
+      const route = currentModel.routes.get(edge.id) ?? [];
 
       /*
             Erst die großen Führungs-Handles.
@@ -406,7 +406,7 @@ export function createGraphCanvas({
   }
 
   function buildRouteRuns(route) {
-    const runs = [""];
+    const runs = [];
 
     route.forEach((step) => {
       const corridor = parseCorridor(step.bereich);
@@ -524,7 +524,7 @@ export function createGraphCanvas({
         return;
       }
 
-      const otherRoute = currentModel.routes.get(otherEdge.id) ?? [""];
+      const otherRoute = currentModel.routes.get(otherEdge.id) ?? [];
 
       const matching = otherRoute.find(
         (step) => step.bereich === corridor && step.spur === newLane,

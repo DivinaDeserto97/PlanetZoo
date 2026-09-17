@@ -148,16 +148,16 @@ export function createHorizontalCorridorId(gapRow, column) {
 /* ======================================== */
 
 export function createDefaultSlotMap(graph) {
-  const nodes = graph.nodes ?? [""];
+  const nodes = graph.nodes ?? [];
 
   const buckets = {
-    input: [""],
+    input: [],
 
-    focus: [""],
+    focus: [],
 
-    mixed: [""],
+    mixed: [],
 
-    predator: [""],
+    predator: [],
   };
 
   const focusIds = new Set(
@@ -296,7 +296,7 @@ export function buildRoutes({
       Sie gehören nur zum gespeicherten Layout.
   */
 
-  const sortedEdges = [...(graph.edges ?? [""])].sort((a, b) =>
+  const sortedEdges = [...(graph.edges ?? [])].sort((a, b) =>
     String(a.id).localeCompare(String(b.id)),
   );
 
@@ -384,7 +384,7 @@ export function buildRoutes({
     const toSlot = parseSlot(nodeSlots[edge.to]);
 
     if (!fromSlot || !toSlot) {
-      routes.set(edge.id, [""]);
+      routes.set(edge.id, []);
 
       return;
     }
@@ -422,7 +422,7 @@ export function buildRoutes({
   const usedLanes = new Map();
 
   sortedEdges.forEach((edge) => {
-    const route = routes.get(edge.id) ?? [""];
+    const route = routes.get(edge.id) ?? [];
 
     route.forEach((step) => {
       const localLane = Number(localEdgeLanes?.[edge.id]?.[step.bereich]);
@@ -518,7 +518,7 @@ function findGuidedCorridorPath({
         (_, index) =>
           createHorizontalCorridorId(guides.horizontalGapRow, index + 1),
       ).filter((id) => isValidCorridor(id, rows, columns))
-    : [""];
+    : [];
 
   const vertical = guides?.verticalGapColumn
     ? Array.from(
@@ -528,10 +528,10 @@ function findGuidedCorridorPath({
         (_, index) =>
           createVerticalCorridorId(index + 1, guides.verticalGapColumn),
       ).filter((id) => isValidCorridor(id, rows, columns))
-    : [""];
+    : [];
 
   if (horizontal.length && vertical.length) {
-    let best = [""];
+    let best = [];
 
     horizontal.forEach((horizontalId) => {
       const neighbors = new Set(
@@ -574,7 +574,7 @@ function findGuidedCorridorPath({
   const candidates = horizontal.length ? horizontal : vertical;
 
   if (candidates.length) {
-    let best = [""];
+    let best = [];
 
     candidates.forEach((requiredId) => {
       const candidate = buildPathThroughRequiredCorridors({
@@ -630,7 +630,7 @@ function buildPathThroughRequiredCorridors({
     });
 
     if (!part.length) {
-      return [""];
+      return [];
     }
 
     appendPath(result, part);
@@ -647,7 +647,7 @@ function buildPathThroughRequiredCorridors({
   });
 
   if (!tail.length) {
-    return [""];
+    return [];
   }
 
   appendPath(result, tail);
@@ -670,7 +670,7 @@ function findPathBetweenCorridors({ starts, targets, rows, columns, usage }) {
     }
   }
 
-  const queue = [""];
+  const queue = [];
 
   const best = new Map();
 
@@ -722,7 +722,7 @@ function findPathBetweenCorridors({ starts, targets, rows, columns, usage }) {
     });
   }
 
-  return [""];
+  return [];
 }
 
 function corridorCost(corridor, usage) {
@@ -737,7 +737,7 @@ function corridorCost(corridor, usage) {
 }
 
 function reconstructPath(end, previous) {
-  const path = [""];
+  const path = [];
 
   let current = end;
 
@@ -784,7 +784,7 @@ function getCorridorNeighbors(corridorId, rows, columns) {
   const corridor = parseCorridor(corridorId);
 
   if (!corridor) {
-    return [""];
+    return [];
   }
 
   const result = new Set();

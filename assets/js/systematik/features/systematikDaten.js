@@ -78,7 +78,7 @@ function addTierGrundgeruest(context, tier, branchIndex) {
 
   const evolution = systematik?.evolution ?? {};
 
-  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [""];
+  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [];
 
   const baseRow = branchIndex * 4 + 1;
 
@@ -218,7 +218,7 @@ function addTierBeziehungen(context, tier, branchIndex) {
 
   const evolution = systematik?.evolution ?? {};
 
-  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [""];
+  const knoten = Array.isArray(evolution.knoten) ? evolution.knoten : [];
 
   const baseRow = branchIndex * 4 + 1;
 
@@ -242,7 +242,7 @@ function addTierBeziehungen(context, tier, branchIndex) {
 function addNaheVerwandte(context, systematik, focusId) {
   const verwandt = Array.isArray(systematik?.naheVerwandte)
     ? systematik.naheVerwandte
-    : [""];
+    : [];
 
   verwandt.forEach((eintrag) => {
     /*
@@ -308,7 +308,7 @@ function addNaheVerwandte(context, systematik, focusId) {
 function addExplicitConnections(context, evolution) {
   const verbindungen = Array.isArray(evolution?.verbindungen)
     ? evolution.verbindungen
-    : [""];
+    : [];
 
   verbindungen.forEach((verbindung, index) => {
     /*
@@ -348,7 +348,7 @@ function addExplicitConnections(context, evolution) {
 function addAufspaltungen(context, evolution, baseRow, pathLength) {
   const aufspaltungen = Array.isArray(evolution?.aufspaltungen)
     ? evolution.aufspaltungen
-    : [""];
+    : [];
 
   aufspaltungen.forEach((aufspaltung, index) => {
     /*
@@ -561,7 +561,7 @@ function ensureTaxonNode(
 /* ======================================== */
 
 function createMeta(data, loadedTier) {
-  const spiele = Array.isArray(data?.spiele) ? [...data.spiele] : [""];
+  const spiele = Array.isArray(data?.spiele) ? [...data.spiele] : [];
 
   /*
       Geladene Planet-Zoo-2-Tiere bekommen
@@ -605,7 +605,7 @@ function mergeMeta(target, source) {
   );
 
   target.spiele = [
-    ...new Set([...(target.spiele ?? [""]), ...(source.spiele ?? [""])]),
+    ...new Set([...(target.spiele ?? []), ...(source.spiele ?? [])]),
   ];
 }
 
@@ -616,7 +616,7 @@ function mergeMeta(target, source) {
 function refreshNodeStyle(node, rang) {
   const meta = node.systematikMeta ?? {};
 
-  const parts = [""];
+  const parts = [];
 
   const rangLabel = getRangLabel(rang ?? meta.rang ?? "taxon");
 
@@ -642,7 +642,7 @@ function refreshNodeStyle(node, rang) {
     parts.push(protection);
   }
 
-  (meta.spiele ?? [""]).forEach((game) => {
+  (meta.spiele ?? []).forEach((game) => {
     parts.push(getSpielKurz(game));
   });
 

@@ -15,11 +15,11 @@
 
    "nahrungsnetz": {
      "jungtier": {
-       "werte": [""]
+       "werte": []
      },
 
      "erwachsen": {
-       "werte": [""]
+       "werte": []
      }
    }
    ============================================================ */
@@ -90,7 +90,7 @@ export function getNahrungsnetz(tier) {
 
 export function getNahrungsBeziehungen(tier, lebensphase) {
   if (!NAHRUNGSNETZ_LEBENSPHASEN.includes(lebensphase)) {
-    return [""];
+    return [];
   }
 
   const netz = getNahrungsnetz(tier);
@@ -98,7 +98,7 @@ export function getNahrungsBeziehungen(tier, lebensphase) {
   const werte = netz?.[lebensphase]?.werte;
 
   if (!Array.isArray(werte)) {
-    return [""];
+    return [];
   }
 
   return werte.filter(istGueltigeBeziehung);
@@ -132,13 +132,13 @@ export function getAlleNahrungsBeziehungen(tier) {
 
 export function getFressfeinde(alleTiere, zielTier, zielLebensphase = null) {
   if (!Array.isArray(alleTiere) || !zielTier) {
-    return [""];
+    return [];
   }
 
   const zielIds = getTierIds(zielTier);
 
   if (zielIds.size === 0) {
-    return [""];
+    return [];
   }
 
   const result = [];
@@ -377,8 +377,8 @@ export function hatBedingung(beziehung) {
       Neue Struktur:
 
       "bedingung": {
-        "selbst": [""],
-        "ziel": [""]
+        "selbst": [],
+        "ziel": []
       }
   */
 
@@ -608,7 +608,7 @@ function hatArrayWerte(value) {
 
 function normalisiereBedingungsArray(value) {
   if (!Array.isArray(value)) {
-    return [""];
+    return [];
   }
 
   return value

@@ -222,7 +222,7 @@ export function initTierListe(tiere, renderer, signal) {
   document.querySelector("[data-select-none]")?.addEventListener(
     "click",
     () => {
-      setTierAuswahl([""]);
+      setTierAuswahl([]);
     },
     { signal },
   );

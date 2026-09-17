@@ -1,0 +1,2911 @@
+{
+  "beschreibung": "Patch-Vorlage für fehlende Infotafel-Tierdaten. Nur mit recherchierten Werten füllen; leere werte-Arrays werden vom Patch-Skript ignoriert.",
+  "tiere": {
+    "Abudefduf vaigiensis": {
+      "datei": "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/Abudefduf vaigiensis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Achatina achatina": {
+      "datei": "assets/daten/lebewesen/tiere/Achatina achatina/Achatina achatina.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Aetobatus ocellatus": {
+      "datei": "assets/daten/lebewesen/tiere/Aetobatus ocellatus/Aetobatus ocellatus.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Aglais io": {
+      "datei": "assets/daten/lebewesen/tiere/Aglais io/Aglais io.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Ailuropoda melanoleuca": {
+      "datei": "assets/daten/lebewesen/tiere/Ailuropoda melanoleuca/Ailuropoda melanoleuca.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Ailurus fulgens": {
+      "datei": "assets/daten/lebewesen/tiere/Ailurus fulgens/Ailurus fulgens.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Ambystoma mexicanum": {
+      "datei": "assets/daten/lebewesen/tiere/Ambystoma mexicanum/Ambystoma mexicanum.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Antidorcas marsupialis": {
+      "datei": "assets/daten/lebewesen/tiere/Antidorcas marsupialis/Antidorcas marsupialis.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Aquarana catesbeianus": {
+      "datei": "assets/daten/lebewesen/tiere/Aquarana catesbeianus/Aquarana catesbeianus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Aquila chrysaetos": {
+      "datei": "assets/daten/lebewesen/tiere/Aquila chrysaetos/Aquila chrysaetos.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Arothron nigropunctatus": {
+      "datei": "assets/daten/lebewesen/tiere/Arothron nigropunctatus/Arothron nigropunctatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Asio otus": {
+      "datei": "assets/daten/lebewesen/tiere/Asio otus/Asio otus.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Balaeniceps rex": {
+      "datei": "assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Balistoides conspicillum": {
+      "datei": "assets/daten/lebewesen/tiere/Balistoides conspicillum/Balistoides conspicillum.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Bison bonasus": {
+      "datei": "assets/daten/lebewesen/tiere/Bison bonasus/Bison bonasus.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Boa constrictor": {
+      "datei": "assets/daten/lebewesen/tiere/Boa constrictor/Boa constrictor.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Botaurus stellaris": {
+      "datei": "assets/daten/lebewesen/tiere/Botaurus stellaris/Botaurus stellaris.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Brachypelma hamorii": {
+      "datei": "assets/daten/lebewesen/tiere/Brachypelma hamorii/Brachypelma hamorii.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        }
+      }
+    },
+    "Buceros bicornis": {
+      "datei": "assets/daten/lebewesen/tiere/Buceros bicornis/Buceros bicornis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Caesio teres": {
+      "datei": "assets/daten/lebewesen/tiere/Caesio teres/Caesio teres.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Canis lupus": {
+      "datei": "assets/daten/lebewesen/tiere/Canis lupus/Canis lupus.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Carcharhinus melanopterus": {
+      "datei": "assets/daten/lebewesen/tiere/Carcharhinus melanopterus/Carcharhinus melanopterus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Castor fiber": {
+      "datei": "assets/daten/lebewesen/tiere/Castor fiber/Castor fiber.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Cerastes cerastes": {
+      "datei": "assets/daten/lebewesen/tiere/Cerastes cerastes/Cerastes cerastes.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Cervus elaphus": {
+      "datei": "assets/daten/lebewesen/tiere/Cervus elaphus/Cervus elaphus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Cheilinus undulatus": {
+      "datei": "assets/daten/lebewesen/tiere/Cheilinus undulatus/Cheilinus undulatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Chelonoidis nigra": {
+      "datei": "assets/daten/lebewesen/tiere/Chelonoidis nigra/Chelonoidis nigra.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Chromobotia macracanthus": {
+      "datei": "assets/daten/lebewesen/tiere/Chromobotia macracanthus/Chromobotia macracanthus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Connochaetes gnou": {
+      "datei": "assets/daten/lebewesen/tiere/Connochaetes gnou/Connochaetes gnou.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Connochaetes taurinus": {
+      "datei": "assets/daten/lebewesen/tiere/Connochaetes taurinus/Connochaetes taurinus.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Conraua goliath": {
+      "datei": "assets/daten/lebewesen/tiere/Conraua goliath/Conraua goliath.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Coryphaena hippurus": {
+      "datei": "assets/daten/lebewesen/tiere/Coryphaena hippurus/Coryphaena hippurus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Crocodylus porosus": {
+      "datei": "assets/daten/lebewesen/tiere/Crocodylus porosus/Crocodylus porosus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Crocuta crocuta": {
+      "datei": "assets/daten/lebewesen/tiere/Crocuta crocuta/Crocuta crocuta.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Crotalus atrox": {
+      "datei": "assets/daten/lebewesen/tiere/Crotalus atrox/Crotalus atrox.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Dendrolagus goodfellowi": {
+      "datei": "assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/Dendrolagus goodfellowi.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Epinephelus lanceolatus": {
+      "datei": "assets/daten/lebewesen/tiere/Epinephelus lanceolatus/Epinephelus lanceolatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Equus ferus przewalskii": {
+      "datei": "assets/daten/lebewesen/tiere/Equus ferus/Equus ferus przewalskii/Equus ferus przewalskii.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Equus quagga": {
+      "datei": "assets/daten/lebewesen/tiere/Equus quagga/Equus quagga.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Eretmochelys imbricata": {
+      "datei": "assets/daten/lebewesen/tiere/Eretmochelys imbricata/Eretmochelys imbricata.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Eudorcas thomsonii": {
+      "datei": "assets/daten/lebewesen/tiere/Eudorcas thomsonii/Eudorcas thomsonii.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Eunectes notaeus": {
+      "datei": "assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Gavialis gangeticus": {
+      "datei": "assets/daten/lebewesen/tiere/Gavialis gangeticus/Gavialis gangeticus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Gigantometrus swammerdami": {
+      "datei": "assets/daten/lebewesen/tiere/Gigantometrus swammerdami/Gigantometrus swammerdami.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Giraffa reticulata": {
+      "datei": "assets/daten/lebewesen/tiere/Giraffa reticulata/Giraffa reticulata.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Giraffa tippelskirchi": {
+      "datei": "assets/daten/lebewesen/tiere/Giraffa tippelskirchi/Giraffa tippelskirchi.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Gnathanodon speciosus": {
+      "datei": "assets/daten/lebewesen/tiere/Gnathanodon speciosus/Gnathanodon speciosus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Goliathus goliatus": {
+      "datei": "assets/daten/lebewesen/tiere/Goliathus goliatus/Goliathus goliatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Gorilla gorilla gorilla": {
+      "datei": "assets/daten/lebewesen/tiere/Gorilla gorilla/Gorilla gorilla gorilla/Gorilla gorilla gorilla.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Gyps africanus": {
+      "datei": "assets/daten/lebewesen/tiere/Gyps africanus/Gyps africanus.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Haliaeetus albicilla": {
+      "datei": "assets/daten/lebewesen/tiere/Haliaeetus albicilla/Haliaeetus albicilla.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Helarctos malayanus": {
+      "datei": "assets/daten/lebewesen/tiere/Helarctos malayanus/Helarctos malayanus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Heloderma suspectum": {
+      "datei": "assets/daten/lebewesen/tiere/Heloderma suspectum/Heloderma suspectum.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Heniochus diphreutes": {
+      "datei": "assets/daten/lebewesen/tiere/Heniochus diphreutes/Heniochus diphreutes.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Hippopotamus amphibius": {
+      "datei": "assets/daten/lebewesen/tiere/Hippopotamus amphibius/Hippopotamus amphibius.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        }
+      }
+    },
+    "Hippotragus niger": {
+      "datei": "assets/daten/lebewesen/tiere/Hippotragus niger/Hippotragus niger.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Hydrocynus vittatus": {
+      "datei": "assets/daten/lebewesen/tiere/Hydrocynus vittatus/Hydrocynus vittatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Lemur catta": {
+      "datei": "assets/daten/lebewesen/tiere/Lemur catta/Lemur catta.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Leontopithecus rosalia": {
+      "datei": "assets/daten/lebewesen/tiere/Leontopithecus rosalia/Leontopithecus rosalia.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Lepus timidus": {
+      "datei": "assets/daten/lebewesen/tiere/Lepus timidus/Lepus timidus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Loxodonta africana": {
+      "datei": "assets/daten/lebewesen/tiere/Loxodonta africana/Loxodonta africana.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        }
+      }
+    },
+    "Lynx lynx": {
+      "datei": "assets/daten/lebewesen/tiere/Lynx lynx/Lynx lynx.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Malaclemys terrapin": {
+      "datei": "assets/daten/lebewesen/tiere/Malaclemys terrapin/Malaclemys terrapin.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Manis javanica": {
+      "datei": "assets/daten/lebewesen/tiere/Manis javanica/Manis javanica.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        }
+      }
+    },
+    "Melanotaenia boesemani": {
+      "datei": "assets/daten/lebewesen/tiere/Melanotaenia boesemani/Melanotaenia boesemani.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Mola mola": {
+      "datei": "assets/daten/lebewesen/tiere/Mola mola/Mola mola.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Morpho menelaus": {
+      "datei": "assets/daten/lebewesen/tiere/Morpho menelaus/Morpho menelaus.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Naso unicornis": {
+      "datei": "assets/daten/lebewesen/tiere/Naso unicornis/Naso unicornis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Oophaga lehmanni": {
+      "datei": "assets/daten/lebewesen/tiere/Oophaga lehmanni/Oophaga lehmanni.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Orycteropus afer": {
+      "datei": "assets/daten/lebewesen/tiere/Orycteropus afer/Orycteropus afer.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        }
+      }
+    },
+    "Oryx gazella": {
+      "datei": "assets/daten/lebewesen/tiere/Oryx gazella/Oryx gazella.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "sozialeStruktur": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Pachliopta jophon": {
+      "datei": "assets/daten/lebewesen/tiere/Pachliopta jophon/Pachliopta jophon.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Pan troglodytes verus": {
+      "datei": "assets/daten/lebewesen/tiere/Pan troglodytes/Pan troglodytes verus/Pan troglodytes verus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Panthera leo": {
+      "datei": "assets/daten/lebewesen/tiere/Panthera leo/Panthera leo.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        }
+      }
+    },
+    "Panthera pardus pardus": {
+      "datei": "assets/daten/lebewesen/tiere/Panthera pardus/Panthera pardus pardus/Panthera pardus pardus.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Panthera tigris sumatrae": {
+      "datei": "assets/daten/lebewesen/tiere/Panthera tigris/Panthera tigris sumatrae/Panthera tigris sumatrae.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Panthera uncia": {
+      "datei": "assets/daten/lebewesen/tiere/Panthera uncia/Panthera uncia.json",
+      "daten": {
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Papilio machaon": {
+      "datei": "assets/daten/lebewesen/tiere/Papilio machaon/Papilio machaon.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Paracanthurus hepatus": {
+      "datei": "assets/daten/lebewesen/tiere/Paracanthurus hepatus/Paracanthurus hepatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Phacochoerus africanus": {
+      "datei": "assets/daten/lebewesen/tiere/Phacochoerus africanus/Phacochoerus africanus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Phoebis sennae": {
+      "datei": "assets/daten/lebewesen/tiere/Phoebis sennae/Phoebis sennae.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Phyllium giganteum": {
+      "datei": "assets/daten/lebewesen/tiere/Phyllium giganteum/Phyllium giganteum.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Phyllobates terribilis": {
+      "datei": "assets/daten/lebewesen/tiere/Phyllobates terribilis/Phyllobates terribilis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Platax pinnatus": {
+      "datei": "assets/daten/lebewesen/tiere/Platax pinnatus/Platax pinnatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Plectorhinchus vittatus": {
+      "datei": "assets/daten/lebewesen/tiere/Plectorhinchus vittatus/Plectorhinchus vittatus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Pongo abelii": {
+      "datei": "assets/daten/lebewesen/tiere/Pongo abelii/Pongo abelii.json",
+      "daten": {
+        "koerperlaenge": {
+          "werte": []
+        },
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Pseudonaja textilis": {
+      "datei": "assets/daten/lebewesen/tiere/Pseudonaja textilis/Pseudonaja textilis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Pterois volitans": {
+      "datei": "assets/daten/lebewesen/tiere/Pterois volitans/Pterois volitans.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Ramphastos toco": {
+      "datei": "assets/daten/lebewesen/tiere/Ramphastos toco/Ramphastos toco.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Sagittarius serpentarius": {
+      "datei": "assets/daten/lebewesen/tiere/Sagittarius serpentarius/Sagittarius serpentarius.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Salamandra salamandra": {
+      "datei": "assets/daten/lebewesen/tiere/Salamandra salamandra/Salamandra salamandra.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "nachwuchs": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Salmo trutta": {
+      "datei": "assets/daten/lebewesen/tiere/Salmo trutta/Salmo trutta.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Sardinops sagax": {
+      "datei": "assets/daten/lebewesen/tiere/Sardinops sagax/Sardinops sagax.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        }
+      }
+    },
+    "Scardinius erythrophthalmus": {
+      "datei": "assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/Scardinius erythrophthalmus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Spheniscus demersus": {
+      "datei": "assets/daten/lebewesen/tiere/Spheniscus demersus/Spheniscus demersus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Sphyrna mokarran": {
+      "datei": "assets/daten/lebewesen/tiere/Sphyrna mokarran/Sphyrna mokarran.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Stegostoma tigrinum": {
+      "datei": "assets/daten/lebewesen/tiere/Stegostoma tigrinum/Stegostoma tigrinum.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Suricata suricatta": {
+      "datei": "assets/daten/lebewesen/tiere/Suricata suricatta/Suricata suricatta.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Symphorichthys spilurus": {
+      "datei": "assets/daten/lebewesen/tiere/Symphorichthys spilurus/Symphorichthys spilurus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Syncerus caffer caffer": {
+      "datei": "assets/daten/lebewesen/tiere/Syncerus caffer/Syncerus caffer caffer/Syncerus caffer caffer.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "geschlechtsreife": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Tapirus indicus": {
+      "datei": "assets/daten/lebewesen/tiere/Tapirus indicus/Tapirus indicus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Thunnus orientalis": {
+      "datei": "assets/daten/lebewesen/tiere/Thunnus orientalis/Thunnus orientalis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Tiliqua scincoides": {
+      "datei": "assets/daten/lebewesen/tiere/Tiliqua scincoides/Tiliqua scincoides.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Tragelaphus angasii": {
+      "datei": "assets/daten/lebewesen/tiere/Tragelaphus angasii/Tragelaphus angasii.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Triturus dobrogicus": {
+      "datei": "assets/daten/lebewesen/tiere/Triturus dobrogicus/Triturus dobrogicus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "gewicht": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Tropheus moorii": {
+      "datei": "assets/daten/lebewesen/tiere/Tropheus moorii/Tropheus moorii.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Ursus arctos arctos": {
+      "datei": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/Ursus arctos arctos.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Varanus komodoensis": {
+      "datei": "assets/daten/lebewesen/tiere/Varanus komodoensis/Varanus komodoensis.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    },
+    "Varanus niloticus": {
+      "datei": "assets/daten/lebewesen/tiere/Varanus niloticus/Varanus niloticus.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        },
+        "ernaehrung": {
+          "fressverhalten": {
+            "werte": []
+          }
+        }
+      }
+    },
+    "Zebrasoma flavescens": {
+      "datei": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/Zebrasoma flavescens.json",
+      "daten": {
+        "schulterhoehe": {
+          "werte": []
+        },
+        "fluegelspannweite": {
+          "werte": []
+        },
+        "lebensspanne": {
+          "werte": []
+        },
+        "geschwindigkeit": {
+          "werte": []
+        },
+        "tragzeit": {
+          "werte": []
+        },
+        "wildpopulation": {
+          "werte": []
+        },
+        "aktivitaet": {
+          "werte": []
+        }
+      }
+    }
+  }
+}

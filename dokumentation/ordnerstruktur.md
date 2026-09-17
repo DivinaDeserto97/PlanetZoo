@@ -1490,6 +1490,8 @@
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/videos/.gitkeep>)
           - [datenImport.js](../assets/daten/lebewesen/tiere/datenImport.js)
+      - `patches/`
+        - [infotafel-tierdaten.json](../assets/daten/patches/infotafel-tierdaten.json)
     - `js/`
       - `features/`
         - [animalLabels.js](../assets/js/features/animalLabels.js)
@@ -1561,11 +1563,6 @@
         - [systematik.js](../assets/js/systematik/systematik.js)
       - `tier/`
         - [tier.js](../assets/js/tier/tier.js)
-    - `medien/`
-      - `freigegeben/`
-        - [.gitkeep](../assets/medien/freigegeben/.gitkeep)
-      - `lokal/`
-    - `private/`
   - `dokumentation/`
     - [ANLEITUNG-TIER-JSON.md](../dokumentation/ANLEITUNG-TIER-JSON.md)
     - [MEDIEN-UND-QUELLEN.md](../dokumentation/MEDIEN-UND-QUELLEN.md)

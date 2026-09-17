@@ -33,7 +33,7 @@ function alsArray(wert) {
   }
 
   if (wert === undefined || wert === null || wert === "") {
-    return [""];
+    return [];
   }
 
   return [wert];
@@ -83,7 +83,7 @@ export function filterTiere(tiere, filter = {}) {
     .trim()
     .toLocaleLowerCase();
 
-  const ausgewaehlteIds = new Set(einstellungen.ausgewaehlteIds ?? [""]);
+  const ausgewaehlteIds = new Set(einstellungen.ausgewaehlteIds ?? []);
 
   return tiere.filter((tier) => {
     const tierFilter = tier.filter ?? {};

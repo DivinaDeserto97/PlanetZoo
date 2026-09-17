@@ -19,7 +19,7 @@ function hatEigenesFeld(object, key) {
   return Object.prototype.hasOwnProperty.call(object ?? {}, key);
 }
 
-function item(label, pfad, ok, fehlt = [""]) {
+function item(label, pfad, ok, fehlt = []) {
   return {
     label,
     pfad,
@@ -35,7 +35,7 @@ function pruefeOptionalenText(fehlt, object, key, meldung) {
 }
 
 function pruefeKnoten(knoten, index) {
-  const fehlt = [""];
+  const fehlt = [];
 
   if (!istObjekt(knoten)) {
     return ["Knoten ist kein Objekt."];
@@ -123,7 +123,7 @@ function pruefeKnoten(knoten, index) {
 }
 
 export function pruefeSystematikStruktur(systematik) {
-  const checks = [""];
+  const checks = [];
 
   if (!istObjekt(systematik)) {
     checks.push(
@@ -172,7 +172,7 @@ export function pruefeSystematikStruktur(systematik) {
       );
     } else {
       naheVerwandte.forEach((verwandter, index) => {
-        const fehlt = [""];
+        const fehlt = [];
 
         if (!istObjekt(verwandter)) {
           fehlt.push("Eintrag ist kein Objekt.");
@@ -306,7 +306,7 @@ export function pruefeSystematikStruktur(systematik) {
       );
     } else {
       aufspaltungen.forEach((aufspaltung, index) => {
-        const fehlt = [""];
+        const fehlt = [];
 
         if (!hatText(aufspaltung?.linieA)) {
           fehlt.push("Linie A fehlt.");
@@ -369,7 +369,7 @@ export function pruefeSystematikStruktur(systematik) {
       );
     } else {
       verbindungen.forEach((verbindung, index) => {
-        const fehlt = [""];
+        const fehlt = [];
 
         if (!hatText(verbindung?.von)) {
           fehlt.push("von fehlt.");
