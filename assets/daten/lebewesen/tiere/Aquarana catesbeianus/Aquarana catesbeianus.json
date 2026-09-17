@@ -226,44 +226,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "fledermaeuse",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "voegel",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "taranteln",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

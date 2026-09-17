@@ -155,44 +155,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "insects",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "molluscs",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "smallFish",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

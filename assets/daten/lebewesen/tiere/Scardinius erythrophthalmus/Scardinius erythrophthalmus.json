@@ -158,41 +158,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [
-            {
-              "wert": "zooplankton",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "wasserinsekten",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "kleineWirbellose",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -202,27 +168,12 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Mit zunehmendem Alter ernähren sich Rotfedern stärker von Wasserpflanzen und anderem Pflanzenmaterial. Erwachsene Tiere können laut Zoopedia täglich bis zu 40 % ihres Körpergewichts an Pflanzen fressen.",
                 "en": "With increasing age, Rudd feed more heavily on aquatic plants and other plant material. According to the Zoopedia, adults can consume up to 40% of their body weight in plants per day."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "insekten",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia nennt Insekten als Nahrung an oder nahe der Wasseroberfläche.",
-                "en": "The Zoopedia names insects as food taken at or near the water surface."
               },
               "quelle": "planetZoo2"
             }

@@ -214,44 +214,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "insekten",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "kleineAmphibien",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "kleineSaeugetiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

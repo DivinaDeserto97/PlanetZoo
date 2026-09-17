@@ -211,8 +211,8 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Eltern füttern das Küken mit ausgewürgtem Aas.",
@@ -230,8 +230,8 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Weißrückengeier sind obligate Aasfresser und beseitigen Tierkadaver.",
@@ -245,27 +245,12 @@
               "beziehung": "toxischeWirkung",
               "wirkung": "-/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt Tierkadaver mit Diclofenac ausdrücklich als Vergiftungsgefahr für Weißrückengeier.",
                 "en": "The Zoopedia explicitly identifies carcasses containing diclofenac as a poisoning threat to White-backed Vultures."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "andereAasfresser",
-              "typ": "tier",
-              "beziehung": "kommensalismus",
-              "wirkung": "0/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Andere Aasfresser folgen Weißrückengeiern laut Zoopedia häufig, um Nahrung zu finden. Ein Nutzen für den Geier wird dabei nicht genannt.",
-                "en": "According to the Zoopedia, other scavengers often follow White-backed Vultures to find food. No benefit to the vulture is stated."
               },
               "quelle": "planetZoo2"
             }

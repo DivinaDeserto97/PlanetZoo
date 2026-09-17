@@ -230,33 +230,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "wuehlmaeuse",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "maeuse",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

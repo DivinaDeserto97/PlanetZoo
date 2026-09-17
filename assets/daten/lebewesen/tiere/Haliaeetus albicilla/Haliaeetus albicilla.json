@@ -232,41 +232,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "andereVoegel",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia sagt ausdrücklich, dass andere Vögel den größten Teil der Nahrung des Seeadlers ausmachen.",
-                "en": "The Zoopedia explicitly states that other birds make up most of the White-tailed Sea Eagle's diet."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "fische",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt Seeadler als geschickte Fischer.",
-                "en": "The Zoopedia describes White-tailed Sea Eagles as skilled fishers."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

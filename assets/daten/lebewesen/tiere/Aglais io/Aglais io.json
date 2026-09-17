@@ -175,8 +175,8 @@
               "beziehung": "herbivory",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Raupen ernähren sich laut Zoopedia gemeinschaftlich von ihrem Nesselblatt, bis es vollständig abgefressen ist.",
@@ -194,8 +194,8 @@
               "beziehung": "feeding",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia beschreibt Weibchen, die sich von Blüten ernähren.",

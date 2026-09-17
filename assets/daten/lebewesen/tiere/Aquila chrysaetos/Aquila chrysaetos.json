@@ -219,6 +219,24 @@
             },
             "quelle": ""
           }
+        },
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Lepus timidus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            }
+          ]
         }
       }
     }

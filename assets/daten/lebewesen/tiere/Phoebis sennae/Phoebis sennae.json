@@ -188,8 +188,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Raupen ernähren sich laut Zoopedia von Sennapflanzen.",
@@ -200,7 +200,7 @@
           ]
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

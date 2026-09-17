@@ -183,37 +183,18 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
             {
-              "wert": "timorhirsch",
+              "wert": "Varanus komodoensis",
               "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia nennt Timorhirsche ausdrücklich als Beutetiere des Komodowarans.",
-                "en": "The Zoopedia explicitly names Timor deer as prey of the Komodo Dragon."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "komodowaranJungtier",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Komodowarane sind kannibalisch; Jungtiere der eigenen Art machen laut Zoopedia bis zu 10 % des Speiseplans aus.",
-                "en": "Komodo Dragons are cannibalistic; according to the Zoopedia, juveniles of their own species make up as much as 10% of the diet."
+                "selbst": [],
+                "ziel": ["jungtier"]
               },
               "quelle": "planetZoo2"
             }

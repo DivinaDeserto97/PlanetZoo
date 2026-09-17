@@ -216,26 +216,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "fischschwaerme",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt, dass Gruppen Fischschwärme zusammentreiben und jagen.",
-                "en": "The Zoopedia describes groups herding and hunting schools of fish."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

@@ -202,26 +202,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "nager",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia sagt, dass die Präsenz der Texas-Klapperschlange für Menschen vorteilhaft ist, weil sie Nagerpopulationen niedrig hält. Daraus ist die direkte Beute-Beziehung zu Nagern abgeleitet.",
-                "en": "The Zoopedia states that the snake benefits humans by keeping rodent populations low, directly supporting a predator-prey relationship with rodents."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

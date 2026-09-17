@@ -246,38 +246,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [
-            {
-              "wert": "skorpione",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": ["jungtier", "ab26TagenLernphase"],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Jungen lernen von Erwachsenen, wie man Skorpionen vor dem Verzehr den Stachel entfernt.",
-                "en": "Young meerkats learn from adults how to remove a scorpion's sting before eating it."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "skorpione",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

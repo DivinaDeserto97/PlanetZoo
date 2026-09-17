@@ -240,10 +240,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

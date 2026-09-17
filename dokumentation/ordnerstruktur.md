@@ -1492,6 +1492,7 @@
           - [datenImport.js](../assets/daten/lebewesen/tiere/datenImport.js)
       - `patches/`
         - [infotafel-tierdaten.json](../assets/daten/patches/infotafel-tierdaten.json)
+        - [nahrungsnetz-tiere.json](../assets/daten/patches/nahrungsnetz-tiere.json)
     - `js/`
       - `features/`
         - [animalLabels.js](../assets/js/features/animalLabels.js)

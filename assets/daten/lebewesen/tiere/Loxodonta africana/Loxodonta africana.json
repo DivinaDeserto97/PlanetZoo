@@ -242,7 +242,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["calf"],
-                "ziel": [""]
+                "ziel": []
               },
               "nutzung": {
                 "art": "nahrung",
@@ -257,7 +257,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["increasingWithAge"],
-                "ziel": [""]
+                "ziel": []
               },
               "quelle": "sanDiegoZoo"
             }
@@ -271,8 +271,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -282,8 +282,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -293,8 +293,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -304,8 +304,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -315,8 +315,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -326,8 +326,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "animalDiversityWeb"
             },
@@ -337,8 +337,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "sanDiegoZoo"
             }

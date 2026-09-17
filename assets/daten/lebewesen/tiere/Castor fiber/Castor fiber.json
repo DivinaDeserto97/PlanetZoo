@@ -191,7 +191,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -201,8 +201,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia beschreibt das Nagen an Holz und nennt die Fressgewohnheiten als Teil der ökologischen Wirkung des Bibers. Konkrete Pflanzenarten werden nicht genannt.",

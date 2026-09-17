@@ -220,48 +220,14 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["larve"],
-                "ziel": [""]
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }
           ]
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "krustentiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "weichtiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "kleineFische",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

@@ -257,7 +257,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["jungtier"],
-                "ziel": [""]
+                "ziel": []
               },
               "quelle": "planetZoo2"
             },
@@ -268,7 +268,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["abEtwa3Bis4Wochen"],
-                "ziel": [""]
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }
@@ -282,8 +282,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }

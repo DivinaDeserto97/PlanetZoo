@@ -185,65 +185,20 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "kleineWirbellose",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": ["jungtier"],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
               "wert": "algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["jungtier"],
-                "ziel": [""]
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }
           ]
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "krebstiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "weichtiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "korallenbewohnendeWirbellose",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

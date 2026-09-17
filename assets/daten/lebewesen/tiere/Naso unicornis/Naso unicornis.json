@@ -176,7 +176,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -186,8 +186,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Erwachsene Kurznasen-Doktorfische ernähren sich laut Zoopedia hauptsächlich von Blättern der Braunalgen und begrenzen dadurch das Algenwachstum auf Korallenriffen.",

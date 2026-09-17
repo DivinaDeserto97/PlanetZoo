@@ -214,41 +214,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "finkenUndDrosseln",
-              "typ": "tier",
-              "beziehung": "symbiose",
-              "wirkung": "+/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt eine symbiotische Beziehung mit Finken und Drosseln, die Parasiten zwischen Beinen und Panzer der Schildkröten fressen.",
-                "en": "The Zoopedia describes a symbiotic relationship with finches and thrushes that eat parasites from between the tortoises' legs and shells."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "parasiten",
-              "typ": "tier",
-              "beziehung": "parasitismus",
-              "wirkung": "-/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia erwähnt Parasiten, die sich zwischen den Beinen und Panzern der Schildkröten ansiedeln.",
-                "en": "The Zoopedia mentions parasites that settle between the tortoises' legs and shells."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

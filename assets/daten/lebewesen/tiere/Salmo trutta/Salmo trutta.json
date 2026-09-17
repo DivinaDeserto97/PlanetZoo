@@ -171,8 +171,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt für Jungfische wirbellose Wassertiere als Nahrung.",
@@ -183,7 +183,7 @@
           ]
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

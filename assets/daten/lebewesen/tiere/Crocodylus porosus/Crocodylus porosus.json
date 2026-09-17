@@ -209,7 +209,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -219,8 +219,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Laut Zoopedia können Leistenkrokodile in Zeiten knapper Nahrung Riesenkröten fressen und sind gegen deren Gift immun.",

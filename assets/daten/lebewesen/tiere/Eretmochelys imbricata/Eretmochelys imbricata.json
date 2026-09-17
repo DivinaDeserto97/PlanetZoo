@@ -194,8 +194,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "planetZoo2"
             },
@@ -205,8 +205,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }
@@ -220,8 +220,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Viele der gefressenen Schwämme sind laut Zoopedia für andere Tiere giftig.",

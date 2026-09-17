@@ -205,8 +205,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Raupen ernähren sich laut Zoopedia von Pflanzen; konkrete Pflanzenarten werden nicht genannt.",
@@ -224,8 +224,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Ausgewachsene Blaue Morphofalter ernähren sich laut Zoopedia hauptsächlich von gegorenen Früchten.",

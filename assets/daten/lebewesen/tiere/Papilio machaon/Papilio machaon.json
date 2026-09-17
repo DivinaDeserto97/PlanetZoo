@@ -177,8 +177,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt weiche junge Blätter von Pflanzen wie Möhren als Raupennahrung.",
@@ -192,34 +192,19 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt weiche junge Blätter von Pflanzen wie Fenchel als Raupennahrung.",
                 "en": "The Zoopedia names soft young leaves of plants such as fennel as caterpillar food."
               },
               "quelle": "planetZoo2"
-            },
-            {
-              "wert": "Trogus lapidator",
-              "typ": "tier",
-              "beziehung": "parasitismus",
-              "wirkung": "-/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt Trogus lapidator als parasitoide Wespe: Sie legt Eier in die Körperhöhle der Raupe, und der Nachwuchs ernährt sich während der Verpuppung von ihr.",
-                "en": "The Zoopedia describes Trogus lapidator as a parasitoid wasp: it lays eggs in the caterpillar's body cavity and the developing wasp feeds on it during pupation."
-              },
-              "quelle": "planetZoo2"
             }
           ]
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

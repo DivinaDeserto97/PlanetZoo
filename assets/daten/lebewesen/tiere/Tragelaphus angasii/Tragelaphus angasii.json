@@ -207,41 +207,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "paviane",
-              "typ": "tier",
-              "beziehung": "kommensalismus",
-              "wirkung": "+/0",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia sagt, dass Nyalas sich auf Warnrufe von Pavianen verlassen. Der Nutzen liegt bei der Nyala; ein Effekt auf die Paviane wird nicht genannt.",
-                "en": "The Zoopedia states that Nyalas rely on warning calls from baboons. The benefit is to the Nyala; no effect on the baboons is stated."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "impalas",
-              "typ": "tier",
-              "beziehung": "kommensalismus",
-              "wirkung": "+/0",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia sagt, dass Nyalas sich auf Warnrufe von Impalas verlassen. Der Nutzen liegt bei der Nyala; ein Effekt auf die Impalas wird nicht genannt.",
-                "en": "The Zoopedia states that Nyalas rely on warning calls from impalas. The benefit is to the Nyala; no effect on the impalas is stated."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

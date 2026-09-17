@@ -163,41 +163,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [
-            {
-              "wert": "unbefruchteteEierEigeneArt",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt, dass die Jungtiere nach dem Schlupf mit unbefruchteten Eiern gefüttert werden.",
-                "en": "The Zoopedia states that the young are fed unfertilized eggs after hatching."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "kaulquappenEigeneArt",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia bezeichnet die Kaulquappen ausdrücklich als kannibalisch.",
-                "en": "The Zoopedia explicitly describes the tadpoles as cannibalistic."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

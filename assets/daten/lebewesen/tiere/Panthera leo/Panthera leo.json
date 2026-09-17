@@ -251,7 +251,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["bisEtwa6Monate"],
-                "ziel": [""]
+                "ziel": []
               },
               "nutzung": {
                 "art": "nahrung",
@@ -266,7 +266,7 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["abEtwa3Monaten"],
-                "ziel": [""]
+                "ziel": []
               },
               "nutzung": {
                 "art": "nahrung",
@@ -279,46 +279,13 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "Orycteropus afer",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "smithsonianLion"
-            },
-            {
-              "wert": "Orycteropus afer",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "animalDiversityWeb"
-            },
-            {
-              "wert": "Loxodonta africana",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": ["jungtier"]
-              },
-              "quelle": "sanDiegoZoo"
-            },
-            {
               "wert": "aas",
               "typ": "aas",
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "aas": {
                 "zustand": "frisch bis etwa 2 Wochen alt"
@@ -328,6 +295,72 @@
                 "en": "Lions also scavenge and take kills from other predators."
               },
               "quelle": "smithsonianLion"
+            },
+            {
+              "wert": "Connochaetes taurinus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Equus quagga",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Eudorcas thomsonii",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Syncerus caffer caffer",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Loxodonta africana",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Orycteropus afer",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
             }
           ]
         }

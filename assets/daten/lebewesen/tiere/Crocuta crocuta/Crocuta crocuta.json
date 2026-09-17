@@ -221,7 +221,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -231,14 +231,102 @@
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia beschreibt das Fressen von Aas als ökologisch wichtig, weil dadurch Krankheiten eingedämmt werden können.",
                 "en": "The Zoopedia describes carrion feeding as ecologically important because it can help limit disease."
               },
               "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Connochaetes taurinus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Equus quagga",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Eudorcas thomsonii",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Syncerus caffer caffer",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Phacochoerus africanus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Giraffa reticulata",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Giraffa tippelskirchi",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "animalDiversityWeb"
+            },
+            {
+              "wert": "Hippopotamus amphibius",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "animalDiversityWeb"
             }
           ]
         }

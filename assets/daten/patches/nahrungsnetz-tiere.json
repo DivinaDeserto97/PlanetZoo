@@ -1,0 +1,735 @@
+{
+  "_meta": {
+    "beschreibung": "Tier-zu-Tier-Nahrungsnetz für die 110 echten Tiere. leeres Tier.json wird nicht verändert. Pflanzen/Aas/Nutzung/Gift bleiben in den Tierdateien erhalten.",
+    "modus": "animal-only",
+    "anzahlTiere": 110,
+    "anzahlBeziehungen": 25,
+    "hinweis": "Bewusst konservativ: Es werden nur Beziehungen eingetragen, die sich sinnvoll auf ein konkretes Tier im Projekt abbilden lassen."
+  },
+  "tiere": {
+    "Abudefduf vaigiensis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Achatina achatina": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Aetobatus ocellatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Aglais io": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Ailuropoda melanoleuca": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Ailurus fulgens": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Ambystoma mexicanum": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Antidorcas marsupialis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Aquarana catesbeianus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Aquila chrysaetos": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Lepus timidus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "Arothron nigropunctatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Asio otus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Balaeniceps rex": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Balistoides conspicillum": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Bison bonasus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Boa constrictor": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Botaurus stellaris": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Brachypelma hamorii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Buceros bicornis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Caesio teres": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Canis lupus": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Cervus elaphus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Bison bonasus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Lepus timidus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "Carcharhinus melanopterus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Castor fiber": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Cerastes cerastes": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Cervus elaphus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Cheilinus undulatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Chelonoidis nigra": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Chromobotia macracanthus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Connochaetes gnou": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Connochaetes taurinus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Conraua goliath": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Coryphaena hippurus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Crocodylus porosus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Crocuta crocuta": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Connochaetes taurinus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Equus quagga",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Eudorcas thomsonii",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Syncerus caffer caffer",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Phacochoerus africanus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Giraffa reticulata",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Giraffa tippelskirchi",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Hippopotamus amphibius",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "Crotalus atrox": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Dendrolagus goodfellowi": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Epinephelus lanceolatus": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Carcharhinus melanopterus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "fishBase"
+        },
+        {
+          "wert": "Aetobatus ocellatus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "fishBase"
+        },
+        {
+          "wert": "Eretmochelys imbricata",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "fishBase"
+        }
+      ]
+    },
+    "Equus ferus przewalskii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Equus quagga": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Eretmochelys imbricata": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Eudorcas thomsonii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Eunectes notaeus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Gavialis gangeticus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Gigantometrus swammerdami": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Giraffa reticulata": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Giraffa tippelskirchi": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Gnathanodon speciosus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Goliathus goliatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Gorilla gorilla gorilla": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Gyps africanus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Haliaeetus albicilla": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Helarctos malayanus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Heloderma suspectum": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Heniochus diphreutes": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Hippopotamus amphibius": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Hippotragus niger": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Hydrocynus vittatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Lemur catta": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Leontopithecus rosalia": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Lepus timidus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Loxodonta africana": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Lynx lynx": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Malaclemys terrapin": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Manis javanica": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Melanotaenia boesemani": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Mola mola": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Morpho menelaus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Naso unicornis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Oophaga lehmanni": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Orycteropus afer": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Oryx gazella": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Pachliopta jophon": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Pan troglodytes verus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Panthera leo": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Connochaetes taurinus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Equus quagga",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Eudorcas thomsonii",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Syncerus caffer caffer",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "Loxodonta africana",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "Orycteropus afer",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "Panthera pardus pardus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Panthera tigris sumatrae": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Tapirus indicus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
+    },
+    "Panthera uncia": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Papilio machaon": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Paracanthurus hepatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Phacochoerus africanus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Phoebis sennae": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Phyllium giganteum": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Phyllobates terribilis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Platax pinnatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Plectorhinchus vittatus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Pongo abelii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Pseudonaja textilis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Pterois volitans": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Ramphastos toco": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Sagittarius serpentarius": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Salamandra salamandra": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Salmo trutta": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Sardinops sagax": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Scardinius erythrophthalmus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Spheniscus demersus": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Sardinops sagax",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "sanbi"
+        }
+      ]
+    },
+    "Sphyrna mokarran": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Aetobatus ocellatus",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": []
+          },
+          "quelle": "floridaMuseum"
+        }
+      ]
+    },
+    "Stegostoma tigrinum": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Suricata suricatta": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Symphorichthys spilurus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Syncerus caffer caffer": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Tapirus indicus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Thunnus orientalis": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Tiliqua scincoides": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Tragelaphus angasii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Triturus dobrogicus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Tropheus moorii": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Ursus arctos arctos": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Varanus komodoensis": {
+      "jungtier": [],
+      "erwachsen": [
+        {
+          "wert": "Varanus komodoensis",
+          "typ": "tier",
+          "beziehung": "praedation",
+          "wirkung": "+/-",
+          "bedingung": {
+            "selbst": [],
+            "ziel": ["jungtier"]
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "Varanus niloticus": {
+      "jungtier": [],
+      "erwachsen": []
+    },
+    "Zebrasoma flavescens": {
+      "jungtier": [],
+      "erwachsen": []
+    }
+  }
+}

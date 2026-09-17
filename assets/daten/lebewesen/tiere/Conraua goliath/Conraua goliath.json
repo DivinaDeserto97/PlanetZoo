@@ -214,7 +214,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["kaulquappe"],
-                "ziel": [""]
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt keine Pflanzenart beim Namen, sagt aber, dass sich die Kaulquappen ausschließlich von einer einzigen Pflanzenart ernähren, die in schnell fließenden Gewässern und am Grund von Wasserfällen vorkommt.",
@@ -225,7 +225,7 @@
           ]
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": []
         }
       }
     }

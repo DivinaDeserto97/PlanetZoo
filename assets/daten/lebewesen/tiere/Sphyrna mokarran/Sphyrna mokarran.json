@@ -206,6 +206,24 @@
             },
             "quelle": ""
           }
+        },
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Aetobatus ocellatus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "floridaMuseum"
+            }
+          ]
         }
       }
     }

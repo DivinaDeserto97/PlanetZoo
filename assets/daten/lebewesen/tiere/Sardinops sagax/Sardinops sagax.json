@@ -198,7 +198,7 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
           "werte": [
@@ -208,41 +208,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "groessereFische",
-              "typ": "tier",
-              "beziehung": "beuteVon",
-              "wirkung": "-/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "seevoegel",
-              "typ": "tier",
-              "beziehung": "beuteVon",
-              "wirkung": "-/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "meeressaeugetiere",
-              "typ": "tier",
-              "beziehung": "beuteVon",
-              "wirkung": "-/+",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "planetZoo2"
             }

@@ -178,26 +178,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "watendeVoegel",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Gelbe Anakondas ernähren sich laut Zoopedia hauptsächlich von watenden Vögeln, denen sie unter Wasser auflauern.",
-                "en": "According to the Zoopedia, Yellow Anacondas mainly feed on wading birds, ambushing them from underwater."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

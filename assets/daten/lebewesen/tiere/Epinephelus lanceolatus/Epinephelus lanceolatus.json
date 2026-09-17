@@ -189,6 +189,46 @@
             },
             "quelle": ""
           }
+        },
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Carcharhinus melanopterus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "fishBase"
+            },
+            {
+              "wert": "Aetobatus ocellatus",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "fishBase"
+            },
+            {
+              "wert": "Eretmochelys imbricata",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": ["jungtier"]
+              },
+              "quelle": "fishBase"
+            }
+          ]
         }
       }
     }

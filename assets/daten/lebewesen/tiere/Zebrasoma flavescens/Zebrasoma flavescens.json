@@ -207,26 +207,11 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["jungtier"],
-                "ziel": [""]
+                "ziel": []
               },
               "hinweis": {
                 "de": "Jungfische ernähren sich laut Zoopedia von Mikroalgen.",
                 "en": "According to the Zoopedia, juveniles feed on microalgae."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "andereRifffische",
-              "typ": "tier",
-              "beziehung": "mutualismus",
-              "wirkung": "+/+",
-              "bedingung": {
-                "selbst": ["jungtier"],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Jungtiere übernehmen zeitweise die Rolle von Putzerfischen und entfernen abgestorbene Haut und Parasiten von anderen Rifffischen.",
-                "en": "Juveniles sometimes act as cleaner fish, removing dead skin and parasites from other reef fish."
               },
               "quelle": "planetZoo2"
             }
@@ -240,8 +225,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die Zoopedia nennt reichlichen Algenbewuchs beziehungsweise Algenteppiche als wichtige Nahrungsgrundlage.",

@@ -178,26 +178,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "ratten",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia nennt Ratten ausdrücklich als reichlich vorhandene Beute in landwirtschaftlichen Gebieten und am Stadtrand.",
-                "en": "The Zoopedia explicitly names rats as abundant prey in agricultural areas and urban fringes."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

@@ -167,41 +167,10 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [
-            {
-              "wert": "krokodileierUndJungtiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Die Zoopedia beschreibt Nilwarane als geschickt darin, Eier und Jungtiere aus Krokodilnestern zu erbeuten.",
-                "en": "The Zoopedia describes Nile Monitors as skilled at taking eggs and young from crocodile nests."
-              },
-              "quelle": "planetZoo2"
-            },
-            {
-              "wert": "alligatoreierUndJungtiere",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "hinweis": {
-                "de": "Für Florida nennt die Zoopedia ausdrücklich Eier und Jungtiere von Alligatoren als Beute.",
-                "en": "For Florida, the Zoopedia explicitly identifies alligator eggs and young as prey."
-              },
-              "quelle": "planetZoo2"
-            }
-          ]
+          "werte": []
         }
       }
     }

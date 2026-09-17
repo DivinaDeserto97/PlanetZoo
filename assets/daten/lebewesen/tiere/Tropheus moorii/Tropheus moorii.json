@@ -220,7 +220,7 @@
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["jungtier"],
-                "ziel": [""]
+                "ziel": []
               },
               "hinweis": {
                 "de": "Jungfische beginnen kurz nach dem Schlüpfen mit dem Fressen von Algen.",
@@ -238,8 +238,8 @@
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Algen bilden laut Zoopedia einen Hauptbestandteil der Nahrung und werden von Felsen abgekratzt.",

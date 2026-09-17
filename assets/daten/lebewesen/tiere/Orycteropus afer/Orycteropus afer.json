@@ -236,22 +236,11 @@
               "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["bisEtwa3Monate"],
-                "ziel": [""]
+                "ziel": []
               },
               "nutzung": {
                 "art": "nahrung",
                 "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: bis etwa 3 Monate"
-              },
-              "quelle": "animalDiversityWeb"
-            },
-            {
-              "wert": "insects",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": ["abEtwa3Monaten"],
-                "ziel": [""]
               },
               "quelle": "animalDiversityWeb"
             }
@@ -260,35 +249,13 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "ants",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "animalDiversityWeb"
-            },
-            {
-              "wert": "termites",
-              "typ": "tier",
-              "beziehung": "praedation",
-              "wirkung": "+/-",
-              "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
-              },
-              "quelle": "animalDiversityWeb"
-            },
-            {
               "wert": "Cucumis humifructus",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Diese unterirdisch reifende Frucht wird besonders aus Südafrika als pflanzliche Nahrung beschrieben.",

@@ -166,10 +166,22 @@
       },
       "nahrungsnetz": {
         "jungtier": {
-          "werte": [""]
+          "werte": []
         },
         "erwachsen": {
-          "werte": [""]
+          "werte": [
+            {
+              "wert": "Sardinops sagax",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "sanbi"
+            }
+          ]
         }
       }
     }

@@ -216,8 +216,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Die planktonischen Larven ernähren sich laut Zoopedia während des Wachstums von mikroskopisch kleinen Beutetieren.",
@@ -235,8 +235,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "quelle": "planetZoo2"
             },
@@ -246,8 +246,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Als Tierfakt nennt die Zoopedia giftige Kofferfische als mögliche Beute.",
@@ -261,8 +261,8 @@
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [""],
-                "ziel": [""]
+                "selbst": [],
+                "ziel": []
               },
               "hinweis": {
                 "de": "Als Tierfakt nennt die Zoopedia Dornenkronenseesterne als häufig gefressene giftige Beute.",
