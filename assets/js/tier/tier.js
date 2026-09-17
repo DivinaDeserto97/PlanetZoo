@@ -14,7 +14,7 @@ import {
 import { TOOL_STUFEN } from "../features/toolEinstellungen.js";
 
 let controller = null;
-let tiere = [""];
+let tiere = [];
 
 export async function init() {
   controller?.abort();

@@ -711,7 +711,7 @@ function createNegativeMarker() {
 /* ======================================== */
 
 function removeDuplicatePoints(points) {
-  const result = [""];
+  const result = [];
 
   points.forEach((point) => {
     const previous = result[result.length - 1];

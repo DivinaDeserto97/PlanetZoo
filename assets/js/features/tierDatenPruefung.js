@@ -174,7 +174,7 @@ async function existiertLokaleDatei(pfad) {
 /* ======================================== */
 
 function pruefeNutzungsHaeufigkeit(wert) {
-  const fehler = [""];
+  const fehler = [];
 
   if (!hatText(wert)) {
     fehler.push("nutzung.haeufigkeit fehlt.");

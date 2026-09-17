@@ -597,7 +597,7 @@ export async function initMapRenderer(tiere, signal) {
 function createTiledImages(group, href) {
   group.replaceChildren();
 
-  const result = [""];
+  const result = [];
 
   /*
       Waagerecht:
@@ -1003,7 +1003,7 @@ function createInsetRangeMask(image) {
 }
 
 function findPinkPixels(data, width, height) {
-  const result = [""];
+  const result = [];
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {

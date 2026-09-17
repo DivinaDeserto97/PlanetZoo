@@ -12,7 +12,7 @@ let controller = null;
 
 let graphCanvas = null;
 
-let tiere = [""];
+let tiere = [];
 
 let routeEdit = false;
 

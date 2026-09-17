@@ -109,7 +109,7 @@ export function getNahrungsBeziehungen(tier, lebensphase) {
    ============================================================ */
 
 export function getAlleNahrungsBeziehungen(tier) {
-  const result = [""];
+  const result = [];
 
   NAHRUNGSNETZ_LEBENSPHASEN.forEach((lebensphase) => {
     const beziehungen = getNahrungsBeziehungen(tier, lebensphase);
@@ -141,7 +141,7 @@ export function getFressfeinde(alleTiere, zielTier, zielLebensphase = null) {
     return [""];
   }
 
-  const result = [""];
+  const result = [];
 
   alleTiere.forEach((fressfeind) => {
     /*

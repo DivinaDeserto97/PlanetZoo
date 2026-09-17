@@ -19,7 +19,7 @@ export function hatLokalisierterText(wert) {
 }
 
 function flattenGruppen(gruppen) {
-  const result = [""];
+  const result = [];
 
   alsArray(gruppen).forEach((gruppe, gruppenIndex) => {
     const varianten = alsArray(gruppe?.varianten);

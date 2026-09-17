@@ -618,7 +618,7 @@ function buildPathThroughRequiredCorridors({
 }) {
   let currentStarts = [...starts];
 
-  const result = [""];
+  const result = [];
 
   for (const requiredId of required) {
     const part = findPathBetweenCorridors({
@@ -755,7 +755,7 @@ function reconstructPath(end, previous) {
 /* ======================================== */
 
 function getSlotCorridors(slot, rows, columns) {
-  const result = [""];
+  const result = [];
 
   if (slot.column > 1) {
     result.push(createVerticalCorridorId(slot.row, slot.column - 1));

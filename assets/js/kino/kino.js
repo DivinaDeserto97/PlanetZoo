@@ -8,7 +8,7 @@ import {
 } from "../features/tierAuswahl.js";
 
 let controller = null;
-let tiere = [""];
+let tiere = [];
 let kinoKategorien = [""];
 let filmQuellen = new Set();
 let filmTypen = new Set();
@@ -1267,7 +1267,7 @@ function baueTierinfos(tier) {
     ["arterhaltung", "Artenschutz"],
   ];
 
-  const result = [""];
+  const result = [];
 
   kandidaten.forEach(([schluessel, label]) => {
     const sprachDaten = getSprachEintraege(texte?.[schluessel]);
