@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["asia"],
-    "biome": ["Gemäßigt"],
+    "biome": ["Gemäßigt", "Taiga"],
     "schutzstatus": "endangered"
   },
   "daten": {

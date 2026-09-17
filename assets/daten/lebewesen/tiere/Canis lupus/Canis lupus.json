@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["europe", "asia", "northAmerica"],
-    "biome": ["Gemäßigt", "Graslandschaft"],
+    "biome": ["Gemäßigt", "Graslandschaft", "Taiga"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

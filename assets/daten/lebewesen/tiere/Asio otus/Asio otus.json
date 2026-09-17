@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Voliere"],
     "kontinente": ["europe", "asia", "northAmerica", "africa"],
-    "biome": ["Feuchtgebiete", "Gemäßigt", "Graslandschaft"],
+    "biome": ["Feuchtgebiete", "Gemäßigt", "Graslandschaft", "Taiga"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
