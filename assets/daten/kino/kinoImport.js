@@ -19,7 +19,7 @@ function alsArray(wert) {
   }
 
   if (wert === undefined || wert === null || wert === "") {
-    return [""];
+    return [];
   }
 
   return [wert];
@@ -30,7 +30,7 @@ function alsArray(wert) {
 /* ======================================== */
 
 export async function kinoDatenImportieren() {
-  const kategorien = [""];
+  const kategorien = [];
 
   for (
     let importIndex = 0;
