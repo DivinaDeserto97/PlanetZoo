@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["africa"],
-    "biome": ["Offenes Meer", "Wüste"],
+    "biome": ["Graslandschaft", "Offenes Meer", "Wüste"],
     "schutzstatus": "criticallyEndangered"
   },
   "daten": {

@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["southAmerica"],
-    "biome": ["Feuchtgebiete", "Seen und Flüsse"],
+    "biome": ["Feuchtgebiete", "Graslandschaft", "Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

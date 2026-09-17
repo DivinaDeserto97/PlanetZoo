@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["northAmerica"],
-    "biome": ["Ästuar", "Feuchtgebiete"],
+    "biome": ["Ästuar", "Feuchtgebiete", "Mangrove"],
     "schutzstatus": "endangered"
   },
   "daten": {

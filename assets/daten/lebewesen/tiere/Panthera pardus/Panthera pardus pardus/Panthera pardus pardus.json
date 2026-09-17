@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["africa"],
-    "biome": [],
+    "biome": ["Graslandschaft"],
     "schutzstatus": "vulnerable"
   },
   "daten": {

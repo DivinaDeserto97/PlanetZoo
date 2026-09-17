@@ -17,7 +17,7 @@
     "edition": "deluxe",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [],
+    "biome": ["Riff"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

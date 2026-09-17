@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["asia"],
-    "biome": ["Feuchtgebiete"],
+    "biome": ["Feuchtgebiete", "Mangrove"],
     "schutzstatus": "endangered"
   },
   "daten": {

@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
     "kontinente": ["asia", "oceania"],
-    "biome": ["Ästuar"],
+    "biome": ["Ästuar", "Mangrove"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

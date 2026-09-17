@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["africa"],
-    "biome": ["Savanne", "Tropen"],
+    "biome": ["Graslandschaft", "Tropen"],
     "schutzstatus": "notEvaluated"
   },
   "daten": {

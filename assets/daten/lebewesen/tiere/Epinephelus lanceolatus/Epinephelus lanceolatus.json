@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": ["africa", "asia", "oceania"],
-    "biome": ["Ästuar", "Tropen"],
+    "biome": ["Ästuar", "Mangrove", "Riff", "Tropen"],
     "schutzstatus": "dataDeficient"
   },
   "daten": {

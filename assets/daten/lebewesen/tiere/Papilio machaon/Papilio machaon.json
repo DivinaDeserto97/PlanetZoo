@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["europe", "asia", "northAmerica"],
-    "biome": ["Gemäßigt", "Tundra"],
+    "biome": ["Gemäßigt", "Graslandschaft", "Tundra"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

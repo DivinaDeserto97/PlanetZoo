@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": ["Ästuar", "Riff"],
+    "biome": ["Ästuar", "Offenes Meer", "Riff"],
     "schutzstatus": "endangered"
   },
   "daten": {

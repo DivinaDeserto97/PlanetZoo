@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [],
-    "biome": [],
+    "biome": ["Offenes Meer"],
     "schutzstatus": "leastConcern"
   },
   "daten": {

@@ -17,7 +17,7 @@
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
     "kontinente": ["northAmerica", "southAmerica"],
-    "biome": ["Tropen", "Wüste"],
+    "biome": ["Graslandschaft", "Tropen", "Wüste"],
     "schutzstatus": "leastConcern"
   },
   "daten": {
