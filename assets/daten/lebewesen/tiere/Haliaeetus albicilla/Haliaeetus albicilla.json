@@ -5,7 +5,7 @@
       "de": "Seeadler",
       "en": "White-tailed Sea Eagle",
       "en-US": "White-tailed Sea Eagle",
-      "es": "Pigargo europeo",
+      "es": "Pigargo Europao",
       "fr": "Pygargue à queue blanche",
       "it": "Aquila di mare",
       "pt-BR": "Águia-rabalva",
@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Feuchtgebiete", "Gemäßigt", "Seen und Flüsse", "Taiga"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -84,7 +84,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -217,7 +217,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -230,7 +230,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt den Seeadler als Raubvogel und geschickten Fischer. Andere Vögel machen laut Tierfakten den größten Teil seiner Nahrung aus.",
               "en": "The Zoopedia describes the White-tailed Sea Eagle as a bird of prey and skilled fisher. Other birds make up most of its diet according to the animal facts."
@@ -471,7 +471,7 @@
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/seeadler",
         "en": "https://www.planetzoogame.com/2/zoopedia/white-tailed-sea-eagle",
         "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/white-tailed-sea-eagle",
-        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pigargo-europeo",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/pigargo-Europao",
         "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/pygargue-%C3%A0-queue-blanche",
         "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/aquila-di-mare",
         "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/%C3%A1guia-rabalva",

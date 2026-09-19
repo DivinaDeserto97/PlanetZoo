@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["europe"],
+    "kontinente": ["Europa"],
     "biome": ["Feuchtgebiete"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -71,7 +71,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -150,7 +150,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -158,7 +158,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -171,10 +171,10 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Laut Zoopedia sind Donau-Kammmolche ab dem Schlupf reine Fleischfresser.",
-              "en": "According to the Zoopedia, Danube Crested Newts are strict carnivores from the moment they hatch."
+              "en": "According to the Zoopedia, Danube Crested Newts are strict Fleischfressers from the moment they hatch."
             },
             "quelle": "planetZoo2"
           }
@@ -498,7 +498,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Like other newts, Danube Crested Newts are strict carnivores from the moment they hatch.",
+          "inhalt": "Like other newts, Danube Crested Newts are strict Fleischfressers from the moment they hatch.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -525,7 +525,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Like other newts, Danube Crested Newts are strict carnivores from the moment they hatch.",
+          "inhalt": "Like other newts, Danube Crested Newts are strict Fleischfressers from the moment they hatch.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -579,7 +579,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Dès l'éclosion, il est strictement carnivore.",
+          "inhalt": "Dès l'éclosion, il est strictement Fleischfresser.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

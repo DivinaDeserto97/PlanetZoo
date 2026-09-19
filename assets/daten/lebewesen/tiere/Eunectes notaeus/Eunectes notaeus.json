@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["southAmerica"],
+    "kontinente": ["Südamerika"],
     "biome": ["Feuchtgebiete", "Graslandschaft", "Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -163,7 +163,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -176,7 +176,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt watende Vögel ausdrücklich als Hauptbeute.",
               "en": "The Zoopedia explicitly identifies wading birds as the main prey."

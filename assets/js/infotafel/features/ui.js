@@ -131,32 +131,32 @@ const VALUE_LABELS = {
     en: "Desert",
   },
 
-  diurnal: {
+  Tagaktiv: {
     de: "Tagaktiv",
     en: "Diurnal",
   },
 
-  nocturnal: {
+  Nachtaktiv: {
     de: "Nachtaktiv",
     en: "Nocturnal",
   },
 
-  crepuscular: {
+  Dämmerungsaktiv: {
     de: "Dämmerungsaktiv",
     en: "Crepuscular",
   },
 
-  carnivore: {
+  Fleischfresser: {
     de: "Carnivor",
     en: "Carnivore",
   },
 
-  herbivore: {
+  Pflanzenfresser: {
     de: "Herbivor",
     en: "Herbivore",
   },
 
-  omnivore: {
+  Allesfresser: {
     de: "Omnivor",
     en: "Omnivore",
   },

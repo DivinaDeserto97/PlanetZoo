@@ -3,8 +3,8 @@
   "identitaet": {
     "namen": {
       "de": "Brillenpinguin",
-      "en": "African Penguin",
-      "en-US": "African Penguin",
+      "en": "Afrikan Penguin",
+      "en-US": "Afrikan Penguin",
       "es": "Pingüino africano",
       "fr": "Manchot du Cap",
       "it": "Pinguino africano",
@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Offenes Meer", "Wüste"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -139,7 +139,7 @@
           "maxGruppengroesse": null,
           "hinweis": {
             "de": "Wenn sie nicht jagen, sammeln sich Brillenpinguine laut Zoopedia in riesigen Kolonien mit mehreren tausend Pärchen.",
-            "en": "When not hunting, African penguins gather in huge colonies containing several thousand pairs."
+            "en": "When not hunting, Afrikan penguins gather in huge colonies containing several thousand pairs."
           },
           "quelle": "planetZoo2"
         }
@@ -160,7 +160,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -173,7 +173,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -230,14 +230,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African penguin lives along the coast and on the islands of South Africa and Namibia.",
+          "inhalt": "The Afrikan penguin lives along the coast and on the islands of South Afrika and Namibia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African penguin lives along the coast and on the islands of South Africa and Namibia.",
+          "inhalt": "The Afrikan penguin lives along the coast and on the islands of South Afrika and Namibia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -294,14 +294,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Africa and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every African penguin has an individual pattern of black spots on its chest.\n\nAfrican penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
+          "inhalt": "The Afrikan penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Afrika and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every Afrikan penguin has an individual pattern of black spots on its chest.\n\nAfrikan penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Africa and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every African penguin has an individual pattern of black spots on its chest.\n\nAfrican penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
+          "inhalt": "The Afrikan penguin (Spheniscus demersus) is a flightless bird that lives along the coast and on the islands of South Afrika and Namibia.\n\nIts back, flippers and feet are black, and it has a black facial 'mask' bordered in white. The body is white with a black band across the chest. The pink areas around its eyes help regulate body temperature. In addition, every Afrikan penguin has an individual pattern of black spots on its chest.\n\nAfrikan penguins grow to 60–68 cm and weigh between 2.2 and 3.5 kg. Males can be slightly larger than females.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -358,14 +358,14 @@
       ],
       "en": [
         {
-          "inhalt": "African penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the African penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
+          "inhalt": "Afrikan penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the Afrikan penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "African penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the African penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
+          "inhalt": "Afrikan penguins are Critically Endangered because their population is declining rapidly and continuously as a result of human and ecological pressures. Overfishing of major food sources such as sardines and anchovies reduces the amount of prey available to them. Coastal development and pollution, especially oil spills, seriously affect their breeding sites. Their eggs were also collected on a large scale in the past. Climate change poses an additional threat because it alters ocean currents and reduces prey populations.\n\nConservation measures focus on protecting habitats, securing prey availability and reducing human impacts. The rescue and rehabilitation of injured or oil-contaminated penguins, together with a newly established breeding and release programme, are intended to strengthen populations. Marine protected areas (MPAs) restrict fishing near colonies. Artificial burrows are installed at breeding sites because guano harvesting destroyed natural nesting places. Awareness campaigns and ecotourism support and finance conservation work.\n\nDespite these efforts, the Afrikan penguin population continues to decline at an alarming rate. Further measures are required to secure the future of the species.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -422,21 +422,21 @@
       ],
       "en": [
         {
-          "inhalt": "African penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Africa. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. African penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely vulnerable and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. African penguins are fully grown at three years and breed for the first time at four to five years.",
+          "inhalt": "Afrikan penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Afrika. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. Afrikan penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely Gefährdet and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. Afrikan penguins are fully grown at three years and breed for the first time at four to five years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "African penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Africa. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. African penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely vulnerable and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. African penguins are fully grown at three years and breed for the first time at four to five years.",
+          "inhalt": "Afrikan penguins are highly social and, when they are not hunting, gather in huge colonies containing several thousand pairs.\n\nThey come ashore for the breeding season, which occurs in summer in Namibia and autumn in South Afrika. Males arrive four days before females and use this time to find a nest site and build a nest from pebbles, guano and other debris. Afrikan penguins usually remain with the same partner for life. Established pairs locate one another using particular calls, while unpaired males try to attract females with vocalisations, head displays and by showing off their nest site. A pair reinforces its bond by calling together and entwining their necks.\n\nThree weeks after mating, the female lays two eggs in the nest. The pair incubates them for 40 days and alternates hunting during this period. After hatching, the chicks are extremely Gefährdet and are often eaten by mongooses, gulls or domestic cats. In 90% of cases only one chick survives to fledging. The parents protect and feed their chick until it is 2–4 months old. The young then join a communal crèche supervised by adults.\n\nThe chicks fledge at about four months of age, when they swim out to sea for the first time. Penguins return to their place of birth each year to moult and breed. Afrikan penguins are fully grown at three years and breed for the first time at four to five years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "Los pingüinos africanos son muy sociales y, cuando no están cazando, se reúnen en enormes colonias formadas por varios miles de parejas.\n\nLlegan a tierra durante la época reproductiva, que tiene lugar en verano en Namibia y en otoño en Sudáfrica. Los machos llegan cuatro días antes que las hembras y aprovechan ese tiempo para buscar un lugar de nidificación y construir un nido con guijarros, guano y otros restos. Normalmente permanecen con la misma pareja durante toda la vida. Las parejas ya formadas se reconocen mediante llamadas específicas, mientras que los machos sin pareja intentan atraer a las hembras con vocalizaciones, exhibiciones de cabeza y mostrando el nido. La pareja refuerza su vínculo emitiendo llamadas conjuntamente y entrelazando los cuellos.\n\nTres semanas después del apareamiento, la hembra pone dos huevos. La pareja los incuba durante 40 días y se alterna para ir a cazar. Después de la eclosión, los polluelos son extremadamente vulnerables y suelen ser depredados por mangostas, gaviotas o gatos domésticos. En el 90% de los casos solo un polluelo sobrevive hasta emplumar. Los padres lo protegen y alimentan hasta los 2–4 meses; después se une a una guardería comunal supervisada por adultos.\n\nLos polluelos empluman aproximadamente a los cuatro meses, cuando nadan hacia el mar por primera vez. Cada año regresan a su lugar de nacimiento para mudar y reproducirse. Alcanzan el tamaño adulto a los tres años y se reproducen por primera vez entre los cuatro y cinco años.",
+          "inhalt": "Los pingüinos africanos son muy sociales y, cuando no están cazando, se reúnen en enormes colonias formadas por varios miles de parejas.\n\nLlegan a tierra durante la época reproductiva, que tiene lugar en verano en Namibia y en otoño en Sudáfrica. Los machos llegan cuatro días antes que las hembras y aprovechan ese tiempo para buscar un lugar de nidificación y construir un nido con guijarros, guano y otros restos. Normalmente permanecen con la misma pareja durante toda la vida. Las parejas ya formadas se reconocen mediante llamadas específicas, mientras que los machos sin pareja intentan atraer a las hembras con vocalizaciones, exhibiciones de cabeza y mostrando el nido. La pareja refuerza su vínculo emitiendo llamadas conjuntamente y entrelazando los cuellos.\n\nTres semanas después del apareamiento, la hembra pone dos huevos. La pareja los incuba durante 40 días y se alterna para ir a cazar. Después de la eclosión, los polluelos son extremadamente Gefährdets y suelen ser depredados por mangostas, gaviotas o gatos domésticos. En el 90% de los casos solo un polluelo sobrevive hasta emplumar. Los padres lo protegen y alimentan hasta los 2–4 meses; después se une a una guardería comunal supervisada por adultos.\n\nLos polluelos empluman aproximadamente a los cuatro meses, cuando nadan hacia el mar por primera vez. Cada año regresan a su lugar de nacimiento para mudar y reproducirse. Alcanzan el tamaño adulto a los tres años y se reproducen por primera vez entre los cuatro y cinco años.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -502,54 +502,54 @@
       ],
       "en": [
         {
-          "inhalt": "Until the 1970s, African penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
+          "inhalt": "Until the 1970s, Afrikan penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
+          "inhalt": "Afrikan penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "In English, African penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
+          "inhalt": "In English, Afrikan penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs African penguin breeding and removes an important nesting material.",
+          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs Afrikan penguin breeding and removes an important nesting material.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
+          "inhalt": "Afrikan penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Until the 1970s, African penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
+          "inhalt": "Until the 1970s, Afrikan penguin eggs were considered a delicacy, which contributed greatly to the decline of the population.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
+          "inhalt": "Afrikan penguins have many predators: at sea these include sharks and fur seals; on land they include kelp gulls, mongooses, genets, domestic cats and dogs.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "In English, African penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
+          "inhalt": "In English, Afrikan penguins are also called 'jackass penguins' because their call resembles the braying of a donkey.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs African penguin breeding and removes an important nesting material.",
+          "inhalt": "Penguin droppings, known as guano, are a highly effective fertiliser. Human collection of guano, however, disturbs Afrikan penguin breeding and removes an important nesting material.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
+          "inhalt": "Afrikan penguins cannot hunt while moulting because their plumage is not waterproof. They therefore have to fast until their plumage has fully developed again. The moult lasts about three weeks, during which they lose around 50% of their body weight.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -783,7 +783,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/1b6fe767/Penguin_African_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/1b6fe767/Penguin_Afrikan_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -804,11 +804,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMWI2ZmU3NjcvUGVuZ3Vpbl9BZnJpY2FuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
           "alt": {
             "de": "Brillenpinguin – Planet Zoo 2",
-            "en": "African Penguin – Planet Zoo 2"
+            "en": "Afrikan Penguin – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild des Brillenpinguins aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the African penguin."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Afrikan penguin."
           },
           "metadaten": [""],
           "dateien": [

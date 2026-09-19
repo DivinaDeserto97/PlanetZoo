@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Wüste", "Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -84,7 +84,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -174,7 +174,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -182,7 +182,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -195,7 +195,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -231,14 +231,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South African oryx, is an antelope native to the Kalahari and Namib deserts of southern Africa.",
+          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South Afrikan oryx, is an antelope native to the Kalahari and Namib deserts of southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South African oryx, is an antelope native to the Kalahari and Namib deserts of southern Africa.",
+          "inhalt": "The Gemsbok (Oryx gazella), sometimes called the South Afrikan oryx, is an antelope native to the Kalahari and Namib deserts of southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -259,7 +259,7 @@
       ],
       "it": [
         {
-          "inhalt": "L'orice gazzella (Oryx gazella) è un'antilope che vive nei deserti del Kalahari e del Namib nell'Africa meridionale.",
+          "inhalt": "L'orice gazzella (Oryx gazella) è un'antilope che vive nei deserti del Kalahari e del Namib nell'Afrika meridionale.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -295,14 +295,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Africa.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
+          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Afrika.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Africa.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
+          "inhalt": "The Gemsbok (Oryx gazella) is an antelope native to the Kalahari and Namib deserts of southern Afrika.\n\nIt has several distinctive features: long, thin, spiralled horns, a black face with white markings above the eyes and muzzle, grey-brown fur with black markings on the thighs and back, and white 'socks'.\n\nGemsbok average 1.1–1.3 m at the shoulder and are 1.9–2.4 m long, with horns averaging 85 cm. Males are somewhat larger and weigh 220–300 kg, while females weigh 100–210 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

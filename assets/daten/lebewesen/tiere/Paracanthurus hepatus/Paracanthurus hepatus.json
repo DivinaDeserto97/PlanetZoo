@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Africa", "asia", "oceania"],
+    "kontinente": ["Afrika", "Asien", "Ozeanien"],
     "biome": ["Riff", "Tropen"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -81,7 +81,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -199,7 +199,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -212,7 +212,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt Paletten-Doktorfische als allesfressende Abweider, die Zooplankton und Algen fressen.",
               "en": "The Zoopedia describes Palette Surgeonfish as omnivorous grazers feeding on zooplankton and algae."
@@ -269,14 +269,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Africa and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
+          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Afrika and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Africa and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
+          "inhalt": "The Palette Surgeonfish (Paracanthurus hepatus), also known as the Blue Tang or Regal Tang, occurs in warm tropical Indo-Pacific waters from East Afrika and Japan to Australia and the Great Barrier Reef. It inhabits coral reefs at depths of about 2 to 40 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

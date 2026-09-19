@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -83,7 +83,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -163,7 +163,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -176,7 +176,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."

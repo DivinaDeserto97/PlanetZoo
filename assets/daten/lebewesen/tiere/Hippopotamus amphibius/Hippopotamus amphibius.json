@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Feuchtgebiete", "Seen und Flüsse"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -83,7 +83,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -162,7 +162,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnalForaging",
+          "wert": "NachtaktivForaging",
           "hinweis": {
             "de": "Die Zoopedia beschreibt, dass Flusspferde den Tag zur Abkühlung im Wasser verbringen und nachts bis zu 5 km zurücklegen, um an Land zu grasen.",
             "en": "The Zoopedia states that hippos spend the day in water to cool off and travel up to 5 km at night to graze on land."
@@ -175,10 +175,10 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt nächtliches Grasen an Land.",
-              "en": "The Zoopedia describes nocturnal grazing on land."
+              "en": "The Zoopedia describes Nachtaktiv grazing on land."
             },
             "quelle": "planetZoo2"
           }
@@ -220,14 +220,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.",
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.",
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -248,7 +248,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero originario dei fiumi dell’Africa subsahariana.",
+          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero originario dei fiumi dell’Afrika subsahariana.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -284,14 +284,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Afrika.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Africa.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
+          "inhalt": "The Common Hippopotamus (Hippopotamus amphibius) is a large mammal native to rivers in sub-Saharan Afrika.\n\nIt is a large aquatic animal with long protruding teeth. Its nostrils are positioned on top of the snout, the ears are small, and the thick skin is grey-brown.\n\nMales reach 4–5 m in length and weigh 1,500–2,000 kg, while females reach 3.3–4.2 m and weigh 1,000–1,500 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -312,7 +312,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero che vive nei fiumi dell’Africa subsahariana.\n\nÈ un grande animale acquatico con lunghi denti sporgenti. Le narici si trovano sulla parte superiore del muso, le orecchie sono piccole e la pelle spessa è grigio-bruna.\n\nI maschi misurano 4–5 m e pesano 1.500–2.000 kg, mentre le femmine misurano 3,3–4,2 m e pesano 1.000–1.500 kg.",
+          "inhalt": "L’ippopotamo (Hippopotamus amphibius) è un grande mammifero che vive nei fiumi dell’Afrika subsahariana.\n\nÈ un grande animale acquatico con lunghi denti sporgenti. Le narici si trovano sulla parte superiore del muso, le orecchie sono piccole e la pelle spessa è grigio-bruna.\n\nI maschi misurano 4–5 m e pesano 1.500–2.000 kg, mentre le femmine misurano 3,3–4,2 m e pesano 1.000–1.500 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

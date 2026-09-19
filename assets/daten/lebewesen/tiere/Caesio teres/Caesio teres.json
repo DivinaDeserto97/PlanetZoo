@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Aquarium", "Ausstellung"],
     "kontinente": [""],
     "biome": ["Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -64,7 +64,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -143,7 +143,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -632,7 +632,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Viene pescato come alimento e consumato soprattutto nel Sud-est asiatico.",
+          "inhalt": "Viene pescato come alimento e consumato soprattutto nel Sud-est Asientico.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

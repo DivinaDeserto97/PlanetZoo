@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Fluss"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -86,7 +86,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -186,7 +186,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -194,7 +194,7 @@
           "quelle": "fishBase"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -207,7 +207,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt eine abwechslungsreiche Nahrung aus tierischen und pflanzlichen Bestandteilen.",
               "en": "The Zoopedia describes a varied diet containing both animal and plant material."

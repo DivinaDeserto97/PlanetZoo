@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,7 +69,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -143,7 +143,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -156,7 +156,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt die Nahrung als Mischung aus Pflanzen und kleinen wirbellosen Tieren; junge Tiere fressen vor allem Zooplankton, Wasserinsekten und kleine Wirbellose, ältere zunehmend Wasserpflanzen und anderes Pflanzenmaterial.",
               "en": "The Zoopedia describes a mixed diet of plants and small invertebrates; juveniles mainly eat zooplankton, aquatic insects and small invertebrates, while older fish increasingly consume aquatic plants and other plant material."
@@ -217,14 +217,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Africa.",
+          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Africa.",
+          "inhalt": "The Common Rudd (Scardinius erythrophthalmus) is a widespread freshwater fish native to much of Europe and western Asia, and has also been introduced to North America, New Zealand and parts of Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

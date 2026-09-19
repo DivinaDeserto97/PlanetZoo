@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -84,7 +84,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -172,7 +172,7 @@
           "wert": "savanna",
           "hinweis": {
             "de": "Die Zoopedia nennt die Savannen Südafrikas als natürlichen Lebensraum.",
-            "en": "The Zoopedia names the savannas of southern Africa as the natural habitat."
+            "en": "The Zoopedia names the savannas of southern Afrika as the natural habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -181,7 +181,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -189,7 +189,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -202,7 +202,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -247,14 +247,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.",
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.",
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -275,7 +275,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope originaria delle savane dell’Africa meridionale.",
+          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope originaria delle savane dell’Afrika meridionale.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -311,14 +311,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Afrika.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Africa.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
+          "inhalt": "The Springbok (Antidorcas marsupialis) is a small antelope native to the savannas of southern Afrika.\n\nIt has lyre-shaped black horns, light-brown fur with dark-brown markings, a white belly and face, and dark-brown tear stripes from the eyes to the muzzle.\n\nMales and females are about the same size and both have horns 35–50 cm long, although the males’ horns are more robust. Average shoulder height is 0.71–0.86 m, head-body length is 1.2–1.5 m, and adults weigh 27–42 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -339,7 +339,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope delle savane dell’Africa meridionale.\n\nHa corna nere a forma di lira, mantello marrone chiaro con segni marrone scuro, ventre e muso bianchi e strisce scure dagli occhi al muso.\n\nMaschi e femmine hanno dimensioni simili e corna lunghe 35–50 cm; l’altezza alla spalla è 0,71–0,86 m, la lunghezza corporea 1,2–1,5 m e il peso 27–42 kg.",
+          "inhalt": "Lo springbok (Antidorcas marsupialis) è una piccola antilope delle savane dell’Afrika meridionale.\n\nHa corna nere a forma di lira, mantello marrone chiaro con segni marrone scuro, ventre e muso bianchi e strisce scure dagli occhi al muso.\n\nMaschi e femmine hanno dimensioni simili e corna lunghe 35–50 cm; l’altezza alla spalla è 0,71–0,86 m, la lunghezza corporea 1,2–1,5 m e il peso 27–42 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

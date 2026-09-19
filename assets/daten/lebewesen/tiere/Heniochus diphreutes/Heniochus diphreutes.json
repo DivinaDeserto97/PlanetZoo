@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
     "kontinente": [""],
     "biome": ["Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -65,7 +65,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -166,7 +166,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -224,14 +224,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) occurs across the Indo-Pacific, from the east coast of Africa and the Red Sea to the central Pacific, including Indonesia, Australia and Hawaii. It lives on outer reef slopes and in lagoons.",
+          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) occurs across the Indo-Pacific, from the east coast of Afrika and the Red Sea to the central Pacific, including Indonesia, Australia and Hawaii. It lives on outer reef slopes and in lagoons.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) occurs across the Indo-Pacific, from the east coast of Africa and the Red Sea to the central Pacific, including Indonesia, Australia, and Hawaii. It lives on outer reef slopes and in lagoons.",
+          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) occurs across the Indo-Pacific, from the east coast of Afrika and the Red Sea to the central Pacific, including Indonesia, Australia, and Hawaii. It lives on outer reef slopes and in lagoons.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -252,7 +252,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il pesce farfalla dal vessillo (Heniochus diphreutes) è presente nell’Indo-Pacifico, dalla costa orientale dell’Africa e dal Mar Rosso fino al Pacifico centrale, comprese Indonesia, Australia e Hawaii. Vive lungo i versanti esterni delle barriere e nelle lagune.",
+          "inhalt": "Il pesce farfalla dal vessillo (Heniochus diphreutes) è presente nell’Indo-Pacifico, dalla costa orientale dell’Afrika e dal Mar Rosso fino al Pacifico centrale, comprese Indonesia, Australia e Hawaii. Vive lungo i versanti esterni delle barriere e nelle lagune.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -288,14 +288,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) is a marine fish found across the Indo-Pacific, from the east coast of Africa and the Red Sea to the central Pacific, including Indonesia, Australia and Hawaii. It lives on outer reef slopes and in lagoons, where it forms large, active schools in open water.\n\nThe species has a white body with two striking black vertical bands, a yellow tail and yellow dorsal fin, as well as a long rearward extension of the dorsal fin.\n\nAdults average 15 to 20 cm in length.",
+          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) is a marine fish found across the Indo-Pacific, from the east coast of Afrika and the Red Sea to the central Pacific, including Indonesia, Australia and Hawaii. It lives on outer reef slopes and in lagoons, where it forms large, active schools in open water.\n\nThe species has a white body with two striking black vertical bands, a yellow tail and yellow dorsal fin, as well as a long rearward extension of the dorsal fin.\n\nAdults average 15 to 20 cm in length.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) is a marine fish found across the Indo-Pacific, from the east coast of Africa and the Red Sea to the central Pacific, including Indonesia, Australia, and Hawaii. It lives on outer reef slopes and in lagoons, where it forms large, active schools in open water.\n\nThe species has a white body with two striking black vertical bands, a yellow tail and yellow dorsal fin, as well as a long rearward extension of the dorsal fin.\n\nAdults average 15 to 20 cm in length.",
+          "inhalt": "The Schooling Bannerfish (Heniochus diphreutes) is a marine fish found across the Indo-Pacific, from the east coast of Afrika and the Red Sea to the central Pacific, including Indonesia, Australia, and Hawaii. It lives on outer reef slopes and in lagoons, where it forms large, active schools in open water.\n\nThe species has a white body with two striking black vertical bands, a yellow tail and yellow dorsal fin, as well as a long rearward extension of the dorsal fin.\n\nAdults average 15 to 20 cm in length.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -316,7 +316,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il pesce farfalla dal vessillo (Heniochus diphreutes) è un pesce marino dell’Indo-Pacifico, dalla costa orientale dell’Africa e dal Mar Rosso fino al Pacifico centrale, comprese Indonesia, Australia e Hawaii. Vive sui versanti esterni delle barriere e nelle lagune, dove forma grandi banchi attivi in acque aperte.\n\nHa il corpo bianco con due evidenti bande verticali nere, coda e pinna dorsale gialle e una lunga estensione della pinna dorsale rivolta all’indietro.\n\nGli adulti misurano in media 15–20 cm.",
+          "inhalt": "Il pesce farfalla dal vessillo (Heniochus diphreutes) è un pesce marino dell’Indo-Pacifico, dalla costa orientale dell’Afrika e dal Mar Rosso fino al Pacifico centrale, comprese Indonesia, Australia e Hawaii. Vive sui versanti esterni delle barriere e nelle lagune, dove forma grandi banchi attivi in acque aperte.\n\nHa il corpo bianco con due evidenti bande verticali nere, coda e pinna dorsale gialle e una lunga estensione della pinna dorsale rivolta all’indietro.\n\nGli adulti misurano in media 15–20 cm.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

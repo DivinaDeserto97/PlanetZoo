@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Feuchtgebiete", "Tropen"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -73,7 +73,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -218,7 +218,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -226,7 +226,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -239,7 +239,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."

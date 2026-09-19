@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Wüste"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der mitgeschickten Seite nicht ausdrücklich genannt.",
@@ -214,7 +214,7 @@
           "wert": "savanna",
           "hinweis": {
             "de": "Die Zoopedia nennt Savannen im südlichen Afrika als Lebensraum.",
-            "en": "The Zoopedia names savannas in southern Africa as habitat."
+            "en": "The Zoopedia names savannas in southern Afrika as habitat."
           },
           "quelle": "planetZoo2"
         },
@@ -231,7 +231,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -289,14 +289,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Africa.",
+          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Africa.",
+          "inhalt": "The Meerkat (Suricata suricatta) is a member of the mongoose family that lives in groups in large underground burrows in the savannas and semi-deserts of South Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

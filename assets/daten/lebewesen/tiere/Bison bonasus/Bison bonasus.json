@@ -5,20 +5,20 @@
       "de": "Europäischer Wisent",
       "en": "European bison",
       "en-US": "European bison",
-      "es": "Bisonte europeo",
+      "es": "Bisonte Europao",
       "fr": "Bison d’Europe",
-      "it": "Bisonte europeo",
-      "pt-BR": "Bisão-europeu",
+      "it": "Bisonte Europao",
+      "pt-BR": "Bisão-Europau",
       "ja": "ヨーロッパバイソン",
       "zh-Hans": "欧洲野牛"
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe"],
+    "kontinente": ["Europa"],
     "biome": ["Gemäßigt", "Taiga"],
-    "schutzstatus": "nearThreatened"
+    "schutzstatus": "Potenziell gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -98,7 +98,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "nearThreatened",
+          "wert": "Potenziell gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -184,7 +184,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -192,7 +192,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -205,7 +205,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -286,7 +286,7 @@
       ],
       "es": [
         {
-          "inhalt": "El bisonte europeo (Bison bonasus), también llamado wisent, vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.",
+          "inhalt": "El bisonte Europao (Bison bonasus), también llamado wisent, vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -300,14 +300,14 @@
       ],
       "it": [
         {
-          "inhalt": "Il bisonte europeo (Bison bonasus), detto anche wisent, vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.",
+          "inhalt": "Il bisonte Europao (Bison bonasus), detto anche wisent, vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "O bisão-europeu (Bison bonasus), também chamado de wisent, vive nas florestas e pradarias do leste europeu na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.",
+          "inhalt": "O bisão-Europau (Bison bonasus), também chamado de wisent, vive nas florestas e pradarias do leste Europau na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -350,7 +350,7 @@
       ],
       "es": [
         {
-          "inhalt": "El bisonte europeo (Bison bonasus), también llamado wisent, es un gran ungulado que vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.\n\nSe caracteriza por su gran cabeza, la joroba de los hombros y el musculoso tren anterior, cubiertos por un pelaje marrón y áspero. El tren posterior es menos voluminoso y tiene un pelaje más fino. Machos y hembras son muy parecidos y ambos tienen cuernos curvados y anillados que apuntan hacia dentro. Los machos, sin embargo, son aproximadamente un 5 % más grandes.\n\nLos machos alcanzan 1,8–2,1 m de altura a la cruz, 2,8–3,3 m de longitud y 615–920 kg. Las hembras alcanzan 1,7–2,0 m de altura a la cruz, 2,4–2,9 m de longitud y 425–635 kg.",
+          "inhalt": "El bisonte Europao (Bison bonasus), también llamado wisent, es un gran ungulado que vive en los bosques y praderas de Europa oriental de Polonia, Rusia, Bielorrusia, Lituania, Ucrania y Eslovaquia.\n\nSe caracteriza por su gran cabeza, la joroba de los hombros y el musculoso tren anterior, cubiertos por un pelaje marrón y áspero. El tren posterior es menos voluminoso y tiene un pelaje más fino. Machos y hembras son muy parecidos y ambos tienen cuernos curvados y anillados que apuntan hacia dentro. Los machos, sin embargo, son aproximadamente un 5 % más grandes.\n\nLos machos alcanzan 1,8–2,1 m de altura a la cruz, 2,8–3,3 m de longitud y 615–920 kg. Las hembras alcanzan 1,7–2,0 m de altura a la cruz, 2,4–2,9 m de longitud y 425–635 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -364,14 +364,14 @@
       ],
       "it": [
         {
-          "inhalt": "Il bisonte europeo (Bison bonasus), detto anche wisent, è un grande ungulato che vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.\n\nÈ caratterizzato da una grande testa, una gobba sulle spalle e una parte anteriore muscolosa, tutte ricoperte da un pelo marrone e ispido. La parte posteriore è meno voluminosa e presenta un mantello più sottile. Maschi e femmine sono molto simili e possiedono corna anellate rivolte verso l’interno. I maschi, tuttavia, sono circa il 5% più grandi.\n\nI maschi raggiungono 1,8–2,1 m al garrese, 2,8–3,3 m di lunghezza e 615–920 kg. Le femmine raggiungono 1,7–2,0 m al garrese, 2,4–2,9 m di lunghezza e 425–635 kg.",
+          "inhalt": "Il bisonte Europao (Bison bonasus), detto anche wisent, è un grande ungulato che vive nelle foreste e nei prati dell’Europa orientale in Polonia, Russia, Bielorussia, Lituania, Ucraina e Slovacchia.\n\nÈ caratterizzato da una grande testa, una gobba sulle spalle e una parte anteriore muscolosa, tutte ricoperte da un pelo marrone e ispido. La parte posteriore è meno voluminosa e presenta un mantello più sottile. Maschi e femmine sono molto simili e possiedono corna anellate rivolte verso l’interno. I maschi, tuttavia, sono circa il 5% più grandi.\n\nI maschi raggiungono 1,8–2,1 m al garrese, 2,8–3,3 m di lunghezza e 615–920 kg. Le femmine raggiungono 1,7–2,0 m al garrese, 2,4–2,9 m di lunghezza e 425–635 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "O bisão-europeu (Bison bonasus), também chamado de wisent, é um grande ungulado que vive nas florestas e pradarias do leste europeu na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.\n\nEle se destaca pela cabeça grande, pela corcova nos ombros e pela região anterior musculosa, cobertas por pelagem marrom e desgrenhada. A parte traseira é menos volumosa e tem pelagem mais fina. Machos e fêmeas são muito semelhantes e ambos possuem chifres anelados curvados para dentro. Os machos, porém, ficam cerca de 5% maiores.\n\nOs machos atingem 1,8–2,1 m de altura no ombro, 2,8–3,3 m de comprimento e 615–920 kg. As fêmeas atingem 1,7–2,0 m de altura no ombro, 2,4–2,9 m de comprimento e 425–635 kg.",
+          "inhalt": "O bisão-Europau (Bison bonasus), também chamado de wisent, é um grande ungulado que vive nas florestas e pradarias do leste Europau na Polônia, Rússia, Belarus, Lituânia, Ucrânia e Eslováquia.\n\nEle se destaca pela cabeça grande, pela corcova nos ombros e pela região anterior musculosa, cobertas por pelagem marrom e desgrenhada. A parte traseira é menos volumosa e tem pelagem mais fina. Machos e fêmeas são muito semelhantes e ambos possuem chifres anelados curvados para dentro. Os machos, porém, ficam cerca de 5% maiores.\n\nOs machos atingem 1,8–2,1 m de altura no ombro, 2,8–3,3 m de comprimento e 615–920 kg. As fêmeas atingem 1,7–2,0 m de altura no ombro, 2,4–2,9 m de comprimento e 425–635 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -414,7 +414,7 @@
       ],
       "es": [
         {
-          "inhalt": "El bisonte europeo está considerado actualmente Casi Amenazado. A comienzos del siglo XX, las poblaciones silvestres estuvieron al borde de la extinción debido a la caza excesiva y la pérdida de hábitat. Solo quedaron 60 ejemplares en cautividad o grupos gestionados. Posteriormente, la especie recibió una amplia protección y los programas de cría en cautividad y reintroducción evitaron su desaparición completa.\n\nLa deforestación y la pérdida de hábitat por el desarrollo agrícola, junto con la depresión endogámica y el cruce con ganado doméstico, siguen amenazando a la especie. Se han reintroducido con éxito poblaciones cuidadosamente gestionadas en muchas zonas de Europa y hay nuevas reintroducciones previstas. Los esfuerzos han sido especialmente exitosos en el bosque de Białowieża, en Polonia, y en los Cárpatos meridionales de Rumanía, donde se han establecido varias poblaciones libres.",
+          "inhalt": "El bisonte Europao está considerado actualmente Casi Amenazado. A comienzos del siglo XX, las poblaciones silvestres estuvieron al borde de la extinción debido a la caza excesiva y la pérdida de hábitat. Solo quedaron 60 ejemplares en cautividad o grupos gestionados. Posteriormente, la especie recibió una amplia protección y los programas de cría en cautividad y reintroducción evitaron su desaparición completa.\n\nLa deforestación y la pérdida de hábitat por el desarrollo agrícola, junto con la depresión endogámica y el cruce con ganado doméstico, siguen amenazando a la especie. Se han reintroducido con éxito poblaciones cuidadosamente gestionadas en muchas zonas de Europa y hay nuevas reintroducciones previstas. Los esfuerzos han sido especialmente exitosos en el bosque de Białowieża, en Polonia, y en los Cárpatos meridionales de Rumanía, donde se han establecido varias poblaciones libres.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -428,14 +428,14 @@
       ],
       "it": [
         {
-          "inhalt": "Il bisonte europeo è oggi considerato prossimo alla minaccia. All’inizio del XX secolo le popolazioni selvatiche erano minacciate di estinzione a causa della caccia eccessiva e della perdita di habitat. Rimanevano soltanto 60 esemplari in cattività o in gruppi gestiti. Successivamente la specie è stata ampiamente protetta e i programmi di allevamento in cattività e reintroduzione hanno impedito la sua completa scomparsa.\n\nLa deforestazione e la perdita di habitat dovute allo sviluppo agricolo, oltre alla depressione da consanguineità e agli incroci con bovini domestici, minacciano ancora la specie. Popolazioni attentamente gestite sono state reintrodotte con successo in molte zone d’Europa e sono previste ulteriori reintroduzioni. I risultati sono stati particolarmente positivi nella foresta di Białowieża in Polonia e nei Carpazi meridionali in Romania.",
+          "inhalt": "Il bisonte Europao è oggi considerato prossimo alla minaccia. All’inizio del XX secolo le popolazioni selvatiche erano minacciate di estinzione a causa della caccia eccessiva e della perdita di habitat. Rimanevano soltanto 60 esemplari in cattività o in gruppi gestiti. Successivamente la specie è stata ampiamente protetta e i programmi di allevamento in cattività e reintroduzione hanno impedito la sua completa scomparsa.\n\nLa deforestazione e la perdita di habitat dovute allo sviluppo agricolo, oltre alla depressione da consanguineità e agli incroci con bovini domestici, minacciano ancora la specie. Popolazioni attentamente gestite sono state reintrodotte con successo in molte zone d’Europa e sono previste ulteriori reintroduzioni. I risultati sono stati particolarmente positivi nella foresta di Białowieża in Polonia e nei Carpazi meridionali in Romania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "O bisão-europeu é atualmente considerado Quase Ameaçado. No início do século XX, as populações selvagens estavam ameaçadas de extinção devido à caça excessiva e à perda de habitat. Restaram apenas 60 indivíduos em cativeiro ou grupos manejados. A espécie passou então a receber ampla proteção, e programas de reprodução em cativeiro e reintrodução impediram seu desaparecimento completo.\n\nO desmatamento e a perda de habitat causada pela expansão agrícola, além da depressão por endogamia e dos cruzamentos com gado doméstico, ainda ameaçam a espécie. Populações cuidadosamente manejadas foram reintroduzidas com sucesso em muitas áreas da Europa, e outras reintroduções estão planejadas. Os esforços foram especialmente bem-sucedidos na Floresta de Białowieża, na Polônia, e nos Cárpatos Meridionais, na Romênia.",
+          "inhalt": "O bisão-Europau é atualmente considerado Quase Ameaçado. No início do século XX, as populações selvagens estavam ameaçadas de extinção devido à caça excessiva e à perda de habitat. Restaram apenas 60 indivíduos em cativeiro ou grupos manejados. A espécie passou então a receber ampla proteção, e programas de reprodução em cativeiro e reintrodução impediram seu desaparecimento completo.\n\nO desmatamento e a perda de habitat causada pela expansão agrícola, além da depressão por endogamia e dos cruzamentos com gado doméstico, ainda ameaçam a espécie. Populações cuidadosamente manejadas foram reintroduzidas com sucesso em muitas áreas da Europa, e outras reintroduções estão planejadas. Os esforços foram especialmente bem-sucedidos na Floresta de Białowieża, na Polônia, e nos Cárpatos Meridionais, na Romênia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -478,7 +478,7 @@
       ],
       "es": [
         {
-          "inhalt": "Los bisontes europeos viven en manadas mixtas de hembras con sus crías y machos inmaduros. Los machos adultos suelen vivir en parejas o tríos y solo durante la época de apareamiento compiten por el acceso a las hembras. Las manadas mixtas se encuentran con frecuencia e intercambian individuos, por lo que no forman unidades familiares fijas.\n\nLa época de apareamiento va de agosto a octubre. Los machos dominantes, normalmente de seis años o más, intentan unirse a grupos de hembras y defenderlos frente a rivales. Los machos más jóvenes también se unen, aunque normalmente el macho mayor les impide aparearse. Si se acerca otro macho adulto, ambos luchan por su posición. El macho comprueba la disposición reproductiva de una hembra examinando su orina, separa del grupo a la hembra que se acerca al celo y la vigila cuidadosamente. Cuando es fértil, se produce el apareamiento.\n\nLa gestación dura 254–277 días y nace una sola cría. La hembra abandona la manada durante unos días para parir y después regresa con el ternero. La cría queda completamente destetada a los 14 meses.\n\nLas hembras alcanzan la madurez sexual a los tres años y permanecen en la manada de su madre. Los machos maduran a los dos años y dejan su grupo natal para incorporarse a una manada de solteros. Es poco probable que se reproduzcan con éxito antes de los seis años; entonces abandonan el grupo de solteros y pasan a ser solitarios hasta la siguiente época de apareamiento.",
+          "inhalt": "Los bisontes Europaos viven en manadas mixtas de hembras con sus crías y machos inmaduros. Los machos adultos suelen vivir en parejas o tríos y solo durante la época de apareamiento compiten por el acceso a las hembras. Las manadas mixtas se encuentran con frecuencia e intercambian individuos, por lo que no forman unidades familiares fijas.\n\nLa época de apareamiento va de agosto a octubre. Los machos dominantes, normalmente de seis años o más, intentan unirse a grupos de hembras y defenderlos frente a rivales. Los machos más jóvenes también se unen, aunque normalmente el macho mayor les impide aparearse. Si se acerca otro macho adulto, ambos luchan por su posición. El macho comprueba la disposición reproductiva de una hembra examinando su orina, separa del grupo a la hembra que se acerca al celo y la vigila cuidadosamente. Cuando es fértil, se produce el apareamiento.\n\nLa gestación dura 254–277 días y nace una sola cría. La hembra abandona la manada durante unos días para parir y después regresa con el ternero. La cría queda completamente destetada a los 14 meses.\n\nLas hembras alcanzan la madurez sexual a los tres años y permanecen en la manada de su madre. Los machos maduran a los dos años y dejan su grupo natal para incorporarse a una manada de solteros. Es poco probable que se reproduzcan con éxito antes de los seis años; entonces abandonan el grupo de solteros y pasan a ser solitarios hasta la siguiente época de apareamiento.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -492,14 +492,14 @@
       ],
       "it": [
         {
-          "inhalt": "I bisonti europei vivono in mandrie miste composte da femmine, piccoli e maschi non ancora adulti. I maschi adulti vivono per lo più in coppie o gruppi di tre e combattono per l’accesso alle femmine soltanto durante la stagione degli amori. Le mandrie miste si incontrano spesso e si scambiano individui, perciò non formano unità familiari fisse.\n\nLa stagione degli amori va da agosto a ottobre. I maschi dominanti, in genere di almeno sei anni, cercano di unirsi a gruppi di femmine e di difenderli dai rivali. Anche i maschi più giovani si uniscono ai gruppi, ma normalmente vengono impediti nell’accoppiamento dal maschio più anziano. Il maschio valuta la disponibilità della femmina esaminandone l’urina, separa dal gruppo una femmina prossima all’estro e la sorveglia attentamente. Quando è fertile avviene l’accoppiamento.\n\nLa gestazione dura 254–277 giorni e nasce un solo vitello. La femmina lascia la mandria per alcuni giorni per partorire e poi ritorna con il piccolo. Il vitello è completamente svezzato a 14 mesi.\n\nLe femmine raggiungono la maturità sessuale a tre anni e rimangono nella mandria della madre. I maschi maturano a due anni e lasciano il gruppo natale per unirsi a una mandria di scapoli. Un accoppiamento riuscito prima dei sei anni è tuttavia improbabile; a quel punto lasciano il gruppo di scapoli e diventano solitari fino alla stagione riproduttiva successiva.",
+          "inhalt": "I bisonti Europai vivono in mandrie miste composte da femmine, piccoli e maschi non ancora adulti. I maschi adulti vivono per lo più in coppie o gruppi di tre e combattono per l’accesso alle femmine soltanto durante la stagione degli amori. Le mandrie miste si incontrano spesso e si scambiano individui, perciò non formano unità familiari fisse.\n\nLa stagione degli amori va da agosto a ottobre. I maschi dominanti, in genere di almeno sei anni, cercano di unirsi a gruppi di femmine e di difenderli dai rivali. Anche i maschi più giovani si uniscono ai gruppi, ma normalmente vengono impediti nell’accoppiamento dal maschio più anziano. Il maschio valuta la disponibilità della femmina esaminandone l’urina, separa dal gruppo una femmina prossima all’estro e la sorveglia attentamente. Quando è fertile avviene l’accoppiamento.\n\nLa gestazione dura 254–277 giorni e nasce un solo vitello. La femmina lascia la mandria per alcuni giorni per partorire e poi ritorna con il piccolo. Il vitello è completamente svezzato a 14 mesi.\n\nLe femmine raggiungono la maturità sessuale a tre anni e rimangono nella mandria della madre. I maschi maturano a due anni e lasciano il gruppo natale per unirsi a una mandria di scapoli. Un accoppiamento riuscito prima dei sei anni è tuttavia improbabile; a quel punto lasciano il gruppo di scapoli e diventano solitari fino alla stagione riproduttiva successiva.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "Os bisões-europeus vivem em manadas mistas formadas por fêmeas, seus filhotes e machos imaturos. Machos adultos normalmente vivem em pares ou trios e só disputam o acesso às fêmeas durante a estação reprodutiva. As manadas mistas frequentemente se encontram e trocam indivíduos, portanto não formam unidades familiares fixas.\n\nA estação reprodutiva ocorre de agosto a outubro. Machos dominantes, normalmente com seis anos ou mais, tentam juntar-se a grupos de fêmeas e defendê-los contra rivais. Machos mais jovens também se juntam aos grupos, mas normalmente são impedidos de acasalar pelo macho mais velho. O macho avalia a receptividade de uma fêmea examinando sua urina, separa do grupo a fêmea próxima do estro e a vigia cuidadosamente. Quando ela está fértil, ocorre o acasalamento.\n\nA gestação dura 254–277 dias e nasce um único bezerro. A fêmea deixa a manada por alguns dias para dar à luz e depois retorna com o filhote. O bezerro está completamente desmamado aos 14 meses.\n\nAs fêmeas atingem a maturidade sexual aos três anos e permanecem na manada da mãe. Os machos amadurecem aos dois anos e deixam o grupo natal para entrar em uma manada de solteiros. Um acasalamento bem-sucedido antes dos seis anos é improvável; nessa idade deixam o grupo de solteiros e tornam-se solitários até a próxima estação reprodutiva.",
+          "inhalt": "Os bisões-Europaus vivem em manadas mistas formadas por fêmeas, seus filhotes e machos imaturos. Machos adultos normalmente vivem em pares ou trios e só disputam o acesso às fêmeas durante a estação reprodutiva. As manadas mistas frequentemente se encontram e trocam indivíduos, portanto não formam unidades familiares fixas.\n\nA estação reprodutiva ocorre de agosto a outubro. Machos dominantes, normalmente com seis anos ou mais, tentam juntar-se a grupos de fêmeas e defendê-los contra rivais. Machos mais jovens também se juntam aos grupos, mas normalmente são impedidos de acasalar pelo macho mais velho. O macho avalia a receptividade de uma fêmea examinando sua urina, separa do grupo a fêmea próxima do estro e a vigia cuidadosamente. Quando ela está fértil, ocorre o acasalamento.\n\nA gestação dura 254–277 dias e nasce um único bezerro. A fêmea deixa a manada por alguns dias para dar à luz e depois retorna com o filhote. O bezerro está completamente desmamado aos 14 meses.\n\nAs fêmeas atingem a maturidade sexual aos três anos e permanecem na manada da mãe. Os machos amadurecem aos dois anos e deixam o grupo natal para entrar em uma manada de solteiros. Um acasalamento bem-sucedido antes dos seis anos é improvável; nessa idade deixam o grupo de solteiros e tornam-se solitários até a próxima estação reprodutiva.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -559,7 +559,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the Caucasian bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
+          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the CaucAsienn bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -586,7 +586,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the Caucasian bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
+          "inhalt": "There were formerly three subspecies of European bison. Two are now extinct: the Carpathian bison (B. b. hungarorum), native to Moldova, Romania, Hungary and Ukraine, and the CaucAsienn bison (B. b. caucasicus), native to the Caucasus Mountains of Georgia, Russia, Azerbaijan and Armenia. The nominate subspecies (B. b. bonasus) is the wisent known today and the only subspecies to survive the threat of extinction.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -598,7 +598,7 @@
       ],
       "es": [
         {
-          "inhalt": "En Polonia, el bisonte europeo se conoce como «Żubr» y es el animal nacional del país.",
+          "inhalt": "En Polonia, el bisonte Europao se conoce como «Żubr» y es el animal nacional del país.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -618,7 +618,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "El bisonte europeo es el mamífero terrestre más pesado de Europa. Algunos machos superan los 1.000 kg y el mayor peso documentado fue de 1.900 kg, aunque en general son más ligeros que sus parientes americanos.",
+          "inhalt": "El bisonte Europao es el mamífero terrestre más pesado de Europa. Algunos machos superan los 1.000 kg y el mayor peso documentado fue de 1.900 kg, aunque en general son más ligeros que sus parientes americanos.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -652,7 +652,7 @@
       ],
       "it": [
         {
-          "inhalt": "In Polonia il bisonte europeo è noto come «Żubr» ed è l’animale nazionale del paese.",
+          "inhalt": "In Polonia il bisonte Europao è noto come «Żubr» ed è l’animale nazionale del paese.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -662,7 +662,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "In passato il bisonte europeo veniva cacciato intensamente per la pelle, la carne e le corna, usate per realizzare corni potori.",
+          "inhalt": "In passato il bisonte Europao veniva cacciato intensamente per la pelle, la carne e le corna, usate per realizzare corni potori.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -672,14 +672,14 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Il bisonte europeo è il mammifero terrestre più pesante d’Europa. Alcuni maschi superano i 1.000 kg e il peso massimo documentato è stato di 1.900 kg, anche se in generale sono più leggeri dei parenti americani.",
+          "inhalt": "Il bisonte Europao è il mammifero terrestre più pesante d’Europa. Alcuni maschi superano i 1.000 kg e il peso massimo documentato è stato di 1.900 kg, anche se in generale sono più leggeri dei parenti americani.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "Na Polônia, o bisão-europeu é conhecido como «Żubr» e é o animal nacional do país.",
+          "inhalt": "Na Polônia, o bisão-Europau é conhecido como «Żubr» e é o animal nacional do país.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -689,7 +689,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "No passado, o bisão-europeu foi muito caçado por sua pele, carne e chifres, usados para produzir recipientes para beber.",
+          "inhalt": "No passado, o bisão-Europau foi muito caçado por sua pele, carne e chifres, usados para produzir recipientes para beber.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -699,7 +699,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "O bisão-europeu é o mamífero terrestre mais pesado da Europa. Alguns machos ultrapassam 1.000 kg e o maior peso documentado foi de 1.900 kg, embora em geral sejam mais leves que seus parentes americanos.",
+          "inhalt": "O bisão-Europau é o mamífero terrestre mais pesado da Europa. Alguns machos ultrapassam 1.000 kg e o maior peso documentado foi de 1.900 kg, embora em geral sejam mais leves que seus parentes americanos.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
     "schutzstatus": ""
   },
@@ -125,7 +125,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -138,7 +138,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -188,7 +188,7 @@
       ],
       "es": [
         {
-          "inhalt": "El insecto hoja gigante (Phyllium giganteum; el encabezado de la Zoopedia también muestra Phyllium giganteum) es un gran insecto originario de la selva tropical del oeste de Malasia.",
+          "inhalt": "El insecto hoja gigante (Phyllium giganteum; el encabezado de la Zoopedia también muestra Phyllium giganteum) es un gran insecto originario de la selva tropical del oeste de MalAsien.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -252,7 +252,7 @@
       ],
       "es": [
         {
-          "inhalt": "El insecto hoja gigante vive en la selva tropical del oeste de Malasia.\n\nEstá extraordinariamente bien camuflado y resulta difícil distinguirlo de las hojas.\n\nLas hembras miden unos 12 cm, son anchas, planas y no vuelan. Los machos miden unos 9 cm, son mucho más delgados, tienen alas largas y pueden volar.",
+          "inhalt": "El insecto hoja gigante vive en la selva tropical del oeste de MalAsien.\n\nEstá extraordinariamente bien camuflado y resulta difícil distinguirlo de las hojas.\n\nLas hembras miden unos 12 cm, son anchas, planas y no vuelan. Los machos miden unos 9 cm, son mucho más delgados, tienen alas largas y pueden volar.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -316,7 +316,7 @@
       ],
       "es": [
         {
-          "inhalt": "Su estado de conservación aún no ha sido evaluado oficialmente en detalle. Se sabe poco de sus poblaciones y no existen programas específicos. La cría en cautividad probablemente reduce la presión del comercio, aunque la deforestación y la pérdida de vegetación densa pueden afectarlo.\n\nSu área probablemente se solapa con zonas protegidas de Malasia, pero se necesita más investigación.\n\nLa Zoopedia indica que la población silvestre es desconocida y el campo de estado muestra únicamente «???».",
+          "inhalt": "Su estado de conservación aún no ha sido evaluado oficialmente en detalle. Se sabe poco de sus poblaciones y no existen programas específicos. La cría en cautividad probablemente reduce la presión del comercio, aunque la deforestación y la pérdida de vegetación densa pueden afectarlo.\n\nSu área probablemente se solapa con zonas protegidas de MalAsien, pero se necesita más investigación.\n\nLa Zoopedia indica que la población silvestre es desconocida y el campo de estado muestra únicamente «???».",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -387,7 +387,7 @@
       ],
       "fr": [
         {
-          "inhalt": "L'espèce est solitaire mais très passive et peut donc vivre en groupe. Elle ne doit pas être maintenue avec d'autres insectes herbivores qui pourraient la confondre avec une feuille.\n\nOn sait peu de choses sur sa reproduction. Elle peut se reproduire toute l'année et les femelles sont parthénogénétiques.\n\nUne femelle pond environ 40 œufs, à raison de 1 à 2 par jour, et l'éclosion a lieu 6 à 9 mois plus tard. Les jeunes muent environ une fois par mois.\n\nLes mâles muent six fois, les femelles sept fois, et les femelles atteignent la maturité sexuelle à 8 mois.",
+          "inhalt": "L'espèce est solitaire mais très passive et peut donc vivre en groupe. Elle ne doit pas être maintenue avec d'autres insectes Pflanzenfressers qui pourraient la confondre avec une feuille.\n\nOn sait peu de choses sur sa reproduction. Elle peut se reproduire toute l'année et les femelles sont parthénogénétiques.\n\nUne femelle pond environ 40 œufs, à raison de 1 à 2 par jour, et l'éclosion a lieu 6 à 9 mois plus tard. Les jeunes muent environ une fois par mois.\n\nLes mâles muent six fois, les femelles sept fois, et les femelles atteignent la maturité sexuelle à 8 mois.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -456,7 +456,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "During moulting it is extremely vulnerable and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
+          "inhalt": "During moulting it is extremely Gefährdet and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -483,7 +483,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "During moulting it is extremely vulnerable and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
+          "inhalt": "During moulting it is extremely Gefährdet and may die if temperature or humidity are unsuitable or if it is touched before fully hardening.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -510,7 +510,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Durante la muda es extremadamente vulnerable.",
+          "inhalt": "Durante la muda es extremadamente Gefährdet.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Offenes Meer"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -64,7 +64,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an.",
@@ -120,7 +120,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -133,7 +133,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt, dass sich Mondfische hauptsächlich von Quallen und anderen weichen Beutetieren ernähren.",
               "en": "The Zoopedia states that Ocean Sunfish feed mainly on jellyfish and other soft-bodied prey."
@@ -819,7 +819,7 @@
       "typ": "projektintern"
     },
     "sunfishActivityStudy": {
-      "name": "Ocean sunfish – diurnal foraging study",
+      "name": "Ocean sunfish – Tagaktiv foraging study",
       "seiten": {
         "en": "https://pubmed.ncbi.nlm.nih.gov/25643743/"
       }

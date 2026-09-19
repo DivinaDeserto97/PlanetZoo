@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -90,7 +90,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -222,7 +222,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -230,7 +230,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -243,7 +243,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt die Tiere beim Weiden und nennt Weideland als Nahrungsraum.",
               "en": "The Zoopedia describes the animals grazing and refers to grazing land as a feeding area."
@@ -288,14 +288,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Africa. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes grasslands and grazing areas as important habitat.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Africa. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes grasslands and grazing areas as important habitat.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

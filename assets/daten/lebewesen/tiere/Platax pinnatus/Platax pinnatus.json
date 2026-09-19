@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,7 +69,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -140,7 +140,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -153,7 +153,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -376,7 +376,7 @@
       ],
       "it": [
         {
-          "inhalt": "È considerato a rischio minimo grazie alla sua ampia distribuzione, ma affronta comunque varie minacce. In alcune parti dell'areale, come il Sud-est asiatico e la Cina meridionale, popolazioni regionali sono diminuite per la pesca eccessiva destinata al consumo e al commercio acquariofilo. I giovani sono particolarmente richiesti per il loro aspetto insolito. Lo sviluppo costiero e la perdita delle mangrovie eliminano aree riproduttive, mentre lo sbiancamento dei coralli dovuto ai cambiamenti climatici indebolisce ulteriormente gli ecosistemi di barriera.\n\nLe aree marine protette aiutano a conservare barriere e mangrovie e possono limitare la pesca eccessiva regionale. L'allevamento in cattività e l'acquacoltura su larga scala mirano inoltre a ridurre la pressione sulle popolazioni selvatiche rifornendo i mercati senza ulteriori prelievi dalla natura.",
+          "inhalt": "È considerato a rischio minimo grazie alla sua ampia distribuzione, ma affronta comunque varie minacce. In alcune parti dell'areale, come il Sud-est Asientico e la Cina meridionale, popolazioni regionali sono diminuite per la pesca eccessiva destinata al consumo e al commercio acquariofilo. I giovani sono particolarmente richiesti per il loro aspetto insolito. Lo sviluppo costiero e la perdita delle mangrovie eliminano aree riproduttive, mentre lo sbiancamento dei coralli dovuto ai cambiamenti climatici indebolisce ulteriormente gli ecosistemi di barriera.\n\nLe aree marine protette aiutano a conservare barriere e mangrovie e possono limitare la pesca eccessiva regionale. L'allevamento in cattività e l'acquacoltura su larga scala mirano inoltre a ridurre la pressione sulle popolazioni selvatiche rifornendo i mercati senza ulteriori prelievi dalla natura.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

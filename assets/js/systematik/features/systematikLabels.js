@@ -147,15 +147,15 @@ const SPIEL_LABELS = {
 };
 
 const SCHUTZSTATUS = {
-  leastConcern: "LC",
+  "Nicht gefährdet": "LC",
 
-  nearThreatened: "NT",
+  "Potenziell gefährdet": "NT",
 
-  vulnerable: "VU",
+  Gefährdet: "VU",
 
-  endangered: "EN",
+  "Stark gefährdet": "EN",
 
-  criticallyEndangered: "CR",
+  "Vom Aussterben bedroht": "CR",
 
   extinctInTheWild: "EW",
 

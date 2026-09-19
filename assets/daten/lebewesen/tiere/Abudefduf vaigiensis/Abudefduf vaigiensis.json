@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
     "kontinente": [""],
     "biome": ["Offenes Meer", "Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,11 +69,11 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia beschreibt die Art im Allgemeinen als nicht gefährdet, nennt sie im Persischen Golf jedoch als gefährdet.",
-            "en": "The Zoopedia describes the species as generally Least Concern, but endangered in the Persian Gulf."
+            "en": "The Zoopedia describes the species as generally Least Concern, but Stark gefährdet in the Persian Gulf."
           },
           "quelle": "planetZoo2"
         }
@@ -175,7 +175,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -188,7 +188,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Die Zoopedia bezeichnet den Indo-pazifischen Feldwebelfisch ausdrücklich als Allesfresser.",
               "en": "The Zoopedia explicitly describes the Indo-Pacific Sergeant as omnivorous."
@@ -256,14 +256,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Africa to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Afrika to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Africa to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
+          "inhalt": "The Indo-Pacific Sergeant (Abudefduf vaigiensis) occurs throughout the Indo-Pacific, from the Red Sea and East Afrika to Japan, Australia and the Pacific islands. It lives in shallow coastal waters, lagoons and outer reef slopes.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -284,7 +284,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il pesce sergente maggiore (Abudefduf vaigiensis) è diffuso in tutto l’Indo-Pacifico, dal Mar Rosso e dall’Africa orientale fino al Giappone, all’Australia e alle isole del Pacifico. Vive in acque costiere poco profonde, lagune e pendii esterni delle barriere coralline.",
+          "inhalt": "Il pesce sergente maggiore (Abudefduf vaigiensis) è diffuso in tutto l’Indo-Pacifico, dal Mar Rosso e dall’Afrika orientale fino al Giappone, all’Australia e alle isole del Pacifico. Vive in acque costiere poco profonde, lagune e pendii esterni delle barriere coralline.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -384,14 +384,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as endangered specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
+          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as Stark gefährdet specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as endangered specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
+          "inhalt": "The Indo-Pacific Sergeant is generally considered Least Concern, but is regarded as Stark gefährdet specifically in the Persian Gulf. Threats include coral bleaching, ocean warming, pollution and destructive fishing methods. Hybridization with local damselfish has also been observed outside its native range.\n\nConservation efforts focus mainly on coral reef protection, genetic monitoring, marine protected areas and restrictions on destructive fishing methods.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -609,7 +609,7 @@
       ],
       "fr": [
         {
-          "inhalt": "Il est omnivore et mange du zooplancton, des algues, des algues marines, des copépodes et des invertébrés.",
+          "inhalt": "Il est Allesfresser et mange du zooplancton, des algues, des algues marines, des copépodes et des invertébrés.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

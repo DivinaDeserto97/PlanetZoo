@@ -3,8 +3,8 @@
   "identitaet": {
     "namen": {
       "de": "Tigersalmler",
-      "en": "African Tigerfish",
-      "en-US": "African Tigerfish",
+      "en": "Afrikan Tigerfish",
+      "en-US": "Afrikan Tigerfish",
       "es": "Pez tigre goliat",
       "fr": "Poisson-tigre africain",
       "it": "Pesce tigre africano",
@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -104,7 +104,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -167,7 +167,7 @@
           "maxGruppengroesse": null,
           "hinweis": {
             "de": "Erwachsene Tigersalmler leben überwiegend einzelgängerisch und jagen meist allein; unter günstigen Bedingungen können sie sich locker zusammenschließen.",
-            "en": "Adult African Tigerfish are predominantly solitary and usually hunt alone, but may loosely aggregate under favorable conditions."
+            "en": "Adult Afrikan Tigerfish are predominantly solitary and usually hunt alone, but may loosely aggregate under favorable conditions."
           },
           "quelle": "planetZoo2"
         },
@@ -199,7 +199,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -212,10 +212,10 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt erwachsene Tigersalmler als Fischjäger; Larven und Jungfische fressen zunächst Plankton und kleine wirbellose Tiere.",
-              "en": "The Zoopedia describes adult African Tigerfish as fish predators; larvae and juveniles initially feed on plankton and small invertebrates."
+              "en": "The Zoopedia describes adult Afrikan Tigerfish as fish predators; larvae and juveniles initially feed on plankton and small invertebrates."
             },
             "quelle": "planetZoo2"
           }
@@ -269,14 +269,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
+          "inhalt": "The Afrikan Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
+          "inhalt": "The Afrikan Tigerfish (Hydrocynus vittatus) occurs in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -333,14 +333,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
+          "inhalt": "The Afrikan Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
+          "inhalt": "The Afrikan Tigerfish (Hydrocynus vittatus) is a widespread and powerful freshwater predator found in rivers and lakes south of the Sahara, including the Congo, Nile, Zambezi and Okavango systems and Lake Tanganyika.\n\nThe fish are streamlined and silvery, with narrow black cross-stripes. They have a deeply forked tail fin, often with reddish edges, and a large head with sharp, interlocking teeth.\n\nFemales are generally larger and more robust than males. They can reach up to 105 cm in length and weigh between 10 and 15 kg. Males usually remain smaller, averaging up to 74 cm in length and around 12 kg in weight.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -397,14 +397,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African Tigerfish is classified as Least Concern and is native across sub-Saharan Africa. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
+          "inhalt": "The Afrikan Tigerfish is classified as Least Concern and is native across sub-Saharan Afrika. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African Tigerfish is classified as Least Concern and is native across sub-Saharan Africa. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
+          "inhalt": "The Afrikan Tigerfish is classified as Least Concern and is native across sub-Saharan Afrika. Its populations have declined because of pollution, water extraction, uncontrolled fishing pressure and physical barriers that disrupt migration and spawning and fragment populations.\n\nThe species is protected in some areas. Research focuses on river flow and water-quality needs, while broader conservation measures aim to improve water quality, reduce agricultural pollution and deforestation, and maintain connections between freshwater systems. Continued research and consideration of the species in freshwater protected-area planning support evidence-based conservation strategies.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -425,7 +425,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il pesce tigre africano è classificato a rischio minimo ed è diffuso nell’Africa subsahariana. Le popolazioni sono diminuite a causa di inquinamento, prelievo d’acqua, pressione di pesca incontrollata e barriere fisiche che ostacolano migrazioni e riproduzione e frammentano le popolazioni.\n\nIn alcune aree la specie è protetta. La ricerca studia le esigenze di portata e qualità dell’acqua, mentre altre misure puntano a migliorare la qualità dell’acqua, ridurre l’inquinamento agricolo e la deforestazione e mantenere i collegamenti tra sistemi d’acqua dolce.",
+          "inhalt": "Il pesce tigre africano è classificato a rischio minimo ed è diffuso nell’Afrika subsahariana. Le popolazioni sono diminuite a causa di inquinamento, prelievo d’acqua, pressione di pesca incontrollata e barriere fisiche che ostacolano migrazioni e riproduzione e frammentano le popolazioni.\n\nIn alcune aree la specie è protetta. La ricerca studia le esigenze di portata e qualità dell’acqua, mentre altre misure puntano a migliorare la qualità dell’acqua, ridurre l’inquinamento agricolo e la deforestazione e mantenere i collegamenti tra sistemi d’acqua dolce.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -461,14 +461,14 @@
       ],
       "en": [
         {
-          "inhalt": "African Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
+          "inhalt": "Afrikan Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "African Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
+          "inhalt": "Afrikan Tigerfish are mostly solitary but may loosely aggregate under favorable conditions. Juveniles form groups more often, while adults usually hunt alone.\n\nReproduction is closely linked to seasonal flooding. Rising water levels, stronger currents and temperature changes during the rainy season trigger migration into flooded areas, where males and females release eggs and sperm into the water and fertilization occurs externally.\n\nThere is no parental care. Eggs usually hatch within 24–48 hours. Larvae and juveniles grow in shallow, nutrient-rich water and initially feed on plankton and small invertebrates before becoming fish predators as they age. Juveniles often form small groups. Sexual maturity is usually reached after 2–3 years, and the species can live for 10–20 years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -541,12 +541,12 @@
       ],
       "en": [
         {
-          "inhalt": "In some parts of Africa, African Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
+          "inhalt": "In some parts of Afrika, Afrikan Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
+          "inhalt": "Afrikan Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -556,7 +556,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
+          "inhalt": "Afrikan Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -568,12 +568,12 @@
       ],
       "en-US": [
         {
-          "inhalt": "In some parts of Africa, African Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
+          "inhalt": "In some parts of Afrika, Afrikan Tigerfish have an almost mythical reputation. They have special names such as “mbenga” in Swahili, meaning roughly “dangerous fish”, reflecting the respect many people have for them.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
+          "inhalt": "Afrikan Tigerfish have large, dagger-like teeth that remain visible even when the mouth is closed and are well suited to grabbing and tearing prey.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -583,7 +583,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "African Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
+          "inhalt": "Afrikan Tigerfish are sensitive to low oxygen levels and depend on healthy prey populations. Their presence is therefore often regarded as an indicator of an intact river ecosystem.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -649,7 +649,7 @@
       ],
       "it": [
         {
-          "inhalt": "In alcune regioni dell’Africa i pesci tigre africani hanno una reputazione quasi mitica e nomi particolari come “mbenga” in swahili, che significa approssimativamente “pesce pericoloso”.",
+          "inhalt": "In alcune regioni dell’Afrika i pesci tigre africani hanno una reputazione quasi mitica e nomi particolari come “mbenga” in swahili, che significa approssimativamente “pesce pericoloso”.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -822,7 +822,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_African_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_Afrikan_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -843,11 +843,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjI2OGNmZDEvVGlnZXJmaXNoX0FmcmljYW4uanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5Ijo4NX0sInRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6Mjg4MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiMmRmZjY5YmQtYjgxOC00NDY1LWJmNTMtOTVjNmJhMjFkMThkIn19",
           "alt": {
             "de": "Tigersalmler – Planet Zoo 2",
-            "en": "African Tigerfish – Planet Zoo 2"
+            "en": "Afrikan Tigerfish – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild des Tigersalmlers aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the African Tigerfish."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Afrikan Tigerfish."
           },
           "metadaten": [""],
           "dateien": [
@@ -867,14 +867,14 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_African_illustration.jpg",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2268cfd1/Tigerfish_Afrikan_illustration.jpg",
           "alt": {
             "de": "Tigersalmler – Zoopedia-Illustration",
-            "en": "African Tigerfish – Zoopedia illustration"
+            "en": "Afrikan Tigerfish – Zoopedia illustration"
           },
           "beschreibung": {
             "de": "Illustration des Tigersalmlers aus der Planet Zoo 2 Zoopedia.",
-            "en": "African Tigerfish illustration from the Planet Zoo 2 Zoopedia."
+            "en": "Afrikan Tigerfish illustration from the Planet Zoo 2 Zoopedia."
           },
           "metadaten": [""],
           "dateien": [

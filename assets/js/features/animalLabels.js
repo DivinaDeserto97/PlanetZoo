@@ -49,7 +49,7 @@ const LABELS = {
   },
 
   conservation: {
-    leastConcern: {
+    "Nicht gefährdet": {
       de: "Nicht gefährdet",
       en: "Least Concern",
       "en-US": "Least Concern",
@@ -60,7 +60,7 @@ const LABELS = {
       ja: "低危険種",
       "zh-Hans": "无危",
     },
-    nearThreatened: {
+    "Potenziell gefährdet": {
       de: "Potenziell gefährdet",
       en: "Near Threatened",
       "en-US": "Near Threatened",
@@ -71,7 +71,7 @@ const LABELS = {
       ja: "準絶滅危惧",
       "zh-Hans": "近危",
     },
-    vulnerable: {
+    Gefährdet: {
       de: "Gefährdet",
       en: "Vulnerable",
       "en-US": "Vulnerable",
@@ -82,7 +82,7 @@ const LABELS = {
       ja: "危急",
       "zh-Hans": "易危",
     },
-    endangered: {
+    "Stark gefährdet": {
       de: "Stark gefährdet",
       en: "Endangered",
       "en-US": "Endangered",
@@ -93,7 +93,7 @@ const LABELS = {
       ja: "絶滅危惧",
       "zh-Hans": "濒危",
     },
-    criticallyEndangered: {
+    "Vom Aussterben bedroht": {
       de: "Vom Aussterben bedroht",
       en: "Critically Endangered",
       "en-US": "Critically Endangered",
@@ -107,7 +107,7 @@ const LABELS = {
   },
 
   edition: {
-    standard: {
+    Standard: {
       de: "Basisspiel",
       en: "Base game",
       "en-US": "Base game",
@@ -118,7 +118,7 @@ const LABELS = {
       ja: "基本ゲーム",
       "zh-Hans": "基础游戏",
     },
-    deluxe: {
+    Deluxe: {
       de: "Deluxe",
       en: "Deluxe",
       "en-US": "Deluxe",
@@ -134,16 +134,16 @@ const LABELS = {
   continent: {
     africa: {
       de: "Afrika",
-      en: "Africa",
-      "en-US": "Africa",
+      en: "Afrika",
+      "en-US": "Afrika",
       es: "África",
       fr: "Afrique",
-      it: "Africa",
+      it: "Afrika",
       "pt-BR": "África",
       ja: "アフリカ",
       "zh-Hans": "非洲",
     },
-    asia: {
+    Asien: {
       de: "Asien",
       en: "Asia",
       "en-US": "Asia",
@@ -154,7 +154,7 @@ const LABELS = {
       ja: "アジア",
       "zh-Hans": "亚洲",
     },
-    europe: {
+    Europa: {
       de: "Europa",
       en: "Europe",
       "en-US": "Europe",
@@ -165,7 +165,7 @@ const LABELS = {
       ja: "ヨーロッパ",
       "zh-Hans": "欧洲",
     },
-    northAmerica: {
+    Nordamerika: {
       de: "Nordamerika",
       en: "North America",
       "en-US": "North America",
@@ -176,7 +176,7 @@ const LABELS = {
       ja: "北アメリカ",
       "zh-Hans": "北美洲",
     },
-    southAmerica: {
+    Südamerika: {
       de: "Südamerika",
       en: "South America",
       "en-US": "South America",
@@ -187,7 +187,7 @@ const LABELS = {
       ja: "南アメリカ",
       "zh-Hans": "南美洲",
     },
-    oceania: {
+    Ozeanien: {
       de: "Ozeanien",
       en: "Oceania",
       "en-US": "Oceania",
@@ -198,10 +198,10 @@ const LABELS = {
       ja: "オセアニア",
       "zh-Hans": "大洋洲",
     },
-    antarctic: {
+    antArktis: {
       de: "Antarktis",
-      en: "Antarctica",
-      "en-US": "Antarctica",
+      en: "AntArktisa",
+      "en-US": "AntArktisa",
       es: "Antártida",
       fr: "Antarctique",
       it: "Antartide",

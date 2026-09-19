@@ -3,8 +3,8 @@
   "identitaet": {
     "namen": {
       "de": "Afrikanischer Leopard",
-      "en": "African Leopard",
-      "en-US": "African Leopard",
+      "en": "Afrikan Leopard",
+      "en-US": "Afrikan Leopard",
       "es": "Leopardo africano",
       "fr": "Léopard d'Afrique",
       "it": "Leopardo africano",
@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -106,7 +106,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an.",
@@ -147,7 +147,7 @@
           "wert": "solitary",
           "hinweis": {
             "de": "Die Zoopedia beschreibt Afrikanische Leoparden als Einzelgänger; nur Muttertiere ziehen ihre Jungen groß.",
-            "en": "The Zoopedia describes African Leopards as solitary; only mothers raise their young."
+            "en": "The Zoopedia describes Afrikan Leopards as solitary; only mothers raise their young."
           },
           "quelle": "planetZoo2"
         }
@@ -159,7 +159,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -167,7 +167,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -180,7 +180,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -216,14 +216,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Africa.",
+          "inhalt": "The Afrikan Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Africa.",
+          "inhalt": "The Afrikan Leopard (Panthera pardus pardus) is the nominate subspecies of leopard and lives in Central and southern Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -244,7 +244,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il leopardo africano (Panthera pardus pardus) è la sottospecie nominale del leopardo e vive nell'Africa centrale e meridionale.",
+          "inhalt": "Il leopardo africano (Panthera pardus pardus) è la sottospecie nominale del leopardo e vive nell'Afrika centrale e meridionale.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -280,14 +280,14 @@
       ],
       "en": [
         {
-          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Africa.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
+          "inhalt": "The Afrikan Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Afrika.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Africa.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
+          "inhalt": "The Afrikan Leopard (Panthera pardus pardus) is the nominate leopard subspecies and lives in Central and southern Afrika.\n\nIt has a slender build and elegant head. Its coat ranges from yellow to dark gold and is covered with small, closely spaced rosettes that become black spots toward the underside, face and tail tip. The underside and inner legs are white.\n\nThe species is sexually dimorphic. Males stand 60–70 cm at the shoulder, are 1.52–1.83 m long plus a 66 cm tail, and weigh 58–96 kg. Females stand 55–65 cm at the shoulder, are 1.39–1.67 m long with a 60 cm tail, and weigh 24–37.5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -308,7 +308,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il leopardo africano vive nell'Africa centrale e meridionale.\n\nHa corporatura snella, testa elegante e mantello dal giallo all'oro scuro ricoperto di piccole rosette.\n\nI maschi misurano 60–70 cm al garrese, 1,52–1,83 m di lunghezza più 66 cm di coda e pesano 58–96 kg. Le femmine misurano 55–65 cm al garrese, 1,39–1,67 m più 60 cm di coda e pesano 24–37,5 kg.",
+          "inhalt": "Il leopardo africano vive nell'Afrika centrale e meridionale.\n\nHa corporatura snella, testa elegante e mantello dal giallo all'oro scuro ricoperto di piccole rosette.\n\nI maschi misurano 60–70 cm al garrese, 1,52–1,83 m di lunghezza più 66 cm di coda e pesano 58–96 kg. Le femmine misurano 55–65 cm al garrese, 1,39–1,67 m più 60 cm di coda e pesano 24–37,5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -344,14 +344,14 @@
       ],
       "en": [
         {
-          "inhalt": "Despite its large range and adaptability, the African Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
+          "inhalt": "Despite its large range and adaptability, the Afrikan Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Despite its large range and adaptability, the African Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
+          "inhalt": "Despite its large range and adaptability, the Afrikan Leopard is considered Vulnerable. Agricultural and urban expansion and deforestation destroy habitat and reduce prey availability. Poaching and illegal trade are also major threats because skins, claws and teeth are sought for traditional rituals and as hunting trophies.\n\nConservation focuses on legal protection, habitat preservation and involvement of local communities. Many countries restrict hunting and trade, while CITES Appendix I prohibits international trade in wild-caught animals.\n\nProtected areas and wildlife corridors strengthen leopard populations and reduce human-wildlife conflict. Education, livestock compensation and ecotourism can encourage coexistence. Long-term success depends on continued funding, research and cooperation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -408,14 +408,14 @@
       ],
       "en": [
         {
-          "inhalt": "African Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
+          "inhalt": "Afrikan Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "African Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
+          "inhalt": "Afrikan Leopards are solitary; only mothers raise young.\n\nThey can mate year-round. Oestrus cycles last about 46 days and females are receptive for around one week per cycle. Males locate females using calls and urine marks. A pair remains together for several days and mates repeatedly before separating.\n\nGestation lasts 3–3.5 months, after which 2–4 cubs are born in a den or rock crevice. In the wild, only 40–50% survive their first year. Cubs are born blind and helpless, begin eating solid food at nine weeks, and start following their mother on hunting trips at about three months. They remain with her for up to two years, although they can survive independently from around one year.\n\nAfter leaving their mother, young leopards may travel with siblings for a while before becoming fully solitary. Sexual maturity is reached at around 2.5 years.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -488,12 +488,12 @@
       ],
       "en": [
         {
-          "inhalt": "African Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
+          "inhalt": "Afrikan Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "The African Leopard has very probably been extirpated from North Africa, leaving only sub-Saharan populations in its original range.",
+          "inhalt": "The Afrikan Leopard has very probably been extirpated from North Afrika, leaving only sub-Saharan populations in its original range.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -508,19 +508,19 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Leopards have exceptional eyesight that supports nocturnal hunting and can see around seven times better than humans in the dark.",
+          "inhalt": "Leopards have exceptional eyesight that supports Nachtaktiv hunting and can see around seven times better than humans in the dark.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "African Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
+          "inhalt": "Afrikan Leopards spend a great deal of time in trees and use them to store kills out of reach of stronger predators such as lions, hyenas and wild dogs.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "The African Leopard has very probably been extirpated from North Africa, leaving only sub-Saharan populations in its original range.",
+          "inhalt": "The Afrikan Leopard has very probably been extirpated from North Afrika, leaving only sub-Saharan populations in its original range.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -535,7 +535,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Leopards have exceptional eyesight that supports nocturnal hunting and can see around seven times better than humans in the dark.",
+          "inhalt": "Leopards have exceptional eyesight that supports Nachtaktiv hunting and can see around seven times better than humans in the dark.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -601,7 +601,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Probabilmente è stato estirpato dal Nord Africa.",
+          "inhalt": "Probabilmente è stato estirpato dal Nord Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -769,7 +769,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_African_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_Afrikan_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -790,11 +790,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNTZhYjg2MGIvTGVvcGFyZF9BZnJpY2FuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
           "alt": {
             "de": "Afrikanischer Leopard – Planet Zoo 2",
-            "en": "African Leopard – Planet Zoo 2"
+            "en": "Afrikan Leopard – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild des Afrikanischen Leoparden aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the African Leopard."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Afrikan Leopard."
           },
           "metadaten": [""],
           "dateien": [
@@ -814,14 +814,14 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_African_illustration.jpg",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/56ab860b/Leopard_Afrikan_illustration.jpg",
           "alt": {
             "de": "Afrikanischer Leopard – Zoopedia-Illustration",
-            "en": "African Leopard – Zoopedia illustration"
+            "en": "Afrikan Leopard – Zoopedia illustration"
           },
           "beschreibung": {
             "de": "Illustration des Afrikanischen Leoparden aus der Planet Zoo 2 Zoopedia.",
-            "en": "African Leopard illustration from the Planet Zoo 2 Zoopedia."
+            "en": "Afrikan Leopard illustration from the Planet Zoo 2 Zoopedia."
           },
           "metadaten": [""],
           "dateien": [

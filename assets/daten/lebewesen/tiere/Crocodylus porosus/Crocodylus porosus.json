@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia", "oceania"],
+    "kontinente": ["Asien", "Ozeanien"],
     "biome": ["Ästuar", "Mangrove"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -87,7 +87,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia beschreibt die Art insgesamt als nicht gefährdet, weist aber auf instabile lokale Bestände hin.",
@@ -194,7 +194,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -202,7 +202,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -215,7 +215,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt das Leistenkrokodil als effizientes Raubtier.",
               "en": "The Zoopedia describes the Saltwater Crocodile as an efficient predator."
@@ -304,7 +304,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande delle regioni costiere del Sud-est asiatico, dell’Australia settentrionale e dell’India orientale.",
+          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande delle regioni costiere del Sud-est Asientico, dell’Australia settentrionale e dell’India orientale.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -368,7 +368,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande che vive nelle regioni costiere del Sud-est asiatico, dell’Australia settentrionale e dell’India orientale.\n\nÈ un predatore efficiente e pericoloso, con muso e corpo più larghi rispetto a molte altre specie di coccodrillo. Il colore varia dal marrone chiaro al grigio-verdastro e differisce tra le popolazioni.\n\nI maschi misurano 3,5–6 m e pesano 200–1.000 kg. Le femmine sono molto più piccole, con 2,7–3,4 m e 120–200 kg.",
+          "inhalt": "Il coccodrillo marino (Crocodylus porosus) è una specie molto grande che vive nelle regioni costiere del Sud-est Asientico, dell’Australia settentrionale e dell’India orientale.\n\nÈ un predatore efficiente e pericoloso, con muso e corpo più larghi rispetto a molte altre specie di coccodrillo. Il colore varia dal marrone chiaro al grigio-verdastro e differisce tra le popolazioni.\n\nI maschi misurano 3,5–6 m e pesano 200–1.000 kg. Le femmine sono molto più piccole, con 2,7–3,4 m e 120–200 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

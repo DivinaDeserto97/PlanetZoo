@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia nennt zusätzlich CITES Anhang I; das strukturierte Schutzstatus-System bleibt leer, da CITES den internationalen Handel regelt.",
@@ -193,7 +193,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "quelle": "planetZoo2"
         }
       ]
@@ -247,14 +247,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a nocturnal mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a nocturnal mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["Africa", "asia", "oceania"],
+    "kontinente": ["Afrika", "Asien", "Ozeanien"],
     "biome": ["Riff", "Tropen"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -73,7 +73,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -141,7 +141,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -154,7 +154,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt Krebstiere, Weichtiere und Seeigel als Nahrung, deren harte Schalen beziehungsweise Körperteile mit den kräftigen Zähnen zerkleinert werden.",
               "en": "The Zoopedia names crustaceans, mollusks and sea urchins as food, crushed with the fish's powerful teeth."
@@ -199,14 +199,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Africa and the Red Sea across the Indian Ocean to the western and central Pacific.",
+          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Afrika and the Red Sea across the Indian Ocean to the western and central Pacific.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Africa and the Red Sea across the Indian Ocean to the western and central Pacific.",
+          "inhalt": "The Clown Triggerfish (Balistoides conspicillum) inhabits clear tropical and subtropical coral reefs, lagoons and reef slopes throughout the Indo-Pacific, from the east coast of Afrika and the Red Sea across the Indian Ocean to the western and central Pacific.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

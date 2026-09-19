@@ -51,110 +51,110 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 
 |   # | Tier (Zoopedia)                 | Gehegetyp                | Edition    | JSON / Projekt-ID        | Zoopedia | Tierstimmenarchiv | Go Wild | Mission Wildnis | SYS | NN  | weitere Quellen | final |
 | --: | ------------------------------- | ------------------------ | ---------- | ------------------------ | :------: | :---------------: | :-----: | :-------------: | :-: | :-: | :-------------: | :---: |
-|   1 | Aardvark                        | `Landgehege`             | `standard` | [x] `Orycteropus afer`   |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   2 | African Leopard                 | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   3 | African Penguin                 | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   4 | African Savannah Elephant       | `Landgehege`             | `standard` | [x] `Loxodonta africana` |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   5 | African Tigerfish               | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   6 | American Bullfrog               | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   7 | Asian Elephant                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   8 | Axolotl                         | `Ausstellung`            | `deluxe`   | []                       |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|   9 | Black Wildebeest                | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  10 | Blackspotted Puffer             | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  11 | Blacktip Reef Shark             | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  12 | Blue and Gold Fusilier          | `Aquarium + Ausstellung` | `deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  13 | Blue Wildebeest                 | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  14 | Bluespine Unicornfish           | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  15 | Blunthead Cichlid               | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  16 | Boa Constrictor                 | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  17 | Boeseman's Rainbowfish          | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  18 | Brown Trout                     | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  19 | Cape Buffalo                    | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  20 | Cloudless Sulphur               | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  21 | Clown Loach                     | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  22 | Clown Triggerfish               | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  23 | Common Bluetongue               | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  24 | Common Hippopotamus             | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  25 | Common Rudd                     | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  26 | Danube Crested Newt             | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  27 | Desert Horned Viper             | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  28 | Diamondback Terrapin            | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  29 | Dolphinfish                     | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  30 | Eastern Brown Snake             | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  31 | Eurasian Beaver                 | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  32 | Eurasian Bittern                | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  33 | Eurasian Brown Bear             | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  34 | Eurasian Lynx                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  35 | European Bison                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  36 | European Peacock                | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  37 | Fire Salamander                 | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  38 | Galápagos Giant Tortoise        | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  39 | Gemsbok                         | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  40 | Gharial                         | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  41 | Giant Malaysian Leaf Insect     | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  42 | Giant Slippery Frog             | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  43 | Giant Tiger Land Snail          | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  44 | Gila Monster                    | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  45 | Golden Eagle                    | `Voliere`                | `deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  46 | Golden Lion Tamarin             | `Landgehege`             | `deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  47 | Golden Poison Frog              | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  48 | Golden Trevally                 | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  49 | Goodfellow's Tree-Kangaroo      | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  50 | Great Hammerhead                | `Aquarium`               | `deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  51 | Great Hornbill                  | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  52 | Grey Wolf                       | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  53 | Hawksbill Turtle                | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  54 | Humphead Wrasse                 | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  55 | Indo-Pacific Leopard Shark      | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  56 | Indo-Pacific Sergeant           | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  57 | Komodo Dragon                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  58 | Lehmann's Poison Frog           | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  59 | Lion                            | `Landgehege`             | `standard` | [x] `Panthera leo`       |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  60 | Long-Eared Owl                  | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  61 | Longfin Batfish                 | `Aquarium`               | `deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  62 | Malayan Tapir                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  63 | Masai Giraffe                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  64 | Meerkat                         | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  65 | Menelaus Blue Morpho            | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  66 | Mexican Redknee                 | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  67 | Mountain Hare                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  68 | Nile Monitor                    | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  69 | Nyala                           | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  70 | Ocean Sunfish                   | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  71 | Ocellated Eagle Ray             | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  72 | Old World Swallowtail           | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  73 | Pacific Bluefin Tuna            | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  74 | Pacific Sardine                 | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  75 | Palette Surgeonfish             | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  76 | Plains Zebra                    | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  77 | Przewalski's Horse              | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  78 | Red Deer                        | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  79 | Red Lionfish                    | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  80 | Red Panda                       | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  81 | Reticulated Giraffe             | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  82 | Ring-Tailed Lemur               | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  83 | Sable Antelope                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  84 | Sailfin Snapper                 | `Aquarium`               | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  85 | Saltwater Crocodile             | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  86 | Schooling Bannerfish            | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  87 | Secretarybird                   | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  88 | Shoebill                        | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  89 | Spotted Hyena                   | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  90 | Springbok                       | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  91 | Sri Lankan Rose                 | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  92 | Sumatran Orangutan              | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  93 | Sumatran Tiger                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  94 | Sunda Pangolin                  | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  95 | Thomson's Gazelle               | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  96 | Toco Toucan                     | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  97 | Western Chimpanzee              | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  98 | Western Diamondback Rattlesnake | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-|  99 | Western Lowland Gorilla         | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 100 | White-Backed Vulture            | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 101 | White-Tailed Sea Eagle          | `Voliere`                | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 102 | Wild Boar                       | `Landgehege`             | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 103 | Yellow Anaconda                 | `Ausstellung`            | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 104 | Yellow Tang                     | `Aquarium + Ausstellung` | `standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   1 | Aardvark                        | `Landgehege`             | `Standard` | [x] `Orycteropus afer`   |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   2 | Afrikan Leopard                 | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   3 | Afrikan Penguin                 | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   4 | Afrikan Savannah Elephant       | `Landgehege`             | `Standard` | [x] `Loxodonta africana` |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   5 | Afrikan Tigerfish               | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   6 | American Bullfrog               | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   7 | Asian Elephant                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   8 | Axolotl                         | `Ausstellung`            | `Deluxe`   | []                       |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|   9 | Black Wildebeest                | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  10 | Blackspotted Puffer             | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  11 | Blacktip Reef Shark             | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  12 | Blue and Gold Fusilier          | `Aquarium + Ausstellung` | `Deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  13 | Blue Wildebeest                 | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  14 | Bluespine Unicornfish           | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  15 | Blunthead Cichlid               | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  16 | Boa Constrictor                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  17 | Boeseman's Rainbowfish          | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  18 | Brown Trout                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  19 | Cape Buffalo                    | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  20 | Cloudless Sulphur               | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  21 | Clown Loach                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  22 | Clown Triggerfish               | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  23 | Common Bluetongue               | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  24 | Common Hippopotamus             | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  25 | Common Rudd                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  26 | Danube Crested Newt             | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  27 | Desert Horned Viper             | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  28 | Diamondback Terrapin            | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  29 | Dolphinfish                     | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  30 | Eastern Brown Snake             | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  31 | EurAsienn Beaver                | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  32 | EurAsienn Bittern               | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  33 | EurAsienn Brown Bear            | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  34 | EurAsienn Lynx                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  35 | European Bison                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  36 | European Peacock                | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  37 | Fire Salamander                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  38 | Galápagos Giant Tortoise        | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  39 | Gemsbok                         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  40 | Gharial                         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  41 | Giant Malaysian Leaf Insect     | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  42 | Giant Slippery Frog             | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  43 | Giant Tiger Land Snail          | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  44 | Gila Monster                    | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  45 | Golden Eagle                    | `Voliere`                | `Deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  46 | Golden Lion Tamarin             | `Landgehege`             | `Deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  47 | Golden Poison Frog              | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  48 | Golden Trevally                 | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  49 | Goodfellow's Tree-Kangaroo      | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  50 | Great Hammerhead                | `Aquarium`               | `Deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  51 | Great Hornbill                  | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  52 | Grey Wolf                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  53 | Hawksbill Turtle                | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  54 | Humphead Wrasse                 | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  55 | Indo-Pacific Leopard Shark      | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  56 | Indo-Pacific Sergeant           | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  57 | Komodo Dragon                   | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  58 | Lehmann's Poison Frog           | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  59 | Lion                            | `Landgehege`             | `Standard` | [x] `Panthera leo`       |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  60 | Long-Eared Owl                  | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  61 | Longfin Batfish                 | `Aquarium`               | `Deluxe`   | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  62 | Malayan Tapir                   | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  63 | Masai Giraffe                   | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  64 | Meerkat                         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  65 | Menelaus Blue Morpho            | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  66 | Mexican Redknee                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  67 | Mountain Hare                   | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  68 | Nile Monitor                    | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  69 | Nyala                           | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  70 | Ocean Sunfish                   | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  71 | Ocellated Eagle Ray             | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  72 | Old World Swallowtail           | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  73 | Pacific Bluefin Tuna            | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  74 | Pacific Sardine                 | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  75 | Palette Surgeonfish             | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  76 | Plains Zebra                    | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  77 | Przewalski's Horse              | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  78 | Red Deer                        | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  79 | Red Lionfish                    | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  80 | Red Panda                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  81 | Reticulated Giraffe             | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  82 | Ring-Tailed Lemur               | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  83 | Sable Antelope                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  84 | Sailfin Snapper                 | `Aquarium`               | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  85 | Saltwater Crocodile             | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  86 | Schooling Bannerfish            | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  87 | Secretarybird                   | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  88 | Shoebill                        | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  89 | Spotted Hyena                   | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  90 | Springbok                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  91 | Sri Lankan Rose                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  92 | Sumatran Orangutan              | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  93 | Sumatran Tiger                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  94 | Sunda Pangolin                  | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  95 | Thomson's Gazelle               | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  96 | Toco Toucan                     | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  97 | Western Chimpanzee              | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  98 | Western Diamondback Rattlesnake | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+|  99 | Western Lowland Gorilla         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 100 | White-Backed Vulture            | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 101 | White-Tailed Sea Eagle          | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 102 | Wild Boar                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 103 | Yellow Anaconda                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 104 | Yellow Tang                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 
 ## 2. Zoopedia-Pass – detaillierte Datencheckliste
 
@@ -163,10 +163,10 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |   # | Tier                            | ID  | FIL | TAX | MOR | LEB | REP | SOZ | ERN | TXT | MAP | IMG | SRC | Zoopedia fertig |
 | --: | ------------------------------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-------------: |
 |   1 | Aardvark                        | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|   2 | African Leopard                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|   3 | African Penguin                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|   4 | African Savannah Elephant       | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|   5 | African Tigerfish               | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|   2 | Afrikan Leopard                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|   3 | Afrikan Penguin                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|   4 | Afrikan Savannah Elephant       | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|   5 | Afrikan Tigerfish               | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |   6 | American Bullfrog               | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |   7 | Asian Elephant                  | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |   8 | Axolotl                         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
@@ -192,10 +192,10 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |  28 | Diamondback Terrapin            | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |  29 | Dolphinfish                     | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |  30 | Eastern Brown Snake             | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|  31 | Eurasian Beaver                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|  32 | Eurasian Bittern                | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|  33 | Eurasian Brown Bear             | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-|  34 | Eurasian Lynx                   | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|  31 | EurAsienn Beaver                | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|  32 | EurAsienn Bittern               | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|  33 | EurAsienn Brown Bear            | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+|  34 | EurAsienn Lynx                  | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |  35 | European Bison                  | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |  36 | European Peacock                | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 |  37 | Fire Salamander                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
@@ -367,7 +367,7 @@ Die aktuelle Vergleichsseite vom 10.09.2026 nennt **104 Arten**, listet in ihrer
 ### Bereits im gelieferten Projekt vorhanden
 
 - `Orycteropus afer` – Aardvark
-- `Loxodonta africana` – African Savannah Elephant
+- `Loxodonta africana` – Afrikan Savannah Elephant
 - `Panthera leo` – Lion
 
 Diese drei vorhandenen JSON-Dateien bedeuten **nicht**, dass ihr Zoopedia-Pass schon vollständig erledigt ist; deshalb bleiben die Zoopedia-Checkboxen zunächst offen.

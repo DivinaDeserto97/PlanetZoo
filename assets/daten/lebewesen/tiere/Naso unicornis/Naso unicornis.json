@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Africa", "asia", "oceania"],
+    "kontinente": ["Afrika", "Asien", "Ozeanien"],
     "biome": ["Riff", "Tropen"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,7 +69,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -161,7 +161,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -174,7 +174,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt Braunalgenblätter als Hauptnahrung und nennt das Abweiden von Algen auf Korallenriffen.",
               "en": "The Zoopedia describes brown-algae blades as the main food and mentions grazing algae on coral reefs."
@@ -235,14 +235,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Africa and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
+          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Afrika and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Africa and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
+          "inhalt": "The Bluespine Unicornfish (Naso unicornis) inhabits tropical coral reefs, reef slopes and outer reef edges across the Indo-Pacific, from East Afrika and the Red Sea through Southeast Asia to Australia, Japan and islands of the central Pacific.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

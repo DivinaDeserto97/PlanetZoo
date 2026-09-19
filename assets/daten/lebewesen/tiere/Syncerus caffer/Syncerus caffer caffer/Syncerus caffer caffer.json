@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Feuchtgebiete"],
-    "schutzstatus": "nearThreatened"
+    "schutzstatus": "Potenziell gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -80,7 +80,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "nearThreatened",
+          "wert": "Potenziell gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Potenziell gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -190,7 +190,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -198,7 +198,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -211,7 +211,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -256,14 +256,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Africa, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Africa into parts of Central Africa.",
+          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Afrika, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Afrika into parts of Central Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Africa, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Africa into parts of Central Africa.",
+          "inhalt": "The Cape Buffalo (Syncerus caffer caffer) occurs across many ecosystems of sub-Saharan Afrika, including savannas, open woodlands, floodplains and grasslands, while remaining dependent on year-round water sources. Its range extends through eastern and southern Afrika into parts of Central Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

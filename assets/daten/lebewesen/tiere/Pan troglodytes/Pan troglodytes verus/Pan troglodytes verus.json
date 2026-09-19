@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": [""],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -80,7 +80,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -158,7 +158,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -171,7 +171,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -335,14 +335,14 @@
       ],
       "en": [
         {
-          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Africa have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
+          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Afrika have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Africa have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
+          "inhalt": "Western Chimpanzees are Critically Endangered because their habitat is being lost to deforestation and agricultural expansion, and because they are hunted for bushmeat, traditional medicine and the illegal pet trade. They are protected by national and international laws, but enforcement is often inadequate. Around 30% live in protected national parks, while the remainder continue to face serious threats. Civil conflicts in West Afrika have also hindered consistent cross-border conservation law.\n\nProtecting Western Chimpanzees requires further research into their habitat, life history and risks. This could support more ethical land use and stronger enforcement of anti-poaching laws. Fundraising and public-awareness campaigns help support ongoing conservation and research and inform people about the plight of our closest relatives.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe", "asia", "Africa"],
+    "kontinente": ["Europa", "Asien", "Afrika"],
     "biome": ["Gemäßigt"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -83,7 +83,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia stuft den Rothirsch als nicht gefährdet ein, weist aber auf lokale Ausrottungen in Teilen des historischen Verbreitungsgebiets hin.",
@@ -185,7 +185,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -193,7 +193,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -206,7 +206,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -242,14 +242,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Africa and Central Asia. It has also been introduced to South America and Oceania.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Africa and Central Asia. It has also been introduced to South America and Oceania.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -270,7 +270,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il cervo rosso (Cervus elaphus) è un ungulato diffuso nelle praterie temperate, foreste e boscaglie d’Europa, Nord Africa e Asia centrale. È stato introdotto anche in Sud America e Oceania.",
+          "inhalt": "Il cervo rosso (Cervus elaphus) è un ungulato diffuso nelle praterie temperate, foreste e boscaglie d’Europa, Nord Afrika e Asia centrale. È stato introdotto anche in Sud America e Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -306,14 +306,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Africa and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Africa and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -334,7 +334,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il cervo rosso (Cervus elaphus) vive nelle praterie temperate, foreste e boscaglie d’Europa, Nord Africa e Asia centrale.\n\nHa mantello bruno-rossastro con parte inferiore più chiara, grandi orecchie, grandi occhi e muso lungo. I maschi sono più grandi e portano grandi palchi ramificati.\n\nI maschi misurano 175–250 cm e pesano 160–240 kg; le femmine 160–210 cm e 120–170 kg.",
+          "inhalt": "Il cervo rosso (Cervus elaphus) vive nelle praterie temperate, foreste e boscaglie d’Europa, Nord Afrika e Asia centrale.\n\nHa mantello bruno-rossastro con parte inferiore più chiara, grandi orecchie, grandi occhi e muso lungo. I maschi sono più grandi e portano grandi palchi ramificati.\n\nI maschi misurano 175–250 cm e pesano 160–240 kg; le femmine 160–210 cm e 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -384,7 +384,7 @@
       ],
       "es": [
         {
-          "inhalt": "Está clasificado como de Preocupación Menor, aunque ha desaparecido localmente de algunas partes de su área histórica. La caza excesiva, la deforestación y la expansión agrícola provocaron importantes descensos.\n\nDesde el siglo XX, la protección legal, la restauración de hábitats, las áreas protegidas y las reintroducciones han contribuido a su recuperación.\n\nSu conservación se considera en general un éxito del manejo de fauna europea.",
+          "inhalt": "Está clasificado como de Preocupación Menor, aunque ha desaparecido localmente de algunas partes de su área histórica. La caza excesiva, la deforestación y la expansión agrícola provocaron importantes descensos.\n\nDesde el siglo XX, la protección legal, la restauración de hábitats, las áreas protegidas y las reintroducciones han contribuido a su recuperación.\n\nSu conservación se considera en general un éxito del manejo de fauna Europaa.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -398,14 +398,14 @@
       ],
       "it": [
         {
-          "inhalt": "È classificato a rischio minimo, ma è scomparso localmente da alcune aree storiche. Caccia eccessiva, deforestazione ed espansione agricola hanno causato forti diminuzioni.\n\nDal XX secolo, protezione legale, ripristino degli habitat, aree protette e reintroduzioni hanno favorito il recupero.\n\nLa conservazione è spesso considerata un successo della gestione faunistica europea.",
+          "inhalt": "È classificato a rischio minimo, ma è scomparso localmente da alcune aree storiche. Caccia eccessiva, deforestazione ed espansione agricola hanno causato forti diminuzioni.\n\nDal XX secolo, protezione legale, ripristino degli habitat, aree protette e reintroduzioni hanno favorito il recupero.\n\nLa conservazione è spesso considerata un successo della gestione faunistica Europaa.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "É classificado como Pouco Preocupante, mas desapareceu localmente de algumas partes de sua distribuição histórica. Caça excessiva, desmatamento e expansão agrícola causaram fortes declínios.\n\nDesde o século XX, proteção legal, restauração de habitats, áreas protegidas e reintroduções ajudaram na recuperação.\n\nA conservação é amplamente considerada um sucesso no manejo de fauna europeia.",
+          "inhalt": "É classificado como Pouco Preocupante, mas desapareceu localmente de algumas partes de sua distribuição histórica. Caça excessiva, desmatamento e expansão agrícola causaram fortes declínios.\n\nDesde o século XX, proteção legal, restauração de habitats, áreas protegidas e reintroduções ajudaram na recuperação.\n\nA conservação é amplamente considerada um sucesso no manejo de fauna Europaia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

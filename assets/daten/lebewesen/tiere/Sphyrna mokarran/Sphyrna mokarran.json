@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Offenes Meer", "Riff"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -92,7 +92,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -180,7 +180,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -188,7 +188,7 @@
           "quelle": "greatHammerheadDielStudy"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -201,7 +201,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."

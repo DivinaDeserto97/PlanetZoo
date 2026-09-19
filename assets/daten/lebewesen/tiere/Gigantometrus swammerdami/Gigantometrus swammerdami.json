@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
     "schutzstatus": "notEvaluated"
   },
@@ -148,7 +148,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -161,7 +161,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."

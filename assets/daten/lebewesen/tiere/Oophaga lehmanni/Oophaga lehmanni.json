@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["southAmerica"],
+    "kontinente": ["Südamerika"],
     "biome": ["Tropen"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -61,7 +61,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia nennt zusätzlich eine Beschränkung des internationalen Handels gemäß CITES Anhang II; dieses Handelssystem wird nicht als Schutzstatus-System eingetragen.",
@@ -157,7 +157,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -170,7 +170,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."

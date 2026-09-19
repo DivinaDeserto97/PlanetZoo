@@ -15,21 +15,21 @@
   },
   "filter": {
     "edition": "",
-    "editionAuswahl": ["standard", "deluxe"],
+    "editionAuswahl": ["Standard", "Deluxe"],
     "gehegetyp": [""],
     "gehegetypAuswahl": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
     "kontinente": [""],
     "kontinenteAuswahl": [
-      "Africa",
-      "arctic",
-      "asia",
-      "atlanticOcean",
-      "europe",
-      "indianOcean",
-      "northAmerica",
-      "oceania",
-      "pacificOcean",
-      "southAmerica"
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
     ],
     "biome": [""],
     "biomeAuswahl": [
@@ -48,11 +48,12 @@
     ],
     "schutzstatus": "",
     "schutzstatusAuswahl": [
-      "leastConcern",
-      "nearThreatened",
-      "vulnerable",
-      "endangered",
-      "criticallyEndangered"
+      "???",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Gefährdet",
+      "Stark gefährdet",
+      "Vom Aussterben bedroht"
     ]
   },
   "daten": {

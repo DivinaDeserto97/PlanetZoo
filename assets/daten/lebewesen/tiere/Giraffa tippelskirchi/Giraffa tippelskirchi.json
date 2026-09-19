@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -74,7 +74,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
@@ -148,7 +148,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -156,7 +156,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -169,7 +169,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -497,7 +497,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other herbivores.",
+          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other Pflanzenfressers.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -524,7 +524,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other herbivores.",
+          "inhalt": "Giraffes have tough lips and powerful jaws that allow them to chew thorns and tough leaves avoided by many other Pflanzenfressers.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

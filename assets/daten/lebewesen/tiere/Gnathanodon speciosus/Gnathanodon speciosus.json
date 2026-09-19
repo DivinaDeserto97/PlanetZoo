@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Ästuar", "Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -93,7 +93,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia nennt die Art auf der Roten Liste der IUCN als „nicht gefährdet“.",
@@ -197,7 +197,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -267,14 +267,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Golden Trevally (Gnathanodon speciosus) lives in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Africa to the central Pacific islands. It mainly occurs in coastal habitats such as lagoons, coral reefs, and over sandy or muddy bottoms.",
+          "inhalt": "The Golden Trevally (Gnathanodon speciosus) lives in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Afrika to the central Pacific islands. It mainly occurs in coastal habitats such as lagoons, coral reefs, and over sandy or muddy bottoms.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Golden Trevally (Gnathanodon speciosus) lives in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Africa to the central Pacific islands. It mainly occurs in coastal habitats such as lagoons, coral reefs, and over sandy or muddy bottoms.",
+          "inhalt": "The Golden Trevally (Gnathanodon speciosus) lives in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Afrika to the central Pacific islands. It mainly occurs in coastal habitats such as lagoons, coral reefs, and over sandy or muddy bottoms.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -295,7 +295,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il carango indopacifico (Gnathanodon speciosus) vive nelle acque tropicali e subtropicali dell’Indo-Pacifico, dal Mar Rosso e dall’Africa orientale fino alle isole del Pacifico centrale. Frequenta soprattutto zone costiere, lagune, barriere coralline e fondali sabbiosi o fangosi.",
+          "inhalt": "Il carango indopacifico (Gnathanodon speciosus) vive nelle acque tropicali e subtropicali dell’Indo-Pacifico, dal Mar Rosso e dall’Afrika orientale fino alle isole del Pacifico centrale. Frequenta soprattutto zone costiere, lagune, barriere coralline e fondali sabbiosi o fangosi.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -331,14 +331,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Golden Trevally (Gnathanodon speciosus) is a marine fish found in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Africa to the central Pacific islands. It mainly lives in coastal habitats such as lagoons, coral reefs and over sandy or muddy bottoms, and often forms small schools in shallow water.\n\nJuveniles have a bright golden-yellow body with several distinct vertical black bands. These bands fade as the fish mature and the coloration becomes silvery-gold. Golden Trevallies have a laterally compressed body, a pointed head profile and a forked tail fin.\n\nAdults average 70–100 cm in length and weigh 6–10 kg.",
+          "inhalt": "The Golden Trevally (Gnathanodon speciosus) is a marine fish found in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Afrika to the central Pacific islands. It mainly lives in coastal habitats such as lagoons, coral reefs and over sandy or muddy bottoms, and often forms small schools in shallow water.\n\nJuveniles have a bright golden-yellow body with several distinct vertical black bands. These bands fade as the fish mature and the coloration becomes silvery-gold. Golden Trevallies have a laterally compressed body, a pointed head profile and a forked tail fin.\n\nAdults average 70–100 cm in length and weigh 6–10 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Golden Trevally (Gnathanodon speciosus) is a marine fish found in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Africa to the central Pacific islands. It mainly lives in coastal habitats such as lagoons, coral reefs and over sandy or muddy bottoms, and often forms small schools in shallow water.\n\nJuveniles have a bright golden-yellow body with several distinct vertical black bands. These bands fade as the fish mature and the coloration becomes silvery-gold. Golden Trevallies have a laterally compressed body, a pointed head profile and a forked tail fin.\n\nAdults average 70–100 cm in length and weigh 6–10 kg.",
+          "inhalt": "The Golden Trevally (Gnathanodon speciosus) is a marine fish found in tropical and subtropical Indo-Pacific waters, from the Red Sea and East Afrika to the central Pacific islands. It mainly lives in coastal habitats such as lagoons, coral reefs and over sandy or muddy bottoms, and often forms small schools in shallow water.\n\nJuveniles have a bright golden-yellow body with several distinct vertical black bands. These bands fade as the fish mature and the coloration becomes silvery-gold. Golden Trevallies have a laterally compressed body, a pointed head profile and a forked tail fin.\n\nAdults average 70–100 cm in length and weigh 6–10 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -603,7 +603,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Se cría en Singapur, Taiwán, Malasia e Indonesia para consumo y para la industria de acuarios.",
+          "inhalt": "Se cría en Singapur, Taiwán, MalAsien e Indonesia para consumo y para la industria de acuarios.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

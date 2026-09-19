@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,7 +69,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia zeigt im strukturierten Feld den Arterhaltungszustand „Nicht gefährdet“. Im Fließtext wird die Art zugleich als „potenziell gefährdet“ bezeichnet. Dieser Widerspruch wurde nicht extern aufgelöst.",
@@ -197,7 +197,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -210,10 +210,10 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt die Art als hochspezialisierten Pflanzenfresser. Die Nahrung besteht fast ausschließlich aus einer Mischung aus Algen und Mikroorganismen, die von Felsen abgekratzt wird.",
-              "en": "The Zoopedia describes the species as a highly specialized herbivore. Its diet consists almost entirely of algae and microorganisms scraped from rocks."
+              "en": "The Zoopedia describes the species as a highly specialized Pflanzenfresser. Its diet consists almost entirely of algae and microorganisms scraped from rocks."
             },
             "quelle": "planetZoo2"
           }
@@ -287,14 +287,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Blunthead Cichlid (Tropheus moorii) is a freshwater cichlid native to Lake Tanganyika in East Africa, where it inhabits shallow rocky shore zones with strong currents and abundant algal growth.",
+          "inhalt": "The Blunthead Cichlid (Tropheus moorii) is a freshwater cichlid native to Lake Tanganyika in East Afrika, where it inhabits shallow rocky shore zones with strong currents and abundant algal growth.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Blunthead Cichlid (Tropheus moorii) is a freshwater cichlid native to Lake Tanganyika in East Africa, where it inhabits shallow rocky shore zones with strong currents and abundant algal growth.",
+          "inhalt": "The Blunthead Cichlid (Tropheus moorii) is a freshwater cichlid native to Lake Tanganyika in East Afrika, where it inhabits shallow rocky shore zones with strong currents and abundant algal growth.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Tropen", "Seen und Flüsse"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -97,11 +97,11 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an. Ein Bewertungssystem wird auf der mitgeschickten Seite nicht ausdrücklich genannt.",
-            "en": "The Zoopedia lists the conservation status as strongly endangered. The supplied page does not explicitly name an assessment system."
+            "en": "The Zoopedia lists the conservation status as strongly Stark gefährdet. The supplied page does not explicitly name an assessment system."
           },
           "quelle": "planetZoo2"
         }
@@ -183,7 +183,7 @@
           "wert": "tropical",
           "hinweis": {
             "de": "Die Zoopedia nennt afrikanische Regenwälder.",
-            "en": "The Zoopedia names African rainforests."
+            "en": "The Zoopedia names Afrikan rainforests."
           },
           "quelle": "planetZoo2"
         },
@@ -200,7 +200,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -213,7 +213,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -274,14 +274,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the African rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the African rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

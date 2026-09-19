@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -217,7 +217,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -230,7 +230,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt Früchte als Hauptnahrung, besonders Feigen, nennt aber auch kleine Säugetiere, Vögel, Reptilien und Insekten.",
               "en": "The Zoopedia describes fruit, especially figs, as the main food, while also naming small mammals, birds, reptiles and insects."
@@ -575,7 +575,7 @@
         "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%8F%8C%E8%A7%92%E7%8A%80%E9%B8%9F"
       },
-      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Der Zoopedia-Status „Gefährdet“ wurde entsprechend der aktuellen Projekttabelle auf `vulnerable` abgebildet."
+      "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Der Zoopedia-Status „Gefährdet“ wurde entsprechend der aktuellen Projekttabelle auf `Gefährdet` abgebildet."
     },
     "animalDiversityWeb": {
       "name": "Animal Diversity Web – Buceros bicornis",

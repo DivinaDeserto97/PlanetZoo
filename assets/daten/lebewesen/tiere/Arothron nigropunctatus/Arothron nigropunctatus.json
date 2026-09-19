@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Riff"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -64,7 +64,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -168,7 +168,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -238,14 +238,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Blackspotted Puffer (Arothron nigropunctatus), also known as the dog-faced puffer, is a tropical marine fish found throughout the Indo-Pacific from the east coast of Africa to islands in the central Pacific. It mainly lives on coral reefs, reef slopes and in lagoons at depths of up to 25 m.",
+          "inhalt": "The Blackspotted Puffer (Arothron nigropunctatus), also known as the dog-faced puffer, is a tropical marine fish found throughout the Indo-Pacific from the east coast of Afrika to islands in the central Pacific. It mainly lives on coral reefs, reef slopes and in lagoons at depths of up to 25 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Blackspotted Puffer (Arothron nigropunctatus), also known as the dog-faced puffer, is a tropical marine fish found throughout the Indo-Pacific from the east coast of Africa to islands in the central Pacific. It mainly lives on coral reefs, reef slopes and in lagoons at depths of up to 25 m.",
+          "inhalt": "The Blackspotted Puffer (Arothron nigropunctatus), also known as the dog-faced puffer, is a tropical marine fish found throughout the Indo-Pacific from the east coast of Afrika to islands in the central Pacific. It mainly lives on coral reefs, reef slopes and in lagoons at depths of up to 25 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

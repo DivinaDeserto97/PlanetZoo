@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -83,11 +83,11 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia weist darauf hin, dass die Art insgesamt als nicht gefährdet gilt, die Riesen-Rappenantilope in Angola jedoch vom Aussterben bedroht ist.",
-            "en": "The Zoopedia notes that the species overall is considered least concern, while the Giant Sable Antelope in Angola is critically endangered."
+            "en": "The Zoopedia notes that the species overall is considered least concern, while the Giant Sable Antelope in Angola is critically Stark gefährdet."
           },
           "quelle": "planetZoo2"
         }
@@ -225,7 +225,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -233,7 +233,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -246,7 +246,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt die Rappenantilope als weidend und fressend in der Savanne.",
               "en": "The Zoopedia describes the Sable Antelope grazing and feeding in the savanna."
@@ -291,14 +291,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Africa. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
+          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Afrika. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Africa. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
+          "inhalt": "The Sable Antelope (Hippotragus niger) lives in southeastern Afrika. It inhabits savanna and prefers lightly wooded areas over completely open landscapes.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

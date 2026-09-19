@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Ästuar", "Mangrove", "Riff"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -90,7 +90,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -201,7 +201,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -209,7 +209,7 @@
           "quelle": "blacktipReefSharkDielStudy"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -222,7 +222,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt die Jagd auf Fischschwärme.",
               "en": "The Zoopedia describes hunting schools of fish."
@@ -399,7 +399,7 @@
       ],
       "en": [
         {
-          "inhalt": "Blacktip Reef Sharks are considered endangered because they are threatened by overfishing and habitat loss. Although they are not especially sought after, they can be sold as bycatch in countries where shark fins and shark meat are consumed. Climate-driven loss of coral reefs is another major problem because it destroys both their habitat and that of their prey. Their slow growth and low reproductive rate make recovery from population declines difficult.",
+          "inhalt": "Blacktip Reef Sharks are considered Stark gefährdet because they are threatened by overfishing and habitat loss. Although they are not especially sought after, they can be sold as bycatch in countries where shark fins and shark meat are consumed. Climate-driven loss of coral reefs is another major problem because it destroys both their habitat and that of their prey. Their slow growth and low reproductive rate make recovery from population declines difficult.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -411,7 +411,7 @@
       ],
       "en-US": [
         {
-          "inhalt": "Blacktip Reef Sharks are considered endangered because they are threatened by overfishing and habitat loss. Although they are not especially sought after, they can be sold as bycatch in countries where shark fins and shark meat are consumed. Climate-driven loss of coral reefs is another major problem because it destroys both their habitat and that of their prey. Their slow growth and low reproductive rate make recovery from population declines difficult.",
+          "inhalt": "Blacktip Reef Sharks are considered Stark gefährdet because they are threatened by overfishing and habitat loss. Although they are not especially sought after, they can be sold as bycatch in countries where shark fins and shark meat are consumed. Climate-driven loss of coral reefs is another major problem because it destroys both their habitat and that of their prey. Their slow growth and low reproductive rate make recovery from population declines difficult.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

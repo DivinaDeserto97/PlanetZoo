@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Gemäßigt", "Taiga"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -80,7 +80,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -159,7 +159,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -167,7 +167,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."

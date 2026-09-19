@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["southAmerica"],
+    "kontinente": ["Südamerika"],
     "biome": [""],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -155,7 +155,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -168,7 +168,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -363,21 +363,21 @@
       ],
       "en": [
         {
-          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them vulnerable to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
+          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them Gefährdet to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them vulnerable to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
+          "inhalt": "The Golden Lion Tamarin is considered Endangered. For decades it has faced major conservation challenges due to habitat loss, fragmentation and a reduced gene pool. The remaining Atlantic Forest consists of tiny isolated fragments that are too small to maintain healthy populations, making them Gefährdet to genetic decline and disease outbreaks. Illegal logging, agricultural expansion, urban development and the illegal pet trade have contributed to population declines, while disease has killed more than 30% of the animals in some subpopulations.\n\nConservation measures have protected and restored habitat, connected isolated forest fragments with canopy corridors and strengthened wild populations, resulting in a dramatic increase in animal numbers. Protected areas provide safe habitat, while translocation and reintroduction programmes have created new viable populations. Yellow-fever vaccinations and sustainable agriculture initiatives along forest edges aim to reduce disease impacts and human pressure.\n\nEnvironmental education, promotion of agroforestry and long-term strategies aim to secure a connected and genetically robust future for these tamarins.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "El tití león dorado está En Peligro. Durante décadas se ha enfrentado a graves problemas de conservación debido a la pérdida y fragmentación del hábitat y a la reducción del acervo genético. Los restos del bosque atlántico consisten en pequeños fragmentos aislados, demasiado reducidos para mantener poblaciones sanas, lo que aumenta su vulnerabilidad al deterioro genético y a brotes de enfermedades. La tala ilegal, la expansión agrícola, el desarrollo urbano y el comercio ilegal de mascotas han contribuido al descenso de las poblaciones, y las enfermedades han matado a más del 30% de los individuos de algunas subpoblaciones.\n\nLas medidas de conservación han protegido y restaurado hábitats, conectado fragmentos aislados mediante corredores de copas y reforzado poblaciones silvestres, lo que ha producido un aumento espectacular de los efectivos. Las áreas protegidas proporcionan hábitat seguro, mientras que los programas de traslado y reintroducción han permitido crear nuevas poblaciones viables. Las vacunaciones contra la fiebre amarilla y las iniciativas de agricultura sostenible en los bordes del bosque buscan reducir el impacto de enfermedades y la presión humana.\n\nLa educación ambiental, el fomento de la agroforestería y las estrategias a largo plazo pretenden asegurar un futuro conectado y genéticamente robusto para la especie.",
+          "inhalt": "El tití león dorado está En Peligro. Durante décadas se ha enfrentado a graves problemas de conservación debido a la pérdida y fragmentación del hábitat y a la reducción del acervo genético. Los restos del bosque atlántico consisten en pequeños fragmentos aislados, demAsiendo reducidos para mantener poblaciones sanas, lo que aumenta su vulnerabilidad al deterioro genético y a brotes de enfermedades. La tala ilegal, la expansión agrícola, el desarrollo urbano y el comercio ilegal de mascotas han contribuido al descenso de las poblaciones, y las enfermedades han matado a más del 30% de los individuos de algunas subpoblaciones.\n\nLas medidas de conservación han protegido y restaurado hábitats, conectado fragmentos aislados mediante corredores de copas y reforzado poblaciones silvestres, lo que ha producido un aumento espectacular de los efectivos. Las áreas protegidas proporcionan hábitat seguro, mientras que los programas de traslado y reintroducción han permitido crear nuevas poblaciones viables. Las vacunaciones contra la fiebre amarilla y las iniciativas de agricultura sostenible en los bordes del bosque buscan reducir el impacto de enfermedades y la presión humana.\n\nLa educación ambiental, el fomento de la agroforestería y las estrategias a largo plazo pretenden asegurar un futuro conectado y genéticamente robusto para la especie.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

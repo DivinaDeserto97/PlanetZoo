@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["Africa", "asia"],
+    "kontinente": ["Afrika", "Asien"],
     "biome": ["Wüste"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -65,7 +65,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -160,7 +160,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -173,7 +173,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -218,14 +218,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Africa and the Middle East.",
+          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Afrika and the Middle East.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Africa and the Middle East.",
+          "inhalt": "The Desert Horned Viper (Cerastes cerastes) is a venomous snake native to the deserts and semi-deserts of North Afrika and the Middle East.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

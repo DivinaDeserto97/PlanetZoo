@@ -11,25 +11,25 @@ export const TOOL_STUFEN = {
 const GUELTIGE_STUFEN = new Set(Object.values(TOOL_STUFEN));
 
 function getStandardEinstellungen() {
-  return Object.fromEntries(TOOLS.map((tool) => [tool.id, tool.standard]));
+  return Object.fromEntries(TOOLS.map((tool) => [tool.id, tool.Standard]));
 }
 
 export function getToolEinstellungen() {
-  const standard = getStandardEinstellungen();
+  const Standard = getStandardEinstellungen();
 
   try {
     const gespeichert = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}");
 
     for (const [toolId, stufe] of Object.entries(gespeichert)) {
       if (GUELTIGE_STUFEN.has(stufe)) {
-        standard[toolId] = stufe;
+        Standard[toolId] = stufe;
       }
     }
   } catch (error) {
     console.warn("Tool-Einstellungen konnten nicht gelesen werden.", error);
   }
 
-  return standard;
+  return Standard;
 }
 
 export function getToolEinstellung(toolId) {

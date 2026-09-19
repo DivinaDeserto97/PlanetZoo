@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Ästuar", "Offenes Meer", "Riff"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -65,7 +65,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
@@ -134,7 +134,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -147,7 +147,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -311,21 +311,21 @@
       ],
       "en": [
         {
-          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly vulnerable to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
+          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly Gefährdet to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly vulnerable to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
+          "inhalt": "The Ocellated Eagle Ray is Endangered. As a slow-growing species with a low reproductive rate, it is particularly Gefährdet to overfishing. It is often caught as bycatch in nets and lines aimed at other species and is also targeted in some regions for meat, cartilage and gill plates. Habitat loss, especially of coral reefs, seagrass beds and coastal nursery grounds, adds further pressure, along with pollution, shipping and climate-related stress.\n\nTrade is regulated to reduce overexploitation. Several countries have introduced fishing rules, protected areas and bycatch-reduction measures. Satellite and acoustic tagging programmes are used to study movement, habitat use and behaviour, while education and ecotourism initiatives help reduce human impacts.\n\nAlthough direct reintroduction efforts are limited, protecting healthy habitat and reducing human pressure can support long-term survival.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "Está En Peligro. Su lento crecimiento y baja tasa reproductiva la hacen especialmente vulnerable a la sobrepesca, las capturas accidentales, la degradación de arrecifes y zonas costeras, la contaminación y el cambio climático.\n\nEl comercio está regulado y varios países aplican restricciones pesqueras, áreas protegidas y medidas para reducir las capturas accidentales.",
+          "inhalt": "Está En Peligro. Su lento crecimiento y baja tasa reproductiva la hacen especialmente Gefährdet a la sobrepesca, las capturas accidentales, la degradación de arrecifes y zonas costeras, la contaminación y el cambio climático.\n\nEl comercio está regulado y varios países aplican restricciones pesqueras, áreas protegidas y medidas para reducir las capturas accidentales.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

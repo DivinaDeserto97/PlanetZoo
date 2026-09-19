@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Tropen"],
     "schutzstatus": "notEvaluated"
   },
@@ -163,7 +163,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -171,7 +171,7 @@
           "quelle": "goliathActivityStudy"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -184,7 +184,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -366,7 +366,7 @@
     "goliathActivityStudy": {
       "name": "Goliath beetle activity observations",
       "seiten": {
-        "en": "https://www.researchgate.net/publication/388498332_Red_Listing_African_Goliath_Beetles_Assessing_Threats_and_Conservation_Needs"
+        "en": "https://www.researchgate.net/publication/388498332_Red_Listing_Afrikan_Goliath_Beetles_Assessing_Threats_and_Conservation_Needs"
       }
     }
   }

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["southAmerica"],
+    "kontinente": ["Südamerika"],
     "biome": [""],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia zeigt als aktuellen Arterhaltungszustand „Gefährdet“. Im Fließtext wird zugleich beschrieben, dass einige Unterarten ausgestorben sind und die noch lebenden Unterarten als vom Aussterben bedroht, stark gefährdet oder gefährdet gelten; außerdem heißt es, die Art sei dank Zucht und Wiederansiedlung inzwischen nicht mehr vom Aussterben bedroht. Diese unterschiedlichen Aussagen wurden nicht extern aufgelöst.",
@@ -208,7 +208,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -221,7 +221,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."

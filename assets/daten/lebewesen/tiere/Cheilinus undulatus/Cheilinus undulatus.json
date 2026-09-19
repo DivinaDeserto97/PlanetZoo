@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Offenes Meer", "Riff"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -98,7 +98,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -194,7 +194,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -207,7 +207,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt hartschalige wirbellose Tiere als Nahrung und erwähnt zusätzlich giftige Beute wie Kofferfische und Dornenkronenseesterne.",
               "en": "The Zoopedia states that the species feeds on hard-shelled invertebrates and also mentions toxic prey such as boxfish and crown-of-thorns starfish."
@@ -438,21 +438,21 @@
       ],
       "en": [
         {
-          "inhalt": "The Humphead Wrasse is Endangered and faces serious population pressures, particularly from overfishing. Its large size, slow growth, late maturity and high value in luxury seafood markets make it especially vulnerable to exploitation and demand in the live reef-fish trade. Predictable spawning behaviour and temporary aggregations also make it easy to target during the breeding season. Habitat destruction through coral-reef loss, destructive cyanide fishing, coastal development and climate change further intensify these pressures.\n\nSome countries have introduced buy-back and release programmes in which captured wrasse are returned to protected reef areas. Marine protected areas safeguard spawning sites and key habitats. Public institutions support captive breeding and education to reduce demand for wild-caught animals. Regulations help control cross-border trade, although enforcement is not consistent everywhere.\n\nCommunity-based conservation, improved fisheries management and education are essential to protecting the species, supported by strong legal protection and cooperation across its range.",
+          "inhalt": "The Humphead Wrasse is Endangered and faces serious population pressures, particularly from overfishing. Its large size, slow growth, late maturity and high value in luxury seafood markets make it especially Gefährdet to exploitation and demand in the live reef-fish trade. Predictable spawning behaviour and temporary aggregations also make it easy to target during the breeding season. Habitat destruction through coral-reef loss, destructive cyanide fishing, coastal development and climate change further intensify these pressures.\n\nSome countries have introduced buy-back and release programmes in which captured wrasse are returned to protected reef areas. Marine protected areas safeguard spawning sites and key habitats. Public institutions support captive breeding and education to reduce demand for wild-caught animals. Regulations help control cross-border trade, although enforcement is not consistent everywhere.\n\nCommunity-based conservation, improved fisheries management and education are essential to protecting the species, supported by strong legal protection and cooperation across its range.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Humphead Wrasse is Endangered and faces serious population pressures, particularly from overfishing. Its large size, slow growth, late maturity and high value in luxury seafood markets make it especially vulnerable to exploitation and demand in the live reef-fish trade. Predictable spawning behaviour and temporary aggregations also make it easy to target during the breeding season. Habitat destruction through coral-reef loss, destructive cyanide fishing, coastal development and climate change further intensify these pressures.\n\nSome countries have introduced buy-back and release programmes in which captured wrasse are returned to protected reef areas. Marine protected areas safeguard spawning sites and key habitats. Public institutions support captive breeding and education to reduce demand for wild-caught animals. Regulations help control cross-border trade, although enforcement is not consistent everywhere.\n\nCommunity-based conservation, improved fisheries management and education are essential to protecting the species, supported by strong legal protection and cooperation across its range.",
+          "inhalt": "The Humphead Wrasse is Endangered and faces serious population pressures, particularly from overfishing. Its large size, slow growth, late maturity and high value in luxury seafood markets make it especially Gefährdet to exploitation and demand in the live reef-fish trade. Predictable spawning behaviour and temporary aggregations also make it easy to target during the breeding season. Habitat destruction through coral-reef loss, destructive cyanide fishing, coastal development and climate change further intensify these pressures.\n\nSome countries have introduced buy-back and release programmes in which captured wrasse are returned to protected reef areas. Marine protected areas safeguard spawning sites and key habitats. Public institutions support captive breeding and education to reduce demand for wild-caught animals. Regulations help control cross-border trade, although enforcement is not consistent everywhere.\n\nCommunity-based conservation, improved fisheries management and education are essential to protecting the species, supported by strong legal protection and cooperation across its range.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "Está En Peligro, principalmente por la sobrepesca. Su gran tamaño, crecimiento lento, madurez tardía y alto valor en mercados de lujo lo hacen muy vulnerable. La pérdida de arrecifes, la pesca con cianuro, el desarrollo costero y el cambio climático agravan el problema.\n\nAlgunos países realizan programas de liberación, protegen zonas de desove y apoyan la cría en cautividad y la educación. La regulación del comercio internacional también forma parte de la conservación.\n\nLa protección comunitaria, la gestión pesquera y la educación son esenciales.",
+          "inhalt": "Está En Peligro, principalmente por la sobrepesca. Su gran tamaño, crecimiento lento, madurez tardía y alto valor en mercados de lujo lo hacen muy Gefährdet. La pérdida de arrecifes, la pesca con cianuro, el desarrollo costero y el cambio climático agravan el problema.\n\nAlgunos países realizan programas de liberación, protegen zonas de desove y apoyan la cría en cautividad y la educación. La regulación del comercio internacional también forma parte de la conservación.\n\nLa protección comunitaria, la gestión pesquera y la educación son esenciales.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -502,14 +502,14 @@
       ],
       "en": [
         {
-          "inhalt": "Humphead Wrasse are mainly solitary but may temporarily occur in pairs or small groups for reproduction.\n\nBreeding takes place throughout the year and is commonly influenced by the lunar cycle. At dawn, males and females gather at specific outer-reef sites in courtship groups. Dominant males establish temporary territories and display by changing body colour while making rapid movements to attract females. Once a female is receptive, the pair briefly rises in the water and releases eggs and sperm simultaneously for external fertilisation.\n\nThe fertilised eggs are pelagic and drift with ocean currents, hatching within 18–30 hours depending on temperature. The larvae are tiny, planktonic and highly vulnerable. As they grow, they feed on microscopic prey. After several weeks, surviving juveniles settle in shallow, protected reef areas.\n\nJuveniles are shy and well camouflaged and gradually move into more open reef habitat as they age. The species is a protogynous hermaphrodite: all individuals begin life as females. Some females permanently change into males over several weeks, usually when a dominant male is absent and under hormonal and social influences. Sexual maturity is reached at around 5–7 years, usually at about 1 m in length. Most individuals that change sex are at least 9 years old.",
+          "inhalt": "Humphead Wrasse are mainly solitary but may temporarily occur in pairs or small groups for reproduction.\n\nBreeding takes place throughout the year and is commonly influenced by the lunar cycle. At dawn, males and females gather at specific outer-reef sites in courtship groups. Dominant males establish temporary territories and display by changing body colour while making rapid movements to attract females. Once a female is receptive, the pair briefly rises in the water and releases eggs and sperm simultaneously for external fertilisation.\n\nThe fertilised eggs are pelagic and drift with ocean currents, hatching within 18–30 hours depending on temperature. The larvae are tiny, planktonic and highly Gefährdet. As they grow, they feed on microscopic prey. After several weeks, surviving juveniles settle in shallow, protected reef areas.\n\nJuveniles are shy and well camouflaged and gradually move into more open reef habitat as they age. The species is a protogynous hermaphrodite: all individuals begin life as females. Some females permanently change into males over several weeks, usually when a dominant male is absent and under hormonal and social influences. Sexual maturity is reached at around 5–7 years, usually at about 1 m in length. Most individuals that change sex are at least 9 years old.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Humphead Wrasse are mainly solitary but may temporarily occur in pairs or small groups for reproduction.\n\nBreeding takes place throughout the year and is commonly influenced by the lunar cycle. At dawn, males and females gather at specific outer-reef sites in courtship groups. Dominant males establish temporary territories and display by changing body colour while making rapid movements to attract females. Once a female is receptive, the pair briefly rises in the water and releases eggs and sperm simultaneously for external fertilisation.\n\nThe fertilised eggs are pelagic and drift with ocean currents, hatching within 18–30 hours depending on temperature. The larvae are tiny, planktonic and highly vulnerable. As they grow, they feed on microscopic prey. After several weeks, surviving juveniles settle in shallow, protected reef areas.\n\nJuveniles are shy and well camouflaged and gradually move into more open reef habitat as they age. The species is a protogynous hermaphrodite: all individuals begin life as females. Some females permanently change into males over several weeks, usually when a dominant male is absent and under hormonal and social influences. Sexual maturity is reached at around 5–7 years, usually at about 1 m in length. Most individuals that change sex are at least 9 years old.",
+          "inhalt": "Humphead Wrasse are mainly solitary but may temporarily occur in pairs or small groups for reproduction.\n\nBreeding takes place throughout the year and is commonly influenced by the lunar cycle. At dawn, males and females gather at specific outer-reef sites in courtship groups. Dominant males establish temporary territories and display by changing body colour while making rapid movements to attract females. Once a female is receptive, the pair briefly rises in the water and releases eggs and sperm simultaneously for external fertilisation.\n\nThe fertilised eggs are pelagic and drift with ocean currents, hatching within 18–30 hours depending on temperature. The larvae are tiny, planktonic and highly Gefährdet. As they grow, they feed on microscopic prey. After several weeks, surviving juveniles settle in shallow, protected reef areas.\n\nJuveniles are shy and well camouflaged and gradually move into more open reef habitat as they age. The species is a protogynous hermaphrodite: all individuals begin life as females. Some females permanently change into males over several weeks, usually when a dominant male is absent and under hormonal and social influences. Sexual maturity is reached at around 5–7 years, usually at about 1 m in length. Most individuals that change sex are at least 9 years old.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

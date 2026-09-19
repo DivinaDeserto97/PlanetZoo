@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["northAmerica", "southAmerica"],
+    "kontinente": ["Nordamerika", "Südamerika"],
     "biome": ["Graslandschaft", "Tropen", "Wüste"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -147,7 +147,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -160,7 +160,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -812,7 +812,7 @@
         "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%9C%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AA%E3%82%AF%E3%82%BF%E3%83%BC",
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BA%A2%E5%B0%BE%E8%9A%BA"
       },
-      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Mittelamerika wird mangels eigenem Kontinent-Enum im Projekt als northAmerica abgebildet. Halbwüste wird konservativ dem Wüsten-Biom zugeordnet. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 20–65 lebende Jungtiere bleiben in der Prosa, weil kein sicher bestätigter strukturierter Nachwuchs-Typ verwendet wird. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten."
+      "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Mittelamerika wird mangels eigenem Kontinent-Enum im Projekt als Nordamerika abgebildet. Halbwüste wird konservativ dem Wüsten-Biom zugeordnet. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. 20–65 lebende Jungtiere bleiben in der Prosa, weil kein sicher bestätigter strukturierter Nachwuchs-Typ verwendet wird. Im bereitgestellten Auszug ist kein separates Illustrationsbild enthalten."
     },
     "projekt": {
       "name": "PlanetZoo2-Projekt",

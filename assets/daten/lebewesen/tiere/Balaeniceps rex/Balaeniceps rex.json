@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Feuchtgebiete", "Tropen"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -195,7 +195,7 @@
           "wert": "freshwaterSwamp",
           "hinweis": {
             "de": "Die Zoopedia nennt tropische Süßwassersümpfe Ostafrikas als Lebensraum.",
-            "en": "The Zoopedia names tropical freshwater swamps of East Africa as habitat."
+            "en": "The Zoopedia names tropical freshwater swamps of East Afrika as habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -204,7 +204,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -217,7 +217,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt den Schuhschnabel als Jäger großer Fische und anderer Beutetiere.",
               "en": "The Zoopedia describes the Shoebill as a hunter of large fish and other prey."
@@ -262,14 +262,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Africa. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
+          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Afrika. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Africa. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
+          "inhalt": "The Shoebill (Balaeniceps rex) is a large, solitary wading bird of the tropical freshwater swamps of East Afrika. It favors still, oxygen-poor water, where fish move more slowly and are easier to hunt.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -342,7 +342,7 @@ export async function datenImportieren() {
         wissenschaftlicherName,
 
         filter: {
-          edition: filter.edition ?? "standard",
+          edition: filter.edition ?? "Standard",
 
           gehegetyp: alsArray(filter.gehegetyp),
 

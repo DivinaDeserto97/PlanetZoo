@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -73,7 +73,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -149,7 +149,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -162,7 +162,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "quelle": "planetZoo2"
           }
         ]
@@ -270,14 +270,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Africa.",
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Africa.",
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is distributed across the savannas of sub-Saharan Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -298,7 +298,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il serpentario (Sagittarius serpentarius) è diffuso nelle savane dell’Africa subsahariana.",
+          "inhalt": "Il serpentario (Sagittarius serpentarius) è diffuso nelle savane dell’Afrika subsahariana.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -334,14 +334,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Africa.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Afrika.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Africa.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
+          "inhalt": "The Secretarybird (Sagittarius serpentarius) is a large bird of prey found across the savannas of sub-Saharan Afrika.\n\nIt has long legs, a white-feathered body with black flight feathers on the wings and black feathers on the thighs. Its hooked bill is pale, and the skin around the eyes is orange-red. A distinctive crest of black and white feathers projects from the back of its head.\n\nBoth males and females stand 1.2–1.5 m tall, have a wingspan of 1.9–2.2 m and weigh 3.7–4.3 kg. Some males have slightly longer tail feathers or crests than females, but the sexes generally look very similar.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -362,7 +362,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il serpentario (Sagittarius serpentarius) è un grande rapace delle savane dell’Africa subsahariana.\n\nHa zampe lunghe, corpo ricoperto di piume bianche, remiganti nere e piume nere sulle cosce. Il becco uncinato è chiaro e la zona intorno agli occhi è rosso-arancio. Sul retro della testa presenta una caratteristica cresta di piume bianche e nere.\n\nMaschi e femmine sono alti 1,2–1,5 m, hanno un’apertura alare di 1,9–2,2 m e pesano 3,7–4,3 kg. Alcuni maschi hanno penne della coda o della cresta leggermente più lunghe, ma i sessi sono molto simili.",
+          "inhalt": "Il serpentario (Sagittarius serpentarius) è un grande rapace delle savane dell’Afrika subsahariana.\n\nHa zampe lunghe, corpo ricoperto di piume bianche, remiganti nere e piume nere sulle cosce. Il becco uncinato è chiaro e la zona intorno agli occhi è rosso-arancio. Sul retro della testa presenta una caratteristica cresta di piume bianche e nere.\n\nMaschi e femmine sono alti 1,2–1,5 m, hanno un’apertura alare di 1,9–2,2 m e pesano 3,7–4,3 kg. Alcuni maschi hanno penne della coda o della cresta leggermente più lunghe, ma i sessi sono molto simili.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

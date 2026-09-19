@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["southAmerica"],
+    "kontinente": ["Südamerika"],
     "biome": ["Tropen", "Graslandschaft"],
     "schutzstatus": ""
   },
@@ -183,7 +183,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -196,7 +196,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt für Raupen Pflanzen und für ausgewachsene Falter hauptsächlich gegorene Früchte als Nahrung.",
               "en": "The Zoopedia lists plants for caterpillars and mainly fermented fruit for adult butterflies."

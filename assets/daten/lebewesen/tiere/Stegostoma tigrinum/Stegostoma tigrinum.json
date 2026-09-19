@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Ästuar", "Mangrove", "Offenes Meer", "Riff"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -96,11 +96,11 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die strukturierte Statusangabe der Zoopedia lautet „Gefährdet“. Im Fließtext steht dagegen „stark gefährdet“. Dieser Widerspruch wurde nicht extern aufgelöst.",
-            "en": "The Zoopedia's structured status field says 'Endangered', while the conservation text says 'strongly endangered'. This inconsistency was not resolved using external sources."
+            "en": "The Zoopedia's structured status field says 'Endangered', while the conservation text says 'strongly Stark gefährdet'. This inconsistency was not resolved using external sources."
           },
           "quelle": "planetZoo2"
         }
@@ -257,7 +257,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -315,14 +315,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East African coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
+          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East Afrikan coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East African coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
+          "inhalt": "The Indo-Pacific Leopard Shark (Stegostoma tigrinum), also known as the Zebra Shark, occurs throughout the tropical Indo-Pacific, from the Red Sea and East Afrikan coast to Southeast Asia, northern Australia and southern Japan. It lives on coral reefs, in sandy lagoons and seagrass meadows at depths of 0 to 60 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

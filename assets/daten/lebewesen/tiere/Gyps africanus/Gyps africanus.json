@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -189,7 +189,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -202,7 +202,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Der Weißrückengeier wird in der Zoopedia als obligater Aasfresser beschrieben.",
               "en": "The White-backed Vulture is described by the Zoopedia as an obligate scavenger."
@@ -294,14 +294,14 @@
       ],
       "en": [
         {
-          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Africa, from Senegal and Ethiopia in the north to South Africa in the south, mainly in open savannas, dry woodland and grassland.",
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and grassland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Africa, from Senegal and Ethiopia in the north to South Africa in the south, mainly in open savannas, dry woodland and grassland.",
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and grassland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

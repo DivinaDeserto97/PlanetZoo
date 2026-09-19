@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Wüste"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -110,7 +110,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "IUCN",
           "quelle": "iucn"
         }
@@ -215,7 +215,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Löwen jagen häufig nachts und in den frühen Morgenstunden.",
             "en": "Lions frequently hunt at night and into the early morning."
@@ -223,7 +223,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Auch in der Dämmerung sind Löwen regelmäßig aktiv.",
             "en": "Lions are also regularly active around twilight."
@@ -236,7 +236,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "quelle": "smithsonianLion"
           }
         ]
@@ -438,20 +438,20 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Löwen leben heute vor allem in Afrika südlich der Sahara. Eine kleine asiatische Population lebt im Gir-Wald und seiner Umgebung im indischen Bundesstaat Gujarat. Sie besiedeln unter anderem Savannen, Grasländer, offene Waldlandschaften, Buschland und trockene Dornwälder.",
+          "inhalt": "Löwen leben heute vor allem in Afrika südlich der Sahara. Eine kleine Asientische Population lebt im Gir-Wald und seiner Umgebung im indischen Bundesstaat Gujarat. Sie besiedeln unter anderem Savannen, Grasländer, offene Waldlandschaften, Buschland und trockene Dornwälder.",
           "quelle": "smithsonianLion",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en": [
         {
-          "inhalt": "Lions now live mainly in sub-Saharan Africa. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
+          "inhalt": "Lions now live mainly in sub-Saharan Afrika. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
           "quelle": "smithsonianLion"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Lions now live mainly in sub-Saharan Africa. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
+          "inhalt": "Lions now live mainly in sub-Saharan Afrika. A small Asian population survives in and around the Gir Forest in Gujarat, India. They occupy habitats including savannas, grasslands, open woodland, scrub and dry thorn forest.",
           "quelle": "smithsonianLion"
         }
       ]
@@ -738,7 +738,7 @@
       }
     },
     "africanWildlifeFoundation": {
-      "name": "African Wildlife Foundation – Lion",
+      "name": "Afrikan Wildlife Foundation – Lion",
       "seiten": {
         "en": "https://www.awf.org/wildlife-conservation/lion"
       }

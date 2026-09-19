@@ -18,15 +18,15 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
 
 ### JSON-Datentypen
 
-| Schreibweise     | Bedeutung                                  | Beispiel             |
-| ---------------- | ------------------------------------------ | -------------------- |
-| `"Text"`         | Text                                       | `"Löwe"`             |
-| `123`            | Zahl                                       | `415000`             |
-| `1.5`            | Dezimalzahl                                | `7.6`                |
-| `true` / `false` | Ja/Nein                                    | `true`               |
-| `null`           | Wert derzeit nicht bekannt / nicht gesetzt | `null`               |
-| `[]`             | Liste                                      | `["Africa", "asia"]` |
-| `{}`             | Objekt mit Unterfeldern                    | `{ "de": "Text" }`   |
+| Schreibweise     | Bedeutung                                  | Beispiel              |
+| ---------------- | ------------------------------------------ | --------------------- |
+| `"Text"`         | Text                                       | `"Löwe"`              |
+| `123`            | Zahl                                       | `415000`              |
+| `1.5`            | Dezimalzahl                                | `7.6`                 |
+| `true` / `false` | Ja/Nein                                    | `true`                |
+| `null`           | Wert derzeit nicht bekannt / nicht gesetzt | `null`                |
+| `[]`             | Liste                                      | `["Afrika", "Asien"]` |
+| `{}`             | Objekt mit Unterfeldern                    | `{ "de": "Text" }`    |
 
 ### Wichtig
 
@@ -79,8 +79,8 @@ Nicht den deutschen Namen verwenden.
 "identitaet": {
   "namen": {
     "de": "Afrikanischer Savannenelefant",
-    "en": "African Savanna Elephant",
-    "en-US": "African Savanna Elephant",
+    "en": "Afrikan Savanna Elephant",
+    "en-US": "Afrikan Savanna Elephant",
     "es": "",
     "fr": "",
     "it": "",
@@ -113,18 +113,18 @@ Die Werte unter `filter` steuern die Filter auf `home.html` und `map.html`.
 
 ```json
 "filter": {
-  "edition": "standard",
+  "edition": "Standard",
   "gehegetyp": [
     "Landgehege"
   ],
   "kontinente": [
-    "Africa"
+    "Afrika"
   ],
   "biome": [
     "Graslandschaft",
     "Wüste"
   ],
-  "schutzstatus": "endangered"
+  "schutzstatus": "Stark gefährdet"
 }
 ```
 
@@ -134,13 +134,13 @@ Die Werte unter `filter` steuern die Filter auf `home.html` und `map.html`.
 
 | Anzeige    | JSON-Wert  |
 | ---------- | ---------- |
-| Basisspiel | `standard` |
-| Deluxe     | `deluxe`   |
+| Basisspiel | `Standard` |
+| Deluxe     | `Deluxe`   |
 
 Beispiel:
 
 ```json
-"edition": "standard"
+"edition": "Standard"
 ```
 
 ---
@@ -179,20 +179,20 @@ Tier mit mehreren passenden Typen:
 
 **Eine oder mehrere Angaben möglich.**
 
-| Anzeige     | JSON-Wert      |
-| ----------- | -------------- |
-| Afrika      | `africa`       |
-| Asien       | `asia`         |
-| Europa      | `europe`       |
-| Nordamerika | `northAmerica` |
-| Südamerika  | `southAmerica` |
-| Ozeanien    | `oceania`      |
+| Anzeige     | JSON-Wert     |
+| ----------- | ------------- |
+| Afrika      | `africa`      |
+| Asien       | `Asien`       |
+| Europa      | `Europa`      |
+| Nordamerika | `Nordamerika` |
+| Südamerika  | `Südamerika`  |
+| Ozeanien    | `Ozeanien`    |
 
 Beispiel:
 
 ```json
 "kontinente": [
-  "Africa"
+  "Afrika"
 ]
 ```
 
@@ -239,18 +239,18 @@ Beispiel:
 
 **Genau einen Wert auswählen.**
 
-| Anzeige                | JSON-Wert              |
-| ---------------------- | ---------------------- |
-| Nicht gefährdet        | `leastConcern`         |
-| Potenziell gefährdet   | `nearThreatened`       |
-| Gefährdet              | `vulnerable`           |
-| Stark gefährdet        | `endangered`           |
-| Vom Aussterben bedroht | `criticallyEndangered` |
+| Anzeige                | JSON-Wert                |
+| ---------------------- | ------------------------ |
+| Nicht gefährdet        | `Nicht gefährdet`        |
+| Potenziell gefährdet   | `Potenziell gefährdet`   |
+| Gefährdet              | `Gefährdet`              |
+| Stark gefährdet        | `Stark gefährdet`        |
+| Vom Aussterben bedroht | `Vom Aussterben bedroht` |
 
 Beispiel:
 
 ```json
-"schutzstatus": "endangered"
+"schutzstatus": "Stark gefährdet"
 ```
 
 Der gleiche interne Wert kann unter `daten.schutzstatus.werte[].wert` verwendet werden.
@@ -395,7 +395,7 @@ Falls kein belastbarer Wert vorhanden ist:
 "schutzstatus": {
   "werte": [
     {
-      "wert": "endangered",
+      "wert": "Stark gefährdet",
       "system": "IUCN",
       "quelle": "iucn"
     }
@@ -405,11 +405,11 @@ Falls kein belastbarer Wert vorhanden ist:
 
 Für `wert` möglichst dieselben internen Werte wie beim Filter verwenden:
 
-- `leastConcern`
-- `nearThreatened`
-- `vulnerable`
-- `endangered`
-- `criticallyEndangered`
+- `Nicht gefährdet`
+- `Potenziell gefährdet`
+- `Gefährdet`
+- `Stark gefährdet`
+- `Vom Aussterben bedroht`
 
 ---
 
@@ -613,7 +613,7 @@ Diese Liste ist **erweiterbar** und keine feste technische Auswahl.
 "aktivitaet": {
   "werte": [
     {
-      "wert": "nocturnal",
+      "wert": "Nachtaktiv",
       "beschreibung": {
         "de": "Nachtaktiv.",
         "en": "Nocturnal."
@@ -626,8 +626,8 @@ Diese Liste ist **erweiterbar** und keine feste technische Auswahl.
 
 Bisher verwendet:
 
-- `nocturnal` = nachtaktiv
-- `crepuscular` = dämmerungsaktiv
+- `Nachtaktiv` = nachtaktiv
+- `Dämmerungsaktiv` = dämmerungsaktiv
 - `cathemeral` = über Tag und Nacht verteilt aktiv
 
 Diese Werte sind momentan nicht technisch fest begrenzt.
@@ -640,7 +640,7 @@ Diese Werte sind momentan nicht technisch fest begrenzt.
 "fressverhalten": {
   "werte": [
     {
-      "wert": "herbivore",
+      "wert": "Pflanzenfresser",
       "quelle": "quelleId"
     }
   ]
@@ -649,8 +649,8 @@ Diese Werte sind momentan nicht technisch fest begrenzt.
 
 Bisher verwendet:
 
-- `herbivore`
-- `carnivore`
+- `Pflanzenfresser`
+- `Fleischfresser`
 - `insectivore`
 - `myrmecophagous`
 - `grazerAndBrowser`
@@ -1249,7 +1249,7 @@ Beispiel:
         "url": "https://...",
         "alt": {
           "de": "Afrikanischer Savannenelefant",
-          "en": "African savanna elephant"
+          "en": "Afrikan savanna elephant"
         },
         "beschreibung": {
           "de": "...",
@@ -1365,7 +1365,7 @@ Aktuell verwendet:
         "reihe": "Go Wild",
         "titel": {
           "de": "Go Wild – Afrikanischer Savannenelefant",
-          "en": "Go Wild – African Savanna Elephant"
+          "en": "Go Wild – Afrikan Savanna Elephant"
         },
         "quelle": "goWild",
         "url": "",
@@ -1440,7 +1440,7 @@ Beispiel:
 ```json
 "quellen": {
   "iucn": {
-    "name": "IUCN – African Savanna Elephant",
+    "name": "IUCN – Afrikan Savanna Elephant",
     "seiten": {
       "en": "https://..."
     }
@@ -1516,8 +1516,8 @@ Die URL gehört unter `quellen -> Quellen-ID -> seiten`.
 ### `filter.edition`
 
 ```text
-standard
-deluxe
+Standard
+Deluxe
 ```
 
 ### `filter.gehegetyp[]`
@@ -1533,11 +1533,11 @@ Ausstellung
 
 ```text
 africa
-asia
-europe
-northAmerica
-southAmerica
-oceania
+Asien
+Europa
+Nordamerika
+Südamerika
+Ozeanien
 ```
 
 ### `filter.biome[]`
@@ -1560,11 +1560,11 @@ Wüste
 ### `filter.schutzstatus`
 
 ```text
-leastConcern
-nearThreatened
-vulnerable
-endangered
-criticallyEndangered
+Nicht gefährdet
+Potenziell gefährdet
+Gefährdet
+Stark gefährdet
+Vom Aussterben bedroht
 ```
 
 ---
@@ -1691,11 +1691,11 @@ unsichereVerwandtschaft
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft", "Wüste"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "ernaehrung": {

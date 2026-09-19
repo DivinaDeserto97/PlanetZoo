@@ -3,22 +3,22 @@
   "identitaet": {
     "namen": {
       "de": "Rohrdommel",
-      "en": "Eurasian Bittern",
-      "en-US": "Eurasian Bittern",
+      "en": "EurAsienn Bittern",
+      "en-US": "EurAsienn Bittern",
       "es": "Avetoro común",
       "fr": "Butor étoilé",
-      "it": "Tarabuso eurasiatico",
+      "it": "Tarabuso eurAsientico",
       "pt-BR": "Abetouro-eurasiático",
       "ja": "サンカノゴイ",
       "zh-Hans": "大麻鳽"
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["europe", "asia", "Africa"],
+    "kontinente": ["Europa", "Asien", "Afrika"],
     "biome": ["Feuchtgebiete", "Gemäßigt", "Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -76,7 +76,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -160,7 +160,7 @@
           "maxGruppengroesse": 1,
           "hinweis": {
             "de": "Rohrdommeln sind Einzelgänger, tolerieren außerhalb der Paarungszeit jedoch andere Artgenossen. Dauerhafte Paarbindungen werden nicht gebildet.",
-            "en": "Eurasian Bitterns are solitary but tolerate other conspecifics outside the mating season. They do not form lasting pair bonds."
+            "en": "EurAsienn Bitterns are solitary but tolerate other conspecifics outside the mating season. They do not form lasting pair bonds."
           },
           "quelle": "planetZoo2"
         }
@@ -181,7 +181,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -189,7 +189,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -202,7 +202,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt ausschließlich tierische Beute: Fische, Amphibien, Insekten und kleine Säugetiere.",
               "en": "The Zoopedia lists only animal prey: fish, amphibians, insects and small mammals."
@@ -247,14 +247,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Africa. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
+          "inhalt": "The EurAsienn Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Afrika. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Africa. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
+          "inhalt": "The EurAsienn Bittern (Botaurus stellaris), also known as the Great Bittern, occurs in Europe, Asia and parts of North Afrika. It inhabits dense reedbeds and freshwater wetlands with lush vegetation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -364,7 +364,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_Eurasian_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_EurAsienn_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -385,11 +385,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYjgxMGNhYTgvQml0dGVybl9FdXJhc2lhbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMTY4LCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
           "alt": {
             "de": "Rohrdommel – Planet Zoo 2",
-            "en": "Eurasian Bittern – Planet Zoo 2"
+            "en": "EurAsienn Bittern – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild der Rohrdommel aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Bittern."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the EurAsienn Bittern."
           },
           "metadaten": [""],
           "dateien": [
@@ -409,14 +409,14 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_Eurasian_illustration.jpg",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/b810caa8/Bittern_EurAsienn_illustration.jpg",
           "alt": {
             "de": "Rohrdommel – Zoopedia-Illustration",
-            "en": "Eurasian Bittern – Zoopedia illustration"
+            "en": "EurAsienn Bittern – Zoopedia illustration"
           },
           "beschreibung": {
             "de": "Illustration der Rohrdommel aus der Planet Zoo 2 Zoopedia.",
-            "en": "Eurasian Bittern illustration from the Planet Zoo 2 Zoopedia."
+            "en": "EurAsienn Bittern illustration from the Planet Zoo 2 Zoopedia."
           },
           "metadaten": [""],
           "dateien": [
@@ -450,7 +450,7 @@
         "ja": "",
         "zh-Hans": ""
       },
-      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b810caa8 und Asset-Stamm Bittern_Eurasian belegt. Die Angabe 69–81 cm 'groß' wurde nicht als Körperlänge interpretiert."
+      "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b810caa8 und Asset-Stamm Bittern_EurAsienn belegt. Die Angabe 69–81 cm 'groß' wurde nicht als Körperlänge interpretiert."
     },
     "animalDiversityWeb": {
       "name": "Animal Diversity Web – Botaurus stellaris",

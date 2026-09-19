@@ -3,22 +3,22 @@
   "identitaet": {
     "namen": {
       "de": "Eurasischer Luchs",
-      "en": "Eurasian Lynx",
-      "en-US": "Eurasian Lynx",
+      "en": "EurAsienn Lynx",
+      "en-US": "EurAsienn Lynx",
       "es": "Lince boreal",
       "fr": "Lynx boréal",
-      "it": "Lince europea",
+      "it": "Lince Europaa",
       "pt-BR": "Lince-euroasiático",
       "ja": "オオヤマネコ",
       "zh-Hans": "欧亚猞猁"
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Gemäßigt", "Taiga"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -109,7 +109,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -220,7 +220,7 @@
           "maxGruppengroesse": 1,
           "hinweis": {
             "de": "In freier Wildbahn sind Eurasische Luchse Einzelgänger; eine Ausnahme bilden Mütter mit ihren Jungen.",
-            "en": "In the wild Eurasian Lynx are solitary, except for mothers with their young."
+            "en": "In the wild EurAsienn Lynx are solitary, except for mothers with their young."
           },
           "quelle": "planetZoo2"
         },
@@ -279,7 +279,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -287,7 +287,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -300,10 +300,10 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt den Eurasischen Luchs als Raubtier und nennt Rehe als wichtige Beutetiere.",
-              "en": "The Zoopedia describes the Eurasian Lynx as a predator and names roe deer as important prey."
+              "en": "The Zoopedia describes the EurAsienn Lynx as a predator and names roe deer as important prey."
             },
             "quelle": "planetZoo2"
           }
@@ -345,14 +345,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
+          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
+          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -462,7 +462,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bd4f6b05/Lynx_Eurasian_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bd4f6b05/Lynx_EurAsienn_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -483,11 +483,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYmQ0ZjZiMDUvTHlueF9FdXJhc2lhbi5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyODgwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiIyZGZmNjliZC1iODE4LTQ0NjUtYmY1My05NWM2YmEyMWQxOGQifX0=",
           "alt": {
             "de": "Eurasischer Luchs – Planet Zoo 2",
-            "en": "Eurasian Lynx – Planet Zoo 2"
+            "en": "EurAsienn Lynx – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild des Eurasischen Luchses aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Lynx."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the EurAsienn Lynx."
           },
           "metadaten": [""],
           "dateien": [
@@ -507,14 +507,14 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bd4f6b05/Lynx_Eurasian_illustration.jpg",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/bd4f6b05/Lynx_EurAsienn_illustration.jpg",
           "alt": {
             "de": "Eurasischer Luchs – Zoopedia-Illustration",
-            "en": "Eurasian Lynx – Zoopedia illustration"
+            "en": "EurAsienn Lynx – Zoopedia illustration"
           },
           "beschreibung": {
             "de": "Illustration des Eurasischen Luchses aus der Planet Zoo 2 Zoopedia.",
-            "en": "Eurasian Lynx illustration from the Planet Zoo 2 Zoopedia."
+            "en": "EurAsienn Lynx illustration from the Planet Zoo 2 Zoopedia."
           },
           "metadaten": [""],
           "dateien": [
@@ -539,11 +539,11 @@
       "name": "Planet Zoo 2 Zoopedia – Eurasischer Luchs",
       "seiten": {
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/eurasischer-luchs",
-        "en": "https://www.planetzoogame.com/2/zoopedia/eurasian-lynx",
-        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/eurasian-lynx",
+        "en": "https://www.planetzoogame.com/2/zoopedia/eurAsienn-lynx",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/eurAsienn-lynx",
         "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/lince-boreal",
         "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/lynx-bor%C3%A9al",
-        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/lince-europea",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/lince-Europaa",
         "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/lince-euroasi%C3%A1tico",
         "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%AA%E3%82%AA%E3%83%A4%E3%83%9E%E3%83%8D%E3%82%B3",
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%AC%A7%E4%BA%9A%E7%8C%9E%E7%8C%81"

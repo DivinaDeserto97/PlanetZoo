@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -68,7 +68,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -149,7 +149,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -162,7 +162,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -357,14 +357,14 @@
       ],
       "en": [
         {
-          "inhalt": "Sumatran orangutans are critically endangered. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
+          "inhalt": "Sumatran orangutans are critically Stark gefährdet. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Sumatran orangutans are critically endangered. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
+          "inhalt": "Sumatran orangutans are critically Stark gefährdet. Their decline is primarily caused by habitat loss, illegal killing and trade. Between 1985 and 2014, Sumatra's rainforest area shrank dramatically, and large areas are still cleared for palm-oil plantations, logging and other agriculture. This destroys and fragments habitat and makes it harder for orangutans to find food and mates. Despite legal protection, orangutans are sometimes captured for the animal trade or killed for meat or because they are considered pests on plantations. Their slow reproductive rate means even a small number of deaths can have a major effect on population survival.\n\nConservation measures include habitat protection, rehabilitation and community-based conservation. Orangutans confiscated from illegal trade are rehabilitated and released into protected areas. Conservation organisations also work with local communities to promote sustainable livelihoods and reduce pressure to convert rainforest into plantations. Global efforts to raise awareness, reduce consumer demand for palm oil and strengthen protection against illegal logging are gradually helping address the causes of habitat destruction.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -501,7 +501,7 @@
       ],
       "en": [
         {
-          "inhalt": "Orangutans are the only great ape species that does not live in Africa.",
+          "inhalt": "Orangutans are the only great ape species that does not live in Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -528,7 +528,7 @@
       ],
       "en-US": [
         {
-          "inhalt": "Orangutans are the only great ape species that does not live in Africa.",
+          "inhalt": "Orangutans are the only great ape species that does not live in Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

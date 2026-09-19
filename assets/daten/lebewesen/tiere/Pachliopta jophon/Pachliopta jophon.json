@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Tropen"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -64,7 +64,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Stark gefährdet“ an.",
@@ -177,7 +177,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -190,7 +190,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -386,14 +386,14 @@
       ],
       "en": [
         {
-          "inhalt": "Pachliopta jophon is considered endangered. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
+          "inhalt": "Pachliopta jophon is considered Stark gefährdet. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Pachliopta jophon is considered endangered. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
+          "inhalt": "Pachliopta jophon is considered Stark gefährdet. It is affected by loss of its already restricted habitat as tropical forest is cleared for agriculture. It is also sought after by insect collectors and may be affected by illegal wildlife trade.\n\nRemaining forest habitat is protected and studied scientifically, and trade in the species is subject to some regulation. Its outlook remains uncertain because current information about the species and population trends is limited.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

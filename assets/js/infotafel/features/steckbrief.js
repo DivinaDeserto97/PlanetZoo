@@ -170,11 +170,11 @@ function getSocialIcon(value) {
 
 function getActivityIcon(value) {
   const icons = {
-    diurnal: "☀",
+    Tagaktiv: "☀",
 
-    nocturnal: "🌙",
+    Nachtaktiv: "🌙",
 
-    crepuscular: "◐",
+    Dämmerungsaktiv: "◐",
   };
 
   return icons[value] ?? "◐";
@@ -182,11 +182,11 @@ function getActivityIcon(value) {
 
 function getDietIcon(value) {
   const icons = {
-    carnivore: "🥩",
+    Fleischfresser: "🥩",
 
-    herbivore: "🌿",
+    Pflanzenfresser: "🌿",
 
-    omnivore: "🍽",
+    Allesfresser: "🍽",
   };
 
   return icons[value] ?? "🍽";

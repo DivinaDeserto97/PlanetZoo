@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["asia"],
+    "kontinente": ["Asien"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -81,7 +81,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -196,7 +196,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -204,7 +204,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -217,7 +217,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -256,7 +256,7 @@
     "vorkommen": {
       "de": [
         {
-          "inhalt": "Das Przewalski-Pferd (Equus ferus przewalskii), auch Tachi, Mongolisches Wildpferd oder Asiatisches Wildpferd genannt, lebt in der Steppe der Mongolei. Nach seiner Ausrottung in freier Wildbahn wurde es wieder in asiatischen Steppengebieten ausgewildert; die Zoopedia nennt heutige Bestände in Schutzgebieten der Mongolei, Kasachstans und auch der Ukraine.",
+          "inhalt": "Das Przewalski-Pferd (Equus ferus przewalskii), auch Tachi, Mongolisches Wildpferd oder Asiatisches Wildpferd genannt, lebt in der Steppe der Mongolei. Nach seiner Ausrottung in freier Wildbahn wurde es wieder in Asientischen Steppengebieten ausgewildert; die Zoopedia nennt heutige Bestände in Schutzgebieten der Mongolei, Kasachstans und auch der Ukraine.",
           "quelle": "planetZoo2"
         }
       ],
@@ -300,7 +300,7 @@
     "arterhaltung": {
       "de": [
         {
-          "inhalt": "Das Przewalski-Pferd war in den 1960er Jahren infolge von Lebensraumverlust und übermäßiger Jagd in freier Wildbahn ausgestorben beziehungsweise nur noch in Gefangenschaft erhalten. Heute gilt der wiedereingeführte Bestand als stark gefährdet. Die Umwandlung zentralasiatischer Grasländer in Ackerland, Jagd zur Fleischgewinnung und das Einfangen für Zoos hatten den Bestand stark reduziert.\n\nDie verbliebenen Tiere in Gefangenschaft bildeten die Grundlage eines Zucht- und Wiederansiedlungsprogramms. Ab 1992 wurden in Gefangenschaft gezüchtete Pferde wieder in ihrem natürlichen Lebensraum freigelassen. Die Zoopedia beschreibt heute gedeihende Bestände in Schutzgebieten der Mongolei, Kasachstans und der Ukraine und bezeichnet die Wiederansiedlung als einen besonders erfolgreichen Fall bei großen Säugetieren.",
+          "inhalt": "Das Przewalski-Pferd war in den 1960er Jahren infolge von Lebensraumverlust und übermäßiger Jagd in freier Wildbahn ausgestorben beziehungsweise nur noch in Gefangenschaft erhalten. Heute gilt der wiedereingeführte Bestand als stark gefährdet. Die Umwandlung zentralAsientischer Grasländer in Ackerland, Jagd zur Fleischgewinnung und das Einfangen für Zoos hatten den Bestand stark reduziert.\n\nDie verbliebenen Tiere in Gefangenschaft bildeten die Grundlage eines Zucht- und Wiederansiedlungsprogramms. Ab 1992 wurden in Gefangenschaft gezüchtete Pferde wieder in ihrem natürlichen Lebensraum freigelassen. Die Zoopedia beschreibt heute gedeihende Bestände in Schutzgebieten der Mongolei, Kasachstans und der Ukraine und bezeichnet die Wiederansiedlung als einen besonders erfolgreichen Fall bei großen Säugetieren.",
           "quelle": "planetZoo2"
         }
       ],

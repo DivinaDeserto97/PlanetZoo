@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -72,7 +72,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an. Ein Bewertungssystem wird auf der bereitgestellten Seite nicht ausdrücklich genannt.",
@@ -206,7 +206,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -219,7 +219,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia beschreibt Tüpfelhyänen ausdrücklich als Raubtiere und ausgezeichnete Jäger; zugleich fressen sie Aas.",
               "en": "The Zoopedia explicitly describes spotted hyenas as predators and excellent hunters, while also noting that they eat carrion."
@@ -368,14 +368,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Spotted Hyena (Crocuta crocuta) is native to sub-Saharan Africa. It is a highly adaptable predator that can survive in many environments, although the Zoopedia states that it does not occur in rainforests or deserts.",
+          "inhalt": "The Spotted Hyena (Crocuta crocuta) is native to sub-Saharan Afrika. It is a highly adaptable predator that can survive in many environments, although the Zoopedia states that it does not occur in rainforests or deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Spotted Hyena (Crocuta crocuta) is native to sub-Saharan Africa. It is a highly adaptable predator that can survive in many environments, although the Zoopedia states that it does not occur in rainforests or deserts.",
+          "inhalt": "The Spotted Hyena (Crocuta crocuta) is native to sub-Saharan Afrika. It is a highly adaptable predator that can survive in many environments, although the Zoopedia states that it does not occur in rainforests or deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

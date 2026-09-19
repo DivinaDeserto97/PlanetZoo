@@ -3,8 +3,8 @@
   "identitaet": {
     "namen": {
       "de": "Afrikanischer Savannenelefant",
-      "en": "African Savanna Elephant",
-      "en-US": "African Savanna Elephant",
+      "en": "Afrikan Savanna Elephant",
+      "en-US": "Afrikan Savanna Elephant",
       "es": "Elefante africano de sabana",
       "fr": "Éléphant de savane d’Afrique",
       "it": "Elefante africano di savana",
@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Feuchtgebiete", "Graslandschaft", "Wüste"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -106,7 +106,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "IUCN",
           "quelle": "iucn"
         }
@@ -121,7 +121,7 @@
           "jahrDerGrundlage": 2016,
           "hinweis": {
             "de": "Die häufig zitierte Zahl von rund 415.000 gilt für afrikanische Savannen- und Waldelefanten zusammen. Sie darf nicht als aktuelle Populationszahl nur von Loxodonta africana interpretiert werden.",
-            "en": "The often-cited figure of about 415,000 covers African savanna and forest elephants combined and must not be interpreted as a current population estimate for Loxodonta africana alone."
+            "en": "The often-cited figure of about 415,000 covers Afrikan savanna and forest elephants combined and must not be interpreted as a current population estimate for Loxodonta africana alone."
           },
           "quelle": "iucn"
         }
@@ -223,7 +223,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "quelle": "animalDiversityWeb"
           },
           {
@@ -428,13 +428,13 @@
       ],
       "en": [
         {
-          "inhalt": "The African savanna elephant occurs in numerous fragmented populations across sub-Saharan Africa. It is found mainly in eastern, central and southern Africa and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
           "quelle": "animalDiversityWeb"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African savanna elephant occurs in numerous fragmented populations across sub-Saharan Africa. It is found mainly in eastern, central and southern Africa and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
           "quelle": "animalDiversityWeb"
         }
       ],
@@ -454,7 +454,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’elefante africano di savana vive in numerose popolazioni frammentate dell’Africa subsahariana. È presente soprattutto nell’Africa orientale, centrale e meridionale e utilizza savane, praterie, boschi, pianure alluvionali e ambienti più aridi.",
+          "inhalt": "L’elefante africano di savana vive in numerose popolazioni frammentate dell’Afrika subsahariana. È presente soprattutto nell’Afrika orientale, centrale e meridionale e utilizza savane, praterie, boschi, pianure alluvionali e ambienti più aridi.",
           "quelle": "animalDiversityWeb",
           "uebersetzung": "ChatGPT"
         }
@@ -491,13 +491,13 @@
       ],
       "en": [
         {
-          "inhalt": "The African savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
+          "inhalt": "The Afrikan savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
           "quelle": "animalDiversityWeb"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The African savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
+          "inhalt": "The Afrikan savanna elephant (Loxodonta africana) is the largest living land animal. It is characterized by a muscular trunk, large ears and tusks that may occur in both sexes. Elephants strongly modify their surroundings and are therefore important ecosystem engineers.",
           "quelle": "animalDiversityWeb"
         }
       ],
@@ -554,13 +554,13 @@
       ],
       "en": [
         {
-          "inhalt": "The IUCN lists the African savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
+          "inhalt": "The IUCN lists the Afrikan savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
           "quelle": "iucn"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The IUCN lists the African savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
+          "inhalt": "The IUCN lists the Afrikan savanna elephant as Endangered. Major threats include ivory poaching, habitat loss and fragmentation, and increasing conflict between people and elephants.",
           "quelle": "iucn"
         }
       ],
@@ -685,7 +685,7 @@
       ],
       "en": [
         {
-          "inhalt": "African elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
+          "inhalt": "Afrikan elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
           "quelle": "elephantCommunicationResearch"
         },
         {
@@ -695,7 +695,7 @@
       ],
       "en-US": [
         {
-          "inhalt": "African elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
+          "inhalt": "Afrikan elephants communicate using very low-frequency calls, some of which extend into the infrasonic range.",
           "quelle": "elephantCommunicationResearch"
         },
         {
@@ -726,7 +726,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c7efe7fa/Elephant_AfricanSavannah_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/c7efe7fa/Elephant_AfrikanSavannah_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -752,11 +752,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYzdlZmU3ZmEvRWxlcGhhbnRfQWZyaWNhblNhdmFubmFoLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImNlMmQ5NDdkLTEwMzEtNDUyNS05Yjk4LTNlMGNmYTljYzA5NSJ9fQ==",
           "alt": {
             "de": "Afrikanischer Savannenelefant",
-            "en": "African savanna elephant"
+            "en": "Afrikan savanna elephant"
           },
           "beschreibung": {
             "de": "Ein Afrikanischer Savannenelefant steht in einer trockenen Savannenlandschaft zwischen hohem gelblichem Gras. Im Hintergrund sind einzelne Bäume, Sträucher und felsige Hügel unter blauem Himmel zu sehen.",
-            "en": "An African savanna elephant stands in a dry savanna landscape among tall yellowish grass. Scattered trees, shrubs and rocky hills can be seen in the background under a blue sky."
+            "en": "An Afrikan savanna elephant stands in a dry savanna landscape among tall yellowish grass. Scattered trees, shrubs and rocky hills can be seen in the background under a blue sky."
           },
           "metadaten": [""],
           "dateien": [
@@ -779,11 +779,11 @@
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Elephant_near_ndutu.jpg/960px-Elephant_near_ndutu.jpg?utm_source=de.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
           "alt": {
             "de": "Afrikanischer Savannenelefant",
-            "en": "African savanna elephant"
+            "en": "Afrikan savanna elephant"
           },
           "beschreibung": {
             "de": "Ein Afrikanischer Savannenelefant steht frontal auf einer grünen Grasfläche. Seine großen ausgebreiteten Ohren, der lange Rüssel und die Stoßzähne sind deutlich zu erkennen; im Hintergrund befindet sich dichter grüner Bewuchs mit Bäumen und Sträuchern.",
-            "en": "An African savanna elephant stands facing the camera on a green grassy area. Its large spread ears, long trunk and tusks are clearly visible, with dense green vegetation, trees and shrubs in the background."
+            "en": "An Afrikan savanna elephant stands facing the camera on a green grassy area. Its large spread ears, long trunk and tusks are clearly visible, with dense green vegetation, trees and shrubs in the background."
           },
           "metadaten": [""],
           "dateien": [
@@ -959,7 +959,7 @@
           "dauerSekunden": 39,
           "beschreibung": {
             "de": "Sammlung von Verhaltensbeispielen des Afrikanischen Savannenelefanten mit zahlreichen Video- und Audioaufnahmen. Für das Kino kann später ein konkreter lokal gespeicherter Film oder Ausschnitt ausgewählt werden.",
-            "en": "A collection of African savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
+            "en": "A collection of Afrikan savanna elephant behavior examples containing numerous video and audio recordings. A specific locally stored film or excerpt can later be selected for the cinema tool."
           }
         }
       ]
@@ -972,7 +972,7 @@
           "reihe": "Go Wild",
           "titel": {
             "de": "Go Wild – Afrikanischer Savannenelefant",
-            "en": "Go Wild – African Savanna Elephant"
+            "en": "Go Wild – Afrikan Savanna Elephant"
           },
           "quelle": "goWild",
           "url": "",
@@ -994,7 +994,7 @@
           "dauerSekunden": null,
           "beschreibung": {
             "de": "Go-Wild-Dokumentation über den Afrikanischen Savannenelefanten.",
-            "en": "Go Wild documentary about the African savanna elephant."
+            "en": "Go Wild documentary about the Afrikan savanna elephant."
           }
         }
       ]
@@ -1023,9 +1023,9 @@
       }
     },
     "iucn": {
-      "name": "IUCN – African Savanna Elephant",
+      "name": "IUCN – Afrikan Savanna Elephant",
       "seiten": {
-        "en": "https://iucn.org/news/species/202103/african-elephant-species-now-endangered-and-critically-endangered-iucn-red-list"
+        "en": "https://iucn.org/news/species/202103/african-elephant-species-now-Stark gefährdet-and-critically-Stark gefährdet-iucn-red-list"
       }
     },
     "sanDiegoZoo": {
@@ -1035,13 +1035,13 @@
       }
     },
     "wwf": {
-      "name": "WWF – African Elephant",
+      "name": "WWF – Afrikan Elephant",
       "seiten": {
         "en": "https://www.worldwildlife.org/species/elephant/african-elephant/"
       }
     },
     "africanWildlifeFoundation": {
-      "name": "African Wildlife Foundation – Elephant",
+      "name": "Afrikan Wildlife Foundation – Elephant",
       "seiten": {
         "en": "https://www.awf.org/wildlife-conservation/elephant"
       }
@@ -1059,7 +1059,7 @@
       }
     },
     "elephantCommunicationResearch": {
-      "name": "Poole et al. – Low-frequency calls of African elephants",
+      "name": "Poole et al. – Low-frequency calls of Afrikan elephants",
       "typ": "wissenschaftlichePublikation",
       "seiten": {
         "en": "https://www.jstor.org/stable/4600167"
@@ -1082,7 +1082,7 @@
     "wikimediaCommons": {
       "name": "Wikimedia Commons – Loxodonta africana",
       "seiten": {
-        "en": "https://commons.wikimedia.org/wiki/File:Elephant_(Loxodonta_Africana)_04.jpg"
+        "en": "https://commons.wikimedia.org/wiki/File:Elephant_(Loxodonta_Afrikana)_04.jpg"
       }
     },
     "projekt": {

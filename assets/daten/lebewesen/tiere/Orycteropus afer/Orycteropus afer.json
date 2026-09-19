@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -101,7 +101,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "iucn"
         }
@@ -204,7 +204,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv; tagsüber ruht das Erdferkel meist in selbst gegrabenen Bauen.",
             "en": "Nocturnal; during the day the aardvark usually rests in self-dug burrows."
@@ -259,7 +259,7 @@
               },
               "hinweis": {
                 "de": "Diese unterirdisch reifende Frucht wird besonders aus Südafrika als pflanzliche Nahrung beschrieben.",
-                "en": "This underground-ripening fruit is described particularly from South Africa as plant food."
+                "en": "This underground-ripening fruit is described particularly from South Afrika as plant food."
               },
               "quelle": "sanDiegoZoo"
             }
@@ -358,13 +358,13 @@
       ],
       "en": [
         {
-          "inhalt": "The aardvark occurs across much of sub-Saharan Africa. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
+          "inhalt": "The aardvark occurs across much of sub-Saharan Afrika. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
           "quelle": "animalDiversityWeb"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The aardvark occurs across much of sub-Saharan Africa. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
+          "inhalt": "The aardvark occurs across much of sub-Saharan Afrika. It mainly uses savannas, grasslands, semi-arid areas and open woodland where ants and termites are abundant and soils are suitable for digging. Hard, rocky or frequently flooded ground is largely avoided.",
           "quelle": "animalDiversityWeb"
         }
       ],
@@ -384,7 +384,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’oritteropo è diffuso in gran parte dell’Africa subsahariana. Vive soprattutto in savane, praterie, zone semiaride e boschi aperti dove formiche e termiti sono abbondanti e il terreno è adatto allo scavo.",
+          "inhalt": "L’oritteropo è diffuso in gran parte dell’Afrika subsahariana. Vive soprattutto in savane, praterie, zone semiaride e boschi aperti dove formiche e termiti sono abbondanti e il terreno è adatto allo scavo.",
           "quelle": "animalDiversityWeb",
           "uebersetzung": "ChatGPT"
         }
@@ -421,13 +421,13 @@
       ],
       "en": [
         {
-          "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly nocturnal mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
+          "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly Nachtaktiv mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
           "quelle": "animalDiversityWeb"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly nocturnal mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
+          "inhalt": "The aardvark (Orycteropus afer) is a medium-sized, mainly Nachtaktiv mammal and the only living species of Tubulidentata. It is characterized by a long snout, large ears, powerful digging claws and unusual tubular cheek teeth. Its burrows provide important shelter for many other animal species.",
           "quelle": "animalDiversityWeb"
         }
       ],

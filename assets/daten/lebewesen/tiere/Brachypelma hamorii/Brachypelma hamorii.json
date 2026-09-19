@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["northAmerica"],
+    "kontinente": ["Nordamerika"],
     "biome": ["Gemäßigt", "Wüste"],
-    "schutzstatus": "vulnerable"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -64,7 +64,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "vulnerable",
+          "wert": "Gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an. Ein Bewertungssystem wird im bereitgestellten Text nicht ausdrücklich genannt.",
@@ -190,10 +190,10 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "hinweis": {
             "de": "Die Art ist laut Zoopedia nachtaktiv, lebt tagsüber in Höhlen und jagt nachts.",
-            "en": "The Zoopedia describes the species as nocturnal, remaining in burrows by day and hunting at night."
+            "en": "The Zoopedia describes the species as Nachtaktiv, remaining in burrows by day and hunting at night."
           },
           "quelle": "planetZoo2"
         }
@@ -203,7 +203,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Die Zoopedia nennt Insekten, kleine Amphibien und kleine Säugetiere als Beute.",
               "en": "The Zoopedia names insects, small amphibians and small mammals as prey."

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "nearThreatened"
+    "schutzstatus": "Potenziell gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -80,7 +80,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "nearThreatened",
+          "wert": "Potenziell gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Potenziell gefährdet“ an.",
@@ -154,7 +154,7 @@
           "wert": "temperate",
           "hinweis": {
             "de": "Die Zoopedia beschreibt die Art in Savannen Ost- und Südafrikas; zusätzlich wird die Nähe zu Wasserquellen hervorgehoben.",
-            "en": "The Zoopedia describes the species in East and southern African savannas and highlights its preference for habitats near water sources."
+            "en": "The Zoopedia describes the species in East and southern Afrikan savannas and highlights its preference for habitats near water sources."
           },
           "quelle": "planetZoo2"
         },
@@ -171,7 +171,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -184,7 +184,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -220,14 +220,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.",
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Afrika and prefers savanna habitats near water sources.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.",
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Afrika and prefers savanna habitats near water sources.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -248,7 +248,7 @@
       ],
       "it": [
         {
-          "inhalt": "La zebra di pianura (Equus quagga) è originaria dell'Africa orientale e meridionale e preferisce le savane vicine alle fonti d'acqua.",
+          "inhalt": "La zebra di pianura (Equus quagga) è originaria dell'Afrika orientale e meridionale e preferisce le savane vicine alle fonti d'acqua.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -284,14 +284,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Afrika and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Africa and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
+          "inhalt": "The Plains Zebra (Equus quagga) is native to East and southern Afrika and prefers savanna habitats near water sources.\n\nThe species is divided into six subspecies that differ in characteristics such as stripe pattern and strict mating within the herd. Plains Zebras have the typical zebra stripe pattern and are smaller than Grevy's Zebras but larger than Mountain Zebras.\n\nMales and females are generally 1.10–1.45 m tall and 2.17–2.46 m long, with males usually around 10% larger. Males weigh 220–320 kg, while females weigh 175–250 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -312,7 +312,7 @@
       ],
       "it": [
         {
-          "inhalt": "La zebra di pianura (Equus quagga) vive nell'Africa orientale e meridionale, soprattutto nelle savane vicine all'acqua.\n\nLa specie comprende sei sottospecie, diverse tra loro per caratteristiche come il disegno delle strisce e alcuni comportamenti riproduttivi. È più piccola della zebra di Grévy ma più grande della zebra di montagna.\n\nMaschi e femmine misurano generalmente 1,10–1,45 m di altezza e 2,17–2,46 m di lunghezza. I maschi sono spesso circa il 10% più grandi e pesano 220–320 kg; le femmine 175–250 kg.",
+          "inhalt": "La zebra di pianura (Equus quagga) vive nell'Afrika orientale e meridionale, soprattutto nelle savane vicine all'acqua.\n\nLa specie comprende sei sottospecie, diverse tra loro per caratteristiche come il disegno delle strisce e alcuni comportamenti riproduttivi. È più piccola della zebra di Grévy ma più grande della zebra di montagna.\n\nMaschi e femmine misurano generalmente 1,10–1,45 m di altezza e 2,17–2,46 m di lunghezza. I maschi sono spesso circa il 10% più grandi e pesano 220–320 kg; le femmine 175–250 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

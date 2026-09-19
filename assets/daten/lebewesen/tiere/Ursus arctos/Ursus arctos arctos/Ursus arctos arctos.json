@@ -3,22 +3,22 @@
   "identitaet": {
     "namen": {
       "de": "Europäischer Braunbär",
-      "en": "Eurasian Brown Bear",
-      "en-US": "Eurasian Brown Bear",
-      "es": "Oso pardo europeo",
+      "en": "EurAsienn Brown Bear",
+      "en-US": "EurAsienn Brown Bear",
+      "es": "Oso pardo Europao",
       "fr": "Ours brun d'Europe",
-      "it": "Orso bruno eurasiatico",
-      "pt-BR": "Urso-pardo-europeu",
+      "it": "Orso bruno eurAsientico",
+      "pt-BR": "Urso-pardo-Europau",
       "ja": "ヨーロッパヒグマ",
       "zh-Hans": "欧洲棕熊"
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Gemäßigt", "Taiga"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -89,11 +89,11 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia stuft den Europäischen Braunbären gegenwärtig als nicht gefährdet ein, weist aber auf große historische Arealverluste und lokale Ausrottungen hin.",
-            "en": "The Zoopedia currently classifies the Eurasian Brown Bear as Least Concern while noting major historical range losses and local extinctions."
+            "en": "The Zoopedia currently classifies the EurAsienn Brown Bear as Least Concern while noting major historical range losses and local extinctions."
           },
           "quelle": "planetZoo2"
         }
@@ -167,7 +167,7 @@
           "maxGruppengroesse": 1,
           "hinweis": {
             "de": "Abgesehen von Muttertieren mit Jungen sind Europäische Braunbären Einzelgänger. Sie kommen zur Paarung, bei Konkurrenz um Partner oder an besonders ergiebigen Nahrungsquellen zeitweise zusammen.",
-            "en": "Apart from mothers with cubs, Eurasian Brown Bears are solitary. They may temporarily gather for mating, competition over mates or at especially rich food sources."
+            "en": "Apart from mothers with cubs, EurAsienn Brown Bears are solitary. They may temporarily gather for mating, competition over mates or at especially rich food sources."
           },
           "quelle": "planetZoo2"
         }
@@ -199,7 +199,7 @@
           "wert": "hibernation",
           "hinweis": {
             "de": "Die Zoopedia nennt als Tierfakt bis zu 7 Monate Winterschlaf in freier Wildbahn.",
-            "en": "The Zoopedia states in an animal fact that wild Eurasian Brown Bears may hibernate for up to seven months."
+            "en": "The Zoopedia states in an animal fact that wild EurAsienn Brown Bears may hibernate for up to seven months."
           },
           "quelle": "planetZoo2"
         }
@@ -209,7 +209,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -245,21 +245,21 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
+          "inhalt": "The EurAsienn Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
+          "inhalt": "The EurAsienn Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "El oso pardo europeo (Ursus arctos arctos) es una subespecie del oso pardo presente en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.",
+          "inhalt": "El oso pardo Europao (Ursus arctos arctos) es una subespecie del oso pardo presente en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -273,14 +273,14 @@
       ],
       "it": [
         {
-          "inhalt": "L'orso bruno eurasiatico (Ursus arctos arctos) è una sottospecie dell'orso bruno presente in Europa e Russia centrale, in foreste boreali e temperate, praterie e zone umide.",
+          "inhalt": "L'orso bruno eurAsientico (Ursus arctos arctos) è una sottospecie dell'orso bruno presente in Europa e Russia centrale, in foreste boreali e temperate, praterie e zone umide.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "O urso-pardo-europeu (Ursus arctos arctos) é uma subespécie de urso-pardo encontrada na Europa e na Rússia central, em florestas boreais e temperadas, campos e áreas úmidas.",
+          "inhalt": "O urso-pardo-Europau (Ursus arctos arctos) é uma subespécie de urso-pardo encontrada na Europa e na Rússia central, em florestas boreais e temperadas, campos e áreas úmidas.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -309,21 +309,21 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurasian Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
+          "inhalt": "The EurAsienn Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurAsienn Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurasian Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
+          "inhalt": "The EurAsienn Brown Bear (Ursus arctos arctos) is a subspecies of Brown Bear found in Europe and central Russia in boreal and temperate forests, grasslands and wetlands.\n\nEurAsienn Brown Bears have dense brown fur, a large shoulder hump, a rounded head and small rounded ears. Their powerful forelimbs have long claws used for digging and hunting.\n\nBrown Bears can become extremely large, although size varies between populations. An average male weighs 350–500 kg and reaches 2.2 m in length, while an average female weighs 150–300 kg and reaches 1.8 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "El oso pardo europeo (Ursus arctos arctos) vive en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.\n\nPosee pelaje marrón denso, una gran joroba en los hombros, cabeza redondeada y orejas pequeñas. Sus fuertes extremidades delanteras tienen largas garras utilizadas para excavar y cazar.\n\nLos machos pesan normalmente 350–500 kg y miden unos 2,2 m; las hembras pesan 150–300 kg y miden unos 1,8 m.",
+          "inhalt": "El oso pardo Europao (Ursus arctos arctos) vive en Europa y Rusia central, en bosques boreales y templados, praderas y humedales.\n\nPosee pelaje marrón denso, una gran joroba en los hombros, cabeza redondeada y orejas pequeñas. Sus fuertes extremidades delanteras tienen largas garras utilizadas para excavar y cazar.\n\nLos machos pesan normalmente 350–500 kg y miden unos 2,2 m; las hembras pesan 150–300 kg y miden unos 1,8 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -337,14 +337,14 @@
       ],
       "it": [
         {
-          "inhalt": "L'orso bruno eurasiatico (Ursus arctos arctos) vive in Europa e Russia centrale in foreste boreali e temperate, praterie e zone umide.\n\nHa folta pelliccia marrone, una grande gobba sulle spalle, testa rotonda e piccole orecchie arrotondate. Le forti zampe anteriori hanno lunghi artigli usati per scavare e cacciare.\n\nUn maschio medio pesa 350–500 kg ed è lungo circa 2,2 m; una femmina pesa 150–300 kg ed è lunga circa 1,8 m.",
+          "inhalt": "L'orso bruno eurAsientico (Ursus arctos arctos) vive in Europa e Russia centrale in foreste boreali e temperate, praterie e zone umide.\n\nHa folta pelliccia marrone, una grande gobba sulle spalle, testa rotonda e piccole orecchie arrotondate. Le forti zampe anteriori hanno lunghi artigli usati per scavare e cacciare.\n\nUn maschio medio pesa 350–500 kg ed è lungo circa 2,2 m; una femmina pesa 150–300 kg ed è lunga circa 1,8 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "pt-BR": [
         {
-          "inhalt": "O urso-pardo-europeu (Ursus arctos arctos) vive na Europa e Rússia central em florestas boreais e temperadas, campos e áreas úmidas.\n\nPossui pelagem marrom densa, grande corcova nos ombros, cabeça arredondada e orelhas pequenas. As patas dianteiras fortes têm garras longas usadas para cavar e caçar.\n\nUm macho médio pesa 350–500 kg e mede cerca de 2,2 m; uma fêmea pesa 150–300 kg e mede cerca de 1,8 m.",
+          "inhalt": "O urso-pardo-Europau (Ursus arctos arctos) vive na Europa e Rússia central em florestas boreais e temperadas, campos e áreas úmidas.\n\nPossui pelagem marrom densa, grande corcova nos ombros, cabeça arredondada e orelhas pequenas. As patas dianteiras fortes têm garras longas usadas para cavar e caçar.\n\nUm macho médio pesa 350–500 kg e mede cerca de 2,2 m; uma fêmea pesa 150–300 kg e mede cerca de 1,8 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -373,14 +373,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the Eurasian Brown Bear a notable example of successful large-carnivore conservation in Europe.",
+          "inhalt": "The EurAsienn Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the EurAsienn Brown Bear a notable example of successful large-Fleischfresser conservation in Europe.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the Eurasian Brown Bear a notable example of successful large-carnivore conservation in Europe.",
+          "inhalt": "The EurAsienn Brown Bear is currently classified as Least Concern but has lost large parts of its historical range. Centuries of habitat destruction, hunting and deliberate suppression caused severe population declines and local extinctions. By the early 20th century, bears had disappeared from much of Western Europe and survived mainly in remote mountain and forest areas. Growing environmental awareness and legal protection, including the European Union Habitats Directive and the Bern Convention, created a basis for population recovery.\n\nTranslocations and reintroductions have played an important role in returning bears to former habitats, including Trentino in Italy and the Pyrenees. Animals from Slovenia were released to reinforce nearly extinct populations. These programmes involve carefully selected animals, controlled releases, monitoring and close cooperation with local communities to reduce conflict.\n\nSeveral populations are now reproducing successfully and expanding again, making the EurAsienn Brown Bear a notable example of successful large-Fleischfresser conservation in Europe.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -517,17 +517,17 @@
       ],
       "en": [
         {
-          "inhalt": "The Eurasian Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
+          "inhalt": "The EurAsienn Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Eurasian Brown Bear cubs usually have multiple fathers.",
+          "inhalt": "EurAsienn Brown Bear cubs usually have multiple fathers.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Eurasian Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
+          "inhalt": "EurAsienn Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -537,24 +537,24 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Although they can be dangerous predators, they are omnivores and 70–80% of their diet is vegetarian.",
+          "inhalt": "Although they can be dangerous predators, they are Allesfressers and 70–80% of their diet is vegetarian.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eurasian Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
+          "inhalt": "The EurAsienn Brown Bear's sense of smell is stated to be 2,100 times better than a human's and even better than a dog's.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Eurasian Brown Bear cubs usually have multiple fathers.",
+          "inhalt": "EurAsienn Brown Bear cubs usually have multiple fathers.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Eurasian Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
+          "inhalt": "EurAsienn Brown Bears walk on the soles of their feet when upright, like humans, giving them excellent balance.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },
@@ -564,7 +564,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Although they can be dangerous predators, they are omnivores and 70–80% of their diet is vegetarian.",
+          "inhalt": "Although they can be dangerous predators, they are Allesfressers and 70–80% of their diet is vegetarian.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -618,7 +618,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Ils sont omnivores et leur alimentation est végétarienne à 70–80%.",
+          "inhalt": "Ils sont Allesfressers et leur alimentation est végétarienne à 70–80%.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -798,7 +798,7 @@
     }
   },
   "karte": {
-    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurasianBrown_map.png",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurAsiennBrown_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -819,11 +819,11 @@
           "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMjYwM2YyNWYvQmVhcl9FdXJhc2lhbkJyb3duLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjJkZmY2OWJkLWI4MTgtNDQ2NS1iZjUzLTk1YzZiYTIxZDE4ZCJ9fQ==",
           "alt": {
             "de": "Europäischer Braunbär – Planet Zoo 2",
-            "en": "Eurasian Brown Bear – Planet Zoo 2"
+            "en": "EurAsienn Brown Bear – Planet Zoo 2"
           },
           "beschreibung": {
             "de": "Offizielles Zoopedia-Hauptbild des Europäischen Braunbären aus Planet Zoo 2.",
-            "en": "Official Planet Zoo 2 Zoopedia main image of the Eurasian Brown Bear."
+            "en": "Official Planet Zoo 2 Zoopedia main image of the EurAsienn Brown Bear."
           },
           "metadaten": [""],
           "dateien": [
@@ -843,14 +843,14 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurasianBrown_illustration.jpg",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/2603f25f/Bear_EurAsiennBrown_illustration.jpg",
           "alt": {
             "de": "Europäischer Braunbär – Zoopedia-Illustration",
-            "en": "Eurasian Brown Bear – Zoopedia illustration"
+            "en": "EurAsienn Brown Bear – Zoopedia illustration"
           },
           "beschreibung": {
             "de": "Illustration des Europäischen Braunbären aus der Planet Zoo 2 Zoopedia.",
-            "en": "Eurasian Brown Bear illustration from the Planet Zoo 2 Zoopedia."
+            "en": "EurAsienn Brown Bear illustration from the Planet Zoo 2 Zoopedia."
           },
           "metadaten": [""],
           "dateien": [
@@ -879,12 +879,12 @@
       "name": "Planet Zoo 2 Zoopedia – Europäischer Braunbär",
       "seiten": {
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/europ%C3%A4ischer-braunb%C3%A4r",
-        "en": "https://www.planetzoogame.com/2/zoopedia/eurasian-brown-bear",
-        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/eurasian-brown-bear",
-        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/oso-pardo-europeo",
-        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/ours-brun-d-europe",
-        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/orso-bruno-eurasiatico",
-        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/urso-pardo-europeu",
+        "en": "https://www.planetzoogame.com/2/zoopedia/eurAsienn-brown-bear",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/eurAsienn-brown-bear",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/oso-pardo-Europao",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/ours-brun-d-Europa",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/orso-bruno-eurAsientico",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/urso-pardo-Europau",
         "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%92%E3%82%B0%E3%83%9E",
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%AC%A7%E6%B4%B2%E6%A3%95%E7%86%8A"
       },

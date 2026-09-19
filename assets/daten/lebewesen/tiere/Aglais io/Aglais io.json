@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Gemäßigt", "Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -65,7 +65,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -162,7 +162,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -175,7 +175,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -855,8 +855,8 @@
       "name": "Planet Zoo 2 Zoopedia – Tagpfauenauge",
       "seiten": {
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/tagpfauenauge",
-        "en": "https://www.planetzoogame.com/2/zoopedia/european-peacock",
-        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/european-peacock",
+        "en": "https://www.planetzoogame.com/2/zoopedia/Europaan-peacock",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/Europaan-peacock",
         "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/mariposa-pavo-real",
         "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/paon-du-jour",
         "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/occhio-di-pavone",

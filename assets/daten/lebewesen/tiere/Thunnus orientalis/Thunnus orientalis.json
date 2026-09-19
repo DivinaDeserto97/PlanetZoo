@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["asia", "northAmerica"],
+    "kontinente": ["Asien", "Nordamerika"],
     "biome": ["Offenes Meer"],
-    "schutzstatus": "nearThreatened"
+    "schutzstatus": "Potenziell gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "nearThreatened",
+          "wert": "Potenziell gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -148,7 +148,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -156,7 +156,7 @@
           "quelle": "fishBase"
         },
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -169,7 +169,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."

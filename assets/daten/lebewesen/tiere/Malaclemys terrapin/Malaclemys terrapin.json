@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["northAmerica"],
+    "kontinente": ["Nordamerika"],
     "biome": ["Ästuar", "Feuchtgebiete", "Mangrove"],
-    "schutzstatus": "endangered"
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -87,7 +87,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Gefährdet“ an.",
@@ -185,7 +185,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -198,7 +198,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -371,14 +371,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Diamondback Terrapin is considered endangered. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
+          "inhalt": "The Diamondback Terrapin is considered Stark gefährdet. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Diamondback Terrapin is considered endangered. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
+          "inhalt": "The Diamondback Terrapin is considered Stark gefährdet. At the beginning of the 20th century, intensive hunting for its meat and shell nearly wiped it out. Populations have partly recovered, but the species now faces new threats. Terrapins often drown in commercial crab traps, and road traffic is dangerous when they cross roads in search of nesting sites. Predators in densely populated areas and the loss of brackish-water habitats through development and rising sea levels are additional threats. Despite protection, terrapins are still illegally collected for the pet trade in some regions.\n\nIn many places they are protected and may not be hunted, with some exceptions. Special devices on crab traps can reduce accidental drowning. Fences are installed along dangerous road sections, and habitat-restoration and rearing programs raise juveniles in protected predator-free salt marshes before release.\n\nDespite these efforts, many populations continue to decline, so stronger enforcement and additional habitat protection are needed.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

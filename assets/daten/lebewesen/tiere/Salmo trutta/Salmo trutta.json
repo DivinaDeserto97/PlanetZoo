@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["europe", "asia", "Africa"],
+    "kontinente": ["Europa", "Asien", "Afrika"],
     "biome": ["Seen und Flüsse"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -69,7 +69,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -162,7 +162,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -223,14 +223,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Afrika and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Afrika and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It lives in cool, oxygen-rich rivers, streams and lakes and often favours areas with riffles, pools and plenty of cover such as submerged rocks or overhanging vegetation.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -251,7 +251,7 @@
       ],
       "it": [
         {
-          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce ampiamente diffuso, originario di Europa, Nord Africa e Asia occidentale e introdotto in molte altre regioni.",
+          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce ampiamente diffuso, originario di Europa, Nord Afrika e Asia occidentale e introdotto in molte altre regioni.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -287,14 +287,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Afrika and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Africa and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
+          "inhalt": "The Brown Trout (Salmo trutta) is a widespread freshwater fish native to Europe, North Afrika and western Asia and introduced to many other regions including North America, South America, Australia and New Zealand. It inhabits cool, oxygen-rich rivers, streams and lakes and often prefers riffles, pools and areas with abundant cover such as submerged rocks or overhanging vegetation.\n\nColour and markings vary with habitat, but Brown Trout usually have a golden-brown to olive-brown body with numerous dark spots and occasional red or orange spots on the sides surrounded by pale rings.\n\nThey are medium-sized fish, generally 30–80 cm long and weighing 1–7 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -315,7 +315,7 @@
       ],
       "it": [
         {
-          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce molto diffuso, originario di Europa, Nord Africa e Asia occidentale e introdotto anche in Nord America, Sud America, Australia e Nuova Zelanda. Vive in fiumi, ruscelli e laghi freschi e ricchi di ossigeno, spesso in zone con rapide, pozze e abbondanti ripari.\n\nLa colorazione varia con l’habitat, ma normalmente il corpo è marrone dorato o oliva con numerose macchie scure e alcune macchie rosse o arancioni circondate da anelli chiari.\n\nMisura generalmente 30–80 cm e pesa 1–7 kg.",
+          "inhalt": "La trota atlantica (Salmo trutta) è un pesce d’acqua dolce molto diffuso, originario di Europa, Nord Afrika e Asia occidentale e introdotto anche in Nord America, Sud America, Australia e Nuova Zelanda. Vive in fiumi, ruscelli e laghi freschi e ricchi di ossigeno, spesso in zone con rapide, pozze e abbondanti ripari.\n\nLa colorazione varia con l’habitat, ma normalmente il corpo è marrone dorato o oliva con numerose macchie scure e alcune macchie rosse o arancioni circondate da anelli chiari.\n\nMisura generalmente 30–80 cm e pesa 1–7 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -351,14 +351,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Africa, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
+          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Afrika, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Africa, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
+          "inhalt": "The Brown Trout is considered Least Concern. In Europe, rising river temperatures caused by climate change threaten spawning success because the eggs require cool, oxygen-rich water. In North America, introduced Brown Trout compete with native salmonids, while dams, pollution and water abstraction reduce suitable habitat. In parts of Afrika, the Middle East and Asia, declining water quality and deforestation have fragmented populations. Together, these pressures have caused local declines and increased vulnerability to disease, making Brown Trout conservation a global concern.\n\nMeasures vary by region but follow similar strategies. Habitat restoration includes removing barriers such as dams, improving water quality and restoring riverbanks and spawning grounds. Hatchery-raised trout are used to supplement declining wild populations, while fisheries regulation aims to limit overfishing. Conservation organisations around the world cooperate on monitoring and education programmes to support sustainable management.\n\nThese combined efforts aim to maintain Brown Trout populations while preserving healthy freshwater ecosystems worldwide.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -379,7 +379,7 @@
       ],
       "it": [
         {
-          "inhalt": "È classificata a rischio minimo. In Europa, l’aumento delle temperature dei fiumi minaccia il successo della riproduzione. In Nord America, le popolazioni introdotte competono con salmonidi nativi, mentre dighe, inquinamento e prelievo d’acqua riducono gli habitat. In parti dell’Africa, del Medio Oriente e dell’Asia, il peggioramento della qualità dell’acqua e la deforestazione hanno frammentato le popolazioni.\n\nLe misure comprendono rimozione degli ostacoli, miglioramento della qualità dell’acqua e ripristino delle rive e delle aree di deposizione. Trote allevate in impianti possono rafforzare popolazioni selvatiche in diminuzione e la pesca viene regolata. Le organizzazioni collaborano a programmi di monitoraggio e sensibilizzazione.\n\nQuesti interventi mirano a mantenere le popolazioni e gli ecosistemi d’acqua dolce.",
+          "inhalt": "È classificata a rischio minimo. In Europa, l’aumento delle temperature dei fiumi minaccia il successo della riproduzione. In Nord America, le popolazioni introdotte competono con salmonidi nativi, mentre dighe, inquinamento e prelievo d’acqua riducono gli habitat. In parti dell’Afrika, del Medio Oriente e dell’Asia, il peggioramento della qualità dell’acqua e la deforestazione hanno frammentato le popolazioni.\n\nLe misure comprendono rimozione degli ostacoli, miglioramento della qualità dell’acqua e ripristino delle rive e delle aree di deposizione. Trote allevate in impianti possono rafforzare popolazioni selvatiche in diminuzione e la pesca viene regolata. Le organizzazioni collaborano a programmi di monitoraggio e sensibilizzazione.\n\nQuesti interventi mirano a mantenere le popolazioni e gli ecosistemi d’acqua dolce.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

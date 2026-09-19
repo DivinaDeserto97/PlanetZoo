@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
-    "biome": [""],
-    "schutzstatus": "endangered"
+    "kontinente": ["Afrika"],
+    "biome": ["tropen"],
+    "schutzstatus": "Stark gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -72,7 +72,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "endangered",
+          "wert": "Stark gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -161,7 +161,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -174,7 +174,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "omnivore",
+            "wert": "Allesfresser",
             "hinweis": {
               "de": "Pflanzliche und tierische Nahrung.",
               "en": "Both plant and animal food."
@@ -190,7 +190,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "blaetter",
+              "wert": "Blätter",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",

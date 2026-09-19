@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe", "asia"],
+    "kontinente": ["Europa", "Asien"],
     "biome": ["Gemäßigt", "Taiga"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -87,7 +87,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -224,10 +224,10 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "hinweis": {
             "de": "Die Zoopedia beschreibt Schneehasen ausdrücklich als nachtaktiv; tagsüber verstecken sie sich in flachen Mulden.",
-            "en": "The Zoopedia explicitly describes Mountain Hares as nocturnal; during the day they hide in shallow depressions."
+            "en": "The Zoopedia explicitly describes Mountain Hares as Nachtaktiv; during the day they hide in shallow depressions."
           },
           "quelle": "planetZoo2"
         }
@@ -237,7 +237,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."

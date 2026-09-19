@@ -27,7 +27,7 @@ __pycache__/
 /assets/private/
 /assets/medien/lokal/
 
-# Medien in Tier-/Kino-Daten standardmässig NICHT veröffentlichen.
+# Medien in Tier-/Kino-Daten Standardmässig NICHT veröffentlichen.
 /assets/daten/**/*.png
 /assets/daten/**/*.jpg
 /assets/daten/**/*.jpeg

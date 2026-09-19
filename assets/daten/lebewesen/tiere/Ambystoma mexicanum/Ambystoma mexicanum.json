@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["northAmerica"],
+    "kontinente": ["Nordamerika"],
     "biome": ["Seen und Flüsse"],
-    "schutzstatus": "criticallyEndangered"
+    "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {
     "taxonomie": {
@@ -79,7 +79,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "criticallyEndangered",
+          "wert": "Vom Aussterben bedroht",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -144,7 +144,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "nocturnal",
+          "wert": "Nachtaktiv",
           "beschreibung": {
             "de": "Nachtaktiv.",
             "en": "Nocturnal."
@@ -157,7 +157,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "quelle": "planetZoo2"
           }
         ]
@@ -466,7 +466,7 @@
           "quelle": "planetZoo2"
         },
         {
-          "inhalt": "Axolotls are carnivores and feed by sucking prey such as insects, molluscs and small fish into the mouth.",
+          "inhalt": "Axolotls are Fleischfressers and feed by sucking prey such as insects, molluscs and small fish into the mouth.",
           "quelle": "planetZoo2"
         },
         {
@@ -488,7 +488,7 @@
           "quelle": "planetZoo2"
         },
         {
-          "inhalt": "Axolotls are carnivores and feed by sucking prey such as insects, mollusks and small fish into the mouth.",
+          "inhalt": "Axolotls are Fleischfressers and feed by sucking prey such as insects, mollusks and small fish into the mouth.",
           "quelle": "planetZoo2"
         },
         {
@@ -538,7 +538,7 @@
           "uebersetzung": "ChatGPT"
         },
         {
-          "inhalt": "Les axolotls sont carnivores et aspirent des proies telles que des insectes, des mollusques et de petits poissons.",
+          "inhalt": "Les axolotls sont Fleischfressers et aspirent des proies telles que des insectes, des mollusques et de petits poissons.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         },

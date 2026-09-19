@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
     "kontinente": [""],
     "biome": ["Offenes Meer"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -74,7 +74,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -244,14 +244,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Africa.",
+          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Africa.",
+          "inhalt": "The Pacific Sardine (Sardinops sagax) is a small schooling fish found in subtropical and temperate waters of the Pacific and Indian Oceans, as well as in the Atlantic off South Afrika.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

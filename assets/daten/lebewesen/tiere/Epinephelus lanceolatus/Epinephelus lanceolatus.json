@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["Africa", "asia", "oceania"],
+    "kontinente": ["Afrika", "Asien", "Ozeanien"],
     "biome": ["Ästuar", "Mangrove", "Riff", "Tropen"],
     "schutzstatus": "dataDeficient"
   },
@@ -153,7 +153,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."

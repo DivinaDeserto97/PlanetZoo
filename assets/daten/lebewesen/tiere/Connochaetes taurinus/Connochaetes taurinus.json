@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -98,7 +98,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "hinweis": {
             "de": "Die Zoopedia gibt den Arterhaltungszustand als „Nicht gefährdet“ an.",
@@ -187,7 +187,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -195,7 +195,7 @@
           "quelle": "animalDiversityWeb"
         },
         {
-          "wert": "crepuscular",
+          "wert": "Dämmerungsaktiv",
           "beschreibung": {
             "de": "Vor allem in der Dämmerung aktiv.",
             "en": "Most active around twilight."
@@ -208,7 +208,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "herbivore",
+            "wert": "Pflanzenfresser",
             "hinweis": {
               "de": "Überwiegend pflanzliche Nahrung.",
               "en": "Primarily plant food."
@@ -244,14 +244,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa. It is also known as the brindled gnu.",
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Afrika. It is also known as the brindled gnu.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa. It is also known as the brindled gnu.",
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Afrika. It is also known as the brindled gnu.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -272,7 +272,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope originaria dell'Africa meridionale, nota anche come gnu blu.",
+          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope originaria dell'Afrika meridionale, nota anche come gnu blu.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -308,14 +308,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Afrika.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Africa.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
+          "inhalt": "The Blue Wildebeest (Connochaetes taurinus) is a large antelope native to southern Afrika.\n\nIt has pale grey or brown fur with dark stripes on the neck, shoulders and chest. Blue Wildebeest have a long black tail and long black mane that may stand upright or cover the neck depending on subspecies. The beard beneath the neck is white. The species is sexually dimorphic: bulls are larger than cows, though both sexes have characteristic L-shaped horns.\n\nBulls stand 1.23–1.65 m at the shoulder, reach 1.7–2.4 m in length and weigh 165–290 kg. Cows stand 1.14–1.42 m at the shoulder, reach 1.75–2.15 m in length and weigh 140–260 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -336,7 +336,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope dell'Africa meridionale.\n\nHa pelo grigio pallido o marrone con strisce scure sul collo, spalle e petto, lunga coda nera, lunga criniera nera e barba bianca. I maschi sono più grandi delle femmine, ma entrambi i sessi hanno corna a forma di L.\n\nI maschi misurano 1,23–1,65 m al garrese, 1,7–2,4 m di lunghezza e pesano 165–290 kg. Le femmine misurano 1,14–1,42 m al garrese, 1,75–2,15 m di lunghezza e pesano 140–260 kg.",
+          "inhalt": "Lo gnu comune (Connochaetes taurinus) è una grande antilope dell'Afrika meridionale.\n\nHa pelo grigio pallido o marrone con strisce scure sul collo, spalle e petto, lunga coda nera, lunga criniera nera e barba bianca. I maschi sono più grandi delle femmine, ma entrambi i sessi hanno corna a forma di L.\n\nI maschi misurano 1,23–1,65 m al garrese, 1,7–2,4 m di lunghezza e pesano 165–290 kg. Le femmine misurano 1,14–1,42 m al garrese, 1,75–2,15 m di lunghezza e pesano 140–260 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

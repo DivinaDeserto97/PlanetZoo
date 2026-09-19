@@ -16,7 +16,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.MAP,
     page: "map",
-    standard: "wichtig",
+    Standard: "wichtig",
     label: {
       de: "Karte",
       en: "Map",
@@ -33,7 +33,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.INFOTAFEL,
     page: "infotafel",
-    standard: "wichtig",
+    Standard: "wichtig",
     label: {
       de: "Infotafel",
       en: "Info board",
@@ -50,7 +50,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.AUDIO,
     page: null,
-    standard: "nichtWichtig",
+    Standard: "nichtWichtig",
     label: {
       de: "Audio",
       en: "Audio",
@@ -67,7 +67,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.KINO,
     page: "kino",
-    standard: "unsichtbar",
+    Standard: "unsichtbar",
     label: {
       de: "Kino",
       en: "Cinema",
@@ -84,7 +84,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.SYSTEMATIK,
     page: "systematik",
-    standard: "unsichtbar",
+    Standard: "unsichtbar",
     label: {
       de: "Systematik",
       en: "Taxonomy",
@@ -101,7 +101,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.NAHRUNGSNETZ,
     page: "nahrungsnetz",
-    standard: "unsichtbar",
+    Standard: "unsichtbar",
     label: {
       de: "Nahrungsnetz",
       en: "Food web",
@@ -118,7 +118,7 @@ export const TOOLS = [
   {
     id: TOOL_IDS.RECHNER,
     page: "rechner",
-    standard: "unsichtbar",
+    Standard: "unsichtbar",
     label: {
       de: "Rechner",
       en: "Calculator",

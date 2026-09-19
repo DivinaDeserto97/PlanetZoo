@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "standard",
+    "edition": "Standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["Africa"],
+    "kontinente": ["Afrika"],
     "biome": ["Feuchtgebiete", "Graslandschaft"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -77,7 +77,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "",
           "quelle": "planetZoo2"
         }
@@ -161,7 +161,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -174,7 +174,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -219,14 +219,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Africa and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
+          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Afrika and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Africa and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
+          "inhalt": "The Nile Monitor (Varanus niloticus) occurs across non-desert regions of sub-Saharan Afrika and the Nile Delta. It has also been introduced to the United States, particularly California and Florida, where it is considered invasive.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "deluxe",
+    "edition": "Deluxe",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["northAmerica", "europe", "Africa", "asia"],
+    "kontinente": ["Nordamerika", "Europa", "Afrika", "Asien"],
     "biome": ["Gemäßigt", "Graslandschaft", "Tundra", "Wüste", "Taiga"],
-    "schutzstatus": "leastConcern"
+    "schutzstatus": "Nicht gefährdet"
   },
   "daten": {
     "taxonomie": {
@@ -91,7 +91,7 @@
     "schutzstatus": {
       "werte": [
         {
-          "wert": "leastConcern",
+          "wert": "Nicht gefährdet",
           "system": "IUCN",
           "quelle": "planetZoo2"
         }
@@ -193,7 +193,7 @@
     "aktivitaet": {
       "werte": [
         {
-          "wert": "diurnal",
+          "wert": "Tagaktiv",
           "beschreibung": {
             "de": "Tagaktiv.",
             "en": "Diurnal."
@@ -206,7 +206,7 @@
       "fressverhalten": {
         "werte": [
           {
-            "wert": "carnivore",
+            "wert": "Fleischfresser",
             "hinweis": {
               "de": "Überwiegend tierische Nahrung.",
               "en": "Primarily animal food."
@@ -285,14 +285,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Afrika. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Afrika. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -313,7 +313,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’aquila reale (Aquila chrysaetos) è diffusa nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Africa. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti.",
+          "inhalt": "L’aquila reale (Aquila chrysaetos) è diffusa nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Afrika. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -349,14 +349,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Afrika. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Africa. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
+          "inhalt": "The Golden Eagle (Aquila chrysaetos) is one of the most widespread birds of prey and occurs across the Northern Hemisphere in North America, Europe, Asia and parts of North Afrika. It prefers open or semi-open habitats such as mountains, grasslands, tundra and deserts, and often nests on cliffs or tall trees overlooking its hunting grounds.\n\nGolden Eagles have dark brown plumage accented by golden feathers on the nape and crown, powerful talons and a sharp hooked beak.\n\nThey have a wingspan of 1.8–2.3 m and a body length of 70–100 cm. As with most birds of prey, females are somewhat larger and heavier than males. Adult males usually weigh 3–5 kg, while females weigh 4–6.5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -377,7 +377,7 @@
       ],
       "it": [
         {
-          "inhalt": "L’aquila reale (Aquila chrysaetos) è uno dei rapaci più diffusi e vive nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Africa. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti e nidifica spesso su falesie o alberi alti da cui può controllare le aree di caccia.\n\nHa piumaggio marrone scuro con penne dorate sulla nuca e sulla sommità del capo, artigli potenti e un becco affilato e ricurvo.\n\nL’apertura alare è di 1,8–2,3 m e la lunghezza del corpo di 70–100 cm. Le femmine sono generalmente più grandi e pesanti dei maschi. I maschi adulti pesano normalmente 3–5 kg e le femmine 4–6,5 kg.",
+          "inhalt": "L’aquila reale (Aquila chrysaetos) è uno dei rapaci più diffusi e vive nell’emisfero settentrionale in Nord America, Europa, Asia e parte del Nord Afrika. Predilige ambienti aperti o semiaperti come montagne, praterie, tundra e deserti e nidifica spesso su falesie o alberi alti da cui può controllare le aree di caccia.\n\nHa piumaggio marrone scuro con penne dorate sulla nuca e sulla sommità del capo, artigli potenti e un becco affilato e ricurvo.\n\nL’apertura alare è di 1,8–2,3 m e la lunghezza del corpo di 70–100 cm. Le femmine sono generalmente più grandi e pesanti dei maschi. I maschi adulti pesano normalmente 3–5 kg e le femmine 4–6,5 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
