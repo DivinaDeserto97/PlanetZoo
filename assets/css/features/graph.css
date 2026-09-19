@@ -370,7 +370,9 @@
 
   margin-bottom: 4px;
 
-  min-height: 36px;
+  min-height: 0;
+
+  overflow: hidden;
 
   padding-right: 4px;
 
@@ -380,15 +382,17 @@
 
   line-height: 1.18;
 
-  white-space: normal;
+  text-overflow: ellipsis;
 
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .graph-node__subtitle {
   display: block;
 
-  min-height: 28px;
+  min-height: 0;
+
+  overflow: hidden;
 
   padding-right: 4px;
 
@@ -400,9 +404,9 @@
 
   line-height: 1.2;
 
-  white-space: normal;
+  text-overflow: ellipsis;
 
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .graph-node__footer {
