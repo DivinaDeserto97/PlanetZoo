@@ -482,6 +482,11 @@ function ensureTaxonNode(
         node.tierId = loadedTier.id;
       }
 
+      if (loadedTier) {
+        node.imagePath = loadedTier.hauptbildPfad ?? node.imagePath ?? "";
+        node.imageAlt = getTierName(loadedTier);
+      }
+
       if (node.tierId) {
         node.selected = context.selectedSet.has(node.tierId);
       }
@@ -537,6 +542,10 @@ function ensureTaxonNode(
     position: claimSlot(context, position ?? "1.1"),
 
     backbone,
+
+    imagePath: loadedTier?.hauptbildPfad ?? "",
+
+    imageAlt: loadedTier ? getTierName(loadedTier) : "",
 
     systematikMeta: meta,
   };
