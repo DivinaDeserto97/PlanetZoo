@@ -176,12 +176,12 @@
       "fressverhalten": {
         "werte": [
           {
-            "typ": "carnivore",
+            "wert": "carnivore",
             "hinweis": {
-              "de": "Die Hauptbeute besteht aus Bergziegen und Schafen; zusätzlich werden Vögel und Nagetiere gejagt.",
-              "en": "Their main prey consists of mountain goats and sheep; they also hunt birds and rodents."
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
             },
-            "quelle": "planetZoo2"
+            "quelle": "animalDiversityWeb"
           }
         ]
       },
@@ -371,6 +371,12 @@
       "name": "Planet Zoo 2 Zoopedia – Schneeleopard",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Panthera uncia",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Panthera_uncia/"
+      }
     }
   }
 }

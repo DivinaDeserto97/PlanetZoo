@@ -183,11 +183,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -864,6 +890,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Cervus elaphus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Cervus_elaphus/"
+      }
     }
   }
 }

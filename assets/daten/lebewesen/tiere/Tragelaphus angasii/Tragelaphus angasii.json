@@ -203,7 +203,16 @@
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -445,6 +454,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID cfa1ec7a und Asset-Stamm Antelope_Nyala belegt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Tragelaphus angasii",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Tragelaphus_angasii/"
+      }
     }
   }
 }

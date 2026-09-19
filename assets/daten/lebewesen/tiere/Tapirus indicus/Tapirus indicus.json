@@ -216,11 +216,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -462,6 +488,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%A9%AC%E6%9D%A5%E8%B2%98"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Wildbestandsangabe „2.5“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern nur als Rohwert gespeichert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Tapirus indicus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Tapirus_indicus/"
+      }
     }
   }
 }

@@ -145,11 +145,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -799,6 +817,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Boa constrictor",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Boa_constrictor/"
+      }
     }
   }
 }

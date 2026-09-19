@@ -164,17 +164,58 @@
       ]
     },
     "sozialeStruktur": {
-      "werte": [""]
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "largeHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennchen",
+          "wert": "territorialOrBachelor",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "biome": {
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -847,6 +888,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%91%E5%B0%BE%E7%89%9B%E7%BE%9A"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen; Rechnerwerte bleiben bewusst offen."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Connochaetes taurinus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Connochaetes_taurinus/"
+      }
     }
   }
 }

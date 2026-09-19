@@ -147,14 +147,10 @@
       "werte": [
         {
           "typ": "allgemein",
-          "wert": "",
-          "minGruppengroesse": null,
-          "maxGruppengroesse": null,
-          "hinweis": {
-            "de": "Die Zoopedia beschreibt keine eigentlichen sozialen Bedürfnisse außer Paarung und Konkurrenz um Partner. Artgenossen werden in der Nähe toleriert, wenn genügend Ressourcen vorhanden sind.",
-            "en": "The Zoopedia describes no real social needs apart from mating and competition for mates. Conspecifics are tolerated nearby when resources are sufficient."
-          },
-          "quelle": "planetZoo2"
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "quelle": "animalDiversityWeb"
         }
       ]
     },
@@ -162,11 +158,29 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -412,6 +426,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%87%91%E5%87%A4%E8%9D%B6"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Flügelspannweite von 6,5 bis 8,6 cm wurde nicht als Körperlänge gespeichert. Im bereitgestellten Auszug ist keine Zoopedia-Illustration für diese Art enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Papilio machaon",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Papilio_machaon/"
+      }
     }
   }
 }

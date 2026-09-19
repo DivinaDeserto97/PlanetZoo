@@ -182,11 +182,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -836,6 +854,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Tiliqua scincoides",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Tiliqua_scincoides/"
+      }
     }
   }
 }

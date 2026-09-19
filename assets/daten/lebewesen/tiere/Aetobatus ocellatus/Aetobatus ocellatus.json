@@ -109,7 +109,15 @@
       "werte": [""]
     },
     "sozialeStruktur": {
-      "werte": [""]
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitaryOrAggregation",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "quelle": "fishBase"
+        }
+      ]
     },
     "biome": {
       "werte": [
@@ -124,11 +132,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "fishBase"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -805,6 +831,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "fishBase": {
+      "name": "FishBase – Aetobatus ocellatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Aetobatus-ocellatus.html"
+      }
     }
   }
 }

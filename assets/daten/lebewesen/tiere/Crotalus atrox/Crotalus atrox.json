@@ -194,11 +194,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -413,6 +439,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A5%BF%E9%83%A8%E8%8F%B1%E6%96%91%E5%93%8D%E5%B0%BE%E8%9B%87"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Im bereitgestellten Auszug ist keine Zoopedia-Illustration für diese Art enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Crotalus atrox",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Crotalus_atrox/"
+      }
     }
   }
 }

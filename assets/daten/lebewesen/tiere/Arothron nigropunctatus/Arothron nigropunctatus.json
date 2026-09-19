@@ -166,7 +166,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -433,6 +442,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%91%E6%96%91%E5%8F%89%E9%BC%BB%E9%B2%80"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer."
+    },
+    "fishBase": {
+      "name": "FishBase – Arothron nigropunctatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Arothron-nigropunctatus.html"
+      }
     }
   }
 }

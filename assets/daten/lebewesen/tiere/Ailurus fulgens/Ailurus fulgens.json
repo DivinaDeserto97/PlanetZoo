@@ -157,7 +157,24 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -848,6 +865,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B0%8F%E7%86%8A%E7%8C%AB"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Wildbestand wurde exakt wie angezeigt als 10 übernommen; kein nicht ausgewiesener Tausender-Faktor wurde ergänzt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Ailurus fulgens",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Ailurus_fulgens/"
+      }
     }
   }
 }

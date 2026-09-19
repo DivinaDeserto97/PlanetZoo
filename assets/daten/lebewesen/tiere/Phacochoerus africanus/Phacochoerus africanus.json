@@ -161,18 +161,27 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
         "werte": [
           {
-            "typ": "nahrungssuche",
+            "wert": "omnivore",
             "hinweis": {
-              "de": "Die Zoopedia erwähnt Nahrungssuche und mögliche Schäden an landwirtschaftlichen Ernten, nennt jedoch keine konkreten natürlichen Nahrungsarten.",
-              "en": "The Zoopedia mentions foraging and possible damage to crops, but does not specify particular natural food items."
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
             },
-            "quelle": "planetZoo2"
+            "quelle": "animalDiversityWeb"
           }
         ]
       },
@@ -345,6 +354,12 @@
       "name": "Planet Zoo 2 Zoopedia – Warzenschwein",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Phacochoerus africanus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Phacochoerus_africanus/"
+      }
     }
   }
 }

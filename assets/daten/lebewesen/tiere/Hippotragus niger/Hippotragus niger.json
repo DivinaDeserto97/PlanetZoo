@@ -223,7 +223,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -478,6 +495,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 2bfb407f und Asset-Stamm Antelope_Sable belegt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Hippotragus niger",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Hippotragus_niger/"
+      }
     }
   }
 }

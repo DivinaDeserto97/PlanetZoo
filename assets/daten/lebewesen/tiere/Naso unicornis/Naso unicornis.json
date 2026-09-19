@@ -159,7 +159,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -430,6 +439,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 4909624b und Asset-Stamm Unicornfish_Bluespine belegt."
+    },
+    "fishBase": {
+      "name": "FishBase – Naso unicornis",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Naso-unicornis.html"
+      }
     }
   }
 }

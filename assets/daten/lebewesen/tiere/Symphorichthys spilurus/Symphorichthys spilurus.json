@@ -139,11 +139,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "fishBase"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -385,6 +403,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID bacddd67 und Asset-Stamm Snapper_Sailfin belegt. Der auf der Seite nur vermutete Bereich von 3 bis 7 Jahren bis zur Geschlechtsreife wurde nicht als gesicherter strukturierter Wert übernommen."
+    },
+    "fishBase": {
+      "name": "FishBase – Symphorichthys spilurus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Symphorichthys-spilurus.html"
+      }
     }
   }
 }

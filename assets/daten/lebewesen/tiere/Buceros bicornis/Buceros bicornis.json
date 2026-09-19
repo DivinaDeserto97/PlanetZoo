@@ -215,7 +215,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -567,6 +576,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%8F%8C%E8%A7%92%E7%8A%80%E9%B8%9F"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Der Zoopedia-Status „Gefährdet“ wurde entsprechend der aktuellen Projekttabelle auf `vulnerable` abgebildet."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Buceros bicornis",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Buceros_bicornis/"
+      }
     }
   }
 }

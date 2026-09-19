@@ -1493,6 +1493,7 @@
       - `patches/`
         - [infotafel-tierdaten.json](../assets/daten/patches/infotafel-tierdaten.json)
         - [nahrungsnetz-tiere.json](../assets/daten/patches/nahrungsnetz-tiere.json)
+        - [sonderdaten-20260919.json](../assets/daten/patches/sonderdaten-20260919.json)
     - `js/`
       - `features/`
         - [animalLabels.js](../assets/js/features/animalLabels.js)

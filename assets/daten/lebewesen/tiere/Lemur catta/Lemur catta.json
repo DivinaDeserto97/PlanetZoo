@@ -159,11 +159,29 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -428,6 +446,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 293ac75a und Asset-Stamm Lemur_RingTailed belegt. Der Wildbestandswert „2“ wurde wegen unklarer Bedeutung nur als Rohwert übernommen."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Lemur catta",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Lemur_catta/"
+      }
     }
   }
 }

@@ -160,7 +160,16 @@
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "fishBase"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -854,6 +863,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%A4%90%E9%B3%9F"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    },
+    "fishBase": {
+      "name": "FishBase – Salmo trutta",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Salmo-trutta.html"
+      }
     }
   }
 }

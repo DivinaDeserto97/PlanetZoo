@@ -187,7 +187,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -489,6 +498,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 5cb85bb0 und Asset-Stamm Vulture_WhiteBacked belegt. Die Angabe 78–98 cm 'groß' wurde nicht als Körperlänge interpretiert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Gyps africanus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Gyps_africanus/"
+      }
     }
   }
 }

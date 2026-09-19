@@ -169,7 +169,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "achatinaFeedingStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -440,6 +449,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 4f6d1fc1 und Asset-Stamm Snail_GiantTigerLand belegt. Der Arterhaltungsstatus ist auf der Seite nicht offiziell bewertet und wird als „???“ angezeigt; deshalb bleibt der strukturierte Schutzstatus offen."
+    },
+    "achatinaFeedingStudy": {
+      "name": "Feed preferences and feeding behaviour of Achatina achatina",
+      "seiten": {
+        "en": "https://scielo.isciii.es/scielo.php?pid=S0004-05922014000200012&script=sci_arttext"
+      }
     }
   }
 }

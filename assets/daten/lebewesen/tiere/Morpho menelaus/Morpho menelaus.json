@@ -181,7 +181,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "morphoActivityStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -468,6 +477,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 732e17e9 und Asset-Stamm Butterfly_MenelausBlueMorpho belegt. Der formale Schutzstatus wird auf der Zoopedia-Seite als „???“ angezeigt und deshalb nicht interpretiert."
+    },
+    "morphoActivityStudy": {
+      "name": "Morpho butterfly temporal activity study",
+      "seiten": {
+        "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8668891/"
+      }
     }
   }
 }

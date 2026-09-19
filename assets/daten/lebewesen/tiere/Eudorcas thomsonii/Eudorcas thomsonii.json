@@ -232,7 +232,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -522,6 +539,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%B1%A4%E6%B0%8F%E7%9E%AA%E7%BE%9A"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Der angezeigte Wildbestand „145“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern nur als Rohwert gespeichert. Die Angabe „55–82 cm Höhe“ wurde nicht als Schulterhöhe gespeichert, da die Zoopedia die Messart nicht ausdrücklich als Schulterhöhe bezeichnet."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Eudorcas thomsonii",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Eudorcas_thomsonii/"
+      }
     }
   }
 }

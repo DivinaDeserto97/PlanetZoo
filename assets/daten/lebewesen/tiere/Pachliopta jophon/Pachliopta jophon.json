@@ -175,11 +175,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "sriLankaButterflyStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "sriLankaButterflyStudy"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -853,6 +871,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1%E6%9B%99%E5%87%A4%E8%9D%B6"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Flügelspannweite von 9 bis 13 cm ist im Übersichtstext enthalten; sie wurde nicht fälschlich als Körperlänge gespeichert. Eine Zoopedia-Illustration wurde nicht ergänzt, weil im bereitgestellten Auszug keine entsprechende Illustration-URL enthalten ist."
+    },
+    "sriLankaButterflyStudy": {
+      "name": "Sri Lankan butterfly larval food-plant study",
+      "seiten": {
+        "en": "https://pdfs.semanticscholar.org/07a7/070bba4d9252c2c56a8d3c51f50f7ac4726d.pdf"
+      }
     }
   }
 }

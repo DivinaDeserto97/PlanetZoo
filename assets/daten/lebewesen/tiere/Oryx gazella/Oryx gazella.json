@@ -134,7 +134,22 @@
       "werte": [""]
     },
     "sozialeStruktur": {
-      "werte": [""]
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "herd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "typ": "maennchen",
+          "wert": "territorialDominantMale",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "biome": {
       "werte": [
@@ -157,11 +172,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -838,6 +879,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Oryx gazella",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Oryx_gazella/"
+      }
     }
   }
 }

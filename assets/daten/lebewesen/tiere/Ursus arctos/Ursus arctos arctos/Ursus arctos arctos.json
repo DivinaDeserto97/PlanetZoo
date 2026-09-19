@@ -207,7 +207,16 @@
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -884,6 +893,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Ursus arctos",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Ursus_arctos/"
+      }
     }
   }
 }

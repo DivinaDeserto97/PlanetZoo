@@ -183,11 +183,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -662,6 +680,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%92%BB%E7%BA%B9%E9%BE%9F"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Projektfilter werden nur dort gesetzt, wo die Zoopedia-Angabe eindeutig auf eine bestehende Projektkategorie abgebildet werden kann."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Malaclemys terrapin",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Malaclemys_terrapin/"
+      }
     }
   }
 }

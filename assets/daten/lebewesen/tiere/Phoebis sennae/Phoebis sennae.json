@@ -173,11 +173,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "ufIfasCloudlessSulphur"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "ufIfasCloudlessSulphur"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -435,6 +453,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 3178cf94 und Asset-Stamm Butterfly_CloudlessSulphur belegt."
+    },
+    "ufIfasCloudlessSulphur": {
+      "name": "University of Florida IFAS – Cloudless Sulphur",
+      "seiten": {
+        "en": "https://ask.ifas.ufl.edu/publication/IN929"
+      }
     }
   }
 }

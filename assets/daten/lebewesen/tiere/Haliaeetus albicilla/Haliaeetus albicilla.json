@@ -215,7 +215,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -470,6 +479,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%99%BD%E5%B0%BE%E6%B5%B7%E9%9B%95"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Flügelspannweite von 1,7 bis 2,5 m wurde nicht als Körperlänge gespeichert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Haliaeetus albicilla",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Haliaeetus_albicilla/"
+      }
     }
   }
 }

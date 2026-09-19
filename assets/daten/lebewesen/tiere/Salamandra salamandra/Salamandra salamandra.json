@@ -133,11 +133,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -779,6 +797,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%81%AB%E8%9D%BE%E8%9E%88"
       },
       "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. Verzögerte Einnistung (2–5 Monate), 20–75 Larven und mindestens 4 Wochen Larvenstadium bleiben in der Prosa, sofern kein sicher kompatibler strukturierter Typ vorhanden ist. Kein separates Illustrationsbild im Auszug."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Salamandra salamandra",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Salamandra_salamandra/"
+      }
     }
   }
 }

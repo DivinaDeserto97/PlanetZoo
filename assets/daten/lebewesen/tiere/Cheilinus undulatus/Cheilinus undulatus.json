@@ -192,7 +192,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -941,6 +950,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%B3%A2%E7%BA%B9%E5%94%87%E9%B1%BC"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen."
+    },
+    "fishBase": {
+      "name": "FishBase – Cheilinus undulatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Cheilinus-undulatus.html"
+      }
     }
   }
 }

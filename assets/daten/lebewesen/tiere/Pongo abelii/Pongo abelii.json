@@ -147,11 +147,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "frisst": {
@@ -616,6 +634,12 @@
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/sumatra-orang-utan"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; die direkten Medien-URLs waren im bereitgestellten Text nicht enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Pongo abelii",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Pongo_abelii/"
+      }
     }
   }
 }

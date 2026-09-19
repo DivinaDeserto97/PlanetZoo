@@ -146,26 +146,25 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
         "werte": [
           {
-            "typ": "jagd",
+            "wert": "carnivore",
             "hinweis": {
-              "de": "Der Indische Riesenskorpion greift Beute eher mit seinen kräftigen Scheren als mit seinem Stachel an. Sein Gift wird als relativ schwach beschrieben.",
-              "en": "The Indian giant scorpion attacks prey primarily with its powerful pincers rather than its sting. Its venom is described as relatively weak."
-            },
-            "quelle": "planetZoo2"
-          },
-          {
-            "typ": "nahrungsverzicht",
-            "wert": 1,
-            "einheit": "jahr",
-            "hinweis": {
-              "de": "Laut Zoopedia kann die Art bis zu ein Jahr ohne Nahrung überleben.",
-              "en": "According to the Zoopedia, the species can survive for up to one year without food."
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
             },
             "quelle": "planetZoo2"
           }

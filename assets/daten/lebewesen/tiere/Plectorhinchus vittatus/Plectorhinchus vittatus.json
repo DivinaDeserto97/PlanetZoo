@@ -128,7 +128,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -318,6 +327,12 @@
       "name": "Planet Zoo 2 Zoopedia – Orient-Süsslippe",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "fishBase": {
+      "name": "FishBase – Plectorhinchus vittatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Plectorhinchus-vittatus.html"
+      }
     }
   }
 }

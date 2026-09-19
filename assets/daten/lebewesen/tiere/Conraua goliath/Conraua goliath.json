@@ -198,11 +198,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -433,6 +451,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%B7%A8%E8%B0%90%E8%9B%99"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Eine Illustration wurde nicht ergänzt, weil im bereitgestellten Auszug keine Zoopedia-Illustration angegeben ist."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Conraua goliath",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Conraua_goliath/"
+      }
     }
   }
 }

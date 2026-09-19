@@ -155,11 +155,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "oophagaResearch"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "carnivore",
+            "hinweis": {
+              "de": "Überwiegend tierische Nahrung.",
+              "en": "Primarily animal food."
+            },
+            "quelle": "oophagaResearch"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -401,6 +419,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 07f4ebc6 und Asset-Stamm TreeFrog_LehmannsPoison belegt."
+    },
+    "oophagaResearch": {
+      "name": "Oophaga lehmanni natural-history research",
+      "seiten": {
+        "en": "https://phaidra.vetmeduni.ac.at/api/object/o%3A3094/download"
+      }
     }
   }
 }

@@ -166,7 +166,16 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -433,6 +442,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 08afbc5d und Asset-Stamm Lizard_KomodoDragon belegt. Der Wildbestandswert „1.383“ wurde wegen unklarer Formatierung nur als Rohwert übernommen."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Varanus komodoensis",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Varanus_komodoensis/"
+      }
     }
   }
 }

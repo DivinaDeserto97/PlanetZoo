@@ -229,7 +229,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -484,6 +493,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%8B%90%E7%8D%B4"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Suricata suricatta",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Suricata_suricatta/"
+      }
     }
   }
 }

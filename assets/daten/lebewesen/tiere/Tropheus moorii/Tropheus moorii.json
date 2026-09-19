@@ -195,7 +195,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -482,6 +491,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BA%A2%E8%BA%AB%E8%93%9D%E9%A6%96%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Der strukturierte Arterhaltungsstatus der Seite lautet „Nicht gefährdet“, während der Fließtext die Art als „potenziell gefährdet“ bezeichnet; dieser Widerspruch wurde nicht extern aufgelöst."
+    },
+    "fishBase": {
+      "name": "FishBase – Tropheus moorii",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Tropheus-moorii.html"
+      }
     }
   }
 }

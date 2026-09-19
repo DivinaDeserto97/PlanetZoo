@@ -161,26 +161,35 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "goliathActivityStudy"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "goliathActivityStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
         "werte": [
           {
-            "typ": "adult",
+            "wert": "omnivore",
             "hinweis": {
-              "de": "Ausgewachsene Goliathkäfer zerkratzen Baumrinde mit ihren Fußgliedern, um Pflanzensaft zu gewinnen.",
-              "en": "Adult Goliath beetles scratch tree bark with their tarsi to extract plant sap."
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
             },
-            "quelle": "planetZoo2"
-          },
-          {
-            "typ": "larve",
-            "hinweis": {
-              "de": "Larven ernähren sich von verrottendem pflanzlichem und tierischem Material und benötigen eine proteinreiche Ernährung.",
-              "en": "Larvae feed on decaying plant and animal matter and require a protein-rich diet."
-            },
-            "quelle": "planetZoo2"
+            "quelle": "goliathActivityStudy"
           }
         ]
       },
@@ -353,6 +362,12 @@
       "name": "Planet Zoo 2 Zoopedia – Goliathkäfer",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "goliathActivityStudy": {
+      "name": "Goliath beetle activity observations",
+      "seiten": {
+        "en": "https://www.researchgate.net/publication/388498332_Red_Listing_African_Goliath_Beetles_Assessing_Threats_and_Conservation_Needs"
+      }
     }
   }
 }

@@ -277,7 +277,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -532,6 +549,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%AC%A7%E4%BA%9A%E7%8C%9E%E7%8C%81"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Der angezeigte Wildbestand „50“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern als Rohwert gespeichert. Einzelne Unterarten wurden nicht extern ergänzt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Lynx lynx",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Lynx_lynx/"
+      }
     }
   }
 }

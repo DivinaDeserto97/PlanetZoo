@@ -184,7 +184,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "fishBase"
+        },
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -462,6 +479,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%A4%A7%E5%88%BA%E8%89%B2%E9%B3%85"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer."
+    },
+    "fishBase": {
+      "name": "FishBase – Chromobotia macracanthus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Chromobotia-macracanthus.html"
+      }
     }
   }
 }

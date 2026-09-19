@@ -173,7 +173,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -887,6 +896,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%9D%A1%E7%BA%B9%E8%B1%86%E5%A8%98%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Der regionale Hinweis, dass die Art im Persischen Golf als gefährdet gilt, wurde im Schutzstatus-Hinweis dokumentiert."
+    },
+    "fishBase": {
+      "name": "FishBase – Abudefduf vaigiensis",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Abudefduf-vaigiensis.html"
+      }
     }
   }
 }

@@ -151,7 +151,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -370,6 +379,12 @@
       "name": "Planet Zoo 2 Zoopedia – Dunkler Riesenzackenbarsch",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "fishBase": {
+      "name": "FishBase – Epinephelus lanceolatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Epinephelus-lanceolatus.html"
+      }
     }
   }
 }

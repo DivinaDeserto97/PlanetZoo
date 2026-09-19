@@ -123,11 +123,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "smithsonianPhasmids"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "smithsonianPhasmids"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -769,6 +787,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%B7%A8%E4%BA%BA%E5%8F%B6%E4%97%9B"
       },
       "status": "Zoopedia-Pass aus dem bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Die Quelle verwendet sowohl 'Phyllium giganteum' als auch 'Phyllium giganteum'; die strukturierte Taxonomie folgt dem Übersichtstext und dem Gattungsfeld Pulchriphyllium. Wildbestand 'unbekannt' bleibt ohne erfundene Zahl. Der Schutzstatus bleibt strukturiert offen, weil das dedizierte Feld nur '???' zeigt und der Text ausdrücklich sagt, dass keine offizielle Detailbewertung vorliegt. Etwa 40 Eier, 1–2 Eier pro Tag, 6–9 Monate bis zum Schlupf sowie 6/7 Häutungen bleiben in der Prosa. Kein separates Illustrationsbild im Auszug."
+    },
+    "smithsonianPhasmids": {
+      "name": "Smithsonian – Phasmids",
+      "seiten": {
+        "en": "https://qrius.si.edu/taxonomy/term/12191"
+      }
     }
   }
 }

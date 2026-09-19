@@ -197,7 +197,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -900,6 +909,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E9%87%91%E7%8C%9B%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Projektfilter werden nur dort gesetzt, wo die Zoopedia-Angabe eindeutig auf eine bestehende Projektkategorie abgebildet werden kann."
+    },
+    "fishBase": {
+      "name": "FishBase – Hydrocynus vittatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Hydrocynus-vittatus.html"
+      }
     }
   }
 }

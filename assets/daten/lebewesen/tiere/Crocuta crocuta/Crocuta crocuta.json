@@ -204,7 +204,16 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -563,6 +572,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E6%96%91%E9%AC%A3%E7%8B%97"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Angabe „70–92 cm groß“ wurde nicht als Körperlänge oder Schulterhöhe interpretiert, da die Messart nicht genauer bezeichnet wird."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Crocuta crocuta",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Crocuta_crocuta/"
+      }
     }
   }
 }

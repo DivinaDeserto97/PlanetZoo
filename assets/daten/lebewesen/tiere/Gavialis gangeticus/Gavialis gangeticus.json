@@ -121,7 +121,15 @@
       "werte": [""]
     },
     "sozialeStruktur": {
-      "werte": [""]
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "looseAggregation",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "biome": {
       "werte": [
@@ -136,7 +144,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -826,6 +843,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Gavialis gangeticus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Gavialis_gangeticus/"
+      }
     }
   }
 }

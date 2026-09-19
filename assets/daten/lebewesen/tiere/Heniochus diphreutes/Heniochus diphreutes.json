@@ -164,7 +164,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -813,6 +822,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%A4%9A%E6%A3%98%E9%A9%AC%E5%A4%AB%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Edition, Gehegetyp und Kontinent-Filter bleiben offen, weil sie auf dieser Seite nicht ausdrücklich angegeben sind. Nicht dort belegte biologische Werte bleiben ebenfalls offen."
+    },
+    "fishBase": {
+      "name": "FishBase – Heniochus diphreutes",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Heniochus-diphreutes.html"
+      }
     }
   }
 }

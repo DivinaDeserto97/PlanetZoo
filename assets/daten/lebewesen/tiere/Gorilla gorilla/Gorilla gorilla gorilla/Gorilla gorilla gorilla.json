@@ -209,11 +209,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -455,6 +473,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Kontext verwendet, der Asset-ID 780f5e36 und Asset-Stamm Gorilla_WesternLowland belegt. Die Angaben 1,70 m bzw. 1,50 m in aufrechter Haltung wurden nicht als Schulterhöhe strukturiert gespeichert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Gorilla gorilla",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Gorilla_gorilla/"
+      }
     }
   }
 }

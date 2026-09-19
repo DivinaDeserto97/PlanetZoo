@@ -123,7 +123,15 @@
       "werte": [""]
     },
     "sozialeStruktur": {
-      "werte": [""]
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "fissionFusionHerd",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "biome": {
       "werte": [
@@ -138,11 +146,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -819,6 +853,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Giraffa camelopardalis",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Giraffa_camelopardalis/"
+      }
     }
   }
 }

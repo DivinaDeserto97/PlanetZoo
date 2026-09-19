@@ -139,7 +139,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -394,6 +403,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 65f778d4 und Asset-Stamm Triggerfish_Clown belegt."
+    },
+    "fishBase": {
+      "name": "FishBase – Balistoides conspicillum",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Balistoides-conspicillum.html"
+      }
     }
   }
 }

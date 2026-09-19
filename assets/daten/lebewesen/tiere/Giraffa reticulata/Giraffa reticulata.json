@@ -174,11 +174,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -525,6 +551,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BD%91%E7%BA%B9%E9%95%BF%E9%A2%88%E9%B9%BF"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht eindeutig belegte biologische Werte bleiben offen. Der Wildbestand wurde nicht interpretiert, weil der bereitgestellte Auszug nur den Rohwert „11.05“ zeigt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Giraffa camelopardalis",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Giraffa_camelopardalis/"
+      }
     }
   }
 }

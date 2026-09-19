@@ -197,7 +197,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -464,6 +473,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID eb5fc3cc und Asset-Stamm Surgeonfish_Palette belegt."
+    },
+    "fishBase": {
+      "name": "FishBase – Paracanthurus hepatus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Paracanthurus-hepatus.html"
+      }
     }
   }
 }

@@ -202,7 +202,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -480,6 +489,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%B2%B8%E5%A4%B4%E9%B9%B3"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Angabe „1,1–1,5 m groß“ wurde nicht als Körperlänge oder Schulterhöhe interpretiert; die Flügelspannweite 2,3–2,6 m bleibt im Beschreibungstext. Das auf der Zoopedia verlinkte offizielle Tier-Vorstellungs-Video wurde unter `video` eingetragen."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Balaeniceps rex",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Balaeniceps_rex/"
+      }
     }
   }
 }

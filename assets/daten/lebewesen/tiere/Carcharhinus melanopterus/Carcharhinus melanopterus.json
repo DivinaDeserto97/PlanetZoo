@@ -199,7 +199,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "blacktipReefSharkDielStudy"
+        },
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "blacktipReefSharkDielStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -1024,6 +1041,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E4%B9%8C%E7%BF%85%E7%9C%9F%E9%B2%A8"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Edition, Gehegetyp und Kontinent-Filter bleiben offen, weil sie auf dieser Seite nicht ausdrücklich angegeben sind. Nicht dort belegte biologische Werte bleiben ebenfalls offen."
+    },
+    "blacktipReefSharkDielStudy": {
+      "name": "Blacktip reef shark diel activity study",
+      "seiten": {
+        "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4489509/"
+      }
     }
   }
 }

@@ -118,7 +118,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "sunfishActivityStudy"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -808,6 +817,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "sunfishActivityStudy": {
+      "name": "Ocean sunfish – diurnal foraging study",
+      "seiten": {
+        "en": "https://pubmed.ncbi.nlm.nih.gov/25643743/"
+      }
     }
   }
 }

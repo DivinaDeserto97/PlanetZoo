@@ -192,7 +192,24 @@
       "werte": [""]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -891,6 +908,12 @@
         "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/leistenkrokodil"
       },
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt eingetragen. Nicht im Auszug enthaltene Felder bleiben offen. Wildbestand wurde exakt wie angezeigt als 500 übernommen; kein nicht ausgewiesener Tausender-Faktor wurde ergänzt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Crocodylus porosus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Crocodylus_porosus/"
+      }
     }
   }
 }

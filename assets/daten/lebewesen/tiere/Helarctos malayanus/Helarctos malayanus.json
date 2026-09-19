@@ -145,18 +145,27 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
         "werte": [
           {
-            "typ": "nahrung",
+            "wert": "omnivore",
             "hinweis": {
-              "de": "Die Zoopedia nennt Honig und Insekten. Sonnenbären plündern Bienennester und nutzen ihre 20 bis 25 cm lange Zunge, um an Honig und Insekten zu gelangen.",
-              "en": "The Zoopedia mentions honey and insects. Sun bears raid bee nests and use their 20 to 25 cm long tongue to reach honey and insects."
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
             },
-            "quelle": "planetZoo2"
+            "quelle": "animalDiversityWeb"
           }
         ]
       },
@@ -338,6 +347,12 @@
       "name": "Planet Zoo 2 Zoopedia – Sonnenbär",
       "seiten": {},
       "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Karte und Hauptbild sind als Pflichtbestandteile mit lokalen Zielpfaden angelegt; direkte Medien-URLs waren im kopierten Text nicht enthalten."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Helarctos malayanus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Helarctos_malayanus/"
+      }
     }
   }
 }

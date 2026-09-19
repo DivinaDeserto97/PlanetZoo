@@ -154,11 +154,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "omnivore",
+            "hinweis": {
+              "de": "Pflanzliche und tierische Nahrung.",
+              "en": "Both plant and animal food."
+            },
+            "quelle": "fishBase"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -412,6 +430,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%B4%9D%E6%B0%8F%E8%99%B9%E9%93%B6%E6%B1%89%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die Angabe „8–11 cm groß“ wurde nicht als Körperlänge gespeichert, weil die Messart nicht genauer bezeichnet wird."
+    },
+    "fishBase": {
+      "name": "FishBase – Melanotaenia boesemani",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Melanotaenia-boesemani.html"
+      }
     }
   }
 }

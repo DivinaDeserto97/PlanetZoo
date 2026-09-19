@@ -188,11 +188,37 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -434,6 +460,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%9D%9E%E6%B4%B2%E6%B0%B4%E7%89%9B"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Der angezeigte Wildbestand „564“ wurde wegen fehlendem Kontext nicht numerisch interpretiert, sondern nur als Rohwert gespeichert. Die Angabe „1,4–1,7 m groß“ wurde nicht als Schulterhöhe gespeichert, weil die Seite die Messart nicht eindeutig bezeichnet."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Syncerus caffer",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Syncerus_caffer/"
+      }
     }
   }
 }

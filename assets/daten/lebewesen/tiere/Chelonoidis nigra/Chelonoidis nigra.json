@@ -206,11 +206,29 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
-        "werte": [""]
+        "werte": [
+          {
+            "wert": "herbivore",
+            "hinweis": {
+              "de": "Überwiegend pflanzliche Nahrung.",
+              "en": "Primarily plant food."
+            },
+            "quelle": "animalDiversityWeb"
+          }
+        ]
       },
       "nahrungsnetz": {
         "jungtier": {
@@ -452,6 +470,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E5%8A%A0%E6%8B%89%E5%B8%95%E6%88%88%E6%96%AF%E8%B1%A1%E9%BE%9F"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen. Die unterschiedlich formulierten Aussagen zum Gefährdungsstatus im Fließtext wurden nicht extern abgeglichen; maßgeblicher strukturierter Status ist das auf der Seite angezeigte „Gefährdet“."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Chelonoidis nigra",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Chelonoidis_nigra/"
+      }
     }
   }
 }

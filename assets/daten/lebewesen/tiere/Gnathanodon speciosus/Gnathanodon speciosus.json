@@ -195,7 +195,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -856,6 +865,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E9%B9%82%E6%97%A0%E9%BD%BF%E9%B2%B9"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Edition, Gehegetyp und Kontinent-Filter bleiben offen, weil sie auf dieser Seite nicht ausdrücklich als entsprechende Filterwerte angegeben sind. Nicht belegte biologische Werte bleiben ebenfalls offen."
+    },
+    "fishBase": {
+      "name": "FishBase – Gnathanodon speciosus",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Gnathanodon-speciosus.html"
+      }
     }
   }
 }

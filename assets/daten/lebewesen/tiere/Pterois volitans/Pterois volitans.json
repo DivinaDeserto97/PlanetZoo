@@ -128,7 +128,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -818,6 +827,12 @@
     "projekt": {
       "name": "PlanetZoo2-Projekt",
       "typ": "projektintern"
+    },
+    "fishBase": {
+      "name": "FishBase – Pterois volitans",
+      "seiten": {
+        "en": "https://fishbase.org/summary/Pterois-volitans"
+      }
     }
   }
 }

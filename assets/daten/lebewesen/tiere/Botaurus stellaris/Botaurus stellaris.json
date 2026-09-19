@@ -179,7 +179,24 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "crepuscular",
+          "beschreibung": {
+            "de": "Vor allem in der Dämmerung aktiv.",
+            "en": "Most active around twilight."
+          },
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -434,6 +451,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID b810caa8 und Asset-Stamm Bittern_Eurasian belegt. Die Angabe 69–81 cm 'groß' wurde nicht als Körperlänge interpretiert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Botaurus stellaris",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Botaurus_stellaris/"
+      }
     }
   }
 }

@@ -209,7 +209,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -437,6 +446,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BE%8E%E6%B4%B2%E7%89%9B%E8%9B%99"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte Werte bleiben leer. Die Gattungsabweichung der Quelle wurde nicht extern korrigiert."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Aquarana catesbeianus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Aquarana_catesbeianus/"
+      }
     }
   }
 }

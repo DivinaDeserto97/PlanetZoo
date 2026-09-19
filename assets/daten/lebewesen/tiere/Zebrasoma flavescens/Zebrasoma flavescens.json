@@ -182,7 +182,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "diurnal",
+          "beschreibung": {
+            "de": "Tagaktiv.",
+            "en": "Diurnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -469,6 +478,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%BB%84%E9%AB%98%E9%B3%8D%E5%88%BA%E5%B0%BE%E9%B1%BC"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht auf dieser Seite belegte biologische Werte bleiben offen."
+    },
+    "fishBase": {
+      "name": "FishBase – Zebrasoma flavescens",
+      "seiten": {
+        "en": "https://www.fishbase.se/summary/Zebrasoma-flavescens.html"
+      }
     }
   }
 }

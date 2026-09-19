@@ -213,7 +213,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -468,6 +477,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E9%95%BF%E8%80%B3%E9%B8%AE"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben offen. Die Angaben 27–40 cm bei Weibchen und 25–37 cm bei Männchen werden im Quelltext nur als „Größe“ bezeichnet und deshalb nicht in ein Körperlängen- oder Schulterhöhenfeld gezwungen. Auch die Flügelspannweiten bleiben im Quelltext, da das aktuelle Schema kein eigenes Feld dafür vorsieht."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Asio otus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Asio_otus/"
+      }
     }
   }
 }

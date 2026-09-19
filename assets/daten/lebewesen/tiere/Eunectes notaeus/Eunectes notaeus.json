@@ -161,7 +161,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "animalDiversityWeb"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -416,6 +425,12 @@
         "zh-Hans": ""
       },
       "status": "Zoopedia-Pass ausschließlich aus dem vom Nutzer bereitgestellten Zoopedia-Text. Für die Medien wurde zusätzlich der bereits vom Nutzer bereitgestellte offizielle Zoopedia-Listeneintrag verwendet, der Asset-ID 518ac83f und Asset-Stamm Constrictor_YellowAnaconda belegt."
+    },
+    "animalDiversityWeb": {
+      "name": "Animal Diversity Web – Eunectes notaeus",
+      "seiten": {
+        "en": "https://animaldiversity.org/accounts/Eunectes_notaeus/"
+      }
     }
   }
 }

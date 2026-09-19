@@ -255,7 +255,16 @@
       ]
     },
     "aktivitaet": {
-      "werte": [""]
+      "werte": [
+        {
+          "wert": "nocturnal",
+          "beschreibung": {
+            "de": "Nachtaktiv.",
+            "en": "Nocturnal."
+          },
+          "quelle": "fishBase"
+        }
+      ]
     },
     "ernaehrung": {
       "fressverhalten": {
@@ -521,6 +530,12 @@
         "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E8%B1%B9%E7%BA%B9%E9%B2%A8"
       },
       "status": "Zoopedia-Pass ausschließlich aus der vom Nutzer bereitgestellten Zoopedia-Seite. Nicht belegte Werte bleiben leer. Der Widerspruch zwischen Fließtext ('stark gefährdet') und Statusfeld ('Gefährdet') wurde dokumentiert und nicht extern korrigiert."
+    },
+    "fishBase": {
+      "name": "FishBase – Stegostoma tigrinum",
+      "seiten": {
+        "en": "https://fishbase.se/summary/Stegostoma-tigrinum.html"
+      }
     }
   }
 }
