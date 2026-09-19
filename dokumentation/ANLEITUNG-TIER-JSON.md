@@ -25,7 +25,7 @@ Als Referenz für die **aktuell gültige Struktur** eignen sich besonders:
 | `1.5`            | Dezimalzahl                                | `7.6`                |
 | `true` / `false` | Ja/Nein                                    | `true`               |
 | `null`           | Wert derzeit nicht bekannt / nicht gesetzt | `null`               |
-| `[]`             | Liste                                      | `["africa", "asia"]` |
+| `[]`             | Liste                                      | `["Africa", "asia"]` |
 | `{}`             | Objekt mit Unterfeldern                    | `{ "de": "Text" }`   |
 
 ### Wichtig
@@ -118,7 +118,7 @@ Die Werte unter `filter` steuern die Filter auf `home.html` und `map.html`.
     "Landgehege"
   ],
   "kontinente": [
-    "africa"
+    "Africa"
   ],
   "biome": [
     "Graslandschaft",
@@ -192,7 +192,7 @@ Beispiel:
 
 ```json
 "kontinente": [
-  "africa"
+  "Africa"
 ]
 ```
 
@@ -1693,7 +1693,7 @@ unsichereVerwandtschaft
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["africa"],
+    "kontinente": ["Africa"],
     "biome": ["Graslandschaft", "Wüste"],
     "schutzstatus": "vulnerable"
   },

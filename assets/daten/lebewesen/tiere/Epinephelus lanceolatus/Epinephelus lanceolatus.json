@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["africa", "asia", "oceania"],
+    "kontinente": ["Africa", "asia", "oceania"],
     "biome": ["Ästuar", "Mangrove", "Riff", "Tropen"],
     "schutzstatus": "dataDeficient"
   },

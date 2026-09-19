@@ -16,7 +16,7 @@
   "filter": {
     "edition": "deluxe",
     "gehegetyp": ["Voliere"],
-    "kontinente": ["northAmerica", "europe", "africa", "asia"],
+    "kontinente": ["northAmerica", "europe", "Africa", "asia"],
     "biome": ["Gemäßigt", "Graslandschaft", "Tundra", "Wüste", "Taiga"],
     "schutzstatus": "leastConcern"
   },

@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Landgehege"],
-    "kontinente": ["europe", "asia", "africa"],
+    "kontinente": ["europe", "asia", "Africa"],
     "biome": ["Gemäßigt"],
     "schutzstatus": "leastConcern"
   },

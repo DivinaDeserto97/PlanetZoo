@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Ausstellung"],
-    "kontinente": ["africa"],
+    "kontinente": ["Africa"],
     "biome": ["Graslandschaft", "Tropen"],
     "schutzstatus": "notEvaluated"
   },

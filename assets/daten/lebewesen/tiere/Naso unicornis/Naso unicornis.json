@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["africa", "asia", "oceania"],
+    "kontinente": ["Africa", "asia", "oceania"],
     "biome": ["Riff", "Tropen"],
     "schutzstatus": "leastConcern"
   },

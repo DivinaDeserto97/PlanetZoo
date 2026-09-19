@@ -16,7 +16,7 @@
   "filter": {
     "edition": "standard",
     "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["africa"],
+    "kontinente": ["Africa"],
     "biome": ["Seen und Flüsse"],
     "schutzstatus": "leastConcern"
   },
