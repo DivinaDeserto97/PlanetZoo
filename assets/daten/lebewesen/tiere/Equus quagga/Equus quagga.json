@@ -198,7 +198,23 @@
           "werte": []
         },
         "erwachsen": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Connochaetes taurinus",
+              "typ": "tier",
+              "beziehung": "konkurrenz",
+              "wirkung": "-/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Für wandernde Steppenzebras und Streifengnus in der Serengeti ist Konkurrenz beim Weiden nachgewiesen; sie tritt zusammen mit erleichternden Effekten innerhalb der Weidegemeinschaft auf.",
+                "en": "Competition during grazing has been documented between migratory plains zebras and blue wildebeest in the Serengeti, alongside facilitative effects within the grazing community."
+              },
+              "quelle": "anderson2024Serengeti"
+            }
+          ]
         }
       }
     }
@@ -909,6 +925,13 @@
       "seiten": {
         "en": "https://animaldiversity.org/accounts/Equus_quagga/"
       }
+    },
+    "anderson2024Serengeti": {
+      "name": "Anderson et al. (2024) – Interplay of competition and facilitation in grazing succession by migrant Serengeti herbivores",
+      "seiten": {
+        "en": "https://pubmed.ncbi.nlm.nih.gov/38359113/"
+      },
+      "doi": "10.1126/science.adg0744"
     }
   }
 }

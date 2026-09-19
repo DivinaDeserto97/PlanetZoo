@@ -70,11 +70,71 @@ const TIER_ALIASES = {
   human: "Homo sapiens",
 };
 
+const ENTITY_VALUE_ALIASES = new Map([
+  ["pflanzen", "Pflanzliche Nahrung"],
+  ["pflanzliche nahrung", "Pflanzliche Nahrung"],
+  ["vegetation", "Pflanzliche Nahrung"],
+  ["plantfood", "Pflanzliche Nahrung"],
+  ["plant food", "Pflanzliche Nahrung"],
+  ["plants", "Pflanzliche Nahrung"],
+
+  ["grass", "Gras"],
+  ["gras", "Gras"],
+
+  ["algae", "Algen"],
+  ["algen", "Algen"],
+
+  ["fruit", "Früchte"],
+  ["fruits", "Früchte"],
+  ["fruechte", "Früchte"],
+  ["früchte", "Früchte"],
+
+  ["leaf", "Blätter"],
+  ["leaves", "Blätter"],
+  ["blaetter", "Blätter"],
+  ["blätter", "Blätter"],
+]);
+
+function normalizeEntityValue(value) {
+  const roh = String(value ?? "").trim();
+
+  if (!roh) {
+    return roh;
+  }
+
+  return ENTITY_VALUE_ALIASES.get(roh.toLowerCase()) ?? roh;
+}
+
 /* ======================================== */
 /* LABELS FÜR NICHT GELADENE RESSOURCEN     */
 /* ======================================== */
 
 const ENTITY_LABELS = {
+  "Pflanzliche Nahrung": {
+    de: "Pflanzliche Nahrung",
+    en: "Plant food",
+  },
+
+  Gras: {
+    de: "Gras",
+    en: "Grass",
+  },
+
+  Algen: {
+    de: "Algen",
+    en: "Algae",
+  },
+
+  Blätter: {
+    de: "Blätter",
+    en: "Leaves",
+  },
+
+  Früchte: {
+    de: "Früchte",
+    en: "Fruit",
+  },
+
   aas: {
     de: "Aas",
     en: "Carrion",
@@ -548,7 +608,7 @@ function getTierNodeId(tier) {
 /* ======================================== */
 
 function resolveEntityNode(entry, tiere, quellTier = null) {
-  const value = entry.wert;
+  const value = normalizeEntityValue(entry.wert);
 
   const loadedTier = findTier(tiere, value);
 
@@ -810,6 +870,8 @@ function normalizeSlot(value) {
 /* ======================================== */
 
 function inferKind(value, typ) {
+  value = normalizeEntityValue(value);
+
   const normalizedTyp = String(typ ?? "")
     .trim()
     .toLowerCase();
@@ -916,10 +978,11 @@ function getKindLabel(kind) {
 
 function getEntityLabel(value) {
   const language = getLanguage();
+  const normalizedValue = normalizeEntityValue(value);
 
-  const labels = ENTITY_LABELS[value];
+  const labels = ENTITY_LABELS[normalizedValue];
 
-  return labels?.[language] ?? labels?.de ?? value;
+  return labels?.[language] ?? labels?.de ?? normalizedValue;
 }
 
 /* ======================================== */

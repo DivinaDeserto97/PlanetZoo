@@ -73,7 +73,7 @@ export async function init() {
 
     connectionsSvg: connections,
 
-    storageKey: "planetZoo2-nahrungsnetz-layout-v4",
+    storageKey: "planetZoo2-nahrungsnetz-layout-v5",
 
     signal,
 

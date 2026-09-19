@@ -1,0 +1,46 @@
+{
+  "erstelltAm": "2026-09-19",
+  "zweck": "Nahrungsnetz: allgemeine Ressourcen vereinheitlichen und erste belegte Konkurrenzbeziehung ergänzen.",
+  "normalisierung": {
+    "Pflanzen": "Pflanzliche Nahrung",
+    "Vegetation": "Pflanzliche Nahrung",
+    "plantFood": "Pflanzliche Nahrung",
+    "grass": "Gras",
+    "algae": "Algen",
+    "fruit/fruits/fruechte": "Früchte",
+    "leaves/leaf/blaetter": "Blätter"
+  },
+  "regel": "Konkrete oder fachlich spezifischere Gruppen wie Bambus, Blüten, Feigen, Braunalgen, Mikroalgen, Wasserpflanzen usw. bleiben getrennt. Wissenschaftliche Artnamen werden nicht auf Sammelbegriffe reduziert.",
+  "aenderungen": [
+    {
+      "tier": "Morpho menelaus",
+      "lebensphase": "jungtier",
+      "von": "Pflanzen",
+      "zu": "Pflanzliche Nahrung"
+    },
+    {
+      "tier": "Chromobotia macracanthus",
+      "lebensphase": "erwachsen",
+      "von": "Pflanzen",
+      "zu": "Pflanzliche Nahrung"
+    },
+    {
+      "tier": "Achatina achatina",
+      "lebensphase": "erwachsen",
+      "von": "Vegetation",
+      "zu": "Pflanzliche Nahrung"
+    },
+    {
+      "tier": "Equus quagga",
+      "lebensphase": "erwachsen",
+      "hinzugefuegt": "Konkurrenz mit Connochaetes taurinus"
+    }
+  ],
+  "konkurrenz": {
+    "Equus quagga -> Connochaetes taurinus": {
+      "beziehung": "konkurrenz",
+      "wirkung": "-/-",
+      "quelle": "Anderson et al. 2024, Science, DOI 10.1126/science.adg0744"
+    }
+  }
+}

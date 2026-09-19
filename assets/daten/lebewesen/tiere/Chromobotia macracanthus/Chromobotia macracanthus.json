@@ -234,7 +234,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "Pflanzen",
+              "wert": "Pflanzliche Nahrung",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",

@@ -200,7 +200,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "Vegetation",
+              "wert": "Pflanzliche Nahrung",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",

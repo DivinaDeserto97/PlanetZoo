@@ -209,7 +209,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "Pflanzen",
+              "wert": "Pflanzliche Nahrung",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",

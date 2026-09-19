@@ -198,9 +198,92 @@ function createNahrungsnetzSlotMap(graph) {
   const nodeById = new Map(nodes.map((node) => [node.id, node]));
   const trophieEbenen = berechneTrophieEbenen(nodes, edges, nodeById);
   const regionen = bestimmeLayoutRegionen(nodes, edges, nodeById);
+  const destruentIds = bestimmeDestruenten(edges);
+
+  const result = {};
+  const used = new Set();
+  const platzierteSlots = new Map();
+  const nachbarn = baueNachbarMap(edges);
+
+  const kreislaufRessourcen = nodes.filter(istKreislaufRessource);
+  const pflanzen = nodes.filter((node) => node.kind === "plant");
+  const allgemeineRessourcen = nodes.filter(
+    (node) =>
+      node.kind !== "animal" &&
+      node.kind !== "plant" &&
+      !istKreislaufRessource(node),
+  );
+  const destruenten = nodes.filter(
+    (node) => node.kind === "animal" && destruentIds.has(node.id),
+  );
+  const tiere = nodes.filter(
+    (node) => node.kind === "animal" && !destruentIds.has(node.id),
+  );
+
+  /*
+      ========================================================
+      1. OBEN: STARK VERALLGEMEINERTE RESSOURCEN
+      ========================================================
+
+      Aas, Muttermilch, Plankton, Wasser, Mineralien usw.
+      bekommen bewusst eine eigene obere Bahn. Diese Knoten
+      sind keine Trophiespalte, sondern Sammel-/Ressourcenknoten.
+
+      Jede zweite Spalte bleibt frei, damit Linien Platz haben.
+  */
+  sortiereLayoutKnoten(allgemeineRessourcen).forEach((node, index) => {
+    const column = 1 + index * 2;
+    const slot = createSlotId(1, column);
+
+    result[node.id] = slot;
+    used.add(slot);
+    platzierteSlots.set(node.id, slot);
+    node.layoutBereich = "allgemeineRessource";
+    node.trophieEbene = 0;
+  });
+
+  /*
+      ========================================================
+      2. LINKS: PRODUZENTEN / PFLANZLICHE GRUPPEN
+      ========================================================
+
+      Pflanzen beginnen ab Zeile 2 und bleiben links. Konkrete
+      wissenschaftliche Pflanzenarten können später dieselbe
+      Fläche nutzen. Sammelbegriffe wie "Pflanzliche Nahrung",
+      "Gras" oder "Früchte" sind nur vorläufige Knoten.
+  */
+  let pflanzenMaxRow = 1;
+
+  sortierePflanzen(pflanzen).forEach((node, index) => {
+    const row = 2 + Math.floor(index / 2);
+    const column = 1 + (index % 2);
+    const slot = createSlotId(row, column);
+
+    result[node.id] = slot;
+    used.add(slot);
+    platzierteSlots.set(node.id, slot);
+    pflanzenMaxRow = Math.max(pflanzenMaxRow, row);
+    node.layoutBereich = "produzent";
+    node.trophieEbene = 0;
+  });
+
+  /*
+      ========================================================
+      3. DARUNTER: TIERE NACH REGION + WEICHER TROPHIERICHTUNG
+      ========================================================
+
+      Trophieebenen geben nur die ungefähre X-Richtung vor:
+
+        Primärkonsumenten    etwa Spalte 4/5
+        Sekundärkonsumenten  etwa Spalte 7/8
+        höhere Konsumenten   weiter rechts
+
+      Es bleiben Ausweichspalten und freie Zeilen für die
+      Linienführung. Regionen werden vertikal geclustert.
+  */
   const gruppen = new Map();
 
-  nodes.forEach((node) => {
+  tiere.forEach((node) => {
     const region = regionen.get(node.id) ?? "Unbekannt";
 
     if (!gruppen.has(region)) {
@@ -208,17 +291,13 @@ function createNahrungsnetzSlotMap(graph) {
     }
 
     gruppen.get(region).push(node);
-
-    // Nur Metadaten für Debug/Tooltip; keine feste Position im Datenmodell.
     node.layoutRegion = region;
+    node.layoutBereich = "konsument";
     node.trophieEbene = trophieEbenen.get(node.id) ?? 1;
   });
 
-  const result = {};
-  const used = new Set();
-  const platzierteSlots = new Map();
-  const nachbarn = baueNachbarMap(edges);
-  let startRow = 1;
+  let startRow = Math.max(4, pflanzenMaxRow + 2);
+  let gesamtMaxRow = startRow;
 
   sortiereRegionen([...gruppen.keys()]).forEach((region) => {
     const regionNodes = gruppen.get(region) ?? [];
@@ -251,14 +330,9 @@ function createNahrungsnetzSlotMap(graph) {
           .forEach((node, index) => {
             const verbindungsRows = [...(nachbarn.get(node.id) ?? [])]
               .map((id) => parseSlot(platzierteSlots.get(id))?.row)
-              .filter(Number.isFinite);
+              .filter(Number.isFinite)
+              .filter((row) => row >= startRow);
 
-            /*
-                Beziehungen ziehen verbundene Knoten ungefähr auf dieselbe
-                Höhe. Ohne bereits platzierte Nachbarn bleibt absichtlich
-                Luft: zwei Knoten können nebeneinander stehen, danach folgt
-                ungefähr eine freie Zeile.
-            */
             const targetRow = verbindungsRows.length
               ? Math.round(
                   verbindungsRows.reduce((summe, row) => summe + row, 0) /
@@ -284,18 +358,126 @@ function createNahrungsnetzSlotMap(graph) {
 
             if (parsed) {
               regionMaxRow = Math.max(regionMaxRow, parsed.row);
+              gesamtMaxRow = Math.max(gesamtMaxRow, parsed.row);
             }
           });
       });
 
-    /*
-        Regionen bekommen einen klaren vertikalen Abstand. Das Raster darf
-        bewusst nach unten wachsen; Lesbarkeit ist wichtiger als Kompaktheit.
-    */
     startRow = regionMaxRow + 3;
   });
 
+  /*
+      ========================================================
+      4. NACH DEN TIEREN: DESTRUENTEN
+      ========================================================
+
+      Ein Tier wird nur dann automatisch hier eingeordnet, wenn
+      seine vorhandenen Daten ausdrücklich "detritivorie" als
+      Beziehung enthalten. Es werden keine Arten geraten.
+  */
+  let destruentStartRow = Math.max(startRow, gesamtMaxRow + 3);
+  let destruentMaxRow = destruentStartRow - 1;
+
+  sortiereLayoutKnoten(destruenten).forEach((node, index) => {
+    const columns = [4, 5, 7, 8];
+    const row = destruentStartRow + Math.floor(index / columns.length) * 2;
+    const column = columns[index % columns.length];
+    const slot = createSlotId(row, column);
+
+    result[node.id] = slot;
+    used.add(slot);
+    platzierteSlots.set(node.id, slot);
+    destruentMaxRow = Math.max(destruentMaxRow, row);
+    node.layoutBereich = "destruent";
+    node.trophieEbene = trophieEbenen.get(node.id) ?? 1;
+    node.layoutRegion = regionen.get(node.id) ?? "Unbekannt";
+  });
+
+  /*
+      ========================================================
+      5. MATERIALKREISLAUF: MIKROORGANISMEN U. Ä.
+      ========================================================
+
+      Diese Knoten liegen unter dem Tier-/Destruentenbereich.
+      Spätere Beziehungen können von dort über Mineralstoffe
+      wieder zu den Produzenten zurückführen, ohne dass der
+      Energiefluss von links nach rechts aufgehoben wird.
+  */
+  const kreislaufStartRow = Math.max(
+    destruentMaxRow + (destruenten.length ? 2 : 0),
+    gesamtMaxRow + 3,
+  );
+
+  sortiereLayoutKnoten(kreislaufRessourcen).forEach((node, index) => {
+    const row = kreislaufStartRow + Math.floor(index / 3) * 2;
+    const column = 1 + (index % 3) * 2;
+    const slot = createSlotId(row, column);
+
+    result[node.id] = slot;
+    used.add(slot);
+    platzierteSlots.set(node.id, slot);
+    node.layoutBereich = "materialkreislauf";
+    node.trophieEbene = 0;
+  });
+
   return result;
+}
+
+function istKreislaufRessource(node) {
+  const text = `${node?.id ?? ""} ${node?.label ?? ""}`.toLowerCase();
+
+  return /mikroorganismen|mikroskopische organismen|microorganisms/.test(text);
+}
+
+function bestimmeDestruenten(edges) {
+  const result = new Set();
+
+  edges.forEach((edge) => {
+    if (edge?.beziehung !== "detritivorie") {
+      return;
+    }
+
+    const selbstId = edge.selbstNodeId;
+
+    if (selbstId) {
+      result.add(selbstId);
+    }
+  });
+
+  return result;
+}
+
+function sortiereLayoutKnoten(nodes) {
+  return [...nodes].sort((a, b) =>
+    String(a?.label ?? a?.id ?? "").localeCompare(
+      String(b?.label ?? b?.id ?? ""),
+      "de",
+    ),
+  );
+}
+
+function sortierePflanzen(nodes) {
+  const prioritaet = new Map([
+    ["Pflanzliche Nahrung", 0],
+    ["Gras", 1],
+    ["Blätter", 2],
+    ["Früchte", 3],
+    ["Algen", 4],
+  ]);
+
+  return [...nodes].sort((a, b) => {
+    const pA = prioritaet.get(a?.label) ?? 100;
+    const pB = prioritaet.get(b?.label) ?? 100;
+
+    if (pA !== pB) {
+      return pA - pB;
+    }
+
+    return String(a?.label ?? a?.id ?? "").localeCompare(
+      String(b?.label ?? b?.id ?? ""),
+      "de",
+    );
+  });
 }
 
 function gruppiereNachTrophie(nodes, trophieEbenen) {
