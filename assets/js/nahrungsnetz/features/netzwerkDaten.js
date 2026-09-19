@@ -589,6 +589,10 @@ function addTierNode(nodes, tier, focus) {
 
     tierId: tier.id,
 
+    imagePath: tier.hauptbildPfad ?? "",
+
+    imageAlt: getTierName(tier),
+
     regionen: getTierRegionen(tier),
 
     ernaehrungsTypen: getTierErnaehrungsTypen(tier),
@@ -625,6 +629,10 @@ function resolveEntityNode(entry, tiere, quellTier = null) {
       kindLabel: getKindLabel("animal"),
 
       tierId: loadedTier.id,
+
+      imagePath: loadedTier.hauptbildPfad ?? "",
+
+      imageAlt: getTierName(loadedTier),
 
       regionen: getTierRegionen(loadedTier),
 

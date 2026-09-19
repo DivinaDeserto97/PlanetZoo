@@ -1050,6 +1050,10 @@ function createNodeElement(node, slotId) {
     element.classList.toggle("is-nahrungsnetz-unselected", !node.selected);
   }
 
+  if (node.imagePath) {
+    element.classList.add("graph-node--with-image");
+  }
+
   /*
       Auswahlbox direkt im Graph-Knoten.
 
@@ -1073,6 +1077,26 @@ function createNodeElement(node, slotId) {
     checkbox.setAttribute("aria-label", `${node.label} auswählen`);
 
     element.appendChild(checkbox);
+  }
+
+  if (node.imagePath) {
+    const imageWrap = document.createElement("div");
+
+    imageWrap.className = "graph-node__image-wrap";
+
+    const image = document.createElement("img");
+
+    image.className = "graph-node__image";
+
+    image.src = node.imagePath;
+
+    image.alt = node.imageAlt || node.label || "";
+
+    image.loading = "lazy";
+
+    imageWrap.appendChild(image);
+
+    element.appendChild(imageWrap);
   }
 
   const title = document.createElement("strong");

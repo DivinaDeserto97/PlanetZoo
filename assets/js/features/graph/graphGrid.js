@@ -26,9 +26,9 @@
 */
 
 export const GRAPH_GRID = {
-  nodeWidth: 230,
+  nodeWidth: 270,
 
-  nodeHeight: 94,
+  nodeHeight: 124,
 
   lineGap: 12,
 

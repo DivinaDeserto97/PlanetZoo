@@ -296,7 +296,7 @@
 
   box-sizing: border-box;
 
-  padding: 13px 44px 10px 14px;
+  padding: 12px 44px 10px 14px;
 
   border: 1px solid var(--farbe-linie);
 
@@ -370,25 +370,27 @@
 
   margin-bottom: 4px;
 
-  overflow: hidden;
+  min-height: 36px;
 
-  font-size: 16px;
+  padding-right: 4px;
+
+  font-size: 15px;
 
   font-weight: 800;
 
-  line-height: 1.15;
+  line-height: 1.18;
 
-  text-overflow: ellipsis;
+  white-space: normal;
 
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .graph-node__subtitle {
   display: block;
 
-  min-height: 15px;
+  min-height: 28px;
 
-  overflow: hidden;
+  padding-right: 4px;
 
   color: var(--farbe-text-zusatz);
 
@@ -398,9 +400,9 @@
 
   line-height: 1.2;
 
-  text-overflow: ellipsis;
+  white-space: normal;
 
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .graph-node__footer {
@@ -463,6 +465,45 @@
   border-radius: 7px;
 
   font-weight: 800;
+}
+
+.graph-node--with-image {
+  padding-right: 92px;
+}
+
+.graph-node--with-image .graph-node__title,
+.graph-node--with-image .graph-node__subtitle,
+.graph-node--with-image .graph-node__footer {
+  max-width: calc(100% - 66px);
+}
+
+.graph-node__image-wrap {
+  position: absolute;
+
+  top: 40px;
+  right: 12px;
+
+  width: 62px;
+  height: 62px;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  border: 1px solid color-mix(in srgb, var(--farbe-linie) 65%, transparent);
+
+  background: color-mix(in srgb, var(--farbe-element-2) 90%, transparent);
+
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.03);
+}
+
+.graph-node__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 /* ======================================== */
