@@ -148,6 +148,10 @@ export function createGraphCanvas({
       columns: gridSize.columns,
 
       laneCounts: routeModel.laneCounts,
+
+      graph: currentGraph,
+
+      nodeSlots: workspace.nodes,
     });
 
     currentModel = {
@@ -1164,38 +1168,14 @@ function createNodeElement(node, slotId) {
 /* CSS-RECT                                 */
 /* ======================================== */
 
-function setNodeRect(element, rect, node = null) {
+function setNodeRect(element, rect) {
   element.style.left = `${rect.x}px`;
 
   element.style.top = `${rect.y}px`;
 
-  const width = getNodeRenderWidth(node, rect.width);
-
-  element.style.width = `${width}px`;
+  element.style.width = `${rect.width}px`;
 
   element.style.height = `${rect.height}px`;
-}
-
-function getNodeRenderWidth(node, fallbackWidth) {
-  const basis = Number(fallbackWidth) || 270;
-
-  const label = String(node?.label ?? "");
-
-  const subtitle = String(node?.subtitle ?? "");
-
-  const titleWidth = 68 + label.length * 10.5;
-
-  const subtitleWidth = subtitle ? 56 + subtitle.length * 6.4 : 0;
-
-  const sideExtras = (node?.imagePath ? 94 : 0) + (node?.tierId ? 26 : 0) + 34;
-
-  const computed = Math.max(
-    basis,
-    titleWidth + sideExtras,
-    subtitleWidth + sideExtras,
-  );
-
-  return Math.max(basis, Math.min(500, Math.round(computed)));
 }
 
 function setRect(element, rect) {

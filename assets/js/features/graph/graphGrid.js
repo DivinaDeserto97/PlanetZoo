@@ -1616,7 +1616,13 @@ function incrementUsage(usage, corridor) {
 /* PIXEL-LAYOUT                             */
 /* ======================================== */
 
-export function buildPixelLayout({ rows, columns, laneCounts }) {
+export function buildPixelLayout({
+  rows,
+  columns,
+  laneCounts,
+  graph = null,
+  nodeSlots = {},
+}) {
   const config = GRAPH_GRID;
 
   const verticalGapWidths = {};
@@ -1649,6 +1655,13 @@ export function buildPixelLayout({ rows, columns, laneCounts }) {
     horizontalGapHeights[gapRow] = getCorridorSize(maxLanes);
   }
 
+  const columnWidths = buildColumnWidths({
+    columns,
+    graph,
+    nodeSlots,
+    baseWidth: config.nodeWidth,
+  });
+
   const columnLeft = {};
 
   let x = config.outerPadding;
@@ -1656,7 +1669,7 @@ export function buildPixelLayout({ rows, columns, laneCounts }) {
   for (let column = 1; column <= columns; column++) {
     columnLeft[column] = x;
 
-    x += config.nodeWidth;
+    x += columnWidths[column] ?? config.nodeWidth;
 
     if (column < columns) {
       x += verticalGapWidths[column];
@@ -1687,11 +1700,58 @@ export function buildPixelLayout({ rows, columns, laneCounts }) {
 
     columnLeft,
     rowTop,
+    columnWidths,
     verticalGapWidths,
     horizontalGapHeights,
 
     config,
   };
+}
+
+function buildColumnWidths({ columns, graph, nodeSlots, baseWidth }) {
+  const result = {};
+
+  for (let column = 1; column <= columns; column++) {
+    result[column] = baseWidth;
+  }
+
+  const nodes = graph?.nodes ?? [];
+
+  nodes.forEach((node) => {
+    const slot = parseSlot(nodeSlots?.[node.id]);
+
+    if (!slot) {
+      return;
+    }
+
+    const width = getNodePreferredWidth(node, baseWidth);
+
+    result[slot.column] = Math.max(result[slot.column] ?? baseWidth, width);
+  });
+
+  return result;
+}
+
+function getNodePreferredWidth(node, baseWidth) {
+  const basis = Number(baseWidth) || 270;
+
+  const label = String(node?.label ?? "");
+
+  const subtitle = String(node?.subtitle ?? "");
+
+  const titleWidth = 68 + label.length * 10.5;
+
+  const subtitleWidth = subtitle ? 56 + subtitle.length * 6.4 : 0;
+
+  const sideExtras = (node?.imagePath ? 94 : 0) + (node?.tierId ? 26 : 0) + 34;
+
+  const computed = Math.max(
+    basis,
+    titleWidth + sideExtras,
+    subtitleWidth + sideExtras,
+  );
+
+  return Math.max(basis, Math.min(500, Math.round(computed)));
 }
 
 function getCorridorSize(laneCount) {
@@ -1720,7 +1780,7 @@ export function getSlotRect(layout, slotId) {
 
     y: layout.rowTop[slot.row],
 
-    width: layout.config.nodeWidth,
+    width: layout.columnWidths?.[slot.column] ?? layout.config.nodeWidth,
 
     height: layout.config.nodeHeight,
 
@@ -1745,7 +1805,8 @@ export function getCorridorRect(layout, corridorId) {
 
   if (corridor.orientation === "vertical") {
     const left =
-      layout.columnLeft[corridor.gapColumn] + layout.config.nodeWidth;
+      layout.columnLeft[corridor.gapColumn] +
+      (layout.columnWidths?.[corridor.gapColumn] ?? layout.config.nodeWidth);
 
     return {
       x: left,
