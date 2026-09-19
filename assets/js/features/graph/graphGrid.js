@@ -150,6 +150,466 @@ export function createHorizontalCorridorId(gapRow, column) {
 export function createDefaultSlotMap(graph) {
   const nodes = graph.nodes ?? [];
 
+  /*
+      Das gemeinsame Graph-Modul wird auch von der Systematik benutzt.
+      Nur Nahrungsnetz-Knoten tragen "regionen". Dadurch bleibt das
+      bisherige Systematik-Layout unverändert.
+  */
+  const istNahrungsnetz = nodes.some((node) => Array.isArray(node.regionen));
+
+  if (!istNahrungsnetz) {
+    return createLegacyDefaultSlotMap(graph);
+  }
+
+  return createNahrungsnetzSlotMap(graph);
+}
+
+/* ======================================== */
+/* NAHRUNGSNETZ: WEICHE TROPHIEZONEN        */
+/* ======================================== */
+
+const NAHRUNGSNETZ_REGION_REIHENFOLGE = [
+  "Afrika",
+  "Europa",
+  "Asien",
+  "Nordamerika",
+  "Südamerika",
+  "Ozeanien",
+  "Arktis",
+  "Atlantischer Ozean",
+  "Indischer Ozean",
+  "Pazifischer Ozean",
+  "Überregional",
+  "Unbekannt",
+];
+
+const TROPHISCHE_BEZIEHUNGEN = new Set([
+  "praedation",
+  "herbivorie",
+  "parasitismus",
+  "parasitoidismus",
+  "nekrophagie",
+  "detritivorie",
+]);
+
+function createNahrungsnetzSlotMap(graph) {
+  const nodes = graph.nodes ?? [];
+  const edges = graph.edges ?? [];
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const trophieEbenen = berechneTrophieEbenen(nodes, edges, nodeById);
+  const regionen = bestimmeLayoutRegionen(nodes, edges, nodeById);
+  const gruppen = new Map();
+
+  nodes.forEach((node) => {
+    const region = regionen.get(node.id) ?? "Unbekannt";
+
+    if (!gruppen.has(region)) {
+      gruppen.set(region, []);
+    }
+
+    gruppen.get(region).push(node);
+
+    // Nur Metadaten für Debug/Tooltip; keine feste Position im Datenmodell.
+    node.layoutRegion = region;
+    node.trophieEbene = trophieEbenen.get(node.id) ?? 1;
+  });
+
+  const result = {};
+  const used = new Set();
+  const platzierteSlots = new Map();
+  const nachbarn = baueNachbarMap(edges);
+  let startRow = 1;
+
+  sortiereRegionen([...gruppen.keys()]).forEach((region) => {
+    const regionNodes = gruppen.get(region) ?? [];
+    const levelGroups = gruppiereNachTrophie(regionNodes, trophieEbenen);
+    let regionMaxRow = startRow;
+
+    [...levelGroups.keys()]
+      .sort((a, b) => a - b)
+      .forEach((level) => {
+        const levelNodes = levelGroups.get(level) ?? [];
+
+        levelNodes
+          .sort((a, b) => {
+            if (Boolean(a.focus) !== Boolean(b.focus)) {
+              return a.focus ? -1 : 1;
+            }
+
+            const gradA = nachbarn.get(a.id)?.size ?? 0;
+            const gradB = nachbarn.get(b.id)?.size ?? 0;
+
+            if (gradA !== gradB) {
+              return gradB - gradA;
+            }
+
+            return String(a.label ?? a.id).localeCompare(
+              String(b.label ?? b.id),
+              "de",
+            );
+          })
+          .forEach((node, index) => {
+            const verbindungsRows = [...(nachbarn.get(node.id) ?? [])]
+              .map((id) => parseSlot(platzierteSlots.get(id))?.row)
+              .filter(Number.isFinite);
+
+            /*
+                Beziehungen ziehen verbundene Knoten ungefähr auf dieselbe
+                Höhe. Ohne bereits platzierte Nachbarn bleibt absichtlich
+                Luft: zwei Knoten können nebeneinander stehen, danach folgt
+                ungefähr eine freie Zeile.
+            */
+            const targetRow = verbindungsRows.length
+              ? Math.round(
+                  verbindungsRows.reduce((summe, row) => summe + row, 0) /
+                    verbindungsRows.length,
+                )
+              : startRow + Math.floor(index / 2) * 2;
+
+            const slot = findeBestenSlot({
+              node,
+              level,
+              targetRow,
+              startRow,
+              used,
+              platzierteSlots,
+              nachbarn,
+            });
+
+            used.add(slot);
+            result[node.id] = slot;
+            platzierteSlots.set(node.id, slot);
+
+            const parsed = parseSlot(slot);
+
+            if (parsed) {
+              regionMaxRow = Math.max(regionMaxRow, parsed.row);
+            }
+          });
+      });
+
+    /*
+        Regionen bekommen einen klaren vertikalen Abstand. Das Raster darf
+        bewusst nach unten wachsen; Lesbarkeit ist wichtiger als Kompaktheit.
+    */
+    startRow = regionMaxRow + 3;
+  });
+
+  return result;
+}
+
+function gruppiereNachTrophie(nodes, trophieEbenen) {
+  const result = new Map();
+
+  nodes.forEach((node) => {
+    const level = trophieEbenen.get(node.id) ?? 1;
+
+    if (!result.has(level)) {
+      result.set(level, []);
+    }
+
+    result.get(level).push(node);
+  });
+
+  return result;
+}
+
+function findeBestenSlot({
+  node,
+  level,
+  targetRow,
+  startRow,
+  used,
+  platzierteSlots,
+  nachbarn,
+}) {
+  const columns = getWeicheTrophieSpalten(level);
+  const nachbarSlots = [...(nachbarn.get(node.id) ?? [])]
+    .map((id) => parseSlot(platzierteSlots.get(id)))
+    .filter(Boolean);
+  const bevorzugteMitte = (columns[0] + columns[1]) / 2;
+  let best = null;
+
+  for (let abstand = 0; abstand <= 48; abstand++) {
+    const rows =
+      abstand === 0 ? [targetRow] : [targetRow + abstand, targetRow - abstand];
+
+    rows
+      .filter((row) => row >= startRow && row >= 1)
+      .forEach((row) => {
+        columns.forEach((column, columnIndex) => {
+          if (column < 1) {
+            return;
+          }
+
+          const slot = createSlotId(row, column);
+
+          if (used.has(slot)) {
+            return;
+          }
+
+          let score = Math.abs(row - targetRow) * 4;
+          score += Math.abs(column - bevorzugteMitte) * 1.4;
+          score += columnIndex * 0.15;
+
+          /*
+              Bereits platzierte Nachbarn ziehen den Knoten in ihre Nähe.
+              Die Trophiezone bleibt aber stärker gewichtet als maximale
+              Kompaktheit. Dadurch dürfen Linien "atmen".
+          */
+          nachbarSlots.forEach((nachbar) => {
+            score += Math.abs(row - nachbar.row) * 0.35;
+            score += Math.abs(column - nachbar.column) * 0.08;
+          });
+
+          if (!best || score < best.score) {
+            best = { slot, score };
+          }
+        });
+      });
+
+    if (best && abstand >= 3) {
+      break;
+    }
+  }
+
+  return best?.slot ?? createSlotId(Math.max(1, targetRow), columns[0]);
+}
+
+function getWeicheTrophieSpalten(level) {
+  const safeLevel = Math.max(0, Math.min(5, Number(level) || 0));
+
+  /*
+      Keine harte "Ebene = Spalte"-Regel.
+
+      Jede Trophieebene bekommt nur einen bevorzugten Bereich aus zwei
+      Spalten. Dazwischen bleibt jeweils ungefähr eine Spalte Luft. Die
+      zwei äußeren Kandidaten erlauben dem Layout, bei besserer Linienführung
+      eine Ebene leicht nach links oder rechts zu verschieben.
+  */
+  const start = 1 + safeLevel * 3;
+
+  return [...new Set([start, start + 1, start - 1, start + 2])].filter(
+    (column) => column >= 1,
+  );
+}
+
+function berechneTrophieEbenen(nodes, edges, nodeById) {
+  const trophicEdges = edges.filter((edge) =>
+    istTrophischeKante(edge, nodeById),
+  );
+  const incoming = new Map();
+
+  trophicEdges.forEach((edge) => {
+    if (!incoming.has(edge.to)) {
+      incoming.set(edge.to, []);
+    }
+
+    incoming.get(edge.to).push(edge.from);
+  });
+
+  const memo = new Map();
+
+  const resolve = (nodeId, stack = new Set()) => {
+    if (memo.has(nodeId)) {
+      return memo.get(nodeId);
+    }
+
+    const node = nodeById.get(nodeId);
+
+    if (!node || node.kind !== "animal") {
+      memo.set(nodeId, 0);
+      return 0;
+    }
+
+    const fallback = getTrophieFallback(node);
+
+    if (stack.has(nodeId)) {
+      return fallback;
+    }
+
+    const nextStack = new Set(stack);
+    nextStack.add(nodeId);
+
+    const quellen = incoming.get(nodeId) ?? [];
+    let level = fallback;
+
+    quellen.forEach((quelleId) => {
+      if (quelleId === nodeId || nextStack.has(quelleId)) {
+        return;
+      }
+
+      level = Math.max(level, resolve(quelleId, nextStack) + 1);
+    });
+
+    level = Math.max(1, Math.min(5, level));
+    memo.set(nodeId, level);
+
+    return level;
+  };
+
+  nodes.forEach((node) => resolve(node.id));
+
+  return memo;
+}
+
+function istTrophischeKante(edge, nodeById) {
+  const beziehung = String(edge?.beziehung ?? "").trim();
+
+  if (TROPHISCHE_BEZIEHUNGEN.has(beziehung)) {
+    return true;
+  }
+
+  /*
+      "Nutzung" zählt nur dann als trophischer Eingang, wenn eine
+      nicht-tierische Ressource von einem Tier genutzt wird (z. B.
+      Muttermilch). Allgemeine Nutzungsbeziehungen zwischen Tieren sollen
+      die Trophieebene nicht verschieben.
+  */
+  if (beziehung === "nutzung") {
+    const von = nodeById.get(edge.from);
+    const zu = nodeById.get(edge.to);
+
+    return von?.kind !== "animal" && zu?.kind === "animal";
+  }
+
+  return false;
+}
+
+function getTrophieFallback(node) {
+  if (node.kind !== "animal") {
+    return 0;
+  }
+
+  const typen = (node.ernaehrungsTypen ?? [])
+    .map((wert) => String(wert).toLowerCase())
+    .join(" ");
+
+  if (
+    /pflanzenfresser|herbivore|bamboo|grazer|browser|filterfeeder/.test(typen)
+  ) {
+    return 1;
+  }
+
+  if (/apexpredator|spitzenprädator/.test(typen)) {
+    return 4;
+  }
+
+  if (
+    /fleischfresser|carnivore|predator|insectivore|myrmecophag|spongivore|planktivore|hardprey|invertebrate/.test(
+      typen,
+    )
+  ) {
+    return 2;
+  }
+
+  if (/allesfresser|omnivore/.test(typen)) {
+    return 2;
+  }
+
+  return 1;
+}
+
+function bestimmeLayoutRegionen(nodes, edges, nodeById) {
+  const nachbarn = baueNachbarMap(edges);
+  const result = new Map();
+
+  nodes.forEach((node) => {
+    const eigene = normalisiereRegionen(node.regionen);
+
+    if (eigene.length === 0) {
+      result.set(node.id, "Unbekannt");
+      return;
+    }
+
+    if (eigene.length === 1) {
+      result.set(node.id, eigene[0]);
+      return;
+    }
+
+    const scores = new Map(eigene.map((region) => [region, 0]));
+
+    [...(nachbarn.get(node.id) ?? [])].forEach((nachbarId) => {
+      const nachbarRegionen = normalisiereRegionen(
+        nodeById.get(nachbarId)?.regionen,
+      );
+
+      eigene.forEach((region) => {
+        if (nachbarRegionen.includes(region)) {
+          scores.set(region, (scores.get(region) ?? 0) + 1);
+        }
+      });
+    });
+
+    eigene.forEach((region, index) => {
+      // Die Reihenfolge aus der Tier-JSON bleibt bei Gleichstand maßgeblich.
+      scores.set(
+        region,
+        (scores.get(region) ?? 0) + (eigene.length - index) / 100,
+      );
+    });
+
+    const [beste] = [...scores.entries()].sort((a, b) => b[1] - a[1])[0] ?? [];
+
+    result.set(node.id, beste ?? eigene[0]);
+  });
+
+  return result;
+}
+
+function normalisiereRegionen(regionen) {
+  const result = (Array.isArray(regionen) ? regionen : [])
+    .map((region) => String(region ?? "").trim())
+    .filter(Boolean);
+
+  return [...new Set(result)];
+}
+
+function baueNachbarMap(edges) {
+  const result = new Map();
+
+  edges.forEach((edge) => {
+    if (!edge?.from || !edge?.to || edge.from === edge.to) {
+      return;
+    }
+
+    if (!result.has(edge.from)) {
+      result.set(edge.from, new Set());
+    }
+
+    if (!result.has(edge.to)) {
+      result.set(edge.to, new Set());
+    }
+
+    result.get(edge.from).add(edge.to);
+    result.get(edge.to).add(edge.from);
+  });
+
+  return result;
+}
+
+function sortiereRegionen(regionen) {
+  return regionen.sort((a, b) => {
+    const indexA = NAHRUNGSNETZ_REGION_REIHENFOLGE.indexOf(a);
+    const indexB = NAHRUNGSNETZ_REGION_REIHENFOLGE.indexOf(b);
+    const wertA = indexA === -1 ? Number.MAX_SAFE_INTEGER : indexA;
+    const wertB = indexB === -1 ? Number.MAX_SAFE_INTEGER : indexB;
+
+    if (wertA !== wertB) {
+      return wertA - wertB;
+    }
+
+    return String(a).localeCompare(String(b), "de");
+  });
+}
+
+/* ======================================== */
+/* ANDERE GRAPHTYPEN: BISHERIGES LAYOUT     */
+/* ======================================== */
+
+function createLegacyDefaultSlotMap(graph) {
+  const nodes = graph.nodes ?? [];
+
   const buckets = {
     input: [],
 

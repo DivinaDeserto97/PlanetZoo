@@ -289,7 +289,7 @@ function addTierRelations(tier, tiere, nodes, edges) {
       return;
     }
 
-    const zielNode = resolveEntityNode(beziehung, tiere);
+    const zielNode = resolveEntityNode(beziehung, tiere, tier);
 
     addNode(nodes, zielNode);
 
@@ -529,6 +529,10 @@ function addTierNode(nodes, tier, focus) {
 
     tierId: tier.id,
 
+    regionen: getTierRegionen(tier),
+
+    ernaehrungsTypen: getTierErnaehrungsTypen(tier),
+
     focus: Boolean(focus),
 
     position: getTierPosition(tier),
@@ -543,7 +547,7 @@ function getTierNodeId(tier) {
 /* EINTRAG -> KNOTEN                        */
 /* ======================================== */
 
-function resolveEntityNode(entry, tiere) {
+function resolveEntityNode(entry, tiere, quellTier = null) {
   const value = entry.wert;
 
   const loadedTier = findTier(tiere, value);
@@ -561,6 +565,10 @@ function resolveEntityNode(entry, tiere) {
       kindLabel: getKindLabel("animal"),
 
       tierId: loadedTier.id,
+
+      regionen: getTierRegionen(loadedTier),
+
+      ernaehrungsTypen: getTierErnaehrungsTypen(loadedTier),
 
       /*
           Der echte focus-Wert wird beim
@@ -586,6 +594,18 @@ function resolveEntityNode(entry, tiere) {
     kind,
 
     kindLabel: getKindLabel(kind),
+
+    /*
+        Sammelressourcen wie Gras oder Aas haben keine eigene
+        Zoopedia-Region. Für die automatische Erstplatzierung
+        übernehmen sie deshalb die Region(en) des Tieres, in
+        dessen Beziehung sie vorkommen. Treffen später weitere
+        Tiere auf denselben Knoten, führt addNode() die Regionen
+        zusammen.
+    */
+    regionen: getTierRegionen(quellTier),
+
+    ernaehrungsTypen: [],
 
     focus: false,
 
@@ -614,6 +634,13 @@ function addNode(nodes, node) {
     if (!existing.position && node.position) {
       existing.position = node.position;
     }
+
+    existing.regionen = mergeUnique(existing.regionen, node.regionen);
+
+    existing.ernaehrungsTypen = mergeUnique(
+      existing.ernaehrungsTypen,
+      node.ernaehrungsTypen,
+    );
 
     return existing;
   }
@@ -650,6 +677,45 @@ function addEdge(edges, edge) {
   }
 
   edges.set(edge.id, edge);
+}
+
+/* ======================================== */
+/* REGIONEN / ERNÄHRUNG FÜR DAS LAYOUT      */
+/* ======================================== */
+
+function getTierRegionen(tier) {
+  if (!tier) {
+    return [];
+  }
+
+  const regionen =
+    tier.filter?.kontinente ?? tier.originalDaten?.filter?.kontinente ?? [];
+
+  return mergeUnique([], regionen);
+}
+
+function getTierErnaehrungsTypen(tier) {
+  const werte =
+    tier?.originalDaten?.daten?.ernaehrung?.fressverhalten?.werte ?? [];
+
+  if (!Array.isArray(werte)) {
+    return [];
+  }
+
+  return mergeUnique(
+    [],
+    werte.map((eintrag) =>
+      typeof eintrag === "string" ? eintrag : eintrag?.wert,
+    ),
+  );
+}
+
+function mergeUnique(a, b) {
+  const werte = [...(Array.isArray(a) ? a : []), ...(Array.isArray(b) ? b : [])]
+    .map((wert) => String(wert ?? "").trim())
+    .filter(Boolean);
+
+  return [...new Set(werte)];
 }
 
 /* ======================================== */

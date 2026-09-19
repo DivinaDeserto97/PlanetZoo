@@ -309,6 +309,61 @@ body:has(.nahrungsnetz-page) #page {
 }
 
 /* ======================================== */
+/* ÖKOLOGISCHE BEZIEHUNGEN / WIRKUNGEN      */
+/* ======================================== */
+
+.nahrungsnetz-legend__relationships,
+.nahrungsnetz-legend__effects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+
+  padding-top: 7px;
+
+  border-top: 1px solid var(--farbe-linie);
+}
+
+.nahrungsnetz-legend__relationships strong,
+.nahrungsnetz-legend__effects strong {
+  color: var(--farbe-text);
+  white-space: nowrap;
+}
+
+.nahrungsnetz-legend__beziehung {
+  padding: 3px 6px;
+
+  border: 1px solid color-mix(in srgb, var(--farbe-linie) 72%, transparent);
+  border-radius: 999px;
+
+  color: var(--farbe-text-zusatz);
+
+  white-space: nowrap;
+}
+
+.nahrungsnetz-legend__wirkung {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  color: var(--farbe-text-zusatz);
+  white-space: nowrap;
+}
+
+.nahrungsnetz-legend__wirkung-symbol {
+  min-width: 24px;
+
+  color: var(--farbe-text);
+
+  font-family: monospace;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+/* ======================================== */
 /* TIERFARBEN-LEGENDE                       */
 /* ======================================== */
 

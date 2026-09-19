@@ -6,6 +6,13 @@ import { setAktivesTierId } from "../features/tierAktiv.js";
 
 import { createGraphCanvas } from "../features/graph/graphCanvas.js";
 
+import { getLanguage } from "../features/language.js";
+
+import {
+  getBeziehungsLabel,
+  OEKOLOGISCHE_BEZIEHUNGEN,
+} from "../features/oekologischeBeziehungen.js";
+
 import { buildNahrungsnetzGraph } from "./features/netzwerkDaten.js";
 
 import {
@@ -66,7 +73,7 @@ export async function init() {
 
     connectionsSvg: connections,
 
-    storageKey: "planetZoo2-nahrungsnetz-layout-v3",
+    storageKey: "planetZoo2-nahrungsnetz-layout-v4",
 
     signal,
 
@@ -462,6 +469,8 @@ function render() {
 
   renderColorLegend(graph, selectedIds, selectedSet);
 
+  renderOekologieLegende();
+
   graphCanvas.setRouteEdit(routeEdit);
 }
 
@@ -557,6 +566,88 @@ function renderTierNodeColors(graph, selectedSet) {
     element.classList.toggle("is-nahrungsnetz-selected", selected);
 
     element.classList.toggle("is-nahrungsnetz-unselected", !selected);
+  });
+}
+
+/* ======================================== */
+/* ÖKOLOGISCHE LEGENDE                      */
+/* ======================================== */
+
+function renderOekologieLegende() {
+  renderBeziehungsLegende();
+  renderWirkungsLegende();
+}
+
+function renderBeziehungsLegende() {
+  const container = document.querySelector(
+    "[data-nahrungsnetz-beziehungs-legend]",
+  );
+
+  if (!container) {
+    return;
+  }
+
+  container.replaceChildren();
+
+  const title = document.createElement("strong");
+  title.textContent = "Beziehungen:";
+  container.appendChild(title);
+
+  OEKOLOGISCHE_BEZIEHUNGEN.forEach((beziehung) => {
+    const item = document.createElement("span");
+    item.className = "nahrungsnetz-legend__beziehung";
+    item.textContent = getBeziehungsLabel(beziehung, getLanguage());
+    container.appendChild(item);
+  });
+}
+
+function renderWirkungsLegende() {
+  const container = document.querySelector(
+    "[data-nahrungsnetz-wirkungs-legend]",
+  );
+
+  if (!container) {
+    return;
+  }
+
+  const english = String(getLanguage()).startsWith("en");
+  const eintraege = english
+    ? [
+        ["→", "+/− · −/+", "Arrow points to the beneficiary"],
+        ["↔", "+/+", "Both benefit"],
+        ["⇢", "+/0 · 0/+", "Open arrow points to the beneficiary"],
+        ["⊣", "−/0 · 0/−", "Negative marker at the harmed end"],
+        ["—", "−/−", "Both are harmed"],
+        ["⋯", "0/0", "Neutral relationship"],
+      ]
+    : [
+        ["→", "+/− · −/+", "Pfeil zeigt zum Profiteur"],
+        ["↔", "+/+", "Beide profitieren"],
+        ["⇢", "+/0 · 0/+", "Offener Pfeil zeigt zum Profiteur"],
+        ["⊣", "−/0 · 0/−", "Negativmarker am geschädigten Ende"],
+        ["—", "−/−", "Beide werden geschädigt"],
+        ["⋯", "0/0", "Neutrale Beziehung"],
+      ];
+
+  container.replaceChildren();
+
+  const title = document.createElement("strong");
+  title.textContent = english ? "Effects:" : "Wirkungen:";
+  container.appendChild(title);
+
+  eintraege.forEach(([symbol, code, text]) => {
+    const item = document.createElement("span");
+    item.className = "nahrungsnetz-legend__wirkung";
+
+    const icon = document.createElement("i");
+    icon.className = "nahrungsnetz-legend__wirkung-symbol";
+    icon.textContent = symbol;
+
+    const label = document.createElement("span");
+    label.textContent = `${code} – ${text}`;
+
+    item.append(icon, label);
+    container.appendChild(item);
   });
 }
 
