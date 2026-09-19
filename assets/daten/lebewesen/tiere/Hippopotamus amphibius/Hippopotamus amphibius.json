@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Afrika"],
-    "biome": ["Graslandschaft", "Feuchtgebiete", "Seen und Flüsse"],
+    "biome": ["Seen und Flüsse", "Graslandschaft", "Feuchtgebiete"],
     "schutzstatus": "Gefährdet"
   },
   "daten": {

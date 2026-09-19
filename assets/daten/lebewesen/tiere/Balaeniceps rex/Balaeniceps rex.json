@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Voliere"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
     "kontinente": ["Afrika"],
-    "biome": ["Feuchtgebiete", "Tropen"],
+    "biome": ["Feuchtgebiete"],
     "schutzstatus": "Gefährdet"
   },
   "daten": {

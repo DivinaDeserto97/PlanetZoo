@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Europa"],
-    "biome": ["Feuchtgebiete"],
+    "biome": ["Seen und Flüsse", "Feuchtgebiete"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

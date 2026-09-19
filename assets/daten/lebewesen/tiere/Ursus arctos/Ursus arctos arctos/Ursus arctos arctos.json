@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
-    "kontinente": ["Europa", "Asien"],
-    "biome": ["Gemäßigt", "Taiga"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien", "Europa"],
+    "biome": ["Taiga", "Gemäßigt", "Tundra"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

@@ -14,10 +14,20 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [""],
-    "biome": ["Ästuar", "Mangrove", "Riff", "Offenes Meer"],
+    "kontinente": [
+      "Afrika",
+      "Asien",
+      "Atlantischer Ozean",
+      "Ozeanien",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Ästuar", "Mangrove", "Offenes Meer", "Riff"],
     "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {

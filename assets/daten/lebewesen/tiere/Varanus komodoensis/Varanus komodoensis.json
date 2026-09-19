@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien"],
-    "biome": ["Feuchtgebiete", "Mangrove"],
+    "biome": ["Mangrove", "Tropen", "Feuchtgebiete"],
     "schutzstatus": "Stark gefährdet"
   },
   "daten": {

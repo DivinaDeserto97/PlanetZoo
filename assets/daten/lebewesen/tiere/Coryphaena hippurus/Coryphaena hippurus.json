@@ -14,9 +14,13 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [""],
+    "kontinente": [
+      "Atlantischer Ozean",
+      "Indischer Ozean",
+      "Pazifischer Ozean"
+    ],
     "biome": ["Offenes Meer"],
     "schutzstatus": "Nicht gefährdet"
   },

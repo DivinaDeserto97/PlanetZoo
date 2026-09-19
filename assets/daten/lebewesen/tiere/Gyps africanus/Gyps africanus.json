@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Voliere"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
     "kontinente": ["Afrika"],
-    "biome": ["Graslandschaft"],
+    "biome": ["Wüste", "Graslandschaft"],
     "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {

@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [""],
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
     "biome": ["Ästuar", "Mangrove", "Offenes Meer", "Riff"],
-    "schutzstatus": "Stark gefährdet"
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {

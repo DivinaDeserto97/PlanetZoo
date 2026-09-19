@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
-    "kontinente": ["Europa", "Asien", "Afrika"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Afrika", "Asien", "Europa"],
     "biome": ["Gemäßigt"],
     "schutzstatus": "Nicht gefährdet"
   },

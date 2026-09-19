@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien"],
-    "biome": ["Feuchtgebiete", "Tropen"],
+    "biome": ["Tropen", "Feuchtgebiete"],
     "schutzstatus": "Gefährdet"
   },
   "daten": {

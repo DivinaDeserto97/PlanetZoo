@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien", "Ozeanien"],
-    "biome": ["Ästuar", "Mangrove"],
+    "biome": ["Ästuar", "Mangrove", "Tropen"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

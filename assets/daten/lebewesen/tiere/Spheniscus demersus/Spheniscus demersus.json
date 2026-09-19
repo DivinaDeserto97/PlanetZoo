@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Afrika"],
-    "biome": ["Graslandschaft", "Offenes Meer", "Wüste"],
+    "biome": ["Offenes Meer", "Graslandschaft"],
     "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {

@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["Afrika", "Asien", "Ozeanien"],
-    "biome": ["Ästuar", "Riff", "Tropen"],
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+    "biome": ["Ästuar", "Riff"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

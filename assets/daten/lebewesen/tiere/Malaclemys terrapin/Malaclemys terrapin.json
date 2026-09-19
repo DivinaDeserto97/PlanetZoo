@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Nordamerika"],
-    "biome": ["Ästuar", "Feuchtgebiete", "Mangrove"],
-    "schutzstatus": "Stark gefährdet"
+    "biome": ["Ästuar", "Mangrove", "Feuchtgebiete"],
+    "schutzstatus": "Gefährdet"
   },
   "daten": {
     "taxonomie": {

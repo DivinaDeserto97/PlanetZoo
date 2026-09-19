@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Afrika"],
-    "biome": ["Feuchtgebiete", "Graslandschaft", "Wüste"],
+    "biome": ["Wüste", "Graslandschaft", "Feuchtgebiete"],
     "schutzstatus": "Stark gefährdet"
   },
   "daten": {

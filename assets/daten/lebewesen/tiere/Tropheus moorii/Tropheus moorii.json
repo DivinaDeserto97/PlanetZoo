@@ -14,8 +14,8 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
     "kontinente": ["Afrika"],
     "biome": ["Seen und Flüsse"],
     "schutzstatus": "Nicht gefährdet"

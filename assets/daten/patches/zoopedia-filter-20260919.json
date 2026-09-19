@@ -1,0 +1,1287 @@
+{
+  "quelle": "https://www.planetzoogame.com/de-DE/2/zoopedia?sort_by=latest&sort_order=desc",
+  "exportZeitpunkt": "2026-09-19T13:23:37.106Z",
+  "anzahlTiere": 110,
+  "beschreibung": "Offizielle Planet-Zoo-2-Zoopedia-Filterwerte pro Tier, aus __NUXT_DATA__ der Zoopedia extrahiert.",
+  "auswahlwerte": {
+    "edition": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "tiere": [
+    {
+      "slug": "abgottschlange",
+      "internalName": "Constrictor_Boa",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika", "Südamerika"],
+        "biome": ["Tropen", "Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "afrikanischer-leopard",
+      "internalName": "Leopard_African",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen", "Graslandschaft"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "afrikanischer-steppenelefant",
+      "internalName": "Elephant_AfricanSavannah",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "axolotl",
+      "internalName": "Salamander_Axolotl",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "blauer-morphofalter",
+      "internalName": "Butterfly_MenelausBlueMorpho",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen", "Graslandschaft"],
+        "schutzstatus": "???"
+      }
+    },
+    {
+      "slug": "brabantbuntbarsch",
+      "internalName": "Cichlid_Blunthead",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Afrika"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "brillenpinguin",
+      "internalName": "Penguin_African",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Offenes Meer", "Graslandschaft"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "diamantschildkröte",
+      "internalName": "Turtle_DiamondbackTerrapin",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Ästuar", "Mangrove", "Feuchtgebiete"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "donau-kammmolch",
+      "internalName": "Salamander_DanubeCrestedNewt",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Europa"],
+        "biome": ["Seen und Flüsse", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "doppelhornvogel",
+      "internalName": "Hornbill_Great",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "dunkler-riesenzackenbarsch",
+      "internalName": "Grouper_Giant",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Mangrove", "Riff"],
+        "schutzstatus": "Unzureichende Datengrundlage"
+      }
+    },
+    {
+      "slug": "echte-achatschnecke",
+      "internalName": "Snail_GiantTigerLand",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen", "Graslandschaft"],
+        "schutzstatus": "???"
+      }
+    },
+    {
+      "slug": "echte-karettschildkröte",
+      "internalName": "Turtle_Hawksbill",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": [
+          "Afrika",
+          "Asien",
+          "Atlantischer Ozean",
+          "Ozeanien",
+          "Europa",
+          "Indischer Ozean",
+          "Nordamerika",
+          "Pazifischer Ozean",
+          "Südamerika"
+        ],
+        "biome": ["Ästuar", "Mangrove", "Offenes Meer", "Riff"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "erdferkel",
+      "internalName": "Aardvark",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "erdmännchen",
+      "internalName": "Meerkat",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "eurasischer-luchs",
+      "internalName": "Lynx_Eurasian",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Taiga", "Gemäßigt", "Tundra"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "europäischer-biber",
+      "internalName": "Beaver_Eurasian",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Seen und Flüsse", "Taiga", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "europäischer-braunbär",
+      "internalName": "Bear_EurasianBrown",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Taiga", "Gemäßigt", "Tundra"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "europäischer-wisent",
+      "internalName": "Bison_European",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Europa"],
+        "biome": ["Taiga", "Gemäßigt"],
+        "schutzstatus": "Potenziell gefährdet"
+      }
+    },
+    {
+      "slug": "feuersalamander",
+      "internalName": "Salamander_Fire",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Europa"],
+        "biome": ["Gemäßigt", "Feuchtgebiete"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "flusspferd",
+      "internalName": "Hippopotamus_Common",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Seen und Flüsse", "Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "galapagos-riesenschildkröte",
+      "internalName": "Tortoise_GalapagosGiant",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "gangesgavial",
+      "internalName": "Gharial",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Seen und Flüsse", "Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "gefleckter-adlerrochen",
+      "internalName": "Ray_SpottedEagle",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Offenes Meer", "Riff"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "gelbe-anakonda",
+      "internalName": "Constrictor_YellowAnaconda",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "gelber-doktorfisch",
+      "internalName": "Tang_Yellow",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "gemeiner-blauzungenskink",
+      "internalName": "Lizard_EasternBlueTongued",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Ozeanien"],
+        "biome": ["Tropen", "Graslandschaft", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "gila-krustenechse",
+      "internalName": "Lizard_GilaMonster",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Wüste"],
+        "schutzstatus": "Potenziell gefährdet"
+      }
+    },
+    {
+      "slug": "goldband-füsilier",
+      "internalName": "Fusilier_BlueAndGold",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "goldenes-löwenäffchen",
+      "internalName": "Monkey_GoldenLionTamarin",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "goliathfrosch",
+      "internalName": "Frog_Goliath",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Afrika"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "goliathkäfer",
+      "internalName": "Beetle_Goliath",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen", "Graslandschaft"],
+        "schutzstatus": "???"
+      }
+    },
+    {
+      "slug": "goodfellow-baumkänguru",
+      "internalName": "Kangaroo_GoodfellowsTree",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Ozeanien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "große-goldmakrele",
+      "internalName": "Dolphinfish",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": [
+          "Atlantischer Ozean",
+          "Indischer Ozean",
+          "Pazifischer Ozean"
+        ],
+        "biome": ["Offenes Meer"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "großer-hammerhai",
+      "internalName": "Shark_GreatHammerhead",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": [
+          "Atlantischer Ozean",
+          "Indischer Ozean",
+          "Pazifischer Ozean"
+        ],
+        "biome": ["Offenes Meer", "Riff"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "großer-panda",
+      "internalName": "Panda_Giant",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Gemäßigt"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "großes-wandelndes-blatt",
+      "internalName": "Insect_GiantMalaysianLeaf",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "???"
+      }
+    },
+    {
+      "slug": "harlekin-regenbogenfisch",
+      "internalName": "Rainbowfish_Boesemans",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Ozeanien"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "indischer-riesenskorpion",
+      "internalName": "Scorpion_GiantForest",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "???"
+      }
+    },
+    {
+      "slug": "indo-pazifischer-feldwebelfisch",
+      "internalName": "Sergeant_IndoPacific",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Offenes Meer", "Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "indo-pazifischer-leopardenhai",
+      "internalName": "Shark_IndoPacificLeopard",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Mangrove", "Offenes Meer", "Riff"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "katta",
+      "internalName": "Lemur_RingTailed",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "kleiner-panda",
+      "internalName": "Panda_Red",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Taiga", "Gemäßigt"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "komodowaran",
+      "internalName": "Lizard_KomodoDragon",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Mangrove", "Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "kurznasen-doktorfisch",
+      "internalName": "Unicornfish_Bluespine",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "königsmakrele",
+      "internalName": "Trevally_Golden",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "langflossen-fledermausfisch",
+      "internalName": "Batfish_Longfin",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "lehmanns-pfeilgiftfrosch",
+      "internalName": "TreeFrog_LehmannsPoison",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "leistenkrokodil",
+      "internalName": "Crocodile_Saltwater",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien", "Ozeanien"],
+        "biome": ["Ästuar", "Mangrove", "Tropen"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "leopard-drückerfisch",
+      "internalName": "Triggerfish_Clown",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "löwe",
+      "internalName": "Lion_African",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "malaysischer-tapir",
+      "internalName": "Tapir_Malayan",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "massai-giraffe",
+      "internalName": "Giraffe_Masai",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "meerforelle",
+      "internalName": "Trout_Brown",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Europa"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "mexikanische-rotknie-vogelspinne",
+      "internalName": "Tarantula_MexicanRedknee",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Wüste", "Tropen", "Gemäßigt"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "mondfisch",
+      "internalName": "Sunfish_Ocean",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Offenes Meer"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "napoleon-lippfisch",
+      "internalName": "Wrasse_Humphead",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Offenes Meer", "Riff"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "netzgiraffe",
+      "internalName": "Giraffe_Reticulated",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "nilwaran",
+      "internalName": "Lizard_NileMonitor",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "nordamerikanischer-ochsenfrosch",
+      "internalName": "Frog_AmericanBull",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Seen und Flüsse", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "nordpazifischer-blauflossen-thunfisch",
+      "internalName": "Tuna_PacificBluefin",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Pazifischer Ozean"],
+        "biome": ["Offenes Meer"],
+        "schutzstatus": "Potenziell gefährdet"
+      }
+    },
+    {
+      "slug": "nyala",
+      "internalName": "Antelope_Nyala",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "orient-süsslippe",
+      "internalName": "Sweetlips_IndianOceanOriental",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "pachliopta-jophon",
+      "internalName": "Butterfly_MalabarRose",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "paletten-doktorfisch",
+      "internalName": "Surgeonfish_Palette",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "pazifische-sardine",
+      "internalName": "Sardine_Pacific",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Offenes Meer"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "prachtschmerle",
+      "internalName": "Loach_Clown",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Asien"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "przewalski-pferd",
+      "internalName": "Horse_Przewalskis",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "rappenantilope",
+      "internalName": "Antelope_Sable",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "riesentukan",
+      "internalName": "Toucan_Toco",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen", "Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "rohrdommel",
+      "internalName": "Bittern_Eurasian",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika", "Asien", "Europa"],
+        "biome": ["Gemäßigt", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "rotfeder",
+      "internalName": "Rudd_Common",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "rotfeuerfisch",
+      "internalName": "Lionfish_Red",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "rothirsch",
+      "internalName": "Deer_Red",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika", "Asien", "Europa"],
+        "biome": ["Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "schneehase",
+      "internalName": "Hare_Mountain",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Arktis", "Asien", "Europa"],
+        "biome": ["Taiga", "Gemäßigt", "Tundra"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "schneeleopard",
+      "internalName": "Leopard_Snow",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Taiga", "Tundra"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "schrecklicher-pfeilgiftfrosch",
+      "internalName": "TreeFrog_GoldenPoison",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Südamerika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "schuhschnabel",
+      "internalName": "Shoebill",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Feuchtgebiete"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "schwalbenschwanz",
+      "internalName": "Butterfly_OldWorldSwallowtail",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Asien", "Europa", "Nordamerika"],
+        "biome": ["Graslandschaft", "Taiga", "Gemäßigt", "Tundra"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "schwarm-wimpelfisch",
+      "internalName": "Bannerfish_Schooling",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "schwarzbüffel",
+      "internalName": "Buffalo_Cape",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft", "Feuchtgebiete"],
+        "schutzstatus": "Potenziell gefährdet"
+      }
+    },
+    {
+      "slug": "schwarzflecken-kugelfisch",
+      "internalName": "Puffer_Blackspotted",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "schwarzspitzenriffhai",
+      "internalName": "Shark_BlacktipReef",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+        "biome": ["Ästuar", "Mangrove", "Riff"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "seeadler",
+      "internalName": "Eagle_WhiteTailedSea",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Taiga", "Gemäßigt", "Tundra", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "segelflossen-schnapper",
+      "internalName": "Snapper_Sailfin",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium"],
+        "kontinente": ["Asien", "Ozeanien"],
+        "biome": ["Riff"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "sekretär",
+      "internalName": "Secretarybird",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "sonnenbär",
+      "internalName": "Bear_Sun",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Gefährdet"
+      }
+    },
+    {
+      "slug": "spießbock",
+      "internalName": "Oryx_Gemsbok",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "springbock",
+      "internalName": "Antelope_Springbok",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "steinadler",
+      "internalName": "Eagle_Golden",
+      "filter": {
+        "edition": "Deluxe",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika", "Asien", "Europa", "Nordamerika"],
+        "biome": ["Wüste", "Graslandschaft", "Taiga", "Gemäßigt", "Tundra"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "steppenzebra",
+      "internalName": "Zebra_Plains",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Potenziell gefährdet"
+      }
+    },
+    {
+      "slug": "streifengnu",
+      "internalName": "Wildebeest_Blue",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "sumatra-orang-utan",
+      "internalName": "Orangutan_Sumatran",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "sumatra-tiger",
+      "internalName": "Tiger_Sumatran",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Stark gefährdet"
+      }
+    },
+    {
+      "slug": "sunda-schuppentier",
+      "internalName": "Pangolin_Sunda",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "tagpfauenauge",
+      "internalName": "Butterfly_EuropeanPeacock",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Asien", "Europa"],
+        "biome": ["Graslandschaft", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "texas-klapperschlange",
+      "internalName": "Viper_WesternDiamondback",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika"],
+        "biome": ["Wüste", "Graslandschaft", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "thomson-gazelle",
+      "internalName": "Gazelle_Thomsons",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "tigersalmler",
+      "internalName": "Tigerfish_African",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Aquarium", "Vivarium"],
+        "kontinente": ["Afrika"],
+        "biome": ["Seen und Flüsse"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "tüpfelhyäne",
+      "internalName": "Hyena_Spotted",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "waldohreule",
+      "internalName": "Owl_LongEared",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika", "Asien", "Europa", "Nordamerika"],
+        "biome": ["Graslandschaft", "Taiga", "Gemäßigt", "Feuchtgebiete"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "warzenschwein",
+      "internalName": "Warthog_Common",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "weißrückengeier",
+      "internalName": "Vulture_WhiteBacked",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Fliegend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Wüste", "Graslandschaft"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "weißschwanzgnu",
+      "internalName": "Wildebeest_Black",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Graslandschaft"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "westlicher-flachlandgorilla",
+      "internalName": "Gorilla_WesternLowland",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen", "Feuchtgebiete"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "westlicher-schimpanse",
+      "internalName": "Chimpanzee_Western",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Afrika"],
+        "biome": ["Tropen"],
+        "schutzstatus": "Vom Aussterben bedroht"
+      }
+    },
+    {
+      "slug": "wolf",
+      "internalName": "Wolf_Grey",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Gehege - Landlebend"],
+        "kontinente": ["Asien", "Europa", "Nordamerika"],
+        "biome": [
+          "Wüste",
+          "Tropen",
+          "Graslandschaft",
+          "Taiga",
+          "Gemäßigt",
+          "Tundra"
+        ],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "wolkenloser-schwefel",
+      "internalName": "Butterfly_CloudlessSulphur",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Nordamerika", "Südamerika"],
+        "biome": ["Graslandschaft", "Taiga", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "wüsten-hornviper",
+      "internalName": "Viper_DesertHorned",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Afrika", "Asien"],
+        "biome": ["Wüste"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    },
+    {
+      "slug": "östliche-braunschlange",
+      "internalName": "Viper_EasternBrown",
+      "filter": {
+        "edition": "Hauptspiel",
+        "gehegetyp": ["Vivarium"],
+        "kontinente": ["Ozeanien"],
+        "biome": ["Wüste", "Graslandschaft", "Gemäßigt"],
+        "schutzstatus": "Nicht gefährdet"
+      }
+    }
+  ]
+}

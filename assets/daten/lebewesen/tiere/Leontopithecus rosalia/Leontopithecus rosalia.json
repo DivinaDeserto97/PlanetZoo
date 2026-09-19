@@ -15,9 +15,9 @@
   },
   "filter": {
     "edition": "Deluxe",
-    "gehegetyp": ["Landgehege"],
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Südamerika"],
-    "biome": [""],
+    "biome": ["Tropen"],
     "schutzstatus": "Stark gefährdet"
   },
   "daten": {

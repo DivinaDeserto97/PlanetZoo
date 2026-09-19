@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["Afrika", "Asien", "Ozeanien"],
-    "biome": ["Ästuar", "Mangrove", "Riff", "Tropen"],
-    "schutzstatus": "dataDeficient"
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+    "biome": ["Ästuar", "Mangrove", "Riff"],
+    "schutzstatus": "Unzureichende Datengrundlage"
   },
   "daten": {
     "taxonomie": {

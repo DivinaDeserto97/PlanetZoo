@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Südamerika"],
     "biome": ["Tropen", "Graslandschaft"],
-    "schutzstatus": ""
+    "schutzstatus": "???"
   },
   "daten": {
     "taxonomie": {

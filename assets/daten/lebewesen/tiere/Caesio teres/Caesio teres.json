@@ -15,8 +15,8 @@
   },
   "filter": {
     "edition": "Deluxe",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": [""],
+    "gehegetyp": ["Aquarium", "Vivarium"],
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
     "biome": ["Riff"],
     "schutzstatus": "Nicht gefährdet"
   },

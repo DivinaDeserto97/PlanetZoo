@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Europa", "Asien", "Afrika"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
+    "kontinente": ["Europa"],
     "biome": ["Seen und Flüsse"],
     "schutzstatus": "Nicht gefährdet"
   },

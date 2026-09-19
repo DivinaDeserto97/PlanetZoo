@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
-    "kontinente": ["Europa", "Asien"],
-    "biome": ["Gemäßigt", "Graslandschaft"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
+    "kontinente": ["Asien", "Europa"],
+    "biome": ["Graslandschaft", "Gemäßigt"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

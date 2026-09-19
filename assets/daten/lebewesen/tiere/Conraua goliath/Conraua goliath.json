@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Afrika"],
-    "biome": ["Tropen", "Seen und Flüsse"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "Stark gefährdet"
   },
   "daten": {

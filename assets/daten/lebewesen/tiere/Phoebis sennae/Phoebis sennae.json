@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Nordamerika", "Südamerika"],
-    "biome": ["Gemäßigt", "Graslandschaft", "Taiga"],
+    "biome": ["Graslandschaft", "Taiga", "Gemäßigt"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

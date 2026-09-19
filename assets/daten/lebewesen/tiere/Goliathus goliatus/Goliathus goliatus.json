@@ -14,11 +14,11 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Afrika"],
-    "biome": ["Graslandschaft", "Tropen"],
-    "schutzstatus": "notEvaluated"
+    "biome": ["Tropen", "Graslandschaft"],
+    "schutzstatus": "???"
   },
   "daten": {
     "taxonomie": {

@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien"],
-    "biome": ["Graslandschaft"],
+    "biome": ["Wüste", "Graslandschaft"],
     "schutzstatus": "Stark gefährdet"
   },
   "daten": {

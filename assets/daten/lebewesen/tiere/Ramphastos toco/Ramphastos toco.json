@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Voliere"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
     "kontinente": ["Südamerika"],
-    "biome": ["Feuchtgebiete", "Graslandschaft"],
+    "biome": ["Tropen", "Graslandschaft", "Feuchtgebiete"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

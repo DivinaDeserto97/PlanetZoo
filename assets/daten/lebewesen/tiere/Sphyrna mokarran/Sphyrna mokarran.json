@@ -16,7 +16,11 @@
   "filter": {
     "edition": "Deluxe",
     "gehegetyp": ["Aquarium"],
-    "kontinente": [""],
+    "kontinente": [
+      "Atlantischer Ozean",
+      "Indischer Ozean",
+      "Pazifischer Ozean"
+    ],
     "biome": ["Offenes Meer", "Riff"],
     "schutzstatus": "Vom Aussterben bedroht"
   },

@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
-    "kontinente": ["Asien", "Nordamerika"],
+    "kontinente": ["Pazifischer Ozean"],
     "biome": ["Offenes Meer"],
     "schutzstatus": "Potenziell gefährdet"
   },

@@ -15,9 +15,14 @@
   },
   "filter": {
     "edition": "",
-    "editionAuswahl": ["Standard", "Deluxe"],
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
     "gehegetyp": [""],
-    "gehegetypAuswahl": ["Landgehege", "Aquarium", "Voliere", "Ausstellung"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
     "kontinente": [""],
     "kontinenteAuswahl": [
       "Afrika",
@@ -49,10 +54,11 @@
     "schutzstatus": "",
     "schutzstatusAuswahl": [
       "???",
+      "Gefährdet",
       "Nicht gefährdet",
       "Potenziell gefährdet",
-      "Gefährdet",
       "Stark gefährdet",
+      "Unzureichende Datengrundlage",
       "Vom Aussterben bedroht"
     ]
   },

@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien"],
-    "biome": ["Feuchtgebiete", "Seen und Flüsse"],
+    "biome": ["Seen und Flüsse", "Tropen", "Feuchtgebiete"],
     "schutzstatus": "Vom Aussterben bedroht"
   },
   "daten": {

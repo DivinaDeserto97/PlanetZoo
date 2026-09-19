@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Asien", "Ozeanien"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
+    "kontinente": ["Pazifischer Ozean"],
     "biome": ["Riff"],
     "schutzstatus": "Nicht gefährdet"
   },

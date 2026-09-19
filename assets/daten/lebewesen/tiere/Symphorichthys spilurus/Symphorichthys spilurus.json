@@ -14,7 +14,7 @@
     }
   },
   "filter": {
-    "edition": "Standard",
+    "edition": "Hauptspiel",
     "gehegetyp": ["Aquarium"],
     "kontinente": ["Asien", "Ozeanien"],
     "biome": ["Riff"],

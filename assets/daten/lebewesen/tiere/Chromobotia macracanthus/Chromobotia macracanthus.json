@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
     "kontinente": ["Asien"],
-    "biome": ["Fluss"],
+    "biome": ["Seen und Flüsse"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

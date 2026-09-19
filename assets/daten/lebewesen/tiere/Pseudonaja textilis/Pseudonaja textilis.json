@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Ausstellung"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
     "kontinente": ["Ozeanien"],
-    "biome": ["Gemäßigt", "Graslandschaft"],
+    "biome": ["Wüste", "Graslandschaft", "Gemäßigt"],
     "schutzstatus": "Nicht gefährdet"
   },
   "daten": {

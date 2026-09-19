@@ -14,8 +14,8 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Asien"],
     "biome": ["Tropen"],
     "schutzstatus": "Vom Aussterben bedroht"

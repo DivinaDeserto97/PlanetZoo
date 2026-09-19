@@ -14,9 +14,9 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Aquarium", "Ausstellung"],
-    "kontinente": ["Asien"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
+    "kontinente": ["Ozeanien"],
     "biome": ["Seen und Flüsse"],
     "schutzstatus": "Stark gefährdet"
   },

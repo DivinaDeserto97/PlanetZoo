@@ -14,10 +14,10 @@
     }
   },
   "filter": {
-    "edition": "Standard",
-    "gehegetyp": ["Landgehege"],
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
     "kontinente": ["Südamerika"],
-    "biome": [""],
+    "biome": ["Tropen"],
     "schutzstatus": "Gefährdet"
   },
   "daten": {
