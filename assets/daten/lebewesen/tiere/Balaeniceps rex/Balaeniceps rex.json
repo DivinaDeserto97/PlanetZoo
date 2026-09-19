@@ -241,15 +241,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pelecaniformes",
+          "rang": "ordnung",
+          "name": "Pelecaniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balaenicipitidae",
+          "rang": "familie",
+          "name": "Balaenicipitidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balaeniceps",
+          "rang": "gattung",
+          "name": "Balaeniceps",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balaeniceps-rex",
+          "rang": "art",
+          "name": "Balaeniceps rex",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

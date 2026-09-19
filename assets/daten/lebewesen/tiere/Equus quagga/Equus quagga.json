@@ -204,10 +204,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "perissodactyla",
+          "rang": "ordnung",
+          "name": "Perissodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "equidae",
+          "rang": "familie",
+          "name": "Equidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "equus",
+          "rang": "gattung",
+          "name": "Equus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "equus-quagga",
+          "rang": "art",
+          "name": "Equus quagga",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Potenziell gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

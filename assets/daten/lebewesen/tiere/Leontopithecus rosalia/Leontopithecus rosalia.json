@@ -178,28 +178,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -214,15 +192,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "primates",
+          "rang": "ordnung",
+          "name": "Primates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "callitrichidae",
+          "rang": "familie",
+          "name": "Callitrichidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "leontopithecus",
+          "rang": "gattung",
+          "name": "Leontopithecus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "leontopithecus-rosalia",
+          "rang": "art",
+          "name": "Leontopithecus rosalia",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

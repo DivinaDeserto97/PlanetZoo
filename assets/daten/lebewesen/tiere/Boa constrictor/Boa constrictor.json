@@ -180,10 +180,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "boidae",
+          "rang": "familie",
+          "name": "Boidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "boa",
+          "rang": "gattung",
+          "name": "Boa",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "boa-constrictor",
+          "rang": "art",
+          "name": "Boa constrictor",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

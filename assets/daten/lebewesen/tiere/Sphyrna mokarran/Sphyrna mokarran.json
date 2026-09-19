@@ -215,28 +215,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -263,15 +241,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharhiniformes",
+          "rang": "ordnung",
+          "name": "Carcharhiniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sphyrnidae",
+          "rang": "familie",
+          "name": "Sphyrnidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sphyrna",
+          "rang": "gattung",
+          "name": "Sphyrna",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sphyrna-mokarran",
+          "rang": "art",
+          "name": "Sphyrna mokarran",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -263,15 +263,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "perissodactyla",
+          "rang": "ordnung",
+          "name": "Perissodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tapiridae",
+          "rang": "familie",
+          "name": "Tapiridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tapirus",
+          "rang": "gattung",
+          "name": "Tapirus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tapirus-indicus",
+          "rang": "art",
+          "name": "Tapirus indicus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

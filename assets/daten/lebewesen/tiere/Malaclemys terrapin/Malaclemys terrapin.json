@@ -222,15 +222,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "testudines",
+          "rang": "ordnung",
+          "name": "Testudines",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "emydidae",
+          "rang": "familie",
+          "name": "Emydidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "malaclemys",
+          "rang": "gattung",
+          "name": "Malaclemys",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "malaclemys-terrapin",
+          "rang": "art",
+          "name": "Malaclemys terrapin",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

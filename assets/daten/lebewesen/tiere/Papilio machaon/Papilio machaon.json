@@ -186,7 +186,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "moehren",
+              "wert": "Möhren",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -201,7 +201,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "fenchel",
+              "wert": "Fenchel",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -228,15 +228,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "papilionidae",
+          "rang": "familie",
+          "name": "Papilionidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "papilio",
+          "rang": "gattung",
+          "name": "Papilio",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "papilio-machaon",
+          "rang": "art",
+          "name": "Papilio machaon",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

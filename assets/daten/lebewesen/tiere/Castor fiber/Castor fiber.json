@@ -214,7 +214,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "holzUndPflanzenmaterial",
+              "wert": "Holz und Pflanzenmaterial",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -238,15 +238,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "rodentia",
+          "rang": "ordnung",
+          "name": "Rodentia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "castoridae",
+          "rang": "familie",
+          "name": "Castoridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "castor",
+          "rang": "gattung",
+          "name": "Castor",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "castor-fiber",
+          "rang": "art",
+          "name": "Castor fiber",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

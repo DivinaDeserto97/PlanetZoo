@@ -225,15 +225,19 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "plankton",
-              "typ": "nahrung",
+              "wert": "Plankton",
+              "typ": "nutzung",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
             }
           ]
         },
@@ -248,15 +252,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "characiformes",
+          "rang": "ordnung",
+          "name": "Characiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "alestidae",
+          "rang": "familie",
+          "name": "Alestidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "hydrocynus",
+          "rang": "gattung",
+          "name": "Hydrocynus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "hydrocynus-vittatus",
+          "rang": "art",
+          "name": "Hydrocynus vittatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

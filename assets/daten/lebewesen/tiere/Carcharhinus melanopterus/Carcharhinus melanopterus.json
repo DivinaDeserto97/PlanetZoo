@@ -246,15 +246,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharhiniformes",
+          "rang": "ordnung",
+          "name": "Carcharhiniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharhinidae",
+          "rang": "familie",
+          "name": "Carcharhinidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharhinus",
+          "rang": "gattung",
+          "name": "Carcharhinus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharhinus-melanopterus",
+          "rang": "art",
+          "name": "Carcharhinus melanopterus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

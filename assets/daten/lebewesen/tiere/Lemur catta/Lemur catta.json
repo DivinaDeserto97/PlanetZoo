@@ -201,7 +201,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "fruechte",
+              "wert": "Früchte",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -221,15 +221,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "primates",
+          "rang": "ordnung",
+          "name": "Primates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lemuridae",
+          "rang": "familie",
+          "name": "Lemuridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lemur",
+          "rang": "gattung",
+          "name": "Lemur",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lemur-catta",
+          "rang": "art",
+          "name": "Lemur catta",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

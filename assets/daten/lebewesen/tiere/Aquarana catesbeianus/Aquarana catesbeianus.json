@@ -248,15 +248,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt. Die Zoopedia-Seite selbst enthält eine Namens-/Gattungsabweichung zwischen „Aquarana catesbeianus“ und „Lithobates“.",
       "en": "Additional systematics and evolution will be added in a later source pass. The Zoopedia page itself contains a name/genus inconsistency between 'Aquarana catesbeianus' and 'Lithobates'."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anura",
+          "rang": "ordnung",
+          "name": "Anura",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ranidae",
+          "rang": "familie",
+          "name": "Ranidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lithobates",
+          "rang": "gattung",
+          "name": "Lithobates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aquarana-catesbeianus",
+          "rang": "art",
+          "name": "Aquarana catesbeianus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

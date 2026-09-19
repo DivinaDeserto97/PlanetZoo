@@ -254,15 +254,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitriformes",
+          "rang": "ordnung",
+          "name": "Accipitriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitridae",
+          "rang": "familie",
+          "name": "Accipitridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "haliaeetus",
+          "rang": "gattung",
+          "name": "Haliaeetus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "haliaeetus-albicilla",
+          "rang": "art",
+          "name": "Haliaeetus albicilla",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -166,57 +166,39 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "microscopicOrganisms",
-                "typ": "nahrung",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "zooplankton",
-                "typ": "nahrung",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Mikroskopische Organismen",
+              "typ": "nutzung",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
+            }
+          ]
         },
         "erwachsen": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Zooplankton",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
         }
       }
     }
@@ -226,15 +208,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lutjanidae",
+          "rang": "familie",
+          "name": "Lutjanidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "caesio",
+          "rang": "gattung",
+          "name": "Caesio",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "caesio-teres",
+          "rang": "art",
+          "name": "Caesio teres",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

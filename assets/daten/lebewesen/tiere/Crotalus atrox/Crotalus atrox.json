@@ -241,15 +241,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "viperidae",
+          "rang": "familie",
+          "name": "Viperidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "crotalus",
+          "rang": "gattung",
+          "name": "Crotalus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "crotalus-atrox",
+          "rang": "art",
+          "name": "Crotalus atrox",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

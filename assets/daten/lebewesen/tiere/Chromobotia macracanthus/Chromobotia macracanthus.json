@@ -223,7 +223,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -234,7 +234,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "pflanzen",
+              "wert": "Pflanzen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -254,15 +254,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cypriniformes",
+          "rang": "ordnung",
+          "name": "Cypriniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "botiidae",
+          "rang": "familie",
+          "name": "Botiidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chromobotia",
+          "rang": "gattung",
+          "name": "Chromobotia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chromobotia-macracanthus",
+          "rang": "art",
+          "name": "Chromobotia macracanthus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

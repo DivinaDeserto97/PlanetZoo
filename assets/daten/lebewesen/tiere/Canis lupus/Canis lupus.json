@@ -327,15 +327,49 @@
       "de": "Die Zoopedia gibt an, dass es 38 Unterarten des Grauwolfs gibt, die jeweils an ihre Umgebung angepasst sind. Die einzelnen Unterarten werden auf der mitgeschickten Seite nicht aufgelistet.",
       "en": "The Zoopedia states that there are 38 Grey Wolf subspecies, each adapted to its environment. The supplied page does not list the individual subspecies."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "canidae",
+          "rang": "familie",
+          "name": "Canidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "canis",
+          "rang": "gattung",
+          "name": "Canis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "canis-lupus",
+          "rang": "art",
+          "name": "Canis lupus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

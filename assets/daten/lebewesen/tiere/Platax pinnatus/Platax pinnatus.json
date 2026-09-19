@@ -163,28 +163,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -199,15 +177,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ephippidae",
+          "rang": "familie",
+          "name": "Ephippidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "platax",
+          "rang": "gattung",
+          "name": "Platax",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "platax-pinnatus",
+          "rang": "art",
+          "name": "Platax pinnatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

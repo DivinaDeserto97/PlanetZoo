@@ -194,15 +194,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anura",
+          "rang": "ordnung",
+          "name": "Anura",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dendrobatidae",
+          "rang": "familie",
+          "name": "Dendrobatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "oophaga",
+          "rang": "gattung",
+          "name": "Oophaga",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "oophaga-lehmanni",
+          "rang": "art",
+          "name": "Oophaga lehmanni",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

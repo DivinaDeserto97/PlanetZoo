@@ -248,15 +248,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "primates",
+          "rang": "ordnung",
+          "name": "Primates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "hominidae",
+          "rang": "familie",
+          "name": "Hominidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gorilla",
+          "rang": "gattung",
+          "name": "Gorilla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gorilla-gorilla-gorilla",
+          "rang": "art",
+          "name": "Gorilla gorilla gorilla",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

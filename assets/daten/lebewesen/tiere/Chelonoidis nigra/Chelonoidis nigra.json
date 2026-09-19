@@ -245,15 +245,49 @@
       "de": "Die Zoopedia unterscheidet im Text Sattelrückenpanzer- und Kuppelpanzerformen und erwähnt zahlreiche Unterarten auf verschiedenen Inseln. Einzelne Unterarten werden auf der bereitgestellten Seite nicht aufgelistet.",
       "en": "The Zoopedia distinguishes saddle-backed and domed forms in the text and mentions numerous subspecies on different islands. The supplied page does not list individual subspecies."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "testudines",
+          "rang": "ordnung",
+          "name": "Testudines",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "testudinidae",
+          "rang": "familie",
+          "name": "Testudinidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chelonoidis",
+          "rang": "gattung",
+          "name": "Chelonoidis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chelonoidis-nigra",
+          "rang": "art",
+          "name": "Chelonoidis nigra",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

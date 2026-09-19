@@ -153,10 +153,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tetraodontiformes",
+          "rang": "ordnung",
+          "name": "Tetraodontiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "molidae",
+          "rang": "familie",
+          "name": "Molidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "mola",
+          "rang": "gattung",
+          "name": "Mola",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "mola-mola",
+          "rang": "art",
+          "name": "Mola mola",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

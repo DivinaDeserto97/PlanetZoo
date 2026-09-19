@@ -262,15 +262,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carangiformes",
+          "rang": "ordnung",
+          "name": "Carangiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "coryphaenidae",
+          "rang": "familie",
+          "name": "Coryphaenidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "coryphaena",
+          "rang": "gattung",
+          "name": "Coryphaena",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "coryphaena-hippurus",
+          "rang": "art",
+          "name": "Coryphaena hippurus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

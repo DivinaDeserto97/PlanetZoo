@@ -168,10 +168,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "urodela",
+          "rang": "ordnung",
+          "name": "Urodela",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salamandridae",
+          "rang": "familie",
+          "name": "Salamandridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salamandra",
+          "rang": "gattung",
+          "name": "Salamandra",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salamandra-salamandra",
+          "rang": "art",
+          "name": "Salamandra salamandra",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

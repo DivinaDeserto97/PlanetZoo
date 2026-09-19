@@ -208,19 +208,23 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "plankton",
-              "typ": "nahrung",
+              "wert": "Plankton",
+              "typ": "nutzung",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
             },
             {
-              "wert": "smallMarineOrganisms",
-              "typ": "nahrung",
+              "wert": "Kleine Meeresorganismen",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -234,8 +238,8 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "sponges",
-              "typ": "nahrung",
+              "wert": "Schwämme",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -254,10 +258,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "testudines",
+          "rang": "ordnung",
+          "name": "Testudines",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cheloniidae",
+          "rang": "familie",
+          "name": "Cheloniidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "eretmochelys",
+          "rang": "gattung",
+          "name": "Eretmochelys",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "eretmochelys-imbricata",
+          "rang": "art",
+          "name": "Eretmochelys imbricata",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

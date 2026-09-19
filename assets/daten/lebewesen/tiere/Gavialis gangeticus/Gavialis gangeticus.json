@@ -179,10 +179,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "crocodilia",
+          "rang": "ordnung",
+          "name": "Crocodilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gavialidae",
+          "rang": "familie",
+          "name": "Gavialidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gavialis",
+          "rang": "gattung",
+          "name": "Gavialis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gavialis-gangeticus",
+          "rang": "art",
+          "name": "Gavialis gangeticus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

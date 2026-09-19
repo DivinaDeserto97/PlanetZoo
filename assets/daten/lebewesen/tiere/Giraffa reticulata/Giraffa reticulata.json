@@ -217,10 +217,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "giraffidae",
+          "rang": "familie",
+          "name": "Giraffidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "giraffa",
+          "rang": "gattung",
+          "name": "Giraffa",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "giraffa-reticulata",
+          "rang": "art",
+          "name": "Giraffa reticulata",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

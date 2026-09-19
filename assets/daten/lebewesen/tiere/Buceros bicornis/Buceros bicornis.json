@@ -246,7 +246,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "fruechte",
+              "wert": "Früchte",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -257,7 +257,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "feigen",
+              "wert": "Feigen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -277,7 +277,7 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
@@ -314,10 +314,11 @@
           "name": "Buceros bicornis",
           "lebensstatus": "lebend",
           "spiele": ["planetZoo2"],
-          "quelle": "planetZoo2"
+          "quelle": "planetZoo2",
+          "schutzstatus": "Gefährdet"
         }
       ],
-      "aufspaltungen": [""],
+      "aufspaltungen": [],
       "verbindungen": [
         {
           "von": "aves",

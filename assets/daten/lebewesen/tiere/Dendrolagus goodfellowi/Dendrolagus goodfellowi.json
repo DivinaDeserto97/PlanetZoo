@@ -224,15 +224,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "diprotodontia",
+          "rang": "ordnung",
+          "name": "Diprotodontia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "macropodidae",
+          "rang": "familie",
+          "name": "Macropodidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dendrolagus",
+          "rang": "gattung",
+          "name": "Dendrolagus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dendrolagus-goodfellowi",
+          "rang": "art",
+          "name": "Dendrolagus goodfellowi",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

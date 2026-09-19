@@ -216,28 +216,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -264,15 +242,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitriformes",
+          "rang": "ordnung",
+          "name": "Accipitriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitridae",
+          "rang": "familie",
+          "name": "Accipitridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aquila",
+          "rang": "gattung",
+          "name": "Aquila",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aquila-chrysaetos",
+          "rang": "art",
+          "name": "Aquila chrysaetos",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

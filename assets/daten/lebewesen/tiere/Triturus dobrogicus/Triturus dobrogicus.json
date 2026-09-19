@@ -195,15 +195,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "urodela",
+          "rang": "ordnung",
+          "name": "Urodela",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salamandridae",
+          "rang": "familie",
+          "name": "Salamandridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "triturus",
+          "rang": "gattung",
+          "name": "Triturus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "triturus-dobrogicus",
+          "rang": "art",
+          "name": "Triturus dobrogicus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

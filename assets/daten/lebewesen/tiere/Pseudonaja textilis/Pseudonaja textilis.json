@@ -209,15 +209,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "elapidae",
+          "rang": "familie",
+          "name": "Elapidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pseudonaja",
+          "rang": "gattung",
+          "name": "Pseudonaja",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pseudonaja-textilis",
+          "rang": "art",
+          "name": "Pseudonaja textilis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

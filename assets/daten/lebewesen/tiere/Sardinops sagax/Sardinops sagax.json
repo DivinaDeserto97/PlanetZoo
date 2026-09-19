@@ -203,15 +203,19 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "plankton",
-              "typ": "sonstiges",
+              "wert": "Plankton",
+              "typ": "nutzung",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
             }
           ]
         }
@@ -223,15 +227,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "clupeiformes",
+          "rang": "ordnung",
+          "name": "Clupeiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "alosidae",
+          "rang": "familie",
+          "name": "Alosidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sardinops",
+          "rang": "gattung",
+          "name": "Sardinops",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sardinops-sagax",
+          "rang": "art",
+          "name": "Sardinops sagax",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

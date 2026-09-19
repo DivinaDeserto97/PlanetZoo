@@ -209,15 +209,49 @@
       "de": "Im Zoopedia-Durchgang werden nur die dort angegebenen taxonomischen Ränge übernommen. Reich, Stamm und weiterführende Systematik folgen mit Fachquellen.",
       "en": "The Zoopedia pass only records taxonomic ranks stated there. Kingdom, phylum and extended systematics will be added from specialist sources later."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sphenisciformes",
+          "rang": "ordnung",
+          "name": "Sphenisciformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "spheniscidae",
+          "rang": "familie",
+          "name": "Spheniscidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "spheniscus",
+          "rang": "gattung",
+          "name": "Spheniscus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "spheniscus-demersus",
+          "rang": "art",
+          "name": "Spheniscus demersus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -227,15 +227,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "arachnida",
+          "rang": "klasse",
+          "name": "Arachnida",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "araneae",
+          "rang": "ordnung",
+          "name": "Araneae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "theraphosidae",
+          "rang": "familie",
+          "name": "Theraphosidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "brachypelma",
+          "rang": "gattung",
+          "name": "Brachypelma",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "brachypelma-hamorii",
+          "rang": "art",
+          "name": "Brachypelma hamorii",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

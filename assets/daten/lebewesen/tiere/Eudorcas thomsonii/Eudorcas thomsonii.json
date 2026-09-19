@@ -268,7 +268,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "muttermilch",
+              "wert": "Muttermilch",
               "typ": "nutzung",
               "beziehung": "nutzung",
               "wirkung": "+/0",
@@ -276,10 +276,14 @@
                 "selbst": ["jungtier"],
                 "ziel": []
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
             },
             {
-              "wert": "gras",
+              "wert": "Gras",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -294,7 +298,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "gras",
+              "wert": "Gras",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -314,15 +318,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "bovidae",
+          "rang": "familie",
+          "name": "Bovidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "eudorcas",
+          "rang": "gattung",
+          "name": "Eudorcas",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "eudorcas-thomsonii",
+          "rang": "art",
+          "name": "Eudorcas thomsonii",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

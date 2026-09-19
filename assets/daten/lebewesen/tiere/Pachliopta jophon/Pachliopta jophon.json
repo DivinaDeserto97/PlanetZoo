@@ -243,9 +243,43 @@
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "papilionidae",
+          "rang": "familie",
+          "name": "Papilionidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pachliopta",
+          "rang": "gattung",
+          "name": "Pachliopta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pachliopta-jophon",
+          "rang": "art",
+          "name": "Pachliopta jophon",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

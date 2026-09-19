@@ -177,28 +177,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -247,15 +225,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "perciformes",
+          "rang": "ordnung",
+          "name": "Perciformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "epinephelidae",
+          "rang": "familie",
+          "name": "Epinephelidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "epinephelus",
+          "rang": "gattung",
+          "name": "Epinephelus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "epinephelus-lanceolatus",
+          "rang": "art",
+          "name": "Epinephelus lanceolatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Unzureichende Datengrundlage"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

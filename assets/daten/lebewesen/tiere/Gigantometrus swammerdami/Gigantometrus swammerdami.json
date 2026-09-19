@@ -171,28 +171,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -207,15 +185,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "arachnida",
+          "rang": "klasse",
+          "name": "Arachnida",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scorpiones",
+          "rang": "ordnung",
+          "name": "Scorpiones",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scorpionidae",
+          "rang": "familie",
+          "name": "Scorpionidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gigantometrus",
+          "rang": "gattung",
+          "name": "Gigantometrus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gigantometrus-swammerdami",
+          "rang": "art",
+          "name": "Gigantometrus swammerdami",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "???"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -236,7 +236,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "muttermilch",
+              "wert": "Muttermilch",
               "typ": "nutzung",
               "beziehung": "nutzung",
               "wirkung": "+/0",
@@ -251,7 +251,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "plantFood",
+              "wert": "Pflanzliche Nahrung",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -266,7 +266,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "grass",
+              "wert": "Gras",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -277,7 +277,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "leaves",
+              "wert": "Blätter",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -288,7 +288,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "fruit",
+              "wert": "Früchte",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -299,7 +299,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "roots",
+              "wert": "Wurzeln",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -310,7 +310,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "twigs",
+              "wert": "Zweige",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -321,7 +321,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "bark",
+              "wert": "Rinde",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -332,7 +332,7 @@
               "quelle": "animalDiversityWeb"
             },
             {
-              "wert": "shrubs",
+              "wert": "Sträucher",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -375,6 +375,24 @@
       },
       "knoten": [
         {
+          "id": "animalia",
+          "rang": "reich",
+          "name": "Animalia",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "chordata",
+          "rang": "stamm",
+          "name": "Chordata",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "animalDiversityWeb"
+        },
+        {
           "id": "proboscidea",
           "rang": "ordnung",
           "name": "Proboscidea",
@@ -396,7 +414,10 @@
           "id": "loxodonta-africana",
           "rang": "art",
           "name": "Loxodonta africana",
-          "quelle": "animalDiversityWeb"
+          "quelle": "animalDiversityWeb",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
         }
       ],
       "aufspaltungen": [
@@ -414,7 +435,8 @@
           "typ": "ungefaehreDivergenz",
           "quelle": "rohland2007"
         }
-      ]
+      ],
+      "verbindungen": []
     }
   },
   "texte": {

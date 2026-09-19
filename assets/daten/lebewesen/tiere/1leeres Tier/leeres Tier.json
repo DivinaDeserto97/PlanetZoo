@@ -251,43 +251,11 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "",
-                "bedingung": "",
-                "quelle": ""
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "",
-                "quelle": ""
-              }
-            ]
-          }
+        "jungtier": {
+          "werte": []
         },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [
-              {
-                "wert": "",
-                "quelle": ""
-              }
-            ]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
+        "erwachsen": {
+          "werte": []
         }
       }
     }
@@ -297,58 +265,15 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [
-      {
-        "id": "",
-        "beziehung": "",
-        "deutscherName": "",
-        "quelle": ""
-      }
-    ],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [
-        {
-          "id": "",
-          "rang": "",
-          "name": "",
-          "deutscherName": "",
-          "lebensstatus": null,
-          "domestikationsstatus": null,
-          "schutzstatus": null,
-          "spiele": [""],
-          "position": null,
-          "hinweis": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": ""
-        }
-      ],
-      "aufspaltungen": [
-        {
-          "linieA": "",
-          "linieB": "",
-          "zeitVorHeuteMioJahre": null,
-          "typ": "",
-          "quelle": ""
-        }
-      ],
-      "verbindungen": [
-        {
-          "von": "",
-          "nach": "",
-          "typ": "",
-          "hinweis": {
-            "de": "",
-            "en": ""
-          },
-          "quelle": ""
-        }
-      ]
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

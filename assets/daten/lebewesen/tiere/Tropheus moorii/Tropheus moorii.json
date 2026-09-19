@@ -223,7 +223,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -242,7 +242,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -266,15 +266,49 @@
       "de": "Die Zoopedia erwähnt zahlreiche Farbvarianten, betont jedoch ausdrücklich, dass keine Unterarten unterschieden werden und alle Farbformen zur selben Art gehören.",
       "en": "The Zoopedia mentions numerous color variants but explicitly states that no subspecies are recognized and all color forms belong to the same species."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cichliformes",
+          "rang": "ordnung",
+          "name": "Cichliformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cichlidae",
+          "rang": "familie",
+          "name": "Cichlidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tropheus",
+          "rang": "gattung",
+          "name": "Tropheus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tropheus-moorii",
+          "rang": "art",
+          "name": "Tropheus moorii",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

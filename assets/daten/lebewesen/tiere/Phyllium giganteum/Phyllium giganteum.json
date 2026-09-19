@@ -158,10 +158,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phasmatodea",
+          "rang": "ordnung",
+          "name": "Phasmatodea",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phylliidae",
+          "rang": "familie",
+          "name": "Phylliidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pulchriphyllium",
+          "rang": "gattung",
+          "name": "Pulchriphyllium",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phyllium-giganteum",
+          "rang": "art",
+          "name": "Phyllium giganteum",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "???"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

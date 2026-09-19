@@ -172,7 +172,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "wasserpflanzen",
+              "wert": "Wasserpflanzen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -196,15 +196,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cypriniformes",
+          "rang": "ordnung",
+          "name": "Cypriniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "leuciscidae",
+          "rang": "familie",
+          "name": "Leuciscidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scardinius",
+          "rang": "gattung",
+          "name": "Scardinius",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scardinius-erythrophthalmus",
+          "rang": "art",
+          "name": "Scardinius erythrophthalmus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

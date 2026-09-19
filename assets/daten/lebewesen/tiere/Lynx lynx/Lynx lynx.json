@@ -324,15 +324,49 @@
       "de": "Die Zoopedia erwähnt aufgrund der weiten Verbreitung zahlreiche beschriebene Unterarten, weist aber darauf hin, dass eine definitive Abgrenzung wegen überlappender Verbreitung und ähnlichem Aussehen schwierig ist. Einzelne Unterarten werden auf der bereitgestellten Seite nicht aufgelistet.",
       "en": "The Zoopedia mentions numerous described subspecies due to the species' wide distribution, while noting that definitive delimitation is difficult because ranges overlap and appearances are similar. The supplied page does not list individual subspecies."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "felidae",
+          "rang": "familie",
+          "name": "Felidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lynx",
+          "rang": "gattung",
+          "name": "Lynx",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lynx-lynx",
+          "rang": "art",
+          "name": "Lynx lynx",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

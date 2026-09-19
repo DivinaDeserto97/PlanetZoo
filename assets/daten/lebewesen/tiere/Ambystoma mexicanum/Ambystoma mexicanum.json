@@ -173,10 +173,57 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "animalia",
+          "rang": "reich",
+          "name": "Animalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chordata",
+          "rang": "stamm",
+          "name": "Chordata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "urodela",
+          "rang": "ordnung",
+          "name": "Urodela",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ambystomatidae",
+          "rang": "familie",
+          "name": "Ambystomatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ambystoma",
+          "rang": "gattung",
+          "name": "Ambystoma",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ambystoma-mexicanum",
+          "rang": "art",
+          "name": "Ambystoma mexicanum",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

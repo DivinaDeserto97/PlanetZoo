@@ -194,28 +194,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -230,15 +208,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "coleoptera",
+          "rang": "ordnung",
+          "name": "Coleoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scarabaeidae",
+          "rang": "familie",
+          "name": "Scarabaeidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "goliathus",
+          "rang": "gattung",
+          "name": "Goliathus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "goliathus-goliatus",
+          "rang": "art",
+          "name": "Goliathus goliatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "???"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

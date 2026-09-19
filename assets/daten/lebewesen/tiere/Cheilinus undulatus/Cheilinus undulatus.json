@@ -220,8 +220,8 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "microscopicPrey",
-              "typ": "nahrung",
+              "wert": "Mikroskopische Beutetiere",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -239,8 +239,8 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "hardShelledInvertebrates",
-              "typ": "nahrung",
+              "wert": "Hartschalige Wirbellose",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -250,8 +250,8 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "boxfish",
-              "typ": "nahrung",
+              "wert": "Kofferfische",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -265,8 +265,8 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "crownOfThornsStarfish",
-              "typ": "nahrung",
+              "wert": "Dornenkronenseesterne",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -289,15 +289,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "labriformes",
+          "rang": "ordnung",
+          "name": "Labriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "labridae",
+          "rang": "familie",
+          "name": "Labridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cheilinus",
+          "rang": "gattung",
+          "name": "Cheilinus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cheilinus-undulatus",
+          "rang": "art",
+          "name": "Cheilinus undulatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

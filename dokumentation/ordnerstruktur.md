@@ -1492,6 +1492,7 @@
           - [datenImport.js](../assets/daten/lebewesen/tiere/datenImport.js)
       - `patches/`
         - [infotafel-tierdaten.json](../assets/daten/patches/infotafel-tierdaten.json)
+        - [nahrungsnetz-systematik-daten-20260919.json](../assets/daten/patches/nahrungsnetz-systematik-daten-20260919.json)
         - [nahrungsnetz-tiere.json](../assets/daten/patches/nahrungsnetz-tiere.json)
         - [sonderdaten-20260919.json](../assets/daten/patches/sonderdaten-20260919.json)
         - [zoopedia-filter-20260919.json](../assets/daten/patches/zoopedia-filter-20260919.json)

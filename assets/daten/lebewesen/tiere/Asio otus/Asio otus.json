@@ -252,15 +252,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "strigiformes",
+          "rang": "ordnung",
+          "name": "Strigiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "strigidae",
+          "rang": "familie",
+          "name": "Strigidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "asio",
+          "rang": "gattung",
+          "name": "Asio",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "asio-otus",
+          "rang": "art",
+          "name": "Asio otus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

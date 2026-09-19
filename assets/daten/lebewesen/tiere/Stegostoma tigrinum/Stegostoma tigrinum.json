@@ -294,15 +294,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "orectolobiformes",
+          "rang": "ordnung",
+          "name": "Orectolobiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "stegostomatidae",
+          "rang": "familie",
+          "name": "Stegostomatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "stegostoma",
+          "rang": "gattung",
+          "name": "Stegostoma",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "stegostoma-tigrinum",
+          "rang": "art",
+          "name": "Stegostoma tigrinum",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

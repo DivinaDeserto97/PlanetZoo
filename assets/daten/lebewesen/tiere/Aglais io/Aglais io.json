@@ -188,9 +188,9 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "nettleLeaf",
-              "typ": "nahrung",
-              "beziehung": "herbivory",
+              "wert": "Brennnesselblätter",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
@@ -207,10 +207,10 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "flowers",
-              "typ": "nahrung",
-              "beziehung": "feeding",
-              "wirkung": "+/0",
+              "wert": "Blüten",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
               "bedingung": {
                 "selbst": [],
                 "ziel": []
@@ -231,15 +231,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "nymphalidae",
+          "rang": "familie",
+          "name": "Nymphalidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aglais",
+          "rang": "gattung",
+          "name": "Aglais",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aglais-io",
+          "rang": "art",
+          "name": "Aglais io",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

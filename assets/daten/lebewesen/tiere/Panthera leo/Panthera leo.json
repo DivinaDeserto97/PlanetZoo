@@ -245,7 +245,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "muttermilch",
+              "wert": "Muttermilch",
               "typ": "nutzung",
               "beziehung": "nutzung",
               "wirkung": "+/0",
@@ -260,7 +260,7 @@
               "quelle": "smithsonianLion"
             },
             {
-              "wert": "tierischeNahrung",
+              "wert": "Tierische Nahrung",
               "typ": "nutzung",
               "beziehung": "nutzung",
               "wirkung": "+/0",
@@ -279,7 +279,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "aas",
+              "wert": "Aas",
               "typ": "aas",
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
@@ -399,6 +399,30 @@
       },
       "knoten": [
         {
+          "id": "animalia",
+          "rang": "reich",
+          "name": "Animalia",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "id": "chordata",
+          "rang": "stamm",
+          "name": "Chordata",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "smithsonianLion"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "smithsonianLion"
+        },
+        {
           "id": "felidae",
           "rang": "familie",
           "name": "Felidae",
@@ -420,7 +444,10 @@
           "id": "panthera-leo",
           "rang": "art",
           "name": "Panthera leo",
-          "quelle": "smithsonianLion"
+          "quelle": "smithsonianLion",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
         }
       ],
       "aufspaltungen": [
@@ -431,7 +458,8 @@
           "typ": "ungefaehreDivergenz",
           "quelle": "pantheraMitogenome2013"
         }
-      ]
+      ],
+      "verbindungen": []
     }
   },
   "texte": {

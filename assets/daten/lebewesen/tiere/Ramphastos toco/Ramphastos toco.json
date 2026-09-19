@@ -246,7 +246,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "fruechte",
+              "wert": "Früchte",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -270,15 +270,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "piciformes",
+          "rang": "ordnung",
+          "name": "Piciformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ramphastidae",
+          "rang": "familie",
+          "name": "Ramphastidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ramphastos",
+          "rang": "gattung",
+          "name": "Ramphastos",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ramphastos-toco",
+          "rang": "art",
+          "name": "Ramphastos toco",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -217,15 +217,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "varanidae",
+          "rang": "familie",
+          "name": "Varanidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "varanus",
+          "rang": "gattung",
+          "name": "Varanus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "varanus-komodoensis",
+          "rang": "art",
+          "name": "Varanus komodoensis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

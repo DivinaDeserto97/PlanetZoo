@@ -226,15 +226,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pholidota",
+          "rang": "ordnung",
+          "name": "Pholidota",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "manidae",
+          "rang": "familie",
+          "name": "Manidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "manis",
+          "rang": "gattung",
+          "name": "Manis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "manis-javanica",
+          "rang": "art",
+          "name": "Manis javanica",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

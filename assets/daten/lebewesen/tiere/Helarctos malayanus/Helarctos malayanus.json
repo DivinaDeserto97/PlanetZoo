@@ -170,42 +170,38 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "Honig",
-                "quelle": "planetZoo2"
-              },
-              {
-                "wert": "Insekten",
-                "quelle": "planetZoo2"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
         "erwachsen": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Honig",
+              "quelle": "planetZoo2",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              },
+              "typ": "nutzung"
+            },
+            {
+              "wert": "Insekten",
+              "quelle": "planetZoo2",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "typ": "tier"
+            }
+          ]
         }
       }
     }
@@ -215,15 +211,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ursidae",
+          "rang": "familie",
+          "name": "Ursidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "helarctos",
+          "rang": "gattung",
+          "name": "Helarctos",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "helarctos-malayanus",
+          "rang": "art",
+          "name": "Helarctos malayanus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

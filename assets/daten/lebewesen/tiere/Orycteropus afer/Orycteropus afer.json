@@ -230,7 +230,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "muttermilch",
+              "wert": "Muttermilch",
               "typ": "nutzung",
               "beziehung": "nutzung",
               "wirkung": "+/0",
@@ -300,6 +300,24 @@
       },
       "knoten": [
         {
+          "id": "animalia",
+          "rang": "reich",
+          "name": "Animalia",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "chordata",
+          "rang": "stamm",
+          "name": "Chordata",
+          "quelle": "animalDiversityWeb"
+        },
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "animalDiversityWeb"
+        },
+        {
           "id": "afrotheria",
           "rang": "ueberordnung",
           "name": "Afrotheria",
@@ -333,7 +351,10 @@
           "id": "orycteropus-afer",
           "rang": "art",
           "name": "Orycteropus afer",
-          "quelle": "mammalDiversityDatabase"
+          "quelle": "mammalDiversityDatabase",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
         }
       ],
       "aufspaltungen": [
@@ -344,7 +365,8 @@
           "typ": "ungefaehreDivergenz",
           "quelle": "afrotheriaTimetree2025"
         }
-      ]
+      ],
+      "verbindungen": []
     }
   },
   "texte": {

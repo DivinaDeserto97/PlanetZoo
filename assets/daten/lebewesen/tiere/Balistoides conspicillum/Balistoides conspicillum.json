@@ -178,15 +178,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tetraodontiformes",
+          "rang": "ordnung",
+          "name": "Tetraodontiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balistidae",
+          "rang": "familie",
+          "name": "Balistidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balistoides",
+          "rang": "gattung",
+          "name": "Balistoides",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "balistoides-conspicillum",
+          "rang": "art",
+          "name": "Balistoides conspicillum",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

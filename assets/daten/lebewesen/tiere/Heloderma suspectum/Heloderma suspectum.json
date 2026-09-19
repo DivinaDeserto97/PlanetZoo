@@ -159,10 +159,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "helodermatidae",
+          "rang": "familie",
+          "name": "Helodermatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "heloderma",
+          "rang": "gattung",
+          "name": "Heloderma",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "heloderma-suspectum",
+          "rang": "art",
+          "name": "Heloderma suspectum",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Potenziell gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

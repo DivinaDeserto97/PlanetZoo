@@ -168,78 +168,56 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "snakes",
-                "typ": "tier",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              },
-              {
-                "wert": "insects",
-                "typ": "tier",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              },
-              {
-                "wert": "arachnids",
-                "typ": "tier",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              },
-              {
-                "wert": "smallMammals",
-                "typ": "tier",
-                "beziehung": "praedation",
-                "wirkung": "+/-",
-                "bedingung": {
-                  "selbst": [""],
-                  "ziel": [""]
-                },
-                "quelle": "planetZoo2"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
         "erwachsen": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Schlangen",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Insekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Spinnentiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Kleine Säugetiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
         }
       }
     }
@@ -249,15 +227,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitriformes",
+          "rang": "ordnung",
+          "name": "Accipitriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sagittariidae",
+          "rang": "familie",
+          "name": "Sagittariidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sagittarius",
+          "rang": "gattung",
+          "name": "Sagittarius",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sagittarius-serpentarius",
+          "rang": "art",
+          "name": "Sagittarius serpentarius",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

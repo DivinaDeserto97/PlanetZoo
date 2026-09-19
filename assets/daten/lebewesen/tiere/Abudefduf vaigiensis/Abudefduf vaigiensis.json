@@ -204,7 +204,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -215,7 +215,7 @@
               "quelle": "planetZoo2"
             },
             {
-              "wert": "seetang",
+              "wert": "Seetang",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -235,15 +235,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "blenniiformes",
+          "rang": "ordnung",
+          "name": "Blenniiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pomacentridae",
+          "rang": "familie",
+          "name": "Pomacentridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "abudefduf",
+          "rang": "gattung",
+          "name": "Abudefduf",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "abudefduf-vaigiensis",
+          "rang": "art",
+          "name": "Abudefduf vaigiensis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

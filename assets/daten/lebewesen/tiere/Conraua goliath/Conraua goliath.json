@@ -226,7 +226,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "eineSpezialisiertePflanzenart",
+              "wert": "Spezialisierte Pflanzenart",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -253,15 +253,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anura",
+          "rang": "ordnung",
+          "name": "Anura",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "conrauidae",
+          "rang": "familie",
+          "name": "Conrauidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "conraua",
+          "rang": "gattung",
+          "name": "Conraua",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "conraua-goliath",
+          "rang": "art",
+          "name": "Conraua goliath",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

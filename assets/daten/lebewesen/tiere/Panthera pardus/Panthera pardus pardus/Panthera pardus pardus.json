@@ -200,10 +200,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "felidae",
+          "rang": "familie",
+          "name": "Felidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "panthera",
+          "rang": "gattung",
+          "name": "Panthera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "panthera-pardus-pardus",
+          "rang": "art",
+          "name": "Panthera pardus pardus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

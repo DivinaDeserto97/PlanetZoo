@@ -203,15 +203,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "chaetodontidae",
+          "rang": "familie",
+          "name": "Chaetodontidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "heniochus",
+          "rang": "gattung",
+          "name": "Heniochus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "heniochus-diphreutes",
+          "rang": "art",
+          "name": "Heniochus diphreutes",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

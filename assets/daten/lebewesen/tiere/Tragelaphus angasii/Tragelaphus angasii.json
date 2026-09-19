@@ -229,15 +229,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "bovidae",
+          "rang": "familie",
+          "name": "Bovidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tragelaphus",
+          "rang": "gattung",
+          "name": "Tragelaphus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tragelaphus-angasii",
+          "rang": "art",
+          "name": "Tragelaphus angasii",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

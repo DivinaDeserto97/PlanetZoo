@@ -186,28 +186,6 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "Die Zoopedia erwähnt Räuber allgemein, nennt jedoch keine konkreten Arten.",
-              "en": "The Zoopedia mentions predators generally but does not name specific species."
-            },
-            "quelle": "planetZoo2"
-          }
-        },
         "jungtier": {
           "werte": []
         },
@@ -222,15 +200,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "suidae",
+          "rang": "familie",
+          "name": "Suidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phacochoerus",
+          "rang": "gattung",
+          "name": "Phacochoerus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phacochoerus-africanus",
+          "rang": "art",
+          "name": "Phacochoerus africanus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

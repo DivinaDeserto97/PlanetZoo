@@ -268,15 +268,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "herpestidae",
+          "rang": "familie",
+          "name": "Herpestidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "suricata",
+          "rang": "gattung",
+          "name": "Suricata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "suricata-suricatta",
+          "rang": "art",
+          "name": "Suricata suricatta",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -178,15 +178,49 @@
       "de": "Die Zoopedia bezeichnet den Segelflossen-Schnapper als einzige bekannte Spezies der Gattung Symphorichthys.",
       "en": "The Zoopedia states that the Sailfin Snapper is the only known species in the genus Symphorichthys."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lutjanidae",
+          "rang": "familie",
+          "name": "Lutjanidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "symphorichthys",
+          "rang": "gattung",
+          "name": "Symphorichthys",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "symphorichthys-spilurus",
+          "rang": "art",
+          "name": "Symphorichthys spilurus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

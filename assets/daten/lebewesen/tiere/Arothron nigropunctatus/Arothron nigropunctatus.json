@@ -194,7 +194,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -217,15 +217,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tetraodontiformes",
+          "rang": "ordnung",
+          "name": "Tetraodontiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tetraodontidae",
+          "rang": "familie",
+          "name": "Tetraodontidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "arothron",
+          "rang": "gattung",
+          "name": "Arothron",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "arothron-nigropunctatus",
+          "rang": "art",
+          "name": "Arothron nigropunctatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

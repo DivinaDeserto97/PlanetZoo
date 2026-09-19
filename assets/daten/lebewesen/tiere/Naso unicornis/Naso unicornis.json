@@ -190,7 +190,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "braunalgen",
+              "wert": "Braunalgen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -214,15 +214,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuridae",
+          "rang": "familie",
+          "name": "Acanthuridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "naso",
+          "rang": "gattung",
+          "name": "Naso",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "naso-unicornis",
+          "rang": "art",
+          "name": "Naso unicornis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

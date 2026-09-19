@@ -200,10 +200,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anura",
+          "rang": "ordnung",
+          "name": "Anura",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dendrobatidae",
+          "rang": "familie",
+          "name": "Dendrobatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phyllobates",
+          "rang": "gattung",
+          "name": "Phyllobates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phyllobates-terribilis",
+          "rang": "art",
+          "name": "Phyllobates terribilis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

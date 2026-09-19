@@ -167,10 +167,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "myliobatiformes",
+          "rang": "ordnung",
+          "name": "Myliobatiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aetobatidae",
+          "rang": "familie",
+          "name": "Aetobatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aetobatus",
+          "rang": "gattung",
+          "name": "Aetobatus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aetobatus-ocellatus",
+          "rang": "art",
+          "name": "Aetobatus ocellatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

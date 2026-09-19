@@ -175,8 +175,8 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "aquaticInvertebrates",
-              "typ": "nahrung",
+              "wert": "Wirbellose Wassertiere",
+              "typ": "tier",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
@@ -202,15 +202,49 @@
       "de": "Die zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salmoniformes",
+          "rang": "ordnung",
+          "name": "Salmoniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salmonidae",
+          "rang": "familie",
+          "name": "Salmonidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salmo",
+          "rang": "gattung",
+          "name": "Salmo",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "salmo-trutta",
+          "rang": "art",
+          "name": "Salmo trutta",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

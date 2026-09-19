@@ -200,7 +200,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "vegetation",
+              "wert": "Vegetation",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -224,15 +224,49 @@
       "de": "Die Zoopedia beschreibt Echte Achatschnecken als Zwitter mit männlichen und weiblichen Fortpflanzungsorganen.",
       "en": "The Zoopedia describes Giant Tiger Land Snails as hermaphrodites possessing both male and female reproductive organs."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "gastropoda",
+          "rang": "klasse",
+          "name": "Gastropoda",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "stylommatophora",
+          "rang": "ordnung",
+          "name": "Stylommatophora",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "achatinidae",
+          "rang": "familie",
+          "name": "Achatinidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "achatina",
+          "rang": "gattung",
+          "name": "Achatina",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "achatina-achatina",
+          "rang": "art",
+          "name": "Achatina achatina",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "???"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

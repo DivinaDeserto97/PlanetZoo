@@ -215,7 +215,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "aas",
+              "wert": "Aas",
               "typ": "aas",
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
@@ -227,14 +227,17 @@
                 "de": "Die Eltern füttern das Küken mit ausgewürgtem Aas.",
                 "en": "The parents feed the chick regurgitated carrion."
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "aas": {
+                "zustand": "Nicht genauer angegeben"
+              }
             }
           ]
         },
         "erwachsen": {
           "werte": [
             {
-              "wert": "aas",
+              "wert": "Aas",
               "typ": "aas",
               "beziehung": "nekrophagie",
               "wirkung": "+/0",
@@ -246,10 +249,13 @@
                 "de": "Weißrückengeier sind obligate Aasfresser und beseitigen Tierkadaver.",
                 "en": "White-backed Vultures are obligate scavengers and consume animal carcasses."
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "aas": {
+                "zustand": "Nicht genauer angegeben"
+              }
             },
             {
-              "wert": "diclofenac",
+              "wert": "Diclofenac",
               "typ": "giftig",
               "beziehung": "toxischeWirkung",
               "wirkung": "-/0",
@@ -261,7 +267,11 @@
                 "de": "Die Zoopedia nennt Tierkadaver mit Diclofenac ausdrücklich als Vergiftungsgefahr für Weißrückengeier.",
                 "en": "The Zoopedia explicitly identifies carcasses containing diclofenac as a poisoning threat to White-backed Vultures."
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "gift": {
+                "relevant": true,
+                "giftweg": ["Nahrungsaufnahme über belastetes Aas"]
+              }
             }
           ]
         }
@@ -273,15 +283,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitriformes",
+          "rang": "ordnung",
+          "name": "Accipitriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "accipitridae",
+          "rang": "familie",
+          "name": "Accipitridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gyps",
+          "rang": "gattung",
+          "name": "Gyps",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gyps-africanus",
+          "rang": "art",
+          "name": "Gyps africanus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

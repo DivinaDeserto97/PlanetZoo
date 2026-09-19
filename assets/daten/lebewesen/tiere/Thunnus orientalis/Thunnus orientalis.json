@@ -193,15 +193,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scombriformes",
+          "rang": "ordnung",
+          "name": "Scombriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scombridae",
+          "rang": "familie",
+          "name": "Scombridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "thunnus",
+          "rang": "gattung",
+          "name": "Thunnus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "thunnus-orientalis",
+          "rang": "art",
+          "name": "Thunnus orientalis",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Potenziell gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

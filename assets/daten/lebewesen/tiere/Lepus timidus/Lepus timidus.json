@@ -261,15 +261,49 @@
       "de": "Die Zoopedia erwähnt in Mitteleuropa Hybridisierung und Konkurrenz mit Europäischen Feldhasen (Lepus europaeus).",
       "en": "The Zoopedia mentions hybridization and competition with European Hares (Lepus europaeus) in Central Europe."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "hasenartige",
+          "rang": "ordnung",
+          "name": "Hasenartige",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "leporidae",
+          "rang": "familie",
+          "name": "Leporidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepus",
+          "rang": "gattung",
+          "name": "Lepus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepus-timidus",
+          "rang": "art",
+          "name": "Lepus timidus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

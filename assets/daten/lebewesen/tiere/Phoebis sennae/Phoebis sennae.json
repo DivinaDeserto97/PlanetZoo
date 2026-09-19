@@ -201,7 +201,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "sennapflanzen",
+              "wert": "Sennapflanzen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -228,15 +228,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pieridae",
+          "rang": "familie",
+          "name": "Pieridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phoebis",
+          "rang": "gattung",
+          "name": "Phoebis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phoebis-sennae",
+          "rang": "art",
+          "name": "Phoebis sennae",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

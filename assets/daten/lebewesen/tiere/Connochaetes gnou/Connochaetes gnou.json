@@ -267,15 +267,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "bovidae",
+          "rang": "familie",
+          "name": "Bovidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "connochaetes",
+          "rang": "gattung",
+          "name": "Connochaetes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "connochaetes-gnou",
+          "rang": "art",
+          "name": "Connochaetes gnou",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

@@ -163,10 +163,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "perciformes",
+          "rang": "ordnung",
+          "name": "Perciformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scorpaenidae",
+          "rang": "familie",
+          "name": "Scorpaenidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pterois",
+          "rang": "gattung",
+          "name": "Pterois",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pterois-volitans",
+          "rang": "art",
+          "name": "Pterois volitans",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

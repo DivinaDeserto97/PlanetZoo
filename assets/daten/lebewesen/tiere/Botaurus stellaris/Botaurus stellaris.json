@@ -226,15 +226,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pelecaniformes",
+          "rang": "ordnung",
+          "name": "Pelecaniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ardeidae",
+          "rang": "familie",
+          "name": "Ardeidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "botaurus",
+          "rang": "gattung",
+          "name": "Botaurus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "botaurus-stellaris",
+          "rang": "art",
+          "name": "Botaurus stellaris",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

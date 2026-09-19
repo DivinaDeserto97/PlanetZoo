@@ -228,7 +228,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -248,15 +248,49 @@
       "de": "Die Zoopedia bezeichnet den Paletten-Doktorfisch als einzige Art der Gattung Paracanthurus.",
       "en": "The Zoopedia states that the Palette Surgeonfish is the only species in the genus Paracanthurus."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuridae",
+          "rang": "familie",
+          "name": "Acanthuridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "paracanthurus",
+          "rang": "gattung",
+          "name": "Paracanthurus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "paracanthurus-hepatus",
+          "rang": "art",
+          "name": "Paracanthurus hepatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

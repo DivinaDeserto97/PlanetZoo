@@ -223,15 +223,19 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "mikroorganismen",
-              "typ": "sonstiges",
+              "wert": "Mikroorganismen",
+              "typ": "nutzung",
               "beziehung": "praedation",
               "wirkung": "+/-",
               "bedingung": {
                 "selbst": ["larve"],
                 "ziel": []
               },
-              "quelle": "planetZoo2"
+              "quelle": "planetZoo2",
+              "nutzung": {
+                "art": "Nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: keine genaue Angabe"
+              }
             }
           ]
         },
@@ -246,15 +250,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carangiformes",
+          "rang": "ordnung",
+          "name": "Carangiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carangidae",
+          "rang": "familie",
+          "name": "Carangidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gnathanodon",
+          "rang": "gattung",
+          "name": "Gnathanodon",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "gnathanodon-speciosus",
+          "rang": "art",
+          "name": "Gnathanodon speciosus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

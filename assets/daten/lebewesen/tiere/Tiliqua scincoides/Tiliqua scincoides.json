@@ -217,10 +217,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "reptilia",
+          "rang": "klasse",
+          "name": "Reptilia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "squamata",
+          "rang": "ordnung",
+          "name": "Squamata",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scincidae",
+          "rang": "familie",
+          "name": "Scincidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tiliqua",
+          "rang": "gattung",
+          "name": "Tiliqua",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "tiliqua-scincoides",
+          "rang": "art",
+          "name": "Tiliqua scincoides",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

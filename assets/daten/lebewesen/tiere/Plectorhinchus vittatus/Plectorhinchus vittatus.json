@@ -154,38 +154,23 @@
         ]
       },
       "nahrungsnetz": {
-        "frisst": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [
-              {
-                "wert": "wirbellose Tiere",
-                "quelle": "planetZoo2"
-              }
-            ]
-          }
-        },
-        "wirdGefressenVon": {
-          "jungtier": {
-            "werte": [""]
-          },
-          "erwachsen": {
-            "werte": [""],
-            "keineRegelmaessigenNatuerlichenFressfeinde": null,
-            "hinweis": {
-              "de": "",
-              "en": ""
-            },
-            "quelle": ""
-          }
-        },
         "jungtier": {
           "werte": []
         },
         "erwachsen": {
-          "werte": []
+          "werte": [
+            {
+              "wert": "Wirbellose Tiere",
+              "quelle": "planetZoo2",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "typ": "tier"
+            }
+          ]
         }
       }
     }
@@ -195,15 +180,49 @@
       "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
       "en": "Additional systematics and evolution will be added in a later source pass."
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "acanthuriformes",
+          "rang": "ordnung",
+          "name": "Acanthuriformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "haemulidae",
+          "rang": "familie",
+          "name": "Haemulidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "plectorhinchus",
+          "rang": "gattung",
+          "name": "Plectorhinchus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "plectorhinchus-vittatus",
+          "rang": "art",
+          "name": "Plectorhinchus vittatus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

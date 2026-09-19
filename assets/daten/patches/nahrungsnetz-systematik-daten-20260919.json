@@ -1,0 +1,879 @@
+{
+  "patch": "nahrungsnetz-systematik-daten-20260919",
+  "beschreibung": "Datenbereinigung ohne Änderung der Filter- oder Graphlogik: alte Nahrungsnetz-Struktur migriert, sichtbare Ressourcenbezeichnungen vereinheitlicht/eingedeutscht, Dubletten entfernt und Systematik-Grundgerüste aus vorhandenen Taxonomiedaten erzeugt.",
+  "zusammenfassung": {
+    "tiere": 110,
+    "nahrungsnetz_alte_struktur_entfernt": 16,
+    "alte_fressbeziehungen_migriert": 14,
+    "nahrungsnetz_eintraege_vorher": 87,
+    "nahrungsnetz_eintraege_nachher": 101,
+    "dubletten_entfernt": 0,
+    "werte_eingedeutscht": 66,
+    "systematik_tiere_mit_grundgeruest": 110,
+    "systematik_knoten_gesamt": 561,
+    "tiere_mit_nahrungsnetz_daten": 46,
+    "tiere_ohne_nahrungsnetz_daten": 64,
+    "nutzung_haeufigkeit_strukturell_ergaenzt": 7
+  },
+  "hinweis": "Es wurden keine fehlenden biologischen Beziehungen erfunden. Das Systematik-Grundgerüst verwendet ausschließlich bereits vorhandene daten.taxonomie-Werte. Alte frisst-Einträge wurden nur übernommen, wenn ein nichtleerer Wert vorhanden war.",
+  "geaenderteTiere": [
+    {
+      "id": "Abudefduf vaigiensis",
+      "name": "Indo-pazifischer Feldwebelfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Achatina achatina",
+      "name": "Echte Achatschnecke",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Aetobatus ocellatus",
+      "name": "Gefleckter Adlerrochen",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Aglais io",
+      "name": "Tagpfauenauge",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Ailuropoda melanoleuca",
+      "name": "Großer Panda",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Ailurus fulgens",
+      "name": "Kleiner Panda",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Ambystoma mexicanum",
+      "name": "Axolotl",
+      "aenderungen": ["Systematik-Grundgerüst: 7 Knoten"]
+    },
+    {
+      "id": "Antidorcas marsupialis",
+      "name": "Springbock",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Aquarana catesbeianus",
+      "name": "Nordamerikanischer Ochsenfrosch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Aquila chrysaetos",
+      "name": "Steinadler",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Arothron nigropunctatus",
+      "name": "Schwarzflecken-Kugelfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Asio otus",
+      "name": "Waldohreule",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Balaeniceps rex",
+      "name": "Schuhschnabel",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Balistoides conspicillum",
+      "name": "Leopard-Drückerfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Bison bonasus",
+      "name": "Europäischer Wisent",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Boa constrictor",
+      "name": "Abgottschlange",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Botaurus stellaris",
+      "name": "Rohrdommel",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Brachypelma hamorii",
+      "name": "Mexikanische Rotknie-Vogelspinne",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Buceros bicornis",
+      "name": "Doppelhornvogel",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Caesio teres",
+      "name": "Goldband-Füsilier",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Canis lupus",
+      "name": "Wolf",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Carcharhinus melanopterus",
+      "name": "Schwarzspitzenriffhai",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Castor fiber",
+      "name": "Europäischer Biber",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Cerastes cerastes",
+      "name": "Wüsten-Hornviper",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Cervus elaphus",
+      "name": "Rothirsch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Cheilinus undulatus",
+      "name": "Napoleon-Lippfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Chelonoidis nigra",
+      "name": "Galapagos-Riesenschildkröte",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Chromobotia macracanthus",
+      "name": "Prachtschmerle",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Connochaetes gnou",
+      "name": "Weißschwanzgnu",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Connochaetes taurinus",
+      "name": "Streifengnu",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Conraua goliath",
+      "name": "Goliathfrosch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Coryphaena hippurus",
+      "name": "Große Goldmakrele",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Crocodylus porosus",
+      "name": "Leistenkrokodil",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Crocuta crocuta",
+      "name": "Tüpfelhyäne",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Crotalus atrox",
+      "name": "Texas-Klapperschlange",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Dendrolagus goodfellowi",
+      "name": "Goodfellow-Baumkänguru",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Epinephelus lanceolatus",
+      "name": "Dunkler Riesenzackenbarsch",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Equus ferus przewalskii",
+      "name": "Przewalski-Pferd",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Equus quagga",
+      "name": "Steppenzebra",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Eretmochelys imbricata",
+      "name": "Echte Karettschildkröte",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Eudorcas thomsonii",
+      "name": "Thomson-Gazelle",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Eunectes notaeus",
+      "name": "Gelbe Anakonda",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Gavialis gangeticus",
+      "name": "Gangesgavial",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Gigantometrus swammerdami",
+      "name": "Indischer Riesenskorpion",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Giraffa reticulata",
+      "name": "Netzgiraffe",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Giraffa tippelskirchi",
+      "name": "Massai-Giraffe",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Gnathanodon speciosus",
+      "name": "Königsmakrele",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Goliathus goliatus",
+      "name": "Goliathkäfer",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Gorilla gorilla gorilla",
+      "name": "Westlicher Flachlandgorilla",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Gyps africanus",
+      "name": "Weißrückengeier",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Haliaeetus albicilla",
+      "name": "Seeadler",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Helarctos malayanus",
+      "name": "Sonnenbär",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Heloderma suspectum",
+      "name": "Gila-Krustenechse",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Heniochus diphreutes",
+      "name": "Schwarm-Wimpelfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Hippopotamus amphibius",
+      "name": "Flusspferd",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Hippotragus niger",
+      "name": "Rappenantilope",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Hydrocynus vittatus",
+      "name": "Tigersalmler",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Lemur catta",
+      "name": "Katta",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Leontopithecus rosalia",
+      "name": "Goldenes Löwenäffchen",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Lepus timidus",
+      "name": "Schneehase",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Loxodonta africana",
+      "name": "Afrikanischer Savannenelefant",
+      "aenderungen": ["Systematik-Grundgerüst: 7 Knoten"]
+    },
+    {
+      "id": "Lynx lynx",
+      "name": "Eurasischer Luchs",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Malaclemys terrapin",
+      "name": "Diamantschildkröte",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Manis javanica",
+      "name": "Sunda-Schuppentier",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Melanotaenia boesemani",
+      "name": "Harlekin-Regenbogenfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Mola mola",
+      "name": "Mondfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Morpho menelaus",
+      "name": "Blauer Morphofalter",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Naso unicornis",
+      "name": "Kurznasen-Doktorfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Oophaga lehmanni",
+      "name": "Lehmanns Pfeilgiftfrosch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Orycteropus afer",
+      "name": "Erdferkel",
+      "aenderungen": ["Systematik-Grundgerüst: 9 Knoten"]
+    },
+    {
+      "id": "Oryx gazella",
+      "name": "Spießbock",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Pachliopta jophon",
+      "name": "Pachliopta jophon",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Pan troglodytes verus",
+      "name": "Westlicher Schimpanse",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Panthera leo",
+      "name": "Löwe",
+      "aenderungen": ["Systematik-Grundgerüst: 8 Knoten"]
+    },
+    {
+      "id": "Panthera pardus pardus",
+      "name": "Afrikanischer Leopard",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Panthera tigris sumatrae",
+      "name": "Sumatra-Tiger",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Panthera uncia",
+      "name": "Schneeleopard",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Papilio machaon",
+      "name": "Schwalbenschwanz",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Paracanthurus hepatus",
+      "name": "Paletten-Doktorfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Phacochoerus africanus",
+      "name": "Warzenschwein",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Phoebis sennae",
+      "name": "Wolkenloser Schwefel",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Phyllium giganteum",
+      "name": "Großes Wandelndes Blatt",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Phyllobates terribilis",
+      "name": "Schrecklicher Pfeilgiftfrosch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Platax pinnatus",
+      "name": "Langflossen-Fledermausfisch",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Plectorhinchus vittatus",
+      "name": "Orient-Süsslippe",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Pongo abelii",
+      "name": "Sumatra-Orang-Utan",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Pseudonaja textilis",
+      "name": "Östliche Braunschlange",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Pterois volitans",
+      "name": "Rotfeuerfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Ramphastos toco",
+      "name": "Riesentukan",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Sagittarius serpentarius",
+      "name": "Sekretär",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Salamandra salamandra",
+      "name": "Feuersalamander",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Salmo trutta",
+      "name": "Meerforelle",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Sardinops sagax",
+      "name": "Pazifische Sardine",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Scardinius erythrophthalmus",
+      "name": "Rotfeder",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Spheniscus demersus",
+      "name": "Brillenpinguin",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Sphyrna mokarran",
+      "name": "Großer Hammerhai",
+      "aenderungen": [
+        "alte Nahrungsnetz-Struktur entfernt/migriert",
+        "Systematik-Grundgerüst: 5 Knoten"
+      ]
+    },
+    {
+      "id": "Stegostoma tigrinum",
+      "name": "Indo-pazifischer Leopardenhai",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Suricata suricatta",
+      "name": "Erdmännchen",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Symphorichthys spilurus",
+      "name": "Segelflossen-Schnapper",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Syncerus caffer caffer",
+      "name": "Schwarzbüffel",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Tapirus indicus",
+      "name": "Malaysischer Tapir",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Thunnus orientalis",
+      "name": "Nordpazifischer Blauflossen-Thunfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Tiliqua scincoides",
+      "name": "Gemeiner Blauzungenskink",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Tragelaphus angasii",
+      "name": "Nyala",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Triturus dobrogicus",
+      "name": "Donau-Kammmolch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Tropheus moorii",
+      "name": "Brabantbuntbarsch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Ursus arctos arctos",
+      "name": "Europäischer Braunbär",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Varanus komodoensis",
+      "name": "Komodowaran",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Varanus niloticus",
+      "name": "Nilwaran",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    },
+    {
+      "id": "Zebrasoma flavescens",
+      "name": "Gelber Doktorfisch",
+      "aenderungen": ["Systematik-Grundgerüst: 5 Knoten"]
+    }
+  ],
+  "offeneDatenluecken": {
+    "nahrungsnetzOhneEintraege": [
+      {
+        "id": "Pan troglodytes verus",
+        "name": "Westlicher Schimpanse"
+      },
+      {
+        "id": "Chelonoidis nigra",
+        "name": "Galapagos-Riesenschildkröte"
+      },
+      {
+        "id": "Balaeniceps rex",
+        "name": "Schuhschnabel"
+      },
+      {
+        "id": "Suricata suricatta",
+        "name": "Erdmännchen"
+      },
+      {
+        "id": "Mola mola",
+        "name": "Mondfisch"
+      },
+      {
+        "id": "Pongo abelii",
+        "name": "Sumatra-Orang-Utan"
+      },
+      {
+        "id": "Pseudonaja textilis",
+        "name": "Östliche Braunschlange"
+      },
+      {
+        "id": "Gavialis gangeticus",
+        "name": "Gangesgavial"
+      },
+      {
+        "id": "Phacochoerus africanus",
+        "name": "Warzenschwein"
+      },
+      {
+        "id": "Coryphaena hippurus",
+        "name": "Große Goldmakrele"
+      },
+      {
+        "id": "Giraffa tippelskirchi",
+        "name": "Massai-Giraffe"
+      },
+      {
+        "id": "Phyllobates terribilis",
+        "name": "Schrecklicher Pfeilgiftfrosch"
+      },
+      {
+        "id": "Carcharhinus melanopterus",
+        "name": "Schwarzspitzenriffhai"
+      },
+      {
+        "id": "Connochaetes gnou",
+        "name": "Weißschwanzgnu"
+      },
+      {
+        "id": "Manis javanica",
+        "name": "Sunda-Schuppentier"
+      },
+      {
+        "id": "Oophaga lehmanni",
+        "name": "Lehmanns Pfeilgiftfrosch"
+      },
+      {
+        "id": "Tiliqua scincoides",
+        "name": "Gemeiner Blauzungenskink"
+      },
+      {
+        "id": "Gigantometrus swammerdami",
+        "name": "Indischer Riesenskorpion"
+      },
+      {
+        "id": "Symphorichthys spilurus",
+        "name": "Segelflossen-Schnapper"
+      },
+      {
+        "id": "Antidorcas marsupialis",
+        "name": "Springbock"
+      },
+      {
+        "id": "Pterois volitans",
+        "name": "Rotfeuerfisch"
+      },
+      {
+        "id": "Cerastes cerastes",
+        "name": "Wüsten-Hornviper"
+      },
+      {
+        "id": "Equus ferus przewalskii",
+        "name": "Przewalski-Pferd"
+      },
+      {
+        "id": "Lynx lynx",
+        "name": "Eurasischer Luchs"
+      },
+      {
+        "id": "Bison bonasus",
+        "name": "Europäischer Wisent"
+      },
+      {
+        "id": "Lepus timidus",
+        "name": "Schneehase"
+      },
+      {
+        "id": "Tragelaphus angasii",
+        "name": "Nyala"
+      },
+      {
+        "id": "Malaclemys terrapin",
+        "name": "Diamantschildkröte"
+      },
+      {
+        "id": "Ailurus fulgens",
+        "name": "Kleiner Panda"
+      },
+      {
+        "id": "Gorilla gorilla gorilla",
+        "name": "Westlicher Flachlandgorilla"
+      },
+      {
+        "id": "Crotalus atrox",
+        "name": "Texas-Klapperschlange"
+      },
+      {
+        "id": "Heniochus diphreutes",
+        "name": "Schwarm-Wimpelfisch"
+      },
+      {
+        "id": "Connochaetes taurinus",
+        "name": "Streifengnu"
+      },
+      {
+        "id": "Salamandra salamandra",
+        "name": "Feuersalamander"
+      },
+      {
+        "id": "Eunectes notaeus",
+        "name": "Gelbe Anakonda"
+      },
+      {
+        "id": "Goliathus goliatus",
+        "name": "Goliathkäfer"
+      },
+      {
+        "id": "Ursus arctos arctos",
+        "name": "Europäischer Braunbär"
+      },
+      {
+        "id": "Brachypelma hamorii",
+        "name": "Mexikanische Rotknie-Vogelspinne"
+      },
+      {
+        "id": "Triturus dobrogicus",
+        "name": "Donau-Kammmolch"
+      },
+      {
+        "id": "Equus quagga",
+        "name": "Steppenzebra"
+      },
+      {
+        "id": "Leontopithecus rosalia",
+        "name": "Goldenes Löwenäffchen"
+      },
+      {
+        "id": "Heloderma suspectum",
+        "name": "Gila-Krustenechse"
+      },
+      {
+        "id": "Stegostoma tigrinum",
+        "name": "Indo-pazifischer Leopardenhai"
+      },
+      {
+        "id": "Boa constrictor",
+        "name": "Abgottschlange"
+      },
+      {
+        "id": "Haliaeetus albicilla",
+        "name": "Seeadler"
+      },
+      {
+        "id": "Ambystoma mexicanum",
+        "name": "Axolotl"
+      },
+      {
+        "id": "Hippopotamus amphibius",
+        "name": "Flusspferd"
+      },
+      {
+        "id": "Aetobatus ocellatus",
+        "name": "Gefleckter Adlerrochen"
+      },
+      {
+        "id": "Aquarana catesbeianus",
+        "name": "Nordamerikanischer Ochsenfrosch"
+      },
+      {
+        "id": "Cervus elaphus",
+        "name": "Rothirsch"
+      },
+      {
+        "id": "Phyllium giganteum",
+        "name": "Großes Wandelndes Blatt"
+      },
+      {
+        "id": "Balistoides conspicillum",
+        "name": "Leopard-Drückerfisch"
+      },
+      {
+        "id": "Giraffa reticulata",
+        "name": "Netzgiraffe"
+      },
+      {
+        "id": "Botaurus stellaris",
+        "name": "Rohrdommel"
+      },
+      {
+        "id": "Asio otus",
+        "name": "Waldohreule"
+      },
+      {
+        "id": "Thunnus orientalis",
+        "name": "Nordpazifischer Blauflossen-Thunfisch"
+      },
+      {
+        "id": "Platax pinnatus",
+        "name": "Langflossen-Fledermausfisch"
+      },
+      {
+        "id": "Varanus niloticus",
+        "name": "Nilwaran"
+      },
+      {
+        "id": "Dendrolagus goodfellowi",
+        "name": "Goodfellow-Baumkänguru"
+      },
+      {
+        "id": "Tapirus indicus",
+        "name": "Malaysischer Tapir"
+      },
+      {
+        "id": "Panthera pardus pardus",
+        "name": "Afrikanischer Leopard"
+      },
+      {
+        "id": "Syncerus caffer caffer",
+        "name": "Schwarzbüffel"
+      },
+      {
+        "id": "Oryx gazella",
+        "name": "Spießbock"
+      },
+      {
+        "id": "Hippotragus niger",
+        "name": "Rappenantilope"
+      }
+    ]
+  }
+}

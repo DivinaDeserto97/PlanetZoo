@@ -226,10 +226,45 @@
     }
   },
   "systematik": {
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
-      "knoten": [""],
-      "aufspaltungen": [""]
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cervidae",
+          "rang": "familie",
+          "name": "Cervidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cervus",
+          "rang": "gattung",
+          "name": "Cervus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "cervus-elaphus",
+          "rang": "art",
+          "name": "Cervus elaphus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

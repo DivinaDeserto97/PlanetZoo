@@ -185,7 +185,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "algen",
+              "wert": "Algen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -205,15 +205,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "atheriniformes",
+          "rang": "ordnung",
+          "name": "Atheriniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "melanotaeniidae",
+          "rang": "familie",
+          "name": "Melanotaeniidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "melanotaenia",
+          "rang": "gattung",
+          "name": "Melanotaenia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "melanotaenia-boesemani",
+          "rang": "art",
+          "name": "Melanotaenia boesemani",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {

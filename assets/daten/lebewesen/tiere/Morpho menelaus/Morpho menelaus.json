@@ -209,7 +209,7 @@
         "jungtier": {
           "werte": [
             {
-              "wert": "pflanzen",
+              "wert": "Pflanzen",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -228,7 +228,7 @@
         "erwachsen": {
           "werte": [
             {
-              "wert": "gegoreneFruechte",
+              "wert": "Gegorene Früchte",
               "typ": "pflanze",
               "beziehung": "herbivorie",
               "wirkung": "+/-",
@@ -252,15 +252,49 @@
       "de": "",
       "en": ""
     },
-    "naheVerwandte": [""],
+    "naheVerwandte": [],
     "evolution": {
       "hinweis": {
         "de": "",
         "en": ""
       },
-      "knoten": [""],
-      "aufspaltungen": [""],
-      "verbindungen": [""]
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "nymphalidae",
+          "rang": "familie",
+          "name": "Nymphalidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "morpho",
+          "rang": "gattung",
+          "name": "Morpho",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "morpho-menelaus",
+          "rang": "art",
+          "name": "Morpho menelaus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "???"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
     }
   },
   "texte": {
