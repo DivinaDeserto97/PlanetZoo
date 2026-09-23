@@ -392,8 +392,8 @@
     "dateien": [
       {
         "typ": "original",
-        "dateityp": "",
-        "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/map/Amphiprion ocellaris map"
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/map/Amphiprion ocellaris map.png"
       }
     ],
     "quelle": "planetZoo2"
@@ -418,8 +418,8 @@
           "dateien": [
             {
               "typ": "original",
-              "dateityp": "",
-              "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/bilder/Amphiprion ocellaris 1",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/bilder/Amphiprion ocellaris 1.webp",
               "githubFreigabe": false
             }
           ]

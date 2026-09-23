@@ -551,6 +551,18 @@
               - `Dendrolagus goodfellowi map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/videos/.gitkeep>)
+          - `Elephas maximus/`
+            - [Elephas maximus.json](<../assets/daten/lebewesen/tiere/Elephas maximus/Elephas maximus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Elephas maximus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Elephas maximus/bilder/.gitkeep>)
+              - `Elephas maximus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Elephas maximus/map/.gitkeep>)
+              - `Elephas maximus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Elephas maximus/videos/.gitkeep>)
           - `Epinephelus lanceolatus/`
             - [Epinephelus lanceolatus.json](<../assets/daten/lebewesen/tiere/Epinephelus lanceolatus/Epinephelus lanceolatus.json>)
             - `audio/`
@@ -895,6 +907,18 @@
                 - `elephantVoices/`
                   - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/verhaltensarchiv/elephantVoices/.gitkeep>)
                   - `1.mp4` _(Medium – lokal / nicht freigegeben)_
+          - `Lycaon pictus/`
+            - [Lycaon pictus.json](<../assets/daten/lebewesen/tiere/Lycaon pictus/Lycaon pictus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lycaon pictus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lycaon pictus/bilder/.gitkeep>)
+              - `Lycaon pictus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lycaon pictus/map/.gitkeep>)
+              - `Lycaon pictus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Lycaon pictus/videos/.gitkeep>)
           - `Lynx lynx/`
             - [Lynx lynx.json](<../assets/daten/lebewesen/tiere/Lynx lynx/Lynx lynx.json>)
             - `audio/`
@@ -1329,6 +1353,18 @@
               - `Scardinius erythrophthalmus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/videos/.gitkeep>)
+          - `Scolopendra gigantea/`
+            - [Scolopendra gigantea.json](<../assets/daten/lebewesen/tiere/Scolopendra gigantea/Scolopendra gigantea.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scolopendra gigantea/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scolopendra gigantea/bilder/.gitkeep>)
+              - `Scolopendra gigantea 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scolopendra gigantea/map/.gitkeep>)
+              - `Scolopendra gigantea map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scolopendra gigantea/videos/.gitkeep>)
           - `Spheniscus demersus/`
             - [Spheniscus demersus.json](<../assets/daten/lebewesen/tiere/Spheniscus demersus/Spheniscus demersus.json>)
             - `audio/`

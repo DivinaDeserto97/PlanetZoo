@@ -1,0 +1,625 @@
+{
+  "id": "elephas-maximus",
+  "identitaet": {
+    "namen": {
+      "de": "Asiatischer Elefant",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Gehege - Landlebend"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": ["Asien"],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Graslandschaft", "Tropen"],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "Stark gefährdet",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Proboscidea",
+          "familie": "Elephantidae",
+          "gattung": "Elephas",
+          "art": "Elephas maximus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": []
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 2.75,
+          "max": 2.75,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.4,
+          "max": 2.4,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 4000,
+          "max": 4000,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2400,
+          "max": 2400,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Stark gefährdet",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "tiere",
+          "giltFuer": [""],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen Wildbestand von 20.000 bis 25.000 Tieren.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 18,
+          "einheit": "monate",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": 22,
+          "einheit": "monate",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "kalb",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndKaelber",
+          "wert": "matrilineale Herde",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ausgewachseneMaennchen",
+          "wert": "meist Einzelgänger",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Graslandschaft",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "Tropen",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Pflanzenfresser",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Laub, Rinde und Gräser",
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Asiatische Elefant (auch Elephas maximus) kommt in Zentral- und Südostasien vor.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Asiatische Elefant (auch Elephas maximus) kommt in Zentral- und Südostasien vor und zeichnet sich durch seinen markanten Rüssel, kleine Ohren und graue Haut mit rosa Flecken im Gesicht aus.\n\nSie sind große Pflanzenfresser und leben in einer Vielzahl an unterschiedlichen Habitaten, darunter Wälder, Graslandschaften und Gebirge. Sie ernähren sich von Laub, Rinde und Gräsern.\n\nAsiatische Elefanten sind kleiner als ihre afrikanischen Verwandten. Bullen werden im Durchschnitt 2,75 m groß und wiegen 4.000 kg, während die Kühe durchschnittlich 2,40 m groß und 2.400 kg schwer sind.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Art ist durch Verlust, Degradation und Fragmentierung ihres Lebensraums stark gefährdet. All diese Bedrohungen sind auf die stete Ausbreitung des Menschen zurückzuführen, und da die Elefanten ihren Lebensraum mit uns teilen müssen, führt dies zu weiteren Problemen. Weil die Tiere Nutzpflanzen zertrampeln und Ackerland zerstören, werden sie häufig von Menschen getötet. Auch Wilderei stellt eine Bedrohung dar. Im Gegensatz zum Afrikanischen Elefanten spielt sie aber eine untergeordnete Rolle, da nur ausgewachsene Elefantenbullen über Stoßzähne verfügen, die zudem kleiner sind als die ihrer afrikanischen Verwandten.\n\nDer Schutz des Asiatischen Elefanten umfasst sowohl die Sicherung seiner Lebensräume als auch die Wiedervernetzung durch Landumwandlung getrennt lebender Populationen. Indische Naturschutzorganisationen analysieren zudem Mensch-Tier-Konflikte, um geeignete, anpassungsfähige Strategien zu entwickeln.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Elefanten sind recht soziale Tiere. Die Kühe leben mit ihren Kälbern in vertrauten Herden zusammen und ziehen auf der Suche nach Nahrung durch die Gegend. Sie helfen sich auch gegenseitig bei der Pflege und Aufzucht der Kälber. Diese Herden sind matrilineal: Für gewöhnlich führt die älteste Elefantenkuh die Herde an und wird nach ihrem Tod von der nächstältesten abgelöst. Junge ausgewachsene Elfentenbullen leben in losen Junggesellenherden zusammen und suchen gemeinsam nach Nahrung und Partnern. Nur ausgewachsene Elefantenbullen leben zumeist allein.\n\nAsiatische Elefanten können sich das ganze Jahr über paaren, jedoch erreicht ihre Fruchtbarkeit während der Regenzeit ihren Höhepunkt. Elefantenbullen machen Herden aus Kühen ausfindig, um sich zu paaren. Ihr Erfolg hängt von ihrem Alter sowie der Paarungswilligkeit der Kühe ab. Die Wahrscheinlichkeit, von einer Kuh beachtet zu werden, steigt während der „Musthphase“, bei der ein Bulle aufgrund eines Testosteronschubs aggressiver und potenter ist. Die beiden umwerben sich dann, indem sie sich gegenseitig jagen und Laute ausstoßen.\n\nDie Trächtigkeit einer Elefantenkuh dauert 18 bis 22 Monate. Sie bringt ein einziges Kalb zur Welt, das bei seiner Mutter bleibt, bis es 8 Jahre alt ist. Junge Kühe verbleiben dann auch weiterhin in der Herde ihrer Mütter, während die Bullen die Herde verlassen und sich einer Junggesellenherde anschließen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Elefanten wandern zu Beginn der Trockenzeit in Gebiete mit mehr Nahrung und Wasser.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Entgegen landläufiger Meinung trinken Elefanten nicht mit ihrem Rüssel. Sie verwenden ihn vielmehr dazu, um Wasser in ihr Maul zu leiten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Elefanten benutzen Zweige, um Fliegen zu verjagen, Parasiten zu entfernen und sich zu kratzen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Elefanten in freier Wildbahn leben in Symbiose mit Vögeln, die Parasiten von ihrer Haut entfernen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Asiatische Elefanten sind näher mit Mammuts verwandt als Afrikanische Elefanten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Elephas maximus/map/Elephas maximus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Asiatischer Elefant – Planet Zoo 2",
+            "en": ""
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Elephas maximus/bilder/Elephas maximus 1.webp",
+              "githubFreigabe": false
+            }
+          ],
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild von Asiatischer Elefant aus Planet Zoo 2.",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}

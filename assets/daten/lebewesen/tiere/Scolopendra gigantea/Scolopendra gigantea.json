@@ -1,0 +1,590 @@
+{
+  "id": "scolopendra-gigantea",
+  "identitaet": {
+    "namen": {
+      "de": "Brasilianischer Riesenläufer",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Vivarium"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": ["Südamerika"],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Tropen"],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "???",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Chilopoda",
+          "ordnung": "Scolopendromorpha",
+          "familie": "Scolopendridae",
+          "gattung": "Scolopendra",
+          "art": "Scolopendra gigantea",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maximum",
+          "min": null,
+          "max": 30,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "???",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [""],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 2,
+          "einheit": "jahre",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eier",
+          "min": 15,
+          "max": 60,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Tropen",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Fleischfresser",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Kleine Tiere, darunter Vogelspinnen und kleine Schlangen",
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Brasilianische Riesenläufer (auch Scolopendra gigantea) ist in den Wäldern Südamerikas und der Karibik beheimatet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Brasilianische Riesenläufer (auch Scolopendra gigantea) ist ein großer, furchteinflößender und räuberischer Gliederfüßer, der in den Wäldern Südamerikas und der Karibik beheimatet ist.\n\nEr hat einen segmentierten, langen Körper mit 21 oder 23 Segmenten, wobei jedes Segment ein Beinpaar aufweist. Er injiziert sein Gift über zangenartige Vorderbeine, die sogenannten Forcipules, und kann mithilfe spezieller Techniken eine Vielzahl kleiner Beutetiere fangen. Er kommt in verschiedenen Farben vor – typischerweise rot, gelb, braun oder schwarz – und hat gelbe Beine sowie dunkle Streifen zwischen den Körpersegmenten.\n\nDer Tausendfüßler kann bis zu 30 cm lang werden, wobei die Weibchen in der Regel mehr Beine haben als die Männchen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Erhaltungszustand des Brasilianischen Riesenläufers wurde bisher nicht offiziell bewertet. In tropischen Ökosystemen spielt er eine wichtige Rolle als Jäger und hilft dabei, die Bestände von Insekten und anderen kleinen Tieren im Gleichgewicht zu halten. Er braucht die warme und feuchte Umgebung seines natürlichen Lebensraums und versteckt sich tagsüber, damit er nicht austrocknet. Manchmal wird die Art gezielt bekämpft, da ihr Biss für Menschen schmerzhaft sein kann. Schwere Vergiftungen sind jedoch selten. Da die Tiere meist allein leben, kommt ein echter Befall sehr selten vor.\n\nObwohl sie gelegentlich unbeabsichtigt mit Waren oder Pflanzen aus tropischen Regionen transportiert werden, gelten Brasilianische Riesenläufer nicht als invasive Art.\n\nIhre Zukunft gilt derzeit als stabil, da sie in einem großen Verbreitungsgebiet vorkommen und kaum Bedrohungen ausgesetzt sind.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Brasilianische Riesenläufer sind in freier Wildbahn Einzelgänger und sollten daher in Gefangenschaft ebenfalls einzeln gehalten werden.\n\nDie Brasilianischen Riesenläufer können sich das ganze Jahr über fortpflanzen, ohne dass es dabei zu einer Paarung kommt. Um sich fortzupflanzen, legen die Männchen ein Proteinpaket auf dem Boden ab, das die Spermien enthält: die „Spermatophore“. Stößt ein Weibchen auf dieses Paket, nimmt es es auf und befruchtet so 15 bis 60 Eier, die es in einem Bau im Boden ablegt.\n\nSie bewacht die Eier, bis sie schlüpfen, und leckt sie regelmäßig ab, um zu verhindern, dass sich darauf Pilze bilden.\n\nSind die Jungtiere geschlüpft, kümmert sich das Muttertier noch etwa drei Monate um sie. Die Mutter trägt die Jungtiere oft am Bauch mit sich herum und umschlingt sie bei Gefahr, um sie zu schützen. Nach etwa zwei Jahren erreichen die jungen Riesenläufer die Geschlechtsreife.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Klasse wird zwar als „Hundertfüßer“ bezeichnet, aber die Riesenläufer besitzen immer nur ein Beinpaar pro Körpersegment – in der Regel sind es 21 oder 23 Körpersegmente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Der Brasilianische Riesenläufer atmet, genau wie seine Artverwandten, durch Löcher an der Seite seiner Körpersegmente.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Der Biss und das Gift des Brasilianischen Riesenläufers sind bisher nur für einen bestätigten Todesfall beim Menschen verantwortlich.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Der Brasilianische Riesenläufer wird jedes Tier fressen, das er fangen und töten kann, einschließlich Vogelspinnen und kleinen Schlangen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Es ist bekannt, dass sich Brasilianische Riesenläufer gelegentlich an die Decke von Höhlen hängen, um Fledermäuse zu fangen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Scolopendra gigantea/map/Scolopendra gigantea map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Brasilianischer Riesenläufer – Planet Zoo 2",
+            "en": ""
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Scolopendra gigantea/bilder/Scolopendra gigantea 1.webp",
+              "githubFreigabe": false
+            }
+          ],
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild von Brasilianischer Riesenläufer aus Planet Zoo 2.",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}

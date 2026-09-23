@@ -114,11 +114,11 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Helarctos malayanus/Helarctos malayanus.json",
   "assets/daten/lebewesen/tiere/Phacochoerus africanus/Phacochoerus africanus.json",
   "assets/daten/lebewesen/tiere/Osphronemus goramy/Osphronemus goramy.json",
+  "assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json",
   "assets/daten/lebewesen/tiere/Amphiprion ocellaris/Amphiprion ocellaris.json",
-  "assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json",
-  "assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json",
-  "assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json",
-  "assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json",
+  "assets/daten/lebewesen/tiere/Scolopendra gigantea/Scolopendra gigantea.json",
+  "assets/daten/lebewesen/tiere/Elephas maximus/Elephas maximus.json",
+  "assets/daten/lebewesen/tiere/Lycaon pictus/Lycaon pictus.json",
 ];
 
 /* ======================================== */

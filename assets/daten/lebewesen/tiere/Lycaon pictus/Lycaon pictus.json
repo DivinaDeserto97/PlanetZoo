@@ -1,0 +1,623 @@
+{
+  "id": "lycaon-pictus",
+  "identitaet": {
+    "namen": {
+      "de": "Afrikanischer Wildhund",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Gehege - Landlebend"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": ["Afrika"],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Graslandschaft"],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "Stark gefährdet",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Canidae",
+          "gattung": "Lycaon",
+          "art": "Lycaon pictus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 70,
+          "max": 100,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 60,
+          "max": 75,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 20,
+          "max": 30,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Stark gefährdet",
+          "system": "",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 6.6,
+          "einheit": "",
+          "giltFuer": [""],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „6.6“ an. Die Einheit ist im bereitgestellten Text nicht ersichtlich.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "minimum",
+          "wert": 12,
+          "einheit": "monate",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximum",
+          "wert": 18,
+          "einheit": "monate",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "wert": 70,
+          "einheit": "tage",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "welpen",
+          "min": 6,
+          "max": 16,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "rudel",
+          "wert": "Alpha-Paar",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fortpflanzung",
+          "wert": "meist nur dominantes Alpha-Paar",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Graslandschaft",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Fleischfresser",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Beutetiere",
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Wildhunde (auch Lycaon pictus) leben im gesamten Subsahara-Afrika, wobei es auf dem Kontinent mehrere Populationen und insgesamt fünf Unterarten gibt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Wildhunde (auch Lycaon pictus) leben im gesamten Subsahara-Afrika, wobei es auf dem Kontinent mehrere Populationen und insgesamt fünf Unterarten gibt.\n\nIm Vergleich zu anderen Hunden sind die Afrikanischen Wildhunde schlank und groß und besitzen sehr große runde Ohren. Die Färbung ihres Fells ist ein weiteres charakteristisches Merkmal: Es ist mit gelben und schwarzen Flecken übersäht, wobei an den Beinen, der Brust und am Schwanz auch weiße Flecken auftreten können. Die Zeichnung hängt jedoch von der Unterart ab. Manche können ebenfalls stellenweise ein gesprenkeltes Muster aufweisen.\n\nAfrikanische Wildhunde erreichen eine Schulterhöhe von 60 bis 75 cm und eine Körperlänge von 70 bis 100 cm. Ihr Gewicht liegt zwischen 20 und 30 kg. Männchen sind meist etwas größer als Weibchen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Wildhunde zählen zu den stark gefährdeten Tierarten, wobei als Hauptgrund hierfür die Fragmentierung ihres Lebensraums gesehen werden kann. Das bedeutet auch, dass sie Kontakt zu domestizierten Tieren haben und dadurch Krankheiten ausgesetzt sind, denen sie in freier Wildbahn normalerweise nicht ausgesetzt wären. Aufgrund ihrer weiten Verbreitung und großen Bewegungsradius sind Afrikanische Wildhunde in Schutzgebieten nur schwer zu sichten. Zudem werden sie oft von Löwen und Hyänen getötet.\n\nArterhaltungsorganisationen schützen Wildhunde, indem sie das Zusammenleben mit Menschen erleichtern und bei der Landnutzungsplanung helfen, damit die Wildhunde mehr Jagdgebiete nutzen können. In den letzten Jahren gab es Bestrebungen, die Art in „Painted Dog“ (bemalter Hund) oder „Painted Wolf“ (bemalter Wolf) umzubenennen. Naturschutzorganisationen hoffen, damit die öffentliche Wahrnehmung des Tieres zu verbessern, auch wenn diese Bezeichnung noch nicht weit verbreitet ist.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Wildhunde sind extrem soziale Tiere. Sie leben in Rudeln mit einem Alpha-Paar, das die Gruppe bei der Jagd anführt und die wichtigsten Entscheidungen trifft. Die Männchen in einem Rudel sind miteinander verwandt, die Weibchen migrieren mit einem Alter von ungefähr einem Jahr aus ihrem Geburtsrudel in die Gruppe. Hat sich ein Rudel aus ausgewachsenen Tieren erst einmal gebildet, bleiben die Hunde ein Leben lang zusammen und reagieren negativ auf eine Trennung oder auf den Verlust eines Rudelmitglieds.\n\nIn einem Rudel pflanzt sich normalerweise nur das dominante Alpha-Paar fort. Die beiden Tiere sind monogam verbunden und bekommen meist einmal im Jahr Nachwuchs. Ihr Paarungsverhalten umfasst spielerisches Verhalten, Lautäußerungen, gegenseitige Fellpflege und unterwürfige Gesten, die ihre Bindung stärken. Je nach Region findet die Fortpflanzung ganzjährig oder vor allem zwischen April und Juli statt, wenn die Bedingungen für die Jagd und folglich die Welpenaufzucht günstig sind.\n\nNach einer Tragzeit von etwa 70 Tagen bringt das Weibchen in einem Bau 6 bis 16 Welpen zur Welt. Nicht alle Jungtiere erreichen das Erwachsenenalter. Die übrigen Rudelmitglieder bekommen selbst keinen Nachwuchs, helfen jedoch bei der Aufzucht der Welpen des Alpha-Paares. So wird wohl sichergestellt, dass das Rudel in einer Größe bleibt, in der alle ausreichend Nahrung finden können. Mit etwa 10 Wochen sind die Welpen entwöhnt und begleiten das Rudel später auf der Jagd.\n\nWildhunde werden mit 12 bis 18 Monaten geschlechtsreif. Weibchen verlassen im Alter von 1 bis 3 Jahren ihr Geburtsrudel, um sich anderen Gruppen anzuschließen oder neue Rudel zu gründen. Männchen bleiben meist in ihrem Geburtsrudel.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Afrikanische Wildhunde jagen ihre Beute über weite Strecken und über lange Zeit, bis sie vor Erschöpfung zusammenbricht.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Die Jagden Afrikanischer Wildhunde sind zu 60 bis 90 % erfolgreich. Dieser Prozentsatz ist viel höher als bei anderen Raubtieren wie Löwen und Hyänen, die die Beute der Hunde häufig stehlen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Afrikanische Wildhunde lassen sich in Gefangenschaft wie Haushunde erziehen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Die neugeborenen Welpen Afrikanischer Wildhunde stehen im Rudel an erster Stelle, sogar noch vor den Alphas. Sie fressen vor allen anderen Hunden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Man hat beobachtet, wie Afrikanische Wildhunde durch Niesen „abstimmen“. Je mehr Hunde im Rudel gleichzeitig Niesen, desto eher gehen sie auf die Jagd. Dominante Hunde initiieren mit größerer Wahrscheinlichkeit eine erfolgreiche Jagdabstimmung.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Lycaon pictus/map/Lycaon pictus map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Afrikanischer Wildhund – Planet Zoo 2",
+            "en": ""
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Lycaon pictus/bilder/Lycaon pictus 1.webp",
+              "githubFreigabe": false
+            }
+          ],
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild von Afrikanischer Wildhund aus Planet Zoo 2.",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}
