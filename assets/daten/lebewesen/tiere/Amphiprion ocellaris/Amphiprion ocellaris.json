@@ -15,25 +15,15 @@
   },
   "filter": {
     "edition": "",
-    "editionAuswahl": [
-      "Hauptspiel",
-      "Deluxe"
-    ],
-    "gehegetyp": [
-      "Aquarium"
-    ],
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Aquarium"],
     "gehegetypAuswahl": [
       "Gehege - Landlebend",
       "Gehege - Fliegend",
       "Aquarium",
       "Vivarium"
     ],
-    "kontinente": [
-      "Asien",
-      "Ozeanien",
-      "Indischer Ozean",
-      "Pazifischer Ozean"
-    ],
+    "kontinente": ["Asien", "Ozeanien", "Indischer Ozean", "Pazifischer Ozean"],
     "kontinenteAuswahl": [
       "Afrika",
       "Arktis",
@@ -46,10 +36,7 @@
       "Pazifischer Ozean",
       "Südamerika"
     ],
-    "biome": [
-      "Riff",
-      "Offenes Meer"
-    ],
+    "biome": ["Riff", "Offenes Meer"],
     "biomeAuswahl": [
       "Ästuar",
       "Feuchtgebiete",
@@ -131,9 +118,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            ""
-          ],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
@@ -292,9 +277,7 @@
           "lebensstatus": "lebend",
           "domestikationsstatus": null,
           "schutzstatus": "Nicht gefährdet",
-          "spiele": [
-            "planetZoo2"
-          ],
+          "spiele": ["planetZoo2"],
           "quelle": "planetZoo2"
         }
       ],
@@ -310,30 +293,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -342,30 +309,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -374,30 +325,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -406,30 +341,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -454,12 +373,8 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -468,12 +383,8 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""]
     }
   },
   "karte": {
@@ -503,9 +414,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Clown-Anemonenfischs aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Clown Anemonefish."
           },
-          "metadaten": [
-            ""
-          ],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",

@@ -191,6 +191,18 @@
               - `Ambystoma mexicanum map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Ambystoma mexicanum/videos/.gitkeep>)
+          - `Amphiprion ocellaris/`
+            - [Amphiprion ocellaris.json](<../assets/daten/lebewesen/tiere/Amphiprion ocellaris/Amphiprion ocellaris.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Amphiprion ocellaris/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Amphiprion ocellaris/bilder/.gitkeep>)
+              - `Amphiprion ocellaris 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Amphiprion ocellaris/map/.gitkeep>)
+              - `Amphiprion ocellaris map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Amphiprion ocellaris/videos/.gitkeep>)
           - `Antidorcas marsupialis/`
             - [Antidorcas marsupialis.json](<../assets/daten/lebewesen/tiere/Antidorcas marsupialis/Antidorcas marsupialis.json>)
             - `audio/`
@@ -1011,6 +1023,18 @@
               - `Oryx gazella map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Oryx gazella/videos/.gitkeep>)
+          - `Osphronemus goramy/`
+            - [Osphronemus goramy.json](<../assets/daten/lebewesen/tiere/Osphronemus goramy/Osphronemus goramy.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Osphronemus goramy/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Osphronemus goramy/bilder/.gitkeep>)
+              - `Osphronemus goramy 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Osphronemus goramy/map/.gitkeep>)
+              - `Osphronemus goramy map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Osphronemus goramy/videos/.gitkeep>)
           - `Pachliopta jophon/`
             - [Pachliopta jophon.json](<../assets/daten/lebewesen/tiere/Pachliopta jophon/Pachliopta jophon.json>)
             - `audio/`
@@ -1281,6 +1305,18 @@
               - `Sardinops sagax map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Sardinops sagax/videos/.gitkeep>)
+          - `Scarabaeus sacer/`
+            - [Scarabaeus sacer.json](<../assets/daten/lebewesen/tiere/Scarabaeus sacer/Scarabaeus sacer.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scarabaeus sacer/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scarabaeus sacer/bilder/.gitkeep>)
+              - `Scarabaeus sacer 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scarabaeus sacer/map/.gitkeep>)
+              - `Scarabaeus sacer map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Scarabaeus sacer/videos/.gitkeep>)
           - `Scardinius erythrophthalmus/`
             - [Scardinius erythrophthalmus.json](<../assets/daten/lebewesen/tiere/Scardinius erythrophthalmus/Scardinius erythrophthalmus.json>)
             - `audio/`

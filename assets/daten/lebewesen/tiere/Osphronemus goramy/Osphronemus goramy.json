@@ -15,22 +15,15 @@
   },
   "filter": {
     "edition": "",
-    "editionAuswahl": [
-      "Hauptspiel",
-      "Deluxe"
-    ],
-    "gehegetyp": [
-      "Aquarium"
-    ],
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Aquarium"],
     "gehegetypAuswahl": [
       "Gehege - Landlebend",
       "Gehege - Fliegend",
       "Aquarium",
       "Vivarium"
     ],
-    "kontinente": [
-      "Asien"
-    ],
+    "kontinente": ["Asien"],
     "kontinenteAuswahl": [
       "Afrika",
       "Arktis",
@@ -43,10 +36,7 @@
       "Pazifischer Ozean",
       "Südamerika"
     ],
-    "biome": [
-      "Feuchtgebiete",
-      "Seen und Flüsse"
-    ],
+    "biome": ["Feuchtgebiete", "Seen und Flüsse"],
     "biomeAuswahl": [
       "Ästuar",
       "Feuchtgebiete",
@@ -151,9 +141,7 @@
         {
           "wert": null,
           "einheit": "",
-          "giltFuer": [
-            ""
-          ],
+          "giltFuer": [""],
           "jahrDerGrundlage": null,
           "hinweis": {
             "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
@@ -264,9 +252,7 @@
               "beziehung": "frisst",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "jungtier"
-                ],
+                "selbst": ["jungtier"],
                 "ziel": []
               },
               "hinweis": {
@@ -285,9 +271,7 @@
               "beziehung": "frisst",
               "wirkung": "+/-",
               "bedingung": {
-                "selbst": [
-                  "erwachsen"
-                ],
+                "selbst": ["erwachsen"],
                 "ziel": []
               },
               "hinweis": {
@@ -345,9 +329,7 @@
           "lebensstatus": "lebend",
           "domestikationsstatus": null,
           "schutzstatus": "Nicht gefährdet",
-          "spiele": [
-            "planetZoo2"
-          ],
+          "spiele": ["planetZoo2"],
           "quelle": "planetZoo2"
         }
       ],
@@ -363,30 +345,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "uebersicht": {
       "de": [
@@ -395,30 +361,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "arterhaltung": {
       "de": [
@@ -427,30 +377,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "sozialverhaltenUndFortpflanzung": {
       "de": [
@@ -459,30 +393,14 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [
-        ""
-      ],
-      "it": [
-        ""
-      ],
-      "pt-BR": [
-        ""
-      ],
-      "ja": [
-        ""
-      ],
-      "zh-Hans": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
     },
     "tierfakten": {
       "de": [
@@ -507,12 +425,8 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""]
     },
     "entwicklungshinweis": {
       "de": [
@@ -521,12 +435,8 @@
           "quelle": "planetZoo2"
         }
       ],
-      "en": [
-        ""
-      ],
-      "en-US": [
-        ""
-      ]
+      "en": [""],
+      "en-US": [""]
     }
   },
   "karte": {
@@ -556,9 +466,7 @@
             "de": "Offizielles Zoopedia-Hauptbild des Riesenguramis aus Planet Zoo 2.",
             "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Gourami."
           },
-          "metadaten": [
-            ""
-          ],
+          "metadaten": [""],
           "dateien": [
             {
               "typ": "original",
