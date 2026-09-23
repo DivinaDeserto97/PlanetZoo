@@ -1,0 +1,523 @@
+{
+  "id": "scarabaeus-sacer",
+  "identitaet": {
+    "namen": {
+      "de": "Heiliger Pillendreher",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Vivarium"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": ["Afrika", "Europa", "Asien"],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Feuchtgebiete"],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "???",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Coleoptera",
+          "familie": "Scarabaeidae",
+          "gattung": "Scarabaeus",
+          "art": "Scarabaeus sacer",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "koerperlaenge",
+          "min": 10,
+          "max": 25,
+          "einheit": "mm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "???",
+          "system": "",
+          "hinweis": {
+            "de": "Der Gefährdungsstatus des Heiligen Pillendrehers wurde laut Zoopedia noch nicht bewertet.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [""],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": []
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "larvenschlupf",
+          "min": null,
+          "max": null,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Larven schlüpfen nach einigen Tagen aus den Eiern.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "verpuppungNach",
+          "min": 1,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Nach 1 bis 4 Wochen verpuppen sich die Larven.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schlupfAusPuppe",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Junge ausgewachsene Käfer schlüpfen nach etwa einem Monat; die Zeitspanne kann je nach Temperatur und Luftfeuchtigkeit variieren.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "In freier Wildbahn sind Heilige Pillendreher Einzelgänger. Männchen und Weibchen kommen zum Nestbau, zur Paarung sowie bei Kämpfen um Partner und Dungkugeln zusammen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Feuchtgebiete",
+          "hinweis": {
+            "de": "Die Zoopedia nennt unter anderem Sümpfe rund um das Mittelmeer als Lebensraum. Küstendünen werden ebenfalls genannt, aber nicht zusätzlich einem vorhandenen Biome-Filter zugeordnet.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Dungfresser",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Dung als Nahrung und als Grundlage für die Brutkugeln der Art.",
+              "en": ""
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Dung",
+              "typ": "organischesMaterial",
+              "beziehung": "detritivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["jungtier"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Larven ernähren sich von der Dungkugel, in der sie heranwachsen.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Dung",
+              "typ": "organischesMaterial",
+              "beziehung": "detritivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["erwachsen"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Ausgewachsene Heilige Pillendreher sammeln Dung zur Nahrungsaufnahme und für den Nestbau.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "coleoptera",
+          "rang": "ordnung",
+          "name": "Coleoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scarabaeidae",
+          "rang": "familie",
+          "name": "Scarabaeidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scarabaeus",
+          "rang": "gattung",
+          "name": "Scarabaeus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "scarabaeus-sacer",
+          "rang": "art",
+          "name": "Scarabaeus sacer",
+          "deutscherName": "Heiliger Pillendreher",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "???",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Heilige Pillendreher (auch Scarabaeus sacer) ist ein Dungkäfer, der in den Küstendünen und Sümpfen rund um das Mittelmeer in Nordafrika, Europa und dem Nahen Osten heimisch ist.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Heilige Pillendreher (auch Scarabaeus sacer) ist ein Dungkäfer, der in den Küstendünen und Sümpfen rund um das Mittelmeer in Nordafrika, Europa und dem Nahen Osten heimisch ist.\n\nAm Kopf des Heiligen Pillendrehers sitzen sechs längliche Zacken sowie vier weitere an den Vorderbeinen, sodass ein strahlenförmiger Bogen um das Tier entsteht.\n\nDer Heilige Pillendreher ist 10 bis 25 mm lang und besitzt einen glänzenden, schwarzen Panzer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Gefährdungsstatus des Heiligen Pillendrehers wurde noch nicht bewertet. Obwohl er weit verbreitet ist und wahrscheinlich nicht gefährdet ist, leidet er dennoch unter Lebensraumverlust durch Landumwandlung, landwirtschaftliche Nutzung und Umweltverschmutzung. Der Kot von Nutztieren ist oft mit schlecht abgebauten Medikamentenrückständen verunreinigt, was in Gebieten mit hohem Viehbestand zu einem Rückgang der Bestände führt.\n\nNaturschützer arbeiten daran, die Überwachung der Käferpopulationen zu verbessern, um Bestandsveränderungen frühzeitig zu erkennen. Dazu gehört auch die Zusammenarbeit mit Hobby-Entomologen im Rahmen von Bürgerinitiativen zum Naturschutz. Aufklärungskampagnen über die Rolle der Dungkäfer im Ökosystem können das öffentliche Bewusstsein schärfen, während verbesserte landwirtschaftliche Praktiken dazu beitragen, einen vielfältigen und sicheren Lebensraum für Käfer zu bewahren.\n\nWeitere Anstrengungen sind notwendig, um Schutzgesetze wirksam umzusetzen und die Forschung zu verbessern, damit diese und viele weitere Käferarten erhalten bleiben, die für die Gesundheit von Boden und Ökosystemen unverzichtbar sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "In freier Wildbahn sind Heilige Pillendreher Einzelgänger, allerdings finden sich Männchen und Weibchen zusammen, um Nester zu bauen oder um Partner und Dungkugeln zu kämpfen.\n\nHeilige Pillendreher paaren sich das ganze Jahr über. Ist ein Weibchen paarungsbereit, formt es eine Dungkugel für den Bau seines Nestes. Diese Kugeln bestehen meist aus Kot, der eine feinere Struktur hat als der, den sie zur Nahrungsaufnahme sammeln. Männchen formen Dungkugeln, um Weibchen anzulocken, und kämpfen oft um die Kugeln anderer Männchen oder stehlen sie. Männchen, denen es gelingt, ihre Kugel zu behalten und sie in den Bau zu rollen, sichern sich das Recht auf die Paarung.\n\nNach der Paarung im Bau verändert das Weibchen die Form der Kugel, indem es oben noch mehr Kot hinzufügt und so eine Birnenform kreiert. Es gräbt einen kleinen Tunnel durch den oberen Teil, um sein Ei in die Mitte der Kugel zu legen, und verlässt dann den Bau. Die Larven schlüpfen nach einigen Tagen aus den Eiern und ernähren sich von der Dungkugel. Nach 1 bis 4 Wochen verpuppen sie sich. Junge ausgewachsene Käfer schlüpfen nach einem Monat, wobei diese Zeitspanne je nach Temperatur und Luftfeuchtigkeit variieren kann.\n\nHeilige Pillendreher pflanzen sich nicht direkt fort, sondern suchen Futter, sodass sich ihre Gonaden entwickeln können. Je nach Umweltbedingungen und Nahrungsangebot kann das mehrere Monate in Anspruch nehmen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Heilige Pillendreher nutzt die Zacken an seinem Kopf und den Vorderbeinen, um Mist in Kugelform zu bringen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Heilige Pillendreher können Dungkugeln bewegen, die 50 Mal schwerer sind als sie selbst.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Heilige Pillendreher bewegen die Dungkugeln mit ihren Hinterbeinen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die alten Ägypter sahen im Heiligen Pillendreher ein Abbild des Sonnengotts Ra – das Rollen der Dungkugeln stellte dabei die Bewegung der Sonne am Himmel dar.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Larven des Heiligen Pillendrehers erfüllen eine wichtige Funktion bei der Verwertung von Nährstoffen in Mist und Unrat.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/25236c2c/Beetle_SacredScarab_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Scarabaeus sacer/map/Scarabaeus sacer map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "OFFIZIELLE_BILD_URL",
+          "alt": {
+            "de": "Heiliger Pillendreher – Planet Zoo 2",
+            "en": "Sacred Dung Beetle – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Heiligen Pillendrehers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sacred Dung Beetle."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Scarabaeus sacer/bilder/Scarabaeus sacer 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": null,
+          "quelle": "",
+          "metadaten": [
+            {
+              "typ": "",
+              "format": "",
+              "pfad": ""
+            }
+          ],
+          "dateien": [
+            {
+              "typ": "",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "video": [
+    {
+      "typ": "",
+      "varianten": [
+        {
+          "variante": null,
+          "reihe": "",
+          "titel": {
+            "de": "",
+            "en": ""
+          },
+          "quelle": "",
+          "url": "",
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "",
+              "dateityp": "",
+              "pfad": ""
+            }
+          ],
+          "dauerSekunden": null,
+          "beschreibung": {
+            "de": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}

@@ -1,0 +1,535 @@
+{
+  "id": "amphiprion-ocellaris",
+  "identitaet": {
+    "namen": {
+      "de": "Clown-Anemonenfisch",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": [
+      "Hauptspiel",
+      "Deluxe"
+    ],
+    "gehegetyp": [
+      "Aquarium"
+    ],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": [
+      "Asien",
+      "Ozeanien",
+      "Indischer Ozean",
+      "Pazifischer Ozean"
+    ],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": [
+      "Riff",
+      "Offenes Meer"
+    ],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "Nicht gefährdet",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Blenniiformes",
+          "familie": "Pomacentridae",
+          "gattung": "Amphiprion",
+          "art": "Amphiprion ocellaris",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 8,
+          "max": 11,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": []
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Clown-Anemonenfisch als „Nicht gefährdet“ ein.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [
+            ""
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1,
+          "max": 2,
+          "einheit": "jahre",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 6,
+          "max": 10,
+          "durchschnitt": null,
+          "einheit": "tage",
+          "hinweis": {
+            "de": "Die Eier schlüpfen in der Regel innerhalb von 6 bis 10 Tagen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "planktonischeLarvenphase",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "wochen",
+          "hinweis": {
+            "de": "Nach dem Schlüpfen treiben die Larven etwa 1 bis 2 Wochen planktonisch im offenen Meer.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "gruppe",
+          "wert": "strukturierteGruppe",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Clown-Anemonenfische bilden kleine, strukturierte Gruppen mit strikter Rangordnung in Seeanemonen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "hierarchie",
+          "wert": "dominantesBrutpaar",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Gruppe besteht aus einem dominanten Brutpaar und kleineren, nicht brütenden Männchen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Riff",
+          "hinweis": {
+            "de": "Die Zoopedia nennt flache Korallenriffe als typischen Lebensraum.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "Offenes Meer",
+          "hinweis": {
+            "de": "Die Larven treiben nach dem Schlüpfen für etwa 1 bis 2 Wochen im offenen Meer.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "blenniiformes",
+          "rang": "ordnung",
+          "name": "Blenniiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pomacentridae",
+          "rang": "familie",
+          "name": "Pomacentridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "amphiprion",
+          "rang": "gattung",
+          "name": "Amphiprion",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "amphiprion-ocellaris",
+          "rang": "art",
+          "name": "Amphiprion ocellaris",
+          "deutscherName": "Clown-Anemonenfisch",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Nicht gefährdet",
+          "spiele": [
+            "planetZoo2"
+          ],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Anemonenfische (auch Amphiprion ocellaris) leben in flachen Korallenriffen und geschützten Lagunen im gesamten Indo-Pazifik, etwa in Indonesien, auf den Philippinen, im Norden Australiens und in Teilen des Indischen Ozeans. Sie halten sich meist in der Nähe von Wirtsanemonen auf, die sie vor Fressfeinden schützen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Anemonenfische (auch Amphiprion ocellaris) leben in flachen Korallenriffen und geschützten Lagunen im gesamten Indo-Pazifik, etwa in Indonesien, auf den Philippinen, im Norden Australiens und in Teilen des Indischen Ozeans. Sie halten sich meist in der Nähe von Wirtsanemonen auf, die sie vor Fressfeinden schützen.\n\nMan erkennt sie leicht an ihrer leuchtend orangefarbenen Färbung und den drei markanten weißen Streifen mit schwarzem Rand.\n\nErwachsene Anemonenfische erreichen eine Länge von 8 cm bis 11 cm.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Anemonenfische gelten als eine nicht gefährdete Spezies. Sie sind jedoch anfällig für die Zerstörung ihres Lebensraums, den Klimawandel und die übermäßige Entnahme für den Aquarienhandel. Die Zerstörung der Korallenriffe, insbesondere der Verlust von Seeanemonen, hat gravierende Auswirkungen auf den Wildbestand. Die durch steigende Meerestemperaturen verursachte Korallenbleiche stört die symbiotische Beziehung zwischen Anemonenfischen und ihren Wirtsanemonen, wodurch es für die Fische schwieriger wird, Schutz zu finden und sich fortzupflanzen. Außerdem gehören Anemonenfische zu den beliebtesten Arten im Meeresaquarienhandel, was zu einem Rückgang der lokalen Bestände führt.\n\nUm diesen Gefahren entgegenzuwirken, wurden verschiedene Arterhaltungsstrategien umgesetzt. Meeresschutzgebiete helfen dabei, die Riffhabitate und die ökologischen Beziehungen zwischen Anemonenfischen und ihren Anemonen zu schützen. Anemonenfische vermehren sich in Gefangenschaft leicht, und viele Aquarien beziehen ihre Tiere mittlerweile aus Zuchtprogrammen statt aus der freien Natur, wodurch der Druck auf die Wildbestände verringert wird. Durch Aufklärungskampagnen ist auch das öffentliche Interesse am Schutz der maritimen Ökosysteme gestiegen.\n\nZiel dieser Bemühungen ist es, die Bestände der Anemonenfische zu erhalten und gleichzeitig den Schutz der Riffe insgesamt zu fördern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Die äußerst geselligen Anemonenfische bilden in Seeanemonen kleine, strukturierte Gruppen mit strikten Rangordnungen. Es gibt ein dominantes Brutpaar und nicht brütende untergeordnete Tiere, die auf enge soziale Interaktionen angewiesen sind, um die Stabilität und den Schutz der Gruppe zu gewährleisten.\n\nAnemonenfische pflanzen sich das ganze Jahr über fort. Ihre Fortpflanzungsstrategie ist als protandrischer Hermaphroditismus bekannt – alle Tiere kommen als Männchen zur Welt, und das dominante Männchen kann sein Geschlecht ändern, wenn das vorhandene Weibchen stirbt. Die Fortpflanzung findet in einer stabilen sozialen Gruppe statt, die aus einem dominanten Brutpaar und mehreren kleineren, nicht brütenden Männchen besteht.\n\nDas Weibchen legt hunderte klebrige Eier auf einer flachen Oberfläche in der Nähe der Wirtsanemone ab, und das Männchen übernimmt die Hauptaufgabe, die Eier zu bewachen und sie mit Sauerstoff zu versorgen, bis sie schlüpfen, was in der Regel innerhalb von 6 bis 10 Tagen geschieht.\n\nNach dem Schlüpfen sind die Larven planktonisch und treiben etwa 1 bis 2 Wochen im offenen Meer, ehe sie sich wieder auf einem Riff niederlassen und eine passende Wirtsanemone suchen. Wachstum und Reifung hängen vom sozialen Rang ab, wobei das größte Männchen nur dann die Fortpflanzung übernimmt, wenn das dominante Weibchen stirbt, wodurch die soziale Hierarchie und die Stabilität der Gruppe erhalten bleiben. Die Geschlechtsreife wird in der Regel im Alter von 1 bis 2 Jahren erreicht.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Anemonenfische stehen in einer symbiotischen Beziehung zu Seeanemonen: Sie werden durch die Nesselzellen der Anemonen vor Fressfeinden geschützt, während sie im Gegenzug die Anemonen sauber halten und verteidigen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Anemonenfische kommen als Männchen zur Welt und können ihr Geschlecht wechseln – meistens, wenn das dominante Weibchen in der Gruppe stirbt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Anemonenfische verteidigen ihr Anemonenrevier vehement gegen Eindringlinge und vertreiben oft viel größere Fische.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Anemonenfische kommunizieren mit Artgenossen über eine Reihe von Plopp- und Klickgeräuschen, vor allem bei Revierkämpfen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Anemonenfische zählen aufgrund ihrer leuchtenden Farben und ihres interessanten Verhaltens weltweit zu den beliebtesten Meerwasserfischen, die in Heimaquarien gehalten werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "",
+        "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/map/Amphiprion ocellaris map"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Clown-Anemonenfisch – Planet Zoo 2",
+            "en": "Clown Anemonefish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Clown-Anemonenfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Clown Anemonefish."
+          },
+          "metadaten": [
+            ""
+          ],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "",
+              "pfad": "assets/daten/lebewesen/tiere/Amphiprion ocellaris/bilder/Amphiprion ocellaris 1",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}

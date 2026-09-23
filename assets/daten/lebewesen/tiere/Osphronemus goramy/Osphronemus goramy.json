@@ -1,0 +1,588 @@
+{
+  "id": "osphronemus-goramy",
+  "identitaet": {
+    "namen": {
+      "de": "Riesengurami",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": [
+      "Hauptspiel",
+      "Deluxe"
+    ],
+    "gehegetyp": [
+      "Aquarium"
+    ],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": [
+      "Asien"
+    ],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": [
+      "Feuchtgebiete",
+      "Seen und Flüsse"
+    ],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "Nicht gefährdet",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Anabantiformes",
+          "familie": "Osphronemidae",
+          "gattung": "Osphronemus",
+          "art": "Osphronemus goramy",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "min": 45,
+          "max": 60,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maximumWildbahn",
+          "min": null,
+          "max": 70,
+          "einheit": "cm",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "durchschnitt",
+          "min": 4,
+          "max": 6,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "unterGutenBedingungen",
+          "min": 10,
+          "max": 20,
+          "einheit": "jahre",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Riesengurami als „Nicht gefährdet“ ein.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "giltFuer": [
+            ""
+          ],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahre",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": []
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 24,
+          "max": 36,
+          "durchschnitt": null,
+          "einheit": "stunden",
+          "hinweis": {
+            "de": "Je nach Wassertemperatur schlüpfen die Jungfische meist innerhalb von 24 bis 36 Stunden.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "jungtier",
+          "wert": "schwarmbildend",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Jungfische bilden oft Schwärme.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "erwachsen",
+          "wert": "territorial",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Ausgewachsene Tiere werden eher territorial und leben nicht unbedingt zusammen mit anderen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Feuchtgebiete",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Sümpfe als Lebensraum.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "Seen und Flüsse",
+          "hinweis": {
+            "de": "Die Zoopedia nennt langsam fließende Flüsse, Seen und künstliche Stauseen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Allesfresser",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt die Ernährung im Verlauf der Entwicklung als omnivor.",
+              "en": ""
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Plankton",
+              "typ": "nahrung",
+              "beziehung": "frisst",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "jungtier"
+                ],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Jungtiere wechseln im Verlauf ihrer Entwicklung von Plankton zu einer abwechslungsreicheren omnivoren Ernährung.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Omnivore Nahrung",
+              "typ": "nahrung",
+              "beziehung": "frisst",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [
+                  "erwachsen"
+                ],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia beschreibt erwachsene Riesenguramis als omnivor, nennt hier aber keine einzelnen Nahrungsarten.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anabantiformes",
+          "rang": "ordnung",
+          "name": "Anabantiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "osphronemidae",
+          "rang": "familie",
+          "name": "Osphronemidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "osphronemus",
+          "rang": "gattung",
+          "name": "Osphronemus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "osphronemus-goramy",
+          "rang": "art",
+          "name": "Osphronemus goramy",
+          "deutscherName": "Riesengurami",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Nicht gefährdet",
+          "spiele": [
+            "planetZoo2"
+          ],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Riesengurami (auch Osphronemus goramy) ist ein großer Süßwasserfisch, der in Südostasien, vor allem in den Flussgebieten des Mekong und des Chao Phraya, beheimatet ist. Mittlerweile ist er in ganz Asien, Afrika und Teilen Australiens für die Aquakultur und als Zierfisch weit verbreitet. Er lebt in langsam fließenden Flüssen, Sümpfen, Seen und künstlichen Stauseen und bevorzugt warme, flache Gewässer mit viel Vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Riesengurami (auch Osphronemus goramy) ist ein großer Süßwasserfisch, der in Südostasien, vor allem in den Flussgebieten des Mekong und des Chao Phraya, beheimatet ist. Mittlerweile ist er in ganz Asien, Afrika und Teilen Australiens für die Aquakultur und als Zierfisch weit verbreitet. Er lebt in langsam fließenden Flüssen, Sümpfen, Seen und künstlichen Stauseen und bevorzugt warme, flache Gewässer mit viel Vegetation.\n\nDiese Spezies zeichnet sich durch ihren seitlich abgeflachten, tiefen Körper, ihre langen Rücken- und Afterflossen und ihre abgerundete Schwanzflosse aus. Jungtiere sind silbern mit vertikalen Streifen, während Erwachsene oft die Streifen verlieren und eine einheitlichere hellgraue, gelbliche oder rosa Färbung annehmen. Männchen können mit zunehmendem Alter einen ausgeprägten Stirnhöcker entwickeln.\n\nRiesenguramis gehören zu den größten Vertretern der Gurami-Familie und werden im Schnitt 45 cm bis 60 cm lang und 4 kg bis 6 kg schwer.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Riesengurami kämpft um sein Überleben, obwohl er als „nicht gefährdet“ eingestuft ist. In Südostasien sind seine Lebensräume wie langsam fließende Flüsse, Seen und Feuchtgebiete immer mehr bedroht. Die Umwandlung von Feuchtgebieten in Ackerland, Abholzung, Umweltverschmutzung und der Bau von Staudämmen tragen alle zur Zerstörung seines Lebensraums bei, während Sedimentation und schwankende Wassertemperaturen das Laichen und das Wachstum der Larven beeinträchtigen. Überfischung erhöht den Druck zusätzlich, ebenso wie das Risiko von Krankheitsausbrüchen in intensiv bewirtschafteten Aquakulturanlagen.\n\nForscher arbeiten daran, die Zuchttechniken, die Produktion von Jungfischen, die Ernährung der Brutfische und alternative Futteroptionen zu vereinheitlichen und zu verbessern. Strategien zur ökologischen Intensivierung, wie die gemeinsame Aufzucht von Guramis und Wasserpflanzen, zeigen gute Erfolge. Krankheiten werden durch ständige Überwachung und Regulierung bekämpft, um Virusausbrüche zu minimieren. Ökologische Risikobewertungen regulieren die Einführung außerhalb des heimischen Verbreitungsgebiets und verhindern negative Auswirkungen auf nicht heimische Ökosysteme.\n\nZusammen sollen diese Ansätze die Bedeutung des Riesenguramis in der Aquakultur mit der Notwendigkeit in Einklang bringen, seine langfristige ökologische und wirtschaftliche Lebensfähigkeit zu schützen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Riesenguramis gelten als mäßig gesellig: Jungfische bilden oft Schwärme, doch ausgewachsene Tiere werden eher territorial und leben nicht unbedingt zusammen mit anderen.\n\nDie Paarungszeit ist zwischen April und August und folgt einer typischen Fortpflanzungsstrategie vieler Gurami-Arten. Während der Balz sucht sich das Männchen einen flachen, geschützten Bereich aus und errichtet dort aus Pflanzenmaterial und Schleim ein großes schwimmendes Blasennest. Es umwirbt die Weibchen aktiv, indem es seinen Körper zur Schau stellt, seine Flossen ausbreitet und sie in der Nähe des Nestes umkreist. Wenn sich ein paarungsbereites Weibchen nähert, umschlingt das Männchen das Weibchen, um die Freisetzung und Befruchtung der Eier zu erleichtern. Die schwimmfähigen befruchteten Eier steigen ins Nest auf, wo das Männchen sie wachsam vor Eindringlingen schützt.\n\nNach dem Eierlegen ziehen sich die Weibchen in der Regel zurück, während die Männchen die Aufgabe der Brutpflege übernehmen. Sie kümmern sich um das Nest, reparieren es bei Bedarf und fächeln mit den Flossen, um die Eier mit Sauerstoff zu versorgen. Je nach Wassertemperatur schlüpfen die Jungfische meist innerhalb von 24 bis 36 Stunden. Die Brut bleibt mehrere Tage unter dem Schutz der Männchen, bis sie selbstständig schwimmen und sich eigenständig ernähren kann. Sie wachsen ziemlich schnell und wechseln im Laufe ihrer Entwicklung von Plankton zu einer abwechslungsreicheren omnivoren Ernährung.\n\nRiesenguramis werden mit etwa 2 bis 3 Jahren geschlechtsreif.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        ""
+      ],
+      "it": [
+        ""
+      ],
+      "pt-BR": [
+        ""
+      ],
+      "ja": [
+        ""
+      ],
+      "zh-Hans": [
+        ""
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Riesenguramis besitzen ein spezielles Atmungsorgan, das sogenannte Labyrinthorgan, mit dem sie Luft schlucken und in sauerstoffarmen Gewässern überleben können, selbst wenn die Wasserqualität schlecht ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Riesenguramis gedeihen in den unterschiedlichsten Wasserbedingungen, wie leicht brackigem Wasser, langsam fließendem oder stehendem Wasser, und kommen auch mit weniger gelöstem Sauerstoff klar.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Riesenguramis werden häufig in Südostasien gezüchtet und gegessen (z. B. in Indonesien, Malaysia und Thailand). Ihr Fleisch ist sehr beliebt und sie sind Teil der lokalen Küche.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In freier Wildbahn können Riesenguramis bis zu 70 cm lang werden, aber die meisten Exemplare in Aquarien sind kleiner.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Riesenguramis gelten als relativ langlebig für tropische Süßwasserfische; unter guten Bedingungen können sie 10 bis 20 Jahre oder sogar noch älter werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        ""
+      ],
+      "en-US": [
+        ""
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Osphronemus goramy/map/Osphronemus goramy map.png"
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Riesengurami – Planet Zoo 2",
+            "en": "Giant Gourami – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Riesenguramis aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Giant Gourami."
+          },
+          "metadaten": [
+            ""
+          ],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Osphronemus goramy/bilder/Osphronemus goramy 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 – Zoopedia",
+      "seiten": {
+        "de": ""
+      },
+      "status": "offiziell"
+    }
+  }
+}
