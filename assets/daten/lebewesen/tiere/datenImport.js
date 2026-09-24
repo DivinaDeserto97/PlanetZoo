@@ -119,6 +119,7 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Scolopendra gigantea/Scolopendra gigantea.json",
   "assets/daten/lebewesen/tiere/Elephas maximus/Elephas maximus.json",
   "assets/daten/lebewesen/tiere/Lycaon pictus/Lycaon pictus.json",
+  "assets/daten/lebewesen/tiere/Trichechus manatus/Trichechus manatus.json",
 ];
 
 /* ======================================== */

@@ -1487,6 +1487,18 @@
               - `Tragelaphus angasii map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Tragelaphus angasii/videos/.gitkeep>)
+          - `Trichechus manatus/`
+            - [Trichechus manatus.json](<../assets/daten/lebewesen/tiere/Trichechus manatus/Trichechus manatus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Trichechus manatus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Trichechus manatus/bilder/.gitkeep>)
+              - `Trichechus manatus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Trichechus manatus/map/.gitkeep>)
+              - `Trichechus manatus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Trichechus manatus/videos/.gitkeep>)
           - `Triturus dobrogicus/`
             - [Triturus dobrogicus.json](<../assets/daten/lebewesen/tiere/Triturus dobrogicus/Triturus dobrogicus.json>)
             - `audio/`

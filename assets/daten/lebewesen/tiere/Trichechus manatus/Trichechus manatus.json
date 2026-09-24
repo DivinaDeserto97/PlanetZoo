@@ -1,0 +1,843 @@
+{
+  "id": "trichechus-manatus",
+  "identitaet": {
+    "namen": {
+      "de": "Karibik-Manati",
+      "en": "West Indian Manatee",
+      "en-US": "West Indian Manatee",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "",
+    "editionAuswahl": ["Hauptspiel", "Deluxe"],
+    "gehegetyp": ["Aquarium"],
+    "gehegetypAuswahl": [
+      "Gehege - Landlebend",
+      "Gehege - Fliegend",
+      "Aquarium",
+      "Vivarium"
+    ],
+    "kontinente": ["Nordamerika", "Südamerika", "Atlantischer Ozean"],
+    "kontinenteAuswahl": [
+      "Afrika",
+      "Arktis",
+      "Asien",
+      "Atlantischer Ozean",
+      "Europa",
+      "Indischer Ozean",
+      "Nordamerika",
+      "Ozeanien",
+      "Pazifischer Ozean",
+      "Südamerika"
+    ],
+    "biome": ["Ästuar", "Seen und Flüsse"],
+    "biomeAuswahl": [
+      "Ästuar",
+      "Feuchtgebiete",
+      "Gemäßigt",
+      "Graslandschaft",
+      "Mangrove",
+      "Offenes Meer",
+      "Riff",
+      "Seen und Flüsse",
+      "Taiga",
+      "Tropen",
+      "Tundra",
+      "Wüste"
+    ],
+    "schutzstatus": "Gefährdet",
+    "schutzstatusAuswahl": [
+      "???",
+      "Gefährdet",
+      "Nicht gefährdet",
+      "Potenziell gefährdet",
+      "Stark gefährdet",
+      "Unzureichende Datengrundlage",
+      "Vom Aussterben bedroht"
+    ]
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Sirenia",
+          "familie": "Trichechidae",
+          "gattung": "Trichechus",
+          "art": "Trichechus manatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 2.7,
+          "max": 4.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": []
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "erwachsen",
+          "min": 350,
+          "max": 600,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": []
+    },
+    "geschwindigkeit": {
+      "werte": []
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia gibt für das Karibik-Manati den Status „Gefährdet“ an und weist darauf hin, dass die Unterarten stark gefährdet sind.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 8197,
+          "max": 11328,
+          "einheit": "individuum",
+          "giltFuer": ["Trichechus manatus"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen geschätzten Wildbestand von 8.197 bis 11.328 Tieren an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennchenErfolgreichePaarung",
+          "min": 5,
+          "max": 7,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Männchen können sich laut Zoopedia meist erst mit 5 bis 7 Jahren erfolgreich paaren.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "min": 12,
+          "max": 14,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "kalbProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "hinweis": {
+            "de": "Normalerweise wird ein einzelnes Kalb geboren; Zwillinge sind sehr selten, aber möglich.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "neugeborenenLaenge",
+          "min": 1.1,
+          "max": 1.1,
+          "durchschnitt": 1.1,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "neugeborenenGewicht",
+          "min": 32,
+          "max": 32,
+          "durchschnitt": 32,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "saeugezeit",
+          "min": null,
+          "max": 2,
+          "durchschnitt": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Kälber werden bis zu zwei Jahre lang gesäugt.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "selbststaendigAb",
+          "min": 2,
+          "max": 2,
+          "durchschnitt": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "halbwegs gesellig",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennchen",
+          "wert": "meist Einzelgänger",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weibchen",
+          "wert": "lebt meist mit dem jüngsten Kalb zusammen",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Ästuar",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Flussmündungen ausdrücklich als Lebensraum.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "Seen und Flüsse",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Flüsse ausdrücklich als Lebensraum.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": []
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Pflanzenfresser",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Muttermilch",
+              "typ": "nahrung",
+              "beziehung": "frisst",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["jungtier"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Kälber werden bis zu zwei Jahre lang gesäugt.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Wasserpflanzen",
+              "typ": "pflanze",
+              "beziehung": "frisst",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["jungtier"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Jungtiere beginnen schon nach wenigen Wochen, an Pflanzen zu knabbern.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Wasserpflanzen",
+              "typ": "pflanze",
+              "beziehung": "frisst",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["erwachsen"],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sirenia",
+          "rang": "ordnung",
+          "name": "Sirenia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "trichechidae",
+          "rang": "familie",
+          "name": "Trichechidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "trichechus",
+          "rang": "gattung",
+          "name": "Trichechus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "trichechus-manatus",
+          "rang": "art",
+          "name": "Trichechus manatus",
+          "deutscherName": "Karibik-Manati",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Karibik-Manati (auch Trichechus manatus) ist ein großes Meeressäugetier, das in flachen Küstengewässern, Flüssen und Flussmündungen im Südosten der Vereinigten Staaten, in der Karibik und in Teilen Mittel- und Südamerikas lebt. Es mag warme, ruhige Gewässer mit viel Wasserpflanzen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Karibik-Manati (auch Trichechus manatus) ist ein großes Meeressäugetier, das in flachen Küstengewässern, Flüssen und Flussmündungen im Südosten der Vereinigten Staaten, in der Karibik und in Teilen Mittel- und Südamerikas lebt. Es mag warme, ruhige Gewässer mit viel Wasserpflanzen.\n\nDas Karibik-Manati zeichnet sich durch einen runden, robbenähnlichen Körper aus, der mit einer robusten, graubraunen Haut bedeckt ist. Es hat kleine Augen, eine breite, paddelförmige Schwanzflosse und flossenartige Vordergliedmaßen.\n\nErwachsene Karibik-Manatis sind in der Regel zwischen 2,7 m und 4 m lang und wiegen zwischen 350 kg und 600 kg. Die Weibchen sind größer als die Männchen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Karibik-Manatis gelten als gefährdet, die Unterarten sind stark gefährdet. Zu den größten Bedrohungen zählen Kollisionen mit Booten, da sie oft in Gebieten mit starkem Schiffsverkehr nahe der Wasseroberfläche schwimmen. Ein weiteres Problem stellt der Verlust ihres Lebensraums dar, insbesondere die Zerstörung von Warmwasserrefugien wie natürlichen Quellen, auf die Manatis in den kälteren Monaten angewiesen sind. Umweltverschmutzung und Fischernetze können dazu führen, dass Manatis durch Verstopfung sterben oder ertrinken. Früher wurden Manatis auch wegen ihres Fleisches und ihrer Haut gejagt. Ihre langsame Fortpflanzungsrate macht es schwer, ihre Bestände wieder herzustellen.\n\nManatis unterliegen gesetzlichen Schutzauflagen wie dem US-amerikanischen Gesetz zum Schutz von Meeressäugetieren (Marine Mammal Protection Act) und dem Gesetz zum Schutz gefährdeter Arten (Endangered Species Act), die die Belästigung, Jagd oder Verletzung dieser Tiere untersagen. In wichtigen Lebensräumen der Manatis wurden Geschwindigkeitsbegrenzungen für Boote eingeführt und weitere Aufklärungskampagnen für Bootsfahrer und die Öffentlichkeit durchgeführt. Im Rahmen von Rettungs- und Rehabilitationsprogrammen konnten verletzte Manatis erfolgreich behandelt und wieder freigelassen werden. Darüber hinaus tragen Bemühungen zur Erhaltung und Wiederherstellung der aquatischen Vegetation und zum Schutz von Warmwasserlebensräumen dazu bei, das Überleben der Manatis zu sichern.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Manatis sind halbwegs gesellig. Sie treffen sich oft in Gruppen zum Fressen und Paaren und interagieren mit anderen, wenn sie ihnen begegnen, doch im Allgemeinen sind Männchen Einzelgänger und Weibchen leben mit ihrem jüngsten Kalb zusammen.\n\nKaribik-Manatis paaren sich das ganze Jahr über, besonders häufig im Sommer. Ein fruchtbares Weibchen lockt mehrere Männchen an; dabei können sich bis zu zwölf Männchen um ein einzelnes Weibchen versammeln und ihm während seiner fruchtbaren Zeit folgen. Diese Männchen konkurrieren um das Recht zur Paarung, wobei größere und ältere Männchen größere Erfolgschancen haben.\n\nNach der Paarung ist das Weibchen 12 bis 14 Monate lang trächtig und bringt unter Wasser ein einzelnes Kalb zur Welt. Zwillinge sind sehr selten, aber möglich. Im Durchschnitt sind neugeborene Manatis 1,1 m groß und wiegen 32 kg. Die Kälber bleiben lange bei ihren Müttern und entwickeln eine enge Bindung zu ihnen. Sie werden bis zu zwei Jahre lang gesäugt, obwohl die Jungtiere schon nach wenigen Wochen anfangen, an Pflanzen zu knabbern. Während sie bei ihren Müttern sind, lernen die Kälber, wie sie nach Futter suchen und Gefahren vermeiden.\n\nIm Alter von 2 Jahren verlassen Manatis ihre Mütter, um unabhängig zu werden. Die Mütter sind dann bereit, sich wieder zu paaren, während die Kälber erst im Alter von 3 bis 5 Jahren geschlechtsreif werden. Männchen können sich erst im Alter von 5 bis 7 Jahren erfolgreich paaren, wenn sie stark genug sind, um erfolgreich um das Recht auf Paarung zu konkurrieren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Karibik-Manatis werden in manchen Sprachen aufgrund ihrer langsamen Bewegungen und ihrer pflanzlichen Ernährung umgangssprachlich als „Seekühe“ bezeichnet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Die Zähne des Karibik-Manatis wachsen immer weiter und werden von hinten ersetzt, wenn die vorderen beim Grasen abgenutzt sind.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Die nächsten lebenden Verwandten der Manatis sind Elefanten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Manatis kommunizieren durch Trillern und Zwitschern, vor allem Mütter und ihre Kälber.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Früher haben Seefahrer Manatis für Meerjungfrauen gehalten. Christoph Kolumbus schrieb, dass die Manatis oder „Meerjungfrauen“, die er gesehen hat, „nicht halb so schön waren, wie sie gemalt werden“.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/d382d438/Manatee_WestIndian_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Trichechus manatus/map/Trichechus manatus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvZDM4MmQ0MzgvTWFuYXRlZV9XZXN0SW5kaWFuLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjI4ODAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6IjM4ZWFkMmNiLTkyOTMtNDU2Yy04OWI0LTQyYzEwNWI3ZGZmMiJ9fQ==",
+          "alt": {
+            "de": "Karibik-Manati – Planet Zoo 2",
+            "en": "West Indian Manatee – Planet Zoo 2"
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Trichechus manatus/bilder/Trichechus manatus 1.webp",
+              "githubFreigabe": false
+            }
+          ],
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Karibik-Manatis aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the West Indian Manatee."
+          }
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/d382d438/Manatee_WestIndian_illustration.jpg",
+          "alt": {
+            "de": "Karibik-Manati – Zoopedia-Illustration",
+            "en": "West Indian Manatee – Zoopedia illustration"
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Trichechus manatus/bilder/Trichechus manatus illustration 1.jpg",
+              "githubFreigabe": false
+            }
+          ],
+          "beschreibung": {
+            "de": "Illustration des Karibik-Manatis aus der Planet Zoo 2 Zoopedia.",
+            "en": "West Indian Manatee illustration from the Planet Zoo 2 Zoopedia."
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [
+    {
+      "typ": "animalSpotlight",
+      "varianten": [
+        {
+          "variante": 1,
+          "reihe": "Animal Spotlight",
+          "titel": {
+            "de": "Animal Spotlight – West Indian Manatee",
+            "en": "Animal Spotlight - West Indian Manatee"
+          },
+          "quelle": "planetZoo2",
+          "url": "https://youtube.com/watch?v=NL-8bwErkoY",
+          "metadaten": [""],
+          "dateien": [],
+          "dauerSekunden": null,
+          "beschreibung": {
+            "de": "Offizielles Animal-Spotlight-Video zum Karibik-Manati.",
+            "en": "Official Animal Spotlight video for the West Indian Manatee."
+          }
+        }
+      ]
+    }
+  ],
+  "planetZoo2": {
+    "rechner": null
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Karibik-Manati",
+      "seiten": {
+        "de": "https://www.planetzoogame.com/de-DE/2/zoopedia/karibik-manati",
+        "en": "https://www.planetzoogame.com/2/zoopedia/west-indian-manatee",
+        "en-US": "https://www.planetzoogame.com/en-US/2/zoopedia/west-indian-manatee",
+        "es": "https://www.planetzoogame.com/es-ES/2/zoopedia/manat%C3%AD-antillano",
+        "fr": "https://www.planetzoogame.com/fr-FR/2/zoop%C3%A9die/lamantin-des-cara%C3%AFbes",
+        "it": "https://www.planetzoogame.com/it-IT/2/zoopedia/lamantino-dei-caraibi",
+        "pt-BR": "https://www.planetzoogame.com/pt-BR/2/zoop%C3%A9dia/peixe-boi-marinho",
+        "ja": "https://www.planetzoogame.com/ja-JP/2/%E3%82%BA%E3%83%BC%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%9E%E3%83%8A%E3%83%86%E3%82%A3%E3%83%BC",
+        "zh-Hans": "https://www.planetzoogame.com/zh-Hans/2/%E5%8A%A8%E7%89%A9%E5%9B%AD%E7%99%BE%E7%A7%91/%E7%BE%8E%E6%B4%B2%E6%B5%B7%E7%89%9B"
+      },
+      "status": "Zoopedia-Pass aus der vom Nutzer bereitgestellten offiziellen Planet-Zoo-2-Seite. Edition und Aktivitätszeit sind im bereitgestellten Auszug nicht angegeben und bleiben leer."
+    }
+  }
+}
