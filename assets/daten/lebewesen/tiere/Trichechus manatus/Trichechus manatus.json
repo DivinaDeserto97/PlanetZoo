@@ -280,9 +280,9 @@
           "werte": [
             {
               "wert": "Muttermilch",
-              "typ": "nahrung",
-              "beziehung": "frisst",
-              "wirkung": "+/-",
+              "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
               "bedingung": {
                 "selbst": ["jungtier"],
                 "ziel": []
