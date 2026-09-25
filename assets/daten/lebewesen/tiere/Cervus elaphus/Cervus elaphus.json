@@ -168,15 +168,15 @@
           "wert": "temperate",
           "hinweis": {
             "de": "Die Zoopedia nennt gemäßigte Graslandschaftschaften, Wälder und Buschlandschaften.",
-            "en": "The Zoopedia lists temperate grasslands, forests and scrublands."
+            "en": "The Zoopedia lists temperate Graslands, Walds and scrublands."
           },
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt ausdrücklich Graslandschaftschaften.",
-            "en": "The Zoopedia explicitly mentions grasslands."
+            "en": "The Zoopedia explicitly mentions Graslands."
           },
           "quelle": "planetZoo2"
         }
@@ -277,14 +277,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate Graslands, Walds and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate Graslands, Walds and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -305,7 +305,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il cervo rosso (Cervus elaphus) è un ungulato diffuso nelle praterie temperate, foreste e boscaglie d’Europa, Nord Afrika e Asia centrale. È stato introdotto anche in Sud America e Oceania.",
+          "inhalt": "Il cervo rosso (Cervus elaphus) è un ungulato diffuso nelle praterie temperate, Walde e boscaglie d’Europa, Nord Afrika e Asia centrale. È stato introdotto anche in Sud America e Oceania.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -341,14 +341,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate Graslands, Walds and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate grasslands, forests and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
+          "inhalt": "The Red Deer (Cervus elaphus) is a widespread ungulate found in temperate Graslands, Walds and scrublands across Europe, North Afrika and Central Asia. It has also been introduced to South America and Oceania.\n\nRed Deer have reddish-brown fur with a lighter underside, large pointed ears, large eyes and a long muzzle. The species is sexually dimorphic: males are larger than females and carry large multi-tined antlers whose beams form a U shape. Body size varies considerably with habitat and environmental conditions.\n\nMales average 175–250 cm in length and weigh 160–240 kg. Their antlers may measure 60–80 cm. Females are 160–210 cm long and weigh 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -369,7 +369,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il cervo rosso (Cervus elaphus) vive nelle praterie temperate, foreste e boscaglie d’Europa, Nord Afrika e Asia centrale.\n\nHa mantello bruno-rossastro con parte inferiore più chiara, grandi orecchie, grandi occhi e muso lungo. I maschi sono più grandi e portano grandi palchi ramificati.\n\nI maschi misurano 175–250 cm e pesano 160–240 kg; le femmine 160–210 cm e 120–170 kg.",
+          "inhalt": "Il cervo rosso (Cervus elaphus) vive nelle praterie temperate, Walde e boscaglie d’Europa, Nord Afrika e Asia centrale.\n\nHa mantello bruno-rossastro con parte inferiore più chiara, grandi orecchie, grandi occhi e muso lungo. I maschi sono più grandi e portano grandi palchi ramificati.\n\nI maschi misurano 175–250 cm e pesano 160–240 kg; le femmine 160–210 cm e 120–170 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -405,35 +405,35 @@
       ],
       "en": [
         {
-          "inhalt": "The Red Deer is classified as Least Concern but is locally extinct in some parts of its historical range. In many regions, populations declined greatly because of overhunting, deforestation and agricultural expansion.\n\nSince the 20th century, conservation programmes have helped restore Red Deer to natural habitats through legal protection, habitat restoration, protected areas and hunting regulations. Reintroduction projects have been important where natural recolonisation was unlikely because of habitat fragmentation or human barriers. These efforts also support biodiversity and the Red Deer's ecological role in vegetation dynamics, seed dispersal and nutrient cycling.\n\nAlthough challenges remain, Red Deer conservation is widely regarded as a success story in European wildlife management.",
+          "inhalt": "The Red Deer is classified as Least Concern but is locally extinct in some parts of its historical range. In many regions, populations declined greatly because of overhunting, deWaldation and agricultural expansion.\n\nSince the 20th century, conservation programmes have helped restore Red Deer to natural habitats through legal protection, habitat restoration, protected areas and hunting regulations. Reintroduction projects have been important where natural recolonisation was unlikely because of habitat fragmentation or human barriers. These efforts also support biodiversity and the Red Deer's ecological role in vegetation dynamics, seed dispersal and nutrient cycling.\n\nAlthough challenges remain, Red Deer conservation is widely regarded as a success story in European wildlife management.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Red Deer is classified as Least Concern but is locally extinct in some parts of its historical range. In many regions, populations declined greatly because of overhunting, deforestation and agricultural expansion.\n\nSince the 20th century, conservation programmes have helped restore Red Deer to natural habitats through legal protection, habitat restoration, protected areas and hunting regulations. Reintroduction projects have been important where natural recolonisation was unlikely because of habitat fragmentation or human barriers. These efforts also support biodiversity and the Red Deer's ecological role in vegetation dynamics, seed dispersal and nutrient cycling.\n\nAlthough challenges remain, Red Deer conservation is widely regarded as a success story in European wildlife management.",
+          "inhalt": "The Red Deer is classified as Least Concern but is locally extinct in some parts of its historical range. In many regions, populations declined greatly because of overhunting, deWaldation and agricultural expansion.\n\nSince the 20th century, conservation programmes have helped restore Red Deer to natural habitats through legal protection, habitat restoration, protected areas and hunting regulations. Reintroduction projects have been important where natural recolonisation was unlikely because of habitat fragmentation or human barriers. These efforts also support biodiversity and the Red Deer's ecological role in vegetation dynamics, seed dispersal and nutrient cycling.\n\nAlthough challenges remain, Red Deer conservation is widely regarded as a success story in European wildlife management.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "es": [
         {
-          "inhalt": "Está clasificado como de Preocupación Menor, aunque ha desaparecido localmente de algunas partes de su área histórica. La caza excesiva, la deforestación y la expansión agrícola provocaron importantes descensos.\n\nDesde el siglo XX, la protección legal, la restauración de hábitats, las áreas protegidas y las reintroducciones han contribuido a su recuperación.\n\nSu conservación se considera en general un éxito del manejo de fauna Europaa.",
+          "inhalt": "Está clasificado como de Preocupación Menor, aunque ha desaparecido localmente de algunas partes de su área histórica. La caza excesiva, la deWaldación y la expansión agrícola provocaron importantes descensos.\n\nDesde el siglo XX, la protección legal, la restauración de hábitats, las áreas protegidas y las reintroducciones han contribuido a su recuperación.\n\nSu conservación se considera en general un éxito del manejo de fauna Europaa.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "fr": [
         {
-          "inhalt": "L’espèce est classée en Préoccupation mineure mais a disparu localement de certaines parties de son aire historique. La chasse excessive, la déforestation et l’expansion agricole ont causé de forts déclins.\n\nDepuis le XXe siècle, la protection juridique, la restauration des habitats, les aires protégées et les réintroductions ont favorisé le rétablissement de nombreuses populations.\n\nSa conservation est largement considérée comme une réussite en Europe.",
+          "inhalt": "L’espèce est classée en Préoccupation mineure mais a disparu localement de certaines parties de son aire historique. La chasse excessive, la déWaldation et l’expansion agricole ont causé de forts déclins.\n\nDepuis le XXe siècle, la protection juridique, la restauration des habitats, les aires protégées et les réintroductions ont favorisé le rétablissement de nombreuses populations.\n\nSa conservation est largement considérée comme une réussite en Europe.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "it": [
         {
-          "inhalt": "È classificato a rischio minimo, ma è scomparso localmente da alcune aree storiche. Caccia eccessiva, deforestazione ed espansione agricola hanno causato forti diminuzioni.\n\nDal XX secolo, protezione legale, ripristino degli habitat, aree protette e reintroduzioni hanno favorito il recupero.\n\nLa conservazione è spesso considerata un successo della gestione faunistica Europaa.",
+          "inhalt": "È classificato a rischio minimo, ma è scomparso localmente da alcune aree storiche. Caccia eccessiva, deWaldazione ed espansione agricola hanno causato forti diminuzioni.\n\nDal XX secolo, protezione legale, ripristino degli habitat, aree protette e reintroduzioni hanno favorito il recupero.\n\nLa conservazione è spesso considerata un successo della gestione faunistica Europaa.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

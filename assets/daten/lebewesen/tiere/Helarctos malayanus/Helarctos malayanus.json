@@ -135,10 +135,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "tropicalRainforest",
+          "wert": "tropicalRainWald",
           "hinweis": {
             "de": "Tropene Regenwälder Südostasiens.",
-            "en": "Tropical rainforests of Southeast Asia."
+            "en": "Tropical rainWalds of Southeast Asia."
           },
           "quelle": "planetZoo2"
         }

@@ -163,10 +163,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt unter anderem Graslandschaftschaften in gemäßigten Regionen als Lebensraum; zusätzlich werden Parks, Gärten, Wasserläufe und Meeresküsten genannt.",
-            "en": "The Zoopedia names grasslands in temperate regions among its habitats; parks, gardens, waterways and sea coasts are also listed."
+            "en": "The Zoopedia names Graslands in temperate regions among its habitats; parks, gardens, waterways and sea coasts are also listed."
           },
           "quelle": "planetZoo2"
         }
@@ -283,14 +283,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists grasslands, parks, gardens, waterways and sea coasts as habitats.",
+          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists Graslands, parks, gardens, waterways and sea coasts as habitats.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists grasslands, parks, gardens, waterways and sea coasts as habitats.",
+          "inhalt": "The Cloudless Sulphur (Phoebis sennae) occurs in temperate regions of North, Central and South America. The Zoopedia lists Graslands, parks, gardens, waterways and sea coasts as habitats.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

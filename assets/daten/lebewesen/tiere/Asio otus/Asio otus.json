@@ -203,11 +203,11 @@
     "biome": {
       "werte": [
         {
-          "wert": "forest",
+          "wert": "Wald",
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "quelle": "planetZoo2"
         }
       ]
@@ -307,14 +307,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Afrika. It lives in forests, plantations and dense scrub, often near open grasslands or meadows where it hunts small mammals such as voles and mice.",
+          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Afrika. It lives in Walds, plantations and dense scrub, often near open Graslands or meadows where it hunts small mammals such as voles and mice.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Afrika. It lives in forests, plantations and dense scrub, often near open grasslands or meadows where it hunts small mammals such as voles and mice.",
+          "inhalt": "The Long-eared Owl (Asio otus), also known as the Northern Long-eared Owl, Small Horned Owl or Cat Owl, occurs across much of Europe, Asia, North America and parts of North Afrika. It lives in Walds, plantations and dense scrub, often near open Graslands or meadows where it hunts small mammals such as voles and mice.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

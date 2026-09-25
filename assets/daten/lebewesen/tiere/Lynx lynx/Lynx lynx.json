@@ -254,7 +254,7 @@
           "wert": "temperateForest",
           "hinweis": {
             "de": "Die Zoopedia nennt gemäßigte Wälder.",
-            "en": "The Zoopedia names temperate forests."
+            "en": "The Zoopedia names temperate Walds."
           },
           "quelle": "planetZoo2"
         },
@@ -262,7 +262,7 @@
           "wert": "northernForest",
           "hinweis": {
             "de": "Die Zoopedia nennt nördliche Wälder.",
-            "en": "The Zoopedia names northern forests."
+            "en": "The Zoopedia names northern Walds."
           },
           "quelle": "planetZoo2"
         },
@@ -379,14 +379,14 @@
       ],
       "en": [
         {
-          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
+          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern Walds and mountain regions of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern forests and mountain regions of Europe and Asia.",
+          "inhalt": "The EurAsienn Lynx (Lynx lynx) is a medium-sized cat found in temperate and northern Walds and mountain regions of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

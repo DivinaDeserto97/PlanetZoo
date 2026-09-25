@@ -201,7 +201,7 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "forestEdge",
+          "wert": "WaldEdge",
           "quelle": "planetZoo2"
         },
         {
@@ -325,14 +325,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Toco Toucan (Ramphastos toco) is native to central and eastern South America. Its range extends from the Guianas and northern Brazil through Bolivia, Paraguay, northern Argentina and Uruguay. It inhabits semi-open environments including woodlands, savannas, forest edges, plantations and the Cerrado.",
+          "inhalt": "The Toco Toucan (Ramphastos toco) is native to central and eastern South America. Its range extends from the Guianas and northern Brazil through Bolivia, Paraguay, northern Argentina and Uruguay. It inhabits semi-open environments including woodlands, savannas, Wald edges, plantations and the Cerrado.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Toco Toucan (Ramphastos toco) is native to central and eastern South America. Its range extends from the Guianas and northern Brazil through Bolivia, Paraguay, northern Argentina and Uruguay. It inhabits semi-open environments including woodlands, savannas, forest edges, plantations and the Cerrado.",
+          "inhalt": "The Toco Toucan (Ramphastos toco) is native to central and eastern South America. Its range extends from the Guianas and northern Brazil through Bolivia, Paraguay, northern Argentina and Uruguay. It inhabits semi-open environments including woodlands, savannas, Wald edges, plantations and the Cerrado.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

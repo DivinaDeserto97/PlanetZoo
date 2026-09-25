@@ -210,10 +210,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia beschreibt Graslandschaftschaften und Weideland als zentralen Lebensraum.",
-            "en": "The Zoopedia describes grasslands and grazing areas as central habitat."
+            "en": "The Zoopedia describes Graslands and grazing areas as central habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -322,14 +322,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes Graslands and grazing areas as important habitat.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes grasslands and grazing areas as important habitat.",
+          "inhalt": "The Black Wildebeest (Connochaetes gnou), also known as the White-tailed Gnu, is a large ungulate from southern Afrika. The Zoopedia describes Graslands and grazing areas as important habitat.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

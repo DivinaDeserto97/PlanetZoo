@@ -163,18 +163,18 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt tropische Graslandschaftschaften als Teil des Lebensraums.",
-            "en": "The Zoopedia names tropical grasslands as part of the habitat."
+            "en": "The Zoopedia names tropical Graslands as part of the habitat."
           },
           "quelle": "planetZoo2"
         },
         {
-          "wert": "forest",
+          "wert": "Wald",
           "hinweis": {
             "de": "Die Zoopedia nennt tropische Waldlandschaften und alte Waldgebiete mit niedrigem Baumkronendach.",
-            "en": "The Zoopedia names tropical forest landscapes and old forest areas with a low canopy."
+            "en": "The Zoopedia names tropical Wald landscapes and old Wald areas with a low canopy."
           },
           "quelle": "planetZoo2"
         }
@@ -307,14 +307,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical grassland and forest landscapes of Central and South America.",
+          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical Grasland and Wald landscapes of Central and South America.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical grassland and forest landscapes of Central and South America.",
+          "inhalt": "The Blue Morpho (Morpho menelaus) is native to tropical Grasland and Wald landscapes of Central and South America.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

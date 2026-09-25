@@ -181,10 +181,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "forest",
+          "wert": "Wald",
           "hinweis": {
             "de": "Die Zoopedia nennt tropische Tieflandwälder und Sekundärwälder als hauptsächliche Lebensräume; teilweise werden auch Plantagen genutzt.",
-            "en": "The Zoopedia names tropical lowland forests and secondary forests as the main habitats; plantations are also used in some cases."
+            "en": "The Zoopedia names tropical lowland Walds and secondary Walds as the main habitats; plantations are also used in some cases."
           },
           "quelle": "planetZoo2"
         }
@@ -281,14 +281,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland Walds and secondary Walds and also occurs in plantations.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland forests and secondary forests and also occurs in plantations.",
+          "inhalt": "The Sunda Pangolin (Manis javanica), also called the Malayan or Javan pangolin, is a Nachtaktiv mammal of Southeast Asia. It mainly inhabits tropical lowland Walds and secondary Walds and also occurs in plantations.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

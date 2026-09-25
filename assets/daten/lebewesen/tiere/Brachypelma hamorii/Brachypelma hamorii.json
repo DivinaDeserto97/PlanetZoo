@@ -182,7 +182,7 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "forest",
+          "wert": "Wald",
           "quelle": "planetZoo2"
         }
       ]
@@ -282,14 +282,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and forests of Mexico.",
+          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and Walds of Mexico.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and forests of Mexico.",
+          "inhalt": "The Mexican Red-knee Tarantula (Brachypelma hamorii) lives in shrublands, deserts and Walds of Mexico.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

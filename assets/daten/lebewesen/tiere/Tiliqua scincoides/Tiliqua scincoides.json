@@ -164,10 +164,10 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt Buschgebiete; im Projekt wird dies vorsichtig dem offenen Graslandschaft-/Buschland-Kontext zugeordnet.",
-            "en": "The Zoopedia mentions scrub habitats; in the project this is cautiously mapped to an open grassland/scrub context."
+            "en": "The Zoopedia mentions scrub habitats; in the project this is cautiously mapped to an open Grasland/scrub context."
           },
           "quelle": "planetZoo2"
         },
@@ -296,7 +296,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) è un rettile che vive nelle foreste, nelle boscaglie e nelle zone semidesertiche dell’Australia.",
+          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) è un rettile che vive nelle Walde, nelle boscaglie e nelle zone semidesertiche dell’Australia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -360,7 +360,7 @@
       ],
       "it": [
         {
-          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) vive nelle foreste, boscaglie e regioni semidesertiche dell’Australia.\n\nÈ un animale robusto con testa triangolare e coda spessa. La colorazione varia, ma spesso presenta bande beige e nere. La lingua è di un blu brillante.\n\nGli adulti misurano 45–60 cm e pesano 0,35–1 kg.",
+          "inhalt": "Lo scinco dalla lingua blu (Tiliqua scincoides) vive nelle Walde, boscaglie e regioni semidesertiche dell’Australia.\n\nÈ un animale robusto con testa triangolare e coda spessa. La colorazione varia, ma spesso presenta bande beige e nere. La lingua è di un blu brillante.\n\nGli adulti misurano 45–60 cm e pesano 0,35–1 kg.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

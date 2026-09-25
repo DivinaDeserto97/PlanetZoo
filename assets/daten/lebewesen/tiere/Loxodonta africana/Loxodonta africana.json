@@ -121,7 +121,7 @@
           "jahrDerGrundlage": 2016,
           "hinweis": {
             "de": "Die häufig zitierte Zahl von rund 415.000 gilt für afrikanische Savannen- und Waldelefanten zusammen. Sie darf nicht als aktuelle Populationszahl nur von Loxodonta africana interpretiert werden.",
-            "en": "The often-cited figure of about 415,000 covers Afrikan savanna and forest elephants combined and must not be interpreted as a current population estimate for Loxodonta africana alone."
+            "en": "The often-cited figure of about 415,000 covers Afrikan savanna and Wald elephants combined and must not be interpreted as a current population estimate for Loxodonta africana alone."
           },
           "quelle": "iucn"
         }
@@ -186,7 +186,7 @@
           "quelle": "sanDiegoZoo"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "quelle": "wwf"
         },
         {
@@ -194,7 +194,7 @@
           "quelle": "sanDiegoZoo"
         },
         {
-          "wert": "forest",
+          "wert": "Wald",
           "quelle": "sanDiegoZoo"
         },
         {
@@ -450,13 +450,13 @@
       ],
       "en": [
         {
-          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, Graslands, woodlands, floodplains and drier landscapes.",
           "quelle": "animalDiversityWeb"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, grasslands, woodlands, floodplains and drier landscapes.",
+          "inhalt": "The Afrikan savanna elephant occurs in numerous fragmented populations across sub-Saharan Afrika. It is found mainly in eastern, central and southern Afrika and, depending on the region, uses savannas, Graslands, woodlands, floodplains and drier landscapes.",
           "quelle": "animalDiversityWeb"
         }
       ],
@@ -1095,7 +1095,7 @@
       }
     },
     "reich2010": {
-      "name": "Rohland et al. / Reich Lab 2010 – Deep speciation of forest and savanna elephants",
+      "name": "Rohland et al. / Reich Lab 2010 – Deep speciation of Wald and savanna elephants",
       "typ": "wissenschaftlichePublikation",
       "seiten": {
         "en": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3006346/"

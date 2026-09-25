@@ -169,10 +169,10 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt Graslandschaftschaften als typischen Lebensraum.",
-            "en": "The Zoopedia names grasslands as typical habitat."
+            "en": "The Zoopedia names Graslands as typical habitat."
           },
           "quelle": "planetZoo2"
         },
@@ -338,14 +338,14 @@
       ],
       "en": [
         {
-          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and grassland.",
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and Grasland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and grassland.",
+          "inhalt": "The White-backed Vulture (Gyps africanus) lives in sub-Saharan Afrika, from Senegal and Ethiopia in the north to South Afrika in the south, mainly in open savannas, dry woodland and Grasland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

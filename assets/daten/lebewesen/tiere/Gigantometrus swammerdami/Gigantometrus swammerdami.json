@@ -136,10 +136,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "tropicalRainforest",
+          "wert": "tropicalRainWald",
           "hinweis": {
             "de": "Tropene Regenwälder Indiens und Sri Lankas.",
-            "en": "Tropical rainforests of India and Sri Lanka."
+            "en": "Tropical rainWalds of India and Sri Lanka."
           },
           "quelle": "planetZoo2"
         }

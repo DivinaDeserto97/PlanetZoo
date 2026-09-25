@@ -222,11 +222,11 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "quelle": "planetZoo2"
         },
         {
-          "wert": "forest",
+          "wert": "Wald",
           "quelle": "planetZoo2"
         }
       ]
@@ -373,14 +373,14 @@
       ],
       "en": [
         {
-          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry grasslands but also uses woodland habitats.",
+          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry Graslands but also uses woodland habitats.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry grasslands but also uses woodland habitats.",
+          "inhalt": "Thomson's Gazelle (Eudorcas thomsonii) is a small grazing mammal native to the Serengeti of Tanzania and Kenya. It prefers dry Graslands but also uses woodland habitats.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

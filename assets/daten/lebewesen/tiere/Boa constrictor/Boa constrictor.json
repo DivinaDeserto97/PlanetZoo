@@ -130,7 +130,7 @@
           "wert": "tropical",
           "hinweis": {
             "de": "Die Zoopedia nennt Regenwälder als einen Hauptlebensraum.",
-            "en": "The Zoopedia lists rainforests as one of the main habitats."
+            "en": "The Zoopedia lists rainWalds as one of the main habitats."
           },
           "quelle": "planetZoo2"
         },
@@ -231,14 +231,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.",
+          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainWalds, coastal areas and semi-deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.",
+          "inhalt": "The Boa Constrictor (Boa constrictor), also known as the red-tailed boa, is a large snake native to Central and South America. It is widespread and has several subspecies found mainly in rainWalds, coastal areas and semi-deserts.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -295,14 +295,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
+          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainWalds, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainforests, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
+          "inhalt": "The Boa Constrictor is a large snake native to Central and South America. It is also known as the red-tailed boa, although it is commonly referred to by its scientific name. The species is widespread and has several subspecies found mainly in rainWalds, coastal areas and semi-deserts.\n\nColour and pattern vary widely, but the typical appearance includes light brown, dark brown and black scales arranged in a diamond-like pattern along the body.\n\nMales are 1.8–2.4 m long and have anal spurs that assist during mating. Females are considerably larger at 2.1–3.0 m, although their anal spurs are smaller.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
@@ -323,7 +323,7 @@
       ],
       "it": [
         {
-          "inhalt": "Il boa constrictor vive in America centrale e meridionale e comprende diverse sottospecie che abitano soprattutto foreste pluviali, aree costiere e semideserti.\n\nColori e disegni variano molto, ma l'aspetto tipico combina squame marrone chiaro, marrone scuro e nere in motivi romboidali.\n\nI maschi misurano 1,8–2,4 m e le femmine, nettamente più grandi, 2,1–3,0 m.",
+          "inhalt": "Il boa constrictor vive in America centrale e meridionale e comprende diverse sottospecie che abitano soprattutto Walde pluviali, aree costiere e semideserti.\n\nColori e disegni variano molto, ma l'aspetto tipico combina squame marrone chiaro, marrone scuro e nere in motivi romboidali.\n\nI maschi misurano 1,8–2,4 m e le femmine, nettamente più grandi, 2,1–3,0 m.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
