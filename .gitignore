@@ -19,7 +19,6 @@
 # trotzdem in das lokale Share-ZIP auf.
 /bot/
 
-
 # System
 .DS_Store
 Thumbs.db

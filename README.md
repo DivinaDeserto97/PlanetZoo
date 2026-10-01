@@ -387,3 +387,5 @@ Die ausführliche Einrichtung inklusive der zwei benötigten GitHub-Secrets steh
 Der lokale Ordner `bot/` wird **nicht nach GitHub übertragen**. `tools/gitignore-aus-json.py` setzt dafür automatisch `/bot/` in `.gitignore`.
 
 Das automatisch erstellte Share-ZIP enthält dagegen den sicheren Bot-Quellcode. Geheimnisse und lokale Laufzeitdaten wie `bot/.env`, `bot/node_modules/`, Logs und Scan-Ausgaben werden ausdrücklich ausgeschlossen.
+
+test
