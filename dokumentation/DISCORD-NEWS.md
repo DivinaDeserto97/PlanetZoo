@@ -1,48 +1,77 @@
 # Discord-News über GitHub Actions und den Discord-Bot
 
-Die Discord-News werden von **GitHub Actions** ausgelöst. Der eigene Bot muss dafür
-nicht dauerhaft auf einem PC oder Heimserver laufen.
+Die Discord-News werden von **GitHub Actions** ausgelöst. Der eigene Bot muss dafür nicht dauerhaft auf einem PC oder Heimserver laufen.
 
-GitHub Actions verwendet beim jeweiligen Push kurz den Bot-Token, sendet die
-Nachricht über die Discord-API als **Server Bot** und beendet sich danach wieder.
+GitHub Actions verwendet beim jeweiligen Push kurz den Bot-Token, sendet die Nachricht über die Discord-API als **Server Bot** und beendet sich danach wieder.
 
-## Discord-Kanäle
+## Lokale Bot-Konfiguration
 
-- `#entwickler-news`
-  - Kanal-ID: `1555332539982417991`
-  - für Commits auf allen Branches ausser `main`
-- `#updates`
-  - Kanal-ID: `1555169124487929977`
-  - für Aktualisierungen von `main`
+Der lokale Bot verwendet `bot/.env`:
 
-Die Kanal-IDs sind nicht geheim und stehen deshalb direkt in den Workflows.
+```text
+DISCORD_TOKEN=
+GUILD_ID=
+WELCOME_CHANNEL_ID=
+ENTWICKLER_NEWS_ID=
+UPDATES_ID=
+```
 
-## Ein einziges GitHub-Secret
+Wichtig: `bot/.env` bleibt lokal. Sie wird weder committed noch in die Share-ZIP gepackt.
 
-Im GitHub-Repository:
+## GitHub Actions kann `bot/.env` nicht lesen
 
-`Settings -> Secrets and variables -> Actions -> New repository secret`
+Ein GitHub-Runner läuft auf einem GitHub-Rechner und erhält nur Repository-Dateien sowie GitHub-Secrets/-Variables. Deshalb werden die Werte für den Workflow einmal in GitHub hinterlegt:
 
-anlegen:
+`Settings -> Secrets and variables -> Actions`
 
-- Name: `DISCORD_BOT_TOKEN`
-- Wert: Token des Discord-Bots
+### Secret
 
-Der Bot-Token darf niemals in eine Projektdatei, einen Commit oder die Share-ZIP
-geschrieben werden.
+- `DISCORD_BOT_TOKEN` = derselbe Wert wie lokal `DISCORD_TOKEN`
 
-GitHub übergibt den Token nur während des Workflow-Laufs als Umgebungsvariable.
+### Repository Variables
+
+- `GUILD_ID` = derselbe Wert wie lokal `GUILD_ID`
+- `ENTWICKLER_NEWS_ID` = derselbe Wert wie lokal `ENTWICKLER_NEWS_ID`
+- `UPDATES_ID` = derselbe Wert wie lokal `UPDATES_ID`
+
+Die Kanal-IDs sind keine Geheimnisse und gehören deshalb in **Variables**, nicht in Secrets.
+
+## Schreibweise der Variablen
+
+Bitte genau diese Namen verwenden:
+
+```text
+ENTWICKLER_NEWS_ID
+UPDATES_ID
+```
+
+Nicht `ENTWIKLER-NEWS_ID`: Das enthält einen Schreibfehler und einen Bindestrich.
 
 ## Discord-Rechte des Bots
 
-In `#entwickler-news` und `#updates` benötigt der Bot mindestens:
+In `#entwicklung-news` und `#updates` benötigt der Bot mindestens:
 
 - Kanal ansehen
 - Nachrichten senden
 - Links einbetten
 
-`#entwickler-news` ist privat. Deshalb muss dort die Bot-Rolle bzw. der Bot
-ausdrücklich Zugriff erhalten. Sonst antwortet Discord mit `403 Missing Access`.
+Wenn ein Kanal privat ist, muss die Bot-Rolle bzw. der Bot ausdrücklich Zugriff erhalten. Discord kann sonst auch mit `404 Unknown Channel` antworten, obwohl die ID existiert.
+
+## Lokaler Verbindungstest
+
+Mit der lokalen `bot/.env` kann die Discord-Verbindung getestet werden, ohne zuerst einen Commit zu machen:
+
+```bash
+node tools/discord-news.mjs developer "Lokaler Test Entwicklung"
+```
+
+Für `#updates`:
+
+```bash
+node tools/discord-news.mjs main "Lokaler Test Updates"
+```
+
+Das Skript liest dafür automatisch `bot/.env`.
 
 ## Die vier Arbeitsbefehle
 
@@ -52,78 +81,31 @@ ausdrücklich Zugriff erhalten. Sonst antwortet Discord mit `403 Missing Access`
 ./tools/share-zip.sh
 ```
 
-Erstellt bzw. ersetzt:
-
-`share/PlanetZoo2-share.zip`
-
-Der lokale `bot/`-Quellcode kommt mit in die ZIP. Geheimnisse wie `bot/.env`,
-`node_modules`, Logs und Scan-Dateien bleiben ausgeschlossen.
-
 ### 2. Entwicklungsbranch committen und pushen
-
-Auf einem Branch ausser `main`:
 
 ```bash
 ./tools/commit.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Das Skript erstellt die Dokumentation und Share-ZIP, formatiert das Projekt,
-committet und pusht den aktuellen Entwicklungsbranch.
-
-Danach startet `.github/workflows/discord-news.yml`.
-
-Der **Server Bot** schreibt in `#entwickler-news`:
-
-- Branch
-- Entwickler
-- Commit-SHA
-- Commit-Titel
-- Zusammenfassung
-- Link zum Commit
+Danach startet `.github/workflows/discord-news.yml` und sendet nach `#entwicklung-news`.
 
 ### 3. Entwicklungsbranch nach `main` mergen
-
-Auf dem Entwicklungsbranch:
 
 ```bash
 ./tools/merge-main.sh
 ```
 
-Optional:
+Danach startet der Workflow für `main` und sendet nach `#updates`.
 
-```bash
-./tools/merge-main.sh "Kurze Zusammenfassung für das öffentliche Update"
-```
-
-Das Skript pusht den Entwicklungsbranch, aktualisiert `main`, merged mit
-`--no-ff`, pusht `main` und wechselt zurück.
-
-Danach startet `.github/workflows/discord-news.yml`.
-
-Der **Server Bot** schreibt in `#updates`:
-
-- gemergter Branch
-- wer den Push/Merge veranlasst hat
-- enthaltene Commit-Titel
-- Link zur Änderung
-
-### 4. Commit + Merge in einem Befehl
+### 4. Commit + Merge
 
 ```bash
 ./tools/commit-und-merge.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Das führt Befehl 2 und 3 direkt nacheinander aus:
-
-1. Entwicklungscommit -> `#entwickler-news`
-2. Merge nach `main` -> `#updates`
-
 ## Share-ZIP und `bot/`
 
-`bot/` bleibt vollständig von Git ausgeschlossen.
-
-`tools/share-zip.sh` nimmt den lokalen Bot trotzdem als sichere Kopie in das
-Share-ZIP auf.
+`bot/` bleibt vollständig von Git ausgeschlossen. `tools/share-zip.sh` nimmt den lokalen Bot trotzdem als sichere Kopie in das Share-ZIP auf.
 
 Nicht im ZIP:
 
@@ -136,19 +118,13 @@ Nicht im ZIP:
 
 ## Fehlerdiagnose
 
-GitHub:
-
-`Repository -> Actions`
-
-Dort den fehlgeschlagenen Workflow öffnen.
+GitHub: `Repository -> Actions`
 
 Typische Fehler:
 
-- `DISCORD_BOT_TOKEN fehlt`
-  - GitHub-Secret noch nicht angelegt.
-- HTTP `401`
-  - Bot-Token ungültig oder zurückgesetzt.
-- HTTP `403`
-  - Bot hat im Zielkanal keinen Zugriff oder keine Schreibberechtigung.
-- HTTP `404`
-  - Kanal-ID stimmt nicht mehr.
+- `DISCORD_BOT_TOKEN fehlt` -> GitHub-Secret fehlt.
+- `ENTWICKLER_NEWS_ID fehlt` -> GitHub-Variable fehlt.
+- `UPDATES_ID fehlt` -> GitHub-Variable fehlt.
+- HTTP `401` -> Bot-Token ungültig oder zurückgesetzt.
+- HTTP `403` -> Bot darf den Kanal sehen, aber nicht schreiben.
+- HTTP `404 Unknown Channel` -> Kanal-ID falsch **oder** Bot darf den Kanal nicht sehen.

@@ -466,13 +466,24 @@ Im Repository befinden sich GitHub-Actions und Hilfsdateien für automatische Pr
 
 Das bedeutet **nicht**, dass eine fremde Kopie des Projekts automatisch Nachrichten auf diesen Discord-Server senden kann.
 
-Für die echte Discord-Anbindung werden private Zugangsdaten und Berechtigungen des Projektmaintainers benötigt, insbesondere:
+Für die echte Discord-Anbindung werden private Zugangsdaten und Discord-IDs des Projektmaintainers benötigt. Lokal stehen sie in `bot/.env`:
 
 ```text
-DISCORD_BOT_TOKEN
+DISCORD_TOKEN=
+GUILD_ID=
+WELCOME_CHANNEL_ID=
+ENTWICKLER_NEWS_ID=
+UPDATES_ID=
 ```
 
-Dieser Token wird **nicht** im Repository und **nicht** in der Share-ZIP veröffentlicht.
+Die lokale `bot/.env` wird **nicht** auf GitHub hochgeladen und **nicht** in die Share-ZIP gepackt. GitHub Actions kann deshalb diese lokale Datei nicht lesen. Für GitHub Actions werden dieselben Werte separat unter `Settings -> Secrets and variables -> Actions` hinterlegt:
+
+- Secret `DISCORD_BOT_TOKEN` = derselbe Bot-Token wie lokal `DISCORD_TOKEN`
+- Variable `GUILD_ID` = Server-ID
+- Variable `ENTWICKLER_NEWS_ID` = Kanal-ID von `#entwicklung-news`
+- Variable `UPDATES_ID` = Kanal-ID von `#updates`
+
+Der Bot-Token wird **nicht** im Repository und **nicht** in der Share-ZIP veröffentlicht.
 
 Auch wenn eine Share-ZIP sicheren Bot-Quellcode enthält, fehlen einem fremden Nutzer:
 

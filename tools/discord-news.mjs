@@ -1,35 +1,97 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs';
+import path from 'node:path';
 
-const mode = process.env.NEWS_MODE;
-const botToken = process.env.DISCORD_BOT_TOKEN;
-const channelId = process.env.DISCORD_CHANNEL_ID;
+/**
+ * Kleine .env-Lesehilfe ohne externe Abhängigkeit.
+ * Lokal wird bot/.env verwendet. Auf GitHub Actions kommen die Werte
+ * über Secret/Repository-Variables in process.env.
+ */
+function readEnvFile(filePath) {
+  if (!fs.existsSync(filePath)) return {};
+
+  const result = {};
+  for (const rawLine of fs.readFileSync(filePath, 'utf8').split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith('#')) continue;
+
+    const eq = line.indexOf('=');
+    if (eq <= 0) continue;
+
+    const key = line.slice(0, eq).trim();
+    let value = line.slice(eq + 1).trim();
+
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+
+    result[key] = value;
+  }
+  return result;
+}
+
+const localEnv = readEnvFile(path.resolve('bot/.env'));
+const getEnv = (name) => process.env[name] || localEnv[name] || '';
+
+const cliMode = process.argv[2]?.trim();
+const cliMessage = process.argv.slice(3).join(' ').trim();
+
+const mode = process.env.NEWS_MODE || cliMode;
+const botToken = getEnv('DISCORD_TOKEN') || getEnv('DISCORD_BOT_TOKEN');
+const guildId = getEnv('GUILD_ID');
+const developerChannelId = getEnv('ENTWICKLER_NEWS_ID');
+const updatesChannelId = getEnv('UPDATES_ID');
+const channelId =
+  process.env.DISCORD_CHANNEL_ID ||
+  (mode === 'main' ? updatesChannelId : developerChannelId);
+
 const eventPath = process.env.GITHUB_EVENT_PATH;
 const dryRun = process.env.DISCORD_NEWS_DRY_RUN === '1';
-const testMessage = process.env.DISCORD_NEWS_TEST_MESSAGE?.trim();
+const testMessage =
+  process.env.DISCORD_NEWS_TEST_MESSAGE?.trim() || cliMessage || '';
 
 if (!['developer', 'main'].includes(mode)) {
   console.error('❌ NEWS_MODE muss "developer" oder "main" sein.');
-  process.exit(1);
-}
-
-if (!eventPath || !fs.existsSync(eventPath)) {
-  console.error('❌ GITHUB_EVENT_PATH fehlt oder ist ungültig.');
+  console.error('Lokal z. B.: node tools/discord-news.mjs developer "Test"');
   process.exit(1);
 }
 
 if ((!botToken || !channelId) && !dryRun) {
   if (!botToken) {
-    console.error('❌ DISCORD_BOT_TOKEN fehlt. GitHub-Secret prüfen.');
+    console.error('❌ DISCORD_TOKEN fehlt. Lokal: bot/.env; GitHub: Secret prüfen.');
   }
   if (!channelId) {
-    console.error('❌ DISCORD_CHANNEL_ID fehlt. GitHub-Workflow prüfen.');
+    console.error(
+      `❌ ${mode === 'main' ? 'UPDATES_ID' : 'ENTWICKLER_NEWS_ID'} fehlt.`,
+    );
   }
   process.exit(1);
 }
 
-const event = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+let event = {
+  ref: `refs/heads/${process.env.GITHUB_REF_NAME || 'lokal'}`,
+  repository: {
+    full_name: process.env.GITHUB_REPOSITORY || 'Planet Zoo 2 Tools',
+    html_url: process.env.GITHUB_SERVER_URL
+      ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}`
+      : 'https://github.com/DivinaDeserto97/PlanetZoo',
+  },
+  sender: { login: process.env.GITHUB_ACTOR || 'lokaler Test' },
+  commits: [],
+  head_commit: null,
+};
+
+if (eventPath && fs.existsSync(eventPath)) {
+  event = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+} else if (!testMessage && !dryRun) {
+  console.error('❌ Kein GitHub-Event vorhanden. Für lokalen Test eine Nachricht angeben.');
+  console.error('Beispiel: node tools/discord-news.mjs developer "Lokaler Test"');
+  process.exit(1);
+}
 
 const truncate = (value, max) => {
   const text = String(value ?? '').trim();
@@ -106,7 +168,7 @@ if (testMessage) {
           },
           {
             name: '⚙️ Ausgeführt über',
-            value: 'GitHub Actions',
+            value: eventPath ? 'GitHub Actions' : 'lokaler Test',
             inline: true,
           },
         ],
@@ -124,8 +186,7 @@ if (testMessage) {
     'Keine zusätzliche Zusammenfassung angegeben.';
   const developer =
     headCommit?.author?.username ?? headCommit?.author?.name ?? sender;
-  const commitUrl =
-    headCommit?.url ?? `${repositoryUrl}/commit/${event.after}`;
+  const commitUrl = headCommit?.url ?? `${repositoryUrl}/commit/${event.after}`;
   const shortSha =
     String(headCommit?.id ?? event.after ?? '').slice(0, 7) || 'unbekannt';
 
@@ -137,21 +198,13 @@ if (testMessage) {
         url: commitUrl,
         color: 0x2ecc71,
         fields: [
-          {
-            name: '🌿 Branch',
-            value: truncate(branch, 1024),
-            inline: true,
-          },
+          { name: '🌿 Branch', value: truncate(branch, 1024), inline: true },
           {
             name: '👤 Entwickler',
             value: truncate(developer, 1024),
             inline: true,
           },
-          {
-            name: '🔖 Commit',
-            value: `\`${shortSha}\``,
-            inline: true,
-          },
+          { name: '🔖 Commit', value: `\`${shortSha}\``, inline: true },
           {
             name: '📝 Commit-Titel',
             value: truncate(title, 1024) || '–',
@@ -172,9 +225,7 @@ if (testMessage) {
 } else {
   const sourceBranch = sourceBranchFromMessage(headCommit?.message);
   const visibleCommits = commits
-    .filter(
-      (commit) => !/^Merge(?: branch)?\b/i.test(firstLine(commit.message)),
-    )
+    .filter((commit) => !/^Merge(?: branch)?\b/i.test(firstLine(commit.message)))
     .slice(-8);
 
   let changes = visibleCommits
@@ -237,8 +288,41 @@ if (dryRun) {
   process.exit(0);
 }
 
-const endpoint = `https://discord.com/api/v10/channels/${channelId}/messages`;
+// Erst prüfen, ob die Kanal-ID erreichbar ist. Das macht 404-Fehler verständlicher.
+const channelResponse = await fetch(
+  `https://discord.com/api/v10/channels/${channelId}`,
+  {
+    headers: {
+      Authorization: `Bot ${botToken}`,
+      'User-Agent':
+        'DiscordBot (https://github.com/DivinaDeserto97/PlanetZoo, 1.0)',
+    },
+  },
+);
 
+if (!channelResponse.ok) {
+  const body = await channelResponse.text();
+  console.error(`❌ Discord-Kanal nicht erreichbar: HTTP ${channelResponse.status}`);
+  console.error(body);
+  console.error(`Kanal-ID: ${channelId}`);
+  if (guildId) console.error(`Erwartete Server-ID: ${guildId}`);
+  console.error(
+    'Hinweis: Kanal-ID prüfen UND sicherstellen, dass der Bot „Kanal ansehen“ darf.',
+  );
+  process.exit(1);
+}
+
+const channel = await channelResponse.json();
+console.log(`✅ Discord-Ziel gefunden: #${channel.name ?? channel.id} (${channel.id})`);
+
+if (guildId && channel.guild_id && channel.guild_id !== guildId) {
+  console.error('❌ Der Kanal gehört nicht zur in GUILD_ID eingetragenen Discord-Gilde.');
+  console.error(`GUILD_ID:        ${guildId}`);
+  console.error(`Kanal guild_id:  ${channel.guild_id}`);
+  process.exit(1);
+}
+
+const endpoint = `https://discord.com/api/v10/channels/${channelId}/messages`;
 const response = await fetch(endpoint, {
   method: 'POST',
   headers: {
@@ -252,19 +336,17 @@ const response = await fetch(endpoint, {
 
 if (!response.ok) {
   const body = await response.text();
-  console.error(
-    `❌ Discord Bot-Nachricht fehlgeschlagen: HTTP ${response.status}`,
-  );
+  console.error(`❌ Discord Bot-Nachricht fehlgeschlagen: HTTP ${response.status}`);
   console.error(body);
 
   if (response.status === 401) {
-    console.error('Hinweis: DISCORD_BOT_TOKEN ist ungültig oder veraltet.');
+    console.error('Hinweis: DISCORD_TOKEN ist ungültig oder veraltet.');
   } else if (response.status === 403) {
-    console.error(
-      'Hinweis: Der Bot darf diesen Kanal nicht sehen oder dort nicht schreiben.',
-    );
+    console.error('Hinweis: Der Bot darf in diesem Kanal nicht schreiben.');
   } else if (response.status === 404) {
-    console.error('Hinweis: DISCORD_CHANNEL_ID prüfen.');
+    console.error(
+      'Hinweis: Kanal-ID falsch oder der Bot darf den Kanal nicht sehen.',
+    );
   }
 
   process.exit(1);

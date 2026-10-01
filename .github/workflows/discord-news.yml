@@ -25,6 +25,16 @@ jobs:
   discord-news:
     name: Nachricht an Discord senden
     runs-on: ubuntu-latest
+    env:
+      # Der vorhandene GitHub-Secret-Name kann so bleiben.
+      # Im Node-Skript heisst die Variable wie lokal in bot/.env: DISCORD_TOKEN.
+      DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+
+      # Diese beiden Werte werden als GitHub Repository Variables angelegt.
+      # Namen entsprechen bot/.env.
+      GUILD_ID: ${{ vars.GUILD_ID }}
+      ENTWICKLER_NEWS_ID: ${{ vars.ENTWICKLER_NEWS_ID }}
+      UPDATES_ID: ${{ vars.UPDATES_ID }}
 
     steps:
       - name: Repository auschecken
@@ -35,17 +45,22 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Bot-Secret prüfen
-        env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+      - name: Discord-Konfiguration prüfen
         shell: bash
         run: |
-          if [ -z "$DISCORD_BOT_TOKEN" ]; then
+          if [ -z "$DISCORD_TOKEN" ]; then
             echo '❌ GitHub-Secret DISCORD_BOT_TOKEN fehlt.'
-            echo 'Repository -> Settings -> Secrets and variables -> Actions -> New repository secret'
             exit 1
           fi
-          echo '✅ DISCORD_BOT_TOKEN ist vorhanden.'
+          if [ -z "$ENTWICKLER_NEWS_ID" ]; then
+            echo '❌ GitHub-Variable ENTWICKLER_NEWS_ID fehlt.'
+            exit 1
+          fi
+          if [ -z "$UPDATES_ID" ]; then
+            echo '❌ GitHub-Variable UPDATES_ID fehlt.'
+            exit 1
+          fi
+          echo '✅ Discord-Konfiguration ist vorhanden.'
 
       - name: Ziel bestimmen
         shell: bash
@@ -53,29 +68,27 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if [ "${{ inputs.ziel }}" = "updates" ]; then
               echo 'NEWS_MODE=main' >> "$GITHUB_ENV"
-              echo 'DISCORD_CHANNEL_ID=1555169124487929977' >> "$GITHUB_ENV"
             else
               echo 'NEWS_MODE=developer' >> "$GITHUB_ENV"
-              echo 'DISCORD_CHANNEL_ID=1555332539982417991' >> "$GITHUB_ENV"
             fi
             echo 'DISCORD_NEWS_TEST_MESSAGE=${{ inputs.nachricht }}' >> "$GITHUB_ENV"
           elif [ "${GITHUB_REF_NAME}" = "main" ]; then
             echo 'NEWS_MODE=main' >> "$GITHUB_ENV"
-            echo 'DISCORD_CHANNEL_ID=1555169124487929977' >> "$GITHUB_ENV"
           else
             echo 'NEWS_MODE=developer' >> "$GITHUB_ENV"
-            echo 'DISCORD_CHANNEL_ID=1555332539982417991' >> "$GITHUB_ENV"
           fi
 
       - name: Gewähltes Ziel anzeigen
         shell: bash
         run: |
-          echo "Event:   ${{ github.event_name }}"
-          echo "Branch:  ${GITHUB_REF_NAME}"
-          echo "Modus:   ${NEWS_MODE}"
-          echo "Kanal:   ${DISCORD_CHANNEL_ID}"
+          echo "Event:  ${{ github.event_name }}"
+          echo "Branch: ${GITHUB_REF_NAME}"
+          echo "Modus:  ${NEWS_MODE}"
+          if [ "$NEWS_MODE" = "main" ]; then
+            echo "Kanal-ID: ${UPDATES_ID}"
+          else
+            echo "Kanal-ID: ${ENTWICKLER_NEWS_ID}"
+          fi
 
       - name: Discord-Nachricht als Server Bot senden
-        env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: node tools/discord-news.mjs
