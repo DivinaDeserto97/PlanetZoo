@@ -20,27 +20,41 @@ Das Projekt enthält unter anderem:
 
 ## Schnellstart
 
-Für die Weboberfläche ist keine klassische Installation mit `npm install` nötig.
+Für die normale Nutzung ist **keine Installation und kein lokaler Webserver nötig**.
 
 ### 1. Projekt herunterladen
 
-Entweder das Repository klonen oder eine bereitgestellte Share-ZIP herunterladen und entpacken.
+Repository klonen oder die bereitgestellte Share-ZIP herunterladen und vollständig entpacken.
 
-### 2. Lokalen Webserver starten
+### 2. `index.html` doppelklicken
 
-Die Anwendung lädt HTML-Komponenten und JavaScript-Module dynamisch. Deshalb ist ein kleiner lokaler Webserver zuverlässiger als ein direkter Doppelklick auf `index.html`.
+Öffne im entpackten Projektordner einfach:
 
-#### Windows
+```text
+index.html
+```
 
-Im Projektordner:
+per Doppelklick im Browser. Die ausgelieferte Version enthält ein vorgebautes Browser-Bundle, damit die dynamisch geladenen HTML-/JSON-Inhalte und JavaScript-Module auch über `file://` funktionieren.
+
+Das ist für die normale Nutzung unter folgenden Systemen vorgesehen:
+
+- Windows
+- Linux
+- macOS
+
+Es muss dafür **kein Node.js, npm, Python oder Discord-Bot** installiert sein.
+
+### Alternative: lokaler Webserver
+
+Falls ein Browser lokale `file://`-Seiten durch eigene Sicherheitsrichtlinien blockiert, kann die Anwendung weiterhin über einen kleinen lokalen Webserver gestartet werden.
+
+Windows:
 
 ```powershell
 py -m http.server 8000
 ```
 
-#### Linux / macOS
-
-Im Projektordner:
+Linux / macOS:
 
 ```bash
 python3 -m http.server 8000
@@ -50,12 +64,6 @@ Danach im Browser öffnen:
 
 ```text
 http://localhost:8000
-```
-
-Zum Beenden des lokalen Servers im Terminal:
-
-```text
-Ctrl + C
 ```
 
 ---
@@ -377,6 +385,7 @@ Benötigt werden je nach Befehl unter anderem:
 - Linux / Bash
 - Git
 - Python 3
+- Node.js / npm
 - `zip`
 - die lokale Projektumgebung des Maintainers
 - für die automatische Formatierung die passende lokale Prettier-Umgebung
@@ -390,6 +399,8 @@ Unter Windows funktionieren diese `.sh`-Befehle nicht ohne eine zusätzliche Bas
 ```bash
 ./tools/share-zip.sh
 ```
+
+Vor dem Packen wird automatisch `assets/js/browser.bundle.js` neu erzeugt. Dadurch bleibt die Doppelklick-Version immer auf demselben Stand wie der Quellcode.
 
 Erstellt:
 
@@ -430,6 +441,7 @@ Er führt den persönlichen Maintainer-Ablauf aus:
 Dokumentation aktualisieren
 → .gitignore erzeugen
 → Projekt formatieren
+→ Doppelklick-Bundle aktualisieren
 → Share-ZIP erstellen
 → git add
 → git commit
@@ -527,4 +539,4 @@ Der lokale Ordner `bot/` ist im normalen Git-Workflow bewusst ausgeschlossen. Da
 
 Das Projekt befindet sich weiterhin in Entwicklung. Einzelne Werkzeuge, Tierdaten oder Medien können unvollständig sein oder sich noch ändern.
 
-Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind und ob der lokale Webserver läuft.
+Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind. Bei Browsern mit strengen `file://`-Richtlinien kann alternativ der oben beschriebene lokale Webserver verwendet werden.

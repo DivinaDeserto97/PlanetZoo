@@ -43,6 +43,7 @@ mapfile -d '' FILES < <(
         -path './.git' -prune -o \
         -path './share' -prune -o \
         -path './bot/node_modules' -prune -o \
+        -path './assets/js/browser.bundle.js' -prune -o \
         -path './assets/cache' -prune -o \
         -path './assets/private' -prune -o \
         -type f \

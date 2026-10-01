@@ -32,6 +32,9 @@ STANDARD = '''# ============================================================
 .DS_Store
 Thumbs.db
 
+# Node.js
+/node_modules/
+
 # Python
 __pycache__/
 *.pyc
