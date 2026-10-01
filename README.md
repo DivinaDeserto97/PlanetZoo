@@ -528,5 +528,3 @@ Der lokale Ordner `bot/` ist im normalen Git-Workflow bewusst ausgeschlossen. Da
 Das Projekt befindet sich weiterhin in Entwicklung. Einzelne Werkzeuge, Tierdaten oder Medien können unvollständig sein oder sich noch ändern.
 
 Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind und ob der lokale Webserver läuft.
-
-test
