@@ -8,8 +8,7 @@
 - `PlanetZoo2/`
   - `.github/`
     - `workflows/`
-      - [discord-entwickler-news.yml](../.github/workflows/discord-entwickler-news.yml)
-      - [discord-main-update.yml](../.github/workflows/discord-main-update.yml)
+      - [discord-news.yml](../.github/workflows/discord-news.yml)
   - [.gitignore](../.gitignore)
   - `.vscode/`
     - [settings.json](../.vscode/settings.json)

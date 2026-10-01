@@ -7,6 +7,7 @@ const botToken = process.env.DISCORD_BOT_TOKEN;
 const channelId = process.env.DISCORD_CHANNEL_ID;
 const eventPath = process.env.GITHUB_EVENT_PATH;
 const dryRun = process.env.DISCORD_NEWS_DRY_RUN === '1';
+const testMessage = process.env.DISCORD_NEWS_TEST_MESSAGE?.trim();
 
 if (!['developer', 'main'].includes(mode)) {
   console.error('❌ NEWS_MODE muss "developer" oder "main" sein.');
@@ -90,7 +91,32 @@ const headCommit = event.head_commit ?? commits.at(-1) ?? null;
 
 let payload;
 
-if (mode === 'developer') {
+if (testMessage) {
+  payload = {
+    embeds: [
+      {
+        title: '🧪 Planet Zoo 2 Tools – Discord-Test',
+        description: truncate(testMessage, 4096),
+        color: 0xf1c40f,
+        fields: [
+          {
+            name: '🎯 Ziel',
+            value: mode === 'main' ? '#updates' : '#entwicklung-news',
+            inline: true,
+          },
+          {
+            name: '⚙️ Ausgeführt über',
+            value: 'GitHub Actions',
+            inline: true,
+          },
+        ],
+        footer: { text: repository },
+        timestamp: new Date().toISOString(),
+      },
+    ],
+    allowed_mentions: { parse: [] },
+  };
+} else if (mode === 'developer') {
   const title = firstLine(headCommit?.message) || 'Commit ohne Titel';
   const summary =
     messageBody(headCommit?.message) ||

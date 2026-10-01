@@ -1,0 +1,81 @@
+name: Discord News
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+    inputs:
+      ziel:
+        description: 'Welche Discord-News soll getestet werden?'
+        required: true
+        type: choice
+        options:
+          - entwickler
+          - updates
+      nachricht:
+        description: 'Optionale Testnachricht'
+        required: false
+        default: 'Manueller GitHub-Actions-Test'
+
+permissions:
+  contents: read
+
+jobs:
+  discord-news:
+    name: Nachricht an Discord senden
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Bot-Secret prüfen
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        shell: bash
+        run: |
+          if [ -z "$DISCORD_BOT_TOKEN" ]; then
+            echo '❌ GitHub-Secret DISCORD_BOT_TOKEN fehlt.'
+            echo 'Repository -> Settings -> Secrets and variables -> Actions -> New repository secret'
+            exit 1
+          fi
+          echo '✅ DISCORD_BOT_TOKEN ist vorhanden.'
+
+      - name: Ziel bestimmen
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.ziel }}" = "updates" ]; then
+              echo 'NEWS_MODE=main' >> "$GITHUB_ENV"
+              echo 'DISCORD_CHANNEL_ID=1555169124487929977' >> "$GITHUB_ENV"
+            else
+              echo 'NEWS_MODE=developer' >> "$GITHUB_ENV"
+              echo 'DISCORD_CHANNEL_ID=1555332539982417991' >> "$GITHUB_ENV"
+            fi
+            echo 'DISCORD_NEWS_TEST_MESSAGE=${{ inputs.nachricht }}' >> "$GITHUB_ENV"
+          elif [ "${GITHUB_REF_NAME}" = "main" ]; then
+            echo 'NEWS_MODE=main' >> "$GITHUB_ENV"
+            echo 'DISCORD_CHANNEL_ID=1555169124487929977' >> "$GITHUB_ENV"
+          else
+            echo 'NEWS_MODE=developer' >> "$GITHUB_ENV"
+            echo 'DISCORD_CHANNEL_ID=1555332539982417991' >> "$GITHUB_ENV"
+          fi
+
+      - name: Gewähltes Ziel anzeigen
+        shell: bash
+        run: |
+          echo "Event:   ${{ github.event_name }}"
+          echo "Branch:  ${GITHUB_REF_NAME}"
+          echo "Modus:   ${NEWS_MODE}"
+          echo "Kanal:   ${DISCORD_CHANNEL_ID}"
+
+      - name: Discord-Nachricht als Server Bot senden
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: node tools/discord-news.mjs

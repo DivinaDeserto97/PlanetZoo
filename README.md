@@ -1,20 +1,12 @@
 # Planet Zoo 2 Tools
 
-**Planet Zoo 2 Tools** ist ein Open-Source-Community-Projekt rund um **Planet Zoo 2**.
+**Planet Zoo 2 Tools** ist ein Community-Projekt rund um **Planet Zoo 2**. Ziel ist eine gemeinsame Sammlung von Tierdaten und Werkzeugen, die beim Planen, Vergleichen und Nachschlagen helfen.
 
-Ziel des Projekts ist es, Tierdaten und verschiedene Werkzeuge an einem Ort zusammenzuführen. Damit sollen Informationen schneller gefunden, Tiere verglichen und eigene Zoo-Projekte besser geplant werden können.
-
-> **Hinweis:** Dieses Projekt ist ein Community-Projekt und keine offizielle Anwendung von Frontier Developments.
-
----
-
-## Was enthält das Projekt?
-
-Aktuell gehören unter anderem folgende Bereiche zum Projekt:
+Das Projekt enthält unter anderem:
 
 - Tierübersicht / Zoopedia
-- Tierfilter und Tierauswahl
-- Infotafeln
+- Filter und Tierauswahl
+- Infotafeln für einzelne oder mehrere Tiere
 - Karte und Verbreitungsdaten
 - Nahrungsnetz
 - Systematik
@@ -22,23 +14,49 @@ Aktuell gehören unter anderem folgende Bereiche zum Projekt:
 - Kino-/Medienbereich
 - mehrsprachige Oberfläche
 
-Einzelne Funktionen, Tierdaten oder Medien können noch unvollständig sein, da das Projekt aktiv weiterentwickelt wird.
+> **Hinweis:** Dieses Projekt ist ein Community-Projekt und keine offizielle Anwendung von Frontier Developments.
 
 ---
 
-## Projekt verwenden
+## Schnellstart
 
-Das Projekt besteht hauptsächlich aus HTML, CSS, JavaScript und JSON-Dateien.
+Für die Weboberfläche ist keine klassische Installation mit `npm install` nötig.
 
-Der Einstiegspunkt der Oberfläche ist:
+### 1. Projekt herunterladen
 
-```text
-index.html
+Entweder das Repository klonen oder eine bereitgestellte Share-ZIP herunterladen und entpacken.
+
+### 2. Lokalen Webserver starten
+
+Die Anwendung lädt HTML-Komponenten und JavaScript-Module dynamisch. Deshalb ist ein kleiner lokaler Webserver zuverlässiger als ein direkter Doppelklick auf `index.html`.
+
+#### Windows
+
+Im Projektordner:
+
+```powershell
+py -m http.server 8000
 ```
 
-Die lokale Startmethode wird aktuell noch weiter vereinheitlicht. Eine eigene Startlösung für Windows, Linux und macOS ist als nächster Projektschritt vorgesehen.
+#### Linux / macOS
 
-Für die normale Nutzung ist der Discord-Bot **nicht erforderlich**.
+Im Projektordner:
+
+```bash
+python3 -m http.server 8000
+```
+
+Danach im Browser öffnen:
+
+```text
+http://localhost:8000
+```
+
+Zum Beenden des lokalen Servers im Terminal:
+
+```text
+Ctrl + C
+```
 
 ---
 
@@ -51,54 +69,52 @@ PlanetZoo2/
 ├── index.html                  Startpunkt der Webanwendung
 ├── pages/                      einzelne Werkzeugseiten
 ├── assets/
-│   ├── components/             gemeinsame UI-Komponenten
+│   ├── components/             Header, Footer und gemeinsame Komponenten
 │   ├── css/                    Styles
 │   ├── js/                     JavaScript und Werkzeuglogik
 │   └── daten/                  Tier-, Kino- und Projektdaten
-├── dokumentation/              ausführliche Dokumentation
-├── tools/                      Maintainer- und Wartungsskripte
+├── dokumentation/              ausführliche Projekt- und Daten-Dokumentation
+├── tools/                      Wartungs- und Maintainer-Skripte
 ├── bot/                        lokaler Discord-Bot-Quellcode in Share-ZIPs
 └── README.md
 ```
 
 ---
 
-# Funktionen
+## Wichtige Funktionen
 
-## Tierübersicht / Zoopedia
+### Tierübersicht / Zoopedia
 
-Die Tierübersicht lädt die vorhandenen Tierdaten und bietet unter anderem Suche, Filter und Tierauswahl.
+Die Startseite lädt die Tierdaten zentral und ermöglicht unter anderem die Suche und Filterung nach verschiedenen Eigenschaften.
 
-Wichtige Dateien:
+Die zentrale Tierdaten-Einbindung befindet sich in:
 
 ```text
 assets/daten/lebewesen/tiere/datenImport.js
-assets/js/features/tierAuswahl.js
-assets/js/features/tierFilter.js
 ```
 
-Die gemeinsame Tierauswahl kann von mehreren Werkzeugen verwendet werden.
+Die gemeinsame Tierauswahl liegt in:
 
----
+```text
+assets/js/features/tierAuswahl.js
+```
 
-## Infotafel
+Die Auswahl bleibt beim Wechsel zwischen mehreren Werkzeugen erhalten.
 
-Die Infotafel zeigt Informationen zu einem oder mehreren ausgewählten Tieren.
+### Infotafel
 
-Je nach vorhandenen Tierdaten können dort beispielsweise angezeigt werden:
+Die Infotafel kann Daten zu einem oder mehreren ausgewählten Tieren anzeigen. Dazu gehören je nach vorhandenen Daten beispielsweise:
 
-- deutscher Name
-- wissenschaftlicher Name
+- deutscher und wissenschaftlicher Name
 - Gehegetyp
 - Region
-- Schutzstatus
+- Arterhaltungsstatus
 - Edition
 - Körperdaten
 - Vorkommen
-- Sozialverhalten
-- Fortpflanzung
+- Arterhaltung
+- Sozialverhalten und Fortpflanzung
 - Tierfakten
-- Bilder und weitere Medien
 
 Wichtige Dateien:
 
@@ -108,9 +124,7 @@ assets/js/infotafel/
 assets/css/infotafel/
 ```
 
----
-
-## Karte
+### Karte
 
 Die Kartenfunktionen befinden sich unter:
 
@@ -120,13 +134,11 @@ assets/js/map/
 assets/css/map/
 ```
 
-Nicht alle Karten- und Mediendateien werden im öffentlichen Repository mitgeführt. Gründe dafür können Dateigröße, Lizenz oder Quellenlage sein.
+Verbreitungskarten und andere Mediendateien können aus Lizenz- und Dateigrößen-Gründen lokal fehlen.
 
----
+### Nahrungsnetz
 
-## Nahrungsnetz
-
-Das Nahrungsnetz verwendet Beziehungen aus den Tierdaten.
+Das Nahrungsnetz verwendet die in den Tier-JSONs gepflegten Beziehungen.
 
 Wichtige Dateien:
 
@@ -136,13 +148,15 @@ assets/js/nahrungsnetz/
 assets/css/nahrungsnetz/
 ```
 
-Für neue oder geänderte Tierdaten bitte die aktuelle Tierdaten-Dokumentation beachten.
+Für neue Tierdaten muss die aktuelle Nahrungsnetz-Struktur verwendet werden. Details stehen in:
 
----
+```text
+dokumentation/ANLEITUNG-TIER-JSON.md
+```
 
-## Systematik
+### Systematik
 
-Die Systematik verwendet die in den Tierdaten hinterlegten taxonomischen Informationen.
+Die Systematik nutzt die in den Tierdaten hinterlegten taxonomischen bzw. systematischen Informationen.
 
 Wichtige Dateien:
 
@@ -153,9 +167,7 @@ assets/js/features/systematikDaten.js
 assets/js/features/systematikSchema.js
 ```
 
----
-
-## Rechner
+### Rechner
 
 Der Rechner befindet sich unter:
 
@@ -165,13 +177,11 @@ assets/js/rechner/
 assets/css/rechner/
 ```
 
-Dieser Bereich befindet sich noch in Entwicklung.
+Dieser Bereich ist derzeit noch nicht vollständig fertiggestellt. Fehlende Rechnerdaten bei einzelnen Tieren sind deshalb aktuell möglich.
 
----
+### Kino
 
-## Kino / Medien
-
-Der Kino- und Medienbereich befindet sich unter:
+Der Kino-/Medienbereich befindet sich unter:
 
 ```text
 pages/kino.html
@@ -181,7 +191,7 @@ assets/daten/kino/
 
 ---
 
-# Tierdaten
+## Tierdaten bearbeiten oder ergänzen
 
 Jede Tierart besitzt einen eigenen Ordner unter:
 
@@ -196,16 +206,16 @@ assets/daten/lebewesen/tiere/Eunectes notaeus/
 ├── Eunectes notaeus.json
 ├── bilder/
 ├── audio/
-└── weitere Mediendateien
+└── weitere lokale Mediendateien
 ```
 
-Für das Bearbeiten oder Ergänzen von Tierdaten zuerst diese Dokumentation lesen:
+Für das Anlegen und Bearbeiten von Tierdaten bitte zuerst diese Dokumentation verwenden:
 
 ```text
 dokumentation/ANLEITUNG-TIER-JSON.md
 ```
 
-Zusätzlich gibt es eine Checkliste:
+Zusätzlich gibt es eine ausführliche Checkliste:
 
 ```text
 dokumentation/PlanetZoo2-Tierdaten-Checkliste.md
@@ -213,28 +223,60 @@ dokumentation/PlanetZoo2-Tierdaten-Checkliste.md
 
 ---
 
-# Medien und Quellen
+## Medien und Quellen
 
-Nicht alle Bilder, Karten, Audio- oder Videodateien werden über GitHub veröffentlicht.
+Nicht alle Bilder, Karten, Audio- oder Videodateien werden mit dem GitHub-Repository veröffentlicht.
 
-Hauptgründe sind:
+Das hat vor allem zwei Gründe:
 
 1. Lizenz- und Quellenfragen
 2. unnötig große Binärdateien im Repository
 
-Weitere Informationen stehen in:
+Viele Medienpfade sind trotzdem bereits in den Tierdaten vorbereitet.
+
+### Typische lokale Medien
+
+Beispiel Tierbild:
+
+```text
+assets/daten/lebewesen/tiere/Eunectes notaeus/bilder/Eunectes notaeus.webp
+```
+
+Beispiel Verbreitungskarte:
+
+```text
+assets/daten/lebewesen/tiere/Eunectes notaeus/Eunectes notaeus map.png
+```
+
+Beispiel Weltkarten-Referenz:
+
+```text
+assets/daten/Weltkarte/Weltkartenreferenz_map.png
+```
+
+Beispiel Audio:
+
+```text
+assets/daten/lebewesen/tiere/Eunectes notaeus/audio/ruf.mp3
+```
+
+Die Quelle eines Mediums wird in den jeweiligen Daten gepflegt und nicht allein durch den Ordnernamen bestimmt.
+
+Weitere Informationen:
 
 ```text
 dokumentation/MEDIEN-UND-QUELLEN.md
 ```
 
-Veröffentlichbare Medien können beispielsweise unter folgendem Bereich liegen:
+### Veröffentlichbare und lokale Medien
+
+Veröffentlichbare Medien können unter folgendem Bereich liegen:
 
 ```text
 assets/medien/freigegeben/
 ```
 
-Lokale oder nicht öffentlich vorgesehene Dateien gehören beispielsweise nach:
+Lokale oder private Medien bzw. Cache-Dateien gehören dagegen beispielsweise nach:
 
 ```text
 assets/medien/lokal/
@@ -242,9 +284,11 @@ assets/private/
 assets/cache/
 ```
 
+Diese Bereiche werden nicht normal veröffentlicht.
+
 ---
 
-# Sprachen
+## Sprachen
 
 Die Oberfläche unterstützt derzeit folgende Sprachcodes:
 
@@ -266,7 +310,9 @@ Die gemeinsame Sprachlogik befindet sich in:
 assets/js/features/language.js
 ```
 
-Statische Oberflächentexte können beispielsweise über `data-*`-Attribute gepflegt werden:
+Statische Oberflächentexte können direkt im HTML über `data-*`-Attribute gepflegt werden.
+
+Beispiel:
 
 ```html
 <span data-i18n data-de="Karte" data-en="Map" data-fr="Carte">Karte</span>
@@ -276,7 +322,7 @@ Tiernamen und dynamische Tiertexte werden in den jeweiligen Tierdaten gepflegt.
 
 ---
 
-# Dokumentation
+## Dokumentation
 
 Im Ordner `dokumentation/` liegen ausführlichere Unterlagen:
 
@@ -284,66 +330,58 @@ Im Ordner `dokumentation/` liegen ausführlichere Unterlagen:
 | ------------------------------------ | ---------------------------------------------------- |
 | `ANLEITUNG-TIER-JSON.md`             | Aufbau und Pflege der Tierdaten                      |
 | `PlanetZoo2-Tierdaten-Checkliste.md` | Checkliste für Tierdaten und Quellen                 |
-| `MEDIEN-UND-QUELLEN.md`              | Medien, Quellen und Veröffentlichung                 |
+| `MEDIEN-UND-QUELLEN.md`              | Umgang mit Medien, Quellen und Veröffentlichung      |
 | `ordnerstruktur.md`                  | automatisch erzeugte Projektstruktur                 |
 | `DISCORD-NEWS.md`                    | technische Maintainer-Dokumentation für Discord-News |
 
 ---
 
-# Mitwirken
+## Für Mitwirkende
 
-Mitarbeit ist ausdrücklich erwünscht.
+Wer am Projekt mitarbeiten möchte, kann sich zunächst an folgenden Bereichen orientieren:
 
-## Tierdaten
-
-Mögliche Aufgaben:
+### Tierdaten
 
 - vorhandene Tierdaten prüfen
 - fehlende Angaben ergänzen
-- Quellen ergänzen
+- Quellen dokumentieren
 - neue Tiere nach der bestehenden JSON-Struktur anlegen
 
-## Entwicklung
-
-Mögliche Aufgaben:
+### Entwicklung
 
 - Fehler beheben
 - Werkzeuge verbessern
-- Bedienung und Oberfläche weiterentwickeln
+- Oberfläche und Bedienung weiterentwickeln
 - neue Funktionen ergänzen
 
-## Feedback und Tests
+### Rückmeldung
 
-Auch ohne Programmiererfahrung kann geholfen werden, zum Beispiel durch:
+Auch Fehlermeldungen, Verbesserungsvorschläge und Tests helfen dem Projekt.
 
-- Fehlermeldungen
-- Verbesserungsvorschläge
-- Tests
-- Rückmeldungen zur Bedienung
+> Die im nächsten Abschnitt beschriebenen vier Shell-Befehle sind **nicht** für normale Nutzer oder externe Mitwirkende erforderlich.
 
 ---
 
-# Nur für den Projektmaintainer
+# Nur für den Projektmaintainer: vier Arbeitsbefehle
 
-Die folgenden vier Befehle gehören zum **persönlichen Arbeitsablauf des Projektmaintainers**.
+Dieser Abschnitt beschreibt den persönlichen Wartungs-Workflow des Projektmaintainers.
 
-Sie werden für die normale Nutzung des Projekts **nicht benötigt**.
+## Wichtig
 
-## Voraussetzungen
+Diese Skripte sind für den aktuellen Maintainer-Workflow gebaut und gelten **nicht als Voraussetzung für die normale Nutzung des Projekts**.
 
-Diese Skripte sind aktuell für **Linux mit Bash** gebaut.
+Sie sind für **Linux mit Bash** vorgesehen.
 
 Benötigt werden je nach Befehl unter anderem:
 
-- Linux
-- Bash
+- Linux / Bash
 - Git
 - Python 3
 - `zip`
-- die lokale Maintainer-Umgebung
-- die lokal verwendete Prettier-Installation
+- die lokale Projektumgebung des Maintainers
+- für die automatische Formatierung die passende lokale Prettier-Umgebung
 
-Unter Windows funktionieren die `.sh`-Dateien nicht ohne zusätzliche Bash-Umgebung wie WSL oder Git Bash.
+Unter Windows funktionieren diese `.sh`-Befehle nicht ohne eine zusätzliche Bash-Umgebung wie beispielsweise WSL oder Git Bash und sind dort nicht Teil des normalen Projektablaufs.
 
 ---
 
@@ -359,9 +397,9 @@ Erstellt:
 share/PlanetZoo2-share.zip
 ```
 
-Die Share-ZIP enthält die freigegebenen Projektdateien und darf zusätzlich sicheren Bot-Quellcode enthalten.
+Die Share-ZIP enthält die freigegebenen Projektdateien und kann zusätzlich sicheren Bot-Quellcode enthalten.
 
-Nicht enthalten sind insbesondere:
+Nicht eingepackt werden insbesondere:
 
 ```text
 bot/.env
@@ -374,15 +412,17 @@ share/
 private bzw. nicht freigegebene Medien
 ```
 
+Damit dürfen Bot-Tokens und andere lokale Secrets nicht in der Share-ZIP landen.
+
 ---
 
 ## 2. Entwicklungsbranch committen und pushen
 
+Dieser Befehl ist ausschließlich für einen Entwicklungsbranch gedacht, beispielsweise `dev`.
+
 ```bash
 ./tools/commit.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
-
-Dieser Befehl ist für Entwicklungsbranches wie `dev` vorgesehen.
 
 Er führt den persönlichen Maintainer-Ablauf aus:
 
@@ -406,7 +446,7 @@ Auf `main` bricht das Skript absichtlich ab.
 ./tools/merge-main.sh
 ```
 
-Dieser Befehl übernimmt den Maintainer-Workflow für den Merge des aktuellen Entwicklungsbranches nach `main`.
+Dieser Befehl übernimmt den Maintainer-Workflow für einen Merge des aktuellen Entwicklungsbranches nach `main`.
 
 ---
 
@@ -416,45 +456,41 @@ Dieser Befehl übernimmt den Maintainer-Workflow für den Merge des aktuellen En
 ./tools/commit-und-merge.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Dieser Befehl führt nacheinander aus:
-
-```text
-Entwicklungscommit
-→ Push des Entwicklungsbranches
-→ Merge nach main
-→ Push von main
-```
+Dieser Befehl führt den Entwicklungscommit und anschließend den Merge nach `main` nacheinander aus.
 
 ---
 
-# Discord-News und Bot
+# Discord-News: nur Maintainer-Infrastruktur
 
-Das Projekt enthält Hilfsdateien für automatische Nachrichten auf dem privaten **Planet Zoo 2 Tools Discord-Server**.
+Im Repository befinden sich GitHub-Actions und Hilfsdateien für automatische Projekt-News auf dem privaten **Planet Zoo 2 Tools Discord-Server**.
 
-Diese Funktion gehört zur **Maintainer-Infrastruktur**.
+Das bedeutet **nicht**, dass eine fremde Kopie des Projekts automatisch Nachrichten auf diesen Discord-Server senden kann.
 
-Ein fremder Nutzer oder ein Fork des Projekts kann damit nicht automatisch Nachrichten auf den originalen Discord-Server senden.
-
-Dafür fehlen insbesondere:
-
-- der echte Discord-Bot-Token
-- die GitHub-Secrets des Maintainers
-- die Discord-Berechtigungen des Bots
-- der Zugriff auf die verwendeten Discord-Kanäle
-
-Der echte Bot-Token wird niemals veröffentlicht.
-
-Insbesondere wird folgende Datei nicht in GitHub oder in Share-ZIPs aufgenommen:
+Für die echte Discord-Anbindung werden private Zugangsdaten und Berechtigungen des Projektmaintainers benötigt, insbesondere:
 
 ```text
-bot/.env
+DISCORD_BOT_TOKEN
 ```
 
-Auch wenn sicherer Bot-Quellcode in einer Share-ZIP enthalten ist, funktioniert die automatische Discord-News-Funktion bei fremden Kopien deshalb **nicht automatisch**.
+Dieser Token wird **nicht** im Repository und **nicht** in der Share-ZIP veröffentlicht.
 
-Für die Webanwendung selbst wird der Discord-Bot nicht benötigt.
+Auch wenn eine Share-ZIP sicheren Bot-Quellcode enthält, fehlen einem fremden Nutzer:
 
-Weitere technische Informationen für den Maintainer:
+- der echte Bot-Token
+- die privaten Discord-Berechtigungen
+- der Zugriff auf den verwendeten Discord-Bot
+- die GitHub-Secrets des Maintainers
+
+Deshalb gilt für heruntergeladene oder geforkte Kopien:
+
+```text
+Die Webanwendung funktioniert unabhängig vom Discord-Bot.
+Die automatische Discord-News-Funktion des Maintainers funktioniert dort nicht automatisch.
+```
+
+Die GitHub-Actions unter `.github/workflows/` sind Teil der Maintainer-Infrastruktur. Ohne eigene passende Discord-Konfiguration schlagen diese News-Schritte erwartungsgemäß fehl bzw. können keine Nachricht an den privaten Projektserver senden.
+
+Weitere technische Informationen für den Maintainer stehen in:
 
 ```text
 dokumentation/DISCORD-NEWS.md
@@ -462,7 +498,7 @@ dokumentation/DISCORD-NEWS.md
 
 ---
 
-# Sicherheit
+## Sicherheit
 
 Folgende Daten dürfen niemals veröffentlicht oder committed werden:
 
@@ -472,14 +508,12 @@ Folgende Daten dürfen niemals veröffentlicht oder committed werden:
 - private Schlüsseldateien
 - Passwörter
 
-Der lokale Ordner `bot/` ist bewusst aus dem normalen Git-Workflow ausgeschlossen. Das Share-Skript übernimmt nur die dafür vorgesehenen sicheren Dateien.
+Der lokale Ordner `bot/` ist im normalen Git-Workflow bewusst ausgeschlossen. Das Share-Skript darf nur die dafür vorgesehenen sicheren Dateien übernehmen.
 
 ---
 
-# Projektstatus
+## Projektstatus
 
-Das Projekt befindet sich aktiv in Entwicklung.
+Das Projekt befindet sich weiterhin in Entwicklung. Einzelne Werkzeuge, Tierdaten oder Medien können unvollständig sein oder sich noch ändern.
 
-Einzelne Werkzeuge, Tierdaten, Übersetzungen oder Medien können noch fehlen oder sich ändern.
-
-Fehlerberichte, Tests und Verbesserungsvorschläge sind willkommen.
+Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind und ob der lokale Webserver läuft.

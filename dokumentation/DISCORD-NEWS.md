@@ -70,7 +70,7 @@ Auf einem Branch ausser `main`:
 Das Skript erstellt die Dokumentation und Share-ZIP, formatiert das Projekt,
 committet und pusht den aktuellen Entwicklungsbranch.
 
-Danach startet `.github/workflows/discord-entwickler-news.yml`.
+Danach startet `.github/workflows/discord-news.yml`.
 
 Der **Server Bot** schreibt in `#entwickler-news`:
 
@@ -98,7 +98,7 @@ Optional:
 Das Skript pusht den Entwicklungsbranch, aktualisiert `main`, merged mit
 `--no-ff`, pusht `main` und wechselt zurück.
 
-Danach startet `.github/workflows/discord-main-update.yml`.
+Danach startet `.github/workflows/discord-news.yml`.
 
 Der **Server Bot** schreibt in `#updates`:
 
