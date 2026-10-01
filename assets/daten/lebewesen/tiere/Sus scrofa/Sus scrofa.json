@@ -1,0 +1,730 @@
+{
+  "id": "Sus scrofa",
+  "identitaet": {
+    "namen": {
+      "de": "Wildschwein",
+      "en": "Wild Boar",
+      "en-US": "Wild Boar",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Europa", "Asien", "Afrika"],
+    "biome": ["Gemäßigt"],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Suidae",
+          "gattung": "Sus",
+          "art": "Sus scrofa",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 1.45,
+          "max": 1.75,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 1.3,
+          "max": 1.57,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.85,
+          "max": 1.0,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 0.75,
+          "max": 0.9,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 75,
+          "max": 130,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 60,
+          "max": 90,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia nennt das Wildschwein als nicht gefährdet; ein Bewertungssystem wird im bereitgestellten Auszug nicht ausdrücklich genannt.",
+            "en": "The supplied Zoopedia excerpt lists the Wild Boar as Least Concern but does not explicitly name an assessment system."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": ["Sus scrofa"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Wildschweine erreichen die Geschlechtsreife mit etwa einem Jahr. Weibchen pflanzen sich laut Zoopedia wahrscheinlich erst ab etwa 18 Monaten fort; Männchen sind meist erst mit ungefähr 4 Jahren erfolgreich.",
+            "en": "Wild Boars reach sexual maturity at about one year. According to the Zoopedia, females are unlikely to reproduce before about 18 months, while males are usually not successful until around four years."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 108,
+          "max": 120,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 4,
+          "max": 6,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt durchschnittlich 4 bis 6 Ferkel; Würfe von bis zu 12 Ferkeln wurden verzeichnet.",
+            "en": "The Zoopedia gives an average litter size of 4 to 6 piglets; litters of up to 12 have been recorded."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "matriarchalSounder",
+          "hinweis": {
+            "de": "Weibchen leben in von einer alten Matriarchin geführten Horden mit anderen Weibchen und Jungtieren.",
+            "en": "Females live in sounders led by an older matriarch together with other females and young."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Erwachsene Männchen sind die meiste Zeit des Jahres Einzelgänger und schließen sich Horden nur zur Paarungszeit an.",
+            "en": "Adult males are solitary for most of the year and approach sounders mainly during the breeding season."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "jungeMaennchen",
+          "wert": "bachelorGroup",
+          "hinweis": {
+            "de": "Junge, noch nicht ausgewachsene Männchen leben in Junggesellengruppen.",
+            "en": "Young, not yet fully grown males live in bachelor groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "temperate",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt das Wildschwein als in gemäßigten Regionen Europas und Asiens sowie in Teilen Nordafrikas heimisch.",
+            "en": "The supplied Zoopedia excerpt describes the Wild Boar as native to temperate regions of Europe and Asia and parts of North Africa."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Allesfresser",
+            "hinweis": {
+              "de": "Die Zoopedia bezeichnet Wildschweine als Allesfresser.",
+              "en": "The Zoopedia describes Wild Boars as omnivores."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Muttermilch",
+              "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": ["piglet"],
+                "ziel": []
+              },
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": "Menge: keine genaue Angabe | Häufigkeit: keine genaue Angabe | Zeitraum: Säugephase"
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Wurzeln",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Knollen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "suidae",
+          "rang": "familie",
+          "name": "Suidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sus",
+          "rang": "gattung",
+          "name": "Sus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "sus-scrofa",
+          "rang": "art",
+          "name": "Sus scrofa",
+          "deutscherName": "Wildschwein",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": "wildform",
+          "schutzstatus": "Nicht gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Wildschwein ist in den gemäßigten Regionen Europas, Asiens sowie Teilen Nordafrikas heimisch. Es wurde außerdem in Nord- und Südamerika sowie Ozeanien eingeführt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Wildschwein (Sus scrofa), auch Eurasisches Wildschwein genannt, ist ein Schwein, das in den gemäßigten Regionen Europas, Asiens sowie Teilen Nordafrikas heimisch ist. Es wurde außerdem in Nord- und Südamerika sowie Ozeanien eingeführt.\n\nEs gibt 16 anerkannte Unterarten des Wildschweins, die sich im Aussehen unterscheiden. Ihr Fell besteht aus dunkelbraunen, groben Borsten, die am Hals des Männchens eine Mähne bilden. Wildschweine haben einen großen Kopf, der bis zu einem Drittel ihrer Körperlänge ausmacht. Zusammen mit ihrer kräftigen Nackenmuskulatur ermöglicht er ihnen sogar das Graben in gefrorenem Boden.\n\nDie Männchen sind größer und schwerer. Sie können eine Schulterhöhe von 85 bis 100 cm, eine Länge von 1,45 bis 1,75 m und ein Gewicht von 75 bis 130 kg erreichen. Weibchen kommen auf 75 bis 90 cm Schulterhöhe, 1,3 bis 1,57 m Länge und 60 bis 90 kg Gewicht.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Wildschweine sind eine Spezies, die als nicht gefährdet gilt, weil sie weit verbreitet ist und zahlreich vorkommt. Aufgrund von Überjagung sind sie im Hochmittelalter in Großbritannien ausgestorben, wurden aber in den 1980er Jahren wieder angesiedelt. Wildschweine haben sich in Nord- und Südamerika stark ausgebreitet, nachdem Gruppen für die Jagd und Zucht importiert wurden, sowohl absichtlich freigelassen wurden als auch entkommen sind und sich mit Hausschweinen gekreuzt haben. In ihrer natürlichen Umgebung werden Wildschweine wegen ihres Fleisches gejagt und sind ein wichtiger Teil des Ökosystems ihres Lebensraums.\n\nWildschweine helfen bei der Pflege von Wäldern. Als Allesfresser beeinflussen Wildschweine ihren Lebensraum, indem sie Samen verbreiten und den Boden auflockern, was dem Pflanzenwachstum und anderen Wildtieren zugutekommt. Der Schutz von Lebensräumen, nachhaltige Jagdvorschriften und Wildkorridore tragen dazu bei, gesunde Bestände zu gewährleisten und Konflikte zwischen Mensch und Tierwelt zu verringern. In Amerika werden invasive Bestände jedoch zum Schutz der einheimischen Tierwelt kontrolliert.\n\nDie Rückkehr der Wildschweine hat eine Diskussion ausgelöst, da sie durch Schäden und die Übertragung von Krankheiten Risiken für Ackerland, Nutztiere und andere Wildtiere mit sich bringen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Wildschweinweibchen leben in von einer alten Matriarchin geführten Horden aus nicht brütenden Weibchen und Müttern mit ihrem Nachwuchs. Erwachsene Männchen sind die meiste Zeit des Jahres Einzelgänger und nähern sich Horden nur in der Paarungszeit. Junge, nicht ausgewachsene Männchen leben in Junggesellengruppen.\n\nDie Paarungszeit dauert bei Wildschweinen von November bis Januar. Ein Männchen, das eine Herde Weibchen findet, verjagt junge und unfruchtbare Säue und hütet jedes Weibchen in der Brunst. Jedes rivalisierende Männchen, das diese Verfolgungsjagd stört, wird aggressiv bekämpft. Gelingt es dem Männchen, die Gruppe zu hüten, paart es sich mit jedem fruchtbaren Weibchen und verlässt die Horde dann wieder.\n\nSäue sind 108 bis 120 Tage lang trächtig. Gegen Ende der Trächtigkeit baut eine Sau ein Nest aus Gras, in dem sie einen Wurf von durchschnittlich 4 bis 6 Ferkeln zur Welt bringt, obwohl auch Würfe von bis zu 12 Ferkeln verzeichnet wurden. Sie bleibt 10 Tage im Nest und lässt ihren Nachwuchs säugen. Auch nach dem Verlassen des Nestes bleiben die Ferkel in der Herde dicht bei ihrer Mutter.\n\nMännliche Ferkel verlassen die Horde im Alter von 8 bis 15 Monaten und bilden Junggesellengruppen mit anderen jungen Männchen, während weibliche Ferkel entweder in ihrer Geburtshorde bleiben oder sich abspalten, um woanders eine neue Gruppe zu gründen. Wildschweine erreichen die Geschlechtsreife mit einem Jahr, doch es ist unwahrscheinlich, dass Weibchen sich fortpflanzen, bevor sie 18 Monate alt sind. Männchen können sich erst mit etwa 4 Jahren erfolgreich fortpflanzen, wenn sie stark genug sind, um eine Horde zu hüten und vor anderen Männchen zu verteidigen. Sowohl weibliche als auch männliche Wildschweine wachsen weiter, bis sie 5 oder 6 Jahre alt sind.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Stirbt eine Wildschweinmutter, bevor ihre Ferkel selbstständig sind, wird ihr Nachwuchs von anderen Säuen ihrer Herde adoptiert.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Wildschweine können essbare Wurzeln und Knollen 25 cm tief im Boden riechen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Wildschweinhaar wurde früher als Zahnbürstenborsten verwendet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Der Hauptfressfeind des Wildschweins ist der Wolf.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        },
+        {
+          "inhalt": "Das Wildschwein kann schlecht sehen, gleicht dies jedoch mit seinem ausgezeichneten Geruchs- und Gehörsinn aus.",
+          "quelle": "planetZoo2",
+          "uebersetzung": ""
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        },
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "",
+          "quelle": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Sus scrofa/map/Sus scrofa map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Wildschwein – Planet Zoo 2",
+            "en": "Wild Boar – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Wildschweins aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Wild Boar."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Sus scrofa/bilder/Sus scrofa 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "veroeffentlichtAm": "2026-09-29",
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Wildschwein",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Die Veröffentlichung als neues Zoopedia-Tier am 29. September 2026 ist zusätzlich durch die offizielle Planet-Zoo-2-Ankündigung dokumentiert. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}

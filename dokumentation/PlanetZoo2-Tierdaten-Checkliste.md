@@ -152,7 +152,7 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |  99 | Western Lowland Gorilla         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 100 | White-Backed Vulture            | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 101 | White-Tailed Sea Eagle          | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 102 | Wild Boar                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 102 | Wild Boar                       | `Landgehege`             | `Standard` | [x] `Sus scrofa`         |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 103 | Yellow Anaconda                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 104 | Yellow Tang                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 
@@ -263,7 +263,7 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |  99 | Western Lowland Gorilla         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 100 | White-Backed Vulture            | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 101 | White-Tailed Sea Eagle          | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-| 102 | Wild Boar                       | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+| 102 | Wild Boar                       | [x] | [x] | [x] | [x] | [ ] | [x] | [x] | [x] | [x] | [ ] | [ ] | [x] |       [ ]       |
 | 103 | Yellow Anaconda                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 104 | Yellow Tang                     | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 

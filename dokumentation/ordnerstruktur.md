@@ -1416,6 +1416,18 @@
               - `Suricata suricatta map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Suricata suricatta/videos/.gitkeep>)
+          - `Sus scrofa/`
+            - [Sus scrofa.json](<../assets/daten/lebewesen/tiere/Sus scrofa/Sus scrofa.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/bilder/.gitkeep>)
+              - `Sus scrofa 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/map/.gitkeep>)
+              - `Sus scrofa map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/videos/.gitkeep>)
           - `Symphorichthys spilurus/`
             - [Symphorichthys spilurus.json](<../assets/daten/lebewesen/tiere/Symphorichthys spilurus/Symphorichthys spilurus.json>)
             - `audio/`
