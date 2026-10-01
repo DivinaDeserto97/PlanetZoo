@@ -21,8 +21,9 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Entwickler-News an Discord senden
+      - name: Entwickler-News als Discord-Bot senden
         env:
           NEWS_MODE: developer
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_DEV_WEBHOOK_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: '1555332539982417991'
         run: node tools/discord-news.mjs

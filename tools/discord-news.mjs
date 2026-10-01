@@ -3,7 +3,8 @@
 import fs from 'node:fs';
 
 const mode = process.env.NEWS_MODE;
-const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+const botToken = process.env.DISCORD_BOT_TOKEN;
+const channelId = process.env.DISCORD_CHANNEL_ID;
 const eventPath = process.env.GITHUB_EVENT_PATH;
 const dryRun = process.env.DISCORD_NEWS_DRY_RUN === '1';
 
@@ -17,8 +18,13 @@ if (!eventPath || !fs.existsSync(eventPath)) {
   process.exit(1);
 }
 
-if (!webhookUrl && !dryRun) {
-  console.error('❌ DISCORD_WEBHOOK_URL fehlt. GitHub-Secret prüfen.');
+if ((!botToken || !channelId) && !dryRun) {
+  if (!botToken) {
+    console.error('❌ DISCORD_BOT_TOKEN fehlt. GitHub-Secret prüfen.');
+  }
+  if (!channelId) {
+    console.error('❌ DISCORD_CHANNEL_ID fehlt. GitHub-Workflow prüfen.');
+  }
   process.exit(1);
 }
 
@@ -44,7 +50,9 @@ const sourceBranchFromMessage = (message = '') => {
   const explicit = String(message).match(/^Source-Branch:\s*(.+)$/im);
   if (explicit) return explicit[1].trim();
 
-  const commonMerge = String(message).match(/Merge(?: branch)? ['"]?([^'"\s]+)['"]?(?: into main)?/i);
+  const commonMerge = String(message).match(
+    /Merge(?: branch)? ['"]?([^'"\s]+)['"]?(?: into main)?/i,
+  );
   return commonMerge?.[1]?.trim() || null;
 };
 
@@ -60,14 +68,22 @@ const changedFilesSummary = (commit) => {
   const unique = [...new Set(changed)];
   if (unique.length === 0) return '';
 
-  const shown = unique.slice(0, 6).map((file) => `\`${file}\``).join(', ');
+  const shown = unique
+    .slice(0, 6)
+    .map((file) => `\`${file}\``)
+    .join(', ');
   const rest = unique.length > 6 ? ` (+${unique.length - 6} weitere)` : '';
   return `Geänderte Dateien: ${shown}${rest}`;
 };
 
-const repository = event.repository?.full_name ?? process.env.GITHUB_REPOSITORY ?? 'Planet Zoo 2 Tools';
-const repositoryUrl = event.repository?.html_url ?? `https://github.com/${repository}`;
-const branch = String(event.ref ?? '').replace(/^refs\/heads\//, '') || 'unbekannt';
+const repository =
+  event.repository?.full_name ??
+  process.env.GITHUB_REPOSITORY ??
+  'Planet Zoo 2 Tools';
+const repositoryUrl =
+  event.repository?.html_url ?? `https://github.com/${repository}`;
+const branch =
+  String(event.ref ?? '').replace(/^refs\/heads\//, '') || 'unbekannt';
 const sender = event.sender?.login ?? event.pusher?.name ?? 'Unbekannt';
 const commits = Array.isArray(event.commits) ? event.commits : [];
 const headCommit = event.head_commit ?? commits.at(-1) ?? null;
@@ -76,13 +92,18 @@ let payload;
 
 if (mode === 'developer') {
   const title = firstLine(headCommit?.message) || 'Commit ohne Titel';
-  const summary = messageBody(headCommit?.message) || changedFilesSummary(headCommit) || 'Keine zusätzliche Zusammenfassung angegeben.';
-  const developer = headCommit?.author?.username ?? headCommit?.author?.name ?? sender;
-  const commitUrl = headCommit?.url ?? `${repositoryUrl}/commit/${event.after}`;
-  const shortSha = String(headCommit?.id ?? event.after ?? '').slice(0, 7) || 'unbekannt';
+  const summary =
+    messageBody(headCommit?.message) ||
+    changedFilesSummary(headCommit) ||
+    'Keine zusätzliche Zusammenfassung angegeben.';
+  const developer =
+    headCommit?.author?.username ?? headCommit?.author?.name ?? sender;
+  const commitUrl =
+    headCommit?.url ?? `${repositoryUrl}/commit/${event.after}`;
+  const shortSha =
+    String(headCommit?.id ?? event.after ?? '').slice(0, 7) || 'unbekannt';
 
   payload = {
-    username: 'Planet Zoo 2 Tools – GitHub',
     embeds: [
       {
         title: '🛠️ Entwickler-News',
@@ -90,21 +111,44 @@ if (mode === 'developer') {
         url: commitUrl,
         color: 0x2ecc71,
         fields: [
-          { name: '🌿 Branch', value: truncate(branch, 1024), inline: true },
-          { name: '👤 Entwickler', value: truncate(developer, 1024), inline: true },
-          { name: '🔖 Commit', value: `\`${shortSha}\``, inline: true },
-          { name: '📝 Commit-Titel', value: truncate(title, 1024) || '–', inline: false },
-          { name: '📋 Zusammenfassung', value: truncate(summary, 1024) || '–', inline: false },
+          {
+            name: '🌿 Branch',
+            value: truncate(branch, 1024),
+            inline: true,
+          },
+          {
+            name: '👤 Entwickler',
+            value: truncate(developer, 1024),
+            inline: true,
+          },
+          {
+            name: '🔖 Commit',
+            value: `\`${shortSha}\``,
+            inline: true,
+          },
+          {
+            name: '📝 Commit-Titel',
+            value: truncate(title, 1024) || '–',
+            inline: false,
+          },
+          {
+            name: '📋 Zusammenfassung',
+            value: truncate(summary, 1024) || '–',
+            inline: false,
+          },
         ],
         footer: { text: repository },
         timestamp: headCommit?.timestamp ?? new Date().toISOString(),
       },
     ],
+    allowed_mentions: { parse: [] },
   };
 } else {
   const sourceBranch = sourceBranchFromMessage(headCommit?.message);
   const visibleCommits = commits
-    .filter((commit) => !/^Merge(?: branch)?\b/i.test(firstLine(commit.message)))
+    .filter(
+      (commit) => !/^Merge(?: branch)?\b/i.test(firstLine(commit.message)),
+    )
     .slice(-8);
 
   let changes = visibleCommits
@@ -117,13 +161,16 @@ if (mode === 'developer') {
 
   if (!changes) {
     const body = messageBody(headCommit?.message);
-    changes = body || changedFilesSummary(headCommit) || firstLine(headCommit?.message) || 'main wurde aktualisiert.';
+    changes =
+      body ||
+      changedFilesSummary(headCommit) ||
+      firstLine(headCommit?.message) ||
+      'main wurde aktualisiert.';
   }
 
   const compareUrl = event.compare || headCommit?.url || repositoryUrl;
 
   payload = {
-    username: 'Planet Zoo 2 Tools – GitHub',
     embeds: [
       {
         title: '🚀 Planet Zoo 2 Tools – Update',
@@ -132,15 +179,30 @@ if (mode === 'developer') {
         color: 0x3498db,
         fields: [
           ...(sourceBranch
-            ? [{ name: '🌿 Gemergter Branch', value: truncate(sourceBranch, 1024), inline: true }]
+            ? [
+                {
+                  name: '🌿 Gemergter Branch',
+                  value: truncate(sourceBranch, 1024),
+                  inline: true,
+                },
+              ]
             : []),
-          { name: '👤 Veranlasst von', value: truncate(sender, 1024), inline: true },
-          { name: '🧩 Enthaltene Änderungen', value: truncate(changes, 1024) || '–', inline: false },
+          {
+            name: '👤 Veranlasst von',
+            value: truncate(sender, 1024),
+            inline: true,
+          },
+          {
+            name: '🧩 Enthaltene Änderungen',
+            value: truncate(changes, 1024) || '–',
+            inline: false,
+          },
         ],
         footer: { text: repository },
         timestamp: new Date().toISOString(),
       },
     ],
+    allowed_mentions: { parse: [] },
   };
 }
 
@@ -149,17 +211,39 @@ if (dryRun) {
   process.exit(0);
 }
 
-const response = await fetch(webhookUrl, {
+const endpoint = `https://discord.com/api/v10/channels/${channelId}/messages`;
+
+const response = await fetch(endpoint, {
   method: 'POST',
-  headers: { 'content-type': 'application/json' },
+  headers: {
+    Authorization: `Bot ${botToken}`,
+    'Content-Type': 'application/json',
+    'User-Agent':
+      'DiscordBot (https://github.com/DivinaDeserto97/PlanetZoo, 1.0)',
+  },
   body: JSON.stringify(payload),
 });
 
 if (!response.ok) {
   const body = await response.text();
-  console.error(`❌ Discord Webhook fehlgeschlagen: HTTP ${response.status}`);
+  console.error(
+    `❌ Discord Bot-Nachricht fehlgeschlagen: HTTP ${response.status}`,
+  );
   console.error(body);
+
+  if (response.status === 401) {
+    console.error('Hinweis: DISCORD_BOT_TOKEN ist ungültig oder veraltet.');
+  } else if (response.status === 403) {
+    console.error(
+      'Hinweis: Der Bot darf diesen Kanal nicht sehen oder dort nicht schreiben.',
+    );
+  } else if (response.status === 404) {
+    console.error('Hinweis: DISCORD_CHANNEL_ID prüfen.');
+  }
+
   process.exit(1);
 }
 
-console.log(`✅ Discord-${mode === 'developer' ? 'Entwickler-News' : 'Update'} gesendet.`);
+console.log(
+  `✅ Discord-${mode === 'developer' ? 'Entwickler-News' : 'Update'} als Bot gesendet.`,
+);

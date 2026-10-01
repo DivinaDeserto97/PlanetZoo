@@ -333,59 +333,103 @@ Veröffentlichbare Medien werden unter `assets/medien/freigegeben/` abgelegt. Si
 
 Weitere Hinweise stehen in `dokumentation/MEDIEN-UND-QUELLEN.md`.
 
-## Commit und Formatierung
+## Vier Arbeitsbefehle
 
-`tools/commit.sh` formatiert vor jedem Commit alle HTML-, CSS-, JavaScript-, JSON- und Markdown-Dateien mit dem bereits in VS Code installierten **Prettier - Code formatter**. Dafür wird kein npm-Paket in diesem Projekt und keine `package.json` benötigt.
+Für den normalen Arbeitsablauf gibt es vier Befehle.
 
-Ablauf:
+### 1. Nur Share-ZIP erstellen
 
-```text
-./tools/commit.sh "filter 1"
-→ gesamtes Projekt formatieren
-→ Share-ZIP erstellen
-→ git add
-→ git commit
-→ git push
+```bash
+./tools/share-zip.sh
 ```
 
-## Discord-News und Git-Arbeitsabläufe
+Erstellt `share/PlanetZoo2-share.zip`.
 
-Discord-Updates werden über **GitHub Actions + Discord-Webhooks** gesendet. Dafür muss kein eigener Bot 24/7 laufen.
+Der lokale `bot/`-Quellcode wird mitgesichert. `bot/.env`, `node_modules`,
+Logs, Cache und andere Secrets werden nicht eingepackt.
 
-### 1. Entwicklungscommit
+### 2. Entwicklungsbranch committen und pushen
 
-Auf allen Branches ausser `main`:
+Auf einem Branch ausser `main`:
 
 ```bash
 ./tools/commit.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Nach dem Push erscheint automatisch eine Nachricht in `#entwickler-news` mit Branch, Entwickler, Commit-Titel und Zusammenfassung.
+Ablauf:
 
-### 2. Entwicklungsbranch nach main mergen
+```text
+Dokumentation aktualisieren
+→ .gitignore aktualisieren
+→ Projekt formatieren
+→ Share-ZIP erstellen
+→ git add
+→ git commit
+→ git push
+→ GitHub Actions
+→ Server Bot schreibt in #entwickler-news
+```
+
+### 3. Entwicklungsbranch nach `main` mergen
 
 ```bash
 ./tools/merge-main.sh
 ```
 
-Nach dem Push von `main` erscheint automatisch eine Nachricht in `#updates` mit den enthaltenen Änderungen und dem GitHub-Benutzer, der den Push veranlasst hat.
+Ablauf:
 
-### 3. Commit + Merge zusammen
+```text
+Entwicklungsbranch pushen
+→ main aktualisieren
+→ Branch nach main mergen
+→ main pushen
+→ GitHub Actions
+→ Server Bot schreibt in #updates
+```
+
+### 4. Commit + Merge zusammen
 
 ```bash
 ./tools/commit-und-merge.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Damit werden Schritt 1 und Schritt 2 direkt nacheinander ausgeführt.
+Das führt Befehl 2 und 3 nacheinander aus.
 
-Die ausführliche Einrichtung inklusive der zwei benötigten GitHub-Secrets steht in:
+## Discord-News
+
+Die Discord-Nachrichten werden über **GitHub Actions und den vorhandenen
+Discord-Bot** gesendet. Ein dauerhaft laufender Bot-Host ist dafür nicht nötig.
+
+Benötigt wird auf GitHub nur ein Repository-Secret:
+
+```text
+DISCORD_BOT_TOKEN
+```
+
+Die Zielkanäle sind bereits in den Workflows eingetragen:
+
+```text
+#entwickler-news  1555332539982417991
+#updates           1555169124487929977
+```
+
+Der Bot benötigt in beiden Kanälen mindestens:
+
+- Kanal ansehen
+- Nachrichten senden
+- Links einbetten
+
+Da `#entwickler-news` privat ist, muss der Bot bzw. seine Bot-Rolle dort
+ausdrücklich Zugriff haben.
+
+Mehr Details und Fehlerdiagnose:
 
 `dokumentation/DISCORD-NEWS.md`
 
-### Lokaler Bot und Share-ZIP
+## Lokaler Bot und Share-ZIP
 
-Der lokale Ordner `bot/` wird **nicht nach GitHub übertragen**. `tools/gitignore-aus-json.py` setzt dafür automatisch `/bot/` in `.gitignore`.
+Der lokale Ordner `bot/` wird **nicht nach GitHub übertragen**.
+`tools/gitignore-aus-json.py` setzt dafür automatisch `/bot/` in `.gitignore`.
 
-Das automatisch erstellte Share-ZIP enthält dagegen den sicheren Bot-Quellcode. Geheimnisse und lokale Laufzeitdaten wie `bot/.env`, `bot/node_modules/`, Logs und Scan-Ausgaben werden ausdrücklich ausgeschlossen.
-
-test
+Das Share-ZIP enthält den sicheren Bot-Quellcode, aber **nicht** `bot/.env`,
+`bot/node_modules/`, Logs, Cache, Scan-Ausgaben oder Schlüsseldateien.

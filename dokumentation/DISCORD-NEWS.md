@@ -1,103 +1,129 @@
-# Discord-News über GitHub Actions
+# Discord-News über GitHub Actions und den Discord-Bot
 
-Die Discord-News funktionieren **ohne dauerhaft laufenden Bot**.
+Die Discord-News werden von **GitHub Actions** ausgelöst. Der eigene Bot muss dafür
+nicht dauerhaft auf einem PC oder Heimserver laufen.
 
-GitHub löst die Nachrichten aus, sobald ein Push im Online-Repository ankommt.
-Der eigene Discord-Bot kann unabhängig davon offline sein.
+GitHub Actions verwendet beim jeweiligen Push kurz den Bot-Token, sendet die
+Nachricht über die Discord-API als **Server Bot** und beendet sich danach wieder.
 
-## Benötigte Discord-Kanäle
+## Discord-Kanäle
 
-- `#entwickler-news` für Commits auf allen Branches ausser `main`
-- `#updates` für Aktualisierungen von `main`
+- `#entwickler-news`
+  - Kanal-ID: `1555332539982417991`
+  - für Commits auf allen Branches ausser `main`
+- `#updates`
+  - Kanal-ID: `1555169124487929977`
+  - für Aktualisierungen von `main`
 
-Für beide Kanäle wird je ein Discord-Webhook benötigt.
+Die Kanal-IDs sind nicht geheim und stehen deshalb direkt in den Workflows.
 
-## Benötigte GitHub-Secrets
+## Ein einziges GitHub-Secret
 
-Im GitHub-Repository unter:
+Im GitHub-Repository:
 
 `Settings -> Secrets and variables -> Actions -> New repository secret`
 
 anlegen:
 
-- `DISCORD_DEV_WEBHOOK_URL`
-  - Webhook von `#entwickler-news`
-- `DISCORD_UPDATES_WEBHOOK_URL`
-  - Webhook von `#updates`
+- Name: `DISCORD_BOT_TOKEN`
+- Wert: Token des Discord-Bots
 
-Die Webhook-URLs dürfen niemals in Dateien, Commits oder GitHub-Code gespeichert werden.
+Der Bot-Token darf niemals in eine Projektdatei, einen Commit oder die Share-ZIP
+geschrieben werden.
 
-## Arbeitsablauf 1 – Entwicklungscommit
+GitHub übergibt den Token nur während des Workflow-Laufs als Umgebungsvariable.
 
-Auf einem beliebigen Branch **ausser `main`**:
+## Discord-Rechte des Bots
+
+In `#entwickler-news` und `#updates` benötigt der Bot mindestens:
+
+- Kanal ansehen
+- Nachrichten senden
+- Links einbetten
+
+`#entwickler-news` ist privat. Deshalb muss dort die Bot-Rolle bzw. der Bot
+ausdrücklich Zugriff erhalten. Sonst antwortet Discord mit `403 Missing Access`.
+
+## Die vier Arbeitsbefehle
+
+### 1. Nur Share-ZIP erstellen
+
+```bash
+./tools/share-zip.sh
+```
+
+Erstellt bzw. ersetzt:
+
+`share/PlanetZoo2-share.zip`
+
+Der lokale `bot/`-Quellcode kommt mit in die ZIP. Geheimnisse wie `bot/.env`,
+`node_modules`, Logs und Scan-Dateien bleiben ausgeschlossen.
+
+### 2. Entwicklungsbranch committen und pushen
+
+Auf einem Branch ausser `main`:
 
 ```bash
 ./tools/commit.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Oder ohne Parameter starten; das Skript fragt Titel und Zusammenfassung ab.
+Das Skript erstellt die Dokumentation und Share-ZIP, formatiert das Projekt,
+committet und pusht den aktuellen Entwicklungsbranch.
 
-Nach dem Push führt GitHub automatisch `.github/workflows/discord-entwickler-news.yml` aus.
+Danach startet `.github/workflows/discord-entwickler-news.yml`.
 
-Die Discord-Nachricht enthält:
+Der **Server Bot** schreibt in `#entwickler-news`:
 
 - Branch
 - Entwickler
 - Commit-SHA
 - Commit-Titel
-- kurze Zusammenfassung
+- Zusammenfassung
 - Link zum Commit
 
-Wenn keine Zusammenfassung angegeben wurde, werden ersatzweise geänderte Dateien zusammengefasst.
+### 3. Entwicklungsbranch nach `main` mergen
 
-## Arbeitsablauf 2 – Branch nach main mergen
-
-Auf dem Entwicklungsbranch bleiben und ausführen:
+Auf dem Entwicklungsbranch:
 
 ```bash
 ./tools/merge-main.sh
 ```
 
-Optional kann eine eigene Zusammenfassung mitgegeben werden:
+Optional:
 
 ```bash
-./tools/merge-main.sh "Tierdaten und Kartenfilter für das nächste Update überarbeitet"
+./tools/merge-main.sh "Kurze Zusammenfassung für das öffentliche Update"
 ```
 
-Das Skript:
+Das Skript pusht den Entwicklungsbranch, aktualisiert `main`, merged mit
+`--no-ff`, pusht `main` und wechselt zurück.
 
-1. pusht den aktuellen Entwicklungsbranch,
-2. wechselt auf `main`,
-3. aktualisiert `main`,
-4. merged den Entwicklungsbranch mit `--no-ff`,
-5. pusht `main`,
-6. wechselt zurück auf den Entwicklungsbranch.
+Danach startet `.github/workflows/discord-main-update.yml`.
 
-Danach führt GitHub automatisch `.github/workflows/discord-main-update.yml` aus.
+Der **Server Bot** schreibt in `#updates`:
 
-Die Nachricht in `#updates` enthält unter anderem:
-
-- gemergten Branch
-- wer den Push/Merge auf GitHub veranlasst hat
+- gemergter Branch
+- wer den Push/Merge veranlasst hat
 - enthaltene Commit-Titel
-- Link zum GitHub-Vergleich
+- Link zur Änderung
 
-## Arbeitsablauf 3 – Commit und Merge zusammen
+### 4. Commit + Merge in einem Befehl
 
 ```bash
 ./tools/commit-und-merge.sh "Commit-Titel" "Kurze Zusammenfassung"
 ```
 
-Das führt Arbeitsablauf 1 und 2 direkt nacheinander aus:
+Das führt Befehl 2 und 3 direkt nacheinander aus:
 
 1. Entwicklungscommit -> `#entwickler-news`
 2. Merge nach `main` -> `#updates`
 
-## Share-ZIP und bot/
+## Share-ZIP und `bot/`
 
-`bot/` ist absichtlich vollständig von Git ausgeschlossen.
+`bot/` bleibt vollständig von Git ausgeschlossen.
 
-`tools/share-zip.sh` nimmt den lokalen Bot trotzdem in das automatisch erzeugte Share-ZIP auf, mit Sicherheitsausnahmen:
+`tools/share-zip.sh` nimmt den lokalen Bot trotzdem als sichere Kopie in das
+Share-ZIP auf.
 
 Nicht im ZIP:
 
@@ -108,4 +134,21 @@ Nicht im ZIP:
 - `bot/server-scan.json`
 - Schlüsseldateien (`*.pem`, `*.key`)
 
-Dadurch kann der Bot mit einer Share-ZIP weitergegeben oder gesichert werden, ohne dass Token oder installierte Abhängigkeiten mitkopiert werden.
+## Fehlerdiagnose
+
+GitHub:
+
+`Repository -> Actions`
+
+Dort den fehlgeschlagenen Workflow öffnen.
+
+Typische Fehler:
+
+- `DISCORD_BOT_TOKEN fehlt`
+  - GitHub-Secret noch nicht angelegt.
+- HTTP `401`
+  - Bot-Token ungültig oder zurückgesetzt.
+- HTTP `403`
+  - Bot hat im Zielkanal keinen Zugriff oder keine Schreibberechtigung.
+- HTTP `404`
+  - Kanal-ID stimmt nicht mehr.
