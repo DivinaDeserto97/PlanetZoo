@@ -2,223 +2,139 @@
 
 set -euo pipefail
 
-
-# ============================================================
-# PROJEKTPFADE
-# ============================================================
-
-SCRIPT_DIR="$(
-    cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &&
-    pwd
-)"
-
-PROJECT_ROOT="$(
-    cd -- "$SCRIPT_DIR/.." &&
-    pwd
-)"
-
-
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 cd "$PROJECT_ROOT"
 
-
-# ============================================================
-# COMMIT-NACHRICHT
-# ============================================================
-
-COMMIT_MESSAGE="$*"
-
-
-if [[ -z "$COMMIT_MESSAGE" ]]
-then
-
-    echo
-    read -r -p "Commit-Nachricht: " COMMIT_MESSAGE
-
-fi
-
-
-if [[ -z "$COMMIT_MESSAGE" ]]
-then
-
-    echo
-    echo "❌ Keine Commit-Nachricht angegeben."
-
-    exit 1
-
-fi
-
-
-# ============================================================
-# GIT PRÜFEN
-# ============================================================
-
-if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1
-then
-
-    echo
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     echo "❌ Dieser Ordner ist kein Git-Repository."
-
     exit 1
-
 fi
 
+BRANCH="$(git branch --show-current)"
 
-BRANCH="$(
-    git branch --show-current
-)"
+if [[ -z "$BRANCH" ]]; then
+    echo "❌ Kein aktiver Branch erkannt."
+    exit 1
+fi
 
+if [[ "$BRANCH" == "main" ]]; then
+    echo
+    echo "❌ commit.sh ist für Entwicklungsbranches gedacht, nicht für main."
+    echo "   Nutze für main: tools/merge-main.sh"
+    echo "   Oder für Commit + Merge: tools/commit-und-merge.sh"
+    exit 1
+fi
+
+ORIGINAL_ARGC=$#
+COMMIT_TITLE="${1:-}"
+if (( $# > 0 )); then shift; fi
+COMMIT_SUMMARY="$*"
+
+if [[ -z "$COMMIT_TITLE" ]]; then
+    echo
+    read -r -p "Commit-Titel: " COMMIT_TITLE
+fi
+
+if [[ -z "$COMMIT_TITLE" ]]; then
+    echo "❌ Kein Commit-Titel angegeben."
+    exit 1
+fi
+
+if [[ -z "$COMMIT_SUMMARY" && "$ORIGINAL_ARGC" -lt 2 ]]; then
+    echo
+    read -r -p "Kurze Zusammenfassung für Discord (optional): " COMMIT_SUMMARY
+fi
 
 echo
 echo "============================================================"
 echo "PlanetZoo2 Commit"
 echo "============================================================"
-echo
-echo "Branch:"
-echo "$BRANCH"
-echo
-echo "Commit:"
-echo "$COMMIT_MESSAGE"
+echo "Branch: $BRANCH"
+echo "Titel:  $COMMIT_TITLE"
+if [[ -n "$COMMIT_SUMMARY" ]]; then
+    echo "Kurz:   $COMMIT_SUMMARY"
+fi
 
-
-# ============================================================
-# AUTOMATISCHE MD ERSTELLEN
-# ============================================================
-
+# 1. Doku
 echo
 echo "============================================================"
 echo "1. Automatische MD erstellen"
 echo "============================================================"
-echo
-
 "$SCRIPT_DIR/ordnerstruktur.sh"
 
-
-# ============================================================
-# .GITIGNORE AUS JSON + STANDARD ERSTELLEN
-# ============================================================
-
+# 2. .gitignore
 echo
 echo "============================================================"
 echo "2. .gitignore gemäss JSON + Standard erstellen"
 echo "============================================================"
-echo
-
 python3 "$SCRIPT_DIR/gitignore-aus-json.py"
 
+# Sicherheitscheck: bot/ darf nicht auf GitHub getrackt werden.
+if [[ -n "$(git ls-files -- bot 2>/dev/null)" ]]; then
+    echo
+    echo "❌ bot/ enthält bereits von Git getrackte Dateien."
+    echo "   Diese müssen einmalig aus dem Git-Index entfernt werden:"
+    echo "   git rm -r --cached bot"
+    echo "   Danach committen. Die lokalen Dateien bleiben erhalten."
+    exit 1
+fi
 
-# ============================================================
-# PROJEKT FORMATIEREN
-# ============================================================
-
+# 3. Formatieren
 echo
 echo "============================================================"
 echo "3. Gesamtes Projekt mit Prettier formatieren"
 echo "============================================================"
-echo
-
 "$SCRIPT_DIR/format.sh"
 
-
-# ============================================================
-# SHARE-ZIP
-# ============================================================
-
+# 4. Share ZIP
 echo
 echo "============================================================"
 echo "4. Share-ZIP erstellen"
 echo "============================================================"
-echo
-
 "$SCRIPT_DIR/share-zip.sh"
 
-
-# ============================================================
-# GIT STATUS
-# ============================================================
-
+# 5. Status
 echo
 echo "============================================================"
 echo "5. Git-Status"
 echo "============================================================"
-echo
-
-
 git status --short
 
-
-# ============================================================
-# GIT ADD
-# ============================================================
-
+# 6. Add
 echo
 echo "============================================================"
 echo "6. Git add"
 echo "============================================================"
-echo
-
-
 git add -A
 
-
-# ============================================================
-# PRÜFEN OB ÄNDERUNGEN VORHANDEN SIND
-# ============================================================
-
-if git diff --cached --quiet
-then
-
-    echo
+if git diff --cached --quiet; then
     echo "ℹ️ Keine Änderungen für einen Commit vorhanden."
-
     exit 0
-
 fi
 
-
-# ============================================================
-# COMMIT
-# ============================================================
-
+# 7. Commit
 echo
 echo "============================================================"
 echo "7. Git commit"
 echo "============================================================"
-echo
+if [[ -n "$COMMIT_SUMMARY" ]]; then
+    git commit -m "$COMMIT_TITLE" -m "$COMMIT_SUMMARY"
+else
+    git commit -m "$COMMIT_TITLE"
+fi
 
-
-git commit \
-    -m "$COMMIT_MESSAGE"
-
-
-# ============================================================
-# PUSH
-# ============================================================
-
+# 8. Push
 echo
 echo "============================================================"
 echo "8. Git push"
 echo "============================================================"
-echo
-
-
-git push
-
-
-# ============================================================
-# FERTIG
-# ============================================================
+git push -u origin "$BRANCH"
 
 echo
 echo "============================================================"
-echo "✅ Alles abgeschlossen"
+echo "✅ Entwicklungs-Commit abgeschlossen"
 echo "============================================================"
-echo
-echo "Ordnerstruktur:"
-echo "dokumentation/ordnerstruktur.md"
-echo
-echo "Share-ZIP:"
-echo "share/"
-echo
-echo "Git:"
-echo "Commit + Push erfolgreich"
-echo
+echo "Branch: $BRANCH"
+echo "GitHub Actions sendet jetzt automatisch eine Nachricht an #entwickler-news."
+echo "Share-ZIP: share/"

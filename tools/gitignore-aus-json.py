@@ -23,6 +23,11 @@ STANDARD = '''# ============================================================
 # Automatisch erzeugte Share-Dateien
 /share/
 
+# Lokaler Discord-Bot
+# Darf NICHT nach GitHub. tools/share-zip.sh nimmt sichere Bot-Dateien
+# trotzdem in das lokale Share-ZIP auf.
+/bot/
+
 # System
 .DS_Store
 Thumbs.db

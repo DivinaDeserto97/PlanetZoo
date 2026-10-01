@@ -347,3 +347,43 @@ Ablauf:
 → git commit
 → git push
 ```
+
+## Discord-News und Git-Arbeitsabläufe
+
+Discord-Updates werden über **GitHub Actions + Discord-Webhooks** gesendet. Dafür muss kein eigener Bot 24/7 laufen.
+
+### 1. Entwicklungscommit
+
+Auf allen Branches ausser `main`:
+
+```bash
+./tools/commit.sh "Commit-Titel" "Kurze Zusammenfassung"
+```
+
+Nach dem Push erscheint automatisch eine Nachricht in `#entwickler-news` mit Branch, Entwickler, Commit-Titel und Zusammenfassung.
+
+### 2. Entwicklungsbranch nach main mergen
+
+```bash
+./tools/merge-main.sh
+```
+
+Nach dem Push von `main` erscheint automatisch eine Nachricht in `#updates` mit den enthaltenen Änderungen und dem GitHub-Benutzer, der den Push veranlasst hat.
+
+### 3. Commit + Merge zusammen
+
+```bash
+./tools/commit-und-merge.sh "Commit-Titel" "Kurze Zusammenfassung"
+```
+
+Damit werden Schritt 1 und Schritt 2 direkt nacheinander ausgeführt.
+
+Die ausführliche Einrichtung inklusive der zwei benötigten GitHub-Secrets steht in:
+
+`dokumentation/DISCORD-NEWS.md`
+
+### Lokaler Bot und Share-ZIP
+
+Der lokale Ordner `bot/` wird **nicht nach GitHub übertragen**. `tools/gitignore-aus-json.py` setzt dafür automatisch `/bot/` in `.gitignore`.
+
+Das automatisch erstellte Share-ZIP enthält dagegen den sicheren Bot-Quellcode. Geheimnisse und lokale Laufzeitdaten wie `bot/.env`, `bot/node_modules/`, Logs und Scan-Ausgaben werden ausdrücklich ausgeschlossen.
