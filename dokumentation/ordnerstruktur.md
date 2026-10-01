@@ -542,6 +542,18 @@
               - `Crotalus atrox map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/videos/.gitkeep>)
+          - `Dascyllus trimaculatus/`
+            - [Dascyllus trimaculatus.json](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/Dascyllus trimaculatus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/bilder/.gitkeep>)
+              - `Dascyllus trimaculatus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/map/.gitkeep>)
+              - `Dascyllus trimaculatus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/videos/.gitkeep>)
           - `Dendrolagus goodfellowi/`
             - [Dendrolagus goodfellowi.json](<../assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/Dendrolagus goodfellowi.json>)
             - `audio/`

@@ -1,0 +1,682 @@
+{
+  "id": "Dascyllus trimaculatus",
+  "identitaet": {
+    "namen": {
+      "de": "Dreifleck-Preußenfisch",
+      "en": "Threespot Damselfish",
+      "en-US": "Threespot Damselfish",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium", "Vivarium"],
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+    "biome": ["Riff"],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Actinopterygii",
+          "ordnung": "Blenniiformes",
+          "familie": "Pomacentridae",
+          "gattung": "Dascyllus",
+          "art": "Dascyllus trimaculatus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "typisch",
+          "min": 0.1,
+          "max": 0.13,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine typische Körperlänge von etwa 10 bis 13 cm.",
+            "en": "The Zoopedia gives a typical body length of about 10 to 13 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "typisch",
+          "min": 0.03,
+          "max": 0.045,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ein typisches Gewicht von 30 bis 45 g.",
+            "en": "The Zoopedia gives a typical weight of 30 to 45 g."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia stuft die Art insgesamt als nicht gefährdet ein, nennt sie im Persischen Golf jedoch als gefährdet.",
+            "en": "The Zoopedia considers the species Least Concern overall, though Vulnerable in the Persian Gulf."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": ["Dascyllus trimaculatus"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 1,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia nennt etwa ein Jahr bis zur Geschlechtsreife.",
+            "en": "The Zoopedia states that sexual maturity is reached at about one year old."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 2,
+          "max": 3,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die klebrigen Eier schlüpfen laut Zoopedia normalerweise innerhalb von 2 bis 3 Tagen.",
+            "en": "According to the Zoopedia, the adhesive eggs typically hatch within 2 to 3 days."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "larvenphase",
+          "wert": null,
+          "hinweis": {
+            "de": "Die pelagischen Larven treiben mehrere Wochen mit dem Plankton, bevor sie sich am Riff ansiedeln.",
+            "en": "The pelagic larvae drift with the plankton for several weeks before settling onto the reef."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutpflege",
+          "wert": null,
+          "hinweis": {
+            "de": "Nach dem Laichen bewacht das Männchen die Eier und fächelt ihnen Wasser zu, um Sauerstoffzufuhr zu gewährleisten sowie Schmutz und mögliche Fressfeinde fernzuhalten.",
+            "en": "After spawning, the male guards and fans the eggs to maintain oxygen flow and remove debris or potential predators."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "adulteTiere",
+          "wert": "looseAggregatesOrHarems",
+          "hinweis": {
+            "de": "Erwachsene Tiere leben laut Zoopedia in lockeren Verbänden oder Harems.",
+            "en": "According to the Zoopedia, adults live in loose aggregates or harems."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "jungtiere",
+          "wert": "smallShoals",
+          "hinweis": {
+            "de": "Jungtiere leben in kleinen Schwärmen.",
+            "en": "Juveniles live in small shoals."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "revierverhalten",
+          "wert": "solitaryTerritorialWhenShelterAbundant",
+          "hinweis": {
+            "de": "Bei reichlich vorhandenen Verstecken können Tiere auch einzeln leben und ihr Riffgebiet territorial verteidigen.",
+            "en": "Where shelter is abundant, individuals may also be solitary and territorial over their area of reef."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "geschlechtswechsel",
+          "wert": "protogynousHermaphrodite",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt die Art als protogynen Hermaphroditen: Ein Weibchen kann zum Männchen werden, wenn das dominante Männchen der Gruppe verloren geht.",
+            "en": "The Zoopedia describes the species as a protogynous hermaphrodite: a female can change into a male when the dominant male in the group is lost."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "reef",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "lagoon",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "actinopterygii",
+          "rang": "klasse",
+          "name": "Actinopterygii",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "blenniiformes",
+          "rang": "ordnung",
+          "name": "Blenniiformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "pomacentridae",
+          "rang": "familie",
+          "name": "Pomacentridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dascyllus",
+          "rang": "gattung",
+          "name": "Dascyllus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "dascyllus-trimaculatus",
+          "rang": "art",
+          "name": "Dascyllus trimaculatus",
+          "deutscherName": "Dreifleck-Preußenfisch",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Nicht gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Dreifleck-Preußenfisch (Dascyllus trimaculatus), auch als Dreifleck-Riffbarsch beziehungsweise Domino-Riffbarsch bekannt, ist im tropischen Indo-Pazifik weit verbreitet – vom Roten Meer und Ostafrika bis nach Hawaii, Japan und Nordaustralien. Er lebt typischerweise in Korallenriffen und Lagunen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The threespot damselfish (or Dascyllus trimaculatus), also known as the threespot humbug or domino damselfish, is a widespread species found throughout the tropical Indo-Pacific region from the Red Sea and East Africa to Hawaii, Japan and northern Australia. It typically inhabits coral reefs and lagoons.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The threespot damselfish (or Dascyllus trimaculatus), also known as the threespot humbug or domino damselfish, is a widespread species found throughout the tropical Indo-Pacific region from the Red Sea and East Africa to Hawaii, Japan and northern Australia. It typically inhabits coral reefs and lagoons.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Dreifleck-Preußenfisch (Dascyllus trimaculatus), auch als Dreifleck-Riffbarsch beziehungsweise Domino-Riffbarsch bekannt, ist im tropischen Indo-Pazifik weit verbreitet – vom Roten Meer und Ostafrika bis nach Hawaii, Japan und Nordaustralien. Er lebt typischerweise in Korallenriffen und Lagunen.\n\nDie Art ist leicht an ihrem dunkelgrauen bis schwarzen Körper mit drei markanten weißen Flecken zu erkennen: einem auf der Stirn und je einem auf jeder Seite des oberen Körpers nahe der Rückenflosse.\n\nDreifleck-Preußenfische werden normalerweise etwa 10 bis 13 cm lang und wiegen 30 bis 45 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The threespot damselfish (or Dascyllus trimaculatus), also known as the threespot humbug or domino damselfish, is a widespread species found throughout the tropical Indo-Pacific region from the Red Sea and East Africa to Hawaii, Japan and northern Australia. It typically inhabits coral reefs and lagoons.\n\nThis species is easily recognised by its dark grey to black body marked with three distinct white spots, one on the forehead and one on each side of the upper body near the dorsal fin.\n\nThreespot damselfish usually grow to about 10 to 13cm in length and weigh 30g to 45g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The threespot damselfish (or Dascyllus trimaculatus), also known as the threespot humbug or domino damselfish, is a widespread species found throughout the tropical Indo-Pacific region from the Red Sea and East Africa to Hawaii, Japan and northern Australia. It typically inhabits coral reefs and lagoons.\n\nThis species is easily recognised by its dark grey to black body marked with three distinct white spots, one on the forehead and one on each side of the upper body near the dorsal fin.\n\nThreespot damselfish usually grow to about 10 to 13cm in length and weigh 30g to 45g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Dreifleck-Preußenfisch gilt insgesamt als nicht gefährdet, wird im Persischen Golf jedoch als gefährdet eingestuft. Durch die Erwärmung der Meere können Seeanemonen ausbleichen, die jungen Dreifleck-Preußenfischen als Schutz dienen. Dadurch sinkt die erfolgreiche Ansiedlung und die Sterblichkeit durch Fressfeinde steigt. Zusätzlich macht die Versauerung der Ozeane Korallenriffe für Fische, die auf komplexe Korallen- und Anemonenstrukturen angewiesen sind, zu weniger geeigneten Lebensräumen.\n\nGenomische Ressourcen helfen dabei, die Verbindung zwischen Populationen, Risiken und Widerstandsfähigkeit zu verstehen und Schutzmaßnahmen zu priorisieren. Schutzgebiete bewahren wichtige Riffstrukturen und die Biodiversität. Gleichzeitig müssen Bestände pflanzenfressender Fische so bewirtschaftet werden, dass Algen während der Erholung der Korallen in Schach gehalten werden. Lokale Belastungen wie Verschmutzung, Sedimenteintrag und zerstörerische Fischereimethoden müssen erkannt und reduziert werden.\n\nDie Zukunft des Dreifleck-Preußenfischs hängt stark davon ab, gesunde, nicht ausgebleichte Anemonen zu erhalten, da diese eine wichtige Rolle für den Erfolg der Larven spielen. Überwachungsprogramme sind entscheidend, um die Gesundheit der Anemonen, die Ansiedlung der Fische und die Riffstruktur zu verfolgen und Schutzstrategien zu steuern.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The threespot damselfish is considered a species of Least Concern, though Vulnerable in the Persian Gulf. Warming seas can bleach sea anemones that juvenile threespot damselfish use for shelter, decreasing settlement and increasing mortality from predation. In addition, ocean acidification makes coral reefs less viable habitats for fish that depend on complex coral/anemone structures.\n\nGenomic resources help to understand population connectivity, risk and resilience, and how to prioritise protection. Protected areas safeguard critical reef structure and biodiversity, and herbivorous fish populations must be managed to keep algae in check while corals recover. Local stressors like pollution, sediment run-off, and destructive fishing practices must be identified and reduced.\n\nThe outlook for the threespot damselfish heavily depends on preserving healthy, unbleached anemones, given their role in larval success. Monitoring programs are crucial to track anemone health, fish settlement, and reef structure to guide conservation strategies.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The threespot damselfish is considered a species of Least Concern, though Vulnerable in the Persian Gulf. Warming seas can bleach sea anemones that juvenile threespot damselfish use for shelter, decreasing settlement and increasing mortality from predation. In addition, ocean acidification makes coral reefs less viable habitats for fish that depend on complex coral/anemone structures.\n\nGenomic resources help to understand population connectivity, risk and resilience, and how to prioritise protection. Protected areas safeguard critical reef structure and biodiversity, and herbivorous fish populations must be managed to keep algae in check while corals recover. Local stressors like pollution, sediment run-off, and destructive fishing practices must be identified and reduced.\n\nThe outlook for the threespot damselfish heavily depends on preserving healthy, unbleached anemones, given their role in larval success. Monitoring programs are crucial to track anemone health, fish settlement, and reef structure to guide conservation strategies.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Erwachsene Dreifleck-Preußenfische leben in lockeren Verbänden oder Harems, während Jungtiere kleine Schwärme bilden. In Gebieten mit vielen Versteckmöglichkeiten können sie auch einzeln leben und ihr Riffgebiet territorial verteidigen.\n\nDreifleck-Preußenfische paaren sich das ganze Jahr über und laichen wiederholt, wobei ihre Fortpflanzung eng mit der Wassertemperatur und den Mondzyklen zusammenhängt. Während des Laichens richten Männchen kleine Reviere auf Korallen oder felsigem Untergrund ein, die als Nistplätze dienen, und verteidigen sie energisch. Die Balz beginnt damit, dass das Männchen schnelle Vorstöße und flatternde Bewegungen zeigt, um Weibchen anzulocken. Dabei treten häufig auffällige Veränderungen der Körperfärbung auf. Nähert sich ein paarungsbereites Weibchen, untersucht es den Nistplatz und legt dort ein Gelege klebriger Eier ab, die vom Männchen unmittelbar befruchtet werden.\n\nNach dem Laichen bewacht das Männchen die Eier und fächelt ihnen Wasser zu, um die Sauerstoffzufuhr aufrechtzuerhalten sowie Schmutz und mögliche Fressfeinde zu entfernen. Die Eier schlüpfen normalerweise innerhalb von 2 bis 3 Tagen. Dabei entstehen pelagische Larven, die mehrere Wochen mit dem Plankton treiben, bevor sie sich am Riff ansiedeln und zu einer bodennahen Lebensweise übergehen.\n\nDreifleck-Preußenfische erreichen mit etwa einem Jahr die Geschlechtsreife. Die Zoopedia beschreibt die Art als protogynen Hermaphroditen: Ein Weibchen kann sich in ein Männchen umwandeln, wenn das dominante Männchen der Gruppe verloren geht. Der Geschlechtswechsel wird durch soziale Signale und nicht durch Alter oder Jahreszeit ausgelöst. Er zeigt sich vor allem durch eine zunehmend dunklere und gleichmäßigere Färbung, die sich mit der Etablierung der sozialen Dominanz verstärkt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Threespot damselfish adults live in loose aggregates or harems, and juveniles live in small shoals. In areas where there is an abundance of shelter, they may also be solitary and territorial over their area of reef.\n\nThreespot damselfish mate year-round, spawning repeatedly with reproduction closely linked to water temperature and lunar cycles. While spawning, males establish and vigorously defend small territories on coral or rocky substrates that serve as nesting sites. Courtship begins with the male performing dashing and fluttering displays to attract nearby females, often accompanied by distinctive body colouration changes. When a receptive female approaches, she inspects the nesting site and deposits a clutch of adhesive eggs on the substrate, which the male immediately fertilises.\n\nAfter spawning, the male guards and fans the eggs to maintain oxygen flow and remove debris or potential predators. The eggs typically hatch within 2 or 3 days, releasing pelagic larvae that drift with the plankton for several weeks before settling onto the reef and adopting a benthic lifestyle.\n\nThreespot damselfish reach sexual maturity at 1 year old. The threespot damselfish is a protogynous hermaphrodite, meaning that a female can change into a male when the dominant male in the group is lost. The sex change is triggered by social cues, not by age or season, and is reflected primarily through increased darkening and uniformity of colouration, which intensifies as social dominance is established.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Threespot damselfish adults live in loose aggregates or harems, and juveniles live in small shoals. In areas where there is an abundance of shelter, they may also be solitary and territorial over their area of reef.\n\nThreespot damselfish mate year-round, spawning repeatedly with reproduction closely linked to water temperature and lunar cycles. While spawning, males establish and vigorously defend small territories on coral or rocky substrates that serve as nesting sites. Courtship begins with the male performing dashing and fluttering displays to attract nearby females, often accompanied by distinctive body colouration changes. When a receptive female approaches, she inspects the nesting site and deposits a clutch of adhesive eggs on the substrate, which the male immediately fertilises.\n\nAfter spawning, the male guards and fans the eggs to maintain oxygen flow and remove debris or potential predators. The eggs typically hatch within 2 or 3 days, releasing pelagic larvae that drift with the plankton for several weeks before settling onto the reef and adopting a benthic lifestyle.\n\nThreespot damselfish reach sexual maturity at 1 year old. The threespot damselfish is a protogynous hermaphrodite, meaning that a female can change into a male when the dominant male in the group is lost. The sex change is triggered by social cues, not by age or season, and is reflected primarily through increased darkening and uniformity of colouration, which intensifies as social dominance is established.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Junge Dreifleck-Preußenfische leben ähnlich wie Clownfische in einer wechselseitig nützlichen Beziehung mit Seeanemonen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Zur Balz der Dreifleck-Preußenfische gehört das sogenannte „Signal Jumping“ – schnelle senkrechte Vorstöße in der Wassersäule, mit denen Männchen Weibchen beeindrucken.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Larven des Dreifleck-Preußenfischs sind „pelagisch“, schwimmen also frei im offenen Wasser, bevor sie sich als Jungtiere an Riffen ansiedeln.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Das Genom des Dreifleck-Preußenfischs wurde sequenziert, um Wissenschaftlern zu helfen, die Evolution von Rifffischen und ihre Anpassung an sich verändernde Meeresumgebungen zu verstehen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "In Aquarien gelten Dreifleck-Preußenfische als pflegeleicht und robust, sind jedoch auch dafür bekannt, gegenüber anderen Fischen im Becken aggressiv zu sein.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Juvenile threespot damselfish live with sea anemones in a mutualistic relationship like clownfish.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Threespot damselfish courtship involves ‘signal jumping’ - rapid vertical dashes in the water column to impress females.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Threespot damselfish larvae are ‘pelagic’ (free swimming in open water) before they settle onto reefs as juveniles.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The genome of threespot damselfish has been sequenced to help scientists understand reef fish evolution and adaptation to changing ocean environments.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In aquariums, threespot damselfish are known as being easy to care for and hardy, but also for being aggressive to other fish in the tank.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Juvenile threespot damselfish live with sea anemones in a mutualistic relationship like clownfish.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Threespot damselfish courtship involves ‘signal jumping’ - rapid vertical dashes in the water column to impress females.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Threespot damselfish larvae are ‘pelagic’ (free swimming in open water) before they settle onto reefs as juveniles.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The genome of threespot damselfish has been sequenced to help scientists understand reef fish evolution and adaptation to changing ocean environments.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In aquariums, threespot damselfish are known as being easy to care for and hardy, but also for being aggressive to other fish in the tank.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Dascyllus trimaculatus/map/Dascyllus trimaculatus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Dreifleck-Preußenfisch – Planet Zoo 2",
+            "en": "Threespot Damselfish – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Dreifleck-Preußenfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Threespot Damselfish."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Dascyllus trimaculatus/bilder/Dascyllus trimaculatus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "veroeffentlichtAm": "2026-09-29",
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Threespot Damselfish",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Die Veröffentlichung als neues Zoopedia-Tier am 29. September 2026 ist zusätzlich durch die offizielle Planet-Zoo-2-Ankündigung dokumentiert. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten."
+    }
+  }
+}
