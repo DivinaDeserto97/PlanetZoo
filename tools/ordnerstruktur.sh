@@ -225,6 +225,8 @@ ist_medium() {
                 -path "$PROJECT_ROOT/.git" \
                 -o \
                 -path "$PROJECT_ROOT/share" \
+                -o \
+                -path "$PROJECT_ROOT/bot" \
             \) \
             -prune \
             -o \

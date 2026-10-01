@@ -156,7 +156,7 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "quelle": "planetZoo2"
         },
         {
@@ -264,14 +264,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Eastern Brown Snake (Pseudonaja textilis) is a venomous snake native to Australia and New Guinea. It prefers dry areas and occurs in grasslands, shrublands and open woodland.",
+          "inhalt": "The Eastern Brown Snake (Pseudonaja textilis) is a venomous snake native to Australia and New Guinea. It prefers dry areas and occurs in Graslands, shrublands and open woodland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Eastern Brown Snake (Pseudonaja textilis) is a venomous snake native to Australia and New Guinea. It prefers dry areas and occurs in grasslands, shrublands and open woodland.",
+          "inhalt": "The Eastern Brown Snake (Pseudonaja textilis) is a venomous snake native to Australia and New Guinea. It prefers dry areas and occurs in Graslands, shrublands and open woodland.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

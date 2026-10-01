@@ -176,7 +176,7 @@
           "wert": "temperateForest",
           "hinweis": {
             "de": "Die Zoopedia nennt gemäßigte Wald- und Flusslandschaften als Lebensraum.",
-            "en": "The Zoopedia names temperate forest and river landscapes as habitat."
+            "en": "The Zoopedia names temperate Wald and river landscapes as habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -293,14 +293,14 @@
       ],
       "en": [
         {
-          "inhalt": "The EurAsienn Beaver (Castor fiber) is a large rodent native to temperate forest and river landscapes of Europe and Asia.",
+          "inhalt": "The EurAsienn Beaver (Castor fiber) is a large rodent native to temperate Wald and river landscapes of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The EurAsienn Beaver (Castor fiber) is a large rodent native to temperate forest and river landscapes of Europe and Asia.",
+          "inhalt": "The EurAsienn Beaver (Castor fiber) is a large rodent native to temperate Wald and river landscapes of Europe and Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

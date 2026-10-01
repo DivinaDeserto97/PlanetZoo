@@ -184,10 +184,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt die mongolische Steppe und die Graslandschaftschaften Zentralasiens als Lebensraum.",
-            "en": "The Zoopedia names the Mongolian steppe and the grasslands of Central Asia as habitat."
+            "en": "The Zoopedia names the Mongolian steppe and the Graslands of Central Asia as habitat."
           },
           "quelle": "planetZoo2"
         }

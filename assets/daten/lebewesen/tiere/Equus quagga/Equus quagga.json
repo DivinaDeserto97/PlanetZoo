@@ -159,10 +159,10 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Savanne wird im Projekt dem Graslandschaft-Kontext zugeordnet.",
-            "en": "Savanna is mapped to the project's grassland context."
+            "en": "Savanna is mapped to the project's Grasland context."
           },
           "quelle": "planetZoo2"
         }

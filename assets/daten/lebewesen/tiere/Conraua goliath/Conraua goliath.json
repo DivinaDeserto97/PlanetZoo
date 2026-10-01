@@ -183,7 +183,7 @@
           "wert": "tropical",
           "hinweis": {
             "de": "Die Zoopedia nennt afrikanische Regenwälder.",
-            "en": "The Zoopedia names Afrikan rainforests."
+            "en": "The Zoopedia names Afrikan rainWalds."
           },
           "quelle": "planetZoo2"
         },
@@ -308,14 +308,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainWalds of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainforests of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
+          "inhalt": "The Goliath Frog (Conraua goliath) is an extremely large frog species living in the Afrikan rainWalds of Cameroon and Equatorial Guinea, specifically in fast-flowing rivers and streams.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

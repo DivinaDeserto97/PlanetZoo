@@ -176,10 +176,10 @@
           "quelle": "planetZoo2"
         },
         {
-          "wert": "grassland",
+          "wert": "Grasland",
           "hinweis": {
             "de": "Die Zoopedia nennt Graslandschaftschaften als Lebensraum.",
-            "en": "The Zoopedia names grasslands as habitat."
+            "en": "The Zoopedia names Graslands as habitat."
           },
           "quelle": "planetZoo2"
         },
@@ -296,14 +296,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, grasslands and shrublands of the United States and Mexico.",
+          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, Graslands and shrublands of the United States and Mexico.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, grasslands and shrublands of the United States and Mexico.",
+          "inhalt": "The Western Diamondback Rattlesnake (Crotalus atrox) is a venomous snake native to deserts, Graslands and shrublands of the United States and Mexico.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

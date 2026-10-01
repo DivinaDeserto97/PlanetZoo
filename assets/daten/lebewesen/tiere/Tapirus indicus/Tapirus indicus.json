@@ -206,10 +206,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "rainforest",
+          "wert": "rainWald",
           "hinweis": {
             "de": "Die Zoopedia nennt die Regenwälder Südostasiens als Lebensraum.",
-            "en": "The Zoopedia names the rainforests of Southeast Asia as habitat."
+            "en": "The Zoopedia names the rainWalds of Southeast Asia as habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -318,14 +318,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Malayan Tapir (Tapirus indicus) is a mammal native to the rainforests of Southeast Asia.",
+          "inhalt": "The Malayan Tapir (Tapirus indicus) is a mammal native to the rainWalds of Southeast Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Malayan Tapir (Tapirus indicus) is a mammal native to the rainforests of Southeast Asia.",
+          "inhalt": "The Malayan Tapir (Tapirus indicus) is a mammal native to the rainWalds of Southeast Asia.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

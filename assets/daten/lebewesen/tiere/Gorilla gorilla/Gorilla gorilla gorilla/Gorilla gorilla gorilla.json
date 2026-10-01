@@ -183,10 +183,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "rainforest",
+          "wert": "rainWald",
           "hinweis": {
             "de": "Die Zoopedia nennt Regenwälder als Lebensraum.",
-            "en": "The Zoopedia names rainforests as habitat."
+            "en": "The Zoopedia names rainWalds as habitat."
           },
           "quelle": "planetZoo2"
         },
@@ -194,7 +194,7 @@
           "wert": "freshwaterSwamp",
           "hinweis": {
             "de": "Die Zoopedia nennt Sumpfwälder als Lebensraum.",
-            "en": "The Zoopedia names swamp forests as habitat."
+            "en": "The Zoopedia names swamp Walds as habitat."
           },
           "quelle": "planetZoo2"
         },
@@ -303,14 +303,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainforests, swamp forests and abandoned agricultural land.",
+          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainWalds, swamp Walds and abandoned agricultural land.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainforests, swamp forests and abandoned agricultural land.",
+          "inhalt": "The Western Lowland Gorilla (Gorilla gorilla gorilla) is described by the Zoopedia as native to Cameroon, Equatorial Guinea, Gabon, the Democratic Republic of the Congo and southern Niger. It inhabits rainWalds, swamp Walds and abandoned agricultural land.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

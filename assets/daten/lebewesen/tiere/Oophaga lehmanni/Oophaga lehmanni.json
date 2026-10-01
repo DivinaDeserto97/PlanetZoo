@@ -145,10 +145,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "forest",
+          "wert": "Wald",
           "hinweis": {
             "de": "Die Zoopedia beschreibt den kolumbianischen Regenwald des Anchicayá-Tals als natürlichen Lebensraum. Die Tiere halten sich hauptsächlich am Waldboden auf, gelegentlich auch auf niedrigen Ästen und in Büschen.",
-            "en": "The Zoopedia describes the Colombian rainforest of the Anchicayá Valley as the natural habitat. The frogs mainly use the forest floor, but are occasionally found on low branches and in bushes."
+            "en": "The Zoopedia describes the Colombian rainWald of the Anchicayá Valley as the natural habitat. The frogs mainly use the Wald floor, but are occasionally found on low branches and in bushes."
           },
           "quelle": "planetZoo2"
         }
@@ -249,14 +249,14 @@
       ],
       "en": [
         {
-          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainforests of the Anchicayá Valley and is found nowhere else in the world.",
+          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainWalds of the Anchicayá Valley and is found nowhere else in the world.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainforests of the Anchicayá Valley and is found nowhere else in the world.",
+          "inhalt": "Lehmann's Poison Frog (Oophaga lehmanni) is native only to the Colombian rainWalds of the Anchicayá Valley and is found nowhere else in the world.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

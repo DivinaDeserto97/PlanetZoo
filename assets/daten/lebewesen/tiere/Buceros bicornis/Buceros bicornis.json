@@ -205,11 +205,11 @@
     "biome": {
       "werte": [
         {
-          "wert": "montaneRainforest",
+          "wert": "montaneRainWald",
           "quelle": "planetZoo2"
         },
         {
-          "wert": "lowlandRainforest",
+          "wert": "lowlandRainWald",
           "quelle": "planetZoo2"
         }
       ]
@@ -373,14 +373,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Great Hornbill (Buceros bicornis) is a large bird distributed from southwestern and northern India through Bhutan, Myanmar, Thailand and Malaysia to Sumatra, where it lives in montane and lowland rainforests.",
+          "inhalt": "The Great Hornbill (Buceros bicornis) is a large bird distributed from southwestern and northern India through Bhutan, Myanmar, Thailand and Malaysia to Sumatra, where it lives in montane and lowland rainWalds.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Great Hornbill (Buceros bicornis) is a large bird distributed from southwestern and northern India through Bhutan, Myanmar, Thailand and Malaysia to Sumatra, where it lives in montane and lowland rainforests.",
+          "inhalt": "The Great Hornbill (Buceros bicornis) is a large bird distributed from southwestern and northern India through Bhutan, Myanmar, Thailand and Malaysia to Sumatra, where it lives in montane and lowland rainWalds.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

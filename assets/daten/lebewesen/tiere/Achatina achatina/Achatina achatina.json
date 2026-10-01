@@ -159,10 +159,10 @@
     "biome": {
       "werte": [
         {
-          "wert": "forest",
+          "wert": "Wald",
           "hinweis": {
             "de": "Die Zoopedia nennt Waldgebiete Westafrikas als natürlichen Lebensraum.",
-            "en": "The Zoopedia names forest areas of West Afrika as the natural habitat."
+            "en": "The Zoopedia names Wald areas of West Afrika as the natural habitat."
           },
           "quelle": "planetZoo2"
         }
@@ -279,14 +279,14 @@
       ],
       "en": [
         {
-          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in forest areas of West Afrika, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
+          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in Wald areas of West Afrika, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }
       ],
       "en-US": [
         {
-          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in forest areas of West Afrika, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
+          "inhalt": "The Giant Tiger Land Snail (Achatina achatina) lives in Wald areas of West Afrika, especially in Sierra Leone, Liberia, Côte d'Ivoire, Ghana and Nigeria.",
           "quelle": "planetZoo2",
           "uebersetzung": "ChatGPT"
         }

@@ -584,7 +584,7 @@ Nicht mit `filter.biome` verwechseln.
       "quelle": "quelleId"
     },
     {
-      "wert": "grassland",
+      "wert": "Grasland",
       "quelle": "quelleId"
     }
   ]
@@ -594,10 +594,10 @@ Nicht mit `filter.biome` verwechseln.
 Bisher im Projekt verwendet:
 
 - `savanna`
-- `grassland`
+- `Grasland`
 - `woodland`
 - `openWoodland`
-- `forest`
+- `Wald`
 - `floodplain`
 - `desert`
 - `semiArid`

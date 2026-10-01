@@ -2,182 +2,138 @@
 
 set -euo pipefail
 
-
-# ============================================================
-# PROJEKTPFADE
-# ============================================================
-
-SCRIPT_DIR="$(
-    cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &&
-    pwd
-)"
-
-PROJECT_ROOT="$(
-    cd -- "$SCRIPT_DIR/.." &&
-    pwd
-)"
-
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 PROJECT_NAME="$(basename "$PROJECT_ROOT")"
-
 SHARE_DIR="$PROJECT_ROOT/share"
 
-
 mkdir -p "$SHARE_DIR"
-
-
-# ============================================================
-# DATEINAME
-# ============================================================
-
 ZIP_PATH="$SHARE_DIR/${PROJECT_NAME}-share.zip"
 
-
-# ============================================================
-# ALTE SHARE-ZIP LÖSCHEN
-# ============================================================
-
-if [[ -f "$ZIP_PATH" ]]
-then
-
-    rm "$ZIP_PATH"
-
-fi
-
-
-# ============================================================
-# DATEILISTE ERSTELLEN
-# .gitignore wurde vorher aus den JSON-Freigaben erzeugt.
-# githubFreigabe:true => Medium darf mit in die Share-ZIP.
-# ============================================================
+[[ -f "$ZIP_PATH" ]] && rm "$ZIP_PATH"
 
 cd "$PROJECT_ROOT"
 DATEILISTE="$(mktemp)"
 trap 'rm -f "$DATEILISTE"' EXIT
 
+# ============================================================
+# 1. Normale Projektdateien
+#    Alles, was Git ignoriert, bleibt grundsätzlich draussen.
+# ============================================================
 while IFS= read -r -d '' datei
 do
-    # Git-interne Daten und Share-Ausgabe nie einpacken.
     case "$datei" in
-        ./.git/*|./share/*) continue ;;
+        ./.git/*|./share/*|./bot/*) continue ;;
     esac
 
-    # Alles, was die generierte .gitignore ignoriert, bleibt auch aus der Share-ZIP.
-    if git check-ignore -q -- "$datei" 2>/dev/null
-    then
+    if git check-ignore -q -- "$datei" 2>/dev/null; then
         continue
     fi
 
     printf '%s\n' "$datei" >> "$DATEILISTE"
 done < <(find . -type f -print0)
 
+# ============================================================
+# 2. Lokalen bot/ zusätzlich aufnehmen
+#    bot/ ist absichtlich komplett in .gitignore, soll aber in
+#    der Share-ZIP als Quellcode/Konfiguration mitgeliefert werden.
+#
+#    NIEMALS aufnehmen:
+#    - .env / lokale Secret-Dateien
+#    - node_modules
+#    - Logs / Cache
+#    - lokale Scan-Ausgaben
+# ============================================================
+if [[ -d ./bot ]]; then
+    while IFS= read -r -d '' datei
+    do
+        basis="$(basename "$datei")"
+
+        case "$datei" in
+            ./bot/node_modules/*|\
+            ./bot/.git/*|\
+            ./bot/logs/*|\
+            ./bot/cache/*|\
+            ./bot/.cache/*|\
+            ./bot/server-scan.json|\
+            ./bot/*.log)
+                continue
+                ;;
+        esac
+
+        case "$basis" in
+            .env|.env.local|.env.development|.env.production|.env.test|*.pem|*.key)
+                continue
+                ;;
+        esac
+
+        printf '%s\n' "$datei" >> "$DATEILISTE"
+    done < <(find ./bot -type f -print0)
+fi
+
 sort -u -o "$DATEILISTE" "$DATEILISTE"
 
 # ============================================================
 # SICHERHEITSPRÜFUNG
 # ============================================================
-
 echo
 echo "============================================================"
 echo "2. Prüfe grosse Dateien"
 echo "============================================================"
-echo
-
 
 GROSSE_DATEIEN=""
-
 while IFS= read -r datei
 do
-
-    if [[ -f "$datei" ]]
-    then
-
-        groesse="$(
-            stat -c '%s' "$datei"
-        )"
-
-
-        if (( groesse > 52428800 ))
-        then
-
-            GROSSE_DATEIEN+="$datei"$'\n'
-
-        fi
-
+    [[ -f "$datei" ]] || continue
+    groesse="$(stat -c '%s' "$datei")"
+    if (( groesse > 52428800 )); then
+        GROSSE_DATEIEN+="$datei"$'\n'
     fi
-
 done < "$DATEILISTE"
 
-
-if [[ -n "$GROSSE_DATEIEN" ]]
-then
-
+if [[ -n "$GROSSE_DATEIEN" ]]; then
     echo "❌ ZIP wurde nicht erstellt."
-    echo
-    echo "Diese Dateien wären trotz Medienfilter grösser als 50 MB:"
-    echo
+    echo "Diese Dateien wären grösser als 50 MB:"
     printf '%s' "$GROSSE_DATEIEN"
-    echo
-    echo "Bitte prüfen."
-
     exit 1
-
 fi
-
 
 echo "✅ Keine unerwartet grossen Dateien gefunden."
 
+# Zusätzliche harte Secret-Prüfung: bot/.env darf nie in der Liste stehen.
+if grep -Eq '^\./bot/\.env($|\.local$|\.development$|\.production$|\.test$|\..*\.local$)' "$DATEILISTE"; then
+    echo "❌ Sicherheitsabbruch: Eine bot/.env-Datei würde ins ZIP gelangen."
+    exit 1
+fi
 
 # ============================================================
 # ZIP ERSTELLEN
 # ============================================================
-
 echo
 echo "============================================================"
 echo "3. Share-ZIP erstellen"
 echo "============================================================"
-echo
 
+zip -q "$ZIP_PATH" -@ < "$DATEILISTE"
 
-zip \
-    -q \
-    "$ZIP_PATH" \
-    -@ \
-    < "$DATEILISTE"
-
-
-# ============================================================
-# ERGEBNIS
-# ============================================================
-
-ZIP_GROESSE="$(
-    du -h "$ZIP_PATH" |
-    cut -f1
-)"
-
+ZIP_GROESSE="$(du -h "$ZIP_PATH" | cut -f1)"
 
 echo
 echo "============================================================"
 echo "✅ Share-ZIP erstellt"
 echo "============================================================"
+echo "Datei:  $ZIP_PATH"
+echo "Grösse: $ZIP_GROESSE"
 echo
-echo "Datei:"
-echo "$ZIP_PATH"
-echo
-echo "Grösse:"
-echo "$ZIP_GROESSE"
+echo "Enthalten:"
+echo "- normale freigegebene Projektdateien"
+echo "- bot/ Quellcode und sichere Bot-Konfiguration"
 echo
 echo "Nicht enthalten:"
-echo "- nicht freigegebene Bilder"
-echo "- nicht freigegebene Videos"
-echo "- nicht freigegebenes Audio"
-echo "- andere ZIP-Dateien"
-echo "- 7z / RAR"
+echo "- bot/.env und andere lokale Secret-Dateien"
+echo "- bot/node_modules/"
+echo "- bot Logs/Cache/server-scan.json"
+echo "- nicht freigegebene Medien"
+echo "- andere Archive"
 echo "- .git"
 echo "- share/"
-echo
-echo "Medien mit githubFreigabe: true in den JSON-Dateien sind enthalten."
-echo
-echo "Die übrigen Mediennamen und Medienpfade stehen weiterhin in:"
-echo
-echo "dokumentation/ordnerstruktur.md"
-echo

@@ -6,6 +6,9 @@
 > GitHub-/Share-Freigabestatus aus den JSON-Dateien aufgeführt.
 
 - `PlanetZoo2/`
+  - `.github/`
+    - `workflows/`
+      - [discord-news.yml](../.github/workflows/discord-news.yml)
   - [.gitignore](../.gitignore)
   - `.vscode/`
     - [settings.json](../.vscode/settings.json)
@@ -1654,6 +1657,7 @@
         - [tier.js](../assets/js/tier/tier.js)
   - `dokumentation/`
     - [ANLEITUNG-TIER-JSON.md](../dokumentation/ANLEITUNG-TIER-JSON.md)
+    - [DISCORD-NEWS.md](../dokumentation/DISCORD-NEWS.md)
     - [MEDIEN-UND-QUELLEN.md](../dokumentation/MEDIEN-UND-QUELLEN.md)
     - [PlanetZoo2-Tierdaten-Checkliste.md](../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md)
     - [ordnerstruktur.md](../dokumentation/ordnerstruktur.md)
@@ -1668,8 +1672,11 @@
     - [systematik.html](../pages/systematik.html)
     - [tier.html](../pages/tier.html)
   - `tools/`
+    - [commit-und-merge.sh](../tools/commit-und-merge.sh)
     - [commit.sh](../tools/commit.sh)
+    - [discord-news.mjs](../tools/discord-news.mjs)
     - [format.sh](../tools/format.sh)
     - [gitignore-aus-json.py](../tools/gitignore-aus-json.py)
+    - [merge-main.sh](../tools/merge-main.sh)
     - [ordnerstruktur.sh](../tools/ordnerstruktur.sh)
     - [share-zip.sh](../tools/share-zip.sh)
