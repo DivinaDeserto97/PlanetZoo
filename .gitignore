@@ -13,7 +13,7 @@
 
 # Automatisch erzeugte Share-Dateien
 /share/
-
+/bot/
 # System
 .DS_Store
 Thumbs.db
