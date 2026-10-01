@@ -13,6 +13,23 @@ ZIP_PATH="$SHARE_DIR/${PROJECT_NAME}-share.zip"
 [[ -f "$ZIP_PATH" ]] && rm "$ZIP_PATH"
 
 cd "$PROJECT_ROOT"
+
+# ============================================================
+# 1. Doppelklick-Browser-Bundle aktualisieren
+#    Normale Nutzer brauchen dafür später kein Node.js.
+# ============================================================
+echo
+echo "============================================================"
+echo "1. Doppelklick-Browser-Bundle erstellen"
+echo "============================================================"
+
+if ! command -v node >/dev/null 2>&1; then
+    echo "❌ Node.js wurde nicht gefunden. Das Browser-Bundle kann nicht erstellt werden."
+    exit 1
+fi
+
+node "$SCRIPT_DIR/build-browser-bundle.js"
+
 DATEILISTE="$(mktemp)"
 trap 'rm -f "$DATEILISTE"' EXIT
 
@@ -78,7 +95,7 @@ sort -u -o "$DATEILISTE" "$DATEILISTE"
 # ============================================================
 echo
 echo "============================================================"
-echo "2. Prüfe grosse Dateien"
+echo "2. Share-ZIP prüfen"
 echo "============================================================"
 
 GROSSE_DATEIEN=""

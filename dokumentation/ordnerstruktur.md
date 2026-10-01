@@ -1585,6 +1585,7 @@
         - [sonderdaten-20260919.json](../assets/daten/patches/sonderdaten-20260919.json)
         - [zoopedia-filter-20260919.json](../assets/daten/patches/zoopedia-filter-20260919.json)
     - `js/`
+      - [browser.bundle.js](../assets/js/browser.bundle.js)
       - `features/`
         - [animalLabels.js](../assets/js/features/animalLabels.js)
         - [device.js](../assets/js/features/device.js)
@@ -1662,6 +1663,161 @@
     - [PlanetZoo2-Tierdaten-Checkliste.md](../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md)
     - [ordnerstruktur.md](../dokumentation/ordnerstruktur.md)
   - [index.html](../index.html)
+  - `node_modules/`
+    - `.bin/`
+      - [tsc](../node_modules/.bin/tsc)
+      - [tsserver](../node_modules/.bin/tsserver)
+    - [.package-lock.json](../node_modules/.package-lock.json)
+    - `typescript/`
+      - [LICENSE.txt](../node_modules/typescript/LICENSE.txt)
+      - [README.md](../node_modules/typescript/README.md)
+      - [SECURITY.md](../node_modules/typescript/SECURITY.md)
+      - [ThirdPartyNoticeText.txt](../node_modules/typescript/ThirdPartyNoticeText.txt)
+      - `bin/`
+        - [tsc](../node_modules/typescript/bin/tsc)
+        - [tsserver](../node_modules/typescript/bin/tsserver)
+      - `lib/`
+        - [\_tsc.js](../node_modules/typescript/lib/_tsc.js)
+        - [\_tsserver.js](../node_modules/typescript/lib/_tsserver.js)
+        - [\_typingsInstaller.js](../node_modules/typescript/lib/_typingsInstaller.js)
+        - `cs/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/cs/diagnosticMessages.generated.json)
+        - `de/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/de/diagnosticMessages.generated.json)
+        - `es/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/es/diagnosticMessages.generated.json)
+        - `fr/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/fr/diagnosticMessages.generated.json)
+        - `it/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/it/diagnosticMessages.generated.json)
+        - `ja/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/ja/diagnosticMessages.generated.json)
+        - `ko/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/ko/diagnosticMessages.generated.json)
+        - `lib.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.decorators.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.decorators.legacy.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.dom.asynciterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.dom.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.dom.iterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.collection.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.core.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.generator.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.iterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.proxy.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.reflect.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.symbol.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2015.symbol.wellknown.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2016.array.include.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2016.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2016.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2016.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.arraybuffer.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.date.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.object.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.sharedmemory.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2017.typedarrays.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.asyncgenerator.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.asynciterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2018.regexp.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.array.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.object.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2019.symbol.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.bigint.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.date.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.number.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.sharedmemory.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2020.symbol.wellknown.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2021.weakref.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.array.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.error.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.object.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.regexp.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2022.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2023.array.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2023.collection.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2023.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2023.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2023.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.arraybuffer.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.collection.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.object.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.regexp.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.sharedmemory.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es2024.string.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es5.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.es6.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.array.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.collection.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.decorators.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.disposable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.error.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.float16.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.full.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.intl.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.iterator.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.promise.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.esnext.sharedmemory.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.scripthost.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.webworker.asynciterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.webworker.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.webworker.importscripts.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `lib.webworker.iterable.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - `pl/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/pl/diagnosticMessages.generated.json)
+        - `pt-br/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json)
+        - `ru/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/ru/diagnosticMessages.generated.json)
+        - `tr/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/tr/diagnosticMessages.generated.json)
+        - [tsc.js](../node_modules/typescript/lib/tsc.js)
+        - [tsserver.js](../node_modules/typescript/lib/tsserver.js)
+        - `tsserverlibrary.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - [tsserverlibrary.js](../node_modules/typescript/lib/tsserverlibrary.js)
+        - [typesMap.json](../node_modules/typescript/lib/typesMap.json)
+        - `typescript.d.ts` _(Medium – lokal / nicht freigegeben)_
+        - [typescript.js](../node_modules/typescript/lib/typescript.js)
+        - [typingsInstaller.js](../node_modules/typescript/lib/typingsInstaller.js)
+        - [watchGuard.js](../node_modules/typescript/lib/watchGuard.js)
+        - `zh-cn/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json)
+        - `zh-tw/`
+          - [diagnosticMessages.generated.json](../node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json)
+      - [package.json](../node_modules/typescript/package.json)
+  - [package-lock.json](../package-lock.json)
+  - [package.json](../package.json)
   - `pages/`
     - [home.html](../pages/home.html)
     - [infotafel.html](../pages/infotafel.html)
@@ -1672,6 +1828,7 @@
     - [systematik.html](../pages/systematik.html)
     - [tier.html](../pages/tier.html)
   - `tools/`
+    - [build-browser-bundle.js](../tools/build-browser-bundle.js)
     - [commit-und-merge.sh](../tools/commit-und-merge.sh)
     - [commit.sh](../tools/commit.sh)
     - [discord-news.mjs](../tools/discord-news.mjs)

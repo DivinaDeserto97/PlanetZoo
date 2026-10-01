@@ -1,0 +1,10 @@
+{
+  "name": "planetzoo2-tools",
+  "private": true,
+  "scripts": {
+    "build:browser": "node tools/build-browser-bundle.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
