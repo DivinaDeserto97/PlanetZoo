@@ -302,6 +302,18 @@
               - `Balistoides conspicillum map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Balistoides conspicillum/videos/.gitkeep>)
+          - `Belocercus longicaudus/`
+            - [Belocercus longicaudus.json](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/Belocercus longicaudus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/bilder/.gitkeep>)
+              - `Belocercus longicaudus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/map/.gitkeep>)
+              - `Belocercus longicaudus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/videos/.gitkeep>)
           - `Bison bonasus/`
             - [Bison bonasus.json](<../assets/daten/lebewesen/tiere/Bison bonasus/Bison bonasus.json>)
             - `audio/`
