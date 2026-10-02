@@ -49,6 +49,17 @@ const LABELS = {
   },
 
   conservation: {
+    Domestiziert: {
+      de: "Domestiziert",
+      en: "Domesticated",
+      "en-US": "Domesticated",
+      es: "Domesticado",
+      fr: "Domestiqué",
+      it: "Domesticato",
+      "pt-BR": "Domesticado",
+      ja: "家畜化",
+      "zh-Hans": "驯化",
+    },
     "Nicht gefährdet": {
       de: "Nicht gefährdet",
       en: "Least Concern",

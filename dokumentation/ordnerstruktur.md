@@ -374,6 +374,18 @@
               - `Caesio teres map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Caesio teres/videos/.gitkeep>)
+          - `Camelus bactrianus/`
+            - [Camelus bactrianus.json](<../assets/daten/lebewesen/tiere/Camelus bactrianus/Camelus bactrianus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/bilder/.gitkeep>)
+              - `Camelus bactrianus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/map/.gitkeep>)
+              - `Camelus bactrianus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/videos/.gitkeep>)
           - `Canis lupus/`
             - [Canis lupus.json](<../assets/daten/lebewesen/tiere/Canis lupus/Canis lupus.json>)
             - `audio/`

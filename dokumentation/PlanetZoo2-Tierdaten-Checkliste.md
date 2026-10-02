@@ -346,7 +346,7 @@ Die Zoopedia wird vor Release weiterhin erweitert. Neue Tiere hier zuerst eintra
 | 106 | Moon Jelly           | `Ausstellung` | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
 | 107 | Monarch              | `Ausstellung` | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
 | 108 | Common Ostrich       | `Landgehege`  | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
-| 109 |                      |               |              |                |         [ ]          |             [ ]             |
+| 109 | Bactrian Camel       | `Landgehege`  | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
 | 110 |                      |               |              |                |         [ ]          |             [ ]             |
 | 111 |                      |               |              |                |         [ ]          |             [ ]             |
 | 112 |                      |               |              |                |         [ ]          |             [ ]             |

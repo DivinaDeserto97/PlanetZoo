@@ -1,0 +1,903 @@
+{
+  "id": "Camelus bactrianus",
+  "identitaet": {
+    "namen": {
+      "de": "Trampeltier",
+      "en": "Bactrian Camel",
+      "en-US": "Bactrian Camel",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien"],
+    "biome": [],
+    "schutzstatus": "Domestiziert"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Camelidae",
+          "gattung": "Camelus",
+          "art": "Camelus bactrianus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [""]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.6,
+          "max": 1.8,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Schulterhöhe von 1,6 bis 1,8 m. Die Gesamthöhe einschließlich der Höcker kann bis zu 2,3 m erreichen.",
+            "en": "The Zoopedia gives a shoulder height of 1.6 to 1.8 m. Total height including the humps may reach up to 2.3 m."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 300,
+          "max": 1000,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennchenDurchschnitt",
+          "wert": 600,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Männchen wiegen laut Zoopedia durchschnittlich etwa 600 kg.",
+            "en": "According to the Zoopedia, males weigh about 600 kg on average."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weibchenDurchschnitt",
+          "wert": 480,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Weibchen wiegen laut Zoopedia durchschnittlich etwa 480 kg.",
+            "en": "According to the Zoopedia, females weigh about 480 kg on average."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "fluegelspannweite": {
+      "werte": [""]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Domestiziert",
+          "system": "",
+          "hinweis": {
+            "de": "Das sichtbare Zoopedia-Feld nennt „Domestiziert“. Der Text betont, dass das Trampeltier eine domestizierte Art mit großem und stabilem Bestand ist. Das verwandte Wildkamel (Camelus ferus) wird separat als vom Aussterben bedroht beschrieben.",
+            "en": "The visible Zoopedia field lists Domesticated. The text states that the Bactrian camel is a domesticated species with a large and stable population. The related wild Bactrian camel (Camelus ferus) is separately described as Critically Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 2000000,
+          "einheit": "individuum",
+          "giltFuer": ["Camelus bactrianus"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia zeigt bei „Wild Population“ einen geschätzten Bestand von 2.000.000 an, obwohl die Art als domestiziert geführt wird.",
+            "en": "The Zoopedia displays an estimated “Wild Population” of 2,000,000 even though the species is listed as domesticated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Jungtiere verlassen zwischen 3 und 5 Jahren die Mutter bzw. Herde; dies entspricht laut Zoopedia auch dem Alter der Geschlechtsreife.",
+            "en": "Young camels leave their mother and herd between 3 and 5 years old, which the Zoopedia also gives as the age of sexual maturity."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 13,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "kalb",
+          "durchschnitt": 1,
+          "max": 2,
+          "hinweis": {
+            "de": "Weibchen bringen normalerweise ein Kalb zur Welt; Zwillinge kommen gelegentlich vor.",
+            "en": "Females normally give birth to one calf, though twins occur occasionally."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "harem",
+          "wert": "dominantMaleWithFemalesAndYoung",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Haremgruppen aus einem dominanten Männchen, mehreren Weibchen und deren Nachwuchs.",
+            "en": "The Zoopedia describes harem groups consisting of a dominant male, several females and their offspring."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "junggesellen",
+          "wert": "solitaryOrBachelorHerd",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Junggesellenmännchen leben allein oder in Junggesellenherden, bis sie einen eigenen Harem erwerben.",
+            "en": "Bachelor males live alone or in bachelor herds until they acquire their own harem."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "opportunistisch",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Trampeltiere als wenig wählerisch: Sie fressen dornige, harte und bittere Pflanzen, Aas und bei starkem Hunger auch Gegenstände wie Zelte, Seile oder Kleidung.",
+              "en": "The Zoopedia describes Bactrian camels as not fussy eaters: they can eat thorny, tough and bitter vegetation, carrion, and when very hungry even items such as tents, rope or clothes."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Muttermilch",
+              "typ": "nutzung",
+              "beziehung": "nutzung",
+              "wirkung": "+/0",
+              "bedingung": {
+                "selbst": ["calf"],
+                "ziel": []
+              },
+              "nutzung": {
+                "art": "nahrung",
+                "haeufigkeit": "Zeitraum: bis zu 1,5 Jahre Säugezeit"
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Dornige, harte und bittere Vegetation",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Aas",
+              "typ": "tierisch",
+              "beziehung": "aasfressen",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "Die Zoopedia nennt das Wildkamel (Camelus ferus) als eng verwandte Art und beschreibt für beide einen gemeinsamen Vorfahren.",
+        "en": "The Zoopedia identifies the wild Bactrian camel (Camelus ferus) as a close relative and states that both share a common ancestor."
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "camelidae",
+          "rang": "familie",
+          "name": "Camelidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "camelus",
+          "rang": "gattung",
+          "name": "Camelus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "camelus-bactrianus",
+          "rang": "art",
+          "name": "Camelus bactrianus",
+          "deutscherName": "Trampeltier",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": "domestiziert",
+          "schutzstatus": "Domestiziert",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Trampeltier (Camelus bactrianus) stammt ursprünglich aus Zentralasien.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Bactrian camel (Camelus bactrianus) is native to Central Asia.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Bactrian camel (Camelus bactrianus) is native to Central Asia.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Trampeltier (Camelus bactrianus) ist ein großes Huftier aus Zentralasien. Es wird auch Mongolisches Kamel, zweihöckriges Kamel oder Doppelhöckerkamel genannt. Es ist eng mit dem Wildkamel (C. ferus) verwandt; beide teilen einen gemeinsamen Vorfahren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Das domestizierte Trampeltier besitzt zwei Höcker und ein dichtes, sandfarbenes Wollfell. Es kann jedoch auch dunkelbraun oder weiß gefärbt sein.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Schulterhöhe liegt zwischen 1,6 und 1,8 m. Einschließlich der Höcker kann die Gesamthöhe bis zu 2,3 m betragen. Trampeltiere wiegen zwischen 300 und 1.000 kg. Männchen können bis zu 20 % größer als Weibchen sein und sind mit durchschnittlich 600 kg auch schwerer als Weibchen mit durchschnittlich 480 kg.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Bactrian camel (or Camelus bactrianus) is a large ungulate native to Central Asia. It is also known as the Mongolian camel, two-humped camel or double humped camel. It is closely related to the wild Bactrian camel (C. ferus), but both share a common ancestor.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The (domesticated) Bactrian camel has two humps and thick sandy-coloured wool coats, although it can also be dark brown or white.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Shoulder height ranges from 1.6m to 1.8m tall, and total height including the humps may reach up to 2.3m tall. Bactrian camels weigh between 300kg and 1,000kg. Males may be up to 20% larger than females, and are also heavier, at an average of 600kg compared to 480kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Bactrian camel (or Camelus bactrianus) is a large ungulate native to Central Asia. It is also known as the Mongolian camel, two-humped camel or double humped camel. It is closely related to the wild Bactrian camel (C. ferus), but both share a common ancestor.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The (domesticated) Bactrian camel has two humps and thick sandy-coloured wool coats, although it can also be dark brown or white.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Shoulder height ranges from 1.6m to 1.8m tall, and total height including the humps may reach up to 2.3m tall. Bactrian camels weigh between 300kg and 1,000kg. Males may be up to 20% larger than females, and are also heavier, at an average of 600kg compared to 480kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Trampeltier ist eine domestizierte Art mit einem großen und stabilen Bestand und gilt daher nicht als bedroht. Das verwandte Wildkamel ist dagegen vom Aussterben bedroht und nähert sich dem Aussterben. In menschlicher Obhut kann das domestizierte Trampeltier als Botschafterart dienen, um Aufmerksamkeit und finanzielle Mittel zu schaffen, und bietet Forschungsmöglichkeiten, die dem Überleben der Wildart zugutekommen können.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Wildkamele überleben nur noch in kleinen, voneinander getrennten Herden in der Wüste Gobi. Sie sind durch Lebensraumverlust, Wilderei, Vergiftung, Störungen durch Bergbau und Infrastrukturprojekte sowie durch Kreuzungen mit verwilderten domestizierten Trampeltieren bedroht. Die geringe Bestandsgröße und die Abgeschiedenheit ihres Verbreitungsgebiets erschweren Überwachung und schnelle Schutzmaßnahmen zusätzlich.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Der Schutz konzentriert sich stark auf Lebensraumschutz und Anti-Wilderei-Patrouillen. Zusätzlich dient eine Zuchtstation als Absicherung für den Bestand. Einige Organisationen arbeiten außerdem mit lokalen Gemeinschaften, um das Risiko von Hybridisierung zu verringern, und setzen sich dafür ein, Störungen durch Infrastruktur in wichtigen Landschaften zu reduzieren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Bactrian camel is a domesticated species with a large and stable population, and therefore not threatened. However, the related wild Bactrian camel is Critically Endangered and nearing extinction. In captivity, the domesticated Bactrian camel acts as an ambassador species to raise awareness and funds and presents research opportunity that may benefit the wild species’ survival.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wild Bactrian camels survive only in small fragmented herds across the Gobi desert. They are threatened by habitat loss, poaching, poisoning, disturbance from mining and infrastructure projects, and hybridisation with feral domesticated Bactrian camels. These pressures are worsened by low numbers and the remoteness of its range, which makes monitoring and rapid response difficult.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Conservation focuses strongly on habitat protection and anti-poaching patrols. Additionally, a captive-breeding facility is providing population insurance. Some organisations also focus on community outreach to reduce hybridisation risks, and campaign to reduce infrastructure disturbance in key landscapes.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Bactrian camel is a domesticated species with a large and stable population, and therefore not threatened. However, the related wild Bactrian camel is Critically Endangered and nearing extinction. In captivity, the domesticated Bactrian camel acts as an ambassador species to raise awareness and funds and presents research opportunity that may benefit the wild species’ survival.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Wild Bactrian camels survive only in small fragmented herds across the Gobi desert. They are threatened by habitat loss, poaching, poisoning, disturbance from mining and infrastructure projects, and hybridisation with feral domesticated Bactrian camels. These pressures are worsened by low numbers and the remoteness of its range, which makes monitoring and rapid response difficult.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Conservation focuses strongly on habitat protection and anti-poaching patrols. Additionally, a captive-breeding facility is providing population insurance. Some organisations also focus on community outreach to reduce hybridisation risks, and campaign to reduce infrastructure disturbance in key landscapes.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Kamele sind soziale Tiere. In natürlichem Sozialverhalten leben sie in Haremgruppen aus einem dominanten Männchen, mehreren Weibchen und deren Nachwuchs. Das dominante Männchen führt die Herde bei ihren Wanderungen. Junggesellenmännchen leben allein oder in „Junggesellenherden“, bis sie einen eigenen Harem von Weibchen erwerben.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Trampeltiere sind eine domestizierte Art. Einige Herden werden jedoch halb wild gehalten und zeigen ihr natürliches Paarungsverhalten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Paarungszeit der Trampeltiere liegt im März und April. Da Kamele durch die Paarung ausgelöste Ovulationen haben, können Züchter durch künstliche Besamung auch andere Zeitpunkte für die Empfängnis wählen. Während der natürlichen Paarungszeit paart sich das dominante Männchen eines Harems mit allen erwachsenen Weibchen und kann gegenüber anderen Männchen aggressiv werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Weibliche Trampeltiere sind etwa 13 Monate trächtig und bringen normalerweise ein Kalb zur Welt, wobei gelegentlich Zwillinge vorkommen. Die Kälber werden bis zu 1,5 Jahre von ihrer Mutter gesäugt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Jungtiere bleiben bis zu einem Alter von 3 bis 5 Jahren bei ihrer Mutter und Herde. In diesem Zeitraum erreichen sie auch die Geschlechtsreife und verlassen anschließend die Gruppe, um eine nicht verwandte Herde zu gründen oder sich einer solchen anzuschließen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Camels are social animals, living in harem groups in the wild comprised of a dominant male, several female mates and their offspring. The dominant male leads the herd in their migrations. Bachelor males live solitarily or in 'bachelor herds' until they acquire their own harem of females.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels are a domesticated species, though some herds are kept semi-wild and display their natural mating behaviours.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The mating season in Bactrian camels is in March and April, but because camels are induced ovulators, breeders may also use artificial insemination to choose another time for conception. During the natural mating period, the dominant male in a harem will mate with all adult females and may be violent towards other males.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Female Bactrian camels are pregnant for about 13 months and give birth to 1 calf, though twins occur occasionally. Calves nurse from their mothers for up to 1.5 years.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The young remain with their mother and herd until between 3 and 5 years old, which is also when sexual maturity is reached, and then leave to establish or join an unrelated herd.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Camels are social animals, living in harem groups in the wild comprised of a dominant male, several female mates and their offspring. The dominant male leads the herd in their migrations. Bachelor males live solitarily or in 'bachelor herds' until they acquire their own harem of females.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels are a domesticated species, though some herds are kept semi-wild and display their natural mating behaviours.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The mating season in Bactrian camels is in March and April, but because camels are induced ovulators, breeders may also use artificial insemination to choose another time for conception. During the natural mating period, the dominant male in a harem will mate with all adult females and may be violent towards other males.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Female Bactrian camels are pregnant for about 13 months and give birth to 1 calf, though twins occur occasionally. Calves nurse from their mothers for up to 1.5 years.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The young remain with their mother and herd until between 3 and 5 years old, which is also when sexual maturity is reached, and then leave to establish or join an unrelated herd.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Trampeltiere werden nicht mit Höckern geboren. Die Höcker beginnen sich zu entwickeln, sobald ein Kamelkalb feste Nahrung frisst.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Kamele besitzen lange Wimpern und Nasenlöcher, die sie vollständig schließen können, um sich bei Sandstürmen zu schützen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die beiden Höcker des Trampeltiers bestehen aus Fett. Bei reichlichem Nahrungsangebot werden diese Reserven aufgebaut; in Zeiten mit wenig Nahrung schrumpfen die Höcker, während das gespeicherte Fett das Tier versorgt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Trampeltiere sind beim Futter wenig wählerisch. Sie können dornige, harte und bittere Pflanzen sowie Aas fressen und nehmen bei starkem Hunger sogar Zelte, Seile, Kleidung und andere Gegenstände auf.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Trampeltiere wurden vor etwa 4.000 Jahren in den Steppen Zentralasiens domestiziert. Sie werden als Lasttiere sowie wegen ihrer Milch und Wolle gehalten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Bactrian camels are not born with humps. They start developing once a camel calf begins eating solid food.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Camels have long eyelashes and nostrils that can fully close to protect themselves in sandstorms.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Bactrian camel's two humps are made of fat and are built up during times of plentiful food, then shrink as they sustain the camel through times when food is sparse.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels are not fussy about what they eat; they can eat thorny, tough and bitter vegetation, carrion and will also eat tents, rope, clothes and other items when very hungry.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels were domesticated 4000 years ago in the steppes of Central Asia; they are farmed as pack animals and for their milk and wool.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Bactrian camels are not born with humps. They start developing once a camel calf begins eating solid food.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Camels have long eyelashes and nostrils that can fully close to protect themselves in sandstorms.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Bactrian camel's two humps are made of fat and are built up during times of plentiful food, then shrink as they sustain the camel through times when food is sparse.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels are not fussy about what they eat; they can eat thorny, tough and bitter vegetation, carrion and will also eat tents, rope, clothes and other items when very hungry.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Bactrian camels were domesticated 4000 years ago in the steppes of Central Asia; they are farmed as pack animals and for their milk and wool.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Camelus bactrianus/map/Camelus bactrianus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Trampeltier – Planet Zoo 2",
+            "en": "Bactrian Camel – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Trampeltiers aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Bactrian Camel."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Camelus bactrianus/bilder/Camelus bactrianus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    },
+    "veroeffentlichtAm": "2026-09-29"
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Bactrian Camel",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten. Der sichtbare Schutzstatus wurde als Domestiziert übernommen; das verwandte Wildkamel (Camelus ferus) wird nicht mit dem domestizierten Camelus bactrianus gleichgesetzt. Das Veröffentlichungsdatum entspricht dem bereits für diese Zoopedia-Erweiterung verwendeten 29. September 2026."
+    }
+  }
+}
