@@ -554,6 +554,18 @@
               - `Crotalus atrox map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/videos/.gitkeep>)
+          - `Danaus plexippus/`
+            - [Danaus plexippus.json](<../assets/daten/lebewesen/tiere/Danaus plexippus/Danaus plexippus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/bilder/.gitkeep>)
+              - `Danaus plexippus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/map/.gitkeep>)
+              - `Danaus plexippus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/videos/.gitkeep>)
           - `Dascyllus trimaculatus/`
             - [Dascyllus trimaculatus.json](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/Dascyllus trimaculatus.json>)
             - `audio/`

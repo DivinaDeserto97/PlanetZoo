@@ -123,6 +123,7 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Sus scrofa/Sus scrofa.json",
   "assets/daten/lebewesen/tiere/Dascyllus trimaculatus/Dascyllus trimaculatus.json",
   "assets/daten/lebewesen/tiere/Aurelia aurita/Aurelia aurita.json",
+  "assets/daten/lebewesen/tiere/Danaus plexippus/Danaus plexippus.json",
 ];
 
 /* ======================================== */
