@@ -1,0 +1,820 @@
+{
+  "id": "Aurelia aurita",
+  "identitaet": {
+    "namen": {
+      "de": "Ohrenqualle",
+      "en": "Moon Jelly",
+      "en-US": "Moon Jelly",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
+    "kontinente": ["Weltweit"],
+    "biome": ["Offenes Meer", "Ästuar"],
+    "schutzstatus": "???"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Scyphozoa",
+          "ordnung": "Semaeostomeae",
+          "familie": "Ulmaridae",
+          "gattung": "Aurelia",
+          "art": "Aurelia aurita",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "schirmdurchmesser",
+          "min": 0.25,
+          "max": 0.4,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen Schirmdurchmesser von bis zu etwa 25 bis 40 cm.",
+            "en": "The Zoopedia gives a bell diameter of about 25 to 40 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": null,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt den Körper trotz seiner Größe als nur wenige hundert Gramm schwer.",
+            "en": "The Zoopedia describes the body as weighing only a few hundred grams despite its size."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "???",
+          "system": "",
+          "hinweis": {
+            "de": "In der bereitgestellten Zoopedia steht beim Feld „Conservation Status“ derzeit „???“. Im Text wird die Art zugleich als aktuell nicht gefährdet beschrieben.",
+            "en": "In the supplied Zoopedia, the Conservation Status field currently shows “???”, while the text states that the species is not currently considered at risk."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": ["Aurelia aurita"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als „Unknown, Abundant“ an.",
+            "en": "The Zoopedia lists the wild population as “Unknown, Abundant”."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [""]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "fortpflanzungszyklus",
+          "wert": null,
+          "hinweis": {
+            "de": "Die Ohrenqualle vermehrt sich in ihrem komplexen Lebenszyklus sowohl geschlechtlich als auch ungeschlechtlich.",
+            "en": "The Moon Jelly reproduces both sexually and asexually during its complex life cycle."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "planulalarve",
+          "wert": null,
+          "hinweis": {
+            "de": "Nach innerer Befruchtung werden die Embryonen an den Mundarmen des Weibchens getragen, bis frei schwimmende Planulalarven entstehen.",
+            "en": "After internal fertilisation, developing embryos are carried on the female’s oral arms until they become free-swimming planula larvae."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "polyp",
+          "wert": null,
+          "hinweis": {
+            "de": "Die Planulalarven setzen sich auf festen Oberflächen fest und werden zu Polypen, die monatelang oder sogar jahrelang bestehen und sich durch Knospung ungeschlechtlich vermehren können.",
+            "en": "Planula larvae settle on hard surfaces and transform into polyps that can persist for months or years and reproduce asexually by budding."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "strobilation",
+          "wert": null,
+          "hinweis": {
+            "de": "Bei günstigen Bedingungen bilden die Polypen durch Strobilation junge Quallen, sogenannte Ephyren, die sich ablösen und zu Medusen heranwachsen.",
+            "en": "Under favourable conditions, polyps undergo strobilation and produce juvenile jellyfish called ephyrae, which detach and grow into medusae."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "nichtSozial",
+          "hinweis": {
+            "de": "Ohrenquallen sind nicht sozial. Große Ansammlungen entstehen laut Zoopedia meist durch Meeresströmungen und gemeinsame Nahrungsquellen.",
+            "en": "Moon jellies are not social; large aggregations usually result from ocean currents and shared food sources."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "coastalWaters",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "upperOcean",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "bay",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "harbour",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "estuary",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Plankton",
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Fischlarven",
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "scyphozoa",
+          "rang": "klasse",
+          "name": "Scyphozoa",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "semaeostomeae",
+          "rang": "ordnung",
+          "name": "Semaeostomeae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "ulmaridae",
+          "rang": "familie",
+          "name": "Ulmaridae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aurelia",
+          "rang": "gattung",
+          "name": "Aurelia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "aurelia-aurita",
+          "rang": "art",
+          "name": "Aurelia aurita",
+          "deutscherName": "Ohrenqualle",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "???",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Ohrenqualle (Aurelia aurita) ist eine weit verbreitete Quallenart, die weltweit in Küstengewässern vorkommt, besonders in gemäßigten und tropischen Meeren. Sie lebt typischerweise in den oberen Wasserschichten, häufig nahe der Oberfläche in Buchten, Häfen und Ästuaren, in denen reichlich Plankton vorhanden ist.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The moon jelly (or Aurelia aurita) is a widespread species of jellyfish found in coastal waters around the world, particularly in temperate and tropical seas. It typically inhabits the upper layers of the ocean, often near the surface in bays, harbours, and estuaries where plankton is abundant.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The moon jelly (or Aurelia aurita) is a widespread species of jellyfish found in coastal waters around the world, particularly in temperate and tropical seas. It typically inhabits the upper layers of the ocean, often near the surface in bays, harbours, and estuaries where plankton is abundant.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Ohrenquallen sind leicht an ihrem durchscheinenden, untertassenförmigen Schirm zu erkennen. Durch ihn sind vier deutlich hufeisenförmige Gonaden sichtbar. Die Farbe ihres Verdauungstrakts hängt von der Nahrung ab und kann blassrosa, bernsteinfarben, blau oder weiß erscheinen. Ihr Körper ist zart und gallertartig und wiegt trotz seiner Größe nur wenige hundert Gramm. Kurze, feine Tentakel säumen den Rand des Schirms.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Der Schirm der Ohrenqualle kann einen Durchmesser von etwa 25 bis 40 cm erreichen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Moon jellies are easily recognised by their translucent, saucer-shaped bell, with four distinct horseshoe-shaped gonads visible through the bell. The colour of their gut varies depending on their diet, with pale pink, amber, blue and white hues possible. Their bodies are delicate and gelatinous, weighing only a few hundred grams despite their size. Short, fine tentacles fringe the bell’s edge.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The bell of the moon jelly can reach up to 25cm to 40cm in diameter.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Moon jellies are easily recognised by their translucent, saucer-shaped bell, with four distinct horseshoe-shaped gonads visible through the bell. The colour of their gut varies depending on their diet, with pale pink, amber, blue and white hues possible. Their bodies are delicate and gelatinous, weighing only a few hundred grams despite their size. Short, fine tentacles fringe the bell’s edge.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The bell of the moon jelly can reach up to 25cm to 40cm in diameter.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Ohrenqualle gilt derzeit nicht als gefährdet. Quallen können Mikroplastik und Schadstoffe aufnehmen, was ihr Wachstum verlangsamen und die Fortpflanzung beeinträchtigen kann. Belastungen durch Schwermetalle, insbesondere Kupfer und Silber, können das Polypenstadium schädigen, Fehlbildungen oder Sterblichkeit verursachen und dadurch die Stabilität der Population beeinflussen. Obwohl Ohrenquallen in vom Menschen veränderten Küstenlebensräumen häufig gut zurechtkommen, können daraus entstehende Massenauftreten Meeresökosysteme belasten, Anlagen wie Einläufe von Kraftwerken verstopfen und die Fischerei beeinträchtigen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Beobachtung dieser Art nimmt zu: Freiwillige melden vermehrt Quallensichtungen und Ansammlungen. Dadurch lassen sich Massenauftreten besser verfolgen, und Tourismus sowie Fischerei können sich besser auf mögliche Auswirkungen vorbereiten. Wissenschaftliche Untersuchungen klären, wie Mikroplastik und Schwermetalle Physiologie und Fortpflanzung der Ohrenqualle beeinflussen. Einige Maßnahmen befassen sich mit Umweltbedingungen, die Quallenblüten fördern; viele davon befinden sich jedoch noch auf lokaler oder Pilotebene.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The moon jelly is not currently considered at risk. Jellies may ingest microplastics and pollutants, which slow growth and impair reproduction. Heavy metal contamination, especially from copper and silver, can harm the polyp stage by causing deformities or mortality affecting population stability. While moon jellies often thrive in human-altered coastal environments, the resulting blooms can harm marine ecosystems, clog infrastructure like power plant intakes, and disrupt fisheries.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monitoring efforts for this species are gaining traction: volunteers increasingly report jellyfish sightings and gathering spots, enabling better tracking of bloom and assisting tourism and fisheries in preparing for potential impacts. Scientific studies are clarifying how microplastics and heavy metals affect moon jelly physiology and reproduction, which may guide policies for reducing coastal pollution and enhancing water quality. Some efforts focus on environmental management that exacerbate jellyfish blooms - though most of these remain at local or pilot levels and would benefit from broader implementation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The moon jelly is not currently considered at risk. Jellies may ingest microplastics and pollutants, which slow growth and impair reproduction. Heavy metal contamination, especially from copper and silver, can harm the polyp stage by causing deformities or mortality affecting population stability. While moon jellies often thrive in human-altered coastal environments, the resulting blooms can harm marine ecosystems, clog infrastructure like power plant intakes, and disrupt fisheries.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monitoring efforts for this species are gaining traction: volunteers increasingly report jellyfish sightings and gathering spots, enabling better tracking of bloom and assisting tourism and fisheries in preparing for potential impacts. Scientific studies are clarifying how microplastics and heavy metals affect moon jelly physiology and reproduction, which may guide policies for reducing coastal pollution and enhancing water quality. Some efforts focus on environmental management that exacerbate jellyfish blooms - though most of these remain at local or pilot levels and would benefit from broader implementation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Obwohl Ohrenquallen in großen Ansammlungen vorkommen können, sind sie nicht sozial. Meist befinden sie sich aufgrund von Meeresströmungen und gemeinsamen Nahrungsquellen am selben Ort.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ohrenquallen können sich das ganze Jahr über fortpflanzen, wenn das Wasser wärmer ist und reichlich Nahrung vorhanden ist. In ihrem komplexen Lebenszyklus vermehren sie sich sowohl geschlechtlich als auch ungeschlechtlich. Erwachsene Männchen geben Spermien ins Wasser ab, die von den Weibchen über ihre Mundarme aufgenommen werden. Die Befruchtung findet im Körper statt, und die sich entwickelnden Embryonen werden an den Mundarmen des Weibchens getragen, bis daraus frei schwimmende Planulalarven werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Diese Larven setzen sich schließlich auf festen Oberflächen wie Felsen, Schalen oder Pfählen fest und verwandeln sich dort in Polypen. Das Polypenstadium ist für das Überleben wichtig, weil es Monate oder sogar Jahre bestehen kann und sich durch Knospung ungeschlechtlich vermehren kann.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Bei günstigen Bedingungen durchlaufen die Polypen die sogenannte Strobilation. Dabei bilden sie übereinanderliegende Segmente, aus denen junge Quallen, die Ephyren, hervorgehen. Diese kleinen, sternförmigen Ephyren lösen sich ab und wachsen zu den bekannten schirmförmigen erwachsenen Medusen heran. Das Medusenstadium ist die geschlechtliche Phase des Lebenszyklus. Durch den Wechsel zwischen einem ungeschlechtlichen Polypenstadium und einem geschlechtlichen Medusenstadium können sich Ohrenquallen an Umweltveränderungen anpassen: Polypen sichern das Fortbestehen unter schwierigen Bedingungen, während sich Medusen unter günstigen Bedingungen ausbreiten und fortpflanzen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Although moon jellies may be found in large aggregates, they are not social and are usually found together because of ocean currents and shared food sources.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies can breed year-round when water is warmer and food is plentiful. The moon jelly reproduces both sexually and asexually during its complex life cycle. Adult males release sperm into the water, which females take in through their mouth-arms. Fertilisation occurs internally, and the developing embryos are carried on the female’s oral arms until they become free-swimming planula larvae.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "These larvae eventually settle on hard surfaces such as rocks, shells, or pier pilings, where they transform into polyps. The polyp stage is important for survival, as it can persist for months or even years and reproduce asexually by budding to form more polyps.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When conditions are favourable, the polyps undergo a process called strobilation, segmenting into stacks that produce juvenile jellyfish known as ephyrae. These tiny, star-shaped ephyrae break free and grow into the familiar bell-shaped adults, called medusae. The medusa stage is the sexual phase of the life cycle, allowing the jellies to breed and continue the cycle. By alternating between an asexual polyp stage and a sexual medusa stage, moon jellies can adapt to environmental changes; polyps ensure persistence in tough conditions, while medusae spread and reproduce when the environment is favourable.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Although moon jellies may be found in large aggregates, they are not social and are usually found together because of ocean currents and shared food sources.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies can breed year-round when water is warmer and food is plentiful. The moon jelly reproduces both sexually and asexually during its complex life cycle. Adult males release sperm into the water, which females take in through their mouth-arms. Fertilisation occurs internally, and the developing embryos are carried on the female’s oral arms until they become free-swimming planula larvae.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "These larvae eventually settle on hard surfaces such as rocks, shells, or pier pilings, where they transform into polyps. The polyp stage is important for survival, as it can persist for months or even years and reproduce asexually by budding to form more polyps.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When conditions are favourable, the polyps undergo a process called strobilation, segmenting into stacks that produce juvenile jellyfish known as ephyrae. These tiny, star-shaped ephyrae break free and grow into the familiar bell-shaped adults, called medusae. The medusa stage is the sexual phase of the life cycle, allowing the jellies to breed and continue the cycle. By alternating between an asexual polyp stage and a sexual medusa stage, moon jellies can adapt to environmental changes; polyps ensure persistence in tough conditions, while medusae spread and reproduce when the environment is favourable.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Körper einer Ohrenqualle besteht zu über 95 % aus Wasser.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ohrenquallen bewegen sich durch pulsierende Bewegungen ihres Schirms, sind aber schlechte Schwimmer und werden größtenteils von Meeresströmungen getragen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ohrenquallen besitzen einen schwachen Nesselschlag, der von Menschen normalerweise nicht gespürt wird.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Unter geeigneten Bedingungen bilden Ohrenquallen riesige Schwärme, sogenannte „Blüten“, die sich über viele Kilometer des Ozeans erstrecken können.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Ohrenquallen ernähren sich von Plankton und Fischlarven, die sie mit ihren Tentakeln und dem Schleim an ihrem Schirm fangen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Moon jellies’ bodies are constituted of over 95% water.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies move by pulsating their bell but are poor swimmers and mostly are carried by ocean currents.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies have a weak sting that cannot usually be felt by humans.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In the right conditions, moon jellies form huge swarms called ‘blooms’ that may cover many kilometres of ocean.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies feed on plankton and fish larvae by capturing them in their tentacles and with the mucus in their bell.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Moon jellies’ bodies are constituted of over 95% water.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies move by pulsating their bell but are poor swimmers and mostly are carried by ocean currents.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies have a weak sting that cannot usually be felt by humans.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In the right conditions, moon jellies form huge swarms called ‘blooms’ that may cover many kilometres of ocean.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Moon jellies feed on plankton and fish larvae by capturing them in their tentacles and with the mucus in their bell.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Aurelia aurita/map/Aurelia aurita map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Ohrenqualle – Planet Zoo 2",
+            "en": "Moon Jelly – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Ohrenqualle aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Moon Jelly."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aurelia aurita/bilder/Aurelia aurita 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    },
+    "veroeffentlichtAm": "2026-09-29"
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Moon Jelly",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten. Der dort angezeigte Schutzstatus ist derzeit „???“. Die Aufnahme in die Zoopedia am 29. September 2026 und die Einordnung als Ausstellungstier wurden zusätzlich geprüft."
+    }
+  }
+}

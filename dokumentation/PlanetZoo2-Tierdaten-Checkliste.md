@@ -340,18 +340,18 @@ Erst nach den vier festen Quellen gezielt ergänzen:
 
 Die Zoopedia wird vor Release weiterhin erweitert. Neue Tiere hier zuerst eintragen und danach in beide Tabellen oben übernehmen.
 
-|   # | Tier | Gehegetyp | Edition | Datum entdeckt | in Master übernommen | in Zoopedia-Pass übernommen |
-| --: | ---- | --------- | ------- | -------------- | :------------------: | :-------------------------: |
-| 105 |      |           |         |                |         [ ]          |             [ ]             |
-| 106 |      |           |         |                |         [ ]          |             [ ]             |
-| 107 |      |           |         |                |         [ ]          |             [ ]             |
-| 108 |      |           |         |                |         [ ]          |             [ ]             |
-| 109 |      |           |         |                |         [ ]          |             [ ]             |
-| 110 |      |           |         |                |         [ ]          |             [ ]             |
-| 111 |      |           |         |                |         [ ]          |             [ ]             |
-| 112 |      |           |         |                |         [ ]          |             [ ]             |
-| 113 |      |           |         |                |         [ ]          |             [ ]             |
-| 114 |      |           |         |                |         [ ]          |             [ ]             |
+|   # | Tier                 | Gehegetyp     | Edition      | Datum entdeckt | in Master übernommen | in Zoopedia-Pass übernommen |
+| --: | -------------------- | ------------- | ------------ | -------------- | :------------------: | :-------------------------: |
+| 105 | Threespot Damselfish | `Aquarium`    | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 106 | Moon Jelly           | `Ausstellung` | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 107 |                      |               |              |                |         [ ]          |             [ ]             |
+| 108 |                      |               |              |                |         [ ]          |             [ ]             |
+| 109 |                      |               |              |                |         [ ]          |             [ ]             |
+| 110 |                      |               |              |                |         [ ]          |             [ ]             |
+| 111 |                      |               |              |                |         [ ]          |             [ ]             |
+| 112 |                      |               |              |                |         [ ]          |             [ ]             |
+| 113 |                      |               |              |                |         [ ]          |             [ ]             |
+| 114 |                      |               |              |                |         [ ]          |             [ ]             |
 
 ## Quellen für den aktuellen Zoopedia-Bestand
 

@@ -266,6 +266,18 @@
               - `Asio otus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/videos/.gitkeep>)
+          - `Aurelia aurita/`
+            - [Aurelia aurita.json](<../assets/daten/lebewesen/tiere/Aurelia aurita/Aurelia aurita.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/bilder/.gitkeep>)
+              - `Aurelia aurita 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/map/.gitkeep>)
+              - `Aurelia aurita map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/videos/.gitkeep>)
           - `Balaeniceps rex/`
             - [Balaeniceps rex.json](<../assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json>)
             - `audio/`
@@ -1589,6 +1601,17 @@
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Varanus niloticus/videos/.gitkeep>)
           - `Zebrasoma flavescens/`
+          - `Zebrasoma flavescens copy/`
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens copy/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens copy/bilder/.gitkeep>)
+              - `Danaus plexippus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens copy/map/.gitkeep>)
+              - `Danaus plexippus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens copy/videos/.gitkeep>)
             - [Zebrasoma flavescens.json](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/Zebrasoma flavescens.json>)
             - `audio/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Zebrasoma flavescens/audio/.gitkeep>)
