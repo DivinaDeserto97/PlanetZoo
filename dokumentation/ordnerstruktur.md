@@ -1440,6 +1440,18 @@
               - `Stegostoma tigrinum map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Stegostoma tigrinum/videos/.gitkeep>)
+          - `Struthio camelus/`
+            - [Struthio camelus.json](<../assets/daten/lebewesen/tiere/Struthio camelus/Struthio camelus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/bilder/.gitkeep>)
+              - `Struthio camelus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/map/.gitkeep>)
+              - `Struthio camelus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/videos/.gitkeep>)
           - `Suricata suricatta/`
             - [Suricata suricatta.json](<../assets/daten/lebewesen/tiere/Suricata suricatta/Suricata suricatta.json>)
             - `audio/`

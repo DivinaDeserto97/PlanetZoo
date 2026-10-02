@@ -1,0 +1,849 @@
+{
+  "id": "Struthio camelus",
+  "identitaet": {
+    "namen": {
+      "de": "Afrikanischer Strauß",
+      "en": "Common Ostrich",
+      "en-US": "Common Ostrich",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Afrika"],
+    "biome": ["Graslandschaft"],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Struthioniformes",
+          "familie": "Struthionidae",
+          "gattung": "Struthio",
+          "art": "Struthio camelus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [""]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [""]
+    },
+    "fluegelspannweite": {
+      "werte": [""]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [
+        {
+          "typ": "langstrecke",
+          "wert": 54,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Laut Tierfakt kann der Strauß über längere Strecken 54 km/h laufen.",
+            "en": "According to the animal fact, the ostrich can run for long distances at 54 km/h."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "sprint",
+          "wert": 69,
+          "einheit": "km/h",
+          "hinweis": {
+            "de": "Laut Tierfakt erreicht der Strauß im Sprint 69 km/h.",
+            "en": "According to the animal fact, the ostrich can sprint at 69 km/h."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Das sichtbare Zoopedia-Feld nennt „Nicht gefährdet“ (Least Concern).",
+            "en": "The visible Zoopedia field lists Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "min": 300000,
+          "max": 900000,
+          "einheit": "individuum",
+          "giltFuer": ["Struthio camelus"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen geschätzten Wildbestand von 300.000 bis 900.000 Individuen.",
+            "en": "The Zoopedia gives an estimated wild population of 300,000 to 900,000 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2.5,
+          "max": 4.5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Zoopedia gibt an, dass Strauße sich im Alter von etwa 2,5 bis 4,5 Jahren fortpflanzen können.",
+            "en": "The Zoopedia states that ostriches can reproduce between about 2.5 and 4.5 years of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "brutdauer",
+          "min": 35,
+          "max": 45,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Eier schlüpfen laut Zoopedia nach 35 bis 45 Tagen Brutzeit.",
+            "en": "According to the Zoopedia, the eggs hatch after 35 to 45 days of incubation."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierFuehrendesWeibchen",
+          "min": 7,
+          "max": 10,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Das führende Weibchen legt 7 bis 10 Eier in die vom Männchen angelegte Nestmulde.",
+            "en": "The top hen lays 7 to 10 eggs in the nest prepared by the male."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "eierGemeinschaftsnest",
+          "durchschnitt": 20,
+          "max": 60,
+          "hinweis": {
+            "de": "Ungefähr 20 Eier verbleiben zur Bebrütung im Gemeinschaftsnest; insgesamt können bis zu 60 Eier gelegt worden sein.",
+            "en": "Approximately 20 eggs remain in the communal nest for incubation; up to 60 eggs may have been laid in total."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "ausserhalbFortpflanzungszeit",
+          "wert": "largeNomadicHerd",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Außerhalb der Fortpflanzungszeit leben Strauße in großen nomadischen Herden.",
+            "en": "Outside the breeding season, ostriches live in large nomadic herds."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fortpflanzungszeit",
+          "wert": "dominantMaleWithFemaleGroup",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Während der Fortpflanzungszeit lebt eine kleine Weibchengruppe im Revier eines dominanten Männchens.",
+            "en": "During the breeding season, a small group of females inhabits the territory of a dominant male."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "grassland",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Savannen- und Graslandlebensräume.",
+            "en": "The Zoopedia mentions savannah and grassland habitats."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "struthioniformes",
+          "rang": "ordnung",
+          "name": "Struthioniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "struthionidae",
+          "rang": "familie",
+          "name": "Struthionidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "struthio",
+          "rang": "gattung",
+          "name": "Struthio",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "struthio-camelus",
+          "rang": "art",
+          "name": "Struthio camelus",
+          "deutscherName": "Afrikanischer Strauß",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Nicht gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Strauß kommt in Afrika vor. Die Zoopedia beschreibt Savannen- und Graslandlebensräume.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The common ostrich is found in Africa. The Zoopedia describes savannah and grassland habitats.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The common ostrich is found in Africa. The Zoopedia describes savannah and grassland habitats.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Afrikanische Strauß (Struthio camelus) ist die größte bekannte Vogelart der Welt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Männchen besitzen schwarze Körperfedern und weiße Federn an den Flügelspitzen und am Schwanz, während Weibchen graubraune Körperfedern haben. Bei beiden Geschlechtern sind Kopf, Hals und Beine rosa bis weiß gefärbt. Je nach ursprünglicher Herkunft innerhalb Afrikas gibt es Unterschiede im Erscheinungsbild.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Männchen erreichen im Durchschnitt eine Höhe von 2,1 bis 2,8 m. Weibchen sind kleiner und werden 1,7 bis 2,0 m hoch.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The common ostrich (or Struthio camelus) is the largest known bird species in the world.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Males have black body feathers and white feathers on their wing-tips and tails, while females have grey-brown body feathers. On both sexes, the head, neck and legs are pink to white in colour, and there is some variation in appearance depending on the bird's original location in Africa.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The males have an average height of 2.1m to 2.8m, whereas females are smaller, measuring between 1.7m and 2.0m.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The common ostrich (or Struthio camelus) is the largest known bird species in the world.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Males have black body feathers and white feathers on their wing-tips and tails, while females have grey-brown body feathers. On both sexes, the head, neck and legs are pink to white in colour, and there is some variation in appearance depending on the bird's original location in Africa.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The males have an average height of 2.1m to 2.8m, whereas females are smaller, measuring between 1.7m and 2.0m.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Obwohl der Afrikanische Strauß als nicht gefährdet gilt, ist er von Lebensraumverlust und der Zerschneidung seiner Lebensräume betroffen. Stadtentwicklung, Landwirtschaft und Infrastruktur verkleinern seine Savannen- und Graslandlebensräume. Übermäßige Jagd auf Fleisch, Federn und Eier hat in der Vergangenheit zu lokalen Bestandsrückgängen beigetragen. Auch heute können Strauße als Reaktion auf Ernteschäden getötet werden. Zusätzlich begrenzt die Plünderung von Eiern die Ausbreitung der Bestände, besonders in zerschnittenen Landschaften mit höherem Räuberdruck. Durch den Klimawandel verursachte Ressourcenknappheit verstärkt diese Belastungen zusätzlich.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Viele Länder haben Schutzgebiete und Reservate eingerichtet, in denen Strauße mit geringerem Jagddruck und weniger Störungen ihres Lebensraums leben können. Gemeinschaftsbasierter Naturschutz bezieht die lokale Bevölkerung mit wirtschaftlichen Anreizen wie Ökotourismus und regulierter Straußenzucht in den Schutz ein. Nachhaltige Zucht und Nachzucht in Menschenobhut können in einigen Regionen den Jagddruck auf wild lebende Bestände senken. Auch die Durchsetzung von Gesetzen gegen illegale Jagd spielt eine wichtige Rolle.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Gemeinsam sollen diese Maßnahmen lebensfähige Wildbestände des Straußes erhalten und damit sowohl die Art als auch ihre Rolle im Ökosystem bewahren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Despite being of Least Concern, the common ostrich is affected by habitat loss and fragmentation. Urban, agricultural and infrastructural development reduce their savannah and grassland habitats. Overhunting for meat, feathers, and eggs has historically contributed to local population declines. They may still be retaliatorily killed for raiding crops. Additionally, egg predation limits population expansion, particularly in fragmented landscapes where predator pressure is higher. Climate change-induced resource scarcity further increases existing pressures.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Many countries have established protected areas and reserves where ostriches can live with reduced hunting and habitat disturbances. Community-led conservation involves local populations in protecting ostriches with economic incentives, such as ecotourism and regulated ostrich farming: Sustainable farming and captive breeding help relieve hunting pressure on wild-living populations in some areas. Law enforcement on illegal hunting also plays an important role.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Together, these measures aim to keep wild ostrich populations viable, preserving the species and its role in the ecosystems.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Despite being of Least Concern, the common ostrich is affected by habitat loss and fragmentation. Urban, agricultural and infrastructural development reduce their savannah and grassland habitats. Overhunting for meat, feathers, and eggs has historically contributed to local population declines. They may still be retaliatorily killed for raiding crops. Additionally, egg predation limits population expansion, particularly in fragmented landscapes where predator pressure is higher. Climate change-induced resource scarcity further increases existing pressures.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Many countries have established protected areas and reserves where ostriches can live with reduced hunting and habitat disturbances. Community-led conservation involves local populations in protecting ostriches with economic incentives, such as ecotourism and regulated ostrich farming: Sustainable farming and captive breeding help relieve hunting pressure on wild-living populations in some areas. Law enforcement on illegal hunting also plays an important role.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Together, these measures aim to keep wild ostrich populations viable, preserving the species and its role in the ecosystems.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "In freier Wildbahn sind Strauße überwiegend soziale Tiere. Während der Fortpflanzungszeit lebt eine kleine Gruppe von Weibchen im Revier eines dominanten Männchens, das sich vorübergehend ihrer Herde anschließt. Außerhalb der Fortpflanzungszeit leben Strauße in großen nomadischen Herden, die durch die Savanne ziehen und dabei häufig gemeinsam mit anderen weidenden Tierarten auftreten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Während der Fortpflanzungszeit von März bis September sucht ein führendes Weibchen mit seiner Weibchengruppe nach einem dominanten Männchen mit einem guten Revier. Die Gruppe bleibt während der gesamten Fortpflanzungszeit bei diesem Männchen. Zur Balz führt das Männchen vor dem führenden Weibchen einen 'Tanz' auf, bei dem es abwechselnd mit den Flügeln schlägt und ritualisiert auf den Boden pickt, bis das Weibchen sich duckt und die Paarung zulässt. Anschließend gräbt das Männchen eine flache Nestmulde, in die das führende Weibchen 7 bis 10 Eier legt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Danach paart sich das Männchen mit allen Weibchen der Gruppe. Diese legen ihre Eier um die Eier des führenden Weibchens, das anschließend einige fremde Eier aus dem Nest entfernt. Sobald sich ungefähr 20 Eier im Nest befinden – insgesamt können bis zu 60 Eier gelegt worden sein – brütet das führende Weibchen tagsüber, während das Alpha-Männchen nachts brütet. Nach 35 bis 45 Tagen schlüpfen die Küken. Das Männchen betreut sie, bis sie ungefähr 10 Monate alt sind und selbstständig überleben können.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nach 18 Monaten sind Strauße ausgewachsen. Im Alter von etwa 2,5 bis 4,5 Jahren können sie sich fortpflanzen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "In the wild, ostriches are primarily social animals. During the breeding season, a small group of females will inhabit the territory of a dominant male, who temporarily joins their herd. During other times of year, ostriches live in large nomadic herds that move through the Savannah, often alongside other species of grazing animals.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the breeding season from March to September, a top hen and her group of females will search for a dominant male with good territory. The group will remain with this chosen male for the entire breeding season. In order to mate, the male will court the top hen with a 'dance' in which he alternates the beating of his wings and ritualistic pecking at the ground, 'wooing' the female into crouching down and allowing him to mate with her. Then, he will dig a nest; a shallow dip in the ground in which the top hen will lay 7 to 10 eggs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Subsequently, the male will mate with all females in the group. These females will each lay their eggs around the top hen's, who in turn will then remove some of the eggs that are not hers. Once approximately 20 eggs are in the nest (up to a total of 60 may have been laid) the top hen will incubate them during the day, while the alpha male will incubate them during the night. After 35 to 45 days, the eggs will hatch and the male will take care of them until they are about 10 months old and capable to fend for themselves.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "After 18 months the ostriches will be full size, and between 2.5 and 4.5 years old they will be able to reproduce themselves.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "In the wild, ostriches are primarily social animals. During the breeding season, a small group of females will inhabit the territory of a dominant male, who temporarily joins their herd. During other times of year, ostriches live in large nomadic herds that move through the Savannah, often alongside other species of grazing animals.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the breeding season from March to September, a top hen and her group of females will search for a dominant male with good territory. The group will remain with this chosen male for the entire breeding season. In order to mate, the male will court the top hen with a 'dance' in which he alternates the beating of his wings and ritualistic pecking at the ground, 'wooing' the female into crouching down and allowing him to mate with her. Then, he will dig a nest; a shallow dip in the ground in which the top hen will lay 7 to 10 eggs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Subsequently, the male will mate with all females in the group. These females will each lay their eggs around the top hen's, who in turn will then remove some of the eggs that are not hers. Once approximately 20 eggs are in the nest (up to a total of 60 may have been laid) the top hen will incubate them during the day, while the alpha male will incubate them during the night. After 35 to 45 days, the eggs will hatch and the male will take care of them until they are about 10 months old and capable to fend for themselves.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "After 18 months the ostriches will be full size, and between 2.5 and 4.5 years old they will be able to reproduce themselves.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Der Strauß ist die größte heute lebende Vogelart. Außerdem ist er der schnellste Vogel am Boden: Über längere Strecken kann er mit 54 km/h laufen und im Sprint 69 km/h erreichen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Strauße haben die größten Eier der Welt, im Verhältnis zur Körpergröße jedoch die kleinsten Eier aller Vögel.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Beim Brüten sitzt das Alpha-Weibchen tagsüber auf dem Nest. Sein graubraunes Gefieder verschmilzt dabei mit dem staubigen Boden. Nachts brütet das Alpha-Männchen, dessen schwarzes Gefieder in der Dunkelheit schwer zu erkennen ist.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nach dem Schlüpfen ziehen die Straußenmännchen die Küken auf.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Entgegen einem verbreiteten Mythos stecken Strauße ihren Kopf nicht in den Sand. Um sich vor Fressfeinden zu verbergen, legen sie sich flach auf den Boden, sodass ihr Körper mit Horizont und Staub verschmilzt.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The ostrich is the largest living species of bird. They are also the fastest bird on the ground: they can run for long distances at 54km/h and sprint at 69km/h.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ostriches have the largest eggs in the world, but the smallest eggs of any bird relative to body size.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When incubating a nest, the alpha female sits on the nest during the day, her grey-brown feathers blending with the dusty ground, and the alpha male sits on the nest at night, with his black feathers difficult to see in the dark.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ostrich males raise the ostrich chicks when they hatch.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Contrary to popular belief, ostriches do not bury their heads in the sand. To hide from predators, they lie flat against the ground and their body blends with the horizon and the dust.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The ostrich is the largest living species of bird. They are also the fastest bird on the ground: they can run for long distances at 54km/h and sprint at 69km/h.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ostriches have the largest eggs in the world, but the smallest eggs of any bird relative to body size.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When incubating a nest, the alpha female sits on the nest during the day, her grey-brown feathers blending with the dusty ground, and the alpha male sits on the nest at night, with his black feathers difficult to see in the dark.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ostrich males raise the ostrich chicks when they hatch.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Contrary to popular belief, ostriches do not bury their heads in the sand. To hide from predators, they lie flat against the ground and their body blends with the horizon and the dust.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Struthio camelus/map/Struthio camelus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Afrikanischer Strauß – Planet Zoo 2",
+            "en": "Common Ostrich – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Afrikanischen Straußes aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Common Ostrich."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Struthio camelus/bilder/Struthio camelus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    },
+    "veroeffentlichtAm": "2026-09-29"
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Common Ostrich",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten. Die Gesamthöhen wurden nicht als Schulterhöhe oder Körperlänge umgedeutet. Das Veröffentlichungsdatum stammt aus dem bereits zuvor geprüften Zoopedia-Update vom 29. September 2026."
+    }
+  }
+}
