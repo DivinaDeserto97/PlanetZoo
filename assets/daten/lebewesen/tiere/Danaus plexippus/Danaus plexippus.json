@@ -1,0 +1,847 @@
+{
+  "id": "Danaus plexippus",
+  "identitaet": {
+    "namen": {
+      "de": "Monarchfalter",
+      "en": "Monarch",
+      "en-US": "Monarch",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
+    "kontinente": [
+      "Nordamerika",
+      "Südamerika",
+      "Asien",
+      "Ozeanien",
+      "Europa",
+      "Afrika"
+    ],
+    "biome": [],
+    "schutzstatus": "Gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Insecta",
+          "ordnung": "Lepidoptera",
+          "familie": "Nymphalidae",
+          "gattung": "Danaus",
+          "art": "Danaus plexippus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [""]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "wert": 0.5,
+          "einheit": "g",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ein ungefähres Gewicht von 0,5 g.",
+            "en": "The Zoopedia gives an approximate weight of 0.5 g."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "fluegelspannweite": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.089,
+          "max": 0.102,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "adultUeberwinternd",
+          "max": 9,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Tiere, die vor der Paarung überwintern, eine mögliche Lebensdauer von bis zu 9 Monaten.",
+            "en": "The Zoopedia states that adults which hibernate before mating may live for up to 9 months."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Das sichtbare Zoopedia-Feld nennt „Gefährdet“ (Vulnerable). Im Fließtext wird genauer unterschieden: Die wandernde Nominatform in Nordamerika gilt als gefährdet, während die Art global als nicht gefährdet beschrieben wird.",
+            "en": "The visible Zoopedia field lists Vulnerable. The prose adds nuance: the nominate migratory population across North America is categorised as Vulnerable, while the global species is considered Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "individuum",
+          "giltFuer": ["Danaus plexippus"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [""]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "eientwicklungBisSchlupf",
+          "wert": 4,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "raupenphase",
+          "wert": 2,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Nach dem Schlüpfen fressen die Raupen etwa zwei Wochen lang an Seidenpflanzen, bevor sie sich verpuppen.",
+            "en": "After hatching, the caterpillars feed on milkweed for about two weeks before pupating."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "puppenphase",
+          "min": 9,
+          "max": 15,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierGesamt",
+          "max": 300,
+          "durchschnitt": null,
+          "hinweis": {
+            "de": "Ein Weibchen legt bis zu 300 Eier einzeln auf Seidenpflanzen ab.",
+            "en": "A female lays up to 300 eggs individually on milkweed plants."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "nichtWandernd",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Nicht wandernde Monarchfalter leben den größten Teil des Jahres einzelgängerisch.",
+            "en": "Non-migratory monarch butterflies are solitary for most of the year."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "wandernd",
+          "wert": "aggregation",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": 10000,
+          "hinweis": {
+            "de": "Wandernde Tiere können sich zu großen Schwärmen mit bis zu 10.000 Individuen zusammenschließen.",
+            "en": "Migratory monarchs may cluster in massive swarms of up to 10,000 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Seidenpflanzen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["Raupe"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Raupen ernähren sich laut Zoopedia von giftigen Seidenpflanzen (milkweed).",
+                "en": "According to the Zoopedia, monarch caterpillars feed on poisonous milkweed."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "insecta",
+          "rang": "klasse",
+          "name": "Insecta",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lepidoptera",
+          "rang": "ordnung",
+          "name": "Lepidoptera",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "nymphalidae",
+          "rang": "familie",
+          "name": "Nymphalidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "danaus",
+          "rang": "gattung",
+          "name": "Danaus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "danaus-plexippus",
+          "rang": "art",
+          "name": "Danaus plexippus",
+          "deutscherName": "Monarchfalter",
+          "lebensstatus": "lebend",
+          "domestikationsstatus": null,
+          "schutzstatus": "Gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Monarchfalter (Danaus plexippus) kommt weltweit in einem großen Verbreitungsgebiet vor, wird aber am häufigsten in Nord- und Südamerika beobachtet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The monarch butterfly (or Danaus plexippus) is found in a wide range worldwide but is most commonly seen in North and South America.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The monarch butterfly (or Danaus plexippus) is found in a wide range worldwide but is most commonly seen in North and South America.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Flügel des Monarchfalters sind orangerot mit auffälligen schwarzen Adern, breiten schwarzen Rändern und weißen Flecken. Beine und Fühler sind schwarz; auch der Körper ist schwarz und mit weißen Flecken versehen. Die Raupen besitzen einen kräftigen Körper mit gelben, schwarzen und weißen Streifen. Die Puppen sind grün mit goldfarbenen Akzenten.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Monarchfalter erreichen eine Flügelspannweite von 8,9 bis 10,2 cm und wiegen ungefähr 0,5 g.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Its wings are orange-red with prominent black veins, lined with thick black edges and white spots. Their legs and antennae are black, and their body is black with white spots. Monarch caterpillars have a plump body covered with yellow, black and white stripes and the chrysalises are green with gold accents.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monarchs have a wingspan of 8.9cm to 10.2cm and weigh approximately 0.5g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Its wings are orange-red with prominent black veins, lined with thick black edges and white spots. Their legs and antennae are black, and their body is black with white spots. Monarch caterpillars have a plump body covered with yellow, black and white stripes and the chrysalises are green with gold accents.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monarchs have a wingspan of 8.9cm to 10.2cm and weigh approximately 0.5g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Nominatform des Monarchfalters, die jedes Jahr durch Nordamerika wandert, wird als gefährdet eingestuft, während die Art weltweit als nicht gefährdet gilt. Durch die Folgen des Klimawandels, Lebensraumverlust und den flächendeckenden Einsatz von Pestiziden ist die Population der Monarchfalter in den vergangenen 30 Jahren um 80 % zurückgegangen. Monarchfalter überwintern häufig in Wäldern. Durch großflächige Abholzung steigt jedoch das Risiko, dass überwinternde Falter Witterungseinflüssen oder Fressfeinden zum Opfer fallen. Monarchfalter werden regelmäßig in Gefangenschaft für Schmetterlingshäuser gezüchtet.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Schutzinitiativen fördern den Schutz von Lebensräumen in Mexiko, um die Probleme an den Überwinterungsplätzen zu verringern. Ökotourismus und Bildungsangebote rund um diese Gebiete werden zunehmend verbreitet. Institutionen und Freiwilligenprojekte sammeln Daten und prüfen weitere Schutzmaßnahmen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Während der nicht wandernde Monarchfalter weit verbreitet und nicht gefährdet ist, hat sich der langfristige Bestandsrückgang der wandernden Population erst vor kurzem stabilisiert. Durch seltene, zufällige Ereignisse besteht weiterhin ein geringes Aussterberisiko.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The nominate subspecies of the monarch, which migrates across North America each year, is categorised as Vulnerable, while the global species is considered of Least Concern. Due to consequences of climate change, habitat loss and universal use of pesticides, the population of monarch butterflies has declined by 80% in the past 30 years. The monarch commonly overwinters in forests, however widespread deforestation means that hibernating butterflies are more likely to die of exposure to the elements or predators. The monarch butterfly is regularly bred in captivity for butterfly houses.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Conservation initiatives are encouraging habitat protection in Mexico to mitigate issues with overwintering. Eco-tourism and education around overwintering sites are becoming increasingly common. Institutions and volunteer efforts are collecting data and exploring further conservation actions.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "While the non-migratory monarch is widespread and not at risk, the migratory monarch butterfly has only recently stabilised its long term population decline – it remains at low risk of extinction due to random low-probability events.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The nominate subspecies of the monarch, which migrates across North America each year, is categorised as Vulnerable, while the global species is considered of Least Concern. Due to consequences of climate change, habitat loss and universal use of pesticides, the population of monarch butterflies has declined by 80% in the past 30 years. The monarch commonly overwinters in forests, however widespread deforestation means that hibernating butterflies are more likely to die of exposure to the elements or predators. The monarch butterfly is regularly bred in captivity for butterfly houses.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Conservation initiatives are encouraging habitat protection in Mexico to mitigate issues with overwintering. Eco-tourism and education around overwintering sites are becoming increasingly common. Institutions and volunteer efforts are collecting data and exploring further conservation actions.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "While the non-migratory monarch is widespread and not at risk, the migratory monarch butterfly has only recently stabilised its long term population decline – it remains at low risk of extinction due to random low-probability events.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Nicht wandernde Monarchfalter leben den größten Teil des Jahres einzelgängerisch. Wandernde Tiere dagegen sammeln sich in riesigen Schwärmen mit bis zu 10.000 Individuen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Die Paarung findet bei Monarchfaltern im Frühling statt, wobei sich der Zeitpunkt je nach Nord- oder Südhalbkugel unterscheidet. Ein paarungsbereites Weibchen gibt Pheromone ab, um Männchen anzulocken. Ein Männchen verfolgt es in der Luft und versucht, es zu Boden zu ziehen. Gelingt dies, folgt ein Balzritual, bei dem das Männchen ein Spermatophor bildet und dem Weibchen übergibt. Das Weibchen kann es zur Befruchtung seiner Eier verwenden oder als Nährstoffquelle aufnehmen. Da Weibchen spätere angebotene Spermatophoren häufiger akzeptieren, versuchen Männchen möglichst nahe an der Abenddämmerung zu paaren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nach der Befruchtung sucht das Weibchen Seidenpflanzen und legt dort bis zu 300 Eier einzeln ab. Vier Tage später schlüpfen die Raupen und beginnen, an den Seidenpflanzen zu fressen. Nach etwa zwei Wochen Nahrungsaufnahme verpuppen sie sich.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Nach einer Puppenruhe von 9 bis 15 Tagen schlüpfen die erwachsenen Monarchfalter. Je nach Jahreszeit suchen sie anschließend einen Paarungspartner oder einen Platz zum Überwintern. Da Monarchfalter nach der Paarung sterben, können Tiere, die vorher überwintern, bis zu neun Monate alt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Non-migratory monarch butterflies are solitary for most of the year, while those who do migrate will cluster in massive swarms of up to 10,000 individuals.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Mating occurs in the Spring months for the monarch butterfly, which are different depending on whether they live in the Northern or Southern hemisphere. A female monarch that is ready to mate will release pheromones to attract males. She will be pursued by a male in the air, who will attempt to pull her to the ground. If he succeeds, they engage in a courtship ritual, during which he produces a spermatophore and presents it to the female. She may choose to fertilise her eggs with it or feed on it for nutrients. As she is more likely to accept one of the later spermatophores presented to her, males generally attempt to mate as close to dusk as possible in order to maximise their chances of reproductive success.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Once her eggs are fertilised, the female finds milkweed plants on which to lay her eggs one by one, up to 300 in total. 4 days after laying, monarch caterpillars hatch and begin feeding on the milkweed. Following a 2 week feeding period, the caterpillars pupate.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "After a 9 to 15 day pupation, the adult monarch butterflies emerge from their chrysalises. Depending on the time of year, the adults may begin looking for a mate or a place to hibernate. As monarchs die after mating, those who hibernate before may live up to 9 months.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Non-migratory monarch butterflies are solitary for most of the year, while those who do migrate will cluster in massive swarms of up to 10,000 individuals.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Mating occurs in the Spring months for the monarch butterfly, which are different depending on whether they live in the Northern or Southern hemisphere. A female monarch that is ready to mate will release pheromones to attract males. She will be pursued by a male in the air, who will attempt to pull her to the ground. If he succeeds, they engage in a courtship ritual, during which he produces a spermatophore and presents it to the female. She may choose to fertilise her eggs with it or feed on it for nutrients. As she is more likely to accept one of the later spermatophores presented to her, males generally attempt to mate as close to dusk as possible in order to maximise their chances of reproductive success.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Once her eggs are fertilised, the female finds milkweed plants on which to lay her eggs one by one, up to 300 in total. 4 days after laying, monarch caterpillars hatch and begin feeding on the milkweed. Following a 2 week feeding period, the caterpillars pupate.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "After a 9 to 15 day pupation, the adult monarch butterflies emerge from their chrysalises. Depending on the time of year, the adults may begin looking for a mate or a place to hibernate. As monarchs die after mating, those who hibernate before may live up to 9 months.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Einige Populationen des Monarchfalters wandern über 4.800 km von Kanada und dem Norden der USA bis nach Mexiko. Für die gesamte Hin- und Rückreise können vier Generationen von Faltern nötig sein.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Während der Wanderung sammeln sich Tausende Monarchfalter zu Gruppen zusammen, um für sich eine geeignete Temperatur zu erzeugen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Wenn männliche Monarchfalter versuchen, Weibchen zu umwerben und sich zu paaren, greifen sie in etwa 30 % der Fälle versehentlich ein anderes Männchen und versuchen, sich mit ihm zu paaren.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Monarchraupen fressen giftige Seidenpflanzen und werden dadurch für Fressfeinde giftig. Die orange-rote Färbung der erwachsenen Tiere gilt deshalb vermutlich als Warnsignal.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        },
+        {
+          "inhalt": "Während des Raupenstadiums frisst eine Monarchraupe das 200-Fache ihres eigenen Körpergewichts an Seidenpflanzen.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Some populations of monarch butterflies are migratory and will migrate over 4800km from Canada and the Northern USA to Mexico. It may take 4 generations of butterflies to complete this round trip.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the migration of the monarch butterfly, thousands of butterflies will cluster together to create the ideal temperature for themselves.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When male monarch butterflies attempt to court and mate with females, 30% of the time they will accidentally grab a male and attempt to mate with him.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monarch butterfly caterpillars feed on poisonous milkweed which makes them toxic to predators. The orange/red colour of the adults is thought to signal danger for this reason.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the caterpillar stage, a monarch caterpillar will eat 200 times its bodyweight in milkweed.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Some populations of monarch butterflies are migratory and will migrate over 4800km from Canada and the Northern USA to Mexico. It may take 4 generations of butterflies to complete this round trip.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the migration of the monarch butterfly, thousands of butterflies will cluster together to create the ideal temperature for themselves.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "When male monarch butterflies attempt to court and mate with females, 30% of the time they will accidentally grab a male and attempt to mate with him.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Monarch butterfly caterpillars feed on poisonous milkweed which makes them toxic to predators. The orange/red colour of the adults is thought to signal danger for this reason.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "During the caterpillar stage, a monarch caterpillar will eat 200 times its bodyweight in milkweed.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2",
+          "uebersetzung": "ChatGPT"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "fr": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "it": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "pt-BR": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "ja": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ],
+      "zh-Hans": [
+        {
+          "inhalt": "",
+          "quelle": "",
+          "uebersetzung": ""
+        }
+      ]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Danaus plexippus/map/Danaus plexippus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Monarchfalter – Planet Zoo 2",
+            "en": "Monarch – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Monarchfalters aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Monarch."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Danaus plexippus/bilder/Danaus plexippus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    },
+    "veroeffentlichtAm": "2026-09-29"
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Monarch",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten- und Hauptbild-URLs waren im kopierten Text nicht enthalten. Die Aufnahme in die Zoopedia am 29. September 2026 wurde zusätzlich über die offizielle Planet-Zoo-2-Ankündigung geprüft."
+    }
+  }
+}

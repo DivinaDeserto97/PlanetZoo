@@ -125,24 +125,6 @@ export function filterTiere(tiere, filter = {}) {
 }
 
 /* ======================================== */
-/* DATUM                                    */
-/* ======================================== */
-
-function holeDatum(tier) {
-  if (!tier.veroeffentlichtAm) {
-    return null;
-  }
-
-  const zeit = Date.parse(tier.veroeffentlichtAm);
-
-  if (!Number.isFinite(zeit)) {
-    return null;
-  }
-
-  return zeit;
-}
-
-/* ======================================== */
 /* SORTIEREN                                */
 /* ======================================== */
 
@@ -177,26 +159,16 @@ export function sortiereTiere(tiere, sortierung = {}) {
       /* ================================== */
       /* NEUESTE                            */
       /* ================================== */
-      const datumA = holeDatum(a);
 
-      const datumB = holeDatum(b);
+      /*
+        Die Reihenfolge für "Neueste" kommt bewusst ausschliesslich
+        aus TIER_JSON_DATEIEN in datenImport.js.
 
-      if (datumA !== null && datumB !== null) {
-        vergleich = datumA - datumB;
-      } else {
-        /*
-              Noch kein Veröffentlichungsdatum
-              vorhanden.
-
-              Dann gilt die Reihenfolge in
-              datenImport.js.
-
-              Später hinzugefügte Tiere haben
-              höheren importIndex.
-          */
-
-        vergleich = (a.importIndex ?? 0) - (b.importIndex ?? 0);
-      }
+        Je weiter unten ein Tier dort steht, desto neuer ist es.
+        So bleibt die Reihenfolge auch dann eindeutig, wenn mehrere
+        Tiere dasselbe Veröffentlichungsdatum haben.
+      */
+      vergleich = (a.importIndex ?? 0) - (b.importIndex ?? 0);
     }
 
     return vergleich * faktor;

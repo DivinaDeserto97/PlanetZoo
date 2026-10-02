@@ -266,6 +266,18 @@
               - `Asio otus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Asio otus/videos/.gitkeep>)
+          - `Aurelia aurita/`
+            - [Aurelia aurita.json](<../assets/daten/lebewesen/tiere/Aurelia aurita/Aurelia aurita.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/bilder/.gitkeep>)
+              - `Aurelia aurita 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/map/.gitkeep>)
+              - `Aurelia aurita map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/videos/.gitkeep>)
           - `Balaeniceps rex/`
             - [Balaeniceps rex.json](<../assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json>)
             - `audio/`
@@ -290,6 +302,18 @@
               - `Balistoides conspicillum map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Balistoides conspicillum/videos/.gitkeep>)
+          - `Belocercus longicaudus/`
+            - [Belocercus longicaudus.json](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/Belocercus longicaudus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/bilder/.gitkeep>)
+              - `Belocercus longicaudus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/map/.gitkeep>)
+              - `Belocercus longicaudus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Belocercus longicaudus/videos/.gitkeep>)
           - `Bison bonasus/`
             - [Bison bonasus.json](<../assets/daten/lebewesen/tiere/Bison bonasus/Bison bonasus.json>)
             - `audio/`
@@ -362,6 +386,18 @@
               - `Caesio teres map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Caesio teres/videos/.gitkeep>)
+          - `Camelus bactrianus/`
+            - [Camelus bactrianus.json](<../assets/daten/lebewesen/tiere/Camelus bactrianus/Camelus bactrianus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/bilder/.gitkeep>)
+              - `Camelus bactrianus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/map/.gitkeep>)
+              - `Camelus bactrianus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Camelus bactrianus/videos/.gitkeep>)
           - `Canis lupus/`
             - [Canis lupus.json](<../assets/daten/lebewesen/tiere/Canis lupus/Canis lupus.json>)
             - `audio/`
@@ -542,6 +578,30 @@
               - `Crotalus atrox map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/videos/.gitkeep>)
+          - `Danaus plexippus/`
+            - [Danaus plexippus.json](<../assets/daten/lebewesen/tiere/Danaus plexippus/Danaus plexippus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/bilder/.gitkeep>)
+              - `Danaus plexippus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/map/.gitkeep>)
+              - `Danaus plexippus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Danaus plexippus/videos/.gitkeep>)
+          - `Dascyllus trimaculatus/`
+            - [Dascyllus trimaculatus.json](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/Dascyllus trimaculatus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/bilder/.gitkeep>)
+              - `Dascyllus trimaculatus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/map/.gitkeep>)
+              - `Dascyllus trimaculatus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Dascyllus trimaculatus/videos/.gitkeep>)
           - `Dendrolagus goodfellowi/`
             - [Dendrolagus goodfellowi.json](<../assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/Dendrolagus goodfellowi.json>)
             - `audio/`
@@ -1404,6 +1464,18 @@
               - `Stegostoma tigrinum map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Stegostoma tigrinum/videos/.gitkeep>)
+          - `Struthio camelus/`
+            - [Struthio camelus.json](<../assets/daten/lebewesen/tiere/Struthio camelus/Struthio camelus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/bilder/.gitkeep>)
+              - `Struthio camelus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/map/.gitkeep>)
+              - `Struthio camelus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Struthio camelus/videos/.gitkeep>)
           - `Suricata suricatta/`
             - [Suricata suricatta.json](<../assets/daten/lebewesen/tiere/Suricata suricatta/Suricata suricatta.json>)
             - `audio/`
@@ -1416,6 +1488,18 @@
               - `Suricata suricatta map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Suricata suricatta/videos/.gitkeep>)
+          - `Sus scrofa/`
+            - [Sus scrofa.json](<../assets/daten/lebewesen/tiere/Sus scrofa/Sus scrofa.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/bilder/.gitkeep>)
+              - `Sus scrofa 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/map/.gitkeep>)
+              - `Sus scrofa map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/videos/.gitkeep>)
           - `Symphorichthys spilurus/`
             - [Symphorichthys spilurus.json](<../assets/daten/lebewesen/tiere/Symphorichthys spilurus/Symphorichthys spilurus.json>)
             - `audio/`

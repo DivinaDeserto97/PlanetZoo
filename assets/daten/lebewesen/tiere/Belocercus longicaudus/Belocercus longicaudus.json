@@ -1,0 +1,548 @@
+{
+  "id": "Belocercus longicaudus",
+  "identitaet": {
+    "namen": {
+      "de": "Langschwanzsittich",
+      "en": "Long-Tailed Parakeet",
+      "en-US": "Long-Tailed Parakeet",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
+    "kontinente": ["Asien"],
+    "biome": ["Tropen", "Feuchtgebiete"],
+    "schutzstatus": "Gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Psittaciformes",
+          "familie": "Psittaculidae",
+          "gattung": "Belocercus",
+          "art": "Belocercus longicaudus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "koerperOhneSchwanz",
+          "wert": 0.15,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt etwa 15 cm Körperlänge ohne den zusätzlichen Schwanz.",
+            "en": "The Zoopedia gives about 15 cm body length, excluding the additional tail."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schwanzMaennlich",
+          "wert": 0.27,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Beim Männchen kommen etwa 27 cm Schwanzlänge hinzu.",
+            "en": "Males have an additional tail length of about 27 cm."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "schwanzWeiblich",
+          "wert": 0.15,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Beim Weibchen kommen etwa 15 cm Schwanzlänge hinzu.",
+            "en": "Females have an additional tail length of about 15 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.14,
+          "max": 0.19,
+          "einheit": "kg",
+          "hinweis": {
+            "de": "Die Zoopedia nennt ein Gewicht von etwa 140 bis 190 g.",
+            "en": "The Zoopedia gives a weight of about 140 to 190 g."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia führt den Langschwanzsittich als gefährdet (Vulnerable).",
+            "en": "The Zoopedia lists the long-tailed parakeet as Vulnerable."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": null,
+          "max": null,
+          "rohwert": "unbekannt",
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "geschaetzt",
+          "min": 1,
+          "max": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Das genaue Alter ist laut Zoopedia unbekannt; als wahrscheinlicher Bereich werden 1 bis 2 Jahre genannt, ähnlich wie bei anderen Sittichen.",
+            "en": "The exact age is unknown; the Zoopedia states that 1 to 2 years is likely, similar to other parakeet species."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 2,
+          "max": 4,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 23,
+          "max": 24,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 6,
+          "max": 7,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Jungvögel beginnen nach ungefähr sechs bis sieben Wochen flügge zu werden.",
+            "en": "The chicks begin to fledge at around six to seven weeks of age."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "socialGroupsAndFlocks",
+          "minGruppengroesse": null,
+          "maxGruppengroesse": null,
+          "hinweis": {
+            "de": "Langschwanzsittiche leben in kleinen sozialen Gruppen, die sich häufig zu größeren Schwärmen zusammenschließen.",
+            "en": "Long-tailed parakeets live in small social groups that may gather into larger flocks."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "seasonalPairBond",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt Paarbindungen, die saisonal bestehen können; mehrere Paare nisten oft nahe beieinander.",
+            "en": "The Zoopedia describes pair bonds that may be seasonal, with several pairs nesting close together."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "lowlandForest",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "mangrove",
+          "quelle": "planetZoo2"
+        },
+        {
+          "wert": "plantation",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": []
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "aves",
+          "rang": "klasse",
+          "name": "Aves",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "psittaciformes",
+          "rang": "ordnung",
+          "name": "Psittaciformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "psittaculidae",
+          "rang": "familie",
+          "name": "Psittaculidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "belocercus",
+          "rang": "gattung",
+          "name": "Belocercus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "belocercus-longicaudus",
+          "rang": "art",
+          "name": "Belocercus longicaudus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Langschwanzsittich (Belocercus longicaudus) ist in Südostasien heimisch und kommt auf der Malaiischen Halbinsel, Sumatra, Borneo und umliegenden Inseln vor. Er bewohnt Tieflandwälder, Mangroven und Plantagen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The long-tailed parakeet (or Belocercus longicaudus) is a medium-sized parrot native to Southeast Asia, found across the Malay Peninsula, Sumatra, Borneo and surrounding islands. It inhabits lowland forests, mangroves and plantations.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The long-tailed parakeet (or Belocercus longicaudus) is a medium-sized parrot native to Southeast Asia, found across the Malay Peninsula, Sumatra, Borneo and surrounding islands. It inhabits lowland forests, mangroves and plantations.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Langschwanzsittich (Belocercus longicaudus) ist ein mittelgroßer Papagei aus Südostasien. Er kommt auf der Malaiischen Halbinsel, Sumatra, Borneo und umliegenden Inseln vor und bewohnt Tieflandwälder, Mangroven und Plantagen.\n\nEr ist leicht an seinem leuchtend grünen Gefieder, dem roten Schnabel und dem langen, abgestuften Schwanz zu erkennen, dem die Art ihren Namen verdankt.\n\nBeide Geschlechter besitzen die kräftig grüne Körperfärbung. Männchen lassen sich jedoch an einem rosafarbenen Halsband und einem schwarzen Kinnstreifen erkennen. Erwachsene Tiere sind etwa 15 cm lang; hinzu kommen beim Männchen etwa 27 cm Schwanzlänge und beim Weibchen etwa 15 cm. Das Gewicht liegt ungefähr zwischen 140 und 190 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The long-tailed parakeet (or Belocercus longicaudus) is a medium-sized parrot native to Southeast Asia, found across the Malay Peninsula, Sumatra, Borneo and surrounding islands. It inhabits lowland forests, mangroves and plantations.\n\nIt is easily recognised by its bright green plumage, red beak, and long graduated tail, which gives the species its name.\n\nBoth sexes share the vivid green body colouration, but males can be distinguished by a pink collar and a black chin strap. Adults typically measure around 15cm in body length, the tail adding an additional 27cm for males and 15cm for females. They weigh around 140g to 190g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The long-tailed parakeet (or Belocercus longicaudus) is a medium-sized parrot native to Southeast Asia, found across the Malay Peninsula, Sumatra, Borneo and surrounding islands. It inhabits lowland forests, mangroves and plantations.\n\nIt is easily recognised by its bright green plumage, red beak, and long graduated tail, which gives the species its name.\n\nBoth sexes share the vivid green body colouration, but males can be distinguished by a pink collar and a black chin strap. Adults typically measure around 15cm in body length, the tail adding an additional 27cm for males and 15cm for females. They weigh around 140g to 190g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Langschwanzsittich wird als gefährdet eingestuft. Seine Bestände nehmen durch Lebensraumverlust und illegalen Wildtierhandel ab. Obwohl sich die Art teilweise an veränderte Landschaften wie Plantagen und Gärten anpassen kann, ist sie für ihre Nester weiterhin auf große, alte Bäume mit Höhlen angewiesen. Deshalb leidet sie unter der Abholzung alter Wälder. In manchen Regionen ist außerdem das Fangen der Vögel für lokale und internationale Märkte weiterhin verbreitet.\n\nDie Art unterliegt internationalen Handelsbestimmungen, um eine Übernutzung zu begrenzen. Gleichzeitig wird verstärkt versucht, Veränderungen des Lebensraums und Fangzahlen zu überwachen, um die Bestandsentwicklung besser zu verstehen. Forschung hilft dabei, besonders schützenswerte Gebiete und wichtige Nistplätze zu erkennen. Auch die Zusammenarbeit mit lokalen Gemeinschaften, Aufklärungskampagnen und nachhaltige Landnutzung sind wichtige Bestandteile des Schutzes.\n\nDiese Maßnahmen bilden eine Grundlage für den Schutz des Langschwanzsittichs, müssen jedoch fortgeführt werden, um sein langfristiges Überleben zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The long-tailed parakeet is assessed as Vulnerable, and faces population declines due to habitat loss and illegal wildlife trade. Although the species shows some adaptability to modified landscapes such as plantations and gardens, it still relies on large, mature trees with cavities for nesting, and thus suffers from deforestation of old-growth forest habitat. Trapping remains a widespread issue in some regions, where the birds are caught and sold for local and international markets.\n\nThe species is listed under international trade regulations to limit overexploitation, and there is growing emphasis on monitoring both habitat changes and capture rates to better understand population trends. Research informs about areas requiring protection, to safeguard critical habitat and nesting sites. Local community engagement, awareness campaigns, and sustainable land-use practices are also important parts of the strategy to limit pressure on this species.\n\nWhile these actions provide a foundation for protecting the long-tailed parakeet, continued efforts are required to ensure its survival.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The long-tailed parakeet is assessed as Vulnerable, and faces population declines due to habitat loss and illegal wildlife trade. Although the species shows some adaptability to modified landscapes such as plantations and gardens, it still relies on large, mature trees with cavities for nesting, and thus suffers from deforestation of old-growth forest habitat. Trapping remains a widespread issue in some regions, where the birds are caught and sold for local and international markets.\n\nThe species is listed under international trade regulations to limit overexploitation, and there is growing emphasis on monitoring both habitat changes and capture rates to better understand population trends. Research informs about areas requiring protection, to safeguard critical habitat and nesting sites. Local community engagement, awareness campaigns, and sustainable land-use practices are also important parts of the strategy to limit pressure on this species.\n\nWhile these actions provide a foundation for protecting the long-tailed parakeet, continued efforts are required to ensure its survival.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Langschwanzsittiche sind gesellig und leben in kleinen, stark sozialen Gruppen. Häufig schließen sich mehrere dieser Gruppen zu einem größeren Schwarm zusammen.\n\nDie Paarungszeit dauert im Allgemeinen von Dezember bis Mai; bei den Populationen auf den Nikobaren ist sie mit Februar bis April kürzer. Männchen beginnen die Balz typischerweise mit Verbeugungen, kreisenden Kopfbewegungen und leisen Lautäußerungen. Zur Paarbindung gehören das Füttern des Weibchens durch das Männchen und gegenseitige Gefiederpflege; diese Bindungen können nur saisonal bestehen. Mehrere Paare nisten oft nahe beieinander in Baumhöhlen.\n\nDas Weibchen legt 2 bis 4 Eier und bebrütet sie 23 bis 24 Tage, während das Männchen sie mit Nahrung versorgt. Die Küken schlüpfen blind und nackt und sind vollständig auf die Eltern angewiesen. Beide Eltern füttern die Jungen durch Hochwürgen von Nahrung. Nach etwa sechs bis sieben Wochen beginnen die Jungvögel flügge zu werden. Auch danach können sie noch mehrere Wochen von ihren Eltern abhängig bleiben, während sie nach und nach die Nahrungssuche und das Sozialverhalten des Schwarms erlernen.\n\nDas genaue Alter der Geschlechtsreife ist unbekannt. Laut Zoopedia liegt es wahrscheinlich ähnlich wie bei anderen Sittichen bei ungefähr 1 bis 2 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Long-tailed parakeets are gregarious and live in small, highly social groups. Often, many of these groups may gather to form a flock.\n\nLong-tailed parakeets generally mate from December to May, with a shorter breeding season from February to April in the populations on Nicobar Islands. Males typically initiate courtship displays by bowing, circling their heads, and producing soft vocalisations. Pair bonding includes males offering food to the female and mutual preening; these bonds may only last seasonally. Several pairs nest in close proximity in tree cavities.\n\nThe female lays a clutch of 2 to 4 eggs, which she incubates for 23 to 24 days while the male provides food. Once hatched, the chicks are blind, featherless, and fully dependent on parental care. Both parents participate in feeding the young by regurgitation. The chicks develop quickly, beginning to fledge at around six to seven weeks of age. Even after fledging, juveniles may remain dependent on their parents for several weeks, gradually learning to forage and integrate into the social structure of the flock.\n\nThe exact age of sexual maturity in long-tailed parakeets is unknown, but very likely similar to that of other parakeet species, which would be between 1 and 2 years old.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Long-tailed parakeets are gregarious and live in small, highly social groups. Often, many of these groups may gather to form a flock.\n\nLong-tailed parakeets generally mate from December to May, with a shorter breeding season from February to April in the populations on Nicobar Islands. Males typically initiate courtship displays by bowing, circling their heads, and producing soft vocalisations. Pair bonding includes males offering food to the female and mutual preening; these bonds may only last seasonally. Several pairs nest in close proximity in tree cavities.\n\nThe female lays a clutch of 2 to 4 eggs, which she incubates for 23 to 24 days while the male provides food. Once hatched, the chicks are blind, featherless, and fully dependent on parental care. Both parents participate in feeding the young by regurgitation. The chicks develop quickly, beginning to fledge at around six to seven weeks of age. Even after fledging, juveniles may remain dependent on their parents for several weeks, gradually learning to forage and integrate into the social structure of the flock.\n\nThe exact age of sexual maturity in long-tailed parakeets is unknown, but very likely similar to that of other parakeet species, which would be between 1 and 2 years old.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Es gibt 5 Unterarten des Langschwanzsittichs, die durch die Inselgebiete voneinander getrennt sind, in denen sie leben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Langschwanzsittiche leben und nisten in Baumhöhlen, meist in abgestorbenen Bäumen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Schwanz des Langschwanzsittichs ist länger als sein Körper und dient vermutlich als wirkungsvolles Ruder für schnelle Richtungswechsel im Flug.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Langschwanzsittiche sind sehr soziale Tiere und werden häufig in großen, kommunikativen Schwärmen beobachtet.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Langschwanzsittiche sind intelligent und spielen aus Neugier häufig mit Gegenständen oder manipulieren diese.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "There are 5 subspecies of the long-tailed parakeet, separated by the island ranges on which they live.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets live and nest in cavities within trees, usually dead trees.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The long-tailed parakeet’s tail is longer than its body and is thought to be an effective rudder for quick movement changes in flight.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets are highly social creatures and are often seen in large communicative flocks.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets are intelligent, they will often play and manipulate objects out of curiosity.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "There are 5 subspecies of the long-tailed parakeet, separated by the island ranges on which they live.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets live and nest in cavities within trees, usually dead trees.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The long-tailed parakeet’s tail is longer than its body and is thought to be an effective rudder for quick movement changes in flight.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets are highly social creatures and are often seen in large communicative flocks.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Long-tailed parakeets are intelligent, they will often play and manipulate objects out of curiosity.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Belocercus longicaudus/map/Belocercus longicaudus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Langschwanzsittich – Planet Zoo 2",
+            "en": "Long-Tailed Parakeet – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Langschwanzsittichs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Long-Tailed Parakeet."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Belocercus longicaudus/bilder/Belocercus longicaudus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    },
+    "veroeffentlichtAm": "2026-10-13"
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Long-Tailed Parakeet",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs waren im kopierten Text nicht enthalten. Der Animal Spotlight nennt den 13. Oktober 2026 als Veröffentlichungstermin."
+    }
+  }
+}

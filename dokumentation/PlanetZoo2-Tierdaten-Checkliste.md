@@ -152,7 +152,7 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |  99 | Western Lowland Gorilla         | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 100 | White-Backed Vulture            | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 101 | White-Tailed Sea Eagle          | `Voliere`                | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
-| 102 | Wild Boar                       | `Landgehege`             | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
+| 102 | Wild Boar                       | `Landgehege`             | `Standard` | [x] `Sus scrofa`         |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 103 | Yellow Anaconda                 | `Ausstellung`            | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 | 104 | Yellow Tang                     | `Aquarium + Ausstellung` | `Standard` | [ ]                      |   [ ]    |        [ ]        |   [ ]   |       [ ]       | [ ] | [ ] |       [ ]       |  [ ]  |
 
@@ -263,7 +263,7 @@ Diese Tabelle ist deine Hauptliste. Du kannst zuerst die komplette Spalte **Zoop
 |  99 | Western Lowland Gorilla         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 100 | White-Backed Vulture            | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 101 | White-Tailed Sea Eagle          | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
-| 102 | Wild Boar                       | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
+| 102 | Wild Boar                       | [x] | [x] | [x] | [x] | [ ] | [x] | [x] | [x] | [x] | [ ] | [ ] | [x] |       [ ]       |
 | 103 | Yellow Anaconda                 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 | 104 | Yellow Tang                     | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |       [ ]       |
 
@@ -340,18 +340,18 @@ Erst nach den vier festen Quellen gezielt ergänzen:
 
 Die Zoopedia wird vor Release weiterhin erweitert. Neue Tiere hier zuerst eintragen und danach in beide Tabellen oben übernehmen.
 
-|   # | Tier | Gehegetyp | Edition | Datum entdeckt | in Master übernommen | in Zoopedia-Pass übernommen |
-| --: | ---- | --------- | ------- | -------------- | :------------------: | :-------------------------: |
-| 105 |      |           |         |                |         [ ]          |             [ ]             |
-| 106 |      |           |         |                |         [ ]          |             [ ]             |
-| 107 |      |           |         |                |         [ ]          |             [ ]             |
-| 108 |      |           |         |                |         [ ]          |             [ ]             |
-| 109 |      |           |         |                |         [ ]          |             [ ]             |
-| 110 |      |           |         |                |         [ ]          |             [ ]             |
-| 111 |      |           |         |                |         [ ]          |             [ ]             |
-| 112 |      |           |         |                |         [ ]          |             [ ]             |
-| 113 |      |           |         |                |         [ ]          |             [ ]             |
-| 114 |      |           |         |                |         [ ]          |             [ ]             |
+|   # | Tier                 | Gehegetyp     | Edition      | Datum entdeckt | in Master übernommen | in Zoopedia-Pass übernommen |
+| --: | -------------------- | ------------- | ------------ | -------------- | :------------------: | :-------------------------: |
+| 105 | Threespot Damselfish | `Aquarium`    | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 106 | Moon Jelly           | `Ausstellung` | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 107 | Monarch              | `Ausstellung` | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 108 | Common Ostrich       | `Landgehege`  | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 109 | Bactrian Camel       | `Landgehege`  | `Hauptspiel` | 29.09.2026     |         [x]          |             [x]             |
+| 110 |                      |               |              |                |         [ ]          |             [ ]             |
+| 111 |                      |               |              |                |         [ ]          |             [ ]             |
+| 112 |                      |               |              |                |         [ ]          |             [ ]             |
+| 113 |                      |               |              |                |         [ ]          |             [ ]             |
+| 114 |                      |               |              |                |         [ ]          |             [ ]             |
 
 ## Quellen für den aktuellen Zoopedia-Bestand
 
