@@ -1703,7 +1703,7 @@
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/audio/.gitkeep>)
               - `bilder/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/.gitkeep>)
-                - `Ursus arctos horribilis 1.webp` _(Medium – lokal / nicht freigegeben)_
+                - `Ursus arctos horribilis.webp` _(Medium – lokal / nicht freigegeben)_
               - `map/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/.gitkeep>)
                 - `Ursus arctos horribilis map.png` _(Medium – lokal / nicht freigegeben)_

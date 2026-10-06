@@ -457,7 +457,7 @@
     }
   },
   "karte": {
-    "url": "",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/9bcbc192/Babirusa_NorthSulawesi_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -475,7 +475,7 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvOWJjYmMxOTIvQmFiaXJ1c2FfTm9ydGhTdWxhd2VzaS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxOTIwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiJjMTQwYmFjYi1lOGY1LTRiNGEtOWM1Ny1lNGNjYmRlZjgxMGEifX0=",
           "alt": {
             "de": "Nordsulawesi-Babirusa – Planet Zoo 2",
             "en": "North Sulawesi Babirusa – Planet Zoo 2"

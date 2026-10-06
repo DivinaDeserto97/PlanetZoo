@@ -670,7 +670,7 @@
     }
   },
   "karte": {
-    "url": "",
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/04442165/Boar_Wild_map.png",
     "dateien": [
       {
         "typ": "original",
@@ -688,7 +688,7 @@
         {
           "variante": 1,
           "quelle": "planetZoo2",
-          "url": "",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDQ0NDIxNjUvQm9hcl9XaWxkLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjE5MjAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6ImMxNDBiYWNiLWU4ZjUtNGI0YS05YzU3LWU0Y2NiZGVmODEwYSJ9fQ==",
           "alt": {
             "de": "Wildschwein – Planet Zoo 2",
             "en": "Wild Boar – Planet Zoo 2"
