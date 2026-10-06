@@ -518,6 +518,18 @@
               - `Chromobotia macracanthus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Chromobotia macracanthus/videos/.gitkeep>)
+          - `Cissa thalassina/`
+            - [Cissa thalassina.json](<../assets/daten/lebewesen/tiere/Cissa thalassina/Cissa thalassina.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/bilder/.gitkeep>)
+              - `Cissa thalassina 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/map/.gitkeep>)
+              - `Cissa thalassina map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/videos/.gitkeep>)
           - `Connochaetes gnou/`
             - [Connochaetes gnou.json](<../assets/daten/lebewesen/tiere/Connochaetes gnou/Connochaetes gnou.json>)
             - `audio/`

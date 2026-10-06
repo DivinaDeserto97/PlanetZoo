@@ -130,6 +130,7 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Symphalangus syndactylus/Symphalangus syndactylus.json",
   "assets/daten/lebewesen/tiere/Agalychnis callidryas/Agalychnis callidryas.json",
   "assets/daten/lebewesen/tiere/Babyrousa celebensis/Babyrousa celebensis.json",
+  "assets/daten/lebewesen/tiere/Cissa thalassina/Cissa thalassina.json",
 ];
 
 /* ======================================== */

@@ -1,0 +1,493 @@
+{
+  "id": "Cissa thalassina",
+  "identitaet": {
+    "namen": {
+      "de": "Java-Grünelster",
+      "en": "Javan Green Magpie",
+      "en-US": "Javan Green Magpie",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
+    "kontinente": ["Asien"],
+    "biome": ["Tropen"],
+    "schutzstatus": "Vom Aussterben bedroht"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Passeriformes",
+          "familie": "Corvidae",
+          "gattung": "Cissa",
+          "art": "Cissa thalassina",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.29,
+          "max": 0.31,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Adulte Tiere erreichen laut Zoopedia gewöhnlich 29 bis 31 cm Körperlänge.",
+            "en": "According to the Zoopedia, adults typically measure 29 to 31 cm in length."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 0.13,
+          "max": 0.14,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 0.12,
+          "max": 0.13,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Vom Aussterben bedroht",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia führt die Java-Grünelster als vom Aussterben bedroht (Critically Endangered).",
+            "en": "The Zoopedia lists the Javan green magpie as Critically Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 50,
+          "max": 250,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 50 bis 250 Individuen an und erwähnt, dass in nur vier Schutzgebieten womöglich nur noch etwa 50 Vögel verbleiben.",
+            "en": "The Zoopedia gives a wild population of 50 to 250 individuals and notes that as few as 50 birds may remain across four protected areas."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 2,
+          "max": 4,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 17,
+          "max": 19,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "min": 3,
+          "max": 4,
+          "durchschnitt": null,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Die Jungvögel werden im Alter von etwa 3 bis 4 Wochen flügge.",
+            "en": "The juveniles fledge at around 3 to 4 weeks old."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "paarbindung",
+          "wert": "longTermMonogamousPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Java-Grünelstern leben in festen monogamen Paaren.",
+            "en": "Javan green magpies live in bonded monogamous pairs."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "familie",
+          "wert": "smallFamilyGroup",
+          "hinweis": {
+            "de": "Zusätzlich können kleine Familiengruppen vorkommen.",
+            "en": "They may also live in small family groups."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt dichte, feuchte Berg- und Unterbergwälder Javas als Lebensraum.",
+            "en": "The Zoopedia lists dense, humid montane and sub-montane forests on Java as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [""]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Insekten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Kleine Wirbellose",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": []
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Die Java-Grünelster (Cissa thalassina) ist eine endemische Singvogelart, die ausschließlich auf der indonesischen Insel Java vorkommt, vor allem im Westen und in den zentralen Regionen. Sie bewohnt dichte, feuchte Berg- und Unterbergwälder mit üppiger Vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Javan green magpie (or Cissa thalassina) is an endemic passerine bird species found only on the Indonesian island of Java, primarily in the Western and Central regions. It inhabits dense, humid montane and sub-montane forests with thick vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Javan green magpie (or Cissa thalassina) is an endemic passerine bird species found only on the Indonesian island of Java, primarily in the Western and Central regions. It inhabits dense, humid montane and sub-montane forests with thick vegetation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Die Java-Grünelster (Cissa thalassina) ist eine endemische Singvogelart, die ausschließlich auf der indonesischen Insel Java vorkommt, vor allem im Westen und in den zentralen Regionen. Sie lebt in dichten, feuchten Berg- und Unterbergwäldern mit üppiger Vegetation.\n\nDie Art ist für ihr auffallend leuchtend grünes Gefieder bekannt, dazu eine schwarze Gesichtsmaske, einen rötlich-orangen Schnabel sowie bläuliche Spitzen an Flügeln und Schwanz.\n\nDer Geschlechtsdimorphismus ist nur gering ausgeprägt, doch Männchen sind meist etwas größer als Weibchen. Erwachsene Tiere messen gewöhnlich 29 bis 31 cm; Männchen wiegen etwa 130 bis 140 g, Weibchen meist 120 bis 130 g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Javan green magpie (or Cissa thalassina) is an endemic passerine bird species found only on the Indonesian island of Java, primarily in the Western and Central regions. It inhabits dense, humid montane and sub-montane forests with thick vegetation.\n\nThe species is renowned for its striking bright green plumage and black mask across the eyes, reddish-orange bill, and bluish wings and tail tips.\n\nSexual dimorphism is minimal, but males are generally slightly larger than females. Adults typically measure 29cm to 31cm long, with males weighing around 130g to 140g and females slightly lighter at 120g to 130g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Javan green magpie (or Cissa thalassina) is an endemic passerine bird species found only on the Indonesian island of Java, primarily in the Western and Central regions. It inhabits dense, humid montane and sub-montane forests with thick vegetation.\n\nThe species is renowned for its striking bright green plumage and black mask across the eyes, reddish-orange bill, and bluish wings and tail tips.\n\nSexual dimorphism is minimal, but males are generally slightly larger than females. Adults typically measure 29cm to 31cm long, with males weighing around 130g to 140g and females slightly lighter at 120g to 130g.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Java-Grünelster ist vom Aussterben bedroht und wird vor allem durch illegalen Fang sowie Lebensraumverlust bedroht. Einst war sie weit verbreitet, heute könnte sie in nur vier Schutzgebieten auf nur noch etwa 50 Wildvögel zusammengeschrumpft sein. Wegen ihres auffälligen Aussehens ist sie im illegalen südostasiatischen Singvogelhandel besonders begehrt. Zusätzlich zerschneidet die Abholzung ihren Lebensraum und erschwert das Überleben der Art in freier Wildbahn.\n\nUm die Art vor dem Aussterben zu bewahren, laufen gezielte Schutzmaßnahmen. Die EAZA konzentriert sich darauf, Tiere aus dem illegalen Handel zu retten und Bestände in Menschenobhut zu koordinieren. Viele Zoos züchten Java-Grünelstern erfolgreich, um eine stabile Reservepopulation aufzubauen. Zudem war die Art das Gesicht der Kampagne „Silent Forest“ in europäischen Zoos, die auf die Krise des Singvogelhandels aufmerksam macht. Vor Ort helfen Bestandserhebungen und Monitoringprogramme dabei, geeignete Lebensräume zu identifizieren, künftige Schutzstrategien zu planen und gerettete Tiere zu rehabilitieren.\n\nDiese kombinierten Maßnahmen sollen die verbleibenden Wildpopulationen schützen und eine nachhaltige Zukunft für die Java-Grünelster schaffen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Javan green magpie is Critically Endangered, primarily threatened by illegal trapping and habitat loss. Once widespread, it has been reduced to as few as 50 wild individuals in just four protected areas. Its striking appearance has made it highly sought after in Southeast Asia’s illegal songbird trade. Additionally, deforestation fragments its habitat, making it increasingly difficult for the species to survive in the wild.\n\nConcerted conservation efforts are in place to save this bird from extinction. The EAZA focuses on rescuing individuals from the illegal trade and managing captive populations to ensure the species' survival. Many zoos successfully breed Javan green magpies to ensure a healthy insurance population. The Javan green magpie was the face of the ‘Silent Forest’ campaign in European zoos, raising awareness for the songbird trade crisis. In-situ, habitat surveys and monitoring programmes identify viable habitats to guide future strategies, and rehabilitate rescued birds.\n\nThese combined efforts aim to protect the remaining wild populations and establish a sustainable future for the Javan green magpie.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Javan green magpie is Critically Endangered, primarily threatened by illegal trapping and habitat loss. Once widespread, it has been reduced to as few as 50 wild individuals in just four protected areas. Its striking appearance has made it highly sought after in Southeast Asia’s illegal songbird trade. Additionally, deforestation fragments its habitat, making it increasingly difficult for the species to survive in the wild.\n\nConcerted conservation efforts are in place to save this bird from extinction. The EAZA focuses on rescuing individuals from the illegal trade and managing captive populations to ensure the species' survival. Many zoos successfully breed Javan green magpies to ensure a healthy insurance population. The Javan green magpie was the face of the ‘Silent Forest’ campaign in European zoos, raising awareness for the songbird trade crisis. In-situ, habitat surveys and monitoring programmes identify viable habitats to guide future strategies, and rehabilitate rescued birds.\n\nThese combined efforts aim to protect the remaining wild populations and establish a sustainable future for the Javan green magpie.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Java-Grünelstern leben in festen monogamen Paaren oder kleinen Familiengruppen.\n\nSie bilden langfristige monogame Paarbindungen. Die Fortpflanzung findet von Oktober bis April statt, wenn reichlich Nahrung vorhanden ist. Zur Balz gehören Lautäußerungen, gegenseitige Gefiederpflege und Imponierverhalten wie das Spreizen des Schwanzes. Paare verteidigen besonders zur Brutzeit ihr Revier energisch, um ihren Nachwuchs und ihre Nahrungshabitate zu schützen. Vor der Paarung bauen beide Vögel gemeinsam aus Zweigen, Blättern und Moos ein napfförmiges Nest.\n\nIn das Nest werden 2 bis 4 Eier gelegt, die anschließend 17 bis 19 Tage bebrütet werden. Nach dem Schlupf versorgen beide Eltern die Küken mit Nahrung und füttern sie mit Insekten und kleinen Wirbellosen. Mit etwa 3 bis 4 Wochen werden die Jungvögel flügge, bleiben aber noch einige weitere Wochen in der Nähe der Eltern, um wichtige Fähigkeiten bei der Nahrungssuche zu lernen.\n\nDie Geschlechtsreife wird mit ungefähr 2 Jahren erreicht. Danach verlassen die jungen Elstern endgültig den Familienverband und suchen ein eigenes Revier sowie einen Partner.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Javan green magpie lives in bonded monogamous pairs or small family groups.\n\nThe Javan green magpie forms long-term monogamous pair bonds. Breeding occurs from October to April, coinciding with high food availability. Courtship involves a combination of vocalisations, mutual preening, and display behaviours, such as tail spreading. Pairs are highly territorial, especially when nesting, to defend their offspring and foraging grounds. Before mating, the birds construct a cup-shaped nest together from twigs, leaves and moss.\n\n2 to 4 eggs are laid into the nest, which are then incubated for 17 to 19 days. Both parents provide food and care for the chicks after hatching, providing insects and small invertebrates. At around 3 to 4 weeks old, the juveniles fledge, but remain near their parents for another few weeks to learn essential foraging skills.\n\nSexual maturity is reached at approximately 2 years old, at which point the young magpies fully disperse and search for their own territory and mate.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Javan green magpie lives in bonded monogamous pairs or small family groups.\n\nThe Javan green magpie forms long-term monogamous pair bonds. Breeding occurs from October to April, coinciding with high food availability. Courtship involves a combination of vocalisations, mutual preening, and display behaviours, such as tail spreading. Pairs are highly territorial, especially when nesting, to defend their offspring and foraging grounds. Before mating, the birds construct a cup-shaped nest together from twigs, leaves and moss.\n\n2 to 4 eggs are laid into the nest, which are then incubated for 17 to 19 days. Both parents provide food and care for the chicks after hatching, providing insects and small invertebrates. At around 3 to 4 weeks old, the juveniles fledge, but remain near their parents for another few weeks to learn essential foraging skills.\n\nSexual maturity is reached at approximately 2 years old, at which point the young magpies fully disperse and search for their own territory and mate.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Die Java-Grünelster ist sehr ruffreudig und nutzt Pfeif- und Kontaktrufe, um in dichtem Wald mit Partnern und Familienmitgliedern in Verbindung zu bleiben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Java-Grünelster bevorzugt kühle, feuchte Bergwälder und nicht das Tiefland.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Nester werden meist 2 bis 3 m über dem Boden in dichter Vegetation gebaut und mit Zweigen, Bambusblättern und Moos getarnt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Als Vertreterin der Rabenvögel gilt die Java-Grünelster als intelligent und zeigt in Menschenobhut Problemlösungsvermögen und Anpassungsfähigkeit.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Unter Stress oder bei unzureichender Ernährung in Menschenobhut kann die Art vorübergehend ihre grüne Färbung verlieren, da Carotinoide aus der Nahrung für die Gefiederfarbe wichtig sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The Javan green magpie is highly vocal, using whistles and calls to maintain contact with mates and family members in dense forest cover.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Javan green magpie prefers cool, humid montane forests rather than lowland habitats.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Javan green magpie’s nests are typically built 2m to 3m above ground in dense foliage using twigs, bamboo leaves, and moss to provide camouflage.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Javan green magpies are corvids, thus they are intelligent, showing problem-solving skills and adaptability in captivity.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Javan green magpies can temporarily lose their green colour if stressed or poorly fed in captivity, as carotenoids in their diet are essential for plumage colouration.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The Javan green magpie is highly vocal, using whistles and calls to maintain contact with mates and family members in dense forest cover.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Javan green magpie prefers cool, humid montane forests rather than lowland habitats.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Javan green magpie’s nests are typically built 2m to 3m above ground in dense foliage using twigs, bamboo leaves, and moss to provide camouflage.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Javan green magpies are corvids, thus they are intelligent, showing problem-solving skills and adaptability in captivity.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Javan green magpies can temporarily lose their green colour if stressed or poorly fed in captivity, as carotenoids in their diet are essential for plumage colouration.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Cissa thalassina/map/Cissa thalassina map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Java-Grünelster – Planet Zoo 2",
+            "en": "Javan Green Magpie – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild der Java-Grünelster aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Javan Green Magpie."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Cissa thalassina/bilder/Cissa thalassina 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Javan Green Magpie",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs sowie weitere nicht genannte Werte wurden nicht ergänzt."
+    }
+  }
+}
