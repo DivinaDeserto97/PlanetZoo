@@ -24,6 +24,9 @@ permissions:
 jobs:
   discord-news:
     name: Nachricht an Discord senden
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      !contains(github.event.head_commit.message, '[intern]')
     runs-on: ubuntu-latest
     env:
       # Der vorhandene GitHub-Secret-Name kann so bleiben.
