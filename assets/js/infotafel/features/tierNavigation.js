@@ -1,3 +1,14 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/infotafel/features/tierNavigation.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
+import { setzeBildMitFallback } from "../../features/bildFallback.js";
+
 import { getTierMarkierungsStatus } from "../../features/tierDatenPruefung.js";
 
 import { getTierName } from "./ui.js";
@@ -38,21 +49,15 @@ export function renderTierNavigation(selectedTiere, activeTierId) {
       button.classList.add("has-data-warning");
     }
 
-    if (tier.hauptbildPfad) {
+    if (tier.hauptbildPfad || tier.hauptbildUrl) {
       const img = document.createElement("img");
-
-      img.src = tier.hauptbildPfad;
 
       img.alt = "";
 
       img.loading = "lazy";
 
-      img.addEventListener(
-        "error",
-        () => img.replaceWith(createNavFallback()),
-        {
-          once: true,
-        },
+      setzeBildMitFallback(img, tier.hauptbildPfad, tier.hauptbildUrl, () =>
+        img.replaceWith(createNavFallback()),
       );
 
       button.appendChild(img);

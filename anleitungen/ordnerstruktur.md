@@ -13,14 +13,6 @@
   - `.vscode/`
     - [settings.json](../.vscode/settings.json)
   - [README.md](../README.md)
-  - `anleitungen/`
-    - [ANLEITUNG-TIER-JSON.md](../anleitungen/ANLEITUNG-TIER-JSON.md)
-    - [BOT.md](../anleitungen/BOT.md)
-    - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
-    - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
-    - [MEDIEN-UND-QUELLEN.md](../anleitungen/MEDIEN-UND-QUELLEN.md)
-    - [PlanetZoo2-Tierdaten-Checkliste.md](../anleitungen/PlanetZoo2-Tierdaten-Checkliste.md)
-    - [ordnerstruktur.md](../anleitungen/ordnerstruktur.md)
   - `assets/`
     - `cache/`
     - `components/`
@@ -1004,8 +996,8 @@
               - `Loxodonta africana map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/.gitkeep>)
-              - `dokumentation/`
-                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/dokumentation/.gitkeep>)
+              - `anleitungen/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Loxodonta africana/videos/anleitungen/.gitkeep>)
                 - `Go Wild/`
                   - `1.mkv` _(Medium – lokal / nicht freigegeben)_
                   - `1.mp4` _(Medium – lokal / nicht freigegeben)_
@@ -1134,12 +1126,12 @@
               - `Orycteropus afer map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/.gitkeep>)
-              - `dokumentation/`
-                - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/.gitkeep>)
+              - `anleitungen/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/anleitungen/.gitkeep>)
                 - `Go Wild/`
-                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/.gitkeep>)
+                  - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/anleitungen/Go Wild/.gitkeep>)
                   - `1/`
-                    - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/dokumentation/Go Wild/1/.gitkeep>)
+                    - [.gitkeep](<../assets/daten/lebewesen/tiere/Orycteropus afer/videos/anleitungen/Go Wild/1/.gitkeep>)
                     - `1.mkv` _(Medium – lokal / nicht freigegeben)_
                     - `1.mp4` _(Medium – lokal / nicht freigegeben)_
           - `Oryx gazella/`
@@ -1752,7 +1744,6 @@
       - [browser.bundle.js](../assets/js/browser.bundle.js)
       - `features/`
         - [animalLabels.js](../assets/js/features/animalLabels.js)
-        - [bildFallback.js](../assets/js/features/bildFallback.js)
         - [device.js](../assets/js/features/device.js)
         - `graph/`
           - [graphCanvas.js](../assets/js/features/graph/graphCanvas.js)
@@ -1821,12 +1812,12 @@
         - [systematik.js](../assets/js/systematik/systematik.js)
       - `tier/`
         - [tier.js](../assets/js/tier/tier.js)
-  - `dokumentation/`
-    - [ANLEITUNG-TIER-JSON.md](../dokumentation/ANLEITUNG-TIER-JSON.md)
-    - [DISCORD-NEWS.md](../dokumentation/DISCORD-NEWS.md)
-    - [MEDIEN-UND-QUELLEN.md](../dokumentation/MEDIEN-UND-QUELLEN.md)
-    - [PlanetZoo2-Tierdaten-Checkliste.md](../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md)
-    - [ordnerstruktur.md](../dokumentation/ordnerstruktur.md)
+  - `anleitungen/`
+    - [ANLEITUNG-TIER-JSON.md](../anleitungen/ANLEITUNG-TIER-JSON.md)
+    - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
+    - [MEDIEN-UND-QUELLEN.md](../anleitungen/MEDIEN-UND-QUELLEN.md)
+    - [PlanetZoo2-Tierdaten-Checkliste.md](../anleitungen/PlanetZoo2-Tierdaten-Checkliste.md)
+    - [ordnerstruktur.md](../anleitungen/ordnerstruktur.md)
   - [index.html](../index.html)
   - `node_modules/`
     - `.bin/`
@@ -1993,7 +1984,6 @@
     - [systematik.html](../pages/systematik.html)
     - [tier.html](../pages/tier.html)
   - `tools/`
-    - [bot-zip.sh](../tools/bot-zip.sh)
     - [build-browser-bundle.js](../tools/build-browser-bundle.js)
     - [commit-und-merge.sh](../tools/commit-und-merge.sh)
     - [commit.sh](../tools/commit.sh)
@@ -2003,4 +1993,3 @@
     - [merge-main.sh](../tools/merge-main.sh)
     - [ordnerstruktur.sh](../tools/ordnerstruktur.sh)
     - [share-zip.sh](../tools/share-zip.sh)
-    - [zip-intern.sh](../tools/zip-intern.sh)

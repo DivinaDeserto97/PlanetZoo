@@ -1,3 +1,12 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/features/tierDatenPruefung.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
 import { TOOL_IDS, TOOLS } from "./toolRegistry.js";
 
 import { getToolEinstellung, TOOL_STUFEN } from "./toolEinstellungen.js";

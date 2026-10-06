@@ -1,3 +1,12 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/main.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
 import { loadPage } from "./pages.js";
 
 import { initLanguage } from "./features/language.js";

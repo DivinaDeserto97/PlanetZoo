@@ -1,3 +1,14 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/home/features/tierKarten.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
+import { setzeBildMitFallback } from "../../features/bildFallback.js";
+
 import { getLanguage, getLocalizedValue } from "../../features/language.js";
 
 import {
@@ -113,24 +124,16 @@ function createAnimalCard(tier, selected, signal) {
 
   media.className = "home-animal-card__media";
 
-  if (tier.hauptbildPfad) {
+  if (tier.hauptbildPfad || tier.hauptbildUrl) {
     const image = document.createElement("img");
-
-    image.src = tier.hauptbildPfad;
 
     image.alt = getTierName(tier);
 
     image.loading = "lazy";
 
-    image.addEventListener(
-      "error",
-      () => {
-        image.replaceWith(createImagePlaceholder());
-      },
-      {
-        once: true,
-        signal,
-      },
+    // Erst lokale Datei laden, bei Fehler automatisch die Quellen-URL testen.
+    setzeBildMitFallback(image, tier.hauptbildPfad, tier.hauptbildUrl, () =>
+      image.replaceWith(createImagePlaceholder()),
     );
 
     media.appendChild(image);

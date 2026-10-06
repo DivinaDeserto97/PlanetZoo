@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/tier/tier-style.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 .tier-page {
   width: min(100%, var(--breite-inhalt));
   margin: 0 auto;

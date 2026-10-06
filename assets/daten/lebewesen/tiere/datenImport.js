@@ -340,6 +340,15 @@ export async function datenImportieren() {
 
       const hauptbildPfad = findeMedienPfad(hauptbild);
 
+      /*
+       * Fallback für Bilder:
+       * Der lokale Pfad bleibt die erste Wahl. Zusätzlich merken wir uns die
+       * URL der Hauptbild-Variante, damit die Oberfläche sie nur dann laden
+       * kann, wenn die lokale Datei fehlt oder nicht erreichbar ist.
+       */
+      const hauptbildVariante = alsArray(hauptbild?.varianten)[0] ?? null;
+      const hauptbildUrl = hauptbildVariante?.url ?? hauptbild?.url ?? null;
+
       /* ================================== */
       /* FILTER                             */
       /* ================================== */
@@ -395,6 +404,8 @@ export async function datenImportieren() {
         bilder,
 
         hauptbildPfad,
+
+        hauptbildUrl,
 
         audio: alsArray(tierdaten.audio),
 

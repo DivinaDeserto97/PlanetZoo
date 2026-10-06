@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/systematik/systematik-var.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 :root {
   --systematik-footer-reserve: 69px;
 

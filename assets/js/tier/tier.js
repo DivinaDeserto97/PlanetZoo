@@ -1,3 +1,14 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/tier/tier.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
+import { setzeBildMitFallback } from "../features/bildFallback.js";
+
 import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
 import { getLanguage, getLocalizedValue } from "../features/language.js";
@@ -100,7 +111,7 @@ function renderImage(tier, name) {
     return;
   }
 
-  if (!tier.hauptbildPfad) {
+  if (!tier.hauptbildPfad && !tier.hauptbildUrl) {
     image.hidden = true;
     fallback.hidden = false;
     return;
@@ -108,13 +119,12 @@ function renderImage(tier, name) {
 
   image.hidden = false;
   fallback.hidden = true;
-  image.src = tier.hauptbildPfad;
   image.alt = name;
 
-  image.onerror = () => {
+  setzeBildMitFallback(image, tier.hauptbildPfad, tier.hauptbildUrl, () => {
     image.hidden = true;
     fallback.hidden = false;
-  };
+  });
 }
 
 function renderToolChecks(tier) {

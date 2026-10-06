@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/infotafel/infotafel.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 /* Infotafel: 9 hoch : 16 breit. Diese CSS-Datei wird nur auf der Infotafel geladen. */
 
 #header,

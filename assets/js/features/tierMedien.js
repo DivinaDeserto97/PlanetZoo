@@ -1,3 +1,12 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/features/tierMedien.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
 function alsArray(wert) {
   return Array.isArray(wert) ? wert : [];
 }
@@ -106,12 +115,16 @@ export function getInfotafelBilder(tier) {
     .map((entry) => {
       const datei = getBesteBildDatei(entry.dateien);
 
-      if (!datei) {
+      const externeUrl = entry.variante?.url ?? "";
+
+      if (!datei && !hatText(externeUrl)) {
         return null;
       }
 
       return {
-        pfad: datei.pfad,
+        // Lokale Datei zuerst; `url` dient in der Oberfläche als Fallback.
+        pfad: datei?.pfad ?? "",
+        url: externeUrl,
         typ: entry.gruppe?.typ ?? "bild",
         variante: entry.variante?.variante ?? entry.variantenIndex + 1,
         quelle: entry.variante?.quelle ?? "",
