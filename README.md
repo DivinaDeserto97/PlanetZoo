@@ -540,3 +540,19 @@ Der lokale Ordner `bot/` ist im normalen Git-Workflow bewusst ausgeschlossen. Da
 Das Projekt befindet sich weiterhin in Entwicklung. Einzelne Werkzeuge, Tierdaten oder Medien können unvollständig sein oder sich noch ändern.
 
 Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind. Bei Browsern mit strengen `file://`-Richtlinien kann alternativ der oben beschriebene lokale Webserver verwendet werden.
+
+## Nur ZIP erstellen + internen Commit anlegen
+
+Wenn vor einer Änderung einfach eine aktuelle Share-ZIP erstellt und der aktuelle Stand intern gesichert werden soll:
+
+```bash
+./tools/zip-intern.sh
+```
+
+Optional kann eine eigene Commit-Beschreibung angegeben werden:
+
+```bash
+./tools/zip-intern.sh "Stand vor Bild-Fallback gesichert"
+```
+
+Das Skript erstellt die Share-ZIP über `tools/share-zip.sh`, nimmt danach vorhandene Git-Änderungen in einen Commit auf, ergänzt automatisch `[intern]` und pusht den aktuellen Branch. Dadurch wird für diesen Commit keine Discord-News gesendet. Die ZIP selbst bleibt durch `.gitignore` lokal und wird nicht auf GitHub committed.
