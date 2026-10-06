@@ -65,5 +65,9 @@ echo "↩️ Zurück zu $SOURCE_BRANCH ..."
 git switch "$SOURCE_BRANCH"
 
 echo
+echo "📦 Share-ZIP und Bot-ZIP aktualisieren ..."
+"$SCRIPT_DIR/share-zip.sh"
+
+echo
 echo "✅ Merge nach main abgeschlossen."
 echo "GitHub Actions sendet jetzt automatisch eine Nachricht an #updates."
