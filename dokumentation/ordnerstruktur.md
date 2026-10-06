@@ -146,6 +146,18 @@
               - `Aetobatus ocellatus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Aetobatus ocellatus/videos/.gitkeep>)
+          - `Agalychnis callidryas/`
+            - [Agalychnis callidryas.json](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/Agalychnis callidryas.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/bilder/.gitkeep>)
+              - `Agalychnis callidryas 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/map/.gitkeep>)
+              - `Agalychnis callidryas map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/videos/.gitkeep>)
           - `Aglais io/`
             - [Aglais io.json](<../assets/daten/lebewesen/tiere/Aglais io/Aglais io.json>)
             - `audio/`

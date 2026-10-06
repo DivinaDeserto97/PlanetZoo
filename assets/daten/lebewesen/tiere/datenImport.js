@@ -128,6 +128,7 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Camelus bactrianus/Camelus bactrianus.json",
   "assets/daten/lebewesen/tiere/Belocercus longicaudus/Belocercus longicaudus.json",
   "assets/daten/lebewesen/tiere/Symphalangus syndactylus/Symphalangus syndactylus.json",
+  "assets/daten/lebewesen/tiere/Agalychnis callidryas/Agalychnis callidryas.json",
 ];
 
 /* ======================================== */
