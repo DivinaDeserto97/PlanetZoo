@@ -1,0 +1,461 @@
+{
+  "id": "Phoenicopterus roseus",
+  "identitaet": {
+    "namen": {
+      "de": "Rosaflamingo",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Fliegend"],
+    "kontinente": ["Afrika", "Asien", "Europa"],
+    "biome": ["Feuchtgebiete"],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Aves",
+          "ordnung": "Phoenicopteriformes",
+          "familie": "Phoenicopteridae",
+          "gattung": "Phoenicopterus",
+          "art": "Phoenicopterus roseus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.1,
+          "max": 1.5,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia gibt die Körpergröße mit 1,1 bis 1,5 m an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 2,
+          "max": 4,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Rosaflamingo als nicht gefährdet ein.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 550000,
+          "max": 910000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 550.000 bis 910.000 Individuen an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "volleGroesse",
+          "wert": 2,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Rosaflamingos sind laut Zoopedia mit 2 Jahren ausgewachsen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "allgemein",
+          "wert": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Geschlechtsreife wird mit etwa 3 Jahren erreicht.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ersteFortpflanzung",
+          "min": 5,
+          "max": 10,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die erste Paarung findet in der Regel erst im Alter von 5 bis 10 Jahren statt.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "eierProGelege",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "brutdauer",
+          "min": 27,
+          "max": 31,
+          "durchschnitt": null,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "kropfmilch",
+          "min": 3,
+          "max": 4,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "In den ersten 3 bis 4 Wochen wird das Küken mit hochgewürgter Kropfmilch gefüttert.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "fluegge",
+          "wert": 10,
+          "einheit": "woche",
+          "hinweis": {
+            "de": "Das Jungtier wird im Alter von etwa 10 Wochen flügge.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "creche",
+          "wert": 1,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Nach dem Flüggewerden verbringt das Jungtier noch etwa einen Monat in einer Crèche mit anderen Jungvögeln.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "largeFlock",
+          "hinweis": {
+            "de": "Rosaflamingos sind soziale Tiere und bevorzugen das Leben in großen Schwärmen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "monogamousBreedingPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Rosaflamingos bilden monogame Brutpaare; manche nur während der Brutzeit, andere lebenslang.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "wetlands",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Wattgebiete, Meeresbuchten sowie salzhaltige und alkalische Feuchtgebiete als Lebensraum.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "filterFeeder",
+            "hinweis": {
+              "de": "Rosaflamingos wühlen mit ihren Seihschnäbeln im Schlamm und filtern Nahrung heraus.",
+              "en": ""
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Kropfmilch",
+              "typ": "tierischesSekret",
+              "beziehung": "fuetterung",
+              "wirkung": "+/+",
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Algen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Wirbellose Tiere",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Samen",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": []
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Rosaflamingo (Phoenicopterus roseus) ist eine große Zugvogelart, die in Europa, im Nahen Osten sowie in Asien und Afrika weit verbreitet ist. Rosaflamingos leben in Wattgebieten und Meeresbuchten mit gemäßigtem und warmem Klima.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Beim Rosaflamingo (auch Phoenicopterus roseus) handelt es sich um eine große Zugvogelart, die in Europa, im Nahen Osten sowie in Asien und Afrika weit verbreitet ist. Rosaflamingos leben in Wattgebieten und Meeresbuchten mit gemäßigtem und warmem Klima. Mit ihren Seihschnäbeln wühlen sie im Schlamm und filtern Algen, wirbellose Tiere und Samen heraus.\n\nSie sind mit hellrosa bis orangerosa Federn bedeckt, haben rosa Beine und einen rosa Schnabel mit schwarzer Spitze. Sie verfügen über schwarze Flugfedern und weisen oft leuchtend rosa Flecken auf den Flügeln auf.\n\nMännliche und weibliche Flamingos sehen identisch aus, sind zwischen 1,1 m und 1,5 m groß und wiegen zwischen 2 kg und 4 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Rosaflamingo gilt als nicht gefährdet und ist nicht vom Aussterben bedroht, leidet jedoch unter der zunehmenden Verschlechterung der für ihn lebenswichtigen salzhaltigen- und alkalischen Feuchtgebiete. Die Trockenlegung von Feuchtgebieten, die Umleitung von Wasser sowie die Verschmutzung durch Landwirtschaft oder Infrastruktur töten viele der wirbellosen Tiere, von denen sich Flamingos ernähren, und zerstören geeignete Brutgebiete. Auch lokale Störfaktoren wie Freizeitaktivitäten von Menschen oder Viehhaltung können dazu führen, dass Kolonien aufgegeben werden.\n\nInitiativen zum Schutz und zur Verwaltung von Lebensräumen, wie die Überwachung der Wasserqualität, der Schutz wichtiger Brut- und Rastplätze sowie Aufklärungskampagnen, stellen sich diesen Bedrohungen. Internationale Regelungen wie das Abkommen zur Erhaltung der afrikanisch-eurasischen wandernden Wasservögel (AEWA) unterstützen die internationale Zusammenarbeit im Bereich der Arterhaltung, während nationale Regierungen wichtige Gebiete unter Schutz gestellt haben, um Brut- und Zugvögel zu schützen.\n\nAls größte Flamingo-Art und farbenprächtiger Watvogel fungiert der Rosaflamingo in Gefangenschaft oft auch als Botschafter, da Spenden- und Adoptionsgelder ebenfalls in den Schutz anderer Arten fließen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Rosaflamingos sind soziale Tiere und bevorzugen das Leben in großen Schwärmen. Sie mögen zwar monogame Brutpaare bilden, doch andere Vögel in der Gruppe helfen oft dabei, Küken zu beschützen und zu füttern.\n\nRosaflamingos paaren sich von April bis Mai. Um einen Partner zu finden, vollführen Flamingomännchen und -weibchen synchronisierte „Tänze“, bei denen sie die Hälse strecken, Gefiederpflege betreiben und mit den Flügeln schlagen. All dies geschieht simultan in einer großen Gruppe. Sobald ein Weibchen durch das Erscheinungsbild und den Tanz eines Männchens angemessen beeindruckt wurde, sondert es sich von der Gruppe ab und das Männchen folgt ihm. Das Weibchen senkt den Hals und spreizt die Flügel und fordert das Männchen somit dazu auf, sich mit ihm zu paaren. Flamingos sind monogam – manche nur während der Brutzeit, andere ihr ganzes Leben lang.\n\nDas Brutpaar baut gemeinsam einen Hügel aus Schlamm und formt darauf eine Vertiefung in der Mitte, in die das Weibchen ein einzelnes Ei legt. Beide Elternvögel wechseln sich beim Brüten ab und nach 27 bis 31 Tagen schlüpft das Junge. Die ersten 3 bis 4 Wochen seines Lebens wird es mit hochgewürgter Kropfmilch gefüttert. Danach macht es sich selbst auf Nahrungssuche und wird im Alter von etwa 10 Wochen flügge. Einen weiteren Monat lang verbringt es dann in einer „Crèche“ mit anderen Jungvögeln, die von einem ausgewachsenen Flamingo ohne Nachwuchs betreut werden.\n\nRosaflamingos sind mit 2 Jahren ausgewachsen und mit 3 Jahren geschlechtsreif. Sie paaren sich in der Regel erst im Alter von 5 bis 10 Jahren zum ersten Mal.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Flamingos erhalten ihre rosafarbene Färbung durch ihre Nahrung. Die Carotinoide, die sie beim Fressen von Algen und wirbellosen Tiere aufnehmen, lagern sich in ihren Federn ab.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Elterntiere erkennen den Ruf ihres Kükens unter Tausenden anderer Flamingos.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Flamingos werden mit geraden Schnäbeln geboren. Der Schnabel beginnt sich im Alter von etwa einem Monat zu krümmen und ermöglicht es ihnen, nach fester Nahrung zu suchen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Flamingos stehen häufig auf einem Bein – auch beim Schlafen. Dies soll Wärmeverlust verhindern, da somit nur ein Bein der Kälte der Luft oder des Wassers ausgesetzt ist.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Es gibt 40 Millionen Jahre alte Fossilien der ersten Flamingo-Arten.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Phoenicopterus roseus/map/Phoenicopterus roseus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Rosaflamingo – Planet Zoo 2",
+            "en": ""
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Rosaflamingos aus Planet Zoo 2.",
+            "en": ""
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Phoenicopterus roseus/bilder/Phoenicopterus roseus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": ""
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Rosaflamingo",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Nicht genannte Werte sowie direkte Karten-, Bild- und Video-URLs wurden nicht ergänzt."
+    }
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "id": "Symphalangus syndactylus",
+  "identitaet": {
+    "namen": {
+      "de": "Siamang",
+      "en": "Siamang",
+      "en-US": "Siamang",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien"],
+    "biome": ["Tropen"],
+    "schutzstatus": "Stark gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Primates",
+          "familie": "Hylobatidae",
+          "gattung": "Symphalangus",
+          "art": "Symphalangus syndactylus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [""]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 10,
+          "max": 13,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Stark gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia führt den Siamang als stark gefährdet (Endangered).",
+            "en": "The Zoopedia lists the siamang as Endangered."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 100000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia nennt einen geschätzten Wildbestand von 100.000 Individuen.",
+            "en": "The Zoopedia gives an estimated wild population of 100,000 individuals."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 8,
+          "max": 9,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 8,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 1,
+          "durchschnitt": 1,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "ersteFesteNahrung",
+          "wert": 6,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "entwoehnung",
+          "wert": 1,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weitgehendSelbststaendig",
+          "wert": 3,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "familie",
+          "wert": "monogamousFamilyGroup",
+          "minGruppengroesse": 4,
+          "maxGruppengroesse": 5,
+          "hinweis": {
+            "de": "Familiengruppen bestehen aus einem monogamen Paar und gewöhnlich 2 bis 3 noch nicht ausgewachsenen Jungtieren.",
+            "en": "Family groups consist of a monogamous pair and usually 2 to 3 immature offspring."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "paarbindung",
+          "wert": "lifelongMonogamousPair",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 2,
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt eine lebenslange Paarbindung.",
+            "en": "The Zoopedia describes a lifelong pair bond."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt Regenwälder auf der Malaiischen Halbinsel und Sumatra als Lebensraum.",
+            "en": "The Zoopedia lists rainforests on the Malay Peninsula and Sumatra as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "frugivore",
+            "hinweis": {
+              "de": "Die Zoopedia beschreibt Siamangs in den Tierfakten als Fruchtfresser.",
+              "en": "The Zoopedia describes siamangs as frugivores in the animal facts."
+            },
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Früchte",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Aus den Tierfakten der Zoopedia: Siamangs sind Fruchtfresser und verbreiten Samen.",
+                "en": "From the Zoopedia animal facts: siamangs are frugivores and disperse seeds."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "primates",
+          "rang": "ordnung",
+          "name": "Primates",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "hylobatidae",
+          "rang": "familie",
+          "name": "Hylobatidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "symphalangus",
+          "rang": "gattung",
+          "name": "Symphalangus",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "symphalangus-syndactylus",
+          "rang": "art",
+          "name": "Symphalangus syndactylus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Siamang (Symphalangus syndactylus) lebt in den Regenwäldern der Malaiischen Halbinsel und auf der indonesischen Insel Sumatra.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The siamang (or Symphalangus syndactylus) is a species of gibbon living in the rainforests of the Malay Peninsula and Indonesian island of Sumatra.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The siamang (or Symphalangus syndactylus) is a species of gibbon living in the rainforests of the Malay Peninsula and Indonesian island of Sumatra.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Siamang (Symphalangus syndactylus) ist eine Gibbonart, die in den Regenwäldern der Malaiischen Halbinsel und auf der indonesischen Insel Sumatra lebt.\n\nSein Körper ist mit schwarzem, zotteligem Fell bedeckt, das im Gesicht dünner und grau ist. Siamangs besitzen sehr lange Arme; ihre Armspannweite beträgt ungefähr das Doppelte ihrer Körperlänge. Sie haben kurze, kräftige Beine und keinen Schwanz. Eines ihrer auffälligsten Merkmale ist der Kehlsack unter dem Kinn, der sich bei ihren charakteristischen Lautäußerungen aufbläht.\n\nSiamangs werden typischerweise 75 bis 100 cm groß und wiegen zwischen 10 und 13 kg. Wie andere kleine Menschenaffen zeigt diese Art nur einen geringen bis keinen Geschlechtsdimorphismus.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The siamang (or Symphalangus syndactylus) is a species of gibbon living in the rainforests of the Malay Peninsula and Indonesian island of Sumatra.\n\nTheir body is covered in all-black shaggy fur, which is thinner and grey on their faces. Siamangs have very long arms - their arm span approximately measuring twice their body length, short and sturdy legs and no tail. One of their most prominent features is the throat sac under their chin, which inflates during their distinctive vocalisations.\n\nTypically, siamangs are 75cm to 100cm tall and weigh between 10kg and 13kg. Like other lesser apes, this species exhibits little to no sexual dimorphism.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The siamang (or Symphalangus syndactylus) is a species of gibbon living in the rainforests of the Malay Peninsula and Indonesian island of Sumatra.\n\nTheir body is covered in all-black shaggy fur, which is thinner and grey on their faces. Siamangs have very long arms - their arm span approximately measuring twice their body length, short and sturdy legs and no tail. One of their most prominent features is the throat sac under their chin, which inflates during their distinctive vocalisations.\n\nTypically, siamangs are 75cm to 100cm tall and weigh between 10kg and 13kg. Like other lesser apes, this species exhibits little to no sexual dimorphism.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Siamangs gelten als stark gefährdet, da ihre Bestände in den vergangenen Jahrzehnten stark zurückgegangen sind. Die größten Bedrohungen sind die Abholzung und die Umwandlung von Lebensräumen in landwirtschaftliche Flächen, häufig für Palmölplantagen oder durch illegale Holzeinschläge. Dadurch werden Populationen zersplittert und voneinander isoliert, was die Partnersuche erschwert. Zusätzlich stehen Siamangs durch den illegalen Heimtierhandel unter Druck; dabei werden Mütter von Wilderern getötet, um leichter an ihre Jungtiere zu gelangen.\n\nDer Siamang ist eine geschützte Art. In mehreren Gebieten seines natürlichen Verbreitungsraums wurden Schutzgebiete eingerichtet, um die verbliebenen Bestände des Siamangs und anderer Gibbons zu sichern. Einige Organisationen führen erfolgreiche Rettungs- und Wiederansiedlungsprogramme in sicheren, überwachten Gebieten durch. Internationale und lokale Schutzmaßnahmen konzentrieren sich außerdem auf die Aufklärung der Bevölkerung, die Durchsetzung von Artenschutzgesetzen und eine nachhaltige Landnutzung, um die Abholzung zu begrenzen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Siamangs are Endangered due to the great decrease in population numbers over the last decades. Deforestation and agricultural land conversion is the main threat to their survival, as their habitat is destroyed to often create palm oil plantations or illegal logging operations. This fragments and isolates populations, making it difficult for them to find mates. They are also under pressure from the illegal pet trade, where poachers will kill mothers to have easier access to their infants to sell them.\n\nThe siamang is a protected species, and several areas throughout their native range have been designated as conservation zones to safeguard the remaining populations of not only the siamang, but also other gibbons. Some organisations have launched successful rescue and reintroduction programs into safe, monitored areas. International and local efforts are also focused on educating communities, enforcing wildlife protection laws, and promoting sustainable land-use practices to limit deforestation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Siamangs are Endangered due to the great decrease in population numbers over the last decades. Deforestation and agricultural land conversion is the main threat to their survival, as their habitat is destroyed to often create palm oil plantations or illegal logging operations. This fragments and isolates populations, making it difficult for them to find mates. They are also under pressure from the illegal pet trade, where poachers will kill mothers to have easier access to their infants to sell them.\n\nThe siamang is a protected species, and several areas throughout their native range have been designated as conservation zones to safeguard the remaining populations of not only the siamang, but also other gibbons. Some organisations have launched successful rescue and reintroduction programs into safe, monitored areas. International and local efforts are also focused on educating communities, enforcing wildlife protection laws, and promoting sustainable land-use practices to limit deforestation.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Siamangs leben in Familiengruppen, die aus einem monogamen Zuchtpaar und dessen noch nicht ausgewachsenen Nachkommen bestehen, gewöhnlich 2 bis 3 Jungtieren. Sie sind sehr soziale Tiere und leben normalerweise nicht allein.\n\nJunge, alleinstehende Siamangs rufen, um einen Partner anzulocken. Treffen sich ein Männchen und ein Weibchen, verbringen sie Zeit miteinander und teilen Futter. Wenn sie zueinander passen, festigen sie ihre Bindung durch gegenseitige Fellpflege und gemeinsame „Duette“. Beginnt sich das Paar regelmäßig zu paaren, bleibt es anschließend gewöhnlich ein Leben lang zusammen. Die Fortpflanzung kann das ganze Jahr über stattfinden, erreicht jedoch von Mai bis Juli ihren Höhepunkt.\n\nDie Tragzeit dauert etwa 8 Monate, danach bringt das Weibchen ein einzelnes Jungtier zur Welt. In den ersten 3 Lebensmonaten trägt sie es ständig, danach zunehmend seltener. Mit etwa 6 Monaten beginnt das Jungtier feste Nahrung zu fressen und ist mit ungefähr einem Jahr vollständig entwöhnt. Zu dieser Zeit übernimmt der Vater die Hauptbetreuung und zeigt dem Jungtier, wie es sich durch die Bäume bewegt, Nahrung sucht und mit anderen Siamangs interagiert. Mit etwa 3 Jahren benötigt das Jungtier kaum noch Unterstützung von seinen Eltern; häufig bekommt die Mutter ein weiteres Jungtier, sobald das erste etwa 3 Jahre alt ist. Ältere Geschwister helfen dem Vater oft bei der Aufzucht.\n\nSiamangs verlassen ihre Familiengruppe ungefähr im Alter von 6 bis 8 Jahren, um eine eigene Familie zu gründen. Geschlechtsreif werden sie mit etwa 8 oder 9 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Siamangs live in family groups made up of a monogamous breeding pair with their immature offspring, usually 2 to 3 juveniles. They are very social animals and generally do not live alone.\n\nYoung, single siamangs vocalise to attract a mate. When a male and female siamang meet, they will share each other’s company and food, and if compatible, will begin bonding by grooming each other and singing ‘duets’. They may begin copulating often, from which point on the couple will remain together for life. Mating can occur year-round, but peaks from May to July.\n\nPregnancies last around 8 months, and the female will give birth to a single infant. She will carry it around exclusively for the first 3 months of its life, then less and less. The juvenile begins consuming solid food at 6 months of age, and will be fully weaned at 1 year old. Around this time, the father will become the primary carer, teaching the infant how to traverse the trees, forage, and interact with other siamangs. At around 3 years of age, the juvenile does not require much assistance from its parents anymore, and the mother will usually give birth to a newborn once her first child is 3 years old. Older siblings often aid the father with raising infants.\n\nSiamangs leave their family group at around 6 to 8 years old in order to found their own families, reaching sexual maturity at 8 or 9 years old.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Siamangs live in family groups made up of a monogamous breeding pair with their immature offspring, usually 2 to 3 juveniles. They are very social animals and generally do not live alone.\n\nYoung, single siamangs vocalise to attract a mate. When a male and female siamang meet, they will share each other’s company and food, and if compatible, will begin bonding by grooming each other and singing ‘duets’. They may begin copulating often, from which point on the couple will remain together for life. Mating can occur year-round, but peaks from May to July.\n\nPregnancies last around 8 months, and the female will give birth to a single infant. She will carry it around exclusively for the first 3 months of its life, then less and less. The juvenile begins consuming solid food at 6 months of age, and will be fully weaned at 1 year old. Around this time, the father will become the primary carer, teaching the infant how to traverse the trees, forage, and interact with other siamangs. At around 3 years of age, the juvenile does not require much assistance from its parents anymore, and the mother will usually give birth to a newborn once her first child is 3 years old. Older siblings often aid the father with raising infants.\n\nSiamangs leave their family group at around 6 to 8 years old in order to found their own families, reaching sexual maturity at 8 or 9 years old.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Monogame Siamang-Paare singen oft mehrere Minuten lang gemeinsam, um ihr Revier zu markieren und zu verteidigen sowie ihre Paarbindung zu stärken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Der Siamang ist die größte Gibbonart.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamangs spielen als Fruchtfresser eine wichtige Rolle in ihrem natürlichen Ökosystem, weil sie durch ihren Kot Samen verbreiten und so zur Regeneration des Waldes beitragen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Zwei Zehen an den Füßen des Siamangs sind durch eine Hautmembran miteinander verbunden; innerhalb der Gibbonfamilie ist dieses Merkmal einzigartig für den Siamang.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamang-Familien entwickeln sehr enge Bindungen: Die Eltern bleiben ein Leben lang zusammen, und die gesamte Gruppe bewegt sich gemeinsam fort.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Siamang monogamous pairs will often sing together for several minutes to mark and defend their territory and bond with each other.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Siamang is the largest species of gibbon.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamangs play an important role in their native ecosystems, as frugivores they aid forest regeneration by spreading seeds via defecation.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Two toes on the siamang’s feet are connected by membrane, a feature unique to the siamang within the gibbon family.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamang families develop very close bonds; parents mate for life and the whole group travels together.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Siamang monogamous pairs will often sing together for several minutes to mark and defend their territory and bond with each other.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The Siamang is the largest species of gibbon.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamangs play an important role in their native ecosystems, as frugivores they aid forest regeneration by spreading seeds via defecation.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Two toes on the siamang’s feet are connected by membrane, a feature unique to the siamang within the gibbon family.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Siamang families develop very close bonds; parents mate for life and the whole group travels together.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Symphalangus syndactylus/map/Symphalangus syndactylus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Siamang – Planet Zoo 2",
+            "en": "Siamang – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Siamangs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Siamang."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Symphalangus syndactylus/bilder/Symphalangus syndactylus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Siamang",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs sowie ein Veröffentlichungstermin waren im kopierten Text nicht enthalten. Die Größenangabe 75–100 cm wurde nicht als Schulterhöhe strukturiert gespeichert, da die Zoopedia nur allgemein von „tall“ spricht."
+    }
+  }
+}

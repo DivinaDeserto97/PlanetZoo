@@ -1,0 +1,516 @@
+{
+  "id": "Babyrousa celebensis",
+  "identitaet": {
+    "namen": {
+      "de": "Nordsulawesi-Babirusa",
+      "en": "North Sulawesi Babirusa",
+      "en-US": "North Sulawesi Babirusa",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien"],
+    "biome": [],
+    "schutzstatus": "Gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Artiodactyla",
+          "familie": "Suidae",
+          "gattung": "Babyrousa",
+          "art": "Babyrousa celebensis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.85,
+          "max": 1.1,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt eine Kopf-Rumpf-Länge von 85 bis 110 cm.",
+            "en": "The Zoopedia gives a head-body length of 85 to 110 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schwanzlaenge": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.29,
+          "max": 0.32,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 0.58,
+          "max": 0.66,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 70,
+          "max": 100,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 45,
+          "max": 80,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia führt den Nordsulawesi-Babirusa als Vulnerable (gefährdet).",
+            "en": "The Zoopedia lists the North Sulawesi babirusa as Vulnerable."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "max": 10000,
+          "einheit": "individuum",
+          "giltFuer": ["Babyrousa celebensis"],
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand mit unter 10.000 Individuen an; die Zahl 10.000 ist daher nur die angegebene Obergrenze.",
+            "en": "The Zoopedia lists the wild population as under 10,000 individuals; 10,000 is therefore only the stated upper bound."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1,
+          "max": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "min": 150,
+          "max": 164,
+          "einheit": "tag",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtierProGeburt",
+          "min": 1,
+          "max": 2,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "weibchenUndJungtiere",
+          "wert": "smallFamilyGroup",
+          "hinweis": {
+            "de": "Weibchen leben meist in kleinen Gruppen aus Schwestern und deren Nachwuchs unter zwei Jahren.",
+            "en": "Females tend to live in small groups made up of sisters and their offspring under two years old."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "adulteMaennchen",
+          "wert": "solitary",
+          "hinweis": {
+            "de": "Ausgewachsene Männchen leben allein und schließen sich Weibchengruppen hauptsächlich während der Paarungszeit an.",
+            "en": "Mature males live alone and approach female groups during the mating season."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [""]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "artiodactyla",
+          "rang": "ordnung",
+          "name": "Artiodactyla",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "suidae",
+          "rang": "familie",
+          "name": "Suidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "babyrousa",
+          "rang": "gattung",
+          "name": "Babyrousa",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "babyrousa-celebensis",
+          "rang": "art",
+          "name": "Babyrousa celebensis",
+          "deutscherName": "Nordsulawesi-Babirusa",
+          "lebensstatus": "lebend",
+          "schutzstatus": "Gefährdet",
+          "spiele": ["planetZoo2"],
+          "quelle": "planetZoo2"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Nordsulawesi-Babirusa (Babyrousa celebensis) ist auf der indonesischen Insel Sulawesi und mehreren kleinen umliegenden Inseln heimisch. Die Zoopedia ordnet sein Vorkommen dem Kontinent Asien zu.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The North Sulawesi babirusa (or Babyrousa celebensis) is native to the Sulawesi island of Indonesia and several small surrounding islands. The Zoopedia lists its region as Asia.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The North Sulawesi babirusa (or Babyrousa celebensis) is native to the Sulawesi island of Indonesia and several small surrounding islands. The Zoopedia lists its region as Asia.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Nordsulawesi-Babirusa (Babyrousa celebensis) ist eine Schweineart, die auf der indonesischen Insel Sulawesi und mehreren kleinen umliegenden Inseln heimisch ist.\n\nSein Körper ist größtenteils unbehaart und besitzt graue Haut.\n\nDie Art erreicht eine Kopf-Rumpf-Länge von 85 bis 110 cm, eine Schwanzlänge von 29 bis 32 cm und eine Schulterhöhe von 58 bis 66 cm. Männliche Babirusas wiegen zwischen 70 und 100 kg und besitzen vier große Hauer, die sich nach hinten in Richtung Schädel krümmen. Weibliche Babirusas wiegen zwischen 45 und 80 kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The North Sulawesi babirusa (or Babyrousa celebensis) is a species of pig native to the Sulawesi island of Indonesia and several small surrounding islands.\n\nIts body is mostly hairless with grey skin.\n\nThe species has a head-body length of 85cm to 110cm, a tail length of 29cm to 32cm and a shoulder height of 58cm to 66cm. Male babirusas weigh between 70kg and 100kg and have four large tusks that curl back towards their skull. Female babirusas weigh between 45kg and 80kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The North Sulawesi babirusa (or Babyrousa celebensis) is a species of pig native to the Sulawesi island of Indonesia and several small surrounding islands.\n\nIts body is mostly hairless with grey skin.\n\nThe species has a head-body length of 85cm to 110cm, a tail length of 29cm to 32cm and a shoulder height of 58cm to 66cm. Male babirusas weigh between 70kg and 100kg and have four large tusks that curl back towards their skull. Female babirusas weigh between 45kg and 80kg.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Nordsulawesi-Babirusa gilt als gefährdet. Regional gehen die Bestände deutlich zurück, vor allem durch Lebensraumverlust, Jagddruck und das begrenzte Verbreitungsgebiet. Babirusas sind auf Wälder spezialisiert und können in stark veränderten Landschaften nur schwer überleben. Die Ausweitung der Landwirtschaft, Holzeinschlag und menschliche Siedlungen zerschneiden die Wälder, von denen die Art abhängig ist, und verringern das Nahrungsangebot sowie sichere Fortpflanzungsgebiete. Außerdem werden Babirusas intensiv wegen ihres Fleisches und ihrer auffälligen Hauer gejagt, die kulturellen und dekorativen Wert besitzen.\n\nSchutzgebiete sind wichtige Rückzugsräume für die verbleibenden Populationen, wobei die Maßnahmen gegen Wilderei verbessert werden. Bildungsarbeit soll die Jagd reduzieren, indem sie auf die ökologische und kulturelle Bedeutung des Babirusas hinweist. Alternative Einkommensmöglichkeiten sollen zugleich die Abhängigkeit von Buschfleisch verringern. Zuchtprogramme in menschlicher Obhut innerhalb Indonesiens und international bieten einen zusätzlichen Schutz vor dem Aussterben und könnten bei weiterem Rückgang der Wildbestände spätere Wiederansiedlungen unterstützen.\n\nDiese Maßnahmen schützen den Babirusa und zugleich die vielfältigen Ökosysteme Sulawesis, in denen viele endemische und gefährdete Arten leben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The North Sulawesi babirusa is a Vulnerable species, undergoing significant regional population declines due to habitat loss, hunting pressure, and limited range. Babirusas are forest specialists and struggle to survive in heavily altered landscapes. Expanding agriculture, logging, and human settlement fragment forests the babirusa depends on, reducing food availability and safe breeding areas. They are intensively hunted for bushmeat and their unique tusks, which hold cultural and ornamental value.\n\nProtected areas are critical refuges for remaining populations, where enforcement against poaching is improving. Education aims to reduce hunting by highlighting the babirusa’s ecological and cultural importance, and support alternative livelihoods to reduce reliance on bushmeat. Captive breeding programs, both within Indonesia and internationally, provide an additional safeguard against extinction and potential for reintroduction if wild populations continue to decline.\n\nTogether, these efforts protect the babirusa and preserve the broader ecosystems of Sulawesi, home to many endemic and endangered species.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The North Sulawesi babirusa is a Vulnerable species, undergoing significant regional population declines due to habitat loss, hunting pressure, and limited range. Babirusas are forest specialists and struggle to survive in heavily altered landscapes. Expanding agriculture, logging, and human settlement fragment forests the babirusa depends on, reducing food availability and safe breeding areas. They are intensively hunted for bushmeat and their unique tusks, which hold cultural and ornamental value.\n\nProtected areas are critical refuges for remaining populations, where enforcement against poaching is improving. Education aims to reduce hunting by highlighting the babirusa’s ecological and cultural importance, and support alternative livelihoods to reduce reliance on bushmeat. Captive breeding programs, both within Indonesia and internationally, provide an additional safeguard against extinction and potential for reintroduction if wild populations continue to decline.\n\nTogether, these efforts protect the babirusa and preserve the broader ecosystems of Sulawesi, home to many endemic and endangered species.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Weibliche Babirusas leben meist in kleinen Gruppen aus Schwestern und deren Nachwuchs unter zwei Jahren. Ausgewachsene Männchen leben allein, schließen sich während der Paarungszeit jedoch zeitweise Weibchengruppen an.\n\nDie Fortpflanzung kann das ganze Jahr über stattfinden, erreicht aber etwa im Juni und Juli ihren Höhepunkt. Wenn Weibchen paarungsbereit sind, folgen Männchen ihrem Uringeruch und suchen sie auf. Treffen zwei Männchen beim selben Weibchen aufeinander, können sie durch Imponierverhalten um das Paarungsrecht konkurrieren. Sie geben Laute von sich, stürmen aufeinander zu und kämpfen, wenn keiner nachgibt, auf den Hinterbeinen stehend mit den Vorderbeinen wie beim „Boxen“. Meist gewinnt das größere Männchen mit den längeren Zähnen.\n\nNach einer Tragzeit von 150 bis 164 Tagen bringt das Weibchen 1 bis 2 Ferkel zur Welt. Die Jungtiere können bereits 3 bis 10 Tage nach der Geburt feste Nahrung aufnehmen und sind mit 6 bis 8 Monaten vollständig entwöhnt, gegebenenfalls früher, wenn die Mutter erneut trächtig wird.\n\nMännchen verlassen die Gruppe ihrer Mutter im Alter von etwa einem Jahr und leben danach einzelgängerisch. Weibchen können bei der Gruppe ihrer Mutter bleiben oder eine eigene Verwandtschaftsgruppe gründen. Beide Geschlechter erreichen die Geschlechtsreife nach 1 bis 2 Jahren.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Babirusa females tend to live in small groups made up of sisters and their offspring under two years old. Mature males live alone but will come alongside female groups in the mating season.\n\nBreeding season is year-round, but peaks around June and July. When the females are in oestrus, males will track them from the scent of their urine and follow them once located. If two males locate the same female, they may engage in a dominance display to win the rights to mate. They will vocalise, charge at each other and, if neither concedes, fight by standing on their hind legs and ‘boxing‘ with their front legs. Usually the larger male with the longer teeth will win.\n\nAfter a pregnancy of 150 to 164 days, the female will give birth to 1 to 2 piglets. Piglets can eat solid food from 3 to 10 days after birth and will be fully weaned by 6 to 8 months old, or earlier if their mother falls pregnant again.\n\nMales leave their mother’s group at 1 year old and will become solitary. Females may remain with their mother’s group or leave to start their own natal group. Both sexes will be sexually mature after 1 to 2 years.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Babirusa females tend to live in small groups made up of sisters and their offspring under two years old. Mature males live alone but will come alongside female groups in the mating season.\n\nBreeding season is year-round, but peaks around June and July. When the females are in oestrus, males will track them from the scent of their urine and follow them once located. If two males locate the same female, they may engage in a dominance display to win the rights to mate. They will vocalise, charge at each other and, if neither concedes, fight by standing on their hind legs and ‘boxing‘ with their front legs. Usually the larger male with the longer teeth will win.\n\nAfter a pregnancy of 150 to 164 days, the female will give birth to 1 to 2 piglets. Piglets can eat solid food from 3 to 10 days after birth and will be fully weaned by 6 to 8 months old, or earlier if their mother falls pregnant again.\n\nMales leave their mother’s group at 1 year old and will become solitary. Females may remain with their mother’s group or leave to start their own natal group. Both sexes will be sexually mature after 1 to 2 years.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "„Babirusa“ bedeutet auf Malaiisch „Hirschschwein“.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas besitzen einen zweikammerigen Magen, der eher dem von Schafen als dem anderer Schweine ähnelt.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Hauer männlicher Babirusas wachsen ihr ganzes Leben lang weiter und können sogar in den Schädel hineinwachsen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas fehlt ein Knochen in der Schnauze, den andere Schweine besitzen. Deshalb zeigen sie nicht das für Schweine typische Wühlverhalten.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas sind ausgezeichnete Schwimmer. Es wird angenommen, dass sie auf verschiedenen indonesischen Inseln vorkommen, weil sie zwischen ihnen geschwommen sind.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "‘Babirusa’ means ‘pig deer’ in Malay.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas have a two chambered stomach, more like that of sheep than of other pigs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The male babirusas tusks continue to grow throughout his life and can even grow into the skull.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas are missing a bone in the snout that other pigs have, so they do not engage in ‘rooting’ behaviour typical of pigs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas are excellent swimmers; it is thought that they are found across various Indonesian islands because they swam to them.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "‘Babirusa’ means ‘pig deer’ in Malay.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas have a two chambered stomach, more like that of sheep than of other pigs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "The male babirusas tusks continue to grow throughout his life and can even grow into the skull.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas are missing a bone in the snout that other pigs have, so they do not engage in ‘rooting’ behaviour typical of pigs.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Babirusas are excellent swimmers; it is thought that they are found across various Indonesian islands because they swam to them.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Babyrousa celebensis/map/Babyrousa celebensis map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Nordsulawesi-Babirusa – Planet Zoo 2",
+            "en": "North Sulawesi Babirusa – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Nordsulawesi-Babirusa aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the North Sulawesi Babirusa."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Babyrousa celebensis/bilder/Babyrousa celebensis 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – North Sulawesi Babirusa",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs sowie weitere nicht genannte Werte wurden nicht ergänzt."
+    }
+  }
+}

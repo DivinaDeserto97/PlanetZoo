@@ -146,6 +146,18 @@
               - `Aetobatus ocellatus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Aetobatus ocellatus/videos/.gitkeep>)
+          - `Agalychnis callidryas/`
+            - [Agalychnis callidryas.json](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/Agalychnis callidryas.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/bilder/.gitkeep>)
+              - `Agalychnis callidryas 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/map/.gitkeep>)
+              - `Agalychnis callidryas map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Agalychnis callidryas/videos/.gitkeep>)
           - `Aglais io/`
             - [Aglais io.json](<../assets/daten/lebewesen/tiere/Aglais io/Aglais io.json>)
             - `audio/`
@@ -278,6 +290,18 @@
               - `Aurelia aurita map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/videos/.gitkeep>)
+          - `Babyrousa celebensis/`
+            - [Babyrousa celebensis.json](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/Babyrousa celebensis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/bilder/.gitkeep>)
+              - `Babyrousa celebensis 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/map/.gitkeep>)
+              - `Babyrousa celebensis map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/videos/.gitkeep>)
           - `Balaeniceps rex/`
             - [Balaeniceps rex.json](<../assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json>)
             - `audio/`
@@ -494,6 +518,18 @@
               - `Chromobotia macracanthus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Chromobotia macracanthus/videos/.gitkeep>)
+          - `Cissa thalassina/`
+            - [Cissa thalassina.json](<../assets/daten/lebewesen/tiere/Cissa thalassina/Cissa thalassina.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/bilder/.gitkeep>)
+              - `Cissa thalassina 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/map/.gitkeep>)
+              - `Cissa thalassina map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cissa thalassina/videos/.gitkeep>)
           - `Connochaetes gnou/`
             - [Connochaetes gnou.json](<../assets/daten/lebewesen/tiere/Connochaetes gnou/Connochaetes gnou.json>)
             - `audio/`
@@ -1248,6 +1284,18 @@
               - `Phoebis sennae map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoebis sennae/videos/.gitkeep>)
+          - `Phoenicopterus roseus/`
+            - [Phoenicopterus roseus.json](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/Phoenicopterus roseus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/bilder/.gitkeep>)
+              - `Phoenicopterus roseus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/map/.gitkeep>)
+              - `Phoenicopterus roseus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/videos/.gitkeep>)
           - `Phyllium giganteum/`
             - [Phyllium giganteum.json](<../assets/daten/lebewesen/tiere/Phyllium giganteum/Phyllium giganteum.json>)
             - `audio/`
@@ -1500,6 +1548,18 @@
               - `Sus scrofa map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/videos/.gitkeep>)
+          - `Symphalangus syndactylus/`
+            - [Symphalangus syndactylus.json](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/Symphalangus syndactylus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/bilder/.gitkeep>)
+              - `Symphalangus syndactylus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/map/.gitkeep>)
+              - `Symphalangus syndactylus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/videos/.gitkeep>)
           - `Symphorichthys spilurus/`
             - [Symphorichthys spilurus.json](<../assets/daten/lebewesen/tiere/Symphorichthys spilurus/Symphorichthys spilurus.json>)
             - `audio/`
@@ -1624,6 +1684,18 @@
                 - `Ursus arctos arctos map.png` _(Medium – lokal / nicht freigegeben)_
               - `videos/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/videos/.gitkeep>)
+            - `Ursus arctos horribilis/`
+              - [Ursus arctos horribilis.json](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/Ursus arctos horribilis.json>)
+              - `audio/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/audio/.gitkeep>)
+              - `bilder/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/.gitkeep>)
+                - `Ursus arctos horribilis 1.webp` _(Medium – lokal / nicht freigegeben)_
+              - `map/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/.gitkeep>)
+                - `Ursus arctos horribilis map.png` _(Medium – lokal / nicht freigegeben)_
+              - `videos/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/videos/.gitkeep>)
           - `Varanus komodoensis/`
             - [Varanus komodoensis.json](<../assets/daten/lebewesen/tiere/Varanus komodoensis/Varanus komodoensis.json>)
             - `audio/`

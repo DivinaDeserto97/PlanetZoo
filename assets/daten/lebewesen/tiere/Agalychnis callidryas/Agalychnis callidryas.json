@@ -1,0 +1,525 @@
+{
+  "id": "Agalychnis callidryas",
+  "identitaet": {
+    "namen": {
+      "de": "Rotaugenlaubfrosch",
+      "en": "Red-Eyed Tree Frog",
+      "en-US": "Red-Eyed Tree Frog",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Vivarium"],
+    "kontinente": ["Südamerika", "Nordamerika"],
+    "biome": ["Tropen"],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Amphibia",
+          "ordnung": "Anura",
+          "familie": "Phyllomedusidae",
+          "gattung": "Agalychnis",
+          "art": "Agalychnis callidryas",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 0.05,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Männchen eine durchschnittliche Körperlänge von 5 cm.",
+            "en": "The Zoopedia gives an average male body length of 5 cm."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 0.075,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für Weibchen eine durchschnittliche Körperlänge von 7,5 cm.",
+            "en": "The Zoopedia gives an average female body length of 7.5 cm."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [""]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia führt den Rotaugenlaubfrosch als nicht gefährdet (Least Concern).",
+            "en": "The Zoopedia lists the red-eyed tree frog as Least Concern."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt den Wildbestand als unbekannt an.",
+            "en": "The Zoopedia lists the wild population as unknown."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 1,
+          "max": 2,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [""]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "schlupfzeit",
+          "min": 6,
+          "max": 10,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Die Eier schlüpfen 6 bis 10 Tage nach der Ablage.",
+            "en": "Eggs hatch 6 to 10 days after laying."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "kaulquappeBisJungfrosch",
+          "min": 40,
+          "max": 60,
+          "einheit": "tag",
+          "hinweis": {
+            "de": "Kaulquappen benötigen 40 bis 60 Tage, um sich zu Jungfröschen zu entwickeln.",
+            "en": "Tadpoles take 40 to 60 days to develop into froglets."
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "volleGroesse",
+          "min": 10,
+          "max": 12,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Tiere erreichen nach etwa 10 Monaten bis 1 Jahr ihre volle Größe.",
+            "en": "They reach full size at around 10 months to 1 year."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Rotaugenlaubfrösche leben einzelgängerisch, können aber in der Nähe anderer Frösche vorkommen.",
+            "en": "Red-eyed tree frogs are solitary but may live close to other frogs."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "tropical",
+          "hinweis": {
+            "de": "Die Zoopedia nennt tropische Regenwaldregionen Mittelamerikas als Lebensraum.",
+            "en": "The Zoopedia describes tropical rainforest regions of Central America as habitat."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [""]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": [
+            {
+              "wert": "Fruchtfliegen",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": ["jungfrosch"],
+                "ziel": []
+              },
+              "hinweis": {
+                "de": "Die Zoopedia nennt Fruchtfliegen ausdrücklich als Nahrung von Jungfröschen nach dem Verlassen des Wassers.",
+                "en": "The Zoopedia explicitly states that froglets eat fruit flies after emerging from the water."
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": "Additional systematics and evolution will be added in a later source pass."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "amphibia",
+          "rang": "klasse",
+          "name": "Amphibia",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "anura",
+          "rang": "ordnung",
+          "name": "Anura",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "phyllomedusidae",
+          "rang": "familie",
+          "name": "Phyllomedusidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "agalychnis",
+          "rang": "gattung",
+          "name": "Agalychnis",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "agalychnis-callidryas",
+          "rang": "art",
+          "name": "Agalychnis callidryas",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Nicht gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Rotaugenlaubfrosch (Agalychnis callidryas) lebt in tropischen Regenwaldregionen Mittelamerikas. Die Kartenangabe der bereitgestellten Zoopedia-Seite nennt zusätzlich Südamerika und Nordamerika.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The red-eyed tree frog (or Agalychnis callidryas) is a species of arboreal amphibian that lives in the tropical rainforest regions of Central America. The supplied Zoopedia map field additionally lists South America and North America.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The red-eyed tree frog (or Agalychnis callidryas) is a species of arboreal amphibian that lives in the tropical rainforest regions of Central America. The supplied Zoopedia map field additionally lists South America and North America.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Rotaugenlaubfrosch (Agalychnis callidryas) ist eine baumbewohnende Amphibienart aus den tropischen Regenwaldregionen Mittelamerikas.\n\nWie der Name vermuten lässt, besitzt er leuchtend rote Augen mit schwarzen Pupillen. Oberkörper und Oberseiten der Beine sind blassgrün. Die Flanken sind leuchtend blau mit gelber Netzzeichnung, die Oberschenkel blau, die Füße orange und die Unterseite hell. Wenn sich der Frosch zusammenrollt und die Augen schließt, ist er dadurch auf Blättern gut getarnt.\n\nWeibchen sind größer als Männchen und erreichen durchschnittlich 7,5 cm Körperlänge gegenüber etwa 5 cm bei Männchen. Abgesehen davon sehen sich beide Geschlechter ähnlich.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The red-eyed tree frog (or Agalychnis callidryas) is a species of arboreal amphibian that lives in the tropical rainforest regions of Central America.\n\nAs the name suggests, the red-eyed tree frog has vivid red eyes with black pupils. The upper body and upper legs of the frog are pale green. The sides are bright blue with yellow reticulation and blue thighs, orange feet and a pale underbelly. As such, when the frog curls up and closes its eyes it is well camouflaged against the leaves on which it lives.\n\nFemale frogs are larger than males, at an average of 7.5cm body length compared to 5cm, but otherwise look alike.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The red-eyed tree frog (or Agalychnis callidryas) is a species of arboreal amphibian that lives in the tropical rainforest regions of Central America.\n\nAs the name suggests, the red-eyed tree frog has vivid red eyes with black pupils. The upper body and upper legs of the frog are pale green. The sides are bright blue with yellow reticulation and blue thighs, orange feet and a pale underbelly. As such, when the frog curls up and closes its eyes it is well camouflaged against the leaves on which it lives.\n\nFemale frogs are larger than males, at an average of 7.5cm body length compared to 5cm, but otherwise look alike.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Rotaugenlaubfrosch gilt als nicht gefährdet, obwohl seine Population durch Entwaldung und nicht nachhaltige Entnahme für den Heimtierhandel bedroht wird. Sein natürlicher Regenwaldlebensraum in Mittelamerika nimmt durch Holzeinschlag, Umwandlung in landwirtschaftliche Flächen und städtische Ausbreitung ab. Wegen seiner auffälligen Färbung ist die Art im Heimtierhandel begehrt; besonders Populationen in Costa Rica, Nicaragua und Panama sind durch Fang gefährdet.\n\nViele Gebiete seines Verbreitungsraums liegen bereits in Schutzgebieten. Außerdem ist die Art laut Zoopedia durch CITES Anhang II vor illegalem Wildtierhandel geschützt, wodurch der internationale Handel genehmigungspflichtig ist. Rotaugenlaubfrösche scheinen gegenüber Lebensraumfragmentierung relativ tolerant zu sein, dennoch muss ihr verbleibender Lebensraum geschützt werden, um den anhaltenden Populationsrückgang zu begrenzen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The red-eyed tree frog is of Least Concern, although its population is threatened by deforestation and unsustainable collection for the pet trade. The natural rainforest habitat of red-eyes tree frogs in Central America is in decline due to logging, agricultural land conversion, and urban expansion. They are sought after in the pet trade due to their striking colouration, and some populations in Costa Rica, Nicaragua and Panama are especially at risk from capture.\n\nMany areas in which red-eyed tree frogs live are already part of protected areas, and it is under protection from the illegal wildlife trade under CITES Appendix II, which controls international trade of animals by requiring a permit to be authored before export is allowed. Red-eyed tree frogs appear to be relatively tolerant of habitat fragmentation, but nonetheless, care must be taken to protect their remaining habitat to manage their ongoing population decline.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The red-eyed tree frog is of Least Concern, although its population is threatened by deforestation and unsustainable collection for the pet trade. The natural rainforest habitat of red-eyes tree frogs in Central America is in decline due to logging, agricultural land conversion, and urban expansion. They are sought after in the pet trade due to their striking colouration, and some populations in Costa Rica, Nicaragua and Panama are especially at risk from capture.\n\nMany areas in which red-eyed tree frogs live are already part of protected areas, and it is under protection from the illegal wildlife trade under CITES Appendix II, which controls international trade of animals by requiring a permit to be authored before export is allowed. Red-eyed tree frogs appear to be relatively tolerant of habitat fragmentation, but nonetheless, care must be taken to protect their remaining habitat to manage their ongoing population decline.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Der Rotaugenlaubfrosch ist ein Einzelgänger, kann aber in der Nähe anderer Frösche leben. Kontakte mit Artgenossen finden vor allem während der Paarungszeit zur Paarung oder bei Konkurrenz um Partner statt.\n\nWährend der Regenzeit versuchen Männchen, Weibchen anzulocken und Rivalen einzuschüchtern, indem sie rufen und Blätter in ihrem Revier zum Zittern bringen. Größere Männchen können lautere Rufe erzeugen und haben dadurch bessere Paarungschancen, weil Weibchen ihre Partner nach der Lautstärke der Rufe auswählen. Das Männchen bleibt auf dem Rücken des Weibchens, bis dieses die Eier ablegt.\n\nDas Weibchen sucht mit dem Männchen auf dem Rücken einen geeigneten Platz zur Eiablage, bevorzugt ein Blatt über einer Wasserstelle. Das Männchen befruchtet die Eier während der Ablage. Nach 6 bis 10 Tagen schlüpfen die Kaulquappen und fallen in das darunterliegende Wasser oder in dessen Nähe. Die Eier enthalten viel Flüssigkeit, wodurch die Kaulquappen beim Schlüpfen eine bessere Chance haben, ins Wasser gespült zu werden. Nach 40 bis 60 Tagen entwickeln sie sich zu Jungfröschen. Diese verstecken sich nach dem Verlassen des Wassers zunächst in Blüten und fressen Fruchtfliegen.\n\nDie volle Körpergröße erreichen sie nach etwa 10 Monaten bis 1 Jahr, die Geschlechtsreife nach 1 bis 2 Jahren. Junge Männchen paaren sich wegen ihrer geringeren Größe seltener als ältere Männchen.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "The red-eyed tree frog is a solitary animal but may live close to other frogs. Red-eyed tree frogs only interact in the mating season to mate or compete for mates.\n\nDuring the rainy season, male frogs will attempt to attract females and intimidate rival males by vocalising and shaking the leaves in their territory. Larger males are able to make louder noises, and are more likely to mate successfully due to females selecting their mates based on the volume of calls. The male she mates with will remain on her back until she lays her eggs.\n\nThe female will move around with the male on top of her until she finds a suitable area to lay her eggs, preferably a leaf that is above a pool of water. The male will fertilise the eggs as she lays them. Eggs hatch 6 to 10 days after laying, and tadpoles will fall into or nearby the water below. The eggs contain a lot of fluid so that when they hatch, the tadpoles have a better chance of being washed into water. Tadpoles take 40 to 60 days to develop into froglets. Froglets spend the time after emerging from the water hiding in flowers and eating fruit flies until they get larger.\n\nIt will take them around 10 months to 1 year to reach full size and 1 to 2 years to reach sexual maturity. Young male frogs are less likely to mate than older male frogs due to their smaller size.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "The red-eyed tree frog is a solitary animal but may live close to other frogs. Red-eyed tree frogs only interact in the mating season to mate or compete for mates.\n\nDuring the rainy season, male frogs will attempt to attract females and intimidate rival males by vocalising and shaking the leaves in their territory. Larger males are able to make louder noises, and are more likely to mate successfully due to females selecting their mates based on the volume of calls. The male she mates with will remain on her back until she lays her eggs.\n\nThe female will move around with the male on top of her until she finds a suitable area to lay her eggs, preferably a leaf that is above a pool of water. The male will fertilise the eggs as she lays them. Eggs hatch 6 to 10 days after laying, and tadpoles will fall into or nearby the water below. The eggs contain a lot of fluid so that when they hatch, the tadpoles have a better chance of being washed into water. Tadpoles take 40 to 60 days to develop into froglets. Froglets spend the time after emerging from the water hiding in flowers and eating fruit flies until they get larger.\n\nIt will take them around 10 months to 1 year to reach full size and 1 to 2 years to reach sexual maturity. Young male frogs are less likely to mate than older male frogs due to their smaller size.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Man nimmt an, dass sich die roten Augen als Schrecksignal entwickelt haben: Bei geschlossenen Augen ist der Frosch gut getarnt, bei Gefahr kann er die Augen plötzlich öffnen und damit einen möglichen Fressfeind erschrecken.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Rotaugenlaubfrösche besitzen extrem haftende Füße. Ihre Oberfläche besteht aus einem unregelmäßigen mikroskopischen Sechseckmuster, wodurch sie kopfüber kriechen und an vielen Oberflächen haften können – sogar wenn sie das Gewicht eines weiteren Frosches tragen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Die Eier des Rotaugenlaubfroschs können Vibrationen naher Fressfeinde wahrnehmen und bei Gefahr vorzeitig schlüpfen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Trotz ihrer auffälligen Färbung, die wie eine Warnfärbung wirken kann, sind Rotaugenlaubfrösche nicht giftig.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Kaulquappen des Rotaugenlaubfroschs können bis zu 20 Stunden außerhalb des Wassers überleben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "It is believed that the red eyes of this frog evolved as a startle display; the frog is well camouflaged with eyes closed, but if under threat it can open its eyes to shock a potential predator.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frogs have extremely sticky feet due to their surface being made up of an uneven microscopic hexagon pattern. This allows them to crawl upside down and stick to most surfaces, even when carrying the weight of another frog.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frog eggs can detect vibrations from nearby predators and may hatch early to escape harm.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Despite their bright colouration that may be perceived as a warning to predators, red-eyed tree frogs are not poisonous.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frog tadpoles can survive for up to 20 hours out of water.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "It is believed that the red eyes of this frog evolved as a startle display; the frog is well camouflaged with eyes closed, but if under threat it can open its eyes to shock a potential predator.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frogs have extremely sticky feet due to their surface being made up of an uneven microscopic hexagon pattern. This allows them to crawl upside down and stick to most surfaces, even when carrying the weight of another frog.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frog eggs can detect vibrations from nearby predators and may hatch early to escape harm.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Despite their bright colouration that may be perceived as a warning to predators, red-eyed tree frogs are not poisonous.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Red-eyed tree frog tadpoles can survive for up to 20 hours out of water.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en-US": [
+        {
+          "inhalt": "Planet Zoo 2 is in active development and the Zoopedia reflects this work in progress. Text, images, stats etc. are not necessarily final and may change or be expanded upon.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Agalychnis callidryas/map/Agalychnis callidryas map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Rotaugenlaubfrosch – Planet Zoo 2",
+            "en": "Red-Eyed Tree Frog – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Rotaugenlaubfroschs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Red-Eyed Tree Frog."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Agalychnis callidryas/bilder/Agalychnis callidryas 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": "Calculator values will be added separately later."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Red-Eyed Tree Frog",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten englischen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs sowie ein Veröffentlichungstermin waren im kopierten Text nicht enthalten. Die Übersicht nennt Mittelamerika als Lebensraum; das Feld „Found in“ nennt Südamerika und Nordamerika. Dieser Unterschied wurde nicht mit externen Quellen aufgelöst."
+    }
+  }
+}
