@@ -81,7 +81,8 @@ PlanetZoo2/
 │   ├── css/                    Styles
 │   ├── js/                     JavaScript und Werkzeuglogik
 │   └── daten/                  Tier-, Kino- und Projektdaten
-├── anleitungen/              ausführliche Projekt- und Daten-Dokumentation
+├── anleitungen/                einfache Schritt-für-Schritt-Anleitungen
+├── dokumentation/              technische Entwicklerdokumentation
 ├── tools/                      Wartungs- und Maintainer-Skripte
 ├── bot/                        lokaler Discord-Bot-Quellcode in Share-ZIPs
 └── README.md
@@ -330,19 +331,31 @@ Tiernamen und dynamische Tiertexte werden in den jeweiligen Tierdaten gepflegt.
 
 ---
 
-## Dokumentation
+## Anleitungen und Dokumentation
 
-Im Ordner `anleitungen/` liegen ausführlichere Unterlagen:
+Das Projekt trennt bewusst zwischen **einfachen Anleitungen** und **technischer Entwicklerdokumentation**.
 
-| Datei                                | Inhalt                                                         |
-| ------------------------------------ | -------------------------------------------------------------- |
-| `ENTWICKLER-EINSTIEG.md`             | Einstieg in Ordner, Quellcode, Bild-Fallback und Arbeitsablauf |
-| `BOT.md`                             | lokaler Discord-Bot, Server-Scan und Rechte                    |
-| `ANLEITUNG-TIER-JSON.md`             | Aufbau und Pflege der Tierdaten                                |
-| `PlanetZoo2-Tierdaten-Checkliste.md` | Checkliste für Tierdaten und Quellen                           |
-| `MEDIEN-UND-QUELLEN.md`              | Umgang mit Medien, Quellen und Veröffentlichung                |
-| `ordnerstruktur.md`                  | automatisch erzeugte Projektstruktur                           |
-| `DISCORD-NEWS.md`                    | technische Maintainer-Dokumentation für Discord-News           |
+### `anleitungen/` – für Nutzer und neue Mitwirkende
+
+Hier liegen leicht verständliche Schritt-für-Schritt-Anleitungen, zum Beispiel zum Anlegen oder Bearbeiten eines Tiers und zum Einfügen von Medien. Die Texte sind so aufgebaut, dass sie auch als Grundlage für YouTube-Anleitungsvideos verwendet werden können.
+
+Startpunkt:
+
+```text
+anleitungen/README.md
+```
+
+### `dokumentation/` – für Entwickler und Maintainer
+
+Hier liegen technische Informationen zum Projektaufbau, zur Tier-JSON-Struktur, zum Discord-Bot, zu GitHub Actions, Medien-/Quellenregeln und zur automatisch erzeugten Ordnerstruktur.
+
+Startpunkt:
+
+```text
+dokumentation/README.md
+```
+
+Die Datei `dokumentation/ordnerstruktur.md` wird automatisch durch `tools/ordnerstruktur.sh` erzeugt und nicht von Hand gepflegt.
 
 ---
 

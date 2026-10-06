@@ -18,8 +18,12 @@
     - [BOT.md](../anleitungen/BOT.md)
     - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
     - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
+    - [MEDIEN-EINFUEGEN.md](../anleitungen/MEDIEN-EINFUEGEN.md)
     - [MEDIEN-UND-QUELLEN.md](../anleitungen/MEDIEN-UND-QUELLEN.md)
+    - [NEUES-TIER-ANLEGEN.md](../anleitungen/NEUES-TIER-ANLEGEN.md)
     - [PlanetZoo2-Tierdaten-Checkliste.md](../anleitungen/PlanetZoo2-Tierdaten-Checkliste.md)
+    - [README.md](../anleitungen/README.md)
+    - [TIER-BEARBEITEN.md](../anleitungen/TIER-BEARBEITEN.md)
     - [ordnerstruktur.md](../anleitungen/ordnerstruktur.md)
   - `assets/`
     - `cache/`
@@ -1698,7 +1702,7 @@
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/audio/.gitkeep>)
               - `bilder/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/.gitkeep>)
-                - `Ursus arctos horribilis 1.webp` _(Medium – lokal / nicht freigegeben)_
+                - `Ursus arctos horribilis.webp` _(Medium – lokal / nicht freigegeben)_
               - `map/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/.gitkeep>)
                 - `Ursus arctos horribilis map.png` _(Medium – lokal / nicht freigegeben)_
@@ -1823,9 +1827,12 @@
         - [tier.js](../assets/js/tier/tier.js)
   - `dokumentation/`
     - [ANLEITUNG-TIER-JSON.md](../dokumentation/ANLEITUNG-TIER-JSON.md)
+    - [BOT.md](../dokumentation/BOT.md)
     - [DISCORD-NEWS.md](../dokumentation/DISCORD-NEWS.md)
+    - [ENTWICKLER-EINSTIEG.md](../dokumentation/ENTWICKLER-EINSTIEG.md)
     - [MEDIEN-UND-QUELLEN.md](../dokumentation/MEDIEN-UND-QUELLEN.md)
     - [PlanetZoo2-Tierdaten-Checkliste.md](../dokumentation/PlanetZoo2-Tierdaten-Checkliste.md)
+    - [README.md](../dokumentation/README.md)
     - [ordnerstruktur.md](../dokumentation/ordnerstruktur.md)
   - [index.html](../index.html)
   - `node_modules/`

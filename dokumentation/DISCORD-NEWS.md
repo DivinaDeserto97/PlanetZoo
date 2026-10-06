@@ -128,3 +128,21 @@ Typische Fehler:
 - HTTP `401` -> Bot-Token ungültig oder zurückgesetzt.
 - HTTP `403` -> Bot darf den Kanal sehen, aber nicht schreiben.
 - HTTP `404 Unknown Channel` -> Kanal-ID falsch **oder** Bot darf den Kanal nicht sehen.
+
+## Interne Commits ohne Discord-Nachricht
+
+Ein Commit mit `[intern]` in der Commit-Nachricht wird vom Discord-News-Job übersprungen.
+
+Beispiel:
+
+```bash
+git commit -m "Interne Wartung [intern]"
+```
+
+Für eine Sicherungs-ZIP plus internen Commit gibt es:
+
+```bash
+./tools/zip-intern.sh "Beschreibung"
+```
+
+Normale Commits und normale Merges bleiben öffentlich und senden weiterhin die vorgesehenen Discord-News.
