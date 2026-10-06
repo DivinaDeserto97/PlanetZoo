@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/nahrungsnetz/nahrungsnetz.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 @import url("../features/graph.css");
 @import url("./nahrungsnetz-var.css");
 @import url("./nahrungsnetz-style.css");

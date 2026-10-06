@@ -1,2 +1,7 @@
+/* ANFÄNGER-HINWEIS – assets/css/main.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 @import url("./var.css");
 @import url("./style.css");

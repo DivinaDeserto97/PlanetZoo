@@ -81,7 +81,7 @@ PlanetZoo2/
 │   ├── css/                    Styles
 │   ├── js/                     JavaScript und Werkzeuglogik
 │   └── daten/                  Tier-, Kino- und Projektdaten
-├── dokumentation/              ausführliche Projekt- und Daten-Dokumentation
+├── anleitungen/              ausführliche Projekt- und Daten-Dokumentation
 ├── tools/                      Wartungs- und Maintainer-Skripte
 ├── bot/                        lokaler Discord-Bot-Quellcode in Share-ZIPs
 └── README.md
@@ -159,7 +159,7 @@ assets/css/nahrungsnetz/
 Für neue Tierdaten muss die aktuelle Nahrungsnetz-Struktur verwendet werden. Details stehen in:
 
 ```text
-dokumentation/ANLEITUNG-TIER-JSON.md
+anleitungen/ANLEITUNG-TIER-JSON.md
 ```
 
 ### Systematik
@@ -220,13 +220,13 @@ assets/daten/lebewesen/tiere/Eunectes notaeus/
 Für das Anlegen und Bearbeiten von Tierdaten bitte zuerst diese Dokumentation verwenden:
 
 ```text
-dokumentation/ANLEITUNG-TIER-JSON.md
+anleitungen/ANLEITUNG-TIER-JSON.md
 ```
 
 Zusätzlich gibt es eine ausführliche Checkliste:
 
 ```text
-dokumentation/PlanetZoo2-Tierdaten-Checkliste.md
+anleitungen/PlanetZoo2-Tierdaten-Checkliste.md
 ```
 
 ---
@@ -273,7 +273,7 @@ Die Quelle eines Mediums wird in den jeweiligen Daten gepflegt und nicht allein 
 Weitere Informationen:
 
 ```text
-dokumentation/MEDIEN-UND-QUELLEN.md
+anleitungen/MEDIEN-UND-QUELLEN.md
 ```
 
 ### Veröffentlichbare und lokale Medien
@@ -332,15 +332,17 @@ Tiernamen und dynamische Tiertexte werden in den jeweiligen Tierdaten gepflegt.
 
 ## Dokumentation
 
-Im Ordner `dokumentation/` liegen ausführlichere Unterlagen:
+Im Ordner `anleitungen/` liegen ausführlichere Unterlagen:
 
-| Datei                                | Inhalt                                               |
-| ------------------------------------ | ---------------------------------------------------- |
-| `ANLEITUNG-TIER-JSON.md`             | Aufbau und Pflege der Tierdaten                      |
-| `PlanetZoo2-Tierdaten-Checkliste.md` | Checkliste für Tierdaten und Quellen                 |
-| `MEDIEN-UND-QUELLEN.md`              | Umgang mit Medien, Quellen und Veröffentlichung      |
-| `ordnerstruktur.md`                  | automatisch erzeugte Projektstruktur                 |
-| `DISCORD-NEWS.md`                    | technische Maintainer-Dokumentation für Discord-News |
+| Datei                                | Inhalt                                                         |
+| ------------------------------------ | -------------------------------------------------------------- |
+| `ENTWICKLER-EINSTIEG.md`             | Einstieg in Ordner, Quellcode, Bild-Fallback und Arbeitsablauf |
+| `BOT.md`                             | lokaler Discord-Bot, Server-Scan und Rechte                    |
+| `ANLEITUNG-TIER-JSON.md`             | Aufbau und Pflege der Tierdaten                                |
+| `PlanetZoo2-Tierdaten-Checkliste.md` | Checkliste für Tierdaten und Quellen                           |
+| `MEDIEN-UND-QUELLEN.md`              | Umgang mit Medien, Quellen und Veröffentlichung                |
+| `ordnerstruktur.md`                  | automatisch erzeugte Projektstruktur                           |
+| `DISCORD-NEWS.md`                    | technische Maintainer-Dokumentation für Discord-News           |
 
 ---
 
@@ -516,7 +518,7 @@ Die GitHub-Actions unter `.github/workflows/` sind Teil der Maintainer-Infrastru
 Weitere technische Informationen für den Maintainer stehen in:
 
 ```text
-dokumentation/DISCORD-NEWS.md
+anleitungen/DISCORD-NEWS.md
 ```
 
 ---
@@ -540,3 +542,25 @@ Der lokale Ordner `bot/` ist im normalen Git-Workflow bewusst ausgeschlossen. Da
 Das Projekt befindet sich weiterhin in Entwicklung. Einzelne Werkzeuge, Tierdaten oder Medien können unvollständig sein oder sich noch ändern.
 
 Wenn etwas nicht funktioniert oder Daten fehlen, ist das nicht automatisch ein Fehler im Browser: Prüfe zuerst, ob die benötigten lokalen Medien vorhanden sind. Bei Browsern mit strengen `file://`-Richtlinien kann alternativ der oben beschriebene lokale Webserver verwendet werden.
+
+## Nur ZIP erstellen + internen Commit anlegen
+
+Wenn vor einer Änderung einfach eine aktuelle Share-ZIP erstellt und der aktuelle Stand intern gesichert werden soll:
+
+```bash
+./tools/zip-intern.sh
+```
+
+Optional kann eine eigene Commit-Beschreibung angegeben werden:
+
+```bash
+./tools/zip-intern.sh "Stand vor Bild-Fallback gesichert"
+```
+
+Das Skript erstellt die Share-ZIP über `tools/share-zip.sh`, nimmt danach vorhandene Git-Änderungen in einen Commit auf, ergänzt automatisch `[intern]` und pusht den aktuellen Branch. Dadurch wird für diesen Commit keine Discord-News gesendet. Die ZIP selbst bleibt durch `.gitignore` lokal und wird nicht auf GitHub committed.
+
+## Bild-Fallback
+
+Tierbilder werden nach dem Prinzip **lokal zuerst, externe URL als Fallback** geladen. Der in `dateien[].pfad` eingetragene lokale Pfad hat Priorität. Kann diese Datei nicht geladen werden, versucht die Oberfläche die `url` derselben Bildvariante. Erst danach erscheint der normale Platzhalter.
+
+Details und ein JSON-Beispiel stehen in `anleitungen/ENTWICKLER-EINSTIEG.md` und `anleitungen/ANLEITUNG-TIER-JSON.md`.

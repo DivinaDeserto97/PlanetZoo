@@ -1,2 +1,7 @@
+/* ANFÄNGER-HINWEIS – assets/css/map/map.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 @import url("./map-var.css");
 @import url("./map-style.css");

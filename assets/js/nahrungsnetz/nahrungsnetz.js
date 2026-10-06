@@ -1,3 +1,12 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/nahrungsnetz/nahrungsnetz.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
 import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 
 import { getTierAuswahl, setTierAusgewaehlt } from "../features/tierAuswahl.js";

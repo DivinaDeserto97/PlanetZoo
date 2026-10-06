@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/home/home-var.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 .home-page {
   --home-max-width: var(--breite-inhalt);
   --home-padding-horizontal: var(--abstand-5);

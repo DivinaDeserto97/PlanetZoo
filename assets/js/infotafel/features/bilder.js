@@ -1,3 +1,14 @@
+/*
+ * ANFÄNGER-HINWEIS – assets/js/infotafel/features/bilder.js
+ * ----------------------------------------
+ * Diese Datei gehört zum handgeschriebenen Quellcode von Planet Zoo 2 Tools.
+ * Die grossen Abschnittskommentare darunter zeigen, welcher Teil welche
+ * Aufgabe übernimmt. Beim Ändern möglichst nur den passenden Abschnitt
+ * bearbeiten und danach das Browser-Bundle neu bauen/testen.
+ */
+
+import { setzeBildMitFallback } from "../../features/bildFallback.js";
+
 import { getInfotafelBilder } from "../../features/tierMedien.js";
 
 import { clampIndex, getTierName, ui, wrapIndex } from "./ui.js";
@@ -53,17 +64,15 @@ export function renderMainImage(tier) {
 
   button.disabled = false;
 
-  image.src = current.pfad;
-
   image.alt = getTierName(tier);
 
-  image.onerror = () => {
+  setzeBildMitFallback(image, current.pfad, current.url, () => {
     image.hidden = true;
 
     fallback.hidden = false;
 
     fallback.textContent = ui("noImage");
-  };
+  });
 
   if (count) {
     count.textContent =
@@ -109,9 +118,12 @@ function renderImageDialog(tier) {
   const next = document.querySelector("[data-image-next]");
 
   if (image) {
-    image.src = images[imageIndex].pfad;
+    const current = images[imageIndex];
 
     image.alt = getTierName(tier);
+
+    // Auch im grossen Bilddialog gilt: lokaler Pfad vor externer URL.
+    setzeBildMitFallback(image, current.pfad, current.url);
   }
 
   if (title) {

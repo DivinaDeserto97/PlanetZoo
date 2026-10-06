@@ -1,3 +1,8 @@
+/* ANFÄNGER-HINWEIS – assets/css/map/map-var.css
+ * Diese Datei steuert Darstellung/Layout. Selektor = welches Element,
+ * Eigenschaft = was daran verändert wird. Variablen möglichst wiederverwenden.
+ */
+
 .map-page {
   --map-sidebar-breite: 360px;
   --map-gap: var(--abstand-3);
