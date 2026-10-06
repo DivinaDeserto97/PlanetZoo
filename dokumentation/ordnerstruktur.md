@@ -1672,6 +1672,18 @@
                 - `Ursus arctos arctos map.png` _(Medium – lokal / nicht freigegeben)_
               - `videos/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos arctos/videos/.gitkeep>)
+            - `Ursus arctos horribilis/`
+              - [Ursus arctos horribilis.json](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/Ursus arctos horribilis.json>)
+              - `audio/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/audio/.gitkeep>)
+              - `bilder/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/.gitkeep>)
+                - `Ursus arctos horribilis 1.webp` _(Medium – lokal / nicht freigegeben)_
+              - `map/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/.gitkeep>)
+                - `Ursus arctos horribilis map.png` _(Medium – lokal / nicht freigegeben)_
+              - `videos/`
+                - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/videos/.gitkeep>)
           - `Varanus komodoensis/`
             - [Varanus komodoensis.json](<../assets/daten/lebewesen/tiere/Varanus komodoensis/Varanus komodoensis.json>)
             - `audio/`

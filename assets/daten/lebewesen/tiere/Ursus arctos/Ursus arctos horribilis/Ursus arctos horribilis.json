@@ -1,0 +1,423 @@
+{
+  "id": "Ursus arctos horribilis",
+  "identitaet": {
+    "namen": {
+      "de": "Grizzlybär",
+      "en": "",
+      "en-US": "",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Nordamerika"],
+    "biome": [],
+    "schutzstatus": "Nicht gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "",
+          "stamm": "",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Ursidae",
+          "gattung": "Ursus",
+          "art": "Ursus arctos horribilis",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 2.2,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für ein durchschnittliches Männchen eine Kopf-Rumpf-Länge von 2,2 m.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 1.8,
+          "einheit": "m",
+          "hinweis": {
+            "de": "Die Zoopedia nennt für ein durchschnittliches Weibchen eine Kopf-Rumpf-Länge von 1,8 m.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "wert": 240,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "wert": 160,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [""]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Nicht gefährdet",
+          "system": "",
+          "hinweis": {
+            "de": "Die Zoopedia stuft den Grizzlybären als nicht gefährdet ein.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "min": 55000,
+          "max": 60000,
+          "einheit": "individuum",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Die Zoopedia gibt einen Wildbestand von 55.000 bis 60.000 Individuen an.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": 5,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Grizzlybären werden laut Zoopedia mit etwa 5 Jahren geschlechtsreif.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "maennlichFortpflanzung",
+          "min": 7,
+          "max": null,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Männchen sind möglicherweise erst mit 7 Jahren oder später stark genug, um sich eine Partnerin zu sichern.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "tragzeit",
+          "wert": 6,
+          "einheit": "monat",
+          "hinweis": {
+            "de": "Die Zoopedia beschreibt eine verzögerte Empfängnis; die Jungen kommen nach einer Tragzeit von etwa 6 Monaten während des Winterschlafs zur Welt.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": null,
+          "max": 4,
+          "durchschnitt": null,
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "beiMutterBis",
+          "min": 2,
+          "max": 3,
+          "einheit": "jahr",
+          "hinweis": {
+            "de": "Die Bärenjungen bleiben bei ihrer Mutter, bis sie 2 bis 3 Jahre alt sind.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "wert": "solitary",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 1,
+          "hinweis": {
+            "de": "Grizzlybären sind abgesehen von Muttertieren mit ihren Jungen Einzelgänger. Zeitweise kommen sie zur Paarung, bei Konkurrenz um Partner oder an besonders ergiebigen Futterquellen zusammen.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": []
+    },
+    "aktivitaet": {
+      "werte": [
+        {
+          "wert": "hibernation",
+          "hinweis": {
+            "de": "Wildlebende Grizzlybären halten laut Zoopedia fünf bis sieben Monate im Jahr Winterschlaf.",
+            "en": ""
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [""]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Lachse",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "hinweis": {
+                "de": "Die Zoopedia nennt Flussufer während der Laichzeit der Lachse als bevorzugte Futterquelle.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            },
+            {
+              "wert": "Motten",
+              "typ": "tier",
+              "beziehung": "praedation",
+              "wirkung": "+/-",
+              "hinweis": {
+                "de": "Laut Zoopedia fressen Grizzlybären gerne Motten und suchen dafür auch höhere Lagen auf.",
+                "en": ""
+              },
+              "quelle": "planetZoo2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Zusätzliche Systematik und Evolution werden in einem späteren Quellen-Durchgang ergänzt.",
+      "en": ""
+    },
+    "naheVerwandte": [],
+    "evolution": []
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Grizzlybär (Ursus arctos horribilis) ist im Norden der USA und in Kanada beheimatet und eine Unterart des Braunbären.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Grizzlybär (auch Ursus arctos horribilis) ist im Norden der USA und in Kanada beheimatet und eine Unterart des Braunbären.\n\nEinen Grizzly erkennt man an seinem dichten, braunen Fell, einem großen Schulterbuckel, einer geraden Schnauze und abgerundeten Ohren. Er hat kräftige Vorderbeine mit langen Krallen, die er zum Graben und Jagen nutzt.\n\nSie können extrem groß werden, wobei es zwischen den verschiedenen Populationen starke Größenunterschiede gibt. Ein durchschnittliches Männchen hat eine Kopf-Rumpf-Länge von 2,2 m und wiegt 240 kg, während ein durchschnittliches Weibchen eine Kopf-Rumpf-Länge von 1,8 m hat und 160 kg auf die Waage bringt.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Der Grizzlybär, der heute als nicht gefährdet eingestuft wird, kommt nur noch in einem kleinen Teil seines früheren Verbreitungsgebiets in Nordamerika vor. In der Vergangenheit haben die europäische Besiedlung sowie Kopfgelder im 19. und 20. Jahrhundert die Bestände so stark dezimiert, dass es in den 1970er Jahren nur noch wenige hundert Bären gab. Heute erholen sich die Bestände in den Nationalparks, doch der Grizzly ist weiterhin durch Infrastrukturausbau, Klimawandel, Konflikte zwischen Mensch und Wildtieren sowie Wilderei bedroht.\n\nZu den Arterhaltungsmaßnahmen gehören der Schutz und die Bewirtschaftung von Lebensräumen, die Minderung von Konflikten zwischen Mensch und Wildtieren sowie der rechtliche Schutz. Im Rahmen eines Wiederansiedlungsplans werden zentrale Ökosysteme in ihrem Verbreitungsgebiet identifiziert und große, miteinander verbundene Landschaften, die lebensfähige Populationen beherbergen können, werden erhalten. Um Konflikte mit Wildtieren zu verringern, werden bärensichere Infrastrukturen eingesetzt und die Bevölkerung für sichere Methoden der Lebensmittellagerung sensibilisiert.\n\nZu den Maßnahmen gehören auch Vorschläge für künftige Wiederansiedlungen in historischen Lebensräumen wie den Nördlichen Kaskaden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Grizzlybären sind Einzelgänger, abgesehen von Muttertieren mit ihren Jungen. Sie interagieren nur während der Paarungszeit oder beim Kampf um Partner miteinander. Manchmal sind sie gemeinsam an bevorzugten Futterquellen anzutreffen, wie zum Beispiel an Flussufern während der Laichzeit der Lachse. Normalerweise ignorieren sie sich jedoch, wenn sie in der Wildnis aufeinandertreffen.\n\nVon Mai bis Juni spüren männliche Grizzlybären Weibchen anhand ihres Uringeruchs auf. Wenn sich ein Männchen und ein Weibchen begegnen, spielen sie miteinander; sie raufen und schubsen sich gegenseitig, bevor sie sich paaren. Männchen wehren Rivalen aggressiv ab, um sich mit einem Weibchen paaren zu können.\n\nBei den Weibchen findet eine verzögerte Empfängnis statt, sodass die Jungen nach einer Tragzeit von etwa 6 Monaten während des Winterschlafs zur Welt kommen. Ein Wurf umfasst bis zu 4 Jungtiere. Die Jungtiere suchen nach Milch und saugen bei ihrer Mutter, bis der Winterschlaf endet. Dann verlassen sie den Bau und nehmen ihre erste feste Nahrung zu sich. Die Mutter paart sich nicht, solange sie sich um ihren Nachwuchs kümmert, und bringt möglicherweise auch erst einige Jahre nach deren Auszug wieder einen neuen Wurf zur Welt.\n\nDie Bärenjungen bleiben bei ihrer Mutter, bis sie 2 bis 3 Jahre alt sind. Dann verlassen sie sie, um sich ein eigenes Revier zu suchen. Geschlechtsreif werden sie jedoch erst mit 5 Jahren, und Männchen sind möglicherweise erst mit 7 Jahren oder später stark genug, um sich eine Partnerin zu sichern.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Wildlebende Grizzlybären halten fünf bis sieben Monate im Jahr Winterschlaf. Vor dem Winterschlaf fressen sie riesige Mengen, um genug Gewicht anzusammeln, damit sie diese Zeit ohne Nahrung überstehen können.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Beim „Höcker“ auf dem Rücken eines Grizzlybärs handelt es sich um einen großen Muskel, den die Bären zum Graben von Höhlen oder bei der Jagd benötigen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Grizzlybären können in Vorbereitung auf die Winterruhe 180 kg zunehmen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "In der Wildnis kann jedes Jungtier eines Wurfs einen anderen biologischen Vater haben.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Grizzlybären fressen gerne Motten und machen sich die Mühe, in höhere Lagen zu wandern und Steine umzudrehen, um Motten zu finden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Planet Zoo 2 befindet sich derzeit aktiv in der Entwicklung, und die Zoopedia spiegelt diesen Entwicklungsprozess wider. Texte, Bilder, Statistiken usw. sind nicht zwangsläufig endgültig und können sich noch ändern oder ergänzt werden.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/Ursus arctos horribilis map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "",
+          "alt": {
+            "de": "Grizzlybär – Planet Zoo 2",
+            "en": ""
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Grizzlybären aus Planet Zoo 2.",
+            "en": ""
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/Ursus arctos horribilis 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": null,
+    "hinweis": {
+      "de": "Die Rechnerwerte werden später separat ergänzt.",
+      "en": ""
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Grizzlybär",
+      "seiten": {},
+      "status": "Zoopedia-Pass aus dem vom Nutzer bereitgestellten deutschen Zoopedia-Inhalt. Direkte Karten-, Bild- und Video-URLs sowie weitere nicht genannte Werte wurden nicht ergänzt."
+    }
+  }
+}
