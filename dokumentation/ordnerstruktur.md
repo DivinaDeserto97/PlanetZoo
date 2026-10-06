@@ -290,6 +290,18 @@
               - `Aurelia aurita map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Aurelia aurita/videos/.gitkeep>)
+          - `Babyrousa celebensis/`
+            - [Babyrousa celebensis.json](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/Babyrousa celebensis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/bilder/.gitkeep>)
+              - `Babyrousa celebensis 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/map/.gitkeep>)
+              - `Babyrousa celebensis map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Babyrousa celebensis/videos/.gitkeep>)
           - `Balaeniceps rex/`
             - [Balaeniceps rex.json](<../assets/daten/lebewesen/tiere/Balaeniceps rex/Balaeniceps rex.json>)
             - `audio/`
