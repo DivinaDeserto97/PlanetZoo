@@ -1284,6 +1284,18 @@
               - `Phoebis sennae map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoebis sennae/videos/.gitkeep>)
+          - `Phoenicopterus roseus/`
+            - [Phoenicopterus roseus.json](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/Phoenicopterus roseus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/bilder/.gitkeep>)
+              - `Phoenicopterus roseus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/map/.gitkeep>)
+              - `Phoenicopterus roseus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Phoenicopterus roseus/videos/.gitkeep>)
           - `Phyllium giganteum/`
             - [Phyllium giganteum.json](<../assets/daten/lebewesen/tiere/Phyllium giganteum/Phyllium giganteum.json>)
             - `audio/`
