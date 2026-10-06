@@ -133,6 +133,9 @@ echo "============================================================"
 
 zip -q "$ZIP_PATH" -@ < "$DATEILISTE"
 
+# Zusätzlich immer eine eigenständige, sichere Bot-ZIP erzeugen.
+"$SCRIPT_DIR/bot-zip.sh"
+
 ZIP_GROESSE="$(du -h "$ZIP_PATH" | cut -f1)"
 
 echo
