@@ -18,6 +18,16 @@ Das Projekt enthält unter anderem:
 
 ---
 
+### Eine Datenquelle für Tierdaten
+
+Die **Tier-JSON-Dateien sind die Wahrheit** für die Tierdaten. `datenImport.js` legt nur fest, welche Tier-JSON-Dateien und in welcher Reihenfolge sie geladen werden. Für die Doppelklick-Version wird daraus automatisch `assets/js/browser.bundle.js` erzeugt. Dieses Bundle wird **nicht von Hand gepflegt**.
+
+- Die normalen Projekt-Skripte für Commit/ZIP bauen das Bundle automatisch neu.
+- Zusätzlich prüft GitHub Actions nach einem Push das Bundle und erzeugt es bei Bedarf automatisch neu.
+- Ein normaler Nutzer der fertigen Projektdateien muss **kein Node.js installieren und keinen Build-Befehl ausführen**: `index.html` kann direkt doppelt angeklickt werden.
+- Bei Bildern gilt automatisch: **lokaler `pfad` → externe `url` → Platzhalter**.
+- Fehlt bei einer Bildvariante die externe `url`, meldet die Tierprüfung dies als Fehler.
+
 ## Schnellstart
 
 Für die normale Nutzung ist **keine Installation und kein lokaler Webserver nötig**.

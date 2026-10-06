@@ -8,6 +8,7 @@
 - `PlanetZoo2/`
   - `.github/`
     - `workflows/`
+      - [browser-bundle.yml](../.github/workflows/browser-bundle.yml)
       - [discord-news.yml](../.github/workflows/discord-news.yml)
   - [.gitignore](../.gitignore)
   - `.vscode/`
@@ -1702,7 +1703,7 @@
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/audio/.gitkeep>)
               - `bilder/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/bilder/.gitkeep>)
-                - `Ursus arctos horribilis.webp` _(Medium – lokal / nicht freigegeben)_
+                - `Ursus arctos horribilis 1.webp` _(Medium – lokal / nicht freigegeben)_
               - `map/`
                 - [.gitkeep](<../assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/map/.gitkeep>)
                 - `Ursus arctos horribilis map.png` _(Medium – lokal / nicht freigegeben)_

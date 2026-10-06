@@ -60,3 +60,9 @@ Für ein Bild sollte der Test beide Fälle abdecken:
 4. Quelle und – bei Bildern – externe Fallback-Adresse erhalten/eintragen.
 5. Lizenzbedingungen beachten.
 6. Anzeige bzw. Wiedergabe testen.
+
+## Wichtig: Du musst kein Browser-Bundle pflegen
+
+Beim Eintragen eines Tieres pflegst du Bilddaten **nur in der Tier-JSON**. Der lokale `pfad` ist die erste Wahl, die externe `url` ist der Fallback. `browser.bundle.js` wird durch die Projektwerkzeuge bzw. nach einem Push automatisch erzeugt und darf nicht von Hand bearbeitet werden.
+
+Wenn `url` fehlt, zeigt die Tierprüfung die Bildvariante als fehlerhaft an.

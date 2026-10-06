@@ -18,8 +18,9 @@
  * 3. Schlägt auch diese fehl, wird die übergebene Fehlerfunktion aufgerufen.
  *
  * Dadurch kann das Projekt lokal mit eigenen Bildern arbeiten, bleibt aber
- * auch benutzbar, wenn ein nicht mitgeliefertes Bild nur als Quellen-URL
- * in der JSON vorhanden ist.
+ * auch benutzbar, wenn ein nicht mitgeliefertes Bild nur als externe URL
+ * in der Tier-JSON vorhanden ist. Die Tier-JSON bleibt dabei die einzige
+ * Datenquelle: Es gibt keine zweite manuell gepflegte Bildliste.
  */
 
 function hatText(wert) {

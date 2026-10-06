@@ -1,0 +1,50 @@
+name: Browser-Bundle automatisch aktualisieren
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  browser-bundle:
+    # Der automatisch erzeugte Korrektur-Commit startet den Workflow erneut.
+    # [intern] verhindert dabei Discord-News; beim zweiten Lauf gibt es keine
+    # Änderung mehr und damit auch keinen weiteren Commit.
+    if: ${{ !contains(github.event.head_commit.message, '[bundle-auto]') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      - name: Doppelklick-Bundle aus Quellcode und Tier-JSON neu bauen
+        run: npm run build:browser
+
+      - name: Nur bei veraltetem Bundle automatisch korrigieren
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/js/browser.bundle.js; then
+            echo "✅ Browser-Bundle ist bereits aktuell."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/browser.bundle.js
+          git commit -m "Browser-Bundle automatisch aktualisiert [intern] [bundle-auto]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

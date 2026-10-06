@@ -689,6 +689,14 @@ function pruefeInfotafel(tier) {
       fehlt.push("Quelle fehlt.");
     }
 
+    // Jede Bildvariante braucht neben dem lokalen Pfad auch eine externe URL.
+    // Diese URL ist der automatische Fallback, falls die lokale Bilddatei fehlt.
+    // Fehlt sie, wird die Tierprüfung rot markiert, damit der Datensatz nicht
+    // versehentlich ohne Reservebild veröffentlicht wird.
+    if (!hatText(entry.variante?.url)) {
+      fehlt.push("Externe Bild-URL fehlt (Fallback).");
+    }
+
     if (!hatLokalisierterText(entry.variante?.alt)) {
       fehlt.push("Alt-Text fehlt.");
     }
