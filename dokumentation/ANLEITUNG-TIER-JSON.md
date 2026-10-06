@@ -1725,3 +1725,23 @@ Dieses Beispiel ist absichtlich nur ein Startgerüst. Für ein fertiges Tier wer
 Wenn ein Feld eine **feste Auswahl** hat, verwende exakt den internen Wert aus dieser Anleitung.
 
 Wenn ein Feld **frei** ist, verwende möglichst bereits bestehende Schreibweisen des Projekts, damit später nicht mehrere Bezeichnungen für dieselbe Sache entstehen.
+
+## Bildpfad und URL-Fallback
+
+Bei Bildvarianten bleibt `dateien[].pfad` die bevorzugte lokale Datei. Die `url` der gleichen Variante kann gleichzeitig als externer Fallback eingetragen bleiben.
+
+```json
+{
+  "variante": 1,
+  "url": "https://example.org/tier.webp",
+  "dateien": [
+    {
+      "typ": "original",
+      "dateityp": "webp",
+      "pfad": "assets/daten/lebewesen/tiere/Beispiel/bilder/Beispiel 1.webp"
+    }
+  ]
+}
+```
+
+Die Oberfläche lädt zuerst `pfad`. Erst wenn diese Datei im Browser nicht geladen werden kann, wird `url` versucht. Dadurch können lokal vorhandene Medien bevorzugt werden, während ein fehlendes lokales Bild nicht sofort zu einem leeren Platzhalter führt.
