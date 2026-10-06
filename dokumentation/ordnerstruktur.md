@@ -1500,6 +1500,18 @@
               - `Sus scrofa map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Sus scrofa/videos/.gitkeep>)
+          - `Symphalangus syndactylus/`
+            - [Symphalangus syndactylus.json](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/Symphalangus syndactylus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/bilder/.gitkeep>)
+              - `Symphalangus syndactylus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/map/.gitkeep>)
+              - `Symphalangus syndactylus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Symphalangus syndactylus/videos/.gitkeep>)
           - `Symphorichthys spilurus/`
             - [Symphorichthys spilurus.json](<../assets/daten/lebewesen/tiere/Symphorichthys spilurus/Symphorichthys spilurus.json>)
             - `audio/`
