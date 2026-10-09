@@ -8,6 +8,7 @@
 - `PlanetZoo2/`
   - `.github/`
     - `workflows/`
+      - [browser-bundle.yml](../.github/workflows/browser-bundle.yml)
       - [discord-news.yml](../.github/workflows/discord-news.yml)
   - [.gitignore](../.gitignore)
   - `.vscode/`

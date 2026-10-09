@@ -569,15 +569,15 @@ function pruefeNahrungsBeziehung(wert, optionen = {}) {
 /* CHECK-OBJEKT                             */
 /* ======================================== */
 
-function item(label, pfad, ok, fehlt = []) {
+function item(label, pfad, ok, fehlt = [], unterpunkte = []) {
   return {
     label,
-
     pfad,
-
     ok: Boolean(ok),
-
     fehlt: fehlt.filter(Boolean),
+    // Optionale Detailprüfungen. Damit kann die Oberfläche z. B. bei einer
+    // Mediendatei den lokalen Pfad und die externe Fallback-URL getrennt zeigen.
+    unterpunkte: Array.isArray(unterpunkte) ? unterpunkte : [],
   };
 }
 
@@ -639,20 +639,31 @@ function pruefeMap(tier) {
 
   const kartenDateiVorhanden = istDateiVerfuegbar(kartenPfad);
 
+  const kartenUrl = karte?.url;
+
+  const pfadCheck = item(
+    "Lokale Datei / Pfad",
+    "karte.dateien[].pfad",
+    hatText(kartenPfad) && kartenDateiVorhanden,
+    [
+      !hatText(kartenPfad) ? "PNG-Kartenpfad fehlt." : null,
+      hatText(kartenPfad) && !kartenDateiVorhanden
+        ? `PNG-Kartendatei nicht gefunden: ${kartenPfad}`
+        : null,
+    ],
+  );
+
+  const urlCheck = item("Externe Bild-URL", "karte.url", hatText(kartenUrl), [
+    !hatText(kartenUrl) ? "Externe Kartenbild-URL fehlt (Fallback)." : null,
+  ]);
+
   checks.push(
     item(
       "Kartenbild",
-      "karte.dateien[].pfad",
-
-      hatText(kartenPfad) && kartenDateiVorhanden,
-
-      [
-        !hatText(kartenPfad) ? "PNG-Kartenpfad fehlt." : null,
-
-        hatText(kartenPfad) && !kartenDateiVorhanden
-          ? `PNG-Kartendatei nicht gefunden: ${kartenPfad}`
-          : null,
-      ],
+      "karte",
+      pfadCheck.ok && urlCheck.ok,
+      [],
+      [pfadCheck, urlCheck],
     ),
   );
 
@@ -676,47 +687,52 @@ function pruefeInfotafel(tier) {
 
   bilder.forEach((entry) => {
     const nummer = entry.variante?.variante ?? entry.variantenIndex + 1;
-
     const gruppe = entry.gruppe?.typ || "Bild";
+    const basisFehlt = [];
 
-    const fehlt = [];
-
-    if (!hatText(entry.gruppe?.typ)) {
-      fehlt.push("Bildtyp fehlt.");
-    }
-
-    if (!hatText(entry.variante?.quelle)) {
-      fehlt.push("Quelle fehlt.");
-    }
-
-    if (!hatLokalisierterText(entry.variante?.alt)) {
-      fehlt.push("Alt-Text fehlt.");
-    }
+    if (!hatText(entry.gruppe?.typ)) basisFehlt.push("Bildtyp fehlt.");
+    if (!hatText(entry.variante?.quelle)) basisFehlt.push("Quelle fehlt.");
+    if (!hatLokalisierterText(entry.variante?.alt))
+      basisFehlt.push("Alt-Text fehlt.");
 
     const beschreibung =
       entry.variante?.beschreibung ?? entry.gruppe?.beschreibung;
-
-    if (!hatLokalisierterText(beschreibung)) {
-      fehlt.push("Beschreibung fehlt.");
-    }
+    if (!hatLokalisierterText(beschreibung))
+      basisFehlt.push("Beschreibung fehlt.");
 
     const bildDatei = getBesteBildDatei(entry.dateien);
+    const bildPfad = bildDatei?.pfad ?? "";
+    const bildUrl = entry.variante?.url ?? "";
 
-    if (!bildDatei) {
-      fehlt.push("Bilddatei / Dateipfad fehlt.");
-    } else if (!istDateiVerfuegbar(bildDatei.pfad)) {
-      fehlt.push(`Bilddatei nicht gefunden: ${bildDatei.pfad}`);
-    }
+    // Pfad und URL sind absichtlich zwei getrennte Prüfungen: Der lokale Pfad
+    // ist die bevorzugte Datei, die URL ist der automatische Fallback. So sieht
+    // man sofort, welcher der beiden Werte in der Tier-JSON fehlt.
+    const pfadCheck = item(
+      "Lokale Datei / Pfad",
+      `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}].dateien[].pfad`,
+      hatText(bildPfad) && istDateiVerfuegbar(bildPfad),
+      [
+        !hatText(bildPfad) ? "Bilddatei / Dateipfad fehlt." : null,
+        hatText(bildPfad) && !istDateiVerfuegbar(bildPfad)
+          ? `Bilddatei nicht gefunden: ${bildPfad}`
+          : null,
+      ],
+    );
+
+    const urlCheck = item(
+      "Externe Bild-URL",
+      `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}].url`,
+      hatText(bildUrl),
+      [!hatText(bildUrl) ? "Externe Bild-URL fehlt (Fallback)." : null],
+    );
 
     checks.push(
       item(
         `${gruppe} – Variante ${nummer}`,
-
         `bilder[${entry.gruppenIndex}].varianten[${entry.variantenIndex}]`,
-
-        fehlt.length === 0,
-
-        fehlt,
+        basisFehlt.length === 0 && pfadCheck.ok && urlCheck.ok,
+        basisFehlt,
+        [pfadCheck, urlCheck],
       ),
     );
   });

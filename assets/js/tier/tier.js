@@ -189,54 +189,94 @@ function renderToolChecks(tier) {
   });
 }
 
-function createCheckRow(check) {
-  const row = document.createElement("div");
+function createCheckRow(check, istUnterpunkt = false) {
+  // Prüfungen mit Unterpunkten werden als aufklappbarer Block dargestellt.
+  // Bei Bildern enthält dieser Block immer die getrennten Prüfungen für
+  // lokalen Pfad und externe Fallback-URL.
+  if (
+    !istUnterpunkt &&
+    Array.isArray(check.unterpunkte) &&
+    check.unterpunkte.length
+  ) {
+    const details = document.createElement("details");
+    details.className = `tier-check-group ${check.ok ? "is-ok" : "is-error"}`;
 
-  row.className = `tier-check ${check.ok ? "is-ok" : "is-error"}`;
+    const summary = document.createElement("summary");
+    summary.className = "tier-check tier-check--summary";
+
+    const state = document.createElement("span");
+    state.className = "tier-check__state";
+    state.textContent = check.ok ? "✓" : "✕";
+
+    const label = document.createElement("div");
+    label.className = "tier-check__label";
+    const strong = document.createElement("strong");
+    strong.textContent = check.label;
+    const code = document.createElement("code");
+    code.textContent = check.pfad;
+    label.append(strong, code);
+
+    const status = document.createElement("span");
+    status.className = check.ok
+      ? "tier-check__complete"
+      : "tier-check__missing-text";
+    status.textContent = check.ok ? "Vollständig" : "Details aufklappen";
+
+    summary.append(state, label, status);
+    details.appendChild(summary);
+
+    const children = document.createElement("div");
+    children.className = "tier-check-group__children";
+    check.unterpunkte.forEach((unterpunkt) => {
+      children.appendChild(createCheckRow(unterpunkt, true));
+    });
+
+    // Allgemeine Fehler der Variante (z. B. Quelle/Alt-Text) bleiben sichtbar,
+    // ohne Pfad- und URL-Fehler doppelt auszugeben.
+    if (Array.isArray(check.fehlt) && check.fehlt.length) {
+      const extra = document.createElement("ul");
+      extra.className = "tier-check__missing tier-check-group__extra";
+      check.fehlt.forEach((text) => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        extra.appendChild(li);
+      });
+      children.appendChild(extra);
+    }
+
+    details.appendChild(children);
+    return details;
+  }
+
+  const row = document.createElement("div");
+  row.className = `tier-check ${check.ok ? "is-ok" : "is-error"}${istUnterpunkt ? " tier-check--child" : ""}`;
 
   const state = document.createElement("span");
-
   state.className = "tier-check__state";
-
   state.textContent = check.ok ? "✓" : "✕";
 
   const label = document.createElement("div");
-
   label.className = "tier-check__label";
-
   const strong = document.createElement("strong");
-
   strong.textContent = check.label;
-
   const code = document.createElement("code");
-
   code.textContent = check.pfad;
-
   label.append(strong, code);
-
   row.append(state, label);
 
   if (check.ok) {
     const complete = document.createElement("span");
-
     complete.className = "tier-check__complete";
-
     complete.textContent = "Vollständig";
-
     row.appendChild(complete);
   } else {
     const missing = document.createElement("ul");
-
     missing.className = "tier-check__missing";
-
     check.fehlt.forEach((text) => {
       const li = document.createElement("li");
-
       li.textContent = text;
-
       missing.appendChild(li);
     });
-
     row.appendChild(missing);
   }
 

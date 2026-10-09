@@ -14,7 +14,7 @@ Diese Anleitung erklärt, wo Änderungen in **Planet Zoo 2 Tools** normalerweise
 
 ## Browser-Bundle
 
-`assets/js/browser.bundle.js` wird automatisch erzeugt. Diese Datei **nicht von Hand bearbeiten**. Nach Änderungen am Quellcode wird sie über die vorhandenen Build-/ZIP-/Commit-Skripte neu erstellt.
+`assets/js/browser.bundle.js` wird automatisch erzeugt und **nie von Hand gepflegt**. Tierdaten stammen aus den Tier-JSON-Dateien; `datenImport.js` bestimmt deren Import und Reihenfolge. Commit-/ZIP-Skripte bauen das Bundle neu. Zusätzlich prüft `.github/workflows/browser-bundle.yml` nach jedem Push, ob das Bundle aktuell ist, und korrigiert es bei Bedarf mit einem internen Commit.
 
 ## Bilder: lokal zuerst, URL als Fallback
 

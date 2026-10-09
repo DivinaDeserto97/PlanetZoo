@@ -252,3 +252,60 @@
     grid-column: 2;
   }
 }
+
+/* Aufklappbare Medienprüfung: Hauptzeile + getrennte Prüfung für Pfad und URL. */
+.tier-check-group {
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.tier-check-group:last-child {
+  border-bottom: 0;
+}
+
+.tier-check-group > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.tier-check-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.tier-check-group > summary::after {
+  content: "▾";
+  justify-self: end;
+  align-self: center;
+  color: var(--farbe-text-zusatz);
+  transition: transform 0.15s ease;
+}
+
+.tier-check-group[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.tier-check--summary {
+  border-bottom: 0;
+}
+
+.tier-check-group[open] > .tier-check--summary {
+  border-bottom: 1px solid var(--farbe-linie);
+}
+
+.tier-check-group__children {
+  background: color-mix(in srgb, var(--farbe-element) 35%, transparent);
+}
+
+.tier-check--child {
+  padding-left: calc(var(--abstand-4) + 28px);
+}
+
+.tier-check-group__extra {
+  margin: 0;
+  padding: var(--abstand-3) var(--abstand-4) var(--abstand-3)
+    calc(var(--abstand-4) + 56px);
+  border-top: 1px solid var(--farbe-linie);
+}
+
+.tier-check__missing-text {
+  color: var(--tier-error);
+}
