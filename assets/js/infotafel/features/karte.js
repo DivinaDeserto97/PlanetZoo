@@ -24,7 +24,8 @@ export function resetMapState() {
 }
 
 export function renderMap(tier) {
-  const path = tier.kartenPfad;
+  const path = tier.kartenPfad || tier.kartenUrl || tier.karte?.url;
+  const remote = tier.kartenUrl || tier.karte?.url;
 
   const image = document.querySelector("[data-map-image]");
 
@@ -58,11 +59,15 @@ export function renderMap(tier) {
 
   image.hidden = false;
 
-  image.src = path;
-
   image.alt = `${ui("map")} – ${getTierName(tier)}`;
 
+  let fallbackUsed = false;
   image.onerror = () => {
+    if (remote && !fallbackUsed) {
+      fallbackUsed = true;
+      image.src = remote;
+      return;
+    }
     image.hidden = true;
 
     fallback.hidden = false;
@@ -73,6 +78,8 @@ export function renderMap(tier) {
 
     open.disabled = true;
   };
+
+  image.src = path;
 }
 
 export function openMapDialog(tier) {
@@ -80,11 +87,23 @@ export function openMapDialog(tier) {
 
   const image = document.querySelector("[data-map-dialog-image]");
 
-  if (!tier?.kartenPfad || !dialog || !image) {
+  if (
+    !(tier?.kartenPfad || tier?.kartenUrl || tier?.karte?.url) ||
+    !dialog ||
+    !image
+  ) {
     return;
   }
 
-  image.src = tier.kartenPfad;
+  const remote = tier.kartenUrl || tier.karte?.url;
+  let fallbackUsed = false;
+  image.onerror = () => {
+    if (remote && !fallbackUsed) {
+      fallbackUsed = true;
+      image.src = remote;
+    }
+  };
+  image.src = tier.kartenPfad || tier.kartenUrl || tier.karte?.url;
 
   image.alt = `${ui("map")} – ${getTierName(tier)}`;
 

@@ -393,6 +393,8 @@ export async function datenImportieren() {
 
         kartenPfad,
 
+        kartenUrl: karte?.url ?? null,
+
         kartenSvgPfad,
 
         kartenDateien: alsArray(karte?.dateien),

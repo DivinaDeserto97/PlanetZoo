@@ -641,27 +641,41 @@ function pruefeMap(tier) {
 
   const kartenUrl = karte?.url;
 
+  // Entweder eine lokale PNG oder eine Online-URL ist ausreichend.
+  // Die pixelgenaue Auswertbarkeit wird separat vom Renderer geprüft.
+  const lokalesPngVorhanden = hatText(kartenPfad) && kartenDateiVorhanden;
+  const onlineUrlVorhanden = /^https?:\/\//i.test(String(kartenUrl ?? ""));
+
   const pfadCheck = item(
-    "Lokale Datei / Pfad",
+    "Lokale PNG (optional bei Online-URL)",
     "karte.dateien[].pfad",
-    hatText(kartenPfad) && kartenDateiVorhanden,
+    lokalesPngVorhanden || onlineUrlVorhanden,
     [
-      !hatText(kartenPfad) ? "PNG-Kartenpfad fehlt." : null,
-      hatText(kartenPfad) && !kartenDateiVorhanden
+      !hatText(kartenPfad) && !onlineUrlVorhanden
+        ? "PNG-Kartenpfad fehlt."
+        : null,
+      hatText(kartenPfad) && !kartenDateiVorhanden && !onlineUrlVorhanden
         ? `PNG-Kartendatei nicht gefunden: ${kartenPfad}`
         : null,
     ],
   );
 
-  const urlCheck = item("Externe Bild-URL", "karte.url", hatText(kartenUrl), [
-    !hatText(kartenUrl) ? "Externe Kartenbild-URL fehlt (Fallback)." : null,
-  ]);
+  const urlCheck = item(
+    "Externe Bild-URL (optional bei lokaler PNG)",
+    "karte.url",
+    onlineUrlVorhanden || lokalesPngVorhanden,
+    [
+      !onlineUrlVorhanden && !lokalesPngVorhanden
+        ? "Weder gültige Online-URL noch lokale PNG vorhanden."
+        : null,
+    ],
+  );
 
   checks.push(
     item(
       "Kartenbild",
       "karte",
-      pfadCheck.ok && urlCheck.ok,
+      lokalesPngVorhanden || onlineUrlVorhanden,
       [],
       [pfadCheck, urlCheck],
     ),

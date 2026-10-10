@@ -13,12 +13,14 @@
   - [.gitignore](../.gitignore)
   - `.vscode/`
     - [settings.json](../.vscode/settings.json)
+  - [INSTALLATION-KARTEN-FIX.txt](../INSTALLATION-KARTEN-FIX.txt)
   - [README.md](../README.md)
   - `anleitungen/`
     - [ANLEITUNG-TIER-JSON.md](../anleitungen/ANLEITUNG-TIER-JSON.md)
     - [BOT.md](../anleitungen/BOT.md)
     - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
     - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
+    - [KARTEN-PIXELMASKEN.md](../anleitungen/KARTEN-PIXELMASKEN.md)
     - [MEDIEN-EINFUEGEN.md](../anleitungen/MEDIEN-EINFUEGEN.md)
     - [MEDIEN-UND-QUELLEN.md](../anleitungen/MEDIEN-UND-QUELLEN.md)
     - [NEUES-TIER-ANLEGEN.md](../anleitungen/NEUES-TIER-ANLEGEN.md)
@@ -1809,6 +1811,8 @@
           - [layout.js](../assets/js/map/features/layout.js)
           - [mapRenderer.js](../assets/js/map/features/mapRenderer.js)
           - [tierListe.js](../assets/js/map/features/tierListe.js)
+        - `generated/`
+          - [mapMasks.js](../assets/js/map/generated/mapMasks.js)
         - [map.js](../assets/js/map/map.js)
       - `nahrungsnetz/`
         - `features/`
@@ -2003,6 +2007,7 @@
   - `tools/`
     - [bot-zip.sh](../tools/bot-zip.sh)
     - [build-browser-bundle.js](../tools/build-browser-bundle.js)
+    - [build-map-masks.js](../tools/build-map-masks.js)
     - [commit-und-merge.sh](../tools/commit-und-merge.sh)
     - [commit.sh](../tools/commit.sh)
     - [discord-news.mjs](../tools/discord-news.mjs)

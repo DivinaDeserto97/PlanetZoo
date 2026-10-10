@@ -11,6 +11,8 @@ import { getLanguage } from "../../features/language.js";
 
 import { getTierName } from "./tierListe.js";
 
+import { MAP_MASKS, LAND_MASK } from "../generated/mapMasks.js";
+
 /* ======================================== */
 /* REFERENZ-WELTKARTE                       */
 /* ======================================== */
@@ -82,22 +84,41 @@ export async function initMapRenderer(tiere, signal) {
   /* WELTKARTE LADEN                     */
   /* ==================================== */
 
-  let referenceImage;
-
-  try {
-    referenceImage = await loadImage(WORLD_REFERENCE_PATH);
-  } catch (error) {
-    console.error(
-      `Referenz-Weltkarte konnte nicht geladen werden: ${WORLD_REFERENCE_PATH}`,
-      error,
-    );
-
-    setStatusText(status, "referenceError");
-
-    return createEmptyRenderer();
+  // Bei direktem Doppelklick auf index.html darf getImageData() nicht
+  // auf lokalen file://-Bildern aufgerufen werden: Chrome markiert diese
+  // Canvas-Pixel als fremden Ursprung. Daher nehmen wir die beim Build
+  // vorberechneten Pixelmasken, falls sie existieren.
+  // Das ist KEINE SVG-Näherung: Alle Tierpixel bleiben einzeln abfragbar.
+  let baseDataUrl = null;
+  if (LAND_MASK) {
+    try {
+      baseDataUrl = createCleanBaseMapFromMask(decodeMapMask(LAND_MASK));
+    } catch (error) {
+      console.warn("Vorgefertigte Landmaske ungültig:", error);
+    }
   }
 
-  const baseDataUrl = createCleanBaseMap(referenceImage);
+  if (!baseDataUrl) {
+    try {
+      // Fallback für normales HTTP/HTTPS: tatsächliche PNG auslesen.
+      // Bei file:// wird diese Operation ggf. mit SecurityError abgelehnt,
+      // darf aber NIE die Tierliste oder Kartensteuerung abbrechen.
+      if (location.protocol === "file:") {
+        throw new Error(
+          "Keine vorberechnete Landmaske (npm run build:all ausführen)",
+        );
+      }
+      const image = await loadImage(WORLD_REFERENCE_PATH);
+      baseDataUrl = createCleanBaseMap(image);
+    } catch (error) {
+      console.warn(
+        "Weltkarten-PNG nicht pixel-lesbar. Bitte 'node tools/build-map-masks.js' ausführen.",
+        error,
+      );
+      baseDataUrl = createPlainWaterMap();
+      setStatusText(status, "referenceError");
+    }
+  }
 
   createTiledImages(worldTilesGroup, baseDataUrl);
 
@@ -107,7 +128,7 @@ export async function initMapRenderer(tiere, signal) {
   );
 
   /* ==================================== */
-  /* TIER-MASKEN                         */
+  /* TIER-MASKEN                           */
   /* ==================================== */
 
   const masks = new Map();
@@ -116,35 +137,72 @@ export async function initMapRenderer(tiere, signal) {
 
   let colorIndex = 0;
 
+  // Farben in der stabilen Tier-Reihenfolge vergeben.
   for (const tier of tiere) {
-    /*
-        PNG ist absichtlich die Standard-
-        und Quelldatei für die Maske.
-
-        SVG ist optional und wird für die
-        Kartenlogik nicht vorausgesetzt.
-    */
-
-    if (!tier.kartenPfad) {
-      continue;
+    if (
+      tier.kartenPfad ||
+      tier.kartenUrl ||
+      tier.karte?.url ||
+      MAP_MASKS[tier.id]
+    ) {
+      colors.set(tier.id, createMapColor(colorIndex++));
     }
+  }
 
-    try {
-      const image = await loadImage(tier.kartenPfad);
-
-      const mask = createRangeMask(image);
-
-      masks.set(tier.id, mask);
-
-      colors.set(tier.id, createMapColor(colorIndex));
-
-      colorIndex++;
-    } catch (error) {
-      console.error(
-        `Tierkarte konnte nicht geladen werden: ${tier.kartenPfad}`,
-        error,
-      );
+  // Erst die vorberechneten Masken übernehmen. Das funktioniert sogar bei
+  // file://, weil die Daten im bereits geladenen Browser-Bundle stehen.
+  const unresolved = [];
+  for (const tier of tiere) {
+    if (!colors.has(tier.id)) continue;
+    const cached = MAP_MASKS[tier.id];
+    if (cached?.data) {
+      try {
+        masks.set(tier.id, decodeMapMask(cached.data));
+        continue;
+      } catch (error) {
+        console.warn(`Gespeicherte Tiermaske defekt: ${tier.id}`, error);
+      }
     }
+    unresolved.push(tier);
+  }
+
+  // Fehlende Masken lassen sich bei unterstützten Ursprüngen weiterhin
+  // direkt aus PNGs lesen. Das geschieht im Hintergrund, damit keine
+  // kaputte oder CORS-gesperrte URL die Tierliste blockiert.
+  async function ladeFehlendeMasken() {
+    let cursor = 0;
+    const workerCount = Math.min(6, unresolved.length);
+    await Promise.all(
+      Array.from({ length: workerCount }, async () => {
+        while (cursor < unresolved.length && !signal?.aborted) {
+          const tier = unresolved[cursor++];
+          const sources = [
+            tier.kartenPfad,
+            tier.kartenUrl ?? tier.karte?.url,
+          ].filter(Boolean);
+          for (const src of sources) {
+            if (signal?.aborted) break;
+            try {
+              const image = await loadImage(src, isRemoteUrl(src));
+              const mask = createRangeMask(image);
+              if (!mask.some(Boolean))
+                throw new Error("Kein Verbreitungsgebiet erkannt");
+              masks.set(tier.id, mask);
+              // Zurückbehaltene Auswahlen und Klicks erhalten aktualisierte
+              // Pixelwerte, sobald eine fehlende URL nachgeladen wurde.
+              render(currentSelected);
+              document.dispatchEvent(new Event("mapMasksUpdated"));
+              break;
+            } catch (error) {
+              console.warn(
+                `Bild-Pixel für ${tier.id} nicht lesbar: ${src}`,
+                error,
+              );
+            }
+          }
+        }
+      }),
+    );
   }
 
   let currentSelected = new Set();
@@ -580,6 +638,12 @@ export async function initMapRenderer(tiere, signal) {
     renderPointInfo(hoverPoint, hoverInfo, "hover");
   }
 
+  // Nach dem synchronen Aufbau starten (ohne `await`). So bleibt die
+  // Karte bedienbar, selbst wenn ein Bildserver offline/CORS-gesperrt ist.
+  void ladeFehlendeMasken().catch((error) =>
+    console.error("Nachladen der Tiermasken fehlgeschlagen:", error),
+  );
+
   resetView();
 
   setStatusText(status, masks.size ? "empty" : "none");
@@ -717,6 +781,61 @@ function renderMarkerCopies(group, point, type, zoom) {
       group.appendChild(circle);
     }
   }
+}
+
+/* ======================================== */
+/* PIXELMASKEN AUS BUILD-DATEN              */
+/* ======================================== */
+
+function decodeMapMask(encoded) {
+  const count = WORLD_CROP.width * WORLD_CROP.height;
+  const output = new Uint8Array(count);
+  let index = 0;
+  let value = 0;
+
+  for (const run of encoded.split(".")) {
+    const length = parseInt(run, 36);
+    if (!Number.isSafeInteger(length) || length < 0 || index + length > count) {
+      throw new Error("Ungültige Lauflängencodierung");
+    }
+    if (value) output.fill(1, index, index + length);
+    index += length;
+    value ^= 1;
+  }
+  if (index !== count) throw new Error("Unvollständige Pixelmaske");
+  return output;
+}
+
+function createCleanBaseMapFromMask(landMask) {
+  const canvas = document.createElement("canvas");
+  canvas.width = WORLD_CROP.width;
+  canvas.height = WORLD_CROP.height;
+  const context = canvas.getContext("2d");
+  const imageData = context.createImageData(canvas.width, canvas.height);
+  const land = hexToRgb(BASE_LAND);
+  const water = hexToRgb(BASE_WATER);
+
+  for (let y = 0; y < canvas.height; y++) {
+    for (let x = 0; x < canvas.width; x++) {
+      const pixel = y * canvas.width + x;
+      const edge =
+        x < 2 || y < 2 || x >= canvas.width - 2 || y >= canvas.height - 2;
+      const color = landMask[pixel] && !edge ? land : water;
+      imageData.data.set([color.r, color.g, color.b, 255], pixel * 4);
+    }
+  }
+  context.putImageData(imageData, 0, 0);
+  return canvas.toDataURL("image/png");
+}
+
+function createPlainWaterMap() {
+  return createCleanBaseMapFromMask(
+    new Uint8Array(WORLD_CROP.width * WORLD_CROP.height),
+  );
+}
+
+function isRemoteUrl(src) {
+  return /^https?:\/\//i.test(src);
 }
 
 /* ======================================== */
@@ -1617,15 +1736,25 @@ function transparentMapDataUrl() {
   return canvas.toDataURL("image/png");
 }
 
-function loadImage(src) {
+function loadImage(src, useCors = false) {
   return new Promise((resolve, reject) => {
     const image = new Image();
 
-    image.onload = () => resolve(image);
-
-    image.onerror = () =>
+    // Für Pixelzugriffe auf Bild-URLs muss der Host CORS erlauben.
+    // Sonst darf Chrome die PNG zwar anzeigen, aber nicht analysieren.
+    if (useCors) image.crossOrigin = "anonymous";
+    const timer = setTimeout(() => {
+      image.src = "";
+      reject(new Error(`Zeitüberschreitung beim Laden: ${src}`));
+    }, 10000);
+    image.onload = () => {
+      clearTimeout(timer);
+      resolve(image);
+    };
+    image.onerror = () => {
+      clearTimeout(timer);
       reject(new Error(`Bild konnte nicht geladen werden: ${src}`));
-
+    };
     image.src = src;
   });
 }

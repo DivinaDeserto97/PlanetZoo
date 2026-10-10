@@ -2,7 +2,9 @@
   "name": "planetzoo2-tools",
   "private": true,
   "scripts": {
-    "build:browser": "node tools/build-browser-bundle.js"
+    "build:browser": "node tools/build-browser-bundle.js",
+    "build:maps": "node tools/build-map-masks.js",
+    "build:all": "node tools/build-map-masks.js && node tools/build-browser-bundle.js"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
