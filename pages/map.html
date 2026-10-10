@@ -996,20 +996,28 @@
 
     <div class="map-point-info">
       <section class="map-point-info__column">
-        <strong
-          data-i18n
-          data-de="Ausgewählter Punkt"
-          data-en="Selected point"
-          data-en-US="Selected point"
-          data-es="Punto seleccionado"
-          data-fr="Point sélectionné"
-          data-it="Punto selezionato"
-          data-pt-BR="Ponto selecionado"
-          data-ja="選択した地点"
-          data-zh-Hans="已选择位置"
-        >
-          Ausgewählter Punkt
-        </strong>
+        <div class="map-point-info__header">
+          <strong
+            data-i18n
+            data-de="Ausgewählter Punkt"
+            data-en="Selected point"
+            data-en-US="Selected point"
+            data-es="Punto seleccionado"
+            data-fr="Point sélectionné"
+            data-it="Punto selezionato"
+            data-pt-BR="Ponto selecionado"
+            data-ja="選択した地点"
+            data-zh-Hans="已选择位置"
+          >
+            Ausgewählter Punkt
+          </strong>
+          <output
+            class="map-point-info__count"
+            data-map-selected-count
+            aria-live="polite"
+            >–</output
+          >
+        </div>
 
         <div data-map-selected-info>
           <span
@@ -1030,20 +1038,23 @@
       </section>
 
       <section class="map-point-info__column">
-        <strong
-          data-i18n
-          data-de="Mausposition"
-          data-en="Mouse position"
-          data-en-US="Mouse position"
-          data-es="Posición del ratón"
-          data-fr="Position de la souris"
-          data-it="Posizione del mouse"
-          data-pt-BR="Posição do mouse"
-          data-ja="マウス位置"
-          data-zh-Hans="鼠标位置"
-        >
-          Mausposition
-        </strong>
+        <div class="map-point-info__header">
+          <strong
+            data-i18n
+            data-de="Mausposition"
+            data-en="Mouse position"
+            data-en-US="Mouse position"
+            data-es="Posición del ratón"
+            data-fr="Position de la souris"
+            data-it="Posizione del mouse"
+            data-pt-BR="Posição do mouse"
+            data-ja="マウス位置"
+            data-zh-Hans="鼠标位置"
+          >
+            Mausposition
+          </strong>
+          <output class="map-point-info__count" data-map-hover-count>–</output>
+        </div>
 
         <div data-map-hover-info>
           <span

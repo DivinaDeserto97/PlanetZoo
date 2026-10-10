@@ -74,6 +74,10 @@ export async function initMapRenderer(tiere, signal) {
 
   const selectedInfo = document.querySelector("[data-map-selected-info]");
 
+  const selectedCount = document.querySelector("[data-map-selected-count]");
+
+  const hoverCount = document.querySelector("[data-map-hover-count]");
+
   if (!svg || !viewport || !worldTilesGroup || !rangeTilesGroup) {
     console.error("SVG-Kartenelemente wurden nicht gefunden.");
 
@@ -565,6 +569,15 @@ export async function initMapRenderer(tiere, signal) {
       return;
     }
 
+    // Dieselbe Trefferliste steuert die Tiernamen UND den Zähler.
+    // So zählen nur Tiere mit ausgewählter, gültiger Pixelmaske am Punkt.
+    const hits = point ? getHitsAtPoint(point) : [];
+    const countElement = mode === "selected" ? selectedCount : hoverCount;
+    if (countElement) {
+      const text = point ? getPointCountText(hits.length) : "–";
+      if (countElement.textContent !== text) countElement.textContent = text;
+    }
+
     container.replaceChildren();
 
     if (!point) {
@@ -578,8 +591,6 @@ export async function initMapRenderer(tiere, signal) {
 
       return;
     }
-
-    const hits = getHitsAtPoint(point);
 
     if (!hits.length) {
       const empty = document.createElement("span");
@@ -1671,6 +1682,24 @@ function setStatusText(status, type, count = 0) {
 /* ======================================== */
 /* PUNKT-TEXTE                              */
 /* ======================================== */
+
+function getPointCountText(count) {
+  const language = getLanguage();
+
+  const texts = {
+    de: `${count} ${count === 1 ? "Tier" : "Tiere"}`,
+    en: `${count} ${count === 1 ? "animal" : "animals"}`,
+    "en-US": `${count} ${count === 1 ? "animal" : "animals"}`,
+    es: `${count} ${count === 1 ? "animal" : "animales"}`,
+    fr: `${count} ${count === 1 ? "animal" : "animaux"}`,
+    it: `${count} ${count === 1 ? "animale" : "animali"}`,
+    "pt-BR": `${count} ${count === 1 ? "animal" : "animais"}`,
+    ja: `${count} 頭`,
+    "zh-Hans": `${count} 只动物`,
+  };
+
+  return texts[language] ?? texts.de;
+}
 
 function getPointPlaceholder(mode) {
   const language = getLanguage();
