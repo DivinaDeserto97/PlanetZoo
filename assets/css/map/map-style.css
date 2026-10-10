@@ -373,9 +373,25 @@
   background: var(--farbe-element);
 }
 
-.map-point-info__column > strong {
-  display: block;
+/* Zähler rechts oben; auch bei langen Übersetzungen gut lesbar. */
+.map-point-info__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--abstand-2);
   margin-bottom: var(--abstand-2);
+}
+
+.map-point-info__header > strong {
+  min-width: 0;
+}
+
+.map-point-info__count {
+  flex: 0 0 auto;
+  color: var(--farbe-text-zusatz);
+  font-size: var(--schrift-klein);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .map-point-list {
