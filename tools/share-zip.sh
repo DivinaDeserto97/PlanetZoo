@@ -28,6 +28,15 @@ if ! command -v node >/dev/null 2>&1; then
     exit 1
 fi
 
+# Zuerst lokale PNGs, sonst die in der Tier-JSON eingetragene Online-URL.
+# Nur die kompakten Pixelmasken landen im Browser-Bundle, keine PNG-Dateien.
+# Für Builds ohne Internet ist PZ_MAPS_OFFLINE=1 möglich; bereits erzeugte
+# Masken werden dann wiederverwendet.
+if [[ "${PZ_MAPS_OFFLINE:-0}" == "1" ]]; then
+    node "$SCRIPT_DIR/build-map-masks.js" --offline
+else
+    node "$SCRIPT_DIR/build-map-masks.js"
+fi
 node "$SCRIPT_DIR/build-browser-bundle.js"
 
 DATEILISTE="$(mktemp)"

@@ -1,0 +1,63 @@
+Planet Zoo 2 Tools – Karten-Pixel-Fix vom 10.10.2026
+================================================
+
+ZIEL
+1. Lokale PNG unter karte.dateien[].pfad hat IMMER Vorrang.
+2. Fehlt sie oder ist sie defekt, verarbeitet Node.js die PNG unter karte.url.
+3. Karten-Pixelanalyse, Überlagerungen und Tiererkennung bleiben erhalten.
+4. index.html wird wie bisher per Doppelklick geöffnet (kein Webserver nötig).
+5. Original-PNGs müssen NICHT in der Share-ZIP enthalten sein.
+
+INSTALLATION (im bestehenden PlanetZoo2-Projekt)
+1. Projektordner sichern.
+2. Patch-ZIP im Projekt-Hauptordner entpacken und gleichnamige Dateien ersetzen.
+   NICHT den Ordner assets/daten/ mit eigenen Bildern oder Tierdaten löschen.
+3. Im Terminal zum PlanetZoo2-Ordner wechseln und ausführen:
+
+       npm run build:all
+
+4. Auf die Ausgabe "Pixelkarten: ... von 130 Tier-JSONs" achten.
+   Ist die Anzahl 0 oder wird der Build abgebrochen, liegt noch kein
+   fertiges Browser-Bundle mit deinen Kartendaten vor. Fehlertext lesen.
+5. Danach index.html im Dateimanager per Doppelklick öffnen.
+   Links Tiere auswählen und Überlagerungen/Rechtsklick testen.
+
+WICHTIG: Dieses Patch-Archiv enthält ABSICHTLICH keine echten Zoopedia-PNGs
+und keine daraus erzeugten echten Tierpixelmasken. Diese lagen nicht in den
+hochgeladenen Dateien, und der reale Frontier-Bildserver war in meiner
+Testumgebung nicht erreichbar. Schritt 3 ist deshalb auf deinem PC zwingend.
+
+WIE FUNKTIONIERT DAS MIT DOPPELKLICK?
+Der Bildserver kann seine PNG an den Browser ausliefern. Ohne CORS erlaubt
+Chrome aber NICHT, die fremden Pixel über Canvas/getImageData auszulesen.
+Das ist eine technische Sicherheitssperre und lässt sich nicht durch das
+Austauschen eines Bildpfads umgehen.
+
+Darum liest Node.js beim Build die lokalen PNGs oder Online-Links und
+speichert exakt die Verbreitungspixel (540 x 267, 0/1-Maske) in
+assets/js/map/generated/mapMasks.js. Das Browser-Bundle bettet diese
+Masken ein und kann sie später jederzeit beim Doppelklick pixelgenau
+überlagern. Originalbilder werden nicht ins Bundle hineinkopiert.
+
+ZUSÄTZLICHE BEFEHLE
+- Nach neuen Tieren / geänderten URLs:  npm run build:all
+- Neu einlesen, obwohl URL gleich ist:  node tools/build-map-masks.js --refresh
+  danach:                               npm run build:browser
+- Share-ZIP mit aktualisierten Masken: ./tools/share-zip.sh
+- Offline-Share, wenn Masken früher erzeugt: PZ_MAPS_OFFLINE=1 ./tools/share-zip.sh
+
+GETESTET
+- Zwei synthetische Karten (lokale PNG + externe URL ohne CORS-Freigabe): OK
+- Pixelgenaue Überlappung, Farben, Transparenz: OK
+- Nachfolgebuild ohne Verbindung mit zuvor gespeicherter URL-Maske: OK
+- Defekte lokale PNG faellt auf die URL zurueck: OK
+- Echte Frontier-Karten: noch NICHT getestet (in dieser Testumgebung nicht
+  erreichbar). Vollständiger Browser-Test im Testsystem technisch blockiert.
+
+SICHERHEIT/RECHTE
+Der Discord-Bot und seine Zugangsdaten werden vom Patch nicht angefasst.
+Beachte: Auch aus fremden Bildern abgeleitete Kartenmasken können
+urheberrechtlich relevant sein. Vor einer öffentlichen Verteilung bitte
+zuerst die ausdrückliche Freigabe von Frontier klären.
+
+Ausführliche Dokumentation: anleitungen/KARTEN-PIXELMASKEN.md

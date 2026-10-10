@@ -262,15 +262,15 @@ function getNoMapText() {
   const language = getLanguage();
 
   const text = {
-    de: "Noch keine lokale PNG-Karte",
-    en: "No local PNG map yet",
-    "en-US": "No local PNG map yet",
-    es: "Aún no hay mapa PNG local",
-    fr: "Pas encore de carte PNG locale",
-    it: "Nessuna mappa PNG locale",
-    "pt-BR": "Ainda sem mapa PNG local",
-    ja: "ローカルPNGマップ未登録",
-    "zh-Hans": "尚无本地PNG地图",
+    de: "Keine auswertbare Verbreitungskarte",
+    en: "No analyzable distribution map",
+    "en-US": "No analyzable distribution map",
+    es: "No hay mapa de distribución analizable",
+    fr: "Aucune carte de répartition analysable",
+    it: "Nessuna mappa di distribuzione analizzabile",
+    "pt-BR": "Nenhum mapa de distribuição analisável",
+    ja: "解析可能な分布図がありません",
+    "zh-Hans": "没有可分析的分布地图",
   };
 
   return text[language] ?? text.de;

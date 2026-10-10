@@ -84,6 +84,12 @@ export async function init() {
     signal,
   });
 
+  // Aktualisiert den Listenstatus, wenn eine über CORS lesbare Karte
+  // erst nach dem ersten Rendern geladen wurde.
+  document.addEventListener("mapMasksUpdated", renderListe, {
+    signal,
+  });
+
   document.addEventListener("toolEinstellungenChanged", renderListe, {
     signal,
   });
