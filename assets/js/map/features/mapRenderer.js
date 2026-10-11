@@ -9,6 +9,8 @@
 
 import { getLanguage } from "../../features/language.js";
 
+import { setTierAuswahl } from "../../features/tierAuswahl.js";
+
 import { getTierName } from "./tierListe.js";
 
 import { MAP_MASKS, LAND_MASK } from "../generated/mapMasks.js";
@@ -75,6 +77,10 @@ export async function initMapRenderer(tiere, signal) {
   const selectedInfo = document.querySelector("[data-map-selected-info]");
 
   const selectedCount = document.querySelector("[data-map-selected-count]");
+
+  const selectPointAnimalsButton = document.querySelector(
+    "[data-map-select-point-animals]",
+  );
 
   const hoverCount = document.querySelector("[data-map-hover-count]");
 
@@ -475,6 +481,21 @@ export async function initMapRenderer(tiere, signal) {
       signal,
     });
 
+  // Die angezeigten Tiere am festgehaltenen Kartenpunkt als neue globale
+  // Auswahl übernehmen. Alle anderen Tiere werden dadurch abgewählt.
+  selectPointAnimalsButton?.addEventListener(
+    "click",
+    () => {
+      if (!selectedPoint) return;
+
+      const hits = getHitsAtPoint(selectedPoint);
+      if (!hits.length) return;
+
+      setTierAuswahl(hits.map((tier) => tier.id));
+    },
+    { signal },
+  );
+
   /* ==================================== */
   /* RENDERN                             */
   /* ==================================== */
@@ -572,6 +593,9 @@ export async function initMapRenderer(tiere, signal) {
     // Dieselbe Trefferliste steuert die Tiernamen UND den Zähler.
     // So zählen nur Tiere mit ausgewählter, gültiger Pixelmaske am Punkt.
     const hits = point ? getHitsAtPoint(point) : [];
+    if (mode === "selected" && selectPointAnimalsButton) {
+      selectPointAnimalsButton.disabled = hits.length === 0;
+    }
     const countElement = mode === "selected" ? selectedCount : hoverCount;
     if (countElement) {
       const text = point ? getPointCountText(hits.length) : "–";

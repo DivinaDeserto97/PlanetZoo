@@ -1011,12 +1011,34 @@
           >
             Ausgewählter Punkt
           </strong>
-          <output
-            class="map-point-info__count"
-            data-map-selected-count
-            aria-live="polite"
-            >–</output
-          >
+          <div class="map-point-info__actions">
+            <button
+              class="map-point-info__select-button"
+              type="button"
+              data-map-select-point-animals
+              disabled
+            >
+              <span
+                data-i18n
+                data-de="Nur diese Tiere auswählen"
+                data-en="Select only these animals"
+                data-en-US="Select only these animals"
+                data-es="Seleccionar solo estos animales"
+                data-fr="Sélectionner uniquement ces animaux"
+                data-it="Seleziona solo questi animali"
+                data-pt-BR="Selecionar apenas estes animais"
+                data-ja="この動物だけを選択"
+                data-zh-Hans="仅选择这些动物"
+                >Nur diese Tiere auswählen</span
+              >
+            </button>
+            <output
+              class="map-point-info__count"
+              data-map-selected-count
+              aria-live="polite"
+              >–</output
+            >
+          </div>
         </div>
 
         <div data-map-selected-info>

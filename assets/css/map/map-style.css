@@ -386,6 +386,30 @@
   min-width: 0;
 }
 
+.map-point-info__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: var(--abstand-2);
+}
+
+.map-point-info__select-button {
+  min-height: 27px;
+  padding: 3px var(--abstand-2);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.map-point-info__select-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.map-point-info__select-button:disabled:hover {
+  background-color: var(--farbe-element);
+}
+
 .map-point-info__count {
   flex: 0 0 auto;
   color: var(--farbe-text-zusatz);
