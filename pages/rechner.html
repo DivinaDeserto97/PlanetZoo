@@ -1,69 +1,118 @@
-<!-- ANFÄNGER-HINWEIS – pages/rechner.html
-     HTML beschreibt die sichtbare Seitenstruktur. Logik liegt überwiegend
-     unter assets/js, Gestaltung unter assets/css. -->
-<section class="calculator-page">
-  <header>
-    <p
-      class="calculator-page__eyebrow"
-      data-i18n
-      data-de="Gemeinsame Tierauswahl"
-      data-en="Shared animal selection"
-      data-en-US="Shared animal selection"
-      data-es="Selección compartida de animales"
-      data-fr="Sélection d’animaux partagée"
-      data-it="Selezione animali condivisa"
-      data-pt-BR="Seleção compartilhada de animais"
-      data-ja="共通の動物選択"
-      data-zh-Hans="共享动物选择"
+<!-- Gehegerechner. Tierauswahl wird seitenübergreifend mit tierAuswahl.js geteilt. -->
+<section class="calculator-page" data-calculator-page>
+  <header class="calculator-header">
+    <div>
+      <p class="calculator-page__eyebrow">GEMEINSAME TIERAUSWAHL</p>
+      <h1>Gehegerechner</h1>
+      <p>
+        Wähle Tierarten, lege Männchen und Weibchen fest und prüfe Flächen,
+        Gruppengrössen, Beziehungen und Gehegeabtrennung.
+      </p>
+    </div>
+    <span class="calculator-note"
+      >Datenbasis: Planet Zoo 2 Tools · funktioniert lokal</span
     >
-      Gemeinsame Tierauswahl
-    </p>
-    <h1
-      data-i18n
-      data-de="Rechner"
-      data-en="Calculator"
-      data-en-US="Calculator"
-      data-es="Calculadora"
-      data-fr="Calculateur"
-      data-it="Calcolatore"
-      data-pt-BR="Calculadora"
-      data-ja="計算機"
-      data-zh-Hans="计算器"
-    >
-      Rechner
-    </h1>
-    <p
-      data-i18n
-      data-de="Der eigentliche Rechner kommt später. Die Übergabe der ausgewählten Tiere ist bereits vorbereitet."
-      data-en="The actual calculator comes later. The transfer of the selected animals is already prepared."
-      data-en-US="The actual calculator comes later. The transfer of the selected animals is already prepared."
-      data-es="La calculadora llegará más adelante. La transferencia de los animales seleccionados ya está preparada."
-      data-fr="Le calculateur viendra plus tard. Le transfert des animaux sélectionnés est déjà préparé."
-      data-it="Il calcolatore verrà aggiunto in seguito. Il passaggio degli animali selezionati è già pronto."
-      data-pt-BR="A calculadora será adicionada depois. A transferência dos animais selecionados já está pronta."
-      data-ja="計算機本体は後で追加します。選択した動物の引き継ぎはすでに準備済みです。"
-      data-zh-Hans="实际计算器稍后添加。已选择动物的传递功能已经准备好。"
-    >
-      Der eigentliche Rechner kommt später. Die Übergabe der ausgewählten Tiere
-      ist bereits vorbereitet.
-    </p>
   </header>
-
-  <div class="calculator-page__selection">
-    <h2
-      data-i18n
-      data-de="Aktuell ausgewählt"
-      data-en="Currently selected"
-      data-en-US="Currently selected"
-      data-es="Seleccionados actualmente"
-      data-fr="Actuellement sélectionnés"
-      data-it="Attualmente selezionati"
-      data-pt-BR="Selecionados atualmente"
-      data-ja="現在の選択"
-      data-zh-Hans="当前选择"
-    >
-      Aktuell ausgewählt
-    </h2>
-    <div data-calculator-animal-list></div>
+  <div class="calculator-layout">
+    <aside class="calculator-panel calculator-selection">
+      <div class="calculator-panel__heading">
+        <h2>Tierauswahl</h2>
+        <span data-calculator-count>0 Tiere</span>
+      </div>
+      <p class="calculator-muted">
+        Die Auswahl bleibt mit Karte, Nahrungsnetz und Infotafel synchron.
+      </p>
+      <label class="calculator-field"
+        >Tier suchen
+        <input
+          type="search"
+          data-calculator-search
+          placeholder="Deutscher oder wissenschaftlicher Name"
+        />
+      </label>
+      <div class="calculator-filter-grid">
+        <label class="calculator-field"
+          >Gehegetyp<select data-calculator-filter="gehegetyp">
+            <option value="">Alle</option>
+          </select></label
+        >
+        <label class="calculator-field"
+          >Kontinent<select data-calculator-filter="kontinent">
+            <option value="">Alle</option>
+          </select></label
+        >
+        <label class="calculator-field"
+          >Biom<select data-calculator-filter="biome">
+            <option value="">Alle</option>
+          </select></label
+        >
+        <label class="calculator-field"
+          >Schutzstatus<select data-calculator-filter="schutzstatus">
+            <option value="">Alle</option>
+          </select></label
+        >
+        <label class="calculator-field"
+          >Edition<select data-calculator-filter="edition">
+            <option value="">Alle</option>
+          </select></label
+        >
+        <label class="calculator-field"
+          >Anzeigen<select data-calculator-selected-only>
+            <option value="">Alle Tiere</option>
+            <option value="1">Nur ausgewählte</option>
+          </select></label
+        >
+      </div>
+      <div class="calculator-actions">
+        <button type="button" data-calculator-select-visible>
+          Gefilterte auswählen</button
+        ><button type="button" data-calculator-clear>Alle abwählen</button>
+      </div>
+      <div
+        class="calculator-pick-list"
+        data-calculator-pick-list
+        aria-label="Tiere auswählen"
+      ></div>
+    </aside>
+    <div class="calculator-results">
+      <section class="calculator-panel">
+        <div class="calculator-panel__heading">
+          <h2>Dein Gehege</h2>
+          <span data-calculator-selected-count>0 Arten</span>
+        </div>
+        <p class="calculator-muted">
+          Pro Art die Anzahl eintragen. Die Werte werden auf diesem Gerät
+          gespeichert.
+        </p>
+        <div data-calculator-animal-list class="calculator-species"></div>
+      </section>
+      <section class="calculator-panel">
+        <h2>Flächenbedarf</h2>
+        <p class="calculator-muted">
+          Je Flächenart zählt die grösste Anforderung einer Tierart – nicht die
+          Summe aller Arten. Innerhalb einer Art werden zusätzliche Tiere
+          berücksichtigt, soweit Daten vorhanden sind.
+        </p>
+        <div class="calculator-stats" data-calculator-areas></div>
+        <p class="calculator-notice" data-calculator-areas-notice></p>
+      </section>
+      <section class="calculator-panel">
+        <h2>Räuber, Beute, Konkurrenz &amp; Nutzen</h2>
+        <p class="calculator-muted">
+          Verbindungen stammen direkt aus dem Nahrungsnetz. Keine bekannte
+          Verbindung bedeutet nicht automatisch, dass eine Vergesellschaftung
+          sicher ist.
+        </p>
+        <div data-calculator-relations></div>
+      </section>
+      <section class="calculator-panel">
+        <h2>Gehege trennen &amp; Besucher</h2>
+        <p class="calculator-muted">
+          Hier werden Klettern, Fliegen, Tauchen und Springen berücksichtigt.
+          Für eine konkrete Zaunhöhe braucht es belastbare Bewegungsdaten.
+        </p>
+        <div data-calculator-barriers></div>
+      </section>
+    </div>
   </div>
 </section>

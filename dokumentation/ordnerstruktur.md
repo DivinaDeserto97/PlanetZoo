@@ -20,6 +20,7 @@
     - [BOT.md](../anleitungen/BOT.md)
     - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
     - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
+    - [GEHEGERECHNER.md](../anleitungen/GEHEGERECHNER.md)
     - [KARTEN-PIXELMASKEN.md](../anleitungen/KARTEN-PIXELMASKEN.md)
     - [MEDIEN-EINFUEGEN.md](../anleitungen/MEDIEN-EINFUEGEN.md)
     - [MEDIEN-UND-QUELLEN.md](../anleitungen/MEDIEN-UND-QUELLEN.md)
@@ -1823,6 +1824,7 @@
       - `rechner/`
         - `features/`
         - [rechner.js](../assets/js/rechner/rechner.js)
+        - [rechnerBerechnung.js](../assets/js/rechner/rechnerBerechnung.js)
       - `systematik/`
         - `features/`
           - [systematikDaten.js](../assets/js/systematik/features/systematikDaten.js)

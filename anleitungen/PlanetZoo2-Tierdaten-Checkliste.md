@@ -2,7 +2,7 @@
 
 **Stand:** 11.09.2026  
 **Zoopedia-Bestand:** 104 aktuell bekannte/gelistete Tiere  
-**Projektstand:** Der Bereich `planetZoo2.rechner` ist absichtlich **nicht** Teil dieser Checkliste, weil der Rechner noch nicht fertig ist.
+**Projektstand:** `planetZoo2.rechner` ist für den Gehegerechner vorbereitet, aber in den Tier-JSON-Dateien noch nicht befüllt. Die fehlenden Felder stehen in `GEHEGERECHNER.md`.
 
 > Arbeitsprinzip: **Quelle für Quelle durch alle Tiere**, nicht Tier für Tier durch alle Quellen.  
 > Reihenfolge: **1. Zoopedia → 2. Tierstimmenarchiv → 3. Go Wild → 4. Mission Wildnis → 5. weitere Quellen**.
@@ -33,6 +33,7 @@
 | `IMG`  | `bilder`                        | Hauptbild/Varianten, Dateien, Alt-Text, Metadaten                                                  |
 | `AUD`  | `audio`                         | Lauttypen, Varianten, Audiodateien, Metadaten                                                      |
 | `VID`  | `video`                         | Doku/Verhaltensvideo, Reihe, Titel, Datei, Dauer, Beschreibung                                     |
+| `REC`  | `planetZoo2.rechner`            | Gehegeflächen, Spiel-Gruppengrenzen, Fortbewegung, Besucherzugang (aktuell noch fehlend)           |
 | `SRC`  | `quellen`                       | Quellenobjekt und korrekte Quellen-IDs                                                             |
 
 ## Welche Quelle soll was liefern?
