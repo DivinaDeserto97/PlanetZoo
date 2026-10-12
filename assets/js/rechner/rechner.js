@@ -25,6 +25,7 @@ const STORAGE_KEY = "planetZoo2-gehegerechner-v1";
 const AREA_LABELS = {
   land: "Landfläche",
   wasser: "Wasserfläche",
+  tauchflaeche: "Tauchfläche (tiefes Wasser)",
   klettern: "Kletterfläche",
 };
 const MOVEMENT_LABELS = {
@@ -55,6 +56,7 @@ const WARN_RELATIONS = new Set([
 let controller = null;
 let tiere = [];
 let state = { mengen: {}, daten: {} };
+const aufgeklappteTiere = new Set();
 
 function leseZustand() {
   try {
@@ -89,10 +91,11 @@ function label(tier) {
 }
 function menge(id) {
   const eintrag = state.mengen[id];
-  if (!eintrag) return { maennchen: 1, weibchen: 1 };
+  if (!eintrag) return { maennchen: 1, weibchen: 1, jungtiere: 0 };
   return {
     maennchen: pruefeMenge(eintrag.maennchen),
     weibchen: pruefeMenge(eintrag.weibchen),
+    jungtiere: pruefeMenge(eintrag.jungtiere ?? 0),
   };
 }
 function pruefeMenge(wert) {
@@ -112,7 +115,8 @@ function erstelleEintraege() {
         name: label(tier),
         maennchen: m.maennchen,
         weibchen: m.weibchen,
-        anzahl: m.maennchen + m.weibchen,
+        jungtiere: m.jungtiere,
+        anzahl: m.maennchen + m.weibchen + m.jungtiere,
         rechner: getRechnerDaten(tier, state.daten[tier.id]),
       };
     });
@@ -225,6 +229,44 @@ function renderAuswahl() {
   }
 }
 
+function gruppenPruefung(e) {
+  const gruppe = sozialeGruppen(e.tier, e.rechner);
+  // Gruppengrenzen beschreiben vorläufig erwachsene Tiere;
+  // Jungtiere zählen jedoch stets bei den Flächen mit.
+  const erwachsene = e.maennchen + e.weibchen;
+  return {
+    gruppe,
+    erwachsene,
+    zuWenig: gruppe.min !== null && erwachsene < gruppe.min,
+    zuViele: gruppe.max !== null && erwachsene > gruppe.max,
+  };
+}
+
+function aktualisiereGruppenStatus(e) {
+  const { gruppe, erwachsene, zuWenig, zuViele } = gruppenPruefung(e);
+  const grund = [
+    `Gruppe: ${gruppe.min ?? "?"} – ${gruppe.max ?? "?"}`,
+    `${erwachsene} Erwachsene + ${e.jungtiere} Jungtiere`,
+    zuWenig ? `Noch ${gruppe.min - erwachsene} Erwachsene bis zum Minimum` : "",
+    zuViele ? `${erwachsene - gruppe.max} Erwachsene über dem Maximum` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  const status = document.querySelector(
+    `[data-calculator-group-status="${e.tier.id}"]`,
+  );
+  text(status, grund);
+  status?.classList.toggle("calculator-danger-text", zuWenig || zuViele);
+  const card = document.querySelector(
+    `[data-calculator-species-id="${e.tier.id}"]`,
+  );
+  card?.classList.toggle("calculator-has-problem", zuWenig || zuViele);
+  text(
+    document.querySelector(`[data-calculator-group-source="${e.tier.id}"]`),
+    gruppe.quelle,
+  );
+}
+
 function renderTiere(eintraege) {
   const liste = document.querySelector("[data-calculator-animal-list]");
   if (!liste) return;
@@ -244,17 +286,57 @@ function renderTiere(eintraege) {
     return;
   }
   for (const e of eintraege) {
+    const { gruppe } = gruppenPruefung(e);
     const card = el("article", "calculator-species-card");
-    const heading = el("div", "calculator-species-title");
-    const title = el("div");
+    card.dataset.calculatorSpeciesId = e.tier.id;
+    const header = el("div", "calculator-species-title");
+    const title = el("div", "calculator-species-name");
     title.append(
       el("strong", "", e.name),
       el("small", "calculator-muted", e.tier.datenId ?? ""),
     );
+    const toolbar = el("div", "calculator-species-buttons");
+    for (const [art, wert] of [
+      ["min", gruppe.min],
+      ["max", gruppe.max],
+    ]) {
+      const button = el(
+        "button",
+        "calculator-limit-button",
+        art === "min" ? "Min" : "Max",
+      );
+      button.type = "button";
+      button.disabled = wert === null;
+      button.dataset.calcLimit = art;
+      button.dataset.id = e.tier.id;
+      button.title =
+        wert === null
+          ? "Keine Gruppengrenze vorhanden"
+          : `${wert} Erwachsene einstellen (${gruppe.quelle})`;
+      toolbar.append(button);
+    }
     const remove = el("button", "calculator-button-subtle", "Entfernen ×");
     remove.type = "button";
     remove.dataset.calcRemove = e.tier.id;
-    heading.append(title, remove);
+    const toggle = el(
+      "button",
+      "calculator-toggle-button",
+      aufgeklappteTiere.has(e.tier.id) ? "Zuklappen ▲" : "Aufklappen ▼",
+    );
+    toggle.type = "button";
+    toggle.dataset.calcToggle = e.tier.id;
+    toggle.setAttribute(
+      "aria-expanded",
+      String(aufgeklappteTiere.has(e.tier.id)),
+    );
+    toggle.setAttribute("aria-controls", `rechner-details-${e.tier.id}`);
+    toolbar.append(remove, toggle);
+    header.append(title, toolbar);
+    const status = el("div", "calculator-group-status");
+    status.dataset.calculatorGroupStatus = e.tier.id;
+    const details = el("div", "calculator-species-body");
+    details.id = `rechner-details-${e.tier.id}`;
+    details.hidden = !aufgeklappteTiere.has(e.tier.id);
     const zeile = el("div", "calculator-group-controls");
     zeile.append(
       nummerEingabe("♂ Männchen", e.maennchen, {
@@ -265,31 +347,18 @@ function renderTiere(eintraege) {
         calcSex: "weibchen",
         id: e.tier.id,
       }),
+      nummerEingabe("Jungtiere", e.jungtiere, {
+        calcSex: "jungtiere",
+        id: e.tier.id,
+      }),
     );
-    const gruppe = sozialeGruppen(e.tier, e.rechner);
-    const groupText = [
-      `Gruppe: ${gruppe.min === null ? "?" : gruppe.min} – ${gruppe.max === null ? "?" : gruppe.max}`,
-      `Aktuell: ${e.anzahl}`,
-      gruppe.min !== null && e.anzahl < gruppe.min
-        ? `Noch ${gruppe.min - e.anzahl} bis zum Minimum`
-        : "",
-      gruppe.max !== null && e.anzahl > gruppe.max
-        ? `${e.anzahl - gruppe.max} über dem Maximum`
-        : "",
-    ]
-      .filter(Boolean)
-      .join(" · ");
-    const status = el("div", "calculator-group-status", groupText);
-    status.dataset.calculatorGroupStatus = e.tier.id;
     const quelle = el("small", "calculator-muted", gruppe.quelle);
     quelle.dataset.calculatorGroupSource = e.tier.id;
+    details.append(zeile, quelle);
     const edit = el("details", "calculator-edit");
-    const sum = el(
-      "summary",
-      "",
-      "Flächen, Fähigkeiten & Besuchersicherheit eintragen",
+    edit.append(
+      el("summary", "", "Flächen, Fähigkeiten & Besuchersicherheit eintragen"),
     );
-    edit.append(sum);
     const fields = el("div", "calculator-edit-grid");
     for (const typ of FLAECHEN) {
       fields.append(
@@ -303,6 +372,12 @@ function renderTiere(eintraege) {
           `${AREA_LABELS[typ]}: je weiterem Tier (m²)`,
           e.rechner.flaechen[typ].jeWeiteresTier,
           { calcEdit: `${typ}.jeWeiteresTier`, id: e.tier.id },
+          { step: "0.1" },
+        ),
+        nummerEingabe(
+          `${AREA_LABELS[typ]}: je Jungtier (m², optional)`,
+          e.rechner.flaechen[typ].jeJungtier,
+          { calcEdit: `${typ}.jeJungtier`, id: e.tier.id },
           { step: "0.1" },
         ),
       );
@@ -329,8 +404,6 @@ function renderTiere(eintraege) {
         e.tier.id,
         "besucherBetretbar",
       ),
-    );
-    fields.append(
       nummerEingabe("Gruppenminimum (Spielwert)", e.rechner.gruppe.min, {
         calcEdit: "gruppe.min",
         id: e.tier.id,
@@ -340,14 +413,18 @@ function renderTiere(eintraege) {
         id: e.tier.id,
       }),
     );
-    const footer = el(
-      "p",
-      "calculator-muted",
-      "Manuelle Werte werden lokal im Browser gespeichert. Für eine dauerhafte Projektangabe planetZoo2.rechner in der Tier-JSON ausfüllen.",
+    edit.append(
+      fields,
+      el(
+        "p",
+        "calculator-muted",
+        "Manuelle Werte bleiben lokal gespeichert. Fehlende Planet-Zoo-2-Werte sind keine bestätigten Spielanforderungen.",
+      ),
     );
-    edit.append(fields, footer);
-    card.append(heading, zeile, status, quelle, edit);
+    details.append(edit);
+    card.append(header, status, details);
     liste.append(card);
+    aktualisiereGruppenStatus(e);
   }
 }
 
@@ -410,36 +487,81 @@ function renderBeziehungen(eintraege) {
     );
     return;
   }
-  for (const pair of paare) {
-    const row = el("div", "calculator-relation");
-    row.append(el("strong", "", `${pair.a} ↔ ${pair.b}`));
-    if (!pair.beziehungen.length) {
+  const bekannte = paare.filter((pair) => pair.beziehungen.length);
+  const unbekannte = paare.filter((pair) => !pair.beziehungen.length);
+  const risiken = bekannte.filter((pair) =>
+    pair.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ)),
+  );
+  text(
+    document.querySelector("[data-calculator-relation-count]"),
+    `${risiken.length} Risikopaare · ${bekannte.length} dokumentiert`,
+  );
+  if (!bekannte.length)
+    liste.append(
+      el(
+        "p",
+        "calculator-muted",
+        "Keine erfasste Beziehung zwischen den aktuell anwesenden Arten. Das bestätigt keine Verträglichkeit.",
+      ),
+    );
+  for (const pair of bekannte.sort(
+    (a, b) =>
+      Number(b.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ))) -
+      Number(a.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ))),
+  )) {
+    const risiko = pair.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ));
+    const row = el(
+      "div",
+      risiko
+        ? "calculator-relation calculator-has-problem"
+        : "calculator-relation",
+    );
+    row.append(
+      el(
+        "strong",
+        risiko ? "calculator-danger-text" : "",
+        `${risiko ? "⚠ " : ""}${pair.a} ↔ ${pair.b}`,
+      ),
+    );
+    for (const rel of pair.beziehungen) {
+      const art = el(
+        "span",
+        WARN_RELATIONS.has(rel.typ)
+          ? "calculator-danger-text"
+          : "calculator-good-text",
+      );
+      const lebensphasen = rel.zielLebensphase.length
+        ? ` · Ziel: ${rel.zielLebensphase.join(", ")}`
+        : "";
+      art.textContent = `${RELATION_LABELS[rel.typ] ?? rel.typ}: ${rel.von} → ${rel.zu} (${rel.lebensphase}${lebensphasen})`;
+      row.append(art, el("small", "calculator-muted", `Quelle: ${rel.quelle}`));
+    }
+    liste.append(row);
+  }
+  if (unbekannte.length) {
+    const details = el("details", "calculator-unknown-relations");
+    details.append(
+      el(
+        "summary",
+        "",
+        `${unbekannte.length} Tierpaare ohne erfasste Beziehung anzeigen`,
+      ),
+    );
+    const content = el("div");
+    for (const pair of unbekannte) {
+      const row = el("div", "calculator-relation");
       row.append(
+        el("strong", "", `${pair.a} ↔ ${pair.b}`),
         el(
           "span",
           "calculator-muted",
-          "Keine Beziehung erfasst (nicht automatisch verträglich)",
+          "Keine Beziehung erfasst – Verträglichkeit unbekannt",
         ),
       );
-    } else {
-      for (const rel of pair.beziehungen) {
-        const art = el(
-          "span",
-          WARN_RELATIONS.has(rel.typ)
-            ? "calculator-warning-text"
-            : "calculator-good-text",
-        );
-        const lebensphasen = rel.zielLebensphase.length
-          ? ` · Ziel: ${rel.zielLebensphase.join(", ")}`
-          : "";
-        art.textContent = `${RELATION_LABELS[rel.typ] ?? rel.typ}: ${rel.von} → ${rel.zu} (${rel.lebensphase}${lebensphasen})`;
-        row.append(
-          art,
-          el("small", "calculator-muted", `Quelle: ${rel.quelle}`),
-        );
-      }
+      content.append(row);
     }
-    liste.append(row);
+    details.append(content);
+    liste.append(details);
   }
 }
 
@@ -454,7 +576,12 @@ function renderAbtrennung(eintraege) {
     return;
   }
   for (const e of eintraege.filter((e) => e.anzahl > 0)) {
-    const card = el("div", "calculator-barrier-item");
+    const card = el(
+      "div",
+      e.rechner.besucherBetretbar === false
+        ? "calculator-barrier-item calculator-has-problem"
+        : "calculator-barrier-item",
+    );
     card.append(el("strong", "", e.name));
     const hints = [];
     const f = e.rechner.fortbewegung;
@@ -501,7 +628,18 @@ function renderAbtrennung(eintraege) {
           : "Besucherzugang nicht bekannt – kein begehbares Gehege als sicher annehmen.",
     );
     const ul = el("ul");
-    for (const hint of hints) ul.append(el("li", "", hint));
+    for (const hint of hints)
+      ul.append(
+        el(
+          "li",
+          /Nicht für ein betretbares Gehege|Flugfähig|Kletterfähig|Schwimmfähig|Springt bis|Springfähig|Taucht:|Kann an Land gehen/.test(
+            hint,
+          )
+            ? "calculator-danger-text"
+            : "",
+          hint,
+        ),
+      );
     card.append(ul);
     liste.append(card);
   }
@@ -524,7 +662,7 @@ function renderAbtrennung(eintraege) {
     liste.prepend(
       el(
         "p",
-        "calculator-warning-text",
+        "calculator-danger-text",
         "Unterschiedliche Gehegetypen in der Auswahl: Prüfe, ob diese Tierarten überhaupt in derselben Anlage gehalten werden können.",
       ),
     );
@@ -544,7 +682,9 @@ function renderAbtrennung(eintraege) {
     liste.prepend(
       el(
         "p",
-        "calculator-warning-text",
+        candidates.some((e) => e.rechner.besucherBetretbar === false)
+          ? "calculator-danger-text"
+          : "calculator-warning-text",
         "Betretbarkeit des gemeinsamen Geheges nicht bestätigt. Alle Arten müssen dafür ausdrücklich als betretbar erfasst sein.",
       ),
     );
@@ -554,35 +694,54 @@ function renderAbtrennung(eintraege) {
 function renderBerechnungen() {
   if (!document.querySelector("[data-calculator-page]")) return;
   const eintraege = erstelleEintraege();
-  // Eingabefelder nicht bei jeder Änderung neu erzeugen: sonst kann der
-  // Browser beim Entfernen des aktiven Feldes einen Blur-Fehler auslösen.
+  // Eingabefelder bei Änderungen nicht neu erzeugen: Fokus und Aufklappzustand bleiben erhalten.
   for (const e of eintraege) {
+    aktualisiereGruppenStatus(e);
     const gruppe = sozialeGruppen(e.tier, e.rechner);
-    const grund = [
-      `Gruppe: ${gruppe.min === null ? "?" : gruppe.min} – ${gruppe.max === null ? "?" : gruppe.max}`,
-      `Aktuell: ${e.anzahl}`,
-      gruppe.min !== null && e.anzahl < gruppe.min
-        ? `Noch ${gruppe.min - e.anzahl} bis zum Minimum`
-        : "",
-      gruppe.max !== null && e.anzahl > gruppe.max
-        ? `${e.anzahl - gruppe.max} über dem Maximum`
-        : "",
-    ]
-      .filter(Boolean)
-      .join(" · ");
-    text(
-      document.querySelector(`[data-calculator-group-status="${e.tier.id}"]`),
-      grund,
+    for (const art of ["min", "max"]) {
+      const button = document.querySelector(
+        `[data-calc-limit="${art}"][data-id="${e.tier.id}"]`,
+      );
+      if (!button) continue;
+      button.disabled = gruppe[art] === null;
+      button.title =
+        gruppe[art] === null
+          ? "Keine Gruppengrenze vorhanden"
+          : `${gruppe[art]} Erwachsene einstellen (${gruppe.quelle})`;
+    }
+  }
+  const risiken = analysiereBeziehungen(eintraege).filter((pair) =>
+    pair.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ)),
+  );
+  const betroffene = new Set(risiken.flatMap((pair) => [pair.a, pair.b]));
+  for (const e of eintraege) {
+    const card = document.querySelector(
+      `[data-calculator-species-id="${e.tier.id}"]`,
     );
-    text(
-      document.querySelector(`[data-calculator-group-source="${e.tier.id}"]`),
-      gruppe.quelle,
+    if (!card) continue;
+    const gruppenfehler = gruppenPruefung(e);
+    card.classList.toggle(
+      "calculator-has-problem",
+      gruppenfehler.zuWenig || gruppenfehler.zuViele || betroffene.has(e.name),
     );
+    let note = card.querySelector("[data-calculator-relation-warning]");
+    if (betroffene.has(e.name)) {
+      if (!note) {
+        note = el(
+          "p",
+          "calculator-danger-text calculator-relation-note",
+          "⚠ Problematische Beziehung zu einer weiteren ausgewählten Art",
+        );
+        note.dataset.calculatorRelationWarning = "1";
+        card.append(note);
+      }
+    } else note?.remove();
   }
   renderFlaechen(eintraege);
   renderBeziehungen(eintraege);
   renderAbtrennung(eintraege);
 }
+
 function renderErgebnisse() {
   if (!document.querySelector("[data-calculator-page]")) return;
   renderTiere(erstelleEintraege());
@@ -631,6 +790,7 @@ export async function init() {
   controller = new AbortController();
   const { signal } = controller;
   state = leseZustand();
+  aufgeklappteTiere.clear();
   tiere = await datenImportieren();
   if (signal.aborted || !document.querySelector("[data-calculator-page]"))
     return;
@@ -671,6 +831,40 @@ export async function init() {
   document.querySelector("[data-calculator-page]")?.addEventListener(
     "click",
     (event) => {
+      const toggle = event.target.closest("[data-calc-toggle]");
+      if (toggle) {
+        const id = toggle.dataset.calcToggle;
+        const body = document.getElementById(`rechner-details-${id}`);
+        if (body) {
+          body.hidden = !body.hidden;
+          if (body.hidden) aufgeklappteTiere.delete(id);
+          else aufgeklappteTiere.add(id);
+          toggle.textContent = body.hidden ? "Aufklappen ▼" : "Zuklappen ▲";
+          toggle.setAttribute("aria-expanded", String(!body.hidden));
+        }
+      }
+      const limit = event.target.closest("[data-calc-limit]");
+      if (limit) {
+        const tier = tiere.find((entry) => entry.id === limit.dataset.id);
+        if (tier) {
+          const grenze = sozialeGruppen(
+            tier,
+            getRechnerDaten(tier, state.daten[tier.id]),
+          );
+          const wert = grenze[limit.dataset.calcLimit];
+          if (wert !== null) {
+            const alt = menge(tier.id);
+            const maennchen = Math.min(alt.maennchen, wert);
+            state.mengen[tier.id] = {
+              ...alt,
+              maennchen,
+              weibchen: Math.max(0, wert - maennchen),
+            };
+            speichereZustand();
+            renderErgebnisse();
+          }
+        }
+      }
       const remove = event.target.closest("[data-calc-remove]");
       if (remove) setTierAusgewaehlt(remove.dataset.calcRemove, false);
       if (event.target.closest("[data-calculator-clear]")) setTierAuswahl([]);

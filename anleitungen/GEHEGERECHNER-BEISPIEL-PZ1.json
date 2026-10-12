@@ -1,0 +1,70 @@
+{
+  "hinweis": "Beispiel-Ausschnitt aus Planet Zoo 1 (Erdferkel), nicht als verifizierte Planet-Zoo-2-Spielwerte übernehmen!",
+  "id": "Orycteropus afer",
+  "planetZoo2": {
+    "rechner": {
+      "quelleSpiel": "Planet Zoo 1 – Beispielwerte, nicht PZ2",
+      "quelleUrl": "https://planetzoopedia.com/zoopedia/",
+      "gruppe": {
+        "min": 1,
+        "max": 2
+      },
+      "flaechen": {
+        "land": {
+          "basis": 330,
+          "jeWeiteresTier": 60,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": 0
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": 0
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": 0
+        }
+      },
+      "fortbewegung": {
+        "fliegen": null,
+        "klettern": null,
+        "tauchen": null,
+        "schwimmen": null,
+        "landgang": null,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    }
+  },
+  "daten": {
+    "ernaehrung": {
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": [
+            {
+              "wert": "Cucumis humifructus",
+              "typ": "pflanze",
+              "beziehung": "herbivorie",
+              "wirkung": "+/-",
+              "bedingung": {
+                "selbst": [],
+                "ziel": []
+              },
+              "quelle": "sanDiegoZoo"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@
     - [BOT.md](../anleitungen/BOT.md)
     - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
     - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
+    - [GEHEGERECHNER-BEISPIEL-PZ1.json](../anleitungen/GEHEGERECHNER-BEISPIEL-PZ1.json)
     - [GEHEGERECHNER.md](../anleitungen/GEHEGERECHNER.md)
     - [KARTEN-PIXELMASKEN.md](../anleitungen/KARTEN-PIXELMASKEN.md)
     - [MEDIEN-EINFUEGEN.md](../anleitungen/MEDIEN-EINFUEGEN.md)

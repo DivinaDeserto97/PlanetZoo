@@ -286,3 +286,115 @@
     flex-wrap: wrap;
   }
 }
+
+/* Kompakte Tierkarten und einklappbare Themen */
+.calculator-species-title {
+  align-items: center;
+  flex-wrap: wrap;
+}
+.calculator-species-name {
+  flex: 1 1 145px;
+}
+.calculator-species-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.calculator-species-buttons button {
+  padding: 6px 9px;
+}
+.calculator-page button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.calculator-species-buttons .calculator-limit-button {
+  border-color: var(--farbe-akzent);
+}
+.calculator-species-body {
+  padding-top: 9px;
+}
+.calculator-species-body[hidden] {
+  display: none;
+}
+.calculator-group-controls {
+  grid-template-columns: repeat(3, minmax(0, 130px));
+}
+.calculator-group-status {
+  margin: 9px 0 0;
+}
+.calculator-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.calculator-section > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.calculator-section > summary::-webkit-details-marker {
+  display: none;
+}
+.calculator-section > summary h2 {
+  margin: 0;
+}
+.calculator-section-icon {
+  margin-left: auto;
+  opacity: 0.7;
+  font-size: 20px;
+}
+.calculator-section:not([open]) .calculator-section-icon {
+  transform: rotate(-90deg);
+}
+.calculator-section-content {
+  margin-top: 12px;
+}
+.calculator-heading-count {
+  font-size: 12px;
+  color: var(--farbe-text-zusatz);
+}
+.calculator-unknown-relations {
+  border-top: 1px solid var(--farbe-linie);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.calculator-unknown-relations summary {
+  cursor: pointer;
+  color: var(--farbe-akzent);
+  font-weight: 700;
+}
+.calculator-danger-text {
+  color: #ff747c !important;
+  font-weight: 650;
+}
+.calculator-has-problem {
+  border: 1px solid #cb4a56 !important;
+  background: rgba(203, 74, 86, 0.09);
+  padding-inline: 12px;
+  border-radius: var(--radius-mittel);
+}
+@media (max-width: 1150px) {
+  .calculator-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 590px) {
+  .calculator-stats {
+    grid-template-columns: 1fr;
+  }
+  .calculator-species-buttons {
+    width: 100%;
+  }
+  .calculator-group-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.calculator-species-title > .calculator-species-buttons {
+  flex-direction: row;
+}
+.calculator-relation-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+}

@@ -81,38 +81,58 @@
           <span data-calculator-selected-count>0 Arten</span>
         </div>
         <p class="calculator-muted">
-          Pro Art die Anzahl eintragen. Die Werte werden auf diesem Gerät
-          gespeichert.
+          Pro Art Min/Max einstellen oder aufklappen, um Männchen, Weibchen und
+          Jungtiere zu bearbeiten. Gruppengrenzen prüfen Erwachsene; Jungtiere
+          zählen bei den Flächen mit.
         </p>
         <div data-calculator-animal-list class="calculator-species"></div>
       </section>
-      <section class="calculator-panel">
-        <h2>Flächenbedarf</h2>
-        <p class="calculator-muted">
-          Je Flächenart zählt die grösste Anforderung einer Tierart – nicht die
-          Summe aller Arten. Innerhalb einer Art werden zusätzliche Tiere
-          berücksichtigt, soweit Daten vorhanden sind.
-        </p>
-        <div class="calculator-stats" data-calculator-areas></div>
-        <p class="calculator-notice" data-calculator-areas-notice></p>
-      </section>
-      <section class="calculator-panel">
-        <h2>Räuber, Beute, Konkurrenz &amp; Nutzen</h2>
-        <p class="calculator-muted">
-          Verbindungen stammen direkt aus dem Nahrungsnetz. Keine bekannte
-          Verbindung bedeutet nicht automatisch, dass eine Vergesellschaftung
-          sicher ist.
-        </p>
-        <div data-calculator-relations></div>
-      </section>
-      <section class="calculator-panel">
-        <h2>Gehege trennen &amp; Besucher</h2>
-        <p class="calculator-muted">
-          Hier werden Klettern, Fliegen, Tauchen und Springen berücksichtigt.
-          Für eine konkrete Zaunhöhe braucht es belastbare Bewegungsdaten.
-        </p>
-        <div data-calculator-barriers></div>
-      </section>
+      <details class="calculator-panel calculator-section" open>
+        <summary>
+          <h2>Flächenbedarf</h2>
+          <span class="calculator-section-icon">▾</span>
+        </summary>
+        <div class="calculator-section-content">
+          <p class="calculator-muted">
+            Land-, Wasser-, Tauch- und Kletterfläche werden getrennt berechnet.
+            Pro Flächenart zählt die grösste Artanforderung, nicht die Summe.
+            Jungtiere benötigen ebenfalls Fläche.
+          </p>
+          <div class="calculator-stats" data-calculator-areas></div>
+          <p class="calculator-notice" data-calculator-areas-notice></p>
+        </div>
+      </details>
+      <details class="calculator-panel calculator-section">
+        <summary>
+          <h2>Räuber, Beute, Konkurrenz &amp; Nutzen</h2>
+          <span
+            data-calculator-relation-count
+            class="calculator-heading-count"
+          ></span
+          ><span class="calculator-section-icon">▾</span>
+        </summary>
+        <div class="calculator-section-content">
+          <p class="calculator-muted">
+            Verbindungen stammen direkt aus dem Nahrungsnetz. Keine bekannte
+            Verbindung bedeutet nicht automatisch, dass eine Vergesellschaftung
+            sicher ist.
+          </p>
+          <div data-calculator-relations></div>
+        </div>
+      </details>
+      <details class="calculator-panel calculator-section">
+        <summary>
+          <h2>Gehege trennen &amp; Besucher</h2>
+          <span class="calculator-section-icon">▾</span>
+        </summary>
+        <div class="calculator-section-content">
+          <p class="calculator-muted">
+            Hier werden Klettern, Fliegen, Tauchen und Springen berücksichtigt.
+            Für eine konkrete Zaunhöhe braucht es belastbare Bewegungsdaten.
+          </p>
+          <div data-calculator-barriers></div>
+        </div>
+      </details>
     </div>
   </div>
 </section>

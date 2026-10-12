@@ -7,7 +7,7 @@ import {
   getTierIds,
 } from "../features/nahrungsBeziehungen.js";
 
-export const FLAECHEN = ["land", "wasser", "klettern"];
+export const FLAECHEN = ["land", "wasser", "tauchflaeche", "klettern"];
 export const BEWEGUNGEN = [
   "fliegen",
   "klettern",
@@ -39,6 +39,7 @@ export function getRechnerDaten(tier, overrides = {}) {
         jeWeiteresTier: zahlOderNull(
           ff[key]?.jeWeiteresTier ?? f[key]?.jeWeiteresTier,
         ),
+        jeJungtier: zahlOderNull(ff[key]?.jeJungtier ?? f[key]?.jeJungtier),
       },
     ]),
   );
@@ -96,17 +97,32 @@ export function berechneFlaechen(eintraege) {
         .filter((e) => e.anzahl > 0)
         .map((e) => {
           const v = e.rechner.flaechen[typ];
-          if (v.basis === null || (e.anzahl > 1 && v.jeWeiteresTier === null)) {
+          const erwachsene = e.maennchen + e.weibchen;
+          const jungtiere = e.jungtiere ?? 0;
+          const weitereErwachsene = Math.max(0, erwachsene - 1);
+          const weitereJungtiere =
+            erwachsene > 0 ? jungtiere : Math.max(0, jungtiere - 1);
+          // Jungtiere brauchen ebenfalls Platz. Ohne speziellen Jungtierwert
+          // gilt die Flächenzunahme für ein weiteres Tier der gleichen Art.
+          const jungtierZuschlag = v.jeJungtier ?? v.jeWeiteresTier;
+          if (
+            v.basis === null ||
+            (weitereErwachsene > 0 && v.jeWeiteresTier === null) ||
+            (weitereJungtiere > 0 && jungtierZuschlag === null)
+          ) {
             return { id: e.tier.id, name: e.name, wert: null };
           }
           return {
             id: e.tier.id,
             name: e.name,
-            wert: v.basis + Math.max(0, e.anzahl - 1) * (v.jeWeiteresTier ?? 0),
+            wert:
+              v.basis +
+              weitereErwachsene * (v.jeWeiteresTier ?? 0) +
+              weitereJungtiere * (jungtierZuschlag ?? 0),
           };
         });
       const bekannt = proArt.filter((e) => e.wert !== null);
-      const groesstes = bekannt.sort((a, b) => b.wert - a.wert)[0] ?? null;
+      const groesstes = [...bekannt].sort((a, b) => b.wert - a.wert)[0] ?? null;
       return [
         typ,
         {
@@ -160,6 +176,23 @@ export function analysiereBeziehungen(eintraege) {
             !kenntTier(beziehung.wert, ziel.tier)
           )
             continue;
+          const zielPhasen = beziehung.bedingung?.ziel ?? [];
+          // Daten zur Prädation von Jungtieren dürfen nicht als aktueller
+          // Gehegekonflikt erscheinen, wenn keine Jungtiere vorhanden sind.
+          if (eintrag.lebensphase === "jungtier" && !(quelle.jungtiere > 0))
+            continue;
+          if (
+            eintrag.lebensphase === "erwachsen" &&
+            quelle.maennchen + quelle.weibchen === 0
+          )
+            continue;
+          if (zielPhasen.includes("jungtier") && !(ziel.jungtiere > 0))
+            continue;
+          if (
+            zielPhasen.includes("erwachsen") &&
+            ziel.maennchen + ziel.weibchen === 0
+          )
+            continue;
           const key = [
             quelle.tier.id,
             ziel.tier.id,
@@ -174,7 +207,7 @@ export function analysiereBeziehungen(eintraege) {
               von: quelle.name,
               zu: ziel.name,
               lebensphase: eintrag.lebensphase,
-              zielLebensphase: beziehung.bedingung?.ziel ?? [],
+              zielLebensphase: zielPhasen,
               quelle: beziehung.quelle ?? "Tierdaten",
             });
           }
