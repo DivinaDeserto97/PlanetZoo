@@ -133,6 +133,12 @@ const TIER_JSON_DATEIEN = [
   "assets/daten/lebewesen/tiere/Babyrousa celebensis/Babyrousa celebensis.json",
   "assets/daten/lebewesen/tiere/Cissa thalassina/Cissa thalassina.json",
   "assets/daten/lebewesen/tiere/Ursus arctos/Ursus arctos horribilis/Ursus arctos horribilis.json",
+  "assets/daten/lebewesen/tiere/Aonyx cinereus/Aonyx cinereus.json",
+  "assets/daten/lebewesen/tiere/Diceros bicornis/Diceros bicornis.json",
+  "assets/daten/lebewesen/tiere/Carcharias taurus/Carcharias taurus.json",
+  "assets/daten/lebewesen/tiere/Cyprinus sp./Cyprinus sp..json",
+  "assets/daten/lebewesen/tiere/Rhinoptera javanica/Rhinoptera javanica.json",
+  "assets/daten/lebewesen/tiere/Arctictis binturong/Arctictis binturong.json",
 ];
 
 /* ======================================== */

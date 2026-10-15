@@ -247,6 +247,18 @@
               - `Antidorcas marsupialis map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Antidorcas marsupialis/videos/.gitkeep>)
+          - `Aonyx cinereus/`
+            - [Aonyx cinereus.json](<../assets/daten/lebewesen/tiere/Aonyx cinereus/Aonyx cinereus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aonyx cinereus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aonyx cinereus/bilder/.gitkeep>)
+              - `Aonyx cinereus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aonyx cinereus/map/.gitkeep>)
+              - `Aonyx cinereus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Aonyx cinereus/videos/.gitkeep>)
           - `Aquarana catesbeianus/`
             - [Aquarana catesbeianus.json](<../assets/daten/lebewesen/tiere/Aquarana catesbeianus/Aquarana catesbeianus.json>)
             - `audio/`
@@ -271,6 +283,18 @@
               - `Aquila chrysaetos map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Aquila chrysaetos/videos/.gitkeep>)
+          - `Arctictis binturong/`
+            - [Arctictis binturong.json](<../assets/daten/lebewesen/tiere/Arctictis binturong/Arctictis binturong.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Arctictis binturong/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Arctictis binturong/bilder/.gitkeep>)
+              - `Arctictis binturong 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Arctictis binturong/map/.gitkeep>)
+              - `Arctictis binturong map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Arctictis binturong/videos/.gitkeep>)
           - `Arothron nigropunctatus/`
             - [Arothron nigropunctatus.json](<../assets/daten/lebewesen/tiere/Arothron nigropunctatus/Arothron nigropunctatus.json>)
             - `audio/`
@@ -463,6 +487,18 @@
               - `Carcharhinus melanopterus map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Carcharhinus melanopterus/videos/.gitkeep>)
+          - `Carcharias taurus/`
+            - [Carcharias taurus.json](<../assets/daten/lebewesen/tiere/Carcharias taurus/Carcharias taurus.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Carcharias taurus/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Carcharias taurus/bilder/.gitkeep>)
+              - `Carcharias taurus 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Carcharias taurus/map/.gitkeep>)
+              - `Carcharias taurus map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Carcharias taurus/videos/.gitkeep>)
           - `Castor fiber/`
             - [Castor fiber.json](<../assets/daten/lebewesen/tiere/Castor fiber/Castor fiber.json>)
             - `audio/`
@@ -631,6 +667,18 @@
               - `Crotalus atrox map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Crotalus atrox/videos/.gitkeep>)
+          - `Cyprinus sp./`
+            - [Cyprinus sp..json](<../assets/daten/lebewesen/tiere/Cyprinus sp./Cyprinus sp..json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cyprinus sp./audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cyprinus sp./bilder/.gitkeep>)
+              - `Cyprinus sp. 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cyprinus sp./map/.gitkeep>)
+              - `Cyprinus sp. map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Cyprinus sp./videos/.gitkeep>)
           - `Danaus plexippus/`
             - [Danaus plexippus.json](<../assets/daten/lebewesen/tiere/Danaus plexippus/Danaus plexippus.json>)
             - `audio/`
@@ -667,6 +715,18 @@
               - `Dendrolagus goodfellowi map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Dendrolagus goodfellowi/videos/.gitkeep>)
+          - `Diceros bicornis/`
+            - [Diceros bicornis.json](<../assets/daten/lebewesen/tiere/Diceros bicornis/Diceros bicornis.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Diceros bicornis/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Diceros bicornis/bilder/.gitkeep>)
+              - `Diceros bicornis 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Diceros bicornis/map/.gitkeep>)
+              - `Diceros bicornis map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Diceros bicornis/videos/.gitkeep>)
           - `Elephas maximus/`
             - [Elephas maximus.json](<../assets/daten/lebewesen/tiere/Elephas maximus/Elephas maximus.json>)
             - `audio/`
@@ -1409,6 +1469,19 @@
               - `Ramphastos toco map.png` _(Medium – lokal / nicht freigegeben)_
             - `videos/`
               - [.gitkeep](<../assets/daten/lebewesen/tiere/Ramphastos toco/videos/.gitkeep>)
+          - `Rhinoptera javanica/`
+            - `Arctictis binturong.webp` _(Medium – lokal / nicht freigegeben)_
+            - [Rhinoptera javanica.json](<../assets/daten/lebewesen/tiere/Rhinoptera javanica/Rhinoptera javanica.json>)
+            - `audio/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Rhinoptera javanica/audio/.gitkeep>)
+            - `bilder/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Rhinoptera javanica/bilder/.gitkeep>)
+              - `Rhinoptera javanica 1.webp` _(Medium – lokal / nicht freigegeben)_
+            - `map/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Rhinoptera javanica/map/.gitkeep>)
+              - `Rhinoptera javanica map.png` _(Medium – lokal / nicht freigegeben)_
+            - `videos/`
+              - [.gitkeep](<../assets/daten/lebewesen/tiere/Rhinoptera javanica/videos/.gitkeep>)
           - `Sagittarius serpentarius/`
             - [Sagittarius serpentarius.json](<../assets/daten/lebewesen/tiere/Sagittarius serpentarius/Sagittarius serpentarius.json>)
             - `audio/`

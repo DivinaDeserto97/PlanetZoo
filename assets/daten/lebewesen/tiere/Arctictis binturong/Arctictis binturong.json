@@ -1,0 +1,486 @@
+{
+  "id": "Arctictis binturong",
+  "identitaet": {
+    "namen": {
+      "de": "Binturong",
+      "en": "Binturong",
+      "en-US": "Binturong",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien"],
+    "biome": ["Tropen"],
+    "schutzstatus": "Gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Viverridae",
+          "gattung": "Arctictis",
+          "art": "Arctictis binturong",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.71,
+          "max": 0.91,
+          "einheit": "m",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 9,
+          "max": 32,
+          "einheit": "kg",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 15,
+          "max": 25,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "Zoopedia",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Kein Wildbestand ausgewiesen.",
+            "en": "No wild count stated."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2.5,
+          "max": 2.5,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 3,
+          "max": 3,
+          "einheit": "monat",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 3,
+          "einheit": "tier",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "spielGruppengroesse",
+          "wert": "group",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 5,
+          "hinweis": {
+            "de": "Gruppengrösse aus der Planet-Zoo-2-Zoopedia; keine automatische Aussage über Geschlechterzusammenstellung.",
+            "en": "Game group size from the Planet Zoo 2 Zoopedia; does not by itself validate sex composition."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Tropen",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Fleisch und Früchte",
+            "quelle": "wikily"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Taxonomische Gliederung der Zoopedia.",
+      "en": "Taxonomy as given by Zoopedia."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "wikily"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "wikily"
+        },
+        {
+          "id": "viverridae",
+          "rang": "familie",
+          "name": "Viverridae",
+          "quelle": "wikily"
+        },
+        {
+          "id": "arctictis",
+          "rang": "gattung",
+          "name": "Arctictis",
+          "quelle": "wikily"
+        },
+        {
+          "id": "arctictis-binturong",
+          "rang": "art",
+          "name": "Arctictis binturong",
+          "quelle": "wikily",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Binturong, auch Marderbär genannt, lebt in den tropischen Wäldern Süd- und Südostasiens. Er hat einen kräftigen Körper, dunkles zottiges Fell und einen langen Greifschwanz. Weibchen werden oft grösser als Männchen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Binturong, auch Marderbär genannt, lebt in den tropischen Wäldern Süd- und Südostasiens. Er hat einen kräftigen Körper, dunkles zottiges Fell und einen langen Greifschwanz. Weibchen werden oft grösser als Männchen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Binturongs sind durch Waldverlust und die Jagd beziehungsweise den Tierhandel gefährdet. Ihr Lebensraum wird insbesondere durch landwirtschaftliche Nutzung zerschnitten.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Binturongs sind überwiegend einzelgängerisch, tolerieren aber Artgenossen. Zur Fortpflanzung können sich Paare und Familiengruppen bilden. Die Tragzeit beträgt etwa drei Monate, ein Wurf umfasst in der Regel ein bis drei Jungtiere.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Binturongs sind gute Kletterer, springen jedoch ungern zwischen Bäumen.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Ihr Duftsekret erinnert an Popcorn.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Als Samenverbreiter helfen sie tropischen Waldpflanzen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Erfasst am 14.10.2026 für Planet Zoo 2 Tools. Die Spieldaten können mit zukünftigen Updates abweichen; besonders Sicherheitsregeln und Gruppenzusammensetzungen sind noch separat zu prüfen.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/04fff45b/Binturong_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Arctictis binturong/map/Arctictis binturong map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvMDRmZmY0NWIvQmludHVyb25nLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjk2MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiODkxYmE5YWQtZWZiMC00OWJmLTk0YWMtOThmODRkMDU3ZDY4In19",
+          "alt": {
+            "de": "Gelber Doktorfisch – Planet Zoo 2",
+            "en": "Yellow Tang – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gelben Doktorfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Yellow Tang."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Arctictis binturong/bilder/Arctictis binturong 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/aa937b9f/Tang_Yellow_illustration.jpg",
+          "alt": {
+            "de": "Gelber Doktorfisch – Zoopedia-Illustration",
+            "en": "Yellow Tang – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gelben Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Yellow Tang illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Arctictis binturong/bilder/Arctictis binturong illustration 1.jpg",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": {
+      "gruppe": {
+        "min": 1,
+        "max": 5
+      },
+      "flaechen": {
+        "land": {
+          "basis": 182,
+          "jeWeiteresTier": 18,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 60,
+          "jeWeiteresTier": 16,
+          "jeJungtier": null
+        }
+      },
+      "fortbewegung": {
+        "fliegen": false,
+        "klettern": true,
+        "tauchen": null,
+        "schwimmen": null,
+        "landgang": true,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    },
+    "haltungsanforderungen": {
+      "quelle": "wikily",
+      "temperaturC": {
+        "min": 18,
+        "max": 33
+      },
+      "salinitaet": null,
+      "barriere": {
+        "staerke": 2,
+        "mindestHoeheMeter": 3,
+        "klettersicherNoetig": true
+      },
+      "gruppe": {
+        "min": 1,
+        "max": 5,
+        "maxMaennchen": 5,
+        "maxWeibchen": 5
+      },
+      "unterstandQuadratmeterProTier": 4
+    },
+    "hinweis": {
+      "de": "Gruppen- und Flächenwerte stammen aus der Zoopedia-Auswertung; Verhalten bei gemischter Haltung und die sichere Besucherführung müssen separat geprüft werden.",
+      "en": "Data documented for later habitat calculator work. Visitor safety has not been verified."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Binturong",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/binturong"
+      },
+      "status": "Werte anhand der sekundären Zoopedia-Auswertung wikily mitgeführt; Primärseite war nicht direkt zugänglich."
+    },
+    "wikily": {
+      "name": "Wikily – Planet Zoo 2 – Binturong",
+      "seiten": {
+        "en": "https://wikily.gg/planet-zoo-2/animals/binturong"
+      }
+    },
+    "projekt": {
+      "name": "Planet Zoo 2 Tools – Datenstand 14.10.2026"
+    }
+  }
+}

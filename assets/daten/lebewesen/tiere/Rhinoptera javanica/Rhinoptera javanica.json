@@ -1,0 +1,535 @@
+{
+  "id": "Rhinoptera javanica",
+  "identitaet": {
+    "namen": {
+      "de": "Javanischer Kuhnasenrochen",
+      "en": "Javanese Cownose Ray",
+      "en-US": "Javanese Cownose Ray",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium"],
+    "kontinente": ["Indischer Ozean", "Pazifischer Ozean"],
+    "biome": ["Offenes Meer", "Riff", "Ästuar"],
+    "schutzstatus": "Stark gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Chondrichthyes",
+          "ordnung": "Myliobatiformes",
+          "familie": "Rhinopteridae",
+          "gattung": "Rhinoptera",
+          "art": "Rhinoptera javanica",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.5,
+          "max": 2,
+          "einheit": "m",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 20,
+          "max": 40,
+          "einheit": "kg",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 15,
+          "max": 20,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Stark gefährdet",
+          "system": "Zoopedia",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Kein Wildbestand ausgewiesen.",
+            "en": "No wild count stated."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 4,
+          "max": 5,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        },
+        {
+          "typ": "weiblich",
+          "min": 5,
+          "max": 7,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 12,
+          "max": 12,
+          "einheit": "monat",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 2,
+          "einheit": "tier",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "spielGruppengroesse",
+          "wert": "group",
+          "minGruppengroesse": 5,
+          "maxGruppengroesse": 40,
+          "hinweis": {
+            "de": "Gruppengrösse aus der Planet-Zoo-2-Zoopedia; keine automatische Aussage über Geschlechterzusammenstellung.",
+            "en": "Game group size from the Planet Zoo 2 Zoopedia; does not by itself validate sex composition."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Offenes Meer",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Riff",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Ästuar",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Muscheln, Krebse und Tintenfische",
+            "quelle": "wikily"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Taxonomische Gliederung der Zoopedia.",
+      "en": "Taxonomy as given by Zoopedia."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "wikily"
+        },
+        {
+          "id": "myliobatiformes",
+          "rang": "ordnung",
+          "name": "Myliobatiformes",
+          "quelle": "wikily"
+        },
+        {
+          "id": "rhinopteridae",
+          "rang": "familie",
+          "name": "Rhinopteridae",
+          "quelle": "wikily"
+        },
+        {
+          "id": "rhinoptera",
+          "rang": "gattung",
+          "name": "Rhinoptera",
+          "quelle": "wikily"
+        },
+        {
+          "id": "rhinoptera-javanica",
+          "rang": "art",
+          "name": "Rhinoptera javanica",
+          "quelle": "wikily",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Stark gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Javanische Kuhnasenrochen lebt in flachen Küstengewässern des Indopazifiks, darunter Buchten, Riffe und Flussmündungen. Seine Brustflossen verleihen ihm die charakteristische rautenförmige Silhouette und die eingekerbte Schnauze erinnert an eine Kuhnase.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Javanische Kuhnasenrochen lebt in flachen Küstengewässern des Indopazifiks, darunter Buchten, Riffe und Flussmündungen. Seine Brustflossen verleihen ihm die charakteristische rautenförmige Silhouette und die eingekerbte Schnauze erinnert an eine Kuhnase.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Art gilt als stark gefährdet. Beifang, gezielte Fischerei und der Verlust wichtiger Küstenlebensräume sind erhebliche Belastungen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Die Rochen schwimmen häufig in grossen Gruppen und suchen gemeinsam nach Muscheln und Krebstieren. Die Embryonen entwickeln sich im Muttertier; nach einer langen Tragzeit bringt das Weibchen wenige selbstständige Jungtiere zur Welt.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Kräftige Kieferplatten zerdrücken Muscheln und Krebse.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Anders als viele Stechrochen besitzt diese Art keinen giftigen Schwanzstachel.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Gemeinsame Nahrungssuche kann verborgene Beutetiere im Sediment freilegen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Erfasst am 14.10.2026 für Planet Zoo 2 Tools. Die Spieldaten können mit zukünftigen Updates abweichen; besonders Sicherheitsregeln und Gruppenzusammensetzungen sind noch separat zu prüfen.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/5f4eda32/Ray_JavaneseCownose_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Rhinoptera javanica/map/Rhinoptera javanica map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNWY0ZWRhMzIvUmF5X0phdmFuZXNlQ293bm9zZS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjo5NjAsImZpdCI6ImNvbnRhaW4ifSwidmVyc2lvbiI6Ijg5MWJhOWFkLWVmYjAtNDliZi05NGFjLTk4Zjg0ZDA1N2Q2OCJ9fQ==",
+          "alt": {
+            "de": "Gelber Doktorfisch – Planet Zoo 2",
+            "en": "Yellow Tang – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gelben Doktorfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Yellow Tang."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Rhinoptera javanica/bilder/Rhinoptera javanica 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/aa937b9f/Tang_Yellow_illustration.jpg",
+          "alt": {
+            "de": "Gelber Doktorfisch – Zoopedia-Illustration",
+            "en": "Yellow Tang – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gelben Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Yellow Tang illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Rhinoptera javanica/bilder/Rhinoptera javanica illustration 1.jpg",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": {
+      "gruppe": {
+        "min": 5,
+        "max": 40
+      },
+      "flaechen": {
+        "land": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 80,
+          "jeWeiteresTier": 15,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        }
+      },
+      "fortbewegung": {
+        "fliegen": false,
+        "klettern": false,
+        "tauchen": true,
+        "schwimmen": true,
+        "landgang": false,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    },
+    "haltungsanforderungen": {
+      "quelle": "wikily",
+      "temperaturC": {
+        "min": 24,
+        "max": 30
+      },
+      "salinitaet": ["Brackwasser", "Salzwasser"],
+      "barriere": {
+        "staerke": 2,
+        "mindestHoeheMeter": 1,
+        "klettersicherNoetig": false
+      },
+      "gruppe": {
+        "min": 5,
+        "max": 40,
+        "maxMaennchen": 40,
+        "maxWeibchen": 40
+      },
+      "unterstandQuadratmeterProTier": null
+    },
+    "hinweis": {
+      "de": "Gruppen- und Flächenwerte stammen aus der Zoopedia-Auswertung; Verhalten bei gemischter Haltung und die sichere Besucherführung müssen separat geprüft werden.",
+      "en": "Data documented for later habitat calculator work. Visitor safety has not been verified."
+    },
+    "beziehungen": {
+      "kompatibel": [],
+      "thriving": [
+        "Arothron nigropunctatus",
+        "Carcharhinus melanopterus",
+        "Caesio teres",
+        "Naso unicornis",
+        "Amphiprion ocellaris",
+        "Balistoides conspicillum",
+        "Coryphaena hippurus",
+        "Epinephelus lanceolatus",
+        "Gnathanodon speciosus",
+        "Eretmochelys imbricata",
+        "Cheilinus undulatus",
+        "Plectorhinchus vittatus",
+        "Stegostoma tigrinum",
+        "Abudefduf vaigiensis",
+        "Platax pinnatus",
+        "Aetobatus ocellatus",
+        "Thunnus orientalis",
+        "Sardinops sagax",
+        "Paracanthurus hepatus",
+        "Symphorichthys spilurus",
+        "Carcharias taurus",
+        "Heniochus diphreutes",
+        "Dascyllus trimaculatus",
+        "Rhinoptera javanica"
+      ],
+      "quelle": "wikily",
+      "hinweis": {
+        "de": "Thriving-Gruppe: erfüllt Spielanforderung, garantiert keine sichere oder dauerhafte Vergesellschaftung.",
+        "en": "Thriving group, not a blanket cohabitation safety guarantee."
+      }
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Javanese Cownose Ray",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/javanese-cownose-ray"
+      },
+      "status": "Werte anhand der sekundären Zoopedia-Auswertung wikily mitgeführt; Primärseite war nicht direkt zugänglich."
+    },
+    "wikily": {
+      "name": "Wikily – Planet Zoo 2 – Javanese Cownose Ray",
+      "seiten": {
+        "en": "https://wikily.gg/planet-zoo-2/animals/javanese-cownose-ray"
+      }
+    },
+    "projekt": {
+      "name": "Planet Zoo 2 Tools – Datenstand 14.10.2026"
+    }
+  }
+}

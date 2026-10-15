@@ -1,0 +1,545 @@
+{
+  "id": "Carcharias taurus",
+  "identitaet": {
+    "namen": {
+      "de": "Sandtigerhai",
+      "en": "Sand Tiger Shark",
+      "en-US": "Sand Tiger Shark",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Aquarium"],
+    "kontinente": [
+      "Atlantischer Ozean",
+      "Indischer Ozean",
+      "Pazifischer Ozean"
+    ],
+    "biome": ["Riff"],
+    "schutzstatus": "Vom Aussterben bedroht"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Chondrichthyes",
+          "ordnung": "Lamniformes",
+          "familie": "Carchariidae",
+          "gattung": "Carcharias",
+          "art": "Carcharias taurus",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 2,
+          "max": 2.5,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 2.2,
+          "max": 3.2,
+          "einheit": "m",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 90,
+          "max": 120,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 110,
+          "max": 159,
+          "einheit": "kg",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 15,
+          "max": 30,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Vom Aussterben bedroht",
+          "system": "Zoopedia",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Kein Wildbestand ausgewiesen.",
+            "en": "No wild count stated."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "maennlich",
+          "min": 4,
+          "max": 7,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "weiblich",
+          "min": 6,
+          "max": 10,
+          "einheit": "jahr",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 9,
+          "max": 9,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 2,
+          "einheit": "tier",
+          "quelle": "planetZoo2"
+        },
+        {
+          "typ": "zwischenGeburten",
+          "min": 27,
+          "max": 27,
+          "einheit": "monat",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "spielGruppengroesse",
+          "wert": "group",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 6,
+          "hinweis": {
+            "de": "Gruppengrösse aus der Planet-Zoo-2-Zoopedia; keine automatische Aussage über Geschlechterzusammenstellung.",
+            "en": "Game group size from the Planet Zoo 2 Zoopedia; does not by itself validate sex composition."
+          },
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Riff",
+          "quelle": "planetZoo2"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Fische und andere Meerestiere",
+            "quelle": "planetZoo2"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Taxonomische Gliederung der Zoopedia.",
+      "en": "Taxonomy as given by Zoopedia."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "chondrichthyes",
+          "rang": "klasse",
+          "name": "Chondrichthyes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "lamniformes",
+          "rang": "ordnung",
+          "name": "Lamniformes",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carchariidae",
+          "rang": "familie",
+          "name": "Carchariidae",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharias",
+          "rang": "gattung",
+          "name": "Carcharias",
+          "quelle": "planetZoo2"
+        },
+        {
+          "id": "carcharias-taurus",
+          "rang": "art",
+          "name": "Carcharias taurus",
+          "quelle": "planetZoo2",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Sandtigerhai (Carcharias taurus) lebt in gemässigten und subtropischen Küstengewässern rund um die Welt. Er hat einen kräftigen graubraunen Körper mit dunklen Flecken, eine helle Unterseite und ein spitzes Maul, aus dem mehrere Reihen langer Zähne sichtbar sind. Weibchen werden bis zu 3,2 m lang.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Sandtigerhai (Carcharias taurus) lebt in gemässigten und subtropischen Küstengewässern rund um die Welt. Er hat einen kräftigen graubraunen Körper mit dunklen Flecken, eine helle Unterseite und ein spitzes Maul, aus dem mehrere Reihen langer Zähne sichtbar sind. Weibchen werden bis zu 3,2 m lang.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Sandtigerhaie sind laut Planet Zoo 2 vom Aussterben bedroht. Die Bestände gingen regional stark zurück. Hauptursachen sind Überfischung, Beifang, Küstenbebauung und Schadstoffe. Die geringe Zahl an Jungtieren erschwert die Erholung der Population.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Sandtigerhaie bilden wechselnde soziale Gruppen und versammeln sich zur Paarung. Männchen konkurrieren in der Fortpflanzungszeit um Weibchen. Nach rund neun Monaten Tragzeit werden nur ein bis zwei lebende Jungtiere geboren, weil die grössten Embryonen ihre Geschwister im Mutterleib fressen. Die Jungtiere leben sofort selbstständig.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Sandtigerhaie sind trotz ihrer auffälligen Zähne meist eher ruhige Schwimmer.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Ihre Embryonen betreiben Adelphophagie, also das Fressen von Geschwisterembryonen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Sandtigerhaie können Luft an der Oberfläche schlucken und damit ihren Auftrieb beeinflussen.",
+          "quelle": "planetZoo2"
+        },
+        {
+          "inhalt": "Jungtiere bilden in geschützten Bereichen gelegentlich Kinderstuben.",
+          "quelle": "planetZoo2"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Erfasst am 14.10.2026 für Planet Zoo 2 Tools. Die Spieldaten können mit zukünftigen Updates abweichen; besonders Sicherheitsregeln und Gruppenzusammensetzungen sind noch separat zu prüfen.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/43ea6bd5/Shark_SandTiger_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Carcharias taurus/map/Carcharias taurus map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvNDNlYTZiZDUvU2hhcmtfU2FuZFRpZ2VyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6ODV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJyZXNpemUiOnsid2lkdGgiOjk2MCwiZml0IjoiY29udGFpbiJ9LCJ2ZXJzaW9uIjoiODkxYmE5YWQtZWZiMC00OWJmLTk0YWMtOThmODRkMDU3ZDY4In19",
+          "alt": {
+            "de": "Sandtigerhai – Planet Zoo 2",
+            "en": "Sand Tiger Shark – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Sandtigerhai aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Sand Tiger Shark."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Carcharias taurus/bilder/Carcharias taurus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/aa937b9f/Tang_Yellow_illustration.jpg",
+          "alt": {
+            "de": "Gelber Doktorfisch – Zoopedia-Illustration",
+            "en": "Yellow Tang – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gelben Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Yellow Tang illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Zebrasoma flavescens/bilder/Zebrasoma flavescens illustration 1.jpg",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": {
+      "gruppe": {
+        "min": 2,
+        "max": 6
+      },
+      "flaechen": {
+        "land": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 420,
+          "jeWeiteresTier": 240,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        }
+      },
+      "fortbewegung": {
+        "fliegen": false,
+        "klettern": false,
+        "tauchen": true,
+        "schwimmen": true,
+        "landgang": false,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    },
+    "haltungsanforderungen": {
+      "quelle": "planetZoo2",
+      "temperaturC": {
+        "min": 16,
+        "max": 28
+      },
+      "salinitaet": ["Salzwasser"],
+      "barriere": {
+        "staerke": 3,
+        "mindestHoeheMeter": 1,
+        "klettersicherNoetig": false
+      },
+      "gruppe": {
+        "min": 2,
+        "max": 6,
+        "maxMaennchen": 6,
+        "maxWeibchen": 6
+      },
+      "unterstandQuadratmeterProTier": null
+    },
+    "hinweis": {
+      "de": "Die Zoopedia nennt „Guests Can Walk Through: true“. Das bedeutet nicht automatisch, dass Besucher ohne Aquariumabtrennung zum Hai gelangen dürfen; deshalb bleibt besucherBetretbar für die Sicherheitsprüfung offen.",
+      "en": "Data documented for later habitat calculator work. Visitor safety has not been verified."
+    },
+    "beziehungen": {
+      "kompatibel": [],
+      "neutral": [
+        "Coryphaena hippurus",
+        "Epinephelus lanceolatus",
+        "Pterois volitans",
+        "Arothron nigropunctatus",
+        "Rhinoptera javanica",
+        "Aetobatus ocellatus",
+        "Carcharhinus melanopterus",
+        "Stegostoma tigrinum",
+        "Symphorichthys spilurus",
+        "Balistoides conspicillum",
+        "Eretmochelys imbricata",
+        "Cheilinus undulatus"
+      ],
+      "quelle": "planetZoo2",
+      "hinweis": {
+        "de": "Die zwölf Arten werden in der Zoopedia als neutral geführt, nicht als förderliche Vergesellschaftung.",
+        "en": "Twelve neutral relationships are listed in Zoopedia, not beneficial interactions."
+      }
+    },
+    "gaesteKoennenDurchlaufenZoopedia": true
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Sand Tiger Shark",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/sand-tiger-shark"
+      },
+      "status": "Quelleninhalt Sandtigerhai vom Nutzer am 14.10.2026 bereitgestellt."
+    },
+    "wikily": {
+      "name": "Wikily – Planet Zoo 2 – Sand Tiger Shark",
+      "seiten": {
+        "en": "https://wikily.gg/planet-zoo-2/animals/sand-tiger-shark"
+      }
+    },
+    "projekt": {
+      "name": "Planet Zoo 2 Tools – Datenstand 14.10.2026"
+    }
+  }
+}

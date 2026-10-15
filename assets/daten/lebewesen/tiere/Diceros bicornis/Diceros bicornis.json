@@ -1,0 +1,498 @@
+{
+  "id": "Diceros bicornis",
+  "identitaet": {
+    "namen": {
+      "de": "Spitzmaulnashorn",
+      "en": "Black Rhinoceros",
+      "en-US": "Black Rhinoceros",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Afrika"],
+    "biome": ["Wüste", "Graslandschaft"],
+    "schutzstatus": "Vom Aussterben bedroht"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Mammalia",
+          "ordnung": "Perissodactyla",
+          "familie": "Rhinocerotidae",
+          "gattung": "Diceros",
+          "art": "Diceros bicornis",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 3,
+          "max": 3.75,
+          "einheit": "m",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 1.4,
+          "max": 1.8,
+          "einheit": "m",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 800,
+          "max": 1400,
+          "einheit": "kg",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 30,
+          "max": 45,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Vom Aussterben bedroht",
+          "system": "Zoopedia",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": 3150,
+          "einheit": "individuen",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "In der Zoopedia genannter Wert, kein aktueller globaler Census.",
+            "en": "Count as reported in Zoopedia."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 7,
+          "max": 7,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 15,
+          "max": 15,
+          "einheit": "monat",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 1,
+          "einheit": "tier",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "spielGruppengroesse",
+          "wert": "group",
+          "minGruppengroesse": 1,
+          "maxGruppengroesse": 3,
+          "hinweis": {
+            "de": "Gruppengrösse aus der Planet-Zoo-2-Zoopedia; keine automatische Aussage über Geschlechterzusammenstellung.",
+            "en": "Game group size from the Planet Zoo 2 Zoopedia; does not by itself validate sex composition."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Wüste",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Graslandschaft",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Blätter, Zweige und Heu",
+            "quelle": "wikily"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Taxonomische Gliederung der Zoopedia.",
+      "en": "Taxonomy as given by Zoopedia."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "wikily"
+        },
+        {
+          "id": "perissodactyla",
+          "rang": "ordnung",
+          "name": "Perissodactyla",
+          "quelle": "wikily"
+        },
+        {
+          "id": "rhinocerotidae",
+          "rang": "familie",
+          "name": "Rhinocerotidae",
+          "quelle": "wikily"
+        },
+        {
+          "id": "diceros",
+          "rang": "gattung",
+          "name": "Diceros",
+          "quelle": "wikily"
+        },
+        {
+          "id": "diceros-bicornis",
+          "rang": "art",
+          "name": "Diceros bicornis",
+          "quelle": "wikily",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Vom Aussterben bedroht"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Das Spitzmaulnashorn lebt in Savannen, Buschland und trockenen Gebieten im östlichen und südlichen Afrika. Die Art trägt zwei Hörner und besitzt eine greiffähige Oberlippe, mit der sie Blätter und Zweige abpflückt.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Das Spitzmaulnashorn lebt in Savannen, Buschland und trockenen Gebieten im östlichen und südlichen Afrika. Die Art trägt zwei Hörner und besitzt eine greiffähige Oberlippe, mit der sie Blätter und Zweige abpflückt.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Das Spitzmaulnashorn ist vom Aussterben bedroht. Wilderei wegen der Hörner und die Zerstörung des Lebensraums sind Hauptprobleme. Schutzgebiete, Anti-Wilderei-Einsätze und Wiederansiedlungen sollen die Bestände stärken.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Spitzmaulnashörner leben meist allein. Mütter begleiten ihre Kälber mehrere Jahre. Nach einer rund 15-monatigen Tragzeit bringt ein Weibchen normalerweise ein Kalb zur Welt. Treffen erwachsene Tiere aufeinander, können Konflikte entstehen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Spitzmaulnashörner ernähren sich bevorzugt von Blättern und Zweigen.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Ihre bewegliche Oberlippe ist an das Abzupfen von Pflanzen angepasst.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Auseinandersetzungen mit Artgenossen können gefährlich werden.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Erfasst am 14.10.2026 für Planet Zoo 2 Tools. Die Spieldaten können mit zukünftigen Updates abweichen; besonders Sicherheitsregeln und Gruppenzusammensetzungen sind noch separat zu prüfen.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/a3e60cce/Rhinoceros_Black_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Diceros bicornis/map/Diceros bicornis map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvYTNlNjBjY2UvUmhpbm9jZXJvc19CbGFjay5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxOTIwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiI4OTFiYTlhZC1lZmIwLTQ5YmYtOTRhYy05OGY4NGQwNTdkNjgifX0=",
+          "alt": {
+            "de": "Gelber Doktorfisch – Planet Zoo 2",
+            "en": "Yellow Tang – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Gelben Doktorfischs aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Yellow Tang."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Diceros bicornis/bilder/Diceros bicornis 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "illustration",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/aa937b9f/Tang_Yellow_illustration.jpg",
+          "alt": {
+            "de": "Gelber Doktorfisch – Zoopedia-Illustration",
+            "en": "Yellow Tang – Zoopedia illustration"
+          },
+          "beschreibung": {
+            "de": "Illustration des Gelben Doktorfischs aus der Planet Zoo 2 Zoopedia.",
+            "en": "Yellow Tang illustration from the Planet Zoo 2 Zoopedia."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "jpg",
+              "pfad": "assets/daten/lebewesen/tiere/Diceros bicornis/bilder/Diceros bicornis illustration 1.jpg",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": {
+      "gruppe": {
+        "min": 1,
+        "max": 3
+      },
+      "flaechen": {
+        "land": {
+          "basis": 770,
+          "jeWeiteresTier": 770,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        }
+      },
+      "fortbewegung": {
+        "fliegen": false,
+        "klettern": false,
+        "tauchen": false,
+        "schwimmen": null,
+        "landgang": true,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    },
+    "haltungsanforderungen": {
+      "quelle": "wikily",
+      "temperaturC": {
+        "min": 14,
+        "max": 41
+      },
+      "salinitaet": null,
+      "barriere": {
+        "staerke": 4,
+        "mindestHoeheMeter": 2,
+        "klettersicherNoetig": false
+      },
+      "gruppe": {
+        "min": 1,
+        "max": 3,
+        "maxMaennchen": 1,
+        "maxWeibchen": 2
+      },
+      "unterstandQuadratmeterProTier": 40
+    },
+    "hinweis": {
+      "de": "Gruppen- und Flächenwerte stammen aus der Zoopedia-Auswertung; Verhalten bei gemischter Haltung und die sichere Besucherführung müssen separat geprüft werden.",
+      "en": "Data documented for later habitat calculator work. Visitor safety has not been verified."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Black Rhinoceros",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/black-rhinoceros"
+      },
+      "status": "Werte anhand der sekundären Zoopedia-Auswertung wikily mitgeführt; Primärseite war nicht direkt zugänglich."
+    },
+    "wikily": {
+      "name": "Wikily – Planet Zoo 2 – Black Rhinoceros",
+      "seiten": {
+        "en": "https://wikily.gg/planet-zoo-2/animals/black-rhinoceros"
+      }
+    },
+    "projekt": {
+      "name": "Planet Zoo 2 Tools – Datenstand 14.10.2026"
+    }
+  }
+}

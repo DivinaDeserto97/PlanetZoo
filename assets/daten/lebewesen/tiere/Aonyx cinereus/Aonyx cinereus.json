@@ -1,0 +1,481 @@
+{
+  "id": "Aonyx cinereus",
+  "identitaet": {
+    "namen": {
+      "de": "Zwergotter",
+      "en": "Asian Small-Clawed Otter",
+      "en-US": "Asian Small-Clawed Otter",
+      "es": "",
+      "fr": "",
+      "it": "",
+      "pt-BR": "",
+      "ja": "",
+      "zh-Hans": ""
+    }
+  },
+  "filter": {
+    "edition": "Hauptspiel",
+    "gehegetyp": ["Gehege - Landlebend"],
+    "kontinente": ["Asien"],
+    "biome": [
+      "Feuchtgebiete",
+      "Tropen",
+      "Seen und Flüsse",
+      "Mangrove",
+      "Ästuar"
+    ],
+    "schutzstatus": "Gefährdet"
+  },
+  "daten": {
+    "taxonomie": {
+      "werte": [
+        {
+          "reich": "Animalia",
+          "stamm": "Chordata",
+          "klasse": "Mammalia",
+          "ordnung": "Carnivora",
+          "familie": "Mustelidae",
+          "gattung": "Aonyx",
+          "art": "Aonyx cinereus",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "koerperlaenge": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 0.72,
+          "max": 0.96,
+          "einheit": "m",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "schulterhoehe": {
+      "werte": [""]
+    },
+    "gewicht": {
+      "werte": [
+        {
+          "typ": "ausgewachsen",
+          "min": 2.7,
+          "max": 5.4,
+          "einheit": "kg",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "lebensspanne": {
+      "werte": [
+        {
+          "typ": "gefangenschaft",
+          "min": 11,
+          "max": 16,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschwindigkeit": {
+      "werte": [""]
+    },
+    "schutzstatus": {
+      "werte": [
+        {
+          "wert": "Gefährdet",
+          "system": "Zoopedia",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "wildpopulation": {
+      "werte": [
+        {
+          "wert": null,
+          "einheit": "",
+          "jahrDerGrundlage": null,
+          "hinweis": {
+            "de": "Kein Wildbestand ausgewiesen.",
+            "en": "No wild count stated."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "geschlechtsreife": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 2,
+          "max": 2,
+          "einheit": "jahr",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "tragzeit": {
+      "werte": [
+        {
+          "typ": "allgemein",
+          "min": 68,
+          "max": 74,
+          "einheit": "tag",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "nachwuchs": {
+      "werte": [
+        {
+          "typ": "jungtiereProWurf",
+          "min": 1,
+          "max": 3,
+          "einheit": "tier",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "sozialeStruktur": {
+      "werte": [
+        {
+          "typ": "spielGruppengroesse",
+          "wert": "group",
+          "minGruppengroesse": 2,
+          "maxGruppengroesse": 15,
+          "hinweis": {
+            "de": "Gruppengrösse aus der Planet-Zoo-2-Zoopedia; keine automatische Aussage über Geschlechterzusammenstellung.",
+            "en": "Game group size from the Planet Zoo 2 Zoopedia; does not by itself validate sex composition."
+          },
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "biome": {
+      "werte": [
+        {
+          "wert": "Feuchtgebiete",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Tropen",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Seen und Flüsse",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Mangrove",
+          "quelle": "wikily"
+        },
+        {
+          "wert": "Ästuar",
+          "quelle": "wikily"
+        }
+      ]
+    },
+    "aktivitaet": {
+      "werte": [""]
+    },
+    "ernaehrung": {
+      "fressverhalten": {
+        "werte": [
+          {
+            "wert": "Kleine Fische und wirbellose Wassertiere",
+            "quelle": "wikily"
+          }
+        ]
+      },
+      "nahrungsnetz": {
+        "jungtier": {
+          "werte": []
+        },
+        "erwachsen": {
+          "werte": []
+        }
+      }
+    }
+  },
+  "systematik": {
+    "hinweis": {
+      "de": "Taxonomische Gliederung der Zoopedia.",
+      "en": "Taxonomy as given by Zoopedia."
+    },
+    "naheVerwandte": [],
+    "evolution": {
+      "hinweis": {
+        "de": "",
+        "en": ""
+      },
+      "knoten": [
+        {
+          "id": "mammalia",
+          "rang": "klasse",
+          "name": "Mammalia",
+          "quelle": "wikily"
+        },
+        {
+          "id": "carnivora",
+          "rang": "ordnung",
+          "name": "Carnivora",
+          "quelle": "wikily"
+        },
+        {
+          "id": "mustelidae",
+          "rang": "familie",
+          "name": "Mustelidae",
+          "quelle": "wikily"
+        },
+        {
+          "id": "aonyx",
+          "rang": "gattung",
+          "name": "Aonyx",
+          "quelle": "wikily"
+        },
+        {
+          "id": "aonyx-cinereus",
+          "rang": "art",
+          "name": "Aonyx cinereus",
+          "quelle": "wikily",
+          "lebensstatus": "lebend",
+          "spiele": ["planetZoo2"],
+          "schutzstatus": "Gefährdet"
+        }
+      ],
+      "aufspaltungen": [],
+      "verbindungen": []
+    }
+  },
+  "texte": {
+    "vorkommen": {
+      "de": [
+        {
+          "inhalt": "Der Zwergotter ist die kleinste Otterart. Er lebt an Flüssen, in Feuchtgebieten und Mangroven Süd- und Südostasiens. Sein braunes Fell, die helle Kehle und die beweglichen Pfoten erleichtern die Nahrungssuche nach Wirbellosen und kleinen Fischen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "uebersicht": {
+      "de": [
+        {
+          "inhalt": "Der Zwergotter ist die kleinste Otterart. Er lebt an Flüssen, in Feuchtgebieten und Mangroven Süd- und Südostasiens. Sein braunes Fell, die helle Kehle und die beweglichen Pfoten erleichtern die Nahrungssuche nach Wirbellosen und kleinen Fischen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "arterhaltung": {
+      "de": [
+        {
+          "inhalt": "Die Art gilt in der Zoopedia als gefährdet. Besonders die Zerstörung von Feuchtgebieten, Wasserverschmutzung und der illegale Handel setzen ihr zu.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "sozialverhaltenUndFortpflanzung": {
+      "de": [
+        {
+          "inhalt": "Zwergotter leben in Familiengruppen, die von einem Elternpaar geführt werden. Die Jungen werden von älteren Geschwistern mitbetreut. Nach einer Tragzeit von etwa 68 bis 74 Tagen kommen meist mehrere Jungtiere zur Welt; sie werden zunächst im Bau versorgt.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "tierfakten": {
+      "de": [
+        {
+          "inhalt": "Zwergotter schliessen beim Schwimmen Ohren und Nasenlöcher.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Sie haben kurze Krallen und ungewöhnlich bewegliche Vorderpfoten.",
+          "quelle": "wikily"
+        },
+        {
+          "inhalt": "Innerhalb einer Familiengruppe kümmert sich auch älterer Nachwuchs um die Jungen.",
+          "quelle": "wikily"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    },
+    "entwicklungshinweis": {
+      "de": [
+        {
+          "inhalt": "Erfasst am 14.10.2026 für Planet Zoo 2 Tools. Die Spieldaten können mit zukünftigen Updates abweichen; besonders Sicherheitsregeln und Gruppenzusammensetzungen sind noch separat zu prüfen.",
+          "quelle": "projekt"
+        }
+      ],
+      "en": [""],
+      "en-US": [""],
+      "es": [""],
+      "fr": [""],
+      "it": [""],
+      "pt-BR": [""],
+      "ja": [""],
+      "zh-Hans": [""]
+    }
+  },
+  "karte": {
+    "url": "https://hosting.zaonce.net/websites/planet-zoo-2/animals/378f470f/Sergeant_IndoPacific_map.png",
+    "dateien": [
+      {
+        "typ": "original",
+        "dateityp": "png",
+        "pfad": "assets/daten/lebewesen/tiere/Abudefduf vaigiensis/map/Abudefduf vaigiensis map.png",
+        "githubFreigabe": false
+      }
+    ],
+    "quelle": "planetZoo2"
+  },
+  "bilder": [
+    {
+      "typ": "hauptbild",
+      "varianten": [
+        {
+          "variante": 1,
+          "quelle": "planetZoo2",
+          "url": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1wbGF0Zm9ybS1ob3N0aW5nIiwia2V5Ijoid2Vic2l0ZXMvcGxhbmV0LXpvby0yL2FuaW1hbHMvM2U1MTAwNzcvT3R0ZXJfQXNpYW5TbWFsbENsYXdlZC5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxOTIwLCJmaXQiOiJjb250YWluIn0sInZlcnNpb24iOiI4OTFiYTlhZC1lZmIwLTQ5YmYtOTRhYy05OGY4NGQwNTdkNjgifX0=",
+          "alt": {
+            "de": "Indo-pazifischer Feldwebelfisch – Planet Zoo 2",
+            "en": "Indo-Pacific Sergeant – Planet Zoo 2"
+          },
+          "beschreibung": {
+            "de": "Offizielles Zoopedia-Hauptbild des Zwergotter aus Planet Zoo 2.",
+            "en": "Official Planet Zoo 2 Zoopedia main image of the Asian Small-Clawed Otter."
+          },
+          "metadaten": [""],
+          "dateien": [
+            {
+              "typ": "original",
+              "dateityp": "webp",
+              "pfad": "assets/daten/lebewesen/tiere/Aonyx cinereus/bilder/Aonyx cinereus 1.webp",
+              "githubFreigabe": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "video": [],
+  "planetZoo2": {
+    "rechner": {
+      "gruppe": {
+        "min": 2,
+        "max": 15
+      },
+      "flaechen": {
+        "land": {
+          "basis": 120,
+          "jeWeiteresTier": 30,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 40,
+          "jeWeiteresTier": 12,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 30,
+          "jeWeiteresTier": 8,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null
+        }
+      },
+      "fortbewegung": {
+        "fliegen": false,
+        "klettern": null,
+        "tauchen": true,
+        "schwimmen": true,
+        "landgang": true,
+        "springen": null
+      },
+      "sprungHoeheMeter": null,
+      "besucherBetretbar": null
+    },
+    "haltungsanforderungen": {
+      "quelle": "wikily",
+      "temperaturC": {
+        "min": 18,
+        "max": 33
+      },
+      "salinitaet": null,
+      "barriere": {
+        "staerke": 2,
+        "mindestHoeheMeter": 1.25,
+        "klettersicherNoetig": false
+      },
+      "gruppe": {
+        "min": 2,
+        "max": 15,
+        "maxMaennchen": 14,
+        "maxWeibchen": 14
+      },
+      "unterstandQuadratmeterProTier": 5
+    },
+    "hinweis": {
+      "de": "Gruppen- und Flächenwerte stammen aus der Zoopedia-Auswertung; Verhalten bei gemischter Haltung und die sichere Besucherführung müssen separat geprüft werden.",
+      "en": "Data documented for later habitat calculator work. Visitor safety has not been verified."
+    }
+  },
+  "quellen": {
+    "planetZoo2": {
+      "name": "Planet Zoo 2 Zoopedia – Asian Small-Clawed Otter",
+      "seiten": {
+        "en": "https://www.planetzoogame.com/2/zoopedia/asian-small-clawed-otter"
+      },
+      "status": "Werte anhand der sekundären Zoopedia-Auswertung wikily mitgeführt; Primärseite war nicht direkt zugänglich."
+    },
+    "wikily": {
+      "name": "Wikily – Planet Zoo 2 – Asian Small-Clawed Otter",
+      "seiten": {
+        "en": "https://wikily.gg/planet-zoo-2/animals/asian-small-clawed-otter"
+      }
+    },
+    "projekt": {
+      "name": "Planet Zoo 2 Tools – Datenstand 14.10.2026"
+    }
+  }
+}
