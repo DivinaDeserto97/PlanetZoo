@@ -84,6 +84,27 @@ Nach Quellcode- oder HTML-Änderungen immer `npm run build:browser` ausführen, 
 
 **Planet Zoo 1 als Beispiel:** `anleitungen/GEHEGERECHNER-BEISPIEL-PZ1.json` zeigt einen **Ausschnitt** der Aardvark-/Erdferkel-Daten mit PZ1-Anforderungen (330 m² Land + 60 m² je weiterem Tier). Das ist kein geprüfter Planet-Zoo-2-Wert. Zum direkten Einfügen darf nur das `rechner`-Objekt in die bereits existierenden Tierdaten übernommen werden, sofern die Werte für das Zielspiel bestätigt sind. Die ursprünglichen `daten.ernaehrung.nahrungsnetz` bleiben immer erhalten. Als Quellen für das Beispiel dienen https://planetzoopedia.com/zoopedia/ und https://planetzoo.fandom.com/wiki/Aardvark.
 
+## Automatische Trennvorschläge (Oktober 2026)
+
+**Standardvorgehen:** Zuerst Tierarten auswählen, **ohne selbst Zonen oder Übergänge anlegen zu müssen**. Unter „Automatische Trennvorschläge“ werden alle ausgewählten Paare auf bekannte Beziehungen und Fortbewegungsarten geprüft. Das Programm gibt für die Artenpaare in beide Richtungen konkrete Bauideen aus (Kletterweg, Flugweg, Tauch-/Schwimmverbindung, Engstelle, physische Teilgehege). Die frühere Zonenplanung existiert nur noch als optionaler Detailmodus.
+
+Die Paaranalyse liegt in `assets/js/rechner/trennEmpfehlungen.js`. Sie verwendet `profilAusZoopedia` und `paarStatus` aus `zonenLogik.js` sowie vorhandene Tierwerte. `Klettern = wahr` ist eine grundsätzliche Fähigkeit **ohne erfundene Kletterhöhe**; `Fliegen = wahr` ist eine grundsätzliche Fähigkeit **ohne erfundene Flugweite**. Hindernisse und konkrete Landestellen werden über den Bauentwurf berücksichtigt, nicht über frei erfundene Zahlen. Bei **beiden kletterfähigen Arten** ist eine normale Kletterroute keine Trennung; bei **beiden flugfähigen Arten** ist ein einfacher Flugweg keine Trennung.
+
+**Zwei Nachweisstufen:**
+
+- „Bewegungsunterschied belegt“ heisst: das eine Profil belegt eine Fähigkeit, das andere lehnt sie **ausdrücklich** ab. Dies belegt die unterschiedliche Fähigkeit, nicht die Ausbruchssicherheit des konkreten Bauteils. Immer alternative Wege und Jungtiere prüfen.
+- „Im Spiel prüfen“ heisst: eine nützliche Bauvariante wird abgeleitet, aber die Gegenfähigkeit oder die Pathfinding-/Kollisionsgeometrie ist aus den gespeicherten Zoopedia-Angaben nicht bestätigt. `null` ist **unbekannt**, niemals „kann nicht“.
+
+Bei unterschiedlich grossen Arten (Beispiel Binturong und Sonnenbär) wird ein möglicher Engstellen-Zugang für die kleinere Art vorgeschlagen, wenn die dokumentierten Körperlängen eindeutig getrennt sind. Körperlänge ist **keine** Kollisionsbreite und beweist noch nicht, dass ein Tier im Spiel durchpasst. Bei aquatischen und terrestrischen Arten kann ein **gemeinsamer See mit Ufer und Tiefwasser** vorgeschlagen werden, ohne automatisch ein abgeschlossenes Aquarium zu erzwingen. Ob am Ufer beziehungsweise im Wasser Gefahr besteht, muss artbezogen geprüft werden. Temperatur ist kein Sicherheitszaun.
+
+**Aktuell nicht belegbar:** Eine hundertprozentige Freigabe konkreter Bauwerke, wenn nur allgemeine Zoopedia-Daten vorliegen. Dafür fehlen teils explizite Negativfähigkeiten, verlässliche Durchgangsmasse, Jungtier-Wege und Kollisions-/Pathfindingregeln. Der Rechner **nennt diese Lücken**, statt eine funktionierende Trennung zu erfinden.
+
+Test:
+
+```bash
+node --experimental-default-type=module tests/gehegerechner-trennvorschlaege.test.mjs
+```
+
 ## Erweiterung Oktober 2026 – Bewegungs- und Zonenplaner
 
 Die aktuelle Projektversion erweitert den Gehegerechner um **frei anlegbare Tier-, Wasser-, Flug-, Kletter-, Rückzugs- und Besucherzonen**. Diese sind Teil jedes einzeln gespeicherten Gehegeplans. Neue und kopierte Gehege übernehmen die passende Zonenstruktur; die JSON-Sicherung enthält alle Zonen und Übergänge.
@@ -99,7 +120,7 @@ Die aktuelle Projektversion erweitert den Gehegerechner um **frei anlegbare Tier
 ### Dreiwertige Bewegungsauswertung
 
 - **Bestätigt oder nachvollziehbar aus Zoopedia-Anforderungen abgeleitet:** Landbedarf unterstützt Landgang, Kletterflächenbedarf unterstützt Klettern, Flugflächenbedarf unterstützt Fliegen, Aquarien-Tiefwasserbedarf unterstützt Schwimmen/Tauchen. Die angegebenen Flächen **belegen keine konkreten Sprung-, Flug- oder Kletterdistanzen**.
-- **Unbekannt:** fehlende Daten, nicht getestete Hindernisse, Sprungweiten, passierbare Öffnungen und Tauchtiefen. Unbekannt gilt nicht als „Nein“. Ein Übergang kann daher als _möglicherweise erreichbar_ erscheinen.
+- **Unbekannt:** fehlende Daten, nicht getestete Hindernisse, Sprungweiten, passierbare Öffnungen und Tauchtiefen. Unbekannt gilt nicht als „Nein“. Ein Übergang kann daher als *möglicherweise erreichbar* erscheinen.
 - **Vom Nutzer manuell im Spiel getestet:** Ein Übergang zählt erst mit Häkchen „Im Spiel getestet“ als bestätigt; die Fähigkeit der betreffenden Art muss dafür ebenfalls belegt sein. Ein einziger ungeprüfter Alternativweg verhindert die Freigabe einer Besuchersperre.
 
 Ein Ufer, an dem ein Tier trinkt, ist **kein automatischer Zugang zu einem Tiefwasserbereich**. Land-, Schwimm-, Tauch-, Flug- und Kletterbereiche sind getrennte Raumtypen. Durch explizite Verbindungen können Arten mehr als eine Zone erreichen und gemeinsam an einem See leben; ein Aquarium ist nicht automatisch zwingend.
@@ -115,7 +136,7 @@ Ein Ufer, an dem ein Tier trinkt, ist **kein automatischer Zugang zu einem Tiefw
 
 Die numerischen Basis- und Zuwachswerte für 136 Arten stammen aus der vorher erstellten, **nicht pro Tier gegen die offizielle Zoopedia einzeln verifizierten Sekundärübersicht**. Die vier vom Nutzer vorgelegten Zoopedia-Auszüge wurden teilweise direkt überlagert. Zum Beispiel ist die Wasserfläche von **1'577 m² bei exakt 500 erwachsenen Rosaflamingos** als direkt belegter Messpunkt gespeichert; andere Gruppengrössen werden ohne belegten Wasserzuwachs weiter als unbekannt angezeigt. Eine unbekannte Wassertiefe wird nicht erfunden.
 
-**Noch nicht vollständig implementiert:** nachgewiesene Sprung- und Durchgangsgrenzen, Jungtier-Pathfinding, reale Physik/Kollisionen des Spiels, volumetrische Tiefenprüfung, automatische Konstruktion optimaler Gehegetrennungen und durchgängig bestätigte erfolgreiche/neutrale Beziehungen für sämtliche 136 Arten. Die Zoneansicht ist ein datenbasierter Planer, **kein Ersatz für einen Spieltest**.
+**Noch nicht vollständig implementiert:** nachgewiesene Sprung- und Durchgangsgrenzen, Jungtier-Pathfinding, reale Physik/Kollisionen des Spiels, volumetrische Tiefenprüfung, automatisch nachgewiesene sichere Baugeometrien und durchgängig bestätigte erfolgreiche/neutrale Beziehungen für sämtliche 136 Arten. Automatische paarweise Bauvorschläge sind bereits implementiert. Die Zoneansicht ist ein datenbasierter Planer, **kein Ersatz für einen Spieltest**.
 
 ### Entwicklerprüfung
 

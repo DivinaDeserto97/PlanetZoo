@@ -196,7 +196,7 @@ assets/js/rechner/
 assets/css/rechner/
 ```
 
-Der Gehegerechner besitzt Tierauswahl mit Filtern, Gruppenprüfung, Beziehungsauswertung aus dem Nahrungsnetz, Hinweise zu Fortbewegung und Besucherzugang sowie eine Flächenberechnung nach dem Maximalprinzip. Die dafür benötigten Planet-Zoo-2-Spielwerte sind in den vorhandenen Tier-JSON-Dateien noch nicht erfasst; fehlende Werte werden ausdrücklich als unbekannt dargestellt. Für die Eingabe neuer Werte und die Rechenregel siehe `anleitungen/GEHEGERECHNER.md`.
+Der Gehegerechner besitzt mehrere Gehegepläne, Tierauswahl, Gruppenprüfung, Beziehungen sowie **automatische paarweise Trennvorschläge** (z. B. Kletter-, Flug-, Wasser- und mögliche Engstellenlösungen) aus den hinterlegten Tierdaten. Wo Spieldaten fehlen, sind Bauvorschläge ausdrücklich ungeprüft; die zusätzliche manuelle Zonenprüfung ist optional. Vorhandene Zoopedia-Werte sind nicht bei allen Tierarten unabhängig gegen die offizielle Quelle verifiziert. Für die Eingabe neuer Werte und die Rechenregel siehe `anleitungen/GEHEGERECHNER.md`.
 
 ### Kino
 
