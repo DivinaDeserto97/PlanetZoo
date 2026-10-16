@@ -480,7 +480,63 @@
   "audio": [""],
   "video": [""],
   "planetZoo2": {
-    "rechner": null
+    "rechner": {
+      "art": "landgehege",
+      "gruppe": {
+        "min": 2,
+        "max": 8
+      },
+      "flaechen": {
+        "land": {
+          "basis": 300,
+          "jeWeiteresTier": 35,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 210,
+          "jeWeiteresTier": 26,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 45,
+          "jeWeiteresTier": 15,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 5,
+          "jeWeiteresTier": 5,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": -5,
+        "max": 30
+      },
+      "barriere": {
+        "stufe": 2,
+        "hoeheMeter": 1.25,
+        "klettersicher": false
+      },
+      "schutzProTier": 5,
+      "fortbewegung": {},
+      "besucherBetretbar": null,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      }
+    }
   },
   "quellen": {
     "planetZoo2": {

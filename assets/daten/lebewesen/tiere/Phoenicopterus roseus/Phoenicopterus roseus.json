@@ -445,7 +445,107 @@
   "audio": [],
   "video": [],
   "planetZoo2": {
-    "rechner": null,
+    "rechner": {
+      "art": "fluggehege",
+      "gruppe": {
+        "min": 20,
+        "max": 500
+      },
+      "flaechen": {
+        "land": {
+          "basis": 100,
+          "jeWeiteresTier": 6,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": null,
+          "jeWeiteresTier": null,
+          "jeJungtier": null,
+          "messpunkteErwachsen": {
+            "500": 1577
+          },
+          "hinweis": "1577 m² für 500 Erwachsene direkt aus eingefügter Zoopedia; andere Gruppengrössen ohne belegten Wasserzuschlag bleiben unbekannt."
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 60,
+          "jeWeiteresTier": 2,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 2,
+          "jeWeiteresTier": 2,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": 14,
+        "max": 33
+      },
+      "barriere": {
+        "stufe": 1,
+        "hoeheMeter": 1,
+        "klettersicher": null
+      },
+      "schutzProTier": 2,
+      "fortbewegung": {
+        "fliegen": true,
+        "landgang": true,
+        "waten": true
+      },
+      "besucherBetretbar": true,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      },
+      "gruppenTypen": {
+        "gemischt": {
+          "min": 20,
+          "max": 500,
+          "maennchenMax": 499,
+          "weibchenMax": 499
+        },
+        "maennlich": {
+          "min": 20,
+          "max": 500
+        },
+        "weiblich": {
+          "min": 20,
+          "max": 500
+        }
+      },
+      "gelaende": {
+        "Grass_Long": [20, 50],
+        "Sand": [0, 5],
+        "Waterlogged": [20, 100],
+        "Rock": [0, 20],
+        "Soil": [30, 60]
+      },
+      "zoopediaBeziehungen": {
+        "neutral": [
+          "Syncerus caffer caffer",
+          "Sus scrofa",
+          "Cervus elaphus",
+          "Balaeniceps rex"
+        ]
+      },
+      "quelleDirekt": {
+        "art": "Vom Nutzer eingefügte offizielle Planet-Zoo-2-Zoopedia",
+        "stand": "2026-10-16",
+        "hinweis": "Flächen-Grundwerte aus dem Text; Steigerung aus vorheriger Sekundärübersicht, falls nicht direkt ablesbar."
+      }
+    },
     "hinweis": {
       "de": "Die Rechnerwerte werden später separat ergänzt.",
       "en": ""

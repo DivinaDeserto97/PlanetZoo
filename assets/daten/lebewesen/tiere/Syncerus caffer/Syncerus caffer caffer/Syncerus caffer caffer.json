@@ -477,7 +477,112 @@
   "audio": [""],
   "video": [""],
   "planetZoo2": {
-    "rechner": null
+    "rechner": {
+      "art": "landgehege",
+      "gruppe": {
+        "min": 3,
+        "max": 15
+      },
+      "flaechen": {
+        "land": {
+          "basis": 420,
+          "jeWeiteresTier": 90,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 20,
+          "jeWeiteresTier": 10,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 15,
+          "jeWeiteresTier": 15,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": 14,
+        "max": 36
+      },
+      "barriere": {
+        "stufe": 3,
+        "hoeheMeter": 1.25,
+        "klettersicher": false
+      },
+      "schutzProTier": 15,
+      "fortbewegung": {
+        "landgang": true
+      },
+      "besucherBetretbar": false,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      },
+      "gruppenTypen": {
+        "gemischt": {
+          "min": 3,
+          "max": 15,
+          "maennchenMax": 1,
+          "weibchenMax": 14
+        },
+        "maennlich": {
+          "min": 3,
+          "max": 5
+        },
+        "weiblich": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "gelaende": {
+        "Grass": [30, 100],
+        "Grass_Short": [25, 100],
+        "Sand": [0, 30],
+        "Soil": [10, 40],
+        "Rock": [0, 20],
+        "Waterlogged": [0, 10]
+      },
+      "zoopediaBeziehungen": {
+        "neutral": ["Phoenicopterus roseus", "Sus scrofa", "Cervus elaphus"],
+        "erfolgreich": [
+          "Tragelaphus angasii",
+          "Hippotragus niger",
+          "Antidorcas marsupialis",
+          "Eudorcas thomsonii",
+          "Giraffa tippelskirchi",
+          "Giraffa reticulata",
+          "Oryx gazella",
+          "Struthio camelus",
+          "Gyps africanus",
+          "Phacochoerus africanus",
+          "Connochaetes gnou",
+          "Connochaetes taurinus",
+          "Equus quagga"
+        ]
+      },
+      "quelleDirekt": {
+        "art": "Vom Nutzer eingefügte offizielle Planet-Zoo-2-Zoopedia",
+        "stand": "2026-10-16",
+        "hinweis": "Flächen-Grundwerte aus dem Text; Steigerung aus vorheriger Sekundärübersicht, falls nicht direkt ablesbar."
+      }
+    }
   },
   "quellen": {
     "planetZoo2": {

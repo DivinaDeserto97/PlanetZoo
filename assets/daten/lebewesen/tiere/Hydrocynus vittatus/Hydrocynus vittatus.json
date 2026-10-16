@@ -930,7 +930,67 @@
   "audio": [""],
   "video": [""],
   "planetZoo2": {
-    "rechner": null
+    "rechner": {
+      "art": "aquarium",
+      "gruppe": {
+        "min": 1,
+        "max": 5
+      },
+      "flaechen": {
+        "land": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 100,
+          "jeWeiteresTier": 30,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": 22,
+        "max": 30
+      },
+      "salinitaet": ["Freshwater"],
+      "fortbewegung": {
+        "schwimmen": true,
+        "tauchen": true
+      },
+      "besucherBetretbar": false,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      },
+      "gelaende": {},
+      "quelleDirekt": {
+        "art": "Vom Nutzer eingefügte offizielle Planet-Zoo-2-Zoopedia",
+        "stand": "2026-10-16",
+        "hinweis": "Flächen-Grundwerte aus dem Text; Steigerung aus vorheriger Sekundärübersicht, falls nicht direkt ablesbar."
+      }
+    }
   },
   "quellen": {
     "planetZoo2": {

@@ -403,18 +403,18 @@
   "planetZoo2": {
     "rechner": {
       "gruppe": {
-        "min": 15,
-        "max": 30
+        "min": 1,
+        "max": 5
       },
       "flaechen": {
         "land": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
           "jeJungtier": null
         },
         "wasser": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
           "jeJungtier": null
         },
         "tauchflaeche": {
@@ -423,8 +423,18 @@
           "jeJungtier": null
         },
         "klettern": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
           "jeJungtier": null
         }
       },
@@ -437,7 +447,18 @@
         "springen": null
       },
       "sprungHoeheMeter": null,
-      "besucherBetretbar": null
+      "besucherBetretbar": null,
+      "art": "aquarium",
+      "temperaturC": {
+        "min": 18,
+        "max": 25
+      },
+      "salinitaet": ["Freshwater"],
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      }
     },
     "haltungsanforderungen": {
       "quelle": "wikily",

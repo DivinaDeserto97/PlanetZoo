@@ -2,7 +2,7 @@
 <section class="calculator-page" data-calculator-page>
   <header class="calculator-header">
     <div>
-      <p class="calculator-page__eyebrow">GEMEINSAME TIERAUSWAHL</p>
+      <p class="calculator-page__eyebrow">MEHRERE GEHEGE UNABHÄNGIG PLANEN</p>
       <h1>Gehegerechner</h1>
       <p>
         Wähle Tierarten, lege Männchen und Weibchen fest und prüfe Flächen,
@@ -13,6 +13,49 @@
       >Datenbasis: Planet Zoo 2 Tools · funktioniert lokal</span
     >
   </header>
+  <section
+    class="calculator-panel calculator-habitat-manager"
+    aria-label="Gehegepläne verwalten"
+  >
+    <div class="calculator-panel__heading">
+      <h2>Gehegepläne</h2>
+      <span>Nur lokal im Browser gespeichert</span>
+    </div>
+    <div class="calculator-habitat-controls">
+      <label class="calculator-field"
+        >Aktueller Plan
+        <select
+          data-calculator-habitat-select
+          aria-label="Aktuellen Gehegeplan auswählen"
+        ></select>
+      </label>
+      <div class="calculator-actions">
+        <button type="button" data-calculator-habitat-new>
+          + Neues Gehege
+        </button>
+        <button type="button" data-calculator-habitat-clone>Kopieren</button>
+        <button type="button" data-calculator-habitat-rename>Umbenennen</button>
+        <button type="button" data-calculator-habitat-delete>Löschen</button>
+        <button type="button" data-calculator-habitat-export>
+          Pläne sichern (JSON)
+        </button>
+        <button type="button" data-calculator-habitat-import>
+          Sicherung laden
+        </button>
+        <input
+          type="file"
+          accept=".json,application/json"
+          data-calculator-habitat-import-file
+          hidden
+        />
+      </div>
+    </div>
+    <p class="calculator-muted">
+      Jeder Plan hat seine eigenen Tierarten und Tierzahlen. Die
+      Zoopedia-Stammdaten und manuell bearbeiteten Artenwerte gelten für alle
+      Pläne.
+    </p>
+  </section>
   <div class="calculator-layout">
     <aside class="calculator-panel calculator-selection">
       <div class="calculator-panel__heading">
@@ -20,7 +63,10 @@
         <span data-calculator-count>0 Tiere</span>
       </div>
       <p class="calculator-muted">
-        Die Auswahl bleibt mit Karte, Nahrungsnetz und Infotafel synchron.
+        Diese Tierauswahl gilt nur für
+        <strong data-calculator-current-name>das aktuelle Gehege</strong>.
+        Tierarten aus der gemeinsamen Karten-Auswahl kannst du zusätzlich
+        importieren.
       </p>
       <label class="calculator-field"
         >Tier suchen
@@ -64,6 +110,11 @@
         >
       </div>
       <div class="calculator-actions">
+        <button type="button" data-calculator-import-selection>
+          Aus Karte übernehmen
+        </button>
+      </div>
+      <div class="calculator-actions">
         <button type="button" data-calculator-select-visible>
           Gefilterte auswählen</button
         ><button type="button" data-calculator-clear>Alle abwählen</button>
@@ -77,7 +128,7 @@
     <div class="calculator-results">
       <section class="calculator-panel">
         <div class="calculator-panel__heading">
-          <h2>Dein Gehege</h2>
+          <h2>Dein aktuelles Gehege</h2>
           <span data-calculator-selected-count>0 Arten</span>
         </div>
         <p class="calculator-muted">
@@ -94,9 +145,11 @@
         </summary>
         <div class="calculator-section-content">
           <p class="calculator-muted">
-            Land-, Wasser-, Tauch- und Kletterfläche werden getrennt berechnet.
-            Pro Flächenart zählt die grösste Artanforderung, nicht die Summe.
-            Jungtiere benötigen ebenfalls Fläche.
+            Land-, Wasser-, Tauch-, Kletter-, Flug- und Unterschlupffläche
+            werden getrennt berechnet. Bei gemeinsam nutzbaren Flächen zählt pro
+            Flächenart der grösste Artbedarf, nicht die Summe. Räumlich
+            getrennte Zonen müssen zusätzlich eingeplant werden. Jungtiere
+            benötigen ebenfalls Fläche.
           </p>
           <div class="calculator-stats" data-calculator-areas></div>
           <p class="calculator-notice" data-calculator-areas-notice></p>
@@ -118,6 +171,35 @@
             sicher ist.
           </p>
           <div data-calculator-relations></div>
+        </div>
+      </details>
+      <details class="calculator-panel calculator-section" open>
+        <summary>
+          <h2>Tierbewegung &amp; frei planbare Zonen</h2>
+          <span class="calculator-section-icon">▾</span>
+        </summary>
+        <div class="calculator-section-content">
+          <p class="calculator-muted">
+            Bewegung wird aus den Zoopedia-Bedarfsflächen abgeleitet, nicht aus
+            erfundenen Sprung- oder Kletterwerten. Weise jeder Art Startzonen zu
+            und gestalte beliebig viele Übergänge; ungetestete Wege bleiben
+            gelb.
+          </p>
+          <div data-calculator-zones></div>
+        </div>
+      </details>
+      <details class="calculator-panel calculator-section" open>
+        <summary>
+          <h2>Gelände &amp; Temperatur pro Zone</h2>
+          <span class="calculator-section-icon">▾</span>
+        </summary>
+        <div class="calculator-section-content">
+          <p class="calculator-muted">
+            Gemeinsame Bereiche: höchstes Minimum, tiefstes Maximum. Ohne
+            Überschneidung wird eine zusätzliche Zone empfohlen. Temperaturen
+            ersetzen keine sicheren Zäune.
+          </p>
+          <div data-calculator-environment></div>
         </div>
       </details>
       <details class="calculator-panel calculator-section">

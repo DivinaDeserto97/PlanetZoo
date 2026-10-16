@@ -463,7 +463,97 @@
   "audio": [""],
   "video": [""],
   "planetZoo2": {
-    "rechner": null
+    "rechner": {
+      "art": "landgehege",
+      "gruppe": {
+        "min": 3,
+        "max": 30
+      },
+      "flaechen": {
+        "land": {
+          "basis": 210,
+          "jeWeiteresTier": 8,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 20,
+          "jeWeiteresTier": 4,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 2,
+          "jeWeiteresTier": 2,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": 18,
+        "max": 33
+      },
+      "barriere": {
+        "stufe": 2,
+        "hoeheMeter": 3,
+        "klettersicher": true
+      },
+      "schutzProTier": 2,
+      "fortbewegung": {
+        "klettern": true,
+        "landgang": true
+      },
+      "besucherBetretbar": true,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      },
+      "gruppenTypen": {
+        "gemischt": {
+          "min": 3,
+          "max": 30,
+          "maennchenMax": 29,
+          "weibchenMax": 29
+        },
+        "maennlich": {
+          "min": 3,
+          "max": 30
+        },
+        "weiblich": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "gelaende": {
+        "Grass_Short": [10, 40],
+        "Sand": [0, 20],
+        "Soil": [10, 80],
+        "Rock": [0, 40],
+        "Waterlogged": [0, 10]
+      },
+      "quelleDirekt": {
+        "art": "Vom Nutzer eingefügte offizielle Planet-Zoo-2-Zoopedia",
+        "stand": "2026-10-16",
+        "hinweis": "Flächen-Grundwerte aus dem Text; Steigerung aus vorheriger Sekundärübersicht, falls nicht direkt ablesbar."
+      },
+      "zoopediaBeziehungen": {
+        "neutral": ["Leontopithecus rosalia"]
+      }
+    }
   },
   "quellen": {
     "planetZoo2": {

@@ -426,18 +426,28 @@
           "jeJungtier": null
         },
         "wasser": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
           "jeJungtier": null
         },
         "tauchflaeche": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
           "jeJungtier": null
         },
         "klettern": {
-          "basis": null,
-          "jeWeiteresTier": null,
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 40,
+          "jeWeiteresTier": 40,
           "jeJungtier": null
         }
       },
@@ -450,7 +460,23 @@
         "springen": null
       },
       "sprungHoeheMeter": null,
-      "besucherBetretbar": null
+      "besucherBetretbar": null,
+      "art": "landgehege",
+      "temperaturC": {
+        "min": 14,
+        "max": 41
+      },
+      "barriere": {
+        "stufe": 4,
+        "hoeheMeter": 2,
+        "klettersicher": false
+      },
+      "schutzProTier": 40,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      }
     },
     "haltungsanforderungen": {
       "quelle": "wikily",

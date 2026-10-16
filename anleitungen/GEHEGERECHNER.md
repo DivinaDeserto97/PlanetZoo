@@ -83,3 +83,50 @@ Nach Quellcode- oder HTML-Änderungen immer `npm run build:browser` ausführen, 
 - Die optionale `tauchflaeche` ist eine eigenständige m²-Anforderung und wird nicht mit der gesamten Wasserfläche verwechselt. Werte für Eintauchtiefe sind bisher nicht erfasst.
 
 **Planet Zoo 1 als Beispiel:** `anleitungen/GEHEGERECHNER-BEISPIEL-PZ1.json` zeigt einen **Ausschnitt** der Aardvark-/Erdferkel-Daten mit PZ1-Anforderungen (330 m² Land + 60 m² je weiterem Tier). Das ist kein geprüfter Planet-Zoo-2-Wert. Zum direkten Einfügen darf nur das `rechner`-Objekt in die bereits existierenden Tierdaten übernommen werden, sofern die Werte für das Zielspiel bestätigt sind. Die ursprünglichen `daten.ernaehrung.nahrungsnetz` bleiben immer erhalten. Als Quellen für das Beispiel dienen https://planetzoopedia.com/zoopedia/ und https://planetzoo.fandom.com/wiki/Aardvark.
+
+## Erweiterung Oktober 2026 – Bewegungs- und Zonenplaner
+
+Die aktuelle Projektversion erweitert den Gehegerechner um **frei anlegbare Tier-, Wasser-, Flug-, Kletter-, Rückzugs- und Besucherzonen**. Diese sind Teil jedes einzeln gespeicherten Gehegeplans. Neue und kopierte Gehege übernehmen die passende Zonenstruktur; die JSON-Sicherung enthält alle Zonen und Übergänge.
+
+### Bedienung
+
+1. Tierarten für den aktuellen Gehegeplan auswählen und Zahlen für Männchen, Weibchen, Jungtiere einstellen.
+2. Unter **Tierbewegung & frei planbare Zonen** die benötigten Bereiche anlegen (z. B. Land, Ufer, Flachwasser, Tiefwasser, Kletterbereich und Besucherbereich).
+3. Für **jede Tierart eine oder mehrere Startzonen** markieren. Ohne Startzone kann das Tier nicht sinnvoll auf Erreichbarkeit geprüft werden.
+4. Verbindungen zwischen zwei Zonen eintragen: offen, Klettern, Springen, Fliegen, Flattern, Schwimmen, Tauchen, schmaler Durchgang oder gesperrt. Optional nur eine Richtung erlauben. Nur **im Spiel bestätigte** Verbindungen als „Im Spiel getestet“ markieren.
+5. Auswertung lesen: erreichbare und eventuell erreichbare Bereiche, mögliche Räuber-Beute-Kontakte, Besuchergefahren, Flächenbedarf jeder Tierart über ihre erreichbaren Bereiche sowie Gelände- und Temperaturüberschneidungen.
+
+### Dreiwertige Bewegungsauswertung
+
+- **Bestätigt oder nachvollziehbar aus Zoopedia-Anforderungen abgeleitet:** Landbedarf unterstützt Landgang, Kletterflächenbedarf unterstützt Klettern, Flugflächenbedarf unterstützt Fliegen, Aquarien-Tiefwasserbedarf unterstützt Schwimmen/Tauchen. Die angegebenen Flächen **belegen keine konkreten Sprung-, Flug- oder Kletterdistanzen**.
+- **Unbekannt:** fehlende Daten, nicht getestete Hindernisse, Sprungweiten, passierbare Öffnungen und Tauchtiefen. Unbekannt gilt nicht als „Nein“. Ein Übergang kann daher als _möglicherweise erreichbar_ erscheinen.
+- **Vom Nutzer manuell im Spiel getestet:** Ein Übergang zählt erst mit Häkchen „Im Spiel getestet“ als bestätigt; die Fähigkeit der betreffenden Art muss dafür ebenfalls belegt sein. Ein einziger ungeprüfter Alternativweg verhindert die Freigabe einer Besuchersperre.
+
+Ein Ufer, an dem ein Tier trinkt, ist **kein automatischer Zugang zu einem Tiefwasserbereich**. Land-, Schwimm-, Tauch-, Flug- und Kletterbereiche sind getrennte Raumtypen. Durch explizite Verbindungen können Arten mehr als eine Zone erreichen und gemeinsam an einem See leben; ein Aquarium ist nicht automatisch zwingend.
+
+### Umwelt und Tiergruppen
+
+- Wo zwei Arten denselben Bereich benutzen, berechnet die Software für Temperatur und Bodentypen `max(Mindestwerte)` und `min(Höchstwerte)`. Überlappen sie nicht, wird eine zusätzliche getrennte Zone empfohlen. Temperaturen dürfen nicht als sichere Sperren verwendet werden.
+- Für einzelne aus der direkt vom Nutzer gelieferten Zoopedia bekannte Arten (Katta, Rosaflamingo, Schwarzbüffel, Tigersalmler) sind zusätzliche Gelände-, Geschlechter- und Besucherdaten eingetragen. Die Beziehungen Rosaflamingo–Schwarzbüffel werden als **neutral**, nicht als „nicht bekannt“, geführt.
+- Beim Schwarzbüffel werden gemischte Herden und reine Männchengruppen unterschiedlich geprüft. Bei Arten ohne belastbare Geschlechterdetails bleibt diese Prüfung offen.
+- Flug-, Kletter-, Sprung- und Engstellen können als Vorschläge ausprobiert werden, sind aber ohne passende Spieldaten kein Beweis einer sicheren Trennung. Jungtier-Grösse und Fähigkeiten sind noch nicht artweise belegt.
+
+### Datenherkunft und bekannte Grenzen
+
+Die numerischen Basis- und Zuwachswerte für 136 Arten stammen aus der vorher erstellten, **nicht pro Tier gegen die offizielle Zoopedia einzeln verifizierten Sekundärübersicht**. Die vier vom Nutzer vorgelegten Zoopedia-Auszüge wurden teilweise direkt überlagert. Zum Beispiel ist die Wasserfläche von **1'577 m² bei exakt 500 erwachsenen Rosaflamingos** als direkt belegter Messpunkt gespeichert; andere Gruppengrössen werden ohne belegten Wasserzuwachs weiter als unbekannt angezeigt. Eine unbekannte Wassertiefe wird nicht erfunden.
+
+**Noch nicht vollständig implementiert:** nachgewiesene Sprung- und Durchgangsgrenzen, Jungtier-Pathfinding, reale Physik/Kollisionen des Spiels, volumetrische Tiefenprüfung, automatische Konstruktion optimaler Gehegetrennungen und durchgängig bestätigte erfolgreiche/neutrale Beziehungen für sämtliche 136 Arten. Die Zoneansicht ist ein datenbasierter Planer, **kein Ersatz für einen Spieltest**.
+
+### Entwicklerprüfung
+
+Für die neue reine Berechnungslogik (ohne Browser):
+
+```bash
+node --experimental-default-type=module tests/gehegerechner-zonen.test.mjs
+```
+
+Nach Änderung von JavaScript oder Tier-JSON immer das lokale Bundle neu bauen:
+
+```bash
+npm run build:browser
+```

@@ -13,7 +13,6 @@
   - [.gitignore](../.gitignore)
   - `.vscode/`
     - [settings.json](../.vscode/settings.json)
-  - [INSTALLATION-KARTEN-FIX.txt](../INSTALLATION-KARTEN-FIX.txt)
   - [README.md](../README.md)
   - `anleitungen/`
     - [ANLEITUNG-TIER-JSON.md](../anleitungen/ANLEITUNG-TIER-JSON.md)
@@ -21,6 +20,7 @@
     - [DISCORD-NEWS.md](../anleitungen/DISCORD-NEWS.md)
     - [ENTWICKLER-EINSTIEG.md](../anleitungen/ENTWICKLER-EINSTIEG.md)
     - [GEHEGERECHNER-BEISPIEL-PZ1.json](../anleitungen/GEHEGERECHNER-BEISPIEL-PZ1.json)
+    - [GEHEGERECHNER-DATENPRUEFUNG.md](../anleitungen/GEHEGERECHNER-DATENPRUEFUNG.md)
     - [GEHEGERECHNER.md](../anleitungen/GEHEGERECHNER.md)
     - [KARTEN-PIXELMASKEN.md](../anleitungen/KARTEN-PIXELMASKEN.md)
     - [MEDIEN-EINFUEGEN.md](../anleitungen/MEDIEN-EINFUEGEN.md)
@@ -1899,6 +1899,7 @@
         - `features/`
         - [rechner.js](../assets/js/rechner/rechner.js)
         - [rechnerBerechnung.js](../assets/js/rechner/rechnerBerechnung.js)
+        - [zonenLogik.js](../assets/js/rechner/zonenLogik.js)
       - `systematik/`
         - `features/`
           - [systematikDaten.js](../assets/js/systematik/features/systematikDaten.js)
@@ -2080,6 +2081,8 @@
     - [rechner.html](../pages/rechner.html)
     - [systematik.html](../pages/systematik.html)
     - [tier.html](../pages/tier.html)
+  - `tests/`
+    - [gehegerechner-zonen.test.mjs](../tests/gehegerechner-zonen.test.mjs)
   - `tools/`
     - [bot-zip.sh](../tools/bot-zip.sh)
     - [build-browser-bundle.js](../tools/build-browser-bundle.js)
@@ -2092,4 +2095,6 @@
     - [merge-main.sh](../tools/merge-main.sh)
     - [ordnerstruktur.sh](../tools/ordnerstruktur.sh)
     - [share-zip.sh](../tools/share-zip.sh)
+    - [test-gehegerechner.cjs](../tools/test-gehegerechner.cjs)
+    - [update-rechner-zoopedia.py](../tools/update-rechner-zoopedia.py)
     - [zip-intern.sh](../tools/zip-intern.sh)

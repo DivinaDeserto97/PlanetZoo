@@ -7,7 +7,14 @@ import {
   getTierIds,
 } from "../features/nahrungsBeziehungen.js";
 
-export const FLAECHEN = ["land", "wasser", "tauchflaeche", "klettern"];
+export const FLAECHEN = [
+  "land",
+  "wasser",
+  "tauchflaeche",
+  "klettern",
+  "flug",
+  "schutz",
+];
 export const BEWEGUNGEN = [
   "fliegen",
   "klettern",
@@ -15,6 +22,9 @@ export const BEWEGUNGEN = [
   "schwimmen",
   "landgang",
   "springen",
+  "waten",
+  "flattern",
+  "durchschlupf",
 ];
 
 export function zahlOderNull(wert) {
@@ -40,6 +50,7 @@ export function getRechnerDaten(tier, overrides = {}) {
           ff[key]?.jeWeiteresTier ?? f[key]?.jeWeiteresTier,
         ),
         jeJungtier: zahlOderNull(ff[key]?.jeJungtier ?? f[key]?.jeJungtier),
+        messpunkteErwachsen: f[key]?.messpunkteErwachsen ?? null,
       },
     ]),
   );
@@ -65,6 +76,16 @@ export function getRechnerDaten(tier, overrides = {}) {
         ? daten.besucherBetretbar
         : null,
     gruppe: { min: zahlOderNull(gruppe.min), max: zahlOderNull(gruppe.max) },
+    quelle: daten.quelle ?? null,
+    art: daten.art ?? null,
+    barriere: daten.barriere ?? null,
+    temperaturC: daten.temperaturC ?? null,
+    luftfeuchteProzent: daten.luftfeuchteProzent ?? null,
+    salinitaet: daten.salinitaet ?? null,
+    gelaende: daten.gelaende ?? null,
+    gruppenTypen: daten.gruppenTypen ?? null,
+    zoopediaBeziehungen: daten.zoopediaBeziehungen ?? null,
+    quelleDirekt: daten.quelleDirekt ?? null,
   };
 }
 
@@ -73,7 +94,9 @@ export function sozialeGruppen(tier, rechner) {
     return {
       min: rechner.gruppe.min,
       max: rechner.gruppe.max,
-      quelle: "Rechnerwert",
+      quelle: rechner.quelle?.url
+        ? "Zoopedia-Gruppenspanne (Sekundärquelle; Geschlechter gesondert prüfen)"
+        : "Manueller Rechnerwert",
     };
   }
   const werte = tier?.originalDaten?.daten?.sozialeStruktur?.werte ?? [];
@@ -99,6 +122,12 @@ export function berechneFlaechen(eintraege) {
           const v = e.rechner.flaechen[typ];
           const erwachsene = e.maennchen + e.weibchen;
           const jungtiere = e.jungtiere ?? 0;
+          const messwert =
+            jungtiere === 0
+              ? zahlOderNull(v.messpunkteErwachsen?.[erwachsene])
+              : null;
+          if (messwert !== null)
+            return { id: e.tier.id, name: e.name, wert: messwert };
           const weitereErwachsene = Math.max(0, erwachsene - 1);
           const weitereJungtiere =
             erwachsene > 0 ? jungtiere : Math.max(0, jungtiere - 1);

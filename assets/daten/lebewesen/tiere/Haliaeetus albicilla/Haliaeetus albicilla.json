@@ -496,7 +496,65 @@
   "audio": [""],
   "video": [""],
   "planetZoo2": {
-    "rechner": null
+    "rechner": {
+      "art": "fluggehege",
+      "gruppe": {
+        "min": 1,
+        "max": 2
+      },
+      "flaechen": {
+        "land": {
+          "basis": 400,
+          "jeWeiteresTier": 200,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 50,
+          "jeWeiteresTier": 50,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 10,
+          "jeWeiteresTier": 10,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": -20,
+        "max": 28
+      },
+      "barriere": {
+        "stufe": 2,
+        "hoeheMeter": 1,
+        "klettersicher": null
+      },
+      "schutzProTier": 10,
+      "fortbewegung": {
+        "fliegen": true
+      },
+      "besucherBetretbar": null,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      }
+    }
   },
   "quellen": {
     "planetZoo2": {

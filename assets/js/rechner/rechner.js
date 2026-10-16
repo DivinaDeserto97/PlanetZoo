@@ -5,12 +5,18 @@
  */
 import { datenImportieren } from "../../daten/lebewesen/tiere/datenImport.js";
 import { getLanguage, getLocalizedValue } from "../features/language.js";
-import {
-  getTierAuswahl,
-  setTierAuswahl,
-  setTierAusgewaehlt,
-} from "../features/tierAuswahl.js";
+import { getTierAuswahl } from "../features/tierAuswahl.js";
 import { filterTiere, getTierFilterName } from "../features/tierFilter.js";
+import {
+  ZONEN_TYPEN,
+  UEBERGANGS_TYPEN,
+  profilAusZoopedia,
+  pruefeZonen,
+  pruefeZonenKapazitaet,
+  umweltUeberschneidung,
+  optimalesKlima,
+  paarStatus,
+} from "./zonenLogik.js";
 import {
   FLAECHEN,
   BEWEGUNGEN,
@@ -21,12 +27,15 @@ import {
   zahlOderNull,
 } from "./rechnerBerechnung.js";
 
-const STORAGE_KEY = "planetZoo2-gehegerechner-v1";
+const STORAGE_KEY = "planetZoo2-gehegerechner-v2";
+const ALT_STORAGE_KEY = "planetZoo2-gehegerechner-v1";
 const AREA_LABELS = {
   land: "Landfläche",
   wasser: "Wasserfläche",
   tauchflaeche: "Tauchfläche (tiefes Wasser)",
   klettern: "Kletterfläche",
+  flug: "Flugfläche",
+  schutz: "Unterschlupf",
 };
 const MOVEMENT_LABELS = {
   fliegen: "Fliegt",
@@ -35,6 +44,9 @@ const MOVEMENT_LABELS = {
   schwimmen: "Schwimmt",
   landgang: "Kann an Land gehen",
   springen: "Springt über Hindernisse",
+  waten: "Watet im Flachwasser",
+  flattern: "Flattert über Hindernisse",
+  durchschlupf: "Passt durch schmale Öffnungen",
 };
 const RELATION_LABELS = {
   praedation: "Räuber–Beute",
@@ -55,20 +67,86 @@ const WARN_RELATIONS = new Set([
 ]);
 let controller = null;
 let tiere = [];
-let state = { mengen: {}, daten: {} };
+let state = { gehege: [], aktivId: null, daten: {} };
+function neueId() {
+  return `gehege-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
+}
+function neuesGehege(name, tiereIds = [], mengen = {}) {
+  return {
+    id: neueId(),
+    name,
+    tiereIds: [...new Set(tiereIds)],
+    mengen: { ...mengen },
+    zonen: [],
+    uebergaenge: [],
+  };
+}
+function aktivesGehege() {
+  return state.gehege.find((g) => g.id === state.aktivId) ?? state.gehege[0];
+}
+function aktuelleAuswahl() {
+  return aktivesGehege()?.tiereIds ?? [];
+}
+function setTierAuswahl(ids) {
+  const g = aktivesGehege();
+  if (!g) return;
+  g.tiereIds = [...new Set(ids.filter((id) => typeof id === "string"))];
+  speichereZustand();
+  renderAuswahl();
+  renderErgebnisse();
+}
+function setTierAusgewaehlt(id, aktiv) {
+  const liste = new Set(aktuelleAuswahl());
+  if (aktiv) liste.add(id);
+  else liste.delete(id);
+  setTierAuswahl([...liste]);
+}
+function mengeSpeicher() {
+  return aktivesGehege()?.mengen ?? {};
+}
 const aufgeklappteTiere = new Set();
 
 function leseZustand() {
   try {
     const gespeichert = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    return gespeichert &&
-      typeof gespeichert === "object" &&
-      !Array.isArray(gespeichert)
-      ? { mengen: gespeichert.mengen ?? {}, daten: gespeichert.daten ?? {} }
-      : { mengen: {}, daten: {} };
-  } catch {
-    return { mengen: {}, daten: {} };
+    if (
+      gespeichert &&
+      Array.isArray(gespeichert.gehege) &&
+      gespeichert.gehege.length
+    ) {
+      const gehege = gespeichert.gehege
+        .filter((g) => g && typeof g.id === "string")
+        .map((g) => ({
+          id: g.id,
+          name: String(g.name || "Unbenanntes Gehege").slice(0, 80),
+          tiereIds: Array.isArray(g.tiereIds)
+            ? g.tiereIds.filter((id) => typeof id === "string")
+            : [],
+          mengen: g.mengen && typeof g.mengen === "object" ? g.mengen : {},
+          zonen: Array.isArray(g.zonen) ? g.zonen : [],
+          uebergaenge: Array.isArray(g.uebergaenge) ? g.uebergaenge : [],
+        }));
+      if (gehege.length)
+        return {
+          gehege,
+          aktivId: gehege.some((g) => g.id === gespeichert.aktivId)
+            ? gespeichert.aktivId
+            : gehege[0].id,
+          daten: gespeichert.daten ?? {},
+        };
+    }
+  } catch (error) {
+    console.warn("Gehegespeicher konnte nicht gelesen werden", error);
   }
+  // Vorhandene Rechnerwerte und die gemeinsame Auswahl nur beim ersten Start übernehmen.
+  let alt = {};
+  try {
+    alt = JSON.parse(localStorage.getItem(ALT_STORAGE_KEY) || "null") ?? {};
+  } catch {
+    /* alter Speicher ungültig */
+  }
+  const erstes = neuesGehege("Gehege 1", getTierAuswahl(), alt.mengen ?? {});
+  return { gehege: [erstes], aktivId: erstes.id, daten: alt.daten ?? {} };
 }
 function speichereZustand() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -90,7 +168,7 @@ function label(tier) {
   );
 }
 function menge(id) {
-  const eintrag = state.mengen[id];
+  const eintrag = mengeSpeicher()[id];
   if (!eintrag) return { maennchen: 1, weibchen: 1, jungtiere: 0 };
   return {
     maennchen: pruefeMenge(eintrag.maennchen),
@@ -105,7 +183,7 @@ function pruefeMenge(wert) {
     : 0;
 }
 function erstelleEintraege() {
-  const selected = new Set(getTierAuswahl());
+  const selected = new Set(aktuelleAuswahl());
   return tiere
     .filter((tier) => selected.has(tier.id))
     .map((tier) => {
@@ -173,7 +251,7 @@ function filterState() {
   }
   filter.nurAusgewaehlt =
     document.querySelector("[data-calculator-selected-only]")?.value === "1";
-  filter.ausgewaehlteIds = getTierAuswahl();
+  filter.ausgewaehlteIds = aktuelleAuswahl();
   return filter;
 }
 function baueFilter() {
@@ -204,10 +282,159 @@ function baueFilter() {
   }
 }
 
+function renderGehegeAuswahl() {
+  const select = document.querySelector("[data-calculator-habitat-select]");
+  if (!select) return;
+  select.replaceChildren();
+  for (const g of state.gehege) {
+    const option = el("option", "", `${g.name} (${g.tiereIds.length} Arten)`);
+    option.value = g.id;
+    select.append(option);
+  }
+  select.value = aktivesGehege().id;
+  text(
+    document.querySelector("[data-calculator-current-name]"),
+    aktivesGehege().name,
+  );
+  const del = document.querySelector("[data-calculator-habitat-delete]");
+  if (del) del.disabled = state.gehege.length <= 1;
+}
+function wechselGehege(id) {
+  if (!state.gehege.some((g) => g.id === id)) return;
+  state.aktivId = id;
+  aufgeklappteTiere.clear();
+  speichereZustand();
+  renderGehegeAuswahl();
+  renderAuswahl();
+  renderErgebnisse();
+}
+function erzeugeGehege(duplizieren = false) {
+  const alt = aktivesGehege();
+  const neu = neuesGehege(
+    duplizieren ? `${alt.name} (Kopie)` : `Gehege ${state.gehege.length + 1}`,
+    duplizieren ? alt.tiereIds : [],
+    duplizieren ? structuredClone(alt.mengen) : {},
+  );
+  if (duplizieren) {
+    neu.zonen = structuredClone(alt.zonen ?? []);
+    neu.uebergaenge = structuredClone(alt.uebergaenge ?? []);
+  }
+  state.gehege.push(neu);
+  wechselGehege(neu.id);
+}
+function umbenennenGehege() {
+  const g = aktivesGehege();
+  const name = window.prompt("Name des Geheges:", g.name);
+  if (name === null || !name.trim()) return;
+  g.name = name.trim().slice(0, 80);
+  speichereZustand();
+  renderGehegeAuswahl();
+}
+function loescheGehege() {
+  if (state.gehege.length <= 1) return;
+  const g = aktivesGehege();
+  if (!window.confirm(`Gehege „${g.name}“ mit seiner Tierplanung löschen?`))
+    return;
+  state.gehege = state.gehege.filter((e) => e.id !== g.id);
+  wechselGehege(state.gehege[0].id);
+}
+function exportiereGehege() {
+  const datei = new Blob([JSON.stringify({ version: 2, ...state }, null, 2)], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(datei);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "planet-zoo-2-gehegeplaene.json";
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+async function importiereGehege(datei) {
+  if (!datei) return;
+  if (datei.size > 5_000_000) {
+    window.alert("Die Datei ist zu gross (maximal 5 MB).");
+    return;
+  }
+  try {
+    const incoming = JSON.parse(await datei.text());
+    if (
+      incoming.version !== 2 ||
+      !Array.isArray(incoming.gehege) ||
+      !incoming.gehege.length
+    ) {
+      throw new Error("Keine gültige Gehegeplan-Sicherung (Version 2).");
+    }
+    if (
+      !window.confirm(
+        "Alle aktuellen Gehegepläne durch die Sicherung ersetzen?",
+      )
+    )
+      return;
+    const bekannte = new Set(tiere.map((tier) => tier.id));
+    const gehege = incoming.gehege
+      .slice(0, 200)
+      .filter((g) => g && typeof g === "object")
+      .map((g, index) => ({
+        id: neueId(),
+        name: String(g.name || `Gehege ${index + 1}`).slice(0, 80),
+        tiereIds: Array.isArray(g.tiereIds)
+          ? [...new Set(g.tiereIds.filter((id) => bekannte.has(id)))]
+          : [],
+        zonen: Array.isArray(g.zonen)
+          ? g.zonen.slice(0, 100).filter((z) => typeof z?.id === "string")
+          : [],
+        uebergaenge: Array.isArray(g.uebergaenge)
+          ? g.uebergaenge
+              .slice(0, 300)
+              .filter((v) => typeof v?.von === "string")
+          : [],
+        mengen: Object.fromEntries(
+          Object.entries(g.mengen ?? {})
+            .filter(([id]) => bekannte.has(id))
+            .map(([id, m]) => [
+              id,
+              {
+                maennchen: pruefeMenge(m?.maennchen),
+                weibchen: pruefeMenge(m?.weibchen),
+                jungtiere: pruefeMenge(m?.jungtiere),
+              },
+            ]),
+        ),
+      }));
+    if (!gehege.length)
+      throw new Error("Keine Gehegepläne in der Datei gefunden.");
+    // Manuelle Stammdaten aus alter Version 2 ebenfalls mitnehmen.
+    state = {
+      gehege,
+      aktivId: gehege[0].id,
+      daten:
+        incoming.daten &&
+        typeof incoming.daten === "object" &&
+        !Array.isArray(incoming.daten)
+          ? incoming.daten
+          : {},
+    };
+    aufgeklappteTiere.clear();
+    speichereZustand();
+    renderGehegeAuswahl();
+    renderAuswahl();
+    renderErgebnisse();
+  } catch (error) {
+    window.alert(`Import fehlgeschlagen: ${error.message}`);
+  }
+}
+function importiereGemeinsameAuswahl() {
+  const ids = getTierAuswahl();
+  if (!ids.length) {
+    window.alert("Die gemeinsame Tierauswahl ist noch leer.");
+    return;
+  }
+  setTierAuswahl([...aktuelleAuswahl(), ...ids]);
+}
 function renderAuswahl() {
   const liste = document.querySelector("[data-calculator-pick-list]");
   if (!liste) return;
-  const selected = new Set(getTierAuswahl());
+  const selected = new Set(aktuelleAuswahl());
   const gefiltert = filterTiere(tiere, filterState()).sort((a, b) =>
     getTierFilterName(a).localeCompare(getTierFilterName(b), getLanguage()),
   );
@@ -231,39 +458,71 @@ function renderAuswahl() {
 
 function gruppenPruefung(e) {
   const gruppe = sozialeGruppen(e.tier, e.rechner);
-  // Gruppengrenzen beschreiben vorläufig erwachsene Tiere;
-  // Jungtiere zählen jedoch stets bei den Flächen mit.
   const erwachsene = e.maennchen + e.weibchen;
+  const typ =
+    e.maennchen > 0 && e.weibchen > 0
+      ? "gemischt"
+      : e.maennchen > 0
+        ? "maennlich"
+        : "weiblich";
+  const spielregel = e.rechner.gruppenTypen?.[typ];
+  const grenzen = spielregel ?? gruppe;
+  const fehler = [];
+  if (
+    grenzen.min !== null &&
+    grenzen.min !== undefined &&
+    erwachsene < grenzen.min
+  )
+    fehler.push(`Mindestens ${grenzen.min} Erwachsene (${typ})`);
+  if (
+    grenzen.max !== null &&
+    grenzen.max !== undefined &&
+    erwachsene > grenzen.max
+  )
+    fehler.push(`Höchstens ${grenzen.max} Erwachsene (${typ})`);
+  if (
+    Number.isFinite(grenzen.maennchenMax) &&
+    e.maennchen > grenzen.maennchenMax
+  )
+    fehler.push(
+      `Maximal ${grenzen.maennchenMax} Männchen in dieser Gruppierung`,
+    );
+  if (Number.isFinite(grenzen.weibchenMax) && e.weibchen > grenzen.weibchenMax)
+    fehler.push(
+      `Maximal ${grenzen.weibchenMax} Weibchen in dieser Gruppierung`,
+    );
   return {
     gruppe,
     erwachsene,
-    zuWenig: gruppe.min !== null && erwachsene < gruppe.min,
-    zuViele: gruppe.max !== null && erwachsene > gruppe.max,
+    typ,
+    grenzen,
+    fehler,
+    zuWenig: fehler.some((f) => f.startsWith("Mindestens")),
+    zuViele: fehler.some((f) => !f.startsWith("Mindestens")),
   };
 }
 
 function aktualisiereGruppenStatus(e) {
-  const { gruppe, erwachsene, zuWenig, zuViele } = gruppenPruefung(e);
-  const grund = [
-    `Gruppe: ${gruppe.min ?? "?"} – ${gruppe.max ?? "?"}`,
+  const { gruppe, erwachsene, grenzen, fehler, typ } = gruppenPruefung(e);
+  const beschreibung = [
+    `Gruppe (${typ}): ${grenzen.min ?? "?"} – ${grenzen.max ?? "?"}`,
     `${erwachsene} Erwachsene + ${e.jungtiere} Jungtiere`,
-    zuWenig ? `Noch ${gruppe.min - erwachsene} Erwachsene bis zum Minimum` : "",
-    zuViele ? `${erwachsene - gruppe.max} Erwachsene über dem Maximum` : "",
-  ]
-    .filter(Boolean)
-    .join(" · ");
+    ...fehler,
+  ].join(" · ");
   const status = document.querySelector(
     `[data-calculator-group-status="${e.tier.id}"]`,
   );
-  text(status, grund);
-  status?.classList.toggle("calculator-danger-text", zuWenig || zuViele);
+  text(status, beschreibung);
+  status?.classList.toggle("calculator-danger-text", fehler.length > 0);
   const card = document.querySelector(
     `[data-calculator-species-id="${e.tier.id}"]`,
   );
-  card?.classList.toggle("calculator-has-problem", zuWenig || zuViele);
+  card?.classList.toggle("calculator-has-problem", fehler.length > 0);
   text(
     document.querySelector(`[data-calculator-group-source="${e.tier.id}"]`),
-    gruppe.quelle,
+    e.rechner.gruppenTypen
+      ? "Gruppentypen aus eingefügter Zoopedia"
+      : gruppe.quelle,
   );
 }
 
@@ -286,7 +545,7 @@ function renderTiere(eintraege) {
     return;
   }
   for (const e of eintraege) {
-    const { gruppe } = gruppenPruefung(e);
+    const { gruppe, grenzen } = gruppenPruefung(e);
     const card = el("article", "calculator-species-card");
     card.dataset.calculatorSpeciesId = e.tier.id;
     const header = el("div", "calculator-species-title");
@@ -297,8 +556,8 @@ function renderTiere(eintraege) {
     );
     const toolbar = el("div", "calculator-species-buttons");
     for (const [art, wert] of [
-      ["min", gruppe.min],
-      ["max", gruppe.max],
+      ["min", grenzen.min],
+      ["max", grenzen.max],
     ]) {
       const button = el(
         "button",
@@ -355,6 +614,19 @@ function renderTiere(eintraege) {
     const quelle = el("small", "calculator-muted", gruppe.quelle);
     quelle.dataset.calculatorGroupSource = e.tier.id;
     details.append(zeile, quelle);
+    if (e.rechner.quelle?.url) {
+      const note = el(
+        "p",
+        "calculator-muted",
+        `Flächen und Gruppengrössen: ${e.rechner.quelle.art} (${e.rechner.quelle.stand}).`,
+      );
+      const link = el("a", "", "Datenquelle öffnen");
+      link.href = e.rechner.quelle.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      note.append(" ", link);
+      details.append(note);
+    }
     const edit = el("details", "calculator-edit");
     edit.append(
       el("summary", "", "Flächen, Fähigkeiten & Besuchersicherheit eintragen"),
@@ -442,7 +714,9 @@ function renderFlaechen(eintraege) {
         "",
         resultat.wert === null
           ? "Keine Daten"
-          : `${resultat.wert.toLocaleString(getLanguage())} m²`,
+          : resultat.wert === 0
+            ? "Nicht erforderlich"
+            : `${resultat.wert.toLocaleString(getLanguage())} m²`,
       ),
       el(
         "small",
@@ -468,7 +742,7 @@ function renderFlaechen(eintraege) {
       ? "Erst Tierarten auswählen."
       : Object.values(berechnung).some((area) => area.unvollstaendig)
         ? "Es fehlen Flächenangaben. Angezeigte Zahlen sind nur Untergrenzen aus den bekannten Arten – kein sicherer Gesamtbedarf."
-        : "Die Flächenarten sind voneinander getrennt. Nicht addieren: pro Fläche gilt die grösste Artenanforderung.",
+        : "Vorprüfung bei gemeinsam erreichbaren Flächen: je Flächenart gilt der grösste Artenbedarf. Getrennte Zonen müssen zusätzlich einzeln eingeplant werden.",
   );
 }
 
@@ -487,6 +761,16 @@ function renderBeziehungen(eintraege) {
     );
     return;
   }
+  // Die Zoopedia selbst unterscheidet neutral/erfolgreich von
+  // unbekannt; Nahrungsnetz-Lücken dürfen diese Aussage nicht überschreiben.
+  const zoopediaPaare = paare.map((pair) => {
+    const a = eintraege.find((e) => e.name === pair.a);
+    const b = eintraege.find((e) => e.name === pair.b);
+    return { ...pair, spiel: a && b ? paarStatus(a, b, paare) : null };
+  });
+  const spielBekannt = zoopediaPaare.filter((pair) =>
+    ["neutral", "erfolgreich"].includes(pair.spiel?.status),
+  );
   const bekannte = paare.filter((pair) => pair.beziehungen.length);
   const unbekannte = paare.filter((pair) => !pair.beziehungen.length);
   const risiken = bekannte.filter((pair) =>
@@ -494,9 +778,9 @@ function renderBeziehungen(eintraege) {
   );
   text(
     document.querySelector("[data-calculator-relation-count]"),
-    `${risiken.length} Risikopaare · ${bekannte.length} dokumentiert`,
+    `${risiken.length} Nahrungsnetz-Risiken · ${bekannte.length + spielBekannt.length} Einträge`,
   );
-  if (!bekannte.length)
+  if (!bekannte.length && !spielBekannt.length)
     liste.append(
       el(
         "p",
@@ -538,17 +822,33 @@ function renderBeziehungen(eintraege) {
     }
     liste.append(row);
   }
-  if (unbekannte.length) {
+  for (const paar of spielBekannt) {
+    const row = el("div", "calculator-relation");
+    row.append(
+      el("strong", "", `${paar.a} ↔ ${paar.b}`),
+      el(
+        "span",
+        "calculator-good-text",
+        `Zoopedia: ${paar.spiel.status} · ${paar.spiel.grund}`,
+      ),
+    );
+    liste.append(row);
+  }
+  const wirklichUnbekannte = unbekannte.filter(
+    (pair) =>
+      !spielBekannt.some((known) => known.a === pair.a && known.b === pair.b),
+  );
+  if (wirklichUnbekannte.length) {
     const details = el("details", "calculator-unknown-relations");
     details.append(
       el(
         "summary",
         "",
-        `${unbekannte.length} Tierpaare ohne erfasste Beziehung anzeigen`,
+        `${wirklichUnbekannte.length} Tierpaare ohne erfasste Beziehung anzeigen`,
       ),
     );
     const content = el("div");
-    for (const pair of unbekannte) {
+    for (const pair of wirklichUnbekannte) {
       const row = el("div", "calculator-relation");
       row.append(
         el("strong", "", `${pair.a} ↔ ${pair.b}`),
@@ -584,7 +884,18 @@ function renderAbtrennung(eintraege) {
     );
     card.append(el("strong", "", e.name));
     const hints = [];
-    const f = e.rechner.fortbewegung;
+    const profil = profilAusZoopedia(e);
+    const f = profil.faehigkeiten;
+    if (f.landgang === true)
+      hints.push(
+        "Landgang aus Zoopedia-Daten abgeleitet; Reichweite und Hindernisse separat prüfen.",
+      );
+    if (f.waten === true)
+      hints.push("Watet im Flachwasser; Ufer und Wassertiefe getrennt prüfen.");
+    if (f.flattern === true)
+      hints.push(
+        "Flatterfähigkeit erfasst; weder freie Flugfähigkeit noch Distanz abgeleitet.",
+      );
     if (f.fliegen === true)
       hints.push(
         "Flugfähig: Gehege gegen Überfliegen sichern (z. B. vollständige Übernetzung).",
@@ -612,10 +923,37 @@ function renderAbtrennung(eintraege) {
           : `Springt bis ${e.rechner.sprungHoeheMeter} m laut eingetragenem Wert: Barriere muss darüber liegen; Sicherheitsreserve nicht festgelegt.`,
       );
     const unknown = BEWEGUNGEN.filter((key) => f[key] === null);
+    const ableitung = Object.entries(profil.beschreibung)
+      .filter(
+        ([key, quelle]) => f[key] === true && quelle.startsWith("Abgeleitet"),
+      )
+      .map(([key, quelle]) => `${MOVEMENT_LABELS[key] ?? key}: ${quelle}`);
+    hints.push(...ableitung);
     if (unknown.length)
       hints.push(
         `Nicht geprüft: ${unknown.map((key) => MOVEMENT_LABELS[key]).join(", ")}.`,
       );
+    if (e.rechner.barriere?.hoeheMeter !== undefined) {
+      const b = e.rechner.barriere;
+      hints.unshift(
+        `Zoopedia-Mindestbarriere: Stufe ${b.stufe}, ${b.hoeheMeter} m Höhe${b.klettersicher === true ? ", klettersicher erforderlich" : ""}. Keine Garantie gegen Ausbrüche über andere Wege.`,
+      );
+      if (b.wassergraben) {
+        hints.push(
+          `Zoopedia nennt Wassergraben als Option: mindestens ${b.wassergraben.mindestensBreiteMeter} m breit und ${b.wassergraben.mindestensTiefeMeter} m tief. Nur bei geprüftem Verlauf ohne Umgehung.`,
+        );
+      }
+    }
+    if (e.rechner.temperaturC)
+      hints.push(
+        `Temperaturbereich: ${e.rechner.temperaturC.min}–${e.rechner.temperaturC.max} °C.`,
+      );
+    if (e.rechner.luftfeuchteProzent)
+      hints.push(
+        `Luftfeuchte: ${e.rechner.luftfeuchteProzent.min}–${e.rechner.luftfeuchteProzent.max} %.`,
+      );
+    if (e.rechner.salinitaet?.length)
+      hints.push(`Wassertyp: ${e.rechner.salinitaet.join(", ")}.`);
     if (!hints.length)
       hints.push(
         "Keine besondere Fortbewegungsart erfasst. Trotzdem ist keine Barriere automatisch ausbruchssicher.",
@@ -663,9 +1001,69 @@ function renderAbtrennung(eintraege) {
       el(
         "p",
         "calculator-danger-text",
-        "Unterschiedliche Gehegetypen in der Auswahl: Prüfe, ob diese Tierarten überhaupt in derselben Anlage gehalten werden können.",
+        "Unterschiedliche Zoopedia-Gehegetypen: Wasser, Land und Luft können in einer Anlage liegen. Prüfe erreichbare Bereiche und bestätigte Konflikte zonenweise – keine automatische Aquariumspflicht.",
       ),
     );
+  }
+  if (candidates.length) {
+    const bs = candidates.map((e) => e.rechner.barriere);
+    if (bs.every((b) => b?.stufe != null && b?.hoeheMeter != null)) {
+      const stufe = Math.max(...bs.map((b) => b.stufe));
+      const hoehe = Math.max(...bs.map((b) => b.hoeheMeter));
+      const kletter = bs.some((b) => b.klettersicher === true);
+      const hinweis = `Gemeinsame Mindestbarriere nach den vorliegenden Artenwerten: Stufe ${stufe}, Höhe ${hoehe} m${kletter ? ", klettersicher" : ""}. Die gesamte Abtrennung muss trotzdem auf Tierwege, Tunnel, Klettermöglichkeiten und Türen geprüft werden.`;
+      liste.prepend(el("p", "calculator-warning-text", hinweis));
+      if (bs.every((b) => b.wassergraben)) {
+        const breite = Math.max(
+          ...bs.map((b) => b.wassergraben.mindestensBreiteMeter),
+        );
+        const tiefe = Math.max(
+          ...bs.map((b) => b.wassergraben.mindestensTiefeMeter),
+        );
+        liste.prepend(
+          el(
+            "p",
+            "calculator-warning-text",
+            `Alle gewählten Arten haben einen dokumentierten Wassergraben-Eintrag: mindestens ${breite} m Breite und ${tiefe} m Tiefe. Umgehungen und Tauchpassagen weiterhin separat ausschliessen.`,
+          ),
+        );
+      }
+    }
+  }
+  if (candidates.length > 1) {
+    const bands = candidates.map((e) => e.rechner.temperaturC).filter(Boolean);
+    if (
+      bands.length === candidates.length &&
+      Math.max(...bands.map((b) => b.min)) >
+        Math.min(...bands.map((b) => b.max))
+    ) {
+      liste.prepend(
+        el(
+          "p",
+          "calculator-danger-text",
+          "Kein gemeinsamer Temperaturbereich für alle ausgewählten Tierarten.",
+        ),
+      );
+    }
+    const salinitaeten = candidates.filter((e) => e.rechner.salinitaet?.length);
+    if (salinitaeten.length > 1) {
+      const werte = ["Freshwater", "Brackish", "Saltwater"];
+      const gemeinsam = werte.filter((wert) =>
+        salinitaeten.every(
+          (e) =>
+            e.rechner.salinitaet.includes(wert) ||
+            e.rechner.salinitaet.includes("Any Salinity"),
+        ),
+      );
+      if (!gemeinsam.length)
+        liste.prepend(
+          el(
+            "p",
+            "calculator-danger-text",
+            "Kein gemeinsamer Salzgehalt für alle ausgewählten Aquarientiere.",
+          ),
+        );
+    }
   }
   if (
     candidates.length &&
@@ -685,34 +1083,439 @@ function renderAbtrennung(eintraege) {
         candidates.some((e) => e.rechner.besucherBetretbar === false)
           ? "calculator-danger-text"
           : "calculator-warning-text",
-        "Betretbarkeit des gemeinsamen Geheges nicht bestätigt. Alle Arten müssen dafür ausdrücklich als betretbar erfasst sein.",
+        "Besucher dürfen nicht automatisch in alle Bereiche. Eine gesonderte Besucherzone ist möglich, wenn keine verbotene Art sie erreichen kann (siehe Zonenprüfung).",
       ),
     );
   }
 }
 
+// --------------------------------------------------------------
+// Zonenverwaltung: jede Tierart erhält explizite Startzone(n).
+// Wege können ungeprüft oder vom Nutzer im Spiel getestet sein.
+// --------------------------------------------------------------
+function zoneEingabe(titel, wert, feld, zoneId, art = "text") {
+  const wrapper = el("label", "calculator-field", titel);
+  const input = el("input");
+  input.type = art;
+  if (art === "number") {
+    input.min = "0";
+    input.step = "0.1";
+  }
+  input.value = wert ?? "";
+  input.dataset.zoneEdit = feld;
+  input.dataset.zoneId = zoneId;
+  wrapper.append(input);
+  return wrapper;
+}
+function optionsFeld(titel, werte, wert, attribut) {
+  const wrapper = el("label", "calculator-field", titel);
+  const select = el("select");
+  Object.assign(select.dataset, attribut);
+  for (const [id, name] of Object.entries(werte)) {
+    const option = el("option", "", name);
+    option.value = id;
+    select.append(option);
+  }
+  select.value = wert;
+  wrapper.append(select);
+  return wrapper;
+}
+function renderZonen(eintraege) {
+  const host = document.querySelector("[data-calculator-zones]");
+  if (!host) return;
+  const g = aktivesGehege();
+  g.zonen ??= [];
+  g.uebergaenge ??= [];
+  host.replaceChildren();
+  const info = el(
+    "p",
+    "calculator-muted",
+    "Lege Zonen an und wähle pro Tier eine Startzone. Übergänge lassen sich öffnen, sperren oder als Kletter-, Flug-, Schwimm-, Tauch-, Sprung- bzw. Schlupfweg anlegen. Die Prüfung ist konservativ: ungeprüfte Wege werden niemals als sicher freigegeben.",
+  );
+  host.append(info);
+  const buttons = el("div", "calculator-actions");
+  const add = el("button", "", "+ Zone hinzufügen");
+  add.type = "button";
+  add.dataset.zoneAdd = "1";
+  const addLink = el("button", "", "+ Übergang hinzufügen");
+  addLink.type = "button";
+  addLink.dataset.linkAdd = "1";
+  addLink.disabled = g.zonen.length < 2;
+  buttons.append(add, addLink);
+  host.append(buttons);
+  if (!g.zonen.length) {
+    host.append(
+      el(
+        "p",
+        "calculator-warning-text",
+        "Noch keine Zonen eingerichtet: Beziehungen und Flächen sind bisher nur eine allgemeine Vorprüfung.",
+      ),
+    );
+    return;
+  }
+  for (const zone of g.zonen) {
+    const card = el("article", "calculator-zone-card");
+    const kopf = el("div", "calculator-zone-head");
+    kopf.append(el("strong", "", zone.name || "Neue Zone"));
+    const del = el("button", "calculator-button-subtle", "Zone entfernen ×");
+    del.type = "button";
+    del.dataset.zoneRemove = zone.id;
+    kopf.append(del);
+    card.append(kopf);
+    const fields = el("div", "calculator-zone-fields");
+    fields.append(
+      zoneEingabe("Name", zone.name, "name", zone.id),
+      optionsFeld("Bereich", ZONEN_TYPEN, zone.typ, {
+        zoneEdit: "typ",
+        zoneId: zone.id,
+      }),
+      zoneEingabe(
+        "Geplante Fläche (m², optional)",
+        zone.flaeche,
+        "flaeche",
+        zone.id,
+        "number",
+      ),
+    );
+    card.append(fields);
+    const sub = el("div", "calculator-zone-animals");
+    sub.append(el("strong", "", "Startzone für diese Tiere:"));
+    for (const e of eintraege.filter((x) => x.anzahl > 0)) {
+      const wrap = el("label", "calculator-zone-check");
+      const check = el("input");
+      check.type = "checkbox";
+      check.checked = (zone.startArten ?? []).includes(e.tier.id);
+      check.dataset.zoneAnimal = zone.id;
+      check.dataset.tierId = e.tier.id;
+      wrap.append(check, el("span", "", e.name));
+      sub.append(wrap);
+    }
+    if (!eintraege.length)
+      sub.append(
+        el("small", "calculator-muted", "Bitte zuerst Tiere auswählen."),
+      );
+    card.append(sub);
+    host.append(card);
+  }
+  const links = el("div", "calculator-zone-links");
+  links.append(el("h3", "", "Verbindungen zwischen Zonen"));
+  for (const [index, verbindung] of g.uebergaenge.entries()) {
+    const row = el("div", "calculator-zone-link");
+    const namen = Object.fromEntries(g.zonen.map((z) => [z.id, z.name]));
+    row.append(
+      optionsFeld("Von", namen, verbindung.von, {
+        linkEdit: "von",
+        linkIndex: String(index),
+      }),
+      optionsFeld("Nach", namen, verbindung.nach, {
+        linkEdit: "nach",
+        linkIndex: String(index),
+      }),
+      optionsFeld("Übergang", UEBERGANGS_TYPEN, verbindung.art, {
+        linkEdit: "art",
+        linkIndex: String(index),
+      }),
+    );
+    for (const [name, feld] of [
+      ["Im Spiel getestet", "getestet"],
+      ["Beide Richtungen", "beidseitig"],
+    ]) {
+      const control = el("label", "calculator-zone-check");
+      const check = el("input");
+      check.type = "checkbox";
+      check.checked =
+        verbindung[feld] === true ||
+        (feld === "beidseitig" && verbindung[feld] !== false);
+      check.dataset.linkEdit = feld;
+      check.dataset.linkIndex = String(index);
+      control.append(check, el("span", "", name));
+      row.append(control);
+    }
+    const del = el("button", "calculator-button-subtle", "Entfernen ×");
+    del.type = "button";
+    del.dataset.linkRemove = String(index);
+    row.append(del);
+    links.append(row);
+  }
+  host.append(links);
+  const analyse = pruefeZonen(eintraege, g.zonen, g.uebergaenge);
+  const overview = el("section", "calculator-zone-overview");
+  overview.append(el("h3", "", "Erreichbarkeit & Kontakt"));
+  const startFehlt = eintraege.filter(
+    (e) =>
+      e.anzahl > 0 &&
+      !g.zonen.some((z) => (z.startArten ?? []).includes(e.tier.id)),
+  );
+  if (startFehlt.length)
+    overview.append(
+      el(
+        "p",
+        "calculator-warning-text",
+        `Keine Startzone für: ${startFehlt.map((e) => e.name).join(", ")}.`,
+      ),
+    );
+  for (const e of eintraege.filter((x) => x.anzahl > 0)) {
+    const profile = analyse.bewegung[e.tier.id];
+    const row = el("div", "calculator-zone-result");
+    row.append(el("strong", "", e.name));
+    const known = g.zonen
+      .filter((z) => profile.zonen[z.id] === 2)
+      .map((z) => z.name);
+    const maybe = g.zonen
+      .filter((z) => profile.zonen[z.id] === 1)
+      .map((z) => z.name);
+    row.append(
+      el(
+        "span",
+        "calculator-good-text",
+        `Erreichbar aus Profil / getesteter Verbindung: ${known.join(", ") || "keine"}`,
+      ),
+    );
+    if (maybe.length)
+      row.append(
+        el(
+          "span",
+          "calculator-warning-text",
+          `Möglicherweise erreichbar: ${maybe.join(", ")}`,
+        ),
+      );
+    overview.append(row);
+  }
+  for (const pair of analyse.paare) {
+    const risk = pair.status === "gefahr";
+    const row = el("div", "calculator-zone-result");
+    const c =
+      risk && pair.kontaktMoeglich
+        ? "calculator-danger-text"
+        : "calculator-muted";
+    row.append(el("strong", c, `${pair.a} ↔ ${pair.b}: ${pair.status}`));
+    row.append(
+      el(
+        "span",
+        c,
+        `${pair.grund}. ${pair.kontaktMoeglich ? `Gemeinsame erreichbare Bereiche: ${pair.kontakt.join(", ")}.` : "Kein gemeinsamer erreichbarer Bereich nach aktuellem Plan."}`,
+      ),
+    );
+    if (risk && pair.kontaktMoeglich)
+      row.append(
+        el(
+          "small",
+          "calculator-danger-text",
+          "Kontakt zu einer problematischen Beziehung möglich: sichere Trennung erforderlich.",
+        ),
+      );
+    if (pair.status === "unbekannt")
+      row.append(
+        el(
+          "small",
+          "calculator-warning-text",
+          "Unbekannt ist weder harmlos noch bestätigt gefährlich.",
+        ),
+      );
+    overview.append(row);
+  }
+  for (const b of analyse.besucher) {
+    const row = el(
+      "p",
+      b.verboten.length ? "calculator-danger-text" : "calculator-warning-text",
+      `Besucherzone ${b.zone}: ${b.verboten.length ? "Unzulässige Arten können sie erreichen: " + b.verboten.join(", ") : b.ungeprueft.length ? "Betretbarkeit ungeklärt: " + b.ungeprueft.join(", ") : "Nur betretbare Arten derzeit erreichbar; echte Wegfindung im Spiel prüfen."}`,
+    );
+    overview.append(row);
+  }
+  if (g.zonen.some((z) => z.flaeche !== null && Number.isFinite(z.flaeche))) {
+    overview.append(
+      el(
+        "p",
+        "calculator-muted",
+        "Zonenflächen werden nicht addiert, wenn sie sich überschneiden. Pro Tier muss die Summe der tatsächlich nutzbaren Flächen überprüft werden; die Eingaben allein sind kein Nachweis.",
+      ),
+    );
+  }
+  const pruefung = pruefeZonenKapazitaet(eintraege, g.zonen, g.uebergaenge);
+  if (pruefung.length) {
+    const size = el("div", "calculator-zone-capacity");
+    size.append(el("h3", "", "Fläche pro Tier über erreichbare Zonen"));
+    size.append(
+      el(
+        "p",
+        "calculator-muted",
+        "Getrennte Flächen der gleichen Art werden je Tier zusammengerechnet. Gemeinsam genutzte Flächen werden nicht für jede Art separat benötigt. Eine rechnerisch ausreichende Fläche ersetzt keine Wegfindungsprüfung.",
+      ),
+    );
+    for (const p of pruefung) {
+      const danger = ["zu-klein", "zone-fehlt"].includes(p.status);
+      const row = el("div", "calculator-zone-result");
+      row.append(
+        el(
+          "strong",
+          danger ? "calculator-danger-text" : "",
+          `${p.name} · ${AREA_LABELS[p.art]}`,
+        ),
+      );
+      row.append(
+        el(
+          "span",
+          danger ? "calculator-danger-text" : "calculator-muted",
+          `Bedarf: ${p.bedarf === null ? "unbekannt" : p.bedarf + " m²"} · erreichbar: ${p.moeglichFlaeche} m² (davon getestet: ${p.sicherFlaeche} m²)`,
+        ),
+      );
+      row.append(
+        el(
+          "small",
+          p.status === "rechnerisch-ausreichend"
+            ? "calculator-good-text"
+            : danger
+              ? "calculator-danger-text"
+              : "calculator-warning-text",
+          `${p.status.replaceAll("-", " ")} · ${p.zonen.join(", ") || "keine geeignete Zone"}`,
+        ),
+      );
+      size.append(row);
+    }
+    overview.append(size);
+  }
+  host.append(overview);
+}
+function renderUmwelt(eintraege) {
+  const host = document.querySelector("[data-calculator-environment]");
+  if (!host) return;
+  host.replaceChildren();
+  if (!eintraege.length) return;
+  const g = aktivesGehege();
+  const zonen = g.zonen ?? [];
+  const analyse = zonen.length
+    ? pruefeZonen(eintraege, zonen, g.uebergaenge ?? [])
+    : null;
+  const gruppen = zonen.length
+    ? zonen.map((z) => ({
+        name: z.name,
+        arten: eintraege.filter(
+          (e) => e.anzahl > 0 && analyse.bewegung[e.tier.id].zonen[z.id] > 0,
+        ),
+      }))
+    : [{ name: "Gemeinsames Gehege (Vorprüfung)", arten: eintraege }];
+  for (const gruppe of gruppen.filter((x) => x.arten.length)) {
+    const wert = umweltUeberschneidung(gruppe.arten);
+    const klima = optimalesKlima(gruppe.arten);
+    const card = el("article", "calculator-zone-result");
+    card.append(el("strong", "", gruppe.name));
+    const t = wert.temperatur;
+    card.append(
+      el(
+        "p",
+        t.konflikt ? "calculator-danger-text" : "calculator-muted",
+        t.min === null
+          ? "Temperatur unbekannt"
+          : t.konflikt
+            ? `⚠ Temperaturkonflikt: Minimum ${t.min} °C > Maximum ${t.max} °C`
+            : `Gemeinsame Temperatur: ${t.min}–${t.max} °C${t.fehlend.length ? " (unvollständig)" : ""}`,
+      ),
+    );
+    if (wert.temperatur.konflikt && klima.bester) {
+      card.append(
+        el(
+          "p",
+          "calculator-warning-text",
+          `Bestmögliche Temperatur für die grösste Tierzahl: ${klima.bester.grad} °C · ${klima.bester.tiere} von ${gruppe.arten.reduce((s, e) => s + e.anzahl, 0)} Tieren innerhalb des Bereichs. Zusätzliche Klimazone für: ${klima.bester.abweichend.join(", ")}.`,
+        ),
+      );
+    }
+    const gelaende = el("div", "calculator-terrain");
+    for (const art of wert.gelaende) {
+      gelaende.append(
+        el(
+          "div",
+          art.konflikt ? "calculator-danger-text" : "calculator-muted",
+          `${art.konflikt ? "⚠ " : ""}${art.typ}: ${art.min}–${art.max} %${art.vollstaendig ? "" : " (nur erfasste Arten)"}`,
+        ),
+      );
+    }
+    card.append(gelaende);
+    if (wert.prozentPruefung.vollstaendig)
+      card.append(
+        el(
+          "small",
+          wert.prozentPruefung.konflikt ||
+            wert.prozentPruefung.summeMin > 100 ||
+            wert.prozentPruefung.summeMax < 100
+            ? "calculator-danger-text"
+            : "calculator-muted",
+          `Boden-Prozentprüfung: Mindestanteile zusammen ${wert.prozentPruefung.summeMin} %, Obergrenzen zusammen ${wert.prozentPruefung.summeMax} %.`,
+        ),
+      );
+    else
+      card.append(
+        el(
+          "small",
+          "calculator-warning-text",
+          "⚠ Geländeangaben nicht für alle Arten vollständig. Keine Gesamtfreigabe möglich.",
+        ),
+      );
+    host.append(card);
+  }
+  host.append(
+    el(
+      "p",
+      "calculator-muted",
+      "Wenn sich die Prozent- oder Temperaturbereiche nicht überschneiden, separate Zonen anbieten statt das Tierwohl zu verschlechtern. Temperatur gilt nicht als sichere Barriere.",
+    ),
+  );
+}
+function speichereZonenEingabe(target) {
+  const g = aktivesGehege();
+  if (target.dataset.zoneEdit) {
+    const z = g.zonen.find((item) => item.id === target.dataset.zoneId);
+    if (!z) return;
+    const key = target.dataset.zoneEdit;
+    z[key] =
+      key === "flaeche"
+        ? zahlOderNull(target.value)
+        : target.value.slice(0, 80);
+  } else if (target.dataset.zoneAnimal) {
+    const z = g.zonen.find((item) => item.id === target.dataset.zoneAnimal);
+    if (!z) return;
+    const selected = new Set(z.startArten ?? []);
+    if (target.checked) selected.add(target.dataset.tierId);
+    else selected.delete(target.dataset.tierId);
+    z.startArten = [...selected];
+  } else if (target.dataset.linkEdit) {
+    const v = g.uebergaenge[Number(target.dataset.linkIndex)];
+    if (!v) return;
+    v[target.dataset.linkEdit] =
+      target.type === "checkbox" ? target.checked : target.value;
+  }
+  speichereZustand();
+  renderBerechnungen();
+}
 function renderBerechnungen() {
   if (!document.querySelector("[data-calculator-page]")) return;
   const eintraege = erstelleEintraege();
   // Eingabefelder bei Änderungen nicht neu erzeugen: Fokus und Aufklappzustand bleiben erhalten.
   for (const e of eintraege) {
     aktualisiereGruppenStatus(e);
-    const gruppe = sozialeGruppen(e.tier, e.rechner);
+    const { gruppe, grenzen } = gruppenPruefung(e);
     for (const art of ["min", "max"]) {
       const button = document.querySelector(
         `[data-calc-limit="${art}"][data-id="${e.tier.id}"]`,
       );
       if (!button) continue;
-      button.disabled = gruppe[art] === null;
+      button.disabled = grenzen[art] === null || grenzen[art] === undefined;
       button.title =
-        gruppe[art] === null
+        grenzen[art] === null || grenzen[art] === undefined
           ? "Keine Gruppengrenze vorhanden"
-          : `${gruppe[art]} Erwachsene einstellen (${gruppe.quelle})`;
+          : `${grenzen[art]} Erwachsene einstellen (Gruppentyp beachten)`;
     }
   }
-  const risiken = analysiereBeziehungen(eintraege).filter((pair) =>
-    pair.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ)),
-  );
+  const zonenAktiv = (aktivesGehege().zonen ?? []).length > 0;
+  const risiken = zonenAktiv
+    ? pruefeZonen(
+        eintraege,
+        aktivesGehege().zonen,
+        aktivesGehege().uebergaenge ?? [],
+      ).paare.filter((p) => p.status === "gefahr" && p.kontaktMoeglich)
+    : analysiereBeziehungen(eintraege).filter((pair) =>
+        pair.beziehungen.some((rel) => WARN_RELATIONS.has(rel.typ)),
+      );
   const betroffene = new Set(risiken.flatMap((pair) => [pair.a, pair.b]));
   for (const e of eintraege) {
     const card = document.querySelector(
@@ -730,7 +1533,7 @@ function renderBerechnungen() {
         note = el(
           "p",
           "calculator-danger-text calculator-relation-note",
-          "⚠ Problematische Beziehung zu einer weiteren ausgewählten Art",
+          "⚠ Problematische Beziehung mit möglichem Kontakt. Zonen/Barrieren prüfen.",
         );
         note.dataset.calculatorRelationWarning = "1";
         card.append(note);
@@ -740,6 +1543,8 @@ function renderBerechnungen() {
   renderFlaechen(eintraege);
   renderBeziehungen(eintraege);
   renderAbtrennung(eintraege);
+  renderZonen(eintraege);
+  renderUmwelt(eintraege);
 }
 
 function renderErgebnisse() {
@@ -806,11 +1611,22 @@ export async function init() {
     "change",
     (event) => {
       const target = event.target;
-      if (target.dataset.calcSelect) {
+      if (target.matches("[data-calculator-habitat-import-file]")) {
+        void importiereGehege(target.files?.[0]);
+        target.value = "";
+      } else if (target.matches("[data-calculator-habitat-select]")) {
+        wechselGehege(target.value);
+      } else if (
+        target.dataset.zoneEdit ||
+        target.dataset.zoneAnimal ||
+        target.dataset.linkEdit
+      ) {
+        speichereZonenEingabe(target);
+      } else if (target.dataset.calcSelect) {
         setTierAusgewaehlt(target.dataset.calcSelect, target.checked);
       } else if (target.dataset.calcSex) {
         const id = target.dataset.id;
-        state.mengen[id] = {
+        mengeSpeicher()[id] = {
           ...menge(id),
           [target.dataset.calcSex]: pruefeMenge(target.value),
         };
@@ -831,6 +1647,64 @@ export async function init() {
   document.querySelector("[data-calculator-page]")?.addEventListener(
     "click",
     (event) => {
+      if (event.target.closest("[data-calculator-habitat-new]"))
+        erzeugeGehege();
+      if (event.target.closest("[data-calculator-habitat-clone]"))
+        erzeugeGehege(true);
+      if (event.target.closest("[data-calculator-habitat-rename]"))
+        umbenennenGehege();
+      if (event.target.closest("[data-calculator-habitat-delete]"))
+        loescheGehege();
+      if (event.target.closest("[data-calculator-habitat-export]"))
+        exportiereGehege();
+      if (event.target.closest("[data-calculator-habitat-import]"))
+        document
+          .querySelector("[data-calculator-habitat-import-file]")
+          ?.click();
+      if (event.target.closest("[data-calculator-import-selection]"))
+        importiereGemeinsameAuswahl();
+      const g = aktivesGehege();
+      if (event.target.closest("[data-zone-add]")) {
+        g.zonen ??= [];
+        g.zonen.push({
+          id: neueId(),
+          name: `Zone ${g.zonen.length + 1}`,
+          typ: "land",
+          flaeche: null,
+          startArten: [],
+        });
+        speichereZustand();
+        renderBerechnungen();
+      }
+      const zoneRemove = event.target.closest("[data-zone-remove]");
+      if (zoneRemove) {
+        g.zonen = g.zonen.filter((z) => z.id !== zoneRemove.dataset.zoneRemove);
+        g.uebergaenge = (g.uebergaenge ?? []).filter(
+          (v) =>
+            v.von !== zoneRemove.dataset.zoneRemove &&
+            v.nach !== zoneRemove.dataset.zoneRemove,
+        );
+        speichereZustand();
+        renderBerechnungen();
+      }
+      if (event.target.closest("[data-link-add]") && g.zonen?.length > 1) {
+        g.uebergaenge ??= [];
+        g.uebergaenge.push({
+          von: g.zonen[0].id,
+          nach: g.zonen[1].id,
+          art: "gesperrt",
+          getestet: false,
+          beidseitig: true,
+        });
+        speichereZustand();
+        renderBerechnungen();
+      }
+      const linkRemove = event.target.closest("[data-link-remove]");
+      if (linkRemove) {
+        g.uebergaenge.splice(Number(linkRemove.dataset.linkRemove), 1);
+        speichereZustand();
+        renderBerechnungen();
+      }
       const toggle = event.target.closest("[data-calc-toggle]");
       if (toggle) {
         const id = toggle.dataset.calcToggle;
@@ -847,15 +1721,21 @@ export async function init() {
       if (limit) {
         const tier = tiere.find((entry) => entry.id === limit.dataset.id);
         if (tier) {
-          const grenze = sozialeGruppen(
+          const alt = menge(tier.id);
+          const grenze = gruppenPruefung({
             tier,
-            getRechnerDaten(tier, state.daten[tier.id]),
-          );
+            name: label(tier),
+            ...alt,
+            rechner: getRechnerDaten(tier, state.daten[tier.id]),
+          }).grenzen;
           const wert = grenze[limit.dataset.calcLimit];
-          if (wert !== null) {
-            const alt = menge(tier.id);
-            const maennchen = Math.min(alt.maennchen, wert);
-            state.mengen[tier.id] = {
+          if (wert !== null && wert !== undefined) {
+            const maennchen = Math.min(
+              alt.maennchen,
+              wert,
+              Number.isFinite(grenze.maennchenMax) ? grenze.maennchenMax : wert,
+            );
+            mengeSpeicher()[tier.id] = {
               ...alt,
               maennchen,
               weibchen: Math.max(0, wert - maennchen),
@@ -870,16 +1750,8 @@ export async function init() {
       if (event.target.closest("[data-calculator-clear]")) setTierAuswahl([]);
       if (event.target.closest("[data-calculator-select-visible]")) {
         const neu = filterTiere(tiere, filterState()).map((tier) => tier.id);
-        setTierAuswahl([...getTierAuswahl(), ...neu]);
+        setTierAuswahl([...aktuelleAuswahl(), ...neu]);
       }
-    },
-    { signal },
-  );
-  document.addEventListener(
-    "tierAuswahlChanged",
-    () => {
-      renderAuswahl();
-      renderErgebnisse();
     },
     { signal },
   );
@@ -891,6 +1763,7 @@ export async function init() {
     },
     { signal },
   );
+  renderGehegeAuswahl();
   renderAuswahl();
   renderErgebnisse();
 }

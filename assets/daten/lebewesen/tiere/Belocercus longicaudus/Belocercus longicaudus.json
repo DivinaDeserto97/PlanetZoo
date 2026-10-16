@@ -531,7 +531,65 @@
   "audio": [],
   "video": [],
   "planetZoo2": {
-    "rechner": null,
+    "rechner": {
+      "art": "fluggehege",
+      "gruppe": {
+        "min": 2,
+        "max": 12
+      },
+      "flaechen": {
+        "land": {
+          "basis": 6,
+          "jeWeiteresTier": 6,
+          "jeJungtier": null
+        },
+        "wasser": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "tauchflaeche": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "klettern": {
+          "basis": 0,
+          "jeWeiteresTier": 0,
+          "jeJungtier": null
+        },
+        "flug": {
+          "basis": 6,
+          "jeWeiteresTier": 6,
+          "jeJungtier": null
+        },
+        "schutz": {
+          "basis": 1,
+          "jeWeiteresTier": 1,
+          "jeJungtier": null
+        }
+      },
+      "temperaturC": {
+        "min": 18,
+        "max": 33
+      },
+      "barriere": {
+        "stufe": 2,
+        "hoeheMeter": 1,
+        "klettersicher": null
+      },
+      "schutzProTier": 1,
+      "fortbewegung": {
+        "fliegen": true
+      },
+      "besucherBetretbar": null,
+      "sprungHoeheMeter": null,
+      "quelle": {
+        "art": "Sekundärübersicht nach PZ2-Zoopedia (nicht unabhängig pro Art geprüft)",
+        "url": "https://pz2guide.com/animal-requirements/",
+        "stand": "2026-10-14"
+      }
+    },
     "hinweis": {
       "de": "Die Rechnerwerte werden später separat ergänzt.",
       "en": "Calculator values will be added separately later."
